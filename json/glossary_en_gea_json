@@ -1,1 +1,786 @@
-[{"id":"Area_gea-submitter","name":"Submitter","description":"Contact information of submitter(s). Questions and notifications about a submission are contacted to the e-mail address(es) listed here. Personal contact information is considered confidential and is collected to be used by GEA staff should questions arise.","link_ja":"/gea/submission.html#Area_gea-submitter","link_en":"/gea/submission-e.html#Area_gea-submitter"},{"id":"GEA_Submitting_organization","name":"Submitting organization","description":"full name of organization.","link_ja":"/gea/submission.html#GEA_Submitting_organization","link_en":"/gea/submission-e.html#GEA_Submitting_organization"},{"id":"GEA_Submitting_organization_URL","name":"Submitting organization URL","description":"The URL of submitter's organization.","link_ja":"/gea/submission.html#GEA_Submitting_organization_URL","link_en":"/gea/submission-e.html#GEA_Submitting_organization_URL"},{"id":"Area_data-release","name":"Data Release","description":"Select \"Hold date\" within 4 years from now or \"Release\".","link_ja":"/gea/submission.html#Area_data-release","link_en":"/gea/submission-e.html#Area_data-release"},{"id":"Investigation_Title","name":"Title","description":"The overall title of the investigation.","link_ja":"/gea/submission.html#Investigation_Title","link_en":"/gea/submission-e.html#Investigation_Title"},{"id":"Experiment_Description","name":"Description","description":"A short paragraph describing the experiment as free-text. The text should clearly explain what you did in your experiment.","link_ja":"/gea/submission.html#Experiment_Description","link_en":"/gea/submission-e.html#Experiment_Description"},{"id":"Experiment_Type","name":"Experiment Type","description":"Select a type of experiment.","link_ja":"/gea/submission.html#Experiment_Type","link_en":"/gea/submission-e.html#Experiment_Type"},{"id":"Experimental_Design","name":"Experimental Design","description":"The experiment design types which are applicable to this study.","link_ja":"/gea/submission.html#Experimental_Design","link_en":"/gea/submission-e.html#Experimental_Design"},{"id":"Experimental_Design_Term_Source_REF","name":"Experimental Design Term Source REF","description":"The source of the Experimental Design terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).","link_ja":"/gea/submission.html#Experimental_Design_Term_Source_REF","link_en":"/gea/submission-e.html#Experimental_Design_Term_Source_REF"},{"id":"Experimental_Design_Term_Accession_Number","name":"Experimental Design Term Accession Number","description":"The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.","link_ja":"/gea/submission.html#Experimental_Design_Term_Accession_Number","link_en":"/gea/submission-e.html#Experimental_Design_Term_Accession_Number"},{"id":"biological_variation_design","name":"biological variation design","description":"A design type investigates differences caused by intrinsic characteristics of an organism(s) or biological system; epidemiological reasons (history of biosources); manipulation, treatment or modification of an organism(s).","link_ja":"/gea/submission.html#biological_variation_design","link_en":"/gea/submission-e.html#biological_variation_design"},{"id":"biomolecular_annotation_design","name":"biomolecular annotation design","description":"These types are designed to investigate functions, processes, locations and identity at the molecular level e.g. genotyping.","link_ja":"/gea/submission.html#biomolecular_annotation_design","link_en":"/gea/submission-e.html#biomolecular_annotation_design"},{"id":"methodological_variation_design","name":"methodological variation design","description":"This design type investigates differences caused by application of protocols, hardware, software and bioassay relationships.","link_ja":"/gea/submission.html#methodological_variation_design","link_en":"/gea/submission-e.html#methodological_variation_design"},{"id":"Experimental_Factor_Name","name":"Experimental Factor Name","description":"A user-defined name for each experimental factor studied by the experiment. These experimental factors represent the variables within the investigation (e.g. growth condition, genotype, organism part, disease state). The actual values of these variables will be listed in the SDRF file, in \"Factor Value [&lt;factor name&gt;]\" colummns. <span class=\"green\">Used as an identifier within the MAGE-TAB document.</span>","link_ja":"/gea/submission.html#Experimental_Factor_Name","link_en":"/gea/submission-e.html#Experimental_Factor_Name"},{"id":"Experimental_Factor_Type","name":"Experimental Factor Type","description":"A term describing the type of each experimental factor. These terms will usually come from the <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php\">MGED Ontology</a>. The <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#ExperimentalFactorCategory\">ExperimentalFactorCategory subclasses</a> are particularly useful here. See for example the list of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#BioMaterialCharacteristics\">BioMaterialCharacteristicCategory terms</a> available. <span class=\"blue\">Controlled vocabulary term</span>.","link_ja":"/gea/submission.html#Experimental_Factor_Type","link_en":"/gea/submission-e.html#Experimental_Factor_Type"},{"id":"Experimental_Factor_Term_Source_REF","name":"Experimental Factor Term Source REF","description":"The source of the <a href=\"#Experimental_Factor_Type\">Experimental Factor Type</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).","link_ja":"/gea/submission.html#Experimental_Factor_Term_Source_REF","link_en":"/gea/submission-e.html#Experimental_Factor_Term_Source_REF"},{"id":"Experimental_Factor_Term_Accession_Number","name":"Experimental Factor Term Accession Number","description":"The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.","link_ja":"/gea/submission.html#Experimental_Factor_Term_Accession_Number","link_en":"/gea/submission-e.html#Experimental_Factor_Term_Accession_Number"},{"id":"Person_Last_Name","name":"Person Last Name","description":"The last name of each person associated with the experiment.","link_ja":"/gea/submission.html#Person_Last_Name","link_en":"/gea/submission-e.html#Person_Last_Name"},{"id":"Person_First_Name","name":"Person First Name","description":"The first name of each person associated with the experiment.","link_ja":"/gea/submission.html#Person_First_Name","link_en":"/gea/submission-e.html#Person_First_Name"},{"id":"Person_Mid_Initials","name":"Person Mid Initials","description":"The middle initials of each person associated with the experiment.","link_ja":"/gea/submission.html#Person_Mid_Initials","link_en":"/gea/submission-e.html#Person_Mid_Initials"},{"id":"Person_Email","name":"Person Email","description":"The email address of each person associated with the experiment. The contact information is not made public.","link_ja":"/gea/submission.html#Person_Email","link_en":"/gea/submission-e.html#Person_Email"},{"id":"Person_Phone","name":"Person Phone","description":"The telephone number of each person associated with the experiment. The contact information is not made public.","link_ja":"/gea/submission.html#Person_Phone","link_en":"/gea/submission-e.html#Person_Phone"},{"id":"Person_Fax","name":"Person Fax","description":"The Fax number of each person associated with the experiment. The contact information is not made public.","link_ja":"/gea/submission.html#Person_Fax","link_en":"/gea/submission-e.html#Person_Fax"},{"id":"Person_Address","name":"Person Address","description":"The street address of each person associated with the experiment. The contact information is not made public.","link_ja":"/gea/submission.html#Person_Address","link_en":"/gea/submission-e.html#Person_Address"},{"id":"Person_Affiliation","name":"Person Affiliation","description":"The organization affiliation for each person associated with the experiment. This is used for public display.","link_ja":"/gea/submission.html#Person_Affiliation","link_en":"/gea/submission-e.html#Person_Affiliation"},{"id":"Person_Roles","name":"Person Roles","description":"The role(s) performed by each person. Only \"submitter\" is allowed in GEA.","link_ja":"/gea/submission.html#Person_Roles","link_en":"/gea/submission-e.html#Person_Roles"},{"id":"Person_Roles_Term_Source_REF","name":"Person Roles Term Source REF","description":"The source of the <a href=\"#Person_Roles\">Person Roles</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).","link_ja":"/gea/submission.html#Person_Roles_Term_Source_REF","link_en":"/gea/submission-e.html#Person_Roles_Term_Source_REF"},{"id":"Person_Roles_Term_Accession_Number","name":"Person Roles Term Accession Number","description":"The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.","link_ja":"/gea/submission.html#Person_Roles_Term_Accession_Number","link_en":"/gea/submission-e.html#Person_Roles_Term_Accession_Number"},{"id":"Protocol","name":"Protocol","description":"A protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process.","link_ja":"/gea/submission.html#Protocol","link_en":"/gea/submission-e.html#Protocol"},{"id":"sample collection protocol","name":"sample_collection_protocol","description":"A protocol describes how biological samples for an experiment are sourced.","link_ja":"/gea/submission.html#sample collection protocol","link_en":"/gea/submission-e.html#sample collection protocol"},{"id":"nucleic acid extraction protocol","name":"nucleic_acid_extraction_protocol","description":"A protocol describes how a material separation to recover the nucleic acid fraction of an input material is performed.","link_ja":"/gea/submission.html#nucleic acid extraction protocol","link_en":"/gea/submission-e.html#nucleic acid extraction protocol"},{"id":"nucleic acid library construction protocol","name":"nucleic_acid_library_construction_protocol","description":"A protocol describes the processes performed and equipment used to prepare nucleic acid sequencing library.","link_ja":"/gea/submission.html#nucleic acid library construction protocol","link_en":"/gea/submission-e.html#nucleic acid library construction protocol"},{"id":"nucleic acid sequencing protocol","name":"nucleic_acid_sequencing_protocol","description":"A protocol describes the processes performed and equipment used to determine the order of nucleotide bases in a nucleic acid sample.","link_ja":"/gea/submission.html#nucleic acid sequencing protocol","link_en":"/gea/submission-e.html#nucleic acid sequencing protocol"},{"id":"nucleic acid labeling protocol","name":"nucleic_acid_labeling_protocol","description":"A protocol describes how input nucleic acid material is labeled.","link_ja":"/gea/submission.html#nucleic acid labeling protocol","link_en":"/gea/submission-e.html#nucleic acid labeling protocol"},{"id":"nucleic acid hybridization to array protocol","name":"nucleic_acid_hybridization_to_array_protocol","description":"A protocol describing the hybridisation of the target nucleic acid sample to a fixed probe on the array.","link_ja":"/gea/submission.html#nucleic acid hybridization to array protocol","link_en":"/gea/submission-e.html#nucleic acid hybridization to array protocol"},{"id":"array scanning and feature extraction protocol","name":"array_scanning_and_feature_extraction_protocol","description":"A protocol describing an image acquisition process that generates an image and features extracted in numerical form from an array.","link_ja":"/gea/submission.html#array scanning and feature extraction protocol","link_en":"/gea/submission-e.html#array scanning and feature extraction protocol"},{"id":"normalization data transformation protocol","name":"normalization_data_transformation_protocol","description":"A protocol describing a data transformation in which data transformation has the objective normalization.","link_ja":"/gea/submission.html#normalization data transformation protocol","link_en":"/gea/submission-e.html#normalization data transformation protocol"},{"id":"growth protocol","name":"growth_protocol","description":"A protocol which provides instructions on the growth of a biological sample.","link_ja":"/gea/submission.html#growth protocol","link_en":"/gea/submission-e.html#growth protocol"},{"id":"treatment protocol","name":"treatment_protocol","description":"A protocol in which the aim is to treat a sample for some experimental analysis of outcome.","link_ja":"/gea/submission.html#treatment protocol","link_en":"/gea/submission-e.html#treatment protocol"},{"id":"conversion protocol","name":"conversion_protocol","description":"Describes the conversion of samples (e.g. RNA samples) to another form (e.g. complementary DNA). For example, various RNA modifications prior to immunoprecipitation.","link_ja":"/gea/submission.html#conversion protocol","link_en":"/gea/submission-e.html#conversion protocol"},{"id":"dissection protocol","name":"dissection_protocol","description":"Describes the procedure which dissects biological materials into anatomical sub-components, e.g. specific organs or tissues.","link_ja":"/gea/submission.html#dissection protocol","link_en":"/gea/submission-e.html#dissection protocol"},{"id":"high throughput sequence alignment protocol","name":"high_throughput_sequence_alignment_protocol","description":"A protocol which provides instructions on the alignment of sequencing reads to reference genome.","link_ja":"/gea/submission.html#high throughput sequence alignment protocol","link_en":"/gea/submission-e.html#high throughput sequence alignment protocol"},{"id":"Quality_Control_Term_Source_REF","name":"Quality Control Term Source REF","description":"The source of the <a href=\"#Quality_Control_Type\">Quality Control Type</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).","link_ja":"/gea/submission.html#Quality_Control_Term_Source_REF","link_en":"/gea/submission-e.html#Quality_Control_Term_Source_REF"},{"id":"Quality_Control_Term_Accession_Number","name":"Quality Control Term Accession Number","description":"The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.","link_ja":"/gea/submission.html#Quality_Control_Term_Accession_Number","link_en":"/gea/submission-e.html#Quality_Control_Term_Accession_Number"},{"id":"Replicate_Type","name":"Replicate Type","description":"The replicate strategies used. Typically these terms should come from the <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php\">MGED Ontology</a>. See for example the list of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#ReplicateDescriptionType\">ReplicateDescriptionType terms</a>. <span class=\"blue\">Controlled vocabulary term.</span>","link_ja":"/gea/submission.html#Replicate_Type","link_en":"/gea/submission-e.html#Replicate_Type"},{"id":"Replicate_Term_Source_REF","name":"Replicate Term Source REF","description":"The source of the <a href=\"#Replicate_Type\">Replicate Type</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).","link_ja":"/gea/submission.html#Replicate_Term_Source_REF","link_en":"/gea/submission-e.html#Replicate_Term_Source_REF"},{"id":"Replicate_Term_Accession_Number","name":"Replicate Term Accession Number","description":"The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.","link_ja":"/gea/submission.html#Replicate_Term_Accession_Number","link_en":"/gea/submission-e.html#Replicate_Term_Accession_Number"},{"id":"Normalization_Type","name":"Normalization Type","description":"The normalization strategies used. Typically these terms should come from the <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php\">MGED Ontology</a>. See for example the list of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#NormalizationDescriptionType\">NormalizationDescriptionType terms</a>. <span class=\"blue\">Controlled vocabulary term.</span>","link_ja":"/gea/submission.html#Normalization_Type","link_en":"/gea/submission-e.html#Normalization_Type"},{"id":"Normalization_Term_Source_REF","name":"Normalization Term Source REF","description":"The source of the <a href=\"#Normalization_Type\">Normalization Type</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).","link_ja":"/gea/submission.html#Normalization_Term_Source_REF","link_en":"/gea/submission-e.html#Normalization_Term_Source_REF"},{"id":"Normalization_Term_Accession_Number","name":"Normalization Term Accession Number","description":"The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.","link_ja":"/gea/submission.html#Normalization_Term_Accession_Number","link_en":"/gea/submission-e.html#Normalization_Term_Accession_Number"},{"id":"Date_of_Experiment","name":"Date of Experiment","description":"The date on which the experiment was performed. The date should be entered in the \"YYYY-MM-DD\" format (ex. 2011-01-01). <span class=\"red\">This tag can only have one value.</span>","link_ja":"/gea/submission.html#Date_of_Experiment","link_en":"/gea/submission-e.html#Date_of_Experiment"},{"id":"Public_Release_Date","name":"Public Release Date","description":"The date on which the experimental data will be/was released. The date should be entered in the \"YYYY-MM-DD\" format (ex. 2011-01-01). <span class=\"red\">This tag can only have one value.</span>","link_ja":"/gea/submission.html#Public_Release_Date","link_en":"/gea/submission-e.html#Public_Release_Date"},{"id":"GEA_PubMed_ID","name":"PubMed ID","description":"The PubMed IDs of the publication(s) associated with this investigation (where available).","link_ja":"/gea/submission.html#GEA_PubMed_ID","link_en":"/gea/submission-e.html#GEA_PubMed_ID"},{"id":"GEA_DOI","name":"DOI","description":"A Digital Object Identifier (DOI) for each publication (where available). When both PubMed ID and DOI are available, enter the PubMed ID.","link_ja":"/gea/submission.html#GEA_DOI","link_en":"/gea/submission-e.html#GEA_DOI"},{"id":"Publication_Author_List","name":"Publication Author List","description":"The list of authors associated with each publication.","link_ja":"/gea/submission.html#Publication_Author_List","link_en":"/gea/submission-e.html#Publication_Author_List"},{"id":"Publication_Title","name":"Publication Title","description":"The title of each publication.","link_ja":"/gea/submission.html#Publication_Title","link_en":"/gea/submission-e.html#Publication_Title"},{"id":"Publication_Status","name":"Publication Status","description":"A term describing the status of each publication (e.g. \"submitted\", \"in preparation\", \"published\"). <span class=\"blue\">Controlled vocabulary term.</span>","link_ja":"/gea/submission.html#Publication_Status","link_en":"/gea/submission-e.html#Publication_Status"},{"id":"Publication_Status_Term_Source_REF","name":"Publication Status Term Source REF","description":"The source of the <a href=\"#Publication_Status\">Publication Status</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).","link_ja":"/gea/submission.html#Publication_Status_Term_Source_REF","link_en":"/gea/submission-e.html#Publication_Status_Term_Source_REF"},{"id":"Publication_Status_Term_Accession_Number","name":"Publication Status Term Accession Number","description":"The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.","link_ja":"/gea/submission.html#Publication_Status_Term_Accession_Number","link_en":"/gea/submission-e.html#Publication_Status_Term_Accession_Number"},{"id":"Array_Design_Accession","name":"Array Design Accession","description":"Specify an Array Design by accession number (e.g., A-GEAD-1)","link_ja":"/gea/submission.html#Array_Design_Accession","link_en":"/gea/submission-e.html#Array_Design_Accession"},{"id":"Array_Design_Filename","name":"Array Design Filename","description":"Specify an Array Design by its filename uploaded into the same submission.","link_ja":"/gea/submission.html#Array_Design_Filename","link_en":"/gea/submission-e.html#Array_Design_Filename"},{"id":"Number_of_channels","name":"Number of channels","description":"Choose a number of channels of microarray (single or dual).","link_ja":"/gea/submission.html#Number_of_channels","link_en":"/gea/submission-e.html#Number_of_channels"},{"id":"Data_File_Type","name":"Data File Type","description":"GEA requires submission of both raw and processed data files.","link_ja":"/gea/submission.html#Data_File_Type","link_en":"/gea/submission-e.html#Data_File_Type"},{"id":"Raw_data_type","name":"Raw data type","description":"Upload raw data file per each assay (sample) [recommended] or raw data matrix file from assays (samples).","link_ja":"/gea/submission.html#Raw_data_type","link_en":"/gea/submission-e.html#Raw_data_type"},{"id":"Processed_data_type","name":"Processed data type","description":"Upload processed data file per each assay (sample) [recommended] or processed data matrix file from assays (samples).","link_ja":"/gea/submission.html#Processed_data_type","link_en":"/gea/submission-e.html#Processed_data_type"},{"id":"Protocol_Name","name":"Protocol Name","description":"The names of the protocols used within the MAGE-TAB document. These will be referenced in the SDRF in the <a href=\"/dra/submission-e.html#Protocol_REF\">\"Protocol REF\"</a> columns. <span class=\"green\">Used as an identifier within the MAGE-TAB document.</span>","link_ja":"/gea/submission.html#Protocol_Name","link_en":"/gea/submission-e.html#Protocol_Name"},{"id":"Protocol_Type","name":"Protocol Type","description":"The type of the protocol, taken from a controlled vocabulary. Typically this term should come from the <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php\">MGED Ontology</a>. See for example the list of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#ExperimentalProtocolType\">ExperimentalProtocolType terms</a>. <span class=\"blue\">Controlled vocabulary term.</span>","link_ja":"/gea/submission.html#Protocol_Type","link_en":"/gea/submission-e.html#Protocol_Type"},{"id":"Protocol_Description","name":"Protocol Description","description":"A free-text description of the protocol. This text is included in a single tab-delimited field. If you wish to include tab or newline characters as part of this text, you must enclose the whole text within double quotes (\").","link_ja":"/gea/submission.html#Protocol_Description","link_en":"/gea/submission-e.html#Protocol_Description"},{"id":"Protocol_Parameters","name":"Protocol Parameters","description":"A semicolon-delimited list of parameter names; these names are used in the SDRF file (as <a href=\"/dra/submission-e.html#Parameter_Value\">\"Parameter Value [&lt;parameter name&gt;]\"</a> headers) to list the values used for each protocol parameter. If more than one parameter was used for a given protocol, they should be separated with semicolons (\";\"). <span class=\"green\">Used as an identifier within the MAGE-TAB document.</span>","link_ja":"/gea/submission.html#Protocol_Parameters","link_en":"/gea/submission-e.html#Protocol_Parameters"},{"id":"Protocol_Hardware","name":"Protocol Hardware","description":"The hardware used by the protocol.","link_ja":"/gea/submission.html#Protocol_Hardware","link_en":"/gea/submission-e.html#Protocol_Hardware"},{"id":"Protocol_Software","name":"Protocol Software","description":"The software used by the protocol.","link_ja":"/gea/submission.html#Protocol_Software","link_en":"/gea/submission-e.html#Protocol_Software"},{"id":"Protocol_Contact","name":"Protocol Contact","description":"The name and contact details to be used for enquiries concerning the protocol.","link_ja":"/gea/submission.html#Protocol_Contact","link_en":"/gea/submission-e.html#Protocol_Contact"},{"id":"Protocol_Term_Source_REF","name":"Protocol Term Source REF","description":"The source of the <a href=\"#Protocol_Type\">Protocol Type</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below). Examples: MGED ontology, OBI.","link_ja":"/gea/submission.html#Protocol_Term_Source_REF","link_en":"/gea/submission-e.html#Protocol_Term_Source_REF"},{"id":"Protocol_Term_Accession_Number","name":"Protocol Term Accession Number","description":"The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.","link_ja":"/gea/submission.html#Protocol_Term_Accession_Number","link_en":"/gea/submission-e.html#Protocol_Term_Accession_Number"},{"id":"SDRF_File","name":"SDRF File","description":"The name(s) of the SDRF file(s) accompanying this IDF file.","link_ja":"/gea/submission.html#SDRF_File","link_en":"/gea/submission-e.html#SDRF_File"},{"id":"Term_Source_Name","name":"Term Source Name","description":"The names of the Term Sources (ontologies or databases) used within the MAGE-TAB document. This name will be used in all corresponding \"Term Source REF\" fields. Examples: MGED Ontology, NCI MetaThesaurus, ArrayExpress. <span class=\"green\">Used as an identifier within the MAGE-TAB document.</span>","link_ja":"/gea/submission.html#Term_Source_Name","link_en":"/gea/submission-e.html#Term_Source_Name"},{"id":"Term_Source_File","name":"Term Source File","description":"A filename or valid URI at which the Term Source may be accessed.","link_ja":"/gea/submission.html#Term_Source_File","link_en":"/gea/submission-e.html#Term_Source_File"},{"id":"Term_Source_Version","name":"Term Source Version","description":"The version of the Term Source used throughout the MAGE-TAB document.","link_ja":"/gea/submission.html#Term_Source_Version","link_en":"/gea/submission-e.html#Term_Source_Version"},{"id":"Comment_user_defined_tag","name":"Comment[]","description":"A user-defined value which is associated with the investigation. For example, GEA uses \"Comment [BioProject ID]\" to record the BioProject ID; alternatively, tags such as \"Comment [Goal]\" might be used to indicate the purpose behind an investigation.","link_ja":"/gea/submission.html#Comment_user_defined_tag","link_en":"/gea/submission-e.html#Comment_user_defined_tag"},{"id":"Comment_BioProject_ID","name":"Comment[BioProject ID]","description":"The BioProject ID of the associated project. This is used to group the related INSDC records. See the <a href=\"/bioproject/index-e.html\">DDBJ BioProject website</a> for details.","link_ja":"/gea/submission.html#Comment_BioProject_ID","link_en":"/gea/submission-e.html#Comment_BioProject_ID"},{"id":"Comment_DRA_accession","name":"Comment[DRA accession]","description":"The DRA accession number(s) of the associated raw sequencing reads. This field links the processed data in the GEA and raw data in the DRA. When the data set is submitted to the GEA, the GEA registers raw data to the DRA and fills in this field.","link_ja":"/gea/submission.html#Comment_DRA_accession","link_en":"/gea/submission-e.html#Comment_DRA_accession"},{"id":"Comment_Center_Name","name":"Comment[Center Name]","description":"The center name of the associated DRA submission.","link_ja":"/gea/submission.html#Comment_Center_Name","link_en":"/gea/submission-e.html#Comment_Center_Name"},{"id":"Comment_Laboratory_Name","name":"Comment[Laboratory Name]","description":"The Laboratory name of the associated DRA submission.","link_ja":"/gea/submission.html#Comment_Laboratory_Name","link_en":"/gea/submission-e.html#Comment_Laboratory_Name"},{"id":"Source_Name","name":"Source Name","description":"      This column contains user-defined names for the <a href=\"#Sources\">Source</a> materials.  <span class=\"green\">Used as an identifier within      the MAGE-TAB document.</span>      <br>      The following      columns can be used to annotate Source Name columns:      <ul><li><a href=\"#Characteristics\">Characteristics[]</a></li><li><a href=\"#Provider\">Provider</a></li><li><a href=\"#Material_Type\">Material Type</a></li><li><a href=\"#Description\">Description</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Source_Name","link_en":"/gea/submission-e.html#Source_Name"},{"id":"GEA_Sample_Name","name":"Sample Name","description":"This column contains user-defined      names for each <a href=\"#Samples\">Sample</a> material. <span class=\"green\">Used as an identifier within      the MAGE-TAB document.</span>      <br>      The following columns can be used to annotate Sample      Name columns:      <ul><li><a href=\"#Characteristics\">Characteristics[]</a></li><li><a href=\"#Material_Type\">Material Type</a></li><li><a href=\"#Description\">Description</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#GEA_Sample_Name","link_en":"/gea/submission-e.html#GEA_Sample_Name"},{"id":"Extract_Name","name":"Extract Name","description":"This column contains user-defined      names for each <a href=\"#Extracts\">Extract</a>      material. <span class=\"green\">Used as an identifier within      the MAGE-TAB document.</span>      <br>      The following columns can be used to annotate Extract      Name columns:      <ul><li><a href=\"#Characteristics\">Characteristics[]</a></li><li><a href=\"#Material_Type\">Material Type</a></li><li><a href=\"#Description\">Description</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Extract_Name","link_en":"/gea/submission-e.html#Extract_Name"},{"id":"Labeled_Extract_Name","name":"Labeled Extract Name","description":"This column contains user-defined names for      each <a href=\"#Labeledextracts\">Labeled Extract</a>      material. <span class=\"green\">Used as an identifier within the MAGE-TAB      document.</span>      <br>      The following columns can be used to annotate Labeled      Extract Name columns      <ul><li><a href=\"#Label\">Label</a> (<span class=\"red\">required</span>)</li><li><a href=\"#Characteristics\">Characteristics[]</a></li><li><a href=\"#Material_Type\">Material Type</a></li><li><a href=\"#Description\">Description</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Labeled_Extract_Name","link_en":"/gea/submission-e.html#Labeled_Extract_Name"},{"id":"Hybridization_Name","name":"Hybridization Name","description":"This column contains user-defined names for each      <a href=\"#Hybridizations\">Hybridization</a>. <span class=\"green\">Used as an identifier within the MAGE-TAB      document.</span>      <br>      The following columns can be used to annotate Hybridization      Name columns      <ul><li><a href=\"#Array_Design_REF\">Array Design REF</a> (<span class=\"red\">required</span>)</li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Hybridization_Name","link_en":"/gea/submission-e.html#Hybridization_Name"},{"id":"Assay_Name","name":"Assay Name","description":"This column contains user-defined      names for each Assay. \"Assay Name\" may be used instead of      \"Hybridization Name\" to identify generic biological assays, such      as rtPCR and sequencing. Note that this column should not be used for      submission of regular microarray experiments to      GEA. All Assay Name columns must be followed by a Technology Type column.      <span class=\"green\">Used as an identifier within      the MAGE-TAB document.</span>      <br>      The following columns can be used to annotate      Assay Name columns      <ul><li><a href=\"#Technology_Type\">Technology Type</a> (<span class=\"red\">required</span>)</li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Assay_Name","link_en":"/gea/submission-e.html#Assay_Name"},{"id":"Scan_Name","name":"Scan Name","description":"This optional column contains      user-defined names for each <a href=\"#Scan_section\">Scan</a>      event. <span class=\"green\">Used as an identifier within      the MAGE-TAB document.</span>      <br>      The following columns can be used to annotate Scan Name      columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Scan_Name","link_en":"/gea/submission-e.html#Scan_Name"},{"id":"Normalization_Name","name":"Normalization Name","description":"This optional column contains user-defined      names for each <a href=\"#Normalization_section\">Normalization</a> event.      <span class=\"green\">Used as an identifier within the MAGE-TAB      document.</span><br>      The      following columns can be used to annotate Normalization Name      columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Normalization_Name","link_en":"/gea/submission-e.html#Normalization_Name"},{"id":"Array_Data_File","name":"Array Data File","description":"This column contains a list of <a href=\"#Array_Data_Files\">raw data files</a>, one for each      row of the SDRF file, linking these data files to their      respective hybridizations. The following columns can be used to      annotate Array Data File columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Array_Data_File","link_en":"/gea/submission-e.html#Array_Data_File"},{"id":"Derived_Array_Data_File","name":"Derived Array Data File","description":"This column      contains a list of <a href=\"#Derived_Array_Data_Files\">processed data files</a>,      one for each row of the SDRF file, linking these data files to      their respective hybridizations. The following columns can be      used to annotate Derived Array Data File columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Derived_Array_Data_File","link_en":"/gea/submission-e.html#Derived_Array_Data_File"},{"id":"Array_Data_Matrix_File","name":"Array Data Matrix File","description":"This column      contains a list of raw data matrix files, where data from      multiple hybridizations is stored in a single file, and the data      mapped to each hybridization via the <a href=\"datafile_e.html#matrix\">Data Matrix</a> format      itself. The following columns can be used to annotate Array Data      Matrix File columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Array_Data_Matrix_File","link_en":"/gea/submission-e.html#Array_Data_Matrix_File"},{"id":"Derived_Array_Data_Matrix_File","name":"Derived Array Data Matrix File","description":"This      column contains a list of processed data matrix files, where      data from multiple hybridizations is stored in a single file,      and the data mapped to each hybridization (or scan, or      normalization) via the <a href=\"datafile_e.html#matrix\">Data Matrix</a> format      itself. The following columns can be used to annotate Derived      Array Data Matrix File columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Derived_Array_Data_Matrix_File","link_en":"/gea/submission-e.html#Derived_Array_Data_Matrix_File"},{"id":"Image_File","name":"Image File","description":"This optional column contains a list of image      files, one for each row of the SDRF file, linking these image      files to their respective hybridizations. Note that GEA      does not store image data due to size constraints on the      database. If desired, you may use this column to include links      to image files stored on your local webserver. The following      columns can be used to annotate Derived Array Data File      columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>","link_ja":"/gea/submission.html#Image_File","link_en":"/gea/submission-e.html#Image_File"},{"id":"Array_Design_REF","name":"Array Design REF","description":"This column contains references to the array      design used for each hybridization. For GEA submissions      this should be an ArrayExpress/GEA accession number,      e.g. \"A-GEAD-1\". The following columns can be used to annotate      Array Design REF columns      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>      The Term Source REF column here can be used to      point to the source of the array design referenced; however for      GEA submissions this should always be ArrayExpress, and so this column is in effect ignored.","link_ja":"/gea/submission.html#Array_Design_REF","link_en":"/gea/submission-e.html#Array_Design_REF"},{"id":"Protocol_REF","name":"Protocol REF","description":"This column contains references to <a href=\"#Protocol_Name\">Protocol Names</a>      defined in the IDF, or accession numbers of protocols already      deposited with ArrayExpress/GEA. The following columns can be used      to annotate Protocol REF columns      <ul><li><a href=\"#Parameter_Value\">Parameter Value[]</a></li><li><a href=\"#Performer\">Performer</a></li><li><a href=\"#Date\">Date</a></li><li><a href=\"#Term_Source_REF\">Term Source REF</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>      The Term Source REF column here can be used to      point to the source of the protocol referenced, if it is not      contained within the IDF; for GEA submissions this      should always be ArrayExpress, and a suitable      ArrayExpress Term Source should be defined in the IDF.","link_ja":"/gea/submission.html#Protocol_REF","link_en":"/gea/submission-e.html#Protocol_REF"},{"id":"Characteristics","name":"Characteristics[]","description":"      <span class=\"blue\">Controlled vocabulary term or      measurement.</span> Used as an attribute column following <a href=\"#Source_Name\">Source Name</a>, <a href=\"#Sample_Name\">Sample Name</a>, <a href=\"#Extract_Name\">Extract Name</a>, or <a href=\"#Labeled_Extract_Name\">Labeled Extract Name</a>. This      column contains terms describing each material according to the      characteristics category indicated in the column header. For      example, a column headed \"Characteristics[OrganismPart]\" would      contain individual OrganismPart terms. These terms may be      user-defined (the default), from an external ontology source      (indicated using a Term Source REF column), or a measurement      (indicated using a Unit[] column).      The following columns can be used to annotate Characteristics[&lt;category term&gt;]:      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li><li><a href=\"#Unit\">Unit[]</a></li>      </ul>","link_ja":"/gea/submission.html#Characteristics","link_en":"/gea/submission-e.html#Characteristics"},{"id":"GEA_Provider","name":"Provider","description":"Used as an attribute column      following <a href=\"#Source_Name\">Source Name</a>. A free-text      string identifying the organization or person from which the      Source was obtained.","link_ja":"/gea/submission.html#GEA_Provider","link_en":"/gea/submission-e.html#GEA_Provider"},{"id":"Material_Type","name":"Material Type","description":"<span class=\"blue\">Controlled vocabulary      term.</span> Used as an attribute column following <a href=\"#Source_Name\">Source Name</a>, <a href=\"#Sample_Name\">Sample Name</a>, <a href=\"#Extract_Name\">Extract Name</a>, or <a href=\"#Labeled_Extract_Name\">Labeled Extract Name</a>. This      column contains terms describing the type of each material. For      GEA submissions this term should be an instance of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#MaterialType\">MaterialType      from the MGED Ontology</a>. Examples: whole_organism,      organism_part, cell, total_RNA. The following columns can be      used to annotate Material Type columns      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li>      </ul>      The Term Source REF column in this case would      point to the ontology (defined in the IDF) from which the      Material Type terms are taken (the MGED Ontology in the example      above).","link_ja":"/gea/submission.html#Material_Type","link_en":"/gea/submission-e.html#Material_Type"},{"id":"GEA_Label","name":"Label","description":"      <span class=\"blue\">Controlled vocabulary term.</span> Used as an      attribute column following <a href=\"#Labeled_Extract_Name\">Labeled Extract Name</a>. The label      compound which is conjugated to an Extract to create the Labeled      Extract. For GEA submissions this term should be an      instance of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#LabelCompound\">LabelCompound      from the MGED Ontology</a>. Examples: Cy3, Cy5, biotin,      alexa_546. The following columns can be used to annotate Label      columns      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li>      </ul>      The Term Source REF column in this case would      point to the ontology (defined in the IDF) from which the Label      terms are taken (the MGED Ontology in the example above).","link_ja":"/gea/submission.html#GEA_Label","link_en":"/gea/submission-e.html#GEA_Label"},{"id":"Technology_Type","name":"Technology Type","description":"<span class=\"blue\">Controlled vocabulary term.</span> Used as an      attribute column following <a href=\"#Assay_Name\">Assay      Name</a>. This column contains terms describing the type of each      generic (non-hybridization) assay. Example: high_throughput_sequencing. The following      columns can be used to annotate Technology Type columns      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li>      </ul>      The Term Source REF column in this case would      point to the ontology (defined in the IDF) from which the      Technology Type terms are taken.","link_ja":"/gea/submission.html#Technology_Type","link_en":"/gea/submission-e.html#Technology_Type"},{"id":"Factor_Value","name":"Factor Value[]","description":"<span class=\"blue\">Controlled vocabulary term or measurement.</span>      This column contains terms describing the experimental factor      values (i.e., variables) for each row of the SDRF. The      Experimental Factor Name to which it pertains (from the      accompanying IDF) should be indicated in the column header. For      example, if you have this in your IDF <div class=\"item_table dor\">      <table><tr><td><a href=\"/dra/submission-e.html#Experimental_Factor_Name\" class=\"plain\">Experimental Factor Name</a></td><td>Tissue</td></tr><tr><td><a href=\"/dra/submission-e.html#Experimental_Factor_Type\" class=\"plain\">Experimental Factor Type</a></td><td>organism_part</td></tr></table></div>      You could then use this factor in your SDRF      (assuming you had also defined the \"Mouse Anatomy\" term source      in your IDF) <div class=\"item_table dor\">      <table><tr><td><a href=\"#Factor_Value\" class=\"plain\">Factor Value[Tissue]</a></td>  <td><a href=\"#Term_Source_REF\" class=\"plain\">Term Source REF</a></td></tr><tr><td>brain</td><td>Mouse Anatomy</td></tr><tr><td>kidney</td><td>Mouse Anatomy</td></tr><tr><td>liver</td><td>Mouse Anatomy</td></tr><tr><td>intestine</td><td>Mouse Anatomy</td></tr><tr><td>pancreas</td><td>Mouse Anatomy</td></tr></table></div>      The terms in the column may be user-defined (the      default), from an external ontology source (indicated using a      Term Source REF column), or a measurement (indicated using a      Unit[] column).      In the example above, the column terms would be      treated as describing organism parts. For more precise control      over the treatment of these terms, the optional form \"Factor      Value [] ()\" is available, e.g. \"Factor Value [growth condition      EF] (Nutrients)\".","link_ja":"/gea/submission.html#Factor_Value","link_en":"/gea/submission-e.html#Factor_Value"},{"id":"Performer","name":"Performer","description":"Used as an attribute column      following <a href=\"#Protocol_REF\">Protocol REF</a>. The name of      the researcher or center name who carried out the protocol. For sequencing protocol, this is used as a run center name in the DRA submission.","link_ja":"/gea/submission.html#Performer","link_en":"/gea/submission-e.html#Performer"},{"id":"Date","name":"Date","description":"      Used as an attribute column following <a href=\"#Protocol_REF\">Protocol REF</a>. The date (and time, where      available) upon which the protocol was performed, in the      following format: YYYY-MM-DDThh:mm:ssZ (for example, 2008-09-12T16:27:27Z)","link_ja":"/gea/submission.html#Date","link_en":"/gea/submission-e.html#Date"},{"id":"Parameter_Value","name":"Parameter Value[]","description":"Used as an attribute column following <a href=\"#Protocol_REF\">Protocol REF</a> columns. This column      contains values for the protocol parameters referenced in the      column header. The following columns can be used to annotate      Parameter Value[] columns      <ul><li><a href=\"#Unit\">Unit[]</a></li><li><a href=\"#Term_Source_REF\">Term Source REF</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>      For example, if a Protocol Name \"Array      Hybridization\" is defined in the accompanying IDF, with Protocol      Parameters \"hyb temp;hyb volume\", the following would be      valid. <div class=\"item_table dor\">      <table><tr><td><a href=\"#Protocol_REF\" class=\"plain\">Protocol REF</a></td>  <td><a href=\"#Parameter_Value\" class=\"plain\">Parameter Value [hyb temp]</a></td>  <td><a href=\"#Unit\" class=\"plain\">Unit [TemperatureUnit]</a></td>  <td><a href=\"#Paramater_Value\" class=\"plain\">Parameter Value [hyb volume]</a></td>  <td><a href=\"#Unit\" class=\"plain\">Unit [VolumeUnit]</a></td></tr><tr><td>Array Hybridization</td><td>55</td><td>degrees_C</td><td>100</td><td>ul</td></tr></table></div> <!-- .item_table.dor -->","link_ja":"/gea/submission.html#Parameter_Value","link_en":"/gea/submission-e.html#Parameter_Value"},{"id":"Unit","name":"Unit[]","description":"<span class=\"blue\">Controlled vocabulary      term.</span> Used as an attribute column following <a href=\"#Characteristics\">Characteristics[]</a>, <a href=\"#Factor_Value\">Factor Value[]</a> or <a href=\"#Parameter_Value\">Parameter Value[]</a>. This column      contains terms describing the unit(s) to be applied to the      values in the preceding column. The type of unit is included in      the column header, e.g. \"Unit[TimeUnit]\". These unit types      should correspond to <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#Unit\">Unit      subclasses from the MGED Ontology</a>. The following columns can      be used to annotate Unit[] columns      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li>      </ul>      The Term Source REF column in this case would      point to the ontology (defined in the IDF) from which the Unit      terms are taken.","link_ja":"/gea/submission.html#Unit","link_en":"/gea/submission-e.html#Unit"},{"id":"GEA_Description","name":"Description","description":"Used as an attribute column      following <a href=\"#Source_Name\">Source Name</a>, <a href=\"#Sample_Name\">Sample Name</a>, <a href=\"#extract_name\">Extract Name</a>, or <a href=\"#Labeled_Extract_Name\">Labeled Extract Name</a>. A      free-text description to be attached to the corresponding      material. To be used sparingly, if at all - most annotations      should be provided using controlled vocabulary terms, using <a href=\"#Characteristics\">Characteristics[]</a> columns.","link_ja":"/gea/submission.html#GEA_Description","link_en":"/gea/submission-e.html#GEA_Description"},{"id":"Term_Source_REF","name":"Term Source REF","description":"Used as an attribute column following any      controlled vocabulary column (e.g., <a href=\"#Characteristics\">Characteristics[]</a>), or column      allowing reference of external entities (e.g., <a href=\"#Protocol_REF\">Protocol REF</a>). This column contains      references to ontology or database Term Sources defined in the      IDF, and from which the values in the previous column were      taken. The following columns can be used to annotate Term Source      REF columns      <ul><li><a href=\"#Term_Accession_Number\">Term Accession Number</a></li>      </ul>","link_ja":"/gea/submission.html#Term_Source_REF","link_en":"/gea/submission-e.html#Term_Source_REF"},{"id":"Term_Accession_Number","name":"Term Accession Number","description":"Used as an      attribute column following <a href=\"#Term_Source_REF\">Term      Source REF</a> columns. This column contains the accession      numbers from the term source used to identify the ontology or      database terms in question. For example <div class=\"item_table dor\">      <table><tr><td><a href=\"#Source_Name\" class=\"plain\">Source Name</a></td>  <td><a href=\"#Characteristics\" class=\"plain\">Characteristics [DiseaseState]</a></td>  <td><a href=\"#Term_Source_REF\" class=\"plain\">Term Source REF</a></td>  <td><a href=\"#Term_Accession_Number\" class=\"plain\">Term Accession Number</a></td></tr><tr><td>Sample 1</td><td>acute lymphocytic leukemia</td><td>NCI Metathesaurus</td><td>C0023449</td></tr></table></div>      (This example relies on the \"NCI Metathesaurus\"      Term Source having been pre-defined in the IDF accompanying the      SDRF.)","link_ja":"/gea/submission.html#Term_Accession_Number","link_en":"/gea/submission-e.html#Term_Accession_Number"},{"id":"Comment","name":"Comment[]","description":"This      column can be used to annotate the main graph node and edge      columns listed above. It is included as an extensibility      mechanism, and should not generally be used to encode meaningful      biological annotation. The column header should contain a name      for the type of values included in the column.","link_ja":"/gea/submission.html#Comment","link_en":"/gea/submission-e.html#Comment"}]
+[
+    {
+        "id": "Area_gea-submitter",
+        "name": "Submitter",
+        "description": "Contact information of submitter(s). Questions and notifications about a submission are contacted to the e-mail address(es) listed here. Personal contact information is considered confidential and is collected to be used by GEA staff should questions arise.",
+        "link_ja": "/gea/metadata.html#Area_gea-submitter",
+        "link_en": "/gea/metadata-e.html#Area_gea-submitter"
+    },
+    {
+        "id": "GEA_Submitting_organization",
+        "name": "Submitting organization",
+        "description": "full name of organization.",
+        "link_ja": "/gea/metadata.html#GEA_Submitting_organization",
+        "link_en": "/gea/metadata-e.html#GEA_Submitting_organization"
+    },
+    {
+        "id": "GEA_Submitting_organization_URL",
+        "name": "Submitting organization URL",
+        "description": "The URL of submitter's organization.",
+        "link_ja": "/gea/metadata.html#GEA_Submitting_organization_URL",
+        "link_en": "/gea/metadata-e.html#GEA_Submitting_organization_URL"
+    },
+    {
+        "id": "Area_data-release",
+        "name": "Data Release",
+        "description": "Select \"Hold date\" within 4 years from now or \"Release\".",
+        "link_ja": "/gea/metadata.html#Area_data-release",
+        "link_en": "/gea/metadata-e.html#Area_data-release"
+    },
+    {
+        "id": "Investigation_Title",
+        "name": "Title",
+        "description": "The overall title of the investigation.",
+        "link_ja": "/gea/metadata.html#Investigation_Title",
+        "link_en": "/gea/metadata-e.html#Investigation_Title"
+    },
+    {
+        "id": "Experiment_Description",
+        "name": "Description",
+        "description": "A short paragraph describing the experiment as free-text. The text should clearly explain what you did in your experiment.",
+        "link_ja": "/gea/metadata.html#Experiment_Description",
+        "link_en": "/gea/metadata-e.html#Experiment_Description"
+    },
+    {
+        "id": "Experiment_Type",
+        "name": "Experiment Type",
+        "description": "Select a type of experiment.",
+        "link_ja": "/gea/metadata.html#Experiment_Type",
+        "link_en": "/gea/metadata-e.html#Experiment_Type"
+    },
+    {
+        "id": "Experimental_Design",
+        "name": "Experimental Design",
+        "description": "The experiment design types which are applicable to this study.",
+        "link_ja": "/gea/metadata.html#Experimental_Design",
+        "link_en": "/gea/metadata-e.html#Experimental_Design"
+    },
+    {
+        "id": "Experimental_Design_Term_Source_REF",
+        "name": "Experimental Design Term Source REF",
+        "description": "The source of the Experimental Design terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).",
+        "link_ja": "/gea/metadata.html#Experimental_Design_Term_Source_REF",
+        "link_en": "/gea/metadata-e.html#Experimental_Design_Term_Source_REF"
+    },
+    {
+        "id": "Experimental_Design_Term_Accession_Number",
+        "name": "Experimental Design Term Accession Number",
+        "description": "The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.",
+        "link_ja": "/gea/metadata.html#Experimental_Design_Term_Accession_Number",
+        "link_en": "/gea/metadata-e.html#Experimental_Design_Term_Accession_Number"
+    },
+    {
+        "id": "biological_variation_design",
+        "name": "biological variation design",
+        "description": "A design type investigates differences caused by intrinsic characteristics of an organism(s) or biological system; epidemiological reasons (history of biosources); manipulation, treatment or modification of an organism(s).",
+        "link_ja": "/gea/metadata.html#biological_variation_design",
+        "link_en": "/gea/metadata-e.html#biological_variation_design"
+    },
+    {
+        "id": "biomolecular_annotation_design",
+        "name": "biomolecular annotation design",
+        "description": "These types are designed to investigate functions, processes, locations and identity at the molecular level e.g. genotyping.",
+        "link_ja": "/gea/metadata.html#biomolecular_annotation_design",
+        "link_en": "/gea/metadata-e.html#biomolecular_annotation_design"
+    },
+    {
+        "id": "methodological_variation_design",
+        "name": "methodological variation design",
+        "description": "This design type investigates differences caused by application of protocols, hardware, software and bioassay relationships.",
+        "link_ja": "/gea/metadata.html#methodological_variation_design",
+        "link_en": "/gea/metadata-e.html#methodological_variation_design"
+    },
+    {
+        "id": "Experimental_Factor_Name",
+        "name": "Experimental Factor Name",
+        "description": "A user-defined name for each experimental factor studied by the experiment. These experimental factors represent the variables within the investigation (e.g. growth condition, genotype, organism part, disease state). The actual values of these variables will be listed in the SDRF file, in \"Factor Value [&lt;factor name&gt;]\" colummns. <span class=\"green\">Used as an identifier within the MAGE-TAB document.</span>",
+        "link_ja": "/gea/metadata.html#Experimental_Factor_Name",
+        "link_en": "/gea/metadata-e.html#Experimental_Factor_Name"
+    },
+    {
+        "id": "Experimental_Factor_Type",
+        "name": "Experimental Factor Type",
+        "description": "A term describing the type of each experimental factor. These terms will usually come from the <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php\">MGED Ontology</a>. The <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#ExperimentalFactorCategory\">ExperimentalFactorCategory subclasses</a> are particularly useful here. See for example the list of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#BioMaterialCharacteristics\">BioMaterialCharacteristicCategory terms</a> available. <span class=\"blue\">Controlled vocabulary term</span>.",
+        "link_ja": "/gea/metadata.html#Experimental_Factor_Type",
+        "link_en": "/gea/metadata-e.html#Experimental_Factor_Type"
+    },
+    {
+        "id": "Experimental_Factor_Term_Source_REF",
+        "name": "Experimental Factor Term Source REF",
+        "description": "The source of the <a href=\"#Experimental_Factor_Type\">Experimental Factor Type</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).",
+        "link_ja": "/gea/metadata.html#Experimental_Factor_Term_Source_REF",
+        "link_en": "/gea/metadata-e.html#Experimental_Factor_Term_Source_REF"
+    },
+    {
+        "id": "Experimental_Factor_Term_Accession_Number",
+        "name": "Experimental Factor Term Accession Number",
+        "description": "The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.",
+        "link_ja": "/gea/metadata.html#Experimental_Factor_Term_Accession_Number",
+        "link_en": "/gea/metadata-e.html#Experimental_Factor_Term_Accession_Number"
+    },
+    {
+        "id": "Person_Last_Name",
+        "name": "Person Last Name",
+        "description": "The last name of each person associated with the experiment.",
+        "link_ja": "/gea/metadata.html#Person_Last_Name",
+        "link_en": "/gea/metadata-e.html#Person_Last_Name"
+    },
+    {
+        "id": "Person_First_Name",
+        "name": "Person First Name",
+        "description": "The first name of each person associated with the experiment.",
+        "link_ja": "/gea/metadata.html#Person_First_Name",
+        "link_en": "/gea/metadata-e.html#Person_First_Name"
+    },
+    {
+        "id": "Person_Mid_Initials",
+        "name": "Person Mid Initials",
+        "description": "The middle initials of each person associated with the experiment.",
+        "link_ja": "/gea/metadata.html#Person_Mid_Initials",
+        "link_en": "/gea/metadata-e.html#Person_Mid_Initials"
+    },
+    {
+        "id": "Person_Email",
+        "name": "Person Email",
+        "description": "The email address of each person associated with the experiment. The contact information is not made public.",
+        "link_ja": "/gea/metadata.html#Person_Email",
+        "link_en": "/gea/metadata-e.html#Person_Email"
+    },
+    {
+        "id": "Person_Phone",
+        "name": "Person Phone",
+        "description": "The telephone number of each person associated with the experiment. The contact information is not made public.",
+        "link_ja": "/gea/metadata.html#Person_Phone",
+        "link_en": "/gea/metadata-e.html#Person_Phone"
+    },
+    {
+        "id": "Person_Fax",
+        "name": "Person Fax",
+        "description": "The Fax number of each person associated with the experiment. The contact information is not made public.",
+        "link_ja": "/gea/metadata.html#Person_Fax",
+        "link_en": "/gea/metadata-e.html#Person_Fax"
+    },
+    {
+        "id": "Person_Address",
+        "name": "Person Address",
+        "description": "The street address of each person associated with the experiment. The contact information is not made public.",
+        "link_ja": "/gea/metadata.html#Person_Address",
+        "link_en": "/gea/metadata-e.html#Person_Address"
+    },
+    {
+        "id": "Person_Affiliation",
+        "name": "Person Affiliation",
+        "description": "The organization affiliation for each person associated with the experiment. This is used for public display.",
+        "link_ja": "/gea/metadata.html#Person_Affiliation",
+        "link_en": "/gea/metadata-e.html#Person_Affiliation"
+    },
+    {
+        "id": "Person_Roles",
+        "name": "Person Roles",
+        "description": "The role(s) performed by each person. Only \"submitter\" is allowed in GEA.",
+        "link_ja": "/gea/metadata.html#Person_Roles",
+        "link_en": "/gea/metadata-e.html#Person_Roles"
+    },
+    {
+        "id": "Person_Roles_Term_Source_REF",
+        "name": "Person Roles Term Source REF",
+        "description": "The source of the <a href=\"#Person_Roles\">Person Roles</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).",
+        "link_ja": "/gea/metadata.html#Person_Roles_Term_Source_REF",
+        "link_en": "/gea/metadata-e.html#Person_Roles_Term_Source_REF"
+    },
+    {
+        "id": "Person_Roles_Term_Accession_Number",
+        "name": "Person Roles Term Accession Number",
+        "description": "The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.",
+        "link_ja": "/gea/metadata.html#Person_Roles_Term_Accession_Number",
+        "link_en": "/gea/metadata-e.html#Person_Roles_Term_Accession_Number"
+    },
+    {
+        "id": "Protocol",
+        "name": "Protocol",
+        "description": "A protocol is a plan specification which has sufficient level of detail and quantitative information to communicate it between domain experts, so that different domain experts will reliably be able to independently reproduce the process.",
+        "link_ja": "/gea/metadata.html#Protocol",
+        "link_en": "/gea/metadata-e.html#Protocol"
+    },
+    {
+        "id": "sample collection protocol",
+        "name": "sample_collection_protocol",
+        "description": "A protocol describes how biological samples for an experiment are sourced.",
+        "link_ja": "/gea/metadata.html#sample collection protocol",
+        "link_en": "/gea/metadata-e.html#sample collection protocol"
+    },
+    {
+        "id": "nucleic acid extraction protocol",
+        "name": "nucleic_acid_extraction_protocol",
+        "description": "A protocol describes how a material separation to recover the nucleic acid fraction of an input material is performed.",
+        "link_ja": "/gea/metadata.html#nucleic acid extraction protocol",
+        "link_en": "/gea/metadata-e.html#nucleic acid extraction protocol"
+    },
+    {
+        "id": "nucleic acid library construction protocol",
+        "name": "nucleic_acid_library_construction_protocol",
+        "description": "A protocol describes the processes performed and equipment used to prepare nucleic acid sequencing library.",
+        "link_ja": "/gea/metadata.html#nucleic acid library construction protocol",
+        "link_en": "/gea/metadata-e.html#nucleic acid library construction protocol"
+    },
+    {
+        "id": "nucleic acid sequencing protocol",
+        "name": "nucleic_acid_sequencing_protocol",
+        "description": "A protocol describes the processes performed and equipment used to determine the order of nucleotide bases in a nucleic acid sample.",
+        "link_ja": "/gea/metadata.html#nucleic acid sequencing protocol",
+        "link_en": "/gea/metadata-e.html#nucleic acid sequencing protocol"
+    },
+    {
+        "id": "nucleic acid labeling protocol",
+        "name": "nucleic_acid_labeling_protocol",
+        "description": "A protocol describes how input nucleic acid material is labeled.",
+        "link_ja": "/gea/metadata.html#nucleic acid labeling protocol",
+        "link_en": "/gea/metadata-e.html#nucleic acid labeling protocol"
+    },
+    {
+        "id": "nucleic acid hybridization to array protocol",
+        "name": "nucleic_acid_hybridization_to_array_protocol",
+        "description": "A protocol describing the hybridisation of the target nucleic acid sample to a fixed probe on the array.",
+        "link_ja": "/gea/metadata.html#nucleic acid hybridization to array protocol",
+        "link_en": "/gea/metadata-e.html#nucleic acid hybridization to array protocol"
+    },
+    {
+        "id": "array scanning and feature extraction protocol",
+        "name": "array_scanning_and_feature_extraction_protocol",
+        "description": "A protocol describing an image acquisition process that generates an image and features extracted in numerical form from an array.",
+        "link_ja": "/gea/metadata.html#array scanning and feature extraction protocol",
+        "link_en": "/gea/metadata-e.html#array scanning and feature extraction protocol"
+    },
+    {
+        "id": "normalization data transformation protocol",
+        "name": "normalization_data_transformation_protocol",
+        "description": "A protocol describing a data transformation in which data transformation has the objective normalization.",
+        "link_ja": "/gea/metadata.html#normalization data transformation protocol",
+        "link_en": "/gea/metadata-e.html#normalization data transformation protocol"
+    },
+    {
+        "id": "growth protocol",
+        "name": "growth_protocol",
+        "description": "A protocol which provides instructions on the growth of a biological sample.",
+        "link_ja": "/gea/metadata.html#growth protocol",
+        "link_en": "/gea/metadata-e.html#growth protocol"
+    },
+    {
+        "id": "treatment protocol",
+        "name": "treatment_protocol",
+        "description": "A protocol in which the aim is to treat a sample for some experimental analysis of outcome.",
+        "link_ja": "/gea/metadata.html#treatment protocol",
+        "link_en": "/gea/metadata-e.html#treatment protocol"
+    },
+    {
+        "id": "conversion protocol",
+        "name": "conversion_protocol",
+        "description": "Describes the conversion of samples (e.g. RNA samples) to another form (e.g. complementary DNA). For example, various RNA modifications prior to immunoprecipitation.",
+        "link_ja": "/gea/metadata.html#conversion protocol",
+        "link_en": "/gea/metadata-e.html#conversion protocol"
+    },
+    {
+        "id": "dissection protocol",
+        "name": "dissection_protocol",
+        "description": "Describes the procedure which dissects biological materials into anatomical sub-components, e.g. specific organs or tissues.",
+        "link_ja": "/gea/metadata.html#dissection protocol",
+        "link_en": "/gea/metadata-e.html#dissection protocol"
+    },
+    {
+        "id": "high throughput sequence alignment protocol",
+        "name": "high_throughput_sequence_alignment_protocol",
+        "description": "A protocol which provides instructions on the alignment of sequencing reads to reference genome.",
+        "link_ja": "/gea/metadata.html#high throughput sequence alignment protocol",
+        "link_en": "/gea/metadata-e.html#high throughput sequence alignment protocol"
+    },
+    {
+        "id": "Quality_Control_Term_Source_REF",
+        "name": "Quality Control Term Source REF",
+        "description": "The source of the <a href=\"#Quality_Control_Type\">Quality Control Type</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).",
+        "link_ja": "/gea/metadata.html#Quality_Control_Term_Source_REF",
+        "link_en": "/gea/metadata-e.html#Quality_Control_Term_Source_REF"
+    },
+    {
+        "id": "Quality_Control_Term_Accession_Number",
+        "name": "Quality Control Term Accession Number",
+        "description": "The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.",
+        "link_ja": "/gea/metadata.html#Quality_Control_Term_Accession_Number",
+        "link_en": "/gea/metadata-e.html#Quality_Control_Term_Accession_Number"
+    },
+    {
+        "id": "Replicate_Type",
+        "name": "Replicate Type",
+        "description": "The replicate strategies used. Typically these terms should come from the <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php\">MGED Ontology</a>. See for example the list of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#ReplicateDescriptionType\">ReplicateDescriptionType terms</a>. <span class=\"blue\">Controlled vocabulary term.</span>",
+        "link_ja": "/gea/metadata.html#Replicate_Type",
+        "link_en": "/gea/metadata-e.html#Replicate_Type"
+    },
+    {
+        "id": "Replicate_Term_Source_REF",
+        "name": "Replicate Term Source REF",
+        "description": "The source of the <a href=\"#Replicate_Type\">Replicate Type</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).",
+        "link_ja": "/gea/metadata.html#Replicate_Term_Source_REF",
+        "link_en": "/gea/metadata-e.html#Replicate_Term_Source_REF"
+    },
+    {
+        "id": "Replicate_Term_Accession_Number",
+        "name": "Replicate Term Accession Number",
+        "description": "The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.",
+        "link_ja": "/gea/metadata.html#Replicate_Term_Accession_Number",
+        "link_en": "/gea/metadata-e.html#Replicate_Term_Accession_Number"
+    },
+    {
+        "id": "Normalization_Type",
+        "name": "Normalization Type",
+        "description": "The normalization strategies used. Typically these terms should come from the <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php\">MGED Ontology</a>. See for example the list of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#NormalizationDescriptionType\">NormalizationDescriptionType terms</a>. <span class=\"blue\">Controlled vocabulary term.</span>",
+        "link_ja": "/gea/metadata.html#Normalization_Type",
+        "link_en": "/gea/metadata-e.html#Normalization_Type"
+    },
+    {
+        "id": "Normalization_Term_Source_REF",
+        "name": "Normalization Term Source REF",
+        "description": "The source of the <a href=\"#Normalization_Type\">Normalization Type</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).",
+        "link_ja": "/gea/metadata.html#Normalization_Term_Source_REF",
+        "link_en": "/gea/metadata-e.html#Normalization_Term_Source_REF"
+    },
+    {
+        "id": "Normalization_Term_Accession_Number",
+        "name": "Normalization Term Accession Number",
+        "description": "The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.",
+        "link_ja": "/gea/metadata.html#Normalization_Term_Accession_Number",
+        "link_en": "/gea/metadata-e.html#Normalization_Term_Accession_Number"
+    },
+    {
+        "id": "Date_of_Experiment",
+        "name": "Date of Experiment",
+        "description": "The date on which the experiment was performed. The date should be entered in the \"YYYY-MM-DD\" format (ex. 2011-01-01). <span class=\"red\">This tag can only have one value.</span>",
+        "link_ja": "/gea/metadata.html#Date_of_Experiment",
+        "link_en": "/gea/metadata-e.html#Date_of_Experiment"
+    },
+    {
+        "id": "Public_Release_Date",
+        "name": "Public Release Date",
+        "description": "The date on which the experimental data will be/was released. The date should be entered in the \"YYYY-MM-DD\" format (ex. 2011-01-01). <span class=\"red\">This tag can only have one value.</span>",
+        "link_ja": "/gea/metadata.html#Public_Release_Date",
+        "link_en": "/gea/metadata-e.html#Public_Release_Date"
+    },
+    {
+        "id": "GEA_PubMed_ID",
+        "name": "PubMed ID",
+        "description": "The PubMed IDs of the publication(s) associated with this investigation (where available).",
+        "link_ja": "/gea/metadata.html#GEA_PubMed_ID",
+        "link_en": "/gea/metadata-e.html#GEA_PubMed_ID"
+    },
+    {
+        "id": "GEA_DOI",
+        "name": "DOI",
+        "description": "A Digital Object Identifier (DOI) for each publication (where available). When both PubMed ID and DOI are available, enter the PubMed ID.",
+        "link_ja": "/gea/metadata.html#GEA_DOI",
+        "link_en": "/gea/metadata-e.html#GEA_DOI"
+    },
+    {
+        "id": "Publication_Author_List",
+        "name": "Publication Author List",
+        "description": "The list of authors associated with each publication.",
+        "link_ja": "/gea/metadata.html#Publication_Author_List",
+        "link_en": "/gea/metadata-e.html#Publication_Author_List"
+    },
+    {
+        "id": "Publication_Title",
+        "name": "Publication Title",
+        "description": "The title of each publication.",
+        "link_ja": "/gea/metadata.html#Publication_Title",
+        "link_en": "/gea/metadata-e.html#Publication_Title"
+    },
+    {
+        "id": "Publication_Status",
+        "name": "Publication Status",
+        "description": "A term describing the status of each publication (e.g. \"submitted\", \"in preparation\", \"published\"). <span class=\"blue\">Controlled vocabulary term.</span>",
+        "link_ja": "/gea/metadata.html#Publication_Status",
+        "link_en": "/gea/metadata-e.html#Publication_Status"
+    },
+    {
+        "id": "Publication_Status_Term_Source_REF",
+        "name": "Publication Status Term Source REF",
+        "description": "The source of the <a href=\"#Publication_Status\">Publication Status</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below).",
+        "link_ja": "/gea/metadata.html#Publication_Status_Term_Source_REF",
+        "link_en": "/gea/metadata-e.html#Publication_Status_Term_Source_REF"
+    },
+    {
+        "id": "Publication_Status_Term_Accession_Number",
+        "name": "Publication Status Term Accession Number",
+        "description": "The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.",
+        "link_ja": "/gea/metadata.html#Publication_Status_Term_Accession_Number",
+        "link_en": "/gea/metadata-e.html#Publication_Status_Term_Accession_Number"
+    },
+    {
+        "id": "Array_Design_Accession",
+        "name": "Array Design Accession",
+        "description": "Specify an Array Design by accession number (e.g., A-GEAD-1)",
+        "link_ja": "/gea/metadata.html#Array_Design_Accession",
+        "link_en": "/gea/metadata-e.html#Array_Design_Accession"
+    },
+    {
+        "id": "Array_Design_Filename",
+        "name": "Array Design Filename",
+        "description": "Specify an Array Design by its filename uploaded into the same submission.",
+        "link_ja": "/gea/metadata.html#Array_Design_Filename",
+        "link_en": "/gea/metadata-e.html#Array_Design_Filename"
+    },
+    {
+        "id": "Number_of_channels",
+        "name": "Number of channels",
+        "description": "Choose a number of channels of microarray (single or dual).",
+        "link_ja": "/gea/metadata.html#Number_of_channels",
+        "link_en": "/gea/metadata-e.html#Number_of_channels"
+    },
+    {
+        "id": "Data_File_Type",
+        "name": "Data File Type",
+        "description": "GEA requires submission of both raw and processed data files.",
+        "link_ja": "/gea/metadata.html#Data_File_Type",
+        "link_en": "/gea/metadata-e.html#Data_File_Type"
+    },
+    {
+        "id": "Raw_data_type",
+        "name": "Raw data type",
+        "description": "Upload raw data file per each assay (sample) [recommended] or raw data matrix file from assays (samples).",
+        "link_ja": "/gea/metadata.html#Raw_data_type",
+        "link_en": "/gea/metadata-e.html#Raw_data_type"
+    },
+    {
+        "id": "Processed_data_type",
+        "name": "Processed data type",
+        "description": "Upload processed data file per each assay (sample) [recommended] or processed data matrix file from assays (samples).",
+        "link_ja": "/gea/metadata.html#Processed_data_type",
+        "link_en": "/gea/metadata-e.html#Processed_data_type"
+    },
+    {
+        "id": "Protocol_Name",
+        "name": "Protocol Name",
+        "description": "The names of the protocols used within the MAGE-TAB document. These will be referenced in the SDRF in the <a href=\"/dra/submission-e.html#Protocol_REF\">\"Protocol REF\"</a> columns. <span class=\"green\">Used as an identifier within the MAGE-TAB document.</span>",
+        "link_ja": "/gea/metadata.html#Protocol_Name",
+        "link_en": "/gea/metadata-e.html#Protocol_Name"
+    },
+    {
+        "id": "Protocol_Type",
+        "name": "Protocol Type",
+        "description": "The type of the protocol, taken from a controlled vocabulary. Typically this term should come from the <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php\">MGED Ontology</a>. See for example the list of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#ExperimentalProtocolType\">ExperimentalProtocolType terms</a>. <span class=\"blue\">Controlled vocabulary term.</span>",
+        "link_ja": "/gea/metadata.html#Protocol_Type",
+        "link_en": "/gea/metadata-e.html#Protocol_Type"
+    },
+    {
+        "id": "Protocol_Description",
+        "name": "Protocol Description",
+        "description": "A free-text description of the protocol. This text is included in a single tab-delimited field. If you wish to include tab or newline characters as part of this text, you must enclose the whole text within double quotes (\").",
+        "link_ja": "/gea/metadata.html#Protocol_Description",
+        "link_en": "/gea/metadata-e.html#Protocol_Description"
+    },
+    {
+        "id": "Protocol_Parameters",
+        "name": "Protocol Parameters",
+        "description": "A semicolon-delimited list of parameter names; these names are used in the SDRF file (as <a href=\"/dra/submission-e.html#Parameter_Value\">\"Parameter Value [&lt;parameter name&gt;]\"</a> headers) to list the values used for each protocol parameter. If more than one parameter was used for a given protocol, they should be separated with semicolons (\";\"). <span class=\"green\">Used as an identifier within the MAGE-TAB document.</span>",
+        "link_ja": "/gea/metadata.html#Protocol_Parameters",
+        "link_en": "/gea/metadata-e.html#Protocol_Parameters"
+    },
+    {
+        "id": "Protocol_Hardware",
+        "name": "Protocol Hardware",
+        "description": "The hardware used by the protocol.",
+        "link_ja": "/gea/metadata.html#Protocol_Hardware",
+        "link_en": "/gea/metadata-e.html#Protocol_Hardware"
+    },
+    {
+        "id": "Protocol_Software",
+        "name": "Protocol Software",
+        "description": "The software used by the protocol.",
+        "link_ja": "/gea/metadata.html#Protocol_Software",
+        "link_en": "/gea/metadata-e.html#Protocol_Software"
+    },
+    {
+        "id": "Protocol_Contact",
+        "name": "Protocol Contact",
+        "description": "The name and contact details to be used for enquiries concerning the protocol.",
+        "link_ja": "/gea/metadata.html#Protocol_Contact",
+        "link_en": "/gea/metadata-e.html#Protocol_Contact"
+    },
+    {
+        "id": "Protocol_Term_Source_REF",
+        "name": "Protocol Term Source REF",
+        "description": "The source of the <a href=\"#Protocol_Type\">Protocol Type</a> terms; this must reference one of the <a href=\"#Term_Source_Name\">Term Source Names</a> defined elsewhere in the IDF file (see below). Examples: MGED ontology, OBI.",
+        "link_ja": "/gea/metadata.html#Protocol_Term_Source_REF",
+        "link_en": "/gea/metadata-e.html#Protocol_Term_Source_REF"
+    },
+    {
+        "id": "Protocol_Term_Accession_Number",
+        "name": "Protocol Term Accession Number",
+        "description": "The accession number for this term, taken from the indicated <a href=\"#Term_Source_Name\">Term Source</a>.",
+        "link_ja": "/gea/metadata.html#Protocol_Term_Accession_Number",
+        "link_en": "/gea/metadata-e.html#Protocol_Term_Accession_Number"
+    },
+    {
+        "id": "SDRF_File",
+        "name": "SDRF File",
+        "description": "The name(s) of the SDRF file(s) accompanying this IDF file.",
+        "link_ja": "/gea/metadata.html#SDRF_File",
+        "link_en": "/gea/metadata-e.html#SDRF_File"
+    },
+    {
+        "id": "Term_Source_Name",
+        "name": "Term Source Name",
+        "description": "The names of the Term Sources (ontologies or databases) used within the MAGE-TAB document. This name will be used in all corresponding \"Term Source REF\" fields. Examples: MGED Ontology, NCI MetaThesaurus, ArrayExpress. <span class=\"green\">Used as an identifier within the MAGE-TAB document.</span>",
+        "link_ja": "/gea/metadata.html#Term_Source_Name",
+        "link_en": "/gea/metadata-e.html#Term_Source_Name"
+    },
+    {
+        "id": "Term_Source_File",
+        "name": "Term Source File",
+        "description": "A filename or valid URI at which the Term Source may be accessed.",
+        "link_ja": "/gea/metadata.html#Term_Source_File",
+        "link_en": "/gea/metadata-e.html#Term_Source_File"
+    },
+    {
+        "id": "Term_Source_Version",
+        "name": "Term Source Version",
+        "description": "The version of the Term Source used throughout the MAGE-TAB document.",
+        "link_ja": "/gea/metadata.html#Term_Source_Version",
+        "link_en": "/gea/metadata-e.html#Term_Source_Version"
+    },
+    {
+        "id": "Comment_user_defined_tag",
+        "name": "Comment[]",
+        "description": "A user-defined value which is associated with the investigation. For example, GEA uses \"Comment [BioProject ID]\" to record the BioProject ID; alternatively, tags such as \"Comment [Goal]\" might be used to indicate the purpose behind an investigation.",
+        "link_ja": "/gea/metadata.html#Comment_user_defined_tag",
+        "link_en": "/gea/metadata-e.html#Comment_user_defined_tag"
+    },
+    {
+        "id": "Comment_BioProject_ID",
+        "name": "Comment[BioProject ID]",
+        "description": "The BioProject ID of the associated project. This is used to group the related INSDC records. See the <a href=\"/bioproject/index-e.html\">DDBJ BioProject website</a> for details.",
+        "link_ja": "/gea/metadata.html#Comment_BioProject_ID",
+        "link_en": "/gea/metadata-e.html#Comment_BioProject_ID"
+    },
+    {
+        "id": "Comment_DRA_accession",
+        "name": "Comment[DRA accession]",
+        "description": "The DRA accession number(s) of the associated raw sequencing reads. This field links the processed data in the GEA and raw data in the DRA. When the data set is submitted to the GEA, the GEA registers raw data to the DRA and fills in this field.",
+        "link_ja": "/gea/metadata.html#Comment_DRA_accession",
+        "link_en": "/gea/metadata-e.html#Comment_DRA_accession"
+    },
+    {
+        "id": "Comment_Center_Name",
+        "name": "Comment[Center Name]",
+        "description": "The center name of the associated DRA submission.",
+        "link_ja": "/gea/metadata.html#Comment_Center_Name",
+        "link_en": "/gea/metadata-e.html#Comment_Center_Name"
+    },
+    {
+        "id": "Comment_Laboratory_Name",
+        "name": "Comment[Laboratory Name]",
+        "description": "The Laboratory name of the associated DRA submission.",
+        "link_ja": "/gea/metadata.html#Comment_Laboratory_Name",
+        "link_en": "/gea/metadata-e.html#Comment_Laboratory_Name"
+    },
+    {
+        "id": "Source_Name",
+        "name": "Source Name",
+        "description": "      This column contains user-defined names for the <a href=\"#Sources\">Source</a> materials.  <span class=\"green\">Used as an identifier within      the MAGE-TAB document.</span>      <br>      The following      columns can be used to annotate Source Name columns:      <ul><li><a href=\"#Characteristics\">Characteristics[]</a></li><li><a href=\"#Provider\">Provider</a></li><li><a href=\"#Material_Type\">Material Type</a></li><li><a href=\"#Description\">Description</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Source_Name",
+        "link_en": "/gea/metadata-e.html#Source_Name"
+    },
+    {
+        "id": "GEA_Sample_Name",
+        "name": "Sample Name",
+        "description": "This column contains user-defined      names for each <a href=\"#Samples\">Sample</a> material. <span class=\"green\">Used as an identifier within      the MAGE-TAB document.</span>      <br>      The following columns can be used to annotate Sample      Name columns:      <ul><li><a href=\"#Characteristics\">Characteristics[]</a></li><li><a href=\"#Material_Type\">Material Type</a></li><li><a href=\"#Description\">Description</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#GEA_Sample_Name",
+        "link_en": "/gea/metadata-e.html#GEA_Sample_Name"
+    },
+    {
+        "id": "Extract_Name",
+        "name": "Extract Name",
+        "description": "This column contains user-defined      names for each <a href=\"#Extracts\">Extract</a>      material. <span class=\"green\">Used as an identifier within      the MAGE-TAB document.</span>      <br>      The following columns can be used to annotate Extract      Name columns:      <ul><li><a href=\"#Characteristics\">Characteristics[]</a></li><li><a href=\"#Material_Type\">Material Type</a></li><li><a href=\"#Description\">Description</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Extract_Name",
+        "link_en": "/gea/metadata-e.html#Extract_Name"
+    },
+    {
+        "id": "Labeled_Extract_Name",
+        "name": "Labeled Extract Name",
+        "description": "This column contains user-defined names for      each <a href=\"#Labeledextracts\">Labeled Extract</a>      material. <span class=\"green\">Used as an identifier within the MAGE-TAB      document.</span>      <br>      The following columns can be used to annotate Labeled      Extract Name columns      <ul><li><a href=\"#Label\">Label</a> (<span class=\"red\">required</span>)</li><li><a href=\"#Characteristics\">Characteristics[]</a></li><li><a href=\"#Material_Type\">Material Type</a></li><li><a href=\"#Description\">Description</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Labeled_Extract_Name",
+        "link_en": "/gea/metadata-e.html#Labeled_Extract_Name"
+    },
+    {
+        "id": "Hybridization_Name",
+        "name": "Hybridization Name",
+        "description": "This column contains user-defined names for each      <a href=\"#Hybridizations\">Hybridization</a>. <span class=\"green\">Used as an identifier within the MAGE-TAB      document.</span>      <br>      The following columns can be used to annotate Hybridization      Name columns      <ul><li><a href=\"#Array_Design_REF\">Array Design REF</a> (<span class=\"red\">required</span>)</li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Hybridization_Name",
+        "link_en": "/gea/metadata-e.html#Hybridization_Name"
+    },
+    {
+        "id": "Assay_Name",
+        "name": "Assay Name",
+        "description": "This column contains user-defined      names for each Assay. \"Assay Name\" may be used instead of      \"Hybridization Name\" to identify generic biological assays, such      as rtPCR and sequencing. Note that this column should not be used for      submission of regular microarray experiments to      GEA. All Assay Name columns must be followed by a Technology Type column.      <span class=\"green\">Used as an identifier within      the MAGE-TAB document.</span>      <br>      The following columns can be used to annotate      Assay Name columns      <ul><li><a href=\"#Technology_Type\">Technology Type</a> (<span class=\"red\">required</span>)</li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Assay_Name",
+        "link_en": "/gea/metadata-e.html#Assay_Name"
+    },
+    {
+        "id": "Scan_Name",
+        "name": "Scan Name",
+        "description": "This optional column contains      user-defined names for each <a href=\"#Scan_section\">Scan</a>      event. <span class=\"green\">Used as an identifier within      the MAGE-TAB document.</span>      <br>      The following columns can be used to annotate Scan Name      columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Scan_Name",
+        "link_en": "/gea/metadata-e.html#Scan_Name"
+    },
+    {
+        "id": "Normalization_Name",
+        "name": "Normalization Name",
+        "description": "This optional column contains user-defined      names for each <a href=\"#Normalization_section\">Normalization</a> event.      <span class=\"green\">Used as an identifier within the MAGE-TAB      document.</span><br>      The      following columns can be used to annotate Normalization Name      columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Normalization_Name",
+        "link_en": "/gea/metadata-e.html#Normalization_Name"
+    },
+    {
+        "id": "Array_Data_File",
+        "name": "Array Data File",
+        "description": "This column contains a list of <a href=\"#Array_Data_Files\">raw data files</a>, one for each      row of the SDRF file, linking these data files to their      respective hybridizations. The following columns can be used to      annotate Array Data File columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Array_Data_File",
+        "link_en": "/gea/metadata-e.html#Array_Data_File"
+    },
+    {
+        "id": "Derived_Array_Data_File",
+        "name": "Derived Array Data File",
+        "description": "This column      contains a list of <a href=\"#Derived_Array_Data_Files\">processed data files</a>,      one for each row of the SDRF file, linking these data files to      their respective hybridizations. The following columns can be      used to annotate Derived Array Data File columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Derived_Array_Data_File",
+        "link_en": "/gea/metadata-e.html#Derived_Array_Data_File"
+    },
+    {
+        "id": "Array_Data_Matrix_File",
+        "name": "Array Data Matrix File",
+        "description": "This column      contains a list of raw data matrix files, where data from      multiple hybridizations is stored in a single file, and the data      mapped to each hybridization via the <a href=\"datafile_e.html#matrix\">Data Matrix</a> format      itself. The following columns can be used to annotate Array Data      Matrix File columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Array_Data_Matrix_File",
+        "link_en": "/gea/metadata-e.html#Array_Data_Matrix_File"
+    },
+    {
+        "id": "Derived_Array_Data_Matrix_File",
+        "name": "Derived Array Data Matrix File",
+        "description": "This      column contains a list of processed data matrix files, where      data from multiple hybridizations is stored in a single file,      and the data mapped to each hybridization (or scan, or      normalization) via the <a href=\"datafile_e.html#matrix\">Data Matrix</a> format      itself. The following columns can be used to annotate Derived      Array Data Matrix File columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Derived_Array_Data_Matrix_File",
+        "link_en": "/gea/metadata-e.html#Derived_Array_Data_Matrix_File"
+    },
+    {
+        "id": "Image_File",
+        "name": "Image File",
+        "description": "This optional column contains a list of image      files, one for each row of the SDRF file, linking these image      files to their respective hybridizations. Note that GEA      does not store image data due to size constraints on the      database. If desired, you may use this column to include links      to image files stored on your local webserver. The following      columns can be used to annotate Derived Array Data File      columns      <ul><li><a href=\"#Comment\">Comment[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Image_File",
+        "link_en": "/gea/metadata-e.html#Image_File"
+    },
+    {
+        "id": "Array_Design_REF",
+        "name": "Array Design REF",
+        "description": "This column contains references to the array      design used for each hybridization. For GEA submissions      this should be an ArrayExpress/GEA accession number,      e.g. \"A-GEAD-1\". The following columns can be used to annotate      Array Design REF columns      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>      The Term Source REF column here can be used to      point to the source of the array design referenced; however for      GEA submissions this should always be ArrayExpress, and so this column is in effect ignored.",
+        "link_ja": "/gea/metadata.html#Array_Design_REF",
+        "link_en": "/gea/metadata-e.html#Array_Design_REF"
+    },
+    {
+        "id": "Protocol_REF",
+        "name": "Protocol REF",
+        "description": "This column contains references to <a href=\"#Protocol_Name\">Protocol Names</a>      defined in the IDF, or accession numbers of protocols already      deposited with ArrayExpress/GEA. The following columns can be used      to annotate Protocol REF columns      <ul><li><a href=\"#Parameter_Value\">Parameter Value[]</a></li><li><a href=\"#Performer\">Performer</a></li><li><a href=\"#Date\">Date</a></li><li><a href=\"#Term_Source_REF\">Term Source REF</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>      The Term Source REF column here can be used to      point to the source of the protocol referenced, if it is not      contained within the IDF; for GEA submissions this      should always be ArrayExpress, and a suitable      ArrayExpress Term Source should be defined in the IDF.",
+        "link_ja": "/gea/metadata.html#Protocol_REF",
+        "link_en": "/gea/metadata-e.html#Protocol_REF"
+    },
+    {
+        "id": "Characteristics",
+        "name": "Characteristics[]",
+        "description": "      <span class=\"blue\">Controlled vocabulary term or      measurement.</span> Used as an attribute column following <a href=\"#Source_Name\">Source Name</a>, <a href=\"#Sample_Name\">Sample Name</a>, <a href=\"#Extract_Name\">Extract Name</a>, or <a href=\"#Labeled_Extract_Name\">Labeled Extract Name</a>. This      column contains terms describing each material according to the      characteristics category indicated in the column header. For      example, a column headed \"Characteristics[OrganismPart]\" would      contain individual OrganismPart terms. These terms may be      user-defined (the default), from an external ontology source      (indicated using a Term Source REF column), or a measurement      (indicated using a Unit[] column).      The following columns can be used to annotate Characteristics[&lt;category term&gt;]:      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li><li><a href=\"#Unit\">Unit[]</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Characteristics",
+        "link_en": "/gea/metadata-e.html#Characteristics"
+    },
+    {
+        "id": "GEA_Provider",
+        "name": "Provider",
+        "description": "Used as an attribute column      following <a href=\"#Source_Name\">Source Name</a>. A free-text      string identifying the organization or person from which the      Source was obtained.",
+        "link_ja": "/gea/metadata.html#GEA_Provider",
+        "link_en": "/gea/metadata-e.html#GEA_Provider"
+    },
+    {
+        "id": "Material_Type",
+        "name": "Material Type",
+        "description": "<span class=\"blue\">Controlled vocabulary      term.</span> Used as an attribute column following <a href=\"#Source_Name\">Source Name</a>, <a href=\"#Sample_Name\">Sample Name</a>, <a href=\"#Extract_Name\">Extract Name</a>, or <a href=\"#Labeled_Extract_Name\">Labeled Extract Name</a>. This      column contains terms describing the type of each material. For      GEA submissions this term should be an instance of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#MaterialType\">MaterialType      from the MGED Ontology</a>. Examples: whole_organism,      organism_part, cell, total_RNA. The following columns can be      used to annotate Material Type columns      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li>      </ul>      The Term Source REF column in this case would      point to the ontology (defined in the IDF) from which the      Material Type terms are taken (the MGED Ontology in the example      above).",
+        "link_ja": "/gea/metadata.html#Material_Type",
+        "link_en": "/gea/metadata-e.html#Material_Type"
+    },
+    {
+        "id": "GEA_Label",
+        "name": "Label",
+        "description": "      <span class=\"blue\">Controlled vocabulary term.</span> Used as an      attribute column following <a href=\"#Labeled_Extract_Name\">Labeled Extract Name</a>. The label      compound which is conjugated to an Extract to create the Labeled      Extract. For GEA submissions this term should be an      instance of <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#LabelCompound\">LabelCompound      from the MGED Ontology</a>. Examples: Cy3, Cy5, biotin,      alexa_546. The following columns can be used to annotate Label      columns      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li>      </ul>      The Term Source REF column in this case would      point to the ontology (defined in the IDF) from which the Label      terms are taken (the MGED Ontology in the example above).",
+        "link_ja": "/gea/metadata.html#GEA_Label",
+        "link_en": "/gea/metadata-e.html#GEA_Label"
+    },
+    {
+        "id": "Technology_Type",
+        "name": "Technology Type",
+        "description": "<span class=\"blue\">Controlled vocabulary term.</span> Used as an      attribute column following <a href=\"#Assay_Name\">Assay      Name</a>. This column contains terms describing the type of each      generic (non-hybridization) assay. Example: high_throughput_sequencing. The following      columns can be used to annotate Technology Type columns      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li>      </ul>      The Term Source REF column in this case would      point to the ontology (defined in the IDF) from which the      Technology Type terms are taken.",
+        "link_ja": "/gea/metadata.html#Technology_Type",
+        "link_en": "/gea/metadata-e.html#Technology_Type"
+    },
+    {
+        "id": "Factor_Value",
+        "name": "Factor Value[]",
+        "description": "<span class=\"blue\">Controlled vocabulary term or measurement.</span>      This column contains terms describing the experimental factor      values (i.e., variables) for each row of the SDRF. The      Experimental Factor Name to which it pertains (from the      accompanying IDF) should be indicated in the column header. For      example, if you have this in your IDF <div class=\"item_table dor\">      <table><tr><td><a href=\"/dra/submission-e.html#Experimental_Factor_Name\" class=\"plain\">Experimental Factor Name</a></td><td>Tissue</td></tr><tr><td><a href=\"/dra/submission-e.html#Experimental_Factor_Type\" class=\"plain\">Experimental Factor Type</a></td><td>organism_part</td></tr></table></div>      You could then use this factor in your SDRF      (assuming you had also defined the \"Mouse Anatomy\" term source      in your IDF) <div class=\"item_table dor\">      <table><tr><td><a href=\"#Factor_Value\" class=\"plain\">Factor Value[Tissue]</a></td>  <td><a href=\"#Term_Source_REF\" class=\"plain\">Term Source REF</a></td></tr><tr><td>brain</td><td>Mouse Anatomy</td></tr><tr><td>kidney</td><td>Mouse Anatomy</td></tr><tr><td>liver</td><td>Mouse Anatomy</td></tr><tr><td>intestine</td><td>Mouse Anatomy</td></tr><tr><td>pancreas</td><td>Mouse Anatomy</td></tr></table></div>      The terms in the column may be user-defined (the      default), from an external ontology source (indicated using a      Term Source REF column), or a measurement (indicated using a      Unit[] column).      In the example above, the column terms would be      treated as describing organism parts. For more precise control      over the treatment of these terms, the optional form \"Factor      Value [] ()\" is available, e.g. \"Factor Value [growth condition      EF] (Nutrients)\".",
+        "link_ja": "/gea/metadata.html#Factor_Value",
+        "link_en": "/gea/metadata-e.html#Factor_Value"
+    },
+    {
+        "id": "Performer",
+        "name": "Performer",
+        "description": "Used as an attribute column      following <a href=\"#Protocol_REF\">Protocol REF</a>. The name of      the researcher or center name who carried out the protocol. For sequencing protocol, this is used as a run center name in the DRA submission.",
+        "link_ja": "/gea/metadata.html#Performer",
+        "link_en": "/gea/metadata-e.html#Performer"
+    },
+    {
+        "id": "Date",
+        "name": "Date",
+        "description": "      Used as an attribute column following <a href=\"#Protocol_REF\">Protocol REF</a>. The date (and time, where      available) upon which the protocol was performed, in the      following format: YYYY-MM-DDThh:mm:ssZ (for example, 2008-09-12T16:27:27Z)",
+        "link_ja": "/gea/metadata.html#Date",
+        "link_en": "/gea/metadata-e.html#Date"
+    },
+    {
+        "id": "Parameter_Value",
+        "name": "Parameter Value[]",
+        "description": "Used as an attribute column following <a href=\"#Protocol_REF\">Protocol REF</a> columns. This column      contains values for the protocol parameters referenced in the      column header. The following columns can be used to annotate      Parameter Value[] columns      <ul><li><a href=\"#Unit\">Unit[]</a></li><li><a href=\"#Term_Source_REF\">Term Source REF</a></li><li><a href=\"#Comment\">Comment[]</a></li>      </ul>      For example, if a Protocol Name \"Array      Hybridization\" is defined in the accompanying IDF, with Protocol      Parameters \"hyb temp;hyb volume\", the following would be      valid. <div class=\"item_table dor\">      <table><tr><td><a href=\"#Protocol_REF\" class=\"plain\">Protocol REF</a></td>  <td><a href=\"#Parameter_Value\" class=\"plain\">Parameter Value [hyb temp]</a></td>  <td><a href=\"#Unit\" class=\"plain\">Unit [TemperatureUnit]</a></td>  <td><a href=\"#Paramater_Value\" class=\"plain\">Parameter Value [hyb volume]</a></td>  <td><a href=\"#Unit\" class=\"plain\">Unit [VolumeUnit]</a></td></tr><tr><td>Array Hybridization</td><td>55</td><td>degrees_C</td><td>100</td><td>ul</td></tr></table></div> <!-- .item_table.dor -->",
+        "link_ja": "/gea/metadata.html#Parameter_Value",
+        "link_en": "/gea/metadata-e.html#Parameter_Value"
+    },
+    {
+        "id": "Unit",
+        "name": "Unit[]",
+        "description": "<span class=\"blue\">Controlled vocabulary      term.</span> Used as an attribute column following <a href=\"#Characteristics\">Characteristics[]</a>, <a href=\"#Factor_Value\">Factor Value[]</a> or <a href=\"#Parameter_Value\">Parameter Value[]</a>. This column      contains terms describing the unit(s) to be applied to the      values in the preceding column. The type of unit is included in      the column header, e.g. \"Unit[TimeUnit]\". These unit types      should correspond to <a href=\"http://mged.sourceforge.net/ontologies/MGEDontology.php#Unit\">Unit      subclasses from the MGED Ontology</a>. The following columns can      be used to annotate Unit[] columns      <ul><li><a href=\"#Term_Source_REF\">Term Source REF</a></li>      </ul>      The Term Source REF column in this case would      point to the ontology (defined in the IDF) from which the Unit      terms are taken.",
+        "link_ja": "/gea/metadata.html#Unit",
+        "link_en": "/gea/metadata-e.html#Unit"
+    },
+    {
+        "id": "GEA_Description",
+        "name": "Description",
+        "description": "Used as an attribute column      following <a href=\"#Source_Name\">Source Name</a>, <a href=\"#Sample_Name\">Sample Name</a>, <a href=\"#extract_name\">Extract Name</a>, or <a href=\"#Labeled_Extract_Name\">Labeled Extract Name</a>. A      free-text description to be attached to the corresponding      material. To be used sparingly, if at all - most annotations      should be provided using controlled vocabulary terms, using <a href=\"#Characteristics\">Characteristics[]</a> columns.",
+        "link_ja": "/gea/metadata.html#GEA_Description",
+        "link_en": "/gea/metadata-e.html#GEA_Description"
+    },
+    {
+        "id": "Term_Source_REF",
+        "name": "Term Source REF",
+        "description": "Used as an attribute column following any      controlled vocabulary column (e.g., <a href=\"#Characteristics\">Characteristics[]</a>), or column      allowing reference of external entities (e.g., <a href=\"#Protocol_REF\">Protocol REF</a>). This column contains      references to ontology or database Term Sources defined in the      IDF, and from which the values in the previous column were      taken. The following columns can be used to annotate Term Source      REF columns      <ul><li><a href=\"#Term_Accession_Number\">Term Accession Number</a></li>      </ul>",
+        "link_ja": "/gea/metadata.html#Term_Source_REF",
+        "link_en": "/gea/metadata-e.html#Term_Source_REF"
+    },
+    {
+        "id": "Term_Accession_Number",
+        "name": "Term Accession Number",
+        "description": "Used as an      attribute column following <a href=\"#Term_Source_REF\">Term      Source REF</a> columns. This column contains the accession      numbers from the term source used to identify the ontology or      database terms in question. For example <div class=\"item_table dor\">      <table><tr><td><a href=\"#Source_Name\" class=\"plain\">Source Name</a></td>  <td><a href=\"#Characteristics\" class=\"plain\">Characteristics [DiseaseState]</a></td>  <td><a href=\"#Term_Source_REF\" class=\"plain\">Term Source REF</a></td>  <td><a href=\"#Term_Accession_Number\" class=\"plain\">Term Accession Number</a></td></tr><tr><td>Sample 1</td><td>acute lymphocytic leukemia</td><td>NCI Metathesaurus</td><td>C0023449</td></tr></table></div>      (This example relies on the \"NCI Metathesaurus\"      Term Source having been pre-defined in the IDF accompanying the      SDRF.)",
+        "link_ja": "/gea/metadata.html#Term_Accession_Number",
+        "link_en": "/gea/metadata-e.html#Term_Accession_Number"
+    },
+    {
+        "id": "Comment",
+        "name": "Comment[]",
+        "description": "This      column can be used to annotate the main graph node and edge      columns listed above. It is included as an extensibility      mechanism, and should not generally be used to encode meaningful      biological annotation. The column header should contain a name      for the type of values included in the column.",
+        "link_ja": "/gea/metadata.html#Comment",
+        "link_en": "/gea/metadata-e.html#Comment"
+    }
+]
