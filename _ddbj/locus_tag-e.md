@@ -17,14 +17,12 @@ with each other. This Genome Project ID will appear in a new line type
 below [ACCESSION](/ddbj/flat-file-e.html#Accession) and
 [VERSION](/ddbj/flat-file-e.html#Version) in the [flat
 file](/ddbj/flat-file-e.html). Registration of Genome Projects can be
-done at DDBJ, EBI or NCBI. A submitter can also register for a
-locus_tag prefix at the same time that they register their genome
-project.
+done at DDBJ, EBI or NCBI. 
 
 For genome sequence submissions, DDBJ provides [Mass Submission System
 (MSS)](/ddbj/mss-e.html). See also [Data Submission from Genome
 Project](/ddbj/genome-e.html). You can specify /locus_tag prefix for
-your genome data through [BioProject](/bioproject/index-e.html)
+your genome data through [BioSample](/biosample/index-e.html)
 submission.
 
 Locus_tags are identifiers that are systematically applied to every
@@ -118,17 +116,7 @@ the /locus_tag after the prefix and underscore:
         ABC_t1113 for tRNA genes
 ```
 
-A submitter can register for a locus_tag prefix and
-BioProject/BioSample at NCBI , EBI or DDBJ. It is preferable that you
-register for your project ID and locus_tag prefix at the site where you
-intend to submit your genome; do not register at all three sites. When a
-locus_tag prefix request is submitted to the database, there is a check
-to see whether that prefix has already been registered to another
-project. If the prefix is available, the submitter is informed that this
-locus_tag is registered for their project. If it is not available, the
-interface will report that this locus_tag has already been taken. The
-submitter can then choose to check for another prefix or to have the
-database suggest an unregistered prefix for the project.
+A submitter can register for a locus_tag prefix and BioProject/BioSample at NCBI , EBI or DDBJ. 
 
 For genome sequence submissions, DDBJ provides [Mass Submission System
 (MSS)](/ddbj/mss-e.html). See also [Data Submission from Genome

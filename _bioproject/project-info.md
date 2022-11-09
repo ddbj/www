@@ -59,7 +59,8 @@ lang: ja
 : 研究対象やゴールに関する記載。第三者がデータを解釈することができるように十分な量 (100 文字以上) の情報を記入します。
 
 [Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>
-: データベーススタッフへの質問やプロジェクトに関する追加情報を記入します。内容は公開されません。アンブレラプロジェクトを登録する場合、ここにその旨を記載します。
+: データベーススタッフへの質問やプロジェクトに関する追加情報を記入します。内容は公開されません。[アンブレラプロジェクト](/bioproject/submission.html#submit-umbrella-project)を登録する場合、ここにその旨を記載します。例 Please register this project as an umbrella project.  
+個人識別符号に該当するヒトデータを登録する場合、[NBDC で承認されている提供申請 ID を記入](/bioproject/submission.html#human-data)します。
 
 [Relevance](#Relevance)<a name="Relevance"></a>  
 : 最も関連性が高い分野を選択します。
@@ -80,7 +81,7 @@ lang: ja
 ### Umbrella BioProject {#Area_linked-project}
 
 登録しようとしているプロジェクトが既に登録されているアンブレラプロジェクトに属している場合、そのアンブレラプロジェクトのアクセッション番号と概要を記入します。
-この情報は[プロジェクトのリンク](/bioproject/overview.html#primary-and-umbrella)のために必要です。
+この情報は[プロジェクトのリンク](/bioproject/submission.html#link-primary-project-umbrella)のために必要です。
 
 [Initiative description](#Initiative_description)<span class="conditionally_required">\*</span><a name="Initiative_description"></a>  
 : アンブレラプロジェクトについての記述。
@@ -226,15 +227,6 @@ NCBI ではプロジェクトを参照している実際の登録データから
 | Phenotype          | 表現型                                                          |
 | Other              | "Objective description" に Objective を記載します。                  |
 
-### Locus tag prefix  {#Area_locus-tag-prefix}
-
-[Locus tag prefix](#Locus_tag_prefix)<span class="conditionally_required">\*</span><a name="Locus_tag_prefix"></a>
-
-: \[Project data type="Genome Sequencing" or "Metagenome"\] AND \[Capture="Whole"\] AND \[Objective="Sequence" or "Annotation" or "Assembly"\] で Locus tag prefix 入力ボックスが現れます。
-ゲノムをアセンブルするプロジェクトでは、アセンブリに対してユニークな [locus tag prefix](/ddbj/locus_tag.html) が必要です。[WGS](/ddbj/wgs.html) の登録のみで prefix を使用しない場合は入力欄を空にしてください。  
-Locus tag prefix には３文字以上の英数字のみを含めることができます。先頭は英文字にします。数字は２文字目以降で使用できます(例: A1C)。 シンボル (-\_\*) を含めることはできません。Locus tag prefix とタグの値はアンダースコア '\_' で区切ります (例: A1C\_00001)。  
-DDBJ BioProject 独自に最大タグ長を12文字に制限しています。小文字は大文字に変換されて表示されますが、実際には locus tag は大文字・小文字の区別なく予約されます。
-
 ## Target  {#Target}
 
 ### Organism information  {#Area_organism-information}
@@ -263,16 +255,6 @@ DDBJ BioProject 独自に最大タグ長を12文字に制限しています。�
 
 [Description of novel organism](#Novel_organism)<a name="Novel_organism"></a>
 : [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/) への生物登録を申請するための情報を記入します。
-
-### Environmental sample information  {#Area_environmental-sample-information}
-
-Target の Sample scope="Environment" のときに [Organism information](#BioProject_Organism_name) に替わって表示されます。
-
-[Environmental sample name](#Environmental_sample_name)<span class="red">\*</span><a name="Environmental_sample_name"></a>  
-: メタゲノムや環境サンプルなどの生物名を特定できないサンプルについては[こちらのリスト](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock)から該当するものを選択します。該当するものがない場合は、登録を希望する名前を記載し、サンプルの詳細を [Environmental sample description](#Environmental_sample_description) に記載します。
-
-[Environmental sample description](#Environmental_sample_description)<a name="Environmental_sample_description"></a>  
-: サンプルの詳細を記載します。
 
 ### General Properties  {#Area_general-properties}
 

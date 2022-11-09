@@ -58,7 +58,8 @@ An informative paragraph that describes the project and provides informative con
 : Description (a paragraph) of the project goals and purposes. Provide enough information (more than 100 characters) in the description for other users to interpret the data.
 
 [Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>  
-: Use this field if you have questions for database support staff. The content is not made public. If you intend to submit an umbrella project, please inform us that "this is umbrella project".
+: Use this field if you have questions for database support staff. The content is not made public. If you intend to [submit an umbrella project](/bioproject/submission-e.html#submit-umbrella-project), please inform us that "this is umbrella project" (e.g., Please register this project as an umbrella project).  
+To submit data corresponding to personal identification code, write the approved NBDC data submission application ID (for example, J-DS000001-001).
 
 [Relevance](#Relevance)<a name="Relevance"></a>  
 : Select the primary general relevance of the study.
@@ -78,7 +79,7 @@ An informative paragraph that describes the project and provides informative con
 
 ### Umbrella BioProject {#Area_linked-project}
 
-If you are registering a project that is part of an initiative which is already registered in the BioProject database, then please tell us the existing BioProject accession number and provide a general description of the larger initiative. This information is needed for [project linking](#primary-and-umbrella).
+If you are registering a project that is part of an initiative which is already registered in the BioProject database, then please tell us the existing BioProject accession number and provide a general description of the larger initiative. This information is needed for [project linking](/bioproject/submission-e.html#link-primary-project-umbrella).
 
 [Initiative description](#Initiative_description)<span class="conditionally_required">\*</span><a name="Initiative_description"></a>  
 : Description of an initiative.
@@ -187,7 +188,7 @@ NCBI individually assigns the [Project data type](https://www.ncbi.nlm.nih.gov/b
 | Random Survey       | Not using whole sample, an incomplete survey of the sample.                     |
 | Other               | Specify the scale or type of the captured material in the "Target description". |
 
-[Target description](#Target_description)<span class="conditionally_required">\*</span><a name="Target_description"></a>  
+[Target description](#Target_description)<span class="conditionally_required">\*</span><a name="Target_description"></a> 
 : Describe the Sample scope/Material/Capture when the Other(s) is selected.
 
 [Methodology](#Methodology)<span class="red">\*</span><a name="Methodology"></a>  
@@ -224,14 +225,6 @@ Project goals with respect to the type of data that will be generated and submit
 | Phenotype          | Experiment will deliver phenotypes.                                            |
 | Other              |                                                                                |
 
-### Locus tag prefix  {#Area_locus-tag-prefix}
-
-[Locus tag prefix](#Locus_tag_prefix)<span class="conditionally_required">\*</span><a name="Locus_tag_prefix"></a>
-: Locus tag prefix generation box will appear when \[Project data type="Genome Sequencing" or "Metagenome"\] AND \[Capture="Whole"\] AND \[Objective="Sequence" or "Annotation" or "Assembly"\].  
-Registration of a unique [locus tag prefix](/ddbj/locus_tag-e.html) is required for studies that result in genome assemblies. Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddbj/wgs-e.html) only submission.       
-The locus_tag prefix can contain only alpha-numeric characters and it must be 3-12 characters long. It should start with a letter, but numerals can be in the 2nd position or later in the string. (ex. A1C). There should be no symbols, such as -\_\* in the prefix. The locus\_tag prefix is to be separated from the tag value by an underscore ‘\_’, eg A1C\_00001.   
-DDBJ BioProject limits the maximum tag length to 12 characters. In the BioProject submission system, the locus tag is displayed in capital letters. However, the tag is reserved in case-insensitive manner.
-
 ## Target  {#Target}
 
 ### Organism information  {#Area_organism-information}
@@ -259,16 +252,6 @@ If you intend to submit un-registered novel organism, please provide us the [det
 
 [Description of novel organism](#Novel_organism)<a name="Novel_organism"></a>  
 : Enter necessary information to register an organism to the [taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/).
-
-### Environmental sample information  {#Area_environmental-sample-information}
-
-This section appears instead of the [Organism information](#BioProject_Organism_name) when the Sample scope="Environment" in the Target.
-
-[Environmental sample name](#Environmental_sample_name)<span class="red">\*</span><a name="Environmental_sample_name"></a>  
-: Unclassified sequences including metagenome and environmental samples may be found at [here](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock). If an appropriate name was not found, describe a novel name you propose and details of sample information in the [Environmental sample description](#Environmental_sample_description).
-
-[Environmental sample description](#Environmental_sample_description)<a name="Environmental_sample_description"></a>  
-: Describe details of sample information.
 
 ### General Properties  {#Area_general-properties}
 

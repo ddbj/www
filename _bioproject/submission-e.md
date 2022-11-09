@@ -43,26 +43,10 @@ For BioProject information fileds, please see [BioProject information fields](/b
 
 {% include image.html url="books/hbp-02.jpg" caption="Enter project content" class="w450" %}
 
-To submit genome assemblies to DDBJ, a unique [Locus tag prefix](/ddbj/locus_tag-e.html)is necessary.
-
-Locus tag prefix generation box will appear when \[Project data type="Genome Sequencing" or "Metagenome"\] AND \[Capture="Whole"\] AND \[Objective="Sequence" or "Annotation" or "Assembly"\]. Registration of a unique locus tag prefix is required for studies that result in genome assemblies.
-
-The locus\_tag prefix can contain only alpha-numeric characters and it must be at least 3 characters long. It should start with a letter, but numerals can be in the 2nd position or later in the string. (ex. A1C). There should be no symbols, such as -\_\* in the prefix. The locus\_tag prefix is to be separated from the tag value by an underscore ‘\_’, eg A1C\_00001.
-
-Please leave the prefix box empty, when a prefix is not necessary for [WGS](/ddbj/wgs-e.html)only submission.
-
-Prefix is managed by NCBI. When a project is submitted, our system tries to reserve prefix to NCBI. When the prefix has already been reserved, anerror message will be displayed. Please enter a different prefix and submit again.
-
 <div class="attention" markdown="1">
-Locus tag prefix can be registered in [BioSample](/biosample/submission-e.html).  
-Registration of multiple prefixes is possible in BioSample but is not possible in BioProject.
+To submit genome sequences having functional annotations to [DDBJ](/ddbj/genome-e.html), [locus tag prefix(s)](/ddbj/locus_tag-e.html) should be registered in [BioSample](/biosample/submission-e.html).  
+Since 9th November 2022, the locus tag prefix 
 </div>
-
-{% include image.html url="books/hbp-03.jpg" caption="Reserve a locus tag prefix" class="w450" %}
-
-To submit data corresponding to personal identification code to DRA/GEA/DDBJ, [your data submission application needs to be approved by NBDC before the submission](/policies-e.html#unrestricted-access). If your application was approved, write the NBDC application ID (for example, J-DS000001-001) in "Private comments to DDBJ staff" of BioProject.
-
-{% include image.html url="books/bp-nbdc-approval.jpg" caption="NBDC data submission application ID" class="w450" %}
 
 Check the content in "OVERVIEW" and submit a project by clicking the \[Submit\].
 
@@ -72,12 +56,19 @@ The "OVERVIEW" tab continue to display submitted content. Updates will not be re
 
 ## Accession number  {#accession-number}
 
-Temporary numbers with prefix PSUB are automatically assigned to submitted projects. Projects can be referred by the PSUB numbers until official accession numbers will be assigned. DDBJ BioProject staff review submissions and issue accession numbers with prefix PRJD to completed projects. Submitters can view accession numbers and submission status in your [submission account](https://ddbj.nig.ac.jp/D-way/).
+A BioProject accession number with prefix PRJDB is automatically assigned to the submitted project. 
+When the data release is specified as "Release immediately following curation", the project will be automatically released at night.
 
 <div class="attention">
 - Do NOT cite numbers with prefix PSUB in publication.<br>
 - Do not double submit the projects which have been registered to EBI and NCBI.
 </div>
+
+## Human data {#human-data}
+
+To submit data corresponding to personal identification code to DRA/GEA/DDBJ, [your data submission application needs to be approved by NBDC before the submission](/policies-e.html#unrestricted-access). If your application was approved, write the NBDC application ID (for example, J-DS000001-001) in "Private comments to DDBJ staff" of BioProject.
+
+{% include image.html url="books/bp-nbdc-approval.jpg" caption="NBDC data submission application ID" class="w450" %}
 
 ## Submit an umbrella project  {#submit-umbrella-project}
 

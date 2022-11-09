@@ -29,26 +29,11 @@ BioProject を新規登録する場合は左のタブから順番に内容を英
 
 {% include image.html url="books/hbp-02.jpg" caption="プロジェクトの入力" class="w450" %}
 
-ゲノムをアセンブルするプロジェクトでは、アセンブリに対してユニークな [Locus tag prefix](/ddbj/locus_tag.html) が必要です。
-
-\[Project data type="Genome Sequencing" or "Metagenome"\] AND \[Capture="Whole"\] AND \[Objective="Sequence" or "Annotation" or "Assembly"\] で Locus tag prefix 入力ボックスが現れます。
-
-プレフィックスには３-１２文字の英数字のみを含めることができます。先頭は英文字にします。数字は２文字目以降で使用できます (例: A1C)。シンボル (-\_\*) を含めることはできません。プレフィックスとタグの値はアンダースコア '\_' で区切ります (例: A1C\_00001)。
-
-Locus tag は NCBI が一括管理しています。プロジェクトを投稿する段階で、NCBI に prefix を予約しにいきます。予約済みの場合はエラーになるので、再度希望する prefix を入力して投稿します。
-
 <div class="attention" markdown="1">
-Locus tag prefix は [BioSample でも取得](/biosample/submission.html)することができます。  
-複数 prefix の取得は BioProject では対応していないため、BioSample で取得する必要があります。
+機能アノテーションが付されたゲノム配列を [DDBJ](/ddbj/genome.html) に登録する場合、
+[Locus tag prefix](/ddbj/locus_tag.html) を [BioSample](/biosample/submission.html)で登録します。  
+2022年11月9日に BioProject の Locus tag prefix 登録口は閉鎖され、prefix 登録は BioSample に一本化されました。
 </div>
-
-{% include image.html url="books/hbp-03.jpg" caption="Locus tag prefix の取得" class="w450" %}
-
-個人識別符号に該当するデータを DRA/GEA/DDBJ へ登録するためには、
-[NBDC ヒトデータ審査委員会事務局に登録予定データの提供申請書を提出](/policies.html#unrestricted-access)し、承認されている必要があります。    
-承認されている場合、BioProject の「Private comments to DDBJ staff」に提供申請 ID (例 J-DS000001-001) を記入します。
-
-{% include image.html url="books/bp-nbdc-approval.jpg" caption="NBDC 提供申請 ID の記入" class="w450" %}
 
 最後の "OVERVIEW" で内容を確認したうえで \[Submit\] をクリックして登録します。
 
@@ -58,8 +43,8 @@ Locus tag prefix は [BioSample でも取得](/biosample/submission.html)する�
 
 ## アクセッション番号  {#accession-number}
 
-ウェブから投稿されたデータに対して PSUB で始まる仮 ID が自動的に割り当てられます。正式なアクセッション番号が発行されるまでは、この仮 ID で登録を参照します。
-DDBJ BioProject スタッフはデータを査定した後、完成したデータに対してプレフィックス "PRJDB" のアクセッション番号を発行します。 [D-way](https://ddbj.nig.ac.jp/D-way/) にログイン後、ウェブ上で登録したプロジェクトの進行状況やアクセッション番号を確認することができます。
+登録されたプロジェクトに対して、プレフィックス "PRJDB" の BioProject アクセッション番号が自動で発行されます。  
+即日公開 (Release immediately following curation) が指定されている場合、登録された日の夜間に自動で公開されます。
 
 <div class="attention">
 - PSUB で始まる仮 ID を論文中に引用しないでください。<br>
@@ -79,17 +64,25 @@ DDBJ BioProject スタッフはデータを査定した後、完成したデー�
 
 {% include image.html url="books/hbp-06.jpg" caption="アンブレラへのリンク" class="w450" %}
 
+## ヒトデータの登録 {#human-data} 
+
+個人識別符号に該当するデータを DRA/GEA/DDBJ へ登録するためには、
+[NBDC ヒトデータ審査委員会事務局に登録予定データの提供申請書を提出](/policies.html#unrestricted-access)し、承認されている必要があります。    
+承認されている場合、BioProject の「Private comments to DDBJ staff」に提供申請 ID (例 J-DS000001-001) を記入します。
+
+{% include image.html url="books/bp-nbdc-approval.jpg" caption="NBDC 提供申請 ID の記入" class="w450" %}
+
 ## プロジェクトの公開 {#project-release} 
 
 以下の選択肢があります。公開予定日は設定することができません。
 
-- 査定が終わった後すぐに公開
+- 登録が完了次第すぐに公開
 - BioProject アクセッション番号を引用しているデータと同時に公開
 
 登録したプロジェクトは非公開にすることができます。DDBJ/DRA/GEA/MetaboBank データが公開されると、
 引用されている BioProject データは自動的に公開されます。
 BioProject の公開は参照している DDBJ/DRA/GEA/MetaboBank データの公開を引き起こしません。
-[プロジェクトの連動公開について](/bioproject/overview.html#release)
+[プロジェクトの連動公開について](/bioproject/overview.html#release)  
 
 公開された BioProject は [NCBI](https://www.ncbi.nlm.nih.gov/bioproject) と [EBI](https://www.ebi.ac.uk/) BioProject と交換されます。
 

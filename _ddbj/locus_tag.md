@@ -17,9 +17,9 @@ lang: ja
 ## ゲノム配列データの登録における  /locus_tag の適切な用法  {#locus_tag_usage}
 
 国際実務者会議 (International Collaborators Meeting) において、ゲノムプロジェクトを INSDC
-に登録するように求めていく、と合意しています。各ゲノムプロジェクトに ID を割り当てることにより、複数の配列データを各ゲノムプロジェクトに関連付けることが可能になります。この Project ID は、[DDBJ フラットファイル](/ddbj/flat-file.html)においては [ACCESSION](/ddbj/flat-file.html#Accession) 行と [VERSION](/ddbj/flat-file.html#Version) 行の下に表示されます。ゲノムプロジェクトの登録は DDBJ, EMBL-Bank/EBI, GenBank/NCBI で行うことができます。登録者はゲノムプロジェクトの登録に際し、同時に /locus_tag prefix の登録を行うことができます。
+に登録するように求めていく、と合意しています。各ゲノムプロジェクトに ID を割り当てることにより、複数の配列データを各ゲノムプロジェクトに関連付けることが可能になります。この Project ID は、[DDBJ フラットファイル](/ddbj/flat-file.html)においては [ACCESSION](/ddbj/flat-file.html#Accession) 行と [VERSION](/ddbj/flat-file.html#Version) 行の下に表示されます。ゲノムプロジェクトの登録は DDBJ, EMBL-Bank/EBI, GenBank/NCBI で行うことができます。登録者は BioSample の登録に際し、同時に /locus_tag prefix の登録を行うことができます。
 
-DDBJ においては、ゲノム配列データ登録用に [Mass Submission System](/ddbj/mss.html) をご用意しております。また、[Genome Project のデータ登録](/ddbj/genome.html)もご参照ください。[BioProject](/bioproject/index.html) の登録の際に、適宜、指定していただければ、/locus_tag prefix 割り当てを検討いたします。
+DDBJ においては、ゲノム配列データ登録用に [Mass Submission System](/ddbj/mss.html) をご用意しております。また、[Genome Project のデータ登録](/ddbj/genome.html)もご参照ください。
 
 /locus_tag はゲノム上の全ての gene に体系的に割り当てる識別子(identifier, ID)であり、生物学関連団体による遺伝子名に代わる ID になります。２組の異なるゲノムの登録者が全く異なる２つのゲノムにおいて全く異なる２つの遺伝子に同じ体系 拠る名称を用いたならば、混乱を招くことになるでしょう。このようなことが起こることを防ぐために INSD (DDBJ/EMBL/GenBank) では /locus_tag prefix を登録する仕組みを作りました。真核生物でも原核生物でもゲノムの登録者は、そのゲノム登録に先立って prefix を登録してください。そして、複数の染色体、プラスミドといったプロジェクトの全ての構成要素に同じ /locus_tag prefix を使用してください。
 
@@ -71,7 +71,7 @@ DDBJ においては、ゲノム配列データ登録用に [Mass Submission Sys
         ABC_t1113 for tRNA genes
 ```
 
-登録者は GenBank/NCBI, ENA/EBI, DDBJ の何れか１つにおいて locus_tag prefix と BioProject/BioSample の登録手続きを行うことができます。この手続きは、ゲノム配列データを登録するデータバンクにおいて行ってください。locus_tag prefix 割り当てを申請した際には、他のプロジェクトとの重複がないか、などの確認を行います。問題なければ、登録者に locus_tag prefix が割り当てられたことをお知らせします。重複した際は、その旨を登録者にお知らせしますので、別な重複しない prefix を再検討の上、ご連絡ください。
+登録者は GenBank/NCBI, ENA/EBI, DDBJ の何れか１つにおいて locus_tag prefix と BioProject/BioSample の登録手続きを行うことができます。この手続きは、ゲノム配列データを登録するデータバンクにおいて行ってください。
 
 DDBJ においては、ゲノム配列データ登録用に [Mass Submission System](/ddbj/mss.html) をご用意しております。また、[Genome Project のデータ登録](/ddbj/genome.html)もご参照ください。[BioSample](/biosample/index.html) の登録の際に、適宜、指定していただければ、/locus_tag prefix 割り当てを検討いたします。
 
