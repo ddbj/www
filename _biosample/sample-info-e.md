@@ -36,6 +36,8 @@ Contact information of submitter(s). Questions and notifications about a submiss
 [Submitting organization URL](#BioSample_Submitting_organization_URL)<a name="BioSample_Submitting_organization_URL"></a>  
 : The URL of submitter's organization.
 
+## General info  {#General-info}
+
 ### Data Release  {#Area_biosample-data-release}
 
 Select "Hold" or "Release". You cannot specify hold date. Please see [Data Release](#sample-release) for detailed release mechanism.
@@ -48,18 +50,20 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Data Relea
 
 FAQ: [How to request data release?](/faq/en/request-release-e.html)
 
-## General info  {#General-info}
-
-[External Links](#Link)<a name="Link"></a>  
-: An URL may be provided, with a label for the resource, to reference a resource that is directly relevant to the submitted sample.
+### External Links {#Area_biosample-external-links}
 
 [Link description](#Link_description)<a name="Link_description"></a>  
 : Display name of web site that is related to this sample.
 
 [URL](#BioSample_URL)<a name="BioSample_URL"></a>  
-: URL of the web site.
+: URL of the web site that is related to this sample.
 
-## Sample type  {#Sample-type}
+### Comments {#Area_comments}
+
+[Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>
+: Use this field if you have questions for database support staff. The content is not made public.
+
+## Sample package {#Sample-package}
 
 BioSample supports richer sample description and standardization of sample attributes by providing sample packages designed for each type of sample and sequences.
 

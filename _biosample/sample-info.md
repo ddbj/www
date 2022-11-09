@@ -36,6 +36,8 @@ lang: ja
 [Submitting organization URL](#BioSample_Submitting_organization_URL)<a name="BioSample_Submitting_organization_URL"></a>  
 : 登録者が所属する組織の URL。
 
+## General info  {#General-info}
+
 ### Data Release  {#Area_biosample-data-release}
 
 "Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[データ公開](/biosample/overview.html#sample-release)をご覧ください。
@@ -49,18 +51,20 @@ lang: ja
 
 FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
-## General info  {#General-info}
-
-[External Links](#Link)<a name="Link"></a>  
-: サンプルに直接関連するリソースの URL とそれに付けるラベル (表示名)。
+### External Links {#Area_biosample-external-links}
 
 [Link description](#Link_description)<a name="Link_description"></a>  
-: サンプルに関連するウェブサイトの表示名。
+: サンプルに直接関連するリソース URL に付けるラベル (表示名)。
 
 [URL](#BioSample_URL)<a name="BioSample_URL"></a>  
-: ウェブサイトの URL。
+: サンプルに直接関連するリソースの URL。
 
-## Sample type  {#Sample-type}
+### Comments {#Area_comments}
+
+[Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>
+: データベーススタッフへの質問やプロジェクトに関する追加情報を記入します。内容は公開されません。
+
+## Sample package {#Sample-package}
 
 BioSample ではサンプルや配列の種類毎にデザインされた必須・任意属性から構成されるパッケージを提供し、サンプル記載の充実化と属性名の標準化をサポートしています。  
 
