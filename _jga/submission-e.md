@@ -25,7 +25,7 @@ Accession numbers are issued to metadata objects with following prefixes.
 |JGAX|Experiment|9|JGAX000000001|
 |JGAR|Data|9|JGAR000000001|
 |JGAZ|Analysis|9|JGAZ000000001|
-|JGAD|Data set|6|JGAD000001|
+|JGAD|Dataset|6|JGAD000001|
 |JGAP|Policy|6|JGAP000001|
 
 <div class="attention">
@@ -140,7 +140,7 @@ When JGA submissions are released, following metadata objects will be public on 
 Study:  
 : All fields.
 
-Data set:  
+Dataset:  
 : All fields, number of samples, and filesize.
 
 Policy:  
@@ -184,7 +184,7 @@ The Analysis XML can be used to submit array data, analyzed and summarized data 
 
 XML schema: [JGA.analysis.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Data set  {#Dataset}
+### Dataset  {#Dataset}
 
 The dataset XML describes the data files, defined by the Data XML and Analysis XML, that make up the dataset and links the collection of data files to a specified Policy (Data Access Agreement). When a Study contains datasets with different policies, separate Datasets need to be created.
 
@@ -196,7 +196,7 @@ XML schema: [JGA.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 The Policy XML describes the Data Access Agreement (DAA). If only [NBDC policy](https://humandbs.biosciencedbc.jp/en/nbdc-policy) is associated with a submission, submitters do not need to create a new policy.
 
-If additional policies are needed, you need to register a policy to NBDC and reference issued JGAP number from submitting data set.
+If additional policies are needed, you need to register a policy to NBDC and reference issued JGAP number from submitting dataset.
 
 XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 

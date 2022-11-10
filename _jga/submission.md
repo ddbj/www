@@ -25,7 +25,7 @@ JGA は NBDC で承認された利用制限ポリシーを持つ，匿名化さ�
 |JGAX|Experiment|9|JGAX000000001|
 |JGAR|Data|9|JGAR000000001|
 |JGAZ|Analysis|9|JGAZ000000001|
-|JGAD|Data set|6|JGAD000001|
+|JGAD|Dataset|6|JGAD000001|
 |JGAP|Policy|6|JGAP000001|
 
 <div class="attention">
@@ -136,7 +136,7 @@ JGA メタデータのうち以下のオブジェクトは登録の概要を示�
 Study: 
 : 全ての内容
 
-Data set: 
+Dataset: 
 : 全ての内容と含まれる Sample 数とファイルサイズ。
 
 Policy: 
@@ -180,7 +180,7 @@ XML schema: [JGA.data.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 XML schema: [JGA.analysis.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-### Data set {#Dataset}
+### Dataset {#Dataset}
 
 Data XML と Analysis XML に記載されているデータファイルを,データセットという単位にまとめます。 Study 中に適用されるポリシー (利用制限事項) が異なるデータ (Control と Case 等) が含まれている場合，データセットを分ける必要があります。
 
@@ -192,7 +192,7 @@ XML schema: [JGA.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 データ利用制限ポリシーを記載します。[NBDC ポリシー](https://humandbs.biosciencedbc.jp/nbdc-policy)以外に適用すべきポリシーがなければ作成する必要はありません。
 
-[NBDC ポリシー](https://humandbs.biosciencedbc.jp/nbdc-policy)以外に適用すべきポリシーがある場合は，NBDC にポリシーを登録し，発行される JGAP 番号を Data set から参照します。
+[NBDC ポリシー](https://humandbs.biosciencedbc.jp/nbdc-policy)以外に適用すべきポリシーがある場合は，NBDC にポリシーを登録し，発行される JGAP 番号を Dataset から参照します。
 
 XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
