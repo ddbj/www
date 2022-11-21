@@ -574,6 +574,17 @@ $(function(){
 /* サンプル属性 */
 $(function(){
 
+  // BioSample 属性ページ限定
+  var pathname = window.location.pathname;
+  var hash = window.location.hash;
+  var filepath = pathname.replace("-e.html", "").replace(".html", "");
+
+  if ( filepath == "/biosample/attribute" ) {
+    $(document).ready(function(){
+      $("#all").trigger('click');
+    });  
+  }
+
   examples = {
     "All" : [["All"],["1811256482"],[]],
     "Generic" : [["Generic"],["1439451015"],[]],
@@ -710,6 +721,10 @@ $(function(){
       }
 
       $('.bs_desc').after(attr_table);
+
+      if(hash && $(hash).length){
+        $('html, body').animate({scrollTop: $(hash).offset().top}, 200);
+      }
 
     }); // $.getJSON
 
