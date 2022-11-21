@@ -18,8 +18,7 @@ research use or to bona fide researchers. Strict protocols govern how
 information is managed, stored and distributed by the JGA. Once
 processed, all data are encrypted. Users can contact the JGA team from
 [here](/contact-ddbj-e.html).  
-JGA services are provided in collaboration with [National Bioscience
-Database Center (NBDC)](http://biosciencedbc.jp/en/) of [Japan Science
+JGA services are provided in collaboration with the [Department of NBDC Program (NBDC)](http://biosciencedbc.jp/en/) of [Japan Science
 and Technology Agency](http://www.jst.go.jp/EN/index.html).
 
 ## Data access  {#access}

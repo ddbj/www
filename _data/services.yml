@@ -418,12 +418,12 @@ items:
   - name: TogoVar
     formal_name: TogoVar
     service_link:
-      en: https://togovar.biosciencedbc.jp
-      ja: https://togovar.biosciencedbc.jp
+      en: https://togovar.org/
+      ja: https://togovar.org/
     description:
       en: A database collects and organizes genome sequence differences between individuals (variants) in the Japanese population and disease information associated with.
       ja: 日本人ゲノム配列の個人による違い（バリアント）とそれに関係する疾患情報などを収集・整理したデータベース
-    provider: NBDC
+    provider: DBCLS
     target_data:
       en: Human variants
       ja: ヒトバリアント

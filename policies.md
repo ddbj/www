@@ -127,7 +127,7 @@ lang: ja
 * 重要事項を通知するため
 
 #### 登録データ
-個人から取得された登録データは当該データ主体の同意に基づいて取得・提供され、当該同意に基づいた制限が適用されます。非アクセス制限データは利用者の研究開発活動のためセンターから利用制限を課すことなく提供されます。アクセス制限データについては国立研究開発法人科学技術振興機構バイオサイエンスデータベースセンター（以下「NBDC」）と共同で利用され、[NBDC ヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)又は [NBDC ヒトデータグループ共有ガイドライン](https://gr-sharingdbs.biosciencedbc.jp/group-data-sharing-guidelines)に従って利用者に提供されます。登録データに関するプライバシーポリシーは「[NBDCヒトデータベースについて](https://humandbs.biosciencedbc.jp/aim)」を参照してください。
+個人から取得された登録データは当該データ主体の同意に基づいて取得・提供され、当該同意に基づいた制限が適用されます。非アクセス制限データは利用者の研究開発活動のためセンターから利用制限を課すことなく提供されます。アクセス制限データについては国立研究開発法人科学技術振興機構 NBDC 事業推進部 （以下「NBDC」）と共同で利用され、[NBDC ヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)又は [NBDC ヒトデータグループ共有ガイドライン](https://gr-sharingdbs.biosciencedbc.jp/group-data-sharing-guidelines)に従って利用者に提供されます。登録データに関するプライバシーポリシーは「[NBDC ヒトデータベースについて](https://humandbs.biosciencedbc.jp/aim)」を参照してください。
 
 申込者情報
 * 講習会やイベントに関する連絡のため
@@ -278,7 +278,7 @@ Google アナリティクス オプトアウト アドオン
 ヒトを対象としたデータを登録する前に、研究対象者とのインフォームド・コンセントに基づき、データ公開に際してアクセス制限が必要かどうかを検討してください。
 
 ##### アクセス制限が必要な場合 {#controlled-access}
-アクセス制限データベース [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) へご登録ください。JGA にデータを登録するためには、事前に科学技術振興機構[バイオサイエンスデータベースセンター（NBDC）](https://humandbs.biosciencedbc.jp/)ヒトデータ審査委員会に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。
+アクセス制限データベース [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) へご登録ください。JGA にデータを登録するためには、事前に科学技術振興機構 [NBDC 事業推進部（NBDC）](https://humandbs.biosciencedbc.jp/)ヒトデータ審査委員会に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。
 
 #### アクセス制限が必要ではない場合 {#unrestricted-access}
 非アクセス制限データベースである [DDBJ Sequence Read Archive (DRA)](/dra/index.html)、[Genomic Expression Archive (GEA)](/gea/index.html)、または、[DDBJ](/ddbj/index.html) データベースへご登録ください。個人識別符号（*2）に該当するデータを非アクセス制限データベースへ登録するためには、事前に NBDC ヒトデータ審査委員会事務局に登録予定データの提供申請書を提出し、委員会で審査の上、承認されている必要があります。原則として「登録の前に」の確認項目二点に加え、インフォームド・コンセント説明同意文書内にデータがデータベースから制限なく一般公開される旨が記載されている必要があります。
