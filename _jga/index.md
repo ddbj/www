@@ -15,7 +15,7 @@ Japanese Genotype-phenotype Archive (JGA)
 は厳格なプロトコールに従い，情報を管理，格納，提供しています。
 登録処理が終わった全てのデータは暗号化されます。 JGA
 チームには[こちらから連絡](/contact-ddbj.html)することができます。  
-なお，JGA に登録されるデータおよびデータの利用についての審査は[独立行政法人科学技術振興機構
+なお，JGA に登録されるデータおよびデータの利用についての審査は[科学技術振興機構
 (JST)/NBDC 事業推進部 (NBDC)](http://humandbs.biosciencedbc.jp/) が実施しています。 JGA
 は[科学技術振興機構](http://www.jst.go.jp/) [National
 Bioscience Database Center (NBDC)](http://biosciencedbc.jp/)
