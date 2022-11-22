@@ -354,6 +354,7 @@ OM      GenBank         Direct submission
 ON      GenBank         Direct submission
 OO      USPTO           Patent application
 OP      GenBank         Direct submission
+OQ      GenBank         Direct submission
 OU      ENA             
 OV      ENA             
 OW      ENA             
