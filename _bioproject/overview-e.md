@@ -12,25 +12,10 @@ lang: en
 As measuring technologies dramatically advances in life sciences, vast and diverse data are submitted to public databases.  
 The BioProject resource organizes both the projects and the data from those projects . This allows searching by characteristics of these projects, using the project description and project content across the databases.
 
-{% include image.html url="submission/biosample_integration.jpg" caption="Overview of BioSample and BioProject integration with other DDBJ databases" class="w450" %}
-
 ## Project  {#project}
 
 The definition of a set of related data, a 'project' is very flexible.  
-For example, BioProject records can be established for the following researches.  
-* Genome sequencing and assembly
-* Metagenomes
-* Transcriptome sequencing and expression
-* Targeted locus sequencing
-* Epigenetics
-* Phenotype or Genotype
-* Variation detection
-* Metabolomics study
-
-BioProject represents a submission, initiative, or group of data that is logically related in some manner, or is of interest to retrieve as a distinct dataset. 
-
-## Complex project  {#complex-project}
-
+BioProject represents a submission, initiative, or group of data that is logically related in some manner, or is of interest to retrieve as a distinct dataset.  
 By selecting [Project Data Types](/bioproject/project-info-e.html#Project_data_type) (for example, "Genome Sequencing" and "Transcriptome or Gene Expression"), multiple studies can be merged into single project.  
 In the project spanning multiple species, enter a taxonomic classification common to the species (e.g., genus name).
 
@@ -52,12 +37,6 @@ Umbrella project:
 Some large initiatives are represented by more than one layer of umbrella projects (see Figure B below); for instance, a top-most level may identify the largest definition of the collaboration; a second level of umbrella projects identify the primary categories of data production; and finally a third layer represents the projects that actually generate the data that is submitted. 
 
 {% include image.html url="submission/bp_org.jpg" caption="Schematic diagram of BioProject hierarchies. (A)Two layers. (B)Three layers." class="w450" %}
-
-Two layers (A)  
-: Initiatives may be organized as a single Umbrella project with one or many submitted projects that are connected to data. Example: [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309).
-
-Three layers (B)  
-: Very large initiatives which have distinct sub-projects may have two levels of Umbrella project. For example, a top-level Umbrella project groups all components of the initiative; mid-level Umbrella projects reflect two distinct branches of the project (such as sequencing vs. epigenetics); and several primary projects denote distinct project data types (e.g., genome sequencing, transcriptome, epigenetics, etc.). Example: [NIH Human Microbiome Project (HMP) Roadmap Project](https://www.ncbi.nlm.nih.gov/bioproject/43021).
 
 ## Data release  {#release}
 
@@ -91,4 +70,4 @@ To group primary projects under an umbrella, please follow the steps below.
 First, submit and release an umbrella project. If necessary, please share the assigned PRJDB number with relevant researchers.  
 When submitting related primary projects, please provide the PRJDB number of parent umbrella in the [Umbrella BioProject](/bioproject/project-info-e.html#Area_linked-project). Released primary projects are automatically linked to the specified umbrella project.
 
-If you want to add already registered primary projects to the umbrella, please [e-mail](/contact-ddbj-e.html)the PRJDB numbers of umbrella and related primary projects to the DDBJ BioProject team.
+If you want to add already registered primary projects to the umbrella, please inform the PRJDB numbers of umbrella and related primary projects to the [DDBJ BioProject team](/contact-ddbj-e.html).
