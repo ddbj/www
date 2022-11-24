@@ -14,7 +14,6 @@ The BioProject resource organizes both the projects and the data from those proj
 
 ## Project  {#project}
 
-The definition of a set of related data, a 'project' is very flexible.  
 BioProject represents a submission, initiative, or group of data that is logically related in some manner, or is of interest to retrieve as a distinct dataset.  
 By selecting [Project Data Types](/bioproject/project-info-e.html#Project_data_type) (for example, "Genome Sequencing" and "Transcriptome or Gene Expression"), multiple studies can be merged into single project.  
 In the project spanning multiple species, enter a taxonomic classification common to the species (e.g., genus name).
