@@ -12,24 +12,9 @@ lang: ja
 生命科学分野における測定技術の長足の進歩により、日々大量かつ多種多様なデータが生み出され、様々なデータベースに登録されるようになっています。  
 BioProject は研究プロジェクト、及び、プロジェクトから生み出されるデータを管理し、プロジェクトの種類や特徴といった項目でデータベースを横断して検索することを可能にします。
 
-{% include image.html url="submission/biosample_integration.jpg" caption="BioProject/BioSample と他の DDBJ データベースとの連携" class="w450" %}
-
 ## プロジェクト  {#project}
 
-「Project」は複雑なプロジェクトや異なる特徴を持ったサブプロジェクトを表現できるよう、柔軟に定義されており、例えば、以下のような研究に対して BioProject を作成することができます。
-* ゲノムシークエンシングとアセンブリ
-* メタゲノム
-* 転写産物シークエンシングと遺伝子発現
-* ターゲット遺伝子座のシークエンシング
-* エピジェネティックス
-* 表現型と遺伝型
-* バリアントの検出
-* メタボロミクス研究
-
-BioProject は同じプロジェクトに由来するデータ、及び、まとめて提供したいデータに対して作成します。
-
-## 複合プロジェクト  {#complex-project}
-
+BioProject は同じプロジェクトに由来するデータ、及び、まとめて提供したいデータに対して作成します。  
 [Project Data Type](/bioproject/project-info.html#Project_data_type) を複数選択 (例: Genome Sequencing と Transcriptome or Gene Expression) することで、ゲノムシークエンシングと遺伝子発現解析といった異なる研究を一つのプロジェクトにまとめることができます。  
 複数の生物種を対象としたプロジェクトの場合、[Organism name](/bioproject/project-info.html#BioProject_Organism_name) には共通する階層までの生物分類（例 鋼レベルの [Mammalia](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=40674&lvl=3&lin=f&keep=1&srchmode=1&unlock)）を記入します。
 
@@ -52,13 +37,6 @@ BioProject は同じプロジェクトに由来するデータ、及び、まと
 大規模プロジェクトを１つ以上のアンブレラプロジェクトで表すことができます。最上位レベルで共同研究プロジェクト全体を表し、二段目で産出されるデータの種類に対してアンブレラプロジェクトを作成、最後の三段目で実際に登録されるデータから参照されるプライマリープロジェクトを作成する、といった構成です。
 
 {% include image.html url="submission/bp_org.jpg" caption="階層構造の模式図。(A)二階層 (B)三階層" class="w500" %}
-
-二階層 (A)  
-: コンソーシアムは１つのアンブレラプロジェクトとデータから参照された１つ以上のプライマリープロジェクトから構成されます。例: [Neanderthal Metagenome](https://www.ncbi.nlm.nih.gov/bioproject/18309)
-
-三階層 (B)  
-: いくつかのサブプロジェクトを持つ巨大プロジェクトは二階層のアンブレラプロジェクトで構成することができます。最上位のアンブレラプロジェクトでコンソーシアム全体を表し、中位レベルのアンブレラプロジェクトでサブプロジェクトを表し、最下段の複数のプライマリープロジェクトで異なるデータ種別を表す場合などです。  
-例: [NIH Human Microbiome Project (HMP) Roadmap Project](https://www.ncbi.nlm.nih.gov/bioproject/43021)
 
 ## データ公開 {#release}
 
