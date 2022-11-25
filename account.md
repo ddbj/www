@@ -24,13 +24,15 @@ DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認�
 {% include image.html url="books/hac01.jpg" caption="アカウントのサービス利用権限" class="w300" %}
 {:/}
 
+NBDC に提供・利用申請を提出するユーザは[申請に必要なアカウント情報を追加](#nbdc)します。追加した情報は申請フォームに自動入力されるようになるため、申請作業が効率的になります。
+
 ## D-way アカウントをウェブサイトで作成 {#account-for-bioproject-biosample-submissions}
 
 ### ウェブサイトでアカウントを作成  {#create-an-account-on-website}
 
 ウェブサイトで新規作成したアカウントはデフォルトで BioProject/BioSample/NBDC 申請サービスを利用することができます。
 
-登録ポータル ["D-way" (https://ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way)</a> にアクセスします。
+登録ポータル ["D-way" (https://ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way) にアクセスします。
 [Register for a new account] ボタンをクリックします。
 
 {::nomarkdown}
@@ -245,10 +247,14 @@ public key\] で鍵を登録します。
 
 機能が未実装であるため D-way ウェブポータルでは JGA 登録をみることができません。認証用公開鍵をアカウントに登録後、[「JGA への登録手順」](/jga/submission-step.html)、及び、[「JGA データの利用手順」](/jga/download.html)に従ってサービスを利用してください。    
 
-### NBDC 申請のための情報追加  {#nbdc}
+### アカウントの更新  {#update-account}
 
-アカウントに所属情報や日本語氏名を登録します。    
-[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。  
+アカウント情報を編集し [Update\] ボタンでアカウントを更新します。登録した認証用公開鍵は新しいファイルをアップロードすることで上書きすることができます。
+
+## NBDC 申請のための情報追加  {#nbdc}
+
+アカウントに所属情報や日本語氏名、職位を登録します。    
+[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) \([https://humandbs.ddbj.nig.ac.jp/nbdc/application/](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)\)にログインし、右上のメニューから「ユーザ情報更新」を選択します。  
 
 {% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
 
@@ -264,18 +270,17 @@ public key\] で鍵を登録します。
 * State/Prefecture
 * City
 * Street
+* Phone
+* Job Title
 * First name in Japanese
 * Last name in Japanese
+* Job Title in Japanese
 
 {% include image.html url="books/profile3.jpg" caption="アカウント情報を入力" class="w400" %}
 
 「Save」で登録します。
 
 {% include image.html url="books/profile4.jpg" caption="Save で保存" class="w300" %}
-
-### アカウントの更新  {#update-account}
-
-アカウント情報を編集し [Update\] ボタンでアカウントを更新します。登録した認証用公開鍵は新しいファイルをアップロードすることで上書きすることができます。
 
 ## パスワードの変更 {#password-chang}
 

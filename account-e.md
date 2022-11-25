@@ -24,6 +24,8 @@ DDBJ Center employs scp authenticated by ssh key for transfer of large files. Th
 {% include image.html url="books/hac01-e.jpg" caption="Service permission of D-way account" class="w300" %}
 {:/}
 
+Users who will submit data submission or data use applications to NBDC are advised to [enter additional account information](#nbdc). The added items are automatically filled to new applications and the users are able to avoid entering these items in each application. 
+
 ## Create a D-way account in the website {#account-for-bioproject-biosample-submissions}
 
 ### Create an account on website {#create-an-account-on-website}
@@ -265,6 +267,34 @@ The JGA submissions are not browsable in the D-way web portal (under development
 
 Edit account information and update account by [Update] button. The
 registered public key for authentication can be overwritten by uploading a new file.
+
+## Items to be added for NBDC applications {#nbdc}
+
+Add the organization and job title information to your account. 
+Login the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) \([https://humandbs.ddbj.nig.ac.jp/nbdc/application/](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)\) and select the "User information update" at the top right menu.
+
+{% include image.html url="books/profile1-e.jpg" caption="User information update" class="w400" %}
+
+Click the Edit button to add the information.
+
+{% include image.html url="books/profile2.jpg" caption="Edit the account information by the Edit button" class="w300" %}
+
+Add additional information.
+
+* Laboratory, Faculty, Department
+* Country
+* Postal code/Zip code
+* State/Prefecture
+* City
+* Street
+* Phone
+* Job Title
+
+{% include image.html url="books/profile3-e.jpg" caption="Add account information" class="w400" %}
+
+Save the information by the Save button.
+
+{% include image.html url="books/profile4.jpg" caption="Save the information" class="w300" %}
 
 ## Password change {#password-change}
 
