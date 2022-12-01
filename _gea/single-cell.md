@@ -47,7 +47,8 @@ DRA の生データとしては基本的に [fastq もしくは bam](/dra/submis
 
 ### GEA  {#de-multiplexed-gea}
 
-サンプル（細胞）毎に分割された[解析済みデータファイル](/gea/datafile.html#seq_proc)を登録します。
+サンプル（細胞）毎に分割された[解析済みデータファイル](/gea/datafile.html#seq_proc)を登録します。  
+Loupe Browser でのデータ可視化と解析のための cloupe.cloupe ファイルを含めることもできます ([Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview))。 
 
 ## 混合登録の場合  {#multiplexed}
 
@@ -67,4 +68,5 @@ DRA の生データとしては基本的に [fastq もしくは bam](/dra/submis
 
 ### GEA  {#multiplexed-gea}
 
-細胞毎の情報はサンプル属性にもライブラリーにも記載されていない状態なので、[解析済みデータファイル](/gea/datafile.html#seq_proc)に<span class="red">細胞毎の属性情報、リードカウントやバーコード配列を含めます。</span>
+細胞毎の情報はサンプル属性にもライブラリーにも記載されていない状態なので、[解析済みデータファイル](/gea/datafile.html#seq_proc)に<span class="red">細胞毎の属性情報、リードカウントやバーコード配列を含めます。</span>   
+Loupe Browser でのデータ可視化と解析のための cloupe.cloupe ファイルを含めることもできます ([Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview))。 
