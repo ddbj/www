@@ -15,13 +15,21 @@ In the spatial gene expression data submission, it is important for data interpr
 
 Submission of output files from the 10xGenomics [Visium](https://www.10xgenomics.com/jp/products/spatial-gene-expression) is explained in this section. Submit barcode sequences, position of spots containing the barcodes, tissue images, and scaling factors that converts pixel positions in the original, full-resolution images to pixel positions in the tissue image files.    
 
-[Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial)
+* [Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial)
+* [Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview)
 
 Among the files indicated in the above page, submit the following files along with raw and processed data files. The other related files may also be included.
 
+DRA  
+* fastq or bam
+
+GEA processed data  
+* GEX Matrix: gene expression data
 * tissue_hires_image.png, tissue_lowres_image.png: these files are downsampled versions of the original, full-resolution brightfield image provided by the user.
 * scalefactors_json.json: scaling factor that converts pixel positions in the original, full-resolution image to pixel positions in the tissue image files.
 * tissue_positions_list.csv: this text file contains a table with rows that correspond to spots.
+* web_summary.html: Summary data (optional)
+* cloupe.cloupe: Loupe Browser file for data visualization and analysis (optional)
 
 After entering your data in D-way, please [contact the GEA team](/contact-ddbj-e.html) before submitting.
 

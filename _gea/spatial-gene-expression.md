@@ -18,12 +18,20 @@ lang: ja
 
 空間的な遺伝子発現量測定に使用したバーコード配列、バーコード配列を含むスポットの位置、組織切片画像、スポットと画像の対応倍率、を登録します。    
 
-[Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial)
+* [Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial)
+* [Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview)
 
 上記の Visium ページで示されている出力ファイルの内、以下のファイルを生・解析データと一緒に登録します。他の関連するファイルを含めることもできます。
 
+DRA  
+* fastq or bam
+
+GEA processed data  
+* GEX Matrix: 遺伝子発現データ
 * tissue_hires_image.png, tissue_lowres_image.png: 組織切片の画像
 * scalefactors_json.json: 画像とスポットとの倍率を含む対応関係
 * tissue_positions_list.csv: バーコード配列とスポット座標との対応関係
+* web_summary.html: サマリーデータ (任意)
+* cloupe.cloupe: データ可視化と解析のための Loupe Browser ファイル　(任意)
 
 手順についてはデータを D-way で入力後、submit する前に [GEA チームにお問い合わせください](/contact-ddbj.html)。
