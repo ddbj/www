@@ -143,7 +143,7 @@ submit a proposed organism name with detailed information.
 DDBJ staff will apply a novel name to the NCBI Taxonomy. After the name is registered, BioSample accession number(s) will be assigned.
 
 When submitting annotated genome sequences to [DDBJ](/ddbj/index-e.html), enter locus tag(s) you want to use in [locus_tag_prefix](/biosample/attribute-e.html#locus_tag_prefix)<a name="locus_tag"></a> attribute(s). 
-DDBJ staff will reserve locus tag prefix(es) to NCBI. BioSample accession number(s) will be assigned after the locus tag reservation.
+DDBJ staff will reserve locus tag prefix(es) to NCBI. BioSample accession number(s) will be assigned after the reservation.
 
 ## Overview  {#Overview}
 

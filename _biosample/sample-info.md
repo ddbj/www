@@ -144,8 +144,8 @@ MIMS.me と MIMARKS.survey のときは No package を選択できません。
 登録を準備する際は[属性のリスト](/biosample/attribute.html)や[登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)を参照し、該当する項目を入力してください。
 リストにない情報を持っている場合はユーザが定義した独自の属性をタブ区切りテキストファイルの末尾に追加します。
 
-[NCBI Taxonomy](https://ncbi.nlm.nih.gov/taxonomy)<a name="novel_organism"></a> に登録されていない場合、未登録の生物に関する情報をできるだけ記入して submit してください。
-DDBJ スタッフが NCBI Taxonomy に未登録の生物を申請します。Taxonomy に登録後、アクセッション番号が発行されます。
+[NCBI Taxonomy](https://ncbi.nlm.nih.gov/taxonomy)<a name="novel_organism"></a> に生物名が登録されていない場合、生物に関する情報をできるだけ記入した上で submit します。
+DDBJ スタッフが submit された情報を基に NCBI Taxonomy に生物名を申請します。Taxonomy に登録され次第、BioSample アクセッション番号が発行されます。
 
 アノテーション付きゲノム配列を [DDBJ](/ddbj/index.html) に登録する場合、希望するタグを [locus_tag_prefix](/biosample/attribute.html#locus_tag_prefix)<a name="locus_tag"></a> に記入します。
 DDBJ スタッフが NCBI に locus tag prefix を予約後、BioSample アクセッション番号が発行されます。 
