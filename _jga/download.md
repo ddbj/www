@@ -239,7 +239,8 @@ J-DU999991/JGAS999992/JGAD999993
 
 ## メタデータ {#metadata}
 
-metadata ディレクトリには以下のファイルが含まれています。メタデータファイルは暗号化されていません。
+metadata ディレクトリには以下のファイルが含まれています。メタデータファイルは暗号化されていません。  
+[メタデータ tsv ファイルの例](https://docs.google.com/spreadsheets/d/1NSYUV6KOuQp8zh1lge7450UxBjb5YrUTYOMkwtBxI7o/edit#gid=0)
 
 ### メタデータオブジェクトの内容が記述された tsv ファイル {#metadata-tsv}
 

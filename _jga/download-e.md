@@ -249,7 +249,8 @@ J-DU999991/JGAS999992/JGAD999993
 
 ### Metadata {#metadata}
 
-The metadata directory contains following files. Metadata files are not encrypted.
+The metadata directory contains following files. Metadata files are not encrypted.   
+[JGA metadata example tsv](https://docs.google.com/spreadsheets/d/1NSYUV6KOuQp8zh1lge7450UxBjb5YrUTYOMkwtBxI7o/edit#gid=0)
 
 #### Metadata in tsv {#metadata-tsv}
 
