@@ -138,6 +138,13 @@ For the MIMS.me and MIMARKS.survey packages, "No package" cannot be selected.
 : [List of attributes](/biosample/attribute-e.html). Besides the mandatory fields, there are several optional attribute fields. To make the BioSample record most useful, you should include all available information in the submission. Commonly used and useful attributes have been defined, with standardized nomenclature. In preparing your submission, please refer to [this attributes list](/biosample/attribute-e.html) and [BioSample examples](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482) and fill in the relevant fields.  
 If you have information of a type that does not appear in the standard list, you can create it as a user-defined attribute.
 
+When an organism name is not registered in the [NCBI Taxonomy](https://ncbi.nlm.nih.gov/taxonomy)<a name="novel_organism"></a>, 
+submit a proposed organism name with detailed information. 
+DDBJ staff will apply a novel name to the NCBI Taxonomy. After the name is registered, BioSample accession number(s) will be assigned.
+
+When submitting annotated genome sequences to [DDBJ](/ddbj/index-e.html), enter locus tag(s) you want to use in [locus_tag_prefix](/biosample/attribute-e.html#locus_tag_prefix)<a name="locus_tag"></a> attribute(s). 
+DDBJ staff will reserve locus tag prefix(es) to NCBI. BioSample accession number(s) will be assigned after the locus tag reservation.
+
 ## Overview  {#Overview}
 
 [Overview](#BioSample_Overview)<a name="BioSample_Overview"></a>  
