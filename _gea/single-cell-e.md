@@ -62,8 +62,8 @@ de-multiplexed for each cell (sample).
 
 ### GEA  {#de-multiplexed-gea}
 
-Submit [processed data files](/gea/datafile-e.html#seq_proc)
-de-multiplexed for each cell (sample).
+Submit [processed data files](/gea/datafile-e.html#seq_proc) de-multiplexed for each cell (sample).  
+Loupe Browser files for data visualization and analysis (cloupe.cloupe) may be included ([Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview)).
 
 ## Multiplexed submission  {#multiplexed}
 
@@ -90,5 +90,5 @@ mkfastq](https://support.10xgenomics.com/single-cell-gene-expression/software/pi
 Since there is no information about the individual cells at the sample
 annotation or file level, <span class="red">include the analysis results, cell-specific
 attributes, read count matrix and barcode sequences in</span> [processed data
-files](/gea/datafile-e.html#seq_proc).
-
+files](/gea/datafile-e.html#seq_proc).  
+Loupe Browser files for data visualization and analysis (cloupe.cloupe) may be included ([Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview)).
