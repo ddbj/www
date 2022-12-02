@@ -14,19 +14,19 @@ Recently, variation studies related to re-sequencing projects are increased, so 
 <span style="color:red">DDBJ (INSDC) basically accepts all sequence data, regardless of source and sequence identity</span>, however, 
 if the policy is strictly applied, some of data would be very redundant.
 
-In order to take advantage of normalisation for variation studies, a
-single submission to represent multiple identical sequences is also
-acceptable with frequency and total sample number described by
-/[haplotype](/ddbj/qualifiers-e.html#haplotype) qualifier of [source](/ddbj/features-e.html#source) feature and/or /[frequency](/ddbj/qualifiers-e.html#frequency) qualifier of
-[variation](/ddbj/features-e.html#variation) feature.
+In order to take advantage of normalisation for variation studies, 
+a single submission to represent multiple identical sequences is also acceptable with frequency and total sample number described by
+/[haplotype](/ddbj/qualifiers-e.html#haplotype ) 
+qualifier of [source](/ddbj/features-e.html#source ) 
+feature and/or /[frequency](/ddbj/qualifiers-e.html#frequency ) 
+qualifier of [variation](/ddbj/features-e.html#variation) feature.
 
-The way of representative submission for variation studies is NOT to
-mean that all identical (or similar) sequences derived from same species
-would be represented by a single sequence data. To evaluate research
-data properly, DDBJ recommends to normalise research data for variation
-studies by appropriate set of entries; basically, the number of entries
-should be equal to multiplication of numbers of sequence polymorphisms
-and sampled populations.
+The way of representative submission for variation studies is 
+NOT to mean that all identical (or similar) sequences derived from same species
+would be represented by a single sequence data. 
+To evaluate research data properly, DDBJ recommends to normalise research data 
+for variation studies by appropriate set of entries; basically, the number of entries 
+should be equal to multiplication of numbers of sequence polymorphisms and sampled populations.
 
 sequence polymorphism  
 : a unit of sequence variations that can keep unique descriptions of
@@ -36,8 +36,9 @@ qualifiers.
 
 sampled population  
 : a unit of obserbed samples that can keep unique descriptions of
-/[country](/ddbj/qualifiers-e.html#country),
-/[lat\_lon](/ddbj/qualifiers-e.html#lat_lon),
+/[country](/ddbj/qualifiers-e.html#country ),
+/[lat_lon](/ddbj/qualifiers-e.html#lat_lon ),
+/[collection_date](/ddbj/qualifiers-e.html#collection_date ),
 /[host](/ddbj/qualifiers-e.html#host) and/or some other qualifiers.
 
 For example, a study of a locus on cat genomes comparing Japan with USA
@@ -82,14 +83,13 @@ for both submitters and users.
   </tbody>
 </table>
 
-Since observed identical sequences are three types, it would be possible
-for the publication of this study to submit only three representative
-sequence data to DDBJ. However, if so, it would be difficult for users
-to understand what kind of samples were used for this study. Therefore,
-it is strongly recommended to submit five representative data (There are
-6 patterns; i.e. 3 haplotypes x 2 countries, but haplotype C is not
-observed in Japan.) to DDBJ in following descriptions for source
-features, respectively.
+Since observed identical sequences are three types, it would be possible for the publication of this study 
+to submit only three representative sequence data to DDBJ.     
+However, if so, it would be difficult for users to understand what kind of samples were used for this study.    
+Therefore, it is strongly recommended to submit five representative data 
+(There are 6 patterns; i.e. 3 haplotypes x 2 countries, but haplotype C is not observed in Japan.) 
+to DDBJ in following descriptions for source features, respectively.    
+Furthermore, when observing at the passage of time, you may like to consider about the /collection_date qualifier as well.   
 
 <pre>    <a href="/ddbj/features-e.html#source">source</a>        1..365
                   /<a href="/ddbj/qualifiers-e.html#country">country</a>="<span style="color:red">Japan</span>"

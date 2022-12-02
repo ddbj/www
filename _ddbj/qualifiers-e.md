@@ -259,7 +259,9 @@ Though INSDC still keep and accept old value formats that make use of 'Mmm' (mon
 ### /country<a name="country"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#country)</span>
 
 Definition 
-: locality of isolation of the sequenced sample indicated in terms of political names for nations, oceans or seas, followed by regions and localities    
+: locality of isolation of the sequenced sample indicated in terms of political names for nations, oceans or seas, followed by regions and localities     
+We can NOT accept multiple localities in one qualifier.    
+In cases of identical sequences observed, in principle, please separately submit your data into [multiple records per locality](/ddbj/representative-sequence-e.html ).    
 
 Value format
 : &lt;country&gt;[:&lt;free-text for geographical name&gt;]    
