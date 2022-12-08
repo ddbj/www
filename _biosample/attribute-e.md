@@ -164,7 +164,7 @@ After selecting the relevant Sample type, click the DEFINITION button to review 
 **number: At least one attribute is required in attributes   
 
 * [BioSample example submission files for several packages](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)    
-* [Package list](/biosample/sample-info-e.html#Sample-type)
+* [Package list](/biosample/sample-info-e.html#Sample-package)
 
 <h3 id="data-type">Sample submission by data type</h3>
 
