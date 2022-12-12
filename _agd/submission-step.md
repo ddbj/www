@@ -68,7 +68,7 @@ AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/submissio
 
 [![AGD メタデータ記入用エクセル](/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}](/assets/files/submission/AGD_metadata.xlsx)
 
-last updated: 2022-07-01
+last updated: 2022-12-12
 
 <div class="attention" markdown="1">
 AGD にアップロードするファイル名には空白を含めないでください。
