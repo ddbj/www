@@ -75,7 +75,7 @@ Run に含まれる全てのファイルは１つの SRA/fastq ファイルに�
 登録者が所属する組織に関する情報を記載します。
 
 [Center Name](#Submission_Center_Name)<a name="Submission_Center_Name"></a><span class="red">*</span>  
-: 登録者が所属する組織の Center Name。[Center Name リスト。](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/centerlist)DDBJ/EBI/NCBI
+: 登録者が所属する組織の Center Name。[Center Name リスト](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/centerlist)。DDBJ/EBI/NCBI
 SRA にデータを登録する際にはこの Center Name が必要です。   
 メタデータ作成ツールはアカウント情報から Center Name を自動的に取得します。  
 Center Name は登録の所有権を示すものではなく、SRA が運用上使用している略称です。所有権は [Submitter](#Area_submitter-submission) に記載される登録者にあります。
@@ -112,7 +112,7 @@ Center Name は登録の所有権を示すものではなく、SRA が運用上�
 ## BioSample  {#BioSample} 
 
 [BioSample ID](#DRA_BioSampleID)<a name="DRA_BioSampleID"></a><span class="red">*</span>  
-: [BioSample](/biosample/index.html) に登録済みのサンプルから該当するものを選択するか、新たにサンプルを登録し BioSample の登録方法は [BioSample の登録](/biosample/submission.html) を参照してください。
+: [BioSample](/biosample/index.html) に登録済みのサンプルから該当するものを選択するか、新たにサンプルを登録し BioSample の登録方法は [BioSample の登録](/biosample/submission.html)を参照してください。
 
 ## Experiment  {#Experiment}
 
@@ -294,27 +294,16 @@ Center Name は登録の所有権を示すものではなく、SRA が運用上�
 | AB 3730 Genetic Analyzer            |
 | AB 3730xL Genetic Analyzer          |
 
-[Spot Type](#Spot_Type)<a name="Spot_Type"></a><span class="red">*</span>  
-: データファイル中のリード構成を選択します。
+[Library Layout](#Library_Layout)<a name="Library_Layout"></a><span class="red">*</span>  
+: データファイル中のリード構成を選択します。リードの向き (Forward と Reverse) は Instrument から自動判定されます。2022年12月に Spot Type から Library Layout に表示名が変更になりました。
 
-| Spot Type   | Description                           |
+| Spot Type | Description |
 |---|
-| single      | Single read                           |
-| paired (FF) | Paired reads with same direction.     |
-| paired (FR) | Paired reads with opposite direction. |
+| single | Single read |
+| paired | Paired reads |
 
-[Nominal Length](#Nominal_Length)<a name="Nominal_Length"></a><span class="conditionally_required">*</span>  
-: ペアエンドライブラリを構築した際のインサートサイズ。
-
-[Nominal Sdev](#Nominal_Sdev)<a name="Nominal_Sdev"></a>  
-: インサートサイズの標準偏差
-
-[Spot Length](#Spot_Length)<a name="Spot_Length"></a><span class="red">*</span>  
-: データファイル中のリードの長さを記載します。ペアードの場合は両リードの合計長 (ギャップ長は除きます) を記入します。
-    
-- Spot length が一定の場合、一定の値を記入
-- リード長が一定ではない 454 プラットフォームの場合、フロー数を記入
-- 不定長の fastq の場合、平均長を記入
+[Insert Size](#Insert_Size)<a name="Insert_Size"></a><span class="conditionally_required">*</span>  
+: ペアエンドライブラリを構築した際のインサートサイズ。2022年12月に Nominal Length から Insert Size に表示名が変更になりました。
 
 ## Run  {#Run}
 
@@ -346,7 +335,6 @@ Run に含めるデータファイルを選択します。
 | File Type        | Description                                                                                                            |
 |---|
 | fastq            | fastq files                                                                                                            |
-| sff              | 454 Standard Flowgram Format file                                                                                      |
 | hdf5             | PacBio hdf5 Format file                                                                                                |
 | bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
 | tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |

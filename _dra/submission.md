@@ -15,12 +15,9 @@ lang: ja
 
 ## 登録の流れ {#flow}
 
-登録方法の動画 [TogoTV](https://togotv.dbcls.jp/20190523.html) (22分12秒、2019年作成)。
-
 ### 1. 登録アカウントを取得 {#step-account}
 
-[D-way 登録アカウント](/account.html)を取得し、
-[公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)して DRA 登録ができるようにします。
+[D-way 登録アカウント](/account.html)を取得し、[公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)して DRA 登録ができるようにします。
 
 ### 2. DRA 新規登録の作成  {#step-new-submission}
 
@@ -159,8 +156,8 @@ BioProject の登録後、登録したプロジェクトが選択されます。
 
 アカウントで登録した BioSample から該当するものを選びます (DRA では数サンプルが一般的です)。
 チェックボックスを選択し、続いて Shift キーを押しながら次のボックスをクリックすると、サンプルが範囲選択されます。
-また、カラム上部のボックスにテキストを入力しフィルターされた全てのサンプルを [Select filtered BioSamples] で選択することができます。　　
-未登録の場合、[register sample(s)] から新たにサンプルを登録します。  
+また、カラム上部のボックスにテキストを入力しフィルターされた全てのサンプルを [Select filtered BioSamples] で選択することができます。
+未登録の場合、[register sample(s)] から新たにサンプルを登録します。    
 自身のアカウント以外で登録されたサンプルを参照したい場合は [DRA チームに連絡](/contact-ddbj.html)します。
 
 {% include image.html url="books/hdra-bs01.jpg" caption="BioSample の選択 or 新規登録" class="w500" %}
@@ -195,7 +192,8 @@ Experiment は [Add new Experiment(s)] で追加できます。
 
 エクセルなどの表計算ソフトでメタデータをまとめて作成します。
 
-"Title" は空の場合、自動的に "[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]" というタイトル（例 "Illumina HiSeq 2000 paired end sequencing of SAMD00025741"）が構築されます。独自の Title を付ける場合は "Title" 欄にタイトルを入力します。　
+"Title" は空の場合、自動的に "[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]" というタイトル（例 "Illumina HiSeq 2000 paired end sequencing of SAMD00025741"）が構築されます。
+内容を簡潔に表すタイトルを "Title" 欄に記載することを推奨します。   
 "BioSample Used" は番号発行済みのサンプルは SAMD アクセッション番号 (例 SAMD00000001) で、未発番のサンプルは "SSUB BioSample Submission ID" : "Sample name" (例 SSUB003746 : Genome bacteria strain A) で指定します。":" の両側の空白は無視されます。
 
 {% include image.html url="books/hdra-experiment03.jpg" caption="Experiment テンプレートファイル" class="w500" %}

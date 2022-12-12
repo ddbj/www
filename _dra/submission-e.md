@@ -211,7 +211,7 @@ Metadata can be editted in spreadsheet software (e.g. Excel).
 If "Title" values are empty, titles are automatically constructed as
 "[Sequencing Instrument Model] [paired end] sequencing of
 [BioSample ID]" (e.g., "Illumina HiSeq 2000 paired end sequencing of
-SAMD00025741"). Submitters can provide user-defined text in the "Title".
+SAMD00025741"). It is recommended to provide user-defined text in the "Title".
 
 Reference samples in "BioSample Used" by SAMD accessions (example, SAMD00000001) or "SSUB BioSample Submission ID"
 : "Sample name" (example, SSUB003746 : Genome bacteria strain A). Spaces

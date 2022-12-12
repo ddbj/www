@@ -315,28 +315,19 @@ eCollection 2015. PMID:
 | AB 3730 Genetic Analyzer            |
 | AB 3730xL Genetic Analyzer          |
 
-[Spot Type](#Spot_Type)<a name="Spot_Type"></a><span class="red">*</span>  
-: Select a layout of reads in sequencing data files.
+[Library Layout](#Library_Layout)<a name="Library_Layout"></a><span class="red">*</span>  
+: Select a layout of reads in sequencing data files. 
+Directions of reads (Forward or Reverse) are automatically determined from the Instrument values. 
+In December 2022, the display name was changed from "Spot Type" to "Library Layout".
 
-| Spot Type   | Description                           |
+| Spot Type | Description |
 |---|
-| single      | Single read                           |
-| paired (FF) | Paired reads with same direction.     |
-| paired (FR) | Paired reads with opposite direction. |
+| single | Single read |
+| paired | Paired reads |
 
-[Nominal Length](#Nominal_Length)<a name="Nominal_Length"></a><span class="conditionally_required">*</span>  
-: Size of the insert for Paired reads.
-
-[Nominal Sdev](#Nominal_Sdev)<a name="Nominal_Sdev"></a>
-: Standard deviation of insert size.
-
-[Spot Length](#Spot_Length)<a name="Spot_Length"></a><span class="red">*</span>  
-: The read length in submitted sequencing files. For mate pairs, this
-number includes mate pairs, but does not include gap lengths.
-
-- When the spot length is constant, enter a constant value.
-- For 454 platforms producing reads with variable length, enter a constant flow count.
-- For fastq files with variable length, enter an average length.
+[Insert Size](#Insert_Size)<a name="Insert_Size"></a><span class="conditionally_required">*</span>  
+: Size of the insert for Paired reads. 
+In December 2022, the display name was changed from "Nominal Length" to "Insert Size".
 
 ## Run  {#Run} 
 
@@ -377,7 +368,6 @@ in tsv file, this field needs to be specified manually.
 | File Type        | Description                                                                                                            |
 |---|
 | fastq            | fastq file                                                                       |
-| sff              | 454 Standard Flowgram Format file                                                                                      |
 | hdf5             | PacBio hdf5 Format file                                                                                                |
 | bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
 | tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |
