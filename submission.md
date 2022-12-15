@@ -100,3 +100,9 @@ Transcriptome で [Transcriptom Shotgun Assembly (TSA)](/ddbj/tsa.html) に該�
 * 特定の実体を伴わない塩基配列 (いわゆる consensus sequences)
 * 長さが 100 塩基未満の塩基配列 (2021年6月以降) 
 * primer のみで構成される塩基配列 (2021年6月以降)
+
+## 登録フロー {#flow}
+
+ゲノム配列等の大規模な塩基配列データの DDBJ への登録、及び、DRA/GEA/MetaboBank の登録に先だって BioProject/BioSample の登録が必要になります。
+
+<img src="/assets/images/submission/submission-flow.jpg" alt="BioProject/BioSample 登録フロー" title="BioProject/BioSample 登録フロー" class="w500">
