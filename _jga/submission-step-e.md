@@ -63,7 +63,7 @@ A JGA submission directory is created in "/controlled-access/submission/jga/" of
 
 Download the excel for metadata description below and enter metadata in English. Regarding metadata, see [this page](/jga/submission.html).
 
-[![JGA metadata excel](/assets/images/parts/download.png "JGA metadata excel"){:.w40}](/assets/files/submission/JGA_metadata.xlsx)
+[![JGA metadata excel](/assets/images/parts/download.png "JGA metadata excel"){:.w40}](https://github.com/ddbj/submission-excel2xml/raw/master/JGA_metadata.xlsx)
 
 last updated: 2022-04-27  
 

@@ -276,8 +276,8 @@ Run の数が100を超えるような場合で、ウェブツールの応答が�
 * [DRA 新規登録の作成](#new-submission)
 * [データファイルのアップロード](#upload)
 
-[メタデータ登録用エクセル](/assets/files/submission/dra_metadata.xlsx)をダウンロードし、内容を記入します。  
-[エクセルの記入例](/assets/files/submission/example-0001_dra_metadata.xlsx) 
+[メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx)をダウンロードし、内容を記入します。  
+[エクセルの記入例](https://github.com/ddbj/submission-excel2xml/raw/master/example-0001_dra_metadata.xlsx) 
 
 続いて、メタデータ登録用エクセルから生成した [XML を登録](#upload-xml)、もしくは、メタデータ登録用エクセルを[担当者に送付](#send-metadata-excel)します。   
 
@@ -285,7 +285,7 @@ Run の数が100を超えるような場合で、ウェブツールの応答が�
 
 コマンドライン操作に慣れている方はこちらの方法で登録してください。大量件数の登録を効率化することができます。
 
-[メタデータ登録用エクセル](/assets/files/submission/dra_metadata.xlsx)とプログラムを使ってエクセルから XML を生成し、XML を D-way からアップロードすることで多件数を一括で登録します。
+[メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx)とプログラムを使ってエクセルから XML を生成し、XML を D-way からアップロードすることで多件数を一括で登録します。
 [GitHub](https://github.com/ddbj/submission-excel2xml) に記載されている手順に従い、メタデータを記入したエクセルからコマンドラインツールで Submission、Experiment、Run XML を生成します。    
 
 ウェブツールやエクセルで対応していない technical reads 等の XML 要素を追加する場合、[メタデータ XML の例](/dra/example.html)を参照してください。

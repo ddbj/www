@@ -77,7 +77,7 @@ JGA サーバ上の /controlled-access/submission/jga/ の下に Submission ID �
 
 メタデータ記入用エクセルファイルをダウンロードし、内容を英語で記入します。メタデータの説明は[こちらのページ](/jga/submission.html)をご覧ください。
 
-[![JGA メタデータ記入用エクセル](/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}](/assets/files/submission/JGA_metadata.xlsx)
+[![JGA メタデータ記入用エクセル](/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}](https://github.com/ddbj/submission-excel2xml/raw/master/JGA_metadata.xlsx)
 
 last updated: 2022-04-27  
 
