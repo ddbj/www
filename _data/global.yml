@@ -2,6 +2,10 @@ top_news:
   ja:
     - title: 生命情報・DDBJ センター年末年始休業のお知らせ
       path: 2022-12-12
+    - title: (12/19 9:00-12:00) ARSA サービス一時停止のお知らせ
+      path: 2022-12-16_1
   en:
     - title: Suspension of the BI-DDBJ activity during the New Year Holidays
       path: 2022-12-12-e
+    - title: (December 19 9:00-12:00) Announcement of ARSA service suspension
+      path: 2022-12-16_1-e
