@@ -54,9 +54,10 @@ Download a template text file according to the selected package. User-defined at
 * [BioSample attribute list and explanation](/biosample/attribute-e.html)
 * [Example submission files](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)
 
-
 A text file is separated by tab and can be opened and editted in spreadsheet editor (e.g. Excel®). Attribute names are in a header line. Attributes with "\*" are required.  
 From second lines, enter one sample per line. 
+
+{% include image.html url="books/bs-tsv.jpg" caption="Enter samples in Excel" class="w500" %}
 
 <div class="attention">
 In one submission, samples can be submitted as 1 sample - 1 line in sample attributes tab-delimited text file.
