@@ -102,3 +102,7 @@ Registered projects can be updated. Please [contact the BioProject staff](/conta
 
 For the DRA/GEA/MetaboBank submissions, select the BioProject accession that you registered in advance in the Study.  
 For genome and TSA submissions to the DDBJ, enter the BioProject accession in the DBLINK.
+
+## Inquiry {#inquiry}
+
+If a project has a novel organism name or human data, we may ask you questions after an accession number is automatically assigned.
