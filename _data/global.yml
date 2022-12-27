@@ -2,10 +2,6 @@ top_news:
   ja:
     - title: 生命情報・DDBJ センター年末年始休業のお知らせ
       path: 2022-12-12
-    - title: (12/27 13:00-14:00) DDBJ センターの登録、検索- 解析サービス停止のお知らせ
-      path: 2022-12-22
   en:
     - title: Suspension of the BI-DDBJ activity during the New Year Holidays
       path: 2022-12-12-e
-    - title: (December 27 13:00-14:00) Announcement of suspension of DDBJ services
-      path: 2022-12-22-e
