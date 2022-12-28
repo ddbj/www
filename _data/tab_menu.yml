@@ -478,6 +478,8 @@ gea:
           url: /gea/single-cell.html	
         - title: Spatial gene expression  
           url: /gea/spatial-gene-expression.html  
+        - title: Data without reference sequences  
+          url: /gea/data-without-reference.html  
         - title: Example	
           url: /gea/example.html	
         - title: Array Design	
@@ -525,6 +527,8 @@ gea:
           url: /gea/single-cell-e.html
         - title: Spatial gene expression  
           url: /gea/spatial-gene-expression-e.html  
+        - title: Data without reference sequences  
+          url: /gea/data-without-reference-e.html  
         - title: Example
           url: /gea/example-e.html
         - title: Array Design
