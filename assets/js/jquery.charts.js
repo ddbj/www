@@ -109,14 +109,12 @@ function makeDDBJRelease() {
             title: 'Sequences (million)',
             color:'#ff0000',
             textStyle: {fontSize:12},
-            viewWindow: {min:500, max:3500},
-            gridlines: {count:5}
+            viewWindow: {min:500, max:3400}
           },
           1: {
             title: 'Bases (billion)',
             textStyle: {fontSize:12},
-            viewWindow: {min:2000, max:18000},
-            gridlines: {count:6}
+            viewWindow: {min:2000, max:22000}
           }
         },
         chartArea:{top:60},
