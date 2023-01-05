@@ -1035,10 +1035,10 @@ function makeWebAccess() {
             getentry_per_year_h[y].push(getentry_per_month);
             arsa_per_year_h[y].push(arsa_per_month);
             drasearch_per_year_h[y].push(drasearch_per_month);
-            ddbjsearch_per_year_h[y].push(drasearch_per_month);
+            ddbjsearch_per_year_h[y].push(ddbjsearch_per_month);
             txsearch_per_year_h[y].push(txsearch_per_month);
             blast_per_year_h[y].push(blast_per_month);
-            dfast_per_year_h[y].push(clustalw_per_month);
+            dfast_per_year_h[y].push(dfast_per_month);
             clustalw_per_year_h[y].push(clustalw_per_month);
             homepage_per_year_h[y].push(homepage_per_month);
             all_per_year_h[y].push(all_per_month);
