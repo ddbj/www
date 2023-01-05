@@ -47,7 +47,7 @@ function makeDDBJRelease() {
   if ( !document.getElementById('ddbj-release') ) return;
 
   // DDBJ リリース総データ量推移
-  var release_new = 107; // release 107 から bulk sequence が含まれている
+  var release_new = 113; // release 107 から bulk sequence が含まれている
     
   google.charts.load('current', {'packages':['corechart', 'table']});
 
@@ -137,7 +137,7 @@ function makeDDBJRelease() {
       data.addColumn('string', 'Comments');
 
       data.addRows(chart_table_a);
-      data.setProperty(0, 4, 'style', 'width:40%');
+      data.setProperty(0, 4, 'style', 'width:220px');
 
       var options = {
         allowHtml: true
@@ -976,7 +976,9 @@ function makeWebAccess() {
     var getentry_per_year_h = {};
     var arsa_per_year_h = {};
     var drasearch_per_year_h = {};
+    var ddbjsearch_per_year_h = {};
     var txsearch_per_year_h = {};
+    var dfast_per_year_h = {};
     var blast_per_year_h = {};
     var clustalw_per_year_h = {};
     var homepage_per_year_h = {};
@@ -985,7 +987,9 @@ function makeWebAccess() {
     var average_getentry_per_year_h = {};
     var average_arsa_per_year_h = {};
     var average_drasearch_per_year_h = {};
+    var average_ddbjsearch_per_year_h = {};
     var average_txsearch_per_year_h = {};
+    var average_dfast_per_year_h = {};
     var average_blast_per_year_h = {};
     var average_clustalw_per_year_h = {};
     var average_homepage_per_year_h = {};
@@ -996,7 +1000,9 @@ function makeWebAccess() {
       getentry_per_year_h[y] = [];
       arsa_per_year_h[y] = [];
       drasearch_per_year_h[y] = [];
+      ddbjsearch_per_year_h[y] = [];
       txsearch_per_year_h[y] = [];
+      dfast_per_year_h[y] = [];
       blast_per_year_h[y] = [];
       clustalw_per_year_h[y] = [];
       homepage_per_year_h[y] = [];
@@ -1010,11 +1016,13 @@ function makeWebAccess() {
         var getentry_per_month = parseInt(web_access[1], 10);
         var arsa_per_month = parseInt(web_access[2], 10);
         var drasearch_per_month = parseInt(web_access[3], 10);
-        var txsearch_per_month = parseInt(web_access[4], 10);
-        var blast_per_month = parseInt(web_access[5], 10);
-        var clustalw_per_month = parseInt(web_access[7], 10);
-        var homepage_per_month = parseInt(web_access[11], 10);
-        var all_per_month = parseInt(web_access[12], 10);
+        var ddbjsearch_per_month = parseInt(web_access[4], 10);
+        var txsearch_per_month = parseInt(web_access[5], 10);
+        var blast_per_month = parseInt(web_access[6], 10);
+        var dfast_per_month = parseInt(web_access[7], 10);        
+        var clustalw_per_month = parseInt(web_access[8], 10);
+        var homepage_per_month = parseInt(web_access[13], 10);
+        var all_per_month = parseInt(web_access[14], 10);
         //var ave_ftp_download_day = parseFloat(web_access[i].gsx$averageftpdownloadtbday.$t, 10);
 
         // 年毎に配列に格納
@@ -1027,8 +1035,10 @@ function makeWebAccess() {
             getentry_per_year_h[y].push(getentry_per_month);
             arsa_per_year_h[y].push(arsa_per_month);
             drasearch_per_year_h[y].push(drasearch_per_month);
+            ddbjsearch_per_year_h[y].push(drasearch_per_month);
             txsearch_per_year_h[y].push(txsearch_per_month);
             blast_per_year_h[y].push(blast_per_month);
+            dfast_per_year_h[y].push(clustalw_per_month);
             clustalw_per_year_h[y].push(clustalw_per_month);
             homepage_per_year_h[y].push(homepage_per_month);
             all_per_year_h[y].push(all_per_month);
@@ -1040,8 +1050,10 @@ function makeWebAccess() {
       average_getentry_per_year_h[y] = Math.floor(average(getentry_per_year_h[y]));
       average_arsa_per_year_h[y] = Math.floor(average(arsa_per_year_h[y]));
       average_drasearch_per_year_h[y] = Math.floor(average(drasearch_per_year_h[y]));
+      average_ddbjsearch_per_year_h[y] = Math.floor(average(ddbjsearch_per_year_h[y]));
       average_txsearch_per_year_h[y] = Math.floor(average(txsearch_per_year_h[y]));
       average_blast_per_year_h[y] = Math.floor(average(blast_per_year_h[y]));
+      average_dfast_per_year_h[y] = Math.floor(average(dfast_per_year_h[y]));
       average_clustalw_per_year_h[y] = Math.floor(average(clustalw_per_year_h[y]));
       average_homepage_per_year_h[y] = Math.floor(average(homepage_per_year_h[y]));
       average_all_per_year_h[y] = Math.floor(average(all_per_year_h[y]));
@@ -1060,7 +1072,7 @@ function makeWebAccess() {
     $("#web-access_stat_area").append(html_tables);
 
     for (var y2 = this_year-span; y2 < this_year; y2++) {
-      chart_year.push([y2.toString(), average_getentry_per_year_h[y2], average_arsa_per_year_h[y2], average_drasearch_per_year_h[y2], average_txsearch_per_year_h[y2], average_blast_per_year_h[y2], average_clustalw_per_year_h[y2], average_homepage_per_year_h[y2], average_all_per_year_h[y2]]);
+      chart_year.push([y2.toString(), average_getentry_per_year_h[y2], average_arsa_per_year_h[y2], average_ddbjsearch_per_year_h[y2], average_txsearch_per_year_h[y2], average_dfast_per_year_h[y2], average_homepage_per_year_h[y2], average_all_per_year_h[y2]]);
     }
     
     google.charts.setOnLoadCallback(drawWebAccess);
@@ -1073,10 +1085,9 @@ function makeWebAccess() {
       data.addColumn('string', 'Year');
       data.addColumn('number', 'getentry');
       data.addColumn('number', 'ARSA');
-      data.addColumn('number', 'DRA Search');
-      data.addColumn('number', 'TXSearch');
-      data.addColumn('number', 'BLAST');
-      data.addColumn('number', 'ClustalW');
+      data.addColumn('number', 'DDBJ Search');
+      data.addColumn('number', 'TXSearch');      
+      data.addColumn('number', 'DFAST');
       data.addColumn('number', 'Home pages');
       data.addColumn('number', 'All');
 
@@ -1110,10 +1121,9 @@ function makeWebAccess() {
       data.addColumn('string', 'Year');
       data.addColumn('number', 'getentry');
       data.addColumn('number', 'ARSA');
-      data.addColumn('number', 'DRA Search');
+      data.addColumn('number', 'DDBJ Search');
       data.addColumn('number', 'TXSearch');
-      data.addColumn('number', 'BLAST');
-      data.addColumn('number', 'ClustalW');
+      data.addColumn('number', 'DFAST');
       data.addColumn('number', 'Home pages');
       data.addColumn('number', 'All');              
       data.addRows(chart_year);
@@ -1241,7 +1251,7 @@ function makeDDBJReleaseDetail(){
   if ( !document.getElementById('total-data-volume') ) return;
 
   // DDBJ リリース配列数、塩基数各バンクの割合
-  var release_new = 107; // release 107 から bulk sequence が含まれている
+  var release_new = 113; // release 107 から bulk sequence が含まれている
   var chart_seq_a = [];
   var chart_base_a = [];
   var chart_seq_table_a = [];
