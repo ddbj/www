@@ -22,77 +22,91 @@ related_pages:
     url: /ddbj/example-e.html
 ---
 
-Every value of /organism qualifier must be a "scientific name" ranked as species or lower taxa in taxonomy database.
+Every value of /organism qualifier must be 
+- a "scientific name" (not svnonym, equivalent name or others) 
+- ranked as species or lower taxa (subspecies, variety, strain, etc.)    
+
+on [taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy ).
 
 ## taxonomy database  {#taxonomy}
 
-All organisms that are represented in the sequence data of
-DDBJ/EMBL-Bank/GenBank are registered to the taxonomy database.  
-For construction of the nucleotide sequence database, it is important to
-manage the organism names for the data and also necessary to unify the
-diverse names of the organisms.
+All organisms that are represented in the sequence data of DDBJ/ENA/GenBank are registered to [the taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy ).    
+For construction of the nucleotide sequence database, it is important to manage the organism names for the data and also necessary to unify the iverse names of the organisms.    
+The taxonomy database is used as the reference database for the unified organism names.    
 
-The taxonomy database is used as the reference database for the unified organism names.
-
-The primary purpose of the taxonomy database is to unify descriptions of organism names.  
-Consequently, the taxonomy database is not an authoritative source for nomenclature or classification.  
-A taxonomic name may differ from the submitter's proposal or widely used taxonomic name because only the organism name in the taxonomy database
-which is managed by GenBank can be used for the entry.  
+The primary purpose of the taxonomy database is to unify descriptions of organism names.    
+Consequently, the taxonomy database is not an authoritative source for nomenclature or classification.    
+A taxonomic name may differ from the submitter's proposal or widely used taxonomic name because only the organism name in the taxonomy database 
+which is managed by GenBank can be used for the entry.    
 Please refer to [description of the taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite).
 
 DDBJ provides a web service called 
-[TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en) to retrieve 
-organism names in the taxonomy database. This would be helpful as a 
-reference of taxonomic names when you submit nucleotide sequences to DDBJ.  
-Please note, even though the organism name has already been registered 
-into the taxonomy database, when the data with the organism name have 
-not yet been open to public, you can not retrieve the name at TXSearch.  
+[TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en) to retrieve organism names in the taxonomy database.    
+This would be helpful as a reference of taxonomic names when you submit nucleotide sequences to DDBJ.    
 
-<span class="red">Notice)</span> During submission via Nucleotide 
-Sequence Submission System, please select "Not found in taxonomy 
-database, but already registered in other sequence data " for 
-["Category" of organism name](#deasy) to [indicate corresponding to the case](#private). 
+
+## Quick guide to describe organism names  {#quick}
+
+### In cases of the organism names existing in the taxonomy database
+Please confirm and enter the name is ranked as "species" or other lower taxon (subspecies, variety, strain, etc.) 
+and classified as "scientific name" (not svnonym, equivalent name or others).    
+
+When you have any objections against the description status of the taxonomy database, see [here](#objection).    
+
+
+### In cases of the organism names not found in the taxonomy database
 
 To submit nucleotide sequence data to DDBJ or to search taxonomy database, 
-<span class="red">please make sure that the organism name has no misspelling. </span>
+<span class="red">please enter the organism name without any misspells. </span>    
+
+- In case of unidentified species names
+    - [The species not to be identified](#not-to-be-identified)
+    - [New species (sp. nov.), genus (gen. nov.), or the like](#new)
+    - [Environmental samples](#env)
+- Validly identified the scientific name of species
+    - [In cases of valid names but not reported with any sequence data](#novel)
+    - [When you have any objections against the description status of the taxonomy database](#objection) # including comb. nov.  
+- [Artificially constructed sequences](#syn)
+
+
+
+
+
 
 ## General rule to describe organism names  {#rule}
 
-In general, an organism should be called its scientific name of species,
-however, when the species is not identified or not defined, it would be
-some tentative name instead of the scientific name of the species.
+In general, an organism should be called its scientific name of species, however, when the species is not identified or not defined, 
+it would be some tentative name instead of the scientific name of the species.    
 
-So, <span class="red">do NOT inappropriately select any organism name existing in taxonomy database. </span> 
+So, <span class="red">do NOT inappropriately select any organism name existing in taxonomy database. </span>    
 Only when you can identify organism name from which your sequence has been obtained with no doubt AND 
 the organism name has been already registered to taxonomy database, 
-you can select the organism name existing in taxonomy database. 
+you can select the organism name existing in taxonomy database.    
 
-- The name of "unidentified organism" or "novel species" should be described as a tentative name
-- Sequence similarity of a marker gene is not absolute benchmark in phylogenetic relationship.
-- Identical sequences does NOT mean that they are derived from same species.
+In general, sequence similarity of marker gene is not the only-one nor the best method to classify organisms and to identify species.  
+When you classify and identify species, you should consider comprehensive perspectives;    
+morphology, anatomy, physiology, behavior, molecular biology, culture condition, collection site, morphology, biochemical assessment and so on. 
 
-If the organism name that you submit is not in the database, the name
-should be newly registered to the taxonomy database through DDBJ.  
-Such new organism names will be open to the public on taxonomy database
+It is totally responsibility of its submitter for the contents of sequence data.  
+
+- The name of "unidentified organism" or "novel species" should be described with a tentative one
+- They are totally different things, "Sequences of a gene are identical" and "Samples are derived from the same species"  
+- Sequence similarity of a marker gene is <span class="red">NOT</span> absolute benchmark in phylogenetic relationship.
+- The current standard for prokaryotic species identification is ANI (Average Nucleotide Identity) 
+ or dDDH (digital DNA-DNA hybridization) by using whole genome sequences
+
+
+If the organism name that you submit is not in the database, 
+the name should be newly registered to the taxonomy database through DDBJ.    
+Such new organism names will be open to the public on taxonomy database 
 after the release of corresponding sequence data from DDBJ.  
 
-<a name="private"></a>
-Before the release of corresponding sequence data from DDBJ, the
-organism name can not be available on taxonomy database.  
-Please do not hesitate to contact us when you like to update the
-organism name of your sequence data, once submitted to taxonomy
-database.  
-See also the page, [Data Updates/Correction: after getting your
-accession number](/ddbj/update-e.html), when you like to update your data.
+Before the release of corresponding sequence data from DDBJ, the organism name can not be available on taxonomy database.  
+Please do not hesitate to contact us when you like to update the organism name of your sequence data, once submitted to taxonomy database.  
+See also the page, [Data Updates/Correction: after getting your accession number](/ddbj/update-e.html), when you like to update your data.
 
-In principle, the organism name is required to be one of "scientific
-name" in taxonomy database. If you have any questions or comments for
-the classification of "scientific name", "synonyms", lineages, etc. on
-the taxonomy database, DDBJ can ask managers of taxonomy database any
-modification based on evidence papers or references from you. In this
-regard, however, in case of different opinions in phylogenetic lineages,
-the claim would be often rejected. When you find misspelled name in
-taxonomy database, do not hesitate to [contact us](/contact-ddbj-e.html#to-ddbj) to correct it.
+In principle, the organism name is required to be one of "scientific name" in taxonomy database.  
+When you have any objections against the description status of the taxonomy database
 
 ## "Category" of organism name  {#deasy}
 
@@ -108,67 +122,51 @@ constructed sequence](#syn), enter the name in the value of
 [Scientific name], appropriately.
 
 b. virus  
-: After finding the organism name from which your sequence was
-obtained, please select the name.  
-In cases of [pathogenic virus](#virus) , select "Pathogenic viruses"
-in the menu box of [Category].  
-Please include strain, serotype, collection_date, country
-(collection site), host etc. in the values of corresponding
-qualifiers, respectively.
+: After finding the organism name from which your sequence was obtained, please select the name.    
+In cases of [pathogenic virus](#virus) , select "Pathogenic viruses" 
+in the menu box of [Category].    
+Please include the values of corresponding qualifiers, /isolate (or /strain), /serotype, /collection_date, /country (collection site), /host etc., respectively.    
 
 c. trinominal name  
-: Select "Valid subspecies or variety not registered in taxonomy
-database" in the menu box of [Category].  
-After referring to [trinominal name](#trinominal), please include
-subspecies, variety, or strain etc. in the value of [Scientific
-name].
+: Select "Valid subspecies or variety not registered in taxonomy database" in the menu box of [Category].  
+After referring to [trinominal name](#trinominal), please include subspecies, variety, or strain etc. in the value of [Scientific name].
 
 d. found in taxonomy database  
-: After finding the organism name from which your sequence was
-obtained, please select the name.  
-You do not have to select any of [Category].
+: After finding the organism name from which your sequence was obtained, please select the name.  
+You do not have to select any of [Category]. 
 
 e. direct molecular isolation from a bulk environmental DNA sample  
-: Select "Obtained by direct molecular isolation from environmental
-sample" in the menu box of [Category].  
-After referring to [3. Environmental samples](#env), enter an
-organism name in the [Scientific name] box, appropriately.
+: Select "Obtained by direct molecular isolation from environmental sample" in the menu box of [Category].  
+After referring to [3. Environmental samples](#env), enter an organism name in the [Scientific name] box, appropriately.
 
 f. unidentified organism or novel species in proposing state  
 : In case of a tentative name for an unidentified organism, select
 "Species is not identified".  
-In case of a novel species in proposing state, select "Species is
-not identified" in the menu box of [Category].  
-After referring to [2. In case of unidentified species
-names](#unidentified), enter an organism name in the [Scientific
-name] box, appropriately.
+In case of a novel species in proposing state, select "Species is not identified" in the menu box of [Category].  
+After referring to [2. In case of unidentified species names](#unidentified), enter an organism name in the [Scientific name] box, appropriately.
 
-g. not found in taxonomy database, but already submitted other sequence data of the organism 
-: Select "The name is valid but not registered in taxonomy database"
-in the menu box of [Category].  
-Enter the same organism name as previously submitted in the
-[Scientific name] box.
+g. not found in taxonomy database, but already submitted other sequence data of the organism   <a name="private"></a>
+: Select "The name is valid but not registered in taxonomy database" in the menu box of [Category].  
+Enter the same organism name as previously submitted in the [Scientific name] box.  
 
 h. not found in taxonomy database, but validly identified the scientific name of species 
-: Select "The name is valid but not registered in taxonomy database"
+: Select "The name is valid but not registered in taxonomy database" 
 in the menu box of [Category]. After referring to [1. For identified species](#species), 
-enter an organism name in the [Scientific name] box, appropriately.
+enter an organism name in the [Scientific name] box, appropriately.  
 
 ## Details to describe organism names  {#organism_name}
 
-Though there are still some exceptions, followings are how to describe
-organism names for DDBJ submission. If the application of the organism
-name to taxonomy database is required, during your sequence submission,
-please let us know [reference information](#items)
+Though there are still some exceptions, followings are how to describe organism names for DDBJ submission.  
+If the application of the organism name to taxonomy database is required, during your sequence submission, 
+please let us know [reference information](#items) 
 
 ### 1. For identified species  {#species} 
 
-In principle, "organism name" is required to be a binomial name, i.e.
-the genus name and the species epithet, from which the sequence is obtained.  
-The species name should be described following international code of 
-nomenclatures, such as International Code of Zoological Nomenclature 
-(ICZN), International Code of Botanical Nomenclature (ICBN), 
-International Code of Nomenclature of Bacteria. 
+In principle, "organism name" is required to be a binomial name, i.e. the genus name and the species epithet, from which the sequence is obtained.    
+The species name should be described following international code of nomenclatures, 
+such as International Code of Zoological Nomenclature (ICZN), 
+International Code of Botanical Nomenclature (ICBN), 
+International Code of Nomenclature of Bacteria.    
 
 Example
 
@@ -176,9 +174,7 @@ Example
 
 #### trinomial name  {#trinominal}
 
-In cases of using trinomial name or the like, the name of subspecies,
-variety, serotype or strain should be included in the organism name, if
-necessary.
+In cases of using trinomial name or the like, the name of subspecies, variety, serotype or strain should be included in the organism name, if necessary.
 
 Examples
 
@@ -200,12 +196,9 @@ Also, the qualifier corresponding to
 
 #### microbial genome  {#genome}
 
-Previously, a strain name or some other lower taxon was required for the
-organism name of whole genomic scale sequences from microorganisms.  
-However, currently, the value of organism qualifier should be just a
-scientific name, in principle, even though for microbial genomes.  
-Describe a strain name in the [/strain](/ddbj/qualifiers-e.html#strain)
-qualifier.
+Previously, a strain name or some other lower taxon was required for the organism name of whole genomic scale sequences from microorganisms.    
+However, currently, the value of organism qualifier should be just a scientific name, in principle, even though for microbial genomes.    
+Describe a strain name in the [/strain](/ddbj/qualifiers-e.html#strain) qualifier.
 
 <pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
@@ -213,7 +206,7 @@ qualifier.
 
 #### virus  {#virus}
 
-For viruses, basically, we also accept scientific names, following [the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/).  
+For viruses, basically, we also accept scientific names, following [the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/).    
 <span class="red bold">By 2017, we used informal names for frequently submitted pathogenic viruses including their strain names and serotypes in the description of organism name. However, the rule has been discontinued for the future submissions. </span>
 See also the virus section on [Identifiers](/ddbj/identifiers-e.html#virus).     
 
@@ -249,10 +242,23 @@ Examples
 Malus x domestica
 Lilium hybrid division I</code></pre>
 
-#### not found in taxonomy database  {#novel}
+#### Not found in taxonomy database  {#novel}
+**In cases of valid scientific names but not reported with any sequence data**    
+In principle, you can submit nucleotide sequence data with the organism name.    
+<span class="red">Please enter the organism name without any misspells. </span>    
 
-If the name is not available on taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
-any of following items during your sequence submission.
+If the name of genus or other upper taxa is not available on taxonomy database, 
+please tell us the lineage information of the organism.    
+As far as possible , please tell us the valid publication of the species.    
+    
+Please note, even though the organism name has already been registered into the taxonomy database, 
+when the data with the organism name have not yet been open to the public, you can not retrieve the name in the taxonomy database.     
+    
+<span class="red">Notice)</span> During submission via Nucleotide Sequence Submission System, 
+please select "Not found in taxonomy database, but already registered in other sequence data " for 
+["Category" of organism name](#deasy) to [indicate corresponding to the case](#private).    
+
+Please tell us any of following items during your sequence submission.
 
 ---
 **Useful items for application of organism names to taxonomy database**
@@ -260,7 +266,40 @@ any of following items during your sequence submission.
 - [taxonomic lineage](#lineage)
 - [valid publication for species](#ref)
 - [already issued accession number](#acc)
-- [process of sampling and/or sequencing](#isolate)
+
+
+---
+
+**Any objections against the description status of the taxonomy database**<a name="objection"></a>    
+If you find any mistakes in the taxonomy database, please [contact us](/contact-ddbj-e.html#to-ddbj) to correct it. 
+In case of misspelling of the organism name, it will be easily corrected.    
+    
+The primary purpose of the taxonomy database is to unify descriptions of organism names. 
+Consequently, the taxonomy database is not an authoritative source for nomenclature or classification.    
+A taxonomic name may differ from the submitter's proposal or widely used taxonomic name because only the organism name in the taxonomy database which is managed by GenBank can be used for the entry.    
+See also [the description of the taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite ) in detail.    
+    
+If you are preparing to intend reclassification of a series of organisms, so-called "combinatio nova", the names on the taxonomy database can not be corrected before publishing your paper to claim the new classiffication.    
+So, in the meantime, please use the current names in the taxonomy database.  
+After published your paper, contact us to change/correct the scientific name. Then, we will check it again.    
+    
+When you have any questions, objections, or comments for the classification of "scientific name", "synonyms", lineages, etc. on the taxonomy database, 
+DDBJ can ask managers of taxonomy database any modification based on evidence papers or references from you.    
+So, as far as possible, please provide the citation information that support your opinions and your comment on how it should be, because it often be highly technical content.    
+Please note, regarding issues such as interpretating  phylogenetic lineages, the taxonomy database has a policy of adopting one of the theories to ensure the uniqueness of the data.  
+So, we may not be able to meet your request.    
+
+    
+Please tell us any of following items during your sequence submission.
+
+---
+**Useful items for application of organism names to taxonomy database**
+
+- [taxonomic lineage](#lineage)
+- [valid publication for species](#ref)
+
+
+---
 
 ### 2. In case of unidentified species names  {#unidentified} 
 
@@ -284,15 +323,15 @@ Aspergillaceae sp.
 Acetobacteraceae bacterium
 Methanomicrobiales archaeon</code></pre>
 
-The qualifier corresponding to [identifier](/ddbj/identifiers-e.html), such as
+The qualifier corresponding to [identifier](/ddbj/identifiers-e.html), such as 
 [/strain](/ddbj/qualifiers-e.html#strain), 
 [/isolate](/ddbj/qualifiers-e.html#isolate) etc., is required for the source feature.
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-In cases of eukaryote sequences (except unicellular fungi like yeasts or mold), <!-- or in cases of whole genomic scale sequences from microorganisms, -->
-an [identifier](/ddbj/identifiers-e.html), strain name or some other lower taxon, is required to include in the organism name.  
+In cases of eukaryote sequences (except unicellular fungi like yeasts or mold), or in cases of whole genomic scale sequences from unicellular microorganisms, 
+some [identifier](/ddbj/identifiers-e.html), strain name or some other lower taxon, is required to include in the organism name.  
 The tentative name is made up with the lineage (in many cases, genus names) that as far as submitters could specify 
 and the lower taxon (in many cases, strain names).  
 Even included in the organism name, you should describe the [identifier](/ddbj/identifiers-e.html) in the 
@@ -303,10 +342,25 @@ Even included in the organism name, you should describe the [identifier](/ddbj/i
 
 #### 2-2. In case of proposing a novel species  {#new}
 
+In cases of viruses, you can use the novel species name, as is, without the valid publication of the species that is named after [The International Code of Virus Classification and Nomenclature (ICVCN)](https://ictv.global/about/code ).    
+
+For other than viruses, <span class="red">**no name confusable with the formal scientific name is acceptable before the valid publication.**</span>    
+In principle, during the stage proposing a novel scientific name, a tentative name like as unidentified cases is required 
+to keep unique correspondence between the organism and sequence data until established a new scientific name.    
+
 If you are to propose a novel species, in the mean time, we adopt an unique tentative name for the organism. 
 The tentative name is made up with the lineage (in many cases, genus names) 
-that as far as submitters could specify and the [identifier](/ddbj/identifiers-e.html) (in many cases, strain names). 
-Because we have to avoid some confusions; for example, two different organisms are mixed up.
+that as far as submitters could specify and the [identifier](/ddbj/identifiers-e.html) (in many cases, strain names).    
+Because we have to avoid some confusions; for example, two different organisms are mixed up.    
+Therefore, if you have any other sequence data derived from the same species candidate, 
+<span class="red">**please use the same tentative name in the meantime before the valid publication of the species.**</span>    
+This is only a procedure to manage the submitted data to us, so, it is a different issue from any names that you use in the preparing paper and so on.    
+
+Before released your sequence data from DDBJ, the tentative name is not available on the taxonomy database.    
+The tentative name in the taxonomy database is to be changed to the formal scientific name, after the valid publication of the species.    
+When the valid pulication, i.e. the paper to report a novel species, is published, please contact us to update the paper information (reference), the organism name and so on, and to release your sequence data.    
+See [Data Updates/Corrections after Receiving Accession Number](/ddbj/update-e.html) for your update request.    
+In general, if you request to change the tentative name to the formal scientific name before the publication of your sequence data, the tentative name will not be published.
 
 Format
 
@@ -339,6 +393,9 @@ any of following items during your sequence submission.
 - [proposing name for novel species](/ddbj/organism-e.html#propose)
 - [already issued accession number](#acc)
 - [process of sampling and/or sequencing](#isolate)
+
+
+---
 
 ### 3. Environmental samples  {#env} 
 
@@ -389,6 +446,10 @@ any of following items during your sequence submission.
 - [taxonomic lineage](#lineage)
 - [process of sampling and/or sequencing](#isolate)
 
+
+---
+
+
 [Metagenome Assembly](/ddbj/metagenome-assembly-e.html)
 : When you submit sequences of Metagenome-Assembled Genome (MAG), some single taxa can be assigned by the software tools, 
 so use the names of species or lower ranks (ex. Agrobacterium tumefaciens) for the /organism qualifiers.  
@@ -426,11 +487,17 @@ See [NCBI site](https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenome
 - [taxonomic lineage](#lineage)
 - [process of sampling and/or sequencing](#isolate)
 
+---
+
+
 ### 4. Artificially constructed sequences  {#syn} 
 
-In many cases, artificially constructed sequences are uniformly named 
-"synthetic construct", or, "eukaryotic synthetic construct". 
-Sometimes, vector names or something like that are described 'as is' in the organism name.
+In general, artificially constructed sequences are uniformly named "synthetic construct" or "eukaryotic synthetic construct".    
+Sometimes, vector names or something like that are described 'as is' in the organism name.    
+When you like to submit sequences of only some specific genes, use "synthetic construct" or "eukaryotic synthetic construct".    
+If you like to submit complete sequences of vectors or the likes, please give some name to them.    
+To distiguish with natural plasmids. do not use the word, "plasmid ".    
+
 
 Examples
 
@@ -461,21 +528,17 @@ valid publication for species<a name="ref"></a>
 please tell us the references for the species.
 
 proposing name for novel species<a name="propose"></a>
-: If it is really novel species and not yet published, please tell us
-proposing name for the novel species for the tracking purpose at
-taxonomy database. In addition, please send E-mail to DDBJ update,
-<img src="/assets/images/ddbj/ad_updt1.gif" alt="ad_updt" title="" class="life-size">, when it is published or
-particularly if the name changes.
+: If it is really novel species and not yet published, please tell us proposing name for the novel species 
+for the tracking purpose at taxonomy database. In addition, please send E-mail to DDBJ update, 
+<img src="/assets/images/ddbj/ad_updt1.gif" alt="ad_updt" title="" class="life-size">, 
+when it is published or particularly if the name changes.
 
 already issued accession number<a name="acc"></a> 
-: If you have already submitted other sequence data derived from the
-same organism of present submission and the previous data has not
-yet been published, please tell us the accession number(s) of your
-previous data.
+: If you have already submitted other sequence data derived from the same organism of present submission and 
+the previous data has not yet been published, please tell us the accession number(s) of your previous data.  
 
 process of sampling and/or sequencing<a name="isolate"></a>  
-: It would be helpful if you tell us some information such as process
-of sampling, sequencing and so on.
+: It would be helpful if you tell us some information such as process of sampling, sequencing and so on.
 
 expected usage<a name="usage"></a> 
 : In cases of artificial constructed sequences, please tell us how to use them.

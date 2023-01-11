@@ -366,7 +366,7 @@ PA      JPO             Patent application
 PB      JPO             Patent application
 PC      JPO             Patent application
 PD      JPO             Patent application
-PE      DDBJ            
+PE      KIPO            Patent application
 PF      DDBJ            
 PG      DDBJ            
 PH      DDBJ            
