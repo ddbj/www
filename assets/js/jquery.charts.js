@@ -31,10 +31,12 @@ $(function(){
   makeDDBJRelease();
   makeDRARelease();
   makeGEARelease();
+  makeMBRelease();
   makeJGARelease();
   makeDDBJSubmission();
   makeDRASubmission();
   makeGEASubmission();
+  makeMBSubmission();
   makeJGASubmission();
   makeWebAccess();
   makePageAccess();
@@ -427,6 +429,113 @@ function makeGEARelease() {
 
 } // makeGEARelease
 
+
+// MB 公開数、年単位、前年まで
+function makeMBRelease() {
+
+  if ( !document.getElementById('metabobank-release_stat_area') ) return;
+
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var year_min = 0;
+  var year_max = 0;
+  var span = 5; // 前年から5年間を表示
+  var x = 0;
+  var chart_year_a = [];
+  var html_tables = "";
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/MetaboBank release?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+
+    for(var i = 1; i < data.values.length; i++) {
+
+      var mb_release = data.values[i];
+
+      var y = parseInt(mb_release[0].substring(0, 4), 10);
+
+      if( y >= (this_year-1-span) ){
+        chart_year_a.push([mb_release[0], parseInt(mb_release[1], 10), parseInt(mb_release[3], 10)]);
+        if (x==0) year_min = y;
+        year_max = y;
+        x++;
+      } // for(var i = 0; i < gea_release.length; i++)
+    
+    } // for(var y = year_max-span; y <= year_max; y++)
+
+    html_tables += '<h3 id="mb-release_otal">Total data volume (' + year_min + '-' + year_max + ')</h3>' + '<div id="mb-release_chart_total"></div><div id="mb-release_table_total"></div>';
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=679318234">Source data</a></p>';
+
+    /* グラフ作成 */
+    $("#metabobank-release_stat_area").append(html_tables);
+
+    google.charts.setOnLoadCallback(drawTotalMBRelease);
+    google.charts.setOnLoadCallback(drawTotalMBReleaseTable);
+
+    function drawTotalMBRelease(){
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Studies');
+      data.addColumn('number', 'Samples');
+
+      data.addRows(chart_year_a);
+
+      var options = {
+        title: 'MetaboBank release (total data volume)', 
+        width: 600,      
+        height:400,
+        seriesType: 'bars',
+        legend:{position:'top', textStyle: {fontSize: 12}},         
+        series: {
+          0:{color:'#00CCFF', targetAxisIndex: 0},
+          1:{color:'#953735', targetAxisIndex: 1}
+        },
+        hAxis:{
+          title: 'Year',
+          textStyle: {fontSize:11}
+        },
+        vAxes: {
+          0: {
+            title: 'Studies',
+            textStyle: {fontSize:11}
+          },
+          1: {   
+            title: 'Samples',
+            color:'#ff0000'
+          }
+        },
+        titlePosition:'out'
+      };
+      
+      var mbrelyear = new google.visualization.ColumnChart(document.getElementById('mb-release_chart_total'));
+      mbrelyear.draw(data, options);
+    
+    } // function drawTotalMBSubmission
+
+    function drawTotalMBReleaseTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Studies');
+      data.addColumn('number', 'Samples');
+      data.addRows(chart_year_a);
+
+      var mbrelyeartable = new google.visualization.Table(document.getElementById('mb-release_table_total'));
+      mbrelyeartable.draw(data);
+
+    } // function drawTotalMBSubmissionTable
+
+    updateSectionLocation();
+    
+  })  // $.getJSON
+
+} // makeMBRelease
+
+
 // JGA リリース
 function makeJGARelease() {
 
@@ -702,7 +811,7 @@ function makeDRASubmission() {
       data.addRows(chart_year_a);
 
       var options = {
-        title: 'Submissions to DRA (By year)', 
+        title: 'Submissions to DRA (by year)', 
         width: 600,      
         height:400,
         seriesType: 'bars',
@@ -807,7 +916,7 @@ function makeGEASubmission() {
       data.addRows(chart_year_a);
 
       var options = {
-        title: 'Submissions to GEA (By year)', 
+        title: 'Submissions to GEA (by year)', 
         width: 600,      
         height:400,
         seriesType: 'bars',
@@ -857,6 +966,112 @@ function makeGEASubmission() {
   })  // $.getJSON
 
 } // makeGEASubmission
+
+// MetaboBank への登録数、年単位、前年まで
+function makeMBSubmission() {
+
+  if ( !document.getElementById('metabobank-submission_stat_area') ) return;
+
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var year_min = 0;
+  var year_max = 0;
+  var x = 0;
+  var span = 5; // 前年から5年間を表示
+  var chart_year_a = [];    
+  var html_tables = "";
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/MetaboBank submission?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+  
+    for(var i = 1; i < data.values.length; i++) {
+
+      var mb_submission = data.values[i];
+
+      var y = parseInt(mb_submission[0].substring(0, 4), 10);
+
+      if( y >= (this_year-1-span) ){
+        chart_year_a.push([mb_submission[0], parseInt(mb_submission[1], 10), parseInt(mb_submission[3], 10)]);
+        if (x==0) year_min = y;
+        year_max = y;
+        x++;
+      } // for(var i = 0; i < mb_submission.length; i++)
+    
+    } // for(var y = year_max-span; y <= year_max; y++)
+
+    html_tables += '<h3 id="mb-submission_total">By year (' + year_min + '-' + year_max + ')</h3>' + '<div id="chart_mb-submission_"></div><div id="table_mb-submission_"></div>';
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=987043383">Source data</a></p>';
+
+    /* グラフ作成 */
+    $("#metabobank-submission_stat_area").append(html_tables);
+
+    google.charts.setOnLoadCallback(drawTotalMBSubmission);
+    google.charts.setOnLoadCallback(drawTotalMBSubmissionTable);
+
+    function drawTotalMBSubmission(){
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Studies');
+      data.addColumn('number', 'Samples');
+
+      data.addRows(chart_year_a);
+
+      var options = {
+        title: 'Submissions to MetaboBank (by year)', 
+        width: 600,      
+        height:400,
+        seriesType: 'bars',
+        legend:{position:'top', textStyle: {fontSize: 12}},         
+        series: {
+          0:{color:'#00CCFF', targetAxisIndex: 0},
+          1:{color:'#953735', targetAxisIndex: 1}
+        },
+        hAxis:{
+          title: 'Year',
+          textStyle: {fontSize:11}
+        },
+        vAxes: {
+          0: {
+            title: 'Studies',
+            textStyle: {fontSize:11},
+            viewWindow: {min:0, max:15}
+          },
+          1: {   
+            title: 'Samples',
+            color:'#ff0000'
+          }
+        },
+        titlePosition:'out'
+      };
+      
+      var mbsubyear = new google.visualization.ColumnChart(document.getElementById('chart_mb-submission_'));
+      mbsubyear.draw(data, options);
+    
+    } // function drawTotalMBSubmission
+
+    function drawTotalMBSubmissionTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Studies');
+      data.addColumn('number', 'Samples');
+      data.addRows(chart_year_a);
+
+      var mbsubyeartable = new google.visualization.Table(document.getElementById('table_mb-submission_'));
+      mbsubyeartable.draw(data);
+
+    } // function drawTotalMBSubmissionTable
+
+    updateSectionLocation();
+
+  })  // $.getJSON
+
+} // makeMBSubmission
 
 // JGA への登録数、年単位、前年まで
 function makeJGASubmission() {
@@ -910,7 +1125,7 @@ function makeJGASubmission() {
       data.addRows(chart_year_a);
 
       var options = {
-        title: 'Submissions to JGA (By year)', 
+        title: 'Submissions to JGA (by year)', 
         width: 600,      
         height:400,
         seriesType: 'bars',

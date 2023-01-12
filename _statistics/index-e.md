@@ -45,6 +45,10 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 <div id="gea-release_stat_area"></div>
 
 
+{: #metabobank-release}
+## MetaboBank data release
+
+<div id="metabobank-release_stat_area"></div>
 
 {: #jga-release}
 ## JGA data release
@@ -69,13 +73,16 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 <div id="dra-submission_stat_area"></div>
 
-
-
 {: #gea-submission}
 ## Data Submission to GEA
 
 <div id="gea-submission_stat_area"></div>
 
+
+{: #metabobank-submission}
+## Data Submission to MetaboBank
+
+<div id="metabobank-submission_stat_area"></div>
 
 
 {: #jga-submission}

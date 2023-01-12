@@ -47,6 +47,10 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 <div id="gea-release_stat_area"></div>
 
+{: #metabobank-release}
+## MetaboBank データ公開
+
+<div id="metabobank-release_stat_area"></div>
 
 
 {: #jga-release}
@@ -79,6 +83,10 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 <div id="gea-submission_stat_area"></div>
 
+{: #metabobank-submission}
+## MetaboBank への登録
+
+<div id="metabobank-submission_stat_area"></div>
 
 
 {: #jga-submission}
