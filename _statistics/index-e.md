@@ -15,7 +15,7 @@ addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/load
 ---
 
 {: #ddbj-release}
-## DDBJ Data Release
+## DDBJ data release
 
 <div id="ddbj-release-growth-chart"></div>
 
@@ -58,7 +58,7 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 {: #ddbj-submission}
-## Data Submission to DDBJ
+## DDBJ data submission
 
 - Web Submission: [Submission to Nucleotide Sequence Submission System](/ddbj/web-submission-e.html)
 - MSS Submission: [Submission to Mass Submission System](/ddbj/mss-e.html)
@@ -69,24 +69,24 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 {: #dra-submission}
-## Data Submission to DRA
+## DRA data submission
 
 <div id="dra-submission_stat_area"></div>
 
 {: #gea-submission}
-## Data Submission to GEA
+## GEA data submission
 
 <div id="gea-submission_stat_area"></div>
 
 
 {: #metabobank-submission}
-## Data Submission to MetaboBank
+## MetaboBank data submission
 
 <div id="metabobank-submission_stat_area"></div>
 
 
 {: #jga-submission}
-## Data Submission to JGA
+## JGA data submission
 
 <div id="jga-submission_stat_area"></div>
 

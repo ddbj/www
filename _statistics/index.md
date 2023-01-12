@@ -61,7 +61,7 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 {: #ddbj-submission}
-## DDBJ への登録数
+## DDBJ 登録
 
 - Web Submission: [Nucleotide Sequence Submission System](/ddbj/web-submission.html) からの登録
 - MSS Submission: [Mass Submission System](/ddbj/mss.html) からの登録
@@ -72,25 +72,25 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 {: #dra-submission}
-## DRA への登録
+## DRA 登録
 
 <div id="dra-submission_stat_area"></div>
 
 
 
 {: #gea-submission}
-## GEA への登録
+## GEA 登録
 
 <div id="gea-submission_stat_area"></div>
 
 {: #metabobank-submission}
-## MetaboBank への登録
+## MetaboBank 登録
 
 <div id="metabobank-submission_stat_area"></div>
 
 
 {: #jga-submission}
-## JGA への登録
+## JGA 登録
 
 <div id="jga-submission_stat_area"></div>
 
