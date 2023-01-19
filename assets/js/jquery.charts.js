@@ -350,7 +350,7 @@ function makeGEARelease() {
       var y = parseInt(gea_release[0].substring(0, 4), 10);
 
       if( y >= (this_year-1-span) ){
-        chart_year_a.push([gea_release[0], parseInt(gea_release[1], 10), parseInt(gea_release[2], 10)]);
+        chart_year_a.push([gea_release[0], parseInt(gea_release[1], 10), parseInt(gea_release[3], 10)]);
         if (x==0) year_min = y;
         year_max = y;
         x++;
@@ -888,7 +888,7 @@ function makeGEASubmission() {
       var y = parseInt(gea_submission[0].substring(0, 4), 10);
 
       if( y >= (this_year-1-span) ){
-        chart_year_a.push([gea_submission[0], parseInt(gea_submission[1], 10), parseInt(gea_submission[2], 10)]);
+        chart_year_a.push([gea_submission[0], parseInt(gea_submission[1], 10), parseInt(gea_submission[3], 10)]);
         if (x==0) year_min = y;
         year_max = y;
         x++;
@@ -910,7 +910,7 @@ function makeGEASubmission() {
       // Create the data table.
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Year');
-      data.addColumn('number', 'Submissions');
+      data.addColumn('number', 'Experiments');
       data.addColumn('number', 'Samples');
 
       data.addRows(chart_year_a);
@@ -931,7 +931,7 @@ function makeGEASubmission() {
         },
         vAxes: {
           0: {
-            title: 'Submissions',
+            title: 'Experiments',
             textStyle: {fontSize:11}
           },
           1: {   
@@ -952,7 +952,7 @@ function makeGEASubmission() {
       // Create the data table.
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Year');
-      data.addColumn('number', 'Submissions');
+      data.addColumn('number', 'Experiments');
       data.addColumn('number', 'Samples');
       data.addRows(chart_year_a);
 
