@@ -123,16 +123,48 @@ DDBJ から塩基配列を公開する際には、登録情報を DDBJ の定め
 
 ### 1.塩基配列登録受付  {#accept}
 
-(A) 塩基配列登録システム を利用  
-: Web経由の[塩基配列登録システムに](/ddbj/web-submission.html)よる登録をお勧めしております。
+#### (A) 塩基配列登録システム (NSSS) を利用  
+Web経由の[塩基配列登録システムに](/ddbj/web-submission.html)よる登録をお勧めしております。
 
-(B) Mass Submission System (MSS) を利用  
-: 登録予定データが、以下のような条件に該当する場合は [Mass Submission System
-    (MSS)](/ddbj/mss.html) をご利用ください。
-  - 登録予定データが、件数が多い (100 以上) 場合
-  - 多数の Feature を持つ場合 (概ね30以上)
-  - 長大な配列 (概ね500 kb以上) の場合
-  - 塩基配列登録システムが最適でないと思われる登録
+#### (B) Mass Submission System (MSS) を利用    
+
+NSSS は、下記の配列データに対応できません。    
+以下に該当する場合は [Mass Submission System (MSS)](/ddbj/mss.html) で受け付けます。    
+件数の多寡、長さ以外の点もご確認ください。
+
+**a) 種別、または、量が以下に該当する配列データ**    
+
+- [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、
+ [HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、
+ [HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、
+ [CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
+    - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
+- 配列が長い場合
+    - 目安は 500 kb 以上
+- １エントリあたりに多数の Feature がある場合
+    - 目安は 30 以上
+- エントリ数 (登録する配列の数) が多い場合
+    - 総計 100 を超えるとき
+
+**b) finished/draft の別を問わずレプリコン全長規模相当の配列データ**    
+
+ - (核) ゲノム
+ - 染色体
+ - オルガネラゲノム
+ - ウイルス・ファージのゲノム/segment
+ - プラスミド
+
+**c) DBLINK に BioProject, BioSample の記載が必要な配列データ**    
+
+BioProject/BioSample との連携のために [DBLINK](/ddbj/flat-file.html#DBLINK) への記載を必要とする場合、
+以下を含みますが、下記で全てを網羅している訳ではありません。
+
+- メタゲノム的解析、環境プロファイル解析全般
+- 標的遺伝子を限定した配列データを相互に関連付ける場合
+- 登録予定、または、登録済みの全長規模ゲノム配列と同一菌株 (strain) に由来する配列データ
+    - 原核生物 16S rRNA 配列の報告義務がある場合
+    - 他の標的遺伝子・クラスター領域を先行発表する場合
+
 
 ### 2.データの査定  {#annotation}
 
