@@ -36,22 +36,54 @@ related_pages:
 
 ## Web 版塩基配列登録システム  {#Web_版塩基配列登録システム}
 
-Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission System, 略称NSSS）は、アノテーションをつけた塩基配列を Web 経由で登録できるシステムです。
+Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission System, 略称 NSSS）は、アノテーションをつけた塩基配列を Web 経由で登録できるシステムです。
 
-### NSSSで対応していないSubmission
+### <span class="red">NSSS ではなく</span> MSS で登録すべきデータ {#MSS}
 
-以下に該当する場合は [Mass Submission System (MSS)](/ddbj/mss.html) で受け付けます。
+NSSS は、下記の配列データに対応できません。    
+以下に該当する場合は [Mass Submission System (MSS)](/ddbj/mss.html) で受け付けます。    
+件数の多寡、長さ以外の点もご確認ください。
+
+#### a) 種別、または、量が以下に該当する配列データ
 
 <div class="attention" markdown="1">
-- [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
-   - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
+- [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、
+ [HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、
+ [HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、
+ [CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
+    - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
 - 配列が長い場合
-   - 目安は 500 kb 以上
+    - 目安は 500 kb 以上
 - １エントリあたりに多数の Feature がある場合
     - 目安は 30 以上
 - エントリ数 (登録する配列の数) が多い場合
-    - 100 を超えるとき
+    - 総計 100 を超えるとき
 </div>
+
+#### b) finished/draft の別を問わずレプリコン全長規模相当の配列データ
+
+<div class="attention" markdown="1">
+ - (核) ゲノム
+ - 染色体
+ - オルガネラゲノム
+ - ウイルス・ファージのゲノム/segment
+ - プラスミド
+</div>
+
+#### c) DBLINK に BioProject, BioSample の記載が必要な配列データ
+
+BioProject/BioSample との連携のために [DBLINK](/ddbj/flat-file.html#DBLINK) への記載を必要とする場合、
+以下を含みますが、下記で全てを網羅している訳ではありません。
+
+<div class="attention" markdown="1">
+- メタゲノム的解析、環境プロファイル解析全般
+- 標的遺伝子を限定した配列データを相互に関連付ける場合
+- 登録予定、または、登録済みの全長規模ゲノム配列と同一菌株 (strain) に由来する配列データ
+    - 原核生物 16S rRNA 配列の報告義務がある場合
+    - 他の標的遺伝子・クラスター領域を先行発表する場合
+</div>
+
+
 
 ## 入力ガイド
 
