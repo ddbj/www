@@ -245,7 +245,6 @@ Please note the points other than number or length of your sequences.
 - Chromosome
 - Virus/Phage genome/segments
 - Plasmid
-</div>
 
 **c) Sequence data to be described BioProject or BioSample in DBLINK**    
 
