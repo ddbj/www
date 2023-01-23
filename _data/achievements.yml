@@ -85,10 +85,10 @@ items:
     keyword: paper
     lang: en
 
-  - date: 2022-11-24
-    year: 2022
-    month: 11
-    day: 24
+  - date: 2023-01-06
+    year: 2023
+    month: 1
+    day: 6
     id: 214-ja
     title: "The Thing Metabolome Repository family (XMRs): comparable untargeted metabolome databases for analyzing sample-specific unknown metabolites"
     url: https://pubmed.ncbi.nlm.nih.gov/36417935
@@ -98,10 +98,10 @@ items:
     keyword: paper
     lang: ja
 
-  - date: 2022-11-24
-    year: 2022
-    month: 11
-    day: 24
+  - date: 2023-01-06
+    year: 2023
+    month: 1
+    day: 6
     id: 210-en
     title: "The Thing Metabolome Repository family (XMRs): comparable untargeted metabolome databases for analyzing sample-specific unknown metabolites"
     url: https://pubmed.ncbi.nlm.nih.gov/36417935
@@ -111,10 +111,10 @@ items:
     keyword: paper
     lang: en
 
-  - date: 2022-11-24
-    year: 2022
-    month: 11
-    day: 24
+  - date: 2023-01-06
+    year: 2023
+    month: 1
+    day: 6
     id: 213-ja
     title: "DNA Data Bank of Japan (DDBJ) update report 2022"
     url: https://pubmed.ncbi.nlm.nih.gov/36420889
@@ -124,10 +124,10 @@ items:
     keyword: paper
     lang: ja
 
-  - date: 2022-11-24
-    year: 2022
-    month: 11
-    day: 24
+  - date: 2023-01-06
+    year: 2023
+    month: 1
+    day: 6
     id: 209-en
     title: "DNA Data Bank of Japan (DDBJ) update report 2022"
     url: https://pubmed.ncbi.nlm.nih.gov/36420889
