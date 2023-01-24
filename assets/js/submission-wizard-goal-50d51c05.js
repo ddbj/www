@@ -1,4 +1,4 @@
-import{w as u,b as g,r as y,L as D,$ as r,m as d,s as B,e as w,t as p,y as A,a as R,l as P,n as M}from"./submission-wizard-f639e7b4.js";/**
+import{w as u,b as g,r as y,L as D,$ as r,m as d,s as B,e as w,t as p,y as A,a as R,l as M,n as P}from"./submission-wizard-af5d0c5d.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -48,7 +48,7 @@ JGA \u306B\u767B\u9332\u3059\u308B\u524D\u306B <a href="https://humandbs.bioscie
   <li>Submit finished level genomic sequences of eukaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a><a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u3084\u30B2\u30CE\u30E0\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
   <li>\u771F\u6838\u751F\u7269\u306E finished level \u30B2\u30CE\u30E0\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3002</li>
 </ul>
@@ -64,7 +64,7 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -137,7 +137,7 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li>Register a project to BioProject and a sample BioSample during or before the DRA submission.</li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3082\u3057\u304F\u306F\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
 </ul>      
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
@@ -152,7 +152,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -164,7 +164,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Submit draft genome sequences of eukaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a></li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u3084\u30B2\u30CE\u30E0\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
   <li>\u771F\u6838\u751F\u7269\u306E\u30C9\u30E9\u30D5\u30C8\u30B2\u30CE\u30E0\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3002</li>
 </ul>
@@ -180,7 +180,7 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -253,7 +253,7 @@ BioSample \u306F\u30B7\u30FC\u30AF\u30A8\u30F3\u30B9\u3057\u305F\u30B5\u30F3\u30
   <li>Register a project to BioProject and a sample BioSample during or before the DRA submission.</li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u3084\u30B2\u30CE\u30E0\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
 </ul>
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
@@ -268,7 +268,7 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -280,7 +280,7 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Submit complete genome sequences of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u3084\u30B2\u30CE\u30E0\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
   <li>\u539F\u6838\u751F\u7269\u306E\u5B8C\u5168\u9577\u30B2\u30CE\u30E0\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002
      <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> \u306F\u539F\u6838\u751F\u7269\u30B2\u30CE\u30E0\u3092\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u3057\u3001\u7D50\u679C\u3092 DDBJ \u306B\u767B\u9332\u53EF\u80FD\u306A\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u51FA\u529B\u3057\u307E\u3059\u3002</li>
@@ -297,7 +297,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -363,7 +363,7 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u3084\u30B2\u30CE\u30E0\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
 </ul>
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
@@ -378,7 +378,7 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -390,7 +390,7 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Submit draft genome sequences of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u3084\u30B2\u30CE\u30E0\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
   <li>\u539F\u6838\u751F\u7269\u306E\u30C9\u30E9\u30D5\u30C8\u30B2\u30CE\u30E0\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002
      <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> \u306F\u539F\u6838\u751F\u7269\u30B2\u30CE\u30E0\u3092\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u3057\u3001\u7D50\u679C\u3092 DDBJ \u306B\u767B\u9332\u53EF\u80FD\u306A\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u51FA\u529B\u3057\u307E\u3059\u3002</li>         
@@ -407,7 +407,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -439,7 +439,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Submit draft genome sequences of prokaryotes to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>. The <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> annotates prokaryotic genomes and generates result files that are readily submittable to DDBJ.</li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u3084\u30B2\u30CE\u30E0\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
   <li>\u539F\u6838\u751F\u7269\u306E\u30C9\u30E9\u30D5\u30C8\u30B2\u30CE\u30E0\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002
      <a href="https://dfast.ddbj.nig.ac.jp/">DDBJ Fast Annotation and Submission Tool (DFAST)</a> \u306F\u539F\u6838\u751F\u7269\u30B2\u30CE\u30E0\u3092\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u3057\u3001\u7D50\u679C\u3092 DDBJ \u306B\u767B\u9332\u53EF\u80FD\u306A\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066\u51FA\u529B\u3057\u307E\u3059\u3002</li>         
@@ -475,7 +475,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u3084\u30B2\u30CE\u30E0\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
 </ul>
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
@@ -490,7 +490,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -756,7 +756,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 `,ja:`<p><a href="/ddbj/tls.html">Targeted Locus Study (TLS)</a> \u306F\u591A\u6570\u306E\u751F\u7269\u7A2E\u306E\u5927\u898F\u6A21\u30BF\u30FC\u30B2\u30C3\u30C8\u914D\u5217 (16S rRNA \u907A\u4F1D\u5B50\u7B49) \u30B7\u30FC\u30AF\u30A8\u30F3\u30B7\u30F3\u30B0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3067\u3059\u3002TLS \u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u3084 TLS \u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
   <li><a href="/ddbj/tls.html">Targeted Locus Study (TLS)</a> \u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3002</li>
 </ul>
@@ -771,7 +771,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -805,7 +805,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 `,ja:`<p>\u591A\u6570\u306E\u751F\u7269\u7A2E\u306E\u5927\u898F\u6A21\u30BF\u30FC\u30B2\u30C3\u30C8\u914D\u5217 (16S rRNA \u907A\u4F1D\u5B50\u7B49) \u30B7\u30FC\u30AF\u30A8\u30F3\u30B7\u30F3\u30B0\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3067\u5F97\u3089\u308C\u305F\u751F\u30EA\u30FC\u30C9\u306F <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
 </ul>
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
@@ -819,7 +819,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -835,7 +835,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 `,ja:`<p>\u74B0\u5883\u30B5\u30F3\u30D7\u30EB\u306B\u7531\u6765\u3059\u308B\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B <a href="/ddbj/env.html">ENV division</a> \u3068\u3057\u3066\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <ul>
   <li>\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject \u306B\u3001\u74B0\u5883\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>\u74B0\u5883\u30B5\u30F3\u30D7\u30EB\u7531\u6765\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B <a href="/ddbj/env.html">ENV division</a> \u3068\u3057\u3066\u767B\u9332\u3002</li>
 </ul>
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> as a <a href="/bioproject/submission-e.html#Project-type">metagenome/environmental project</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort and organizes raw DRA data and assembled sequences. The BioProject submission can be done during the DRA submission.</p>
@@ -849,7 +849,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -920,7 +920,7 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Register a project to BioProject and a sample to BioSample during or before the DRA submission.</li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject \u306B\u3001\u74B0\u5883\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002BioProject/BioSample \u306F DRA \u306E\u767B\u9332\u9014\u4E2D\u3067\u4F5C\u6210\u3067\u304D\u307E\u3059\u3002</li>
 </ul>
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> as a <a href="/bioproject/submission-e.html#Project-type">metagenome/environmental project</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
@@ -934,7 +934,7 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -965,7 +965,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -1092,7 +1092,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -1175,7 +1175,7 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Register your project to BioProject and your sample(s) to BioSample during or before the DRA submission.</li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u3084\u30B2\u30CE\u30E0\u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
 </ul>
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
@@ -1200,7 +1200,7 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>Register your project to BioProject and your sample(s) to BioSample during or before the DRA submission.</li>
 </ul>
 `,ja:`<ul>
-  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</li>
+  <li>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></li>
   <li>DRA \u306E\u767B\u9332\u9014\u4E2D\u3001\u3082\u3057\u304F\u306F\u3001DRA \u767B\u9332\u524D\u306B\u3001\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3092 BioProject\u3001\u30B5\u30F3\u30D7\u30EB\u3092 BioSample \u306B\u767B\u9332\u3002</li>
 </ul>
 `}},{title:{en:"BioProject",ja:"BioProject"},body:{en:`<p>Register a project to <a href="/bioproject/submission-e.html">BioProject</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. The BioProject describes the goal of your research effort. The BioProject submission can be done during the DRA submission.</p>
@@ -1214,7 +1214,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -1242,7 +1242,7 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
   <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
 </ol></p>
-`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002<a href="https://drive.google.com/file/d/1_MgzXQtQgM37rVeaj2GWf2dhByqFUB4B/view">\u767B\u9332\u65B9\u6CD5\u306E PDF \u8CC7\u6599 (2023\u5E741\u6708 \u5148\u9032\u30B2\u30CE\u30E0\u62E1\u5927\u73ED\u4F1A\u8B70)</a></p>
 <ol>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
@@ -1631,4 +1631,4 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>       
 <p><a href="/ddbj/tls.html#flat-file">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B94\u6587\u5B57\u30688\u6841\u306E\u6570\u5B57\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a> (\u4F8B TZZZ01000001) \u304C TPA TLS \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
-`}}]}};const N=G;function I(a){const e=N[a];if(!e)throw new Error(`goal not found: id=${a}`);return e}const k=y`:host{--max-height:calc(100vh - 2em)}.container{display:grid;grid-template:"header     header" auto "nav        content" 1fr/min-content 1fr;max-height:var(--max-height)}.container>h1{grid-area:header}.container>nav{grid-area:nav;text-align:center}.container>main{grid-area:content;overflow:auto}.space-between{display:flex;justify-content:space-between}.no-margin-around-y>:first-child{margin-top:0;padding-top:0}.no-margin-around-y>:last-child{margin-bottom:0;padding-bottom:0}.tabs>a{display:block;padding:calc(.5em / 1.2) calc(1.75em / 1.2);border-style:solid;border-color:transparent;border-width:3px 0;transition:background-color .2s,border-color .2s}.tabs>a:hover:not(.active){background-color:#eee}.tabs>a.active{border-bottom-color:#ff7370;text-decoration:none;color:inherit;font-weight:700}svg.icon{height:1em;width:1em;vertical-align:-.1em}`;var J=Object.defineProperty,E=Object.getOwnPropertyDescriptor,o=(a,e,i,s)=>{for(var n=s>1?void 0:s?E(e,i):e,m=a.length-1,h;m>=0;m--)(h=a[m])&&(n=(s?h(e,i,n):h(n))||n);return s&&n&&J(e,i,n),n},S=(a,e,i)=>{if(!e.has(a))throw TypeError("Cannot "+i)},j=(a,e,i)=>(S(a,e,"read from private field"),i?i.call(a):e.get(a)),C=(a,e,i)=>{if(e.has(a))throw TypeError("Cannot add the same private member more than once");e instanceof WeakSet?e.add(a):e.set(a,i)},F=(a,e,i,s)=>(S(a,e,"write to private field"),s?s.call(a,i):e.set(a,i),i),l;let t=class extends D(R){constructor(){super(...arguments),C(this,l,void 0)}get section(){return j(this,l)||this.goal?.sections[0]}set section(a){const e=j(this,l);F(this,l,a),this.requestUpdate("section",e)}get previousSection(){const{goal:a,section:e}=this;if(!a||!e)return;const i=a.sections.indexOf(e);return i<=0?void 0:a.sections[i-1]}get nextSection(){const{goal:a,section:e}=this;if(!a||!e)return;const i=a.sections.indexOf(e);return i===-1||i>=a.sections.length?void 0:a.sections[i+1]}render(){const{goal:a}=this;return a?r`<div class="container border fade"><h1 class="box bg-primary my-0 font-large">${_} ${d("Submission Instructions")}</h1><nav class="box tabs font-heading font-large">${a.sections.map(e=>r`<a @click="${this.selectSection(e)}" class="${this.section===e?"active":""}" href="#">${this.localize(e.title)}</a>`)}</nav><main ${x()} class="box vstack">${this.sectionTemplate()}</main></div>`:""}sectionTemplate(){if(!this.section)return"";const{body:a}=this.section;return r`<div class="no-margin-around-y">${q(this.localize(a))}</div><nav class="space-between"><div>${this.sectionLinkTemplate(`\xAB ${d("Prev")}`,this.previousSection)}</div><div>${this.sectionLinkTemplate(`${d("Next")} \xBB`,this.nextSection)}</div></nav>`}sectionLinkTemplate(a,e){return e?r`<a @click="${this.selectSection(e)}" href="#">${a}</a>`:""}selectSection(a){return e=>{e.preventDefault(),this.section=a}}};l=new WeakMap,t.styles=[B,k],o([w({converter:V})],t.prototype,"goal",2),o([p()],t.prototype,"section",1),o([p()],t.prototype,"previousSection",1),o([p()],t.prototype,"nextSection",1),t=o([P(),M("submission-wizard-goal")],t);function V(a){return a?I(a):void 0}const _=A`<svg class="icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M39 9.75V16.1786C39 18.2496 32.2843 19.9286 24 19.9286C15.7157 19.9286 9 18.2496 9 16.1786V9.75C9 7.67893 15.7157 6 24 6C32.2843 6 39 7.67893 39 9.75ZM9.62114 19.7144C11.4651 21.2634 17.2049 22.393 24 22.393C30.7951 22.393 36.5349 21.2634 38.3789 19.7144C38.783 20.0538 39 20.4134 39 20.7857V27.2143C39 29.2853 32.2843 30.9643 24 30.9643C15.7157 30.9643 9 29.2853 9 27.2143V20.7858C9.00002 20.4135 9.21703 20.0538 9.62114 19.7144ZM24 33.6786C17.205 33.6786 11.4652 32.549 9.62118 31C9.21703 31.3395 9 31.6991 9 32.0714V38.5C9 40.5711 15.7157 42.25 24 42.25C32.2843 42.25 39 40.5711 39 38.5V32.0714C39 31.6991 38.783 31.3395 38.3788 31C36.5348 32.549 30.795 33.6786 24 33.6786ZM32.3333 37.3333C32.3333 37.9777 31.811 38.5 31.1667 38.5C30.5223 38.5 30 37.9777 30 37.3333C30 36.689 30.5223 36.1667 31.1667 36.1667C31.811 36.1667 32.3333 36.689 32.3333 37.3333ZM35.8333 37.3333C36.4777 37.3333 37 36.811 37 36.1667C37 35.5223 36.4777 35 35.8333 35C35.189 35 34.6667 35.5223 34.6667 36.1667C34.6667 36.811 35.189 37.3333 35.8333 37.3333Z" fill="#333333"/></svg>`;export{t as SubmissionWizardGoal};
+`}}]}};const N=G;function I(a){const e=N[a];if(!e)throw new Error(`goal not found: id=${a}`);return e}const k=y`:host{--max-height:calc(100vh - 2em)}.container{display:grid;grid-template:"header     header" auto "nav        content" 1fr/min-content 1fr;max-height:var(--max-height)}.container>h1{grid-area:header}.container>nav{grid-area:nav;text-align:center}.container>main{grid-area:content;overflow:auto}.space-between{display:flex;justify-content:space-between}.no-margin-around-y>:first-child{margin-top:0;padding-top:0}.no-margin-around-y>:last-child{margin-bottom:0;padding-bottom:0}.tabs>a{display:block;padding:calc(.5em / 1.2) calc(1.75em / 1.2);border-style:solid;border-color:transparent;border-width:3px 0;transition:background-color .2s,border-color .2s}.tabs>a:hover:not(.active){background-color:#eee}.tabs>a.active{border-bottom-color:#ff7370;text-decoration:none;color:inherit;font-weight:700}svg.icon{height:1em;width:1em;vertical-align:-.1em}`;var J=Object.defineProperty,E=Object.getOwnPropertyDescriptor,o=(a,e,i,s)=>{for(var n=s>1?void 0:s?E(e,i):e,m=a.length-1,h;m>=0;m--)(h=a[m])&&(n=(s?h(e,i,n):h(n))||n);return s&&n&&J(e,i,n),n},S=(a,e,i)=>{if(!e.has(a))throw TypeError("Cannot "+i)},j=(a,e,i)=>(S(a,e,"read from private field"),i?i.call(a):e.get(a)),C=(a,e,i)=>{if(e.has(a))throw TypeError("Cannot add the same private member more than once");e instanceof WeakSet?e.add(a):e.set(a,i)},F=(a,e,i,s)=>(S(a,e,"write to private field"),s?s.call(a,i):e.set(a,i),i),l;let t=class extends D(R){constructor(){super(...arguments);C(this,l,void 0)}get section(){return j(this,l)||this.goal?.sections[0]}set section(a){const e=j(this,l);F(this,l,a),this.requestUpdate("section",e)}get previousSection(){const{goal:a,section:e}=this;if(!a||!e)return;const i=a.sections.indexOf(e);return i<=0?void 0:a.sections[i-1]}get nextSection(){const{goal:a,section:e}=this;if(!a||!e)return;const i=a.sections.indexOf(e);return i===-1||i>=a.sections.length?void 0:a.sections[i+1]}render(){const{goal:a}=this;return a?r`<div class="container border fade"><h1 class="box bg-primary my-0 font-large">${_} ${d("Submission Instructions")}</h1><nav class="box tabs font-heading font-large">${a.sections.map(e=>r`<a @click="${this.selectSection(e)}" class="${this.section===e?"active":""}" href="#">${this.localize(e.title)}</a>`)}</nav><main ${x()} class="box vstack">${this.sectionTemplate()}</main></div>`:""}sectionTemplate(){if(!this.section)return"";const{body:a}=this.section;return r`<div class="no-margin-around-y">${q(this.localize(a))}</div><nav class="space-between"><div>${this.sectionLinkTemplate(`\xAB ${d("Prev")}`,this.previousSection)}</div><div>${this.sectionLinkTemplate(`${d("Next")} \xBB`,this.nextSection)}</div></nav>`}sectionLinkTemplate(a,e){return e?r`<a @click="${this.selectSection(e)}" href="#">${a}</a>`:""}selectSection(a){return e=>{e.preventDefault(),this.section=a}}};l=new WeakMap,t.styles=[B,k],o([w({converter:V})],t.prototype,"goal",2),o([p()],t.prototype,"section",1),o([p()],t.prototype,"previousSection",1),o([p()],t.prototype,"nextSection",1),t=o([M(),P("submission-wizard-goal")],t);function V(a){return a?I(a):void 0}const _=A`<svg class="icon" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M39 9.75V16.1786C39 18.2496 32.2843 19.9286 24 19.9286C15.7157 19.9286 9 18.2496 9 16.1786V9.75C9 7.67893 15.7157 6 24 6C32.2843 6 39 7.67893 39 9.75ZM9.62114 19.7144C11.4651 21.2634 17.2049 22.393 24 22.393C30.7951 22.393 36.5349 21.2634 38.3789 19.7144C38.783 20.0538 39 20.4134 39 20.7857V27.2143C39 29.2853 32.2843 30.9643 24 30.9643C15.7157 30.9643 9 29.2853 9 27.2143V20.7858C9.00002 20.4135 9.21703 20.0538 9.62114 19.7144ZM24 33.6786C17.205 33.6786 11.4652 32.549 9.62118 31C9.21703 31.3395 9 31.6991 9 32.0714V38.5C9 40.5711 15.7157 42.25 24 42.25C32.2843 42.25 39 40.5711 39 38.5V32.0714C39 31.6991 38.783 31.3395 38.3788 31C36.5348 32.549 30.795 33.6786 24 33.6786ZM32.3333 37.3333C32.3333 37.9777 31.811 38.5 31.1667 38.5C30.5223 38.5 30 37.9777 30 37.3333C30 36.689 30.5223 36.1667 31.1667 36.1667C31.811 36.1667 32.3333 36.689 32.3333 37.3333ZM35.8333 37.3333C36.4777 37.3333 37 36.811 37 36.1667C37 35.5223 36.4777 35 35.8333 35C35.189 35 34.6667 35.5223 34.6667 36.1667C34.6667 36.811 35.189 37.3333 35.8333 37.3333Z" fill="#333333"/></svg>`;export{t as SubmissionWizardGoal};
