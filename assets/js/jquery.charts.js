@@ -116,7 +116,7 @@ function makeDDBJRelease() {
           1: {
             title: 'Bases (billion)',
             textStyle: {fontSize:12},
-            viewWindow: {min:2000, max:30000}
+            viewWindow: {min:2000, max:32000}
           }
         },
         chartArea:{top:60},
