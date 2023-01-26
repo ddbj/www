@@ -111,7 +111,7 @@ function makeDDBJRelease() {
             title: 'Sequences (million)',
             color:'#ff0000',
             textStyle: {fontSize:12},
-            viewWindow: {min:500, max:3400}
+            viewWindow: {min:500, max:4400}
           },
           1: {
             title: 'Bases (billion)',
