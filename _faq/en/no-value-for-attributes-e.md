@@ -10,4 +10,4 @@ date: 2014-09-02T16:43:31
 lang: en
 ---
 
-Please see the [Missing value reporting](/biosample/submission.html#missing-value-reporting).
+Please see the [Missing value reporting](/biosample/submission-e.html#missing-value-reporting).
