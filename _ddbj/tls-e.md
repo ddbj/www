@@ -34,15 +34,15 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-Since 2016, INSDC has accepted bulk sequence data including 16S rRNA or
+Since 2016, INSDC has accepted sequence data including 16S rRNA or
 some other targeted loci mainly to be clustered into operational
 taxonomic unit as Targeted Locus Study (TLS) data type.
 
-With regard to comprehensive analysis of marker sequences by using NGS,
-TLS data submission is not required in many cases, because it is
-reproducible if the original reads are submitted to [DDBJ Read
-Archive](/dra/index-e.html).  
-So, please consider if you have to submit TLS data to DDBJ or not.
+With regard to comprehensive analysis of marker sequences by using NGS, 
+TLS data submission is not required in many cases, 
+because it is reproducible if the original reads are submitted to 
+[DDBJ Read Archive](/dra/index-e.html).  
+So, please consider if you have to submit TLS data to DDBJ or not.  
 
 See [the list of publicized TLS
 data](https://ddbj.nig.ac.jp/public/ddbj_database/tls/TLS_ORGANISM_LIST.html).
