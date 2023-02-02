@@ -25,10 +25,6 @@ addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/load
 CON と TPA は次の理由によりリリース統計には含めていません。CON: 登録済み塩基配列から構築されており重複カウントになるため。TPA:
 登録者が取得したオリジナルデータではないため。
 
-非常に大規模な配列データが GenBank と ENA から公開されていること、また、DDBJ
-が新しいフォーマットのアクセッション番号に未対応であることから、
-最新のリリースでは GenBank と ENA の大量の bulk sequence data が欠落しています。
-
 [Source data
 table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=161698998)
 

@@ -24,8 +24,6 @@ addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/load
 
 CON and TPA divisions are not included in the release statistics due to the following reasons. CON: CON division records are constructed from other sequence records and their inclusion would be a form of double-counting. TPA: TPA division records are not original data obtained by submitters.
 
-Because very large-scale sequence data has been distributed by GenBank/ENA and DDBJ is not able to accomodate records with accession numbers in a new format, our latest release lacks large portion of GenBank/ENA's bulk sequence data.
-
 [Source data
 table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=161698998)
 
