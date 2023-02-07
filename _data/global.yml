@@ -1,4 +1,11 @@
 top_news:
   ja:
+    - title: (2/7 10:00-11:00) DDBJ センターの登録、検索・解析サービス 停止
+      path: 2023-02-01
+    - title: (2/21 10:00-12:00) GEA/DRA/BP/BS システムリリースによる停止
+      path: 2023-02-07
   en:
-
+    - title: (February 7th 10:00-11:00) Suspension of DDBJ services
+      path: 2023-02-01-e
+    - title: (February 21st 10:00-12:00)GEA/DRA/BP/BS system downtime
+      path: 2023-02-07-e
