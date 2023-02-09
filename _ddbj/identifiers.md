@@ -150,7 +150,7 @@ SARS-CoV-2 などのような高頻度に登録される病原ウイルスでは
     year: [/collection_date](/ddbj/qualifiers.html#collection_date) qualifier に示す採取日の年号     
 - 記載例: SARS-CoV-2/human/Japan/A12/2021
 
-厳密には純系と確認することは難しいですが、慣習的に [/strain](/ddbj/qualifiers.html#strain) qualifier を記載されているケースも多いため、受け付けます。    
+厳密には、感染細胞の培養を経るなどしなければ、純系と確認することは難しいですが、慣習的に [/strain](/ddbj/qualifiers.html#strain) qualifier を記載されているケースも多いため、受け付けます。    
 ただし、/isolate qualifier の記載を推奨します。    
 genotype, genogroup などは、種・系統に準ずるようなもので、サンプル識別子とは なり得ないことにご注意ください。    
 

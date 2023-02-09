@@ -153,9 +153,9 @@ For frequently submitted pathogenic viruses like SARS-CoV-2 or others, we strong
     year: the year of the sampling date indicated in [/collection_date](/ddbj/qualifiers-e.html#collection_date) qualifier     
 -   Example: SARS-CoV-2/human/Japan/A12/2021
 
-It is difficult for viruses to confirm the pure strains strictly, but we conventionally accepted [/strain](/ddbj/qualifiers-e.html#strain) qualifiers for viral sequences.    
+Though it is difficult for viruses to confirm the pure lines without culture by infected cells, we conventionally accepted [/strain](/ddbj/qualifiers-e.html#strain) qualifiers for viral sequences.    
 However, we recommend using /isolate qualifiers.     
-Please note that a genotype (or genogroup etc.) is similar to viral species/lineage, so, it cannot be sample identifiers.    
+Please note that a genotype (or genogroup etc.) is similar to species/lineage of virus, so, it cannot be sample identifiers.    
 
 ### Environmental Samples  {#env}
 
