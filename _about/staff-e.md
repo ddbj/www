@@ -57,7 +57,7 @@ category: about
         <div class="explanation">
             <p class="name">Tomoya Tanjo, PhD</p>
             <p class="position">Assistant Professor</p>
-            <p class="position">Head of HPC Division</p>
+            <p class="position">HPC Division</p>
         </div>
         </li>
     </ul> 
