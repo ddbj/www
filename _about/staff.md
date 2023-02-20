@@ -76,7 +76,16 @@ category: about
                 <p class="position">&nbsp;</p>
             </div>
         </li>
-            <li class="staff">
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="越水静"></p>
+            <div class="explanation">
+                <p class="name">越水 静</p>
+                <p class="name">Shizuka Koshimizu, PhD</p>
+                <p class="position">助教</p>
+                <p class="position">国際連携部門</p>
+            </div>
+        </li>
+        <li class="staff">
             <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="藤澤貴智"></p>
             <div class="explanation">
                 <p class="name">藤澤 貴智</p>

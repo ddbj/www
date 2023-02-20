@@ -70,6 +70,14 @@ category: about
                 <p class="position">&nbsp;</p>
             </div>
         </li>
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="Shizuka Koshimizu"></p>
+            <div class="explanation">
+                <p class="name">Shizuka Koshimizu, PhD</p>
+                <p class="position">Assistant Professor</p>
+                <p class="position">International</p>
+            </div>
+        </li>
             <li class="staff">
             <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="Takatomo Fujisawa"></p>
             <div class="explanation">
