@@ -57,7 +57,7 @@ category: about
         <div class="explanation">
             <p class="name">Tomoya Tanjo, PhD</p>
             <p class="position">Assistant Professor</p>
-            <p class="position">Head of HPC Division</p>
+            <p class="position">HPC Division</p>
         </div>
         </li>
     </ul> 
@@ -68,6 +68,14 @@ category: about
                 <p class="name">Yasuhiro Tanizawa, PhD</p>
                 <p class="position">Assistant Professor</p>
                 <p class="position">&nbsp;</p>
+            </div>
+        </li>
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="Shizuka Koshimizu"></p>
+            <div class="explanation">
+                <p class="name">Shizuka Koshimizu, PhD</p>
+                <p class="position">Assistant Professor</p>
+                <p class="position">International</p>
             </div>
         </li>
             <li class="staff">
