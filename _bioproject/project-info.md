@@ -62,22 +62,6 @@ lang: ja
 : データベーススタッフへの質問やプロジェクトに関する追加情報を記入します。内容は公開されません。[アンブレラプロジェクト](/bioproject/submission.html#submit-umbrella-project)を登録する場合、ここにその旨を記載します。例 Please register this project as an umbrella project.  
 個人識別符号に該当するヒトデータを登録する場合、[NBDC で承認されている提供申請 ID を記入](/bioproject/submission.html#human-data)します。
 
-[Relevance](#Relevance)<a name="Relevance"></a>  
-: 最も関連性が高い分野を選択します。
-
-  | Relevance     | Description                                     |
-  |---|
-  | Agricultural  |                                                 |
-  | Medical       |                                                 |
-  | Industrial    | バイオレメディエーション、バイオ燃料といった大量生産を意図している研究分野           |
-  | Environmental |                                                 |
-  | Evolution     |                                                 |
-  | ModelOrganism |                                                 |
-  | Other         | 選択肢にない研究分野。"Relevance description" に研究分野を記入します。 |
-
-[Relevance description](#Relevance_description)<span class="conditionally_required">\*</span><a name="Relevance_description"></a>  
-: Other を選択したときはここに Relevance を記入します。
-
 ### Umbrella BioProject {#Area_linked-project}
 
 登録しようとしているプロジェクトが既に登録されているアンブレラプロジェクトに属している場合、そのアンブレラプロジェクトのアクセッション番号と概要を記入します。
@@ -114,14 +98,6 @@ lang: ja
 
 [Grant title](#Grant_title)<a name="Grant_title"></a>  
 : 研究費のタイトル。研究費のタイトルでの検索をサポートします。
-
-### Consortium  {#Area_consortium}
-
-[Consortium name](#Consortium_name)<a name="Consortium_name"></a>  
-: 研究がコンソーシアムの一環として行われた場合、そのコンソーシアム名を記入します。
-
-[Consortium URL](#Consortium_URL)<a name="Consortium_URL"></a>  
-: コンソーシアムのウェブサイトがある場合その URL を記入します。
 
 ## Project type  {#Project-type}
 
@@ -237,9 +213,9 @@ NCBI ではプロジェクトを参照している実際の登録データから
 
 : [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html)に登録されている生物名。メタゲノムや環境サンプルなどの生物名を特定できないサンプルについては[こちらのリスト](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock)を参考にしてください。
 
-複数の生物種を対象としたプロジェクトの場合、共通する階層までの生物分類 (例 属レベルまで) を記入してください。
-
-[Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html) に該当する生物が登録されていない場合は、Novel organism を選択し [Description of novel organism](#Novel_organism) に[新規生物に関する参考情報](/ddbj/organism.html)、Organism Name に希望する生物名を記入します。
+プロジェクトが複数生物種を対象にしている場合、共通する系統分類、例えば "Homo sapiens" と "Mus musculus" が対象であれば "Mammalia" (taxonomy id: [40674](https://ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=40674&lvl=3&lin=f&keep=1&srchmode=1&unlock)) のように入力します。    
+生物名が NCBI Taxonomy に登録されていない場合、sp. を付けた生物種名、例えば生物名が "Escherichia sp. ABCDEF" であれば "Escherichia sp." (tax id: [1884818](https://ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1884818)) を入力します。    
+新規生物名は BioSample で申請します。
 
 [Taxonomy ID](#BioProject_Taxonomy_ID)<a name="BioProject_Taxonomy_ID"></a>  
 : [NCBI Taxonomy ID](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html)
@@ -252,227 +228,6 @@ NCBI ではプロジェクトを参照している実際の登録データから
 
 [Description](#BioProject_Description)<a name="BioProject_Description"></a>  
 : Label に対する簡潔な補足情報。
-
-[Description of novel organism](#Novel_organism)<a name="Novel_organism"></a>
-: [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/) への生物登録を申請するための情報を記入します。
-
-### General Properties  {#Area_general-properties}
-
-対象生物の一般的な性質。
-
-[Cellularity](#Cellularity)<a name="Cellularity"></a>  
-: 選択肢から Cellularity を選びます。
-
-| Cellularity   |
-|---|
-| Unicellular   |
-| Multicellular |
-| Colonial      |
-
-[Reproduction](#Reproduction)<a name="Reproduction"></a>  
-: 選択肢から Reproduction を選びます。
-
-| Reproduction |
-|---|
-| Sexual       |
-| Asexual      |
-
-[Haploid genome size](#Haploid_genome_size)<a name="Haploid_genome_size"></a>  
-: Kb、Mb や cM で表したハプロイドゲノムのサイズ。
-
-[Ploidy](#Ploidy)<a name="Ploidy"></a>  
-: 選択肢から Ploidy を選びます。
-
-| Ploidy        |
-|---|
-| Haploid       |
-| Diploid       |
-| Polyploid     |
-| Allopolyploid |
-
-### Organism Replicons  {#Area_organism-replicons}
-
-対象となる生物が持っているレプリコンの数、その名前 (例: 1、2、3 や I、II、III)、レプリコンの種類 (chromosome など) やレプリコンが存在する細胞内構造。
-
-[Name](#Replicon_name)<a name="Replicon_name"></a>  
-: 標準的なレプリコン名。
-
-[Type](#Replicon_type)<a name="Replicon_type"></a>  
-: Replicon type を選択します。
-
-| Replicon type |
-|---|
-| Chromosome    |
-| Plasmid       |
-| Linkage Group |
-| Segment       |
-| Other         |
-
-[Location](#Location)<a name="Location"></a>  
-: レプリコンが存在する細胞内の場所。例: 核、分化した細胞内器官。真核生物、バクテリアや古細菌の染色体の場合 "Nuclear or Prokaryote" を使用します。
-
-| Location              |
-|---|
-| Nuclear or Prokaryote |
-| Macronuclear          |
-| Nucleomorph           |
-| Mitochondrion         |
-| Kinetoplast           |
-| Chloroplast           |
-| Chromoplast           |
-| Plastid               |
-| Virion or Phage       |
-| Proviral or Prophage  |
-| Viroid                |
-| Extrachrom            |
-| Cyanelle              |
-| Apicoplast            |
-| Leucoplast            |
-| Proplastid            |
-| Hydrogenosome         |
-| Chromatophore         |
-| Other                 |
-
-[Size](#Size)<a name="Size"></a>  
-: 推定されるゲノムサイズとその単位。
-
-[Description](#Replicon_description)<a name="Replicon_description"></a>  
-: レプリコンの通常とは異なる特徴。
-
-### Phenotype  {#Area_phenotype}
-
-対象生物の表現型。
-
-[Disease](#Disease)<a name="Disease"></a>  
-: 病気の名前を記入します。
-
-[Biotic Relationship](#BioticRelationship)<a name="BioticRelationship"></a>  
-: 選択肢から BioticRelationship を選びます。
-
-| BioticRelationship |
-|---|
-| FreeLiving         |
-| Commensal          |
-| Symbiont           |
-| Episymbiont        |
-| Intracellular      |
-| Parasite           |
-| Host               |
-| Endosymbiont       |
-
-[Trophic Level](#TrophicLevel)<a name="TrophicLevel"></a>  
-: 選択肢から TrophicLevel を選びます。
-
-| TrophicLevel |
-|---|
-| Autotroph    |
-| Heterotroph  |
-| Mixotroph    |
-
-### Prokaryote Morphology  {#Area_prokaryote-morphology}
-
-対象が原核生物の場合、形態について分かっている情報を記載してください。
-
-[Shape](#Shape)<a name="Shape"></a>  
-: 該当する全てのオプションを選びます。
-
-| Shape        | Description                                          |
-|---|
-| Bacilli      | rod-shaped                                           |
-| Cocci        | spherical-shaped                                     |
-| Spirilla     | spiral-shaped                                        |
-| Coccobacilli | elongated coccal form                                |
-| Filamentous  | filament-shaped (bacilli thar occur in long threads) |
-| Vibrios      | vibrio-shaped (short、slightly curved rods)          |
-| Fusobacteria | fusiform or spindle-shaped (rods with tapered ends)  |
-| SquareShaped |                                                      |
-| CurvedShaped |                                                      |
-| Tailed       |                                                      |
-
-[Gram](#Gram)<a name="Gram"></a>  
-: 選択肢からグラム陽性か陰性から選びます。
-
-| Gram     |
-|---|
-| Positive |
-| Negative |
-
-[Motility](#Motility)<a name="Motility"></a>  
-: 選択肢から Motility を選びます。
-
-| Motility |
-|---|
-| Yes      |
-| No       |
-
-[Enveloped](#Enveloped)<a name="Enveloped"></a>  
-: 対象生物の Envelope の有無を選択します。
-
-| Enveloped |
-|---|
-| Yes       |
-| No        |
-
-[Endospores](#Endospores)<a name="Endospores"></a>  
-: 対象生物が Endospores を形成するかどうかを選択します。
-
-| Endospores |
-|---|
-| Yes        |
-| No         |
-
-### Ecological Environment  {#Area_ecological-environment}
-
-生息環境。好極限性に関して分かっていることがあれば追加情報として記載します。
-
-[Habitat](#Habitat)<a name="Habitat"></a>  
-: 選択肢から Habitat を選択します。
-
-| Habitat        |
-|---|
-| HostAssociated |
-| Aquatic        |
-| Terrestrial    |
-| Specialized    |
-| Multiple       |
-| Unknown        |
-
-[Salinity](#Salinity)<a name="Salinity"></a>  
-: 選択肢から Salinity を選びます。
-
-| Salinity           |
-|---|
-| NonHalophilic      |
-| Mesophilic         |
-| ModerateHalophilic |
-| ExtremeHalophilic  |
-| Unknown            |
-
-[Oxygen requirement](#OxygenReq)<a name="OxygenReq"></a>  
-: 酸素要求性を選択します。
-
-| OxygenReq       |
-|---|
-| Aerobic         |
-| Microaerophilic |
-| Facultative     |
-| Anaerobic       |
-| Unknown         |
-
-[Temperature range](#TemperatureRange)<a name="TemperatureRange"></a>  
-: 生息温度での分類を選びます。
-
-| TemperatureRange  |
-|---|
-| Cryophilic        |
-| Psychrophilic     |
-| Mesophilic        |
-| Thermophilic      |
-| Hyperthermophilic |
-| Unknown           |
-
-[Optimum Temperature](#OptimumTemperature)<a name="OptimumTemperature"></a>  
-: 生息の最適温度を Celsius で記入します。
 
 ## Publication {#Publication} 
 
@@ -487,7 +242,7 @@ NCBI ではプロジェクトを参照している実際の登録データから
 ```
 
 [DOI](#BioProject_DOI)<a name="BioProject_DOI"></a>  
-: PubMed ID がない場合は DOI を記入し、さらに文献に関する以下の情報を記入します。
+: PubMed ID がない場合は DOI を記入します。
 
 ```
 <Publication id="10.1093/nar/gku1120">
@@ -495,42 +250,6 @@ NCBI ではプロジェクトを参照している実際の登録データから
 </Publication>
 <ProjectReleaseDate>
 ```
-
-[Reference title](#BioProject_Reference_title)<span class="red">\*</span><a name="BioProject_Reference_title"></a>  
-: 論文のタイトル。
-
-[Journal title](#BioProject_Journal_title)<span class="red">\*</span><a name="BioProject_Journal_title"></a>  
-: 雑誌のタイトル。
-
-[Year](#BioProject_Year)<span class="red">\*</span><a name="BioProject_Year"></a>  
-: 出版年。
-
-[Volume](#BioProject_Volume)<span class="red">\*</span><a name="BioProject_Volume"></a>  
-: 雑誌の巻。
-
-[Issue](#BioProject_Issue)<span class="red">\*</span><a name="BioProject_Issue"></a>  
-: 雑誌の号。
-
-[Pages from](#BioProject_Pages_from)<span class="red">\*</span><a name="BioProject_Pages_from"></a>  
-: 論文の開始ページ。
-
-[Pages to](#BioProject_Pages_to)<span class="red">\*</span><a name="BioProject_Pages_to"></a>  
-: 論文の終了ページ。
-
-[First name](#BioProject_First_name_publication)<span class="red">\*</span><a name="BioProject_First_name_publication"></a>  
-: 著者の first name。
-
-[MI](#BioProject_MI)<a name="BioProject_MI"></a>  
-: ミドルイニシャル。
-
-[Last name](#BioProject_Last_name_publication)<span class="red">\*</span><a name="BioProject_Last_name_publication"></a>  
-: 著者の last name。
-
-[Suffix](#BioProject_Suffix)<a name="BioProject_Suffix"></a>  
-: 著者の称号。
-
-[This publication has multiple authors](#BioProject_This_publication_has_multiple_authors)<a name="BioProject_This_publication_has_multiple_authors"></a>  
-: この項目をチェックすると記入された著者名の後に "et al" が付加されます。
 
 ## XML スキーマ  {#xml-schema}
 

@@ -61,22 +61,6 @@ An informative paragraph that describes the project and provides informative con
 : Use this field if you have questions for database support staff. The content is not made public. If you intend to [submit an umbrella project](/bioproject/submission-e.html#submit-umbrella-project), please inform us that "this is umbrella project" (e.g., Please register this project as an umbrella project).  
 To submit data corresponding to personal identification code, write the approved NBDC data submission application ID (for example, J-DS000001-001).
 
-[Relevance](#Relevance)<a name="Relevance"></a>  
-: Select the primary general relevance of the study.
-  
-| Relevance     | Description                                                                                                    |
-|---|
-| Agricultural  |                                                                                                                |
-| Medical       |                                                                                                                |
-| Industrial    | Could include bio-remediation, bio-fuels and other areas of research where there are areas of mass production. |
-| Environmental |                                                                                                                |
-| Evolution     |                                                                                                                |
-| ModelOrganism |                                                                                                                |
-| Other         | Unspecified major impact categories to be defined in the "Relevance description".                              |
-
-[Relevance description](#Relevance_description)<span class="conditionally_required">\*</span><a name="Relevance_description"></a>  
-: Describe the relevance when the Other is selected.
-
 ### Umbrella BioProject {#Area_linked-project}
 
 If you are registering a project that is part of an initiative which is already registered in the BioProject database, then please tell us the existing BioProject accession number and provide a general description of the larger initiative. This information is needed for [project linking](/bioproject/submission-e.html#link-primary-project-umbrella).
@@ -112,14 +96,6 @@ Funding information for a project.
 
 [Grant title](#Grant_title)<a name="Grant_title"></a>  
 : Grant title may also support searches.
-
-### Consortium  {#Area_consortium}
-
-[Consortium name](#Consortium_name)<a name="Consortium_name"></a> 
-: If study is carried out as part of a consortium, provide the consortium name.
-
-[Consortium URL](#Consortium_URL)<a name="Consortium_URL"></a>  
-: If the consortium maintains a web site, provide the URL.
 
 ## Project type  {#Project-type}
 
@@ -234,9 +210,9 @@ Taxonomy and description of target organism.
 [Organism name](#BioProject_Organism_name)<span class="red">\*</span><a name="BioProject_Organism_name"></a><a name="BioProject_Organism_name"></a>
 : Organism name in the [Taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html). Unclassified sequences including metagenome and environmental samples may be found at [here](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock).
     
-In the project spanning multiple species, enter a taxonomic classification common to the species (e.g., genus name).
-    
-If you intend to submit un-registered novel organism, please provide us the [detailed organism information](/ddbj/organism-e.html) in the [Description of novel organism](#Novel_organism) and proposed organism name in the Organism Name.
+If the project targets multiple organisms, enter a common lineage e.g. "Mammalia" (taxonomy id: [40674](https://ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=40674&lvl=3&lin=f&keep=1&srchmode=1&unlock)) for the project targeting "Homo sapiens" and "Mus musculus".   
+If an organism name is not found in the NCBI Taxonomy, enter a lineage or a species name with sp. e.g. "Escherichia sp." (tax id: [1884818](https://ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1884818)) for a novel species "Escherichia sp. ABCDEF".
+Apply a novel organism name in BioSample.
 
 [Taxonomy ID](#BioProject_Taxonomy_ID)<a name="BioProject_Taxonomy_ID"></a>  
 : [NCBI Taxonomy ID](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html)
@@ -249,227 +225,6 @@ If you intend to submit un-registered novel organism, please provide us the [det
 
 [Description](#BioProject_Description)<a name="BioProject_Description"></a>  
 : A brief description, to elaborate upon the brief label.
-
-[Description of novel organism](#Novel_organism)<a name="Novel_organism"></a>  
-: Enter necessary information to register an organism to the [taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/).
-
-### General Properties  {#Area_general-properties}
-
-General properties of target organism.
-
-[Cellularity](#Cellularity)<a name="Cellularity"></a>  
-: Select a cellularity.
-
-| Cellularity   |
-|---|
-| Unicellular   |
-| Multicellular |
-| Colonial      |
-
-[Reproduction](#Reproduction)<a name="Reproduction"></a>  
-: Select a Reproduction.
-
-| Reproduction |
-|---|
-| Sexual       |
-| Asexual      |
-
-[Haploid genome size](#Haploid_genome_size)<a name="Haploid_genome_size"></a>  
-: Haploid genome size in Kb, Mb or cM.
-
-[Ploidy](#Ploidy)<a name="Ploidy"></a>  
-: Select a Ploidy.
-
-| Ploidy        |
-|---|
-| Haploid       |
-| Diploid       |
-| Polyploid     |
-| Allopolyploid |
-
-### Organism Replicons  {#Area_organism-replicons}
-
-Describe how many replicons this organism has, how they are named (e.g., 1, 2, 3 vs. I, II, III), the replicon type (chromosome etc.), and the subcellular structure that the replicon is located in.
-
-[Name](#Replicon_name)<a name="Replicon_name"></a>  
-: The preferred standard for the replicon name.
-
-[Type](#Replicon_type)<a name="Replicon_type"></a>  
-: Select a replicon type.
-
-| Replicon type |
-|---|
-| Chromosome    |
-| Plasmid       |
-| Linkage Group |
-| Segment       |
-| Other         |
-
-[Location](#Location)<a name="Location"></a>  
-: The replicon subcellular location. For instance, the nucleus, or a differentiated organella. Please select "Nuclear or Prokaryote" for the chromosomes of eularyotes, bacteria or archaea.
-
-| Location              |
-|---|
-| Nuclear or Prokaryote |
-| Macronuclear          |
-| Nucleomorph           |
-| Mitochondrion         |
-| Kinetoplast           |
-| Chloroplast           |
-| Chromoplast           |
-| Plastid               |
-| Virion or Phage       |
-| Proviral or Prophage  |
-| Viroid                |
-| Extrachrom            |
-| Cyanelle              |
-| Apicoplast            |
-| Leucoplast            |
-| Proplastid            |
-| Hydrogenosome         |
-| Chromatophore         |
-| Other                 |
-
-[Size](#Size)<a name="Size"></a>  
-: The size and unit of measurement for the estimated genome size.
-
-[Description](#Replicon_description)<a name="Replicon_description"></a>  
-: A description of any unusual features of the replicon.
-
-### Phenotype  {#Area_phenotype}
-
-Phenotype of target organism.
-
-[Disease](#Disease)<a name="Disease"></a>  
-: Enter a disease name.
-
-[Biotic Relationship](#BioticRelationship)<a name="BioticRelationship"></a>
-: Select a BioticRelationship.
-
-| BioticRelationship |
-|---|
-| FreeLiving         |
-| Commensal          |
-| Symbiont           |
-| Episymbiont        |
-| Intracellular      |
-| Parasite           |
-| Host               |
-| Endosymbiont       |
-
-[Trophic Level](#TrophicLevel)<a name="TrophicLevel"></a>
-: Select a TrophicLevel.
-
-| TrophicLevel |
-|---|
-| Autotroph    |
-| Heterotroph  |
-| Mixotroph    |
-
-### Prokaryote Morphology  {#Area_prokaryote-morphology}
-
-When the target organism is prokaryote, please describe the general morphology if known.
-
-[Shape](#Shape)<a name="Shape"></a>
-: Select all relevant menu options.
-
-| Shape        | Description                                          |
-|---|
-| Bacilli      | rod-shaped                                           |
-| Cocci        | spherical-shaped                                     |
-| Spirilla     | spiral-shaped                                        |
-| Coccobacilli | elongated coccal form                                |
-| Filamentous  | filament-shaped (bacilli thar occur in long threads) |
-| Vibrios      | vibrio-shaped (short, slightly curved rods)          |
-| Fusobacteria | fusiform or spindle-shaped (rods with tapered ends)  |
-| SquareShaped |                                                      |
-| CurvedShaped |                                                      |
-| Tailed       |                                                      |
-
-[Gram](#Gram)<a name="Gram"></a>
-: Choose gram positive or negative.
-
-| Gram     |
-|---|
-| Positive |
-| Negative |
-
-[Motility](#Motility)<a name="Motility"></a>  
-: Choose a Motility.
-
-| Motility |
-|---|
-| Yes      |
-| No       |
-
-[Enveloped](#Enveloped)<a name="Enveloped"></a>  
-: Choose enveloped or not.
-
-| Enveloped |
-|---|
-| Yes       |
-| No        |
-
-[Endospores](#Endospores)<a name="Endospores"></a>  
-: Choose target bacteria forms endospores or not.
-
-| Endospores |
-|---|
-| Yes        |
-| No         |
-
-### Ecological Environment  {#Area_ecological-environment}
-
-The general habitat for any organism. Please indicate additional extremophile parameters if known.
-
-[Habitat](#Habitat)<a name="Habitat"></a>  
-: Choose a Habitat.
-
-| Habitat        |
-|---|
-| HostAssociated |
-| Aquatic        |
-| Terrestrial    |
-| Specialized    |
-| Multiple       |
-| Unknown        |
-
-[Salinity](#Salinity)<a name="Salinity"></a>  
-: Choose a Salinity.
-
-| Salinity           |
-|---|
-| NonHalophilic      |
-| Mesophilic         |
-| ModerateHalophilic |
-| ExtremeHalophilic  |
-| Unknown            |
-
-[Oxygen requirement](#OxygenReq)<a name="OxygenReq"></a>  
-: Choose an Oxygen requirement.
-
-| OxygenReq       |
-|---|
-| Aerobic         |
-| Microaerophilic |
-| Facultative     |
-| Anaerobic       |
-| Unknown         |
-
-[Temperature range](#TemperatureRange)<a name="TemperatureRange"></a>  
-: Choose a temperature range.
-
-| TemperatureRange  |
-|---|
-| Cryophilic        |
-| Psychrophilic     |
-| Mesophilic        |
-| Thermophilic      |
-| Hyperthermophilic |
-| Unknown           |
-
-[Optimum Temperature](#OptimumTemperature)<a name="OptimumTemperature"></a>  
-: Optimum temperature in Celsius.
 
 ## Publication {#Publication}
 
@@ -484,7 +239,7 @@ The general habitat for any organism. Please indicate additional extremophile pa
 ```
 
 [DOI](#BioProject_DOI)<a name="BioProject_DOI"></a>  
-: Provide a DOI if a PubMed ID is not available. Provide the additional reference information.
+: Provide a DOI if a PubMed ID is not available.
 
 ```
 <Publication id="10.1093/nar/gku1120">
@@ -492,42 +247,6 @@ The general habitat for any organism. Please indicate additional extremophile pa
 </Publication>
 <ProjectReleaseDate>
 ```
-
-[Reference title](#BioProject_Reference_title)<span class="red">\*</span><a name="BioProject_Reference_title"></a>  
-: A title of reference.
-
-[Journal title](#BioProject_Journal_title)<span class="red">\*</span><a name="BioProject_Journal_title"></a>  
-: A title of journal.
-
-[Year](#BioProject_Year)<span class="red">\*</span><a name="BioProject_Year"></a>  
-: Publication year.
-
-[Volume](#BioProject_Volume)<span class="red">\*</span><a name="BioProject_Volume"></a>  
-: Journal volume.
-
-[Issue](#BioProject_Issue)<span class="red">\*</span><a name="BioProject_Issue"></a>  
-: Journal issue.
-
-[Pages from](#BioProject_Pages_from)<span class="red">\*</span><a name="BioProject_Pages_from"></a>  
-: Reference start page.
-
-[Pages to](#BioProject_Pages_to)<span class="red">\*</span><a name="BioProject_Pages_to"></a>  
-: Reference end page.
-
-[First name](#BioProject_First_name_publication)<span class="red">\*</span><a name="BioProject_First_name_publication"></a>  
-: First name of author.
-
-[MI](#BioProject_MI)<a name="BioProject_MI"></a>  
-: Middle initial.
-
-[Last name](#BioProject_Last_name_publication)<span class="red">\*</span><a name="BioProject_Last_name_publication"></a>  
-: Last name of author.
-
-[Suffix](#BioProject_Suffix)<a name="BioProject_Suffix"></a>  
-: Suffix for author.
-
-[This publication has multiple authors](#BioProject_This_publication_has_multiple_authors)<a name="BioProject_This_publication_has_multiple_authors"></a>  
-: If this is checked, then "et al" is added to the author name provided above.
 
 ## XML schema  {#xml-schema}
 
