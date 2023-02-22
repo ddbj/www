@@ -305,9 +305,8 @@ Please tell us any of following items during your sequence submission.
 
 #### 2-1. In case of species not to be identified  <a name="not-to-be-identified"></a>
 
-If the scientific name is unclear and/or unidentified, we adopt a 
-tentative name for the organism. The tentative name is made up with the 
-lineage (in many cases, genus names) that as far as submitters could specify.
+If the scientific name is unclear and/or unidentified, we adopt a tentative name for the organism.    
+The tentative name is made up with the lineage (in many cases, genus names) that as far as submitters could specify.    
 
 Format
 
@@ -339,6 +338,9 @@ Even included in the organism name, you should describe the [identifier](/ddbj/i
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Euglena sp. CR123"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="CR123"</code></pre>  
+
+<span class="red">**Please use the same tentative name, when you submit any other data derived from the same organism.**</span>    
+
 
 #### 2-2. In case of proposing a novel species  {#new}
 

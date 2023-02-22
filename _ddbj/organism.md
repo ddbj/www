@@ -233,10 +233,10 @@ taxonomy database は、生物名の表記を統一することに主眼をお�
 採用されている生物名とその lineage は、登録者の分類学的な主張、および、分類学的に普及している内容とは異なる場合があります。    
 詳細に関しましては、[taxonomy database の説明](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite )をご一読ください。    
     
-いわゆる combinatio nova を含めた一連の生物の再分類の公表を意図した提唱準備段階の場合、その主張が論文を公表して認められるまで、
+いわゆる combinatio nova を含め、再分類に関連して提唱する準備段階の場合、その主張が論文を公表して認められるまで、
 taxonomy database 上で名称の修正を実施することはできません。    
 そのため、現状の taxonomy database に準拠した学名を用います。    
-論文公表後に必要な名称変更を依頼してください。その際に学名について再検討することになります。    
+論文公表後に必要な名称変更を依頼してください。その際に学名について taxonomy database 上での扱いを再検討することになります。    
     
 taxonomy database における scientific name, synonym あるいは、lineage などの扱いに異論がある場合、taxonomy database の管理者に修正の検討を依頼することができます。    
 可能な限り、異論の根拠となる文献をご提示ください。    
@@ -258,9 +258,10 @@ taxonomy database における scientific name, synonym あるいは、lineage �
 
 #### 2-1. 種を同定しない場合   {#not-to-be-identified} 
 
-種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、"\<genus name\> sp." などとして記載します。    
+種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、
+"\<genus name\> sp." などとして記載します。    
 属より上位ランクの場合、判明している範囲の lineage に細菌ならば "bacterium"、
-古細菌ならば、 "archaeon" を付加した名前を記載します。
+古細菌ならば、 "archaeon" を付加した名前を記載します。    
 真核生物の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
 
 書式
@@ -284,14 +285,20 @@ Methanomicrobiales archaeon</code></pre>
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-真核生物 (カビ、酵母相当の単細胞真菌以外) の場合、あるいは、単細胞の微生物でも全ゲノム規模の配列に該当する場合、判明している範囲の lineage (多くの場合 属名) を用いて、"\<genus name\> sp."などとした上で、[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。  
+真核生物 (カビ、酵母相当の単細胞真菌以外) の場合、あるいは、単細胞の微生物でも全ゲノム規模の配列に該当する場合、
+判明している範囲の lineage (多くの場合 属名) を用いて、"\<genus name\> sp."などとした上で、
+[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。  
 「生物名」に含めている場合でも、[識別子](/ddbj/identifiers.html)を [/strain](/ddbj/qualifiers.html#strain) など該当する qualifier に記載してください。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Euglena sp. CR123"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="CR123"</code></pre>  
 
+<span class="red">**仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録してください。**</span>    
+
+
 #### 2-2. 新種提唱の場合  {#new}
-ウイルスの場合、[The International Code of Virus Classification and Nomenclature (ICVCN)](https://ictv.global/about/code ) に従った命名であれば、そのまま記載して登録することが可能です。    
+ウイルスの場合、[The International Code of Virus Classification and Nomenclature (ICVCN)](https://ictv.global/about/code ) に従った命名であれば、
+そのまま記載して登録することが可能です。    
 
 ウイルス以外は、<span class="red">**valid publication 前の段階で「正式な学名と混同するような名称」を記載することはできません。**</span>    
 新学名提唱のための準備段階の場合、不明と類似の扱いで学名が確定するまではデータとの対応関係を一意に保つため、仮称を設定することを原則としています。    
