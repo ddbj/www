@@ -221,7 +221,7 @@ DDBJ generally recommends you to use [Nucleotide Sequence Submission System](/dd
 #### (B) Mass Submission System (MSS)    
 
 NSSS cannot accept the following sequence data.    
-The nucleotide sequences indicated below should be submitted to [Mass Submission System (MSS)](/ddbj/mss-e.html).    
+The nucleotide sequence data belonging to <span class="red">either of the following cases</span> should be submitted via [MSS](/ddbj/mss-e.html).    
 Please note the points other than number or length of your sequences.  
 
 **a) Either of the following categories or amounts of sequence data**    

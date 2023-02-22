@@ -129,7 +129,7 @@ Web経由の[塩基配列登録システムに](/ddbj/web-submission.html)よる
 #### (B) Mass Submission System (MSS) を利用    
 
 NSSS は、下記の配列データに対応できません。    
-以下に該当する場合は [Mass Submission System (MSS)](/ddbj/mss.html) で受け付けます。    
+<span class="red">以下の何れかに該当する場合</span>、[MSS](/ddbj/mss.html) 経由で登録をお願いします。    
 件数の多寡、長さ以外の点もご確認ください。
 
 **a) 種別、または、量が以下に該当する配列データ**    

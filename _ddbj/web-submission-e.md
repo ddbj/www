@@ -40,8 +40,8 @@ DDBJ Nucleotide Sequence Submission System, NSSS for short, is a web-based submi
 ### Sequence Data to be submitted via MSS, <span class="red">NOT NSSS</span> {#MSS}
 
 NSSS cannot accept the following sequence data.    
-The nucleotide sequences indicated below should be submitted to [Mass Submission System (MSS)](/ddbj/mss-e.html).    
-Please note the points other than number or length of your sequences.  
+The nucleotide sequence data belonging to <span class="red">either of the following cases</span> should be submitted via [Mass Submission System (MSS)](/ddbj/mss-e.html).    
+Please note the points other than number or length of your data.  
 
 #### a) Either of the following categories or amounts of sequence data
 
