@@ -80,7 +80,7 @@ table tr:hover {
 }
 </style>
 
-**Recomend:** A. Apply for the submission after you have prepared the submission files
+<!-- **Recomend:** A. Apply for the submission after you have prepared the submission files -->
 <div class="mssflow">Create the submission files</div>
 <div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">Login to https://mss.ddbj.nig.ac.jp/ with D-way account</a></div>
 <div class="mssflow">Fill MSS form & upload the submission files</div>
@@ -89,7 +89,7 @@ table tr:hover {
 <div class="mssflow">You can obtain accession numbers</div>
 <div class="mssflowend">Release the data, or hold until specified date</div>
 <p></p>
-B. Apply for the submission, and then you prepare the submission files
+<!-- B. Apply for the submission, and then you prepare the submission files
 <div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">Login to https://mss.ddbj.nig.ac.jp/ with D-way account</a></div>
 <div class="mssflow">Fill MSS form</div>
 <div class="mssflow">DDBJ creats a new Mass-ID, sends autoreply</div>
@@ -97,7 +97,7 @@ B. Apply for the submission, and then you prepare the submission files
 <div class="mssflow">Upload the submission files</div>
 <div class="mssflow">Review, inquiring and answering by email</div>
 <div class="mssflow">You can obtain accession numbers</div>
-<div class="mssflowend">Release the data, or hold until specified date</div>
+<div class="mssflowend">Release the data, or hold until specified date</div> -->
 
 <!-- <img src="/assets/images/ddbj/MSS-flow_20200916-en.png" alt="The Flow of MSS" title="" class=""> -->
 
