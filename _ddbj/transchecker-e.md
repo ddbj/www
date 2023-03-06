@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: transChecker User’s Manual
+title: transChecker User's Manual
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
@@ -10,9 +10,9 @@ related_pages:
     url: /ddbj/file-format-e.html
   - title: Validation tools for MSS data files
     url: /ddbj/mss-tool-e.html
-  - title: UME User’s manual
+  - title: UME User's manual
     url: /ddbj/ume-e.html
-  - title: Parser User’s Manual
+  - title: Parser User's Manual
     url: /ddbj/parser-e.html
   - title: Validator error message
     url: /ddbj/validator-e.html
@@ -29,7 +29,7 @@ TransChecker is a software tool developed by DDBJ for checking translation into 
 
 #### 1. Get transChecker.tar.gz file
 
-Down;oad  transChecker.tar.gz file from [Validation tools for MSS data files](/ddbj/mss-tool-e.html).    
+Download  transChecker.tar.gz file from [Validation tools for MSS data files](/ddbj/mss-tool-e.html).    
 
 #### 2. Uncompress tar.gz file.
 

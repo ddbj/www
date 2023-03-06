@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: Parser User' Manual
+title: Parser User's Manual
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
