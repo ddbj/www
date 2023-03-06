@@ -20,62 +20,53 @@ related_pages:
     url: /ddbj/mss-form-e.html
 ---
 
-TransChecker is a software tool developed by DDBJ for checking translation into amino acid sequence from [CDS features](/ddbj/cds-e.html) that are described in
-[sequence](/ddbj/file-format-e.html#sequence) and [annotation](/ddbj/file-format-e.html#annotation) files.
+TransChecker is a software tool developed by DDBJ for checking translation into amino acid sequence from 
+[CDS features](/ddbj/cds-e.html) that are described in
+[sequence](/ddbj/file-format-e.html#sequence) and 
+[annotation](/ddbj/file-format-e.html#annotation) files.
 
 ## Install  {#install}
-<ol>
-  <li>
-    Access and get transChecker.tar.gz file from <a href="/ddbj/mss-tool-e.html">Validation tools for MSS data files</a>.
-  </li>     
-  <li>  
-    Uncompress tar.gz file.<br>
-<pre>
-<code>
-$ gunzip transChecker.tar.gz
-</code>  
-</pre> 
-  </li>   
-  <li>
-    Extract the file tar command<br>
-<pre>
-<code>
-$ tar xvf transChecker.tar
-</code>
-</pre> 
-  </li>  
-  <li>
-    directory is created<br>
-    Check the contents of the directory。<br>
-    <pre>
-      <code>  
-$ cd transChecker
-$ ls -FC
-jar/license.txt   transChecker.sh*
-      </code>
-    </pre>
-    <br>
-    <table>
-      <tbody>
-        <tr>
-          <th>jar/</th>
-          <td>directory which includes class-library of Java (DO NOT change)</td>
-        </tr>
-        <tr>
-          <th>license.txt</th>
-          <td>End-user license agreement (DO NOT change)</td>
-        </tr>
-        <tr>
-          <th>transChecker.sh</th>
-          <td>executable file</td>
-        </tr>
-      </tbody>
-    </table>
-</li>
-<li>Change the file jParser.sh according to your system environment.<br>
 
-<pre><code>
-#!/bin/sh
+#### 1. Get transChecker.tar.gz file
+
+Down;oad  transChecker.tar.gz file from [Validation tools for MSS data files](/ddbj/mss-tool-e.html).    
+
+#### 2. Uncompress tar.gz file.
+
+<pre>$ gunzip transChecker.tar.gz</pre> 
+
+#### 3. Extract the file tar command
+<pre>$ tar xvf transChecker.tar</pre>
+    
+
+#### 4. Confirm the created directory
+Check the contents of the directory.    
+
+<pre>$ cd transChecker
+$ ls -FC
+jar/license.txt   transChecker.sh*</pre>
+
+<table><tbody>
+<tr>
+	<th>jar/</th>
+	<td>directory which includes class-library of Java (DO NOT change)</td>
+</tr>
+<tr>
+	<th>license.txt</th>
+	<td>End-user license agreement (DO NOT change)</td>
+</tr>
+<tr>
+	<th>transChecker.sh</th>
+	<td>executable file</td>
+</tr>
+</tbody></table>
+
+
+
+
+#### 5. Change the file transChecker.sh according to your system environment.
+
+<pre>#!/bin/sh
 
 # Installed directory
 TRANS_DIR=./
@@ -90,22 +81,20 @@ java -Xmx$HEAP_SIZE -jar $TRANS_DIR/jar/transChecker.jar -Cclean $@
 RETVAL=$?
 
 exit $RETVAL
-#EOF
-</code></pre>
-  <dl>
-    <dt>[TRANS_DIR parameter]</dt>
-    <dd>Enter the full path name of jParser directory.</dd>
-    <dd>ex) PARSER_DIR=/home/mass/jParser</dd>
-    <dt>[HEAP_SIZE parameter]</dt>
-    <dd>Enter the maximum memory of jParser.</dd>
-    <dd>例) HEAP_SIZE=128m</dd>
-  </dl>
-  </li>  
-  <li>
-    Set PATH<br>
-    Set PATH the directory which includes jParser.sh.
-  </li>
-</ol>
+#EOF</pre>
+
+<dl>
+<dt>[TRANS_DIR parameter]</dt>
+	<dd>Enter the full path name of jParser directory.</dd>
+	<dd>ex) PARSER_DIR=/home/mass/jParser</dd>
+<dt>[HEAP_SIZE parameter]</dt>
+	<dd>Enter the maximum memory of jParser.</dd>
+	<dd>例) HEAP_SIZE=128m</dd>
+</dl>
+
+#### 6. Set PATH
+Set PATH the directory which includes jParser.sh.    
+
 
 ## Execution  {#exec}
 
@@ -116,15 +105,12 @@ Execute transChecker.sh by the command below;
 $ transChecker.sh\[space\]-x\[annotation file name\]\[space\]-s\[nucleotide sequence file name\]\[space\]-e\[executed log file name\]\[space\]-o\[amino acid sequence file name\]\[space\]-t\[file name for alignments of nucleotide and amino acid sequences\]
 </div>
 
-ex)
+Example:    
+<pre>$ transChecker.sh -xsample.ann -ssample.fasta -eerrmsg.txt -orsl.fasta -taln.txt</pre>
 
-```
-$ transChecker.sh -xsample.ann -ssample.fasta -eerrmsg.txt -orsl.fasta -taln.txt
-```
-
-You can specify locations of files in both ways, relative and full path names.  
-
-**macOS: Regarding the available file names**  
+You can specify locations of files in both ways, relative and full path names.    
+    
+**macOS: Regarding the available file names**    
 DO NOT use multibyte character(s) for any file or folder name of [Sequence file](/ddbj/file-format-e.html#sequence) or [Annotation file](/ddbj/file-format-e.html#annotation) when you use our tools on some versions of macOS. Tools may not work when multibyte character is included in the file or folder name.
 
 \-x\[<span class="font-br font-normal">annotation file name</span>\]  
@@ -144,24 +130,24 @@ DO NOT use multibyte character(s) for any file or folder name of [Sequence file]
 
 ### Format of amino acid sequences  {#exec-1}
 
-he transChecker provides two options for translated amino acid sequences.  
+The transChecker provides two options for translated amino acid sequences.     
 Even though some errors are occurred, the sequence of [CDS feature](/ddbj/cds-e.html) is translated into amino acid as is, however, some translation processes are likely skipped because of severe errors.
 
+<div class="attention" markdown="1">
+When an error occurs, the transChecker outputs an error message.    
+Please reffer: [transChecker Error Messages](/ddbj/validator-e.html#transchecker), in detail.
+</div>
+
 #### FASTA-like format<a name="output-1-1">
-
-The amino acid sequences are in a kind of fasta format as follows.
-
-Format
-
-```
->[Entry name].[Serial Number][space][CDS feature location]
+The amino acid sequences are in a kind of fasta format as follows.    
+    
+Format:    
+<pre>>[Entry name].[Serial Number][space][CDS feature location]
 [Amino acid sequence (60 letters/line)]
-//
-```
+//</pre>
 
-For example
-
-```
+Example:    
+<pre>
 >entry1.1 89..406
 MLARISELTKIGTTIFIVAIDQVAEPNSWGSSQLVLLAKIAGALKAIPPNPVCTSRHRQA
 ASVSPFRSAIVGTLLQLEAIKNLLTVSVDTIQQNGVLFIFVALLR
@@ -171,30 +157,23 @@ MSIGILGTKLGMTQIFDESGKAVPVTVIQAGPCPITQIKTVATDGYNAIQIGFLEVREKQ
 LSKPELGHLSKAGAPPLRHLLEYRVPSTDGLELGQALTADRFEAGQKVDVQGHTIGRGFT
 GYQKRHGFARGPMSHGSKNHRLPGSTGAGTTPGRVYPGKRMAGRSGNDKTTIRGLTVVRV
 DADRNLLLVKGSVPGKPGALLNITPATVVGQQA
-//
-```
+//</pre>
 
 #### Alignment with nucleotide sequence {#output-1-2}
-
-The alignments for nucleotide and translated amino acid sequences are in the following format.
-
-Format
-
-```
->[Entry name].[Serial Number][space][CDS feature location]
+The alignments for nucleotide and translated amino acid sequences are in the following format.    
+    
+Format:    
+<pre>>[Entry name].[Serial Number][space][CDS feature location]
 /codon_start=[value of codon_start; in case of null, 1]
 /transl_table=[value of transl_table; in case of null,1]
 [Nucleotide number][Nucleotide sequence (60 letters/line)]
 [Amino acid number][Amino acid sequence (20 letters/line)]
 [空行]
 :
-//
-```
+//</pre>
 
-For example
-
-```
-ENT01.1 <1..179
+Example:    
+<pre>>ENT01.1 <1..179
 /codon_start=3
 /transl_table=1
          1 tgtacccactcaattttgtaaccccgggtatcatgctcccaggtgcattgatgttggatt
@@ -217,11 +196,6 @@ ENT01.1 <1..179
 
        121 ggtctgctgttttacccaggtaactggccaatctttggcccgacccatctgccaatctaa
         41 G  L  L  F  Y  P  G  N  W  P  I  F  G  P  T  H  L  P  I  
-//
-```
+//</pre>
 
 
-<div class="attention" markdown="1">
-When an error occurs, the transChecker outputs an error message.  
-Please reffer: [transChecker Error Messages](/ddbj/validator-e.html#transchecker), in detail.
-</div>

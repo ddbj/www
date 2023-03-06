@@ -39,7 +39,7 @@ DDBJ Nucleotide Sequence Submission System, NSSS for short, is a web-based submi
 
 ### Sequence Data to be submitted via MSS, <span class="red">NOT NSSS</span> {#MSS}
 
-NSSS cannot accept the following sequence data.    
+NSSS cannot accept either of the following sequence data.    
 The nucleotide sequence data belonging to <span class="red">either of the following cases</span> should be submitted via [Mass Submission System (MSS)](/ddbj/mss-e.html).    
 Please note the points other than number or length of your data.  
 
@@ -51,12 +51,9 @@ Please note the points other than number or length of your data.
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
   [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
     - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
-- Submission with long sequences.  
-    - greater than 500 kb in its length
-- Complex submission containing many features  
-    - more than 30 features
-- Submission consists of large number of sequences.  
-    - greater than 100 in total
+- Submission with long sequences, greater than 500 kb in its length
+- Complex submission containing many features for one sequence, more than 30 features
+- Submission consists of large number of sequences, greater than 100 in total
 </div>
 
 #### b) Regardless finished or draft level, sequence data of whole-length scale replicons  

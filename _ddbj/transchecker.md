@@ -21,63 +21,52 @@ related_pages:
 ---
 
 transChecker は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な
-[配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) の記載を元に、[CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行うツールです。
+[配列ファイル](/ddbj/file-format.html#sequence) と 
+[アノテーションファイル](/ddbj/file-format.html#annotation) の記載を元に、
+[CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行うツールです。
 
 ## インストール  {#install}
 
-<ol>
-  <li>
-    <a href="/ddbj/mss-tool.html">MSS データフイル用チェックツール</a>から transChecker.tar.gz を取得 
-  </li>     
-  <li>  
-    tar.gz ファイルを gunzip コマンドで解凍<br>
-<pre>
-<code>
-$ gunzip transChecker.tar.gz
-</code>   
-</pre>
-  </li>   
-  <li>
-    tar ファイルを tar コマンドで展開<br>
-<pre>
-<code>
-$ tar xvf transChecker.tar
-</code>
-</pre>
-  </li>  
-  <li>
-    ディレクトリが生成される<br>
-    下記の要領で、ディレクトリの中身を見ると以下のようになっています。<br>
-    <pre>
-      <code> 
-$ cd transChecker
-$ ls -FC
-jar/license.txt   transChecker.sh*
-      </code>
-    </pre>
-    <br>
-    <table>
-      <tbody>
-        <tr>
-          <th>jar/</th>
-          <td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
-        </tr>
-        <tr>
-          <th>license.txt</th>
-          <td>使用許諾(改変不可)</td>
-        </tr>
-        <tr>
-          <th>transChecker.sh</th>
-          <td>実行シェルスクリプト</td>
-        </tr>
-      </tbody>
-    </table>
-</li>
-<li>ファイルの編集<br>
-    transChecker.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。vi などのエディタで編集して下さい。<br>
+#### 1) transChecker.tar.gz を取得
+[MSS データフイル用チェックツール](/ddbj/mss-tool.html) から transChecker.tar.gz をダウンロードしてください。    
 
-<pre><code>
-#!/bin/sh
+
+#### 2. tar.gz ファイルを gunzip コマンドで解凍
+
+<pre>$ gunzip transChecker.tar.gz</pre>
+
+#### 3. tar ファイルを tar コマンドで展開
+
+<pre>$ tar xvf transChecker.tar</pre>
+
+#### 4. 生成されたディレクトリの確認
+下記の要領で、ディレクトリの中身を見ると以下のようになっています。    
+
+<pre>$ cd transChecker
+$ ls -FC
+jar/license.txt   transChecker.sh*</pre>
+
+<table><tbody>
+<tr>
+	<th>jar/</th>
+	<td>java のクラスライブラリ格納ディレクトリ(改変不可)</td>
+</tr>
+<tr>
+	<th>license.txt</th>
+	<td>使用許諾(改変不可)</td>
+</tr>
+<tr>
+	<th>transChecker.sh</th>
+	<td>実行シェルスクリプト</td>
+</tr>
+</tbody></table>
+
+
+#### 5. ファイルの編集
+transChecker.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。    
+vi などのエディタで編集して下さい。
+
+<pre>#!/bin/sh
 
 # Installed directory
 TRANS_DIR=./
@@ -92,41 +81,35 @@ java -Xmx$HEAP_SIZE -jar $TRANS_DIR/jar/transChecker.jar -Cclean $@
 RETVAL=$?
 
 exit $RETVAL
-#EOF
-</code></pre>
+#EOF</pre>
 
-  <dl>
-    <dt>[TRANS_DIR 変数]</dt>
-    <dd>transChecker ディレクトリのある場所をフルパスで入力して下さい。</dd>
-    <dd>例) TRANS_DIR=/home/mass/transChecker</dd>
-    <dt>[HEAP_SIZE 変数]</dt>
-    <dd>transChecker が使用できる最大メモリ量を指定してください。</dd>
-    <dd>例) HEAP_SIZE=128m</dd>
-  </dl>
-  </li>  
-  <li>
-    PATH を指定する<br>
-    PATH に transChecker.sh が設置してあるディレクトリを指定して下さい。
-  </li>
-</ol>
+<dl>
+<dt>[TRANS_DIR 変数]</dt>
+	<dd>transChecker ディレクトリのある場所をフルパスで入力して下さい。</dd>
+	<dd>例) TRANS_DIR=/home/mass/transChecker</dd>
+<dt>[HEAP_SIZE 変数]</dt>
+	<dd>transChecker が使用できる最大メモリ量を指定してください。</dd>
+	<dd>例) HEAP_SIZE=128m</dd>
+</dl>
+
+#### 6. PATH を指定
+PATH に transChecker.sh が設置してあるディレクトリを指定して下さい。    
+    
 
 ## 実行  {#exec}
 
-任意のディレクトリで下記の通りに、コマンドを実行して下さい。
+任意のディレクトリで下記の通りに、コマンドを実行して下さい。    
 
-``` 
-$ transChecker.sh[space]-x[アノテーションファイル名][space]-s[塩基配列ファイル名][space]
--e[実行結果保存用ファイル名][space]-o[アミノ酸配列ファイル名][space]-t[塩基配列とアミノ酸配列のアラインメントのファイル名]
-```
+<div class="attention" markdown="1">
+$ transChecker.sh[space]-x[アノテーションファイル名][space]-s[塩基配列ファイル名][space]-e[実行結果保存用ファイル名][space]-o[アミノ酸配列ファイル名][space]-t[塩基配列とアミノ酸配列のアラインメントのファイル名]
+</div>
 
-例
+例    
+<pre> $ transChecker.sh -xsample.ann -ssample.fasta -eerrmsg.txt -orsl.fasta -taln.txt</pre>
 
-``` 
-$ transChecker.sh -xsample.ann -ssample.fasta -eerrmsg.txt -orsl.fasta -taln.txt
-```
+ファイル名は絶対パス・相対パスのどちらでも指定できます。    
 
-ファイル名は絶対パス・相対パスのどちらでも指定できます。  
-**macOS: ファイル名とフォルダ名について**
+**macOS: ファイル名とフォルダ名について**    
 [配列ファイル](/ddbj/file-format.html#sequence)、[アノテーションファイル](/ddbj/file-format.html#annotation)のファイル名またはフォルダ名にマルチバイト文字が含まれていますと一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないようにご注意ください。
 
 \-x[<span class="font-br font-normal">アノテーションファイル名</span>\]  
@@ -146,24 +129,25 @@ $ transChecker.sh -xsample.ann -ssample.fasta -eerrmsg.txt -orsl.fasta -taln.txt
 
 ### アミノ酸配列のフォーマット  {#exec-1}
 
-transChecker では２種類の形式を用意しています。  
+transChecker では２種類の形式を用意しています。    
 エラーがある場合でも、CDS feature で示される塩基配列に対応するアミノ酸配列をその状態で出力しますが、エラーの程度により出力されないこともあります。
+
+<div class="attention" markdown="1">
+transChecker は、エラーが発生している場合、エラーメッセージを出力します。     
+エラーメッセージの意味は [transChecker エラーメッセージ](/ddbj/validator.html#transchecker) をご覧ください。    
+</div>
 
 #### FASTA-like format  {#output-1-1}
 
-以下に示す FASTA に類似の形式で出力します。
+以下に示す FASTA に類似の形式で出力します。    
 
-書式
-
-``` 
->[Entry name].[Serial Number][space][CDS feature location]
+書式    
+<pre>>[Entry name].[Serial Number][space][CDS feature location]
 [翻訳結果アミノ酸配列 (60 文字/行)]
-//
-```
+//</pre>
 
 出力例
-
-``` 
+<pre>
 >entry1.1 89..406
 MLARISELTKIGTTIFIVAIDQVAEPNSWGSSQLVLLAKIAGALKAIPPNPVCTSRHRQA
 ASVSPFRSAIVGTLLQLEAIKNLLTVSVDTIQQNGVLFIFVALLR
@@ -173,30 +157,24 @@ MSIGILGTKLGMTQIFDESGKAVPVTVIQAGPCPITQIKTVATDGYNAIQIGFLEVREKQ
 LSKPELGHLSKAGAPPLRHLLEYRVPSTDGLELGQALTADRFEAGQKVDVQGHTIGRGFT
 GYQKRHGFARGPMSHGSKNHRLPGSTGAGTTPGRVYPGKRMAGRSGNDKTTIRGLTVVRV
 DADRNLLLVKGSVPGKPGALLNITPATVVGQQA
-//
-```
+//</pre>
 
 #### 塩基配列とのアラインメント {#output-1-2}
 
-塩基配列と翻訳アミノ酸配列のアラインメントを以下に示す書式で出力します。
+塩基配列と翻訳アミノ酸配列のアラインメントを以下に示す書式で出力します。    
 
-書式
-
-``` 
->[Entry name].[Serial Number][space][CDS feature location]
+書式    
+<pre>>[Entry name].[Serial Number][space][CDS feature location]
 /codon_start=[codon_start の値; 指定なしの場合 1]
 /transl_table=[transl_table の値; 指定なしの場合 1]
 [塩基番号][塩基配列 (60 文字/行)]
 [アミノ酸番号][翻訳結果アミノ酸配列 (20 文字/行)]
 [空行]
 :
-//
-```
+//</pre>
 
-出力例
-
-``` 
-ENT01.1 <1..179
+出力例    
+<pre>>ENT01.1 <1..179
 /codon_start=3
 /transl_table=1
          1 tgtacccactcaattttgtaaccccgggtatcatgctcccaggtgcattgatgttggatt
@@ -219,13 +197,5 @@ ENT01.1 <1..179
 
        121 ggtctgctgttttacccaggtaactggccaatctttggcccgacccatctgccaatctaa
         41 G  L  L  F  Y  P  G  N  W  P  I  F  G  P  T  H  L  P  I  
-//
-```
+//</pre>
 
-
-<div class="attention" markdown="1">
-
-transChecker は、エラーが発生している場合は、エラーメッセージを出力します。  
-エラーメッセージの意味は [transChecker エラーメッセージ](/ddbj/validator.html#transchecker) をご覧ください。
-
-</div>

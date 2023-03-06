@@ -36,28 +36,24 @@ related_pages:
 
 ## Web 版塩基配列登録システム  {#Web_版塩基配列登録システム}
 
-Web 版塩基配列登録システム（DDBJ Nucleotide Sequence Submission System, 略称 NSSS）は、アノテーションをつけた塩基配列を Web 経由で登録できるシステムです。
+Web 版塩基配列登録システム (DDBJ Nucleotide Sequence Submission System, 略称 NSSS) は、アノテーションをつけた塩基配列を Web 経由で登録できるシステムです。
 
 ### <span class="red">NSSS ではなく</span> MSS で登録すべきデータ {#MSS}
 
 NSSS は、下記の配列データに対応できません。    
-<span class="red">以下の何れかに該当する場合</span>、[Mass Submission System (MSS)](/ddbj/mss.html) 経由で登録をお願いします。    
+<span class="red">以下の何れかに該当する場合</span>、NSSS では対応できません。
+[Mass Submission System (MSS)](/ddbj/mss.html) 経由で登録をお願いします。    
 件数の多寡、長さ以外の点もご確認ください。
 
 #### a) 種別、または、量が以下に該当する配列データ
 
 <div class="attention" markdown="1">
-- [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、
- [HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、
- [HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、
- [CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
-    - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
-- 配列が長い場合
-    - 目安は 500 kb 以上
-- １エントリあたりに多数の Feature がある場合
-    - 目安は 30 以上
-- エントリ数 (登録する配列の数) が多い場合
-    - 総計 100 を超えるとき
+- NSSS が対応していない登録 
+   - [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
+   - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
+- １配列が長い場合、目安は 500 kb 以上
+- １配列あたりに多数の Feature がある場合、目安は 30 以上
+- 登録する配列の数が多い場合、総計 100 を超えるとき
 </div>
 
 #### b) finished/draft の別を問わずレプリコン全長規模相当の配列データ

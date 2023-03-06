@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: Parser User’s Manual
+title: Parser User' Manual
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
@@ -10,9 +10,9 @@ related_pages:
     url: /ddbj/file-format-e.html
   - title: Validation tools for MSS data files
     url: /ddbj/mss-tool-e.html
-  - title: UME User’s manual
+  - title: UME User's manual
     url: /ddbj/ume-e.html
-  - title: transChecker User’s Manual
+  - title: transChecker User's Manual
     url: /ddbj/transchecker-e.html
   - title: Validator error message
     url: /ddbj/validator-e.html
@@ -24,62 +24,50 @@ Parser is a software tool developed by DDBJ for checking the format and the synt
 
 ## Install  {#install}
 
-<ol>
-  <li>
-    Access and get Parser.tar.gz file from <a href="/ddbj/mss-tool.html">Validation tools for MSS data files</a>.
-  </li>
-  <li>
-    Uncompress tar.gz file.<br>
-<pre>
-<code>
-$ gunzip Parser.tar.gz
-</code>
-</pre>
-  </li>
-  <li>
-    Extract the file tar command<br>
-<pre>
-<code>
-$ tar xvf Parser.tar
-</code>
-</pre>
-  </li>
-  <li>
-    directory is created<br>  
-    Check the contents of the directory<br>
-  <pre>
-    <code>
-$ cd jParser
+#### 1) Get Parser.tar.gz file
+
+Download Parser.tar.gz file from <a href="/ddbj/mss-tool.html">Validation tools for MSS data files</a>.    
+    
+
+#### 2) Uncompress tar.gz file
+<pre>$ gunzip Parser.tar.gz</pre>
+
+
+#### 3) Extract the file tar command
+
+<pre>$ tar xvf Parser.tar</pre>
+
+#### 4) Confirm the created directory
+
+Check the contents of the directory.    
+
+<pre>$ cd jParser
 $ ls -FC
-jParser.sh* jar/    license.txt resource/
-    </code>
-  </pre><br>
-    <table>
-      <tbody>
-        <tr>
-          <th>jParser.sh</th>
-          <td>executable file</td>
-        </tr>
-        <tr>
-          <th>jar/</th>
-          <td>directory which includes class-library of Java (DO NOT change)</td>
-        </tr>
-        <tr>
-          <th>license.txt</th>
-          <td>End-user license agreement (DO NOT change)</td>
-        </tr>
-        <tr>
-          <th>resources/</th>
-          <td>directory which includes resource files (DO NOT change)</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-    Change the file jParser.sh according to your system environment.
-<pre>
-  <code>
-#!/bin/sh
+jParser.sh* jar/    license.txt resource/</pre>
+
+<table><tbody>
+<tr>
+	<th>jParser.sh</th>
+	<td>executable file</td>
+</tr>
+<tr>
+	<th>jar/</th>
+	<td>directory which includes class-library of Java (DO NOT change)</td>
+</tr>
+<tr>
+	<th>license.txt</th>
+	<td>End-user license agreement (DO NOT change)</td>
+</tr>
+<tr>
+	<th>resources/</th>
+	<td>directory which includes resource files (DO NOT change)</td>
+</tr>
+</tbody></table>
+    
+    
+
+#### 5) Change the file jParser.sh according to your system environment.
+<pre>#!/bin/sh
 
 # Parser installed directory
 PARSER_DIR=./
@@ -103,40 +91,32 @@ java -Xmx$HEAP_SIZE -classpath $PARSER_DIR/jar/jParser.jar
 RETVAL=$?
 
 exit $RETVAL
-#EOF
-      </code>
-    </pre>
-  <dl>
-      <dt>[PARSER\_DIR parameter\]</dt>  
-      <dd>Enter the full path name of jParser directory.</dd>
-      <dd>ex) PARSER\_DIR=/home/mass/jParser</dd>
-      <dt>[HEAP\_SIZE parameter\]</dt> 
-      <dd>Enter the maximum memory of jParser.</dd>
-      <dd>ex) HEAP\_SIZE=128m</dd>
-    </dl>
-  </li>
-  <li>
-  Set PATH<br>  
-  Set PATH the directory which includes jParser.sh.
-  </li>
-</ol>
+#EOF</pre>
+
+<dl>
+<dt>[PARSER\_DIR parameter\]</dt>  
+	<dd>Enter the full path name of jParser directory.</dd>
+	<dd>ex) PARSER\_DIR=/home/mass/jParser</dd>
+<dt>[HEAP\_SIZE parameter\]</dt> 
+	<dd>Enter the maximum memory of jParser.</dd>
+	<dd>ex) HEAP\_SIZE=128m</dd>
+</dl>
+
+#### 6. Set PATH
+
+Set PATH the directory which includes jParser.sh.
 
 ## Execution  {#exec}
 
-Execute jParser.sh by the command below;
+Execute jParser.sh by the command below.    
+<pre>$ jParser.sh[space]-x[annotation file name][space]-s[sequence file name]</pre>
 
-```
-$ jParser.sh[space]-x[annotation file name][space]-s[sequence file name]
-```
+Example: 
+<pre>$ jParser.sh -xsample.ann -ssample.fasta</pre>
 
-ex)
-
-```
-$ jParser.sh -xsample.ann -ssample.fasta
-```
-
-You can specify locations of files in both ways, relative and full path names.  
-**macOS: Regarding the available file names**<br> 
+You can specify locations of files in both ways, relative and full path names.    
+    
+**macOS: Regarding the available file names**    
 DO NOT use multibyte character(s) for any file or folder name of [Sequence file](/ddbj/file-format-e.html#sequence) or [Annotation file](/ddbj/file-format-e.html#annotation) when you use our tools on some versions of macOS. Tools may not work when multibyte character is included in the file or folder name.
 
 \-x\[<span class="font-br font-normal">annotation file name</span>\]  

@@ -139,12 +139,9 @@ NSSS は、下記の配列データに対応できません。
  [HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、
  [CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
     - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
-- 配列が長い場合
-    - 目安は 500 kb 以上
-- １エントリあたりに多数の Feature がある場合
-    - 目安は 30 以上
-- エントリ数 (登録する配列の数) が多い場合
-    - 総計 100 を超えるとき
+- 配列が長い場合、目安は 500 kb 以上
+- １配列あたりに多数の Feature がある場合、目安は 30 以上
+- 登録する配列の数が多い場合、総計 100 を超えるとき
 
 **b) finished/draft の別を問わずレプリコン全長規模相当の配列データ**    
 

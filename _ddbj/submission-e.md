@@ -231,12 +231,9 @@ Please note the points other than number or length of your sequences.
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
   [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
     - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
-- Submission with long sequences.  
-    - greater than 500 kb in its length
-- Complex submission containing many features  
-    - more than 30 features
-- Submission consists of large number of sequences.  
-    - greater than 100 in total
+- Submission with long sequences, greater than 500 kb in its length
+- Complex submission containing many features for one sequence, more than 30 features
+- Submission consists of large number of sequences, greater than 100 in total
 
 **b) Regardless finished or draft level, sequence data of whole-length scale replicons**    
 
