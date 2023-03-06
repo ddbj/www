@@ -66,10 +66,12 @@ $ ./UME.sh
 <img src="/assets/images/ddbj/UME1-e.png" alt="Starting UME" title="" class="">
 
 lib folder  
-: Directory which includes library files used by UME. If you move this directory or any file in it, UME would not properly work.
+: Directory which includes library files used by UME.    
+If you move this directory or any file in it, UME would not properly work.
 
 resource folder  
-: Directory which includes resource files used by UME. If you move this directory or any file in it, UME would not properly work.
+: Directory which includes resource files used by UME.     
+If you move this directory or any file in it, UME would not properly work.
 
 sample folder  
 : Including sample files for DDBJ submission.
@@ -82,24 +84,28 @@ license file
 
 ### Initial setting of UME  {#initial-2}
 
-At the first time, you run UME application, change the maximum size of RAM for UME to optimize run-time environments. The default configuration of it is 512 Mbytes. [![](/assets/images/ddbj/UME2.png)](/assets/images/ddbj/UME2.png)
+At the first time, you run UME application, change the maximum size of RAM for UME to optimize run-time environments.     
+The default configuration of it is 512 Mbytes.     
 
-1. Click Config in menu bar.
-2. Select the appropriate size of Max memory for runtime from pull-down menu.
+[![](/assets/images/ddbj/UME2.png)](/assets/images/ddbj/UME2.png)     
+
+(1) Click Config in menu bar.     
+(2) Select the appropriate size of Max memory for runtime from pull-down menu.    
 
 ## Verification of submission files  {#validation}
 
 ### Check panel: basic verification of submission files  {#validation-1}
 
-You can move to this panel by clicking the Check tab enclosed in the red square.
+You can move to this panel by clicking the Check tab enclosed in the red square.    
 
 <img src="/assets/images/ddbj/UME3.png" alt="Check panel: basic verification of submission files" title="" class="">
 
-1. Specify the subjects, both [Annotation file](/ddbj/file-format-e.html#annotation) and [Sequence file](/ddbj/file-format-e.html#sequence).
-2. By clicking Execute button, verify the files specified at step (1) by Parser.
-3. By clicking Execute button, validate amino acid translation of the files specified at step (1) by transChecker.
-4. By clicking Execute button, process the files specified at step (1) by FFconv.
-5. By clicking Exit button, Close UME.
+(1) Specify the subjects, both [Annotation file](/ddbj/file-format-e.html#annotation) and [Sequence file](/ddbj/file-format-e.html#sequence).     
+(2) By clicking Execute button, verify the files specified at step (1) by Parser.     
+(3) By clicking Execute button, validate amino acid translation of the files specified at step (1) by transChecker.     
+(4) By clicking Execute button, process the files specified at step (1) by FFconv.     
+(5) By clicking Exit button, Close UME.    
+
 
 ### Parser: verification of syntax and format {#validation-2} 
 
@@ -109,51 +115,50 @@ Execute Parser through the following steps.
 
 Click Check tab and move to Check panel.
 
-1. Specify the subjects, both [Annotation file](/ddbj/file-format-e.html#annotation) and [Sequence file](/ddbj/file-format-e.html#sequence).
-2. By clicking Execute button, process the files specified at step (1) by Parser.
-3. When you check the box, Save log in file, the result log of Parser is saved as a text file.
-4. The window of Parser log is opened.
-5. The progress of Parser is indicated.
-6. The result log of Parser is displayed.
-7. By clicking Save button, the contents of (6) are saved as a text file.
-8. By clicking Close button, the window, Parser result, is closed.
+(1) Specify the subjects, both [Annotation file](/ddbj/file-format-e.html#annotation) and [Sequence file](/ddbj/file-format-e.html#sequence).     
+(2) By clicking Execute button, process the files specified at step (1) by Parser.     
+(3) When you check the box, Save log in file, the result log of Parser is saved as a text file.     
+(4) The window of Parser log is opened.     
+(5) The progress of Parser is indicated.     
+(6) The result log of Parser is displayed.     
+(7) By clicking Save button, the contents of (6) are saved as a text file.     
+(8) By clicking Close button, the window, Parser result, is closed.     
 
 
 <div class="attention" markdown="1">
 
-When an error occurs, the parser outputs an error message.  
+When an error occurs, the parser outputs an error message.    
 Please reffer: [Parser Error Eessages](/ddbj/validator-e.html#parser), in detail.
 
 </div>
 
 ### transChecker: validation of amino acid translation {#validation-3} 
 
-transChecker can translate nucleotide sequences of [Sequence file](/ddbj/file-format-e.html#sequence) into amino acid sequences
-corresponding to [CDS features](/ddbj/cds-e.html) specified at Annotation file.  
-Before using transChecker, both two files should be checked by [Parser](#validation-2), and remove all of Parser errors.  
-Please note that when some Parser error is found, transChecker is terminated without any result. Execute transChecker through the
-following steps.
+transChecker can translate nucleotide sequences of [Sequence file](/ddbj/file-format-e.html#sequence) into amino acid sequences 
+corresponding to [CDS features](/ddbj/cds-e.html) specified at Annotation file.    
+Before using transChecker, both two files should be checked by [Parser](#validation-2), and remove all of Parser errors.    
+Please note that when some Parser error is found, transChecker is terminated without any result. Execute transChecker through the following steps.
 
 <img src="/assets/images/ddbj/UME6.png" alt="transChecker" title="" class="w600">
 
-Click Check tab to move to Check panel.
+Click Check tab to move to Check panel.    
 
-1. Specify the subjects, both [Annotation file](/ddbj/file-format-e.html#annotation) and [Sequence file](/ddbj/file-format-e.html#sequence).
-2. By clicking Execute button, process the files specified at step (1) by transChecker.
-3. When you check the box, Save log in file, the execution log and error messages of transChecker are saved as a text file.
-4. When you check the box, Save translated sequences in file the amino acid sequences translated by transChecker are saved as a text file in either of two formats.  
-You can specify the format for translated amino acid sequences from following two types;
+(1) Specify the subjects, both [Annotation file](/ddbj/file-format-e.html#annotation) and [Sequence file](/ddbj/file-format-e.html#sequence).     
+(2) By clicking Execute button, process the files specified at step (1) by transChecker.     
+(3) When you check the box, Save log in file, the execution log and error messages of transChecker are saved as a text file.     
+(4) When you check the box, Save translated sequences in file the amino acid sequences translated by transChecker are saved as a text file in either of two formats.     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can specify the format for translated amino acid sequences from following two types.     
     
     | [FASTA-like format](/ddbj/transchecker.html#output-1-1)                    | in case of selecting Translate in FASTA format                       |
     | [Alignment with nucleotide sequence](/ddbj/transchecker-e.html#output-1-2) | in case of selecting Translate in alignment with nucleotide sequence |
     
-5. The window of transChecker is opened.
-6. The progress of transChecker is indicated.
-7. The execution log and error messages of transChecker are displayed.
-8. By clicking Save button, the contents of (7) are saved as a text file.
-9. The amino acid sequences translated by transChecker are displayed in the format selected at (4).
-10. By clicking Save button, the contents of (9) are saved as a text file.
-11. By clicking Close button, the window, transChecker result, is closed.
+(5) The window of transChecker is opened.     
+(6) The progress of transChecker is indicated.    
+(7) The execution log and error messages of transChecker are displayed.     
+(8) By clicking Save button, the contents of (7) are saved as a text file.     
+(9) The amino acid sequences translated by transChecker are displayed in the format selected at (4).     
+(10) By clicking Save button, the contents of (9) are saved as a text file.     
+(11) By clicking Close button, the window, transChecker result, is closed.     
 
 
 <div class="attention" markdown="1">
@@ -175,55 +180,58 @@ Execute FFconv through the following steps.
 
 Click Check tab to move to Check panel.
 
-1. Specify the subjects, both [Annotation file](/ddbj/file-format-e.html#annotation) and [Sequence file](/ddbj/file-format-e.html#sequence).
-2. By clicking Execute button, make simulated format of DDBJ flat file from the files specified at step (1) by FFconv.
-3. When you check the box, Save flat file in file, the result of FFconv, simulated format of DDBJ flat file, is saved as a text file.
-4. The window of FFconv result is opened.
-5. The progress of FFconv is indicated.
-6. The execution log of FFconv is displayed.
-7. By clicking Save button, the contents of (6) are saved as a text file.
-8. The result of FFconv, simulated format of DDBJ flat file, is displayed.
-9. By clicking Save button, the contents of (8) are saved as a text file.
-10. By clicking Close button, the window, FFconv result, is closed.
+(1) Specify the subjects, both [Annotation file](/ddbj/file-format-e.html#annotation) and [Sequence file](/ddbj/file-format-e.html#sequence).    
+(2) By clicking Execute button, make simulated format of DDBJ flat file from the files specified at step (1) by FFconv.    
+(3) When you check the box, Save flat file in file, the result of FFconv, simulated format of DDBJ flat file, is saved as a text file.    
+(4) The window of FFconv result is opened.    
+(5) The progress of FFconv is indicated.    
+(6) The execution log of FFconv is displayed.    
+(7) By clicking Save button, the contents of (6) are saved as a text file.    
+(8) The result of FFconv, simulated format of DDBJ flat file, is displayed.    
+(9) By clicking Save button, the contents of (8) are saved as a text file.    
+(10) By clicking Close button, the window, FFconv result, is closed.    
 
 ## Verification of contig submission files {#agpparser} 
 
 ### Contig panel: verification of AGP file for contig submission  {#panel-2}
 
-You can move to this panel by clicking the Contig tab enclosed in the red square.
+You can move to this panel by clicking the Contig tab enclosed in the red square.    
 
 <img src="/assets/images/ddbj/UME4.png" alt="Verification of contig submission files" title="" class="">
 
-1. Specify the subject, [Annotation file](/ddbj/file-format-e.html#annotation).
-2. Specify the subject, [AGP file](/ddbj/file-format-e.html#agp).
-3. Specify the subject, Multi-fasta file for components in AGP file.
-4. By clicking Execute button, process the files specified at steps (1) to (2) by AGPParser.
-5. By clicking Exit t button, Close UME.
+(1) Specify the subject, [Annotation file](/ddbj/file-format-e.html#annotation).    
+(2) Specify the subject, [AGP file](/ddbj/file-format-e.html#agp).    
+(3) Specify the subject, Multi-fasta file for components in AGP file.    
+(4) By clicking Execute button, process the files specified at steps (1) to (2) by AGPParser.    
+(5) By clicking Exit t button, Close UME.    
 
 ### Executing AGPParser  {#agpparser-1}
 
-Basically, AGPParser checks the format of [AGP file](/ddbj/file-format-e.html#agp).AGP file. When you specify [Annotation file](/ddbj/file-format-e.html#annotation) and/or multi-fasta file including all of sequences cited by AGP file, AGPParser also checks the consistency between the two or three files.
+Basically, AGPParser checks the format of [AGP file](/ddbj/file-format-e.html#agp).AGP file.     
+When you specify [Annotation file](/ddbj/file-format-e.html#annotation) and/or multi-fasta file including all of sequences cited by AGP file, 
+AGPParser also checks the consistency between the two or three files.
 
 <img src="/assets/images/ddbj/UME8.png" alt="Executing AGPParser" title="" class="w600">
 
-Click Contig tab to move to Contig pannel.
+Click Contig tab to move to Contig pannel.    
 
-1. Specify the subject, [Annotation file.](/ddbj/file-format-e.html#annotation) Not required.
-2. Specify the subject, [AGP file](/ddbj/file-format-e.html#agp).Required.
-3. Specify the subject, the multi-fasta file including all of sequences cited by [Sequence file](/ddbj/file-format-e.html#sequence). Not required.
-4. By clicking Execute button,AGPParser checks the specified file at the steps (1) to (3).
-5. When you check the box, Construct sequence from AGP and multi-fasta files, AGPParser constructs a text file for nucleotide sequence(s) on accordance with the specification of the two files.
-6. Check the button, Save log in file,then the result log of AGPParser is saved as a text file.
-7. The window of AGPParser log is opened.
-8. The progress of AGPParser is indicated.
-9. The result log of AGPParser is displayed.
-10. By clicking Save button, the contents of (9) are saved as a text file.
-11. By clicking Close button, the window of AGPParser log is closed.
+(1) Specify the subject, [Annotation file](/ddbj/file-format-e.html#annotation). Not required.    
+(2) Specify the subject, [AGP file](/ddbj/file-format-e.html#agp). Required.    
+(3) Specify the subject, the multi-fasta file including all of sequences cited by [Sequence file](/ddbj/file-format-e.html#sequence). Not required.    
+(4) By clicking Execute button,AGPParser checks the specified file at the steps (1) to (3).    
+(5) When you check the box, \[Construct sequence from AGP and multi-fasta files], AGPParser constructs     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a text file for nucleotide sequence(s) on accordance with the specification of the two files.    
+(6) Check the button, Save log in file,then the result log of AGPParser is saved as a text file.    
+(7) The window of AGPParser log is opened.    
+(8) The progress of AGPParser is indicated.    
+(9) The result log of AGPParser is displayed.    
+(10) By clicking Save button, the contents of (9) are saved as a text file.    
+(11) By clicking Close button, the window of AGPParser log is closed.    
 
 
 <div class="attention" markdown="1">
 
-When an error occurs, the AGPParser outputs an error message.  
-Please reffer: [AGPParser Error Eessages](/ddbj/validator-e.html#agpparser), in detail.
+When an error occurs, the AGPParser outputs an error message.    
+Please reffer: [AGPParser Error Messages](/ddbj/validator-e.html#AGP_Parser ), in detail.
 
 </div>
