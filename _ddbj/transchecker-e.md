@@ -135,7 +135,7 @@ Even though some errors are occurred, the sequence of [CDS feature](/ddbj/cds-e.
 
 <div class="attention" markdown="1">
 When an error occurs, the transChecker outputs an error message.    
-Please reffer: [transChecker Error Messages](/ddbj/validator-e.html#transchecker), in detail.
+Please reffer: [transChecker Error Messages](/ddbj/validator-e.html#transChecker), in detail.
 </div>
 
 #### FASTA-like format<a name="output-1-1">

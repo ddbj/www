@@ -134,7 +134,7 @@ transChecker では２種類の形式を用意しています。
 
 <div class="attention" markdown="1">
 transChecker は、エラーが発生している場合、エラーメッセージを出力します。     
-エラーメッセージの意味は [transChecker エラーメッセージ](/ddbj/validator.html#transchecker) をご覧ください。    
+エラーメッセージの意味は [transChecker エラーメッセージ](/ddbj/validator.html#transChecker) をご覧ください。    
 </div>
 
 #### FASTA-like format  {#output-1-1}

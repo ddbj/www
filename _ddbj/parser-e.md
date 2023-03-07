@@ -128,5 +128,5 @@ DO NOT use multibyte character(s) for any file or folder name of [Sequence file]
 
 <div class="attention" markdown="1">
 When an error occurs, the parser outputs an error message.  
-Please reffer: [Parser Error Messages](/ddbj/validator-e.html#parser), in detail.
+Please reffer: [Parser Error Messages](/ddbj/validator-e.html#Parser), in detail.
 </div>

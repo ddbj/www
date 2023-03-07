@@ -128,7 +128,7 @@ Click Check tab and move to Check panel.
 <div class="attention" markdown="1">
 
 When an error occurs, the parser outputs an error message.    
-Please reffer: [Parser Error Eessages](/ddbj/validator-e.html#parser), in detail.
+Please reffer: [Parser Error Eessages](/ddbj/validator-e.html#Parser), in detail.
 
 </div>
 
@@ -164,7 +164,7 @@ Click Check tab to move to Check panel.
 <div class="attention" markdown="1">
 
 When an error occurs, the transChecker outputs an error message.  
-Please reffer: [transChecker Error Eessages](/ddbj/validator-e.html#transchecker), in detail.
+Please reffer: [transChecker Error Eessages](/ddbj/validator-e.html#transChecker), in detail.
 
 </div>
 

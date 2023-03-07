@@ -130,7 +130,7 @@ Check タブをクリックし、Check パネルを表示させます。
 
 <div class="attention" markdown="1">
 Parser は、エラーが発生している場合、エラーメッセージを出力します。    
-エラーメッセージの意味は [Parser エラーメッセージ](/ddbj/validator.html#parser) をご覧ください。    
+エラーメッセージの意味は [Parser エラーメッセージ](/ddbj/validator.html#Parser) をご覧ください。    
 </div>
 
 ### transChecker: アミノ酸翻訳検証ツール {#validation-3} 
@@ -172,7 +172,7 @@ Check タブをクリックし、 Check パネル を表示させます。
 
 <div class="attention" markdown="1">
 transChecker は、エラーが発生している場合、エラーメッセージを出力します。    
-エラーメッセージの意味は [transChecker エラーメッセージ](/ddbj/validator.html#transchecker) をご覧ください。
+エラーメッセージの意味は [transChecker エラーメッセージ](/ddbj/validator.html#transChecker) をご覧ください。
 </div>
 
 ### FFconv: 擬似フラットファイル作成ツール {#validation-4} 

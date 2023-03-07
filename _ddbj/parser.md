@@ -132,5 +132,5 @@ PATH に jParser.sh が設置してあるディレクトリを指定して下さ
 
 <div class="attention" markdown="1">
 Parser は、エラーが発生している場合は、エラーメッセージを出力します。    
-エラーメッセージの意味は [Parser エラーメッセージ](/ddbj/validator.html#parser) をご覧ください。
+エラーメッセージの意味は [Parser エラーメッセージ](/ddbj/validator.html#Parser) をご覧ください。
 </div>
