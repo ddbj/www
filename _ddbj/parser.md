@@ -25,23 +25,23 @@ Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する�
 
 ## インストール  {#install}
 
-#### 1) Parser.tar.gz を取得
+#### 1. Parser.tar.gz を取得
 
 <a href="/ddbj/mss-tool.html">MSS データファイル用チェックツール</a>からダウンロードしてください。    
     
 
-#### 2) tar.gz ファイルを gunzip コマンドで解凍
+#### 2. tar.gz ファイルを gunzip コマンドで解凍
 
 <pre>$ gunzip Parser.tar.gz</pre>
     
 
-#### 3) tar ファイルを tar コマンドで展開
+#### 3. tar ファイルを tar コマンドで展開
 
 <pre>$ tar xvf Parser.tar</pre>
     
 
 
-#### 4) 生成されたディレクトリを確認
+#### 4. 生成されたディレクトリを確認
 下記の要領でディレクトリの中身を見ると、以下のようになっています。    
 
 <pre>$ cd jParser
@@ -68,7 +68,7 @@ jParser.sh*  jar/    license.txt resource/</pre>
 </tr>
 </tbody></table>
      
-#### 5) ファイルの編集
+#### 5. ファイルの編集
 jParser.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。     
 viなどのエディタで編集して下さい。    
     
@@ -108,7 +108,7 @@ exit $RETVAL
 	<dd>例) HEAP_SIZE=128m</dd>
 </dl>
     
-#### 6) PATH を指定する
+#### 6. PATH を指定する
 PATH に jParser.sh が設置してあるディレクトリを指定して下さい。
 
 ## 実行  {#exec}

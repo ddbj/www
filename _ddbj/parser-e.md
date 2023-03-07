@@ -24,20 +24,20 @@ Parser is a software tool developed by DDBJ for checking the format and the synt
 
 ## Install  {#install}
 
-#### 1) Get Parser.tar.gz file
+#### 1. Get Parser.tar.gz file
 
 Download Parser.tar.gz file from <a href="/ddbj/mss-tool.html">Validation tools for MSS data files</a>.    
     
 
-#### 2) Uncompress tar.gz file
+#### 2. Uncompress tar.gz file
 <pre>$ gunzip Parser.tar.gz</pre>
 
 
-#### 3) Extract the file tar command
+#### 3. Extract the file tar command
 
 <pre>$ tar xvf Parser.tar</pre>
 
-#### 4) Confirm the created directory
+#### 4. Confirm the created directory
 
 Check the contents of the directory.    
 
@@ -66,7 +66,7 @@ jParser.sh* jar/    license.txt resource/</pre>
     
     
 
-#### 5) Change the file jParser.sh according to your system environment.
+#### 5. Change the file jParser.sh according to your system environment.
 <pre>#!/bin/sh
 
 # Parser installed directory

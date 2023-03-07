@@ -27,7 +27,7 @@ transChecker は Mass Submission System (MSS) を利用して DDBJ に登録す�
 
 ## インストール  {#install}
 
-#### 1) transChecker.tar.gz を取得
+#### 1. transChecker.tar.gz を取得
 [MSS データフイル用チェックツール](/ddbj/mss-tool.html) から transChecker.tar.gz をダウンロードしてください。    
 
 
