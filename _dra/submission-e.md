@@ -4,16 +4,6 @@ service_name: Sequence Read Archive
 title: DRA Submission
 category: dra
 current_tab: submission
-panels: 
-- title: Search 
-  url: https://ddbj.nig.ac.jp/search  
-  icon: /assets/images/icon-search_analysis.png 
-- title: How to submit  
-  url: /dra/submission-e.html 
-  icon: /assets/images/icon-search_analysis.png 
-- title: Login and submit 
-  url: https://ddbj.nig.ac.jp/D-way/  
-  icon: /assets/images/icon-search_analysis.png
 lang: en
 ---
 
@@ -382,6 +372,8 @@ Accession numbers are displayed in the "Component".
 * Run (prefixDRR)
 * Analysis (prefix DRZ)
 
+Regarding how to cite accession numbers, see [FAQ: Which accession numbers should be cited in publication?](/faq/en/cite-accession-e.html).
+
 ## Data release  {#data-release}
 
 After the registered data is loaded into the database, the Status becomes "complete (private)". 
@@ -416,59 +408,4 @@ Example:
 
 ## Data update {#update-submission}
 
-### Hold date change {#change-hold-date} 
-
-You can set the hold date for a maximum of 4 years and can change it. To
-change the hold date, click the [Change] button in the Hold Date and
-move to hold date change page.
-
-<a href="/assets/images/books/hold_date.jpg" title="Change hold date" class="group1"><img src="/assets/images/books/hold_date.jpg" alt="Change hold date" title="Change hold date" class="w400"></a>
-
-To immediately release the submission, click the [Release Now]. In the
-middle of the night, the submission is released, data files will be made
-available at [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/) and metadata will be indexed by the [DDBJ search](https://ddbj.nig.ac.jp/search) in a few days.
-
-### Metadata update  {#update-metadata}
-
-Update metadata by clicking [Enter/Update metadata]. 
-A part of fields are blocked from editing. After editing your metadata, please be sure to click the [Submit/Update DRA metadata] button and reflect the updates.
-
-### Data file addition {#add-data-files}
-
-Data files cannot be directly added to the archived Run. In another DRA
-submission, create new Experiment-Run objects referencing existing
-BioProject and BioSample records to add data files.
-
-Similar to Run, data files cannot be directly added to the archived
-Analysis. To replace archived Analysis, please [contact to the DRA
-team](/contact-ddbj-e.html).
-
-Login [D-way](https://ddbj.nig.ac.jp/D-way/)and create a new submission
-by clicking the [New submission]. Select the BioProject and BioSample
-IDs to which data to be added. Next, add the DRA Experiment and Run
-objects.
-
-- To add a new sample, share a BioProject ID and create a BioSample - Experiment - Run in a new DRA submission.
-- To add data files to existing sample, share BioProject and BioSample IDs and create an Experiment - Run in a new DRA submission.
-
-Submit metadata and validate the appended data files. Accession numbers
-will be issued to the appended Experiment/Run objects.
-
-<div class="attention">
-The BioProject accession remains same, but different DRA submission number is assigned.
-</div>
-
-{% include image.html url="books/add_data_files.jpg" caption="Add data files" class="w400" %}
-
-{% include image.html url="books/add_run.jpg" caption="Add data files to existing sample" class="w400" %}
-
-To add data files to the existing DRA submission, please [contact us](/contact-ddbj-e.html).
-
-### Object deletion  {#withdraw-archived-objects}
-
-To delete archived Experiment, Run and Analysis objects, please [contact us](/contact-ddbj-e.html).
-
-## MD5 checksum value {#md5} 
-
-See "[MD5 checksum value](/checksum.html)" for how to obtain MD5 checksum values.
-
+[DRA Update](/dra/update-e.html)

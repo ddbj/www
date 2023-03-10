@@ -378,6 +378,8 @@ dra:
           url: /dra/metadata.html
         - title: Data Files
           url: /dra/datafile.html
+        - title: Update
+          url: /dra/update.html
     - id: faq
       title: FAQ
       url: /faq/ja/index.html?tag=dra
@@ -407,6 +409,8 @@ dra:
           url: /dra/metadata-e.html
         - title: Data Files
           url: /dra/datafile-e.html
+        - title: Update
+          url: /dra/update-e.html
     - id: faq	
       title: FAQ	
       url: /faq/en/index-e.html?tag=dra	
