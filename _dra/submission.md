@@ -288,7 +288,7 @@ Run の数が100を超えるような場合で、ウェブツールの応答が�
 [メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx)とプログラムを使ってエクセルから XML を生成し、XML を D-way からアップロードすることで多件数を一括で登録します。
 [GitHub](https://github.com/ddbj/submission-excel2xml) に記載されている手順に従い、メタデータを記入したエクセルからコマンドラインツールで Submission、Experiment、Run XML を生成します。    
 
-ウェブツールやエクセルで対応していない technical reads 等の XML 要素を追加する場合、[メタデータ XML の例](/dra/example.html)を参照してください。
+ウェブツールやエクセルで対応していない technical reads 等の XML 要素を追加する場合、[メタデータ XML の例](/dra/example-xml.html)を参照してください。
 
 [D-way](https://ddbj.nig.ac.jp/D-way) にログインし、対象 DRA Submission のページに移動します。   
 以下は DRA Submission "test07-0040" に Submission/Experiment/Run XML をアップロードする例です。   

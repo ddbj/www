@@ -29,7 +29,7 @@ fastq の形式。詳しくは [NCBI のサイト](https://www.ncbi.nlm.nih.gov/
 
 - Quality value は phred 形式にしてください。オフセットはデフォルトで 33 (!) になります。64 (@) の場合は [Run XML を編集](#create-metadata-in-xml-files)して ascii_offset="@" にしてください。
 - DRA のメタデータ作成インターフェースは Technical read (アダプター、リンカー、バーコード配列)
-記載に対応していないため、Technical read を含める場合は technical read が記載された [Experiment XML を登録](/dra/submission.html#upload-xml)してください ([XML の記載例](/ddbj/example.html))。Technical reads が除去されている場合、XML 登録は必要ありません。
+記載に対応していないため、Technical read を含める場合は technical read が記載された [Experiment XML を登録](/dra/submission.html#upload-xml)してください ([XML の記載例](/ddbj/example-xml.html))。Technical reads が除去されている場合、XML 登録は必要ありません。
 - ペアードリードは別々の fastq ファイルとして登録してください。リード名にペアリードを同定するためのサフィックス (例 '/1' と '/2') が含まれている必要があります。
 - 各リードの最初の行は '@' で始まっている必要があります。
 - ベースコールと Quality value は '+' で始まる行で区切られている必要があります。

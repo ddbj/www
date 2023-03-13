@@ -26,7 +26,7 @@ Run filetype needs to be specified depending on whether read length is constant 
 Format of fastq, for details, please see [NCBI website](https://www.ncbi.nlm.nih.gov/books/NBK242622/#File_Format_Guide_BK.FASTQ).
 
 - Quality values must be in Phred scale. By default, 33 (!) is used for Phred quality offset. In the case of 64 (@), [update the ascii_offset of Run XML](#create-metadata-in-xml-files) to 'ascii_offset="@"'.
-- In the DRA metadata submission web interface, technical reads (adapters, linkers, barcodes) cannot be described. When submitting fastq including technical reads, please describe technical reads in the Experiment XML according to [Formats of sequencing data files](#formats-sequencing-data-files) [(XML examples)](/ddbj/example-e.html). The Experiment XML submission is not necessary for fastq without technical reads.
+- In the DRA metadata submission web interface, technical reads (adapters, linkers, barcodes) cannot be described. When submitting fastq including technical reads, please describe technical reads in the Experiment XML according to [Formats of sequencing data files](#formats-sequencing-data-files) [(XML examples)](/ddbj/example-xml-e.html). The Experiment XML submission is not necessary for fastq without technical reads.
 - Paired reads must split and submitted using two Fastq files. The read names must have a suffix identifying the first and second read from the pair, for example '/1' and '/2'.
 - The first line for each read must start with '@'.
 - The base calls and quality scores must be separated by a line starting with '+'.

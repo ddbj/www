@@ -309,7 +309,7 @@ Please upload XMLs if you are familiar with command lines.
 You can submit metadata by uploading XMLs in the D-way submission page by using [the metadata excel](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx) and container images.   
 Generate metadata XMLs according to the [GitHub](https://github.com/ddbj/submission-excel2xml) page.
 
-To add XML elements not covered by the web tool nor the excel such as technical reads, please refer to the [metadata XML examples](/dra/example-e.html).
+To add XML elements not covered by the web tool nor the excel such as technical reads, please refer to the [metadata XML examples](/dra/example-xml-e.html).
 
 Login [D-way](https://ddbj.nig.ac.jp/D-way) and move to the DRA submission page.  
 Following is an example of uploading the Submission/Experiment/Run XMLs to the DRA submission "test07-0040".
