@@ -380,6 +380,8 @@ dra:
           url: /dra/datafile.html
         - title: Update
           url: /dra/update.html
+        - title: Example
+          url: /dra/example.html
     - id: faq
       title: FAQ
       url: /faq/ja/index.html?tag=dra
@@ -411,6 +413,8 @@ dra:
           url: /dra/datafile-e.html
         - title: Update
           url: /dra/update-e.html
+        - title: Example
+          url: /dra/example-e.html
     - id: faq	
       title: FAQ	
       url: /faq/en/index-e.html?tag=dra	
