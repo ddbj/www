@@ -11,41 +11,11 @@ lang: ja
 
 MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage-tab/)) は機能ゲノミクスデータを構造化・標準化された方法で表現するための研究者コミュニティで開発、採用された形式です。MAGE-TAB はデータの収集とアノテーションに加え、ArrayExpress や GEA といったデータベース間でデータを交換する用途にも使えるように設計されています。[MAGE-TAB の仕様書](/assets/files/magetab/MAGE-TABv1.1.pdf)
 
-
 {% include image.html url="magetab/magetab_over.jpg" caption="IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係" class="w450" %}
-
 
 ## IDF  {#idf}
 
-IDF (Investigation Description Format) ファイルは実験デザイン、プロトコール、文献情報や登録者情報といった実験全体を記述するファイルです。
-
-## IDF 例  {#idf_ex}
-
-[IDF の例](/gea/example-e.html#idf)
-
-| [Comment[GEAAccession]](#Comment_idf)               | E-GEAD-369                                                                      |     |
-| MAGE-TAB Version                                      | 1.1                                                                             |     |
-| [Investigation Title](#Investigation_Title)           | Transcriptional profiling of Arabidopsis leaves exposed to elevated temperature |     |
-| [Experiment Description](#Experiment_Description)     | We investigated genome-wide ... biological replicates were analyzed.            |     |
-| [Experimental Design](#Experimental_Design)           | stimulus or stress design                                                       |     |
-| [Experimental Factor Name](#Experimental_Factor_Name) | temperature                                                                     |     |
-| [Experimental Factor Type](#Experimental_Factor_Type) | temperature                                                                     |     |
-| [Person Last Name](#Person_Last_Name)                 | Test                                                                            |     |
-| [Person First Name](#Person_First_Name)               | Tarou                                                                           |     |
-| [Person Affiliation](#Person_Affiliation)             | DDBJ Center, National Institute of Genetics                                     |     |
-| [Person Roles](#Person_Roles)                         | submitter                                                                       |     |
-| [Public Release Date](#Public_Release_Date)           | 2018-06-22                                                                      |     |
-| [PubMed ID](#PubMed_ID)                               | 29040613                                                                        |     |
-| [Protocol Name](#Protocol_Name)                       | P-GEAD-535                                                                      | ... |
-| [Protocol Type](#Protocol_Type)                       | sample collection protocol                                                      | ... |
-| [Protocol Description](#Protocol_Description)         | Plants were sown on GM medium ... 22 degrees celsius.                           | ... |
-| [SDRF File](#SDRF_File)                               | E-GEAD-369.sdrf.txt                                                             |     |
-| [Comment[Number of channel]](#Comment_idf)          | single-channel                                                                  |     |
-| [Comment[Array Design REF]](#Comment_idf)           | A-AFFY-2                                                                        |     |
-| [Comment[AEExperimentType]](#Comment_idf)           | transcription profiling by array                                                |     |
-| [Comment[BioProject]](#Comment_idf)                 | PRJDB3647                                                                       |     |
-| [Comment[Public Release Date]](#Comment_idf)        | 2018-06-22                                                                      |     |
-| [Comment[Last Update Date]](#Comment_idf)           | 2018-06-22                                                                      |     |
+IDF (Investigation Description Format) ファイルは実験デザイン、プロトコール、文献情報や登録者情報といった実験全体を記述するファイルです。[IDF の例](/gea/example-e.html#idf)
 
 ## IDF 項目  {#idf_fields}
 
@@ -54,26 +24,20 @@ IDF は項目と対応する値が組み合わされたタブ区切りテキス�
 [Investigation Title](#Investigation_Title)<a name="Investigation_Title"></a>
 : 研究全体に付けるタイトル。このタグは１つの値しか持てません。
 
-
 [Experimental Design](#Experimental_Design)<a name="Experimental_Design"></a>  
 : 実験のデザイン。[controlled term](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1804523015) から該当するものを選びます。
-
 
 Experimental Factor Name<a name="Experimental_Factor_Name"></a>
 : 実験の Experimental factor は実験の変数 (growth condition, genotype, organism part 等) です。Factor の値は SDRF の "Factor Value[\<factor name>]" カラムに記入します。GEA は SDRF の Factor value の名前を IDF にコピーします。
 
-
 Experimental Factor Type<a name="Experimental_Factor_Type"></a>
 : Experimental factor の type。GEA では Experimental Factor Name を Experimental Factor Type として使っています。
-
 
 [Person Last Name](#Person_Last_Name)<a name="Person_Last_Name"></a>
 : 登録者のラストネーム (公開されます)。
 
-
 [Person First Name](#Person_First_Name)<a name="Person_First_Name"></a>
 : 登録者のファーストネーム (公開されます)。
-
 
 [Person Mid Initials](#Person_Mid_Initials)<a name="Person_Mid_Initials"></a>
 : 登録者のミドルネーム (公開されます)。
@@ -81,76 +45,64 @@ Experimental Factor Type<a name="Experimental_Factor_Type"></a>
 [Person Affiliation](#Person_Affiliation)<a name="Person_Affiliation"></a>
 : 登録者の所属する組織 (公開されます)。
 
-
 [Person Roles](#Person_Roles)<a name="Person_Roles"></a>
 : Person の役割。GEA では "submitter" のみ使用可能です。
-
 
 [Public Release Date](#Public_Release_Date)<a name="Public_Release_Date"></a>
 : データの初回公開日。日付は "YYYY-MM-DD" 形式で記入します (例: 2011-10-10)。このフィールドは１つの値しか持てません。
 
-
 [PubMed ID](#PubMed_ID)<a name="PubMed_ID"></a>
 : 登録データを引用している文献の PubMed ID。
-
 
 [Publication DOI](#Publication_DOI)<a name="Publication_DOI"></a>
 : 登録データを引用している文献の Digital Object Identifier (DOI)。PubMed ID がある場合は PubMed ID を記載します。
 
-
 [Experiment Description](#Experiment_Description)<a name="Experiment_Description"></a>
 : 実験をフリーテキストで記述します。このフィールドは１つの値しか持てません。説明文は「実験で何をしたか」を明確に説明します。この説明文はキュレータがデータをチェックする上で役に立ちます。
-
 
 Protocol Name<a name="Protocol_Name"></a>
 : プロトコールの名前。プロトコールは SDRF の "Protocol REF" カラムでプロトコールの一時的な ID (例 ESUB000350_Protocol_1) もしくはアクセッション番号 (例 P-GEAD-100) で参照されます。GEA は Experiment を跨ったプロトコールの参照をサポートしていません。
 
-
 Protocol Type<a name="Protocol_Type"></a>
 : プロトコールの種類。事前に定義されている type は以下になります。Microarray と Sequencing experiment で[必須 protocol セット](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=961166619)が異なります。
 
-  - array scanning and feature extraction protocol
-  - conversion protocol
-  - dissection protocol
-  - growth protocol
-  - high throughput sequence alignment protocol
-  - normalization data transformation protocol
-  - nucleic acid extraction protocol
-  - nucleic acid hybridization to array protocol
-  - nucleic acid labeling protocol
-  - nucleic acid library construction protocol
-  - nucleic acid sequencing protocol
-  - sample collection protocol
-  - treatment protocol
-
+- array scanning and feature extraction protocol
+- conversion protocol
+- dissection protocol
+- growth protocol
+- high throughput sequence alignment protocol
+- normalization data transformation protocol
+- nucleic acid extraction protocol
+- nucleic acid hybridization to array protocol
+- nucleic acid labeling protocol
+- nucleic acid library construction protocol
+- nucleic acid sequencing protocol
+- sample collection protocol
+- treatment protocol
 
 [Protocol Description](#Protocol_Description)<a name="Protocol_Description"></a>
 : プロトコールをフリーテキストで記述します。このテキストはタブで区切られた１フィールド内に収めます。
 
-
 [SDRF File](#SDRF_File)<a name="SDRF_File"></a>
 : IDF に随伴する SDRF ファイル名。GEA は自動的にファイル名を埋め込みます。
-
 
 [Comment[\<user-defined tag>]](#Comment_idf)<a name="Comment_idf"></a>
 : ユーザもしくはアーカイブが独自に定義するフィールド。GEA は以下の Comment タグを使っています。
 
-  - Comment[GEAAccession]
-  - Comment[AEExperimentType]
-  - Comment[Number of channel]
-  - Comment[Array Design REF]
-  - Comment[BioProject]
-  - Comment[Public Release Date]
-  - Comment[Last Update Date]
-  - Comment[AdditionalFile:TXT]
+- Comment[GEAAccession]
+- Comment[AEExperimentType]
+- Comment[Number of channel]
+- Comment[Array Design REF]
+- Comment[BioProject]
+- Comment[Public Release Date]
+- Comment[Last Update Date]
+- Comment[AdditionalFile:TXT]
 
 ## SDRF  {#sdrf}
 
-SDRF (Sample and Data Relationship Format) サンプル属性及びサンプル、アレイ、データファイル間の関係性を記述します。SDRF は機能ゲノミクス実験の自然な流れを再現できるように構成されています。SDRF は用いられた大元の Source サンプルから始まり、最後はサンプルから得られたデータファイルで終わります。Single-channel のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。
-
+SDRF (Sample and Data Relationship Format) サンプル属性及びサンプル、アレイ、データファイル間の関係性を記述します。SDRF は機能ゲノミクス実験の自然な流れを再現できるように構成されています。SDRF は用いられた大元の Source サンプルから始まり、最後はサンプルから得られたデータファイルで終わります。Single-channel のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。[SDRF の例](/gea/example.html#sdrf_con)
 
 {% include image.html url="magetab/sdrf.jpg" caption="SDRF の全体構造" class="w450" %}
-
 
 ## SDRF セクション  {#sdrf_sections}
 
