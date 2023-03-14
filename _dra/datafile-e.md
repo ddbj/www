@@ -259,13 +259,13 @@ The DRA also accepts Pacific Biosciences data in the
 
 Submit fastq/bam files.
 
-### 10x Genomics <a name="10x"></a>
-
-For the 10x Genomics data files, please see the GEA [Single-cell submission guide](/gea/single-cell-e.html).
-
 ### Capillary sequencing platform  {#Capillary-sequencing-platform}
 
 Submit capillary sequencing data in the fastq/bam format.
+
+### 10x Genomics <a name="10x"></a>
+
+For the 10x Genomics data files, please see the GEA [Single-cell submission guide](/gea/single-cell-e.html).
 
 ## Analysis data files  {#analysis-data-files}
 
