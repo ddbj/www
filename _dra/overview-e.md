@@ -22,6 +22,7 @@ data to be submitted. Before submitting human data, read the
 ## Submission flow {#flow}
 
 - [Obtain a submission account](/account-e.html)
+- [Create a new submission](/dra/submission-e.html#new-submission)
 - [Upload](/upload-e.html) sequencing data files
 - [Submit a BioProject](/dra/submission-e.html#bioproject)
 - [Submit BioSample(s)](/dra/submission-e.html#biosample)

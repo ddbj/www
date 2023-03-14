@@ -16,6 +16,7 @@ lang: ja
 ## 登録の流れ {#flow}
 
 - [登録アカウントの取得](/account.html)
+- [新規登録の作成](/dra/submission.html#new-submission)
 - シークエンスデータファイルの[アップロード](/upload.html)
 - [BioProject の登録](/dra/submission.html#bioproject)
 - [BioSample の登録](/dra/submission.html#biosample)
