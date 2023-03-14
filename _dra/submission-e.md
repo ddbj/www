@@ -43,7 +43,7 @@ The [DRA metadata](/dra/metadata-e.html) are composed of following objects ([Exa
 * Run (DRA)
 * Analysis (DRA, optional)
 
-You may submit the metadata in two ways, one is "Submit metadata by the web tool" and second is "[Submit metadata by the excel](#metadata-excel)".    
+You may submit the metadata in two ways, one is "Submit metadata by the web tool" and second is "[Submit metadata by the excel](#excel)".    
 When it is difficult to submit large-scale metadata (exceeds 100 Runs) by using the web tool, it is recommended to submit the metadata by uploading XMLs generated from the excel.    
 
 How to submit metadata by using the web tool is explained here.

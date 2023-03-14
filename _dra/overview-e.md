@@ -21,13 +21,15 @@ data to be submitted. Before submitting human data, read the
 
 ## Submission flow {#flow}
 
-- [Obtain a submission account](/account-e.html)
-- [Create a new submission](/dra/submission-e.html#new-submission)
-- [Upload](/upload-e.html) sequencing data files
-- [Submit a BioProject](/dra/submission-e.html#bioproject)
-- [Submit BioSample(s)](/dra/submission-e.html#biosample)
-- [Submit Experiment/Run metadata](/dra/submission-e.html#experiment)
-- [Validate data files](/dra/submission-e.html#validation)
+* [Obtain a submission account](/account-e.html)
+* [Create a new submission](/dra/submission-e.html#new-submission)
+* [Upload sequencing data files](/upload-e.html)
+* [Submit a BioProject](/dra/submission-e.html#bioproject)
+* [Submit BioSample(s)](/dra/submission-e.html#biosample)
+* [Submit Experiment/Run metadata](/dra/submission-e.html#experiment)
+	* [Using the web tool](/dra/submission-e.html#metadata)
+	* [Using the excel](/dra/submission-e.html#excel)
+* [Validate data files](/dra/submission-e.html#validation)
 
 ## Submission status {#status}
 
@@ -61,7 +63,7 @@ Regarding how to cite accession numbers, see "[FAQ: Which accession numbers shou
 ## Data release {#data-release}
 
 The DRA submission is released according to the [data release policy](/policies-e.html#data-release). 
-Please see "FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release.html)" regarding how linked data are released.  
+Please see "FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release-e.html)" regarding how linked data are released.  
 After data release process, data files are released at [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/), indexed by [DDBJ Search](https://ddbj.nig.ac.jp/search), and mirrored by [NCBI SRA](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) and [EBI SRA](https://ebi.ac.uk/ena) in a few days.
 
 <div class="attention">
