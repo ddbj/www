@@ -1,11 +1,17 @@
 ---
 layout: tabbed_indexed_content
 service_name: Genomic Expression Archive
-title: GEA への登録
+title: 登録概要
 category: gea
 current_tab: submission overview
 lang: ja
 ---
+
+<div class="attention" markdown="1">
+  <span class="red">ヒトを対象とした研究データの登録について</span>  
+  : 研究対象者に由来するデータを DDBJ
+    センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。 ヒトを対象とした研究データを登録する場合は「[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)」を熟読してください。
+</div>
 
 ## 概要  {#over}
 
@@ -46,13 +52,6 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
 </td>
 </tbody>
 </table>
-
-
-<div class="attention" markdown="1">
-  <span class="red">ヒトを対象とした研究データの登録について</span>  
-  : 研究対象者に由来するデータを DDBJ
-    センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。 ヒトを対象とした研究データを登録する場合は「[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)」を熟読してください。
-</div>
 
 ## 登録ファイル  {#sub-files}
 

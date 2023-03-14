@@ -3,11 +3,11 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: Metadata examples
 category: dra
-current_tab: submission
+current_tab: overview
 lang: en
 ---
 
-## Organization of metadata objects  {#Organization_of_metadata_objects} 
+## Organization of metadata objects {#organization} 
 
 Submitters can organize metadata objects flexibly.
 
@@ -32,5 +32,14 @@ Include paired-end read files in a Run.
 
 ### Related sequencing data are reported in two publications.  {#ex_submissions}
 
-{% include image.html url="submission/obj_ex3.jpg" caption="Related sequencing data are reported in two publications." class="w500" %}
+{% include image.html url="submission/obj_ex3.jpg" caption="Related sequencing data are reported in two publications." class="w600" %}
 
+## Metadata tsv example {#tsv}
+
+Example files for submitting Experiment/Run metadata in tab-delimited text (tsv) files.  
+[Example metadata tsv](https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc)
+
+## Metadata excel example {#excel}
+
+An example metadata excel for submitting Experiment/Run metadata in XMLs generated from the excel.  
+[example-0001_dra_metadata.xlsx](https://github.com/ddbj/submission-excel2xml)

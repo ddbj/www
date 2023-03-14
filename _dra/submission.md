@@ -3,55 +3,13 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: DRA の登録
 category: dra
-current_tab: submission
+current_tab: overview
 lang: ja
 ---
 
-<div class="attention" markdown="1">
-ヒトを対象とした研究データの登録について  
-: <span class="red">研究対象者に由来するデータを DDBJ センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。
-ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#submission-of-human-data)を熟読してください。</span>
-</div>
-
-## 登録の流れ {#flow}
-
-### 1. 登録アカウントを取得 {#step-account}
+## 登録アカウントを取得  {#account}
 
 [D-way 登録アカウント](/account.html)を取得し、[公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)して DRA 登録ができるようにします。
-
-### 2. DRA 新規登録の作成  {#step-new-submission}
-
-[D-way](https://ddbj.nig.ac.jp/D-way) にログインし、[新規 DRA 登録を作成](#new-submission)します。
-
-### 3. データファイルをアップロード  {#step-upload}
-
-[メタデータ](/dra/metadata.html)の登録の前に、シークエンスデータファイルを受付サーバの DRA 登録ディレクトリに[アップロード](/upload.html)します。
-
-### 4. BioProject の登録 {#step-BioProject}
-
-研究プロジェクトを [BioProject に登録](/bioproject/submission.html)します。登録済みの場合は該当する BioProject を選択します。
-
-### 5. BioSample の登録 {#step-BioSample}
-
-シークエンスデータを取得したサンプルを [BioSample に登録](/biosample/submission.html)します。登録済みの場合は該当する BioSample を選択します。
-
-### 6. DRA Experiment の登録 {#step-Experiment}
-
-サンプルから構築したライブラリー、及び、使用したシークエンス機種の情報を [DRA Experiment に登録](#experiment)します。
-
-### 7. DRA Run の登録 {#step-Run}
-
-シークエンスデータファイルを [Run に登録](#run)します。
-
-### 8. データファイルの検証 {#step-validation}
-
-シークエンスデータファイルの中身をチェックする[検証処理](#validation)を開始します。
-
-### 9. アクセッション番号の発行  {#step-accession}
-
-検証処理をパスすると査定を経て [DRA アクセッション番号](#accession)が発行されます。
-
-## DRA へのデータ登録 {#submit}
 
 ## 新規登録の作成  {#new-submission}
 
@@ -68,23 +26,6 @@ lang: ja
 
 {% include image.html url="books/hdra01.jpg" caption="新規 DRA 登録の作成" class="w500" %}
 
-登録ステータスで進捗状況を把握することができます。  
-"submission_validated" と "data_error" になった登録が DRA チームで査定されます。
-
-DRA 登録のステータス
-{: .tablecaption}
-
-| ステータス                 | 状態                            |
-|---|
-| New                   | メタデータの登録前                     |
-| metadata_submitted   | メタデータが登録された                   |
-| data_validating      | データファイルの検証処理中                 |
-| data_error           | データファイルの検証処理エラー               |
-| submission_validated | メタデータとデータファイルの検証処理を通過         |
-| completed             | アクセッション番号が発行された               |
-| confidential          | 公開用ファイルの作成処理が完了し、非公開に保たれている |
-| Public                | 公開された                     |
-
 ## データファイルのアップロード  {#upload} 
 
 データファイルはファイル受付サーバの対応する DRA submission ディレクトリにアップロードします。  
@@ -92,10 +33,20 @@ DRA 登録のステータス
 
 ## メタデータの登録 {#metadata}
 
-メタデータは「[ウェブツールで登録する方法](#metadata-web)」と「[メタデータ登録用エクセル](#metadata-excel)」を使って登録する方法の二通りがあります。  
-メタデータのオブジェクト数が100を超えるような多件数であり、ウェブツールの応答が遅く、登録作業が困難な場合はエクセルとそこから生成した XML を使った登録方法を推奨します。
+DRA の[メタデータ](/dra/metadata.html)は複数のオブジェクトから構成されています ([構成例](/dra/example.html))。
+BioProject と BioSample は別のデータベースに登録されたレコードを参照します。
 
-## ウェブツールでのメタデータ作成  {#metadata-web} 
+* Submission (DRA)
+* BioProject
+* BioSample
+* Experiment (DRA)
+* Run (DRA)
+* Analysis (DRA、登録は任意)
+
+メタデータは「ウェブツールで登録する方法」と「[メタデータ登録用エクセル](#metadata-excel)」を使って登録する方法の二通りがあります。
+オブジェクト数が多件数の場合はエクセルとそこから生成した XML を使った登録方法を推奨します。
+
+以下ではウェブツールでの作成方法を説明します。
 
 新規登録をクリックし、登録詳細ページへ移動します。
 
@@ -109,16 +60,6 @@ DRA 登録のステータス
 
 {% include image.html url="books/hdra-not-uploaded.jpg" caption="データファイルがアップロードされていない場合に表示されるメッセージ" class="w300" %}
 
-DRA の[メタデータ](/dra/metadata.html)は複数のオブジェクトから構成されています。  
-BioProject と BioSample は別のデータベースに登録されたレコードを参照します。
-
-* Submission (DRA)
-* BioProject
-* BioSample
-* Experiment (DRA)
-* Run (DRA)
-* Analysis (DRA、登録は任意)
-
 ウェブツールの各項目に内容を英語で入力していきます。  
 必須項目は赤色のアスタリスク記号 (<span class="red">＊</span>) で示されています。  
 画面下部にある [Save] や次のタブへの移動ボタンをクリックすると、都度、入力内容がチェックされます。エラーが表示された場合は内容を修正します。  
@@ -126,14 +67,14 @@ BioProject と BioSample は別のデータベースに登録されたレコー�
 ウェブツールはタブ区切りテキストファイル (tsv) でのメタデータ作成をサポートしています。
 記入例は[メタデータ tsv の記入例シート](https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc)を参照してください。
 
-## Submission {#submission}
+### Submission {#submission}
 
 データの管理情報を記入します。  
 公開予定と登録者を記入します。
 
 {% include image.html url="books/hdra-submission01.jpg" caption="Submission に登録情報を入力" class="w500" %}
 
-## Study {#study}
+### BioProject {#bioproject}
 
 <div class="attention">
 Study と Sample タブ画面が表示されない場合、Edge や Firefox で開くと表示されるようになる場合があります。
@@ -152,7 +93,7 @@ BioProject の登録後、登録したプロジェクトが選択されます。
 
 {% include image.html url="books//hdra-bp04.jpg" caption="登録された BioProject が選択される" class="w500" %}
 
-## Sample  {#sample}
+### BioSample {#biosample}
 
 アカウントで登録した BioSample から該当するものを選びます (DRA では数サンプルが一般的です)。
 チェックボックスを選択し、続いて Shift キーを押しながら次のボックスをクリックすると、サンプルが範囲選択されます。
@@ -169,7 +110,7 @@ BioSample の登録後、登録したサンプルが選択されます。
 
 {% include image.html url="books/hdra-bs06.jpg" caption="登録されたサンプルが選択される" class="w500" %}
 
-## Experiment  {#experiment}
+### Experiment {#experiment}
 
 初期状態では選択された BioSample と同数の Experiment と Run が自動生成され、それぞれの BioSample-Experiment-Run がリンクされています。  
 Experiment と Run の自動生成は Experiment タブの初回表示時にのみ行われ、自動生成後に BioSample を選択し直した場合、追加の自動生成は行われません。
@@ -206,7 +147,7 @@ Experiment は [Add new Experiment(s)] で追加できます。
 エクセルなどの表計算ソフト独自の形式 (.xlsx) ではなくタブ区切りテキストファイルとしてアップロードします。
 </div>
 
-## Run  {#run}
+### Run {#run}
 
 初期状態で選択された BioSample と同数の Experiment と Run が作成されており、それぞれの Run はユニークな Experiment を参照しています。  
 下の例では３つの Run が作成され、それぞれが作成された Experiment を参照しています。
@@ -242,7 +183,7 @@ Analysis (任意) が不要な場合は [Submit/Update DRA metadata] をクリ�
 
 {% include image.html url="books/hdra-submit02.jpg" caption="メタデータの登録後、データファイルの検証処理に進む" class="w500" %}
 
-## Analysis (任意)  {#analysis}
+### Analysis (任意) {#analysis}
 
 DRA Run に関連するデータで登録先データベースが無いデータを Analysis に登録することができます。Analysis は NCBI と EBI で共有していません。
 登録先データベースは[登録ナビゲーション](/submission-navigation.html)と[データベースと登録窓口一覧](/submission.html)で確認してください。
@@ -265,25 +206,22 @@ Analysis に登録されたデータファイルは MD5 チェックサム値の
 件数が多い場合は <a href="/dra/analysis.html">Analysis エクセルファイル</a>を使った登録方法を利用してください。
 </div>
 
-## メタデータエクセルを使った登録方法 {#metadata-excel}
+### エクセルを使った登録方法  {#excel}
 
 Run の数が100を超えるような場合で、ウェブツールの応答が遅く、登録作業が困難な場合はエクセルとそこから生成された XML ファイルを使って登録します。   
 ウェブツールと比べ時間のかかる画面遷移が無く、一回の XML ファイルアップロードで登録を済ませることができる利点があります。  
 メタデータ登録用エクセルを記入する前に以下を済ませておきます。
 
-* [BioProject の登録](#study)
-* [BioSample の登録](#sample)
+* [BioProject の登録](#bioproject)
+* [BioSample の登録](#biosample)
 * [DRA 新規登録の作成](#new-submission)
 * [データファイルのアップロード](#upload)
 
 [メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx)をダウンロードし、内容を記入します。  
 [エクセルの記入例](https://github.com/ddbj/submission-excel2xml/raw/master/example-0001_dra_metadata.xlsx) 
 
-続いて、メタデータ登録用エクセルから生成した [XML を登録](#upload-xml)、もしくは、メタデータ登録用エクセルを[担当者に送付](#send-metadata-excel)します。   
-
-### メタデータ登録用エクセルから 生成した XML を登録 {#upload-xml}
-
-コマンドライン操作に慣れている方はこちらの方法で登録してください。大量件数の登録を効率化することができます。
+続いて、メタデータ登録用エクセルから生成した「XML を登録」、もしくは、「エクセルを担当者に送付」します。
+コマンドライン操作に慣れている方は XML を直接登録してください。大量件数の登録を効率化することができます。
 
 [メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx)とプログラムを使ってエクセルから XML を生成し、XML を D-way からアップロードすることで多件数を一括で登録します。
 [GitHub](https://github.com/ddbj/submission-excel2xml) に記載されている手順に従い、メタデータを記入したエクセルからコマンドラインツールで Submission、Experiment、Run XML を生成します。    
@@ -294,8 +232,6 @@ Run の数が100を超えるような場合で、ウェブツールの応答が�
 以下は DRA Submission "test07-0040" に Submission/Experiment/Run XML をアップロードする例です。   
 
 <a href="/assets/images/books/hdra-xmlupload.jpg" title="作成した XML のアップロード" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="作成した XML のアップロード" title="作成した XML のアップロード" class="w500"></a>
-
-### メタデータ登録用エクセルを担当者に送付 {#send-metadata-excel}
 
 コマンドライン操作に不慣れな方はエクセルを担当者にメール添付でお送りください。    
 
@@ -314,13 +250,13 @@ DRA 担当者がエクセルから XML を生成し、対象の DRA Submission �
 
 {% include image.html url="books/hdra-validate.jpg" caption="シークエンスデータの検証処理を開始" class="w500" %}
 
-### MD5 Check  {#MD5_Check}
+### MD5 Check  {#md5}
 
 メタデータに記載されている MD5 値と、実際のファイルの MD5 値とが一致するかチェックされ、一致しない場合はエラーが表示されます。  
 手許のファイルの MD5 値を確認し、メタデータ中の値と一致している場合、転送途中でファイルが破損した可能性があるため、ファイルを再度アップロードします。　　
 メタデータ中の MD5 値が間違っている場合、[Enter/Update metadata] からメタデータ中の MD5 値を修正します。
 
-### Data Check  {#Data_Check}
+### Data Check  {#check}
 
 ファイルの中身がチェックされます。  
 問題が無ければ登録のステータスが "submission_validated" になり、検証されたファイルが別ディレクトリに移されます。  
@@ -338,46 +274,5 @@ DRA 担当者がエクセルから XML を生成し、対象の DRA Submission �
 
 ## アクセッション番号の発行  {#accession}
 
-メタデータとシークエンスデータに問題がなければ、プレフィックス DR のアクセッション番号が各オブジェクトに発行され、登録者にメールで通知されます。
+メタデータとシークエンスデータに問題がなければ、[アクセッション番号](/dra/overview.html#accession-numbers)が各オブジェクトに発行され、登録者にメールで通知されます。
 アクセッション番号は登録詳細画面の "Component" でも確認することができます。ステータスは "completed" になります。  
-
-* Submission (prefix DRA)
-* Experiment (prefixDRX)
-* Run (prefixDRR)
-* Analysis (prefix DRZ)
-
-アクセッション番号引用については [FAQ: 投稿論文ではどのアクセッション番号を引用するべきでしょうか？](/faq/ja/cite-accession.html) をご覧ください。
-
-## データ公開  {#data-release}
-
-データのロード処理が完了するとステータスが "confidential" になります。
-即日公開が指定されている場合、深夜にデータが [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/) に公開され、数日以内に [DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされます。  
-[NCBI SRA](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) と [EBI SRA](https://ebi.ac.uk/ena) に公開データはミラーリングされます。
-
-DRA のデータは[公開原則](/policies.html#data-release)に従って公開されます。
-こちらの FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html) も参照してください。
-
-<div class="attention">
-オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けて登録してください。
-</div>
-
-### アーカイブ済み fastq/SRA ファイルの期間限定アクセス提供  {#fastq-sra-files}
-
-登録者がアーカイブ済みデータファイルを確認できるようにするため、アクセッション番号が発行された Run の fastq/SRA ファイルは受付サーバ (ftp-private.ddbj.nig.ac.jp) 上の登録者がアクセスできる場所にコピーされます。
-ディスク容量の圧迫を防ぐため、コピーされたファイルは作成から一ヶ月後に自動的に削除されます。
-
-- (submitter's home)/report/dra/(DRA submission accession)/fastq/
-- (submitter's home)/report/dra/(DRA submission accession)/sra/
-
-例
-
-- /report/dra/DRA000001/fastq/DRR000001.fastq.bz2
-- /report/dra/DRA000001/fastq/DRR000002.fastq.bz2
-- /report/dra/DRA000001/fastq/DRR000002_1.fastq.bz2
-- /report/dra/DRA000001/fastq/DRR000002_2.fastq.bz2
-- /report/dra/DRA000001/sra/DRR000001.sra
-- /report/dra/DRA000001/sra/DRR000002.sra
-
-## 登録の更新  {#update}
-
-[DRA の更新](/dra/update.html)

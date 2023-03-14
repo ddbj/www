@@ -3,14 +3,14 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: データファイル
 category: dra
-current_tab: submission
+current_tab: overview
 lang: ja
 ---
 
 <div class="attention" markdown="1">
 - ファイル名は英数字 [A-Z,a-z,0-9]、アンダースコア [_]、ハイフン [-] とドット [.] のみから構成され、空白文字、カッコ、句読点やシンボルを含まないこと。
 - バーコード配列で由来サンプルが区別されたデータファイルは登録前に分割し、由来サンプルごとに BioSample を作成します。各 BioSample には１つかそれ以上のユニークなデータファイルがリンクされている状態にします。
-- fastq ファイルの場合、ペアリードは別々のファイルとして登録します。bam ファイルの場合、分割する必要はありません。
+- fastq ファイルの場合、ペアリードは別々のファイルとして一つの Run に登録します。bam ファイルの場合、分割する必要はありません。
 - データファイルは登録用ディレクトリの直下にアップロードしてください。
 - サブディレクトリは作成しないでください。
 - tar などでアーカイブしないでください。
@@ -18,8 +18,6 @@ lang: ja
 </div>
 
 ## 一般的な形式 {#general}
-
-10x Genomics のデータファイルについては GEA [Single-cell submission guide](/gea/single-cell.html) をご参照ください。
 
 ### fastq  {#fastq} 
 
@@ -30,12 +28,12 @@ fastq の形式。詳しくは [NCBI のサイト](https://www.ncbi.nlm.nih.gov/
 - Quality value は phred 形式にしてください。オフセットはデフォルトで 33 (!) になります。64 (@) の場合は [Run XML を編集](#create-metadata-in-xml-files)して ascii_offset="@" にしてください。
 - DRA のメタデータ作成インターフェースは Technical read (アダプター、リンカー、バーコード配列)
 記載に対応していないため、Technical read を含める場合は technical read が記載された [Experiment XML を登録](/dra/submission.html#upload-xml)してください ([XML の記載例](/ddbj/example-xml.html))。Technical reads が除去されている場合、XML 登録は必要ありません。
-- ペアードリードは別々の fastq ファイルとして登録してください。リード名にペアリードを同定するためのサフィックス (例 '/1' と '/2') が含まれている必要があります。
+- ペアードリードは別々の fastq ファイルとして一つの Run に登録してください。リード名にペアリードを同定するためのサフィックス (例 '/1' と '/2') が含まれている必要があります。
 - 各リードの最初の行は '@' で始まっている必要があります。
 - ベースコールと Quality value は '+' で始まる行で区切られている必要があります。
 - fastq ファイルは gzip もしくは bzip2 で圧縮してください。
 
-### BAM ファイル  {#bam-file} 
+### BAM {#bam} 
 
 BAM は [Sequence Alignment/Map (SAM)](http://www.htslib.org/) ファイル形式のバイナリー圧縮です。
 BAM ファイルは [samtools](http://www.htslib.org/) でテキスト形式である SAM に変換することができます。
@@ -83,7 +81,7 @@ CCCFFFFFHHGHGJJGIJHIJIJJJJJIJJJJJIJJGIJJJJJIIJIIJFJJJJJFIJJJJIIIIGIIJHHHHDEEFFFE
 AA?CC:    RG:Z:1    NH:i:1    NM:i:0
 ```
 
-### BAM ファイル処理  {#BAM_ファイル処理}
+#### BAM ファイル処理  {#BAM_ファイル処理}
 
 ヘッダーとアライメントセクションは整合的である必要があります。
 各アライメントリードの RNAME (リファレンス配列の名前、3フィールド目) はヘッダー中の SN タグ値 (例 CHROMOSOME_I) と一致している必要があります。
@@ -110,25 +108,25 @@ PacBio や IonTorrent などでリファレンス配列がない bam ファイ�
 
 {% include image.html url="books/bam-mapping.jpg" caption="bam とリファレンス配列の対応付け" class="w500" %}
 
-### 1. BAM {#BAM}
+##### 1. BAM {#BAM}
 
 アライメントデータを BAM フォーマットで登録することができます。BAM ファイルは [SAMtools](http://samtools.sourceforge.net/) と [picard](https://broadinstitute.github.io/picard/) で読み込める形式になっている必要があります。圧縮していない BAM ファイルをアップロードしてください。   
 Run の [File Type](#File_Type) には "bam" を選択します。
 
-### 2. リファレンスを INSDC/RefSeq アクセッション番号で指定  {#リファレンスを_INSDC_RefSeq_アクセッション番号で指定}
+##### 2. リファレンスを INSDC/RefSeq アクセッション番号で指定  {#リファレンスを_INSDC_RefSeq_アクセッション番号で指定}
 
 リファレンス配列が [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/) にある場合、アクセッション番号.バージョン番号 (例 NC_000001.11) でリファレンスを参照することができます。 [配列のバージョン番号](/ddbj/flat-file.html#Version)は必須です。リファレンスゲノム配列のアクセッション番号は [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/) で検索することができます。
 
-### 3. リファレンスをマルチ fasta で提供 {#リファレンスをマルチ_fasta_で提供}
+##### 3. リファレンスをマルチ fasta で提供 {#リファレンスをマルチ_fasta_で提供}
 
 リファレンス配列が [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/) にない場合、リファレンス配列をマルチ fasta ファイルで提供します。真核生物のオルガネラ配列等短い配列は番号指定に対応していないケースがあります。
 Run の [File Type](#File_Type) には "reference_fasta" を選択します。bam ヘッダーで定義されたリファレンスとマルチ fasta 中の配列は対応表を介して defline 中の配列名でリンクされます。 bam SQ 行 LN タグのリファレンス配列長とマルチ fasta 中の配列長が異なっている場合ワーニングになります。
 
-### 4. INSDC/RefSeq アクセッション番号とマルチ fasta が混在するケース  {#INSDC_RefSeq_アクセッション番号とマルチ_fasta_が混在するケース}
+##### 4. INSDC/RefSeq アクセッション番号とマルチ fasta が混在するケース  {#INSDC_RefSeq_アクセッション番号とマルチ_fasta_が混在するケース}
 
 一部のリファレンス配列が [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/) にある場合、アクセッション.バージョン番号 (例 NC_000001.11) で一部のリファレンスを指定し、残りのリファレンス配列はマルチ fasta ファイルで提供します。混在しているケースでは、対応表にアクセッション.バージョン番号とマルチ fasta 中の defline 中の配列名を記載します。
 
-### 5. SN-リファレンス配列の対応表  {#SN-リファレンス配列の対応表}
+##### 5. SN-リファレンス配列の対応表  {#SN-リファレンス配列の対応表}
 
 ご自分で独自に作成するファイルです。「BAM ファイルヘッダーの SQ 行中の SN 値」と「アクセッション番号 OR リファレンスマルチ fasta ファイル中の配列名」との対応関係をタブ区切りで記載します。 Run の [File Type](#File_Type) には "tab" を選択します。
 
@@ -178,48 +176,42 @@ chr3 NC_000003.12
 
 以下ではシークエンスプラットフォーム毎にデータファイル形式について説明しています。
 
-## 454  {#r454} 
+### 454  {#r454} 
 
 454 からのシークエンスデータは fastq/bam ファイルで登録します。出力される sff ファイルは fastq/bam に変換したうえで登録してください。
 
-## Illumina Genome Analyzer  {#Illumina-Genome-Analyzer}
+### Illumina {#Illumina}
 
-### Illumina Native Data  {#Illumina_Native_Data}
+fastq/bam ファイルで登録します。
 
-#### Illumina pipeline v1.4 以降
+### BGI-seq  {#BGI}
 
-qseq ファイルでの登録は受け付けておりません。fastq/bam ファイルに変換してから登録してください。
+fastq/bam ファイルで登録します。
 
-## BGI-seq  {#BGI}
+### SOLiD  {#SOLiD} 
 
-fastq ファイルを登録します。    
+fastq/bam ファイルで登録します。
 
-## SOLiD  {#SOLiD} 
+### Ion Torrent  {#Ion-Torrent}
 
-### SOLiD Native Format  {#SOLiD_Native_Format}
+fastq/bam ファイルで登録します。Ion Torrent から出力される bam ファイルは samtools で fastq に変換することができます。[Converting BAM to fastq](https://www.metagenomics.wiki/tools/samtools/converting-bam-to-fastq)
 
-SOLiD native ファイルでの登録は受け付けておりません。fastq/bam ファイルに変換してから登録してください。
-
-## Ion Torrent  {#Ion-Torrent}
-
-fastq ファイルを登録します。Ion Torrent から出力される bam ファイルは samtools で fastq に変換することができます。[Converting BAM to fastq](https://www.metagenomics.wiki/tools/samtools/converting-bam-to-fastq)
-
-## Helicos Heliscope  {#Helicos-Heliscope}
+### Helicos Heliscope  {#Helicos-Heliscope}
 
 quality value をすべて "14" として作成した fastq/bam ファイルを登録します。
 
-## Complete Genomics  {#Complete-Genomics}
+### Complete Genomics  {#Complete-Genomics}
 
-[fastq ファイル](#fastq)を登録します。
+fastq/bam ファイルで登録します。
 
-## Pacific Biosciences  {#Pacific-Biosciences}
+### Pacific Biosciences  {#Pacific-Biosciences}
 
-### HDF5  {#hdf5}
+#### HDF5  {#hdf5}
 
 Pacific Biosciences は生データを格納するためにディレクトリ様構造を持つ HDF5 ファイルを使用しています。DRA は bas.h5 と bax.h5 両方のファイル形式での登録を受け付けています。RS II から出力されるデータは、１ の Run に *.bas.h5 １ファイルと *.bax.h5 ３ファイルを登録します。ファイル名を変更しないでください。  
 Run に HDF5 以外のデータを含めないでください。
 
-### bam  {#pacbio_bam}
+#### bam  {#pacbio_bam}
 
 以下の unaligned bam ファイルの登録をサポートしています。1 Run に 1 bamファイルを指定してください。
 unaligned bamの場合、リファレンス配列や対応表の指定は必要ありません。
@@ -228,17 +220,21 @@ unaligned bamの場合、リファレンス配列や対応表の指定は必要�
 - *.ccs.bam
 - *.reads.bam
 
-### fastq  {#pacbio_fastq}
+#### fastq  {#pacbio_fastq}
 
 [fastq](#fastq) を Run の filetype で指定してください。
 
-## Oxford Nanopore  {#Oxford-Nanopore}
+### Oxford Nanopore  {#Oxford-Nanopore}
 
 fastq/bam ファイルを登録します。
 
-## キャピラリシークエンサ  {#Capillary-sequencing-platform}
+### キャピラリシークエンサ  {#Capillary-sequencing-platform}
 
 fastq/bam ファイルを登録します。  
+
+### 10x Genomics <a name="10x"></a>
+
+10x Genomics のデータファイルについては GEA [Single-cell submission guide](/gea/single-cell.html) を参照してください。
 
 ## Analysis データファイル  {#analysis-data-files}
 

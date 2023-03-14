@@ -3,14 +3,17 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: メタデータ
 category: dra
-current_tab: submission
+current_tab: overview
 lang: ja
 ---
 
-## メタデータオブジェクト  {#metadata-objects}
+## オブジェクト  {#objects}
 
 メタデータにはシークエンスデータがどのようにして得られたのかが記載されています。  
-メタデータは以下の複数のオブジェクトから構成され、各オブジェクトは [XML スキーマ](https://github.com/ddbj/pub/tree/master/docs/dra)で定義され、相互に関連付けられています。
+メタデータは複数のオブジェクトから構成され、各オブジェクトは [XML スキーマ](https://github.com/ddbj/pub/tree/master/docs/dra)で定義され、相互に関連付けられています。
+
+データモデル図
+{% include image.html url="books/sra_object.png" caption="データモデル図" class="w500" %}
 
 [Submission](#Submission){: #Submission-obj}  
 : 公開予定や登録者といった管理情報を記載し、同時に登録する DRA オブジェクトをまとめる。
@@ -33,12 +36,9 @@ Run に含まれる全てのファイルは１つの SRA/fastq ファイルに�
 [Analysis](#Analysis){: #Analysis-obj}  
 : Run データに関連するデータで、登録先がないデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。
 
-データモデル図
-{% include image.html url="books/sra_object.png" caption="データモデル図" class="w500" %}
-
 [メタデータの例](/dra/example.html)
 
-## メタデータの説明 {#metadata}
+## メタデータの項目 {#fields}
 
 必須<span class="red">*</span>  
 条件によって必須<span class="conditionally_required">*</span>

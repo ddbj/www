@@ -3,15 +3,16 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: Metadata
 category: dra
-current_tab: submission
+current_tab: overview
 lang: en
 ---
 
-## Metadata objects  {#metadata-objects}
+## Objects {#objects}
 
 The metadata describes how the associated data have been obtained. 
-The metadata are composed of the following 6 objects and each of
-these objects is defined by its [XML schema](https://github.com/ddbj/pub/tree/master/docs/dra/xsd/1-5) and is related each other.
+The metadata are composed of 6 objects and each of these objects is defined by its [XML schema](https://github.com/ddbj/pub/tree/master/docs/dra/xsd/1-5) and is related each other.
+
+{% include image.html url="books/sra_object.png" caption="Data model" class="w500" %}
 
 [Submission](#Submission){: #Submission-obj}    
 : Submission information such as data release and submitters. A container object for grouping objects to be submitted.
@@ -35,8 +36,6 @@ Paired-end data files must be listed in a single run in order for the two files 
 [Analysis](#Analysis){: #Analysis-obj}  
 : Packages data associated with sequence read objects which do not have dedicated databases. 
 Analysis date are not shared among NCBI and EBI.
-
-{% include image.html url="books/sra_object.png" caption="Data model" class="w500" %}
 
 [Metadata examples](/dra/example-e.html)
 

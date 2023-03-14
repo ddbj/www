@@ -3,7 +3,7 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: メタデータの例
 category: dra
-current_tab: submission
+current_tab: overview
 lang: ja
 ---
 
@@ -32,5 +32,17 @@ lang: ja
 
 ### 関連するデータが別々の論文に発表される場合  {#ex_submissions}
 
-{% include image.html url="submission/obj_ex3.jpg" caption="関連するデータが別々の論文に発表される場合" class="w500" %}
+{% include image.html url="submission/obj_ex3.jpg" caption="関連するデータが別々の論文に発表される場合" class="w600" %}
+
+## メタデータの記入例 {#tsv}
+
+ウェブツールで Experiment/Run をタブ区切りテキストファイル (tsv) で登録する場合の記入例。  
+[メタデータ tsv の記入例シート](https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc)
+
+## メタデータエクセル {#excel}
+
+メタデータ登録用エクセルから XML を生成して Experiment/Run を登録する場合のエクセル記入例。  
+[example-0001_dra_metadata.xlsx](https://github.com/ddbj/submission-excel2xml)
+
+
 

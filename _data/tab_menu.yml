@@ -370,10 +370,12 @@ dra:
     - id: home
       title: Home
       url: /dra/index.html
-    - id: submission
-      title: Submission
-      url: /dra/submission.html
+    - id: overview
+      title: Overview
+      url: /dra/overview.html
       children:
+        - title: Submission
+          url: /dra/submission.html
         - title: Metadata
           url: /dra/metadata.html
         - title: Data Files
@@ -403,10 +405,12 @@ dra:
     - id: home	
       title: Home	
       url: /dra/index-e.html	
-    - id: submission
-      title: Submission
-      url: /dra/submission-e.html
+    - id: overview
+      title: Overview
+      url: /dra/overview-e.html
       children:
+        - title: Submission
+          url: /dra/submission-e.html
         - title: Metadata
           url: /dra/metadata-e.html
         - title: Data Files
