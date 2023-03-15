@@ -3,7 +3,7 @@
 // 内部リンク
 export default function internalLink() {
   if (!document.getElementById('TableOfContents')) return;
-  
+
   let itemsOfToc = []; // 目次管理用配列
 
   createToc(); // 目次の生成
@@ -28,7 +28,7 @@ export default function internalLink() {
       const postContent = document.querySelector('.md-content');
       // const headings = postContent.querySelectorAll('h2, h3, h4');
       const headings = postContent.querySelectorAll('h2, h3');
-      
+
       for (let i = 0; i < headings.length; i++) {
         const currentHeading = headings[i];
         //// IDの付与
@@ -57,11 +57,11 @@ export default function internalLink() {
         tocContainer.innerHTML = `
         <ul>
           ${[...headings].map(heading => {
-            if (heading.tagName === 'H3') return '';
-            const date = $(heading).next('.news_date');
-            const newHeading = $(heading).clone();
-            newHeading.children().remove();
-            return `
+          // if (heading.tagName === 'H3') return '';
+          const date = $(heading).next('.news_date');
+          const newHeading = $(heading).clone();
+          newHeading.children().remove();
+          return `
             <li class="${heading.tagName}">
               <a href="#${heading.id}" data-target="${heading.id}">
                 ${newHeading.text()}
@@ -69,7 +69,7 @@ export default function internalLink() {
               </a>
             </li>
             `;
-          }).join('')}
+        }).join('')}
         </ul>
         `;
       }
@@ -100,7 +100,7 @@ export default function internalLink() {
     const screenTop = window.scrollY;
     for (let i = 0; i < itemsOfToc.length; i++) { // 目次管理用配列を回す
       const item = itemsOfToc[i];
-      const rect = intersect({y: screenTop, height: window.innerHeight}, item.rect); // セクションの矩形と、現在表示中の矩形を重ね合わせる
+      const rect = intersect({ y: screenTop, height: window.innerHeight }, item.rect); // セクションの矩形と、現在表示中の矩形を重ね合わせる
       if (rect.height > 0) { // 重なり合う領域があればハイライト
         item.elm.classList.add('current');
       } else {
