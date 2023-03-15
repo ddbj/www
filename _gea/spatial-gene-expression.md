@@ -41,4 +41,9 @@ GEA processed data
 * web_summary.html: サマリーデータ (任意)
 * cloupe.cloupe: データ可視化と解析のための Loupe Browser ファイル　(任意)
 
+[CytAssist enabled Gene Expression (GEX)](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial) では spatial サブディレクトリに出力される以下のファイルも追加します。
+
+* aligned_tissue_image.jpg (web_summary.html を登録する場合は省略できます)
+* cytassist_image.tiff
+
 上記のファイルを tar でまとめて GEA processed data として登録します。
