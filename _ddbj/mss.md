@@ -25,32 +25,55 @@ related_pages:
 <div class="attention" markdown="1">
 <span class="red">ヒトを対象とした研究データの登録について</span>
 
-ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者)
-の尊厳及び人権は、適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。  
+ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者) の尊厳及び人権は、
+適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。    
 原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
 ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#submission-of-human-data)をご覧ください。
 </div>
 
 ## 概要  {#outline}
 
+Mass Submission System (MSS) は、比較的大規模な塩基配列データ (reads ではない) をファイル送付により登録するサービスです。    
+<span class="red">以下の何れかに該当する場合</span>、[Web 版塩基配列登録システム](/ddbj/web-submission.html) (DDBJ Nucleotide Sequence Submission System, 略称 NSSS) では対応できません。    
+MSS 経由で登録をお願いします。    
+件数の多寡、長さ以外の点もご確認ください。
+
+
+#### a) 種別、または、量が以下に該当する配列データ
 <div class="attention" markdown="1">
-
-Mass Submission System (MSS) は、比較的大規模な塩基配列データ (reads ではない) をファイル送付により登録するサービスです。
-登録予定データが、以下の条件に該当する場合は MSS をご利用ください。
-
-- [Web 版塩基配列登録システム](/ddbj/web-submission.html)が対応していない登録 
+- NSSS が対応していない登録 
    - [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
    - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
-- 配列が長い場合
-   - 目安は 500 kb 以上
-- １エントリあたりに多数の Feature がある場合
-    - 目安は 30 以上
-- エントリ数 (登録する配列の数) が多い場合
-    - 100 を超えるとき
-
+- １配列が長い場合、目安は 500 kb 以上
+- １配列あたりに多数の Feature がある場合、目安は 30 以上
+- 登録する配列の数が多い場合、総計 100 を超えるとき
 </div>
+
+#### b) finished/draft の別を問わずレプリコン全長規模相当の配列データ
+
+<div class="attention" markdown="1">
+ - (核) ゲノム
+ - 染色体
+ - オルガネラゲノム
+ - ウイルス・ファージのゲノム/segment
+ - プラスミド
+</div>
+
+#### c) DBLINK に BioProject, BioSample の記載が必要な配列データ
+
+BioProject/BioSample との連携のために [DBLINK](/ddbj/flat-file.html#DBLINK) への記載を必要とする場合、
+以下を含みますが、下記で全てを網羅している訳ではありません。
+
+<div class="attention" markdown="1">
+- メタゲノム的解析、環境プロファイル解析全般
+- 標的遺伝子を限定した配列データを相互に関連付ける場合
+- 登録予定、または、登録済みの全長規模ゲノム配列と同一菌株 (strain) に由来する配列データ
+    - 原核生物 16S rRNA 配列の報告義務がある場合
+    - 他の標的遺伝子・クラスター領域を先行発表する場合
+</div>
+
 - 上記に該当しない場合、[Web 版塩基配列登録システム (NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission.html)) のご利用をお勧めしております。
-- また、シークエンサからの出力配列 (reads) を登録する場合は [DRA; DDBJ Sequence Read Archive](/dra/index.html) をご参照ください。
+- シークエンサからの出力配列 (reads) を登録する場合は [DRA: DDBJ Sequence Read Archive](/dra/index.html) をご参照ください。
 
 ## MSS 登録の流れ  {#flow}
 
@@ -71,7 +94,7 @@ table tr:hover {
 }
 </style>
 
-**推奨:** A. 登録ファイル作成済みで申し込みいただく場合
+<!-- **推奨:** A. 登録ファイル作成済みで申し込みいただく場合 -->
 <div class="mssflow">登録ファイル作成</div>
 <div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">D-wayアカウントで https://mss.ddbj.nig.ac.jp/ にログイン</a></div>
 <div class="mssflow">MSS Form に記入、ファイルアップロード</div>
@@ -80,7 +103,7 @@ table tr:hover {
 <div class="mssflow">アクセッション番号取得</div>
 <div class="mssflowend">データ公開または公開日までhold</div>
 <p></p>
-B. 申し込んでから登録ファイルを作成する場合
+<!-- B. 申し込んでから登録ファイルを作成する場合
 <div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">D-wayアカウントで https://mss.ddbj.nig.ac.jp/ にログイン</a></div>
 <div class="mssflow">MSS Form に記入</div>
 <div class="mssflow">Mass-ID 発行・自動応答メール送付</div>
@@ -88,7 +111,7 @@ B. 申し込んでから登録ファイルを作成する場合
 <div class="mssflow">後日ファイルアップロード</div>
 <div class="mssflow">査定、質問・回答をメールでやりとり</div>
 <div class="mssflow">アクセッション番号取得</div>
-<div class="mssflowend">データ公開または公開日までhold</div>
+<div class="mssflowend">データ公開または公開日までhold</div> -->
 
 <!-- <img src="/assets/images/ddbj/MSS-flow_20200916-jp.png" alt="MSS による登録の流れ" title="" class="">  -->
 
@@ -144,14 +167,10 @@ OS: Linux
 - ツールのご利用前に[使用許諾](/ddbj/mss-tool.html#license)をご確認ください。
 
 ## アカウント作成  {#account}
+
 - D-way 登録アカウントをお持ちでない場合、[D-way](https://ddbj.nig.ac.jp/D-way/) の "Register for a new account
-" より作成して下さい。
-- SFTP 転送を利用いただくには、アカウントへの公開鍵と Center name の設定が必要です。詳細手順につきましては、[ファイルのアップロード方法](/dra/submission.html#upload-sequence-data)またはチュートリアル動画をご参照ください。
-<div class="attention" markdown="1">
-[ チュートリアル動画 ]    
-- 鍵ペアの作成 ([Windows](https://youtu.be/mggRnbxr0gQ) / [macOS](https://youtu.be/h9LbhwROtOM))
-- データの転送 ([Windows](https://youtu.be/ZxIfewrk8lI) / [macOS](https://youtu.be/A2hPlGZEW_o))
-</div>
+" より作成して下さい([ヘルプ](/account.html))。
+- SCP/SFTP 転送を利用いただくには、[アカウントへの公開鍵と Center name の設定](/account.html#register-center-name-and-public-key)が必要です。ファイル転送手順につきましては、「[データのアップロード](/upload.html)」をご参照ください。
 
 ## 登録申し込み  {#submission}
 [MSS 申し込みフォーム](https://mss.ddbj.nig.ac.jp/)から行って下さい。単一の申し込みは、以下の条件を全て満たすエントリセットの場合のみとなっております。一つでも条件が異なるエントリを登録する場合には、複数回の申し込みが必要となります。    
@@ -190,7 +209,7 @@ c. 単一真核生物個体の chromosome ドラフトゲノムとアセンブ�
 - MSS formからアップロード    
 MSS form での利用申請時に登録ファイルをアップロードできます。申請時にファイルをアップロードできない場合には、申請完了後に通知されるメールにアップロードサイトへのリンクが表示されますので、登録ファイル完成後に登録ファイルをアップロードして下さい。
 - SFTP によるファイル転送    
-ファイルサイズが合計で 10 Gbyte を超える場合は、公開鍵と秘密鍵を用いた SFTP によるファイル転送をお勧めいたします。この場合、[アカウント作成](#account)をご覧いただき、公開鍵と秘密鍵を用意してください。
+ファイルサイズが合計で 10 Gbyte を超える場合は、[公開鍵と秘密鍵](/account.html#generate-key-pair)を用いた SCP/SFTP によるファイル転送をお勧めいたします。アカウントに[Center name と認証用公開鍵を登録](/account.html#register-center-name-and-public-key)後、「[データのアップロード](/upload.html)」に従い転送してください。
 
 <div class="attention" markdown="1">
 ＜お願い＞ 特に理由のない限り、電子メール添付による登録ファイル送付はおやめください。

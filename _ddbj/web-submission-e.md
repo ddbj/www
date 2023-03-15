@@ -33,42 +33,75 @@ Before submission, read ["Submission of research data from human subjects"](/pol
 
 </div>
 
-## How to submit  {#How_to_submit}
+## DDBJ Nucleotide Sequence Submission System {#NSSS}
+
+DDBJ Nucleotide Sequence Submission System, NSSS for short, is a web-based submission tool for the assembled nucleotide sequences with appropriate annotation.
+
+### Sequence Data to be submitted via MSS, <span class="red">NOT NSSS</span> {#MSS}
+
+NSSS cannot accept either of the following sequence data.    
+The nucleotide sequence data belonging to <span class="red">either of the following cases</span> should be submitted via [Mass Submission System (MSS)](/ddbj/mss-e.html).    
+Please note the points other than number or length of your data.  
+
+#### a) Either of the following categories or amounts of sequence data
+
+<div class="attention" markdown="1">
+- [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
+  [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
+  [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
+  [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
+    - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
+- Submission with long sequences, greater than 500 kb in its length
+- Complex submission containing many features for one sequence, more than 30 features
+- Submission consists of large number of sequences, greater than 100 in total
+</div>
+
+#### b) Regardless finished or draft level, sequence data of whole-length scale replicons  
+
+<div class="attention" markdown="1">
+- (Nuclear) genome
+- Organelle genome
+- Chromosome
+- Virus/Phage genome/segments
+- Plasmid
+</div>
+
+#### c) Sequence data to be described BioProject or BioSample in DBLINK  
+
+When you need to use [DBLINK](/ddbj/flat-file-e.html#DBLINK) to link BioProject or BioSample, 
+the following cases are included, but not limited to them.    
+
+<div class="attention" markdown="1">
+- Sequence data from metagenome analyses, environmental profilings, and so on 
+- Sequence data of targeted genes to be linked each other
+- When you are planning to submit or have submitted whole genome scale data obtained from the same samples. 
+    - Required to submit prokaryotic 16S rRNA gene for phylogenic report  
+    - Advanced paper submission of any other targeted gene(s)/cluster region(s) 
+</div>
+
+
+## Illustrated guides  {#How_to_submit}
 
 - [Manual (PDF)](/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
 - [NSSS help page](/ddbj/web-submission-help-e.html)
 
-See "Related Pages" in the sidebar.
+## Before you start 
 
-OS  
-: System requirements:[Firefox](https://www.mozilla.org/ja/firefox/all/) or [Chrome](https://www.google.com/chrome/browser/desktop/index.html). Not work on Microsoft Edge.
+  - As a first step, please read the descriptions of "[Before Submission](/ddbj/submission-e.html)" and "[Required preparation before submission](/ddbj/sequence-e.html#process)".
+  - TPA:experimental and/or TPA:inferential as a small scale [TPA data](/ddbj/tpa-e.html) submission is also acceptable via this system.
+  - Trim the vector or adapter regions from the nucleotide sequences. You can check it by using [VecScreen](http://ddbj.nig.ac.jp/vecscreen/).
 
-## Submission  {#Submission}
+## How to resume the submission
+  - Save the bookmark after the clicking at each page. Then you can resume the submission from the bookmark.
 
-The first-time submission  
-: Please read the descriptions of "[Nucleotide Sequence Submission](/ddbj/submission.html)" and "[Categories for Sequence Data](/documents/data-categories-e.html)".
-: Maximum number of 1 submission: 100 (depends on PC environment/sequence length) 
-: [TPA data](/ddbj/tpa-e.html) submission is also acceptable via this system.
-: Check your sequences by [VecScreen](http://ddbj.nig.ac.jp/vecscreen/) to exclude vector sequences before submission.。
-: Use [MSS](/ddbj/mss-e.html) for:
+## Recommended internet browser
+  - [Chrome](https://www.google.com/chrome/browser/desktop/index.html) or [Firefox](https://www.mozilla.org/ja/firefox/all/)
 
-- many numbers of sequences (greater than 100)
-- long sequences (greater than 500 kb)
-- complex submission containing many features (more than 30).
-- [WGS](/ddbj/wgs-e.html), [CON](/ddbj/con-e.html), [TSA](/ddbj/tsa-e.html), [TLS](/ddbj/tls-e.html), [HTC](/ddbj/htc-e.html), [HTG](/ddbj/htg-e.html), [EST](/ddbj/est-e.html), [GSS](/ddbj/gss-e.html), STS
-
-Resume the submission  
-: You can Resume the submission from the bookmark of the page.
-
-Recommended browsers
-: We recommend to use [Firefox](https://www.mozilla.org/ja/firefox/all/) and [Chrome](https://www.google.com/chrome/browser/desktop/index.html) for this submission system. We confirmed Microsoft Edge for Windows 10 does not work to use this system.
-
-## Updates/ Questions  {#Updates/_Questions}
+## Updates, Questions   {#UpdatesQuestions}
 
   - This system accepts only new submissions. DO NOT send update request via this system.  
-    After getting accession number(s), send request/question from [Update.](/ddbj/update-e.html).
+  - Regarding the update request after you have got accession number(s), see the [Data Update](/ddbj/update-e.html#ddbj) site.
   - If you encounter any problem during submission, please contact us with "Submission ID" through [contact form](/contact-ddbj-e.html).
-
 
 <div class="start-button" markdown="1">
 
