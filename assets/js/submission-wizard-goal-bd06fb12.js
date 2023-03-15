@@ -1,4 +1,4 @@
-import{w as u,b as g,r as y,L as D,$ as r,m as d,s as B,e as w,t as p,y as A,a as R,l as M,n as P}from"./submission-wizard-af5d0c5d.js";/**
+import{w as u,b as g,r as y,L as D,$ as r,m as d,s as B,e as w,t as p,y as A,a as R,l as M,n as P}from"./submission-wizard-9ae5f9f8.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -556,7 +556,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C\u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
-`}}]},"q4-genome-organelle-mss->g-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+`}}]},"q3-genome-organelle-mss->g-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 `,ja:`<p>\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30AA\u30EB\u30AC\u30CD\u30E9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 `}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <p>In the MSS submission, you will need to:
