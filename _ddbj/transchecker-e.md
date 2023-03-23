@@ -20,7 +20,7 @@ related_pages:
     url: /ddbj/mss-form-e.html
 ---
 
-TransChecker is a software tool developed by DDBJ for checking translation into amino acid sequence from 
+TransChecker is a CUI tool developed by DDBJ for checking translation into amino acid sequence from 
 [CDS features](/ddbj/cds-e.html) that are described in
 [sequence](/ddbj/file-format-e.html#sequence) and 
 [annotation](/ddbj/file-format-e.html#annotation) files.

@@ -23,7 +23,7 @@ related_pages:
 transChecker は Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な
 [配列ファイル](/ddbj/file-format.html#sequence) と 
 [アノテーションファイル](/ddbj/file-format.html#annotation) の記載を元に、
-[CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行うツールです。
+[CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行うCUIツールです。
 
 ## インストール  {#install}
 

@@ -20,7 +20,7 @@ related_pages:
     url: /ddbj/mss-form-e.html
 ---
 
-Parser is a software tool developed by DDBJ for checking the format and the syntax of the [sequence](/ddbj/file-format-e.html#sequence) and [annotation](/ddbj/file-format-e.html#annotation) files.
+Parser is a CUI tool developed by DDBJ for checking the format and the syntax of the [sequence](/ddbj/file-format-e.html#sequence) and [annotation](/ddbj/file-format-e.html#annotation) files.
 
 ## Install  {#install}
 

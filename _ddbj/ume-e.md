@@ -20,7 +20,7 @@ related_pages:
     url: /ddbj/mss-form-e.html
 ---
 
-UME (Utilities for MSS file Error check) is a stand-alone tool to check syntax and format of [Sequence file](/ddbj/file-format-e.html#sequence) and [Annotation file](/ddbj/file-format-e.html#annotation) required for using Mass Submission System of DDBJ and to check amino acid translation of [CDS feature](/ddbj/cds-e.html) based on the description of each file. UME includes both Parser and transChecker.
+UME (Utilities for MSS file Error check) is a stand-alone GUI tool to check syntax and format of [Sequence file](/ddbj/file-format-e.html#sequence) and [Annotation file](/ddbj/file-format-e.html#annotation) required for using Mass Submission System of DDBJ and to check amino acid translation of [CDS feature](/ddbj/cds-e.html) based on the description of each file. UME includes both Parser and transChecker.
 
 ## Basic function  {#function}
 
