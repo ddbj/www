@@ -260,9 +260,16 @@ category: about
     </ul>      
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/aoki.jpg" title="Kazunori Aoki"></p>
+        <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="Tadayoshi Watanabe"></p>
         <div class="explanation">
-            <p class="name">Kazunori Aoki</p>
+            <p class="name">Tadayoshi Watanabe</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="Takehiro Kato"></p>
+        <div class="explanation">
+            <p class="name">Takehiro Kato</p>
             <p class="position">System Engineer</p>
         </div>
         </li> 
@@ -273,22 +280,8 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>        
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hirai.jpg" title="Tomohiro Hirai"></p>
-        <div class="explanation">
-            <p class="name">Tomohiro Hirai</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li>          
     </ul>
     <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="Takehiro Kato"></p>
-        <div class="explanation">
-            <p class="name">Takehiro Kato</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="Yoshimasa Takahashi"></p>
         <div class="explanation">
@@ -296,13 +289,6 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="Tadayoshi Watanabe"></p>
-        <div class="explanation">
-            <p class="name">Tadayoshi Watanabe</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li>  
     </ul>
     </div>
     <h2 id="international">International Affairs Division</h2>

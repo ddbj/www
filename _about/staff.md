@@ -287,32 +287,14 @@ category: about
         </li>  
     </ul>
     <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/aoki.jpg" title="青木 一哲"></p>
-        <div class="explanation">
-            <p class="name">青木 一哲</p>
-            <p class="name">Kazunori Aoki</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li> 
         <li class="staff"> 
-        <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="芦澤 祐治"></p>
+        <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="渡辺忠剛"></p>
         <div class="explanation">
-            <p class="name">芦澤 祐治</p>
-            <p class="name">Yuji Ashizawa</p>
+            <p class="name">渡辺 忠剛</p>
+            <p class="name">Tadayoshi Watanabe</p>
             <p class="position">運用 SE</p>
         </div>
-        </li>        
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hirai.jpg" title="平井 朝裕"></p>
-        <div class="explanation">
-            <p class="name">平井 朝裕</p>
-            <p class="name">Tomohiro Hirai</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li>          
-    </ul>
-    <ul class="list">     
+        </li>      
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="加藤 健弘"></p>
         <div class="explanation">
@@ -322,6 +304,16 @@ category: about
         </div>
         </li>   
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="芦澤 祐治"></p>
+        <div class="explanation">
+            <p class="name">芦澤 祐治</p>
+            <p class="name">Yuji Ashizawa</p>
+            <p class="position">運用 SE</p>
+        </div>
+        </li>        
+    </ul>
+    <ul class="list">
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="高橋 良昌"></p>
         <div class="explanation">
             <p class="name">高橋 良昌</p>
@@ -329,14 +321,6 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="渡辺忠剛"></p>
-        <div class="explanation">
-            <p class="name">渡辺 忠剛</p>
-            <p class="name">Tadayoshi Watanabe</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li>      
     </ul>
     </div>
     <h2 id="international">国際連携部門</h2>
