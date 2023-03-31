@@ -17,6 +17,8 @@ category: about
             <p class="position">センター長</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="大久保公策"></p>
         <div class="explanation">
@@ -36,6 +38,14 @@ category: about
         </li>
     </ul>
     </div>
+</article>
+
+* [データベース部門](#database)
+* [システム管理部門](#hpc)
+* [国際連携部門](#international)
+* [国内連携部門](#domestic)
+
+<article class="staff-view">
     <h2 id="database">データベース部門</h2>
     <div class="wrapper">
     <ul class="list">
@@ -329,7 +339,7 @@ category: about
         </li>      
     </ul>
     </div>
-    <h2 id="international-affairs">国際連携部門</h2>
+    <h2 id="international">国際連携部門</h2>
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
@@ -351,7 +361,7 @@ category: about
         </li>
     </ul>
     </div>
-    <h2 id="domestic-affairs">国内連携部門</h2>
+    <h2 id="domestic">国内連携部門</h2>
     <div class="wrapper">
     <ul class="list">
         <li class="staff">

@@ -16,6 +16,8 @@ category: about
             <p class="position">Head</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="Kosaku Okubo"></p>
         <div class="explanation">
@@ -24,18 +26,24 @@ category: about
             <p class="position">Former Head</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tanizawa.jpg" title="Yasuhiro Tanizawa, PhD"></p>
             <div class="explanation">
                 <p class="name">Yasuhiro Tanizawa, PhD</p>
                 <p class="position">Assistant Professor</p>
-                <p class="position">&nbsp;</p>
+                <p class="position"></p>
             </div>
         </li>
     </ul>
     </div>    
+</article>
+
+* [Database Division](#database)
+* [High Performance Computing Division](#hpc)
+* [International Affairs Division](#international)
+* [Domestic Affairs Division](#domestic)
+
+<article class="staff-view">
     <h2 id="database">Database Division</h2>
     <div class="wrapper">
     <ul class="list">
@@ -297,7 +305,7 @@ category: about
         </li>  
     </ul>
     </div>
-    <h2 id="international-affairs">International Affairs Division</h2>
+    <h2 id="international">International Affairs Division</h2>
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
@@ -317,7 +325,7 @@ category: about
         </li>
     </ul>
     </div>
-    <h2 id="domestic-affairs">Domestic Affairs Division</h2>
+    <h2 id="domestic">Domestic Affairs Division</h2>
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
