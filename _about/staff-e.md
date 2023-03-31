@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: Faculty Staff of DDBJ
+title: Staff
 lang: en
 category: about
 ---

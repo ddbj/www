@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: DDBJ 運営スタッフ
+title: スタッフ
 lang: ja
 category: about
 ---
