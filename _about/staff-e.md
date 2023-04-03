@@ -1,11 +1,12 @@
 ---
 layout: indexed_content
-title: Staff
+title: Member
 lang: en
 category: about
 ---
 
 <article class="staff-view">    
+    <h2 id="staff">Staff</h2>
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
@@ -19,11 +20,44 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="Kosaku Okubo"></p>
+        <p class="photo"><img src="/assets/images/staff/ogasawara.jpg" title="Osamu Ogasawara"></p>
         <div class="explanation">
-            <p class="name">Kosaku Okubo, MD, PhD</p>
+            <p class="name">Osamu Ogasawara, PhD</p>
+            <p class="position">Project Associate Professor</p>
+            <p class="position">High Performance Computing Division, Head</p>
+        </div>
+        </li>
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="Takatomo Fujisawa"></p>
+            <div class="explanation">
+                <p class="name">Takatomo Fujisawa, PhD</p>
+                <p class="position">Database Division, Head</p>
+            </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="Yasukazu Nakamura"></p>
+        <div class="explanat,">
+            <p class="name">Yasukazu Nakamura, PhD</p>
             <p class="position">Professor</p>
-            <p class="position">Former Head</p>
+            <p class="position">International Affairs Division, Head</p>
+        </div>
+        </li>
+    </ul>
+    <ul class="list">        
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="Shizuka Koshimizu"></p>
+            <div class="explanation">
+                <p class="name">Shizuka Koshimizu, PhD</p>
+                <p class="position">Assistant Professor</p>
+                <p class="position">International Affairs Division</p>
+            </div>
+        </li>
+       <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="Tomoya Tanjo"></p>
+        <div class="explanation">
+            <p class="name">Tomoya Tanjo, PhD</p>
+            <p class="position">Assistant Professor</p>
+            <p class="position">Domestic Affairs Division, Head</p>
         </div>
         </li>
         <li class="staff">
@@ -31,30 +65,22 @@ category: about
             <div class="explanation">
                 <p class="name">Yasuhiro Tanizawa, PhD</p>
                 <p class="position">Assistant Professor</p>
-                <p class="position"></p>
+                <p class="position">Domestic Affairs Division</p>
             </div>
+        </li>
+    </ul>
+    <ul class="list">        
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="Kosaku Okubo"></p>
+        <div class="explanation">
+            <p class="name">Kosaku Okubo, MD, PhD</p>
+            <p class="position">Professor</p>
+        </div>
         </li>
     </ul>
     </div>    
-</article>
-
-* [Database Division](#database)
-* [High Performance Computing Division](#hpc)
-* [International Affairs Division](#international)
-* [Domestic Affairs Division](#domestic)
-
-<article class="staff-view">
     <h2 id="database">Database Division</h2>
     <div class="wrapper">
-    <ul class="list">
-            <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="Takatomo Fujisawa"></p>
-            <div class="explanation">
-                <p class="name">Takatomo Fujisawa, PhD</p>
-                <p class="position">Division Head</p>
-            </div>
-        </li>
-    </ul>
     <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kodama.jpg" title="Yuichi Kodama"></p>
@@ -230,16 +256,6 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ogasawara.jpg" title="Osamu Ogasawara"></p>
-        <div class="explanation">
-            <p class="name">Osamu Ogasawara, PhD</p>
-            <p class="position">Project Associate Professor</p>
-            <p class="position">Division Head</p>
-        </div>
-        </li>
-    </ul>
-    <ul class="list">
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="Yoshihiro Okuda"></p>
         <div class="explanation">
             <p class="name">Yoshihiro Okuda, PhD</p>
@@ -287,39 +303,6 @@ category: about
         <div class="explanation">
             <p class="name">Yoshimasa Takahashi</p>
             <p class="position">System Engineer</p>
-        </div>
-        </li>
-    </ul>
-    </div>
-    <h2 id="international">International Affairs Division</h2>
-    <div class="wrapper">
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="Yasukazu Nakamura"></p>
-        <div class="explanation">
-            <p class="name">Yasukazu Nakamura, PhD</p>
-            <p class="position">Professor</p>
-            <p class="position">Division Head</p>
-        </div>
-        </li>
-        <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="Shizuka Koshimizu"></p>
-            <div class="explanation">
-                <p class="name">Shizuka Koshimizu, PhD</p>
-                <p class="position">Assistant Professor</p>
-            </div>
-        </li>
-    </ul>
-    </div>
-    <h2 id="domestic">Domestic Affairs Division</h2>
-    <div class="wrapper">
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="Tomoya Tanjo"></p>
-        <div class="explanation">
-            <p class="name">Tomoya Tanjo, PhD</p>
-            <p class="position">Assistant Professor</p>
-            <p class="position">Division Head</p>
         </div>
         </li>
     </ul>

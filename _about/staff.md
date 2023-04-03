@@ -1,11 +1,12 @@
 ---
 layout: indexed_content
-title: スタッフ
+title: メンバー
 lang: ja
 category: about
 ---
 
 <article class="staff-view">
+    <h2 id="staff">スタッフ</h2>
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
@@ -20,12 +21,49 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="大久保公策"></p>
+        <p class="photo"><img src="/assets/images/staff/ogasawara.jpg" title="小笠原理"></p>
         <div class="explanation">
-            <p class="name">大久保 公策</p>
-            <p class="name">Kosaku Okubo, MD, PhD</p>
+            <p class="name">小笠原 理</p>
+            <p class="name">Osamu Ogasawara, PhD</p>
+            <p class="position">特任准教授</p>
+            <p class="position">システム管理部門長</p>
+        </div>
+        </li>
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="藤澤貴智"></p>
+            <div class="explanation">
+                <p class="name">藤澤 貴智</p>
+                <p class="name">Takatomo Fujisawa, PhD</p>
+                <p class="position">データベース部門長</p>
+            </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="中村保一"></p>
+        <div class="explanation">
+            <p class="name">中村 保一</p>
+            <p class="name">Yasukazu Nakamura, PhD</p>
             <p class="position">教授</p>
-            <p class="position">前センター長</p>
+            <p class="position">国際連携部門長</p>
+        </div>
+        </li>
+    </ul>
+    <ul class="list">
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="越水静"></p>
+            <div class="explanation">
+                <p class="name">越水 静</p>
+                <p class="name">Shizuka Koshimizu, PhD</p>
+                <p class="position">助教</p>
+                <p class="position">国際連携部門</p>
+            </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="丹生智也"></p>
+        <div class="explanation">
+            <p class="name">丹生 智也</p>
+            <p class="name">Tomoya Tanjo, PhD</p>
+            <p class="position">助教</p>
+            <p class="position">国内連携部門長</p>
         </div>
         </li>
         <li class="staff">
@@ -34,30 +72,23 @@ category: about
                 <p class="name">谷澤 靖洋</p>
                 <p class="name">Yasuhiro Tanizawa, PhD</p>
                 <p class="position">助教</p>
+                <p class="position">国内連携部門</p>
             </div>
+        </li>
+    </ul>
+    <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="大久保公策"></p>
+        <div class="explanation">
+            <p class="name">大久保 公策</p>
+            <p class="name">Kosaku Okubo, MD, PhD</p>
+            <p class="position">教授</p>
+        </div>
         </li>
     </ul>
     </div>
-</article>
-
-* [データベース部門](#database)
-* [システム管理部門](#hpc)
-* [国際連携部門](#international)
-* [国内連携部門](#domestic)
-
-<article class="staff-view">
     <h2 id="database">データベース部門</h2>
     <div class="wrapper">
-    <ul class="list">
-        <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="藤澤貴智"></p>
-            <div class="explanation">
-                <p class="name">藤澤 貴智</p>
-                <p class="name">Takatomo Fujisawa, PhD</p>
-                <p class="position">部門長</p>
-            </div>
-        </li>
-    </ul>
     <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kodama.jpg" title="児玉 悠一"></p>
@@ -254,17 +285,6 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ogasawara.jpg" title="小笠原理"></p>
-        <div class="explanation">
-            <p class="name">小笠原 理</p>
-            <p class="name">Osamu Ogasawara, PhD</p>
-            <p class="position">特任准教授</p>
-            <p class="position">部門長</p>
-        </div>
-        </li>
-    </ul>
-    <ul class="list">
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="奥田喜弘"> </p>
         <div class="explanation">
             <p class="name">奥田 喜弘</p>
@@ -319,42 +339,6 @@ category: about
             <p class="name">高橋 良昌</p>
             <p class="name">Yoshimasa Takahashi</p>
             <p class="position">運用 SE</p>
-        </div>
-        </li>
-    </ul>
-    </div>
-    <h2 id="international">国際連携部門</h2>
-    <div class="wrapper">
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="中村保一"></p>
-        <div class="explanation">
-            <p class="name">中村 保一</p>
-            <p class="name">Yasukazu Nakamura, PhD</p>
-            <p class="position">教授</p>
-            <p class="position">部門長</p>
-        </div>
-        </li>
-        <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="越水静"></p>
-            <div class="explanation">
-                <p class="name">越水 静</p>
-                <p class="name">Shizuka Koshimizu, PhD</p>
-                <p class="position">助教</p>
-            </div>
-        </li>
-    </ul>
-    </div>
-    <h2 id="domestic">国内連携部門</h2>
-    <div class="wrapper">
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="丹生智也"></p>
-        <div class="explanation">
-            <p class="name">丹生 智也</p>
-            <p class="name">Tomoya Tanjo, PhD</p>
-            <p class="position">助教</p>
-            <p class="position">部門長</p>
         </div>
         </li>
     </ul>
