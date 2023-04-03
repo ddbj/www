@@ -6,7 +6,6 @@ category: about
 ---
 
 <article class="staff-view">    
-    <h2 id="staff">Staff</h2>
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
