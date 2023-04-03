@@ -37,7 +37,7 @@ category: about
     <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="Yasukazu Nakamura"></p>
-        <div class="explanat,">
+        <div class="explanation">
             <p class="name">Yasukazu Nakamura, PhD</p>
             <p class="position">Professor</p>
             <p class="position">International Affairs Division, Head</p>
