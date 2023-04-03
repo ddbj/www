@@ -1,12 +1,11 @@
 ---
 layout: indexed_content
-title: メンバー
+title: スタッフ
 lang: ja
 category: about
 ---
 
 <article class="staff-view">
-    <h2 id="staff">スタッフ</h2>
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
@@ -37,6 +36,8 @@ category: about
                 <p class="position">データベース部門長</p>
             </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="中村保一"></p>
         <div class="explanation">
@@ -46,8 +47,6 @@ category: about
             <p class="position">国際連携部門長</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="越水静"></p>
             <div class="explanation">
@@ -57,6 +56,8 @@ category: about
                 <p class="position">国際連携部門</p>
             </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="丹生智也"></p>
         <div class="explanation">

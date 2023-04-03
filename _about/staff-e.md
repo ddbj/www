@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: Member
+title: Staff
 lang: en
 category: about
 ---
@@ -34,6 +34,8 @@ category: about
                 <p class="position">Database Division, Head</p>
             </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="Yasukazu Nakamura"></p>
         <div class="explanat,">
@@ -42,8 +44,6 @@ category: about
             <p class="position">International Affairs Division, Head</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">        
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="Shizuka Koshimizu"></p>
             <div class="explanation">
@@ -52,6 +52,8 @@ category: about
                 <p class="position">International Affairs Division</p>
             </div>
         </li>
+    </ul>
+    <ul class="list">
        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="Tomoya Tanjo"></p>
         <div class="explanation">
