@@ -11,7 +11,7 @@ lang: ja
 ---
 
 アップロードされたデータファイルは Run 単位で処理されます。Run にリンクしている全てのデータファイルから [SRA toolkit](http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc)
-により[バイナリーの SRA ファイル](http://www.ncbi.nlm.nih.gov/books/NBK47539/#SRA_Overview_BK.SRA_Architecture)が作成されます。この過程でリード長やリード名の書式などが全ての配列に渡ってチェックされます。  
+により[バイナリーの SRA ファイル](https://www.ncbi.nlm.nih.gov/sra/docs/sra-data-formats/)が作成されます。この過程でリード長やリード名の書式などが全ての配列に渡ってチェックされます。  
 元々のリード名は Run 単位でユニークである必要があります。
 
 リード名は編集され、DRR アクセッション番号に連番が付された ID が自動的に挿入されます。ファイル名には DRR
