@@ -116,8 +116,8 @@ biosample:
           url: /biosample/genome-assembly-sample.html 
         - title: Human Sample  
           url: /biosample/human-sample.html 
-        - title: Example files	
-          url: https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482	
+        - title: Example  
+          url: /biosample/example.html  
     - id: faq	
       title: FAQ	
       url: /faq/ja/index.html?tag=biosample	
@@ -152,8 +152,8 @@ biosample:
           url: /biosample/genome-assembly-sample-e.html 
         - title: Human Sample  
           url: /biosample/human-sample-e.html 
-        - title: Example files
-          url: https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482
+        - title: Example  
+          url: /biosample/example-e.html  
     - id: faq
       title: FAQ
       url: /faq/en/index-e.html?tag=biosample
@@ -370,14 +370,20 @@ dra:
     - id: home
       title: Home
       url: /dra/index.html
-    - id: submission
-      title: Submission
-      url: /dra/submission.html
+    - id: overview
+      title: Overview
+      url: /dra/overview.html
       children:
+        - title: Submission
+          url: /dra/submission.html
         - title: Metadata
           url: /dra/metadata.html
         - title: Data Files
           url: /dra/datafile.html
+        - title: Update
+          url: /dra/update.html
+        - title: Example
+          url: /dra/example.html
     - id: faq
       title: FAQ
       url: /faq/ja/index.html?tag=dra
@@ -399,14 +405,20 @@ dra:
     - id: home	
       title: Home	
       url: /dra/index-e.html	
-    - id: submission
-      title: Submission
-      url: /dra/submission-e.html
+    - id: overview
+      title: Overview
+      url: /dra/overview-e.html
       children:
+        - title: Submission
+          url: /dra/submission-e.html
         - title: Metadata
           url: /dra/metadata-e.html
         - title: Data Files
           url: /dra/datafile-e.html
+        - title: Update
+          url: /dra/update-e.html
+        - title: Example
+          url: /dra/example-e.html
     - id: faq	
       title: FAQ	
       url: /faq/en/index-e.html?tag=dra	
@@ -478,6 +490,8 @@ gea:
           url: /gea/single-cell.html	
         - title: Spatial gene expression  
           url: /gea/spatial-gene-expression.html  
+        - title: Data without reference sequences  
+          url: /gea/data-without-reference.html  
         - title: Example	
           url: /gea/example.html	
         - title: Array Design	
@@ -525,6 +539,8 @@ gea:
           url: /gea/single-cell-e.html
         - title: Spatial gene expression  
           url: /gea/spatial-gene-expression-e.html  
+        - title: Data without reference sequences  
+          url: /gea/data-without-reference-e.html  
         - title: Example
           url: /gea/example-e.html
         - title: Array Design

@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: Parser User’s Manual
+title: Parser User's Manual
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
@@ -10,9 +10,9 @@ related_pages:
     url: /ddbj/file-format-e.html
   - title: Validation tools for MSS data files
     url: /ddbj/mss-tool-e.html
-  - title: UME User’s manual
+  - title: UME User's manual
     url: /ddbj/ume-e.html
-  - title: transChecker User’s Manual
+  - title: transChecker User's Manual
     url: /ddbj/transchecker-e.html
   - title: Validator error message
     url: /ddbj/validator-e.html
@@ -20,133 +20,107 @@ related_pages:
     url: /ddbj/mss-form-e.html
 ---
 
-Parser is a software tool developed by DDBJ for checking the format and the syntax of the [sequence](/ddbj/file-format-e.html#sequence) and [annotation](/ddbj/file-format-e.html#annotation) files.
+Parser is a CUI tool developed by DDBJ for checking the format and the syntax of the [annotation](/ddbj/file-format-e.html#annotation) and [nucleotide sequence](/ddbj/file-format-e.html#sequence) files.
 
-## Install  {#install}
+## Installation  {#install}
 
-<ol>
-  <li>
-    Access and get Parser.tar.gz file from <a href="/ddbj/mss-tool.html">Validation tools for MSS data files</a>.
-  </li>
-  <li>
-    Uncompress tar.gz file.<br>
-<pre>
-<code>
-$ gunzip Parser.tar.gz
-</code>
-</pre>
-  </li>
-  <li>
-    Extract the file tar command<br>
-<pre>
-<code>
-$ tar xvf Parser.tar
-</code>
-</pre>
-  </li>
-  <li>
-    directory is created<br>  
-    Check the contents of the directory<br>
-  <pre>
-    <code>
-$ cd jParser
-$ ls -FC
-jParser.sh* jar/    license.txt resource/
-    </code>
-  </pre><br>
-    <table>
-      <tbody>
-        <tr>
-          <th>jParser.sh</th>
-          <td>executable file</td>
-        </tr>
-        <tr>
-          <th>jar/</th>
-          <td>directory which includes class-library of Java (DO NOT change)</td>
-        </tr>
-        <tr>
-          <th>license.txt</th>
-          <td>End-user license agreement (DO NOT change)</td>
-        </tr>
-        <tr>
-          <th>resources/</th>
-          <td>directory which includes resource files (DO NOT change)</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-    Change the file jParser.sh according to your system environment.
-<pre>
-  <code>
-#!/bin/sh
+### 1. Getting the Parser file  {#install-1}
+Download Parser_V#.##.tar.gz (# shows the version number) file from [Validation tools for MSS data files](/ddbj/mss-tool-e.html).
 
+### 2. Decompressing  {#install-2}
+```
+$ gunzip -c Parser_V#.##.tar.gz | tar xvf -
+```
+
+The jParser directory is created after decompressing the tar.gz file. The jParser directory contains the following files and directories.
+
+```
+$ ls -FC jParser/
+jParser.sh*  jar/    license.txt resource/
+```
+
+<table><tbody>
+<tr>
+	<th>jParser.sh</th>
+	<td>Executable shell script</td>
+</tr>
+<tr>
+	<th>jar/</th>
+	<td>Includes class-library of Java (DO NOT change)</td>
+</tr>
+<tr>
+	<th>license.txt</th>
+	<td>End-user license agreement (DO NOT change)</td>
+</tr>
+<tr>
+	<th>resources/</th>
+	<td>Includes resource files (DO NOT change)</td>
+</tr>
+</tbody></table>
+
+### 3. Editing the shell script  {#install-3}
+Edit the part of jParser.sh in accordance with the installed directory. You can use nano, vi etc. to edit the file.
+
+e.g.) You have decompressed the parser file on /home/mass directory.
+```
+$ cd /home/mass/jParser
+$ nano jParser.sh
+```
+Specify the full directory path of jParser against PARSER_DIR=.
+```
 # Parser installed directory
 PARSER_DIR=./
-
-# Set maximum Java heap size
-HEAP_SIZE=128m
-
-# Parser's resource files(qual.list, ... *.list) path
-# Don't change.
-RESOURCE_FILE_PATH=$PARSER_DIR/resource
-
-# Parser's main class
-# Don't change.
-PARSER=tsunami.util.excel.ExcelParser
-
-# Execution Command
-# Don't change.
-java -Xmx$HEAP_SIZE -classpath $PARSER_DIR/jar/jParser.jar
--DPARSER_RESOURCE_PATH=$RESOURCE_FILE_PATH $PARSER -Cclean $@
-
-RETVAL=$?
-
-exit $RETVAL
-#EOF
-      </code>
-    </pre>
-  <dl>
-      <dt>[PARSER\_DIR parameter\]</dt>  
-      <dd>Enter the full path name of jParser directory.</dd>
-      <dd>ex) PARSER\_DIR=/home/mass/jParser</dd>
-      <dt>[HEAP\_SIZE parameter\]</dt> 
-      <dd>Enter the maximum memory of jParser.</dd>
-      <dd>ex) HEAP\_SIZE=128m</dd>
-    </dl>
-  </li>
-  <li>
-  Set PATH<br>  
-  Set PATH the directory which includes jParser.sh.
-  </li>
-</ol>
-
-## Execution  {#exec}
-
-Execute jParser.sh by the command below;
-
-```
-$ jParser.sh[space]-x[annotation file name][space]-s[sequence file name]
+  ↓
+# Parser installed directory
+PARSER_DIR=/home/mass/jParser
 ```
 
-ex)
-
+## How to use  {#exec}
 ```
-$ jParser.sh -xsample.ann -ssample.fasta
+cd <jParser directory>
+./jParser.sh -x <filename> -s <filename> [-e <filename> -M <memory size>]
 ```
 
-You can specify locations of files in both ways, relative and full path names.  
-**macOS: Regarding the available file names**<br> 
-DO NOT use multibyte character(s) for any file or folder name of [Sequence file](/ddbj/file-format-e.html#sequence) or [Annotation file](/ddbj/file-format-e.html#annotation) when you use our tools on some versions of macOS. Tools may not work when multibyte character is included in the file or folder name.
+Available options. Regarding the filename, you can specify the location in relative path or full path.
 
-\-x\[<span class="font-br font-normal">annotation file name</span>\]  
-: This option is required. When the option is not specified, this tool is terminated. An annotation file is the tab delimited text file consisting of five columns of Entry, Feature, Location, Qualifier, and Value that contains your data other than sequences, such as submitters, references and biological features. Please refer to [Submission File Format：Annotation File](/ddbj/file-format-e.html#annotation), in detail.
-
-\-s\[<span class="font-br font-normal">sequence file name</span>\]  
-: This option is required. When the option is not specified, this tool is terminated. The sequence file is a text file in FASTA format contains all nucleotide sequences. Please refer to [Submission File Format：Sequence File](/ddbj/file-format-e.html#sequence), in detail.
-
+**-x \<Annotation file\>**    
+Mandatory. Specify the annotation file here. Please refer to [Submission File Format：Annotation File](/ddbj/file-format-e.html#annotation) as to the file format and the syntax of the annotation file.
+```
+-x sample.ann
+```
+**-s \<Nucleotide sequence file\>**    
+Mandatory. Specify the nucleotide sequence file here. Please refer to [Submission File Format：Sequence File](/ddbj/file-format-e.html#sequence) as to the format of the nucleotide sequence file.
+```
+-s sample.fasta
+```
+**-e \<Output file name\>**    
+Optional. Specify the output file name to save the result. The result is displayed on the screen when the option is not used.
+```
+-e result.txt
+```
+**-M \<Maximum memory size\>**    
+Optional. Specify the maximum memory in megabyte size for running the command. You should use the option when the file size of the annotation or nucleotide sequence is large. If the option is not applied, the value of DEFAULT_MAX_HEAP in jParser.sh script is used for the memory size.
+```
+-M 8192m
+```
 
 <div class="attention" markdown="1">
-When an error occurs, the parser outputs an error message.  
-Please reffer: [Parser Error Messages](/ddbj/validator-e.html#parser), in detail.
+**macOS: Regarding the available file names**
+
+DO NOT use multibyte character(s) for any file or folder name of [Annotation file](/ddbj/file-format-e.html#annotation) or [Nucleotide sequence file](/ddbj/file-format-e.html#sequence) when you use our tools on some versions of macOS. Tools may not work when multibyte character is included in the file or folder name.
 </div>
+
+### Examples  {#exec-eg}
+e.g. 1
+```
+$ cd /home/mass/jParser
+$ ./jParser.sh -x sample1.ann -s sample1.fasta
+```
+e.g. 2
+```
+$ cd /home/mass/jParser
+$ ./jParser.sh -x sample2.ann -s sample2.fasta -M 16384m -e result.txt
+```
+
+## Error messages  {#error}
+When an error occurs, the parser outputs an error message. Please refer to [Validator error message: Parser](/ddbj/validator-e.html#Parser) for details.

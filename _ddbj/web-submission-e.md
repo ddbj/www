@@ -37,9 +37,13 @@ Before submission, read ["Submission of research data from human subjects"](/pol
 
 DDBJ Nucleotide Sequence Submission System, NSSS for short, is a web-based submission tool for the assembled nucleotide sequences with appropriate annotation.
 
-### NSSS cannot receive the following submission
+### Sequence Data to be submitted via MSS, <span class="red">NOT NSSS</span> {#MSS}
 
-The nucleotide sequences indicated below should be submitted to [Mass Submission System (MSS)](/ddbj/mss-e.html).
+NSSS cannot accept either of the following sequence data.    
+The nucleotide sequence data belonging to <span class="red">either of the following cases</span> should be submitted via [Mass Submission System (MSS)](/ddbj/mss-e.html).    
+Please note the points other than number or length of your data.  
+
+#### a) Either of the following categories or amounts of sequence data
 
 <div class="attention" markdown="1">
 - [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
@@ -47,13 +51,34 @@ The nucleotide sequences indicated below should be submitted to [Mass Submission
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
   [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
     - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
-- Submission with long sequences.  
-    - greater than 500 kb in its length
-- Complex submission containing many features  
-    - more than 30 features
-- Submission consists of large number of sequences.  
-    - greater than 100
+- Submission with long sequences, greater than 500 kb in its length
+- Complex submission containing many features for one sequence, more than 30 features
+- Submission consists of large number of sequences, greater than 100 in total
 </div>
+
+#### b) Regardless finished or draft level, sequence data of whole-length scale replicons  
+
+<div class="attention" markdown="1">
+- (Nuclear) genome
+- Organelle genome
+- Chromosome
+- Virus/Phage genome/segments
+- Plasmid
+</div>
+
+#### c) Sequence data to be described BioProject or BioSample in DBLINK  
+
+When you need to use [DBLINK](/ddbj/flat-file-e.html#DBLINK) to link BioProject or BioSample, 
+the following cases are included, but not limited to them.    
+
+<div class="attention" markdown="1">
+- Sequence data from metagenome analyses, environmental profilings, and so on 
+- Sequence data of targeted genes to be linked each other
+- When you are planning to submit or have submitted whole genome scale data obtained from the same samples. 
+    - Required to submit prokaryotic 16S rRNA gene for phylogenic report  
+    - Advanced paper submission of any other targeted gene(s)/cluster region(s) 
+</div>
+
 
 ## Illustrated guides  {#How_to_submit}
 

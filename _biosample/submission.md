@@ -52,7 +52,9 @@ BioSample を新規登録する場合は左のタブから順番に内容を英�
 * [属性一覧と説明](/biosample/attribute.html)
 * [属性ファイルの記入例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)
 
-ファイルはタブで区切られているので、エクセルなどの表計算ソフトで編集することができます。一行目には属性名が記載されています。\* で示されている属性は必須です。二行目以降に１行１サンプルで入力していきます。  
+ファイルはタブで区切られているので、エクセルなどの表計算ソフトで編集することができます。一行目には属性名が記載されています。\* で示されている属性は必須です。二行目以降に１行１サンプルで入力していきます。   
+
+{% include image.html url="books/bs-tsv.jpg" caption="エクセルでの記入方法" class="w500" %}
 
 <div class="attention">
 サンプル属性のタブ区切りテキストファイルでは１行に１サンプルの属性を入力します。

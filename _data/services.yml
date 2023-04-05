@@ -90,24 +90,6 @@ items:
       - submission
       - annotation
 
-  - name: Maser
-    formal_name: Management and Analysis System for Enormous Reads
-    service_link:
-      en: http://cell-innovation.nig.ac.jp/maser/index_en.html
-      ja: http://cell-innovation.nig.ac.jp/maser/index_ja.html
-    help:
-      en: http://cell-innovation.nig.ac.jp/maser/UserGuide/manual_top.html#Maser
-      ja: http://cell-innovation.nig.ac.jp/maser/UserGuide/manual_top.html#Maser
-    description:
-      en: Maser is a web based analysis environment especially for data from Next Generation Sequencers. This service has been developed by Cell Innovation Program etc.
-      ja: 次世代シークエンサから出力されたデータを解析するためのウェブベースの解析環境です。セルイノベーションプログラム等で開発されました。
-    target_data:
-      en: Next-generation sequencing data
-      ja: 次世代シークエンサから出力されたデータ
-    provider: BINDS
-    tags:
-      - analysis
-
   - name: VecScreen
     formal_name: VecScreen
     service_link:

@@ -15,7 +15,7 @@ addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/load
 ---
 
 {: #ddbj-release}
-## DDBJ Data Release
+## DDBJ data release
 
 <div id="ddbj-release-growth-chart"></div>
 
@@ -23,8 +23,6 @@ addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/load
 <br>
 
 CON and TPA divisions are not included in the release statistics due to the following reasons. CON: CON division records are constructed from other sequence records and their inclusion would be a form of double-counting. TPA: TPA division records are not original data obtained by submitters.
-
-Because very large-scale sequence data has been distributed by GenBank/ENA and DDBJ is not able to accomodate records with accession numbers in a new format, our latest release lacks large portion of GenBank/ENA's bulk sequence data.
 
 [Source data
 table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=161698998)
@@ -45,6 +43,10 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 <div id="gea-release_stat_area"></div>
 
 
+{: #metabobank-release}
+## MetaboBank data release
+
+<div id="metabobank-release_stat_area"></div>
 
 {: #jga-release}
 ## JGA data release
@@ -54,7 +56,7 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 {: #ddbj-submission}
-## Data Submission to DDBJ
+## DDBJ data submission
 
 - Web Submission: [Submission to Nucleotide Sequence Submission System](/ddbj/web-submission-e.html)
 - MSS Submission: [Submission to Mass Submission System](/ddbj/mss-e.html)
@@ -65,21 +67,24 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 {: #dra-submission}
-## Data Submission to DRA
+## DRA data submission
 
 <div id="dra-submission_stat_area"></div>
 
-
-
 {: #gea-submission}
-## Data Submission to GEA
+## GEA data submission
 
 <div id="gea-submission_stat_area"></div>
 
 
+{: #metabobank-submission}
+## MetaboBank data submission
+
+<div id="metabobank-submission_stat_area"></div>
+
 
 {: #jga-submission}
-## Data Submission to JGA
+## JGA data submission
 
 <div id="jga-submission_stat_area"></div>
 

@@ -142,16 +142,17 @@ related_pages:
 通常は [/isolate](/ddbj/qualifiers.html#isolate) qualifier の記載を強く推奨します。    
 SARS-CoV-2 などのような高頻度に登録される病原ウイルスでは [/isolate](/ddbj/qualifiers.html#isolate) qualifier に 
 [ICTV](https://ictv.global/ ) が推奨する以下の書式で ID を記載することを強く勧めています。     
--   書式: [virus_type]/[host_common_name]/[locality_name]/[sample_identifier]/[year]
--   記載例: SARS-CoV-2/human/Japan/A12/2021
--   virus_type: ウイルスの略称
--   host_common_name: [/host](/ddbj/qualifiers.html#host) qualifier に示す宿主の通用名
--   locality_name: [/country](/ddbj/qualifiers.html#country) qualifier に示す採取地名より国名あるいは地域名
--   sample_identifier: 登録者・採取者が割り当てた任意の識別子・番号
--   year: [/collection_date](/ddbj/qualifiers.html#collection_date) qualifier に示す採取日の年号
+- 書式: [virus_type]/[host_common_name]/[locality_name]/[sample_identifier]/[year]    
+    virus_type: ウイルスの略称、もしくは、genotype 他、タイプ区分    
+    host_common_name: [/host](/ddbj/qualifiers.html#host) qualifier に示す宿主の通用名     
+    locality_name: [/country](/ddbj/qualifiers.html#country) qualifier に示す採取地名より国名あるいは地域名     
+    sample_identifier: 登録者・採取者が割り当てた任意の識別子・番号     
+    year: [/collection_date](/ddbj/qualifiers.html#collection_date) qualifier に示す採取日の年号     
+- 記載例: SARS-CoV-2/human/Japan/A12/2021
 
-厳密には純系と確認することは難しいですが、慣習的に [/strain](/ddbj/qualifiers.html#strain) qualifier を記載されているケースも多いため、記載しています。    
-genotype, genogroup はウイルスの種・系統に準ずるようなものであり、サンプル識別子とは なり得ないことにご注意ください。    
+厳密には、感染細胞の培養を経るなどしなければ、純系と確認することは難しいですが、慣習的に [/strain](/ddbj/qualifiers.html#strain) qualifier を記載されているケースも多いため、受け付けます。    
+ただし、/isolate qualifier の記載を推奨します。    
+genotype, genogroup などは、種・系統に準ずるようなもので、サンプル識別子とは なり得ないことにご注意ください。    
 
 ### 環境サンプル  {#env}
 

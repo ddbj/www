@@ -3,21 +3,19 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: Data Files
 category: dra
-current_tab: submission
+current_tab: overview
 lang: en
 ---
 
 <div class="attention" markdown="1">
 - Make sure the file names are constructed only from alphanumeral [A-Z,a-z,0-9], underscores [_], hyphens [-] and dots [.], with no whitespaces, brackets, other punctuations or symbols.
 - Barcoded data files should be demultiplexed prior to submission and a unique BioSample should be created for each barcoded sample; in other words, each BioSample must be linked to one or more unique data files.
-- In case of fastq files, submit paired reads in separate files. For bam files, paired reads need to be described in single file.
+- In case of fastq files, submit paired reads in separate files in a Run. For bam files, paired reads need to be described in single file.
 - Upload data files directly under a submission directory. Submitted archive files should NOT contain any directory structure.
 - Binary data formats, including BAM and HDF5 should be submitted without applying any additional compression.
 </div>
 
 ## General formats {#general}
-
-For the 10x Genomics data files, please see the GEA [Single-cell submission guide](/gea/single-cell-e.html).
 
 ### fastq  {#fastq} 
 
@@ -26,16 +24,15 @@ Run filetype needs to be specified depending on whether read length is constant 
 Format of fastq, for details, please see [NCBI website](https://www.ncbi.nlm.nih.gov/books/NBK242622/#File_Format_Guide_BK.FASTQ).
 
 - Quality values must be in Phred scale. By default, 33 (!) is used for Phred quality offset. In the case of 64 (@), [update the ascii_offset of Run XML](#create-metadata-in-xml-files) to 'ascii_offset="@"'.
-- In the DRA metadata submission web interface, technical reads (adapters, linkers, barcodes) cannot be described. When submitting fastq including technical reads, please describe technical reads in the Experiment XML according to [Formats of sequencing data files](#formats-sequencing-data-files) [(XML examples)](/ddbj/example-e.html). The Experiment XML submission is not necessary for fastq without technical reads.
-- Paired reads must split and submitted using two Fastq files. The read names must have a suffix identifying the first and second read from the pair, for example '/1' and '/2'.
+- In the DRA metadata submission web interface, technical reads (adapters, linkers, barcodes) cannot be described. When submitting fastq including technical reads, please describe technical reads in the Experiment XML according to [Formats of sequencing data files](#formats-sequencing-data-files) [(XML examples)](/ddbj/example-xml-e.html). The Experiment XML submission is not necessary for fastq without technical reads.
+- Paired reads must split and submitted using two Fastq files in a Run. The read names must have a suffix identifying the first and second read from the pair, for example '/1' and '/2'.
 - The first line for each read must start with '@'.
 - The base calls and quality scores must be separated by a line starting with '+'.
 - The Fastq files must be compressed using gzip or bzip2.
 
-### BAM file  {#BAM_file} 
+### BAM {#BAM} 
 
-BAM is a compressed version of the Sequence
-Alignment/Map (SAM) format (see
+BAM is a compressed version of the Sequence Alignment/Map (SAM) format (see
 [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf)). BAM files
 can be decompressed to a human-readable text format (SAM) using
 SAM/BAM-specific utilities (e.g. [samtools](http://www.htslib.org/)) and can contain unaligned sequences as well. DRA recommends to submit BAM including unaligned reads as primary data into Run.
@@ -133,23 +130,23 @@ tools or future genome assembilies.
 
 {% include image.html url="books/bam-mapping.jpg" caption="mapping between bam and reference sequences" class="w500" %}
 
-#### 1. BAM file submission {#BAM_file_submission}
+##### 1. BAM file submission {#BAM_file_submission}
 
 The alignment data can be submitted in the BAM format. The bam files should be readable by [SAMtools](http://samtools.sourceforge.net/) and [picard](https://broadinstitute.github.io/picard/). The BAM files are nearly optimal in terms of compression and should be submitted uncompressed.
 
-#### 2. Specify reference by INSDC/RefSeq accession number  {#Specify_reference_by_INSDC/RefSeq_accession_number}
+##### 2. Specify reference by INSDC/RefSeq accession number {#Specify_reference_by_INSDC_RefSeq_accession_number}
 
 If references are found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), references can be specified by their accession.version number (for example, NC_000001.11). [Version number](/ddbj/flat-file-e.html#Version)is necessary. Accession numbers for references can be searched in [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/).
 
-#### 3. Specify reference by supplying multi-fasta  {#Specify_reference_by_supplying_multi-fasta}
+##### 3. Specify reference by supplying multi-fasta  {#Specify_reference_by_supplying_multi-fasta}
 
 If references are not found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/submission-e.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
 
-#### 4. Specify reference by both INSDC/RefSeq accession number and multi-fasta  {#Specify_reference_by_both_INSDC/RefSeq_accession_number_and_multi-fasta}
+##### 4. Specify reference by both INSDC/RefSeq accession number and multi-fasta  {#Specify_reference_by_both_INSDC_RefSeq_accession_number_and_multi-fasta}
 
 If a part of references are found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), these references can be specified by their accession.version number (for example, NC_000001.11). The rest of references needs to be supplied by uploading a multi-fasta file. In the SN-reference mapping table, list accession.version numbers and sequence names of multi-fasta deflines.
 
-#### 5. SN-reference mapping table  {#SN-reference_mapping_table}
+##### 5. SN-reference mapping table  {#SN-reference_mapping_table}
 
 A tab delimited text file describing mapping between "SN in SQ line in BAM header" and "accession OR sequence name in fasta file". Select "tab" in the [Run file type](/dra/submission-e.html#File_Type)
 
@@ -199,43 +196,37 @@ chr3 NC_000003.12
 
 ## Data files per sequencing platform {#platform}
 
-## 454  <a name="454"></a> 
+### 454 <a name="454"></a> 
 
 The DRA accepts sequencing run data from the 454 platform in the fastq/bam formats. Please convert output sff files to fastq/bam files.
 
-## Illumina Genome Analyzer  {#Illumina-Genome-Analyzer}
+### Illumina {#Illumina}
 
-### Illumina pipeline v1.4 and later  {#Illumina_pipeline_v1.4_and_later}
+Submit fastq/bam files.       
 
-DRA does not accept qseq files. Please convert qseq to fastq/bam.
+### BGI-seq  {#BGI}
 
-## BGI-seq  {#BGI}
+Submit fastq/bam files.       
 
-Submit fastq files.       
+### SOLiD  {#SOLiD} 
 
-## SOLiD  {#SOLiD} 
+Submit fastq/bam files.
 
-### SOLiD Native Format  {#SOLiD_Native_Format}
-
-DRA does not accept SOLiD native files. Please convert the native files
-to fastq/bam.
-
-## Ion Torrent  {#Ion-Torrent}
+### Ion Torrent  {#Ion-Torrent}
 
 Submit Ion Torrent data in the fastq format. Bam files from Ion Torrent instruments can be converted to fastq by using samtools. [Converting BAM to fastq](https://www.metagenomics.wiki/tools/samtools/converting-bam-to-fastq)
 
-## Helicos Heliscope  {#Helicos-Heliscope}
+### Helicos Heliscope  {#Helicos-Heliscope}
 
-Submit Helicos data in the sms（helicos_native) or fastq/bam format
-created with the fixed-quality value, "14".
+Submit Helicos data in fastq created with the fixed-quality value, "14".
 
-## Complete Genomics  {#Complete-Genomics}
+### Complete Genomics  {#Complete-Genomics}
 
-Submit Complete Genomics data in the fastq/bam format.
+Submit fastq/bam files.
 
-## Pacific Biosciences  {#Pacific-Biosciences}
+### Pacific Biosciences  {#Pacific-Biosciences}
 
-### HDF5  {#hdf5}
+#### HDF5  {#hdf5}
 
 Pacific Biosciences uses HDF5, a container file with a directory-like
 structure, to store raw data. The DRA accepts both bas.h5 and bax.h5
@@ -251,7 +242,7 @@ Do NOT include files other than HDF5 in a Run.
 The current DRA system (9th July 2021) is not able to load the HDF5 files. Please submit fastq instead of HDF5.
 </div>
 
-### bam  {#pacbio_bam}
+#### bam  {#pacbio_bam}
 
 We support the submission of the following types of PacBio bam files. Include 1 bam file per Run. For an unaligned bam file, reference and mapping table are not necessary.
 
@@ -259,18 +250,22 @@ We support the submission of the following types of PacBio bam files. Include 1 
 - *.ccs.bam
 - *.reads.bam
 
-### fastq  {#pacbio_fastq}
+#### fastq  {#pacbio_fastq}
 
 The DRA also accepts Pacific Biosciences data in the
 [fastq](#fastq) format. Select the ["fastq"](#fastq) for the Run filetype.
 
-## Oxford Nanopore  {#Oxford-Nanopore}
+### Oxford Nanopore  {#Oxford-Nanopore}
 
-Submit Oxford Nanopore data in the fastq/bam format.
+Submit fastq/bam files.
 
-## Capillary sequencing platform  {#Capillary-sequencing-platform}
+### Capillary sequencing platform  {#Capillary-sequencing-platform}
 
 Submit capillary sequencing data in the fastq/bam format.
+
+### 10x Genomics <a name="10x"></a>
+
+For the 10x Genomics data files, please see the GEA [Single-cell submission guide](/gea/single-cell-e.html).
 
 ## Analysis data files  {#analysis-data-files}
 
@@ -315,6 +310,6 @@ BioNano mapping technology produces whole genome maps. These maps can be used in
 - BNX
     - The BioNano Genomics Irys .bnx file is a raw data view of molecule and label information and quality scores per channel identified during a run.
 
-For the latest file specifications, please see the [BioNano GitHub site](https://github.com/bionanogenomics/File-Format-Specification-Sheets).
+For the latest file specifications, please see the [Bionano Genomics - Software and Data Analysis Support Materials](https://bionano.com/software-and-data-analysis-support-materials/).
 
 If you are using BioNano data as part of your assembly generation pipeline, it would be extremely useful to the scientific community if you could submit a package comprised minimally of the molecule .bnx file and the resulting de novo assembly file EXP_REFINEFINAL1.cmap and COORD files as a DRA Analysis. We will add an analysis type and filetypes for the BioNano Genome Map files. In the meantime, please submit the BioNano files as the analysis type "[De Novo Assembly](#Analysis_Type)" and the filetype "[tsv](#Analysis_File_Type)" (Example, [DRZ011299, DRZ011300](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA005/DRA005897/DRA005897.analysis.xml)). 

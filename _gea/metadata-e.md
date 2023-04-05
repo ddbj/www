@@ -17,36 +17,7 @@ The MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage
 
 ## IDF  {#idf}
 
-The IDF (Investigation Description Format) file is used to give an overview of the experiment, including the experimental design, protocols, publication information and submitter details.
-
-## IDF example  {#idf_ex}
-
-[IDF example](/gea/example-e.html#idf)
-
-|---|
-| [Comment\[GEAAccession\]](#Comment_idf)               | E-GEAD-369                                                                      |     |
-| MAGE-TAB Version                                      | 1.1                                                                             |     |
-| [Investigation Title](#Investigation_Title)           | Transcriptional profiling of Arabidopsis leaves exposed to elevated temperature |     |
-| [Experiment Description](#Experiment_Description)     | We investigated genome-wide ... biological replicates were analyzed.            |     |
-| [Experimental Design](#Experimental_Design)           | stimulus or stress design                                                       |     |
-| [Experimental Factor Name](#Experimental_Factor_Name) | temperature                                                                     |     |
-| [Experimental Factor Type](#Experimental_Factor_Type) | temperature                                                                     |     |
-| [Person Last Name](#Person_Last_Name)                 | Test                                                                            |     |
-| [Person First Name](#Person_First_Name)               | Tarou                                                                           |     |
-| [Person Affiliation](#Person_Affiliation)             | DDBJ Center, National Institute of Genetics                                     |     |
-| [Person Roles](#Person_Roles)                         | submitter                                                                       |     |
-| [Public Release Date](#Public_Release_Date)           | 2018-06-22                                                                      |     |
-| [PubMed ID](#PubMed_ID)                               | 29040613                                                                        |     |
-| [Protocol Name](#Protocol_Name)                       | P-GEAD-535                                                                      | ... |
-| [Protocol Type](#Protocol_Type)                       | sample collection protocol                                                      | ... |
-| [Protocol Description](#Protocol_Description)         | Plants were sown on GM medium ... 22 degrees celsius.                           | ... |
-| [SDRF File](#SDRF_File)                               | E-GEAD-369.sdrf.txt                                                             |     |
-| [Comment\[Number of channel\]](#Comment_idf)          | single-channel                                                                  |     |
-| [Comment\[Array Design REF\]](#Comment_idf)           | A-AFFY-2                                                                        |     |
-| [Comment\[AEExperimentType\]](#Comment_idf)           | transcription profiling by array                                                |     |
-| [Comment\[BioProject\]](#Comment_idf)                 | PRJDB3647                                                                       |     |
-| [Comment\[Public Release Date\]](#Comment_idf)        | 2018-06-22                                                                      |     |
-| [Comment\[Last Update Date\]](#Comment_idf)           | 2018-06-22                                                                      |     |
+The IDF (Investigation Description Format) file is used to give an overview of the experiment, including the experimental design, protocols, publication information and submitter details. [IDF examples](/gea/example-e.html#idf)
 
 ## IDF fields  {#idf_fields}
 
@@ -148,8 +119,7 @@ Protocol Type<a name="Protocol_Type"></a>
 
 ## SDRF  {#sdrf}
 
-The SDRF (Sample and Data Relationship Format) describes the sample characteristics and the relationship between samples, arrays, data files etc. The information in the SDRF is organized so that it follows the natural flow of a functional genomics experiment. It begins with describing your samples and finishes with the names of the data files generated from the analysis of the experiment results. For single-channel microarray data one row in the SDRF is equal to one hybridization. For two-channel microarray data one row is equal to one channel. For sequencing submissions you generally create one row per raw file (Run) including paired sequencing.
-
+The SDRF (Sample and Data Relationship Format) describes the sample characteristics and the relationship between samples, arrays, data files etc. The information in the SDRF is organized so that it follows the natural flow of a functional genomics experiment. It begins with describing your samples and finishes with the names of the data files generated from the analysis of the experiment results. For single-channel microarray data one row in the SDRF is equal to one hybridization. For two-channel microarray data one row is equal to one channel. For sequencing submissions you generally create one row per raw file (Run) including paired sequencing. [SDRF examples](/gea/example.html#sdrf_con)
 
 {% include image.html url="magetab/sdrf.jpg" caption="SDRF overall structure" class="w450" %}
 

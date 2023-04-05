@@ -610,6 +610,164 @@ $(function(){
     "MIMARKS.survey.sediment" : [["MIMARKS.survey.sediment"],["1011687082"],[]]
   }
 
+  package_tsv = {
+    "Beta-lactamase":"https://drive.google.com/u/4/uc?id=1y5WhGXrdwc_o0XWxrEqCjs2zzZaoO5fa&export=download",
+    "Human":"https://drive.google.com/u/4/uc?id=1wS2kgkosAHe0RyWHALgNZvydut6iWsZP&export=download",
+    "Invertebrate":"https://drive.google.com/u/4/uc?id=1fsdehlfobBH1C9lL91ZPaIwDe_HcSA7v&export=download",
+    "Metagenome.environmental":"https://drive.google.com/u/4/uc?id=1s5OGdgK_tRU5Wv0Q5ofqeU_efFnDxZjx&export=download",
+    "Microbe":"https://drive.google.com/u/4/uc?id=1u2m6vpWnGS3SKODvpL_7fTiGNassYHED&export=download",
+    "MIGS.ba":"https://drive.google.com/u/4/uc?id=1FkycD5oWHKhq6_VYQceSDrVeYG8wWWrx&export=download",
+    "MIGS.ba.air":"https://drive.google.com/u/4/uc?id=1r910K3yobc7hUuxzCRXRGbuQZFJU0inA&export=download",
+    "MIGS.ba.built":"https://drive.google.com/u/4/uc?id=1co_R_483151J3_b9wguTnwiRFNcXK-1d&export=download",
+    "MIGS.ba.host-associated":"https://drive.google.com/u/4/uc?id=1cwG8_8jJ20CCnXTnncUM39K2WtVAFor8&export=download",
+    "MIGS.ba.human-associated":"https://drive.google.com/u/4/uc?id=1xP1iqDIzNK-APn59yS4QS8j2_1hJpLAK&export=download",
+    "MIGS.ba.human-gut":"https://drive.google.com/u/4/uc?id=1RxnQfwANH6kp0iGAz04qh3NcJPfdH_g-&export=download",
+    "MIGS.ba.human-oral":"https://drive.google.com/u/4/uc?id=1V7RdHjJepao7FgJWzhab-Pa0uUcQCCy8&export=download",
+    "MIGS.ba.human-skin":"https://drive.google.com/u/4/uc?id=1nbInUWkfoNth1P1HlnNGhPmhwszQrnEM&export=download",
+    "MIGS.ba.human-vaginal":"https://drive.google.com/u/4/uc?id=1eFKNJPn6lUp63F-f6bw934tMUrxeAcav&export=download",
+    "MIGS.ba.microbial":"https://drive.google.com/u/4/uc?id=1ErTiTzCSfofAXOQLOpCEpEeot_CR_B28&export=download",
+    "MIGS.ba.miscellaneous":"https://drive.google.com/u/4/uc?id=1pflkLHRz0x6GOWTpImDy1_umBYRUy-81&export=download",
+    "MIGS.ba.plant-associated":"https://drive.google.com/u/4/uc?id=19enwqJ1p0VgNhNnVnOVHj1xcm2CSmPUq&export=download",
+    "MIGS.ba.sediment":"https://drive.google.com/u/4/uc?id=1FGEZpboK6hVabFIdF1x5VewAvi43Kp1k&export=download",
+    "MIGS.ba.soil":"https://drive.google.com/u/4/uc?id=1CYgMLOBAh_rfmzu9WJes-_H6tix-4mt_&export=download",
+    "MIGS.ba.wastewater":"https://drive.google.com/u/4/uc?id=1hNd61iOV8R8hdlRoIaivaj_S3XjJJ8FN&export=download",
+    "MIGS.ba.water":"https://drive.google.com/u/4/uc?id=151mxS3RnslNiIUfVzGYFAmwEKKFHmtrO&export=download",
+    "MIGS.eu":"https://drive.google.com/u/4/uc?id=1VgcOcRd6zwbkRPxp_ImO7JnKe1u1dN8H&export=download",
+    "MIGS.eu.air":"https://drive.google.com/u/4/uc?id=1CDDCcv_SlD1HUQOyS9elsxhm39MJgpNJ&export=download",
+    "MIGS.eu.built":"https://drive.google.com/u/4/uc?id=1N8EePpvpP0irWABhgSOOSppB8rRXeFfd&export=download",
+    "MIGS.eu.host-associated":"https://drive.google.com/u/4/uc?id=1L6j4WCEe51_jtqmYpsjs8kSlG7nCkPn-&export=download",
+    "MIGS.eu.human-associated":"https://drive.google.com/u/4/uc?id=1l1Gt4mw83Ww5TObP52YQddfhRpiZaumL&export=download",
+    "MIGS.eu.human-gut":"https://drive.google.com/u/4/uc?id=1BWvOXFmnB1ugw39qOLMaWuqmnJcQwy0D&export=download",
+    "MIGS.eu.human-oral":"https://drive.google.com/u/4/uc?id=1gEPhOBfP611UXjdkkgKAnk8wFVxpiUIY&export=download",
+    "MIGS.eu.human-skin":"https://drive.google.com/u/4/uc?id=1_K73sLEzLiXkSOjH-Reg_RPA3_ncLXjM&export=download",
+    "MIGS.eu.human-vaginal":"https://drive.google.com/u/4/uc?id=1fs1bhbtZfOyxkuUp1I8nNVLs2qzfKlan&export=download",
+    "MIGS.eu.microbial":"https://drive.google.com/u/4/uc?id=1xXkmr8qZ5o1NKnahmbv-LhMry51P0Lch&export=download",
+    "MIGS.eu.miscellaneous":"https://drive.google.com/u/4/uc?id=1rvrj6kqLlsWGekBTT4x2paUmurseUKyR&export=download",
+    "MIGS.eu.plant-associated":"https://drive.google.com/u/4/uc?id=1w_COI_Ja39v_mV92W2icmrGesLdH0Bnk&export=download",
+    "MIGS.eu.sediment":"https://drive.google.com/u/4/uc?id=1OWhPxlDUPla7yliavcHGvJrOfXsVaL6E&export=download",
+    "MIGS.eu.soil":"https://drive.google.com/u/4/uc?id=1wFN0n4HVU_YzYJ7FZsaTqcWMTPb9Cx_x&export=download",
+    "MIGS.eu.wastewater":"https://drive.google.com/u/4/uc?id=1Hsx03KOl1a9EhdKzAYcwgP4Qc_num0ua&export=download",
+    "MIGS.eu.water":"https://drive.google.com/u/4/uc?id=1JE4c-T2yKzlvqnrHGWZBekWonn9jSOGf&export=download",
+    "MIGS.vi":"https://drive.google.com/u/4/uc?id=1Rvjg5bPxgWyrnAzn1PxfUPdt7u7bhbEP&export=download",
+    "MIGS.vi.air":"https://drive.google.com/u/4/uc?id=1nePfx9UnNzYMhgs9Ta4BBPsQnNdFYZpV&export=download",
+    "MIGS.vi.built":"https://drive.google.com/u/4/uc?id=1uDzV_ZmW4PHvnJilmKJ66T7-4xekeE0V&export=download",
+    "MIGS.vi.host-associated":"https://drive.google.com/u/4/uc?id=1GVJTDYKsgr53PJ2xI6sWNsGsnAiFbe1_&export=download",
+    "MIGS.vi.human-associated":"https://drive.google.com/u/4/uc?id=1wUht67IW99VUP4-fg7cWW4PZ2xu5IE2K&export=download",
+    "MIGS.vi.human-gut":"https://drive.google.com/u/4/uc?id=1cDyULp_yCmaF0E_yxo56ecbpkYp2FkoX&export=download",
+    "MIGS.vi.human-oral":"https://drive.google.com/u/4/uc?id=1gIDmT9gq-apBOWyoeK886d0QrlgOltNE&export=download",
+    "MIGS.vi.human-skin":"https://drive.google.com/u/4/uc?id=1txkWgo6bfT4pE1xF9rkZgNreLq1ifjn2&export=download",
+    "MIGS.vi.human-vaginal":"https://drive.google.com/u/4/uc?id=18E1qyPwGTgreobfIH-PACNuKtwC_UaMs&export=download",
+    "MIGS.vi.microbial":"https://drive.google.com/u/4/uc?id=1X6uuRfsyCpIViKqnBUDYtnWbKiuzLBHX&export=download",
+    "MIGS.vi.miscellaneous":"https://drive.google.com/u/4/uc?id=1soX1Frq-p110CfShP4UGPQlRWN17M7Wn&export=download",
+    "MIGS.vi.plant-associated":"https://drive.google.com/u/4/uc?id=1W6zSLar8rtrY8KxAVjcJpY7EyH1iZSeE&export=download",
+    "MIGS.vi.sediment":"https://drive.google.com/u/4/uc?id=17MhUjQzlxfJOA0uwuWDt8zU1RNDnO-nt&export=download",
+    "MIGS.vi.soil":"https://drive.google.com/u/4/uc?id=1F4-wllvmqkn986LRzKOhVEJUMtpyzKfx&export=download",
+    "MIGS.vi.wastewater":"https://drive.google.com/u/4/uc?id=1CyTYktt28xo18NY14JwV0l4LlEm0mPhB&export=download",
+    "MIGS.vi.water":"https://drive.google.com/u/4/uc?id=1-eNPgTghcyQkRl3kGAqrpkJw8wiwzr36&export=download",
+    "MIMAG":"https://drive.google.com/u/4/uc?id=1ifWukxaEy0IMd1U_lOWKb4-PaJh8XI27&export=download",
+    "MIMAG.air":"https://drive.google.com/u/4/uc?id=1RKZiu6d7EHmIkguh_1qtlygw3ZXFBniX&export=download",
+    "MIMAG.built":"https://drive.google.com/u/4/uc?id=1NGrgW_Brggv8XFqtl0POBeWR7uXMkmjT&export=download",
+    "MIMAG.host-associated":"https://drive.google.com/u/4/uc?id=1ukYJ3bPYFdqY21Dg3J4eO-cZ0J4IUSTW&export=download",
+    "MIMAG.human-associated":"https://drive.google.com/u/4/uc?id=1mZ5S-Wpj3Qn3QgrG353QEAI3Awon1rff&export=download",
+    "MIMAG.human-gut":"https://drive.google.com/u/4/uc?id=1jr4xbqg806_rn5rRWSsoCYBvKjF7G0WG&export=download",
+    "MIMAG.human-oral":"https://drive.google.com/u/4/uc?id=1yHrd4MKy2Umo1q4RCDEmK2W27H-zXnJR&export=download",
+    "MIMAG.human-skin":"https://drive.google.com/u/4/uc?id=1nEVFD_lMdVFNUvcgow_yYLYI_K6S3mX0&export=download",
+    "MIMAG.human-vaginal":"https://drive.google.com/u/4/uc?id=1jPDbddWCsNVXoSkylUmUWbawp3eI_h1z&export=download",
+    "MIMAG.microbial":"https://drive.google.com/u/4/uc?id=1_ZzBH9nid0kFUn3boT7mRr9QH5PTFOHZ&export=download",
+    "MIMAG.miscellaneous":"https://drive.google.com/u/4/uc?id=19x4wwGoYyg-niWJKfHL5_m4FUTDjGxnW&export=download",
+    "MIMAG.plant-associated":"https://drive.google.com/u/4/uc?id=1jpOnIDRsGvwX2N7HYKTwHKjmfLmMtLlR&export=download",
+    "MIMAG.sediment":"https://drive.google.com/u/4/uc?id=1vAsBDD3ia6uabhptaHduSVKN1LcwRaaC&export=download",
+    "MIMAG.soil":"https://drive.google.com/u/4/uc?id=1vaFVQa_D7dxs4F_YMv8BgNWCiVXi_KHB&export=download",
+    "MIMAG.wastewater":"https://drive.google.com/u/4/uc?id=1UD1bJFMf_TmgRjyiUvO7aULqPL0SQl6J&export=download",
+    "MIMAG.water":"https://drive.google.com/u/4/uc?id=1z5LYcWgABOL6DMm7Vz2jGhKaxXfAU9Ci&export=download",
+    "MIMARKS.specimen":"https://drive.google.com/u/4/uc?id=1AI70Och-Wr1kRztvQ0hVBHcAdYZUy8x7&export=download",
+    "MIMARKS.specimen.air":"https://drive.google.com/u/4/uc?id=1SKI_1SnRL9VtA2EznK3CiBm61DPm6_fx&export=download",
+    "MIMARKS.specimen.built":"https://drive.google.com/u/4/uc?id=1cCW0WJe1vTTkfzEEsdtR1mRK4-4v9ZGA&export=download",
+    "MIMARKS.specimen.host-associated":"https://drive.google.com/u/4/uc?id=1m3WXKZTl7wTVgVifKxARSGWhEPKZsEoV&export=download",
+    "MIMARKS.specimen.human-associated":"https://drive.google.com/u/4/uc?id=1ElH-2peiRY6thb_15MBUqT4dJHknNS67&export=download",
+    "MIMARKS.specimen.human-gut":"https://drive.google.com/u/4/uc?id=1mq2O_rFDG702fuJ2VL6o4zseCAZ4TgNi&export=download",
+    "MIMARKS.specimen.human-oral":"https://drive.google.com/u/4/uc?id=1EGyjvTK1J7RyCd60SRZEXoecM7AgNOmp&export=download",
+    "MIMARKS.specimen.human-skin":"https://drive.google.com/u/4/uc?id=15eYGiaqdVwU9VJFcAtTFNK87i9Dq99s2&export=download",
+    "MIMARKS.specimen.human-vaginal":"https://drive.google.com/u/4/uc?id=1R01QcNatpPHBHo53s8G6kxrVyjiqRFVx&export=download",
+    "MIMARKS.specimen.microbial":"https://drive.google.com/u/4/uc?id=1iRg7UdsToniP-wkiJkUDrrirUVRiBcc0&export=download",
+    "MIMARKS.specimen.miscellaneous":"https://drive.google.com/u/4/uc?id=18G7-CMgFenpaqT8jasY-YfyrGd907S-X&export=download",
+    "MIMARKS.specimen.plant-associated":"https://drive.google.com/u/4/uc?id=1sGpeVA0iWNB0w3kiW3xBKZdAzNhOSfSg&export=download",
+    "MIMARKS.specimen.sediment":"https://drive.google.com/u/4/uc?id=1-6knC_L-M8MyfKLc16pobUOEXXQnLXfS&export=download",
+    "MIMARKS.specimen.soil":"https://drive.google.com/u/4/uc?id=1ZohWEHSf6VIqlYPMZ6xfmVwXlvqZfCun&export=download",
+    "MIMARKS.specimen.wastewater":"https://drive.google.com/u/4/uc?id=18-gcpR9HW1lI9lPMsVumRvHtAS6seivq&export=download",
+    "MIMARKS.specimen.water":"https://drive.google.com/u/4/uc?id=1Nx4kuQPqrb6sda7JVccZEmd1D3AHdqfr&export=download",
+    "MIMARKS.survey.air":"https://drive.google.com/u/4/uc?id=1Z_-8-uBCKto0bf7acyoH-sUwob-W8F_O&export=download",
+    "MIMARKS.survey.built":"https://drive.google.com/u/4/uc?id=1REhpa34pfM0MkPc2IIX2YgGml7BZCpZ1&export=download",
+    "MIMARKS.survey.host-associated":"https://drive.google.com/u/4/uc?id=1jZ9nnO11a1DINVQ0OopLDWnMHjwSwtli&export=download",
+    "MIMARKS.survey.human-associated":"https://drive.google.com/u/4/uc?id=1mfFG9rW8IUju51C7TmZWvBtOjWBe68F9&export=download",
+    "MIMARKS.survey.human-gut":"https://drive.google.com/u/4/uc?id=168DvV20yUyxC9w50Yg9C5pS_jh1GtIab&export=download",
+    "MIMARKS.survey.human-oral":"https://drive.google.com/u/4/uc?id=1TNPMqKJx8t7lAsQdMiXjic2iO32ZKLLj&export=download",
+    "MIMARKS.survey.human-skin":"https://drive.google.com/u/4/uc?id=1SmL3Cw-SeBvqia2ioac8Xj9JCX6PndlE&export=download",
+    "MIMARKS.survey.human-vaginal":"https://drive.google.com/u/4/uc?id=19QBU62sVbNBSpWrOv9yd4qtTC6JmW44U&export=download",
+    "MIMARKS.survey.microbial":"https://drive.google.com/u/4/uc?id=1p4UdZTJygzdgDsdcVkxoLnxuUQxgsJnX&export=download",
+    "MIMARKS.survey.miscellaneous":"https://drive.google.com/u/4/uc?id=1iTu-WspYnrTiiYxMDYn079KVNPyVUSro&export=download",
+    "MIMARKS.survey.plant-associated":"https://drive.google.com/u/4/uc?id=1hoPLa4leK63g879_8hl9IcJFk4Ndzxtp&export=download",
+    "MIMARKS.survey.sediment":"https://drive.google.com/u/4/uc?id=1zUqtbMJ-MqR8aZZakniWX7i7j6LCCIZU&export=download",
+    "MIMARKS.survey.soil":"https://drive.google.com/u/4/uc?id=19q8YfnvOJS9pa4fcno-ZBsywi9WITjdp&export=download",
+    "MIMARKS.survey.wastewater":"https://drive.google.com/u/4/uc?id=12J-fFsTyfOFHD9f0f0uWyHS2uzzz5Qvf&export=download",
+    "MIMARKS.survey.water":"https://drive.google.com/u/4/uc?id=15HTpFVbSCwfMZYhbbuUw5hSyLefxQrcF&export=download",
+    "MIMS.me.air":"https://drive.google.com/u/4/uc?id=1ZMXsW-Yitoq-p6yqyP2BorA0JE8ncgVo&export=download",
+    "MIMS.me.built":"https://drive.google.com/u/4/uc?id=1MMuutn15NNisfWfpsS5Y3jKgVT3NYvLZ&export=download",
+    "MIMS.me.host-associated":"https://drive.google.com/u/4/uc?id=1LG8854T1QtozWXHVy8bYlx1bFyIf1vL2&export=download",
+    "MIMS.me.human-associated":"https://drive.google.com/u/4/uc?id=16KCqjtPj_oK372UC1MNOlzTJ_W1CT0Bb&export=download",
+    "MIMS.me.human-gut":"https://drive.google.com/u/4/uc?id=19VPaNVLZvt1RE_LCqzFlYV21r_X1ICVz&export=download",
+    "MIMS.me.human-oral":"https://drive.google.com/u/4/uc?id=1dw-Bmn586CEyK48X0zd95aWx7Gsczn51&export=download",
+    "MIMS.me.human-skin":"https://drive.google.com/u/4/uc?id=16zAFYw7wjxZz-6R9BxheBP9UaixLyShF&export=download",
+    "MIMS.me.human-vaginal":"https://drive.google.com/u/4/uc?id=1M6m3RYRPrPpTqzJf-diXHLG80TpFwsBR&export=download",
+    "MIMS.me.microbial":"https://drive.google.com/u/4/uc?id=1M8t530spQqmQCdnLxycqhtUin-J1tvPj&export=download",
+    "MIMS.me.miscellaneous":"https://drive.google.com/u/4/uc?id=1HXq6ssGstkBaAKGoU2ro226e7z_pPzzO&export=download",
+    "MIMS.me.plant-associated":"https://drive.google.com/u/4/uc?id=1rFk8kqA2s-yV7o6PawQddhy3UmCLxmTI&export=download",
+    "MIMS.me.sediment":"https://drive.google.com/u/4/uc?id=1LdozsZKVreR1F42Zn45CCAs_CrTgR58c&export=download",
+    "MIMS.me.soil":"https://drive.google.com/u/4/uc?id=1MknY7uas5OwAJliGG1cS5Ao9rYqD-TEh&export=download",
+    "MIMS.me.wastewater":"https://drive.google.com/u/4/uc?id=1-Tf7tuuv0NEJFal6KkhKFc4HEsAVijEX&export=download",
+    "MIMS.me.water":"https://drive.google.com/u/4/uc?id=1pJzxaqmWQBjpcljFbSatfIZvIGIUbrO5&export=download",
+    "MISAG":"https://drive.google.com/u/4/uc?id=1u1UvMKaWJECWR7WCq5Gehcql1KYV2pGf&export=download",
+    "MISAG.air":"https://drive.google.com/u/4/uc?id=19LIhH7U0mW2ZX56YtfmSuLHzB0Osxzuc&export=download",
+    "MISAG.built":"https://drive.google.com/u/4/uc?id=1-NyQaTfSVKzU5ZX8v64x4B6ov4GN4Alk&export=download",
+    "MISAG.host-associated":"https://drive.google.com/u/4/uc?id=1pBpd_JT4PP0O_3OO1qQ2_DjEluOwc87D&export=download",
+    "MISAG.human-associated":"https://drive.google.com/u/4/uc?id=1UzkNzjkLpANcwKWlaPwG9_37oWyUOj83&export=download",
+    "MISAG.human-gut":"https://drive.google.com/u/4/uc?id=1UdZzZwytZgpA0tS4JdUgZ4zZ8D3RN8M3&export=download",
+    "MISAG.human-oral":"https://drive.google.com/u/4/uc?id=1NrjtnOHsH-fyoCPUUI5xeeLnaK1NCkn8&export=download",
+    "MISAG.human-skin":"https://drive.google.com/u/4/uc?id=1WsPGJ7eUbfeDdCHkUGPC9P5IQaXi439Q&export=download",
+    "MISAG.human-vaginal":"https://drive.google.com/u/4/uc?id=16snm5E86O8Q27NoWAtEmxzUp2PeuxN05&export=download",
+    "MISAG.microbial":"https://drive.google.com/u/4/uc?id=1Swh9DsBHoe0Hox3XUo7HB9naeBHRzyPh&export=download",
+    "MISAG.miscellaneous":"https://drive.google.com/u/4/uc?id=1MjqLhi-K2HQKwdS9vzKVolQudaR7MmZm&export=download",
+    "MISAG.plant-associated":"https://drive.google.com/u/4/uc?id=14k5bZFkaOW75WuXfWU0e5TVEvFsxKcr_&export=download",
+    "MISAG.sediment":"https://drive.google.com/u/4/uc?id=1UsVaJ1YYx3K_O3zHedC3TzuuQ6r9kBI2&export=download",
+    "MISAG.soil":"https://drive.google.com/u/4/uc?id=15H7hXTbM9EJnnxnuBekY1B3PwnS3v_-A&export=download",
+    "MISAG.wastewater":"https://drive.google.com/u/4/uc?id=11_AK1pVrIUjHOq_POtZJSDtXM1o_DtC_&export=download",
+    "MISAG.water":"https://drive.google.com/u/4/uc?id=19Bb6AV0kSaH_XD9kWfFvjKe4iTFUKe3N&export=download",
+    "MIUVIG":"https://drive.google.com/u/4/uc?id=1yLg7chbA_excTp1d_sBym6o3j568A9n-&export=download",
+    "MIUVIG.air":"https://drive.google.com/u/4/uc?id=17AsvCJELBWh-mKOezw3ifc98SqIvHl2o&export=download",
+    "MIUVIG.built":"https://drive.google.com/u/4/uc?id=13rjYw4fjY4I7GkEFN_-LaMjdQCnU81Pa&export=download",
+    "MIUVIG.host-associated":"https://drive.google.com/u/4/uc?id=1XXe8VYxDYFaN0y-t0chTybIVmp0F5XSl&export=download",
+    "MIUVIG.human-associated":"https://drive.google.com/u/4/uc?id=107_CeAZV_C3HxaRiezjLCUQs7XsKcice&export=download",
+    "MIUVIG.human-gut":"https://drive.google.com/u/4/uc?id=1eN-yufcOA0PXxzg9nwAQ4TI9dg5KvnQF&export=download",
+    "MIUVIG.human-oral":"https://drive.google.com/u/4/uc?id=1jWLAARtz2Va8OyGkhLgitwycagFNMjnZ&export=download",
+    "MIUVIG.human-skin":"https://drive.google.com/u/4/uc?id=1XRtQ-hcJW0C0mF17-NLooapjMLmRyPW9&export=download",
+    "MIUVIG.human-vaginal":"https://drive.google.com/u/4/uc?id=1FwCJ5ET5geUmD6bEjl8VZDLfiWkYA0xj&export=download",
+    "MIUVIG.microbial":"https://drive.google.com/u/4/uc?id=1elOiB1tCVPdLBjsohNVOhGKnfjHMRYZe&export=download",
+    "MIUVIG.miscellaneous":"https://drive.google.com/u/4/uc?id=1Ee0ZCppNAe89tFTd5RVms_I69xT82472&export=download",
+    "MIUVIG.plant-associated":"https://drive.google.com/u/4/uc?id=1pgwKVJfx1aejUye9fIjijDOY8-bCaidS&export=download",
+    "MIUVIG.sediment":"https://drive.google.com/u/4/uc?id=1NpFD7TaPQ0tJNWKKIRALeEKc7k_drayQ&export=download",
+    "MIUVIG.soil":"https://drive.google.com/u/4/uc?id=1NuNf2vzEdgLNH5wf7PIseKH3toAr9T8e&export=download",
+    "MIUVIG.wastewater":"https://drive.google.com/u/4/uc?id=1tybRLHd2PF3o2idI9vvJ4czKN0jMq6A9&export=download",
+    "MIUVIG.water":"https://drive.google.com/u/4/uc?id=1fjdtYOh1dWIkCYyxgf0bB2HUCi0t2A5w&export=download",
+    "Model.organism.animal":"https://drive.google.com/u/4/uc?id=1vNe8iLnVC0g2RzwIq_KLcvHEFK5BNWaW&export=download",
+    "Omics":"https://drive.google.com/u/4/uc?id=1ZTINvlFR1xEWP-fWl4rrv4YsmI_ZbQWu&export=download",
+    "Pathogen.cl":"https://drive.google.com/u/4/uc?id=1dSjr4ck75GziTszsqkHJ18h0LyZPcXWW&export=download",
+    "Pathogen.env":"https://drive.google.com/u/4/uc?id=1vUHi41cqipOaH5M57S0Ou6_ZIAMGgXBh&export=download",
+    "Plant":"https://drive.google.com/u/4/uc?id=1Z7HDYz_ex2h4dXmBkXlJkfn1wttUm5Nq&export=download",
+    "SARS-CoV-2.cl":"https://drive.google.com/u/4/uc?id=1OFHde9i8azddp85P1KsgCyiqJIdCBu5O&export=download",
+    "SARS-CoV-2.wwsurv":"https://drive.google.com/u/4/uc?id=11DorIYsayS3CByqCpFkpTzGyDQAkh-KF&export=download",
+    "Virus":"https://drive.google.com/u/4/uc?id=1w8x4DRyU6CZveKCX4rzmHGCQMfSmD5gy&export=download"
+  }
+
   // URL、ファイルパス、ファイル名取得
   var url = window.location.href;
   var host = window.location.host;
@@ -683,6 +841,7 @@ $(function(){
 
       attr_table = "";
       attr_table += '<p class="attr-title">All attributes</p>';
+      attr_table += '<p class="attr-title">Template files for attributes: <a href="https://drive.google.com/drive/u/2/folders/1ZG_v9q8F9A13XCqTrFQewuq2S1RLH75F">template files</a></p>';
       attr_table += '<p class="biosample-example">Example: <a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=' + examples["All"][1] + '">' + examples["All"][0] + '</a></p>';       
       attr_table += '<div id="biosample_attr_area"><table id="biosample_attr_table"><thead><tr class="biosample_header"><th class="name">Name</th><th class="description">Description</th></tr></thead><tbody>';
 
@@ -774,12 +933,16 @@ $(function(){
 
     // package 選択時の処理 attribute シートを起点に
       $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
-      //$.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1BwzRPc5g5bLH9tLj1MFSykXzMX5Zb52Zxoorf88bSLI/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
       
       var span_required = "";
 
       attr_table = "";
       attr_table += '<p class="attr-title">' + package_shortname + '</p>';
+
+      // template
+      if (package_tsv[package_shortname]) {
+          attr_table += '<p class="attr-title">A template file for attributes: <a href="' + package_tsv[package_shortname] + '">a template file</a></p>';
+      }
 
       var example_number = 0;
       var real_example_number = 0;
@@ -840,7 +1003,7 @@ $(function(){
           }
       }
 
-      for(var i = 1; i < data.values.length; i++) {
+      for(var i = 1; i < data.values.length; i++) { 
 
         var entries = data.values[i];
 
@@ -1135,7 +1298,7 @@ $(function() {
   if ( pathname.match(/-e\.html/) ) la = "en";  
   
   if ( pathname.match(/\/ddbj\/validator/) ){
-  
+
     // Parser
     $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/values/Parser?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
@@ -1235,9 +1398,40 @@ $(function() {
 
       }
 
-    $("#AgpParser-rule").prepend(rule_html);
+      $("#AgpParser-rule").prepend(rule_html);
 
     }); // $.getJSON. AGPParser
+
+    // getJSONの描画が終わるのを待ってアンカーにスクロール
+    // #transCheckerや#AGP_Parserは、getJSON描画前にアンカージャンプしてからjsonの描画処理が行われるから、まったく関係のない位置でいったん止まり不快感を覚える。そのため、アンカー付きでもいったんページ上部に移動してから、対象アンカーにスクロールするようにしている。
+    function myPromise1(num) {
+      return new Promise(function () {
+        setTimeout(function () {
+          // console.log(num + "ms wait");
+          $(document).scrollTop(0);
+        }, num)
+      })
+    }
+    function myPromise2(num) {
+      return new Promise(function () {
+        setTimeout(function () {
+          // console.log(num + "ms wait");
+          $(document).scrollTop();
+          if (anchor && $(anchor).length) {
+            // console.log(anchor);
+            $(document).scrollTop($(anchor).offset().top);
+          }
+        }, num)
+      })
+    }
+    async function myAsyncAll1() {
+      await myPromise1(1000);
+    }
+    async function myAsyncAll2() {
+      await myPromise2(2000);
+    }
+    myAsyncAll1();
+    myAsyncAll2();
 
   }
 

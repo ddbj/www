@@ -17,7 +17,7 @@ lang: en
 
 Please cite accession numbers according to journal instructions.  
 It is recommended to cite accession numbers assigned to your data submissions, e.g. the DDBJ nucleotide sequence or DRA Run accession numbers.  
-Citing BioProject and BioSample accession numbers only is not recommended.  
+Please cite a BioProject accession to reference all data from the project. It is necessary that metadata are described to enable users understand relationship between data in the publication and in the databases.
 
 ## DDBJ {#ddbj}
 
@@ -26,8 +26,9 @@ Cite accession number(s) assigned to nucleotide sequence(s).
 
 ## DRA {#dra}
 
-Cite Run accession number(s) (prefix DRR) assigned to sequence reads.  
-[Metadata](/dra/metadata-e.html)
+Cite Run accession number(s) (prefix DRR) assigned to sequencing reads. [Metadata](/dra/metadata-e.html)   
+Please cite a BioProject accession to reference all data from the project. It is necessary that metadata are described to enable users understand relationship between data in the publication and in the databases.  
+Because data cannot be added to existing DRA submission, more than one DRA submission accessions will be created after data addition ([Update](/dra/update-e.html)). Therefore, citing DRA submission accessions (prefix DRA) is not recommended. Instead, we recommend to cite a BioProject accession.
 
 ## GEA {#gea}
 
@@ -41,12 +42,10 @@ Cite Study accession "MTBKSn".
 
 ## BioProject {#bioproject}
 
-Citing only BioProject accession is not recommended.  
 If an individual BioProject needs to be referenced, state that "The data have been deposited with links to BioProject accession number PRJDBxxxxxx in the DDBJ BioProject database." along with the accession numbers assigned to the data submissions.
 
 ## BioSample {#biosample}
 
-Citing only BioSample accession is not recommended.  
 If an individual BioSample needs to be referenced, state that "BioSample metadata are available in the DDBJ BioSample database under accession number SAMDxxxxxxxx".
 
 

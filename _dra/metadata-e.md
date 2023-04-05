@@ -3,15 +3,16 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: Metadata
 category: dra
-current_tab: submission
+current_tab: overview
 lang: en
 ---
 
-## Metadata objects  {#metadata-objects}
+## Objects {#objects}
 
 The metadata describes how the associated data have been obtained. 
-The metadata are composed of the following 6 objects and each of
-these objects is defined by its [XML schema](https://github.com/ddbj/pub/tree/master/docs/dra/xsd/1-5) and is related each other.
+The metadata are composed of 6 objects and each of these objects is defined by its [XML schema](https://github.com/ddbj/pub/tree/master/docs/dra/xsd/1-5) and is related each other.
+
+{% include image.html url="books/sra_object.png" caption="Data model" class="w500" %}
 
 [Submission](#Submission){: #Submission-obj}    
 : Submission information such as data release and submitters. A container object for grouping objects to be submitted.
@@ -36,36 +37,9 @@ Paired-end data files must be listed in a single run in order for the two files 
 : Packages data associated with sequence read objects which do not have dedicated databases. 
 Analysis date are not shared among NCBI and EBI.
 
-{% include image.html url="books/sra_object.png" caption="Data model" class="w500" %}
+[Metadata examples](/dra/example-e.html)
 
-## Organization of metadata objects  {#Organization_of_metadata_objects} 
-
-Submitters can organize metadata objects flexibly.
-
-- [Most simple case](#ex_simple)
-- [Comparative genome sequencing of three strains (paired-end)](#ex_samples)
-- [Biological replicates (paired-end)](#ex_replicates)
-- [Related sequencing data are reported in two publications](#ex_submissions)
-
-### Most simple case  {#ex_simple}
-
-{% include image.html url="submission/obj_ex1.jpg" caption="Most simple case" class="w500" %}
-
-### Comparative genome sequencing of three strains (paired-end)  {#ex_samples}
-
-Include paired-end read files in a Run.
-
-{% include image.html url="books/datamodel1.jpg" caption="Comparative genome sequencing of three strains (paired-end)" class="w500" %}
-
-### Biological replicates (paired-end)  {#ex_replicates}
-
-{% include image.html url="submission/obj_exreplicate.jpg" caption="Biological replicates (paired-end)" class="w500" %}
-
-### Related sequencing data are reported in two publications.  {#ex_submissions}
-
-{% include image.html url="submission/obj_ex3.jpg" caption="Related sequencing data are reported in two publications." class="w500" %}
-
-## Metadat fields {#metadata}
+## Metadata fields {#metadata}
 
 Required<span class="red">*</span>  
 Conditionally required<span class="conditionally_required">*</span>
@@ -315,28 +289,19 @@ eCollection 2015. PMID:
 | AB 3730 Genetic Analyzer            |
 | AB 3730xL Genetic Analyzer          |
 
-[Spot Type](#Spot_Type)<a name="Spot_Type"></a><span class="red">*</span>  
-: Select a layout of reads in sequencing data files.
+[Library Layout](#Library_Layout)<a name="Library_Layout"></a><span class="red">*</span>  
+: Select a layout of reads in sequencing data files. 
+Directions of reads (Forward or Reverse) are automatically determined from the Instrument values. 
+In December 2022, the display name was changed from "Spot Type" to "Library Layout".
 
-| Spot Type   | Description                           |
+| Spot Type | Description |
 |---|
-| single      | Single read                           |
-| paired (FF) | Paired reads with same direction.     |
-| paired (FR) | Paired reads with opposite direction. |
+| single | Single read |
+| paired | Paired reads |
 
-[Nominal Length](#Nominal_Length)<a name="Nominal_Length"></a><span class="conditionally_required">*</span>  
-: Size of the insert for Paired reads.
-
-[Nominal Sdev](#Nominal_Sdev)<a name="Nominal_Sdev"></a>
-: Standard deviation of insert size.
-
-[Spot Length](#Spot_Length)<a name="Spot_Length"></a><span class="red">*</span>  
-: The read length in submitted sequencing files. For mate pairs, this
-number includes mate pairs, but does not include gap lengths.
-
-- When the spot length is constant, enter a constant value.
-- For 454 platforms producing reads with variable length, enter a constant flow count.
-- For fastq files with variable length, enter an average length.
+[Insert Size](#Insert_Size)<a name="Insert_Size"></a><span class="conditionally_required">*</span>  
+: Size of the insert for Paired reads. 
+In December 2022, the display name was changed from "Nominal Length" to "Insert Size".
 
 ## Run  {#Run} 
 
@@ -377,7 +342,6 @@ in tsv file, this field needs to be specified manually.
 | File Type        | Description                                                                                                            |
 |---|
 | fastq            | fastq file                                                                       |
-| sff              | 454 Standard Flowgram Format file                                                                                      |
 | hdf5             | PacBio hdf5 Format file                                                                                                |
 | bam              | Binary SAM format for use by loaders that combine alignment and sequencing data                                        |
 | tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |

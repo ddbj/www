@@ -34,13 +34,12 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-2016年から INSDC では 16S rRNA または、他の特定 locus を標的とした配列で構成され、主として operational
-taxonomic unit クラスター化に用いられる bulk sequence data を Targeted Locus Study
-(TLS) data type として受け付けています。
+2016年から INSDC では 16S rRNA または、他の特定 locus を標的とした配列で構成され、
+主として operational taxonomic unit クラスター化で生じた sequence data を 
+Targeted Locus Study (TLS) data type として受け付けています。
 
-NGS を利用した marker 配列の網羅的解析に関しましては、reads が [DDBJ Read
-Archive](/dra/index.html) に登録されているならば再現可能ですので、多くの場合、TLS
-データ登録は必須ではありません。  
+NGS を利用した marker 配列の網羅的解析に関しましては、reads が [DDBJ Read Archive](/dra/index.html) 
+に登録されているならば再現可能ですので、多くの場合、TLS　データ登録は必須ではありません。  
 念のため、TLS データの登録が必要か否かご検討ください。
 
 [公開されているTLSデータ](https://ddbj.nig.ac.jp/public/ddbj_database/tls/TLS_ORGANISM_LIST.html)

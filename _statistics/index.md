@@ -25,10 +25,6 @@ addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/load
 CON と TPA は次の理由によりリリース統計には含めていません。CON: 登録済み塩基配列から構築されており重複カウントになるため。TPA:
 登録者が取得したオリジナルデータではないため。
 
-非常に大規模な配列データが GenBank と ENA から公開されていること、また、DDBJ
-が新しいフォーマットのアクセッション番号に未対応であることから、
-最新のリリースでは GenBank と ENA の大量の bulk sequence data が欠落しています。
-
 [Source data
 table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=161698998)
 
@@ -47,6 +43,10 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 <div id="gea-release_stat_area"></div>
 
+{: #metabobank-release}
+## MetaboBank データ公開
+
+<div id="metabobank-release_stat_area"></div>
 
 
 {: #jga-release}
@@ -57,7 +57,7 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 {: #ddbj-submission}
-## DDBJ への登録数
+## DDBJ 登録
 
 - Web Submission: [Nucleotide Sequence Submission System](/ddbj/web-submission.html) からの登録
 - MSS Submission: [Mass Submission System](/ddbj/mss.html) からの登録
@@ -68,21 +68,25 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 
 {: #dra-submission}
-## DRA への登録
+## DRA 登録
 
 <div id="dra-submission_stat_area"></div>
 
 
 
 {: #gea-submission}
-## GEA への登録
+## GEA 登録
 
 <div id="gea-submission_stat_area"></div>
 
+{: #metabobank-submission}
+## MetaboBank 登録
+
+<div id="metabobank-submission_stat_area"></div>
 
 
 {: #jga-submission}
-## JGA への登録
+## JGA 登録
 
 <div id="jga-submission_stat_area"></div>
 

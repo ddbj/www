@@ -22,52 +22,81 @@ related_pages:
     url: /ddbj/example.html
 ---
 
-配列の登録に際して配列の由来となる「生物名」として /organism qualifier には、taxonomy database において、種、もしくは、それ以下のランクで "scientific name" とされている名称を記載する必要があります。
+配列データ登録に際し、配列の由来となる「生物名」として /organism qualifier には、[taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy ) において、
+- "scientific name" とされている (svnonym, equivalent name ほかではない) 
+- 種 (species)、もしくは、それ以下 (subspecies, variety, strain, etc.) のランクで
+
+名称を記載する必要があります。
 
 ## taxonomy database  {#taxonomy}
 
 DDBJ/EMBL-Bank/GenBank では、生物名 (/organism qualifier の値) を共同で構築している
-taxonomy database で管理しています。  
-塩基配列データベース構築には由来生物名の管理は必須であり、生物名の表記を統一する必要があります。  
-そのため、生物名の参照先として この taxonomy database を使用しております。
+[taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy ) で管理しています。    
+塩基配列データベース構築には由来生物名の管理は必須であり、生物名の表記を統一する必要があります。    
+そのため、生物名の参照先として この taxonomy database を使用しております。    
 
-Taxonomy database は、生物名の表記を統一することに主眼をおいて構築されており、生物種の命名、および、分類学上の権威となるものではありません。  
-採用されている生物名とその lineage は、登録者の分類学的な主張、および、分類学的に普及している内容とは異なる場合があります。  
-詳細に関しましては、[taxonomy database の説明](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite)をご一読ください。
+Taxonomy database は、生物名の表記を統一することに主眼をおいて構築されており、生物種の命名、および、分類学上の権威となるものではありません。    
+採用されている生物名とその lineage は、登録者の分類学的な主張、および、分類学的に普及している内容とは異なる場合があります。    
+詳細に関しましては、
+[taxonomy database の説明](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite )をご一読ください。    
 
 DDBJでは、taxonomy database を検索するためのシステム
-[TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja) を公開しております。塩基配列データベースにデータを登録する際、生物分類名を確認するためなどにご利用ください。  
-ただし、既に登録されている「生物名」でも、配列データが公開されていない段階では taxonomy database においても検索できません。  
-<span class="red">注)</span> 塩基配列登録システムからの登録の際は、[生物名入力におけるカテゴリー (Category) について](#deasy) をご参照ください。 "Not found in taxonomy database, but already registered in other sequence data" とすることにより、[このケースに該当すること](#private)を示してください。
+[TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja ) を公開しております。    
+塩基配列データベースにデータを登録する際、生物分類名を確認するためなどにご利用ください。    
 
-塩基配列の登録、taxonomy database 検索の際は、「生物名」に<span class="red">スペルミスがないように、十分、ご確認ください。</span>
+
+## 生物名記載のクイックガイド  {#quick}
+
+### 生物名が taxonomy database に存在する場合
+種 (species)、もしくは、それ以下 (subspecies, variety, strain, etc.) のランクであることを確認し、
+"scientific name" とされている (svnonym, equivalent name ほかではない) 名称を記載してください。    
+
+taxonomy database の記載状況に対して異論がある場合は、[こちら](#objection)をご参照ください。
+
+### 生物名が taxonomy database に存在しないときの対応
+
+検索の際は、「生物名」に<span class="red">スペルミスがないように、十分、ご確認ください。</span>
+
+- 未同定・同定不能
+    - [同定する意向がない](#not-to-be-identified)
+    - [新種 (sp. nov.)、新属 (gen. nov.) など](#new)
+    - [環境サンプル](#env)
+- taxonomy database に存在しない有効な学名
+    - [配列が登録されたことがないと推定される種](#novel)
+    - [taxonomy database の記載状況に対して異論がある場合](#objection) # comb. nov. の場合を含む
+- [人工的に構築した配列](#syn)
+
+
 
 ## 生物名記載の概要  {#rule}
 
 「生物名」は、通常、種の学名ですが、種が同定されていない場合(人工的に構築した配列なども含む)、仮称を用いることもあります。
 
-このため、<span class="red">無理に既存の生物名を選択しないでください。</span>既存の生物名を選択して良いケースは、あくまで、配列の由来となる「生物名」の同定に問題がない状態であり、かつ、その「生物名」が taxonomy database に登録済である場合です。
+このため、<span class="red">無理に既存の生物名を選択しないでください。</span>    
+既存の生物名を選択して良いケースは、あくまで、配列の由来となる「生物名」の同定に問題がない状態であり、かつ、その「生物名」が taxonomy database に登録済である場合です。
+一般に生物学的な種の分類・同定は総合的な視点からなされるべきです。    
+マーカー遺伝子の塩基配列が類似していることは、分類の一助ではありますが、種同定とは別であり、絶対的な分類・同定のための指標とはなりません。    
+培養条件、採集地、生育のための条件、形態、生化学的性質なども含めた総合的な判断の結果で、生物名を判断されているのでしたら問題はありません。    
+登録された配列データの記載内容については登録者の責任になります。
 
-- 未同定種・未記載種は仮称で記載します。
+- 未同定種・未記載種 (新種候補) は仮称で記載します。
+- ある遺伝子の配列が同一であること と サンプルが同種に由来すること は別の事象です。
 - マーカー遺伝子の塩基配列の類似度は、分類の絶対的指標では ありません。
-- 配列が同一であること と サンプルが同種に由来すること は別の事象です。
+- 現在の原核生物分類のスタンダードは全ゲノム配列によるANI (Average Nucleotide Identity) or dDDH (digital DNA-DNA hybridization) です。
 
 taxonomy database に登録されていない「生物名」の場合は、塩基配列の登録の際に、その由来生物名を DDBJ から taxonomy database に登録申請いたします。  
-このとき taxonomy database に登録された「生物名」は塩基配列が公開された際に、公開されます。  
+このとき taxonomy database に登録された「生物名」は塩基配列が公開された際に、公開されます。    
 
-<a name="private"></a>
-DDBJ から当該塩基配列データが公開されるまでは、taxonomy database においても、「生物名」は公開されません。  
-必要に応じて、塩基配列データの公開、生物名の更新をご依頼ください。  
-更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。
+DDBJ から当該塩基配列データが公開されるまでは、taxonomy database においても、「生物名」は公開されません。    
+必要に応じて、塩基配列データの公開、生物名の更新をご依頼ください。    
+更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。    
 
-原則として、「生物名」には、taxonomy database における "scientific name" 以外は、記載できませんが、taxonomy database における synonym あるいは lineage などの扱いに疑問がある場合は、典拠となる論文などを示していただくことにより、taxonomy database の修正を管理者に依頼し検討することができます。  
-ただし、lineage 解釈などの問題は諸説の１つを採用する方針であり、これに関しましては、ご希望に添えないこともあり得ます。  
-Taxonomy database の間違いなどを発見された場合は、[ご連絡](/contact-ddbj.html#to-ddbj)ください。  
-学名のスペルミスなどに関しましては修正します。
+原則として、「生物名」には taxonomy database における "scientific name" 以外は記載できませんが、
+taxonomy database の記載状況に対して異論がある場合、[こちら](#objection)をご参照ください。    
 
 ## 生物名入力におけるカテゴリー (Category) について {#deasy} 
 
-DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/websub.html)では登録の際に、生物名入力において Category を選択します。  
+DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/websub.html)では登録の際に、生物名入力において Category を選択します。    
 下図に Category を判断するためのフローチャートを示します。
 
 <img src="/assets/images/ddbj/organism-j.png" alt="" title="" class="w600">
@@ -90,8 +119,8 @@ e. 環境サンプル
 f. 種同定不能な場合の仮称、または、提唱準備中の新種  
 : 種同定をしない場合、Category は "Species is not identified" となりますので、メニューから選択してください。<br>提唱準備中の新種の場合、Category は "Proposing the name for the novel species" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[2. 種が同定されていない場合](#unidentified) を ご参照の上、生物名を scientific name 入力ボックスに記載してください。
 
-g. 登録済で非公開 (検索不可) の場合  
-: Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。<br>以前のご登録と同様に生物名 (scientific name) を記載してください。
+g. 登録済で非公開 (検索不可) の場合  <a name="private"></a>
+: Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。<br>以前のご登録と同様の学名、もしくは、仮称を記載してください。
 
 h. taxonomy database に未登録で、学名が確立している場合  
 : Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[1. 種が同定されている場合](#species) をご参照の上、生物名を scientific name 入力ボックスに記載してください。
@@ -104,7 +133,7 @@ h. taxonomy database に未登録で、学名が確立している場合
 ### 1. 種が同定されている場合 {#species} 
 
 「生物名」の登録は属・種の名称を用いた二名法による種の学名 (以下、種名)を原則としております。  
-種名は、動物、植物、細菌の各国際命名規約に従って記載されるべきです。
+種名は、動物、植物、細菌、ウイルスの各国際命名規約に従って記載されるべきです。
 
 例
 
@@ -143,7 +172,7 @@ strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 
 #### ウイルス  {#virus}
 
-ウイルスの場合は二名法ではありませんが、[the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/) に従った種名を基本としています。    
+ウイルスの場合は二名法ではありませんが、[the International Committee on Taxonomy of Viruses](https://ictv.global/ ) に従った種名を基本としています。    
 <span class="red">**2017年以前は、登録頻度の高い病原性ウイルスの場合、strain、serotype を生物名に含めて記載する運用を続けていましたが、この運用は新規登録分には適用されません。**</span>
 [識別子について](/ddbj/identifiers.html#virus) のウイルスに関するセクションをご参照ください。    
 例
@@ -173,9 +202,18 @@ strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 Malus x domestica
 Lilium hybrid division I</code></pre>
 
-#### database で見つからない場合  {#novel}
+#### taxonomy database で見つからない有効な学名  {#novel}
+**配列が登録されたことがないと推定される種**    
+スペルミスではないことを十分にご確認の上、そのまま登録してください。    
+genus などの上位ランクも含めて taxonomy database に存在しない場合、lineage についてお知らせください。    
+可能であれば、種を報告した文献の情報をお知らせください。    
+    
+ただし、既に登録されている「生物名」でも、配列データが公開されていない段階では taxonomy database においても検索できません。    
+<span class="red">注)</span> 塩基配列登録システムからの登録の際は、[生物名入力におけるカテゴリー (Category) について](#deasy) の 
+[g. 登録済で非公開 (検索不可) の場合](#private)をご参照ください。    
 
-taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
+登録時に以下の参考情報を可能な範囲でお知らせください。    
+
 
 ---
 **taxonomy database 登録申請のための参考情報**
@@ -183,15 +221,47 @@ taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から�
 - [推定可能な範囲の lineage](#lineage)
 - [種を記載した論文](#ref)
 - [以前に登録した配列のアクセッション番号](#acc)
-- [サンプル、または、配列を得た方法の概略](#isolate)
+
+
+---
+
+**taxonomy database の記載状況に対して異論がある場合**<a name="objection"></a>    
+taxonomy database の間違いなどを発見された場合は、[ご連絡](/contact-ddbj.html#to-ddbj)ください。    
+学名のスペルミスなどに関しましては修正します。    
+    
+taxonomy database は、生物名の表記を統一することに主眼をおいて構築されており、生物種の命名、および、分類学上の権威となるものではありません。    
+採用されている生物名とその lineage は、登録者の分類学的な主張、および、分類学的に普及している内容とは異なる場合があります。    
+詳細に関しましては、[taxonomy database の説明](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite )をご一読ください。    
+    
+いわゆる combinatio nova を含め、再分類に関連して提唱する準備段階の場合、その主張が論文を公表して認められるまで、
+taxonomy database 上で名称の修正を実施することはできません。    
+そのため、現状の taxonomy database に準拠した学名を用います。    
+論文公表後に必要な名称変更を依頼してください。その際に学名について taxonomy database 上での扱いを再検討することになります。    
+    
+taxonomy database における scientific name, synonym あるいは、lineage などの扱いに異論がある場合、taxonomy database の管理者に修正の検討を依頼することができます。    
+可能な限り、異論の根拠となる文献をご提示ください。    
+専門的な内容になると思われますので、単に URL あるいは、文献を示すのみではなく、どうあるべきかについて英文にてコメントを記載してください。    
+ただし、lineage 解釈などの問題は、データの一意性を担保するため、諸説の１つを採用する方針であり、ご希望に添えないこともあり得ます。    
+    
+登録時に以下の参考情報を可能な範囲でお知らせください。    
+
+---
+**taxonomy database 登録申請のための参考情報**
+
+- [推定可能な範囲の lineage](#lineage)
+- [種を記載した論文](#ref)
+
+
+---
 
 ### 2. 種が同定されていない場合 {#unidentified} 
 
-#### 2-1. 種を同定しない場合  <a name="not-to-be-identified"></a>
+#### 2-1. 種を同定しない場合   {#not-to-be-identified} 
 
-種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、"\<genus name\> sp." などとして記載します。    
+種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、
+"\<genus name\> sp." などとして記載します。    
 属より上位ランクの場合、判明している範囲の lineage に細菌ならば "bacterium"、
-古細菌ならば、 "archaeon" を付加した名前を記載します。
+古細菌ならば、 "archaeon" を付加した名前を記載します。    
 真核生物の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
 
 書式
@@ -215,23 +285,35 @@ Methanomicrobiales archaeon</code></pre>
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-真核生物 (カビ、酵母相当の単細胞真菌以外) の場合、<!-- あるいは、微生物でも全ゲノム規模の配列に該当する場合、 -->判明している範囲の lineage (多くの場合 属名) を用いて、"\<genus name\> sp."などとした上で、[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。  
+真核生物 (カビ、酵母相当の単細胞真菌以外) の場合、あるいは、単細胞の微生物でも全ゲノム規模の配列に該当する場合、
+判明している範囲の lineage (多くの場合 属名) を用いて、"\<genus name\> sp."などとした上で、
+[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。  
 「生物名」に含めている場合でも、[識別子](/ddbj/identifiers.html)を [/strain](/ddbj/qualifiers.html#strain) など該当する qualifier に記載してください。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Euglena sp. CR123"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="CR123"</code></pre>  
 
-#### 2-2. 新種提唱の場合  {#new}
+<span class="red">**仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録してください。**</span>    
 
-学名提唱中のため種名が未確定の場合、「生物名」の一意性を保つために、判明している範囲の lineage、
-多くの場合、属名を用いて、"\<genus name\> sp."などとした上で、 [識別子](/ddbj/identifiers.html) 
-(多くの場合、strain 名など) を並記します。  
-この運用により、例えば、異なる生物が同じものと混同されるなどの混乱を避けることができます。  
+
+#### 2-2. 新種提唱の場合  {#new}
+ウイルスの場合、[The International Code of Virus Classification and Nomenclature (ICVCN)](https://ictv.global/about/code ) に従った命名であれば、
+そのまま記載して登録することが可能です。    
+
+ウイルス以外は、<span class="red">**valid publication 前の段階で「正式な学名と混同するような名称」を記載することはできません。**</span>    
+新学名提唱のための準備段階の場合、不明と類似の扱いで学名が確定するまではデータとの対応関係を一意に保つため、仮称を設定することを原則としています。    
+
+学名提唱中のため種名が未確定の場合、「生物名」の一意性を保つために、判明している範囲の lineage、多くの場合、
+属名を用いて、"\<genus name\> sp."などとした上で、[識別子](/ddbj/identifiers.html) (多くの場合、strain 名など) を並記した仮称を割り当てて taxonomy database に登録します。    
+この運用により、例えば、異なる生物が同じものと混同されるなどの混乱を避けることができます。    
+そのため、<span class="red">**学名が確定するまでの間、その仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録**</span>してください。    
+あくまで当該生物由来サンプルと登録データに関する措置であり、登録者が執筆中の論文他において、どのような名称を用いるか、ということとは別の問題です。
+
 DDBJ から当該塩基配列データが公開されるまでは、taxonomy database においても、「生物名」を公開しません。    
-このような taxonomy database に登録された一時的な仮称は、正しい学名が確認できた段階で、その学名に更新変更します。  
-種を報告する論文が公開された際に、論文情報更新、生物名修正、データ公開を依頼するご連絡をお願いいたします。  
+このような taxonomy database に登録された一時的な仮称は、正しい学名が確認できた段階で、その学名に更新変更します。    
+種を報告する論文が公開された際に、論文情報更新、生物名修正、データ公開を依頼するご連絡をお願いいたします。    
 更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。    
-公開前に変更を依頼していただければ、通常、仮称が公表されることはありません。  
+公開前に変更を依頼していただければ、通常、仮称が公表されることはありません。    
 
 書式
 
@@ -262,6 +344,9 @@ taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から�
 - [提唱中の新種学名](#propose)
 - [以前に登録した配列のアクセッション番号](#acc)
 - [サンプル、または、配列を得た方法の概略](#isolate)
+
+
+---
 
 ### 3. 環境サンプル {#env}
 
@@ -312,6 +397,9 @@ taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から�
 - [サンプル、または、配列を得た方法の概略](#isolate)
 
 
+---
+
+
 [メタゲノムアセンブリ](/ddbj/metagenome-assembly.html)
 : Metagenome-Assembled Genome (MAG) の場合、単一生物分類群がツールにより割り当てられ得るため、種、もしくは、それ以下のランクの生物名（例 Agrobacterium tumefaciens）を記載します。
 : 種同定を伴わない MAG の場合、判明している範囲の lineage、多くの場合、属名を用いて、"\<genus name\> sp." などとして記載します。
@@ -339,9 +427,9 @@ MAG 相当の場合、
 [識別子](/ddbj/identifiers.html) としての [/isolate](/ddbj/qualifiers.html#isolate) qualifier に加えて、
 [/metagenome_source](/ddbj/qualifiers.html#metagenome_source) qualifier を記載します。
 [/metagenome_source](/ddbj/qualifiers.html#metagenome_source) qualifier には、
-[metagenome taxonomy nodes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169) にある操作的な名称から
+[metagenome taxonomy nodes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169 ) にある操作的な名称から
 適宜、選択して、例えば soil metagenome などのサンプル分離源を反映したメタゲノム名を記載してください。
-[NCBI のサイト](https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes)にメタゲノム名の使い分けについて解説されています。
+[NCBI のサイト](https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes )にメタゲノム名の使い分けについて解説されています。
 
 
 ---
@@ -350,21 +438,31 @@ MAG 相当の場合、
 - [推定可能な範囲の lineage](#lineage)
 - [サンプル、または、配列を得た方法の概略](#isolate)
 
+
+---
+
 ### 4. 人工的に構築した配列 {#syn} 
 
-"synthetic construct"、または、"eukaryotic synthetic construct" とのみ一律に記載する場合と vector などの名称を以下のように そのまま記載する場合があります。
+一般的には、"synthetic construct"、または、"eukaryotic synthetic construct" とのみ一律に記載します。    
+vector などの名称を、そのまま記載することも可能です。    
+特定遺伝子の配列のみを登録する場合、"synthetic construct" などを一律に記載してください。    
+vector 類の全長相当を登録する場合、何らかの命名をしてください。
+その際は天然由来の場合と明確に区別するため、 plasmid という単語は用いないでください。    
 
 例
 
 <pre><code>Cloning vector pAP3neo
 Expression vector pAMP</code></pre>
 
-taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
+taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja )) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
 ---
 **taxonomy database 登録申請のための参考情報**
 
 - [想定される用法など](#usage)
+
+
+---
 
 ## taxonomy database 登録申請のための参考情報 {#items} 
 

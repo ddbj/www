@@ -31,10 +31,12 @@ $(function(){
   makeDDBJRelease();
   makeDRARelease();
   makeGEARelease();
+  makeMBRelease();
   makeJGARelease();
   makeDDBJSubmission();
   makeDRASubmission();
   makeGEASubmission();
+  makeMBSubmission();
   makeJGASubmission();
   makeWebAccess();
   makePageAccess();
@@ -47,7 +49,7 @@ function makeDDBJRelease() {
   if ( !document.getElementById('ddbj-release') ) return;
 
   // DDBJ リリース総データ量推移
-  var release_new = 107; // release 107 から bulk sequence が含まれている
+  var release_new = 113; // release 107 から bulk sequence が含まれている
     
   google.charts.load('current', {'packages':['corechart', 'table']});
 
@@ -109,14 +111,12 @@ function makeDDBJRelease() {
             title: 'Sequences (million)',
             color:'#ff0000',
             textStyle: {fontSize:12},
-            viewWindow: {min:500, max:3500},
-            gridlines: {count:5}
+            viewWindow: {min:500, max:4400}
           },
           1: {
             title: 'Bases (billion)',
             textStyle: {fontSize:12},
-            viewWindow: {min:2000, max:18000},
-            gridlines: {count:6}
+            viewWindow: {min:2000, max:32000}
           }
         },
         chartArea:{top:60},
@@ -139,7 +139,7 @@ function makeDDBJRelease() {
       data.addColumn('string', 'Comments');
 
       data.addRows(chart_table_a);
-      data.setProperty(0, 4, 'style', 'width:40%');
+      data.setProperty(0, 4, 'style', 'width:220px');
 
       var options = {
         allowHtml: true
@@ -350,7 +350,7 @@ function makeGEARelease() {
       var y = parseInt(gea_release[0].substring(0, 4), 10);
 
       if( y >= (this_year-1-span) ){
-        chart_year_a.push([gea_release[0], parseInt(gea_release[1], 10), parseInt(gea_release[2], 10)]);
+        chart_year_a.push([gea_release[0], parseInt(gea_release[1], 10), parseInt(gea_release[3], 10)]);
         if (x==0) year_min = y;
         year_max = y;
         x++;
@@ -428,6 +428,113 @@ function makeGEARelease() {
   })  // $.getJSON
 
 } // makeGEARelease
+
+
+// MB 公開数、年単位、前年まで
+function makeMBRelease() {
+
+  if ( !document.getElementById('metabobank-release_stat_area') ) return;
+
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var year_min = 0;
+  var year_max = 0;
+  var span = 5; // 前年から5年間を表示
+  var x = 0;
+  var chart_year_a = [];
+  var html_tables = "";
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/MetaboBank release?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+
+    for(var i = 1; i < data.values.length; i++) {
+
+      var mb_release = data.values[i];
+
+      var y = parseInt(mb_release[0].substring(0, 4), 10);
+
+      if( y >= (this_year-1-span) ){
+        chart_year_a.push([mb_release[0], parseInt(mb_release[1], 10), parseInt(mb_release[3], 10)]);
+        if (x==0) year_min = y;
+        year_max = y;
+        x++;
+      } // for(var i = 0; i < gea_release.length; i++)
+    
+    } // for(var y = year_max-span; y <= year_max; y++)
+
+    html_tables += '<h3 id="mb-release_otal">Total data volume (' + year_min + '-' + year_max + ')</h3>' + '<div id="mb-release_chart_total"></div><div id="mb-release_table_total"></div>';
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=679318234">Source data</a></p>';
+
+    /* グラフ作成 */
+    $("#metabobank-release_stat_area").append(html_tables);
+
+    google.charts.setOnLoadCallback(drawTotalMBRelease);
+    google.charts.setOnLoadCallback(drawTotalMBReleaseTable);
+
+    function drawTotalMBRelease(){
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Studies');
+      data.addColumn('number', 'Samples');
+
+      data.addRows(chart_year_a);
+
+      var options = {
+        title: 'MetaboBank release (total data volume)', 
+        width: 600,      
+        height:400,
+        seriesType: 'bars',
+        legend:{position:'top', textStyle: {fontSize: 12}},         
+        series: {
+          0:{color:'#00CCFF', targetAxisIndex: 0},
+          1:{color:'#953735', targetAxisIndex: 1}
+        },
+        hAxis:{
+          title: 'Year',
+          textStyle: {fontSize:11}
+        },
+        vAxes: {
+          0: {
+            title: 'Studies',
+            textStyle: {fontSize:11}
+          },
+          1: {   
+            title: 'Samples',
+            color:'#ff0000'
+          }
+        },
+        titlePosition:'out'
+      };
+      
+      var mbrelyear = new google.visualization.ColumnChart(document.getElementById('mb-release_chart_total'));
+      mbrelyear.draw(data, options);
+    
+    } // function drawTotalMBSubmission
+
+    function drawTotalMBReleaseTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Studies');
+      data.addColumn('number', 'Samples');
+      data.addRows(chart_year_a);
+
+      var mbrelyeartable = new google.visualization.Table(document.getElementById('mb-release_table_total'));
+      mbrelyeartable.draw(data);
+
+    } // function drawTotalMBSubmissionTable
+
+    updateSectionLocation();
+    
+  })  // $.getJSON
+
+} // makeMBRelease
+
 
 // JGA リリース
 function makeJGARelease() {
@@ -704,7 +811,7 @@ function makeDRASubmission() {
       data.addRows(chart_year_a);
 
       var options = {
-        title: 'Submissions to DRA (By year)', 
+        title: 'Submissions to DRA (by year)', 
         width: 600,      
         height:400,
         seriesType: 'bars',
@@ -781,7 +888,7 @@ function makeGEASubmission() {
       var y = parseInt(gea_submission[0].substring(0, 4), 10);
 
       if( y >= (this_year-1-span) ){
-        chart_year_a.push([gea_submission[0], parseInt(gea_submission[1], 10), parseInt(gea_submission[2], 10)]);
+        chart_year_a.push([gea_submission[0], parseInt(gea_submission[1], 10), parseInt(gea_submission[3], 10)]);
         if (x==0) year_min = y;
         year_max = y;
         x++;
@@ -803,13 +910,13 @@ function makeGEASubmission() {
       // Create the data table.
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Year');
-      data.addColumn('number', 'Submissions');
+      data.addColumn('number', 'Experiments');
       data.addColumn('number', 'Samples');
 
       data.addRows(chart_year_a);
 
       var options = {
-        title: 'Submissions to GEA (By year)', 
+        title: 'Submissions to GEA (by year)', 
         width: 600,      
         height:400,
         seriesType: 'bars',
@@ -824,7 +931,7 @@ function makeGEASubmission() {
         },
         vAxes: {
           0: {
-            title: 'Submissions',
+            title: 'Experiments',
             textStyle: {fontSize:11}
           },
           1: {   
@@ -845,7 +952,7 @@ function makeGEASubmission() {
       // Create the data table.
       var data = new google.visualization.DataTable();
       data.addColumn('string', 'Year');
-      data.addColumn('number', 'Submissions');
+      data.addColumn('number', 'Experiments');
       data.addColumn('number', 'Samples');
       data.addRows(chart_year_a);
 
@@ -859,6 +966,112 @@ function makeGEASubmission() {
   })  // $.getJSON
 
 } // makeGEASubmission
+
+// MetaboBank への登録数、年単位、前年まで
+function makeMBSubmission() {
+
+  if ( !document.getElementById('metabobank-submission_stat_area') ) return;
+
+  google.charts.load('current', {'packages':['corechart', 'table']});
+
+  var now = new Date();
+  var this_year = now.getFullYear();
+  var year_min = 0;
+  var year_max = 0;
+  var x = 0;
+  var span = 5; // 前年から5年間を表示
+  var chart_year_a = [];    
+  var html_tables = "";
+
+  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
+  $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/MetaboBank submission?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+  
+    for(var i = 1; i < data.values.length; i++) {
+
+      var mb_submission = data.values[i];
+
+      var y = parseInt(mb_submission[0].substring(0, 4), 10);
+
+      if( y >= (this_year-1-span) ){
+        chart_year_a.push([mb_submission[0], parseInt(mb_submission[1], 10), parseInt(mb_submission[3], 10)]);
+        if (x==0) year_min = y;
+        year_max = y;
+        x++;
+      } // for(var i = 0; i < mb_submission.length; i++)
+    
+    } // for(var y = year_max-span; y <= year_max; y++)
+
+    html_tables += '<h3 id="mb-submission_total">By year (' + year_min + '-' + year_max + ')</h3>' + '<div id="chart_mb-submission_"></div><div id="table_mb-submission_"></div>';
+    html_tables += '<p class="original_data"><a href="https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=987043383">Source data</a></p>';
+
+    /* グラフ作成 */
+    $("#metabobank-submission_stat_area").append(html_tables);
+
+    google.charts.setOnLoadCallback(drawTotalMBSubmission);
+    google.charts.setOnLoadCallback(drawTotalMBSubmissionTable);
+
+    function drawTotalMBSubmission(){
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Studies');
+      data.addColumn('number', 'Samples');
+
+      data.addRows(chart_year_a);
+
+      var options = {
+        title: 'Submissions to MetaboBank (by year)', 
+        width: 600,      
+        height:400,
+        seriesType: 'bars',
+        legend:{position:'top', textStyle: {fontSize: 12}},         
+        series: {
+          0:{color:'#00CCFF', targetAxisIndex: 0},
+          1:{color:'#953735', targetAxisIndex: 1}
+        },
+        hAxis:{
+          title: 'Year',
+          textStyle: {fontSize:11}
+        },
+        vAxes: {
+          0: {
+            title: 'Studies',
+            textStyle: {fontSize:11},
+            viewWindow: {min:0, max:15}
+          },
+          1: {   
+            title: 'Samples',
+            color:'#ff0000'
+          }
+        },
+        titlePosition:'out'
+      };
+      
+      var mbsubyear = new google.visualization.ColumnChart(document.getElementById('chart_mb-submission_'));
+      mbsubyear.draw(data, options);
+    
+    } // function drawTotalMBSubmission
+
+    function drawTotalMBSubmissionTable(){
+      
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Year');
+      data.addColumn('number', 'Studies');
+      data.addColumn('number', 'Samples');
+      data.addRows(chart_year_a);
+
+      var mbsubyeartable = new google.visualization.Table(document.getElementById('table_mb-submission_'));
+      mbsubyeartable.draw(data);
+
+    } // function drawTotalMBSubmissionTable
+
+    updateSectionLocation();
+
+  })  // $.getJSON
+
+} // makeMBSubmission
 
 // JGA への登録数、年単位、前年まで
 function makeJGASubmission() {
@@ -912,7 +1125,7 @@ function makeJGASubmission() {
       data.addRows(chart_year_a);
 
       var options = {
-        title: 'Submissions to JGA (By year)', 
+        title: 'Submissions to JGA (by year)', 
         width: 600,      
         height:400,
         seriesType: 'bars',
@@ -978,7 +1191,9 @@ function makeWebAccess() {
     var getentry_per_year_h = {};
     var arsa_per_year_h = {};
     var drasearch_per_year_h = {};
+    var ddbjsearch_per_year_h = {};
     var txsearch_per_year_h = {};
+    var dfast_per_year_h = {};
     var blast_per_year_h = {};
     var clustalw_per_year_h = {};
     var homepage_per_year_h = {};
@@ -987,7 +1202,9 @@ function makeWebAccess() {
     var average_getentry_per_year_h = {};
     var average_arsa_per_year_h = {};
     var average_drasearch_per_year_h = {};
+    var average_ddbjsearch_per_year_h = {};
     var average_txsearch_per_year_h = {};
+    var average_dfast_per_year_h = {};
     var average_blast_per_year_h = {};
     var average_clustalw_per_year_h = {};
     var average_homepage_per_year_h = {};
@@ -998,7 +1215,9 @@ function makeWebAccess() {
       getentry_per_year_h[y] = [];
       arsa_per_year_h[y] = [];
       drasearch_per_year_h[y] = [];
+      ddbjsearch_per_year_h[y] = [];
       txsearch_per_year_h[y] = [];
+      dfast_per_year_h[y] = [];
       blast_per_year_h[y] = [];
       clustalw_per_year_h[y] = [];
       homepage_per_year_h[y] = [];
@@ -1012,11 +1231,13 @@ function makeWebAccess() {
         var getentry_per_month = parseInt(web_access[1], 10);
         var arsa_per_month = parseInt(web_access[2], 10);
         var drasearch_per_month = parseInt(web_access[3], 10);
-        var txsearch_per_month = parseInt(web_access[4], 10);
-        var blast_per_month = parseInt(web_access[5], 10);
-        var clustalw_per_month = parseInt(web_access[7], 10);
-        var homepage_per_month = parseInt(web_access[11], 10);
-        var all_per_month = parseInt(web_access[12], 10);
+        var ddbjsearch_per_month = parseInt(web_access[4], 10);
+        var txsearch_per_month = parseInt(web_access[5], 10);
+        var blast_per_month = parseInt(web_access[6], 10);
+        var dfast_per_month = parseInt(web_access[7], 10);        
+        var clustalw_per_month = parseInt(web_access[8], 10);
+        var homepage_per_month = parseInt(web_access[13], 10);
+        var all_per_month = parseInt(web_access[14], 10);
         //var ave_ftp_download_day = parseFloat(web_access[i].gsx$averageftpdownloadtbday.$t, 10);
 
         // 年毎に配列に格納
@@ -1029,8 +1250,10 @@ function makeWebAccess() {
             getentry_per_year_h[y].push(getentry_per_month);
             arsa_per_year_h[y].push(arsa_per_month);
             drasearch_per_year_h[y].push(drasearch_per_month);
+            ddbjsearch_per_year_h[y].push(ddbjsearch_per_month);
             txsearch_per_year_h[y].push(txsearch_per_month);
             blast_per_year_h[y].push(blast_per_month);
+            dfast_per_year_h[y].push(dfast_per_month);
             clustalw_per_year_h[y].push(clustalw_per_month);
             homepage_per_year_h[y].push(homepage_per_month);
             all_per_year_h[y].push(all_per_month);
@@ -1042,8 +1265,10 @@ function makeWebAccess() {
       average_getentry_per_year_h[y] = Math.floor(average(getentry_per_year_h[y]));
       average_arsa_per_year_h[y] = Math.floor(average(arsa_per_year_h[y]));
       average_drasearch_per_year_h[y] = Math.floor(average(drasearch_per_year_h[y]));
+      average_ddbjsearch_per_year_h[y] = Math.floor(average(ddbjsearch_per_year_h[y]));
       average_txsearch_per_year_h[y] = Math.floor(average(txsearch_per_year_h[y]));
       average_blast_per_year_h[y] = Math.floor(average(blast_per_year_h[y]));
+      average_dfast_per_year_h[y] = Math.floor(average(dfast_per_year_h[y]));
       average_clustalw_per_year_h[y] = Math.floor(average(clustalw_per_year_h[y]));
       average_homepage_per_year_h[y] = Math.floor(average(homepage_per_year_h[y]));
       average_all_per_year_h[y] = Math.floor(average(all_per_year_h[y]));
@@ -1062,7 +1287,7 @@ function makeWebAccess() {
     $("#web-access_stat_area").append(html_tables);
 
     for (var y2 = this_year-span; y2 < this_year; y2++) {
-      chart_year.push([y2.toString(), average_getentry_per_year_h[y2], average_arsa_per_year_h[y2], average_drasearch_per_year_h[y2], average_txsearch_per_year_h[y2], average_blast_per_year_h[y2], average_clustalw_per_year_h[y2], average_homepage_per_year_h[y2], average_all_per_year_h[y2]]);
+      chart_year.push([y2.toString(), average_getentry_per_year_h[y2], average_arsa_per_year_h[y2], average_ddbjsearch_per_year_h[y2], average_txsearch_per_year_h[y2], average_dfast_per_year_h[y2], average_homepage_per_year_h[y2], average_all_per_year_h[y2]]);
     }
     
     google.charts.setOnLoadCallback(drawWebAccess);
@@ -1075,10 +1300,9 @@ function makeWebAccess() {
       data.addColumn('string', 'Year');
       data.addColumn('number', 'getentry');
       data.addColumn('number', 'ARSA');
-      data.addColumn('number', 'DRA Search');
-      data.addColumn('number', 'TXSearch');
-      data.addColumn('number', 'BLAST');
-      data.addColumn('number', 'ClustalW');
+      data.addColumn('number', 'DDBJ Search');
+      data.addColumn('number', 'TXSearch');      
+      data.addColumn('number', 'DFAST');
       data.addColumn('number', 'Home pages');
       data.addColumn('number', 'All');
 
@@ -1112,10 +1336,9 @@ function makeWebAccess() {
       data.addColumn('string', 'Year');
       data.addColumn('number', 'getentry');
       data.addColumn('number', 'ARSA');
-      data.addColumn('number', 'DRA Search');
+      data.addColumn('number', 'DDBJ Search');
       data.addColumn('number', 'TXSearch');
-      data.addColumn('number', 'BLAST');
-      data.addColumn('number', 'ClustalW');
+      data.addColumn('number', 'DFAST');
       data.addColumn('number', 'Home pages');
       data.addColumn('number', 'All');              
       data.addRows(chart_year);
@@ -1243,7 +1466,7 @@ function makeDDBJReleaseDetail(){
   if ( !document.getElementById('total-data-volume') ) return;
 
   // DDBJ リリース配列数、塩基数各バンクの割合
-  var release_new = 107; // release 107 から bulk sequence が含まれている
+  var release_new = 113; // release 107 から bulk sequence が含まれている
   var chart_seq_a = [];
   var chart_base_a = [];
   var chart_seq_table_a = [];

@@ -20,14 +20,24 @@ lang: ja
 - BioProject と BioSample の公開はリンクされているデータの連動公開を引き起こしません。
 - BioSample の公開は derived_from 属性で引用されている BioSample の連動公開を引き起こします。
 - DDBJ、DRA、GEA と MetaboBank の公開はリンクしている BioProject と BioSample の連動公開を引き起こします。
+- DDBJ の公開は DBLINK で参照している DRA Run の公開を引き起こします。
 - DRA の公開は DDBJ の連動公開を引き起こしません。
 
 <p class="attention">DRA ではメタデータとシークエンスデータは DRA 登録 (submission) 単位で公開されます。</p>
 
-<figure><a href="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" title="Release of linked BioProject/BioSample/sequence records"><img src="{{ site.baseurl }}/assets/images/books/bp-bs-seq_release.jpg" alt="Release of linked BioProject/BioSample/sequence records" title="Release of linked BioProject/BioSample/sequence records" class="w450"></a>
-  <figcaption class="caption">BioProject/BioSample/塩基配列データの連動公開</figcaption>
+<figure><a href="/assets/images/books/bp-bs-seq_release.jpg" title="Release of linked BioProject/BioSample/sequence records"><img src="/assets/images/books/bp-bs-seq_release.jpg" alt="Release of linked BioProject/BioSample/sequence records" title="Release of linked BioProject/BioSample/sequence records" class="w400"></a>
+	<figcaption class="caption">BioProject/BioSample/実験データの連動公開</figcaption>
+</figure>
+<br>
+<br>
+<br>
+<figure><a href="/assets/images/books/bp-bs-seq_release-2.jpg" title="Release of the other data linked to BioProject/BioSample"><img src="/assets/images/books/bp-bs-seq_release-2.jpg" alt="Release of the other data linked to BioProject/BioSample" title="Release of the other data linked to BioProject/BioSample" class="w550"></a>
+	<figcaption class="caption">BioProject/BioSample にリンクしている別の実験データの連動公開</figcaption>
+</figure>
+<br>
+<br>
+<br>
+<figure><a href="/assets/images/books/bp-bs-seq_release-3.jpg" title="Release of derived BioSample"><img src="/assets/images/books/bp-bs-seq_release-3.jpg" alt="Release of derived BioSample" title="Release of derived BioSample" class="w400"></a>
+	<figcaption class="caption">派生 BioSample の連動公開</figcaption>
 </figure>
 
-DRA Handbook: [DRA のデータ公開](/dra/submission.html#data-release)  
-BioProject 概要: [BioProjectのデータ公開](/bioproject/overview.html#release)  
-BioSample 概要: [BioSampleのデータ公開](/biosample/overview.html#sample-release)

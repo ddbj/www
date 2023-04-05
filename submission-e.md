@@ -101,6 +101,12 @@ Most journals request processed data deposition to [GEO/ArrayExpress/GEA](https:
 * Sequences shorter than 100 nucleotides (since June 2021).
 * Sequence consisting only of primer (since June 2021).
 
+## Submission flow {#flow}
+
+BioProject/BioSample pre-registration is necessary for large-scale nucleotide sequence submissions to DDBJ as well as DRA/GEA/MetaboBank submissions.
+
+<img src="/assets/images/submission/submission-flow.jpg" alt="BioProject/BioSample submission flow" title="BioProject/BioSample submission flow" class="w500">
+
 
 
 

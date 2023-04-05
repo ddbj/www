@@ -38,28 +38,49 @@ Before submission, read "[Submission of research data from human subjects](/poli
 
 ## Overview  {#outline}
 
+Mass Submission System (MSS) is the service to accept relatively large scale nucleotide sequence data (not reads) through sending text files.    
+The nucleotide sequence data belonging to <span class="red">either of the following cases</span> should be submitted via MSS, 
+because they are not acceptable via the [NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission-e.html).    
+Please note the points other than number or length of your data.  
+
+#### a) Either of the following categories or amounts of sequence data
+
 <div class="attention" markdown="1">
-
-Mass Submission System (MSS) is the service to accept relatively large scale nucleotide sequence data (not reads) through sending text files. We at DDBJ recommend using MSS when:
-
-- the submission is not applicable for [Nucleotide Sequence Submission System (NSSS)](https://www.ddbj.nig.ac.jp/ddbj/web-submission-e.html) 
-    -  [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
+- [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
   [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
   [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
     - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
-- the submission with long sequences.  
-    - greater than 500 kb in its length
-- the complex submission containing many features  
-    - more than 30 features
-- the submission consists of large number of sequences.  
-    - greater than 100
-
+- Submission with long sequences, greater than 500 kb in its length
+- Complex submission containing many features for one sequence, more than 30 features
+- Submission consists of large number of sequences, greater than 100 in total
 </div>
 
-- Basically, if none of the above applies to your data, DDBJ recommends using the [DDBJ Nucleotide Sequence Submission System (NSSS)](/ddbj/web-submission-e.html). 
+#### b) Regardless finished or draft level, sequence data of whole-length scale replicons  
 
-- If you are to submit reads from sequencers, please refer [DRA; DDBJ Sequence Read Archive](/dra/index-e.html).  
+<div class="attention" markdown="1">
+- (Nuclear) genome
+- Organelle genome
+- Chromosome
+- Virus/Phage genome/segments
+- Plasmid
+</div>
+
+#### c) Sequence data to be described BioProject or BioSample in DBLINK  
+
+When you need to use [DBLINK](/ddbj/flat-file-e.html#DBLINK) to link BioProject or BioSample, 
+the following cases are included, but not limited to them.    
+
+<div class="attention" markdown="1">
+- Sequence data from metagenome analyses, environmental profilings, and so on 
+- Sequence data of targeted genes to be linked each other
+- When you are planning to submit or have submitted whole genome scale data obtained from the same samples. 
+    - Required to submit prokaryotic 16S rRNA gene for phylogenic report  
+    - Advanced paper submission of any other targeted gene(s)/cluster region(s) 
+</div>
+
+- Basically, if none of the above applies to your data, DDBJ recommends using the [NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission-e.html).   
+- If you are to submit reads from sequencers, see [DRA, DDBJ Sequence Read Archive](/dra/index-e.html).  
 
 ## Registration process in MSS  {#flow}
 
@@ -80,7 +101,7 @@ table tr:hover {
 }
 </style>
 
-**Recomend:** A. Apply for the submission after you have prepared the submission files
+<!-- **Recomend:** A. Apply for the submission after you have prepared the submission files -->
 <div class="mssflow">Create the submission files</div>
 <div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">Login to https://mss.ddbj.nig.ac.jp/ with D-way account</a></div>
 <div class="mssflow">Fill MSS form & upload the submission files</div>
@@ -89,7 +110,7 @@ table tr:hover {
 <div class="mssflow">You can obtain accession numbers</div>
 <div class="mssflowend">Release the data, or hold until specified date</div>
 <p></p>
-B. Apply for the submission, and then you prepare the submission files
+<!-- B. Apply for the submission, and then you prepare the submission files
 <div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">Login to https://mss.ddbj.nig.ac.jp/ with D-way account</a></div>
 <div class="mssflow">Fill MSS form</div>
 <div class="mssflow">DDBJ creats a new Mass-ID, sends autoreply</div>
@@ -97,7 +118,7 @@ B. Apply for the submission, and then you prepare the submission files
 <div class="mssflow">Upload the submission files</div>
 <div class="mssflow">Review, inquiring and answering by email</div>
 <div class="mssflow">You can obtain accession numbers</div>
-<div class="mssflowend">Release the data, or hold until specified date</div>
+<div class="mssflowend">Release the data, or hold until specified date</div> -->
 
 <!-- <img src="/assets/images/ddbj/MSS-flow_20200916-en.png" alt="The Flow of MSS" title="" class=""> -->
 

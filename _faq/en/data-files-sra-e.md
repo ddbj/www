@@ -12,7 +12,7 @@ lang: en
 
 Uploaded data files are processed per Run. All files under a Run are
 merged into single [binary SRA
-file](http://www.ncbi.nlm.nih.gov/books/NBK47539/#SRA_Overview_BK.SRA_Architecture)
+file](https://www.ncbi.nlm.nih.gov/sra/docs/sra-data-formats/)
 by using [SRA
 toolkit](http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc).
 During this conversion, length and format of all reads are checked.

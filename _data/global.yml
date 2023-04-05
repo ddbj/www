@@ -1,7 +1,7 @@
 top_news:
   ja:
-    - title: DDBJ センターの登録、検索・解析サービス再開のお知らせ
-      path: 2022-12-09
+    - title: (4/10 10:00 - 4/11 15:00) DDBJ センターの登録、検索・解析サービス停止のお知らせ
+      path: 2023-04-5
   en:
-    - title: DDBJ services have been resumed
-      path: 2022-12-09-e
+    - title: (April 10th 10:00 - April 11th 14:00) Suspension of DDBJ services due to NIG supercomputer maintenance
+      path: 2023-04-5-e
