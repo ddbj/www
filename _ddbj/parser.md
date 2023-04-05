@@ -20,34 +20,24 @@ related_pages:
     url: /ddbj/mss-form.html
 ---
 
-Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な
-[配列ファイル](/ddbj/file-format.html#sequence) と [アノテーションファイル](/ddbj/file-format.html#annotation) のフォーマットチェックを行うCUIツールです。
+Parser は、Mass Submission System (MSS) を利用して DDBJ に登録する際に必要な[アノテーションファイル](/ddbj/file-format.html#annotation)と[塩基配列ファイル](/ddbj/file-format.html#sequence)のフォーマットチェックを行うCUIツールです。
 
 ## インストール  {#install}
 
-#### 1. Parser.tar.gz を取得
+### 1. Parser ファイルの取得  {#install-1}
+[MSS データファイル用チェックツール](/ddbj/mss-tool.html)から Parser_V#.##.tar.gz (# はバージョンを表します)をダウンロードしてください。
 
-<a href="/ddbj/mss-tool.html">MSS データファイル用チェックツール</a>からダウンロードしてください。    
-    
+### 2. 解凍  {#install-2}
+```
+$ gunzip -c Parser_V#.##.tar.gz | tar xvf -
+```
 
-#### 2. tar.gz ファイルを gunzip コマンドで解凍
+解凍後に jParser ディレクトリが作成されます。ディレクトリの中身を見ると、以下のようになっています。
 
-<pre>$ gunzip Parser.tar.gz</pre>
-    
-
-#### 3. tar ファイルを tar コマンドで展開
-
-<pre>$ tar xvf Parser.tar</pre>
-    
-
-
-#### 4. 生成されたディレクトリを確認
-下記の要領でディレクトリの中身を見ると、以下のようになっています。    
-
-<pre>$ cd jParser
-$ ls -FC
-jParser.sh*  jar/    license.txt resource/</pre>
-<br>
+```
+$ ls -FC jParser/
+jParser.sh*  jar/    license.txt resource/
+```
 
 <table><tbody>
 <tr>
@@ -67,70 +57,70 @@ jParser.sh*  jar/    license.txt resource/</pre>
 	<td>検査条件などのリソースファイル格納ディレクトリ(改変不可)</td>
 </tr>
 </tbody></table>
-     
-#### 5. ファイルの編集
-jParser.sh を実行する前にファイルの中身を、インストールしたコンピュータの環境にあわせるために変更する必要があります。     
-viなどのエディタで編集して下さい。    
-    
 
-<pre>#!/bin/sh
+### 3. 実行シェルスクリプトを編集  {#install-3}
+jParser.sh の一部をインストール場所に合わせて変更します。nano や vi などのエディタで編集して下さい。
 
+例) /home/mass ディレクトリ配下に解凍した場合
+```
+$ cd /home/mass/jParser
+$ nano jParser.sh
+```
+PARSER_DIR= に、jParser ディレクトリの場所をフルパスで指定します。
+```
 # Parser installed directory
 PARSER_DIR=./
+  ↓
+# Parser installed directory
+PARSER_DIR=/home/mass/jParser
+```
 
-# Set maximum Java heap size
-HEAP_SIZE=128m
+## 使い方  {#exec}
+```
+cd jParserを設置したディレクトリ
+./jParser.sh -x <filename> -s <filename> [-e <filename> -M <memory size>]
+```
 
-# Parser's resource files(qual.list, ... *.list) path
-# Don't change.
-RESOURCE_FILE_PATH=$PARSER_DIR/resource
+オプション詳細。ファイル名は絶対パス、相対パスのどちらでも指定可能です。
 
-# Parser's main class
-# Don't change.
-PARSER=tsunami.util.excel.ExcelParser
-
-# Execution Command
-# Don't change.
-java -Xmx$HEAP_SIZE -classpath $PARSER_DIR/jar/jParser.jar 
--DPARSER_RESOURCE_PATH=$RESOURCE_FILE_PATH $PARSER -Cclean $@
-
-RETVAL=$?
-
-exit $RETVAL
-#EOF</pre>
-
-<dl>
-<dt>[PARSER_DIR 変数]</dt>
-	<dd>jParser ディレクトリのある場所をフルパスで入力して下さい。</dd>
-	<dd>例) PARSER_DIR=/home/mass/jParser</dd>
-<dt>[HEAP_SIZE 変数]</dt>
-	<dd>jParser が使用できる最大メモリ量を指定してください。</dd>
-	<dd>例) HEAP_SIZE=128m</dd>
-</dl>
-    
-#### 6. PATH を指定する
-PATH に jParser.sh が設置してあるディレクトリを指定して下さい。
-
-## 実行  {#exec}
-
-任意のディレクトリで下記の通りに、コマンドを実行して下さい。
-<pre>$ jParser.sh[space]-x[アノテーションファイル名][space]-s[塩基配列ファイル名]</pre>
-
-例
-<pre>$ jParser.sh -xsample.ann -ssample.fasta</pre>
-
-ファイル名は絶対パス・相対パスのどちらでも指定可能です。    
-    
-**macOS: ファイル名とフォルダ名について**     
-[配列ファイル](/ddbj/file-format.html#sequence)、[アノテーションファイル](/ddbj/file-format.html#annotation)のファイル名またはフォルダ名にマルチバイト文字が含まれていますと一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないようにご注意ください。
-
-\-x[<span class="font-br font-normal">アノテーションファイル名</span>\]    
-: このオプションは必須です。指定されていない場合、本ツールは終了します。    アノテーションファイルは、登録データの登録者、REFERENCE、Feature/Qualifierの情報等を記述したタブ区切りテキストファイルです。 書式の詳細に関しては、[登録ファイル形式：アノテーションファイル](/ddbj/file-format.html#annotation) をご参照下さい。
-
-\-s[<span class="font-br font-normal">塩基配列ファイル名</span>\]  
-: このオプションは必須です。指定されていない場合、本ツールは終了します。    塩基配列ファイルは、全登録データの配列をFASTA形式で記述したテキストファイルです。 書式の詳細に関しては、[登録ファイル形式：配列ファイル](/ddbj/file-format.html#sequence)をご参照下さい。
+**-x \<アノテーションファイル名\>**    
+必須。アノテーションファイルを指定します。アノテーションファイル書式に関しては、[登録ファイル形式：アノテーションファイル](/ddbj/file-format.html#annotation) をご参照下さい。
+```
+-x sample.ann
+```
+**-s \<塩基配列ファイル名\>**    
+必須。塩基配列ファイルを指定します。 塩基配列ファイル書式に関しては、[登録ファイル形式：配列ファイル](/ddbj/file-format.html#sequence)をご参照下さい。
+```
+-s sample.fasta
+```
+**-e \<結果出力用ファイル名\>**    
+任意。実行結果をファイルに出力する場合のファイル名を指定します。このオプションを指定しない場合、画面に結果が出力されます。
+```
+-e result.txt
+```
+**-M \<最大メモリサイズ\>**    
+任意。コマンド実行時に許可する最大メモリサイズをmegabyteで指定します。アノテーションファイルまたは塩基配列ファイルのサイズが大きい場合に使用します。このオプションを指定しない場合は、jParser.sh スクリプト内 DEFAULT_MAX_HEAP= のメモリ量が使われます。
+```
+-M 8192m
+```
 
 <div class="attention" markdown="1">
-Parser は、エラーが発生している場合は、エラーメッセージを出力します。    
-エラーメッセージの意味は [Parser エラーメッセージ](/ddbj/validator.html#Parser) をご覧ください。
+**macOS: ファイル名とフォルダ名について**
+
+[アノテーションファイル](/ddbj/file-format.html#annotation)、[配列ファイル](/ddbj/file-format.html#sequence)のファイル名またはフォルダ名にマルチバイト文字が含まれていますと一部のバージョンの macOS では正常に動作しない場合がありますので、ファイル名とフォルダ名にマルチバイト文字を混在させないようにご注意ください。
 </div>
+
+### 実行例  {#exec-eg}
+例1
+```
+$ cd /home/mass/jParser
+$ ./jParser.sh -x sample1.ann -s sample1.fasta
+```
+例2
+```
+$ cd /home/mass/jParser
+$ ./jParser.sh -x sample2.ann -s sample2.fasta -M 16384m -e result.txt
+```
+
+## エラーメッセージ  {#error}
+アノテーションファイル、塩基配列ファイル書式にエラーがある場合は、エラーメッセージが出力されます。エラーメッセージの詳細については [Validator エラーメッセージ: Parser](/ddbj/validator.html#Parser) をご覧ください。

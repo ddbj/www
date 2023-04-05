@@ -1298,7 +1298,7 @@ $(function() {
   if ( pathname.match(/-e\.html/) ) la = "en";  
   
   if ( pathname.match(/\/ddbj\/validator/) ){
-  
+
     // Parser
     $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1djQ52hOYXFRQru3-CJZyvzANaZOZ_TuuQW8i0IKg5Ls/values/Parser?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
@@ -1398,9 +1398,40 @@ $(function() {
 
       }
 
-    $("#AgpParser-rule").prepend(rule_html);
+      $("#AgpParser-rule").prepend(rule_html);
 
     }); // $.getJSON. AGPParser
+
+    // getJSONの描画が終わるのを待ってアンカーにスクロール
+    // #transCheckerや#AGP_Parserは、getJSON描画前にアンカージャンプしてからjsonの描画処理が行われるから、まったく関係のない位置でいったん止まり不快感を覚える。そのため、アンカー付きでもいったんページ上部に移動してから、対象アンカーにスクロールするようにしている。
+    function myPromise1(num) {
+      return new Promise(function () {
+        setTimeout(function () {
+          // console.log(num + "ms wait");
+          $(document).scrollTop(0);
+        }, num)
+      })
+    }
+    function myPromise2(num) {
+      return new Promise(function () {
+        setTimeout(function () {
+          // console.log(num + "ms wait");
+          $(document).scrollTop();
+          if (anchor && $(anchor).length) {
+            // console.log(anchor);
+            $(document).scrollTop($(anchor).offset().top);
+          }
+        }, num)
+      })
+    }
+    async function myAsyncAll1() {
+      await myPromise1(1000);
+    }
+    async function myAsyncAll2() {
+      await myPromise2(2000);
+    }
+    myAsyncAll1();
+    myAsyncAll2();
 
   }
 
