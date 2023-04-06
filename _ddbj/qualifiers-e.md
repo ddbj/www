@@ -701,17 +701,19 @@ Homo sapiens HeLa cells</pre>
 ### /lat_lon<a name="lat_lon"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#lat_lon)</span>
 
 Definition
-: geographical coordinates of the location where the sequenced sample was collected    
+: geographical coordinates of the location (latitude and longitude) where the sequenced sample was collected    
 
 Value format
-: d[d.dddd] &lt;N or S&gt; d[dd.dddd] &lt;W or E&gt;    
+: d[d.dddddddd] &lt;N or S&gt; d[dd.dddddddd] &lt;W or E&gt;    
 
 Example
 : <pre>47.94 N 28.12 W
-45.0123 S 4.1234 E</pre>
+45.0123 S 4.1234 E
+45.01234567 S 4.12345678 E</pre>
 
 Comment
-: Please describe the figure below the decimal point by not minute and second but the decimal.    
+: N: north latitude, S: south latitude, W: west longitude, E: east longitude
+Please describe the figure below the decimal point by not minute and second but the decimal.    
 This qualifier can include the 8th decimal places.  
 
 

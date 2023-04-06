@@ -712,17 +712,19 @@ Homo sapiens HeLa cells</pre>
 ### /lat_lon<a name="lat_lon"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#lat_lon)</span>
 
 定義
-: 配列決定したサンプルが採取された位置の地理的座標 
+: 配列決定したサンプルが採取された位置の地理的座標。緯度 (latitude) と経度 (longitude)。
 
 書式
-: d[d.dddd] &lt;N or S&gt; d[dd.dddd] &lt;W or E&gt; 
+: d[d.dddddddd] &lt;N or S&gt; d[dd.dddddddd] &lt;W or E&gt; 
 
 例
 : <pre>47.94 N 28.12 W
-45.0123 S 4.1234 E</pre>
+45.0123 S 4.1234 E
+45.01234567 S 4.12345678 E</pre>
 
 備考
-: 小数点以下の数字は分秒ではなく小数で記載してください。    
+: N と S は北緯と南緯、E と W は東経と西経を示します。    
+小数点以下の数字は分秒ではなく小数で記載してください。    
 小数点以下第8位まで記載可能です。
 
 
