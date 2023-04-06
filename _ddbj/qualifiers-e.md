@@ -713,7 +713,7 @@ Example
 
 Comment
 : N: north latitude, S: south latitude, W: west longitude, E: east longitude      
-Please describe the figure below the decimal point by not minute and second but the decimal.     
+Please describe the figure below the decimal point by not minute or second but the decimal.     
 This qualifier can include the 8th decimal places.    
 
 
