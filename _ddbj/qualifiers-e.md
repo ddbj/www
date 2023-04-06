@@ -712,9 +712,9 @@ Example
 45.01234567 S 4.12345678 E</pre>
 
 Comment
-: N: north latitude, S: south latitude, W: west longitude, E: east longitude
-Please describe the figure below the decimal point by not minute and second but the decimal.    
-This qualifier can include the 8th decimal places.  
+: N: north latitude, S: south latitude, W: west longitude, E: east longitude      
+Please describe the figure below the decimal point by not minute and second but the decimal.     
+This qualifier can include the 8th decimal places.    
 
 
 ### /linkage_evidence<a name="linkage_evidence"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#linkage_evidence)</span>
