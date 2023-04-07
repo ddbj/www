@@ -34,7 +34,7 @@ FAQ: [How to request data release?](/faq/en/request-release-e.html)
 ### Narrowly-defined DDBJ, as a counterpart of GenBank and EMBL-Bank  {#ddbj}
 
 Making requests  
-: We only accept updating requests from [the original submitter](/ddbj/submission.html#submitter) of the entry.<br> 
+: We only accept updating requests from [the original submitter](/ddbj/submission-e.html#submitter) of the entry.<br> 
 Therefore if you are not the submitter you will need authorization from the submitter before making requests for the entry.
 
 Accepting your requests  
@@ -61,21 +61,21 @@ How to accepting your requests
     </tr>
     <tr>
       <th class="borderbtm" rowspan="4">E-mail</th>
-      <td class="second"><a href="/faq/en/update-sequence.html">To update your sequence?</a></td>
+      <td class="second"><a href="/faq/en/update-sequence-e.html">To update your sequence</a></td>
     </tr>          
     <tr>
-      <td class="second"><a href="/faq/en/data-confirm-before-hold-date.html">To confirm contents of the data, befoer the hold date.</a></td>
+      <td class="second"><a href="/faq/en/data-confirm-before-hold-date-e.html">To confirm contents of the data, befoer the hold date.</a></td>
     </tr>      
     <tr>
-      <td class="second"><a href="/faq/en/how-to-update-many-entries.html">To update many entries with a number of corrections</a></td>
+      <td class="second"><a href="/faq/en/how-to-update-many-entries-e.html">To update many entries with a number of corrections</a></td>
     </tr>  
     <tr>
-      <td class="second">In other case: Reffer to<a href="/faq/en/index-e.html?keyword=Update"> FAQ（Data update）</a> </td>
-    </tr>                                                
+      <td class="second">In other case: Reffer to<a href="/faq/en/index-e.html?keyword=Update"> FAQ (Data update)</a> </td>
+    </tr> 
   </tbody>
 </table>
     
 Frequently asked questions  
-: [How to restore the released data to private?](/faq/en/restore-released-data-private.html)
+: [How to restore the released data to private?](/faq/en/restore-released-data-private-e.html)
 : [I can not find sequence data that should be published.](/faq/en/cannot-find-data-already-published-e.html)
-: In other case: Reffer to [FAQ（Data update）](/faq/en/index-e.html?keyword=Update)
+: In other case: Reffer to [FAQ (Data update)](/faq/en/index-e.html?keyword=Update)
