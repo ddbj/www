@@ -20,7 +20,9 @@ related_pages:
     url: /ddbj/representative-sequence-e.html
 ---
 
-[The organism names (values of /organism qualifier)](/ddbj/organism-e.html) are required to submit your sequence data.  If you do not identify the species of the organisms, or if you need to submit a large number of sequences from the same species, it may be required to use some identifiers of the sample organisms for your sequence data.
+[The organism names (values of /organism qualifier)](/ddbj/organism-e.html) are required to submit your sequence data.  
+If you do not identify the species of the organisms, or if you need to submit a large number of sequences from the same species, 
+it may be required to use some identifiers of the sample organisms for your sequence data.
 
 For many cases of bacteria, yeasts, and other microorganisms, especially <span class="red">**to submit whole genome sequences of the microorganisms**</span>, you may need to add identifiers of strains and/or culture collections for the organisms.    
 Further, when you propose a new species name, you have to deposit the organism to two or more culture collections. 
@@ -171,11 +173,13 @@ However, please pay attention to the following cases.
 
 ### Bacteria, Archaea, or Unicellular Fungi  {#org_uni}
 
-In cases of unicellular organisms, it is not required to include any identifiers in organism names regardless of the taxonomic identification level. 
+In cases of unicellular organisms, it is not required to include any identifiers in organism names regardless of the taxonomic identification level.    
 
-- When you propose new species, it is recommended to include some identifiers such as strain names in organism names.  
+- When you propose a new species, it is recommended to include some identifier such as strain name in organism name.  
 - In cases of cyanobacteria, it is required to include some identifiers such as strain names in organism names. 
-- Previously, the strain names or some other lower taxa was required to be included in the organism names for whole genomic scale sequences from microorganisms.    However, currently, the organism name should be just a scientific name, in principle, even for microbial genomes.
+- To submit whole-genome-scale sequences of microorganisms, etc., currently, if the species has not yet been identified, it is a general rule to include strain, etc. in the organism name.  <br> Previously, regardless of species identification, it is required for genome-wide sequence submissions to include strain names, etc. in the organism names.
+
+
 
 ### Animals, Plants, or Multicellular Fungi   {#org_multi}
 
@@ -184,7 +188,7 @@ The identifiers included in organism names do not have to be assigned to every i
 
 ### Viruses  {#org_virus}
 
-- Different from other domains, descriptions like scientific names can be accepted during species proposing.    In that case, we recommend to include some identifiers into the virus names.
+- Different from other domains, descriptions like scientific names can be accepted during species proposing.   <br>In that case, we recommend to include some identifiers into the virus names.
 - By 2017, we used informal names for frequently submitted pathogenic viruses including their strain names and serotypes in the description of organism names.    However, the rule has been discontinued for future submissions.
  
 
