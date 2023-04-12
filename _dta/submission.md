@@ -7,8 +7,10 @@ current_tab: submission
 lang: ja
 ---
 
+<div class="attention" markdown="1">
 Trace Archive の全データは SRA に移行され、Trace Archive は閉鎖されました。  
 SRA での trace データのアクセス方法は [Access Trace Data](https://www.ncbi.nlm.nih.gov/sra/docs/trace-data/) をご覧ください。
+</div>
 
 ## Trace Archive の概要  {#overview}
 

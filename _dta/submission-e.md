@@ -7,8 +7,10 @@ current_tab: submission
 lang: en
 ---
 
+<div class="attention" markdown="1">
 All Trace Archive data were migrated to SRA and Trace Archive was closed.  
 See "[Access Trace Data](https://www.ncbi.nlm.nih.gov/sra/docs/trace-data/)" regarding how to access trace data in SRA.
+</div>
 
 ## Trace Archive overview  {#overview}
 
