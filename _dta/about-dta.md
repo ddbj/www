@@ -14,7 +14,8 @@ trace データのアクセス方法は [Access Trace Data](https://www.ncbi.nlm
 例 TI 番号 2282248605   
 curl "https://www.ncbi.nlm.nih.gov/Traces/sra-reads-be/fasta?ti=2282248605&retmode=text"
 
-キャピラリシークエンスデータは DRA に登録することができます。登録する場合、Experiment [Instrument](/dra/metadata.html#Instrument) でキャピラリシークエンサーを選択します。
+キャピラリシークエンスデータは DRA に登録することができます。登録する場合、Experiment [Instrument](/dra/metadata.html#Instrument) でキャピラリシークエンサーを選択します。  
+登録例 [DRX395641-DRX395673](https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=884920)
 </div>
 
 ## 連絡先  {#contact}

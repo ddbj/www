@@ -14,7 +14,8 @@ See "[Access Trace Data](https://www.ncbi.nlm.nih.gov/sra/docs/trace-data/)" reg
 Example: TI number 2282248605   
 curl "https://www.ncbi.nlm.nih.gov/Traces/sra-reads-be/fasta?ti=2282248605&retmode=text"
 
-You may submit capillary sequencing data to DRA. Please select capillary sequencing instruments for the Experiment [Instrument](/dra/metadata-e.html#Instrument).
+You may submit capillary sequencing data to DRA. Please select capillary sequencing instruments for the Experiment [Instrument](/dra/metadata-e.html#Instrument).   
+Real data [DRX395641-DRX395673](https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=884920).
 </div>
 
 [DDBJ Trace Archive (DTA)](index-e.html) is a permanent repository of
