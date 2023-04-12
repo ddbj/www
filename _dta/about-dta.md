@@ -8,8 +8,13 @@ lang: ja
 ---
 
 <div class="attention" markdown="1">
-Trace Archive の全データは SRA に移行され、Trace Archive は閉鎖されました。  
-SRA での trace データのアクセス方法は [Access Trace Data](https://www.ncbi.nlm.nih.gov/sra/docs/trace-data/) をご覧ください。
+Trace Archive は閉鎖されました。  
+trace データのアクセス方法は [Access Trace Data](https://www.ncbi.nlm.nih.gov/sra/docs/trace-data/) をご覧ください。
+
+例 TI 番号 2282248605   
+curl "https://www.ncbi.nlm.nih.gov/Traces/sra-reads-be/fasta?ti=2282248605&retmode=text"
+
+キャピラリシークエンスデータは DRA に登録することができます。登録する場合、Experiment [Instrument](/dra/metadata.html#Instrument) でキャピラリシークエンサーを選択します。
 </div>
 
 ## 連絡先  {#contact}

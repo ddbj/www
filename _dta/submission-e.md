@@ -8,8 +8,13 @@ lang: en
 ---
 
 <div class="attention" markdown="1">
-All Trace Archive data were migrated to SRA and Trace Archive was closed.  
-See "[Access Trace Data](https://www.ncbi.nlm.nih.gov/sra/docs/trace-data/)" regarding how to access trace data in SRA.
+Trace Archive has been retired.    
+See "[Access Trace Data](https://www.ncbi.nlm.nih.gov/sra/docs/trace-data/)" regarding how to access trace data.
+
+Example: TI number 2282248605   
+curl "https://www.ncbi.nlm.nih.gov/Traces/sra-reads-be/fasta?ti=2282248605&retmode=text"
+
+You may submit capillary sequencing data to DRA. Please select capillary sequencing instruments for the Experiment [Instrument](/dra/metadata-e.html#Instrument).
 </div>
 
 ## Trace Archive overview  {#overview}
