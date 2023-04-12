@@ -7,6 +7,9 @@ current_tab: submission
 lang: ja
 ---
 
+Trace Archive の全データは SRA に移行され、Trace Archive は閉鎖されました。  
+SRA での trace データのアクセス方法は [Access Trace Data](https://www.ncbi.nlm.nih.gov/sra/docs/trace-data/) をご覧ください。
+
 ## Trace Archive の概要  {#overview}
 
 [DDBJ Trace Archive (DTA)](index.html) は，配列決定プロジェクトからのシングルパスリードの DNA sequence chromatograms (traces), base calls, quality estimates のためのデータベースです。 Trace Archive は [International Nucleotide Sequence Database Collaboration (INSDC)](/about/insdc.html#insd) のメンバーとして，DDBJ，[NCBI](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) と [EBI](https://www.ebi.ac.uk/ena/) が国際協力して運営しています。[NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) が ID を発行管理しています。

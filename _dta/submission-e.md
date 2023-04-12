@@ -7,6 +7,9 @@ current_tab: submission
 lang: en
 ---
 
+All Trace Archive data were migrated to SRA and Trace Archive was closed.  
+See "[Access Trace Data](https://www.ncbi.nlm.nih.gov/sra/docs/trace-data/)" regarding how to access trace data in SRA.
+
 ## Trace Archive overview  {#overview}
 
 [DDBJ Trace Archive (DTA)](/index-e.html)is a permanent repository of
