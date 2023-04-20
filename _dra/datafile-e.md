@@ -80,7 +80,7 @@ CCCFFFFFHHGHGJJGIJHIJIJJJJJIJJJJJIJJGIJJJJJIIJIIJFJJJJJFIJJJJIIIIGIIJHHHHDEEFFFE
 AA?CC:    RG:Z:1    NH:i:1    NM:i:0
 ```
 
-#### BAM file processing  {#BAM_file_processing}
+#### BAM file processing  {#bam_process}
 
 The header and alignment section are internally consistent: each aligned read has an RNAME (reference sequence name, 3rd field) that matches an SN tag value from the header (e.g., CHROMOSOME_I), and, if provided,the alignment read group optional field (RG:Z:) is consistent with the
 read group ID in the header (1). It is also important to ensure that the
@@ -130,23 +130,23 @@ tools or future genome assembilies.
 
 {% include image.html url="books/bam-mapping.jpg" caption="mapping between bam and reference sequences" class="w500" %}
 
-##### 1. BAM file submission {#BAM_file_submission}
+##### 1. BAM file submission {#bam_format}
 
 The alignment data can be submitted in the BAM format. The bam files should be readable by [SAMtools](http://samtools.sourceforge.net/) and [picard](https://broadinstitute.github.io/picard/). The BAM files are nearly optimal in terms of compression and should be submitted uncompressed.
 
-##### 2. Specify reference by INSDC/RefSeq accession number {#Specify_reference_by_INSDC_RefSeq_accession_number}
+##### 2. Specify reference by INSDC/RefSeq accession number {#ref_acc}
 
 If references are found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), references can be specified by their accession.version number (for example, NC_000001.11). [Version number](/ddbj/flat-file-e.html#Version)is necessary. Accession numbers for references can be searched in [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/).
 
-##### 3. Specify reference by supplying multi-fasta  {#Specify_reference_by_supplying_multi-fasta}
+##### 3. Specify reference by supplying multi-fasta  {#ref_fasta}
 
 If references are not found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/submission-e.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
 
-##### 4. Specify reference by both INSDC/RefSeq accession number and multi-fasta  {#Specify_reference_by_both_INSDC_RefSeq_accession_number_and_multi-fasta}
+##### 4. Specify reference by both INSDC/RefSeq accession number and multi-fasta  {#ref_acc_fasta}
 
 If a part of references are found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), these references can be specified by their accession.version number (for example, NC_000001.11). The rest of references needs to be supplied by uploading a multi-fasta file. In the SN-reference mapping table, list accession.version numbers and sequence names of multi-fasta deflines.
 
-##### 5. SN-reference mapping table  {#SN-reference_mapping_table}
+##### 5. SN-reference mapping table  {#sn_ref}
 
 A tab delimited text file describing mapping between "SN in SQ line in BAM header" and "accession OR sequence name in fasta file". Select "tab" in the [Run file type](/dra/submission-e.html#File_Type)
 

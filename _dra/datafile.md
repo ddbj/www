@@ -81,7 +81,7 @@ CCCFFFFFHHGHGJJGIJHIJIJJJJJIJJJJJIJJGIJJJJJIIJIIJFJJJJJFIJJJJIIIIGIIJHHHHDEEFFFE
 AA?CC:    RG:Z:1    NH:i:1    NM:i:0
 ```
 
-#### BAM ファイル処理  {#BAM_ファイル処理}
+#### BAM ファイル処理  {#bam_process}
 
 ヘッダーとアライメントセクションは整合的である必要があります。
 各アライメントリードの RNAME (リファレンス配列の名前、3フィールド目) はヘッダー中の SN タグ値 (例 CHROMOSOME_I) と一致している必要があります。
@@ -108,25 +108,25 @@ PacBio や IonTorrent などでリファレンス配列がない bam ファイ�
 
 {% include image.html url="books/bam-mapping.jpg" caption="bam とリファレンス配列の対応付け" class="w500" %}
 
-##### 1. BAM {#BAM}
+##### 1. BAM {#bam_format}
 
 アライメントデータを BAM フォーマットで登録することができます。BAM ファイルは [SAMtools](http://samtools.sourceforge.net/) と [picard](https://broadinstitute.github.io/picard/) で読み込める形式になっている必要があります。圧縮していない BAM ファイルをアップロードしてください。   
 Run の [File Type](#File_Type) には "bam" を選択します。
 
-##### 2. リファレンスを INSDC/RefSeq アクセッション番号で指定  {#リファレンスを_INSDC_RefSeq_アクセッション番号で指定}
+##### 2. リファレンスを INSDC/RefSeq アクセッション番号で指定  {#ref_acc}
 
 リファレンス配列が [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/) にある場合、アクセッション番号.バージョン番号 (例 NC_000001.11) でリファレンスを参照することができます。 [配列のバージョン番号](/ddbj/flat-file.html#Version)は必須です。リファレンスゲノム配列のアクセッション番号は [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/) で検索することができます。
 
-##### 3. リファレンスをマルチ fasta で提供 {#リファレンスをマルチ_fasta_で提供}
+##### 3. リファレンスをマルチ fasta で提供 {#ref_fasta}
 
 リファレンス配列が [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/) にない場合、リファレンス配列をマルチ fasta ファイルで提供します。真核生物のオルガネラ配列等短い配列は番号指定に対応していないケースがあります。
 Run の [File Type](#File_Type) には "reference_fasta" を選択します。bam ヘッダーで定義されたリファレンスとマルチ fasta 中の配列は対応表を介して defline 中の配列名でリンクされます。 bam SQ 行 LN タグのリファレンス配列長とマルチ fasta 中の配列長が異なっている場合ワーニングになります。
 
-##### 4. INSDC/RefSeq アクセッション番号とマルチ fasta が混在するケース  {#INSDC_RefSeq_アクセッション番号とマルチ_fasta_が混在するケース}
+##### 4. INSDC/RefSeq アクセッション番号とマルチ fasta が混在するケース  {#ref_acc_fasta}
 
 一部のリファレンス配列が [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/) にある場合、アクセッション.バージョン番号 (例 NC_000001.11) で一部のリファレンスを指定し、残りのリファレンス配列はマルチ fasta ファイルで提供します。混在しているケースでは、対応表にアクセッション.バージョン番号とマルチ fasta 中の defline 中の配列名を記載します。
 
-##### 5. SN-リファレンス配列の対応表  {#SN-リファレンス配列の対応表}
+##### 5. SN-リファレンス配列の対応表  {#sn_ref}
 
 ご自分で独自に作成するファイルです。「BAM ファイルヘッダーの SQ 行中の SN 値」と「アクセッション番号 OR リファレンスマルチ fasta ファイル中の配列名」との対応関係をタブ区切りで記載します。 Run の [File Type](#File_Type) には "tab" を選択します。
 
