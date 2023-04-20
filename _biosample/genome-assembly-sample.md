@@ -20,11 +20,24 @@ lang: ja
 
 ## 複数サンプルがアセンブリに使用された場合 {#samples}
 
-複数サンプルに由来するリードをアセンブルして得られたゲノム配列の場合、複数 BioSample をリンクすることはできないため、派生 BioSample (derived BioSample) を一つ登録します。    
+複数のサンプルからゲノム DNA を抽出、得られたリードを混合してアセンブルし、一つのゲノム配列として [DDBJ](/ddbj/index.html) に登録する場合、「ゲノム配列にリンクできる BioSample は一つ」という制約があるため、サンプルに差異があっても、以下に該当する場合は BioSample を分けずに登録することを推奨します。
+
+* サンプル間でゲノム配列が同じものとして扱っている場合
+* ゲノム配列以外に遺伝子発現などの定量的なデータが結び付かない場合
+
+登録例  
+
+* 同じ試料から異なる日に抽出した各ゲノム DNA の登録。抽出日の情報は BioSample 属性として記載する必要はありません。記載する場合、DRA Experiment や BioSample の description に記載します。
+* 同じ試料から調製した Illumina と PacBio 用の各ゲノム DNA の登録。BioSample は分けずに、DRA Experiment で分けます。
+
+異なるサンプルを別々に登録する場合、異なる BioSample をまとめる派生 BioSample (derived BioSample) をゲノム配列用に一つ登録します。  
 例えば、オスとメスに由来するリードをそれぞれ DRA に登録し、両者のリードを使ってゲノムをアセンブルした場合、オスとメスそれぞれの BioSample アクセッション番号を引用した派生 BioSample を一つ登録し、ゲノム配列にリンクします。    
-派生サンプルの元となるアクセッション番号は、派生サンプルの derived_from 属性に "This sample group is the combination of the [由来サンプル数] individual BioSamples: [BioSample アクセッション番号]" という書式で示します。
+派生サンプルの元となるアクセッション番号は、派生サンプルの derived_from 属性に "This sample group is the combination of the [由来サンプル数] individual BioSamples: [BioSample アクセッション番号]" という書式で示します。   
 例: This sample group is the combination of the 2 individual BioSamples: SAMN12623203 and SAMN12623206    
-登録例: ゲノム配列 [JAGDQO010000000](https://www.ncbi.nlm.nih.gov/nuccore/2035211276) と派生サンプル [SAMN17974349](https://www.ncbi.nlm.nih.gov/biosample/17974349)
+
+登録例
+
+* ゲノム配列 [JAGDQO010000000](https://www.ncbi.nlm.nih.gov/nuccore/2035211276) と派生サンプル [SAMN17974349](https://www.ncbi.nlm.nih.gov/biosample/17974349)
 
 ## メタゲノムアセンブリ  {#mag}
 

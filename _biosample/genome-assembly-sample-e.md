@@ -19,9 +19,21 @@ Register a [locus tag prefix](/ddbj/locus_tag-e.html) necessary for an annotated
 
 ## Genome assembled from multiple samples {#samples}
 
-When submitting a genome sequence assembled from reads of multiple samples, register a derived BioSample because a genome sequence cannot be linked to multiple BioSamples. For example, sequencing reads of male and female samples are submitted to DRA, and submit a genome sequence assembled from both samples, register a derived BioSample citing both BioSample accessions.    
+When submitting a genome sequence assembled from DNA reads extracted from different samples to [DDBJ](/ddbj/index-e.html), we recommend to register a BioSample even though samples are different (an assembled genome needs to be linked to single BioSample). 
+
+* genome sequences of different samples were treated as the "same" molecule.
+* Apart from a genome sequence, quantitative data such as gene expression are not linked.
+
+Example submissions.
+
+* Genome DNAs extracted from a same sample on a different day. You may not describe the extracted dates in BioSample attributes. Instead, you may describe the dates in DRA Experiment or BioSample description.
+* Genome DNAs prepared for Illumina and PacBio sequencing. Differentiate at the DRA Experiment level and not at the BioSample level.
+
+When you want to register more than one BioSample, register a derived BioSample because a genome sequence cannot be linked to multiple BioSamples. For example, sequencing reads of male and female samples are submitted to DRA, and submit a genome sequence assembled from both samples, register a derived BioSample citing both BioSample accessions.    
 Enter the originating BioSample accessions in derived_from attribute of the derived BioSample in the format of "This sample group is the combination of the [number of samples] individual BioSamples: [BioSample accessions]". For example, "This sample group is the combination of the 2 individual BioSamples: SAMN12623203 and SAMN12623206"    
-Real examples: A Genome sequence [JAGDQO010000000](https://www.ncbi.nlm.nih.gov/nuccore/2035211276) and a derived sample [SAMN17974349](https://www.ncbi.nlm.nih.gov/biosample/17974349).
+   
+Real examples:  
+* A Genome sequence [JAGDQO010000000](https://www.ncbi.nlm.nih.gov/nuccore/2035211276) and a derived sample [SAMN17974349](https://www.ncbi.nlm.nih.gov/biosample/17974349).
 
 ## Metagenome assembly {#mag}
 
