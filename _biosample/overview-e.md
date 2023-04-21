@@ -49,14 +49,6 @@ Examples:
 - To examine gene expression profiles, CHO cells infected with a virus and sampled at 0, 2, 4, and 8 hours post infection \- 4 BioSamples (4 time points)
 - To analyze differences in gene expression levels, RNA-seq data from a single male anteater taken from the brain, heart, lungs, testes, and liver \- 5 BioSamples (5 different tissues isolated)
 
-## Genome assembly sample {#genome-assembly-sample}
-
-For sample(s) used for genome assembly, see [Genome Assembly Sample](/biosample/genome-assembly-sample-e.html).
-
-## Human sample {#human-sample}
-
-For sample(s) derived from human, see [Human Sample](/biosample/human-sample-e.html).
-
 ## Sample attributes  {#sample-attributes}
 
 A major component of a BioSample record is the sample attributes section. Attributes define the material under investigation and can include sample characteristics such as cell type, collection site and phenotypic information like disease state.
@@ -79,6 +71,92 @@ The package itself is a mechanism to promote adequate sample description and att
 For an organism name of the BioSample [organism](/biosample/attribute-e.html?all=all#organism) attribute, see the ["Organism name"](/ddbj/organism-e.html) page. Previously, a strain name or some other lower taxon was required for the organism name of whole genomic sequence, mainly microorganisms. However, currently, the value of organism qualifier should be just a scientific name, in principle, even though for microbial genomes. Please describe a strain name in the [strain](/biosample/attribute-e.html?all=all#strain) attribute of BioSample.
 
 Related news: [Changes in organism strain information management](/news/en/2013-12-13-e.html)
+
+## Genome assembly sample {#genome-assembly-sample}
+
+### Package {#package}
+
+A [DDBJ genome sequence](/ddbj/mss-e.html) should be linked to one BioProject and one BioSample. This constraint is set by INSDC to manage genome sequences.    
+Submit sample(s) used for genome assembly in following packages. When it is not appropriate to use [MIxS](/biosample/sample-info-e.html#mixs), use standard packages according to organisms.  
+
+- In the case of isolated, cultured prokaryotes: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)](/biosample/attribute-e.html) or [Microbe](/biosample/sample-info-e.html#Sample-type)
+- In the case of eukaryotes: [Eukaryotic Genomic Sequences (MIGS.eu)](/biosample/attribute-e.html) or one of the standard packages for organism, [Model organism or animal](/biosample/sample-info-e.html#Sample-type), [Invertebrate](/biosample/sample-info-e.html#Sample-type) or [Plant](/biosample/sample-info-e.html#Sample-type)
+
+Register a [locus tag prefix](/ddbj/locus_tag-e.html) necessary for an annotated genome submission by entering a prefix in the BioSample locus_tag_prefix attribute.
+
+### Genome assembled from multiple samples {#samples}
+
+When submitting a genome sequence assembled from DNA reads extracted from different samples to [DDBJ](/ddbj/index-e.html), we recommend to register a BioSample even though samples are different (an assembled genome needs to be linked to single BioSample). 
+
+* genome sequences of different samples were treated as the "same" molecule.
+* Apart from a genome sequence, quantitative data such as gene expression are not linked.
+
+Example submissions.
+
+* Genome DNAs extracted from a same sample on a different day. You may not describe the extracted dates in BioSample attributes. Instead, you may describe the dates in DRA Experiment or BioSample description.
+* Genome DNAs prepared for Illumina and PacBio sequencing. Differentiate at the DRA Experiment level and not at the BioSample level.
+
+When you want to register more than one BioSample, register a derived BioSample because a genome sequence cannot be linked to multiple BioSamples. For example, sequencing reads of male and female samples are submitted to DRA, and submit a genome sequence assembled from both samples, register a derived BioSample citing both BioSample accessions.    
+Enter the originating BioSample accessions in derived_from attribute of the derived BioSample in the format of "This sample group is the combination of the [number of samples] individual BioSamples: [BioSample accessions]". For example, "This sample group is the combination of the 2 individual BioSamples: SAMN12623203 and SAMN12623206"    
+   
+Real examples:  
+* A Genome sequence [JAGDQO010000000](https://www.ncbi.nlm.nih.gov/nuccore/2035211276) and a derived sample [SAMN17974349](https://www.ncbi.nlm.nih.gov/biosample/17974349).
+
+### Metagenome assembly {#mag}
+
+There are four tiers of [metagenome assembly](/ddbj/metagenome-assembly-e.html) (Metagenome-Assembled Genome, MAG) submission depending on the degree of assembly.    
+
+Submit a MAG from a particular organism to the [ENV division](/ddbj/env-e.html) of DDBJ.    
+
+Create a virtual BioSample for MAG submission. 
+Use the [MIMAG](/biosample/sample-info-e.html#Sample-type) package and use an organism name without uncultured (e.g., Methanosarcina thermophila). 
+Indicate deriving source sample as "derived_from: SAMD00000001". [Examples](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)  
+A MAG also needs to be linked to a BioSample, create a derived BioSample for MAG.
+
+## Human sample {#human-sample}
+
+### Submission of research data from human subjects {#submission-of-human-data}
+
+Submit data derived from human subjects (human data) to the databases of Bioinformation and DDBJ Center in compliant with "[Submission of Research Data from Human Subjects](/policies-e.html#submission-of-human-data)".
+
+WARNING: Only use for human samples or cell lines that have no privacy concerns. 
+For all studies involving human subjects, it is the submitter's responsibility to ensure that the information supplied protects participant privacy in accordance with all applicable laws, regulations and institutional policies. Make sure to remove any direct personal identifiers from your submission. If there are patient privacy concerns regarding making data fully public, please submit samples and data to Japanese Genotype-phenotype Archive (JGA) database. [JGA](/jga/submission-e.html) has controlled access mechanisms and is an appropriate resource for hosting sensitive patient data. 
+
+### Sample attributes {#attribute}
+
+Describe following attributes for Human (*Homo sapiens*) sample by using [Human](/biosample/sample-info.html#Sample-type) package. Please see [this page](/biosample/attribute-e.html?all=all) for attribute explanation.  
+
+#### Sample derived from human subjects {#human-subject}
+
+Fill in anonymized subject id in isolate.
+
+#### Cell line {#cell-line}
+
+Recommended;
+- cell_type
+
+### Primary cell {#primary}
+
+Indicate primary cell in sample_type.    
+sample_type: primary cell
+
+### iPS cell {#ips}
+
+In most cases, iPS cells are used in differentiated state, so information regarding before and after the differentiation are important.  
+In addition to the above, provide attributes indicated below. It is also applied to ES cells used after differentiation.  
+Complex samples such as differentiated a few times, provide description in free-text.
+
+#### Samples from human subjects {#ips-human-subject}
+
+Describe information regarding differentiation in cell_type.    
+For example, cell_type： iPS cell derived megarocyte cell.
+
+#### Cell line {#ips-cell-line}
+
+Describe information regarding differentiation in cell_type.    
+For example, cell_type： iPS cell (cell_line:253G1) derived megarocyte cell.    
+In addition, describe provider information in biomaterial_provider.    
+For example, biomaterial_provider： ATCC.
 
 ## Antibiogram  {#antibiogram}
 
