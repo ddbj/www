@@ -147,13 +147,14 @@ Even in these cases, the identifiers must be anonymized.  We prohibit using any 
 
 Usually, we recommend using [/isolate](/ddbj/qualifiers-e.html#isolate) qualifiers for viral data.    
 For frequently submitted pathogenic viruses like SARS-CoV-2 or others, we strongly recommend you using [/isolate](/ddbj/qualifiers-e.html#isolate) qualifiers with the identifiers in the following format recommended by [ICTV](https://ictv.global/ ).    
--   Format: [virus_type]/[host_common_name]/[locality_name]/[sample_identifier]/[year]    
-    virus_type: the abbreviated name, genotype or type of the virus     
-    host_common_name: the common name of the viral host organism indicated in [/host](/ddbj/qualifiers-e.html#host) qualifier    
-    locality_name: the name of country or region of the collection site indicated in [/country](/ddbj/qualifiers-e.html#country) qualifier     
-    sample_identifier: any identifiers/numbers assigned by the submitters or the collectors     
-    year: the year of the sampling date indicated in [/collection_date](/ddbj/qualifiers-e.html#collection_date) qualifier     
--   Example: SARS-CoV-2/human/Japan/A12/2021
+-   Format: ```[virus_type]/[host_common_name]/[locality_name]/[sample_identifier]/[year]```    
+-   Example: ```SARS-CoV-2/human/Japan/A12/2021```
+
+| ```virus_type``` | the abbreviated name, genotype or type of the virus |
+| ```host_common_name``` | the common name of the viral host organism indicated in [/host](/ddbj/qualifiers-e.html#host) qualifier |
+| ```locality_name``` | the name of country or region of the collection site indicated in [/country](/ddbj/qualifiers-e.html#country) qualifier |
+| ```sample_identifier``` | any identifiers/numbers assigned by the submitters or the collectors |
+| ```year``` | the year of the sampling date indicated in [/collection_date](/ddbj/qualifiers-e.html#collection_date) qualifier |
 
 Though it is difficult for viruses to confirm the pure lines without culture by infected cells, we conventionally accepted [/strain](/ddbj/qualifiers-e.html#strain) qualifiers for viral sequences.    
 However, we recommend using /isolate qualifiers.     
