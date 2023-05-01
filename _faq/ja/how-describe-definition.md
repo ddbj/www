@@ -10,4 +10,4 @@ date: 2014-06-04T15:29:19
 lang: ja
 ---
 
-DEFINITION は(/ddbj/flat-file.html#DefinitionB)[記述ルール]に従って DDBJ 側で作成しますので、入力欄はありません。<!-- Nucleotide Sequence Submission System --></p>
+DEFINITION は[記述ルール](/ddbj/flat-file.html#DefinitionB)に従って DDBJ 側で作成しますので、入力欄はありません。<!-- Nucleotide Sequence Submission System -->
