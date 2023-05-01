@@ -358,11 +358,9 @@ Therefore, if you have any other sequence data derived from the same species can
 <span class="red">**please use the same tentative name in the meantime before the valid publication of the species.**</span>    
 This is only a procedure to manage the submitted data to us, so, it is a different issue from any names that you use in the preparing paper and so on.    
 
-Before released your sequence data from DDBJ, the tentative name is not available on the taxonomy database.    
 The tentative name in the taxonomy database is to be changed to the formal scientific name, after the valid publication of the species.    
 When the valid pulication, i.e. the paper to report a novel species, is published, please contact us to update the paper information (reference), the organism name and so on, and to release your sequence data.    
 See [Data Updates/Corrections after Receiving Accession Number](/ddbj/update-e.html) for your update request.    
-In general, you can request to replace the tentative name to the formal scientific name before the publication of your sequence data.    
 
 Format
 
