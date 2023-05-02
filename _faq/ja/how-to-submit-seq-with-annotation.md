@@ -11,8 +11,10 @@ lang: ja
 ---
 
 以下の登録方法があります。
-- [DDBJ 塩基配列登録システム](/ddbj/web-submission.html) (Nucleotide Sequence Submission System): web 経由のフォーム入力によるデータ送信
-- [Mass Submission System (MSS)](/ddbj/mss.html): 登録ファイルを送信
+- [DDBJ 塩基配列登録システム](/ddbj/web-submission.html) (NSSS): web 経由のフォーム入力によるデータ送信
+- [Mass Submission System](/ddbj/mss.html) (MSS): 登録ファイルを送信
 
-通常は DDBJ 塩基配列登録システムによる登録を推奨しています。    
-登録件数が非常に多い場合、多数の Feature を持つ場合、長大な配列の場合には MSS での登録が適しています。 
+通常は NSSS による登録を推奨しています。    
+塩基配列登録システムは全てのデータに対応している訳ではありませんので、MSS を利用した登録が必須な場合があります。    
+詳細は[塩基配列登録の流れ](/ddbj/submission.html#workflow )をご参照ください。    
+

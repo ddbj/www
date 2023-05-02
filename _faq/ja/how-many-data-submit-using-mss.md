@@ -12,6 +12,8 @@ date: 2014-06-04T14:36:23
 lang: ja
 ---
 
-件数に制限はありません。    
-件数が多い場合は もちろん、１件でも多数の feature を持つ場合、長大な配列の場合に適しています。    
-登録をご希望の場合は [Mass Submission System](/ddbj/mss.html) をご参照ください。
+[Mass Submission System](/ddbj/mss.html) (MSS) は件数が多い場合は もちろん、１件でも多数の feature を持つ場合、長大な配列の場合に適しています。    
+件数に制限はありませんし、件数以外の要素で MSS の利用が必須な場合があります。    
+[登録ナビゲーション](/submission-navigation.html ) でご確認ください。    
+詳細は[塩基配列登録の流れ](/ddbj/submission.html#workflow )をご参照ください。    
+
