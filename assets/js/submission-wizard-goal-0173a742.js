@@ -1,4 +1,4 @@
-import{w as u,b as g,r as y,L as D,$ as r,m as d,s as B,e as w,t as p,y as A,a as R,l as P,n as M}from"./submission-wizard-03e515ff.js";/**
+import{w as u,b as g,r as y,L as D,$ as r,m as d,s as B,e as w,t as p,y as A,a as R,l as P,n as M}from"./submission-wizard-e11eab7b.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -1376,6 +1376,18 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 `}},{title:{en:"BioSample",ja:"BioSample"},body:{en:`<p>Register samples to <a href="/biosample/submission-e.html">BioSample</a> by using the <a href="/biosample/submission-e.html#Sample-type">Omics package</a> in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>. BioSample is a record of biological sample with unique physical properties and majority of GEA submissions require more than one sample.</p>
 `,ja:`<p><a href="https://ddbj.nig.ac.jp/D-way">D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0</a>\u3067 <a href="/biosample/submission.html#Sample-type">Omics \u30D1\u30C3\u30B1\u30FC\u30B8</a>\u3092\u4F7F\u3063\u3066\u30B5\u30F3\u30D7\u30EB\u3092 <a  href="/biosample/submission.html">BioSample</a> \u306B\u767B\u9332\u3002
   BioSample \u306F\u751F\u7269\u5B66\u7684\u306A\u30B5\u30F3\u30D7\u30EB\u3067\u5927\u534A\u306E GEA \u767B\u9332\u306F\u4E00\u3064\u4EE5\u4E0A\u306E\u30B5\u30F3\u30D7\u30EB\u3092\u5FC5\u8981\u3068\u3057\u307E\u3059\u3002</p>
+`}},{title:{en:"DRA",ja:"DRA"},body:{en:`<p>Register raw sequencing reads to <a href="/dra/submission-e.html">DRA</a>. 
+<ol>
+  <li><a href="/dra/submission-e.html#create-new-submission">Create a new DRA submission</a> in the D-way submission portal.</li>
+  <li><a href="/dra/submission-e.html#upload-sequence-data">Upload raw sequencing data files to the DRA submission directory</a> by scp/sftp.</li>
+  <li>In the D-way submission portal, select the BioProject and BioSample that have been registered for the DRA submission. Submit metadata in the <a href="/dra/submission-e.html#submit-metadata">web interface</a> or, when number of runs exceeds 100, <a href="/dra/submission-e.html#metadata-excel">in excel/XML files</a> in the D-way submission portal.</li>
+</ol></p>
+`,ja:`<p>\u751F\u30EA\u30FC\u30C9\u3092 <a href="/dra/submission.html">DDBJ Sequence Read Archive (DRA)</a> \u306B\u767B\u9332\u3002</p>
+<ol>
+  <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 <a href="/dra/submission.html#create-new-submission">DRA \u65B0\u898F\u767B\u9332\u3092\u4F5C\u6210</a>\u3002</li>
+  <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
+  <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 DRA \u767B\u9332\u306E\u305F\u3081\u306B\u4F5C\u6210\u3057\u305F BioProject \u3068 BioSample \u3092\u9078\u629E\u3002D-way \u306E<a href="/dra/submission.html#submit-metadata">\u30A6\u30A7\u30D6\u753B\u9762</a>\u3067\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u767B\u9332\u3001\u3082\u3057\u304F\u306F\u3001Run \u6570\u304C100\u3092\u8D85\u3048\u308B\u3088\u3046\u306A\u5834\u5408\u306F<a href="/dra/submission.html#metadata-excel">\u30A8\u30AF\u30BB\u30EB/XML \u30D5\u30A1\u30A4\u30EB</a>\u3067\u767B\u9332\u3002</li>
+</ol></p>
 `}},{title:{en:"GEA",ja:"GEA"},body:{en:`<ul>
   <li>Create a new GEA submission in the <a href="https://ddbj.nig.ac.jp/D-way">D-way submission portal</a>.</li>
   <li><a href="/gea/submit-array-e.html#upload-data">Upload processed data files by scp/sftp</a> to the GEA submission directory in the file server.</li>
