@@ -124,6 +124,14 @@ category: about
         </div>
         </li>  
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/ara.jpg" title="荒 武"></p>
+        <div class="explanation">
+            <p class="name">荒 武</p>
+            <p class="name">Takeshi Ara, PhD</p>
+            <p class="position">キュレータ</p>
+        </div>
+        </li> 
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/fukuda.jpg" title="福田 亜沙美"></p>
         <div class="explanation">
             <p class="name">福田 亜沙美</p>
@@ -131,6 +139,8 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>  
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ghelfi.jpg" title="Andrea Ghelfi"></p>
         <div class="explanation">
@@ -138,8 +148,6 @@ category: about
             <p class="position">System Developer</p>
         </div>
         </li>  
-    </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hamaoka.jpg" title="濵岡一弘"></p>
         <div class="explanation">
@@ -156,6 +164,8 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li> 
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="李 慶範"></p>
         <div class="explanation">
@@ -164,8 +174,6 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okido.jpg" title="大城戸 利久"></p>
         <div class="explanation">
@@ -182,6 +190,8 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="鈴木 紀美子"></p>
             <div class="explanation">
@@ -190,8 +200,6 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="時松 敏明"></p>
             <div class="explanation">
@@ -208,6 +216,8 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="横山会美"></p>
         <div class="explanation">
@@ -216,8 +226,8 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>
-    </ul>       
-    <ul class="list">   
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/fujimoto.jpg" title="藤本　昌宏"></p>
         <div class="explanation">
