@@ -10,8 +10,11 @@ date: 2014-06-09T11:57:29
 lang: en
 ---
 
-DDBJ only accepts update requests from [submitters](/ddbj/submission.html#submitter) of the data except publication reference update.  
+DDBJ only accepts update requests from [submitters](/ddbj/submission.html#submitter ) of the data except publication reference update.    
 If you are not the submitter you will need permission from the submitter before requesting update.    
-DDBJ can forward your comments to the submitter. 
+See [Rights and Duties of Submitter](/ddbj/submission-e.html#right )
 
-Please contact us at [Inquiry to the sequence submitters](/contact-ddbj-e.html). 
+DDBJ can forward your comments to the submitter.  
+
+Please contact us at [Inquiry to the sequence submitters](/contact-ddbj-e.html).    
+Please note that we can not guarantee any response from the submitter.    

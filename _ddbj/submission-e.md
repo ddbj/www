@@ -23,87 +23,82 @@ related_pages:
 
 ### Purpose and Significance of Nucleotide Sequence Submission  {#purpose}
 
-In many scientific journals, it is required to assign and to describe
-[INSDC accession number](/documents/accessions-e.html) for a nucleotide sequence on
-the research paper. DDBJ is a member of [International Nucleotide
-Sequence Database Collaboration (INSDC)](http://www.insdc.org/).
+In many scientific journals, it is required to assign and to describe 
+[INSDC accession number](/documents/accessions-e.html) 
+for a nucleotide sequence on the research paper. DDBJ is a member of 
+[International Nucleotide Sequence Database Collaboration (INSDC)](http://www.insdc.org/ ).
 
-When you wish to publicize your sequence through DDBJ, and your sequence
-is [acceptable](/documents/data-categories-e.html) for DDBJ, you can submit your sequence
-to DDBJ, even if you have no plan to publication of any research paper
-related to the sequence.
+When you wish to publicize your sequence through DDBJ, and your sequence is 
+[acceptable](/documents/data-categories-e.html) 
+for DDBJ, you can submit your sequence to DDBJ, 
+even if you have no plan to publication of any research paper related to the sequence.
 
-Once released, the nucleotide sequences submitted to INSDC including
-DDBJ are [available for everyone](/about/insdc-e.html#policy).
+Once released, the nucleotide sequences submitted to INSDC including DDBJ are 
+[available for everyone](/about/insdc-e.html#policy ).
 
-If you submit nucleotide sequences to DDBJ, you can get [NO priority for
-patent](/policies-e.html#priority).
+If you submit nucleotide sequences to DDBJ, you can get 
+[NO priority for patent](/policies-e.html#priority ).
 
 
 ### New Submission or Update?  {#update}
 
 When you wonder your sequence data should be newly submitted or your
 previous entry should be modified, do not hesitate to contact us at
-[Contact form](/ddbj/update-form-e.html) "Data updates / Corrections".
+[Contact form](/ddbj/update-form-e.html ) "Data updates / Corrections".
 
-[Nucleotide Sequence Submission System](/ddbj/web-submission-e.html) is a tool
-only for new submission, so, do not use Nucleotide Sequence Submission
-System to send your update request. If you need to modify your previous
-entry, see [the link for update request](/ddbj/update-e.html), and contact
-us at [Application Form for Data Update
-Requests](/ddbj/update-form-e.html).
+[Nucleotide Sequence Submission System](/ddbj/web-submission-e.html) is a tool only for new submission, 
+so, do not use Nucleotide Sequence Submission System to send your update request. 
+If you need to modify your previousentry, see 
+[the link for update request](/ddbj/update-e.html ), and contact us at 
+[Application Form for Data Update Requests](/ddbj/update-form-e.html ).
 
 
 ### Rights and Duties of Submitter {#right} 
 
-For sequence submission to DDBJ, it is required for submitters to
-provide not only nucleotide sequence but also address of [submitters and
-contact person](#submitter), reference(s) (including [primary
-citation](#pcite)), names of source organisms, function, natures of
-genes, and so on (collectively means "**registration
-information**" of the entry).
+For sequence submission to DDBJ, it is required for submitters 
+to provide not only nucleotide sequence but also address of 
+[submitters and contact person](#submitter ), reference(s) (including 
+[primary citation](#pcite )), names of source organisms, function, 
+natures of genes, and so on (collectively means "**registration information**" of the entry).  
 
-DDBJ releases its data in [the DDBJ flat file
-format](/ddbj/flat-file-e.html). Submitter(s) and contact person of the
-entry are indicated in the [REFERENCE
-1](/ddbj/flat-file-e.html#Reference1) of DDBJ flat file, in principle
+DDBJ releases its data in 
+[the DDBJ flat file format](/ddbj/flat-file-e.html ). 
+Submitter(s) and contact person of the entry are indicated in the 
+[REFERENCE 1](/ddbj/flat-file-e.html#Reference1 ) of DDBJ flat file, in principle.  
 
-Following the progress of research, personnel change, and/or correction
-of some error, [submitters of the entry can revise and/or
-update](/ddbj/update-e.html) their own nucleotide sequence and
-registration information.
+Following the progress of research, personnel change, and/or correction of some error, 
+[submitters of the entry can revise and/or update](/ddbj/update-e.html ) 
+their own nucleotide sequence and registration information.  
 
-As mentioned above and [the page to explain dataflow](#data_flow), the
-nucleotide sequences released from DDBJ are available for everyone. When
-a user other than the submitter of the entry points out some error(s) in
-the entry, DDBJ will inform it to contact person of the entry. Since
-only submitters of the entry can revise and/or update the entry it depends on the submitters of the entry if the entry
-is modified following user's claim or not.
+As mentioned above and 
+[the page to explain dataflow](#data_flow ), the nucleotide sequences released 
+from DDBJ are available for everyone.  
+When a user other than the submitter of the entry points out some error(s) in
+the entry, DDBJ will inform it to contact person of the entry. 
+Since <span class="red">only submitters of the entry can revise and/or update the entry</span>, 
+it depends on the submitters of the entry if the entry is modified following user's claim or not.  
 
-Basically, it is required for the submitters to response user's inquiry
-about their own entry. When you wish to contact to the submitter(s) of
-an entry of your interest, please contact us through [the inquiry
-form](/contact-ddbj-e.html#to-submitter) with reasons briefly, then we will
-forward your message to the submitter(s). So, [do not block E-mails from
-DDBJ](/precautions-e.html).
+Basically, it is required for the submitters to response user's inquiry about their own entry.  
+When you wish to contact to the submitter(s) of an entry of your interest, please contact us through 
+[the inquiry form](/contact-ddbj-e.html#to-submitter ) with reasons briefly, 
+then we will forward your message to the submitter(s).  
+So, [do not block E-mails from DDBJ](/precautions-e.html ).
 
-When there is a disagreement between users and submitters on
-registration information of an entry, DDBJ maintains neutrality for both
-opinions.
+When there is a disagreement between users and submitters on registration information of an entry, 
+DDBJ keeps to be neutral to either opinion.  
 
 
 ### Releases of Primary Citation and Sequence Data  {#citation}
 
-During preparation/submission of [primary citation](#pcite), DDBJ can
-store your registration information privately in the meantime. If
-necessary, submitters have to include a [hold
-date](/ddbj/submission.html#holddate) in their registration
-information. Then, the entry with a hold date is stored privately at
-DDBJ. DDBJ must maintain registration information as confidential until
-publication of the entry.
+During preparation/submission of [primary citation](#pcite ), 
+DDBJ can store your registration information privately in the meantime.  
+If necessary, submitters have to include a 
+[hold date](/ddbj/submission.html#holddate ) in their registration information.  
+Then, the entry with a hold date is stored privately at DDBJ.  
+DDBJ must maintain registration information as confidential until publication of the entry.  
 
-The hold data will be open to the public according to [principle of data
-release](/documents/data-release-policy-e.html).
+The hold data will be open to the public according to 
+[principle of data release](/documents/data-release-policy-e.html ).
 
 In principle, [even submitters cannot remove their own
 entry](/ddbj/update-e.html#q9) if the entry has already been released
@@ -114,93 +109,84 @@ the submitter's request.
 
 Reference;
 
-  - [Overview of International Nucleotide Sequence Databases
-    Policies](/about/insdc-e.html#policy)
+  - [Overview of International Nucleotide Sequence Databases Policies](/about/insdc-e.html#policy )
 
 
 ## Required items for nucleotide sequence submission  {#item}
 
 ### Submitters  {#submitters}
 
-The items, affiliation, postal address and phone number of [contact
-person](#contact) and all names of [submitters](#submitter) submitters
-are required. Some of those items will be indicated in [REFERENCE
-1](/ddbj/flat-file-e.html#Reference1) on the flat files of the entries.
-After 2008, none of E-mail address, phone or fax number of the contact
-person is displayed without disclosing request from submitters.
+The items, affiliation, postal address and phone number of 
+[contact person](#contact ) and all names of 
+[submitters](#submitter ) submitters are required.  
+Some of those items will be indicated in 
+[REFERENCE 1](/ddbj/flat-file-e.html#Reference1 ) 
+on the flat files of the entries.  
+After 2008, none of E-mail address, phone or fax number of 
+the contact person is displayed without disclosing request from submitters.
 
 Notice: Submitter should not be only one person.  
-: Submitter of the entry is the person who have responsibility to the
-submitted data in the entry. We accept updating requests only from
-the original submitter of the entry.  
-Basically, we strongly recommend to describe joint submitters more
-than two persons, e.g. at least a true worker and an adviser, to
-avoid lost communication in future.  
-In principle, we cannot accept any sequence data from a student
-without whose advisers in names of submitter.
+: Submitter of the entry is the person who have responsibility to the submitted data in the entry.  
+We accept updating requests only from the original submitter of the entry.  
+Basically, we strongly recommend to describe joint submitters more than two persons, 
+e.g. at least a true worker and an adviser, to avoid lost communication in future.  
+In principle, we cannot accept any sequence data from a student without whose advisers in names of submitter.
 
 
 ### Date of data release to the public  {#hold-date}
 
-Submitters can select the status of their data, either "immediately
-release" or "hold until published". "hold date" is the date to start the
-distribution of the entry. Submitter can specify the date, if
-necessary  
-If you selected "hold until published", it is required to specify the
-"hold date" of your data.  
-Reference: [Principle of "Hold-Until-Published" data
-release](/documents/data-release-policy-e.html)
+Submitters can select the status of their data, either "immediately release" or "hold until published".  
+"hold date" is the date to start the distribution of the entry.  
+Submitter can specify the date, if necessary  
+If you selected "hold until published", it is required to specify the "hold date" of your data.  
+Reference: [Principle of "Hold-Until-Published" data release](/documents/data-release-policy-e.html )
 
 
 ### Number of sequences  {#number}
 
-If you would like to have consecutive accession numbers, you should fix
-the number of entries before your submission.
+If you would like to have consecutive accession numbers, 
+you should fix the number of entries before your submission.
 
-Even if your sequence is identical to previously reported sequence(s),
-on the condition that the sequence is independently determined, you can
-submit it as a "new" entry. Basically, DDBJ accepts all sequence data
-that are independently determined, even though sequences are identical
-each other.  
-However, for variation studies, DDBJ also accepts submissions of
-multiple identical sequences with frequency and total sample number.
-DDBJ recommends to normalize research data for variation studies by
-appropriate set of entries; basically, the number of entries should be
-equal to multiplication of numbers of sequence polymorphisms and sampled
-populations.  
-See also [representative submissions of identical sequences for
-variation studies](/ddbj/representative-sequence-e.html), in detail.
+Even if your sequence is identical to previously reported sequence(s), 
+on the condition that the sequence is independently determined, 
+you can submit it as a "new" entry.  
+Basically, DDBJ accepts all sequence data that are independently determined, 
+even though sequences are identical each other.  
+However, for variation studies, DDBJ also accepts submissions of 
+multiple identical sequences with frequency and total sample number.  
+DDBJ recommends to normalize research data for variation studies by appropriate set of entries; 
+basically, the number of entries should be equal to multiplication of numbers of sequence polymorphisms and sampled populations.  
+See also [representative submissions of identical sequences for variation studies](/ddbj/representative-sequence-e.html ), in detail.
 
 
 ### Scientific paper, REFERENCE  {#reference}
 
-You have to describe authors and title of the main paper for the
-sequence, as a [primary citation](#pcite). Even though you have no plan
-to submit any paper for you sequence, please enter authors and title,
-formally.
+You have to describe authors and title of the main paper for the sequence, as a 
+[primary citation](#pcite ). Even though you have no plan to submit any paper for you sequence, 
+please enter authors and title, formally.
 
-You can describe just referred papers which does not describe about the
-submitting sequence, if necessary.
+You can describe just referred papers which does not describe about the submitting sequence, if necessary.
 
 
 ### Biological knowledge related to nucleotide sequence  {#bio-inf}
 
-Whether the species is identified or not, it is required to describe the
-relevant information on the biological origin of your sequence with
-[organism name](/ddbj/organism-e.html) etc.
+Whether the species is identified or not, it is required to describe the relevant information on the biological origin of your sequence with
+[organism name](/ddbj/organism-e.html ) etc.
 
-As annotation for your sequence, [feature](/ddbj/features-e.html) should
-be described, if at all possible. You should describe features such as
-[protein coding sequences (CDS)](/ddbj/cds-e.html),
-[rRNA](/ddbj/features-e.html#rRNA), [tRNA](/ddbj/features-e.html#tRNA),
-[ncRNA](/ddbj/features-e.html#ncRNA) and so on with their
-[location](/ddbj/location-e.html). Please also describe qualifiers, such
-as [product](/ddbj/qualifiers-e.html#product),
-[gene](/ddbj/qualifiers-e.html#gene) and so on, arbitrarily.
+As annotation for your sequence, 
+[feature](/ddbj/features-e.html ) should be described, if at all possible.  
+You should describe features such as
+[protein coding sequences (CDS)](/ddbj/cds-e.html ),
+[rRNA](/ddbj/features-e.html#rRNA ), 
+[tRNA](/ddbj/features-e.html#tRNA ),
+[ncRNA](/ddbj/features-e.html#ncRNA ) and so on with their
+[location](/ddbj/location-e.html ). 
+Please also describe qualifiers, such as [product](/ddbj/qualifiers-e.html#product ),
+[gene](/ddbj/qualifiers-e.html#gene ) and so on, arbitrarily.
 
 Notice: protein coding sequence; CDS feature should have gene and product.  
-: See also the guideline of [gene nomenclature at
-DDBJ](/ddbj/cds-e.html#product) before your submission.
+: See also the guideline of 
+[gene nomenclature at DDBJ](/ddbj/cds-e.html#product ) before your submission.
 
 
 ### Nucleotide sequences  {#sequence}
@@ -208,7 +194,7 @@ DDBJ](/ddbj/cds-e.html#product) before your submission.
 In general, we accept sequences to share the data enough to believe 'as is' in nature.    
 It is incorrect to submit the sequencer output 'as is' without scrutinizing it.    
 
-See [Nucleotide Sequences](/ddbj/sequence-e.html) in detail.
+See [Nucleotide Sequences](/ddbj/sequence-e.html ) in detail.
 
 
 ## Workflow of the data submission to DDBJ  {#workflow}
@@ -226,14 +212,14 @@ Please note the points other than number or length of your sequences.
 
 **a) Either of the following categories or amounts of sequence data**    
 
-- [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
-  [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
-  [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
-  [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
-    - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
-- Submission with long sequences, greater than 500 kb in its length
-- Complex submission containing many features for one sequence, more than 30 features
-- Submission consists of large number of sequences, greater than 100 in total
+- [EST](/ddbj/est-e.html ), STS, [TSA](/ddbj/tsa-e.html ),
+  [HTC](/ddbj/htc-e.html ), [GSS](/ddbj/gss-e.html ),
+  [HTG](/ddbj/htg-e.html ), [WGS](/ddbj/wgs-e.html ),
+  [CON](/ddbj/con-e.html ), [TLS](/ddbj/tls-e.html )
+    - See [Categories for Sequence Data](/documents/data-categories-e.html#division ) in detail.
+- Submission with long sequences, greater than 500 kb in its length 
+- Complex submission containing many features for one sequence, more than 30 features 
+- Submission consists of large number of sequences, greater than 100 in total 
 
 **b) Regardless finished or draft level, sequence data of whole-length scale replicons**    
 
@@ -245,7 +231,7 @@ Please note the points other than number or length of your sequences.
 
 **c) Sequence data to be described BioProject or BioSample in DBLINK**    
 
-When you need to use [DBLINK](/ddbj/flat-file-e.html#DBLINK) to link BioProject or BioSample, the following cases are included, but not limited to them.    
+When you need to use [DBLINK](/ddbj/flat-file-e.html#DBLINK ) to link BioProject or BioSample, the following cases are included, but not limited to them.    
 
 - Sequence data from metagenome analyses, environmental profilings, and so on 
 - Sequence data of targeted genes to be linked each other
