@@ -65,38 +65,64 @@ In one submission, samples can be submitted as 1 sample - 1 line in sample attri
 
 ### Missing value reporting  {#missing-value-reporting}
 
-[The International Nucleotide Database Collaboration (INSDC)](https://www.insdc.org/submitting-standards/missing-value-reporting) have developed a standardised missing/null value reporting language to be used where a value of an expected format for sample information reporting can not be provided. Submitters are strongly encouraged to always provide true values of expected formats. However, if missing/null value reporting is required submitters are asked to use a term with the finest granularity for their reported situation. If appropriate, use a term in the "lower level", if not, use a term in the "top level".
+[The International Nucleotide Database Collaboration (INSDC)](https://www.insdc.org/submitting-standards/missing-value-reporting) have developed a standardised missing/null value reporting language to be used where a value of an expected format for sample information reporting can not be provided. Submitters are strongly encouraged to always provide true values of expected formats. In cases where this information cannot be provided (e.g., pathogen samples for which this information would lead to identifiability of a human) or is not relevant (e.g., study of a model organism lab stock or an established cell line), you can declare an appropriate exemption using one of the reporting level terms of the extended INSDC "missing value" reporting standards (e.g. "missing: control sample").
 
 To facilitate an understanding of the supported terms we enclose a table with the missing/null value terms and their definitions.
 
 Please use the following standardised missing value vocabulary only if a true value of an expected format for a mandatory field is missing. If a true value is missing for a recommended or an optional field then these fields should not be used for reporting at all.
 
-INSDC missing value reporting terms.
+INSDC missing value reporting terms ([INSDC website](https://www.insdc.org/submitting-standards/missing-value-reporting))
 
 <table>
   <tr>
-    <th> INSDC term (top level) </th>
-    <th> INSDC term (lower level) </th>
+    <th>INSDC term (top level)</th>
+    <th>INSDC term (lower level)</th>
+    <th>Definition</th>
+    <th>INSDC term (reporting level)</th>
     <th>Definition</th>
   </tr>
   <tbody>
     <tr>
-      <td> not applicable </td>
-      <td></td>
-      <td> information is inappropriate to report, can indicate that the standard itself fails to model or represent the information appropriately </td>
+      <td rowspan="2" class="borderbtm-sep">not applicable</td>
+      <td rowspan="2" class="borderbtm-sep"></td>
+      <td rowspan="2" class="borderbtm-sep">information is inappropriate to report, can indicate that the standard itself fails to model or represent the information appropriately</td>
+      <td>control sample</td>
+      <td>Information is not applicable as the sample represents a negative control sample collected in a lab.</td>
     </tr>
     <tr>
-      <td rowspan="3" class="borderbtm"> missing </td>
-      <td> not collected </td>
-      <td> information of an expected format was not given because it has not been collected </td>
+      <td>sample group</td>
+      <td>Information is not applicable as the sample represents a group of samples that do not have a single origin. E.g. for co-assembly or transcriptome assembly.</td>
     </tr>
     <tr>
-      <td> not provided </td>
-      <td> information of an expected format was not given, a value may be given at the later stage </td>
+      <td rowspan="6" class="borderbtm-sep">missing</td>
+      <td rowspan="3" class="borderbtm-sep">not collected</td>
+      <td rowspan="3" class="borderbtm-sep">information of an expected format was not given because it has not been collected</td>
+      <td>synthetic construct</td>
+      <td>Information does not exist as the sample represents an ab-initio synthetic construct.</td>
     </tr>
     <tr>
-      <td> restricted access </td>
-      <td> information exists but can not be released openly because of privacy concerns </td>
+      <td>lab stock</td>
+      <td>Information was not collected as the sample represents a cultured cell line or model organism under long-term lab control.</td>
+    </tr>
+    <tr>
+      <td>third party data</td>
+      <td>Information does not exist as the metadata was not collected or reported in records predating the 2023 agreement. For use in Third PArty data submissions.</td>
+    </tr>
+    <tr>
+      <td>not provided</td>
+      <td>information of an expected format was not given, a value may be given at the later stage</td>
+      <td>data agreement established pre-2023</td>
+      <td>Data agreements were established before the 2023 INSDC standard and metadata can not be provided. A value may be given at a later stage.</td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="borderbtm-sep">restricted access</td>
+      <td rowspan="2" class="borderbtm-sep">information exists but can not be released openly because of privacy concerns</td>
+      <td>endangered species</td>
+      <td>Information can not be reported as the target organism is endangered e.g. on the IUCN red-list.</td>
+    </tr>
+    <tr>
+      <td>human-identifiable</td>
+      <td>Information can not be reported as the metadata would make the sample human-identifiable.</td>
     </tr>
   </tbody>
 </table>

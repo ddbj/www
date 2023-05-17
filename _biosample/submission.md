@@ -64,39 +64,63 @@ BioSample を新規登録する場合は左のタブから順番に内容を英�
 ### 値がない場合の記載方法  {#missing-value-reporting}
 
 [INSDC ではサンプル属性値が存在しない場合の記載方法を標準化しています](https://www.insdc.org/submitting-standards/missing-value-reporting)。  
-登録者は常に定められた形式で属性値を提供することが推奨されますが、値がない (missing/null value)
-ことを報告する際には、状況をより細かく表す用語を使用することが求められます。適切な場合は "lower level" の用語を使用し、そうでない場合には "top level" の用語を使用します。
-
-以下に "missing/null value" に対する用語と定義を記載しています。
+登録者は常に定められた形式で属性値を提供することが推奨されます。サンプル情報を提供できない場合 (例 患者の同定に繋がりかねない病原菌サンプルの情報) や適切ではない場合 (ラボで保有しているモデル生物や細胞株)、
+INSDC の "missing value reporting standard" に従い、missing に続けて適切な reporting level term (例 "missing: control sample") を記載します。  
 
 必須属性に対する値がない場合にだけ標準化された用語を使用します。推奨・任意属性に対する値がない場合は、値を空にするか、属性そのものを使用しないでください。
 
-INSDC missing value reporting terms
+INSDC missing value reporting terms ([INSDC website](https://www.insdc.org/submitting-standards/missing-value-reporting))
 
 <table>
   <tr>
-    <th> INSDC term (top level) </th>
-    <th> INSDC term (lower level) </th>
+    <th>INSDC term (top level)</th>
+    <th>INSDC term (lower level)</th>
+    <th>Definition</th>
+    <th>INSDC term (reporting level)</th>
     <th>Definition</th>
   </tr>
   <tbody>
     <tr>
-      <td> not applicable </td>
-      <td></td>
-      <td> information is inappropriate to report, can indicate that the standard itself fails to model or represent the information appropriately </td>
+      <td rowspan="2" class="borderbtm-sep">not applicable</td>
+      <td rowspan="2" class="borderbtm-sep"></td>
+      <td rowspan="2" class="borderbtm-sep">information is inappropriate to report, can indicate that the standard itself fails to model or represent the information appropriately</td>
+      <td>control sample</td>
+      <td>Information is not applicable as the sample represents a negative control sample collected in a lab.</td>
     </tr>
     <tr>
-      <td rowspan="3" class="borderbtm"> missing </td>
-      <td> not collected </td>
-      <td> information of an expected format was not given because it has not been collected </td>
+      <td>sample group</td>
+      <td>Information is not applicable as the sample represents a group of samples that do not have a single origin. E.g. for co-assembly or transcriptome assembly.</td>
     </tr>
     <tr>
-      <td> not provided </td>
-      <td> information of an expected format was not given, a value may be given at the later stage </td>
+      <td rowspan="6" class="borderbtm-sep">missing</td>
+      <td rowspan="3" class="borderbtm-sep">not collected</td>
+      <td rowspan="3" class="borderbtm-sep">information of an expected format was not given because it has not been collected</td>
+      <td>synthetic construct</td>
+      <td>Information does not exist as the sample represents an ab-initio synthetic construct.</td>
     </tr>
     <tr>
-      <td> restricted access </td>
-      <td> information exists but can not be released openly because of privacy concerns </td>
+      <td>lab stock</td>
+      <td>Information was not collected as the sample represents a cultured cell line or model organism under long-term lab control.</td>
+    </tr>
+    <tr>
+      <td>third party data</td>
+      <td>Information does not exist as the metadata was not collected or reported in records predating the 2023 agreement. For use in Third PArty data submissions.</td>
+    </tr>
+    <tr>
+      <td>not provided</td>
+      <td>information of an expected format was not given, a value may be given at the later stage</td>
+      <td>data agreement established pre-2023</td>
+      <td>Data agreements were established before the 2023 INSDC standard and metadata can not be provided. A value may be given at a later stage.</td>
+    </tr>
+    <tr>
+      <td rowspan="2" class="borderbtm-sep">restricted access</td>
+      <td rowspan="2" class="borderbtm-sep">information exists but can not be released openly because of privacy concerns</td>
+      <td>endangered species</td>
+      <td>Information can not be reported as the target organism is endangered e.g. on the IUCN red-list.</td>
+    </tr>
+    <tr>
+      <td>human-identifiable</td>
+      <td>Information can not be reported as the metadata would make the sample human-identifiable.</td>
     </tr>
   </tbody>
 </table>
