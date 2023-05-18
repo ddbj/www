@@ -14,7 +14,8 @@ Submitters can organize metadata objects flexibly.
 - [Most simple case](#ex_simple)
 - [Comparative genome sequencing of three strains (paired-end)](#ex_samples)
 - [Biological replicates (paired-end)](#ex_replicates)
-- [Related sequencing data are reported in two publications](#ex_submissions)
+- [Group submissions by a BioProject](#ex_project)
+- [Group related projects by an umbrella project](#ex_submissions)
 
 ### Most simple case  {#ex_simple}
 
@@ -30,9 +31,13 @@ Include paired-end read files in a Run.
 
 {% include image.html url="submission/obj_exreplicate.jpg" caption="Biological replicates (paired-end)" class="w500" %}
 
-### Related sequencing data are reported in two publications.  {#ex_submissions}
+### Group submissions by a BioProject {#ex_project}
 
-{% include image.html url="submission/obj_ex3.jpg" caption="Related sequencing data are reported in two publications." class="w600" %}
+{% include image.html url="submission/obj_exproject.jpg" caption="Group submissions by a BioProject" class="w600" %}
+
+### Group related projects by an umbrella project {#ex_submissions}
+
+{% include image.html url="submission/obj_ex3.jpg" caption="Group related projects by an umbrella project" class="w600" %}
 
 ## Metadata tsv example {#tsv}
 

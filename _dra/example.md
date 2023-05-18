@@ -14,7 +14,8 @@ lang: ja
 - [最もシンプルなケース](#ex_simple)
 - [三つの菌株の比較ゲノム解析 (ペアエンド)](#ex_samples)
 - [Biological replicate がある場合 (ペアエンド)](#ex_replicates)
-- [関連するデータが別々の論文に発表される場合](#ex_submissions)
+- [別々の Submission を一つの BioProject でまとめる場合](#ex_project)
+- [Umbrella project で関連するプロジェクトをまとめる場合](#ex_submissions)
 
 ### 最もシンプルなケース  {#ex_simple}
 
@@ -30,9 +31,13 @@ lang: ja
 
 {% include image.html url="submission/obj_exreplicate.jpg" caption="Biological replicate がある場合　(ペアエンド)" class="w500" %}
 
-### 関連するデータが別々の論文に発表される場合  {#ex_submissions}
+### 別々の Submission を一つの BioProject でまとめる場合 {#ex_project}
 
-{% include image.html url="submission/obj_ex3.jpg" caption="関連するデータが別々の論文に発表される場合" class="w600" %}
+{% include image.html url="submission/obj_exproject.jpg" caption="別々の Submission を一つの BioProject でまとめる場合" class="w600" %}
+
+### Umbrella project で関連するプロジェクトをまとめる場合 {#ex_submissions}
+
+{% include image.html url="submission/obj_ex3.jpg" caption="Umbrella project で関連するプロジェクトをまとめる場合" class="w600" %}
 
 ## メタデータの記入例 {#tsv}
 
