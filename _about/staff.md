@@ -266,7 +266,7 @@ category: about
         <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="梅田 友貴"></p>
         <div class="explanation">
             <p class="name">梅田 友貴</p>
-            <p class="name">Tomoki UMEDA</p>
+            <p class="name">Tomoki Umeda</p>
             <p class="position">運用 SE</p>
         </div>
         </li>
