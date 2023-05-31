@@ -15,12 +15,13 @@ lang: ja
 ---
 
 相互にリンクされている
-[BioProject](/bioproject/index.html)、[BioSample](/biosample/index.html)、[DDBJ](/ddbj/submission.html)、[DRA](/dra/index.html) と [MetaboBank](/metabobank/index.html) に登録されたデータの連動公開の仕組みは以下のようになっています。
+[BioProject](/bioproject/index.html)、[BioSample](/biosample/index.html)、[DDBJ](/ddbj/submission.html)、[DRA](/dra/index.html)、[GEA](/gea/index.html) と [MetaboBank](/metabobank/index.html) に登録されたデータの連動公開の仕組みは以下のようになっています。
 
 - BioProject と BioSample の公開はリンクされているデータの連動公開を引き起こしません。
 - BioSample の公開は derived_from 属性で引用されている BioSample の連動公開を引き起こします。
 - DDBJ、DRA、GEA と MetaboBank の公開はリンクしている BioProject と BioSample の連動公開を引き起こします。
 - DDBJ の公開は DBLINK で参照している DRA Run の公開を引き起こします。
+- GEA の公開は参照している DRA Run の公開を引き起こします。
 - DRA の公開は DDBJ の連動公開を引き起こしません。
 
 <p class="attention">DRA ではメタデータとシークエンスデータは DRA 登録 (submission) 単位で公開されます。</p>
