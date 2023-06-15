@@ -499,8 +499,6 @@ gea:
       title: Search (AOE)	
       url: http://aoe.dbcls.jp/	
       children:	
-        - title: Search (ArrayExpress)	
-          url: https://www.ebi.ac.uk/arrayexpress/browse.html	
         - title: RefEx	
           url: http://refex.dbcls.jp/	
     - id: downloads	
@@ -550,8 +548,6 @@ gea:
       children:
         - title: RefEx
           url: http://refex.dbcls.jp/index.php?lang=en
-        - title: Search (ArrayExpress)
-          url: https://www.ebi.ac.uk/arrayexpress/browse.html
     - id: downloads
       title: Downloads
       url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
