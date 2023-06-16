@@ -207,7 +207,7 @@ ddbj:
           url: /ddbj/geneticcode.html	
         - title: 配列の記載に用いる略号	
           url: /ddbj/code.html	
-        - title: 登録の見本	
+        - title: 配列データ記載例
           url: /ddbj/example.html	
     - id: data_categories	
       title: Data categories	
@@ -304,7 +304,7 @@ ddbj:
           url: /ddbj/geneticcode-e.html	
         - title: Codes Used in Sequence Description	
           url: /ddbj/code-e.html	
-        - title: Example of Submission	
+        - title: Description Examples of Sequence Data
           url: /ddbj/example-e.html	
     - id: data_categories	
       title: Data categories	
