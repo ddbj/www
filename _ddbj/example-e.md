@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: Example of Submission
+title: Description Examples of Sequence Data
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: flat_file
@@ -26,16 +26,13 @@ related_pages:
 
 
 
-# Example of Submission
-
-
-Please refer to following sample data list to annotate your sequences
-for DDBJ submission.
-
+Please refer to the following description examples of typical sequence data when you annotate your sequence data for DDBJ submission.
 
 ## A: Ribosomal RNA, ITS, IGS  {#A}
 
 ### A01) 16S rRNA gene  {#A01}
+
+Use the sequence with the same direction of rRNA transcripts, NOT complementary strand. 
 
 <pre><code>DEFINITION  Vibrio halioticoli IAM 14597 gene for 16S rRNA, partial sequence.
 FEATURES             Location/Qualifiers
@@ -49,6 +46,8 @@ FEATURES             Location/Qualifiers
 
 ### A02) 18S rRNA gene including intron  {#A02}
 
+Use the sequence with the same direction of rRNA transcripts, NOT complementary strand. 
+
 <pre><code>DEFINITION  Sporobolomyces ruber JCM 6884 gene for 18S rRNA, partial sequence. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..2072</a>
@@ -61,6 +60,8 @@ FEATURES             Location/Qualifiers
 </code></pre>
 
 ### A03) ITS1, ITS2  {#A03}
+
+Use the sequence with the same direction of rRNA transcripts, NOT complementary strand. 
 
 <pre><code>DEFINITION  Microsphaera trifolii var. trifolii MUMH29s genes for 18S rRNA, 
             ITS1, 5.8S rRNA, ITS2, 28S rRNA, partial and complete sequence.
@@ -84,7 +85,8 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers-e.html#product">product</a>="28S ribosomal RNA" 
 </code></pre>
 
-If each feature (rRNA, ITS) location is not clear, following annotation can be described.
+It is not required to specify boundaries between rRNA and ITS.     
+If each feature (rRNA, ITS) location is not clear, following annotation can be described.    
 
 <pre><code>FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..597</a>
@@ -102,6 +104,8 @@ If each feature (rRNA, ITS) location is not clear, following annotation can be d
 
 ### A04) intergenic spacer, IGS  {#A04}
 
+In the case of IGS, input the sequence with the order of adjacent gene names is the same as the order of appearance in the sequence.
+
 <pre><code>DEFINITION  Setaria italica cv. Shimokatsugi genes for 25S rRNA, IGS, 17S rRNA, 
             partial and complete sequence.
 FEATURES             Location/Qualifiers
@@ -118,6 +122,43 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#rRNA">rRNA</a>            <a href="/ddbj/location-e.html">2485..&gt;2646</a>
                      /<a href="/ddbj/qualifiers-e.html#product">product</a>="17S ribosomal RNA" 
 </code></pre>
+
+<pre><code>DEFINITION  Acer distylum AX-1 chloroplast DNA, psbA-trnH IGS. 
+FEATURES             Location/Qualifiers
+     <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..264</a>
+                     /<a href="/ddbj/qualifiers-e.html#country">country</a>="Japan"
+                     /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="AX-1"
+                     /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
+                     /<a href="/ddbj/qualifiers-e.html#organelle">organelle</a>="plastid:chloroplast"
+                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Acer distylum"
+     <a href="/ddbj/features-e.html#misc_feature">misc_feature</a>    <a href="/ddbj/location-e.html">&lt;1..&gt;264</a>
+                     /<a href="/ddbj/qualifiers-e.html#note">note</a>="psbA-trnH intergenic spacer" 
+</code></pre>
+
+<pre><code>DEFINITION  Acer distylum AY-b chloroplast genes for photosystem II protein D1, 
+            psbA-trnH IGS, tRNA-His. 
+FEATURES             Location/Qualifiers
+     <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location.html">1..466</a>
+                     /<a href="/ddbj/qualifiers-e.html#country">country</a>="Japan"
+                     /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="AY-b"
+                     /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
+                     /<a href="/ddbj/qualifiers-e.html#organelle">organelle</a>="plastid:chloroplast"
+                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Acer distylum"
+     <a href="/ddbj/features-e.html#CDS">CDS</a>             <a href="/ddbj/location-e.html">&lt;1..40</a>
+                     /<a href="/ddbj/qualifiers-e.html#codon_start">codon_start</a>=1
+                     /<a href="/ddbj/qualifiers-e.html#gene">gene</a>="psbA"
+                     /<a href="/ddbj/qualifiers-e.html#product">product</a>="photosystem II protein D1"
+                     /<a href="/ddbj/qualifiers-e.html#translation">translation</a>="DLAAIEAPSTNG"
+                     /<a href="/ddbj/qualifiers-e.html#transl_table">transl_table</a>=11 
+     <a href="/ddbj/features-e.html#misc_feature">misc_feature</a>    <a href="/ddbj/location-e.html">41..453</a>
+                     /<a href="/ddbj/qualifiers-e.html#note">note</a>="psbA-trnH intergenic spacer" 
+     <a href="/ddbj/features-e.html#tRNA">tRNA</a>            <a href="/ddbj/location-e.html">454..&gt;466</a>
+                     /<a href="/ddbj/qualifiers-e.html#gene">gene</a>="trnH" 
+                     /<a href="/ddbj/qualifiers-e.html#product">product</a>="tRNA-His" 
+</code></pre>
+
+
+
 
 ## B: Protein-coding genes  {#B}
 
@@ -508,6 +549,30 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers-e.html#product">product</a>="RNA-dependent RNA polymerase"
 </code></pre>
 
+### B16) misc_feature instead of CDS (DNA)  {#B16}
+
+In the follwoing cases or some, you should use <a href="/ddbj/features-e.html#misc_feature">misc_feature</a> instead of <a href="/ddbj/features-e.html#cds">CDS</a> feature.   
+- Locations of exons/introns cannot be specified.  
+- Quality of sequencing result is low. 
+- Expected amino acid sequence can not be obtained due to frame mismatch, though the reson is unknown. 
+- Conceptual translation is not available due to [stop codons appearing in the middle of sequence](/ddbj/cds-e.html#stop), etc., though the reson is unknown. 
+
+<pre><code>DEFINITION  Aspergillus oryzae RIB256 DNA, similar to triacylglycerol lipase, 
+            partial sequence.
+FEATURES             Location/Qualifiers
+     <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..555</a>
+                     /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
+                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Aspergillus oryzae"
+                     /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="RIB256" 
+     <a href="/ddbj/features-e.html#misc_feature">misc_feature</a>    <a href="/ddbj/location-e.html">&lt;1..&gt;555</a>
+                     /<a href="/ddbj/qualifiers-e.html#gene">gene</a>="tglA"
+                     /<a href="/ddbj/qualifiers-e.html#note">note</a>="similar to triacylglycerol lipase; coding region 
+                     not specified"
+</code></pre>
+
+
+
+
 ## C: EST, GSS, STS  {#C}
 
 ### C01) EST (Expressed Sequence Tag)  {#C01}
@@ -546,11 +611,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers-e.html#ecotype">ecotype</a>="Columbia" 
 </code></pre>
 
-### C03) STS (Sequence Tagged Site)  {#C03}
+### C03) marker (unknown function)  {#C03}
 
-<pre><code>DEFINITION  Sus scrofa DNA, STS on chromosome 1, clone:AA12345, 
-            sequence tagged site. 
-KEYWORDS    STS.
+An example of the sequence region whose functional feature is unknown.
+
+<pre><code>DEFINITION  Sus scrofa DNA, marker region of XXX disease, clone:AA12345. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..200</a>
                      /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="1"
@@ -560,6 +625,8 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#primer_bind">primer_bind</a>     <a href="/ddbj/location-e.html">1..20</a>
                      /<a href="/ddbj/qualifiers-e.html#PCR_conditions">PCR_conditions</a>="30 cycles 94degC 30 sec, 
                      56degC 30 sec and 72degC 30 sec" 
+     <a href="/ddbj/features-e.html#misc_feature">misc_feature</a>    <a href="/ddbj/location-e.html">21..179</a>
+                     /<a href="/ddbj/qualifiers-e.html#note">note</a>="marker region of XXX disease"
      <a href="/ddbj/features-e.html#primer_bind">primer_bind</a>     <a href="/ddbj/location-e.html">complement(180..200)</a>
 </code></pre>
 

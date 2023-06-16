@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: 登録の見本
+title: 配列データ記載例
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: flat_file
@@ -24,11 +24,13 @@ related_pages:
     url: /ddbj/code.html
 ---
 
-登録の例としてご利用下さい。
+典型的な配列データの記載例としてご参照ください。
 
 ## A: Ribosomal RNA, ITS, IGS  {#A}
 
 ### A01) 16S rRNA gene  {#A01}
+
+配列の方向を rRNA の転写方向に揃えてください。
 
 <pre><code>DEFINITION  Vibrio halioticoli IAM 14597 gene for 16S rRNA, partial sequence.
 FEATURES             Location/Qualifiers
@@ -42,6 +44,8 @@ FEATURES             Location/Qualifiers
 
 ### A02) 18S rRNA gene including intron  {#A02}
 
+配列の方向を rRNA の転写方向に揃えてください。
+
 <pre><code>DEFINITION  Sporobolomyces ruber JCM 6884 gene for 18S rRNA, partial sequence. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..2072</a>
@@ -54,6 +58,8 @@ FEATURES             Location/Qualifiers
 </code></pre>
 
 ### A03) ITS1, ITS2  {#A03}
+
+配列の方向を rRNA の転写方向に揃えてください。
 
 <pre><code>DEFINITION  Microsphaera trifolii var. trifolii MUMH29s genes for 18S rRNA, 
             ITS1, 5.8S rRNA, ITS2, 28S rRNA, partial and complete sequence.
@@ -77,7 +83,8 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#product">product</a>="28S ribosomal RNA" 
 </code></pre>
 
-各 rRNA、ITS の境界が不明な場合は、以下の annotation を記載します。
+rRNA, ITS の境界は無理に推測する必要はありません。    
+各 rRNA、ITS の境界が不明な場合は、以下の annotation を記載します。    
 
 <pre><code>FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..597</a>
@@ -95,11 +102,12 @@ FEATURES             Location/Qualifiers
 
 ### A04) intergenic spacer, IGS  {#A04}
 
+IGS の場合、隣接する遺伝子名の記載順と配列中での出現順が同じくなるように配列の方向を揃えてください。
+
 <pre><code>DEFINITION  Setaria italica cv. Shimokatsugi genes for 25S rRNA, IGS, 17S rRNA, 
             partial and complete sequence.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..2646</a>
-                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="pSIR012"
                      /<a href="/ddbj/qualifiers.html#country">country</a>="Japan"
                      /<a href="/ddbj/qualifiers.html#cultivar">cultivar</a>="Shimokatsugi"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
@@ -111,6 +119,41 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#rRNA">rRNA</a>            <a href="/ddbj/location.html">2485..&gt;2646</a>
                      /<a href="/ddbj/qualifiers.html#product">product</a>="17S ribosomal RNA" 
 </code></pre>
+
+<pre><code>DEFINITION  Acer distylum AX-1 chloroplast DNA, psbA-trnH IGS. 
+FEATURES             Location/Qualifiers
+     <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..264</a>
+                     /<a href="/ddbj/qualifiers.html#country">country</a>="Japan"
+                     /<a href="/ddbj/qualifiers.html#isolate">isolate</a>="AX-1"
+                     /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
+                     /<a href="/ddbj/qualifiers.html#organelle">organelle</a>="plastid:chloroplast"
+                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acer distylum"
+     <a href="/ddbj/features.html#misc_feature">misc_feature</a>    <a href="/ddbj/location.html">&lt;1..&gt;264</a>
+                     /<a href="/ddbj/qualifiers.html#note">note</a>="psbA-trnH intergenic spacer" 
+</code></pre>
+
+<pre><code>DEFINITION  Acer distylum AY-b chloroplast genes for photosystem II protein D1, 
+            psbA-trnH IGS, tRNA-His. 
+FEATURES             Location/Qualifiers
+     <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..466</a>
+                     /<a href="/ddbj/qualifiers.html#country">country</a>="Japan"
+                     /<a href="/ddbj/qualifiers.html#isolate">isolate</a>="AY-b"
+                     /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
+                     /<a href="/ddbj/qualifiers.html#organelle">organelle</a>="plastid:chloroplast"
+                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acer distylum"
+     <a href="/ddbj/features.html#CDS">CDS</a>             <a href="/ddbj/location.html">&lt;1..40</a>
+                     /<a href="/ddbj/qualifiers.html#codon_start">codon_start</a>=1
+                     /<a href="/ddbj/qualifiers.html#gene">gene</a>="psbA"
+                     /<a href="/ddbj/qualifiers.html#product">product</a>="photosystem II protein D1"
+                     /<a href="/ddbj/qualifiers.html#translation">translation</a>="DLAAIEAPSTNG"
+                     /<a href="/ddbj/qualifiers.html#transl_table">transl_table</a>=11 
+     <a href="/ddbj/features.html#misc_feature">misc_feature</a>    41..453
+                     /<a href="/ddbj/qualifiers.html#note">note</a>="psbA-trnH intergenic spacer" 
+     <a href="/ddbj/features.html#tRNA">tRNA</a>            <a href="/ddbj/location.html">454..&gt;466</a>
+                     /<a href="/ddbj/qualifiers.html#gene">gene</a>="trnH" 
+                     /<a href="/ddbj/qualifiers.html#product">product</a>="tRNA-His" 
+</code></pre>
+
 
 ## B: Protein-coding genes  {#B}
 
@@ -501,7 +544,30 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#product">product</a>="RNA-dependent RNA polymerase"
 </code></pre>
 
-## C: EST, GSS, STS  {#C}
+### B16) misc_feature instead of CDS (DNA)  {#B16}
+
+以下のような場合、<a href="/ddbj/features.html#cds">CDS</a> feature に代えて <a href="/ddbj/features.html#misc_feature">misc_feature</a> で記載します。
+- exon, intron の位置を指定できない。
+- 配列決定の精度が低い。
+- 原因不明でフレームが合わないなど、想定されるアミノ酸配列に翻訳されない。
+- 原因不明で[途中で終止コドンが出現](/ddbj/cds.html#stop)して conceptual translation が成立しない。
+
+<pre><code>DEFINITION  Aspergillus oryzae RIB256 DNA, similar to triacylglycerol lipase, 
+            partial sequence.
+FEATURES             Location/Qualifiers
+     <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..555</a>
+                     /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
+                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Aspergillus oryzae"
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="RIB256" 
+     <a href="/ddbj/features.html#misc_feature">misc_feature</a>    <a href="/ddbj/location.html">&lt;1..&gt;555</a>
+                     /<a href="/ddbj/qualifiers.html#gene">gene</a>="tglA"
+                     /<a href="/ddbj/qualifiers.html#note">note</a>="similar to triacylglycerol lipase; coding region 
+                     not specified"
+</code></pre>
+
+
+
+## C: EST, GSS, marker  {#C}
 
 ### C01) EST (Expressed Sequence Tag)  {#C01}
 
@@ -539,11 +605,11 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers.html#ecotype">ecotype</a>="Columbia" 
 </code></pre>
 
-### C03) STS (Sequence Tagged Site)  {#C03}
+### C03) marker (unknown function)  {#C03}
 
-<pre><code>DEFINITION  Sus scrofa DNA, STS on chromosome 1, clone:AA12345, 
-            sequence tagged site. 
-KEYWORDS    STS.
+機能面の性質が不明な配列領域の記載例。
+
+<pre><code>DEFINITION  Sus scrofa DNA, marker region of XXX disease, clone:AA12345. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..200</a>
                      /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="1"
@@ -553,6 +619,8 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features.html#primer_bind">primer_bind</a>     <a href="/ddbj/location.html">1..20</a>
                      /<a href="/ddbj/qualifiers.html#PCR_conditions">PCR_conditions</a>="30 cycles 94degC 30 sec, 
                      56degC 30 sec and 72degC 30 sec" 
+     <a href="/ddbj/features.html#misc_feature">misc_feature</a>    <a href="/ddbj/location.html">21..179</a>
+                     /<a href="/ddbj/qualifiers.html#note">note</a>="marker region of XXX disease"
      <a href="/ddbj/features.html#primer_bind">primer_bind</a>     <a href="/ddbj/location.html">complement(180..200)</a>
 </code></pre>
 
