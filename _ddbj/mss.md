@@ -131,6 +131,7 @@ table tr:hover {
 
 ### BioProject & BioSample ID の取得  {#prep-2}
 - 登録種別に応じ、登録ファイル作成時には事前に BioProject ID、BioSample ID (含 locus_tag prefix 予約)の取得が必要です。
+- 原則として取得した locus_tag prefix は変更できませんので、取得の際にはご注意ください。
 - [対応表](#mssprjtable)を参照してください。
 
 ### アノテーション記載について  {#prep-3}

@@ -50,6 +50,7 @@ Notes on the TSA submission
     For primary entries from [DDBJ Read Archive](/dra/index-e.html), cited run accession number is required to describe in [DBLINK](#DblinkA) line.
   - It is strongly recommended to include qualifiers indicating expression conditions; tissue ([tissue\_type](/ddbj/qualifiers-e.html#tissue_type)), developmental stage ([dev\_stage](/ddbj/qualifiers-e.html#dev_stage)), mating type ([mating\_type](/ddbj/qualifiers-e.html#mating_type) or [sex](/ddbj/qualifiers-e.html#sex)) and so on. However, when the TSA sequence is constructed from two or more different origins, those conditions can not be described.
   - Remove low quality reads and chimeric sequences before submission.
+  - The sequence must be in the 5' to 3' transcriptional direction.
 
 Definition of primary entry for TSA  
 : Primary entries used to build a TSA sequence are RNA sequences that have been experimentally determined by their submitters and are publicly available on INSDC, [Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) or [Sequence Read Archive](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi).
