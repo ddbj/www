@@ -65,7 +65,7 @@ BioSample を新規登録する場合は左のタブから順番に内容を英�
 
 [INSDC ではサンプル属性値が存在しない場合の記載方法を標準化しています](https://www.insdc.org/submitting-standards/missing-value-reporting)。  
 登録者は常に定められた形式で属性値を提供することが推奨されます。サンプル情報を提供できない場合 (例 患者の同定に繋がりかねない病原菌サンプルの情報) や適切ではない場合 (ラボで保有しているモデル生物や細胞株)、
-INSDC の "missing value reporting standard" に従い、missing に続けて適切な reporting level term (例 "missing: control sample") を記載します。  
+INSDC の "missing value reporting standard" に従い、missing に続けて適切な reporting level term (例 "missing: control sample") を記載することを推奨します。適切な reporting level term が無い場合、"missing"、"not collected" や "not provided" を記載します。
 
 必須属性に対する値がない場合にだけ標準化された用語を使用します。推奨・任意属性に対する値がない場合は、値を空にするか、属性そのものを使用しないでください。
 
