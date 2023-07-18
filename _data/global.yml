@@ -1,8 +1,13 @@
 top_news:
   ja:
+    - title:  '(7/24～26) DDBJ センターの登録・検索・解析サービス停止のお知らせ'
+      path: 2023-07-18_2
     - title:  '(8/11～16) DDBJ センター夏季休業のお知らせ'
       path: 2023-07-18
   en:
+    - title:  (July 24 to 26) Suspension of DDBJ services due to NIG supercomputer maintenance
+      path: 2023-07-18_2-e
     - title:  (August 11 to 16) DDBJ Center Closing for Summer Break
       path: 2023-07-18-e
+
 
