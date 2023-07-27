@@ -17,7 +17,7 @@ For more detail of available combinations of feature and qualifier keys
 in INSDC entries, read: [Feature Table Definition](/ddbj/feature-table-e.html): [7.2 Appendix II: Feature keys
 reference](/ddbj/feature-table-e.html#7.2).
 
-## Definision of Feature key
+## Definition of Feature key
 
 ### assembly_gap<a name="assembly_gap"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#assembly_gap)</span>  
 gap between two components of a [genome](/ddbj/genome-e.html) or [transcriptome](/ddbj/transcriptome-e.html) assembly

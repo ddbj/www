@@ -1,8 +1,13 @@
 top_news:
   ja:
-    - title: (7/12 10:00-11:00) GEA/DRA/BP/BS システムリリースによるサービス停止のお知らせ
-      path: 2023-06-20
+    - title:  '(7/26～28) DDBJ センターの登録・検索・解析サービス停止のお知らせ'
+      path: 2023-07-20
+    - title:  '(8/11～16) DDBJ センター夏季休業のお知らせ'
+      path: 2023-07-18
   en:
-    - title: (July 12 10:00-11:00) Announcement of GEA/DRA/BP/BS system suspension
-      path: 2023-06-20-e
+    - title:  (July 26 to 28) Suspension of DDBJ services due to NIG supercomputer maintenance
+      path: 2023-07-20-e
+    - title:  (August 11 to 16) DDBJ Center Closing for Summer Break
+      path: 2023-07-18-e
+
 

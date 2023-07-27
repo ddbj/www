@@ -17,7 +17,7 @@ qualifier keys for DDBJ submissions.
 
 For more detail of available combinations of feature and qualifier keys in INSDC entries, read: [Feature Table Definition](/ddbj/feature-table-e.html): [7.2 Appendix II: Feature keys reference.](/ddbj/feature-table-e.html#7.2).
 
-## Definision of Qualifier key
+## Definition of Qualifier key
 
 ### /allele<a name="allele"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#allele)</span>
  
