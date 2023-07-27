@@ -20,7 +20,7 @@ related_pages:
     url: /ddbj/cds-e.html
   - title: The Genetic Codes
     url: /ddbj/geneticcode-e.html
-  - title: Example of Submission
+  - title: Description Examples of Sequence Data
     url: /ddbj/example-e.html
 ---
 

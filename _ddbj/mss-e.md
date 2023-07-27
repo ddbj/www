@@ -46,10 +46,10 @@ Please note the points other than number or length of your data.
 #### a) Either of the following categories or amounts of sequence data
 
 <div class="attention" markdown="1">
-- [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
+- [EST](/ddbj/est-e.html), [TSA](/ddbj/tsa-e.html),
   [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
-  [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
+  [TLS](/ddbj/tls-e.html)
     - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
 - Submission with long sequences, greater than 500 kb in its length
 - Complex submission containing many features for one sequence, more than 30 features
@@ -138,6 +138,7 @@ table tr:hover {
 
 ### Getting BioProject & BioSample ID  {#prep-2}
 - According to the type of the data, you must obtain BioProject ID and BioSample ID (also reserve locus_tag prefix) to prepare the submission files.
+- In principle, it is not acceptable to change the taken locus_tag prefix, so please be careful when registering the prefix.
 - See the [table](#mssprjtable) to know what data type needs BioProject and BioSample.
 
 ### Annotation  {#prep-3}

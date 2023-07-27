@@ -8,28 +8,10 @@ lang: ja
 related_pages:
   - title: Genome Project のデータ登録
     url: /ddbj/genome.html
-  - title: WGS
-    url: /ddbj/wgs.html
-  - title: CON
-    url: /ddbj/con.html
-  - title: GSS
-    url: /ddbj/gss.html
-  - title: HTG
-    url: /ddbj/htg.html
   - title: Environmental sequence の登録
     url: /ddbj/environmental.html
-  - title: ENV
-    url: /ddbj/env.html
-  - title: TLS
-    url: /ddbj/tls.html
   - title: Transcriptome Project のデータ登録
     url: /ddbj/transcriptome.html
-  - title: TSA
-    url: /ddbj/tsa.html
-  - title: EST
-    url: /ddbj/est.html
-  - title: HTC
-    url: /ddbj/htc.html
   - title: Third Party Data (TPA)
     url: /ddbj/tpa.html
 ---
@@ -56,6 +38,7 @@ TSA 登録における注意事項
   - [EST division](/ddbj/est.html) または [DDBJ Trace Archive](/dta/index.html) のみの引用で構成される場合、[プライマリーエントリ](#definition_of_primary)の配列群と、結果として構築された配列との対応付けのために、[PRIMARY](#PrimaryA) 行に両者の位置情報を記載します。 [DDBJ Read Archive](/dra/index.html) を引用する場合は、DRA の run accession number を [DBLINK](#DblinkA) 行に記載します。
   - 発現条件に相当する 組織 ([tissue\_type](/ddbj/qualifiers.html#tissue_type))、発生段階 ([dev\_stage](/ddbj/qualifiers.html#dev_stage))、性別 ([mating\_type](/ddbj/qualifiers.html#mating_type) または [sex](/ddbj/qualifiers.html#sex))、などの qualifier の記載を推奨します。ただし、異なる条件に由来する対象を引用して構築された場合は記載できません。
   - 登録前に low quality reads, chimeric sequences の除去を行っておいてください。
+  - 登録配列の向きは、転写方向 (5' -> 3') に揃えて下さい。
 
 TSA におけるプライマリーエントリの定義<a name="definition_of_primary"></a>
 : プライマリーエントリとは、DDBJ/ENA/GenBank、[Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi)、[Sequence Read Archive](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) の何れかから取得可能なデータであり、当該エントリの登録者が実験的に配列決定を行った RNA 配列データです。

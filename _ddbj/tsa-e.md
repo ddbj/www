@@ -8,26 +8,10 @@ lang: en
 related_pages:
   - title: Data Submission from Genome Project
     url: /ddbj/genome-e.html
-  - title: WGS
-    url: /ddbj/wgs-e.html
-  - title: CON
-    url: /ddbj/con-e.html
-  - title: GSS
-    url: /ddbj/gss-e.html
-  - title: HTG
-    url: /ddbj/htg-e.html
   - title: Submission of environmental sequences
     url: /ddbj/environmental-e.html
-  - title: ENV
-    url: /ddbj/env-e.html
-  - title: TLS
-    url: /ddbj/tls-e.html
   - title: Data Submission from Transcriptome Project
     url: /ddbj/transcriptome-e.html
-  - title: EST
-    url: /ddbj/est-a.html
-  - title: HTC
-    url: /ddbj/htc-e.html
   - title: Third Party Data (TPA)
     url: /ddbj/tpa-e.html
 ---
@@ -50,6 +34,7 @@ Notes on the TSA submission
     For primary entries from [DDBJ Read Archive](/dra/index-e.html), cited run accession number is required to describe in [DBLINK](#DblinkA) line.
   - It is strongly recommended to include qualifiers indicating expression conditions; tissue ([tissue\_type](/ddbj/qualifiers-e.html#tissue_type)), developmental stage ([dev\_stage](/ddbj/qualifiers-e.html#dev_stage)), mating type ([mating\_type](/ddbj/qualifiers-e.html#mating_type) or [sex](/ddbj/qualifiers-e.html#sex)) and so on. However, when the TSA sequence is constructed from two or more different origins, those conditions can not be described.
   - Remove low quality reads and chimeric sequences before submission.
+  - The sequence must be in the 5' to 3' transcriptional direction.
 
 Definition of primary entry for TSA  
 : Primary entries used to build a TSA sequence are RNA sequences that have been experimentally determined by their submitters and are publicly available on INSDC, [Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) or [Sequence Read Archive](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi).
@@ -61,7 +46,7 @@ The sequence alignment rules between TSA and primary entries
   - Regions of a TSA entry can be assembled from a single EST or read so that coverage is only 1x.
   - When the assembled sequence includes gap region supported by some evidence (pair end sequences, etc), you can describe gap region by sequential n's in the sequence. The gap region must be specified by [assembly\_gap](/ddbj/features-e.html#assembly_gap) feature.
   - Limits to ambiguity in the sequence out of location described with [assembly\_gap](/ddbj/features-e.html#assembly_gap) features are that;
-    1. the allowable percent of bases that are 'n' should be less than 5% and
+    1. the allowable percent of bases that are 'n' should be less than 5% and 
     2. a TSA entry can have a stretch of no more than 5 n' s in a row
 
 ## Sample flat file  {#flat-file}

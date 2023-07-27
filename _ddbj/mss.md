@@ -42,7 +42,7 @@ MSS 経由で登録をお願いします。
 #### a) 種別、または、量が以下に該当する配列データ
 <div class="attention" markdown="1">
 - NSSS が対応していない登録 
-   - [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
+   - [EST](/ddbj/est.html)、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[TLS](/ddbj/tls.html)
    - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
 - １配列が長い場合、目安は 500 kb 以上
 - １配列あたりに多数の Feature がある場合、目安は 30 以上
@@ -131,6 +131,7 @@ table tr:hover {
 
 ### BioProject & BioSample ID の取得  {#prep-2}
 - 登録種別に応じ、登録ファイル作成時には事前に BioProject ID、BioSample ID (含 locus_tag prefix 予約)の取得が必要です。
+- 原則として取得した locus_tag prefix は変更できませんので、取得の際にはご注意ください。
 - [対応表](#mssprjtable)を参照してください。
 
 ### アノテーション記載について  {#prep-3}

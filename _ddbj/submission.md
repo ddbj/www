@@ -6,7 +6,7 @@ category: ddbj
 lang: ja
 current_tab: submission
 related_pages:
-  - title: 登録の見本
+  - title: 配列データ記載例
     url: /ddbj/example.html
   - title: Feature key
     url: /ddbj/features.html
@@ -134,10 +134,10 @@ NSSS は、下記の配列データに対応できません。
 
 **a) 種別、または、量が以下に該当する配列データ**    
 
-- [EST](/ddbj/est.html)、STS、[TSA](/ddbj/tsa.html)、
+- [EST](/ddbj/est.html)、[TSA](/ddbj/tsa.html)、
  [HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、
  [HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、
- [CON](/ddbj/con.html)、[TLS](/ddbj/tls.html)
+ [TLS](/ddbj/tls.html)
     - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
 - 配列が長い場合、目安は 500 kb 以上
 - １配列あたりに多数の Feature がある場合、目安は 30 以上

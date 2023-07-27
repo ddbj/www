@@ -20,7 +20,7 @@ related_pages:
     url: /ddbj/location-e.html
   - title: Protein Coding Sequence; CDS feature
     url: /ddbj/cds-e.html
-  - title: Example of Submission
+  - title: Description Examples of Sequence Data
     url: /ddbj/example-e.html
 ---
 

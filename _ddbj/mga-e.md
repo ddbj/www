@@ -6,34 +6,14 @@ category: ddbj
 current_tab: other
 lang: en
 related_pages:
-  - title: ENV
-    url: /ddbj/env-e.html
   - title: Data Submission from Genome Project
     url: /ddbj/genome-e.html
-  - title: Data Submission from Transcriptome Project
-    url: /ddbj/transcriptome-e.html
-  - title: TSA
-    url: /ddbj/tsa-e.html
-  - title: WGS
-    url: /ddbj/wgs-e.html
-  - title: CON
-    url: /ddbj/con-e.html
-  - title: TLS
-    url: /ddbj/tls-e.html
-  - title: Third Party Data (TPA)
-    url: /ddbj/tpa-e.html
-  - title: EST
-    url: /ddbj/est-e.html
-  - title: GSS
-    url: /ddbj/gss-e.html
-  - title: HTC
-    url: /ddbj/htc-e.html
-  - title: HTG
-    url: /ddbj/htg-e.html
   - title: Submission of environmental sequences
     url: /ddbj/environmental-e.html
-  - title: MGA
-    url: /ddbj/mga-e.html
+  - title: Data Submission from Transcriptome Project
+    url: /ddbj/transcriptome-e.html
+  - title: Third Party Data (TPA)
+    url: /ddbj/tpa-e.html
 ---
 
 <span class="red">**[Caution] DDBJ terminated

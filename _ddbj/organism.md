@@ -18,7 +18,7 @@ related_pages:
     url: /ddbj/geneticcode.html
   - title: タンパク質コード配列; CDS feature について
     url: /ddbj/cds.html
-  - title: 登録の見本
+  - title: 配列データ記載例
     url: /ddbj/example.html
 ---
 

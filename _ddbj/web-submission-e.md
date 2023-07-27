@@ -8,7 +8,7 @@ lang: en
 related_pages:
   - title: Nucleotide Sequence Submission
     url: /ddbj/submission-e.html
-  - title: Example of Submission
+  - title: Description Examples of Sequence Data
     url: /ddbj/example-e.html
   - title: Feature Key
     url: /ddbj/features-e.html
@@ -46,10 +46,10 @@ Please note the points other than number or length of your data.
 #### a) Either of the following categories or amounts of sequence data
 
 <div class="attention" markdown="1">
-- [EST](/ddbj/est-e.html), STS, [TSA](/ddbj/tsa-e.html),
+- [EST](/ddbj/est-e.html), [TSA](/ddbj/tsa-e.html),
   [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
-  [CON](/ddbj/con-e.html), [TLS](/ddbj/tls-e.html)
+  [TLS](/ddbj/tls-e.html)
     - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
 - Submission with long sequences, greater than 500 kb in its length
 - Complex submission containing many features for one sequence, more than 30 features

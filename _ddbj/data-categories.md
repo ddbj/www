@@ -8,28 +8,10 @@ lang: ja
 related_pages:
   - title: Genome Project のデータ登録
     url: /ddbj/genome.html
-  - title: WGS
-    url: /ddbj/wgs.html
-  - title: CON
-    url: /ddbj/con.html
-  - title: GSS
-    url: /ddbj/gss.html
-  - title: HTG
-    url: /ddbj/htg.html
   - title: Environmental sequence の登録
     url: /ddbj/environmental.html
-  - title: ENV
-    url: /ddbj/env.html
-  - title: TLS
-    url: /ddbj/tls.html
   - title: Transcriptome Project のデータ登録
     url: /ddbj/transcriptome.html
-  - title: TSA
-    url: /ddbj/tsa.html
-  - title: EST
-    url: /ddbj/est.html
-  - title: HTC
-    url: /ddbj/htc.html
   - title: Third Party Data (TPA)
     url: /ddbj/tpa.html
 ---
@@ -70,7 +52,7 @@ source feature と、それ以外に最低1つの [Biological feature](/ddbj/fil
 HTG または WGS などを基本としたゲノムプロジェクトでは、個々に登録された一連の配列データを相互に結合し、ゲノム構造を再構築するための情報が必要になります。そのようなタイリング情報に対して、１つのアクセッション番号を割り当てて特殊なエントリとして登録を受け付けています。このようなエントリを [CON エントリ](/ddbj/con.html)と呼び、CON division に格納します。  
 [Genome Project の各段階と登録データの種別](/ddbj/genome.html) もご参照ください。
 
-<span class="red">CON エントリ のみの登録は受け付けておりません。</span>  
+<span class="red">CON エントリ 登録の受け付けは終了しました。</span>  
 まず、CON エントリを構成する個々のピースエントリを登録していただきます。その上で CON エントリを構築します。  
 CON エントリの登録には [AGP ファイル](/ddbj/file-format.html#agp) が必要です。
 

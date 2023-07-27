@@ -5,7 +5,7 @@ category: ddbj
 current_tab: submission
 lang: en
 related_pages:
-  - title: Example of Submission
+  - title: Description Examples of Sequence Data
     url: /ddbj/example-e.html
   - title: Feature Key
     url: /ddbj/features-e.html
@@ -212,10 +212,10 @@ Please note the points other than number or length of your sequences.
 
 **a) Either of the following categories or amounts of sequence data**    
 
-- [EST](/ddbj/est-e.html ), STS, [TSA](/ddbj/tsa-e.html ),
+- [EST](/ddbj/est-e.html ), [TSA](/ddbj/tsa-e.html ),
   [HTC](/ddbj/htc-e.html ), [GSS](/ddbj/gss-e.html ),
   [HTG](/ddbj/htg-e.html ), [WGS](/ddbj/wgs-e.html ),
-  [CON](/ddbj/con-e.html ), [TLS](/ddbj/tls-e.html )
+  [TLS](/ddbj/tls-e.html )
     - See [Categories for Sequence Data](/documents/data-categories-e.html#division ) in detail.
 - Submission with long sequences, greater than 500 kb in its length 
 - Complex submission containing many features for one sequence, more than 30 features 
@@ -255,16 +255,14 @@ We start the curation work and inform the problems until 7 working days after we
 
 ### 4 Report of Data Releasing  {#releasing}
 
-We notify data release to the Contact Person by E-mail. Once the data
-are released, please confirm the data by one of the retrieval tools
-accessible from the DDBJ homepage (e.g.,
-[getentry](http://getentry.ddbj.nig.ac.jp/top-e.html)).
+We notify data release to the Contact Person by E-mail. 
+Once the data are released, please confirm the data by one of the retrieval tools accessible 
+from the DDBJ homepage (e.g., [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html)).
 
 If you would like to update your data, please send a request mail from
-[Application Form for Data Update Requests](/ddbj/update-form-e.html) with
-the necessary information. Please refer to
-[Updates/Correction](/ddbj/update-e.html) (after getting your accession
-number) for details.
+[Application Form for Data Update Requests](/ddbj/update-form-e.html ) 
+with the necessary information. Please refer to
+[Updates/Correction](/ddbj/update-e.html ) (after getting your accession number) for details.
 
 
 ### 5 General Information  {#information}

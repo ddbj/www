@@ -20,7 +20,7 @@ related_pages:
     url: /ddbj/geneticcode.html
   - title: 配列の記載に用いる略号
     url: /ddbj/code.html
-  - title: 登録の見本
+  - title: 配列データ記載例
     url: /ddbj/example.html
 ---
 

@@ -24,7 +24,7 @@ related_pages:
     url: /ddbj/cds.html
   - title: The Genetic Codes
     url: /ddbj/geneticcode-e.html
-  - title: 登録の見本
+  - title: 配列データ記載例
     url: /ddbj/example.html
 ---
 

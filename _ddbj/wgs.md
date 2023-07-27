@@ -8,28 +8,10 @@ lang: ja
 related_pages:
   - title: Genome Project のデータ登録
     url: /ddbj/genome.html
-  - title: WGS
-    url: /ddbj/wgs.html
-  - title: CON
-    url: /ddbj/con.html
-  - title: GSS
-    url: /ddbj/gss.html
-  - title: HTG
-    url: /ddbj/htg.html
   - title: Environmental sequence の登録
     url: /ddbj/environmental.html
-  - title: ENV
-    url: /ddbj/env.html
-  - title: TLS
-    url: /ddbj/tls.html
   - title: Transcriptome Project のデータ登録
     url: /ddbj/transcriptome.html
-  - title: TSA
-    url: /ddbj/tsa.html
-  - title: EST
-    url: /ddbj/est.html
-  - title: HTC
-    url: /ddbj/htc.html
   - title: Third Party Data (TPA)
     url: /ddbj/tpa.html
 ---
@@ -37,10 +19,8 @@ related_pages:
 様々な生物においてホールゲノムショットガン配列決定法（whole genome shotgun:
 ゲノム全体を物理的に断片化し、シークエンサで各断片の塩基配列を決定した後、コンピューター・プログラムを用いて整理、アセンブルして完成させる手法）を用いて全ゲノム配列を決定するゲノムプロジェクトが進められています。
 
-DDBJ/ENA/GenBank では、そのようなゲノムプロジェクトに由来する、整理が不十分な段階の大量の DNA 断片の配列を、WGS
-データとして受け付けています。  
-[INSDC standards for genome assembly
-submission](/ddbj/assembly.html)もご参照ください。
+DDBJ/ENA/GenBank では、そのようなゲノムプロジェクトに由来する、整理が不十分な段階の大量の DNA 断片の配列を、WGS データとして受け付けています。  
+[INSDC standards for genome assembly submission](/ddbj/assembly.html )もご参照ください。
 
 [公開されているWGSデータ](https://ddbj.nig.ac.jp/public/ddbj_database/wgs/WGS_ORGANISM_LIST.html)
 
@@ -52,18 +32,18 @@ WGSデータの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受�
   <dd>
     <ul>
       <li>登録に先立ち、<a href="/bioproject/index.html">BioProject Database</a> と <a href="/biosample/index.html">BioSample Database</a> への登録が必要です。</li>
-      <li>assembly 過程を表現する WGS の登録には２種類の方法があります。
+<!--      <li>assembly 過程を表現する WGS の登録には２種類の方法があります。 -->
         <dl>
-          <dt>a) WGS + scaffold CON:</dt>
+<!--      <dt>a) WGS + scaffold CON:</dt>
           <dd>各 contig (overlapping reads) の配列を WGS entry として登録します。</dd>
           <dd>WGS 配列には sequencing gap を表現する連続した"n"を含むことはできません。</dd>
           <dd>gap を含めた連結構造の記載が必要な場合、<a href="/ddbj/file-format.html#agp">AGP ファイル</a>による登録が可能です。<br>
             scaffold (assembled contigs separated by gaps) を <a href="/ddbj/con.html">CON</a> entry として WGS の連結を表現する形式で登録を受付けます。</dd>
-          <dt>b) WGS with gaps:</dt>
+          <dt>b) WGS with gaps:</dt> -->
           <dd>各 scaffold (assembled contigs separated by gaps) の配列を WGS entry として登録します。</dd>
           <dd>sequencing gap を連続した"n"として WGS 配列に含めて記載します。</dd>
           <dd>
-<a href="/ddbj/file-format.html#agp">AGP ファイル</a>は必要ありません。</dd>
+<!-- <a href="/ddbj/file-format.html#agp">AGP ファイル</a>は必要ありません。</dd> -->
         </dl>
       </li>
     </ul>
@@ -74,8 +54,7 @@ WGSデータの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受�
 
 WGS エントリの特徴
 
-  - [アクセッション番号](#AccessionA) は アルファベット 4 文字と数字 8
-    桁 を基本とします。
+  - [アクセッション番号](#AccessionA) は アルファベット 4 文字と数字 8 桁 を基本とします。
   - [KEYWORDS](#KeywordsA) 行には "WGS" とゲノムとしての完成度を示す規定値が表示されます。
 
 <!-- end list -->

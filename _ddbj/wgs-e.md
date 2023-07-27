@@ -8,26 +8,10 @@ lang: en
 related_pages:
   - title: Data Submission from Genome Project
     url: /ddbj/genome-e.html
-  - title: CON
-    url: /ddbj/con-e.html
-  - title: GSS
-    url: /ddbj/gss-e.html
-  - title: HTG
-    url: /ddbj/htg-e.html
   - title: Submission of environmental sequences
     url: /ddbj/environmental-e.html
-  - title: ENV
-    url: /ddbj/env-e.html
-  - title: TLS
-    url: /ddbj/tls-e.html
   - title: Data Submission from Transcriptome Project
     url: /ddbj/transcriptome-e.html
-  - title: TSA
-    url: /ddbj/tsa-e.html
-  - title: EST
-    url: /ddbj/est-a.html
-  - title: HTC
-    url: /ddbj/htc-e.html
   - title: Third Party Data (TPA)
     url: /ddbj/tpa-e.html
 ---
@@ -48,17 +32,17 @@ You can submit WGS data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.h
   <dd>
     <ul>
       <li>Prior to sequence data submission, it is required to submit to <a href="/bioproject/index-e.html">BioProject Database</a> and <a href="/biosample/index-e.html">BioSample Database</a>.</li>
-      <li>DDBJ accepts following two formats for WGS submissions;
+<!--  <li>DDBJ accepts following two formats for WGS submissions; -->
         <dl>
-          <dt>a) WGS + scaffold CON:</dt> 
+<!--      <dt>a) WGS + scaffold CON:</dt> 
           <dd>The WGS entries are the contigs (overlapping reads with no gaps)</dd>
           <dd>The WGS entries can NOT have consequence "n"'s to represent sequencing gaps.</dd>
           <dd>If you need to submit how the WGS entries are assembled together into scaffolds or chromosomes, you can submit <a href="/ddbj/file-format-e.html#agp">AGP file</a>.</dd>
           <dd>DDBJ can accept scaffold (assembled contigs separated by gaps) as <a href="/ddbj/con-e.html">CON</a> entry", in AGP format.</dd>
-          <dt>b) WGS with gaps:</dt> 
+          <dt>b) WGS with gaps:</dt> --> 
           <dd>The WGS entries are the scaffolds (assembled contigs separated by gaps).</dd>
           <dd>The WGS entries can contain consequence "n"'s to represent sequencing gaps.</dd>
-          <dd>No AGP file is required.</dd>
+<!--      <dd>No AGP file is required.</dd> -->
         </dl>
       </li>
     </ul>

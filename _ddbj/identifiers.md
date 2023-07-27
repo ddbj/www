@@ -14,7 +14,7 @@ related_pages:
     url: /ddbj/qualifiers.html
   - title: Organism qualifier に記載する生物名
     url: /ddbj/organism.html
-  - title: 登録の見本
+  - title: 配列データ記載例
     url: /ddbj/example.html
   - title: 多型関連研究における同一配列の代表データ登録
     url: /ddbj/representative-sequence.html

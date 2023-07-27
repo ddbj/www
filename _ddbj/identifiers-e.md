@@ -14,7 +14,7 @@ related_pages:
     url: /ddbj/qualifiers-e.html
   - title: Organism qualifier
     url: /ddbj/organism-e.html
-  - title: Example of Submission
+  - title: Description Examples of Sequence Data
     url: /ddbj/example-e.html
   - title: Representative submissions of identical sequences for variation studies
     url: /ddbj/representative-sequence-e.html

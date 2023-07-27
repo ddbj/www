@@ -8,11 +8,11 @@ lang: en
 related_pages:
   - title: Submission File Format
     url: /ddbj/file-format-e.html
-  - title: UME User’s manual
+  - title: UME User manual
     url: /ddbj/ume-e.html
-  - title: Parser User’s Manual
+  - title: Parser User Manual
     url: /ddbj/parser-e.html
-  - title: transChecker User’s Manual
+  - title: transChecker User Manual
     url: /ddbj/transchecker-e.html
   - title: Validator error message
     url: /ddbj/validator-e.html

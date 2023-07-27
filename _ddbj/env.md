@@ -10,8 +10,6 @@ related_pages:
     url: /ddbj/genome.html
   - title: WGS
     url: /ddbj/wgs.html
-  - title: CON
-    url: /ddbj/con.html
   - title: GSS
     url: /ddbj/gss.html
   - title: HTG
