@@ -26,29 +26,23 @@ DDBJ/ENA/GenBank では、そのようなゲノムプロジェクトに由来す
 
 WGSデータの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受け付けております。
 
-<dl>
-  <dt>WGS データとして登録可能なデータ</dt>
-  <dd>原則、冗長な raw read sequences ではなく、ある程度 計算機処理を経た contigs (overlapping reads) の配列を受付けます。冗長な raw read sequences を公表することが必要な場合は、DDBJ/ENA/GenBank とは別枠のデータベースである <a href="/dra/index.html">DDBJ Sequence Read Archive (DRA)</a>をご利用ください。</dd>
-  <dd>
-    <ul>
-      <li>登録に先立ち、<a href="/bioproject/index.html">BioProject Database</a> と <a href="/biosample/index.html">BioSample Database</a> への登録が必要です。</li>
-<!--      <li>assembly 過程を表現する WGS の登録には２種類の方法があります。 -->
-        <dl>
-<!--      <dt>a) WGS + scaffold CON:</dt>
-          <dd>各 contig (overlapping reads) の配列を WGS entry として登録します。</dd>
-          <dd>WGS 配列には sequencing gap を表現する連続した"n"を含むことはできません。</dd>
-          <dd>gap を含めた連結構造の記載が必要な場合、<a href="/ddbj/file-format.html#agp">AGP ファイル</a>による登録が可能です。<br>
-            scaffold (assembled contigs separated by gaps) を <a href="/ddbj/con.html">CON</a> entry として WGS の連結を表現する形式で登録を受付けます。</dd>
-          <dt>b) WGS with gaps:</dt> -->
-          <dd>各 scaffold (assembled contigs separated by gaps) の配列を WGS entry として登録します。</dd>
-          <dd>sequencing gap を連続した"n"として WGS 配列に含めて記載します。</dd>
-          <dd>
-<!-- <a href="/ddbj/file-format.html#agp">AGP ファイル</a>は必要ありません。</dd> -->
-        </dl>
-      </li>
-    </ul>
-  </dd>
-</dl>
+## WGS データとして登録可能なデータ  {#acceptable}
+
+原則、冗長な raw read sequences ではなく、ある程度 計算機処理を経た contigs (overlapping reads) の配列を受付けます。     
+冗長な raw read sequences を公表することが必要な場合は、[DDBJ Sequence Read Archive (DRA)](/dra/index.html ) をご利用ください。     
+
+* 登録に先立ち、[BioProject](/bioproject/index.html ) と [BioSample](/biosample/index.html ) の登録が必要です。
+<!--  assembly 過程を表現する WGS の登録には２種類の方法があります。  -->
+<!-- ### a) WGS + scaffold CON:      -->
+<!-- * 各 contig (overlapping reads) の配列を WGS entry として登録します。      -->
+<!-- * WGS 配列には sequencing gap を表現する連続した"n"を含むことはできません。       -->
+<!-- * gap を含めた連結構造の記載が必要な場合、[AGP ファイル](/ddbj/file-format.html#agp ) による登録が可能です。      -->
+<!-- * scaffold (assembled contigs separated by gaps) を [CON](/ddbj/con.html ) entry として WGS の連結を表現する形式で登録を受付けます。      -->
+<!-- ### b) WGS with gaps:    -->
+* 各 scaffold (assembled contigs separated by gaps) の配列を WGS entry として登録します。    
+* sequencing gap を連続した"n"として WGS 配列に含めて記載します。    
+<!-- [AGP ファイル](/ddbj/file-format.html#agp )は必要ありません。   -->
+
 
 ## DDBJ フォーマットの例  {#flat-file}
 

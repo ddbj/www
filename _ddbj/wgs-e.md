@@ -18,36 +18,30 @@ related_pages:
 
 The whole genome shotgun approach (the whole genome is once blasted into millions of fragment, which are sequenced and reassembled to produce a series of sequence 'scaffolds'.) has been used to sequence the genome of various organisms.
 
-The large set of contigs from the proceeding genome project can be submitted to DDBJ/ENA/GenBank as WGS data.  
-See also [INSDC standards for genome assembly submission](/ddbj/assembly-e.html)
+The large set of contigs from the proceeding genome project can be submitted to DDBJ/ENA/GenBank as WGS data.    
+See also [INSDC standards for genome assembly submission](/ddbj/assembly-e.html )    
 
 See [the list of publicized WGS data.](https://ddbj.nig.ac.jp/public/ddbj_database/wgs/WGS_ORGANISM_LIST.html)
 
-You can submit WGS data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.html).
+You can submit WGS data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.html ).
 
-<dl>
-  <dt>Acceptable WGS data</dt>
-  <dd>In principle, DDBJ/ENA/GenBank can accept assemblies (i.e. overlapping reads) that are appropriately assembled sequences and can not accept redundant reads (i.e. raw read sequences). If you wish to publicize raw read sequences, we recommend you to contact <a href="/dra/index-e.html">DDBJ Sequence Read Archive (DRA)</a> instead of DDBJ/ENA/GenBank.
-  </dd>
-  <dd>
-    <ul>
-      <li>Prior to sequence data submission, it is required to submit to <a href="/bioproject/index-e.html">BioProject Database</a> and <a href="/biosample/index-e.html">BioSample Database</a>.</li>
-<!--  <li>DDBJ accepts following two formats for WGS submissions; -->
-        <dl>
-<!--      <dt>a) WGS + scaffold CON:</dt> 
-          <dd>The WGS entries are the contigs (overlapping reads with no gaps)</dd>
-          <dd>The WGS entries can NOT have consequence "n"'s to represent sequencing gaps.</dd>
-          <dd>If you need to submit how the WGS entries are assembled together into scaffolds or chromosomes, you can submit <a href="/ddbj/file-format-e.html#agp">AGP file</a>.</dd>
-          <dd>DDBJ can accept scaffold (assembled contigs separated by gaps) as <a href="/ddbj/con-e.html">CON</a> entry", in AGP format.</dd>
-          <dt>b) WGS with gaps:</dt> --> 
-          <dd>The WGS entries are the scaffolds (assembled contigs separated by gaps).</dd>
-          <dd>The WGS entries can contain consequence "n"'s to represent sequencing gaps.</dd>
-<!--      <dd>No AGP file is required.</dd> -->
-        </dl>
-      </li>
-    </ul>
-  </dd>
-</dl>
+## Acceptable WGS data  {#acceptable}
+
+In principle, DDBJ/ENA/GenBank can accept assemblies (i.e. overlapping reads) that are appropriately assembled sequences and can not accept redundant reads (i.e. raw read sequences).    
+If you wish to publicize raw read sequences, please contact [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html ).    
+
+* Prior to sequence data submission, it is required to submit to [BioProject](/bioproject/index-e.html ) and [BioSample](/biosample/index-e.html ).    
+<!-- DDBJ accepts following two formats for WGS submissions; -->
+
+<!-- ###a) WGS + scaffold CON:
+<!-- * The WGS entries are the contigs (overlapping reads with no gaps) --> 
+<!-- * The WGS entries can NOT have consequence "n"'s to represent sequencing gaps.     -->
+<!-- * If you need to submit how the WGS entries are assembled together into scaffolds or chromosomes, you can submit [AGP file](/ddbj/file-format-e.html#agp ).     -->
+<!-- * DDBJ can accept scaffold (assembled contigs separated by gaps) as [CON](/ddbj/con-e.html ) entry", in AGP format.     --> 
+<!-- ###b) WGS with gaps:</dt>     --> 
+* The WGS entries are the scaffolds (assembled contigs separated by gaps).  
+* The WGS entries can contain consequence "n"'s to represent sequencing gaps.  
+<!-- * No AGP file is required.</dd> -->
 
 ## Sample flat file  {#flat-file}
 

@@ -14,8 +14,6 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-## Genome Project のデータ登録
-
 ゲノム配列決定の各段階と登録データの種別の対応を示します。    
 実際には併用されることも多いのですが、下図では典型的な手法の各段階を模式的に示しています。    
 なお、大規模なゲノム配列決定プロジェクトは [BioProject](/bioproject/index.html ) と [BioSample](/biosample/index.html ) にも ご登録ください。    
@@ -47,5 +45,5 @@ related_pages:
 <!-- [CON] Scaffolds: supercontigs or clone tiling path  
 : gap を含めた連結構造、いわゆる supercontigs (assembled contigs separated by gaps)、または、複数の clone の tiling path として長大な配列を記載する場合は、[CON](/ddbj/con.html) として [Mass Submission System](/ddbj/mss.html) から ご登録ください。 -->
 
-Finished genomic sequences  
+[Finished level genomic sequences](/ddbj/finished_level_genome.html )  
 : 一般的なデータ、または、complete genome として [Mass Submission System](/ddbj/mss.html) から ご登録ください。

@@ -14,8 +14,6 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-## Data Submission from Genome Project
-
 This page shows steps of genome sequencing, categories of sequence data and their correspondences, briefly.    
 The schematic diagram below indicates phases of typical genome sequencing strategies.    
 Also, please submit to 
@@ -59,6 +57,6 @@ clones, submit to [Mass Submission System](/ddbj/mss-e.html) as
 supercontigs, and/or tiling path of large clones, submit to [Mass
 Submission System](/ddbj/mss-e.html) as [CON](/ddbj/con-e.html) data. -->
 
-Finished genomic sequences  
+[Finished level genomic sequences](/ddbj/finished_level_genome-e.html )  
 : Submit to [Mass Submission System](/ddbj/mss-e.html) as general data or complete genomes.
 

@@ -14,11 +14,9 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-## Transcriptome Project のデータ登録
-
-Transcriptome の各段階と登録データの種別の対応を示します。  
-下図では典型的な手法の各段階を模式的に示しています。  
-なお、次世代シークエンサをご使用の際は、[BioProject](/bioproject/index.html) と [BioSample](/biosample/index.html) にも ご登録ください。
+Transcriptome の各段階と登録データの種別の対応を示します。    
+下図では典型的な手法の各段階を模式的に示しています。    
+なお、次世代シークエンサをご使用の際は、[BioProject](/bioproject/index.html) と [BioSample](/biosample/index.html) にも ご登録ください。    
 
 **重要:**[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)
 
@@ -26,10 +24,10 @@ Transcriptome の各段階と登録データの種別の対応を示します。
 
 [DRA] Raw outputs 次世代シークエンサの出力  
 : 次世代シークエンサからの出力データは [DDBJ Sequence Read Archive (DRA)](/dra/index.html)へご登録ください。
-
+<!-- 
 [DTA] Chromatograms, Sequences, Qualities: Sanger 法の出力  
 : single-path read の DNA sequence chromatograms (traces), base calls, quality estimates は、DDBJ [Trace Archive (DTA)](/dta/index.html) へご登録ください。
-
+ -->
 [TSA] Contigs: assemblies (overlapping reads) と Scaffolds  
 : アセンブルされた cDNA 配列データは、[TSA](/ddbj/tsa.html) として [Mass Submission System](/ddbj/mss.html) から ご登録ください。
 

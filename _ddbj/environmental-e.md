@@ -29,6 +29,7 @@ The ENV division contains (but is not limited to) the following types of data:
   - sequences derived by direct molecular isolation from soil, sea  water, etc.
   - clinical samples, gut contents, and other sequences from anonymous organisms that may be associated with a particular host
   - mixed culture derived from an environmental sample
+  - see [Metagenome Assembly](/ddbj/metagenome-assembly-e.html ) 
 
 ### Cases not treated as environmental samples {#not_env}
 
