@@ -225,10 +225,6 @@ ddbj:
           url: /ddbj/metagenome-assembly.html	
         - title: Single amplified genome	
           url: /ddbj/single-amplified-genome.html	
-        - title: CON	
-          url: /ddbj/con.html	
-        - title: GSS	
-          url: /ddbj/gss.html	
         - title: HTG	
           url: /ddbj/htg.html	
         - title: Environmental sequence の登録	
@@ -322,10 +318,6 @@ ddbj:
           url: /ddbj/metagenome-assembly-e.html	
         - title: Single amplified genome	
           url: /ddbj/single-amplified-genome-e.html	
-        - title: CON	
-          url: /ddbj/con-e.html	
-        - title: GSS	
-          url: /ddbj/gss-e.html	
         - title: HTG	
           url: /ddbj/htg-e.html	
         - title: Submission of environmental sequences	
