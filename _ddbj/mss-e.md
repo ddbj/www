@@ -138,7 +138,7 @@ table tr:hover {
 
 ### Getting BioProject & BioSample ID  {#prep-2}
 - According to the type of the data, you must obtain BioProject ID and BioSample ID (also reserve locus_tag prefix) to prepare the submission files.
-- In principle, changes of the taken locus_tag prefix are not accepted, so please be careful when registering the prefix.
+- In principle, it is not acceptable to change the taken locus_tag prefix, so please be careful when registering the prefix.
 - See the [table](#mssprjtable) to know what data type needs BioProject and BioSample.
 
 ### Annotation  {#prep-3}
