@@ -139,7 +139,7 @@ feature](ddbj/file-format.html#biological_feature)
 
 
 
-#### EST/GSS/HTC/HTG/STS: 配列決定の確度、あるいは、目的による区別  {#est}
+#### EST/GSS/HTC/HTG: 配列決定の確度、あるいは、目的による区別  {#est}
 
 EST
 に代表される大量解析、長大なゲノム配列の決定の途上、などの配列を以下に示す
@@ -155,24 +155,8 @@ features](ddbj/file-format.html#biological_feature)
 |---|
 |  [EST](/ddbj/est.html)  |  expressed sequence tags; short single pass の cDNA 配列。 |
 |  [GSS](/ddbj/gss.html)   |  genome survey sequences; short single pass のゲノム配列。  |
-|  STS  |  sequence tagged sites; genome sequencing の tag となる配列。<br> ゲノム上の位置情報、[primer_bind](/ddbj/features.html#primer_bind)feature,[PCR_conditions](/ddbj/qualifiers.html#PCR_conditions)qualifier などの記載を推奨します。 |
 |  [HTC](/ddbj/htc.html)  |  high throughput cDNA sequences; EST 以外の大規模 cDNA 配列プロジェクトにする配列。<br> full length cDNA 解析途上の配列なども含めます。|
 |  [HTG](/ddbj/htg.html)  |  high throughput genomic sequences; ゲノムプロジェクトに由来し、頻繁に update されることが期待される配列。<br> [Genome Projectの各段階と登録データの種別](/ddbj/genome.html)もご参照ください。<br> HTG の unfinished 配列は段階に応じて以下の 3 phase に分類されます。<br> {::nomarkdown}<ul><li>phase0；piece contig が構築される以前の配列</li><li>phase1；構築された piece contig の向きや順序が未確定の配列</li><li>phase2；piece contig の向きや順序が確定した unfinished の配列</li></ul>{:/}|
-
-#### CON: Contig / Constructed 配列のタイリング  {#con}
-
-[HTG](/ddbj/htg.html) 、または、[WGS](/ddbj/wgs.html)
-などを基本としたゲノムプロジェクトでは、個々に登録された一連の配列データを相互に結合し、ゲノム構造を再構築するための情報が必要になります。そのようなタイリング情報に対して、１つのアクセッション番号を割り当てて特殊なエントリとして登録を受け付けています。このようなエントリを
-[CON エントリ](/ddbj/con.html)と呼び、CON division に格納します。
-[Genome Project の各段階と登録データの種別](/ddbj/genome.html)
-もご参照ください。
-
-<span class="red">CON エントリ のみの登録は受け付けておりません。</span>
-まず、CON
-エントリを構成する個々のピースエントリを登録していただきます。その上で
-CON エントリを構築します。
-CON エントリの登録には [AGP ファイル](/ddbj/file-format.html#agp)
-が必要です。
 
 ### Data type bulk sequence data  {#data_type}
 

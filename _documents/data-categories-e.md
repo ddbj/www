@@ -67,8 +67,7 @@ following sites;
 
 Using [Mass Submission System (MSS)](/ddbj/mss-e.html), the submitted
 nucleotide sequences are classified into one of the categories according
-to the descriptions of the [DATATYPE, DIVISION,
-KEYWORD](/ddbj/file-format-e.html#annotation).
+to the descriptions of the [DATATYPE, DIVISION, KEYWORD](/ddbj/file-format-e.html#annotation).
 </div>
 
 ### Sequencing and alignment data from next-generation sequencing platforms  {#ngs}
@@ -159,18 +158,8 @@ In this regard, however, the entries including HTC or HTG division can have some
 |---|
 | [EST](/ddbj/est-e.html) | Expressed sequence tags, cDNA sequences read short single pass. |
 | [GSS](/ddbj/gss-e.html) | Genome survey sequences, genome sequences read short single pass. |
-| STS | Sequence tagged sites, tagged sequences for genome sequencing.<br>Recommended to use [primer_bind](/ddbj/features-e.html#primer_bind) feature and [PCR_conditions](/ddbj/qualifiers-e.html#PCR_conditions) qualifier. |
 | [HTC](/ddbj/htc-e.html) | High throughput cDNA sequences from cDNA sequencing projects, not EST.<br>This division is to include unfinished high throughput cDNA sequences. |
 | [HTG](/ddbj/htg-e.html) | High throughput genomic sequences mainly from genome sequencing projects.<br>Unfinished HTG entries are classified into different levels, as follow;<br>{::nomarkdown}<ul><li>phase0；Survey sequence generated for the purpose of library quality assessment and detection of overlaps with other clones before construction of piece contig(s)</li><li>phase1；Unfinished sequence having contigs that have NOT been ordered and oriented</li><li>phase2；Unfinished sequence having contigs that have been ordered and oriented</li></ul>{:/} |
-
-#### **CON: Contig / Constructed, Tiling of Entries**  {#con}
-
-Many genome projects submitting a lot of [HTG](/ddbj/htg-e.html) and/or [WGS](/ddbj/wgs-e.html) entries can often provide the information to assemble a series of their entries and reconstruct a genome structure. An accession number would be assigned for such contig tiling path, so called "[CON entry](/ddbj/con-e.html)", which is classified into CON division.<br>
-See also [Steps of genome sequencing, categories of sequence data and their correspondences.](/ddbj/genome-e.html)
-
-<span class="red">We can NOT directly accept only the submission of CON entry.</span><br>
-At first you have to submit all piece entries to construct the contig, then a CON entry will be constructed.<br>[AGP file](/ddbj/file-format-e.html#agp) is required to submit CON entries.
-
 
 ### Data type, bulk sequence data  {#data_type} 
 

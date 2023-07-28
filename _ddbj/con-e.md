@@ -17,27 +17,20 @@ related_pages:
 ---
 
 
-<span class="red">**[Caution] DDBJ terminated
-accepting new submission of CON data.**</span>
+<span class="red">**[Caution] DDBJ currently terminated accepting new submissions.** </span><br>
 
+Many genome projects submitting a lot of [HTG](/ddbj/htg-e.html) or [WGS](/ddbj/wgs-e.html) entries 
+can often provide the information to assemble a series of their entries and reconstruct a genome structure.  
+An accession number would be assigned for such contig tiling path, and call it "CON entry", which is classified into CON division.
 
-Many genome projects submitting a lot of [HTG](/ddbj/htg-e.html) or
-[WGS](/ddbj/wgs-e.html) entries can often provide the information to
-assemble a series of their entries and reconstruct a genome structure.
-An accession number would be assigned for such contig tiling path, and
-call it "CON entry", which is classified into CON division.
+CON entries have CONTIG lines that indicate accession numbers of citation sequences (piece entries) 
+and their tiling order to construct the contig.  
+The nucleotide sequence of CON entry is not shown on DDBJ flat file.
 
-CON entries have CONTIG lines that indicate accession
-numbers of citation sequences (piece entries) and their tiling order to
-construct the contig. The nucleotide sequence of CON entry is not shown
-on DDBJ flat file.
+We can NOT directly accept the submission of CON entry.  
+At you have to submit all piece entries to construct the contig, then a CON entry will be constructed.  
 
-We can NOT directly accept the submission of CON entry. At you
-have to submit all piece entries to construct the contig, then a CON
-entry will be constructed.
-
-[AGP File](/ddbj/file-format-e.html#agp) is required to submit CON
-entries.
+[AGP File](/ddbj/file-format-e.html#agp) is required to submit CON entries.  
 
 You can submit CON data to DDBJ via [Mass Submission System (MSS)](/ddbj/mss-e.html).
 

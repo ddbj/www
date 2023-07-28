@@ -59,36 +59,26 @@ feature](/ddbj/file-format-e.html#biological_feature).
 | ENV | Sequences obtained via environmental sampling methods, direct PCR, DGGE, etc.<br />For ENV submissions, it is necessary to describe an [environmental_sample qualifier](/ddbj/qualifiers-e.html#environmental_sample) on the source feature.  |
 | SYN | Synthetic constructs; sequences constructed by artificial manipulations<br />For SYN submissions, in general, the entry often has plural source features, so it should be cared.<br />See also [Example of Submission; E05) synthetic construct.](/ddbj/example-e.html#E05).  |
 
-### CON: Contig/Constructed, Tiling of Entries  {#con}
+<!-- ### CON: Contig/Constructed, Tiling of Entries  {#con} -->
+<!-- Many genome projects submitting a lot of [HTG](/ddbj/htg-e.html) and/or -->
+<!-- [WGS](/ddbj/wgs-e.html) entries can often provide the information to assemble a series of their entries and reconstruct a genome structure.      -->
+<!-- An accession number would be assigned for such contig tiling path, so called "[CON entry](/ddbj/con-e.html)", which is classified into CON division.      -->
+<!-- See also [Steps of genome sequencing, categories of sequence data and their correspondences.](/ddbj/genome-e.html )     -->
+<!-- At first you have to submit all piece entries to construct the contig, then a CON entry will be constructed.     -->
+<!-- [AGP file](/ddbj/file-format-e.html#agp) is required to submit CON entries.     -->
 
-<span class="red">DDBJ terminated accepting new submission of CON entry.</span>
+### EST/GSS/HTC/HTG: Divisions for Feasibility of Sequencing  {#est}
 
-Many genome projects submitting a lot of [HTG](/ddbj/htg-e.html) and/or
-[WGS](/ddbj/wgs-e.html) entries can often provide the information to assemble a series of their entries and reconstruct a genome structure.     
-An accession number would be assigned for such contig tiling path, so called 
-"[CON entry](/ddbj/con-e.html)", which is classified into CON division.     
-See also [Steps of genome sequencing, categories of sequence data and their correspondences.](/ddbj/genome-e.html )
-
-<!-- At first you have to submit all piece entries to construct the contig, then a CON entry will be constructed.    -->
-<!-- [AGP file](/ddbj/file-format-e.html#agp) is required to submit CON entries.    -->
-
-### EST/GSS/HTC/HTG/STS: Divisions for Feasibility of Sequencing  {#est}
-
-Sequences derived from high throughput projects, such as large scale
-analyses like EST dataset, ongoing whole genome scale sequencing, and so
-on, are classified into the following divisions, respectively.  
-Basically only one source feature should be described for an entry in
-those divisions.  
-In this regard, however, the entries including HTC or HTG division can
-have some [Biological features](/ddbj/file-format-e.html#biological_feature) like as general
-data, if necessary.
-
+Sequences derived from high throughput projects, such as large scale analyses like EST dataset, 
+ongoing whole genome scale sequencing, and so on, are classified into the following divisions, respectively.    
+Basically only one source feature should be described for an entry in those divisions.    
+In this regard, however, the entries including HTC or HTG division can have some 
+[Biological features](/ddbj/file-format-e.html#biological_feature) like as generaldata, if necessary.    
 
 | Division | Description |
 |---|
 | [EST](/ddbj/est-e.html) | Expressed sequence tags, cDNA sequences read short single pass.  |
 | [GSS](/ddbj/gss-e.html) | Genome survey sequences, genome sequences read short single pass.  |
-| STS | Sequence tagged sites, tagged sequences for genome sequencing.<br> Recommended to use [primer_bind](/ddbj/features-e.html#primer_bind) feature and [PCR_conditions](/ddbj/qualifiers-e.html#PCR_conditions) qualifier. <br> <span class="red">DDBJ terminated accepting new submission of STS. </span> |
 | [HTC](/ddbj/htc-e.html) | High throughput cDNA sequences from cDNA sequencing projects, not EST.<br> This division is to include unfinished high throughput cDNA sequences.  |
 | [HTG](/ddbj/htg-e.html) | High throughput genomic sequences mainly from genome sequencing projects.<br> Unfinished HTG entries are classified into different levels, as follow;{::nomarkdown}<ul><li>phase0；Survey sequence generated for the purpose of library quality assessment and detection of overlaps with other clones before construction of piece contig(s)</li><li>phase1；Unfinished sequence having contigs that have NOT been ordered and oriented</li><li>phase2；Unfinished sequence having contigs that have been ordered and oriented</li></ul>{:/}  |
 

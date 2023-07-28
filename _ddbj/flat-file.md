@@ -110,9 +110,7 @@ Locus名、配列長、塩基配列の分子タイプ、塩基配列の分子形
 </div>
 
 Locus 名は、 データベース中でそのエントリのみが持つユニークな名前が付けられています。  
-DDBJ
-では、1996年7月以降公開されたデータに、[アクセッション番号](#AccessionB)と同じ名前を付けています。（GenBank、EMBL
-も独自の命名法を取っています。）
+DDBJ では、1996年7月以降公開されたデータに、[アクセッション番号](#AccessionB)と同じ名前を付けています。(GenBank、EMBL も独自の命名法を取っています。)
 
 
 <div id="SequenceLengthB" markdown="1">
@@ -167,9 +165,9 @@ b: 生物分類に基づかない分類
 |  [GSS](/ddbj/gss.html)  |  genome survey sequences<br>short single pass のゲノム配列  |
 |  [HTC](/ddbj/htc.html)  |  high throughput cDNA sequences<br>EST 以外の大規模 cDNA 配列プロジェクトに由来し，更新が期待されるデータ。<br>配列が finish した後，生物種による division に移される場合があります。  |
 |  [HTG](/ddbj/htg.html)  |  high throughput genomic sequences<br>ゲノムプロジェクトに由来し，頻繁に update されることが期待されるデータで，段階に応じて以下の 3 phase に分類されます。その配列がいずれの phase であるかは KEYWORD 行に記載されます。配列が更新されると phase が上がり，finish した後は生物種による division に移されます。<br>{::nomarkdown}<ul><li>phase0; piece contig が構築される以前の配列 </li><li>phase1; 構築された piece contig の向きや順序が未確定の配列 </li><li>phase2; piece contig の向きや順序が確定した unfinished の配列</li></ul>{:/}    |
-|  STS  |  sequence tagged sites<br>Genome sequencing の tag となる配列。chromosome, map, PCR_condition 等の情報が必要です。  |
-|  UNA  |  未注釈データ<br>最近は UNA division は使用していません。  |
-|  [CON](con.html)  |  Contig / Constructed<br>ゲノムプロジェクトのように個々に登録された一連の配列データをデータバンク側が結合し，１つのアクセッション番号を付与した長大なデータ。CON division に格納されるエントリには長大な配列を構成する配列のアクセッション番号が記載され，塩基配列は記載されません。また，すでに登録されている個々のデータのエントリは、他の division に保存されています。<br>CON division への直接のデータ登録は受け付けていません。まず、CON エントリを構成する個々の配列データを登録して頂きます。その上で CON エントリの構築が適当と判断された場合に、データバンク側で CON エントリを構築します。CON エントリを構成する個々の配列データが更新された場合には、CON エントリもバンク側で更新します。  |
+|  STS  |  <span class="red">現在、DDBJ では登録を受け付けておりません。</span><br>  sequence tagged sites<br>Genome sequencing の tag となる配列。chromosome, map, PCR_condition 等の情報が必要です。  |
+|  UNA  |  <span class="red">現在、DDBJ では登録を受け付けておりません。</span><br>  未注釈データ  |
+|  [CON](/ddbj/con.html)  |  <span class="red">現在、DDBJ では登録を受け付けておりません。</span><br>  Contig / Constructed<br>ゲノムプロジェクトのように個々に登録された一連の配列データをデータバンク側が結合し，１つのアクセッション番号を付与した長大なデータ。CON division に格納されるエントリには長大な配列を構成する配列のアクセッション番号が記載され，塩基配列は記載されません。また，すでに登録されている個々のデータのエントリは、他の division に保存されています。<br> <!-- CON division への直接のデータ登録は受け付けていません。まず、CON エントリを構成する個々の配列データを登録して頂きます。その上で CON エントリの構築が適当と判断された場合に、データバンク側で CON エントリを構築します。CON エントリを構成する個々の配列データが更新された場合には、CON エントリもバンク側で更新します。 -->   |
 
 
 <div id="ModificationDateB" markdown="1">

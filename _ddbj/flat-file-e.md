@@ -178,9 +178,9 @@ b: other divisions
 |  [GSS](/ddbj/gss-e.html)  |  genome survey sequences; short single pass genomic sequences  |
 |  [HTC](/ddbj/htc-e.html)  |  high throughput cDNA sequences;<br>The sequence submitted from cDNA sequencing projects except for EST. This division is to include unfinished high throughput cDNA sequences, each of which has 5'UTR and 3'UTR at both ends and part of a coding region. The sequence may also include introns. When the sequence becomes finished later, it moves to the corresponding taxonomic division.  |
 |  [HTG](/ddbj/htg-e.html)  |  high throughput genomic sequences;<br>The sequence submitted mainly from genome sequencing projects which regarded a clone as a sequencing unit.   |
-|  STS  |  sequence tagged sites<br>The tag site for genome sequencing. The information of chromosome, map, PCR_condition is necessary for this division.  |
-|  UNA  |  the data not annotated<br>The UNA division is not used recently.  |
-|  [CON](con-e.html)  |  Contig / Constructed<br>To conjugate a series of entries, such as those submitted from a genome project, each of the three data banks constructs an entry and assign an accession number to a large scale sequence dataset. Such entries are classified into the CON division. The entry in the CON division has the information of joined accession numbers instead of the sequence data. The corresponding entries of the CON entry have been submitted to other divisions.  |
+|  STS  |  <span class="red">DDBJ currently terminated accepting new submissions. </span><br>sequence tagged sites<br>The tag site for genome sequencing. The information of chromosome, map, PCR_condition is necessary for this division.  |
+|  UNA  |  <span class="red">DDBJ currently terminated accepting new submissions. </span><br>the data not annotated  |
+|  [CON](con-e.html)  |  <span class="red">DDBJ currently terminated accepting new submissions. </span><br>Contig / Constructed<br>To conjugate a series of entries, such as those submitted from a genome project, each of the three data banks constructs an entry and assign an accession number to a large scale sequence dataset. Such entries are classified into the CON division. The entry in the CON division has the information of joined accession numbers instead of the sequence data. The corresponding entries of the CON entry have been submitted to other divisions.  |
 
 
 <div id="ModificationDateB" markdown="1">
