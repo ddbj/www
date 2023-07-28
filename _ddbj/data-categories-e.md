@@ -56,8 +56,8 @@ feature](/ddbj/file-format-e.html#biological_feature).
 
 | Division | Description |
 |---|
-| ENV | Sequences obtained via environmental sampling methods, direct PCR, DGGE, etc.<br />For ENV submissions, it is necessary to describe an [environmental_sample qualifier](/ddbj/qualifiers-e.html#environmental_sample) on the source feature.  |
-| SYN | Synthetic constructs; sequences constructed by artificial manipulations<br />For SYN submissions, in general, the entry often has plural source features, so it should be cared.<br />See also [Example of Submission; E05) synthetic construct.](/ddbj/example-e.html#E05).  |
+| [ENV](/ddbj/env-e.html) | Sequences obtained via environmental sampling methods, direct PCR, DGGE, etc.<br />For ENV submissions, it is necessary to describe an [environmental_sample qualifier](/ddbj/qualifiers-e.html#environmental_sample) on the source feature.  |
+| SYN | Synthetic constructs; sequences constructed by artificial manipulations<br />For SYN submissions, in general, the entry often has plural source features, so it should be cared.<br>  See also [Description Examples of Sequence Data: E05) synthetic construct.](/ddbj/example-e.html#E05).  |
 
 <!-- ### CON: Contig/Constructed, Tiling of Entries  {#con} -->
 <!-- Many genome projects submitting a lot of [HTG](/ddbj/htg-e.html) and/or -->

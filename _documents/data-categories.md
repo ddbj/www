@@ -135,20 +135,16 @@ feature](ddbj/file-format.html#biological_feature)
 |  Division  |  Description  |
 |---|
 |  [ENV](/ddbj/env.html)  |  PCR, DGGE, あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来した配列。<br>ENV の場合は source feature に [environmental_sample qualifier](/ddbj/qualifiers.html#environmental_sample) を記載する必要があります。  |
-|  SYN  |  人為的な操作により構築された合成配列 <br> SYN は合成配列、例えば発現ベクターの配列、プライマーの配列、キメラ配列、fusion配列、人為的に変異を導入した配列などが該当します。複数の生物種や遺伝子由来の断片をつなぎ合わせた合成配列では、各々の配列の由来を示すために複数のsource feature を使用して記載する場合があります。<br> [登録の見本; E05) synthetic construct](/ddbj/example.html#E05) もご参照ください。 |
+|  SYN  |  人為的な操作により構築された合成配列 <br> SYN は合成配列、例えば発現ベクターの配列、プライマーの配列、キメラ配列、fusion配列、人為的に変異を導入した配列などが該当します。複数の生物種や遺伝子由来の断片をつなぎ合わせた合成配列では、各々の配列の由来を示すために複数のsource feature を使用して記載する場合があります。<br> [配列データ記載例: E05) synthetic construct](/ddbj/example.html#E05) もご参照ください。 |
 
 
 
 #### EST/GSS/HTC/HTG: 配列決定の確度、あるいは、目的による区別  {#est}
 
-EST
-に代表される大量解析、長大なゲノム配列の決定の途上、などの配列を以下に示す
-DIVISION に区別します。
+EST に代表される大量解析、長大なゲノム配列の決定の途上、などの配列を以下に示す DIVISION に区別します。    
 生物学的な特徴づけは source feature のみを基本とします。
-ただし、HTC、HTG には研究段階に応じて記載する情報が異なりますが
-通常の登録と同様に [Biological
-features](ddbj/file-format.html#biological_feature)
-を記載することも可能です。
+ただし、HTC、HTG には研究段階に応じて記載する情報が異なりますが、通常の登録と同様に 
+[Biological features](ddbj/file-format.html#biological_feature) を記載することも可能です。
 それぞれのデータに関する説明ページも合わせてご覧ください。
 
 |  Division  |  Description  |
@@ -162,12 +158,10 @@ features](ddbj/file-format.html#biological_feature)
 
 #### WGS: Whole Genome Shotgun ゲノムの概要配列  {#wgs}
 
-ホールゲノムショットガン配列決定法を用いて全ゲノム配列を決定するゲノムプロジェクトに由来する整理が不十分な段階の大量の
-DNA 断片の bulk sequence data を [WGS (Whole Genome
-Shotgun)](/ddbj/wgs.html)として受け付けています。
+ホールゲノムショットガン配列決定法を用いて全ゲノム配列を決定するゲノムプロジェクトに由来する整理が不十分な段階の大量のDNA 断片の bulk sequence data を 
+[WGS (Whole Genome Shotgun)](/ddbj/wgs.html)として受け付けています。
 WGS データは他のデータとアクセッション番号の書式が異なります。
-[Genome Project の各段階と登録データの種別](/ddbj/genome.html)
-もご参照ください。
+[Genome Project の各段階と登録データの種別](/ddbj/genome.html) もご参照ください。
 
 #### TSA: Transcriptome Shotgun Assembly  {#tsa}
 
@@ -175,10 +169,8 @@ WGS データは他のデータとアクセッション番号の書式が異な�
 [Transcriptome Shotgun Assembly (TSA)](/ddbj/tsa.html)
 として受け付けています。
 生物学的な特徴づけは source feature のみを基本とします。
-ただし、通常の登録と同様に [Biological
-features](/ddbj/file-format.html#biological_feature)を記載することも可能です。
-TSA
-データは他のデータとアクセッション番号の書式が異なることがあります。
+ただし、通常の登録と同様に [Biological features](/ddbj/file-format.html#biological_feature)を記載することも可能です。
+TSA データは他のデータとアクセッション番号の書式が異なることがあります。
 Transcriptome Project の各段階と登録データの種別もご参照ください。
 
 #### TLS: Targeted Locus Study  {#tls}

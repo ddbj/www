@@ -44,7 +44,7 @@ source feature と、それ以外に最低1つの [Biological feature](/ddbj/fil
 
 |  Division  |  Description  |
 |---|
-|  ENV  |  PCR、DGGE、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来した配列。<br/> ENV の場合は source feature に [environmental_sample qualifier](/ddbj/qualifiers.html#environmental_sample) を記載する必要があります。  |
+|  [ENV](/ddbj/env.html)  |  PCR、DGGE、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来した配列。<br/> ENV の場合は source feature に [environmental_sample qualifier](/ddbj/qualifiers.html#environmental_sample) を記載する必要があります。  |
 |  SYN  |  synthetic constructs; 人為的な操作により構築された合成配列<br/>SYN は合成配列、例えば発現ベクターの配列、プライマーの配列、キメラ配列、fusion 配列、人為的に変異を導入した配列などが該当します。複数の生物種や遺伝子由来の断片をつなぎ合わせた合成配列では、各々の配列の由来を示すために複数の source feature を使用して記載する場合があります。<br/>[配列データ記載例; E05) synthetic construct](/ddbj/example.html#E05) もご参照ください。  |
 
 <!-- ### CON: Contig/Constructed 配列のタイリング  {#con}     -->

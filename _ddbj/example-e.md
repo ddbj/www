@@ -573,7 +573,7 @@ FEATURES             Location/Qualifiers
 
 
 
-## C: EST, GSS, STS  {#C}
+## C: EST, GSS, marker  {#C}
 
 ### C01) EST (Expressed Sequence Tag)  {#C01}
 
