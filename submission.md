@@ -47,6 +47,11 @@ lang: ja
       <td><a href="https://ddbj.nig.ac.jp/D-way">Submission portal D-way</a></td> 
     </tr>
     <tr>
+      <td><a href="/metabobank/index.html">MetaboBank</a></td> 
+      <td>メタボロミクスデータの登録を受付ける公共リポジトリ</td> 
+      <td><a href="/metabobank/submission.html">MetaboBank 登録フォーム</a></td> 
+    </tr>
+    <tr>
       <td><a href="/jga/index.html">Japanese Genotype-phenotype Archive (JGA)</a></td> 
       <td>アクセス制限が必要な個人レベルの遺伝学的なデータと匿名化された表現型情報</td> 
       <td><a href="/jga/submission.html">JGA Submission</a></td> 
@@ -95,3 +100,9 @@ Transcriptome で [Transcriptom Shotgun Assembly (TSA)](/ddbj/tsa.html) に該�
 * 特定の実体を伴わない塩基配列 (いわゆる consensus sequences)
 * 長さが 100 塩基未満の塩基配列 (2021年6月以降) 
 * primer のみで構成される塩基配列 (2021年6月以降)
+
+## 登録フロー {#flow}
+
+ゲノム配列等の大規模な塩基配列データの DDBJ への登録、及び、DRA/GEA/MetaboBank の登録に先だって BioProject/BioSample の登録が必要になります。
+
+<img src="/assets/images/submission/submission-flow.jpg" alt="BioProject/BioSample 登録フロー" title="BioProject/BioSample 登録フロー" class="w500">

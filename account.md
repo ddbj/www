@@ -10,12 +10,10 @@ lang: ja
 
 {::options parse_block_html="true" /}
 <div class="attention">
-
-  - 責任者の許可のもとアカウントを作成し，データを管理してください。
-  - アカウントとパスワードはユーザが安全に管理してください。
-  - アカウント名は変更できません。
-  - アカウント作成後、NBDC 申請システムで利用できるようになるまで10分程度時間がかかります。
-
+- 責任者の許可のもとアカウントを作成し，データを管理してください。
+- アカウントとパスワードはユーザが安全に管理してください。
+- アカウント名は変更できません。
+- アカウント作成後、NBDC 申請システムで利用できるようになるまで10分程度時間がかかります。
 </div>
 
 DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認証を介した scp を利用しています。
@@ -26,13 +24,15 @@ DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認�
 {% include image.html url="books/hac01.jpg" caption="アカウントのサービス利用権限" class="w300" %}
 {:/}
 
+NBDC に提供・利用申請を提出するユーザは[申請に必要なアカウント情報を追加](#nbdc)します。追加した情報は申請フォームに自動入力されるようになるため、申請作業が効率的になります。
+
 ## D-way アカウントをウェブサイトで作成 {#account-for-bioproject-biosample-submissions}
 
 ### ウェブサイトでアカウントを作成  {#create-an-account-on-website}
 
 ウェブサイトで新規作成したアカウントはデフォルトで BioProject/BioSample/NBDC 申請サービスを利用することができます。
 
-登録ポータル ["D-way" (https://ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way)</a> にアクセスします。
+登録ポータル ["D-way" (https://ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way) にアクセスします。
 [Register for a new account] ボタンをクリックします。
 
 {::nomarkdown}
@@ -103,9 +103,9 @@ Windows PowerShell を起動します。
 PowerShell のターミナルで以下のコマンドを実行し、openSSH 形式の鍵ペアを生成します。   
 
 ``` 
-鍵ペアの生成。-f で鍵のファイル名を指定します。
+鍵ペアの生成。
 デフォルトでは mtaro というユーザであれば C:\Users\mtaro に作成されます。
-PS C:\Users\mtaro> ssh-keygen -t rsa -f ddbjkey
+PS C:\Users\mtaro> ssh-keygen -t rsa
 
 メッセージが表示されます。
 Generating public/private rsa key pair.
@@ -114,10 +114,10 @@ Generating public/private rsa key pair.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 
-Your identification has been saved in ddbjkey.
-Your public key has been saved in ddbjkey.pub.
+Your identification has been saved in id_rsa.
+Your public key has been saved in id_rsa.pub.
 
-"C:\Users\mtaro" に秘密鍵は "id_rsa" として，公開鍵は "id_rsa.pub" として保存されます。
+"C:\Users\mtaro" に秘密鍵は "id_rsa" として、公開鍵は "id_rsa.pub" として保存されます。
 ```
 
 実際の画面では以下のようになります。  
@@ -126,6 +126,12 @@ Your public key has been saved in ddbjkey.pub.
 
 OpenSSH 形式の秘密鍵 (id_isa) と公開鍵 (id_rsa.pub) がユーザフォルダ（例では C:ユーザ:mtaro の直下）に作成されます。  
 [![]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg "ユーザフォルダの下に鍵ペアが生成されます"){: .group1}
+
+JGA の[データセット復号用公開鍵・秘密鍵ペア](/jga/download.html#key-for-decryption)は -f オプションで利用申請 ID をファイル名に含めて保存するとペアを識別しやすくなります。
+```
+PS C:\Users\mtaro> ssh-keygen -t rsa -f J-DU999991
+"C:\Users\mtaro" に秘密鍵は "J-DU999991" として、公開鍵は "J-DU999991.pub" として保存されます。
+```
 
 #### PuTTY 形式 {#putty}
 
@@ -137,6 +143,9 @@ OpenSSH 形式の秘密鍵 (id_isa) と公開鍵 (id_rsa.pub) がユーザフォ
 
 ウィンドウのなかでマウスポインターをランダムに動かして鍵を生成させます。生成される公開鍵と秘密鍵を保存します。鍵は WinSCP
 でそのまま使用できる PuTTY 形式で保存されます。
+
+JGA の[データセット復号用公開鍵・秘密鍵ペア](/jga/download.html#key-for-decryption)は利用申請 ID をファイル名に含めて保存するとペアを識別しやすくなります。  
+例 公開鍵 J-DU999991.pub、秘密鍵 J-DU999991
 
 ### Mac OS X {#mac}
 
@@ -162,7 +171,7 @@ Enter same passphrase again:
 
 Your identification has been saved in /Users/you/.ssh/id_rsa.
 Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
-"/Users/you/.ssh" フォルダに秘密鍵は "id_rsa" として，公開鍵は "id_rsa.pub" として保存されます。
+"/Users/you/.ssh" フォルダに秘密鍵は "id_rsa" として、公開鍵は "id_rsa.pub" として保存されます。
 ```
 
 公開鍵を含んでいる隠しフォルダ ".ssh" を表示します。 ファインダーの "移動" メニューから "フォルダへ移動" を選択します。
@@ -178,6 +187,12 @@ Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 [![]({{ site.baseurl }}/assets/images/books/mac_key_4.jpg){:.w400}]({{ site.baseurl }}/assets/images/books/mac_key_4.jpg ".ssh フォルダ中の公開鍵ファイル"){: .group1}
 
 その公開鍵ファイル "id\_rsa.pub" をデスクトップなどにコピーし，アカウントに登録します。
+
+JGA の[データセット復号用公開鍵・秘密鍵ペア](/jga/download.html#key-for-decryption)は -f オプションで利用申請 ID をファイル名に含めて保存するとペアを識別しやすくなります。
+```
+$ ssh-keygen -t rsa -f J-DU999991
+"/Users/you/.ssh" フォルダに秘密鍵は "J-DU999991" として、公開鍵は "J-DU999991.pub" として保存されます。
+```
 
 ### Unix {#unix}
 
@@ -198,6 +213,12 @@ Enter same passphrase again:
 Your identification has been saved in /Users/you/.ssh/id_rsa.
 Your public key has been saved in /Users/you/.ssh/id_rsa.pub.
 "/Users/you/.ssh" フォルダに秘密鍵は "id_rsa" として，公開鍵は "id_rsa.pub" として保存されます。
+```
+
+JGA の[データセット復号用公開鍵・秘密鍵ペア](/jga/download.html#key-for-decryption)は -f オプションで利用申請 ID をファイル名に含めて保存するとペアを識別しやすくなります。
+```
+$ ssh-keygen -t rsa -f J-DU999991
+"/Users/you/.ssh" フォルダに秘密鍵は "J-DU999991" として、公開鍵は "J-DU999991.pub" として保存されます。
 ```
 
 ### Center name と認証用公開鍵の登録  {#register-center-name-and-public-key}
@@ -226,10 +247,14 @@ public key\] で鍵を登録します。
 
 機能が未実装であるため D-way ウェブポータルでは JGA 登録をみることができません。認証用公開鍵をアカウントに登録後、[「JGA への登録手順」](/jga/submission-step.html)、及び、[「JGA データの利用手順」](/jga/download.html)に従ってサービスを利用してください。    
 
-### NBDC 申請のための情報追加  {#nbdc}
+### アカウントの更新  {#update-account}
 
-アカウントに所属情報や日本語氏名を登録します。    
-[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。  
+アカウント情報を編集し [Update\] ボタンでアカウントを更新します。登録した認証用公開鍵は新しいファイルをアップロードすることで上書きすることができます。
+
+## NBDC 申請のための情報追加  {#nbdc}
+
+アカウントに所属情報や日本語氏名、職位を登録します。    
+[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) \([https://humandbs.ddbj.nig.ac.jp/nbdc/application/](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)\)にログインし、右上のメニューから「ユーザ情報更新」を選択します。  
 
 {% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
 
@@ -245,18 +270,17 @@ public key\] で鍵を登録します。
 * State/Prefecture
 * City
 * Street
+* Phone
+* Job Title
 * First name in Japanese
 * Last name in Japanese
+* Job Title in Japanese
 
 {% include image.html url="books/profile3.jpg" caption="アカウント情報を入力" class="w400" %}
 
 「Save」で登録します。
 
 {% include image.html url="books/profile4.jpg" caption="Save で保存" class="w300" %}
-
-### アカウントの更新  {#update-account}
-
-アカウント情報を編集し [Update\] ボタンでアカウントを更新します。登録した認証用公開鍵は新しいファイルをアップロードすることで上書きすることができます。
 
 ## パスワードの変更 {#password-chang}
 
