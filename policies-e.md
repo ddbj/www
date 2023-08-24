@@ -261,24 +261,24 @@ User shall agree that, in the following cases, we will provide necessary user's 
 
 ### Submission of Research Data from Human Subjects {#submission-of-human-data}
 #### Before Submitting Data {#before-submission}
-For submitting data derived from human subjects (human data) to the databases of Bioinformation and DDBJ Center (hereinafter referred to as 'Center'), it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws and regulations, guiding principles, guidelines, and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your metadata.
+For submitting data obtained from researches using samples derived from human subjects (hereinafter referred to as 'human data') to the databases of Bioinformation and DDBJ Center (hereinafter referred to as 'Center'), it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws and regulations, guiding principles, guidelines, and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your metadata.
 
-When you are submitting human data obtained from researches using human derived samples, except widely utilized and generally available samples of academically established value (\*1), make sure the followings.
+When you are submitting human data obtained from researches other than researches falling outside the scope of laws, regulations and guidelines (for example, researches using widely utilized and generally available samples of academically established value (\*1)), make sure the followings.
 
-  * The research plan describing experimental methods and human subjects generating the data to be provided has been approved by the institutional review board and by the head of institution who oversees the research.
-  * The research plan and the informed consent documents describe that data from human subjects are deposited to databases and are shared among domestic and overseas researchers.
+* The research plan describing experimental methods, research targets (for example, diseases and samples), and ways of data publication and sharing, has been approved by the institutional review board and by the head of institution who oversees the research.
+* The research plan and the informed consent documents describe that human data are deposited to databases, in addition, when the data are to be deposited as controlled-access data, "the data are to be shared among domestic and international researchers including those belong to private companies, who meet user requirements", and when the data are to be deposited as unrestricted-access data, "the data are to be published on the Internet in a form that anyone can view and access".
+* Before submitting data, you need to present an application (for data to be submitted) to the Data Access Committee of the Department of NBDC Program (NBDC) of Japan Science and Technology Agency and obtain the Committee’s approval upon review thereby.
 
 \*1 HeLa whole genome sequence data should be submitted to the [NCBI Database of Genotypes and Phenotypes (dbGaP)](https://www.ncbi.nlm.nih.gov/gap/).
 
 #### Controlled-Access and Database {#access-control-and-databases}
-Before submitting human data, please consider whether controlled-access is required or not when releasing data, on the basis of informed consents obtained from human subjects.
+Before submitting human data, please consider whether controlled-access is required or not when releasing data, on the basis of explanation and consent terms of informed consents obtained from human subjects.
 
 ##### Controlled-Access Database {#controlled-access}
-Submit your data to the controlled-access database '[Japanese Genotype-phenotype Archive (JGA)](/jga/index-e.html)'. Before submitting your data to JGA, you need to present an application (for data to be submitted) to the Data Access Committee of the [Department of NBDC Program (NBDC)](https://humandbs.biosciencedbc.jp/en/) of Japan Science and Technology Agency and obtain the Committee's approval upon review thereby.
+Submit your data to the controlled-access database '[Japanese Genotype-phenotype Archive (JGA)](/jga/index-e.html)'.
 
 #### Unrestricted-Access Database {#unrestricted-access}
-Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html), [Genomic Expression Archive (GEA)](/gea/index-e.html) or [DDBJ](/ddbj/index-e.html). To submit data corresponding to personal identification code (\*2) in unrestricted-access databases, you need to present an application (for data to be submitted) to the Data Access Committee of the NBDC and obtain the Committee's approval upon review thereby. In principle, the two points of 'Before submitting your data' must be fulfilled, and the informed consent documents must explain that the data is shared publicly from the databases without restriction.
-In regard to review of data that does not fall under personal identification code, please contact the NBDC.
+Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html), [Genomic Expression Archive (GEA)](/gea/index-e.html), [MetaboBank](/metabobank/index-e.html) or [DDBJ](/ddbj/index-e.html). In principle, you can not submit data corresponding to personal identification code (\*2) to unrestricted-access databases. When you want to submit data corresponding to personal identification code to unrestricted-access databases, please contact the NBDC. In principle, it is necessary to obtain consents for unrestricted public disclosure of genome data corresponding to personal identification code through databases.
 
 \*2 Please refer to the NBDC FAQs, in regard to personal identification code. Personal identification code is defined in the '[Guidelines on the Act on the Protection of Personal Information (Volume on General Rules) (Japanese language only)](https://www.ppc.go.jp/)' of [the Personal Information Protection Commission](https://www.ppc.go.jp/en/).
 
@@ -286,6 +286,7 @@ Related Information
   * Personal Information Protection Commission, Act on the Protection of Personal Information, Laws and regulations, guidelines etc.
   * Ethical Guidelines for Medical and Health Research Involving Human Subjects
   * NBDC Human Data Sharing Guidelines
+  * NBDC Security Guidelines for Human Data
   * NBDC Human Database (FAQ)
   * [Notification for research participants regarding our database activities for human data](/reaserch-participant-notification-e.html)
 
