@@ -207,14 +207,41 @@ c. 単一真核生物個体の chromosome ドラフトゲノムとアセンブ�
 - アセンブルした大規模転写物配列 → TSA: Transcriptome Shotgun Assembly
 
 ## 登録ファイル送付方法  {#sendfiles}
-- MSS formからアップロード    
-MSS form での利用申請時に登録ファイルをアップロードできます。申請時にファイルをアップロードできない場合には、申請完了後に通知されるメールにアップロードサイトへのリンクが表示されますので、登録ファイル完成後に登録ファイルをアップロードして下さい。
-- SFTP によるファイル転送    
-ファイルサイズが合計で 10 Gbyte を超える場合は、[公開鍵と秘密鍵](/account.html#generate-key-pair)を用いた SCP/SFTP によるファイル転送をお勧めいたします。アカウントに[Center name と認証用公開鍵を登録](/account.html#register-center-name-and-public-key)後、「[データのアップロード](/upload.html)」に従い転送してください。
+
+登録ファイルは MSS form から以下のいずれかの方法で送信することができます。
+- ブラウザ上でアップロード
+- [DFAST](https://dfast.ddbj.nig.ac.jp/) の job ID を指定する
+  - DFAST にて、登録ファイルを作成済みの場合
+- SFTP サーバーに転送済みの登録ファイルを送付
+  - 目安としてファイルサイズが合計で 10 Gbyte を超える場合は、[公開鍵と秘密鍵](/account.html#generate-key-pair)を用いた SCP/SFTP によるファイル転送を選択してください。アカウントに[Center name と認証用公開鍵を登録](/account.html#register-center-name-and-public-key)後、「[データのアップロード](/upload.html)」に従い転送してください。
+  - 以下の説明をお読みください。
 
 <div class="attention" markdown="1">
 ＜お願い＞ 特に理由のない限り、電子メール添付による登録ファイル送付はおやめください。
 </div>
+
+### SFTP サーバーに設置する登録ファイルの形式 {#sftpmss}
+
+- 対象ディレクトリは /mass です。
+- MSS Application Form を使用した場合の読み取り先になりますので、Submissionファイルのみを設置してください。
+- MSS Application Form は、massディレクトリ配下のサブディレクトリからもファイルを読み込みます。
+- Submissionファイル名には次の制約があります。圧縮した場合は、圧縮アーカイブに含まれる各ファイル名が制約を受けます。
+  - アノテーションファイルの拡張子が <span style="background-color: #e8e8e8;">.ann</span>、<span style="background-color: #e8e8e8;">.annt</span>、<span style="background-color: #e8e8e8;">.tsv</span>、<span style="background-color: #e8e8e8;">.ann.txt</span> のいずれかであること。
+  - 塩基配列ファイルの拡張子が <span style="background-color: #e8e8e8;">.fasta</span>、<span style="background-color: #e8e8e8;">.seq.fa</span>、<span style="background-color: #e8e8e8;">.fa</span>、<span style="background-color: #e8e8e8;">.fna</span>、<span style="background-color: #e8e8e8;">.seq</span> のいずれかであること。
+  - 各submissionでアノテーションファイルと塩基配列ファイルがペアになっていること。拡張子を除いたファイル名称が同一なファイルがペアになります。
+    - Submissionファイルの再提出をDDBJ curatorにより要請された場合を除きます。
+  - ファイル名は、スペース、バッククォート、アングルブラッケッツ"<>"、丸括弧"()"以外の半角英数記号とし、日本語のようなマルチバイト文字を使用しないこと
+- MSS Application Form は圧縮ファイルからの読み込みに対応しています。対応する圧縮形式は、次の通りです。
+  - gzip, bzip2, xz, lzip, lzma, lzop, zstd, compress    
+  e.g.    
+  20230322-1.tar.gz    
+  20230322-2.tar.bz2    
+  20230322-3.tar.xz    
+  20230322-4.zip    
+  20230322-5.tar.lzma    
+  20230322-6.tar.lzo    
+  20230322-7.tar.zst    
+  20230322-8.tar.Z
 
 ## 査定作業  {#review}
 チェックツールによる検証を行った後、配列ファイルとアノテーションファイルを [DDBJ にアップロード](/ddbj/mss.html#sendfiles)してください。
@@ -270,7 +297,7 @@ M, Mandatory; NR, Not required; OPT, Optional
 
 M, Mandatory; NR, Not required; OPT, Optional
 
-## DFAST について: 原核生物ゲノムの登録  {#mssdfast}
+## DFAST: 原核生物ゲノムの登録  {#mssdfast}
 ### DFAST（DDBJ Fast Annotation and Submission Tool）  {#mssdfast-1}
 [DFAST](https://dfast.ddbj.nig.ac.jp/) は、原核生物ゲノムの高速自動アノテーションパイプラインで、DDBJ に直接登録可能なアノテーションファイルを取得できます。Annotated/Assembled Sequences database へ原核生物ゲノムを登録する際には、[DFAST](https://dfast.ddbj.nig.ac.jp/) の利用を強く推奨しています。
 
@@ -279,9 +306,13 @@ M, Mandatory; NR, Not required; OPT, Optional
 1. [D-way アカウント](/account.html)で [DFAST](https://dfast.ddbj.nig.ac.jp/) にログインすると 、[解析（job）の履歴管理](https://dfast.ddbj.nig.ac.jp/help_login)ができます。アカウントを持っていない場合には[アカウントの作成方法](/account.html#account-for-bioproject-biosample-submissions)をご一読下さい。
 
 ### DFAST のデータを Submit するには  {#mssdfast-3}
-1. [DFAST](https://dfast.ddbj.nig.ac.jp/) にアクセスし、[D-way アカウント](/account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。job 終了後、”DDBJ submission”  タブをクリックします。DDBJ への登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS 登録ファイルが作成されます。（注１）
-1. 実行したjobの[履歴管理画面](https://dfast.ddbj.nig.ac.jp/help_login)にて登録を希望する job ID をチェックして選択状態にします。
-1. ファイル形式に"MSS"を選択し"DOWNLOAD"ボタンをクリックしてファイルをダウンロードしてください。このとき入力されたメタ情報のチェックを行います。警告が出た場合には入力した情報を確認してください（注２）。ファイルダウンロード後にテキストエディタ等で開いて修正をすることも可能です。
+1. [DFAST](https://dfast.ddbj.nig.ac.jp/) にアクセスし、[D-way アカウント](/account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。job 終了後、”DDBJ submission”  タブをクリックします。DDBJ への登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS 登録ファイルが作成されます。（注１）    
+最後に、Format Check をクリックして、書式チェックを行ってください。
+1. DFAST の job ID で submit する場合
+    1. job ID (<span style="font-family:Arial;">########-####-####-####-############</span> 書式のID)をコピーします。
+1. DFAST からダウンロードしたファイルを submit する場合
+    1. 実行したjobの[履歴管理画面](https://dfast.ddbj.nig.ac.jp/help_login)にて登録を希望する job ID をチェックして選択状態にします。
+    1. ファイル形式に"MSS"を選択し"DOWNLOAD"ボタンをクリックしてファイルをダウンロードしてください。このとき入力されたメタ情報のチェックを行います。警告が出た場合には入力した情報を確認してください（注２）。ファイルダウンロード後にテキストエディタ等で開いて修正をすることも可能です。
 1. [MSS 申し込み](https://mss.ddbj.nig.ac.jp/)を行ってください。[MSS による登録の流れ](/ddbj/mss.html#flow)の手順にしたがい、ダウンロードした登録ファイルを DDBJ に送付してください。
 
 注１）ログインしていない状態でも DFAST を使ってゲノムアノテーションをすることは可能です。その場合には、履歴管理画面で job ID を指定して実行済みのjobを履歴に取り込むことができます。
