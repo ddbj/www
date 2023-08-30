@@ -23,9 +23,6 @@ DRA と GEA ではアップロード先ディレクトリの下にサブディ�
 - MSS: ~/mass [詳細は説明サイトをお読みください](/ddbj/mss.html#sftpmss)
 - MetaboBank: ~/metabobank
 
-[DDBJ Mass Submission System](/ddbj/mss.html) の登録において、
-ウェブフォームからアップロードできないサイズのファイルはこちらの方法で受付サーバにアップロードしてください。   
-
 [JGA](/jga/submission-step.html) データは専用サーバにアップロードします。  
 
 ## ターミナル {#terminal}

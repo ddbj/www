@@ -22,8 +22,6 @@ The destination directories are different with the databases. Do NOT create sub-
 - MSS: ~/mass [Read the detailed description](/ddbj/mss-e.html#sftpmss)
 - MetaboBank: ~/metabobank
 
-Upload data files too large to upload from the [DDBJ Mass Submission System](/ddbj/mss-e.html) web form according to this page.  
-
 Upload [JGA](/jga/submission-step-e.html) data files to the different server.
 
 ## Terminal {#terminal}
