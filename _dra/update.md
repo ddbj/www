@@ -7,7 +7,7 @@ current_tab: overview
 lang: ja
 ---
 
-## 公開予定日の変更  {#change-hold-date} 
+## 公開予定日の変更  {#change-hold-date}
 
 公開予定日は最長で4年後まで指定でき、繰り返し更新することができます。
 Hold Date の [Change] をクリックし、公開予定日変更ページに移動し、予定日を変更します。
@@ -16,6 +16,11 @@ Hold Date の [Change] をクリックし、公開予定日変更ページに移
 
 データを即日公開する場合は "Release Now" をクリックします。
 作業した日の深夜に公開処理が実施され、[ftp にデータファイルが公開](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/)され、数日以内に [DDBJ Search](https://ddbj.nig.ac.jp/search) にインデックスされます。
+
+## 論文情報の追加 {#publication}
+
+DRA データに関する論文情報は BioProject に追加します。
+[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeyWbdUll6ESiuraInJ2UzUuiCSoWYZ0v-zARc049_y5Z2-7A)の問い合わせ先で「BioProject/BioSample/Sequence Read Archive (DRA)」を選択し、論文情報 ([pubmed ID、pubmed ID がない場合は doi]((/bioproject/project-info.html#Publication))) の BioProject への追加を依頼してください。
 
 ## メタデータの更新  {#update-metadata}
 
@@ -42,12 +47,12 @@ DRA では別の Submission で新しく Experiment-Run のセットを追加し
 メタデータを登録し、ファイルの検証処理を実行します。追加された Experiment/Run オブジェクトに対してアクセッション番号が発行されます。
 
 <div class="attention">
-追加したデータに対応する BioProject 番号は同一ですが、Submission に対する DRA 番号は異なります。  
+追加したデータに対応する BioProject 番号は同一ですが、Submission に対する DRA 番号は異なります。
 論文中には BioProject 番号、もしくは、Run 番号を引用してください。
 </div>
 
 {% include image.html url="books/add_data_files.jpg" caption="既存プロジェクトへのサンプルとデータの追加" class="w500" %}
-  
+
 
 {% include image.html url="books/add_run.jpg" caption="既存プロジェクト・サンプルへのデータ追加" class="w500" %}
 
