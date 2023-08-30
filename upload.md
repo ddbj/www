@@ -20,7 +20,7 @@ DRA と GEA ではアップロード先ディレクトリの下にサブディ�
 
 - DRA: ~/\<DRA submission ID\> (例 test07-0018)
 - GEA: ~/gea/\<GEA submission ID\> (例 ESUB000350)
-- MSS: ~/mass [詳細は説明サイトをお読みください](/ddbj/mss#sftpmss)
+- MSS: ~/mass [詳細は説明サイトをお読みください](/ddbj/mss.html#sftpmss)
 - MetaboBank: ~/metabobank
 
 [DDBJ Mass Submission System](/ddbj/mss.html) の登録において、
