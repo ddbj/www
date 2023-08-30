@@ -6,23 +6,47 @@ lang: en
 
 ## Data upload {#upload} 
 
-This page explains how to upload data files for DRA/GEA/DDBJ/MetaboBank to the DDBJ file server.  
-The hostname and port number of the server.  
+This page explains how to upload data files for DRA/GEA/DDBJ/MetaboBank to the DDBJ file server.
+
+### Host name and port number  {#hostandport}
 
 - Hostname: ftp-private.ddbj.nig.ac.jp
 - Port number: 22
 
-The destination directories are different between databases.  
-Do NOT create sub-directories under the destination directories of DRA and GEA.  
+### Destination directories to upload  {#uploaddestination}
+
+The destination directories are different with the databases. Do NOT create sub-directories under the destination directories of DRA and GEA.  
 
 - DRA: ~/\<DRA submission ID\> (for example, test07-0018)
 - GEA: ~/gea/\<GEA submission ID\> (for example, ESUB000350)
-- DDBJ: ~/mass
+- MSS: ~/mass
 - MetaboBank: ~/metabobank
 
 Upload data files too large to upload from the [DDBJ Mass Submission System](/ddbj/mss-e.html) web form according to this page.  
 
 Upload [JGA](/jga/submission-step-e.html) data files to the different server.
+
+### mass directory  {#mssdirectory}
+
+* The mass directory is a target to import the files when MSS Application Form is used. Therefore only the the submission files should be placed here. MSS Application Form reads the files recursively from the subdirectories under mass/.
+* There are some rules for the submission file name. As to the compressed files, the files in the compressed archive should be subject to the rule.
+  * File extension of the annotation file should be either one of <span style="background-color: #e8e8e8;">.ann</span>, <span style="background-color: #e8e8e8;">.annt</span>, <span style="background-color: #e8e8e8;">.tsv</span>, or <span style="background-color: #e8e8e8;">.ann.txt</span>
+  * File extension of the nucleotide sequence file should be either one of <span style="background-color: #e8e8e8;">.fasta</span>, <span style="background-color: #e8e8e8;">.seq.fa</span>, <span style="background-color: #e8e8e8;">.fa</span>, <span style="background-color: #e8e8e8;">.fna</span>, or <span style="background-color: #e8e8e8;">.seq</span>
+  * An annotation file and a nucleotide sequence file must comprise a pair. The system determines as a pair whose filenames without the extension has the same name.
+    * Excluding the case of re-submitting the submission files as the request from DDBJ curator.
+  * Use alphanumeric and part of symbolic (excluding space, backtick, angle brackets "<>", and parentheses "()") characters for the file name. Do not include multibyte character such as Japanese font.
+  * MSS Application Form can import the files from compressed archive. The following compression types are available.
+    * gzip, bzip2, xz, lzip, lzma, lzop, zstd, compress    
+    e.g.    
+    20230322-1.tar.gz    
+    20230322-2.tar.bz2    
+    20230322-3.tar.xz    
+    20230322-4.zip    
+    20230322-5.tar.lzma    
+    20230322-6.tar.lzo    
+    20230322-7.tar.zst    
+    20230322-8.tar.Z
+
 
 ## Terminal {#terminal}
 
@@ -82,7 +106,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 This section explains how to upload files by commands using Windows PowerShell.
 
 Searh and run "PowerShell" in the Windows start menu.   
-<a href="/assets/images/books/ps-run.jpg" title="Search and run PowerShell" class="group1"><img src="/assets/images/books/win-ps-1.jpg" alt="Run PowerShell" title="Search and run PowerShell" class="w500"></a>   
+<a href="/assets/images/books/ps-run.jpg" title="Search and run PowerShell" class="group1"><img src="/assets/images/books/ps-run.jpg" alt="Run PowerShell" title="Search and run PowerShell" class="w500"></a>   
 
 Upload files by scp.  
 
