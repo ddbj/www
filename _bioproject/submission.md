@@ -90,7 +90,7 @@ BioProject の公開は参照している DDBJ/DRA/GEA/MetaboBank データの�
 
 ## 論文情報の追加 {#publication}
 
-[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeyWbdUll6ESiuraInJ2UzUuiCSoWYZ0v-zARc049_y5Z2-7A)の問い合わせ先で「BioProject/BioSample/Sequence Read Archive (DRA)」を選択し、論文情報 ([pubmed ID、pubmed ID がない場合は doi]((/bioproject/project-info.html#Publication))) の BioProject への追加を依頼してください。
+[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeyWbdUll6ESiuraInJ2UzUuiCSoWYZ0v-zARc049_y5Z2-7A/viewform)の問い合わせ先で「BioProject/BioSample/Sequence Read Archive (DRA)」を選択し、[論文情報](/bioproject/project-info.html#Publication) (pubmed ID、pubmed ID がない場合は doi) の BioProject への追加を依頼してください。
 
 ## プロジェクトとデータのリンク  {#link-experimental-data-project}
 

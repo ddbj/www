@@ -100,7 +100,7 @@ Registered projects can be updated. Please [contact the BioProject staff](/conta
 
 ## Add publication information {#publication}
 
-Request addition of publication information ([pubmed ID, doi when pubmed ID is not available](/bioproject/project-info-e.html#Publication)) to BioProject through the [Contact form](https://docs.google.com/forms/d/e/1FAIpQLSeNrBMkr9lV6IaWCJCXeGBddDF3tJXcv6SQCQ5lYWETmiuRAg) by selecting "BioProject/BioSample/Sequence Read Archive (DRA)" in the Contacts menu.
+Request addition of [publication information](/bioproject/project-info-e.html#Publication) (pubmed ID, doi when pubmed ID is not available) to BioProject through the [Contact form](https://docs.google.com/forms/d/e/1FAIpQLSeNrBMkr9lV6IaWCJCXeGBddDF3tJXcv6SQCQ5lYWETmiuRAg/viewform) by selecting "BioProject/BioSample/Sequence Read Archive (DRA)" in the Contacts menu.
 
 ## Link experimental data and project  {#link-experimental-data-project}
 
