@@ -218,14 +218,41 @@ c. Draft genome sequences of chromosomes from a eukaryotic isolate, and assemble
 - Assembled transcripts &#x279E; TSA: Transcriptome Shotgun Assembly
 
 ## How to upload the submission files  {#sendfiles}
-- Uploading in MSS form    
-In the process of MSS application, you can upload the submission files in MSS form. Even if you cannot upload the submission files during the application, you can upload them later. You will find the link to upload files in the email that is sent from DDBJ just after the application.
-- Transferring by SFTP    
-If the total submission files exceed more than 10 Gbytes in uncompressed size, we recommend that you use SCP/SFTP by using [public/private key pair](/account-e.html#generate-key-pair). First, [register center name and public key](/account-e.html#register-center-name-and-public-key) to your account, and then send the files according to ["Data upload"](/upload-e.html).
+
+Submitters can transfer the submission files from MSS form by either one of the methods indicated below.
+
+- Uploading from browser
+- Specifying the DFAST job ID
+- Loading the files which have been transferred to SFTP server
+    - Select this method when the total submission files exceed more than 10 Gbytes in uncompressed size. You need [public/private key pair](/account-e.html#generate-key-pair) to use SFTP. First, [register center name and public key](/account-e.html#register-center-name-and-public-key) to your account, and then upload the files according to ["Data upload"](/upload-e.html).
+    - Read the description below
 
 <div class="attention" markdown="1">
 ＜NOTE＞ Do not send submission files as email attachment unless there is some particular reason.
 </div>
+
+### File format for uploading to SFTP server  {#sftpmss}
+
+- The destination directory is /mass
+- The mass directory is a target to import the files when MSS Application Form is used. Therefore only the the submission files should be placed here.
+- MSS form reads the files recursively from the subdirectories under mass/.
+- There are some rules for the submission file name. As to the compressed files, the files in the compressed archive should be subject to the rule.
+    - File extension of the annotation file should be either one of <span style="background-color: #e8e8e8;">.ann</span>, <span style="background-color: #e8e8e8;">.annt</span>, <span style="background-color: #e8e8e8;">.tsv</span>, or <span style="background-color: #e8e8e8;">.ann.txt</span>
+    - File extension of the nucleotide sequence file should be either one of <span style="background-color: #e8e8e8;">.fasta</span>, <span style="background-color: #e8e8e8;">.seq.fa</span>, <span style="background-color: #e8e8e8;">.fa</span>, <span style="background-color: #e8e8e8;">.fna</span>, or <span style="background-color: #e8e8e8;">.seq</span>
+    - An annotation file and a nucleotide sequence file must comprise a pair. The system determines as a pair whose filenames without the extension has the same name.
+        - Excluding the case of re-submitting the submission files as the request from DDBJ curator.
+    - Use alphanumeric and part of symbolic (excluding space, backtick, angle brackets "<>", and parentheses "()") characters for the file name. Do not include multibyte character such as Japanese font.
+- MSS Application Form can import the files from compressed archive. The following compression types are available.
+    - gzip, bzip2, xz, lzip, lzma, lzop, zstd, compress    
+    e.g.    
+    20230322-1.tar.gz    
+    20230322-2.tar.bz2    
+    20230322-3.tar.xz    
+    20230322-4.zip    
+    20230322-5.tar.lzma    
+    20230322-6.tar.lzo    
+    20230322-7.tar.zst    
+    20230322-8.tar.Z
 
 ## Review of the submission files   {#review}
 Upload the submission files to DDBJ after you have checked the submission files by using [the file checking tool](/ddbj/mss-e.html#prep-4).
@@ -288,11 +315,15 @@ M, Mandatory; NR, Not required; OPT, Optional
 1. If you login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with [D-way account](/account-e.html), you can manage the [jobs analyzed](https://dfast.ddbj.nig.ac.jp/help_login) in [DFAST](https://dfast.ddbj.nig.ac.jp/). If you have not obtained the login account, see [“Create a D-way account in the website”](/account-e.html#account-for-bioproject-biosample-submissions) to get a new account. 
 
 ### How to submit the data obtained in DFAST  {#mssdfast-3}
-1. Login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with your account. First, upload the fasta file in “job submission page”, and start the job to analyze the genome. At this stage, you can obtain a job ID. When the job is finished, click “DDBJ submission” tab on the page. The annotation and sequence files, which are needed for MSS submission, are created after you fill the form in metadata section.(*1)
-1. On the [job management page](https://dfast.ddbj.nig.ac.jp/help_login), add checkmark to the job number that you would like to submit to DDBJ.
-1. Select "MSS" for the file format type, and click “DOWNLOAD” to download the submission files. Please check the meta information carefully. If you encounter a warning, check again and correct the metadata that you have filled (*2). If you would like to edit the annotation and meta data on a text file, download the files and open them by text editor.
-1. Apply for the submission through ["Application form for MSS"](https://mss.ddbj.nig.ac.jp/). According to the process shown in ["The Flow of MSS"](/ddbj/mss-e.html#flow), send the submission files that you have downloaded in DFAST to DDBJ.
+1. Login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with your account. First, upload the fasta file in “job submission page”, and start the job to analyze the genome. At this stage, you can obtain a job ID. When the job is finished, click “DDBJ submission” tab on the page. The annotation and sequence files, which are needed for MSS submission, are created after you fill necessary data (e.g. BioProject ID, BioSample ID, locus_tag prefix, and other metadata) into the form in metadata section.(*1)    
+Finally, click "Format Check" to do the syntax check of the files.
+1. Submitting by DFAST job ID
+    1. Copy the target job ID (format: <span style="font-family:Arial;">########-####-####-####-############</span>)
+1. Submitting the files downloaded from DFAST
+    1. In the [job management page](https://dfast.ddbj.nig.ac.jp/help_login), add checkmark to the job number that you would like to submit to DDBJ.
+    1. Select "MSS" for the file format type, and click “DOWNLOAD” to download the submission files. Please check the meta information carefully. If you encounter a warning, check again and correct the metadata that you have filled (*2). If you would like to edit the annotation and meta data on a text file, download the files and open them by text editor.
+1. Apply for the submission through ["Application form for MSS"](https://mss.ddbj.nig.ac.jp/). According to the process shown in ["The Flow of MSS"](/ddbj/mss-e.html#flow), send the submission files to DDBJ.
 
-*1 You can use [DFAST](https://dfast.ddbj.nig.ac.jp/) and obtain the result of genome annotation without logging in. In that case, you should remember the job ID. When you login to DFAST, you can import the job into your account by the function of job history on the menu bar.
+*1 You can use [DFAST](https://dfast.ddbj.nig.ac.jp/) and obtain the result of genome annotation without logging in. After you login to DFAST, you can import the job into your account by the function of "Job History" on the menu bar if you remember the job ID.
 
-*2 The function in [DFAST](https://dfast.ddbj.nig.ac.jp/) for checking the metadata is simple. You may be asked to correct the files by DDBJ curators after you submit the data.
+*2 The function for checking the metadata in [DFAST](https://dfast.ddbj.nig.ac.jp/) is simple. You may be asked to correct the files by DDBJ curators after you submit the data.
