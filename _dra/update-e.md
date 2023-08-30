@@ -7,7 +7,7 @@ current_tab: overview
 lang: en
 ---
 
-## Hold date change {#change-hold-date} 
+## Hold date change {#change-hold-date}
 
 You can set the hold date for a maximum of 4 years and can change it. To
 change the hold date, click the [Change] button in the Hold Date and
@@ -19,23 +19,28 @@ To immediately release the submission, click the [Release Now]. In the
 middle of the night, the submission is released, data files will be made
 available at [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/) and metadata will be indexed by the [DDBJ search](https://ddbj.nig.ac.jp/search) in a few days.
 
+## Add publication information {#publication}
+
+Add publication information related to DRA data to BioProject.
+Request addition of [publication information](/bioproject/project-info-e.html#Publication) (pubmed ID, doi when pubmed ID is not available) to BioProject through the [Contact form](https://docs.google.com/forms/d/e/1FAIpQLSeNrBMkr9lV6IaWCJCXeGBddDF3tJXcv6SQCQ5lYWETmiuRAg/viewform) by selecting "BioProject/BioSample/Sequence Read Archive (DRA)" in the Contacts menu.
+
 ## Metadata update  {#update-metadata}
 
-Update metadata by clicking [Enter/Update metadata]. 
+Update metadata by clicking [Enter/Update metadata].
 A part of fields are blocked from editing. After editing your metadata, please be sure to click the [Submit/Update DRA metadata] button and reflect the updates.
 
 ## Data file addition {#add-data-files}
 
 <div class="attention">
-Data files cannot be added to archived Submissions. In addition, archived Runs cannot be modified. 
+Data files cannot be added to archived Submissions. In addition, archived Runs cannot be modified.
 </div>
 
 To add data files, create a new Submission and add Experiment-Run objects to existing BioProject and BioSample accessions.
 
-Similar to Run, data files cannot be added to archived Analysis objects. 
+Similar to Run, data files cannot be added to archived Analysis objects.
 To replace archived Analysis, please [contact to the DRA team](/contact-ddbj-e.html).
 
-Login [D-way](https://ddbj.nig.ac.jp/D-way/)and create a new submission by clicking the [New submission]. 
+Login [D-way](https://ddbj.nig.ac.jp/D-way/)and create a new submission by clicking the [New submission].
 Select the BioProject and BioSample accessions to which data to be added. Next, add the DRA Experiment and Run objects.
 
 - To add a new sample, share a BioProject accession and create a BioSample-Experiment-Run in a new DRA submission.
@@ -45,13 +50,13 @@ Submit metadata and validate the appended data files. Accession numbers
 will be issued to the appended Experiment/Run objects.
 
 <div class="attention">
-The BioProject accession is same, however, different DRA submission accession is assigned.  
+The BioProject accession is same, however, different DRA submission accession is assigned.
 Please cite the BioProject accession or Run accessions.
 </div>
 
 {% include image.html url="books/add_data_files.jpg" caption="Add a sample and a data file to existing BioProject" class="w500" %}
-  
-  
+
+
 {% include image.html url="books/add_run.jpg" caption="Add a data file to existing BioProject and BioSample" class="w500" %}
 
 ## Object deletion  {#delete}

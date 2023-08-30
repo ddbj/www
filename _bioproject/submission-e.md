@@ -8,7 +8,7 @@ lang: en
 ---
 
 <div class="attention" markdown="1">
-Submission of research data from human subjects  
+Submission of research data from human subjects
 : <span class="red">For submitting data from human subjects (human data) to the
 databases of DDBJ center, it is submitter's responsibility to ensure
 that the dignity and right of human subject are protected in
@@ -22,7 +22,7 @@ subjects](/policies-e.html#submission-of-human-data)".</span>
 
 ## Cases requiring project registration  {#project-registration}
 
-Please check whether a project registration is necessary or not for your data submission in the [submission navigation site](/submission-navigation-e.html).  
+Please check whether a project registration is necessary or not for your data submission in the [submission navigation site](/submission-navigation-e.html).
 Registration for a BioProject accession is not required for small datasets for which the results are found in one (or a small number) of accession numbers such as a single plasmid, viral or organelle genome sequencing study.
 
 ## Submit a new BioProject submission  {#new-bioproject-submission}
@@ -44,8 +44,8 @@ For BioProject information fileds, please see [BioProject information fields](/b
 {% include image.html url="books/hbp-02.jpg" caption="Enter project content" class="w450" %}
 
 <div class="attention" markdown="1">
-To submit genome sequences having functional annotations to [DDBJ](/ddbj/genome-e.html), [locus tag prefix(s)](/ddbj/locus_tag-e.html) should be registered in [BioSample](/biosample/submission-e.html).  
-Since 9th November 2022, the locus tag prefix 
+To submit genome sequences having functional annotations to [DDBJ](/ddbj/genome-e.html), [locus tag prefix(s)](/ddbj/locus_tag-e.html) should be registered in [BioSample](/biosample/submission-e.html).
+Since 9th November 2022, the locus tag prefix
 </div>
 
 Check the content in "OVERVIEW" and submit a project by clicking the \[Submit\].
@@ -54,7 +54,7 @@ Check the content in "OVERVIEW" and submit a project by clicking the \[Submit\].
 
 ## Accession number  {#accession-number}
 
-A BioProject accession number with prefix PRJDB is automatically assigned to the submitted project. 
+A BioProject accession number with prefix PRJDB is automatically assigned to the submitted project.
 When the data release is specified as "Release immediately following curation", the project will be automatically released at night.
 
 <div class="attention">
@@ -70,7 +70,7 @@ To submit data corresponding to personal identification code to DRA/GEA/DDBJ, [y
 
 ## Submit an umbrella project  {#submit-umbrella-project}
 
-Umbrella project can be submitted as primary project in [D-way](https://ddbj.nig.ac.jp/D-way/). <span class="red">Be sure to tell the DDBJ BioProject staff that submitting project is umbrella by writing so in the [Private comments to DDBJ staff](#Private_comments). </span>  
+Umbrella project can be submitted as primary project in [D-way](https://ddbj.nig.ac.jp/D-way/). <span class="red">Be sure to tell the DDBJ BioProject staff that submitting project is umbrella by writing so in the [Private comments to DDBJ staff](#Private_comments). </span>
 Umbrell project cannot be kept private.
 
 {% include image.html url="books/hbp-05.jpg" caption="Tell DDBJ staff that submitting project is umbrella" class="w450" %}
@@ -87,9 +87,9 @@ Registered projects can be released in the following two ways. Hold date cannot 
 * Release immediately after registration.
 * Release when records citing the BioProject accession are made public.
 
-The projects can be kept private. 
-If DDBJ/DRA/GEA/MetaboBank records citing the BioProject accession are made public, 
-[cited projects are automatically released](/bioproject/project-e.html#release). 
+The projects can be kept private.
+If DDBJ/DRA/GEA/MetaboBank records citing the BioProject accession are made public,
+[cited projects are automatically released](/bioproject/project-e.html#release).
 The BioProject release does not trigger release of private DDBJ/DRA/GEA/MetaboBank data citing the BioProject accession.
 
 Public projects are exchanged among [NCBI](https://www.ncbi.nlm.nih.gov/bioproject) and [EBI](https://www.ebi.ac.uk/) BioProject databases.
@@ -98,9 +98,13 @@ Public projects are exchanged among [NCBI](https://www.ncbi.nlm.nih.gov/bioproje
 
 Registered projects can be updated. Please [contact the BioProject staff](/contact-ddbj-e.html)to update the projects.
 
+## Add publication information {#publication}
+
+Request addition of [publication information](/bioproject/project-info-e.html#Publication) (pubmed ID, doi when pubmed ID is not available) to BioProject through the [Contact form](https://docs.google.com/forms/d/e/1FAIpQLSeNrBMkr9lV6IaWCJCXeGBddDF3tJXcv6SQCQ5lYWETmiuRAg/viewform) by selecting "BioProject/BioSample/Sequence Read Archive (DRA)" in the Contacts menu.
+
 ## Link experimental data and project  {#link-experimental-data-project}
 
-For the DRA/GEA/MetaboBank submissions, select the BioProject accession that you registered in advance in the Study.  
+For the DRA/GEA/MetaboBank submissions, select the BioProject accession that you registered in advance in the Study.
 For genome and TSA submissions to the DDBJ, enter the BioProject accession in the DBLINK.
 
 ## Inquiry {#inquiry}
