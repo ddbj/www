@@ -3,8 +3,8 @@ agd:
     - id: home
       title: Home
       url: /agd/index.html
-    - id: browse researches at nbdc 
-      title: Browse researches at NBDC  
+    - id: browse researches at nbdc
+      title: Browse researches at NBDC
       url: https://gr-sharingdbs.biosciencedbc.jp/agd
     - id: submission
       title: Submission
@@ -68,9 +68,9 @@ bioproject:
       title: About BioProject
       url: /bioproject/about-bioproject.html
   en:
-    - id: home	
-      title: Home	
-      url: /bioproject/index-e.html	
+    - id: home
+      title: Home
+      url: /bioproject/index-e.html
     - id: submission
       title: Submission
       url: /bioproject/submission-e.html
@@ -79,52 +79,52 @@ bioproject:
           url: /bioproject/overview-e.html
         - title: Project Information
           url: /bioproject/project-info-e.html
-    - id: faq	
-      title: FAQ	
-      url: /faq/en/index-e.html?tag=bioproject	
+    - id: faq
+      title: FAQ
+      url: /faq/en/index-e.html?tag=bioproject
     - id: search
       title: Search
       url: http://ddbj.nig.ac.jp/search/
       children:
         - title: Downloads
           url: https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/
-    - id: about bioProject	
-      title: About BioProject	
+    - id: about bioProject
+      title: About BioProject
       url: /bioproject/about-bioproject-e.html
 
 
 biosample:
   ja:
-    - id: home	
-      title: Home	
-      url: /biosample/index.html	
+    - id: home
+      title: Home
+      url: /biosample/index.html
     - id: submission
       title: Submission
-      url: /biosample/submission.html	
-      children: 
+      url: /biosample/submission.html
+      children:
         - title: Overview
-          url: /biosample/overview.html 
+          url: /biosample/overview.html
         - title: Sample Information
-          url: /biosample/sample-info.html 
-        - title: Validation Rules 
-          url: /biosample/validation.html 
-    - id: sample attribute	
-      title: Sample Attribute	
-      url: /biosample/attribute.html	
-      children:	
-        - title: Example  
-          url: /biosample/example.html  
-    - id: faq	
-      title: FAQ	
-      url: /faq/ja/index.html?tag=biosample	
-    - id: search	
-      title: Search	
-      url: http://ddbj.nig.ac.jp/search/	
-      children: 
+          url: /biosample/sample-info.html
+        - title: Validation Rules
+          url: /biosample/validation.html
+    - id: sample attribute
+      title: Sample Attribute
+      url: /biosample/attribute.html
+      children:
+        - title: Example
+          url: /biosample/example.html
+    - id: faq
+      title: FAQ
+      url: /faq/ja/index.html?tag=biosample
+    - id: search
+      title: Search
+      url: http://ddbj.nig.ac.jp/search/
+      children:
         - title: Downloads
           url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
-    - id: about biosample	
-      title: About BioSample	
+    - id: about biosample
+      title: About BioSample
       url: /biosample/about-biosample.html
   en:
     - id: home
@@ -132,27 +132,27 @@ biosample:
       url: /biosample/index-e.html
     - id: submission
       title: Submission
-      url: /biosample/submission-e.html 
-      children: 
+      url: /biosample/submission-e.html
+      children:
         - title: Overview
-          url: /biosample/overview-e.html 
+          url: /biosample/overview-e.html
         - title: Sample Information
-          url: /biosample/sample-info-e.html 
-        - title: Validation Rules 
-          url: /biosample/validation-e.html 
+          url: /biosample/sample-info-e.html
+        - title: Validation Rules
+          url: /biosample/validation-e.html
     - id: sample attribute
       title: Sample Attribute
       url: /biosample/attribute-e.html
       children:
-        - title: Example  
-          url: /biosample/example-e.html  
+        - title: Example
+          url: /biosample/example-e.html
     - id: faq
       title: FAQ
       url: /faq/en/index-e.html?tag=biosample
     - id: search
       title: Search
       url: http://ddbj.nig.ac.jp/search/
-      children: 
+      children:
         - title: Downloads
           url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
     - id: about biosample
@@ -161,191 +161,191 @@ biosample:
 
 
 ddbj:
-  ja:	
-    - id: home	
-      title: Home	
-      url: /ddbj/index.html	
-    - id: submission	
-      title: Submission	
-      url: /ddbj/submission.html	
-      children:	
-        - title: 塩基配列の登録	
-          url: /ddbj/submission.html	
-        - title: Web 版塩基配列登録システム	
-          url: /ddbj/web-submission.html	
-        - title: Mass Submission System	
-          url: /ddbj/mss.html	
-        - title: 登録データの修正・更新	
-          url: /ddbj/update.html	
-    - id: search	
-      title: Search	
-      url: http://ddbj.nig.ac.jp/arsa/?lang=ja	
-      children:	
-        - title: getentry	
-          url: http://getentry.ddbj.nig.ac.jp/top-j.html	
-        - title: ARSA	
-          url: http://ddbj.nig.ac.jp/arsa/?lang=ja	
-    - id: flat_file	
-      title: Flat file	
-      url: /ddbj/flat-file.html	
-      children:	
-        - title: Feature key の定義	
-          url: /ddbj/features.html	
-        - title: Qualifier key の定義	
-          url: /ddbj/qualifiers.html	
-        - title: 塩基配列について	
-          url: /ddbj/sequence.html	
-        - title: Organism qualifier に記載する生物名	
-          url: /ddbj/organism.html	
-        - title: 識別子について	
-          url: /ddbj/identifiers.html	
-        - title: Location の記述法	
-          url: /ddbj/location.html	
-        - title: タンパク質コード配列	
-          url: /ddbj/cds.html	
-        - title: The Genetic Codes	
-          url: /ddbj/geneticcode.html	
-        - title: 配列の記載に用いる略号	
-          url: /ddbj/code.html	
+  ja:
+    - id: home
+      title: Home
+      url: /ddbj/index.html
+    - id: submission
+      title: Submission
+      url: /ddbj/submission.html
+      children:
+        - title: 塩基配列の登録
+          url: /ddbj/submission.html
+        - title: Web 版塩基配列登録システム
+          url: /ddbj/web-submission.html
+        - title: Mass Submission System
+          url: /ddbj/mss.html
+        - title: 登録データの修正・更新
+          url: /ddbj/update.html
+    - id: search
+      title: Search
+      url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+      children:
+        - title: getentry
+          url: http://getentry.ddbj.nig.ac.jp/top-j.html
+        - title: ARSA
+          url: http://ddbj.nig.ac.jp/arsa/?lang=ja
+    - id: flat_file
+      title: Flat file
+      url: /ddbj/flat-file.html
+      children:
+        - title: Feature key の定義
+          url: /ddbj/features.html
+        - title: Qualifier key の定義
+          url: /ddbj/qualifiers.html
+        - title: 塩基配列について
+          url: /ddbj/sequence.html
+        - title: Organism qualifier に記載する生物名
+          url: /ddbj/organism.html
+        - title: 識別子について
+          url: /ddbj/identifiers.html
+        - title: Location の記述法
+          url: /ddbj/location.html
+        - title: タンパク質コード配列
+          url: /ddbj/cds.html
+        - title: The Genetic Codes
+          url: /ddbj/geneticcode.html
+        - title: 配列の記載に用いる略号
+          url: /ddbj/code.html
         - title: 配列データ記載例
-          url: /ddbj/example.html	
-    - id: data_categories	
-      title: Data categories	
-      url: /ddbj/data-categories.html	
-      children:	
-        - title: Genome project のデータ登録	
-          url: /ddbj/genome.html	
-        - title: Pseudohaplotype	
-          url: /ddbj/pseudohaplotype.html	
-        - title: WGS	
-          url: /ddbj/wgs.html	
-        - title: Finished level genomic sequences	
-          url: /ddbj/finished_level_genome.html	
-        - title: メタゲノムアセンブリ	
-          url: /ddbj/metagenome-assembly.html	
-        - title: Single amplified genome	
-          url: /ddbj/single-amplified-genome.html	
-        - title: HTG	
-          url: /ddbj/htg.html	
-        - title: Environmental sequence の登録	
-          url: /ddbj/environmental.html	
-        - title: ENV	
-          url: /ddbj/env.html	
-        - title: TLS	
-          url: /ddbj/tls.html	
-        - title: Transcriptome Project のデータ登録	
-          url: /ddbj/transcriptome.html	
-        - title: TSA	
-          url: /ddbj/tsa.html	
-        - title: EST	
-          url: /ddbj/est.html	
-        - title: HTC	
-          url: /ddbj/htc.html	
-        - title: Third Party Data (TPA)	
-          url: /ddbj/tpa.html	
-    - id: faq	
-      title: FAQ	
-      url: /faq/ja/index.html?tag=ddbj	
-    - id: other	
-      title: Other	
-      url: /ddbj/index.html	
-      children:	
-        - title: Patent	
-          url: /ddbj/patent-data.html	
-        - title: MGA	
+          url: /ddbj/example.html
+    - id: data_categories
+      title: Data categories
+      url: /ddbj/data-categories.html
+      children:
+        - title: Genome project のデータ登録
+          url: /ddbj/genome.html
+        - title: Pseudohaplotype
+          url: /ddbj/pseudohaplotype.html
+        - title: WGS
+          url: /ddbj/wgs.html
+        - title: Finished level genomic sequences
+          url: /ddbj/finished_level_genome.html
+        - title: メタゲノムアセンブリ
+          url: /ddbj/metagenome-assembly.html
+        - title: Single amplified genome
+          url: /ddbj/single-amplified-genome.html
+        - title: HTG
+          url: /ddbj/htg.html
+        - title: Environmental sequence の登録
+          url: /ddbj/environmental.html
+        - title: ENV
+          url: /ddbj/env.html
+        - title: TLS
+          url: /ddbj/tls.html
+        - title: Transcriptome Project のデータ登録
+          url: /ddbj/transcriptome.html
+        - title: TSA
+          url: /ddbj/tsa.html
+        - title: EST
+          url: /ddbj/est.html
+        - title: HTC
+          url: /ddbj/htc.html
+        - title: Third Party Data (TPA)
+          url: /ddbj/tpa.html
+    - id: faq
+      title: FAQ
+      url: /faq/ja/index.html?tag=ddbj
+    - id: other
+      title: Other
+      url: /ddbj/index.html
+      children:
+        - title: Patent
+          url: /ddbj/patent-data.html
+        - title: MGA
           url: /ddbj/mga.html
-  en:	
-    - id: home	
-      title: Home	
-      url: /ddbj/index-e.html	
-    - id: submission	
-      title: Submission	
-      url: /ddbj/submission-e.html	
-      children:	
-        - title: Before Submission	
-          url: /ddbj/submission-e.html	
-        - title: Web submission	
-          url: /ddbj/web-submission-e.html	
-        - title: Mass Submission	
-          url: /ddbj/mss-e.html	
-        - title: Data Update	
-          url: /ddbj/update-e.html	
-    - id: search	
-      title: Search	
-      url: http://ddbj.nig.ac.jp/arsa/?lang=en	
-      children:	
-        - title: getentry	
-          url: http://getentry.ddbj.nig.ac.jp/top-e.html	
-        - title: ARSA	
-          url: http://ddbj.nig.ac.jp/arsa/?lang=en	
-    - id: flat_file	
-      title: Flat file	
-      url: /ddbj/flat-file-e.html	
-      children:	
-        - title: Feature key	
-          url: /ddbj/features-e.html	
-        - title: Qualifier key	
-          url: /ddbj/qualifiers-e.html	
-        - title: Nucleotide Sequences	
-          url: /ddbj/sequence-e.html	
-        - title: Organism qualifier	
-          url: /ddbj/organism-e.html	
-        - title: Identifiers	
-          url: /ddbj/identifiers-e.html	
-        - title: Description of Location	
-          url: /ddbj/location-e.html	
-        - title: Protein Coding Sequence	
-          url: /ddbj/cds-e.html	
-        - title: The Genetic Codes	
-          url: /ddbj/geneticcode-e.html	
-        - title: Codes Used in Sequence Description	
-          url: /ddbj/code-e.html	
+  en:
+    - id: home
+      title: Home
+      url: /ddbj/index-e.html
+    - id: submission
+      title: Submission
+      url: /ddbj/submission-e.html
+      children:
+        - title: Before Submission
+          url: /ddbj/submission-e.html
+        - title: Web submission
+          url: /ddbj/web-submission-e.html
+        - title: Mass Submission
+          url: /ddbj/mss-e.html
+        - title: Data Update
+          url: /ddbj/update-e.html
+    - id: search
+      title: Search
+      url: http://ddbj.nig.ac.jp/arsa/?lang=en
+      children:
+        - title: getentry
+          url: http://getentry.ddbj.nig.ac.jp/top-e.html
+        - title: ARSA
+          url: http://ddbj.nig.ac.jp/arsa/?lang=en
+    - id: flat_file
+      title: Flat file
+      url: /ddbj/flat-file-e.html
+      children:
+        - title: Feature key
+          url: /ddbj/features-e.html
+        - title: Qualifier key
+          url: /ddbj/qualifiers-e.html
+        - title: Nucleotide Sequences
+          url: /ddbj/sequence-e.html
+        - title: Organism qualifier
+          url: /ddbj/organism-e.html
+        - title: Identifiers
+          url: /ddbj/identifiers-e.html
+        - title: Description of Location
+          url: /ddbj/location-e.html
+        - title: Protein Coding Sequence
+          url: /ddbj/cds-e.html
+        - title: The Genetic Codes
+          url: /ddbj/geneticcode-e.html
+        - title: Codes Used in Sequence Description
+          url: /ddbj/code-e.html
         - title: Description Examples of Sequence Data
-          url: /ddbj/example-e.html	
-    - id: data_categories	
-      title: Data categories	
-      url: /ddbj/data-categories-e.html	
-      children:	
-        - title: Data Submission from Genome Project	
-          url: /ddbj/genome-e.html	
-        - title: Pseudohaplotype	
-          url: /ddbj/pseudohaplotype-e.html	
-        - title: WGS	
-          url: /ddbj/wgs-e.html	
-        - title: Finished level genomic sequences	
-          url: /ddbj/finished_level_genome-e.html	
-        - title: Metagenome Assembly	
-          url: /ddbj/metagenome-assembly-e.html	
-        - title: Single amplified genome	
-          url: /ddbj/single-amplified-genome-e.html	
-        - title: HTG	
-          url: /ddbj/htg-e.html	
-        - title: Submission of environmental sequences	
-          url: /ddbj/environmental-e.html	
-        - title: ENV	
-          url: /ddbj/env-e.html	
-        - title: TLS	
-          url: /ddbj/tls-e.html	
-        - title: Data Submission from Transcriptome Project	
-          url: /ddbj/transcriptome-e.html	
-        - title: TSA	
-          url: /ddbj/tsa-e.html	
-        - title: EST	
-          url: /ddbj/est-e.html	
-        - title: HTC	
-          url: /ddbj/htc-e.html	
-        - title: Third Party Data (TPA)	
-          url: /ddbj/tpa-e.html	
-    - id: faq	
-      title: FAQ	
-      url: /faq/en/index-e.html?tag=ddbj	
-    - id: other	
-      title: Other	
-      url: /ddbj/index-e.html	
-      children:	
-        - title: Patent	
-          url: /ddbj/patent-data-e.html	
-        - title: MGA	
+          url: /ddbj/example-e.html
+    - id: data_categories
+      title: Data categories
+      url: /ddbj/data-categories-e.html
+      children:
+        - title: Data Submission from Genome Project
+          url: /ddbj/genome-e.html
+        - title: Pseudohaplotype
+          url: /ddbj/pseudohaplotype-e.html
+        - title: WGS
+          url: /ddbj/wgs-e.html
+        - title: Finished level genomic sequences
+          url: /ddbj/finished_level_genome-e.html
+        - title: Metagenome Assembly
+          url: /ddbj/metagenome-assembly-e.html
+        - title: Single amplified genome
+          url: /ddbj/single-amplified-genome-e.html
+        - title: HTG
+          url: /ddbj/htg-e.html
+        - title: Submission of environmental sequences
+          url: /ddbj/environmental-e.html
+        - title: ENV
+          url: /ddbj/env-e.html
+        - title: TLS
+          url: /ddbj/tls-e.html
+        - title: Data Submission from Transcriptome Project
+          url: /ddbj/transcriptome-e.html
+        - title: TSA
+          url: /ddbj/tsa-e.html
+        - title: EST
+          url: /ddbj/est-e.html
+        - title: HTC
+          url: /ddbj/htc-e.html
+        - title: Third Party Data (TPA)
+          url: /ddbj/tpa-e.html
+    - id: faq
+      title: FAQ
+      url: /faq/en/index-e.html?tag=ddbj
+    - id: other
+      title: Other
+      url: /ddbj/index-e.html
+      children:
+        - title: Patent
+          url: /ddbj/patent-data-e.html
+        - title: MGA
           url: /ddbj/mga-e.html
 
 
@@ -368,6 +368,8 @@ dra:
           url: /dra/update.html
         - title: Example
           url: /dra/example.html
+        - title: Analysis
+          url: /dra/analysis.html
     - id: faq
       title: FAQ
       url: /faq/ja/index.html?tag=dra
@@ -386,9 +388,9 @@ dra:
       title: About DRA
       url: /dra/about-dra.html
   en:
-    - id: home	
-      title: Home	
-      url: /dra/index-e.html	
+    - id: home
+      title: Home
+      url: /dra/index-e.html
     - id: overview
       title: Overview
       url: /dra/overview-e.html
@@ -403,22 +405,24 @@ dra:
           url: /dra/update-e.html
         - title: Example
           url: /dra/example-e.html
-    - id: faq	
-      title: FAQ	
-      url: /faq/en/index-e.html?tag=dra	
-    - id: search	
-      title: Search	
-      url: https://ddbj.nig.ac.jp/DRASearch/	
-    - id: downloads	
-      title: Downloads	
+        - title: Analysis
+          url: /dra/analysis-e.html
+    - id: faq
+      title: FAQ
+      url: /faq/en/index-e.html?tag=dra
+    - id: search
+      title: Search
+      url: https://ddbj.nig.ac.jp/DRASearch/
+    - id: downloads
+      title: Downloads
       url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
-      children:	
-        - title: FASTQ	
+      children:
+        - title: FASTQ
           url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
-        - title: SRA	
+        - title: SRA
           url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/sralite/ByExp/litesra/
-    - id: about dra	
-      title: About DRA	
+    - id: about dra
+      title: About DRA
       url: /dra/about-dra-e.html
 
 
@@ -437,67 +441,67 @@ dta:
       title: About DTA
       url: /dta/about-dta.html
   en:
-    - id: home	
-      title: Home	
-      url: /dta/index-e.html	
-    - id: submission	
-      title: Submission	
-      url: /dta/submission-e.html	
-    - id: downloads	
-      title: Downloads	
+    - id: home
+      title: Home
+      url: /dta/index-e.html
+    - id: submission
+      title: Submission
+      url: /dta/submission-e.html
+    - id: downloads
+      title: Downloads
       url: https://ddbj.nig.ac.jp/public/ddbj_database/dta/
-    - id: about dta	
-      title: About DTA	
+    - id: about dta
+      title: About DTA
       url: /dta/about-dta-e.html
 
 
 gea:
   ja:
-    - id: home	
-      title: Home	
-      url: /gea/index.html	
-    - id: submission overview	
-      title: Submission Overview	
-      url: /gea/overview.html	
-      children:	
-        - title: Submit microarray experiment	
-          url: /gea/submit-array.html	
-        - title: Submit sequencing experiment	
-          url: /gea/submit-sequence.html	
-        - title: Metadata	
-          url: /gea/metadata.html	
-        - title: Data File	
-          url: /gea/datafile.html	
-        - title: Validation	
-          url: /gea/validation.html	
-        - title: Single-cell submission guide	
-          url: /gea/single-cell.html	
-        - title: Spatial gene expression  
-          url: /gea/spatial-gene-expression.html  
+    - id: home
+      title: Home
+      url: /gea/index.html
+    - id: submission overview
+      title: Submission Overview
+      url: /gea/overview.html
+      children:
+        - title: Submit microarray experiment
+          url: /gea/submit-array.html
+        - title: Submit sequencing experiment
+          url: /gea/submit-sequence.html
+        - title: Metadata
+          url: /gea/metadata.html
+        - title: Data File
+          url: /gea/datafile.html
+        - title: Validation
+          url: /gea/validation.html
+        - title: Single-cell submission guide
+          url: /gea/single-cell.html
+        - title: Spatial gene expression
+          url: /gea/spatial-gene-expression.html
         - title: Expression analysis using transcriptome as references
           url: /gea/transcriptome-reference.html
-        - title: Example	
-          url: /gea/example.html	
-        - title: Array Design	
-          url: /gea/adf.html	
-        - title: Data matrix	
-          url: /gea/matrix.html	
-        - title: Reviewer Access	
-          url: /gea/reviewer-access.html	
-    - id: faq	
-      title: FAQ	
-      url: /faq/ja/index.html?tag=gea	
-    - id: search	
-      title: Search (AOE)	
-      url: http://aoe.dbcls.jp/	
-      children:	
-        - title: RefEx	
-          url: http://refex.dbcls.jp/	
-    - id: downloads	
-      title: Downloads	
+        - title: Example
+          url: /gea/example.html
+        - title: Array Design
+          url: /gea/adf.html
+        - title: Data matrix
+          url: /gea/matrix.html
+        - title: Reviewer Access
+          url: /gea/reviewer-access.html
+    - id: faq
+      title: FAQ
+      url: /faq/ja/index.html?tag=gea
+    - id: search
+      title: Search (AOE)
+      url: http://aoe.dbcls.jp/
+      children:
+        - title: RefEx
+          url: http://refex.dbcls.jp/
+    - id: downloads
+      title: Downloads
       url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
-    - id: about gea	
-      title: About GEA	
+    - id: about gea
+      title: About GEA
       url: /gea/about-gea.html
   en:
     - id: home
@@ -519,10 +523,10 @@ gea:
           url: /gea/validation-e.html
         - title: Single-cell submission guide
           url: /gea/single-cell-e.html
-        - title: Spatial gene expression  
-          url: /gea/spatial-gene-expression-e.html  
+        - title: Spatial gene expression
+          url: /gea/spatial-gene-expression-e.html
         - title: Expression analysis using transcriptome as references
-          url: /gea/transcriptome-reference.html  
+          url: /gea/transcriptome-reference.html
         - title: Example
           url: /gea/example-e.html
         - title: Array Design
@@ -549,87 +553,87 @@ gea:
 
 metabobank:
   ja:
-    - id: home  
-      title: Home 
-      url: /metabobank/index.html 
-    - id: submission 
-      title: Submission  
-      url: /metabobank/submission.html  
-      children: 
-        - title: Metadata 
-          url: /metabobank/metadata.html  
-        - title: Data File  
-          url: /metabobank/datafile.html  
-        - title: Validation 
-          url: /metabobank/validation.html  
-    - id: faq 
-      title: FAQ  
-      url: /faq/ja/index.html?tag=metabobank  
-    - id: search  
+    - id: home
+      title: Home
+      url: /metabobank/index.html
+    - id: submission
+      title: Submission
+      url: /metabobank/submission.html
+      children:
+        - title: Metadata
+          url: /metabobank/metadata.html
+        - title: Data File
+          url: /metabobank/datafile.html
+        - title: Validation
+          url: /metabobank/validation.html
+    - id: faq
+      title: FAQ
+      url: /faq/ja/index.html?tag=metabobank
+    - id: search
       title: Search
       url: https://mb2.ddbj.nig.ac.jp/search/
-    - id: download 
-      title: Download  
+    - id: download
+      title: Download
       url: https://ddbj.nig.ac.jp/public/metabobank/project/
-    - id: contact  
-      title: Contact 
+    - id: contact
+      title: Contact
       url: /metabobank/contact.html
   en:
-    - id: home  
-      title: Home 
-      url: /metabobank/index-e.html 
-    - id: submission 
-      title: Submission  
-      url: /metabobank/submission-e.html  
-      children: 
-        - title: Metadata 
-          url: /metabobank/metadata-e.html  
-        - title: Data File  
-          url: /metabobank/datafile-e.html  
-        - title: Validation 
-          url: /metabobank/validation-e.html  
-    - id: faq 
-      title: FAQ  
-      url: /faq/en/index-e.html?tag=metabobank  
-    - id: search  
+    - id: home
+      title: Home
+      url: /metabobank/index-e.html
+    - id: submission
+      title: Submission
+      url: /metabobank/submission-e.html
+      children:
+        - title: Metadata
+          url: /metabobank/metadata-e.html
+        - title: Data File
+          url: /metabobank/datafile-e.html
+        - title: Validation
+          url: /metabobank/validation-e.html
+    - id: faq
+      title: FAQ
+      url: /faq/en/index-e.html?tag=metabobank
+    - id: search
       title: Search
       url: https://mb2.ddbj.nig.ac.jp/search/
-    - id: download 
-      title: Download  
+    - id: download
+      title: Download
       url: https://ddbj.nig.ac.jp/public/metabobank/project/
     - id: contact
       title: Contact
       url: /metabobank/contact-e.html
 
 jga:
-  ja:	
-    - id: home	
-      title: Home	
-      url: /jga/index.html	
-    - id: browse researches at nbdc	
-      title: Browse researches at NBDC	
-      url: https://humandbs.biosciencedbc.jp/data-use/all-researches	
-      children:	
-        - title: DDBJ Search	
-          url: https://ddbj.nig.ac.jp/search	
-    - id: submission	
-      title: Submission	
-      url: /jga/submission.html	
-      children:	
-        - title: How to submit	
-          url: /jga/submission-step.html	
-        - title: How to access data	
-          url: /jga/download.html	
-        - title: Groups	
-          url: /jga/group.html	
-        - title: Updates in 2020	
-          url: /jga/update-202009.html	
-        - title: Example submission	
-          url: https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318	
-        - title: XML Schema	
-          url: https://github.com/ddbj/pub/tree/master/docs/jga/xsd/	
-    - id: faq	
-      title: FAQ	
+  ja:
+    - id: home
+      title: Home
+      url: /jga/index.html
+    - id: browse researches at nbdc
+      title: Browse researches at NBDC
+      url: https://humandbs.biosciencedbc.jp/data-use/all-researches
+      children:
+        - title: DDBJ Search
+          url: https://ddbj.nig.ac.jp/search
+    - id: submission
+      title: Submission
+      url: /jga/submission.html
+      children:
+        - title: How to submit
+          url: /jga/submission-step.html
+        - title: How to access data
+          url: /jga/download.html
+        - title: Groups
+          url: /jga/group.html
+        - title: Updates in 2020
+          url: /jga/update-202009.html
+        - title: Example submission
+          url: https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318
+        - title: XML Schema
+          url: https://github.com/ddbj/pub/tree/master/docs/jga/xsd/
+    - id: faq
+      title: FAQ
       url: /faq/ja/index.html?tag=jga
   en:
     - id: home
