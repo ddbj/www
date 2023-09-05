@@ -45,7 +45,7 @@ We recommend to use our online service with the latest version of [Chrome](https
 
 ### Data Usage {#data-use}
 Unless otherwise restricted by an Individual Terms of Use, data provided by Center may be freely used, redistributed and modified.
-  1. [INSDC](/insdc.html) data may be freely used, redistributed and modified in accordance with the [INSDC Policy](https://www.insdc.org/policy.html).
+  1. [INSDC](/insdc.html) data may be freely used, redistributed and modified in accordance with the [INSDC Policy](https://www.insdc.org/policy/).
   1. Japanese Genotype-phenotype Archive (JGA) data shall be used in compliance with the [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines).
   1. AMED Genome group sharing Database (AGD) data shall be used in compliance with the [NBDC Human Data Group Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines).
   1. [Third-party data provided by Center](#third-party-data) shall be used in accordance with terms of use of these data.

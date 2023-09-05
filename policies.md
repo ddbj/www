@@ -46,7 +46,7 @@ lang: ja
 ### データの利用 {#data-use}
 センターが提供するデータは個別規約で制限されていない限り、自由に利用・再配布・改変することができます。
 
-  1. [INSDC](/insdc.html) データは [INSDC Policy](https://www.insdc.org/policy.html) に従って自由に利用・再配布・改変することができます。
+  1. [INSDC](/insdc.html) データは [INSDC Policy](https://www.insdc.org/policy/) に従って自由に利用・再配布・改変することができます。
   1. Japanese Genotype-phenotype Archive (JGA) データは [NBDC ヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)を遵守して利用する必要があります。
   1. AMED Genome group sharing Database (AGD) データは [NBDC ヒトデータグループ共有ガイドライン](https://gr-sharingdbs.biosciencedbc.jp/group-data-sharing-guidelines) を遵守して利用する必要があります。
   1. センターが[提供しているセンター以外で作成されたデータ](#third-party-data)は提供元の規定に従って利用する必要があります。
