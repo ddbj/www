@@ -5,3 +5,5 @@ description: JVar (Japan Variation Database) composed of two parts, Short Geneti
 category: jvar
 lang: ja
 ---
+
+準備中
