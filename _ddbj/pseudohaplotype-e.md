@@ -15,6 +15,8 @@ This page describes a typical case of the pseudohaplotype sequence submission. T
 
 If the raw DRA sequencing data contain both pseudohaplotypes, create a BioProject for DRA apart from those for assemblies. If the DRA data are derived from the same sample for the assemblies, use the same BioSample.
 
+When more than one pseudohaplotype dataset exist (e.g. three pseudohaplotype datasets of species A, B and C), create a common umbrella project and group each primary projects.
+
 
 {% include image.html url="submission/pseudohaplotype.jpg" caption="Pseudohaplotype data submission" class="w600" %}
 
@@ -57,14 +59,14 @@ Submit the principal and the alternate pseudohaplotype sequences.
       - Reference the BioProject 1 (Principal) in
         [DBLINK](/ddbj/file-format-e.html#dblink).
       - Add the pre-defined comment in
-        [ST\_COMMENT](/ddbj/file-format-e.html#comment).  
+        [ST\_COMMENT](/ddbj/file-format-e.html#comment).
         Genome-Assembly-Data ST\_COMMENT: Diploid :: Principal
         Pseudohaplotype
   - Alternate pseudohaplotype
       - Reference the BioProject 2 (Alternate) in
         [DBLINK](/ddbj/file-format-e.html#dblink).
       - Add the pre-defined comment in
-        [ST\_COMMENT](/ddbj/file-format-e.html#comment).  
+        [ST\_COMMENT](/ddbj/file-format-e.html#comment).
         Genome-Assembly-Data ST\_COMMENT: Diploid :: Alternate
         Pseudohaplotype
 

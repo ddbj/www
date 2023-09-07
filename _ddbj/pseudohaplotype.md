@@ -13,11 +13,13 @@ lang: ja
 
 DDBJ に pseudohaplotype アセンブリを登録する典型的な場合について説明します。まず、pseudohaplotype を区別するためにどちらかを Principal とし、もう片方を Alternate とします。絶対的な基準はありませんが、配列長やシークエンス精度などを基に登録者で選定してください。各 pseudohaplotype は同じサンプルに由来するため、共通の BioSample を使います。INSDC では BioProject と BioSample の組み合わせでアセンブリを管理しているため、組み合わせが pseudohaplotype 毎にユニークになるようにPrincipal と Alternate に対応する BioProject をそれぞれ作成します。さらにアンブレラ BioProject を作成し、両方の BioProject をまとめます。
 
-Pseudohaplotype をシークエンスした生データを DRA に登録する場合、両方の pseudohaplotype のデータが混在している場合、BioProject はアセンブリとは別に DRA
-用のものを登録します。BioSample はサンプルがアセンブリと同じであれば、共通のものを使います。
+Pseudohaplotype をシークエンスした生データを DRA に登録する場合、両方の pseudohaplotype のリードが混在している場合、BioProject はアセンブリとは別に DRA 用のものを登録します。BioSample はサンプルがアセンブリと同じであれば、共通のものを使います。
 
+Pseudohaplotype のデータセットが複数存在する場合 (例 生物種 A, B, C の pseudohaplotype 3セット)、共通のアンブレラ BioProject を作成し、各セットの primary BioProject をまとめます。
 
 {% include image.html url="submission/pseudohaplotype.jpg" caption="pseudohaplotype データの登録" class="w600" %}
+
+
 
 
 ### BioProject  {#bioproject}
@@ -55,14 +57,14 @@ Principal と Alternate pseudohaplotype をそれぞれ登録します。
       - [DBLINK](/ddbj/file-format.html#dblink) で BioProject 1
         (Principal) を参照します。
       - [ST\_COMMENT](/ddbj/file-format.html#comment)
-        に所定のコメントを記載します。  
+        に所定のコメントを記載します。
         Genome-Assembly-Data ST\_COMMENT: Diploid :: Principal
         Pseudohaplotype
   - Alternate pseudohaplotype
       - [DBLINK](/ddbj/file-format.html#dblink) で BioProject 2
         (Alternate) を参照します。
       - [ST\_COMMENT](/ddbj/file-format.html#comment)
-        に所定のコメントを記載します。  
+        に所定のコメントを記載します。
         Genome-Assembly-Data ST\_COMMENT: Diploid :: Alternate
         Pseudohaplotype
 
