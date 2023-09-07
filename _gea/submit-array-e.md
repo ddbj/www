@@ -39,7 +39,7 @@ metadata can be submitted as a tab-delimited text file.
 
 ### 5. Prepare IDF and SDRF {#create-idf-sdrf}
 
-#### IDF  {#idf} 
+#### IDF  {#idf}
 
 - The [IDF (Investigation Description Format)](/gea/metadata-e.html#idf) file is used to give an overview of the experiment, including the experimental design, protocols and publication information.
 
@@ -107,7 +107,7 @@ List of submission status
 | Confidential     | Archive files are created and submission is kept private |
 | Public           | Released to public.                                      |
 
-### Upload raw and processed data files {#upload-data} 
+### Upload raw and processed data files {#upload-data}
 
 Regarding how to upload your data files, please see "[Data upload](/upload.html)".
 
@@ -116,11 +116,9 @@ Regarding how to upload your data files, please see "[Data upload](/upload.html)
 Set the hold date within four years or choose immediate release when processed. Submitters' name and affiliation will be public but e-mail address will not be disclosed.
 
 <div class="attention">
-
-You can delete an un-submitted GEA submission at "Delete submission".
-
+Email regarding GEA submission is sent to addresses entered in the GEA Submission.
+If you change email address registered in your D-way account, you need to update addresses of GEA Submissions to receive emails regarding the submissions.
 </div>
-
 
 {% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
 
@@ -280,6 +278,6 @@ You can allow reviewers access to private records by [communicating a reviewer a
 
 To withdrawing archived Experiment, please [contact us](/contact-ddbj-e.html).
 
-## MD5 checksum value {#md5} 
+## MD5 checksum value {#md5}
 
 See "[MD5 checksum value](/checksum.html)" for how to obtain MD5 checksum values.

@@ -107,7 +107,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 | Public           | 公開されている状態                     |
 
 
-### 生データと解析済みファイルのアップロード   {#upload-data} 
+### 生データと解析済みファイルのアップロード   {#upload-data}
 
 データファイルのアップロード方法は「[データのアップロード](/upload.html)」をご覧ください。
 
@@ -116,9 +116,9 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 四年以内の公開予定日指定、もしくは、データ処理後即日公開を選択します。登録者の名前と所属組織は公開されますがメールアドレスは公開されません。
 
 <div class="attention">
-"Delete submission" で投稿前の登録を削除することができます。
+GEA 登録に関するメールは Submission に記載されたメールアドレスに対して送信されます。
+D-way アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、GEA Submission のアドレスも変更する必要があります。
 </div>
-
 
 {% include image.html url="books/array-sub2.jpg" caption="登録管理情報を入力します" class="w550" %}
 
@@ -273,6 +273,6 @@ Validatorは[validation rule](/gea/validation.html)に従ってメタデータ�
 
 アーカイブされた Experiment を削除する場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-## MD5 チェックサム値 {#md5} 
+## MD5 チェックサム値 {#md5}
 
 MD5 チェックサム値の取得方法は「[MD5 チェックサム値の取得](/checksum.html)」をご覧ください。
