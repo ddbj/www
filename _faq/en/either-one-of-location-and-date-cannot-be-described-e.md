@@ -6,7 +6,7 @@ db:
   - biosample
   - ddbj
 tags:
-  - spatio-temporal annotation
+  - spatiotemporal
 date: 2023-09-10T12:39:51
 lang: en
 ---
