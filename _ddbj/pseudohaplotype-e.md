@@ -11,15 +11,21 @@ Historically, whole-genome sequencing generated a single consensus sequence with
 
 ## pseudohaplotype  {#pseudohaplotype}
 
-This page describes a typical case of the pseudohaplotype sequence submission. To distinguish pseudohaplotype assemblies, name one of the assemblies as “Principal” and another as “Alternate”. There is no absolute criteria, however, please name them based on their sequence length or sequencing accuracy. Because each pseudohaplotype assembly is derived from the same sample, both assemblies share the same BioSample. Because INSDC manages a genome assembly by unique combination of BioProject and BioSample, create separate BioProject for each principal and alternate pseudohaplotype to make the combination unique. Create an umbrella BioProject to group these projects.
+This page describes a typical case of the pseudohaplotype sequence submission. To distinguish pseudohaplotype assemblies, as an example, name one of the assemblies as “Principal” and another as “Alternate” here. Because each pseudohaplotype assembly is derived from the same sample, both assemblies share the same BioSample. Because INSDC manages a genome assembly by unique combination of BioProject and BioSample, create separate BioProject for each principal and alternate pseudohaplotype to make the combination unique. Create an umbrella BioProject to group these projects.
 
-If the raw DRA sequencing data contain both pseudohaplotypes, create a BioProject for DRA apart from those for assemblies. If the DRA data are derived from the same sample for the assemblies, use the same BioSample.
+If the raw DRA sequencing data contain reads from both pseudohaplotypes, create a BioProject for DRA apart from those for assemblies. If the DRA data are derived from the same sample for the assemblies, use the same BioSample.
 
 When more than one pseudohaplotype dataset exist (e.g. three pseudohaplotype datasets of species A, B and C), create a common umbrella project and group each primary projects.
 
-
 {% include image.html url="submission/pseudohaplotype.jpg" caption="Pseudohaplotype data submission" class="w600" %}
 
+### Naming pseudohaplotype assemblies {#naming}
+
+There are a few naming options to distinguish pseudohaplotype assemblies. One of the options must be asserted by the submitter.
+
+* Principal pseudohaplotype/Alternate pseudohaplotype: if one is much better (Principal) than the other (Alternate).
+* Pseudohaplotype 1/Pseudohaplotype 2:  if they are of similar quality. When more than 2 haplotypes are present, increase the number like Pseudohaplotype 3/Pseudohaplotype 4.
+* Maternal pseudohaplotype/Paternal pseudohaplotype: when that information is known.
 
 ### BioProject  {#bioproject}
 
