@@ -162,7 +162,7 @@ Escherichia coli K-12</code></pre>
 
 #### 微生物ゲノム  {#genome}
 
-以前は 微生物などで全ゲノム規模の配列を登録する場合、strain などを organism
+以前は 微生物などで全ゲノム規模の配列を登録する場合、strain などを organism 
 に含めて記載していましたが、現在は学名のみの記載を原則としています。  
 strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
 
@@ -229,10 +229,6 @@ genus などの上位ランクも含めて taxonomy database に存在しない�
 taxonomy database の間違いなどを発見された場合は、[ご連絡](/contact-ddbj.html#to-ddbj)ください。    
 学名のスペルミスなどに関しましては修正します。    
     
-taxonomy database は、生物名の表記を統一することに主眼をおいて構築されており、生物種の命名、および、分類学上の権威となるものではありません。    
-採用されている生物名とその lineage は、登録者の分類学的な主張、および、分類学的に普及している内容とは異なる場合があります。    
-詳細に関しましては、[taxonomy database の説明](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite )をご一読ください。    
-    
 いわゆる combinatio nova を含め、再分類に関連して提唱する準備段階の場合、その主張が論文を公表して認められるまで、
 taxonomy database 上で名称の修正を実施することはできません。    
 そのため、現状の taxonomy database に準拠した学名を用います。    
@@ -242,6 +238,7 @@ taxonomy database における scientific name, synonym あるいは、lineage �
 可能な限り、異論の根拠となる文献をご提示ください。    
 専門的な内容になると思われますので、単に URL あるいは、文献を示すのみではなく、どうあるべきかについて英文にてコメントを記載してください。    
 ただし、lineage 解釈などの問題は、データの一意性を担保するため、諸説の１つを採用する方針であり、ご希望に添えないこともあり得ます。    
+詳細に関しましては、[taxonomy database の説明](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite )をご一読ください。    
     
 登録時に以下の参考情報を可能な範囲でお知らせください。    
 
@@ -260,38 +257,54 @@ taxonomy database における scientific name, synonym あるいは、lineage �
 
 種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、
 "\<genus name\> sp." などとして記載します。    
-属より上位ランクの場合、判明している範囲の lineage に細菌ならば "bacterium"、
-古細菌ならば、 "archaeon" を付加した名前を記載します。    
-真核生物の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
+属より上位ランクの場合、判明している範囲の lineage に**細菌**ならば "bacterium"、
+**古細菌**ならば、 "archaeon" を付加した名前を記載します。    
 
 書式
 
 - \<genus name> sp. # 原核生物
-- \<genus (or upper) name> sp. # 真核生物
 - \<family (or upper) name> bacterium
 - \<family (or upper) name> archaeon
 
 例
 
 <pre><code>Acetobacter sp.
-Aspergillaceae sp.
 Acetobacteraceae bacterium
 Methanomicrobiales archaeon</code></pre>
 
-登録の際には「生物名」とともに[識別子](/ddbj/identifiers.html)、多くの場合、
+**真核生物**の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
+
+書式
+
+- \<genus (or upper) name> sp. # 真核生物
+
+例
+
+<pre><code>Aspergillaceae sp.
+</code></pre>
+
+登録の際には「生物名」とともに [識別子](/ddbj/identifiers.html)、多くの場合、
 [/strain](/ddbj/qualifiers.html#strain), 
 [/isolate](/ddbj/qualifiers.html#isolate) など該当する qualifier とあわせて source feature に記載します。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-真核生物 (カビ、酵母相当の単細胞真菌以外) の場合、あるいは、単細胞の微生物でも全ゲノム規模の配列に該当する場合、
+**真核生物 (カビ、酵母相当の単細胞真菌以外)** の場合、あるいは、単細胞の微生物でも**全ゲノム規模の配列に該当する場合**、
 判明している範囲の lineage (多くの場合 属名) を用いて、"\<genus name\> sp."などとした上で、
-[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。  
+[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。    
 「生物名」に含めている場合でも、[識別子](/ddbj/identifiers.html)を [/strain](/ddbj/qualifiers.html#strain) など該当する qualifier に記載してください。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Euglena sp. CR123"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="CR123"</code></pre>  
+
+通常、**多細胞生物**は "\<genus name\> sp." とのみの記載では登録できません。     
+[識別子](/ddbj/identifiers.html) (多くの場合、isolate の名称) を「生物名」に含めて記載しています。    
+「生物名」に含めている場合でも、[識別子](/ddbj/identifiers.html)を [/isolate](/ddbj/qualifiers.html#isolate) など該当する qualifier に記載してください。
+
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Oscinella sp. AB_575"
+                     /<a href="/ddbj/qualifiers.html#isolate">isolate</a>="AB_575"</code></pre>  
+
 
 <span class="red">**仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録してください。**</span>    
 
@@ -301,24 +314,18 @@ Methanomicrobiales archaeon</code></pre>
 そのまま記載して登録することが可能です。    
 
 ウイルス以外は <span class="red">**valid publication 前の段階で「正式な学名と混同するような名称」を記載することはできません。**</span>    
-新学名提唱のための準備段階の場合、不明と類似の扱いで学名が確定するまではデータとの対応関係を一意に保つため、仮称を設定することを原則としています。    
+新学名提唱のための準備段階の場合、不明と類似の扱いで学名が確定するまではデータとの対応関係を一意に保つため、
+仮称を設定することを原則としています。    
 
 学名提唱中のため種名が未確定の場合、「生物名」の一意性を保つために、判明している範囲の lineage、多くの場合、
-属名を用いて、"\<genus name\> sp."などとした上で、[識別子](/ddbj/identifiers.html) (多くの場合、strain 名など) を並記した仮称を割り当てて taxonomy database に登録します。    
-この運用により、例えば、異なる生物が同じものと混同されるなどの混乱を避けることができます。    
-そのため、<span class="red">**学名が確定するまでの間、その仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録**</span>してください。    
-あくまで当該生物由来サンプルと登録データに関する措置であり、登録者が執筆中の論文他において、どのような名称を用いるか、ということとは別の問題です。
-
-このような taxonomy database に登録された一時的な仮称は、正しい学名が確認できた段階で、その学名に更新変更します。    
-種を報告する論文が公開された際に、論文情報更新、生物名修正、データ公開を依頼するご連絡をお願いいたします。    
-更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。    
+属名を用いて、"\<genus name\> sp."などとした上で、
+[識別子](/ddbj/identifiers.html) (多くの場合、strain 名など) を並記した仮称を割り当てて taxonomy database に登録します。    
+     
+**原核生物**の場合、 strain 毎を基本に仮称を割り当てます。    
 
 書式
 
-- \<genus name> sp. \<strain name>
-- \<family (or upper) name> bacterium \<strain name>
 - \<genus name> sp. \<strain name> # 原核生物
-- \<genus (or upper) name> sp. \<strain name> # 真核生物
 - \<family (or upper) name> bacterium \<strain name>
 - \<family (or upper) name> archaeon \<strain name>
 
@@ -327,13 +334,35 @@ Methanomicrobiales archaeon</code></pre>
 <pre><code>Acetobacter sp. ITDI2.1
 Acetobacteraceae bacterium ITDI2.1</code></pre>
 
+
+**真核生物**の場合、種の候補単位 (OTU) 毎を基本に仮称を割り当てますが、状況に応じて、strain または isolate 毎としても構いません。    
+
+書式
+
+- \<genus (or upper) name> sp. \<OTU ID> # 真核生物
+
+例
+
+<pre><code>Oscinella sp. 1-AB-2020
+</code></pre>
+
+
+この運用により、例えば、異なる生物が同じものと混同されるなどの混乱を避けることができます。    
+そのため、<span class="red">**学名が確定するまでの間、その仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録**</span>してください。    
+あくまで当該生物由来サンプルと登録データに関する措置であり、登録者が執筆中の論文他において、どのような名称を用いるか、ということとは別の問題です。
+
+このような taxonomy database に登録された一時的な仮称は、正しい学名が確認できた段階で、その学名に更新変更します。    
+種を報告する論文が公開された際に、論文情報更新、生物名修正、データ公開を依頼するご連絡をお願いいたします。    
+更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。    
+
+
 登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain) など該当する
 qualifier をあわせて source feature に記載します。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
+登録時に以下の参考情報を可能な範囲でお知らせください。
 
 ---
 **taxonomy database 登録申請のための参考情報**
