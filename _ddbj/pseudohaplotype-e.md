@@ -29,7 +29,7 @@ There are a few naming options to distinguish pseudohaplotype assemblies. One of
 
 ### BioProject  {#bioproject}
 
-Create separate BioProject for each principal and alternate pseudohaplotype and an umbrella BioProject to group these projects.
+Create separate BioProject for each principal and alternate pseudohaplotype and an umbrella BioProject to group these projects. When [submitting the umbrella project](/bioproject/submission-e.html#submit-umbrella-project), enter accession numbers of primary BioProjects to be linked and their names for pseudohaplotypes (e.g. PRJDB1 Principal, PRJDB2 Alternate and PRJDB3 DRA).
 
   - BioProject 1: Principal
       - Add phasing information in the title. For example, Principal

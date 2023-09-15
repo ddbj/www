@@ -73,6 +73,8 @@ To submit data corresponding to personal identification code to DRA/GEA/DDBJ, [y
 Umbrella project can be submitted as primary project in [D-way](https://ddbj.nig.ac.jp/D-way/). <span class="red">Be sure to tell the DDBJ BioProject staff that submitting project is umbrella by writing so in the [Private comments to DDBJ staff](#Private_comments). </span>
 Umbrell project cannot be kept private.
 
+When submitting an umbrella project to group [pseudohaplotype](/ddbj/pseudohaplotype-e.html#bioproject) datasets, enter accession numbers of primary BioProjects to be linked and their names for pseudohaplotypes (e.g. PRJDB1 Principal, PRJDB2 Alternate and PRJDB3 DRA).
+
 {% include image.html url="books/hbp-05.jpg" caption="Tell DDBJ staff that submitting project is umbrella" class="w450" %}
 
 ## Link primary project to umbrella  {#link-primary-project-umbrella}

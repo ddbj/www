@@ -29,7 +29,7 @@ Pseudohaplotype アセンブリを区別するための名称については、�
 
 ### BioProject  {#bioproject}
 
-Principal と Alternate pseudohaplotype に対応するプロジェクトをそれぞれ登録し、両者をまとめるアンブレラプロジェクトを登録します。
+Principal と Alternate pseudohaplotype に対応するプロジェクトをそれぞれ登録し、両者をまとめるアンブレラプロジェクトを登録します。[アンブレラプロジェクトを登録](/bioproject/submission.html#submit-umbrella-project)する際、Private comments to DDBJ staff に配下にリンクする primary BioProject のアクセッション番号とその区別を記入します (例 PRJDB1 Principal, PRJDB2 Alternate, PRJDB3 DRA)。
 
   - BioProject 1: Principal
       - title に pseudohaplotype のフェーズに関する情報を記載。例 Principal
