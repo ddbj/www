@@ -190,8 +190,8 @@ Also, the qualifier corresponding to
 [/serotype](/ddbj/qualifiers-e.html#serotype) or
 [/strain](/ddbj/qualifiers-e.html#strain) is required for the source feature.
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
-                    /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
+<pre><code>                    /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Pan troglodytes troglodytes"
+                    /<a href="/ddbj/qualifiers-e.html#sub_species">sub_species</a>="troglodytes"
 </code></pre> 
 
 #### microbial genome  {#genome}
@@ -200,8 +200,8 @@ Previously, a strain name or some other lower taxon was required for the organis
 However, currently, the value of organism qualifier should be just a scientific name, in principle, even though for microbial genomes.    
 Describe a strain name in the [/strain](/ddbj/qualifiers-e.html#strain) qualifier.
 
-<pre><code>                    /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
-                    /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
+<pre><code>                    /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Candida albicans"
+                    /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="WO-1"
 </code></pre>  
 
 #### virus  {#virus}
@@ -223,13 +223,13 @@ The qualifiers corresponding to
 
 Please describe them with appropriate qualifiers as below example.
 
-<pre><code>                   /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
-                   /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
-                   /<a href="/ddbj/qualifiers.html#host">host</a>="Gallus gallus"
-                   /<a href="/ddbj/qualifiers.html#isolate">isolate</a>="A/chicken/Tokyo/2007"
-                   /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="viral cRNA"
-                   /<a href="/ddbj/qualifiers.html#organism">organism</a>="Influenza A virus"
-                   /<a href="/ddbj/qualifiers.html#serotype">serotype</a>="H7N7"
+<pre><code>                   /<a href="/ddbj/qualifiers-e.html#country">country</a>="Japan:Tokyo"
+                   /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007-11-01"
+                   /<a href="/ddbj/qualifiers-e.html#host">host</a>="Gallus gallus"
+                   /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="A/chicken/Tokyo/2007"
+                   /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="viral cRNA"
+                   /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Influenza A virus"
+                   /<a href="/ddbj/qualifiers-e.html#serotype">serotype</a>="H7N7"
 </code></pre>
 
 #### hybrid  {#hybrid}
@@ -274,11 +274,6 @@ Please tell us any of following items during your sequence submission.
 If you find any mistakes in the taxonomy database, please [contact us](/contact-ddbj-e.html#to-ddbj) to correct it. 
 In case of misspelling of the organism name, it will be easily corrected.    
     
-The primary purpose of the taxonomy database is to unify descriptions of organism names. 
-Consequently, the taxonomy database is not an authoritative source for nomenclature or classification.    
-A taxonomic name may differ from the submitter's proposal or widely used taxonomic name because only the organism name in the taxonomy database which is managed by GenBank can be used for the entry.    
-See also [the description of the taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite ) in detail.    
-    
 If you are preparing to intend reclassification of a series of organisms, so-called "combinatio nova", the names on the taxonomy database can not be corrected before publishing your paper to claim the new classiffication.    
 So, in the meantime, please use the current names in the taxonomy database.  
 After published your paper, contact us to change/correct the scientific name. Then, we will check it again.    
@@ -288,7 +283,7 @@ DDBJ can ask managers of taxonomy database any modification based on evidence pa
 So, as far as possible, please provide the citation information that support your opinions and your comment on how it should be, because it often be highly technical content.    
 Please note, regarding issues such as interpretating  phylogenetic lineages, the taxonomy database has a policy of adopting one of the theories to ensure the uniqueness of the data.  
 So, we may not be able to meet your request.    
-
+See also [the description of the taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite ) in detail.    
     
 Please tell us any of following items during your sequence submission.
 
@@ -308,36 +303,53 @@ Please tell us any of following items during your sequence submission.
 If the scientific name is unclear and/or unidentified, we adopt a tentative name for the organism.    
 The tentative name is made up with the lineage (in many cases, genus names) that as far as submitters could specify.    
 
+**For prokaryotes**    
 Format
 
 - \<genus name> sp. # prokaryotes
-- \<genus (or upper) name> sp. # eukaryotes
 - \<family (or upper) name> bacterium
 - \<family (or upper) name> archaeon
 
 Example
 
 <pre><code>Acetobacter sp.
-Aspergillaceae sp.
 Acetobacteraceae bacterium
 Methanomicrobiales archaeon</code></pre>
+
+**For eukaryotes**    
+Format
+
+- \<genus (or upper) name> sp. # eukaryotes
+
+Example
+
+<pre><code>Aspergillaceae sp.
+</code></pre>
 
 The qualifier corresponding to [identifier](/ddbj/identifiers-e.html), such as 
 [/strain](/ddbj/qualifiers-e.html#strain), 
 [/isolate](/ddbj/qualifiers-e.html#isolate) etc., is required for the source feature.
 
-<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
+<pre><code>                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Acetobacter sp."
+                     /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-In cases of eukaryote sequences (except unicellular fungi like yeasts or mold), or in cases of whole genomic scale sequences from unicellular microorganisms, 
+In cases of **eukaryote sequences (except unicellular fungi like yeasts or mold)**, or in cases of **whole genomic scale sequences** from unicellular microorganisms, 
 some [identifier](/ddbj/identifiers-e.html), strain name or some other lower taxon, is required to include in the organism name.  
 The tentative name is made up with the lineage (in many cases, genus names) that as far as submitters could specify 
 and the lower taxon (in many cases, strain names).  
 Even included in the organism name, you should describe the [identifier](/ddbj/identifiers-e.html) in the 
 [/strain](/ddbj/qualifiers-e.html#strain) or some other corresponding qualifier.
 
-<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Euglena sp. CR123"
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="CR123"</code></pre>  
+<pre><code>                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Euglena sp. CR123"
+                     /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="CR123"</code></pre>  
+
+Usually, **multicellular organisms** are not acceptable with "\<genus name\> sp." only.    
+Some [identifier](/ddbj/identifiers-e.html), isolate name or some other lower taxon, is required to include in the organism name.  
+Even included in the organism name, you should describe the [identifier](/ddbj/identifiers-e.html) in the 
+[/isolate](/ddbj/qualifiers-e.html#isolate) or some other corresponding qualifier.
+
+<pre><code>                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Oscinella sp. AB_575"
+                     /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="AB_575"</code></pre>  
 
 <span class="red">**Please use the same tentative name, when you submit any other data derived from the same organism.**</span>    
 
@@ -350,9 +362,37 @@ For other than viruses, <span class="red">**no name confusable with the formal s
 In principle, during the stage proposing a novel scientific name, a tentative name like as unidentified cases is required 
 to keep unique correspondence between the organism and sequence data until established a new scientific name.    
 
-If you are to propose a novel species, in the mean time, we adopt an unique tentative name for the organism. 
+If you are to propose a novel species, in the mean time, we adopt an unique tentative name for the organism.    
 The tentative name is made up with the lineage (in many cases, genus names) 
 that as far as submitters could specify and the [identifier](/ddbj/identifiers-e.html) (in many cases, strain names).    
+      
+In cases of **prokaryotes**, a tentative name should be assigned to every strain.     
+
+Format
+
+- \<genus name> sp. \<strain name> # prokaryotes
+- \<family (or upper) name> bacterium \<strain name>
+- \<family (or upper) name> archaeon \<strain name>
+
+Example
+
+<pre><code>Acetobacter sp. ITDI2.1
+Acetobacteraceae bacterium ITDI2.1</code></pre>
+
+
+In cases of **eukaryotes**, a tentative name should be assigned to every species candidate (OTU),
+or, as the case may be, every strain/isolate.     
+
+Format
+
+- \<genus (or upper) name> sp. \<OTU ID> # eukaryotes
+
+Example
+
+<pre><code>Oscinella sp. 1-AB-2020
+</code></pre>
+
+
 Because we have to avoid some confusions; for example, two different organisms are mixed up.    
 Therefore, if you have any other sequence data derived from the same species candidate, 
 <span class="red">**please use the same tentative name in the meantime before the valid publication of the species.**</span>    
@@ -362,35 +402,19 @@ The tentative name in the taxonomy database is to be changed to the formal scien
 When the valid pulication, i.e. the paper to report a novel species, is published, please contact us to update the paper information (reference), the organism name and so on, and to release your sequence data.    
 See [Data Updates/Corrections after Receiving Accession Number](/ddbj/update-e.html) for your update request.    
 
-Format
-
-- \<genus name> sp. \<strain name>
-- \<family (or upper) name> bacterium \<strain name>
-- \<genus name> sp. \<strain name> # prokaryotes
-- \<genus (or upper) name> sp. \<strain name> # eukaryotes
-- \<family (or upper) name> bacterium \<strain name>
-- \<family (or upper) name> archaeon \<strain name>
-
-Example
-
-<pre><code>Acetobacter sp. ITDI2.1
-Acetobacteraceae bacterium ITDI2.1</code></pre>
-
 Also, the qualifiers corresponding to the [identifier](/ddbj/identifiers-e.html) (such as
 [/strain](/ddbj/qualifiers-e.html#strain) etc.) are required for the source feature to submit your sequence.  
 
-<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
-                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
+<pre><code>                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
+                     /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-If the name is not available on taxonomy database 
-([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
-any of following items during your sequence submission.
+Please tell us any of following items during your sequence submission.
 
 ---
 **Useful items for application of organism names to taxonomy database**
 
 - [taxonomic lineage](#lineage)
-- [proposing name for novel species](/ddbj/organism-e.html#propose)
+- [proposing name for novel species](#propose)
 - [already issued accession number](#acc)
 - [process of sampling and/or sequencing](#isolate)
 
@@ -430,11 +454,11 @@ In cases of environmental samples, the qualifier,
 For the [identifier](/ddbj/identifiers-e.html), use [/isolate](/ddbj/qualifiers-e.html#isolate) qualifier.  
 When you cloned the sample sequence, use [/clone](/ddbj/qualifiers-e.html#clone) qualifier, instead of /isolate qualifier.  
 
-<pre><code>                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
-                     /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
-                     /<a href="/ddbj/qualifiers.html#isolation_source">isolation_source</a>="PCR-derived sequence from sediment"
-                     /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
-                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="uncultured Acetobacter sp."</code></pre>
+<pre><code>                     /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="4-11"
+                     /<a href="/ddbj/qualifiers-e.html#environmental_sample">environmental_sample</a>
+                     /<a href="/ddbj/qualifiers-e.html#isolation_source">isolation_source</a>="PCR-derived sequence from sediment"
+                     /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
+                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="uncultured Acetobacter sp."</code></pre>
 
 If the name is not available on taxonomy database 
 ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
