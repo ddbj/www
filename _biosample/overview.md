@@ -70,7 +70,7 @@ BioSample の [organism](/biosample/attribute.html?all=all#organism) に記載�
 
 [International Nucleotide Sequence Database Collaboration (INSDC)](https://www.insdc.org/)は塩基配列データの品質とサンプルのトレーサビリティを向上させるため、サンプルの「採取場所」と「採取日時」の記載を必須化しています。[INSDC spatio-temporal annotation standards](https://www.insdc.org/news/spatio-temporal-annotation-policy-18-11-2021/)
 
-* 採取場所: サンプルをシークエンスする目的で採取した場所。少なくとも国や海洋を記載します。BioSample の [geo_loc_name](/biosample/attribute.html#geo_loc_nameシークエンスBJ の [country](/ddbj/qualifiers.html#country) が対応する項目になります。
+* 採取場所: サンプルをシークエンスする目的で採取した場所。少なくとも国や海洋を記載します。BioSample の [geo_loc_name](/biosample/attribute.html#geo_loc_name) と DDBJ の [country](/ddbj/qualifiers.html#country) が対応する項目になります。
 * 採取日時: サンプルをシークエンスする目的で採取した日時。少なくとも最も近い「年」を所定の書式で記載します。BioSample と DDBJ の [collection_date](/biosample/attribute.html#collection_date) が対応する項目になります。
 
 これらの情報を提供できない場合（例 宿主個人の特定に繋がりかねない病原菌サンプルの採取情報）、および、提供することが適切ではない場合（例 研究室で飼育しているモデル動物や確立された細胞株）、[INSDC missing value reporting standards](https://www.insdc.org/submitting-standards/missing-value-reporting/) で定めている適用除外の理由 (exemption term) を使って提供できない理由を記載するか、もしくは、従来通り [missing value](/biosample/submission.html#missing-value-reporting) を記載します。
