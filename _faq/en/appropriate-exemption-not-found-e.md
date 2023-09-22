@@ -11,4 +11,4 @@ date: 2023-09-10T12:39:51
 lang: en
 ---
 
-If you feel unable to share these metadata but your exemption is not on the list, please [contact us](/contact-ddbj-e.html).
+If you feel unable to share these metadata but your exemption is not on [the list](/biosample/submission-e.html#missing-value-reporting), please [contact us](/contact-ddbj-e.html).

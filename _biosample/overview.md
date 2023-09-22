@@ -70,19 +70,20 @@ BioSample の [organism](/biosample/attribute.html?all=all#organism) に記載�
 
 [International Nucleotide Sequence Database Collaboration (INSDC)](https://www.insdc.org/)は塩基配列データの品質とサンプルのトレーサビリティを向上させるため、サンプルの「採取場所」と「採取日時」の記載を必須化しています。[INSDC spatio-temporal annotation standards](https://www.insdc.org/news/spatio-temporal-annotation-policy-18-11-2021/)
 
-* 採取場所: サンプルをシークエンスする目的で採取した場所。少なくとも国や海洋を記載します。BioSample の [geo_loc_name](/biosample/attribute.html#geo_loc_name) と DDBJ の [country](/ddbj/qualifiers.html#country) が対応する項目になります。
-* 採取日時: サンプルをシークエンスする目的で採取した日時。少なくとも最も近い「年」を所定の書式で記載します。BioSample と DDBJ の [collection_date](/biosample/attribute.html#collection_date) が対応する項目になります。
+* 採取場所: 配列データを得たサンプルを採取した場所。データの解釈において意味のある場所を記載します。少なくとも国や海洋を記載します。BioSample の [geo_loc_name](/biosample/attribute.html#geo_loc_name) と DDBJ の [country](/ddbj/qualifiers.html#country) が対応する項目になります。
+* 採取日時: 配列データを得たサンプルを採取した日時。データの解釈において意味のある日時を記載します。少なくとも最も近い「年」を所定の書式で記載します。BioSample と DDBJ の [collection_date](/biosample/attribute.html#collection_date) が対応する項目になります。
 
-これらの情報を提供できない場合（例 宿主個人の特定に繋がりかねない病原菌サンプルの採取情報）、および、提供することが適切ではない場合（例 研究室で飼育しているモデル動物や確立された細胞株）、[INSDC missing value reporting standards](https://www.insdc.org/submitting-standards/missing-value-reporting/) で定めている適用除外の理由 (exemption term) を使って提供できない理由を記載するか、もしくは、従来通り [missing value](/biosample/submission.html#missing-value-reporting) を記載します。
+これらの情報を提供できない場合（例 宿主個人の特定に繋がりかねない病原菌サンプルの採取情報）、および、提供することが適切ではない場合（例 研究室で飼育しているモデル動物や確立された細胞株）、[INSDC missing value reporting standards](https://www.insdc.org/submitting-standards/missing-value-reporting/) で定めている適用除外理由 (exemption term) を使って提供できない理由を記載するか、もしくは、従来通り [missing value](/biosample/submission.html#missing-value-reporting) を記載します。
 
 ### 採取場所・日時に関する質問と記載例 {#spatio-temporal-faq}
 
-* [場所と日時を提供できないケースで、適切な適用除外理由 (exemption term) が見当たらない場合は？](/faq/ja/appropriate-exemption-not-found.html)
-* [古代 DNA サンプルの採取場所と日付の記載方法は？](/faq/ja/ancient-dna-sample.html)
-* [自然環境ではない場所で生物種を採集した場合 (例 動物園や植物園) の記載方法は？](/faq/ja/sample-from-none-natural-environment.html)
+* [系統保存機関から分譲された菌株を研究室で培養して得たサンプルの記載方法は？](/faq/ja/sample-from-collection.html)
+* [自然環境ではない場所 (例 動物園や植物園) で生物種を採集した場合の記載方法は？](/faq/ja/sample-from-none-natural-environment.html)
 * [サンプルを太平洋で2010年に採取した場合の記載方法は？](/faq/ja/sample-from-pacific-ocean-2010.html)
-* [配列データは INSDC に登録するが、全てのメタデータは2年後まで提供しない、と INSDC の新しい標準策定前にコンソーシアムで合意しています。どうすればよいでしょうか？](/faq/ja/data-agreement-established-pre-2023.html)
-* [日本の静岡県で2023年5月5日 14:12:55 に採取した場合の記載方法は？](/faq/ja/location-and-date-of-sample.html)
+* [日本の静岡県で2023年5月5日 14:12:55 にサンプルを採取した場合の記載方法は？](/faq/ja/location-and-date-of-sample.html)
+* [古代 DNA サンプルの採取地と日付の記載方法は？](/faq/ja/ancient-dna-sample.html)
+* [場所と日付を提供できないケースで、適切な適用除外理由 (exemption term) が見当たらない場合は？](/faq/ja/appropriate-exemption-not-found.html)
+* [配列データは INSDC に登録するが、全てのメタデータは2年後まで提供しない、と INSDC の新しいガイドライン策定前にコンソーシアムで合意しています。どうすればよいでしょうか？](/faq/ja/data-agreement-established-pre-2023.html)
 * [採取場所と日時のうち、片方しか記載できない場合は？](/faq/ja/either-one-of-location-and-date-cannot-be-described.html)
 
 ## ゲノムアセンブル用サンプル {#genome-assembly-sample}

@@ -76,20 +76,20 @@ Related news: [Changes in organism strain information management](/news/en/2013-
 
 [International Nucleotide Sequence Database Collaboration (INSDC)](https://www.insdc.org/) improves utility of sequence data and sample traceability by making sample location and collection date description mandatory. Please also see [INSDC spatio-temporal annotation standards](https://www.insdc.org/news/spatio-temporal-annotation-policy-18-11-2021/).
 
-* Location of collection: Specification of where the biological sample was collected, at a minimum, by using the names for countries, oceans, or seas. Relevant attributes are, BioSample [geo_loc_name](/biosample/attribute-e.html#geo_loc_name) and DDBJ [country](/ddbj/qualifiers-e.html#country).
-* Date and time of collection: Date and time when the specimen was collected, at least to the nearest year. Relevant attributes are, BioSample and DDBJ [collection_date](/biosample/attribute-e.html#collection_date).
+* Location of collection: Specification of where the sequenced sample was collected. Provide a meaningful location to interpret the data. At a minimum, describe the names for countries, oceans, or seas. Relevant attributes are, BioSample [geo_loc_name](/biosample/attribute-e.html#geo_loc_name) and DDBJ [country](/ddbj/qualifiers-e.html#country).
+* Date and time of collection: Date and time when the sequenced sample was collected. Provide a meaningful date and time to interpret the data. Describe at least to the nearest year. Relevant attributes are, BioSample and DDBJ [collection_date](/biosample/attribute-e.html#collection_date).
 
 In cases where this information cannot be provided (e.g., pathogen samples for which this information would lead to identifiability of a human) or is not relevant (e.g., study of a model organism lab stock or an established cell line), you can declare an appropriate exemption using the exemption terms defined in the [INSDC Missing Value Reporting Standards](https://www.insdc.org/submitting-standards/missing-value-reporting/) or use one of general [missing values](/biosample/submission-e.html#missing-value-reporting) as before.
 
 ### FAQ and examples {#spatio-temporal-faq}
 
-* [I am not able to report on my spatiotemporal metadata but my exemption reason is not on the list - what should I do?](/faq/en/appropriate-exemption-not-found-e.html)
-* [I have an ancient DNA sample - how do I provide the spatiotemporal information for my sample?](/faq/en/ancient-dna-sample-e.html)
+* [I cultured and sequenced a bacterial strain distributed from a culture collection. How should I describe the location and time?](/faq/en/sample-from-collection-e.html)
 * [I collected my sample for sequencing from a species outside of its natural environment (e.g. zoo, botanic garden) - how do I provide the spatiotemporal information for my sample?](/faq/en/sample-from-none-natural-environment-e.html)
-* [My sample was collected from the Pacific Ocean but the date was not recorded and I only know the year in which it was sampled was sometime in 2010 - how do I report this?](/faq/en/sample-from-pacific-ocean-2010-e.html
-)
+* [My sample was collected from the Pacific Ocean but the date was not recorded and I only know the year in which it was sampled was sometime in 2010 - how do I report this?](/faq/en/sample-from-pacific-ocean-2010-e.html)
+* [My sample was collected in Shizuoka, Japan at 14:12:55 on the 5th May 2023. How do I format this for submission?](/faq/en/location-and-date-of-sample-e.html)
+* [I have an ancient DNA sample - how do I provide the spatiotemporal information for my sample?](/faq/en/ancient-dna-sample-e.html)
+* [I am not able to report on my spatiotemporal metadata but my exemption reason is not on the list - what should I do?](/faq/en/appropriate-exemption-not-found-e.html)
 * [As part of my consortium, we set up an agreement that the data would be submitted to INSDC but that all metadata would not be shared until after 2 years. This agreement was organised prior to the standards change so we can’t comply. How do I report this?](/faq/en/data-agreement-established-pre-2023-e.html)
-* [My sample was collected in Shizuoka of Japan at 14:12:55 on the 5th May 2023. How do I format this for submission?](/faq/en/location-and-date-of-sample-e.html)
 * [What do I do if I can submit one of the mandatory fields but not the other?](/faq/en/either-one-of-location-and-date-cannot-be-described-e.html)
 
 ## Genome assembly sample {#genome-assembly-sample}
