@@ -17,5 +17,8 @@ lang: ja
 例
 国立研究開発法人 国立環境研究所 微生物系統保存施設 (NIES コレクション) の [Arthrospira platensis NIES-39 株](https://mcc.nies.go.jp/strainList.do?strainId=37)。チャド湖で採集されているが、採集年月は不明。
 
+* geo_loc_name (or /country) = Chad: Lake Chad
+* collection date = not collected
+
 
 
