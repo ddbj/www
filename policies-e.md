@@ -6,6 +6,8 @@ lang: en
 
 ## Terms of Use {#terms-of-use}
 
+Last updated: 26th September, 2023
+
 ### Definitions {#definition-of-terms}
 In this Terms of Use, each of the following terms have the following meanings:
   - 'Organization' means the Research Organization of Information and Systems.
