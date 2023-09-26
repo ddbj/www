@@ -101,33 +101,53 @@ DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/w
 
 <img src="/assets/images/ddbj/organism-j.png" alt="" title="" class="w600">
 
-a. 人工的に構築した配列  
-: Category は "Artificially constructed or synthesized sequence" となりますので、メニューから選択してください。<br>[4. 人工的に構築した配列](#syn) を ご参照の上、生物名 (scientific name) を記載してください。
+### a. 人工的に構築した配列  
+Category は "Artificially constructed or synthesized sequence" となりますので、メニューから選択してください。    
+[4. 人工的に構築した配列](#syn) を ご参照の上、生物名 (scientific name) を記載してください。
 
-b. ウイルス  
-: 画面上で生物名検索を行います。結果一覧から該当するウイルス名を選択します。選択した生物名が scientific name 入力ボックスに反映されます。<br>病原性ウイルスの場合には Category で "Pathogenic virus" を選択してください。<br>strain、serotype、collection_date (採取した年月日)、country (採取した地名)、host などを各 qualifier に記載してください。
+### b. ウイルス  
+画面上で生物名検索を行います。結果一覧から該当するウイルス名を選択します。選択した生物名が scientific name 入力ボックスに反映されます。
+[/isolate](/ddbj/qualifiers.html#isolate) (または [/strain](/ddbj/qualifiers.html#strain)、
+[/serotype](/ddbj/qualifiers.html#serotype)、
+[/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、
+[/country](/ddbj/qualifiers.html#country) (採取した地名)、
+[/host](/ddbj/qualifiers.html#host) などを各 qualifier に記載してください。    
+病原性ウイルスの場合には Category で "Pathogenic virus" を選択してください。    
 
-c. 三名法などで記載する場合  
-: Category は "Valid subspecies or variety not registered in taxonomy database" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[三名法](#trinominal)について ご参照の上、scientific name 入力ボックスには subspecies、variety または、それに準ずる strain などを含めて生物名を記載してください。
+### c. 三名法などで記載する場合  
+Category は "Valid subspecies or variety not registered in taxonomy database" となりますので、メニューから選択してください。    
+下記、生物名記載の各論より、[三名法](#trinominal)について ご参照の上、scientific name 入力ボックスには subspecies、variety または、それに準ずる strain などを含めて生物名を記載してください。    
 
-d. taxonomy database に既存  
-: 画面上で生物名検索を行います。結果一覧から該当する生物名を選択します。<br>Category を選択する必要はありません。
+### d. taxonomy database に既存  
+画面上で生物名検索を行います。結果一覧から該当する生物名を選択します。    
+Category を選択する必要はありません。
 
-e. 環境サンプル  
-: Category は "Obtained by direct molecular isolation from environmental sample" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[3. 環境サンプル](#env) を ご参照の上、生物名を scientific name 入力ボックスに記載してください。
+### e. 環境サンプル  
+Category は "Obtained by direct molecular isolation from environmental sample" になります。メニューから選択してください。    
+下記、生物名記載の各論より、[3. 環境サンプル](#env) を ご参照の上、生物名を scientific name 入力ボックスに記載してください。    
+[/isolation_source](/ddbj/qualifiers.html#isolation_source)、
+[/isolate](/ddbj/qualifiers.html#isolate) (または [/clonen](/ddbj/qualifiers.html#clone)、
+[/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、
+[/country](/ddbj/qualifiers.html#country) (採取した地名)、
+[/host](/ddbj/qualifiers.html#host) などを各 qualifier に記載してください。    
 
-f. 種同定不能な場合の仮称、または、提唱準備中の新種  
-: 種同定をしない場合、Category は "Species is not identified" となりますので、メニューから選択してください。<br>提唱準備中の新種の場合、Category は "Proposing the name for the novel species" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[2. 種が同定されていない場合](#unidentified) を ご参照の上、生物名を scientific name 入力ボックスに記載してください。
 
-g. 登録済で非公開 (検索不可) の場合  <a name="private"></a>
-: Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。<br>以前のご登録と同様の学名、もしくは、仮称を記載してください。
+### f. 種同定不能な場合の仮称、または、提唱準備中の新種  
+種同定をしない場合、Category は "Species is not identified" となりますので、メニューから選択してください。    
+提唱準備中の新種の場合、Category は "Proposing the name for the novel species" となりますので、メニューから選択してください。    
+下記、生物名記載の各論より、[2. 種が同定されていない場合](#unidentified) を ご参照の上、生物名を scientific name 入力ボックスに記載してください。
 
-h. taxonomy database に未登録で、学名が確立している場合  
-: Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[1. 種が同定されている場合](#species) をご参照の上、生物名を scientific name 入力ボックスに記載してください。
+### g. 登録済で非公開 (検索不可) の場合  <a name="private"></a>
+: Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。    
+以前のご登録と同様の学名、もしくは、仮称を記載してください。
+
+### h. taxonomy database に未登録で、学名が確立している場合  
+: Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。    
+下記、生物名記載の各論より、[1. 種が同定されている場合](#species) をご参照の上、生物名を scientific name 入力ボックスに記載してください。
 
 ## 生物名記載の各論  {#organism_name}
 
-一部、特殊な例外もありますが、DDBJ への登録の際における「生物名」記載についての考え方を以下に挙げています。  
+一部、特殊な例外もありますが、DDBJ への登録の際における「生物名」記載についての考え方を以下に挙げています。    
 塩基配列データの登録に際して taxonomy database への登録申請が必要な際は、[各参考情報](#items) もお知らせください。
 
 ### 1. 種が同定されている場合 {#species} 
@@ -377,7 +397,7 @@ qualifier をあわせて source feature に記載します。
 
 ### 3. 環境サンプル {#env}
 
-環境サンプル (environmental sample) とは、PCR、DGGE、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来する配列です。  
+環境サンプル (environmental sample) とは、PCR、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来する配列です。    
 よく混同されますが、<span class="red">環境サンプルとは「野生型」という意味ではありません。</span>  
 環境サンプルの定義については[環境サンプルの説明](/ddbj/env.html)もご参照ください。  
 <span class="red">環境サンプル由来の混合培養系も、環境サンプルと扱います。</span>
@@ -405,7 +425,10 @@ uncultured Aspergillaceae</code></pre>
 
 環境サンプルの場合、必須な
 [/environmental_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、および、
-[/isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。
+[/isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。     
+[/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日) と 
+[/country](/ddbj/qualifiers.html#country) (採取した地名)、
+[/host](/ddbj/qualifiers.html#host) (宿主) の記載も重要です。
 [識別子](/ddbj/identifiers.html) として、[/isolate](/ddbj/qualifiers.html#isolate) または [/clone](/ddbj/qualifiers.html#clone) qualifier を記載します。
 
 

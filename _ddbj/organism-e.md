@@ -30,8 +30,10 @@ on [taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy ).
 
 ## taxonomy database  {#taxonomy}
 
-All organisms that are represented in the sequence data of DDBJ/ENA/GenBank are registered to [the taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy ).    
-For construction of the nucleotide sequence database, it is important to manage the organism names for the data and also necessary to unify the iverse names of the organisms.    
+All organisms that are represented in the sequence data of DDBJ/ENA/GenBank are registered to 
+[the taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy ).    
+For construction of the nucleotide sequence database, it is important to manage the organism names 
+for the data and also necessary to unify the diverse names of the organisms.    
 The taxonomy database is used as the reference database for the unified organism names.    
 
 The primary purpose of the taxonomy database is to unify descriptions of organism names.    
@@ -115,48 +117,61 @@ name. Here shows a flowchart for judging "Category" of organism on Nucleotide Se
 
 <img src="/assets/images/ddbj/organism-e.png" alt="" title="" class="w600">
 
-a. artificial constructed or synthesized sequence  
-: Select "Artificially constructed or synthesized sequence" in the
-menu of [Category]. After referring to [4. Artificially
-constructed sequence](#syn), enter the name in the value of
-[Scientific name], appropriately.
+### a. artificial constructed or synthesized sequence  
+Select "Artificially constructed or synthesized sequence" in the menu of [Category].     
+After referring to [4. Artificially constructed sequence](#syn), enter the name in the value of [Scientific name], appropriately.    
 
-b. virus  
-: After finding the organism name from which your sequence was obtained, please select the name.    
-In cases of [pathogenic virus](#virus) , select "Pathogenic viruses" 
-in the menu box of [Category].    
-Please include the values of corresponding qualifiers, /isolate (or /strain), /serotype, /collection_date, /country (collection site), /host etc., respectively.    
+### b. virus  
+After finding the organism name from which your sequence was obtained, please select the name.    
+Please include the values of corresponding qualifiers, 
+[/isolate](/ddbj/qualifiers-e.html#isolate) (or [/strain](/ddbj/qualifiers-e.html#strain)), 
+[/serotype](/ddbj/qualifiers-e.html#serotype), 
+[/collection_date](/ddbj/qualifiers-e.html#collection_date),
+[/country](/ddbj/qualifiers-e.html#country), 
+[/host](/ddbj/qualifiers-e.html#host) etc., respectively.    
+In cases of [pathogenic virus](#virus) , select "Pathogenic viruses" in the menu box of [Category].    
 
-c. trinominal name  
-: Select "Valid subspecies or variety not registered in taxonomy database" in the menu box of [Category].  
-After referring to [trinominal name](#trinominal), please include subspecies, variety, or strain etc. in the value of [Scientific name].
 
-d. found in taxonomy database  
-: After finding the organism name from which your sequence was obtained, please select the name.  
-You do not have to select any of [Category]. 
+### c. trinominal name  
+Select "Valid subspecies or variety not registered in taxonomy database" in the menu box of [Category].    
+After referring to [trinominal name](#trinominal), please include subspecies, variety, or strain etc. in the value of [Scientific name].    
 
-e. direct molecular isolation from a bulk environmental DNA sample  
-: Select "Obtained by direct molecular isolation from environmental sample" in the menu box of [Category].  
-After referring to [3. Environmental samples](#env), enter an organism name in the [Scientific name] box, appropriately.
 
-f. unidentified organism or novel species in proposing state  
-: In case of a tentative name for an unidentified organism, select
-"Species is not identified".  
-In case of a novel species in proposing state, select "Species is not identified" in the menu box of [Category].  
-After referring to [2. In case of unidentified species names](#unidentified), enter an organism name in the [Scientific name] box, appropriately.
+### d. found in taxonomy database  
+After finding the organism name from which your sequence was obtained, please select the name.    
+You do not have to select any of [Category].     
 
-g. not found in taxonomy database, but already submitted other sequence data of the organism   <a name="private"></a>
-: Select "The name is valid but not registered in taxonomy database" in the menu box of [Category].  
+
+### e. direct molecular isolation from a bulk environmental DNA sample  
+Select "Obtained by direct molecular isolation from environmental sample" in the menu box of [Category].     
+After referring to [3. Environmental samples](#env), enter an organism name in the [Scientific name] box, appropriately.    
+Please include the values of corresponding qualifiers, 
+[/isolation_source](/ddbj/qualifiers-e.html#isolation_source), 
+[/isolate](/ddbj/qualifiers-e.html#isolate) (or [/clone](/ddbj/qualifiers-e.html#clone), 
+[/collection_date](/ddbj/qualifiers-e.html#collection_date), 
+[/country](/ddbj/qualifiers-e.html#country), 
+[/host](/ddbj/qualifiers-e.html#host) etc., respectively.    
+
+
+### f. unidentified organism or novel species in proposing state  
+In case of a tentative name for an unidentified organism, select "Species is not identified".    
+In case of a novel species in proposing state, select "Species is not identified" in the menu box of [Category].    
+After referring to [2. In case of unidentified species names](#unidentified), enter an organism name in the [Scientific name] box, appropriately.    
+
+
+### g. not found in taxonomy database, but already submitted other sequence data of the organism   <a name="private"></a>
+Select "The name is valid but not registered in taxonomy database" in the menu box of [Category].    
 Enter the same organism name as previously submitted in the [Scientific name] box.  
 
-h. not found in taxonomy database, but validly identified the scientific name of species 
-: Select "The name is valid but not registered in taxonomy database" 
-in the menu box of [Category]. After referring to [1. For identified species](#species), 
-enter an organism name in the [Scientific name] box, appropriately.  
+
+### h. not found in taxonomy database, but validly identified the scientific name of species 
+Select "The name is valid but not registered in taxonomy database" in the menu box of [Category].    
+After referring to [1. For identified species](#species), enter an organism name in the [Scientific name] box, appropriately.    
+
 
 ## Details to describe organism names  {#organism_name}
 
-Though there are still some exceptions, followings are how to describe organism names for DDBJ submission.  
+Though there are still some exceptions, followings are how to describe organism names for DDBJ submission.    
 If the application of the organism name to taxonomy database is required, during your sequence submission, 
 please let us know [reference information](#items) 
 
@@ -449,10 +464,14 @@ uncultured Aspergillus
 uncultured Aspergillaceae</code></pre>
 
 In cases of environmental samples, the qualifier, 
-[/environmental_sample](/ddbj/qualifiers-e.html#environmental_sample), is required for source feature.  Also, 
-[/isolation_source](/ddbj/qualifiers-e.html#isolation_source) and some other qualifiers should be used to describe the process and conditions of sample isolation.  
-For the [identifier](/ddbj/identifiers-e.html), use [/isolate](/ddbj/qualifiers-e.html#isolate) qualifier.  
-When you cloned the sample sequence, use [/clone](/ddbj/qualifiers-e.html#clone) qualifier, instead of /isolate qualifier.  
+[/environmental_sample](/ddbj/qualifiers-e.html#environmental_sample), is required for source feature.     
+Also, [/isolation_source](/ddbj/qualifiers-e.html#isolation_source) and some other qualifiers should be used to describe the process and conditions of sample isolation.    
+The qualifiers, [/collection_date](/ddbj/qualifiers-e.html#collection_date), 
+[/country](/ddbj/qualifiers-e.html#country) and 
+[/host](/ddbj/qualifiers-e.html#host) 
+are also useful.    
+For the [identifier](/ddbj/identifiers-e.html), use [/isolate](/ddbj/qualifiers-e.html#isolate) qualifier.    
+When you cloned the sample sequence, use [/clone](/ddbj/qualifiers-e.html#clone) qualifier, instead of /isolate qualifier.    
 
 <pre><code>                     /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="4-11"
                      /<a href="/ddbj/qualifiers-e.html#environmental_sample">environmental_sample</a>
