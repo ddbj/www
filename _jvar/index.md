@@ -6,4 +6,4 @@ category: jvar
 lang: ja
 ---
 
-**準備中**
+準備中です。
