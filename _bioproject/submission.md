@@ -54,6 +54,8 @@ BioProject を新規登録する場合は左のタブから順番に内容を英
 アンブレラプロジェクトは通常のプライマリープロジェクトと同様 [D-way](https://ddbj.nig.ac.jp/D-way/) から登録します。 <span class="red">登録の際には必ず [Private comments to DDBJ staff](/bioproject/project-info.html#Private_comments) にこの登録がアンブレラであることを記入し DDBJ BioProject チームに伝えてください。</span>
 アンブレラプロジェクトを非公開にすることはできません。
 
+[Pseudohaplotype](/ddbj/pseudohaplotype.html#bioproject) をまとまるアンブレラプロジェクトを登録する場合、配下にリンクする primary BioProject のアクセッション番号とその区別 (例 PRJDB1 Principal, PRJDB2 Alternate, PRJDB3 DRA) を記入します。
+
 {% include image.html url="books/hbp-05.jpg" caption="アンブレラプロジェクトの登録" class="w450" %}
 
 ## アンブレラプロジェクトへのリンク  {#link-primary-project-umbrella}

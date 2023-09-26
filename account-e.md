@@ -15,7 +15,6 @@ Bioinformation and DDBJ Center provides the D-way account system. In the D-way a
   - Issued account and password must be maintained securely by users.
   - Account name cannot be changed once it has been created.
   - It takes about 10 minutes for the created D-way account becoming active in the NBDC application system.
-
 </div>
 
 DDBJ Center employs scp authenticated by ssh key for transfer of large files. Therefore, you need to register a public key for authentication for using DRA, GEA and JGA services which accompany transfer of large files. In addition, because DRA metadata require a center name, you need to register a center name assigned to your affiliation for using DRA service.
@@ -24,7 +23,7 @@ DDBJ Center employs scp authenticated by ssh key for transfer of large files. Th
 {% include image.html url="books/hac01-e.jpg" caption="Service permission of D-way account" class="w300" %}
 {:/}
 
-Users who will submit data submission or data use applications to NBDC are advised to [enter additional account information](#nbdc). The added items are automatically filled to new applications and the users are able to avoid entering these items in each application. 
+Users who will submit data submission or data use applications to NBDC are advised to [enter additional account information](#nbdc). The added items are automatically filled to new applications and the users are able to avoid entering these items in each application.
 
 ## Create a D-way account in the website {#account-for-bioproject-biosample-submissions}
 
@@ -94,48 +93,48 @@ organization assigned by the DRA. The public key is used to identify users to ac
 
 ### Windows {#windows}
 
-A public key for D-way authentification can be both openSSH and PuTTY formats.  
-For JGA data decryption, use openSSH-format private key. For WinSCP authentification, use PuTTY-format private key.  
+A public key for D-way authentification can be both openSSH and PuTTY formats.
+For JGA data decryption, use openSSH-format private key. For WinSCP authentification, use PuTTY-format private key.
 
 #### OpenSSH format {#openssh}
 
-For JGA data decryption, use openSSH-format private key.  
+For JGA data decryption, use openSSH-format private key.
 
-Run Windows PowerShell.  
+Run Windows PowerShell.
 
 [![]({{ site.baseurl }}/assets/images/books/win-ps-1.jpg){:.w200}]({{ site.baseurl }}/assets/images/books/win-ps-1.jpg "Run Windows PowerShell"){: .group1}
 
-Execute following commands in the PowerShell window to generate openSSH-format key pair.  
+Execute following commands in the PowerShell window to generate openSSH-format key pair.
 
-``` 
+```
 Generate key pair.
-By default, for example, two keys will be generated at C:\Users\mtaro in the case of mtaro Windows user.  
+By default, for example, two keys will be generated at C:\Users\mtaro in the case of mtaro Windows user.
 PS C:\Users\mtaro> ssh-keygen -t rsa
 
-Message will be shown.  
+Message will be shown.
 Generating public/private rsa key pair.
 
-Press [Enter] for setting no passphrase.  
+Press [Enter] for setting no passphrase.
 Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 
 Your identification has been saved in id_rsa.
 Your public key has been saved in id_rsa.pub.
 
-A private key is saved as "id_rsa" and a public key is saved as "id_rsa.pub" in "C:\Users\mtaro" folder.  
+A private key is saved as "id_rsa" and a public key is saved as "id_rsa.pub" in "C:\Users\mtaro" folder.
 ```
 
-Following is the example command execution in the PowerShell window.   
+Following is the example command execution in the PowerShell window.
 
 [![]({{ site.baseurl }}/assets/images/books/win-ps-2.jpg){:.w600}]({{ site.baseurl }}/assets/images/books/win-ps-2.jpg "Generate a key pair by PowerShell"){: .group1}
 
-A private key is saved as "id_rsa" and a public key is saved as "id_rsa.pub" in the openSSH format under "C:\Users\mtaro" folder.  
+A private key is saved as "id_rsa" and a public key is saved as "id_rsa.pub" in the openSSH format under "C:\Users\mtaro" folder.
 [![]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg){:.w500}]({{ site.baseurl }}/assets/images/books/win-ps-3.jpg "A openSSH key pair is generated under the user folder"){: .group1}
 
 To distinguish the key pair, please save the JGA [public and private key pair for data decryption](/jga/download-e.html#key-for-decryption) as filenamaes having the applicatio ID by using -f option.
 ```
 PS C:\Users\mtaro> ssh-keygen -t rsa -f J-DU999991
-A private key is saved as "J-DU999991" and a public key is saved as "J-DU999991.pub" in "C:\Users\mtaro" folder.  
+A private key is saved as "J-DU999991" and a public key is saved as "J-DU999991.pub" in "C:\Users\mtaro" folder.
 ```
 
 #### PuTTY format {#putty}
@@ -270,7 +269,7 @@ registered public key for authentication can be overwritten by uploading a new f
 
 ## Items to be added for NBDC applications {#nbdc}
 
-Add the organization and job title information to your account. 
+Add the organization and job title information to your account.
 Login the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) \([https://humandbs.ddbj.nig.ac.jp/nbdc/application/](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)\) and select the "User information update" at the top right menu.
 
 {% include image.html url="books/profile1-e.jpg" caption="User information update" class="w400" %}
@@ -315,6 +314,20 @@ The following message is displayed if the password was changed successfully.
 {::nomarkdown}
 {% include image.html url="books/pass3.jpg" caption="Message of successfull password change." class="w450" %}
 {:/}
+
+## Email address change {#mail-address-change}
+
+Enter a new address in E-mail of Account and click "Update".　　
+An update request email will be sent to the old address. Update the address according to instructions in the request mail.
+
+{::nomarkdown}
+{% include image.html url="account/mail-change.jpg" caption="Change email address" class="w400" %}
+{:/}
+
+<div class="attention">
+Email regarding data submissions is sent to email addresses entered in the submissions.
+If you change email address of your D-way account, you need to update addresses of data submissions to receive emails regarding the submissions.
+</div>
 
 ## Session Expired {#session}
 

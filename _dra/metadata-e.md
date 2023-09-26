@@ -9,48 +9,48 @@ lang: en
 
 ## Objects {#objects}
 
-The metadata describes how the associated data have been obtained. 
+The metadata describes how the associated data have been obtained.
 The metadata are composed of 6 objects and each of these objects is defined by its [XML schema](https://github.com/ddbj/pub/tree/master/docs/dra/xsd/1-5) and is related each other.
 
 {% include image.html url="books/sra_object.png" caption="Data model" class="w500" %}
 
-[Submission](#Submission){: #Submission-obj}    
+[Submission](#Submission){: #Submission-obj}
 : Submission information such as data release and submitters. A container object for grouping objects to be submitted.
 
-[BioProject](#BioProject){: #BioProject-obj}  
+[BioProject](#BioProject){: #BioProject-obj}
 : Research project information. External database.
 
-[BioSample](#BioSample){: #BioSample-obj}  
+[BioSample](#BioSample){: #BioSample-obj}
 : Biological sample from which sequencing data were obtained. External database.
 
-[Experiment](#Experiment){: #Experiment-obj}   
+[Experiment](#Experiment){: #Experiment-obj}
 : A description of sequencing library and instrument. An Experiment references 1 BioProject and 1 BioSample.
 Multiple Experiments can "point" to a single Sample, but not vice-versa.
 
-[Run](#Run){: #Run-obj}   
+[Run](#Run){: #Run-obj}
 : A Run archives data files which belong to the previously created
-Experiment (library and instrument). 
-Note that all data files listed in a Run will be merged into a single SRA archive file. 
+Experiment (library and instrument).
+Note that all data files listed in a Run will be merged into a single SRA archive file.
 Paired-end data files must be listed in a single run in order for the two files to be correctly processed as paired-end.
 
-[Analysis](#Analysis){: #Analysis-obj}  
-: Packages data associated with sequence read objects which do not have dedicated databases. 
+[Analysis](#Analysis){: #Analysis-obj}
+: Packages data associated with sequence read objects which do not have dedicated databases.
 Analysis date are not shared among NCBI and EBI.
 
 [Metadata examples](/dra/example-e.html)
 
 ## Metadata fields {#metadata}
 
-Required<span class="red">*</span>  
+Required<span class="red">*</span>
 Conditionally required<span class="conditionally_required">*</span>
 
-## Submission  {#Submission} 
+## Submission  {#Submission}
 
 ### Center Name  {#Area_center-name}
 
 Enter submitter's organization.
 
-[Center Name](#Submission_Center_Name)<a name="Submission_Center_Name"><span class="red">*</span>  
+[Center Name](#Submission_Center_Name)<a name="Submission_Center_Name"><span class="red">*</span>
 : A submitter's center name. [Center Name List.](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/centerlist)
 A center name abbreviation is required to submit data to DRA.
 
@@ -60,7 +60,7 @@ filled with the account information.
 The Center Name is an abbreviation operationally used by SRA and is not for indicating ownership of
 submission. Submitters listed in [Submitter](#Area_submitter-submission) hold ownership of submission.
 
-[Lab Name](#Laboratory_Name)<a name="Laboratory_Name"></a><span class="red">*</span>  
+[Lab Name](#Laboratory_Name)<a name="Laboratory_Name"></a><span class="red">*</span>
 : Laboratory name within submitting institution. The Lab name is
 pre-entered with "Lab/Group", "Department (2)", "Department (1)","Organization" of D-way account. Text can be editted.
 
@@ -68,54 +68,59 @@ pre-entered with "Lab/Group", "Department (2)", "Department (1)","Organization" 
 
 Specify how to release the data.
 
-[Hold Until](#Hold_Until)<a name="Hold_Until"></a><span class="conditionally_required">*</span>  
+[Hold Until](#Hold_Until)<a name="Hold_Until"></a><span class="conditionally_required">*</span>
 : Direct the DRA to release the record on or after the specified
 date.Submitter can set the hold date for a maximum of 2 years and can change the date before the record is released.
 
-[Immediate Release](#Immediate_Release)<a name="Immediate_Release"></a><span class="conditionally_required">*</span>  
+[Immediate Release](#Immediate_Release)<a name="Immediate_Release"></a><span class="conditionally_required">*</span>
 : Direct the DRA to release the record immediately after submission is processed.
 
 ### Submitter  {#Area_submitter-submission}
 
-The DRA contacts the listed address(es) regarding the submission by e-mail. 
-The contact information is not made public. 
+The DRA contacts the listed address(es) regarding the submission by e-mail.
+The contact information is not made public.
 
-[Name](#Contact_Name)<a name="Contact_Name"></a><span class="red">*</span>  
+<div class="attention">
+Email regarding the DRA submission is sent to addresses entered in the DRA Submission.
+If you change email address registered in your D-way account, you need to update addresses of DRA Submissions to receive emails regarding the submissions.
+</div>
+
+[Name](#Contact_Name)<a name="Contact_Name"></a><span class="red">*</span>
 : Name of submitter.
 
-[E-mail](#Contact_E-mail)<a name="Contact_E-mail"></a><span class="red">*</span>  
+[E-mail](#Contact_E-mail)<a name="Contact_E-mail"></a><span class="red">*</span>
 : E-mail of submitter.
 
-## BioProject  {#BioProject} 
+## BioProject  {#BioProject}
 
-[BioProject ID](#DRA_BioProjectID)<a name="DRA_BioProjectID"></a><span class="red">*</span>  
+[BioProject ID](#DRA_BioProjectID)<a name="DRA_BioProjectID"></a><span class="red">*</span>
 : Select a project registered to [BioProject](/bioproject/index-e.html) or submit a new project. For submission to BioProject, please refer to the [BioProject Submission](/bioproject/submission-e.html).
 
-## BioSample  {#BioSample} 
+## BioSample  {#BioSample}
 
-[BioSample ID](#DRA_BioSampleID)<a name="DRA_BioSampleID"></a><span class="red">*</span>  
+[BioSample ID](#DRA_BioSampleID)<a name="DRA_BioSampleID"></a><span class="red">*</span>
 : Select samples registered to [BioSample](/biosample/index-e.html) or create and submit new samples. For submission to BioSample, please refer to the [BioSample Submission](/biosample/submission-e.html).
 
-## Experiment  {#Experiment} 
+## Experiment  {#Experiment}
 
-[Alias](#Experiment_Alias)<a name="Experiment_Alias"></a>  
+[Alias](#Experiment_Alias)<a name="Experiment_Alias"></a>
 : Name of the experiment designated by the archive. This alias is used to reference metadata objects without accession numbers.
 
-[BioSample Used](#BioSample_Used)<a name="BioSample_Used"></a><span class="red">*</span>  
+[BioSample Used](#BioSample_Used)<a name="BioSample_Used"></a><span class="red">*</span>
 : Select the BioSample this experiment uses.
 
-[Title](#Experiment_Title)<a name="Experiment_Title"></a><span class="red">*</span>  
+[Title](#Experiment_Title)<a name="Experiment_Title"></a><span class="red">*</span>
 : Short text that can be used to call out experiment records in
 searches or in displays. A title like "[Sequencing Instrument
 Model] [paired end] sequencing of [BioSample ID]" (for example,
 "Illumina HiSeq 2000 paired end sequencing of SAMD00025741") is
 automatically constructed. To enter user-defined titles, download Experiment metadata into a tab-delimited text file, edit title values and upload it.
 
-[Library Name](#Library_Name)<a name="Library_Name"></a>  
+[Library Name](#Library_Name)<a name="Library_Name"></a>
 : The submitter's name for this library.
 
-[Library Source](#Library_Source)<a name="Library_Source"></a><span class="red">*</span>  
-: The Library Source specifies the type of source material that is being sequenced.  
+[Library Source](#Library_Source)<a name="Library_Source"></a><span class="red">*</span>
+: The Library Source specifies the type of source material that is being sequenced.
 
 | Library Source     | Description                                                                        |
 |---|
@@ -127,7 +132,7 @@ automatically constructed. To enter user-defined titles, download Experiment met
 | VIRAL RNA          | Viral RNA.                                                                         |
 | OTHER              | Other, unspecified, or unknown library source material.                            |
 
-[Library Selection](#Library_Selection)<a name="Library_Selection"></a><span class="red">*</span>  
+[Library Selection](#Library_Selection)<a name="Library_Selection"></a><span class="red">*</span>
 : Whether any method was used to select and/or enrich the material
 being sequenced.
 
@@ -163,8 +168,8 @@ being sequenced.
 | other                                  | Other library enrichment, screening, or selection process.                                                                                                                                         |
 | unspecified                            | Library enrichment, screening, or selection is not specified.                                                                                                                                      |
 
-[Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>  
-: Sequencing technique intended for this library. 
+[Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>
+: Sequencing technique intended for this library.
 For the "Sequel IIe", select the "Sequel II" and indicate "Sequel IIe" usage in the [Library Construction Protocol](#Library_Construction_Protocol).
 
 | Library Strategy                        | Description                                                                                                                                                                                                                                                               |
@@ -206,7 +211,7 @@ For the "Sequel IIe", select the "Sequel II" and indicate "Sequel IIe" usage in 
 | Synthetic-Long-Read                     | binning and barcoding of large DNA fragments to facilitate assembly of the fragment                                                                                                                                                                                       |
 | Other                                   | Library strategy not listed.                                                                                                                                                                                                                                              |
 
-[Library Construction Protocol](#Library_Construction_Protocol)<a name="Library_Construction_Protocol"></a>  
+[Library Construction Protocol](#Library_Construction_Protocol)<a name="Library_Construction_Protocol"></a>
 : Free form text describing the protocol by which the sequencing
 library was constructed. Please include protocols of DNA
 fragmentation, ligation and enrichment. If a library preparation kit
@@ -219,7 +224,7 @@ Gigascience. 2015 May 9;4:23. doi: 10.1186/s13742-015-0064-7.
 eCollection 2015. PMID:
 [25960871](https://www.ncbi.nlm.nih.gov/pubmed/25960871/) (Open Access)
 
-[Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>  
+[Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>
 : Select a sequencing instrument model.
 
 | Instrument Model                    |
@@ -289,9 +294,9 @@ eCollection 2015. PMID:
 | AB 3730 Genetic Analyzer            |
 | AB 3730xL Genetic Analyzer          |
 
-[Library Layout](#Library_Layout)<a name="Library_Layout"></a><span class="red">*</span>  
-: Select a layout of reads in sequencing data files. 
-Directions of reads (Forward or Reverse) are automatically determined from the Instrument values. 
+[Library Layout](#Library_Layout)<a name="Library_Layout"></a><span class="red">*</span>
+: Select a layout of reads in sequencing data files.
+Directions of reads (Forward or Reverse) are automatically determined from the Instrument values.
 In December 2022, the display name was changed from "Spot Type" to "Library Layout".
 
 | Spot Type | Description |
@@ -299,17 +304,17 @@ In December 2022, the display name was changed from "Spot Type" to "Library Layo
 | single | Single read |
 | paired | Paired reads |
 
-[Insert Size](#Insert_Size)<a name="Insert_Size"></a><span class="conditionally_required">*</span>  
-: Size of the insert for Paired reads. 
+[Insert Size](#Insert_Size)<a name="Insert_Size"></a><span class="conditionally_required">*</span>
+: Size of the insert for Paired reads.
 In December 2022, the display name was changed from "Nominal Length" to "Insert Size".
 
-## Run  {#Run} 
+## Run  {#Run}
 
-[Alias](#Run_Alias)<a name="Run_Alias"></a>  
+[Alias](#Run_Alias)<a name="Run_Alias"></a>
 : Name of the run designated by the archive. This alias is used to
 reference metadata objects without accession numbers.
 
-[Title](#Run_Title)<a name="Run_Title"></a><span class="red">*</span>  
+[Title](#Run_Title)<a name="Run_Title"></a><span class="red">*</span>
 : Short text that can be used to call out run records in searches or
 in displays. A title like "[Sequencing Instrument Model] [paired
 end] sequencing of [BioSample ID]" (for example, "Illumina HiSeq
@@ -317,28 +322,28 @@ end] sequencing of [BioSample ID]" (for example, "Illumina HiSeq
 constructed. To enter user-defined titles, download Run metadata
 into a tab-delimited text file, edit title values and upload it.
 
-[Experiment Referenced](#Experiment_Referenced)<a name="Experiment_Referenced"></a><span class="red">*</span>  
+[Experiment Referenced](#Experiment_Referenced)<a name="Experiment_Referenced"></a><span class="red">*</span>
 : Select the experiment this run belongs to.
 
 ### Data files for Run  {#Area_data-files-for-run}
 
 Select data files for a Run.
 
-[Run/Analysis](#Run_Analysis)<a name="Run_Analysis"></a>  
+[Run/Analysis](#Run_Analysis)<a name="Run_Analysis"></a>
 : Specify whether a data file belongs to the Run or Analysis. In the
 web submission form, this field is un-editable and is automatically
 filled according to the selected Run or Analysis. To upload metadata
 in tsv file, this field needs to be specified manually.
 
-[File Name](#File_Name)<a name="File_Name"></a><span class="red">*</span>  
+[File Name](#File_Name)<a name="File_Name"></a><span class="red">*</span>
 : The name of a sequence data file. Uploaded filenames are automatically filled in.
 
-[Run/Analysis contains files](#Run_Analysis_contains_files)<a name="Run_Analysis_contains_files"></a><span class="red">*</span>  
+[Run/Analysis contains files](#Run_Analysis_contains_files)<a name="Run_Analysis_contains_files"></a><span class="red">*</span>
 : Select a Run to which the data file belongs.
 
-[File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>  
+[File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>
 : The sequence data file format. For the fastq files, select 'fastq' irrespective of read length.
-      
+
 | File Type        | Description                                                                                                            |
 |---|
 | fastq            | fastq file                                                                       |
@@ -347,22 +352,22 @@ in tsv file, this field needs to be specified manually.
 | tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |
 | reference_fasta | Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with ".fa" |
 
-[MD5 Checksum](#MD5_Checksum)<a name="MD5_Checksum"></a><span class="red">*</span>  
+[MD5 Checksum](#MD5_Checksum)<a name="MD5_Checksum"></a><span class="red">*</span>
 : MD5 checksum of a sequence data file. [How to obtain the MD5
 checksum values.](#supplement-md5)
 
-## Analysis  {#Analysis} 
+## Analysis  {#Analysis}
 
 [Alias](#Analysis_Alias)<a name="Analysis_Alias"></a>
 : Name of the analysis designated by the archive.This alias is used to reference metadata objects without accession numbers.
 
-[Title](#Analysis_Title)<a name="Analysis_Title"></a><span class="red">*</span>  
+[Title](#Analysis_Title)<a name="Analysis_Title"></a><span class="red">*</span>
 : Title of the analyis object.
 
-[Description](#Analysis_Description)<a name="Analysis_Description"></a><span class="red">*</span>  
+[Description](#Analysis_Description)<a name="Analysis_Description"></a><span class="red">*</span>
 : Describes the contents of the analysis.
 
-[Analysis Type](#Analysis_Type)<a name="Analysis_Type"></a><span class="red">*</span>  
+[Analysis Type](#Analysis_Type)<a name="Analysis_Type"></a><span class="red">*</span>
 : Select an Analysis type. Submit alignment data to Run in bam format.
 
 |  Analysis Type  |  Description  |
@@ -375,19 +380,19 @@ checksum values.](#supplement-md5)
 
 Select data files for an Analysis.
 
-[Run/Analysis](#Run_Analysis_for_Analysis)<a name="Run_Analysis_for_Analysis"></a>  
+[Run/Analysis](#Run_Analysis_for_Analysis)<a name="Run_Analysis_for_Analysis"></a>
 : Specify whether a data file belongs to the Run or Analysis. In the
 web submission form, this field is un-editable and is automatically
 filled according to the selected Run or Analysis. To upload metadata
 in tsv file, this field needs to be specified manually.
 
-[File Name](#Analysis_File_Name)<a name="Analysis_File_Name"></a><span class="red">*</span>  
+[File Name](#Analysis_File_Name)<a name="Analysis_File_Name"></a><span class="red">*</span>
 : The name of an analysis file.
 
-[Run/Analysis contains files](#Analysis_Run_Analysis_contains_files)<a name="Analysis_Run_Analysis_contains_files"></a><span class="red">*</span>  
+[Run/Analysis contains files](#Analysis_Run_Analysis_contains_files)<a name="Analysis_Run_Analysis_contains_files"></a><span class="red">*</span>
 : Select an Analysis to which the data file belongs.
 
-[File Type](#Analysis_File_Type)<a name="Analysis_File_Type"></a><span class="red">*</span>  
+[File Type](#Analysis_File_Type)<a name="Analysis_File_Type"></a><span class="red">*</span>
 : The analysis data file format.
 
 |  File Type  |  Description  |
@@ -404,5 +409,5 @@ in tsv file, this field needs to be specified manually.
 |  csv  |    |
 |  tsv  |    |
 
-[MD5 Checksum](#Analysis_MD5_Checksum)<a name="Analysis_MD5_Checksum"></a><span class="red">*</span>  
+[MD5 Checksum](#Analysis_MD5_Checksum)<a name="Analysis_MD5_Checksum"></a><span class="red">*</span>
 : MD5 checksum of a run data file. [How to obtain the MD5 checksum values.](/checksum-e.html)

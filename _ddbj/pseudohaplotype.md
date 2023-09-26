@@ -7,22 +7,29 @@ current_tab: data_categories
 lang: ja
 ---
 
-これまで全ゲノムシークエンスでは相同染色体のアリルを区別せず、コンセンサス配列として結果を得ることが一般的でした。しかし、ロングリード・シークエンス技術によりハプロイ （INSDC では pseudohaplotype と呼んでいます）を区別してシークエンスすることが可能になりました。Pseudohaplotype シークエンスは同じサンプルから二つのゲノムデータが得られるという特徴があるため、INSDC ではデータの登録方法を定めています。
+これまで全ゲノムシークエンスでは相同染色体のアリルを区別せず、コンセンサス配列として結果を得ることが一般的でした。しかし、ロングリード・シークエンス技術によりハプロイド（INSDC では pseudohaplotype と呼んでいます）を区別してシークエンスすることが可能になりました。Pseudohaplotype シークエンスは同じサンプルから二つのゲノムデータが得られるという特徴があるため、INSDC ではデータの登録方法を定めています。
 
-## pseudohaplotype  {#pseudohaplotype}
+## Pseudohaplotype  {#pseudohaplotype}
 
-DDBJ に pseudohaplotype アセンブリを登録する典型的な場合について説明します。まず、pseudohaplotype を区別するためにどちらかを Principal とし、もう片方を Alternate とします。絶対的な基準はありませんが、配列長やシークエンス精度などを基に登録者で選定してください。各 pseudohaplotype は同じサンプルに由来するため、共通の BioSample を使います。INSDC では BioProject と BioSample の組み合わせでアセンブリを管理しているため、組み合わせが pseudohaplotype 毎にユニークになるようにPrincipal と Alternate に対応する BioProject をそれぞれ作成します。さらにアンブレラ BioProject を作成し、両方の BioProject をまとめます。
+DDBJ に pseudohaplotype アセンブリを登録する典型的な場合について説明します。Pseudohaplotype を区別する方法はいくつかありますが、ここでは片方を Principal とし、もう片方を Alternate と呼ぶことにします。各 pseudohaplotype は同じサンプルに由来するため、共通の BioSample を使います。INSDC では BioProject と BioSample の組み合わせでアセンブリを管理しているため、組み合わせが pseudohaplotype 毎にユニークになるように Principal と Alternate に対応する BioProject をそれぞれ作成します。さらにアンブレラ BioProject を作成し、両方の BioProject をまとめます。
 
-Pseudohaplotype をシークエンスした生データを DRA に登録する場合、両方の pseudohaplotype のデータが混在している場合、BioProject はアセンブリとは別に DRA
-用のものを登録します。BioSample はサンプルがアセンブリと同じであれば、共通のものを使います。
+Pseudohaplotype をシークエンスした生データを DRA に登録する場合、両方の pseudohaplotype 由来のリードが混在している場合、BioProject はアセンブリとは別に DRA 用のものを登録します。BioSample はサンプルがアセンブリと同じであれば、共通のものを使います。
 
+Pseudohaplotype のデータセットが複数存在する場合 (例 生物種 A, B, C の pseudohaplotype 3セット)、各セット用の BioProject を作成し、共通のアンブレラ BioProject でまとめます。
 
 {% include image.html url="submission/pseudohaplotype.jpg" caption="pseudohaplotype データの登録" class="w600" %}
 
+### Pseudohaplotype アセンブリを区別する名称 {#naming}
+
+Pseudohaplotype アセンブリを区別するための名称については、以下のいずれかから登録者が判断します。
+
+* Principal pseudohaplotype/Alternate pseudohaplotype: どちらかの品質がもう一方よりも優れている場合、優れている方を Principal、もう片方を Alternate とします。
+* Pseudohaplotype 1/Pseudohaplotype 2: 品質が同等の場合。二つ以上の pseudohaplotype が存在する場合、Pseudohaplotype 3/Pseudohaplotype 4 のように数字を増やします。
+* Maternal pseudohaplotype/Paternal pseudohaplotype: 由来親が分かっている場合。
 
 ### BioProject  {#bioproject}
 
-Principal と Alternate pseudohaplotype に対応するプロジェクトをそれぞれ登録し、両者をまとめるアンブレラプロジェクトを登録します。
+Principal と Alternate pseudohaplotype に対応するプロジェクトをそれぞれ登録し、両者をまとめるアンブレラプロジェクトを登録します。[アンブレラプロジェクトを登録](/bioproject/submission.html#submit-umbrella-project)する際、Private comments to DDBJ staff に配下にリンクする primary BioProject のアクセッション番号とその区別を記入します (例 PRJDB1 Principal, PRJDB2 Alternate, PRJDB3 DRA)。
 
   - BioProject 1: Principal
       - title に pseudohaplotype のフェーズに関する情報を記載。例 Principal
@@ -55,14 +62,14 @@ Principal と Alternate pseudohaplotype をそれぞれ登録します。
       - [DBLINK](/ddbj/file-format.html#dblink) で BioProject 1
         (Principal) を参照します。
       - [ST\_COMMENT](/ddbj/file-format.html#comment)
-        に所定のコメントを記載します。  
+        に所定のコメントを記載します。
         Genome-Assembly-Data ST\_COMMENT: Diploid :: Principal
         Pseudohaplotype
   - Alternate pseudohaplotype
       - [DBLINK](/ddbj/file-format.html#dblink) で BioProject 2
         (Alternate) を参照します。
       - [ST\_COMMENT](/ddbj/file-format.html#comment)
-        に所定のコメントを記載します。  
+        に所定のコメントを記載します。
         Genome-Assembly-Data ST\_COMMENT: Diploid :: Alternate
         Pseudohaplotype
 

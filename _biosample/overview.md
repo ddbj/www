@@ -26,7 +26,7 @@ BioSample はサンプルに関する以下のような情報を含みます。
 - 採取された生物試料、例: 器官、組織、セルタイプ
 - 表現型 - 疾患や個人の医学的な情報など
 
-ヒトに関する情報とそれへのアクセスは適用される全ての倫理的な要請を満たしている必要があります。  
+ヒトに関する情報とそれへのアクセスは適用される全ての倫理的な要請を満たしている必要があります。
 DDBJ BioSample データベースはアクセスを制限する仕組みを持っていないため、プライバシーに抵触する可能性のあるヒト由来サンプルを登録することはできません。そのようなサンプルはアクセス制限の仕組みを備えた [JGA](/jga/index.html) に登録してください。
 
 ## サンプルの粒度 {#granularity}
@@ -49,12 +49,12 @@ DDBJ BioSample データベースはアクセスを制限する仕組みを持�
 
 ## サンプルの属性 {#sample-attributes}
 
-BioSample レコードを構成する主要部分は「サンプル属性」です。属性にはセルタイプ、採取地や表現型などの情報を記載することができ、対象となるサンプルを定義します。BioSample の属性は構造化された「属性名:値」 (name:value) の組として表現されます。例) tissue:liver  
-BioSample は属性名にコントロールされた語句 ("辞書") を使うことをサポートしており、サンプル種別に応じた属性セットをパッケージとして提供しています。  
+BioSample レコードを構成する主要部分は「サンプル属性」です。属性にはセルタイプ、採取地や表現型などの情報を記載することができ、対象となるサンプルを定義します。BioSample の属性は構造化された「属性名:値」 (name:value) の組として表現されます。例) tissue:liver
+BioSample は属性名にコントロールされた語句 ("辞書") を使うことをサポートしており、サンプル種別に応じた属性セットをパッケージとして提供しています。
 
 ## サンプルパッケージ {#package}
 
-BioSample ではサンプルや配列種別に応じた必須・任意属性から構成されるパッケージを提供し、サンプル記載の充実化と属性名の標準化を促しています。  
+BioSample ではサンプルや配列種別に応じた必須・任意属性から構成されるパッケージを提供し、サンプル記載の充実化と属性名の標準化を促しています。
 
 * パッケージの選び方は[サンプル情報](/biosample/sample-info.html#Sample-type)を参照してください。
 * パッケージで提供されるサンプル属性は[サンプル属性](/biosample/attribute.html)を参照してください。
@@ -63,16 +63,36 @@ BioSample ではサンプルや配列種別に応じた必須・任意属性か�
 
 ## 生物名  {#organism}
 
-BioSample の [organism](/biosample/attribute.html?all=all#organism) に記載する生物名については「[生物名について](/ddbj/organism.html)」をご覧ください。  
+BioSample の [organism](/biosample/attribute.html?all=all#organism) に記載する生物名については「[生物名について](/ddbj/organism.html)」をご覧ください。
 関連するお知らせ: [生物の株情報を管理する方法が変更になります](/news/ja/2013-12-13.html)
+
+## 採取場所と日時 {#spatio-temporal}
+
+[International Nucleotide Sequence Database Collaboration (INSDC)](https://www.insdc.org/)は塩基配列データの品質とサンプルのトレーサビリティを向上させるため、サンプルの「採取場所」と「採取日時」の記載を必須化しています。[INSDC spatio-temporal annotation standards](https://www.insdc.org/news/spatio-temporal-annotation-policy-18-11-2021/)
+
+* 採取場所: 配列データを得たサンプルを採取した場所。データの解釈において意味のある場所を記載します。少なくとも国や海洋を記載します。BioSample の [geo_loc_name](/biosample/attribute.html#geo_loc_name) と DDBJ の [country](/ddbj/qualifiers.html#country) が対応する項目になります。
+* 採取日時: 配列データを得たサンプルを採取した日時。データの解釈において意味のある日時を記載します。少なくとも最も近い「年」を所定の書式で記載します。BioSample と DDBJ の [collection_date](/biosample/attribute.html#collection_date) が対応する項目になります。
+
+これらの情報を提供できない場合（例 宿主個人の特定に繋がりかねない病原菌サンプルの採取情報）、および、提供することが適切ではない場合（例 研究室で飼育しているモデル動物や確立された細胞株）、[INSDC missing value reporting standards](https://www.insdc.org/submitting-standards/missing-value-reporting/) で定めている適用除外理由 (exemption term) を使って提供できない理由を記載するか、もしくは、従来通り [missing value](/biosample/submission.html#missing-value-reporting) を記載します。
+
+### 採取場所・日時に関する質問と記載例 {#spatio-temporal-faq}
+
+* [系統保存機関から分譲された菌株を研究室で培養して得たサンプルの記載方法は？](/faq/ja/sample-from-collection.html)
+* [自然環境ではない場所 (例 動物園や植物園) で生物種を採集した場合の記載方法は？](/faq/ja/sample-from-none-natural-environment.html)
+* [サンプルを太平洋で2010年に採取した場合の記載方法は？](/faq/ja/sample-from-pacific-ocean-2010.html)
+* [日本の静岡県で2023年5月5日 14:12:55 にサンプルを採取した場合の記載方法は？](/faq/ja/location-and-date-of-sample.html)
+* [古代 DNA サンプルの採取地と日付の記載方法は？](/faq/ja/ancient-dna-sample.html)
+* [場所と日付を提供できないケースで、適切な適用除外理由 (exemption term) が見当たらない場合は？](/faq/ja/appropriate-exemption-not-found.html)
+* [配列データは INSDC に登録するが、全てのメタデータは2年後まで提供しない、と INSDC の新しいガイドライン策定前にコンソーシアムで合意しています。どうすればよいでしょうか？](/faq/ja/data-agreement-established-pre-2023.html)
+* [採取場所と日時のうち、片方しか記載できない場合は？](/faq/ja/either-one-of-location-and-date-cannot-be-described.html)
 
 ## ゲノムアセンブル用サンプル {#genome-assembly-sample}
 
 ### パッケージ  {#package}
 
 [DDBJ のゲノム配列](/ddbj/mss.html)は一つの BioProject と一つの BioSample にリンクしなければならないという制約があります。この制約はゲノムアセンブリを管理するため、INSDC で設けられています。
-ゲノムアセンブリに使用したサンプルは以下のパッケージで BioSample に登録します。  
-[MIxS](/biosample/sample-info.html#mixs) パッケージの使用が適切ではないサンプルの場合、生物種に応じた Standard パッケージを使用します。  
+ゲノムアセンブリに使用したサンプルは以下のパッケージで BioSample に登録します。
+[MIxS](/biosample/sample-info.html#mixs) パッケージの使用が適切ではないサンプルの場合、生物種に応じた Standard パッケージを使用します。
 
 - 単離培養された原核生物の場合: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)](/biosample/sample-info.html#Sample-type)、もしくは、[Microbe](/biosample/sample-info.html#Sample-type)
 - 真核生物の場合: [Eukaryotic Genomic Sequences (MIGS.eu)](/biosample/sample-info.html#Sample-type)、もしくは、生物種に応じた Standard パッケージの [Model organism or animal](/biosample/sample-info.html#Sample-type)、[Invertebrate](/biosample/sample-info.html#Sample-type)、[Plant](/biosample/sample-info.html#Sample-type)
@@ -86,15 +106,15 @@ BioSample の [organism](/biosample/attribute.html?all=all#organism) に記載�
 * サンプル間でゲノム配列が同じものとして扱っている場合
 * ゲノム配列以外に遺伝子発現などの定量的なデータが結び付かない場合
 
-登録例  
+登録例
 
 * 同じ試料から異なる日に抽出した各ゲノム DNA の登録。抽出日の情報は BioSample 属性として記載する必要はありません。記載する場合、DRA Experiment や BioSample の description に記載します。
 * 同じ試料から調製した Illumina と PacBio 用の各ゲノム DNA の登録。BioSample は分けずに、DRA Experiment で分けます。
 
-異なるサンプルを別々に登録する場合、異なる BioSample をまとめる派生 BioSample (derived BioSample) をゲノム配列用に一つ登録します。  
-例えば、オスとメスに由来するリードをそれぞれ DRA に登録し、両者のリードを使ってゲノムをアセンブルした場合、オスとメスそれぞれの BioSample アクセッション番号を引用した派生 BioSample を一つ登録し、ゲノム配列にリンクします。    
-派生サンプルの元となるアクセッション番号は、派生サンプルの derived_from 属性に "This sample group is the combination of the [由来サンプル数] individual BioSamples: [BioSample アクセッション番号]" という書式で示します。   
-例: This sample group is the combination of the 2 individual BioSamples: SAMN12623203 and SAMN12623206    
+異なるサンプルを別々に登録する場合、異なる BioSample をまとめる派生 BioSample (derived BioSample) をゲノム配列用に一つ登録します。
+例えば、オスとメスに由来するリードをそれぞれ DRA に登録し、両者のリードを使ってゲノムをアセンブルした場合、オスとメスそれぞれの BioSample アクセッション番号を引用した派生 BioSample を一つ登録し、ゲノム配列にリンクします。
+派生サンプルの元となるアクセッション番号は、派生サンプルの derived_from 属性に "This sample group is the combination of the [由来サンプル数] individual BioSamples: [BioSample アクセッション番号]" という書式で示します。
+例: This sample group is the combination of the 2 individual BioSamples: SAMN12623203 and SAMN12623206
 
 登録例
 
@@ -114,13 +134,13 @@ MAG も一つの BioSample にリンクする必要があるため、複数サ�
 
 ### ヒトを対象とした研究データの登録について  {#submission-of-human-data}
 
-個人に由来するデータ（ヒトデータ）を DDBJ センターが運営するデータベースに登録する場合、[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)を遵守してください。  
+個人に由来するデータ（ヒトデータ）を DDBJ センターが運営するデータベースに登録する場合、[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)を遵守してください。
 
 注意: プライバシー侵害の恐れのないヒトサンプルにのみ使用してください。登録者の責任において、適用される法律や指針に従い、由来個人を直接特定できるような情報を取り除いてください。データを保護する必要がある場合、アクセス制限の仕組みを備えた [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) にヒトデータを登録してください。
 
 ### サンプル属性  {#attribute}
 
-ヒト (*Homo sapiens*) サンプルでは [Human](/biosample/sample-info.html#Sample-type) パッケージで登録します。以下はヒトサンプルの種類に応じた登録ガイドラインになります。属性の説明は[こちらのページ](/biosample/attribute.html?all=all)を参照してください。    
+ヒト (*Homo sapiens*) サンプルでは [Human](/biosample/sample-info.html#Sample-type) パッケージで登録します。以下はヒトサンプルの種類に応じた登録ガイドラインになります。属性の説明は[こちらのページ](/biosample/attribute.html?all=all)を参照してください。
 
 #### 個人由来試料 {#human-subject}
 
@@ -133,25 +153,25 @@ isolate には匿名化された subject id を記載します。
 
 ### 初代培養細胞 {#primary}
 
-sample_type に初代培養細胞 (primary cell) であることを記載します。    
+sample_type に初代培養細胞 (primary cell) であることを記載します。
 sample_type: primary cell
 
 ### iPS 細胞 {#ips}
 
 iPS 細胞は分化させてから使用されることが一般的であり、分化前後の情報が重要になります。
-そのため上記に加え、以下の属性情報を追加します。分化させてから使用している ES 細胞等でも同様です。    
+そのため上記に加え、以下の属性情報を追加します。分化させてから使用している ES 細胞等でも同様です。
 複数回の分化を経ている複雑な場合、description にフリーテキストで説明を記載します。
 
 #### 個人由来試料 {#ips-human-subject}
 
-cell_type に分化に関する情報を記載します。    
+cell_type に分化に関する情報を記載します。
 例 cell_type： iPS cell derived megarocyte cell
 
 #### 細胞株 {#ips-cell-line}
 
-cell_type に分化に関する情報を記載します。    
-例 cell_type： iPS cell (cell_line:253G1) derived megarocyte cell    
-biomaterial_provider に iPS 細胞の入手元を記載します。    
+cell_type に分化に関する情報を記載します。
+例 cell_type： iPS cell (cell_line:253G1) derived megarocyte cell
+biomaterial_provider に iPS 細胞の入手元を記載します。
 例 biomaterial_provider： ATCC
 
 ## 薬剤感受性表  {#antibiogram}

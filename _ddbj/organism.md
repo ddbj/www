@@ -101,33 +101,53 @@ DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/w
 
 <img src="/assets/images/ddbj/organism-j.png" alt="" title="" class="w600">
 
-a. 人工的に構築した配列  
-: Category は "Artificially constructed or synthesized sequence" となりますので、メニューから選択してください。<br>[4. 人工的に構築した配列](#syn) を ご参照の上、生物名 (scientific name) を記載してください。
+### a. 人工的に構築した配列  
+Category は "Artificially constructed or synthesized sequence" となりますので、メニューから選択してください。    
+[4. 人工的に構築した配列](#syn) を ご参照の上、生物名 (scientific name) を記載してください。
 
-b. ウイルス  
-: 画面上で生物名検索を行います。結果一覧から該当するウイルス名を選択します。選択した生物名が scientific name 入力ボックスに反映されます。<br>病原性ウイルスの場合には Category で "Pathogenic virus" を選択してください。<br>strain、serotype、collection_date (採取した年月日)、country (採取した地名)、host などを各 qualifier に記載してください。
+### b. ウイルス  
+画面上で生物名検索を行います。結果一覧から該当するウイルス名を選択します。選択した生物名が scientific name 入力ボックスに反映されます。
+[/isolate](/ddbj/qualifiers.html#isolate) (または [/strain](/ddbj/qualifiers.html#strain)、
+[/serotype](/ddbj/qualifiers.html#serotype)、
+[/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、
+[/country](/ddbj/qualifiers.html#country) (採取した地名)、
+[/host](/ddbj/qualifiers.html#host) などを各 qualifier に記載してください。    
+病原性ウイルスの場合には Category で "Pathogenic virus" を選択してください。    
 
-c. 三名法などで記載する場合  
-: Category は "Valid subspecies or variety not registered in taxonomy database" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[三名法](#trinominal)について ご参照の上、scientific name 入力ボックスには subspecies、variety または、それに準ずる strain などを含めて生物名を記載してください。
+### c. 三名法などで記載する場合  
+Category は "Valid subspecies or variety not registered in taxonomy database" となりますので、メニューから選択してください。    
+下記、生物名記載の各論より、[三名法](#trinominal)について ご参照の上、scientific name 入力ボックスには subspecies、variety または、それに準ずる strain などを含めて生物名を記載してください。    
 
-d. taxonomy database に既存  
-: 画面上で生物名検索を行います。結果一覧から該当する生物名を選択します。<br>Category を選択する必要はありません。
+### d. taxonomy database に既存  
+画面上で生物名検索を行います。結果一覧から該当する生物名を選択します。    
+Category を選択する必要はありません。
 
-e. 環境サンプル  
-: Category は "Obtained by direct molecular isolation from environmental sample" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[3. 環境サンプル](#env) を ご参照の上、生物名を scientific name 入力ボックスに記載してください。
+### e. 環境サンプル  
+Category は "Obtained by direct molecular isolation from environmental sample" になります。メニューから選択してください。    
+下記、生物名記載の各論より、[3. 環境サンプル](#env) を ご参照の上、生物名を scientific name 入力ボックスに記載してください。    
+[/isolation_source](/ddbj/qualifiers.html#isolation_source)、
+[/isolate](/ddbj/qualifiers.html#isolate) (または [/clonen](/ddbj/qualifiers.html#clone)、
+[/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、
+[/country](/ddbj/qualifiers.html#country) (採取した地名)、
+[/host](/ddbj/qualifiers.html#host) などを各 qualifier に記載してください。    
 
-f. 種同定不能な場合の仮称、または、提唱準備中の新種  
-: 種同定をしない場合、Category は "Species is not identified" となりますので、メニューから選択してください。<br>提唱準備中の新種の場合、Category は "Proposing the name for the novel species" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[2. 種が同定されていない場合](#unidentified) を ご参照の上、生物名を scientific name 入力ボックスに記載してください。
 
-g. 登録済で非公開 (検索不可) の場合  <a name="private"></a>
-: Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。<br>以前のご登録と同様の学名、もしくは、仮称を記載してください。
+### f. 種同定不能な場合の仮称、または、提唱準備中の新種  
+種同定をしない場合、Category は "Species is not identified" となりますので、メニューから選択してください。    
+提唱準備中の新種の場合、Category は "Proposing the name for the novel species" となりますので、メニューから選択してください。    
+下記、生物名記載の各論より、[2. 種が同定されていない場合](#unidentified) を ご参照の上、生物名を scientific name 入力ボックスに記載してください。
 
-h. taxonomy database に未登録で、学名が確立している場合  
-: Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。<br>下記、生物名記載の各論より、[1. 種が同定されている場合](#species) をご参照の上、生物名を scientific name 入力ボックスに記載してください。
+### g. 登録済で非公開 (検索不可) の場合  <a name="private"></a>
+: Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。    
+以前のご登録と同様の学名、もしくは、仮称を記載してください。
+
+### h. taxonomy database に未登録で、学名が確立している場合  
+: Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。    
+下記、生物名記載の各論より、[1. 種が同定されている場合](#species) をご参照の上、生物名を scientific name 入力ボックスに記載してください。
 
 ## 生物名記載の各論  {#organism_name}
 
-一部、特殊な例外もありますが、DDBJ への登録の際における「生物名」記載についての考え方を以下に挙げています。  
+一部、特殊な例外もありますが、DDBJ への登録の際における「生物名」記載についての考え方を以下に挙げています。    
 塩基配列データの登録に際して taxonomy database への登録申請が必要な際は、[各参考情報](#items) もお知らせください。
 
 ### 1. 種が同定されている場合 {#species} 
@@ -162,7 +182,7 @@ Escherichia coli K-12</code></pre>
 
 #### 微生物ゲノム  {#genome}
 
-以前は 微生物などで全ゲノム規模の配列を登録する場合、strain などを organism
+以前は 微生物などで全ゲノム規模の配列を登録する場合、strain などを organism 
 に含めて記載していましたが、現在は学名のみの記載を原則としています。  
 strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
 
@@ -229,10 +249,6 @@ genus などの上位ランクも含めて taxonomy database に存在しない�
 taxonomy database の間違いなどを発見された場合は、[ご連絡](/contact-ddbj.html#to-ddbj)ください。    
 学名のスペルミスなどに関しましては修正します。    
     
-taxonomy database は、生物名の表記を統一することに主眼をおいて構築されており、生物種の命名、および、分類学上の権威となるものではありません。    
-採用されている生物名とその lineage は、登録者の分類学的な主張、および、分類学的に普及している内容とは異なる場合があります。    
-詳細に関しましては、[taxonomy database の説明](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite )をご一読ください。    
-    
 いわゆる combinatio nova を含め、再分類に関連して提唱する準備段階の場合、その主張が論文を公表して認められるまで、
 taxonomy database 上で名称の修正を実施することはできません。    
 そのため、現状の taxonomy database に準拠した学名を用います。    
@@ -242,6 +258,7 @@ taxonomy database における scientific name, synonym あるいは、lineage �
 可能な限り、異論の根拠となる文献をご提示ください。    
 専門的な内容になると思われますので、単に URL あるいは、文献を示すのみではなく、どうあるべきかについて英文にてコメントを記載してください。    
 ただし、lineage 解釈などの問題は、データの一意性を担保するため、諸説の１つを採用する方針であり、ご希望に添えないこともあり得ます。    
+詳細に関しましては、[taxonomy database の説明](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite )をご一読ください。    
     
 登録時に以下の参考情報を可能な範囲でお知らせください。    
 
@@ -260,38 +277,54 @@ taxonomy database における scientific name, synonym あるいは、lineage �
 
 種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、
 "\<genus name\> sp." などとして記載します。    
-属より上位ランクの場合、判明している範囲の lineage に細菌ならば "bacterium"、
-古細菌ならば、 "archaeon" を付加した名前を記載します。    
-真核生物の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
+属より上位ランクの場合、判明している範囲の lineage に**細菌**ならば "bacterium"、
+**古細菌**ならば、 "archaeon" を付加した名前を記載します。    
 
 書式
 
 - \<genus name> sp. # 原核生物
-- \<genus (or upper) name> sp. # 真核生物
 - \<family (or upper) name> bacterium
 - \<family (or upper) name> archaeon
 
 例
 
 <pre><code>Acetobacter sp.
-Aspergillaceae sp.
 Acetobacteraceae bacterium
 Methanomicrobiales archaeon</code></pre>
 
-登録の際には「生物名」とともに[識別子](/ddbj/identifiers.html)、多くの場合、
+**真核生物**の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
+
+書式
+
+- \<genus (or upper) name> sp. # 真核生物
+
+例
+
+<pre><code>Aspergillaceae sp.
+</code></pre>
+
+登録の際には「生物名」とともに [識別子](/ddbj/identifiers.html)、多くの場合、
 [/strain](/ddbj/qualifiers.html#strain), 
 [/isolate](/ddbj/qualifiers.html#isolate) など該当する qualifier とあわせて source feature に記載します。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-真核生物 (カビ、酵母相当の単細胞真菌以外) の場合、あるいは、単細胞の微生物でも全ゲノム規模の配列に該当する場合、
+**真核生物 (カビ、酵母相当の単細胞真菌以外)** の場合、あるいは、単細胞の微生物でも**全ゲノム規模の配列に該当する場合**、
 判明している範囲の lineage (多くの場合 属名) を用いて、"\<genus name\> sp."などとした上で、
-[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。  
+[識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。    
 「生物名」に含めている場合でも、[識別子](/ddbj/identifiers.html)を [/strain](/ddbj/qualifiers.html#strain) など該当する qualifier に記載してください。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Euglena sp. CR123"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="CR123"</code></pre>  
+
+通常、**多細胞生物**は "\<genus name\> sp." とのみの記載では登録できません。     
+[識別子](/ddbj/identifiers.html) (多くの場合、isolate の名称) を「生物名」に含めて記載しています。    
+「生物名」に含めている場合でも、[識別子](/ddbj/identifiers.html)を [/isolate](/ddbj/qualifiers.html#isolate) など該当する qualifier に記載してください。
+
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Oscinella sp. AB_575"
+                     /<a href="/ddbj/qualifiers.html#isolate">isolate</a>="AB_575"</code></pre>  
+
 
 <span class="red">**仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録してください。**</span>    
 
@@ -301,24 +334,18 @@ Methanomicrobiales archaeon</code></pre>
 そのまま記載して登録することが可能です。    
 
 ウイルス以外は <span class="red">**valid publication 前の段階で「正式な学名と混同するような名称」を記載することはできません。**</span>    
-新学名提唱のための準備段階の場合、不明と類似の扱いで学名が確定するまではデータとの対応関係を一意に保つため、仮称を設定することを原則としています。    
+新学名提唱のための準備段階の場合、不明と類似の扱いで学名が確定するまではデータとの対応関係を一意に保つため、
+仮称を設定することを原則としています。    
 
 学名提唱中のため種名が未確定の場合、「生物名」の一意性を保つために、判明している範囲の lineage、多くの場合、
-属名を用いて、"\<genus name\> sp."などとした上で、[識別子](/ddbj/identifiers.html) (多くの場合、strain 名など) を並記した仮称を割り当てて taxonomy database に登録します。    
-この運用により、例えば、異なる生物が同じものと混同されるなどの混乱を避けることができます。    
-そのため、<span class="red">**学名が確定するまでの間、その仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録**</span>してください。    
-あくまで当該生物由来サンプルと登録データに関する措置であり、登録者が執筆中の論文他において、どのような名称を用いるか、ということとは別の問題です。
-
-このような taxonomy database に登録された一時的な仮称は、正しい学名が確認できた段階で、その学名に更新変更します。    
-種を報告する論文が公開された際に、論文情報更新、生物名修正、データ公開を依頼するご連絡をお願いいたします。    
-更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。    
+属名を用いて、"\<genus name\> sp."などとした上で、
+[識別子](/ddbj/identifiers.html) (多くの場合、strain 名など) を並記した仮称を割り当てて taxonomy database に登録します。    
+     
+**原核生物**の場合、 strain 毎を基本に仮称を割り当てます。    
 
 書式
 
-- \<genus name> sp. \<strain name>
-- \<family (or upper) name> bacterium \<strain name>
 - \<genus name> sp. \<strain name> # 原核生物
-- \<genus (or upper) name> sp. \<strain name> # 真核生物
 - \<family (or upper) name> bacterium \<strain name>
 - \<family (or upper) name> archaeon \<strain name>
 
@@ -327,13 +354,35 @@ Methanomicrobiales archaeon</code></pre>
 <pre><code>Acetobacter sp. ITDI2.1
 Acetobacteraceae bacterium ITDI2.1</code></pre>
 
+
+**真核生物**の場合、種の候補単位 (OTU) 毎を基本に仮称を割り当てますが、状況に応じて、strain または isolate 毎としても構いません。    
+
+書式
+
+- \<genus (or upper) name> sp. \<OTU ID> # 真核生物
+
+例
+
+<pre><code>Oscinella sp. 1-AB-2020
+</code></pre>
+
+
+この運用により、例えば、異なる生物が同じものと混同されるなどの混乱を避けることができます。    
+そのため、<span class="red">**学名が確定するまでの間、その仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録**</span>してください。    
+あくまで当該生物由来サンプルと登録データに関する措置であり、登録者が執筆中の論文他において、どのような名称を用いるか、ということとは別の問題です。
+
+このような taxonomy database に登録された一時的な仮称は、正しい学名が確認できた段階で、その学名に更新変更します。    
+種を報告する論文が公開された際に、論文情報更新、生物名修正、データ公開を依頼するご連絡をお願いいたします。    
+更新依頼は、[登録データの修正・更新](/ddbj/update.html)をご参照ください。    
+
+
 登録の際には、「生物名」に含めた下位の rank、[strain](/ddbj/qualifiers.html#strain) など該当する
 qualifier をあわせて source feature に記載します。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp. ITDI2.1"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
+登録時に以下の参考情報を可能な範囲でお知らせください。
 
 ---
 **taxonomy database 登録申請のための参考情報**
@@ -348,7 +397,7 @@ taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から�
 
 ### 3. 環境サンプル {#env}
 
-環境サンプル (environmental sample) とは、PCR、DGGE、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来する配列です。  
+環境サンプル (environmental sample) とは、PCR、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来する配列です。    
 よく混同されますが、<span class="red">環境サンプルとは「野生型」という意味ではありません。</span>  
 環境サンプルの定義については[環境サンプルの説明](/ddbj/env.html)もご参照ください。  
 <span class="red">環境サンプル由来の混合培養系も、環境サンプルと扱います。</span>
@@ -376,7 +425,10 @@ uncultured Aspergillaceae</code></pre>
 
 環境サンプルの場合、必須な
 [/environmental_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、および、
-[/isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。
+[/isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。     
+[/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日) と 
+[/country](/ddbj/qualifiers.html#country) (採取した地名)、
+[/host](/ddbj/qualifiers.html#host) (宿主) の記載も重要です。
 [識別子](/ddbj/identifiers.html) として、[/isolate](/ddbj/qualifiers.html#isolate) または [/clone](/ddbj/qualifiers.html#clone) qualifier を記載します。
 
 

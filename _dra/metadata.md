@@ -9,101 +9,106 @@ lang: ja
 
 ## オブジェクト  {#objects}
 
-メタデータにはシークエンスデータがどのようにして得られたのかが記載されています。  
+メタデータにはシークエンスデータがどのようにして得られたのかが記載されています。
 メタデータは複数のオブジェクトから構成され、各オブジェクトは [XML スキーマ](https://github.com/ddbj/pub/tree/master/docs/dra)で定義され、相互に関連付けられています。
 
 データモデル図
 {% include image.html url="books/sra_object.png" caption="データモデル図" class="w500" %}
 
-[Submission](#Submission){: #Submission-obj}  
+[Submission](#Submission){: #Submission-obj}
 : 公開予定や登録者といった管理情報を記載し、同時に登録する DRA オブジェクトをまとめる。
 
-[BioProject](#BioProject){: #BioProject-obj}  
+[BioProject](#BioProject){: #BioProject-obj}
 : 研究プロジェクト。外部データベース。
 
-[BioSample](#BioSample){: #BioSample-obj}  
+[BioSample](#BioSample){: #BioSample-obj}
 : シークエンスデータが得られた生物学的なサンプル。外部データベース。
 
-[Experiment](#Experiment){: #Experiment-obj}  
+[Experiment](#Experiment){: #Experiment-obj}
 : サンプルから構築したライブラリーとシークエンス機種に関する情報を記載。Experiment は１つの BioProject と１つの BioSample を参照します。
 複数の Experiment は１つの BioSample を参照することができます。１つの Experiment が複数の BioSample を参照することはできません。
 
-[Run](#Run){: #Run-obj}  
+[Run](#Run){: #Run-obj}
 : シークエンス用ライブラリー (Experiment) に由来するデータファイルをまとめます。Experiment を介してデータファイルは特定のサンプルにリンクされます。
 Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。
 ペアードデータファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。
 
-[Analysis](#Analysis){: #Analysis-obj}  
+[Analysis](#Analysis){: #Analysis-obj}
 : Run データに関連するデータで、登録先がないデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。
 
 [メタデータの例](/dra/example.html)
 
 ## メタデータの項目 {#fields}
 
-必須<span class="red">*</span>  
+必須<span class="red">*</span>
 条件によって必須<span class="conditionally_required">*</span>
 
-## Submission  {#Submission} 
+## Submission  {#Submission}
 
 ### Center Name  {#Area_center-name}
 
 登録者が所属する組織に関する情報を記載します。
 
-[Center Name](#Submission_Center_Name)<a name="Submission_Center_Name"></a><span class="red">*</span>  
+[Center Name](#Submission_Center_Name)<a name="Submission_Center_Name"></a><span class="red">*</span>
 : 登録者が所属する組織の Center Name。[Center Name リスト](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/centerlist)。DDBJ/EBI/NCBI
-SRA にデータを登録する際にはこの Center Name が必要です。   
-メタデータ作成ツールはアカウント情報から Center Name を自動的に取得します。  
+SRA にデータを登録する際にはこの Center Name が必要です。
+メタデータ作成ツールはアカウント情報から Center Name を自動的に取得します。
 Center Name は登録の所有権を示すものではなく、SRA が運用上使用している略称です。所有権は [Submitter](#Area_submitter-submission) に記載される登録者にあります。
 
-[Lab Name](#Laboratory_Name)<a name="Laboratory_Name"></a><span class="red">*</span>  
+[Lab Name](#Laboratory_Name)<a name="Laboratory_Name"></a><span class="red">*</span>
 : 登録者が所属する研究室やグループ名。アカウントに登録されている "Lab/Group"、"Department (2)"、"Department (1)"、"Organization" がカンマで連結されたテキストが初期入力されます。
 
 ### Hold Until  {#Area_hold-until}
 
 公開方法を指定します。
 
-[Hold Until](#Hold_Until)<a name="Hold_Until"></a><span class="conditionally_required">*</span>  
+[Hold Until](#Hold_Until)<a name="Hold_Until"></a><span class="conditionally_required">*</span>
 : 公開予定日を設定します。最長で4年後まで設定でき、延長することができます。
 
-[Immediate Release](#Immediate_Release)<a name="Immediate_Release"></a><span class="conditionally_required">*</span>  
+[Immediate Release](#Immediate_Release)<a name="Immediate_Release"></a><span class="conditionally_required">*</span>
 : 即日公開。登録処理が完了次第、データが公開されます。
 
 ### Submitter  {#Area_submitter-submission}
 
-登録者の名前とメールアドレス。責任者 (principal investigator) を含めてください。登録に関する連絡は記入された全てのアドレスに対して行われます。  
+登録者の名前とメールアドレス。責任者 (principal investigator) を含めてください。登録に関する連絡は記入された全てのアドレスに対して行われます。
 登録者情報は公開されません。
 
-[Name](#Contact_Name)<a name="Contact_Name"></a><span class="red">*</span>  
+<div class="attention">
+DRA 登録に関するメールは Submission に記載されたメールアドレスに対して送信されます。
+D-way アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、DRA Submission のアドレスも変更する必要があります。
+</div>
+
+[Name](#Contact_Name)<a name="Contact_Name"></a><span class="red">*</span>
 : 登録者の名前。
 
-[E-mail](#Contact_E-mail)<a name="Contact_E-mail"></a><span class="red">*</span>  
+[E-mail](#Contact_E-mail)<a name="Contact_E-mail"></a><span class="red">*</span>
 : 登録者の電子メールアドレス。
 
-## BioProject  {#BioProject} 
+## BioProject  {#BioProject}
 
-[BioProject ID](#DRA_BioProjectID)<a name="DRA_BioProjectID"></a><span class="red">*</span>  
+[BioProject ID](#DRA_BioProjectID)<a name="DRA_BioProjectID"></a><span class="red">*</span>
 : [BioProject](/bioproject/index.html) に登録済みのプロジェクトから該当するものを１つ選択するか、新規に BioProject を登録します。BioProject の登録方法は [BioProject の登録](/bioproject/submission.html) を参照してください。
 
-## BioSample  {#BioSample} 
+## BioSample  {#BioSample}
 
-[BioSample ID](#DRA_BioSampleID)<a name="DRA_BioSampleID"></a><span class="red">*</span>  
+[BioSample ID](#DRA_BioSampleID)<a name="DRA_BioSampleID"></a><span class="red">*</span>
 : [BioSample](/biosample/index.html) に登録済みのサンプルから該当するものを選択するか、新たにサンプルを登録し BioSample の登録方法は [BioSample の登録](/biosample/submission.html)を参照してください。
 
 ## Experiment  {#Experiment}
 
-[Alias](#Experiment_Alias)<a name="Experiment_Alias"></a>  
+[Alias](#Experiment_Alias)<a name="Experiment_Alias"></a>
 : 自動的に Experiment に付けられる名前。アクセッション番号のないオブジェクトは Alias で参照されます。
 
-[BioSample Used](#BioSample_Used)<a name="BioSample_Used"></a><span class="red">*</span>  
+[BioSample Used](#BioSample_Used)<a name="BioSample_Used"></a><span class="red">*</span>
 : Experiment が参照している BioSample を選択します。
 
-[Title](#Experiment_Title)<a name="Experiment_Title"></a><span class="red">*</span>  
+[Title](#Experiment_Title)<a name="Experiment_Title"></a><span class="red">*</span>
 : 検索結果で表示される Experiment の短いタイトル。 自動的に "[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]" というタイトル（例 "Illumina HiSeq 2000 paired end sequencing of SAMD00025741"）が構築されます。 独自のタイトルを入力する場合は、Experiment の内容をタブ区切りテキストファイルとしてダウンロードし、Title カラムにユニークなタイトルを入力しアップロードします。
 
-[Library Name](#Library_Name)<a name="Library_Name"></a>  
+[Library Name](#Library_Name)<a name="Library_Name"></a>
 : ライブラリーの名前。
 
-[Library Source](#Library_Source)<a name="Library_Source"></a><span class="red">*</span>  
+[Library Source](#Library_Source)<a name="Library_Source"></a><span class="red">*</span>
 : ライブラリー構築に用いた試料。
 
 | Library Source     | Description                                                                        |
@@ -116,7 +121,7 @@ Center Name は登録の所有権を示すものではなく、SRA が運用上�
 | VIRAL RNA          | Viral RNA.                                                                         |
 | OTHER              | Other, unspecified, or unknown library source material.                            |
 
-[Library Selection](#Library_Selection)<a name="Library_Selection"></a><span class="red">*</span>  
+[Library Selection](#Library_Selection)<a name="Library_Selection"></a><span class="red">*</span>
 : シークエンスに用いたライブラリを構築するためのサンプルの選別や濃縮方法。
 
 | Library Selection                      | Description                                                                                                                                                                                        |
@@ -151,7 +156,7 @@ Center Name は登録の所有権を示すものではなく、SRA が運用上�
 | other                                  | Other library enrichment, screening, or selection process.                                                                                                                                         |
 | unspecified                            | Library enrichment, screening, or selection is not specified.                                                                                                                                      |
 
-[Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>  
+[Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>
 : ライブラリーの構築手法。
 
 | Library Strategy                        | Description                                                                                                                                                                                                                                                               |
@@ -193,14 +198,14 @@ Center Name は登録の所有権を示すものではなく、SRA が運用上�
 | Synthetic-Long-Read                     | binning and barcoding of large DNA fragments to facilitate assembly of the fragment                                                                                                                                                                                       |
 | Other                                   | Library strategy not listed.                                                                                                                                                                                                                                              |
 
-[Library Construction Protocol](#Library_Construction_Protocol)<a name="Library_Construction_Protocol"></a>  
+[Library Construction Protocol](#Library_Construction_Protocol)<a name="Library_Construction_Protocol"></a>
 : DNA の断片化 (DNA fragmentation)、アダプター配列などのライゲーション (DNA ligation) や濃縮
 (DNA enrichment) 方法をフリーテキストで記載します。キットを使用した場合はキットの名前とバージョン (あれば) を含めます (例 Illumina Nextera DNA Library Preparation Kit)。
-  
+
 参考: Alnasir J, Shanahan HP. Investigation into the annotation of protocol sequencing steps in the sequence read archive. Gigascience. 2015 May 9;4:23. doi: 10.1186/s13742-015-0064-7. eCollection 2015. PMID: [25960871](https://www.ncbi.nlm.nih.gov/pubmed/25960871/) (Open Access)
 
-[Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>  
-: シークエンサの機種を選択します。Sequel IIe の場合、Sequel II を選択し、[Library Construction Protocol](#Library_Construction_Protocol) に Sequel IIe を使ったことを記載してください。 
+[Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>
+: シークエンサの機種を選択します。Sequel IIe の場合、Sequel II を選択し、[Library Construction Protocol](#Library_Construction_Protocol) に Sequel IIe を使ったことを記載してください。
 
 | Instrument Model                    |
 |---|
@@ -269,7 +274,7 @@ Center Name は登録の所有権を示すものではなく、SRA が運用上�
 | AB 3730 Genetic Analyzer            |
 | AB 3730xL Genetic Analyzer          |
 
-[Library Layout](#Library_Layout)<a name="Library_Layout"></a><span class="red">*</span>  
+[Library Layout](#Library_Layout)<a name="Library_Layout"></a><span class="red">*</span>
 : データファイル中のリード構成を選択します。リードの向き (Forward と Reverse) は Instrument から自動判定されます。2022年12月に Spot Type から Library Layout に表示名が変更になりました。
 
 | Spot Type | Description |
@@ -277,34 +282,34 @@ Center Name は登録の所有権を示すものではなく、SRA が運用上�
 | single | Single read |
 | paired | Paired reads |
 
-[Insert Size](#Insert_Size)<a name="Insert_Size"></a><span class="conditionally_required">*</span>  
+[Insert Size](#Insert_Size)<a name="Insert_Size"></a><span class="conditionally_required">*</span>
 : ペアエンドライブラリを構築した際のインサートサイズ。2022年12月に Nominal Length から Insert Size に表示名が変更になりました。
 
 ## Run  {#Run}
 
-[Alias](#Run_Alias)<a name="Run_Alias"></a>  
+[Alias](#Run_Alias)<a name="Run_Alias"></a>
 : 自動的に Run に付けられる名前。アクセッション番号のないオブジェクトは Alias で参照されます。
 
-[Title](#Run_Title)<a name="Run_Title"></a><span class="red">*</span>  
+[Title](#Run_Title)<a name="Run_Title"></a><span class="red">*</span>
 : Run の短いタイトル。ユニークなタイトルを付けます。 検索結果で表示される Run の短いタイトル。 自動的に "[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]" というタイトル（例 "Illumina HiSeq 2000 paired end sequencing of SAMD00025741"）が構築されます。 独自のタイトルを入力する場合は、[Run の内容をタブ区切りテキストファイルとしてダウンロード](/dra/submission.html#run)し、Title カラムにユニークなテキストを入力しアップロードします。
 
-[Experiment Referenced](#Experiment_Referenced)<a name="Experiment_Referenced"></a><span class="red">*</span>  
+[Experiment Referenced](#Experiment_Referenced)<a name="Experiment_Referenced"></a><span class="red">*</span>
 : Run が属する Experiment を選択します。
 
 ### Data files for Run  {#Area_data-files-for-run}
 
 Run に含めるデータファイルを選択します。
 
-[Run/Analysis](#Run_Analysis)<a name="Run_Analysis"></a>  
+[Run/Analysis](#Run_Analysis)<a name="Run_Analysis"></a>
 : データファイルが Run もしくは Analysis に属しているのかを指定します。ウェブ画面上では入力できず、属している Run もしくは Analysis の alias が選択されると自動的に入力されます。タブ区切りテキストファイルで入力する場合には、Run もしくは Analysis を入力します。
 
-[File Name](#File_Name)<a name="File_Name"></a><span class="red">*</span>  
+[File Name](#File_Name)<a name="File_Name"></a><span class="red">*</span>
 : シークエンスデータファイル名。DRA サーバにアップロードされているファイル名が自動的に入力されます。
 
-[Run/Analysis contains files](#Run_Analysis_contains_files)<a name="Run_Analysis_contains_files"></a><span class="red">*</span>  
+[Run/Analysis contains files](#Run_Analysis_contains_files)<a name="Run_Analysis_contains_files"></a><span class="red">*</span>
 : データファイルが属する Run を選択します。
 
-[File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>  
+[File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>
 : シークエンスデータのファイル形式。fastq ファイルの場合、リード長が一定かそうでないかに関わらず全て "fastq" を選択します。
 
 | File Type        | Description                                                                                                            |
@@ -315,7 +320,7 @@ Run に含めるデータファイルを選択します。
 | tab              | A tab-delimited table maps "SN in SQ line of BAM header" and "reference fasta file"                                    |
 | reference_fasta | Reference sequence file in single fasta format used to construct SRA archive file format. Filename must end with ".fa"  |
 
-[MD5 Checksum](#MD5_Checksum)<a name="MD5_Checksum"></a><span class="red">*</span>  
+[MD5 Checksum](#MD5_Checksum)<a name="MD5_Checksum"></a><span class="red">*</span>
 : データファイルの MD5 チェックサム値。[MD5 チェックサム値の取得方法](/checksum.html)
 
 ## Analysis  {#Analysis}
@@ -323,13 +328,13 @@ Run に含めるデータファイルを選択します。
 [Alias](#Analysis_Alias)<a name="Analysis_Alias"></a>
 : 自動的に Analysis に付けられる名前。アクセッション番号のないオブジェクトは Alias で参照されます。
 
-[Title](#Analysis_Title)<a name="Analysis_Title"></a><span class="red">*</span>  
+[Title](#Analysis_Title)<a name="Analysis_Title"></a><span class="red">*</span>
 : Analysis オブジェクトのタイトル。
 
-[Description](#Analysis_Description)<a name="Analysis_Description"></a><span class="red">*</span>  
+[Description](#Analysis_Description)<a name="Analysis_Description"></a><span class="red">*</span>
 : Analysis の内容を記述します。
 
-[Analysis Type](#Analysis_Type)<a name="Analysis_Type"></a><span class="red">*</span>  
+[Analysis Type](#Analysis_Type)<a name="Analysis_Type"></a><span class="red">*</span>
 : Analysis の種類を選択します。アライメントデータは Run に登録します。
 
 |  Analysis Type  |  Description  |
@@ -342,16 +347,16 @@ Run に含めるデータファイルを選択します。
 
 Analysis に含めるデータファイルを選択します。
 
-[Run/Analysis](#Run_Analysis_for_Analysis)<a name="Run_Analysis_for_Analysis"></a>  
+[Run/Analysis](#Run_Analysis_for_Analysis)<a name="Run_Analysis_for_Analysis"></a>
 : データファイルが Run もしくは Analysis に属しているのかを指定します。ウェブ画面上では入力できず、属している Run もしくは Analysis の alias が選択されると自動的に入力されます。タブ区切りテキストファイルで入力する場合には、Run もしくは Analysis を入力します。
 
-[File Name](#Analysis_File_Name)<a name="Analysis_File_Name"></a><span class="red">*</span>  
+[File Name](#Analysis_File_Name)<a name="Analysis_File_Name"></a><span class="red">*</span>
 : 解析データのファイル名。
 
-[Run/Analysis contains files](#Analysis_Run_Analysis_contains_files)<a name="Analysis_Run_Analysis_contains_files"></a><span class="red">*</span>  
+[Run/Analysis contains files](#Analysis_Run_Analysis_contains_files)<a name="Analysis_Run_Analysis_contains_files"></a><span class="red">*</span>
 : データファイルが属する Analysis を選択します。
 
-[File Type](#Analysis_File_Type)<a name="Analysis_File_Type"></a><span class="red">*</span>  
+[File Type](#Analysis_File_Type)<a name="Analysis_File_Type"></a><span class="red">*</span>
 : 解析データのファイル形式。
 
 |  File Type  |  Description  |
@@ -368,6 +373,6 @@ Analysis に含めるデータファイルを選択します。
 |  csv  |    |
 |  tsv  |    |
 
-[MD5 Checksum](#Analysis_MD5_Checksum)<a name="Analysis_MD5_Checksum"></a><span class="red">*</span>  
+[MD5 Checksum](#Analysis_MD5_Checksum)<a name="Analysis_MD5_Checksum"></a><span class="red">*</span>
 : Analysis データファイルの MD5 チェックサム値。[MD5 チェックサム値の取得方法](/checksum.html)
 
