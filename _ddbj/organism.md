@@ -84,7 +84,7 @@ taxonomy database の記載状況に対して異論がある場合は、[こち�
 - マーカー遺伝子の塩基配列の類似度は、分類の絶対的指標では ありません。
 - 現在の原核生物分類のスタンダードは全ゲノム配列によるANI (Average Nucleotide Identity) or dDDH (digital DNA-DNA hybridization) です。
 
-taxonomy database に登録されていない「生物名」の場合は、塩基配列の登録の際に、その由来生物名を DDBJ から taxonomy database に登録申請いたします。  
+taxonomy database に登録されていない「生物名」の場合は、塩基配列の登録の際に、その由来生物名を DDBJ から taxonomy database に登録申請いたします。    
 このとき taxonomy database に登録された「生物名」は塩基配列が公開された際に、公開されます。    
 
 DDBJ から当該塩基配列データが公開されるまでは、taxonomy database においても、「生物名」は公開されません。    
@@ -95,7 +95,6 @@ DDBJ から当該塩基配列データが公開されるまでは、taxonomy dat
 taxonomy database の記載状況に対して異論がある場合、[こちら](#objection)をご参照ください。    
 
 ## 生物名入力におけるカテゴリー (Category) について {#deasy} 
-
 DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/websub.html)では登録の際に、生物名入力において Category を選択します。    
 下図に Category を判断するためのフローチャートを示します。
 
@@ -105,6 +104,7 @@ DDBJ が運用している WWW 経由の[塩基配列登録システム](/ddbj/w
 Category は "Artificially constructed or synthesized sequence" となりますので、メニューから選択してください。    
 [4. 人工的に構築した配列](#syn) を ご参照の上、生物名 (scientific name) を記載してください。
 
+
 ### b. ウイルス  {#virus_D}
 画面上で生物名検索を行います。結果一覧から該当するウイルス名を選択します。選択した生物名が scientific name 入力ボックスに反映されます。
 [/isolate](/ddbj/qualifiers.html#isolate) (または [/strain](/ddbj/qualifiers.html#strain)、
@@ -112,15 +112,19 @@ Category は "Artificially constructed or synthesized sequence" となります�
 [/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、
 [/country](/ddbj/qualifiers.html#country) (採取した地名)、
 [/host](/ddbj/qualifiers.html#host) などを各 qualifier に記載してください。    
+下記、生物名記載の各論より、[ウイルス](#virus)について ご参照ください。    
 病原性ウイルスの場合には Category で "Pathogenic virus" を選択してください。    
+
 
 ### c. 三名法などで記載する場合  {#trinominal_D}
 Category は "Valid subspecies or variety not registered in taxonomy database" となりますので、メニューから選択してください。    
 下記、生物名記載の各論より、[三名法](#trinominal)について ご参照の上、scientific name 入力ボックスには subspecies、variety または、それに準ずる strain などを含めて生物名を記載してください。    
 
+
 ### d. taxonomy database に既存  {#existing_D}
 画面上で生物名検索を行います。結果一覧から該当する生物名を選択します。    
 Category を選択する必要はありません。
+
 
 ### e. 環境サンプル  {#env_D}
 Category は "Obtained by direct molecular isolation from environmental sample" になります。メニューから選択してください。    
@@ -137,9 +141,10 @@ Category は "Obtained by direct molecular isolation from environmental sample" 
 提唱準備中の新種の場合、Category は "Proposing the name for the novel species" となりますので、メニューから選択してください。    
 下記、生物名記載の各論より、[2. 種が同定されていない場合](#unidentified) を ご参照の上、生物名を scientific name 入力ボックスに記載してください。
 
+
 ### g. 登録済で非公開 (検索不可) の場合  {#private_D}
 Category は "The name is valid but not registered in taxonomy database" となりますので、メニューから選択してください。    
-<span class="red">**仮称を割り当てた生物に由来する別データを登録する際は、以前のご登録と共通の学名、もしくは、仮称を入力してください。**</span>    
+<span class="red">**同じ生物からのサンプルに由来する別データを登録する際は、以前のご登録と共通の学名、もしくは、仮称を入力してください。**</span>    
 
 
 ### h. taxonomy database に未登録で、学名が確立している場合  {#unregistered_D}
@@ -147,26 +152,24 @@ Category は "The name is valid but not registered in taxonomy database" とな�
 下記、生物名記載の各論より、[1. 種が同定されている場合](#species) をご参照の上、生物名を scientific name 入力ボックスに記載してください。    
 [配列が登録されたことがないと推定される種](#unregistered) もご参照ください。    
 
-## 生物名記載の各論  {#organism_name}
 
+## 生物名記載の各論  {#organism_name}
 一部、特殊な例外もありますが、DDBJ への登録の際における「生物名」記載についての考え方を以下に挙げています。    
 塩基配列データの登録に際して taxonomy database への登録申請が必要な際は、[各参考情報](#items) もお知らせください。
 
-## 1. 種が同定されている場合 {#species} 
 
+## 1. 種が同定されている場合 {#species} 
 「生物名」の登録は属・種の名称を用いた二名法による種の学名 (以下、種名)を原則としております。  
 種名は、動物、植物、細菌、ウイルスの各国際命名規約に従って記載されるべきです。
 
 例
-
 <pre><code>Homo sapiens</code></pre> 
 
-### 三名法 {#trinominal}
 
+### 三名法 {#trinominal}
 三名法、または、それに準じた strain などの分類単位で organism を記載する必要がある場合、亜種 subspecies 、変種 variety 、serotype 、strain などを生物名に含めます。
 
 例
-
 <pre><code>Pan troglodytes troglodytes
 Zea mays subsp. mays
 Oryza sativa Japonica Group
@@ -182,8 +185,8 @@ Escherichia coli K-12</code></pre>
                      /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
 </code></pre>
 
-### 微生物ゲノム  {#genome}
 
+### 微生物ゲノム  {#genome}
 以前は 微生物などで全ゲノム規模の配列を登録する場合、strain などを organism 
 に含めて記載していましたが、現在は学名のみの記載を原則としています。  
 strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
@@ -192,9 +195,9 @@ strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
 </code></pre>  
 
-### ウイルス  {#virus}
 
-ウイルスの場合は二名法ではありませんが、[the International Committee on Taxonomy of Viruses](https://ictv.global/ ) に従った種名を基本としています。    
+### ウイルス  {#virus}
+ウイルスは [the International Committee on Taxonomy of Viruses](https://ictv.global/ ) に従った種名を基本としています。    
 [識別子について](/ddbj/identifiers.html#virus) のウイルスに関するセクションをご参照ください。    
 <span class="red">2017年以前は、登録頻度の高い病原性ウイルスの場合、strain、serotype を生物名に含めて記載する運用を続けていましたが、この運用は新規登録分には適用されません。</span>    
 例
@@ -215,14 +218,15 @@ strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
                    /<a href="/ddbj/qualifiers.html#serotype">serotype</a>="H7N7"
 </code></pre>
 
-### 雑種  {#hybrid}
 
-雑種の場合、適宜、以下のように記載します。
+### 雑種  {#hybrid}
+雑種の場合、適宜、以下のように記載します。    
 
 例
 <pre><code>Rosa alba x Rosa corymbifera
 Malus x domestica
 Lilium hybrid division I</code></pre>
+
 
 ### taxonomy database で見つからない有効な学名  {#unregistered}
 **配列が登録されたことがないと推定される種**    
@@ -233,7 +237,7 @@ genus などの上位ランクも含めて taxonomy database に存在しない�
 ただし、既に登録されている「生物名」でも、配列データが公開されていない段階では taxonomy database においても検索できません。    
 <span class="red">注)</span> 塩基配列登録システムからの登録の際は、[生物名入力におけるカテゴリー (Category) について](#deasy) の 
 [g. 登録済で非公開 (検索不可) の場合](#private_D)をご参照ください。    
-
+    
 登録時に以下の参考情報を可能な範囲でお知らせください。    
 
 
@@ -246,7 +250,6 @@ genus などの上位ランクも含めて taxonomy database に存在しない�
 
 
 ---
-
 **taxonomy database の記載状況に対して異論がある場合**<a name="objection"></a>    
 taxonomy database の間違いなどを発見された場合は、[ご連絡](/contact-ddbj.html#to-ddbj)ください。    
 学名のスペルミスなどに関しましては修正します。    
@@ -276,7 +279,6 @@ taxonomy database における scientific name, synonym あるいは、lineage �
 ## 2. 種が同定されていない場合 {#unidentified} 
 
 ### 2-1. 種を同定しない場合   {#not-to-be-identified} 
-
 種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、
 "\<genus name\> sp." などとして記載します。    
 属より上位ランクの場合、判明している範囲の lineage に**細菌**ならば "bacterium"、
@@ -397,12 +399,13 @@ qualifier をあわせて source feature に記載します。
 
 ---
 
-## 3. 環境サンプル {#env}
 
+## 3. 環境サンプル {#env}
 環境サンプル (environmental sample) とは、PCR、あるいは、その他の方法で直接、分子を単離した環境上のサンプルに由来する配列です。    
 よく混同されますが、<span class="red">環境サンプルとは「野生型」という意味ではありません。</span>  
 環境サンプルの定義については[環境サンプルの説明](/ddbj/env.html)もご参照ください。  
 <span class="red">環境サンプル由来の混合培養系も、環境サンプルと扱います。</span>
+
 
 ### 3-1 環境プロファイル {#profile}
 環境サンプルの場合、原則、判明している範囲での lineage に "uncultured" を冠して「生物名」を記載します。    
@@ -479,8 +482,7 @@ MAG 相当の場合、
 [/environmental_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、
 [/isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier、および、
 [識別子](/ddbj/identifiers.html) としての [/isolate](/ddbj/qualifiers.html#isolate) qualifier に加えて、
-[/metagenome_source](/ddbj/qualifiers.html#metagenome_source) qualifier を記載します。
-[/metagenome_source](/ddbj/qualifiers.html#metagenome_source) qualifier には、
+[/metagenome_source](/ddbj/qualifiers.html#metagenome_source) qualifier に、
 [metagenome taxonomy nodes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169 ) にある操作的な名称から
 適宜、選択して、例えば soil metagenome などのサンプル分離源を反映したメタゲノム名を記載してください。
 [NCBI のサイト](https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes )にメタゲノム名の使い分けについて解説されています。
@@ -495,8 +497,8 @@ MAG 相当の場合、
 
 ---
 
-## 4. 人工的に構築した配列 {#syn} 
 
+## 4. 人工的に構築した配列 {#syn} 
 一般的には、"synthetic construct"、または、"eukaryotic synthetic construct" とのみ一律に記載します。    
 vector などの名称を、そのまま記載することも可能です。    
 特定遺伝子の配列のみを登録する場合、"synthetic construct" などを一律に記載してください。    
@@ -517,6 +519,7 @@ taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja )) から
 
 
 ---
+
 
 ## taxonomy database 登録申請のための参考情報 {#items} 
 
