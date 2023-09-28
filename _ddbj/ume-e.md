@@ -192,6 +192,7 @@ Click Check tab to move to Check panel.
 (10) By clicking Close button, the window, FFconv result, is closed.    
 
 ## Verification of contig submission files {#agpparser} 
+<span class="red">**[Caution] DDBJ currently terminated accepting new submissions.** </span>    
 
 ### Contig panel: verification of AGP file for contig submission  {#panel-2}
 

@@ -132,6 +132,7 @@ table tr:hover {
     see [Submission file format：Annotation file](/ddbj/file-format-e.html#annotation)
   - For the prokaryote genome, you [can create the files by using DFAST(DDBJ Fast Annotation and Submission Tool)](/ddbj/mss-e.html#mssdfast).
 - AGP file（only in case of [CON](/ddbj/con-e.html) entries)    
+  - <span class="red">**[Caution] DDBJ currently terminated accepting new submissions.** </span>
   - The tab delimited text file to construct CON sequence that contains the order, orientation, and type of each piece entry.    
   If nucleotide sequence can be assembled from an AGP file, you do not need to send a sequence file.    
     see [Submission file format：AGP file](/ddbj/file-format-e.html#agp) 

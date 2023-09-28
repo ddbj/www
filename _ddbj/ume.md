@@ -203,6 +203,7 @@ Check タブをクリックし、 Check パネル を表示させます。
 (10) Close をクリックしますと、この結果表示ウィンドウを閉じます。       
 
 ## Contig 登録用ファイルの検証 {#agpparser} 
+<span class="red">**\[重要\] CON データの新規登録は受け付けを終了しました。**</span>    
 
 ### Contig パネルの構成  {#panel-2}
 

@@ -125,6 +125,7 @@ table tr:hover {
     参照 [登録ファイル形式：アノテーションファイル](/ddbj/file-format.html#annotation)
   - 原核生物ゲノムの登録では、[DFAST(DDBJ Fast Annotation and Submission Tool) を利用し、アノテーションファイルを作成](/ddbj/mss.html#mssdfast)することができます。
 - AGP ファイル ([CON](/ddbj/con.html) エントリ登録時のみ必要)
+  - <span class="red">**\[重要\] CON データの新規登録は受け付けを終了しました。**</span>
   - CON エントリを構築する際のピースエントリの順序、種類、方向等が記載された、9列からなるタブ区切りテキストファイル。    
     AGP ファイルのみで配列が構築可能である場合は、配列ファイル送付は必要ありません。    
     参照 [登録ファイル形式： AGP ファイル](/ddbj/file-format.html#agp)
