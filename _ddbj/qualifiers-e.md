@@ -1512,7 +1512,7 @@ Definition
 : definition of genetic code table used if other than universal genetic code table.    
 
 Value format
-: &lt;integer&gt; (1 - 6, 9 - 14, 16, 21 - 31)    
+: &lt;integer&gt; (1 - 6, 9 - 16, 21 - 31, 33)    
 
 Example
 : <pre>11</pre>
