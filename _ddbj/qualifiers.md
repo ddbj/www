@@ -103,8 +103,8 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 : &lt;material_id&gt; は必須です。    
 保管施設としては, 動物園, 水族館, stock centre, seed bank, germplasm repository, DNA bank などが含まれます。    
 &lt;institution_code&gt; は下記を参照してください。    
-[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections) 
+[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
+[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections ) 
 
 
 ### /bound_moiety<a name="bound_moiety"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#bound_moiety)</span>
@@ -317,8 +317,8 @@ INSDC では 'Mmm' (月の略記) を含む "21-Oct-1952" のような旧書式�
 : &lt;institution-code&gt; と &lt;culture_id&gt; が必須です。    
 生きている微生物やウイルスの培養系、および、細胞株を記載する際に用います。    
 &lt;institution_code&gt; は下記などを参照してください。    
-[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections")
+[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
+[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections )
 
 ### /db_xref<a name="db_xref"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#db_xref)</span>
 
@@ -524,7 +524,7 @@ contamination
 unknown    
 
 備考
-: [AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)に従い、[assembly_gap](/ddbj/features.html#assembly_gap) feature でのみ、使用します
+: [AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/ )に従い、[assembly_gap](/ddbj/features.html#assembly_gap) feature でのみ、使用します
 
 ### /gene<a name="gene"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#gene)</span>
 
@@ -662,7 +662,7 @@ ab initio prediction:Genscan:2.0
 alignment:Splign:1.26p:RefSeq:NM_000041.2,INSD:BC003557.1</pre>
 
 備考
-: [inference の推奨例](https://insdc.org/submitting-standards/inference-qualifiers/)    
+: [inference の推奨例](https://www.insdc.org/submitting-standards/inference-qualifiers/ )    
 
 - [:EVIDENCE_BASIS] は任意ですが, 参照したデータベースエントリ (Accession number と version を含む), あるいはアルゴリズム (version を含む) を記述します。    
 - [(same species)] は任意 同種との相同性により得られた推定の場合記述します。    
@@ -750,7 +750,7 @@ within clone
 unspecified    
 
 備考
-: [AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)に従い、[assembly_gap](/ddbj/features.html#assembly_gap) feature でのみ、使用します 
+: [AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/ )に従い、[assembly_gap](/ddbj/features.html#assembly_gap) feature でのみ、使用します 
 
 
 ### /locus_tag<a name="locus_tag"></a><span class="right-alignment">[Feature Table　Definition](/ddbj/feature-table.html#locus_tag)</span>
@@ -910,7 +910,7 @@ ssRNA negative-strand virus 由来のゲノム配列に関しては、原則、�
 siRNA</pre>
 
 備考
-: &lt;TYPE&gt; は [Controlled vocabulary for ncRNA classes](https://insdc.org/submitting-standards/ncrna-vocabulary/) になければなりません。    
+: &lt;TYPE&gt; は [Controlled vocabulary for ncRNA classes](https://www.insdc.org/submitting-standards/ncrna-vocabulary/ ) になければなりません。    
 otherを選択した場合は /[product](#product) に名称、/[note](#note) に簡単な説明を記載してください。 
 
 
@@ -1139,7 +1139,7 @@ allelic
 unknown    
 
 備考
-: タイプの詳細 は [Controlled vocabulary for /pseudogene qualifier](https://insdc.org/submitting-standards/pseudogene-qualifier-vocabulary/) で解説されています。 
+: タイプの詳細 は [Controlled vocabulary for /pseudogene qualifier](https://www.insdc.org/submitting-standards/pseudogene-qualifier-vocabulary/ ) で解説されています。 
 
 
 ### /rearranged<a name="rearranged"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#rearranged)</span><a name="rearranged"></a>
@@ -1190,7 +1190,7 @@ uORF
 other    
 
 備考
-: タイプの詳細 は [Controlled vocabulary for /regulatory_class](https://insdc.org/submitting-standards/controlled-vocabulary-regulatoryclass/) で解説されています。 
+: タイプの詳細 は [Controlled vocabulary for /regulatory_class](https://www.insdc.org/submitting-standards/controlled-vocabulary-regulatoryclass/ ) で解説されています。 
 
 
 ### /replace<a name="replace"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#replace)</span>
@@ -1256,7 +1256,7 @@ centromeric_repeat
 other    
 
 備考
-: 規定値の詳細は [Controlled vocabulary for /rpt_type qualifier](https://insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/) に解説があります。 
+: 規定値の詳細は [Controlled vocabulary for /rpt_type qualifier](https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/ ) に解説があります。 
 
 
 ### /rpt_unit_seq<a name="rpt_unit_seq"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#rpt_unit_seq)</span>
@@ -1366,8 +1366,8 @@ personal:Dan Janzen:99-SRNP-2003</pre>
 :    
 - &lt;collection_code&gt; が存在しない場合は記載不要です。    
 - &lt;institution_code&gt; は下記などを参照してください。    
-[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections) 
+[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
+[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections ) 
 
 
 ### /strain<a name="strain"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#strain)</span><a name="strain"></a>

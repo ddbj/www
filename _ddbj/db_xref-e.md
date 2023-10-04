@@ -7,7 +7,7 @@ current_tab: home
 lang: en
 ---
 
-The original site; [Controlled vocabulary for /db_xref qualifier](https://insdc.org/submitting-standards/dbxref-qualifier-vocabulary) 2019.08.14 version  
+The original site; [Controlled vocabulary for /db_xref qualifier](https://www.insdc.org/submitting-standards/dbxref-qualifier-vocabulary/ ) 2019.08.14 version  
 See also [db_xref](https://www.ncbi.nlm.nih.gov/genbank/collab/db_xref) at NCBI.
 
 New qualifier was introduced in version 1.08 (December 1, 1995) of the Feature table definitions: /db_xref. 
@@ -49,7 +49,7 @@ Format
 : Format for /db_xref qualifier
 
 Diff  
-: Flag for any difference with [the original site](https://insdc.org/submitting-standards/dbxref-qualifier-vocabulary) in the line.
+: Flag for any difference with [the original site](https://www.insdc.org/submitting-standards/dbxref-qualifier-vocabulary/ ) in the line.
 
 Use  
 : **Yes**: to be described by DDBJ submitters  

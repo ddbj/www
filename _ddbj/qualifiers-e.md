@@ -99,8 +99,8 @@ Comment
 : the bio_material qualifier should be used to annotate the identifiers of material in biological collections that are not appropriate to annotate as either /specimen_voucher or /culture_collection; these include zoos and aquaria, stock centres, seed banks, germplasm repositories and DNA banks; material_id is mandatory, institution_code and collection_code are optional; institution code is mandatory where collection code is present.    
     
 You can find &lt;institution_code&gt; at    
-[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections)    
+[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
+[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections )    
 
 ### /bound_moiety<a name="bound_moiety"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#bound_moiety)</span>
 
@@ -305,8 +305,8 @@ the culture_collection qualifier should be used to annotate live microbial and v
 culture_id and institution_code are mandatory, collection_code is optional.    
     
 You can find &lt;institution_code&gt; at    
-[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections)    
+[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
+[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections )    
 
 
 ### /db_xref<a name="db_xref"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#db_xref)</span>
@@ -513,7 +513,8 @@ unknown
 
 
 Comment
-: This qualifier is used only for [assembly_gap](/ddbj/features-e.html#assembly_gap) features and its values are controlled by [the AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)    
+: This qualifier is used only for [assembly_gap](/ddbj/features-e.html#assembly_gap) features and its values are controlled by 
+[the AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/ )    
 
 
 ### /gene<a name="gene"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#q_gene)</span><a name="gene"></a>
@@ -651,7 +652,7 @@ alignment:Splign:1.26p:RefSeq:NM_000041.2,INSD:BC003557.1</pre>
 
 
 Comment
-: [Recommendations for vocabulary in INSDC /inference qualifiers.](https://insdc.org/submitting-standards/inference-qualifiers/) 
+: [Recommendations for vocabulary in INSDC /inference qualifiers.](https://www.insdc.org/submitting-standards/inference-qualifiers/ ) 
 
 - where the optional "EVIDENCE_BASIS" is either a reference to a database entry (including accession and version) or an algorithm (including version)    
 - where the optional text "(same species)" is included when the inference comes from the same species as the entry.    
@@ -720,7 +721,9 @@ This qualifier can include the 8th decimal places.
 ### /linkage_evidence<a name="linkage_evidence"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#linkage_evidence)</span>
 
 Definition
-: type of evidence establishing linkage across an [assembly_gap](/ddbj/features-e.html#assembly_gap). Only allowed to be used with [assembly_gap](/ddbj/features-e.html#assembly_gap) features that have a /[gap_type](#gap_type) value of "within scaffold" or "repeat within scaffold" or "contamination"; Please note if [/gap_type](#gap_type)="contamination", /linkage_evidence must be used and the value of /linkage_evidence must be "unspecified".    
+: type of evidence establishing linkage across an [assembly_gap](/ddbj/features-e.html#assembly_gap).    
+Only allowed to be used with [assembly_gap](/ddbj/features-e.html#assembly_gap) features that have a /[gap_type](#gap_type) value of "within scaffold" or "repeat within scaffold" or "contamination";  
+Please note if [/gap_type](#gap_type)="contamination", /linkage_evidence must be used and the value of /linkage_evidence must be "unspecified".    
 
 Value format
 : one of the followings 
@@ -739,7 +742,8 @@ within clone
 unspecified    
 
 Comment
-: This qualifier is used only for [assembly_gap](/ddbj/features-e.html#assembly_gap) features and its values are controlled by [the AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)    
+: This qualifier is used only for [assembly_gap](/ddbj/features-e.html#assembly_gap) features and its values are controlled by 
+[the AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/ )    
 
 
 ### /locus_tag<a name="locus_tag"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#locus_tag)</span>
@@ -898,7 +902,7 @@ Example
 siRNA</pre>
 
 Comment
-: [Controlled vocabulary for ncRNA classes](https://insdc.org/submitting-standards/ncrna-vocabulary/) is valid for &lt;TYPE&gt;.    
+: [Controlled vocabulary for ncRNA classes](https://www.insdc.org/submitting-standards/ncrna-vocabulary/ ) is valid for &lt;TYPE&gt;.    
 /ncRNA_class="other" with /product="&lt;name of novel ncRNA_class&gt;" or /note="&lt;brief explanation of novel ncRNA_class&gt;"    
 
 
@@ -1134,7 +1138,7 @@ unknown
 
 
 Comment
-: See [Controlled vocabulary for /pseudogene qualifier](https://insdc.org/submitting-standards/pseudogene-qualifier-vocabulary/) for TYPE, in detail.    
+: See [Controlled vocabulary for /pseudogene qualifier](https://www.insdc.org/submitting-standards/pseudogene-qualifier-vocabulary/ ) for TYPE, in detail.    
 
 
 ### /rearranged<a name="rearranged"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#rearranged)</span><a name="rearranged"></a>
@@ -1185,7 +1189,7 @@ uORF
 other    
 
 Comment
-: See [Controlled vocabulary for /regulatory_class](https://insdc.org/submitting-standards/controlled-vocabulary-regulatoryclass/) for TYPE, in detail.    
+: See [Controlled vocabulary for /regulatory_class](https://www.insdc.org/submitting-standards/controlled-vocabulary-regulatoryclass/ ) for TYPE, in detail.    
 
 
 ### /replace<a name="replace"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#replace)</span>
@@ -1249,7 +1253,7 @@ centromeric_repeat
 other    
 
 Comment
-: See [Controlled vocabulary for /rpt_type qualifier](https://insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/), in detail.    
+: See [Controlled vocabulary for /rpt_type qualifier](https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/ ), in detail.    
 
 
 ### /rpt_unit_seq<a name="rpt_unit_seq"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#rpt_unit_seq)</span>
@@ -1360,8 +1364,8 @@ Comment
 
 - &lt;collection_code&gt;is optional.    
 - You can find &lt;institution_code&gt; at    
-[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections)    
+[institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
+[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections )    
 
 
 ### /strain<a name="strain"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#strain)</span><a name="strain"></a>

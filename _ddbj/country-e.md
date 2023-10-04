@@ -7,7 +7,7 @@ current_tab: home
 lang: en
 ---
 
-The original site; [Controlled vocabulary for /country qualifier](https://insdc.org/submitting-standards/country-qualifier-vocabulary) 2021.10.25 version
+The original site; [Controlled vocabulary for /country qualifier](https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/ ) 2021.10.25 version
 
 A new qualifier was introduced in version 2.1 (December 15, 1998) of the Feature table definitions: /country.    
 This new qualifier is used to indicate the country of origin of a DNA sample.    
@@ -23,7 +23,7 @@ Definition      locality of isolation of the sequenced sample indicated in
                 by regions and localities
 Value format    "&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]" where 
                 country_value is any value from the controlled vocabulary at 
-                <a href="https://insdc.org/submitting-standards/country-qualifier-vocabulary">https://insdc.org/submitting-standards/country-qualifier-vocabulary</a>
+                <a href="https://insdc.org/submitting-standards/country-qualifier-vocabulary">https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/</a>
 Example         /country="Canada:Vancouver"
                 /country="France:Cote d'Azur, Antibes"
                 /country="Atlantic Ocean:Charlie Gibbs Fracture Zone"
@@ -34,8 +34,8 @@ Comment         Intended to provide a reference to the site where the source
                 /<a href="/ddbj/qualifiers-e.html#isolation_source">isolation_source</a>.
 </code></pre>
 
-COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49/m49.htm](https://unstats.un.org/unsd/methods/m49/m49.htm)    
-and [https://www.cia.gov/the-world-factbook/](https://www.cia.gov/the-world-factbook/)
+COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49/m49.htm](https://unstats.un.org/unsd/methods/m49/m49.htm )    
+and [https://www.cia.gov/the-world-factbook/](https://www.cia.gov/the-world-factbook/ )
 
 ### Initial links
 
