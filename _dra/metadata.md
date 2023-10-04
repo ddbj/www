@@ -207,72 +207,90 @@ D-way アカウントに登録されているメールアドレスを変更し�
 [Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>
 : シークエンサの機種を選択します。Sequel IIe の場合、Sequel II を選択し、[Library Construction Protocol](#Library_Construction_Protocol) に Sequel IIe を使ったことを記載してください。
 
-| Instrument Model                    |
+| Instrument Model |
 |---|
-| 454 GS                              |
-| 454 GS 20                           |
-| 454 GS FLX                          |
-| 454 GS FLX+                         |
-| 454 GS FLX Titanium                 |
-| 454 GS Junior                       |
-| Illumina Genome Analyzer            |
-| Illumina Genome Analyzer II         |
-| Illumina Genome Analyzer IIx        |
-| Illumina HiSeq 1000                 |
-| Illumina HiSeq 1500                 |
-| Illumina HiSeq 2000                 |
-| Illumina HiSeq 2500                 |
-| Illumina HiSeq 3000                 |
-| Illumina HiSeq 4000                 |
-| Illumina NovaSeq 6000               |
-| Illumina MiSeq                      |
-| Illumina MiniSeq                    |
-| Illumina iSeq 100                   |
-| Illumina HiScanSQ                   |
-| HiSeq X Five                        |
-| HiSeq X Ten                         |
-| NextSeq 500                         |
-| NextSeq 550                         |
-| NextSeq 1000                        |
-| NextSeq 2000                        |
-| Helicos HeliScope                   |
-| AB SOLiD System                     |
-| AB SOLiD System 2.0                 |
-| AB SOLiD System 3.0                 |
-| AB SOLiD 3 Plus System              |
-| AB SOLiD 4 System                   |
-| AB SOLiD 4hq System                 |
-| AB SOLiD PI System                  |
-| AB 5500 Genetic Analyzer            |
-| AB 5500xl Genetic Analyzer          |
+| 454 GS |
+| 454 GS 20 |
+| 454 GS FLX |
+| 454 GS FLX+ |
+| 454 GS FLX Titanium |
+| 454 GS Junior |
+| Illumina Genome Analyzer |
+| Illumina Genome Analyzer II |
+| Illumina Genome Analyzer IIx |
+| Illumina HiSeq 1000 |
+| Illumina HiSeq 1500 |
+| Illumina HiSeq 2000 |
+| Illumina HiSeq 2500 |
+| Illumina HiSeq 3000 |
+| Illumina HiSeq 4000 |
+| HiSeq X Five |
+| HiSeq X Ten |
+| Illumina HiSeq X |
+| Illumina HiScanSQ |
+| Illumina NovaSeq 6000 |
+| Illumina NovaSeq X |
+| Illumina MiSeq |
+| Illumina MiniSeq |
+| Illumina iSeq 100 |
+| NextSeq 500 |
+| NextSeq 550 |
+| NextSeq 1000 |
+| NextSeq 2000 |
+| Helicos HeliScope |
+| AB SOLiD System |
+| AB SOLiD System 2.0 |
+| AB SOLiD System 3.0 |
+| AB SOLiD 3 Plus System |
+| AB SOLiD 4 System |
+| AB SOLiD 4hq System |
+| AB SOLiD PI System |
+| AB 5500 Genetic Analyzer |
+| AB 5500xl Genetic Analyzer |
 | AB 5500xl-W Genetic Analysis System |
-| Complete Genomics                   |
-| BGISEQ-500                          |
-| DNBSEQ-G400                         |
-| DNBSEQ-T7                           |
-| DNBSEQ-G50                          |
-| MGISEQ-2000RS                       |
-| MinION                              |
-| GridION                             |
-| PromethION                          |
-| PacBio RS                           |
-| PacBio RS II                        |
-| Sequel                              |
-| Sequel II                           |
-| Ion Torrent PGM                     |
-| Ion Torrent Proton                  |
-| Ion Torrent S5                      |
-| Ion Torrent S5 XL                   |
-| Ion GeneStudio S5                   |
-| Ion GeneStudio S5 plus              |
-| Ion GeneStudio S5 prime             |
-| AB 310 Genetic Analyzer             |
-| AB 3130 Genetic Analyzer            |
-| AB 3130xL Genetic Analyzer          |
-| AB 3500 Genetic Analyzer            |
-| AB 3500xL Genetic Analyzer          |
-| AB 3730 Genetic Analyzer            |
-| AB 3730xL Genetic Analyzer          |
+| Complete Genomics |
+| BGISEQ-50 |
+| BGISEQ-500 |
+| MGISEQ-2000RS |
+| DNBSEQ-G400 |
+| DNBSEQ-G400 FAST |
+| DNBSEQ-T7 |
+| DNBSEQ-G50 |
+| PacBio RS |
+| PacBio RS II |
+| Sequel |
+| Sequel II |
+| Sequel IIe |
+| Onso |
+| Revio |
+| Ion Torrent PGM |
+| Ion Torrent Proton |
+| Ion Torrent S5 |
+| Ion Torrent S5 XL |
+| Ion GeneStudio S5 |
+| Ion GeneStudio S5 plus |
+| Ion GeneStudio S5 prime |
+| Ion Torrent Genexus |
+| MinION |
+| GridION |
+| PromethION |
+| GENIUS |
+| Genapsys Sequencer |
+| GS111 |
+| Sentosa SQ301 |
+| Element AVITI |
+| GenoCare 1600 |
+| GenoLab M |
+| FASTASeq 300 |
+| UG 100 |
+| Tapestri |
+| AB 3730xL Genetic Analyzer |
+| AB 3730 Genetic Analyzer |
+| AB 3500xL Genetic Analyzer |
+| AB 3500 Genetic Analyzer |
+| AB 3130xL Genetic Analyzer |
+| AB 3130 Genetic Analyzer |
+| AB 310 Genetic Analyzer |
 
 [Library Layout](#Library_Layout)<a name="Library_Layout"></a><span class="red">*</span>
 : データファイル中のリード構成を選択します。リードの向き (Forward と Reverse) は Instrument から自動判定されます。2022年12月に Spot Type から Library Layout に表示名が変更になりました。
