@@ -43,12 +43,12 @@ lang: ja
   1. オンラインサービス運営状況の変更その他の事情によりサービスの運営を第三者に移管する場合、センターはサービスの移管を本サイトにおいて告知するものとします。利用者が移管に同意できない場合、利用者はサービスの利用を終了することができます。告知後、利用者がサービスを利用した場合、利用者はサービスの移管およびそれに伴う権利義務の承継に同意したものとみなされます。
 
 #### ウェブブラウザ {#web-browsers}
-センターのオンラインサービスは最新版の [Chrome](https://www.google.com/chrome/)、[Firefox](https://www.mozilla.org/ja/firefox/all/#product-desktop-release) 及び [Edge](https://www.microsoft.com/ja-jp/edge) を使って利用することを推奨します。
+センターのオンラインサービスは最新版の [Chrome](https://www.google.com/chrome/ )、[Firefox](https://www.mozilla.org/ja/firefox/all/#product-desktop-release) 及び [Edge](https://www.microsoft.com/ja-jp/edge) を使って利用することを推奨します。
 
 ### データの利用 {#data-use}
 センターが提供するデータは個別規約で制限されていない限り、自由に利用・再配布・改変することができます。
 
-  1. [INSDC](/insdc.html) データは [INSDC Policy](https://www.insdc.org/policy.html) に従って自由に利用・再配布・改変することができます。
+  1. [INSDC](/insdc.html) データは [INSDC Policy](https://www.insdc.org/policy/ ) に従って自由に利用・再配布・改変することができます。
   1. Japanese Genotype-phenotype Archive (JGA) データは [NBDC ヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)を遵守して利用する必要があります。
   1. AMED Genome group sharing Database (AGD) データは [NBDC ヒトデータグループ共有ガイドライン](https://gr-sharingdbs.biosciencedbc.jp/group-data-sharing-guidelines) を遵守して利用する必要があります。
   1. センターが[提供しているセンター以外で作成されたデータ](#third-party-data)は提供元の規定に従って利用する必要があります。
@@ -62,7 +62,7 @@ lang: ja
 [データ登録ガイドライン](#data-submission-guideline)を参照してください。
 
 ### 遺伝研スーパーコンピュータシステムの利用 {#sc}
-[遺伝研スーパーコンピュータシステムの利用に関する規定類](https://sc.ddbj.nig.ac.jp/ja/application/regulations)を参照してください。
+[遺伝研スーパーコンピュータシステムの利用に関する規定類](https://sc.ddbj.nig.ac.jp/application/use_policy )を参照してください。
 
 ### プライバシーポリシー {#privacy-policy}
 [プライバシーポリシー](#privacy)を参照してください。

@@ -43,12 +43,12 @@ Contents of websites provided by Center (hereinafter referred to as 'our website
   1. If the operation of our services is transferred to a third party due to change in the status of the online service operations or other situations, we shall announce the transfer of service on our website. If you do not agree to such transfer, you may stop to using our services. If you use our services after the notification, you are deemed to have agreed to the transfer of our services and any succession of involved rights and obligations.
 
 #### Use of Web Browsers {#web-browsers}
-We recommend to use our online service with the latest version of [Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release) and [Edge](https://www.microsoft.com/en-us/edge).
+We recommend to use our online service with the latest version of [Chrome](https://www.google.com/chrome/ ), [Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release) and [Edge](https://www.microsoft.com/en-us/edge).
 
 ### Data Usage {#data-use}
 Unless otherwise restricted by an Individual Terms of Use, data provided by Center may be freely used, redistributed and modified.
-  1. [INSDC](/insdc.html) data may be freely used, redistributed and modified in accordance with the [INSDC Policy](https://www.insdc.org/policy.html).
-  1. Japanese Genotype-phenotype Archive (JGA) data shall be used in compliance with the [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines).
+  1. [INSDC](/insdc.html) data may be freely used, redistributed and modified in accordance with the [INSDC Policy](https://www.insdc.org/policy/ ).
+  1. Japanese Genotype-phenotype Archive (JGA) data shall be used in compliance with the [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines ).
   1. AMED Genome group sharing Database (AGD) data shall be used in compliance with the [NBDC Human Data Group Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines).
   1. [Third-party data provided by Center](#third-party-data) shall be used in accordance with terms of use of these data.
 
@@ -61,7 +61,7 @@ Unless otherwise restricted by an Individual Terms of Use, data provided by Cent
 Please refer to [Data Submission Guideline](#data-submission-guideline).
 
 ### Usage of NIG Supercomputer System {#sc}
-Please refer to [terms of use of the NIG supercomputer system (Japanese language only)](https://sc.ddbj.nig.ac.jp/ja/application/regulations).
+Please refer to [terms of use of the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/application/use_policy/ ).
 
 ### Privacy Policy {#privacy-policy}
 Please refer to the [Privacy Policy](#privacy).
