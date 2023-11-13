@@ -120,7 +120,7 @@ by default.
 
 Please select a vector database either UniVec or UniVec_Core. UniVec is
 selected in the default. The system uses the same database that can be
-obtained from <ftp://ftp.ncbi.nih.gov/pub/UniVec/>.
+obtained from <https://ftp.ncbi.nih.gov/pub/UniVec/>.
 
 UniVec  
 : UniVec is a non-redundant vector database consists of many vector,
