@@ -94,7 +94,7 @@ WWWの場合，結果がその場でスクリーン上に表示されます。
 ### Databases  {#database}
 
 ベクターデータベースを選択します。UniVecかUniVec_Coreのどちらかを選択できます。初期値はUniVecがセットされています。
-本システムでは[ftp://ftp.ncbi.nih.gov/pub/UniVec/](ftp://ftp.ncbi.nih.gov/pub/UniVec/)で取得できるものと同一なデータベースを使用しています。
+本システムでは[https://ftp.ncbi.nih.gov/pub/UniVec/](https://ftp.ncbi.nih.gov/pub/UniVec/)で取得できるものと同一なデータベースを使用しています。
 
 
 UniVec
