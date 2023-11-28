@@ -105,7 +105,7 @@ the following cases are included, but not limited to them.
 
 <div class="start-button" markdown="1">
 
-**[Start new submission](https://ddbj.nig.ac.jp/submission)**  
-**\[Create new submission\]** on the next page.
+**[Start new submission](https://ddbj.nig.ac.jp/submission)**    -- See [the period of service suspension](/news/en/2023-10-30-e.html)
+<!-- **\[Create new submission\]** on the next page. -->
 
 </div>
