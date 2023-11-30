@@ -111,7 +111,7 @@ BioProject/BioSample との連携のために [DBLINK](/ddbj/flat-file.html#DBLI
 
 <div class="start-button" markdown="1">
 
-**[新規登録の開始](https://ddbj.nig.ac.jp/submission)**  -- [停止期間中](/news/ja/2023-10-30.html)です。
-<!-- 次ページで **[Create new submission\]** をクリックしてください。 -->
+**[新規登録の開始](https://ddbj.nig.ac.jp/submission)**  
+次ページで **[Create new submission\]** をクリックしてください。
 
 </div>
