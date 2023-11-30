@@ -16,7 +16,7 @@ MetaboBank は、塩基配列や遺伝子発現データと関連づけられる
 ### 1. 登録アカウントの取得  {#account}
 
 - [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成します。[マニュアル](/account.html)
-- [公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)し MetaboBank 登録を可能にします。
+- [公開鍵をアカウントに登録](/account.html#enable-dra-submission-in-account)し MetaboBank 登録を可能にします。
 
 ### 2. 登録申し込み  {#form}
 

@@ -26,22 +26,22 @@ related_pages:
 <span class="red">ヒトを対象とした研究データの登録について</span>
 
 ヒトを対象とした全ての研究において DDBJ に送付するデータの由来である個人 (研究対象者) の尊厳及び人権は、
-適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。    
-原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。  
+適用されるべき法律、規定、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。
+原則として、研究対象者を直接特定し得る参照情報は、登録データから取り除いてください。
 ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#submission-of-human-data)をご覧ください。
 </div>
 
 ## 概要  {#outline}
 
-Mass Submission System (MSS) は、比較的大規模な塩基配列データ (reads ではない) をファイル送付により登録するサービスです。    
-<span class="red">以下の何れかに該当する場合</span>、[Web 版塩基配列登録システム](/ddbj/web-submission.html) (DDBJ Nucleotide Sequence Submission System, 略称 NSSS) では対応できません。    
-MSS 経由で登録をお願いします。    
+Mass Submission System (MSS) は、比較的大規模な塩基配列データ (reads ではない) をファイル送付により登録するサービスです。
+<span class="red">以下の何れかに該当する場合</span>、[Web 版塩基配列登録システム](/ddbj/web-submission.html) (DDBJ Nucleotide Sequence Submission System, 略称 NSSS) では対応できません。
+MSS 経由で登録をお願いします。
 件数の多寡、長さ以外の点もご確認ください。
 
 
 #### a) 種別、または、量が以下に該当する配列データ
 <div class="attention" markdown="1">
-- NSSS が対応していない登録 
+- NSSS が対応していない登録
    - [EST](/ddbj/est.html)、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[TLS](/ddbj/tls.html)
    - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
 - １配列が長い場合、目安は 500 kb 以上
@@ -118,16 +118,16 @@ table tr:hover {
 ## 登録ファイルの作成  {#prep}
 ### 登録に必要なファイル  {#prep-1}
 - 配列ファイル
-  - 全登録データの配列を FASTA 形式で記述したテキストファイル。    
+  - 全登録データの配列を FASTA 形式で記述したテキストファイル。
     参照 [登録ファイル形式：配列ファイル](/ddbj/file-format.html#sequence)
-- アノテーションファイル    
-  - 全登録データの登録者、REFERENCE、Feature/Qualifier の情報等を記述したタブ区切りテキストファイル。    
+- アノテーションファイル
+  - 全登録データの登録者、REFERENCE、Feature/Qualifier の情報等を記述したタブ区切りテキストファイル。
     参照 [登録ファイル形式：アノテーションファイル](/ddbj/file-format.html#annotation)
   - 原核生物ゲノムの登録では、[DFAST(DDBJ Fast Annotation and Submission Tool) を利用し、アノテーションファイルを作成](/ddbj/mss.html#mssdfast)することができます。
 - AGP ファイル ([CON](/ddbj/con.html) エントリ登録時のみ必要)
   - <span class="red">**\[重要\] CON データの新規登録は受け付けを終了しました。**</span>
-  - CON エントリを構築する際のピースエントリの順序、種類、方向等が記載された、9列からなるタブ区切りテキストファイル。    
-    AGP ファイルのみで配列が構築可能である場合は、配列ファイル送付は必要ありません。    
+  - CON エントリを構築する際のピースエントリの順序、種類、方向等が記載された、9列からなるタブ区切りテキストファイル。
+    AGP ファイルのみで配列が構築可能である場合は、配列ファイル送付は必要ありません。
     参照 [登録ファイル形式： AGP ファイル](/ddbj/file-format.html#agp)
 
 ### BioProject & BioSample ID の取得  {#prep-2}
@@ -148,17 +148,17 @@ table tr:hover {
 ### ファイルチェックツール  {#prep-4}
 DDBJ に登録ファイルを送る前に、**必ず作成したファイルを DDBJ が提供するデータファイル用チェックツールを用いてチェックを実行**してください。
 
-- UME (Utilities for MSS file Error check)    
-[配列ファイル](/ddbj/file-format.html#sequence)と[アノテーションファイル](/ddbj/file-format.html#annotation)のフォーマットチェックと、それらファイルの記載を元に [CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行います。Parser と transChecker を内包しています。    
-OS: Windows, Linux/macOS    
+- UME (Utilities for MSS file Error check)
+[配列ファイル](/ddbj/file-format.html#sequence)と[アノテーションファイル](/ddbj/file-format.html#annotation)のフォーマットチェックと、それらファイルの記載を元に [CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行います。Parser と transChecker を内包しています。
+OS: Windows, Linux/macOS
 説明：[UME ユーザーマニュアル](/ddbj/ume.html)
-- Parser    
-[配列ファイル]/ddbj/file-format.html#sequence)と[アノテーションファイル](/ddbj/file-format.html#annotation)のフォーマットチェックを行います。    
-OS: Linux    
+- Parser
+[配列ファイル]/ddbj/file-format.html#sequence)と[アノテーションファイル](/ddbj/file-format.html#annotation)のフォーマットチェックを行います。
+OS: Linux
 説明：[Parser ユーザーマニュアル](/ddbj/parser.html)
-- transChecker    
-[配列ファイル](/ddbj/file-format.html#sequence)と[アノテーションファイル](/ddbj/file-format.html#annotation)の記載を元に [CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行います。    
-OS: Linux    
+- transChecker
+[配列ファイル](/ddbj/file-format.html#sequence)と[アノテーションファイル](/ddbj/file-format.html#annotation)の記載を元に [CDS feature](/ddbj/cds.html) のアミノ酸翻訳チェックを行います。
+OS: Linux
 説明：[transChecker ユーザーマニュアル](/ddbj/transchecker.html)
 <div class="attention" markdown="1">
 ダウンロード: [MSS データファイル用チェックツール](/ddbj/mss-tool.html)
@@ -172,18 +172,18 @@ OS: Linux
 
 - D-way 登録アカウントをお持ちでない場合、[D-way](https://ddbj.nig.ac.jp/D-way/) の "Register for a new account
 " より作成して下さい([ヘルプ](/account.html))。
-- SCP/SFTP 転送を利用いただくには、[アカウントへの公開鍵と Center name の設定](/account.html#register-center-name-and-public-key)が必要です。ファイル転送手順につきましては、「[データのアップロード](/upload.html)」をご参照ください。
+- SCP/SFTP 転送を利用いただくには、[アカウントへの公開鍵の登録](/account.html#register-public-key)が必要です。ファイル転送手順につきましては、「[データのアップロード](/upload.html)」をご参照ください。
 
 ## 登録申し込み  {#submission}
-[MSS 申し込みフォーム](https://mss.ddbj.nig.ac.jp/)から行って下さい。単一の申し込みは、以下の条件を全て満たすエントリセットの場合のみとなっております。一つでも条件が異なるエントリを登録する場合には、複数回の申し込みが必要となります。    
+[MSS 申し込みフォーム](https://mss.ddbj.nig.ac.jp/)から行って下さい。単一の申し込みは、以下の条件を全て満たすエントリセットの場合のみとなっております。一つでも条件が異なるエントリを登録する場合には、複数回の申し込みが必要となります。
 事前に登録ファイルを用意されていますと、申し込みフォーム入力時にファイルをアップロードできます。入力時にファイルをアップロードできない場合には、返信メールにアップロードに関連する内容が提示致されますので、後日アップロードしてください。
 
 申し込みが完了しますと、当該登録に対して Mass-ID が発行されます。DDBJ から送信されますメールのヘッダーには Mass-ID([DDBJ:NSUB000001]) が表示されますので、返信される際には、メールヘッダの Mass-ID を維持して下さい。
 
-同一Submissionでの申し込み条件    
-: ・[コンタクトパーソン](/ddbj/submission.html#contact)が同一    
-: ・[データ種別](/ddbj/data-categories.html)が同一    
-: ・[公開予定日](/ddbj/submission.html#holddate)が同一    
+同一Submissionでの申し込み条件
+: ・[コンタクトパーソン](/ddbj/submission.html#contact)が同一
+: ・[データ種別](/ddbj/data-categories.html)が同一
+: ・[公開予定日](/ddbj/submission.html#holddate)が同一
 
 - 同じSubmissionでの申し込み可能な例
   - バクテリア20菌株のドラフトゲノム → WGS: Whole Genome Shotgun
@@ -233,15 +233,15 @@ c. 単一真核生物個体の chromosome ドラフトゲノムとアセンブ�
         - Submissionファイルの再提出をDDBJ curatorにより要請された場合を除きます。
     - ファイル名は、スペース、バッククォート、アングルブラッケッツ"<>"、丸括弧"()"以外の半角英数記号とし、日本語のようなマルチバイト文字を使用しないこと
 - MSS Application Form は圧縮ファイルからの読み込みに対応しています。対応する圧縮形式は、次の通りです。
-    - gzip, bzip2, xz, lzip, lzma, lzop, zstd, compress    
-  e.g.    
-  20230322-1.tar.gz    
-  20230322-2.tar.bz2    
-  20230322-3.tar.xz    
-  20230322-4.zip    
-  20230322-5.tar.lzma    
-  20230322-6.tar.lzo    
-  20230322-7.tar.zst    
+    - gzip, bzip2, xz, lzip, lzma, lzop, zstd, compress
+  e.g.
+  20230322-1.tar.gz
+  20230322-2.tar.bz2
+  20230322-3.tar.xz
+  20230322-4.zip
+  20230322-5.tar.lzma
+  20230322-6.tar.lzo
+  20230322-7.tar.zst
   20230322-8.tar.Z
 
 ## 査定作業  {#review}
@@ -307,7 +307,7 @@ M, Mandatory; NR, Not required; OPT, Optional
 1. [D-way アカウント](/account.html)で [DFAST](https://dfast.ddbj.nig.ac.jp/) にログインすると 、[解析（job）の履歴管理](https://dfast.ddbj.nig.ac.jp/help_login)ができます。アカウントを持っていない場合には[アカウントの作成方法](/account.html#account-for-bioproject-biosample-submissions)をご一読下さい。
 
 ### DFAST のデータを Submit するには  {#mssdfast-3}
-1. [DFAST](https://dfast.ddbj.nig.ac.jp/) にアクセスし、[D-way アカウント](/account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。job 終了後、”DDBJ submission”  タブをクリックします。DDBJ への登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS 登録ファイルが作成されます。（注１）    
+1. [DFAST](https://dfast.ddbj.nig.ac.jp/) にアクセスし、[D-way アカウント](/account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。job 終了後、”DDBJ submission”  タブをクリックします。DDBJ への登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS 登録ファイルが作成されます。（注１）
 最後に、Format Check をクリックして、書式チェックを行ってください。
 1. DFAST の job ID で submit する場合
     1. job ID (<span style="font-family:Arial;">########-####-####-####-############</span> 書式のID)をコピーします。

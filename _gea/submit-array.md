@@ -12,7 +12,7 @@ lang: ja
 ### 1. 登録アカウントを取得  {#account}
 
 - [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成
-- [公開鍵と center nameをアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA 登録を可能に
+- [公開鍵をアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA 登録を可能に
 
 ### 2. BioProjectとBioSampleを登録 {#bioproject-biosample}
 

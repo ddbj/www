@@ -29,19 +29,19 @@ related_pages:
 For all data from human subjects researches submitted to DDBJ, it is
 submitter's responsibility to ensure that the dignity and the right of
 participant (human subject) is protected in accordance with all
-applicable laws, regulations and policies of submitter's institute.  
+applicable laws, regulations and policies of submitter's institute.
 In principle, make sure to remove any direct personal identifiers of
-human subjects from your submissions.  
+human subjects from your submissions.
 Before submission, read "[Submission of research data from human subjects](/policies-e.html#submission-of-human-data)".
 
 </div>
 
 ## Overview  {#outline}
 
-Mass Submission System (MSS) is the service to accept relatively large scale nucleotide sequence data (not reads) through sending text files.    
-The nucleotide sequence data belonging to <span class="red">either of the following cases</span> should be submitted via MSS, 
-because they are not acceptable via the [NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission-e.html).    
-Please note the points other than number or length of your data.  
+Mass Submission System (MSS) is the service to accept relatively large scale nucleotide sequence data (not reads) through sending text files.
+The nucleotide sequence data belonging to <span class="red">either of the following cases</span> should be submitted via MSS,
+because they are not acceptable via the [NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission-e.html).
+Please note the points other than number or length of your data.
 
 #### a) Either of the following categories or amounts of sequence data
 
@@ -56,7 +56,7 @@ Please note the points other than number or length of your data.
 - Submission consists of large number of sequences, greater than 100 in total
 </div>
 
-#### b) Regardless finished or draft level, sequence data of whole-length scale replicons  
+#### b) Regardless finished or draft level, sequence data of whole-length scale replicons
 
 <div class="attention" markdown="1">
 - (Nuclear) genome
@@ -66,21 +66,21 @@ Please note the points other than number or length of your data.
 - Plasmid
 </div>
 
-#### c) Sequence data to be described BioProject or BioSample in DBLINK  
+#### c) Sequence data to be described BioProject or BioSample in DBLINK
 
-When you need to use [DBLINK](/ddbj/flat-file-e.html#DBLINK) to link BioProject or BioSample, 
-the following cases are included, but not limited to them.    
+When you need to use [DBLINK](/ddbj/flat-file-e.html#DBLINK) to link BioProject or BioSample,
+the following cases are included, but not limited to them.
 
 <div class="attention" markdown="1">
-- Sequence data from metagenome analyses, environmental profilings, and so on 
+- Sequence data from metagenome analyses, environmental profilings, and so on
 - Sequence data of targeted genes to be linked each other
-- When you are planning to submit or have submitted whole genome scale data obtained from the same samples. 
-    - Required to submit prokaryotic 16S rRNA gene for phylogenic report  
-    - Advanced paper submission of any other targeted gene(s)/cluster region(s) 
+- When you are planning to submit or have submitted whole genome scale data obtained from the same samples.
+    - Required to submit prokaryotic 16S rRNA gene for phylogenic report
+    - Advanced paper submission of any other targeted gene(s)/cluster region(s)
 </div>
 
-- Basically, if none of the above applies to your data, DDBJ recommends using the [NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission-e.html).   
-- If you are to submit reads from sequencers, see [DRA, DDBJ Sequence Read Archive](/dra/index-e.html).  
+- Basically, if none of the above applies to your data, DDBJ recommends using the [NSSS: DDBJ Nucleotide Sequence Submission System](/ddbj/web-submission-e.html).
+- If you are to submit reads from sequencers, see [DRA, DDBJ Sequence Read Archive](/dra/index-e.html).
 
 ## Registration process in MSS  {#flow}
 
@@ -125,17 +125,17 @@ table tr:hover {
 ## Preparation of the submission files  {#prep}
 ### Required files for the registration  {#prep-1}
 - Sequence file
-  - The text file that contains all nucleotide sequences in FASTA-like format.    
+  - The text file that contains all nucleotide sequences in FASTA-like format.
     see [Submission file format：Sequence file](/ddbj/file-format-e.html#sequence).
-- Annotation file    
-  - The tab delimited text file that contains metadata (submitters, reference) and annotation (Feature/Qualifier)    
+- Annotation file
+  - The tab delimited text file that contains metadata (submitters, reference) and annotation (Feature/Qualifier)
     see [Submission file format：Annotation file](/ddbj/file-format-e.html#annotation)
   - For the prokaryote genome, you [can create the files by using DFAST(DDBJ Fast Annotation and Submission Tool)](/ddbj/mss-e.html#mssdfast).
-- AGP file（only in case of [CON](/ddbj/con-e.html) entries)    
+- AGP file（only in case of [CON](/ddbj/con-e.html) entries)
   - <span class="red">**[Caution] DDBJ currently terminated accepting new submissions.** </span>
-  - The tab delimited text file to construct CON sequence that contains the order, orientation, and type of each piece entry.    
-  If nucleotide sequence can be assembled from an AGP file, you do not need to send a sequence file.    
-    see [Submission file format：AGP file](/ddbj/file-format-e.html#agp) 
+  - The tab delimited text file to construct CON sequence that contains the order, orientation, and type of each piece entry.
+  If nucleotide sequence can be assembled from an AGP file, you do not need to send a sequence file.
+    see [Submission file format：AGP file](/ddbj/file-format-e.html#agp)
 
 ### Getting BioProject & BioSample ID  {#prep-2}
 - According to the type of the data, you must obtain BioProject ID and BioSample ID (also reserve locus_tag prefix) to prepare the submission files.
@@ -155,30 +155,30 @@ table tr:hover {
 ### Tool for checking the submission files   {#prep-4}
 Before submitting to DDBJ, **the files must be checked with software tools** provided from DDBJ.
 
-- UME (Utilities for MSS file Error check)    
-The tool checks the syntax, format and amino acid translation of CDS features in [sequence file](/ddbj/file-format-e.html#sequence) and [annotation file](/ddbj/file-format-e.html#annotation). It includes both Parser and transChecker.    
-OS: Windows, Linux/macOS    
+- UME (Utilities for MSS file Error check)
+The tool checks the syntax, format and amino acid translation of CDS features in [sequence file](/ddbj/file-format-e.html#sequence) and [annotation file](/ddbj/file-format-e.html#annotation). It includes both Parser and transChecker.
+OS: Windows, Linux/macOS
 Details：[UME User’s Manual](/ddbj/ume-e.html)
-- Parser    
-The tool checks the syntax and format of [sequence file](/ddbj/file-format-e.html#sequence) and [annotation file](/ddbj/file-format.html#annotation).    
-OS: Linux    
+- Parser
+The tool checks the syntax and format of [sequence file](/ddbj/file-format-e.html#sequence) and [annotation file](/ddbj/file-format.html#annotation).
+OS: Linux
 Details：[Parser User’s Manual](/ddbj/parser-e.html)
-- transChecker    
-The tool validates the amino acid translation of CDS features (protein-coding sequence) in [annotation file](/ddbj/file-format.html#annotation) and [sequence file](/ddbj/file-format-e.html#sequence).    
-OS: Linux    
+- transChecker
+The tool validates the amino acid translation of CDS features (protein-coding sequence) in [annotation file](/ddbj/file-format.html#annotation) and [sequence file](/ddbj/file-format-e.html#sequence).
+OS: Linux
 Details：[transChecker User’s Manual](/ddbj/transchecker-e.html)
 <div class="attention" markdown="1">
 Download: [Validation tools for MSS data files](/ddbj/mss-tool-e.html)
 </div>
 - Validation tools for data files do not have any function to make files for your submission. So, please make your submission files by using text editor, spreadsheet software, or some application in your PC, appropriately.
 - Syntax errors due to using undefined characters, contamination of control codes, and so on would cause a major obstacle during processing submitted data, which may result in significant delay of issuing accession numbers.
-- When you have to describe CDS (protein coding sequences) as one of [Biological feature](/ddbj/file-format-e.html#biological_feature) for the annotation of your sequence, you must check the amino acid translation of CDS features 
+- When you have to describe CDS (protein coding sequences) as one of [Biological feature](/ddbj/file-format-e.html#biological_feature) for the annotation of your sequence, you must check the amino acid translation of CDS features
  by using UME or transChecker tool before submitting to DDBJ.
 - Before installing the validation tools, see [End-user license agreement](/ddbj/mss-tool-e.html#license).
 
 ## Creating account  {#account}
 - If you have not obtained D-way account, create your account by clicking "Register for a new account" on [D-way](https://ddbj.nig.ac.jp/D-way/) (see [HELP](/account-e.html)).
-- If you would like to use SCP/SFTP for transferring the files to DDBJ, you also need to [register center name and public key](/account-e.html#register-center-name-and-public-key) on the account setting page on D-way. See "[Data upload](/upload-e.html)" for detailed descriptions how to transfer the files.
+- If you would like to use SCP/SFTP for transferring the files to DDBJ, you also need to [register a public key](/account-e.html#register-public-key) on the account setting page on D-way. See "[Data upload](/upload-e.html)" for detailed descriptions how to transfer the files.
 
 ## Applying for the registration  {#submission}
 Please apply for your submission through ["Application form for MSS"](https://mss.ddbj.nig.ac.jp/).
@@ -194,11 +194,11 @@ Requirements that you can include the same application
 : &#x00B7; All submission files have the same hold date
 
 - Example cases that are allowed for the same application
-  - Draft genomes consist of twenty Bacterial strains    
+  - Draft genomes consist of twenty Bacterial strains
     &#x279E; WGS: Whole Genome Shotgun
-  - Finished level genome sequences from three isolates of eukaryote genomes    
+  - Finished level genome sequences from three isolates of eukaryote genomes
     &#x279E; GNM: Finished Level Genome sequence, non-WGS
-  - Assembled transcribed sequences among the same species. It comprises multiple sets from different organisms.    
+  - Assembled transcribed sequences among the same species. It comprises multiple sets from different organisms.
     &#x279E; TSA: Transcriptome Shotgun Assembly
 
 ### Example case where you must apply for the registration more than two times  {#submission-1}
@@ -244,15 +244,15 @@ Submitters can transfer the submission files from MSS form by either one of the 
         - Excluding the case of re-submitting the submission files as the request from DDBJ curator.
     - Use alphanumeric and part of symbolic (excluding space, backtick, angle brackets "<>", and parentheses "()") characters for the file name. Do not include multibyte character such as Japanese font.
 - MSS Application Form can import the files from compressed archive. The following compression types are available.
-    - gzip, bzip2, xz, lzip, lzma, lzop, zstd, compress    
-    e.g.    
-    20230322-1.tar.gz    
-    20230322-2.tar.bz2    
-    20230322-3.tar.xz    
-    20230322-4.zip    
-    20230322-5.tar.lzma    
-    20230322-6.tar.lzo    
-    20230322-7.tar.zst    
+    - gzip, bzip2, xz, lzip, lzma, lzop, zstd, compress
+    e.g.
+    20230322-1.tar.gz
+    20230322-2.tar.bz2
+    20230322-3.tar.xz
+    20230322-4.zip
+    20230322-5.tar.lzma
+    20230322-6.tar.lzo
+    20230322-7.tar.zst
     20230322-8.tar.Z
 
 ## Review of the submission files   {#review}
@@ -313,10 +313,10 @@ M, Mandatory; NR, Not required; OPT, Optional
 
 ### Registration procedure for the prokaryote genome  {#mssdfast-2}
 1. You need [D-way account](/account-e.html) which has been obtained through [DFAST](https://dfast.ddbj.nig.ac.jp/) in order to register the prokaryote genome and the annotation into DDBJ. Registration of [BioProject](https://www.ddbj.nig.ac.jp/bioproject/index-e.html),  [BioSample](https://www.ddbj.nig.ac.jp/biosample/index-e.html) and [locus_tag prefix](https://www.ddbj.nig.ac.jp/ddbj/locus_tag-e.html) when biological feature are descriebed are required in advance.
-1. If you login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with [D-way account](/account-e.html), you can manage the [jobs analyzed](https://dfast.ddbj.nig.ac.jp/help_login) in [DFAST](https://dfast.ddbj.nig.ac.jp/). If you have not obtained the login account, see [“Create a D-way account in the website”](/account-e.html#account-for-bioproject-biosample-submissions) to get a new account. 
+1. If you login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with [D-way account](/account-e.html), you can manage the [jobs analyzed](https://dfast.ddbj.nig.ac.jp/help_login) in [DFAST](https://dfast.ddbj.nig.ac.jp/). If you have not obtained the login account, see [“Create a D-way account in the website”](/account-e.html#account-for-bioproject-biosample-submissions) to get a new account.
 
 ### How to submit the data obtained in DFAST  {#mssdfast-3}
-1. Login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with your account. First, upload the fasta file in “job submission page”, and start the job to analyze the genome. At this stage, you can obtain a job ID. When the job is finished, click “DDBJ submission” tab on the page. The annotation and sequence files, which are needed for MSS submission, are created after you fill necessary data (e.g. BioProject ID, BioSample ID, locus_tag prefix, and other metadata) into the form in metadata section.(*1)    
+1. Login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with your account. First, upload the fasta file in “job submission page”, and start the job to analyze the genome. At this stage, you can obtain a job ID. When the job is finished, click “DDBJ submission” tab on the page. The annotation and sequence files, which are needed for MSS submission, are created after you fill necessary data (e.g. BioProject ID, BioSample ID, locus_tag prefix, and other metadata) into the form in metadata section.(*1)
 Finally, click "Format Check" to do the syntax check of the files.
 1. Submitting by DFAST job ID
     1. Copy the target job ID (format: <span style="font-family:Arial;">########-####-####-####-############</span>)

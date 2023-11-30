@@ -45,18 +45,10 @@ Run に含まれる全てのファイルは１つの SRA/fastq ファイルに�
 
 ## Submission  {#Submission}
 
-### Center Name  {#Area_center-name}
+### Submitting organization  {#Area_submitting_organization}
 
-登録者が所属する組織に関する情報を記載します。
-
-[Center Name](#Submission_Center_Name)<a name="Submission_Center_Name"></a><span class="red">*</span>
-: 登録者が所属する組織の Center Name。[Center Name リスト](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/centerlist)。DDBJ/EBI/NCBI
-SRA にデータを登録する際にはこの Center Name が必要です。
-メタデータ作成ツールはアカウント情報から Center Name を自動的に取得します。
-Center Name は登録の所有権を示すものではなく、SRA が運用上使用している略称です。所有権は [Submitter](#Area_submitter-submission) に記載される登録者にあります。
-
-[Lab Name](#Laboratory_Name)<a name="Laboratory_Name"></a><span class="red">*</span>
-: 登録者が所属する研究室やグループ名。アカウントに登録されている "Lab/Group"、"Department (2)"、"Department (1)"、"Organization" がカンマで連結されたテキストが初期入力されます。
+アカウントの Organization の値が自動的に引き写されます。
+2023年11月30日に center name は廃止され、組織名の略号管理はなくなりました。
 
 ### Hold Until  {#Area_hold-until}
 
