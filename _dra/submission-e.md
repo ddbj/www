@@ -10,7 +10,7 @@ lang: en
 ## Obtain a submission account {#account}
 
 Obtain a [D-way submission account](/account-e.html) and
-[register a public key to your account](/account-e.html#enable-dra-submission-in-account) to enable DRA submission.
+[register a public key and a center name to the account](/account-e.html#enable-dra-submission-in-account) to enable DRA submission.
 
 ## Create a new submission  {#new-submission}
 
@@ -69,7 +69,6 @@ For examples, please see the [Metadata tsv examples sheet](https://docs.google.c
 ### Submission {#Submission}
 
 Enter submission information regarding data release and submitters.
-The organization of your account is copied to the Submitting organization (former center name).
 
 <div class="attention">
 Email regarding DRA submissions is sent to addresses entered in the DRA Submission.

@@ -9,7 +9,7 @@ lang: ja
 
 ## 登録アカウントを取得  {#account}
 
-[D-way 登録アカウント](/account.html)を取得し、[公開鍵をアカウントに登録](/account.html#enable-dra-submission-in-account)して DRA 登録ができるようにします。
+[D-way 登録アカウント](/account.html)を取得し、[公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)して DRA 登録ができるようにします。
 
 ## 新規登録の作成  {#new-submission}
 
@@ -71,7 +71,6 @@ BioProject と BioSample は別のデータベースに登録されたレコー�
 
 データの管理情報を記入します。
 公開予定、登録者と連絡先メールアドレスを記入します。
-Submitting organization (旧 center name) にはアカウントの Organiztion の内容が引き写されます。
 
 <div class="attention">
 DRA 登録に関するメールは Submission に記載されたメールアドレスに対して送信されます。

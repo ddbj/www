@@ -12,7 +12,7 @@ lang: en
 ### 1. Obtain a submission account {#account}
 
 - Create a [D-way submission account](https://ddbj.nig.ac.jp/D-way/).
-- To enable GEA submission, [register a public key to your account](/account-e.html#enable-dra-submission-in-account).
+- To enable GEA submission, [register a public key and a center name to your account](/account-e.html#enable-dra-submission-in-account).
 
 ### 2. Register a BioProject, BioSamples and Sequence Read Archive (DRA) {#bioproject-biosample}
 
@@ -112,7 +112,7 @@ List of submission status
 | Confidential     | Archive files are created and submission is kept private |
 | Public           | Released to public.                     |
 
-### Upload processed data files {#upload-data}
+### Upload processed data files {#upload-data} 
 
 Regarding how to upload your data files, please see "[Data upload](/upload.html)".
 
@@ -276,6 +276,6 @@ The validator checks submitted IDF and SDRF files according to the [validation r
 
 To withdrawing archived Experiment, please [contact us](/contact-ddbj-e.html).
 
-## MD5 checksum value {#md5}
+## MD5 checksum value {#md5} 
 
 See "[MD5 checksum value](/checksum.html)" for how to obtain MD5 checksum values.

@@ -55,7 +55,7 @@ Login ID:
 入力した内容を確認し，[Create\] をクリックします。
 
 {::nomarkdown}
-{% include image.html url="books/account_3.jpg" caption="新規アカウントを予約" class="w300" %}
+{% include image.html url="books/account_3.jpg" caption="新規アカウントを予約" class="w350" %}
 {:/}
 
 入力されたアドレス宛に確認メールが送信されます。 メールに従い，予約したアカウントを有効にします。
