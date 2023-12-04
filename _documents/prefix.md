@@ -380,6 +380,7 @@ PL      DDBJ
 PM      DDBJ            
 PN      DDBJ            
 PO      DDBJ            
+PP      GenBank         Direct submission
 Q       void            UniProt/Swiss-Prot
 R       GenBank         EST
 S       GenBank         Journal scanning
