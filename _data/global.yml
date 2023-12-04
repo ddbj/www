@@ -4,7 +4,7 @@ top_news:
       path: 2023-12-04_2
     - title: DDBJ Search が復旧しました
       path: 2023-12-04
-    - title: NSSS ウェブ塩基配列登録システムが停止中
+    - title: NSSS ウェブ塩基配列登録システムが復旧しました
       path: 2023-12-02
     - title: D-way が復旧しました
       path: 2023-12-01
@@ -13,7 +13,7 @@ top_news:
       path: 2023-12-04_2-e
     - title: DDBJ Search has been resumed
       path: 2023-12-04-e
-    - title: NSSS web sequence submission system is down
+    - title: NSSS web sequence submission system has returned to normal
       path: 2023-12-02-e
     - title: D-way has been resumed
       path: 2023-12-01-e
