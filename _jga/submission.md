@@ -48,7 +48,7 @@ JGA でサポートしているファイル形式を以下に示します。 異
 
 ### BAM 形式 {#bam-format}
 
-Binary Alignment/Map (BAM) ファイルは JGA への登録にとって好ましいファイル形式の一つです。BAM は Sequence Alignment/Map (SAM) ファイル形式のバイナリー圧縮です (詳細は [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf))。BAM ファイルは SAM/BAM 用ツール (例えば [samtools](http://www.htslib.org/)) で human-readable なテキスト形式である SAM に変換することができます。BAM はアライメントされなかった unaligned read を含めることができます。  
+Binary Alignment/Map (BAM) ファイルは JGA への登録にとって好ましいファイル形式の一つです。BAM は Sequence Alignment/Map (SAM) ファイル形式のバイナリー圧縮です (詳細は [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf))。BAM ファイルは SAM/BAM 用ツール (例えば [samtools](http://www.htslib.org/)) で human-readable なテキスト形式である SAM に変換することができます。BAM はアライメントされなかった unaligned read を含めることができます。
 JGA はプライマリーデータとして Data に unaligned read を含む BAM を登録することを強く推奨しています。
 
 圧縮という観点で BAM ファイルはほぼ最適化されているので，ファイルをさらに圧縮する必要はありません。
@@ -133,13 +133,13 @@ JGA メタデータのうち以下のオブジェクトは登録の概要を示�
 
 <div class="dl-list" markdown="1">
 
-Study: 
+Study:
 : 全ての内容
 
-Dataset: 
+Dataset:
 : 全ての内容と含まれる Sample 数とファイルサイズ。
 
-Policy: 
+Policy:
 : 全ての内容
 
 </div>

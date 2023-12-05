@@ -236,14 +236,14 @@ Before filling in the metadata excel, you need to finish followings.
 * [Create a new DRA submission](#new-submission)
 * [Upload sequencing data files](#upload)
 
-Download the [DRA metadata excel](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx) and describe your metadata.
-[Example excel](https://github.com/ddbj/submission-excel2xml/raw/master/example-0001_dra_metadata.xlsx)
+Download the [DRA metadata excel](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx) and describe your metadata.
+[Example excel](https://github.com/ddbj/submission-excel2xml/raw/main/example/example-0001_dra_metadata.xlsx)
 
 Next, "upload XMLs generated from the excel" or "send the excel to the DRA team by email attachment".
 
 Please upload XMLs if you are familiar with command lines.
 
-You can submit metadata by uploading XMLs in the D-way submission page by using [the metadata excel](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx) and container images.
+You can submit metadata by uploading XMLs in the D-way submission page by using [the metadata excel](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx) and container images.
 Generate metadata XMLs according to the [GitHub](https://github.com/ddbj/submission-excel2xml) page.
 
 To add XML elements not covered by the web tool nor the excel such as technical reads, please refer to the [metadata XML examples](/dra/example-xml-e.html).

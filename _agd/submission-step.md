@@ -9,7 +9,7 @@ lang: ja
 
 ## NBDC へのデータ提供申請  {#ds-application}
 
-[NBDC データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)から[提供申請](https://gr-sharingdbs.biosciencedbc.jp/agd-data-submission)します。  
+[NBDC データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)から[提供申請](https://gr-sharingdbs.biosciencedbc.jp/agd-data-submission)します。
 申請時に提供申請グループを作成します。提供申請が NBDC で承認された後、AGD サーバにデータアップロード用ディレクトリが作成されます。
 
 申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
@@ -18,8 +18,8 @@ lang: ja
 D-way アカウント作成後、[NBDC データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
-NBDC 申請システムで自動入力させるため、アカウントに所属情報や日本語氏名を登録します。    
-[NBDC 申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)にログインし、右上のメニューから「ユーザ情報更新」を選択します。  
+NBDC 申請システムで自動入力させるため、アカウントに所属情報や日本語氏名を登録します。
+[NBDC 申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
 
 {% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
 
@@ -39,7 +39,7 @@ NBDC 申請システムで自動入力させるため、アカウントに所属
 
 ## 提供申請グループ {#data-submitter-group}
 
-申請前に提供申請グループを作成します。例の提供申請グループ (subgrp1) では申請及び登録を担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。  
+申請前に提供申請グループを作成します。例の提供申請グループ (subgrp1) では申請及び登録を担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。
 実際には NBDC 申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。登録に関する連絡はメンバーアカウントに対して送られます。
 
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
@@ -66,7 +66,7 @@ AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/submissio
 
 メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/agd/submission.html)をご覧ください。
 
-[![AGD メタデータ記入用エクセル](/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}](https://github.com/ddbj/submission-excel2xml/raw/master/JGA_metadata.xlsx)
+[![AGD メタデータ記入用エクセル](/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}](https://github.com/ddbj/submission-excel2xml/raw/main/JGA_metadata.xlsx)
 
 JGA と AGD はデータモデルが同一であるため、メタデータ記入用エクセルは共通です。ファイル名は JGA_metadata.xlsx となっておりますが、AGD のメタデータを記入し、AGD 用 submission ディレクトリにアップロードしてください。
 
@@ -95,7 +95,7 @@ sftp では公開鍵・秘密鍵認証を利用しており、[D-way アカウ�
 ```
 $ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
 $ cd /group-access/submission/agd/ASUB000353
-$ put ASUB000353_metadata.xlsx 
+$ put ASUB000353_metadata.xlsx
 ```
 -i: 認証用秘密鍵を指定
 -P: 接続先ポート番号 443 を指定
@@ -164,5 +164,5 @@ $ mput *.fastq
 ## メタデータとデータの登録 {#metadata-data-submission}
 
 AGD キュレータがメタデータとデータファイルを査定します。完成したエクセルからキュレータが XML を生成し、AGD に登録します。
-      
+
 メタデータとデータファイルが検証処理を通過するとアクセッション番号が発行されます。
