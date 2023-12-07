@@ -21,18 +21,18 @@ IDF と SDRF はプロトコールで、メタデータとデータファイル�
 実験種別に対応したメタデータエクセルをダウンロードし、内容を記入します。異なる種別のデータは Study を分けて登録します。
 
 * Mass spectrometry, chromatography
-    * Liquid chromatography-mass spectrometry (LC-MS, [download](/assets/files/submission/metabobank/MetaboBank_LC-MS_metadata.xlsx))
-    * Liquid chromatography, diode array detector-mass spectrometry (LC-DAD-MS, [download](/assets/files/submission/metabobank/MetaboBank_LC-DAD-MS_metadata.xlsx))
-    * Gas chromatography-mass spectrometry (GC-MS, [download](/assets/files/submission/metabobank/MetaboBank_GC-MS_metadata.xlsx))
-    * Two dimensional gas chromatography-mass spectrometry (GCGC-MS, [download](/assets/files/submission/metabobank/MetaboBank_GCGC-MS_metadata.xlsx))
-    * Gas chromatography, flame ionization detector-mass spectrometry (GC-FID-MS, [download](/assets/files/submission/metabobank/MetaboBank_GC-FID-MS_metadata.xlsx))
-    * Capillary electrophoresis-mass spectrometry (CE-MS, [download](/assets/files/submission/metabobank/MetaboBank_CE-MS_metadata.xlsx))
+    * Liquid chromatography-mass spectrometry (LC-MS, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_LC-MS_metadata.xlsx))
+    * Liquid chromatography, diode array detector-mass spectrometry (LC-DAD-MS, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_LC-DAD-MS_metadata.xlsx))
+    * Gas chromatography-mass spectrometry (GC-MS, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_GC-MS_metadata.xlsx))
+    * Two dimensional gas chromatography-mass spectrometry (GCGC-MS, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_GCGC-MS_metadata.xlsx))
+    * Gas chromatography, flame ionization detector-mass spectrometry (GC-FID-MS, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_GC-FID-MS_metadata.xlsx))
+    * Capillary electrophoresis-mass spectrometry (CE-MS, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_CE-MS_metadata.xlsx))
 * Mass spectrometry, direct injection
-    * Direct infusion-mass spectrometry (DI-MS, [download](/assets/files/submission/metabobank/MetaboBank_DI-MS_metadata.xlsx))
-    * Flow injection analysis-mass spectrometry (FIA-MS, [download](/assets/files/submission/metabobank/MetaboBank_FIA-MS_metadata.xlsx))
-    * Matrix-assisted laser desorption-ionisation mass spectrometry (MALDI-MS, [download](/assets/files/submission/metabobank/MetaboBank_MALDI-MS_metadata.xlsx))
-* Mass spectrometry imaging (MSI, [download](/assets/files/submission/metabobank/MetaboBank_MSI_metadata.xlsx))
-* Nuclear magnetic resonance spectroscopy (NMR, [download](/assets/files/submission/metabobank/MetaboBank_NMR_metadata.xlsx))
+    * Direct infusion-mass spectrometry (DI-MS, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_DI-MS_metadata.xlsx))
+    * Flow injection analysis-mass spectrometry (FIA-MS, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_FIA-MS_metadata.xlsx))
+    * Matrix-assisted laser desorption-ionisation mass spectrometry (MALDI-MS, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_MALDI-MS_metadata.xlsx))
+* Mass spectrometry imaging (MSI, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_MSI_metadata.xlsx))
+* Nuclear magnetic resonance spectroscopy (NMR, [download](https://github.com/ddbj/pub/raw/master/docs/metabobank/metadata_excel/MetaboBank_NMR_metadata.xlsx))
 
 ## IDF  {#idf}
 

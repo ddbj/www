@@ -34,7 +34,7 @@ If there are more than one file for a sample (SDRF one row), group them by tar o
 Submit information of identified metabolites in Metabolite assignment file (MAF). 
 Please see [Metabolite assignment file](#maf) for details.
 
-MS MAF excel ([download](/assets/files/submission/metabobank/MetaboBank_maf_MS.xlsx))
+MS MAF excel ([download](https://github.com/ddbj/pub/raw/master/docs/metabobank/maf_excel/MetaboBank_maf_MS.xlsx))
 
 ### Image file {#ms-image} 
 
@@ -64,7 +64,7 @@ If there are more than one file for a sample (SDRF one row), group them by tar o
 Submit information of identified metabolites in Metabolite assignment file (MAF). 
 Please see [Metabolite assignment file](#maf) for details.
 
-NMR MAF excel ([download](/assets/files/submission/metabobank/MetaboBank_maf_NMR.xlsx))
+NMR MAF excel ([download](https://github.com/ddbj/pub/raw/master/docs/metabobank/maf_excel/MetaboBank_maf_NMR.xlsx))
 
 ## Metabolite assignment file {#maf}
 

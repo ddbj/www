@@ -33,7 +33,7 @@ SDRF の Processed Data File カラムに各サンプルに対応した解析済
   
 同定・推定した化合物に関する情報は所定のファイル形式である Metabolite assignment file (MAF) として登録します。
 MAF の各項目の説明はエクセルをご覧ください。  
-* MS 用 MAF エクセル ([download](/assets/files/submission/metabobank/MetaboBank_maf_MS.xlsx))
+* MS 用 MAF エクセル ([download](https://github.com/ddbj/pub/raw/master/docs/metabobank/maf_excel/MetaboBank_maf_MS.xlsx))
 
 ### 画像ファイル {#ms-image} 
 
@@ -62,4 +62,4 @@ SDRF の Processed Data File カラムに各サンプルに対応した解析済
   
 同定・推定した化合物に関する情報は所定のファイル形式である Metabolite assignment file (MAF) として登録します。
 MAF の各項目の説明はエクセルをご覧ください。  
-* NMR 用 MAF エクセル ([download](/assets/files/submission/metabobank/MetaboBank_maf_NMR.xlsx))
+* NMR 用 MAF エクセル ([download](https://github.com/ddbj/pub/raw/master/docs/metabobank/maf_excel/MetaboBank_maf_NMR.xlsx))
