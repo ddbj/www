@@ -238,7 +238,7 @@ Submitters can transfer the submission files from MSS form by either one of the 
 - The mass directory is a target to import the files when MSS Application Form is used. Therefore only the the submission files should be placed here.
 - MSS form reads the files recursively from the subdirectories under mass/.
 - There are some rules for the submission file name. As to the compressed files, the files in the compressed archive should be subject to the rule.
-    - File extension of the annotation file should be either one of <span style="background-color: #e8e8e8;">.ann</span>, <span style="background-color: #e8e8e8;">.annt</span>, <span style="background-color: #e8e8e8;">.tsv</span>, or <span style="background-color: #e8e8e8;">.ann.txt</span>
+    - File extension of the annotation file should be either one of <span style="background-color: #e8e8e8;">.ann</span>, <span style="background-color: #e8e8e8;">.annt.tsv</span>, or <span style="background-color: #e8e8e8;">.ann.txt</span>
     - File extension of the nucleotide sequence file should be either one of <span style="background-color: #e8e8e8;">.fasta</span>, <span style="background-color: #e8e8e8;">.seq.fa</span>, <span style="background-color: #e8e8e8;">.fa</span>, <span style="background-color: #e8e8e8;">.fna</span>, or <span style="background-color: #e8e8e8;">.seq</span>
     - An annotation file and a nucleotide sequence file must comprise a pair. The system determines as a pair whose filenames without the extension has the same name.
         - Excluding the case of re-submitting the submission files as the request from DDBJ curator.
