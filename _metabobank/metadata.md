@@ -170,7 +170,7 @@ Experiment type は [controlled terms](https://docs.google.com/spreadsheets/d/1b
 詳細は [SDRF Protocol Parameters](#SDRF_Protocol_Parameters) を参照。
 
 [Protocol Hardware](#Protocol_Hardware)<a name="Protocol_Hardware"></a>
-: プロトコールでサンプル捕捉に使用した機器。複数の機器を使った場合はセミコロン (;) で区切って列挙します。
+: プロトコールでサンプル捕捉に使用した機器。複数の機器を使った場合はセミコロン (;) で区切って列挙します。この項目では ASCII、ギリシャ文字とシンボル \[° μ ± ≠ &#8786; &#060; &#062; ← ↑ ↓ → ↔ Å\] を使った表現が許容されています。
 
 [Protocol Software](#Protocol_Software)<a name="Protocol_Software"></a>
 : プロトコールで使用したソフトウェア。

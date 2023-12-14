@@ -566,6 +566,8 @@ metabobank:
           url: /metabobank/datafile.html
         - title: Validation
           url: /metabobank/validation.html
+        - title: Example
+          url: https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k
     - id: faq
       title: FAQ
       url: /faq/ja/index.html?tag=metabobank
@@ -592,6 +594,8 @@ metabobank:
           url: /metabobank/datafile-e.html
         - title: Validation
           url: /metabobank/validation-e.html
+        - title: Example
+          url: https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k
     - id: faq
       title: FAQ
       url: /faq/en/index-e.html?tag=metabobank

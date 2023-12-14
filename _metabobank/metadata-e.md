@@ -161,7 +161,7 @@ Protocols are central for reproducibility purposes and should provide a detailed
 See [SDRF Protocol Parameters](#SDRF_Protocol_Parameters) for details.
 
 [Protocol Hardware](#Protocol_Hardware)<a name="Protocol_Hardware"></a>
-: The protocol hardware is the instrument that was used to capture the sample. If multiple instruments are used, they should be separated by semicolon (;).
+: The protocol hardware is the instrument that was used to capture the sample. If multiple instruments are used, they should be separated by semicolon (;). In this field, ASCII, Greek characters and symbols \[° μ ± ≠ &#8786; &#060; &#062; ← ↑ ↓ → ↔ Å\] are allowed for richer description.
 
 [Protocol Software](#Protocol_Software)<a name="Protocol_Software"></a>
 : The software used by the protocol.
