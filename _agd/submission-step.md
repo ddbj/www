@@ -66,7 +66,7 @@ AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/submissio
 
 メタデータ記入用エクセルファイルを下記よりダウンロードし、内容を英語で記入してください。メタデータの説明は[こちらのページ](/agd/submission.html)をご覧ください。
 
-[![AGD メタデータ記入用エクセル](/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}](https://github.com/ddbj/submission-excel2xml/raw/main/JGA_metadata.xlsx)
+[![AGD メタデータ記入用エクセル](/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}](https://github.com/ddbj/submission-excel2xml/raw/master/JGA_metadata.xlsx)
 
 JGA と AGD はデータモデルが同一であるため、メタデータ記入用エクセルは共通です。ファイル名は JGA_metadata.xlsx となっておりますが、AGD のメタデータを記入し、AGD 用 submission ディレクトリにアップロードしてください。
 
@@ -81,7 +81,7 @@ AGD にアップロードするファイル名には空白を含めないでく�
 ### エクセルをアップロード  {#upload-excel}
 
 <div class="attention" markdown="1">
-AGD にファイルを sftp でアップロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。AGD サーバに ssh ログインすることはできません。
+AGD にファイルを sftp でアップロードするためには [D-way アカウントに公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。AGD サーバに ssh ログインすることはできません。
 </div>
 
 AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/submission/agd/ の下に AGD Submission ID と同名のディレクトリが作成されるので、

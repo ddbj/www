@@ -13,16 +13,12 @@ lang: ja
 - 責任者の許可のもとアカウントを作成し，データを管理してください。
 - アカウントとパスワードはユーザが安全に管理してください。
 - アカウント名は変更できません。
+- アカウント情報の更新が反映されるまで10分程度時間がかかります。
 - アカウント作成後、NBDC 申請システムで利用できるようになるまで10分程度時間がかかります。
 </div>
 
 DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認証を介した scp を利用しています。
 そのため、ファイル転送を伴う DRA、GEA と JGA を利用するためにはアカウントに認証用の公開鍵（認証用公開鍵）を登録する必要があります。
-また、DRA のメタデータでは登録者組織に割り当てられる center name が必須であるため、center name の登録も合わせて必要になります。
-
-{::nomarkdown}
-{% include image.html url="books/hac01.jpg" caption="アカウントのサービス利用権限" class="w300" %}
-{:/}
 
 NBDC に提供・利用申請を提出するユーザは[申請に必要なアカウント情報を追加](#nbdc)します。追加した情報は申請フォームに自動入力されるようになるため、申請作業が効率的になります。
 
@@ -36,7 +32,7 @@ NBDC に提供・利用申請を提出するユーザは[申請に必要なア�
 [Register for a new account] ボタンをクリックします。
 
 {::nomarkdown}
-{% include image.html url="books/account_1_new.png" caption="新規アカウントを作成" class="w250" %}
+{% include image.html url="books/account_1_new.png" caption="新規アカウントを作成" class="w400" %}
 {:/}
 
 必要な情報を入力して [Continue\] をクリックします。
@@ -53,13 +49,12 @@ Login ID:
 : 小文字，数字と "_" を含めることができます
 : "-" と大文字は使えません
 : 数字と "_" を先頭に使うことはできません
-
 </div>
 
-入力した内容を確認し，[Create\] をクリックします。
+入力した内容を確認し、利用規約を読んで同意のうえで [Create\] をクリックします。
 
 {::nomarkdown}
-{% include image.html url="books/account_3.jpg" caption="新規アカウントを予約" class="w250" %}
+{% include image.html url="books/account_3.jpg" caption="新規アカウントを予約" class="w400" %}
 {:/}
 
 入力されたアドレス宛に確認メールが送信されます。 メールに従い，予約したアカウントを有効にします。
@@ -75,13 +70,11 @@ Login ID:
 {% include image.html url="books/account_4.jpg" caption="パスワードを設定" class="w250" %}
 {:/}
 
-{::nomarkdown}
-{% include image.html url="books/initial.jpg" caption="BioProject/BioSample/NBDC 申請システムを利用可能" class="w450" %}
-{:/}
+パスワード設定後、BioProject/BioSample/NBDC 申請システムを利用可能になります。
 
-## DRA/GEA/JGA の登録権限を追加  {#enable-dra-submission-in-account}
+## DRA/GEA/JGA 登録権限を追加  {#enable-dra-submission-in-account}
 
-サイズの大きいデータファイル転送を伴う DRA/GEA/JGA サービスを利用するため、アカウントに center name と公開鍵（認証用公開鍵）を登録します。公開鍵はユーザの認証に用いられます。
+サイズの大きいデータファイル転送を伴う DRA/GEA/JGA サービスを利用するため、アカウントに公開鍵（認証用公開鍵）を登録します。公開鍵はユーザの認証に用いられます。
 
 JGA サービスを利用するため NBDC に提供・利用申請をする方は[アカウント情報の追加](/account.html#nbdc)が必要です。
 
@@ -221,18 +214,10 @@ $ ssh-keygen -t rsa -f J-DU999991
 "/Users/you/.ssh" フォルダに秘密鍵は "J-DU999991" として、公開鍵は "J-DU999991.pub" として保存されます。
 ```
 
-### Center name と認証用公開鍵の登録  {#register-center-name-and-public-key}
+### 認証用公開鍵の登録 {#register-public-key}
 
-[登録アカウント](https://ddbj.nig.ac.jp/D-way/)にログインします。 "アカウント" ページの "Center Full Name" に組織名を入力し，提示される候補から適切なものを選びます。 [Update\] をクリックしてアカウントを更新します。
-
-{::nomarkdown}
-{% include image.html url="books/center.jpg" caption="center name を登録" class="w400" %}
-{:/}
-
-適切な center が登録されていない場合，[Apply new center name\] をクリックし，組織のフルネームとともに center の新規登録を [DDBJ](/contact-ddbj.html) に申請します。
-
-Center name が登録されると，下部の "Public Key"
-エリアから公開鍵をアップロードできるようになります。認証用公開鍵ファイルを選択し，[Register
+[登録アカウント](https://ddbj.nig.ac.jp/D-way/)にログインします。 "アカウント" ページ下部の "Public Key"
+エリアから公開鍵をアップロードします。認証用公開鍵ファイルを選択し，[Register
 public key\] で鍵を登録します。
 
 {::nomarkdown}
@@ -251,10 +236,15 @@ public key\] で鍵を登録します。
 
 アカウント情報を編集し [Update\] ボタンでアカウントを更新します。登録した認証用公開鍵は新しいファイルをアップロードすることで上書きすることができます。
 
+{::options parse_block_html="true" /}
+<div class="attention">
+更新したアカウント情報が反映されるまで10分程度かかります。10分以上後で再度ログインしてください。
+</div>
+
 ## NBDC 申請のための情報追加  {#nbdc}
 
 アカウントに所属情報や日本語氏名、職位を登録します。
-[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) \([https://humandbs.ddbj.nig.ac.jp/nbdc/application/](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)\)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
+[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
 
 {% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
 
@@ -265,10 +255,8 @@ public key\] で鍵を登録します。
 所属情報や日本語氏名を追加で入力します。
 
 * Laboratory, Faculty, Department
-* Country
 * Postal code/Zip code
 * State/Prefecture
-* City
 * Street
 * Phone
 * Job Title
