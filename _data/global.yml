@@ -1,10 +1,14 @@
 top_news:
   ja:
+    - title: (12/20 10:00-12:00) GEA/DRA/BP/BS システムリリースによるサービス停止のお知らせ
+      path: 2023-12-15
     - title: 生命情報・DDBJ センター年末年始休業のお知らせ
       path: 2023-12-04_2
     - title: DDBJ Search キーワード検索の一部不具合について
       path: 2023-12-06
   en:
+    - title: (December 20 10:00-12:00) Announcement of GEA/DRA/BP/BS system suspension
+      path: 2023-12-15-e
     - title: Suspension of the BI-DDBJ activity during the New Year Holidays
       path: 2023-12-04_2-e
     - title: Disabilities in the DDBJ Search keyword search functionalities
