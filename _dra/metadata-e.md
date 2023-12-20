@@ -46,23 +46,10 @@ Conditionally required<span class="conditionally_required">*</span>
 
 ## Submission  {#Submission}
 
-### Center Name  {#Area_center-name}
+### Submitting organization  {#Area_submitting_organization}
 
-Enter submitter's organization.
-
-[Center Name](#Submission_Center_Name)<a name="Submission_Center_Name"><span class="red">*</span>
-: A submitter's center name. [Center Name List.](https://ddbj.nig.ac.jp/public/ddbj_database/dra/meta/list/centerlist)
-A center name abbreviation is required to submit data to DRA.
-
-In the metadata creation tool, the center name is automatically
-filled with the account information.
-
-The Center Name is an abbreviation operationally used by SRA and is not for indicating ownership of
-submission. Submitters listed in [Submitter](#Area_submitter-submission) hold ownership of submission.
-
-[Lab Name](#Laboratory_Name)<a name="Laboratory_Name"></a><span class="red">*</span>
-: Laboratory name within submitting institution. The Lab name is
-pre-entered with "Lab/Group", "Department (2)", "Department (1)","Organization" of D-way account. Text can be editted.
+The organization of the account is copied as the Submitting organization.
+At 20th December 2023, the center name and organization abbreviations were discontinued.
 
 ### Hold Until  {#Area_hold-until}
 

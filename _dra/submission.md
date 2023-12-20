@@ -9,7 +9,7 @@ lang: ja
 
 ## 登録アカウントを取得  {#account}
 
-[D-way 登録アカウント](/account.html)を取得し、[公開鍵と center name をアカウントに登録](/account.html#enable-dra-submission-in-account)して DRA 登録ができるようにします。
+[D-way 登録アカウント](/account.html)を取得し、[公開鍵をアカウントに登録](/account.html#enable-dra-submission-in-account)して DRA 登録ができるようにします。
 
 ## 新規登録の作成  {#new-submission}
 
@@ -19,9 +19,9 @@ lang: ja
 新規登録に対応するディレクトリが受付サーバ (ftp-private.ddbj.nig.ac.jp) に作成されるので、データファイルを[このディレクトリにアップロードします](/upload.html)。
 
 <div class="attention">
-* DDBJ センターから登録者に問い合わせた後、三か月以上回答が無い登録はキャンセルします。
-* データは Submission 単位で公開されます。データを異なる時期に部分公開したい場合は Submission を分けてください。
-* Submission 辺りの上限件数は BioSample:1,000、DRA:2,000 (Run 数)、GEA:1,000 (Assay 数) になります。これらを超える件数を登録する場合、同じ BioProject を参照する複数の submission に分割してください。
+* DDBJ センターから登録者に問い合わせた後、三か月以上回答が無い登録はキャンセルします。  
+* データは Submission 単位で公開されます。データを異なる時期に部分公開したい場合は Submission を分けてください。  
+* Submission 辺りの上限件数は BioSample:1,000、DRA:2,000 (Run 数)、GEA:1,000 (Assay 数) になります。これらを超える件数を登録する場合、同じ BioProject を参照する複数の submission に分割してください。  
 </div>
 
 {% include image.html url="books/hdra01.jpg" caption="新規 DRA 登録の作成" class="w500" %}
@@ -71,6 +71,7 @@ BioProject と BioSample は別のデータベースに登録されたレコー�
 
 データの管理情報を記入します。
 公開予定、登録者と連絡先メールアドレスを記入します。
+Submitting organization (旧 center name) にはアカウントの Organiztion の内容が引き写されます。
 
 <div class="attention">
 DRA 登録に関するメールは Submission に記載されたメールアドレスに対して送信されます。
@@ -222,13 +223,13 @@ Run の数が100を超えるような場合で、ウェブツールの応答が�
 * [DRA 新規登録の作成](#new-submission)
 * [データファイルのアップロード](#upload)
 
-[メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx)をダウンロードし、内容を記入します。
-[エクセルの記入例](https://github.com/ddbj/submission-excel2xml/raw/main/example/example-0001_dra_metadata.xlsx)
+[メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx)をダウンロードし、内容を記入します。
+[エクセルの記入例](https://github.com/ddbj/submission-excel2xml/raw/master/example-0001_dra_metadata.xlsx)
 
 続いて、メタデータ登録用エクセルから生成した「XML を登録」、もしくは、「エクセルを担当者に送付」します。
 コマンドライン操作に慣れている方は XML を直接登録してください。大量件数の登録を効率化することができます。
 
-[メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx)とプログラムを使ってエクセルから XML を生成し、XML を D-way からアップロードすることで多件数を一括で登録します。
+[メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx)とプログラムを使ってエクセルから XML を生成し、XML を D-way からアップロードすることで多件数を一括で登録します。
 [GitHub](https://github.com/ddbj/submission-excel2xml) に記載されている手順に従い、メタデータを記入したエクセルからコマンドラインツールで Submission、Experiment、Run XML を生成します。
 
 ウェブツールやエクセルで対応していない technical reads 等の XML 要素を追加する場合、[メタデータ XML の例](/dra/example-xml.html)を参照してください。

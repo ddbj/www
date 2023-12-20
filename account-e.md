@@ -10,18 +10,14 @@ Bioinformation and DDBJ Center provides the D-way account system. In the D-way a
 
 {::options parse_block_html="true" /}
 <div class="attention">
-
-  - Create a D-way account and manage data with permission of Principal Investigator (PI).
-  - Issued account and password must be maintained securely by users.
-  - Account name cannot be changed once it has been created.
-  - It takes about 10 minutes for the created D-way account becoming active in the NBDC application system.
+- Create a D-way account and manage data with permission of Principal Investigator (PI).
+- Issued account and password must be maintained securely by users.
+- Account name cannot be changed once it has been created.
+- In D-way account page, updated information will be reflected in about 10 minutes.
+- It takes about 10 minutes for the created D-way account becoming active in the NBDC application system.
 </div>
 
-DDBJ Center employs scp authenticated by ssh key for transfer of large files. Therefore, you need to register a public key for authentication for using DRA, GEA and JGA services which accompany transfer of large files. In addition, because DRA metadata require a center name, you need to register a center name assigned to your affiliation for using DRA service.
-
-{::nomarkdown}
-{% include image.html url="books/hac01-e.jpg" caption="Service permission of D-way account" class="w300" %}
-{:/}
+DDBJ Center employs scp authenticated by ssh key for transfer of large files. Therefore, you need to register a public key for authentication for using DRA, GEA and JGA services which accompany transfer of large files.
 
 Users who will submit data submission or data use applications to NBDC are advised to [enter additional account information](#nbdc). The added items are automatically filled to new applications and the users are able to avoid entering these items in each application.
 
@@ -31,15 +27,12 @@ Users who will submit data submission or data use applications to NBDC are advis
 
 By default, you can use BioProject/BioSample/NBDC application systems in the D-way account created on the website.
 
-<div class="attention">
-For submission to DRA and GEA, you need to register center name and public key.
-</div>
-
 Open the submission portal page at
-[https://ddbj.nig.ac.jp/D-way](https://ddbj.nig.ac.jp/D-way/). Click the [Register for a new account] button.
+[https://ddbj.nig.ac.jp/D-way](https://ddbj.nig.ac.jp/D-way/). 
+Click the [Register for a new account] button.
 
 {::nomarkdown}
-{% include image.html url="books/account_1_new.png" caption="Create a new account" class="w250" %}
+{% include image.html url="books/account_1_new.png" caption="Create a new account" class="w400" %}
 {:/}
 
 Enter necessary information and click the [Continue].
@@ -52,17 +45,16 @@ Login ID:
 : &emsp;ID can contain small letters, numbers and "_".
 : &emsp;"-" and capital letters cannot be used.
 : &emsp;Numbers and "_" cannot be used for first letter.
-
 </div>
 
 {::nomarkdown}
 {% include image.html url="books/account_2.jpg" caption="Enter basic account information" class="w250" %}
 {:/}
 
-Enter basic account information and reserve an account ID.
+Enter basic account information and reserve an account ID upon agreeing on the [Terms of Use](/policies-e.html).
 
 {::nomarkdown}
-{% include image.html url="books/account_3.jpg" caption="Reserve an account" class="w250" %}
+{% include image.html url="books/account_3.jpg" caption="Reserve an account" class="w400" %}
 {:/}
 
 A confirmation mail is sent to the entered e-mail address. Activate your
@@ -71,23 +63,18 @@ reserved account according to the mail text.
 Set a password for the activated account.
 
 <div class="attention">
-Set a password longer than 8 characters contains both alphabets and　numbers.
+Set a password longer than 8 characters contains both alphabets and numbers.
 </div>
-
 
 {::nomarkdown}
 {% include image.html url="books/account_4.jpg" caption="Set a password" class="w250" %}
 {:/}
 
-{::nomarkdown}
-{% include image.html url="books/initial.jpg" caption="Can submit to BioProject, BioSample and NBDC" class="w450" %}
-{:/}
-
+After setting a password, you can use BioProject, BioSample and the NBDC application system.
 
 ## Enable DRA/GEA/JGA submission in account  {#enable-dra-submission-in-account}
 
-For submission to the [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) and [Genomic Expression Archive (GEA)](/gea/index-e.html), center name and public key should be registered to your account. The center name is abbreviated name of
-organization assigned by the DRA. The public key is used to identify users to access the file submission server.
+For submission to the [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) and [Genomic Expression Archive (GEA)](/gea/index-e.html), a public key should be registered to your account. The public key is used to identify users to access the file submission server.
 
 ### Generate public and private key pair  {#generate-key-pair}
 
@@ -229,23 +216,9 @@ $ ssh-keygen -t rsa -f J-DU999991
 At "/Users/you/.ssh", the private key is saved as "J-DU999991" and the public key is saved as "J-DU999991.pub".
 ```
 
-### Register center name and public key  {#register-center-name-and-public-key}
+### Register a public key {#register-public-key}
 
-Login to the [submission account](https://ddbj.nig.ac.jp/D-way/). Set a
-new password for the first time of login. In the "Account" page, fill
-your organization name in the "Center Full Name" and choose an
-appropriate one from suggested list. Then, update your account by
-clicking the [Update] button.
-
-If an appropriate center is not registered, apply a new one by clicking
-the [Apply new center name] button and inform us a full name of your
-organization.
-
-{::nomarkdown}
-{% include image.html url="books/center.jpg" caption="Register a center name" class="w400" %}
-{:/}
-
-Once center name is registered, a public key can be uploaded in the
+Login to the [submission account](https://ddbj.nig.ac.jp/D-way/). In the Account page, a public key can be uploaded in the
 "Public Key" area at the bottom. Select a public key file and register
 it by [Register public key] button.
 
@@ -253,8 +226,7 @@ it by [Register public key] button.
 {% include image.html url="books/keyregister.jpg" caption="Register a public key for authentication" class="w400" %}
 {:/}
 
-Once both center name and public key for authentication are registered, you can submit to
-the DRA/GEA at menus at top left.
+Once a public key for authentication are registered, you can submit to the DRA/GEA at menus at top left.
 
 {::nomarkdown}
 {% include image.html url="books/drasub.jpg" caption="Can submit to DRA/GEA in addition to BioProject and BioSample" class="w450" %}
@@ -267,10 +239,15 @@ The JGA submissions are not browsable in the D-way web portal (under development
 Edit account information and update account by [Update] button. The
 registered public key for authentication can be overwritten by uploading a new file.
 
+{::options parse_block_html="true" /}
+<div class="attention">
+Updated account information will be reflected in about 10 minutes. Please login again after 10 minutes.
+</div>
+
 ## Items to be added for NBDC applications {#nbdc}
 
 Add the organization and job title information to your account.
-Login the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) \([https://humandbs.ddbj.nig.ac.jp/nbdc/application/](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)\) and select the "User information update" at the top right menu.
+Login the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) and select the "User information update" at the top right menu.
 
 {% include image.html url="books/profile1-e.jpg" caption="User information update" class="w400" %}
 
@@ -281,10 +258,8 @@ Click the Edit button to add the information.
 Add additional information.
 
 * Laboratory, Faculty, Department
-* Country
 * Postal code/Zip code
 * State/Prefecture
-* City
 * Street
 * Phone
 * Job Title

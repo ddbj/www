@@ -10,7 +10,7 @@ lang: en
 ## Obtain a submission account {#account}
 
 Obtain a [D-way submission account](/account-e.html) and
-[register a public key and a center name to the account](/account-e.html#enable-dra-submission-in-account) to enable DRA submission.
+[register a public key to your account](/account-e.html#enable-dra-submission-in-account) to enable DRA submission.
 
 ## Create a new submission  {#new-submission}
 
@@ -20,9 +20,9 @@ corresponding directory is created under the submitter’s home.
 [Upload sequence data files to this directory](/upload-e.html).
 
 <div class="attention">
-* If there is no reply from submitters after three months of initial contact, submissions will be cancelled.
-* All data in a submission are released at the same time. If you want to release data at different time, please divide a submission.
-* Maximum numbers of objects per submission are, BioSample:1,000, DRA:2,000 (Runs) and GEA:1,000 (Assays). If you have objects more than these limits, please create multiple submissions with the same BioProject reference.
+* If there is no reply from submitters after three months of initial contact, submissions will be cancelled.  
+* All data in a submission are released at the same time. If you want to release data at different time, please divide a submission.  
+* Maximum numbers of objects per submission are, BioSample:1,000, DRA:2,000 (Runs) and GEA:1,000 (Assays). If you have objects more than these limits, please create multiple submissions with the same BioProject reference.  
 </div>
 
 {% include image.html url="books/hdra01.jpg" caption="Create a new submission" class="w500" %}
@@ -69,6 +69,7 @@ For examples, please see the [Metadata tsv examples sheet](https://docs.google.c
 ### Submission {#Submission}
 
 Enter submission information regarding data release and submitters.
+The organization of your account is copied to the Submitting organization (former center name).
 
 <div class="attention">
 Email regarding DRA submissions is sent to addresses entered in the DRA Submission.
@@ -236,14 +237,14 @@ Before filling in the metadata excel, you need to finish followings.
 * [Create a new DRA submission](#new-submission)
 * [Upload sequencing data files](#upload)
 
-Download the [DRA metadata excel](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx) and describe your metadata.
-[Example excel](https://github.com/ddbj/submission-excel2xml/raw/main/example/example-0001_dra_metadata.xlsx)
+Download the [DRA metadata excel](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx) and describe your metadata.
+[Example excel](https://github.com/ddbj/submission-excel2xml/raw/master/example-0001_dra_metadata.xlsx)
 
 Next, "upload XMLs generated from the excel" or "send the excel to the DRA team by email attachment".
 
 Please upload XMLs if you are familiar with command lines.
 
-You can submit metadata by uploading XMLs in the D-way submission page by using [the metadata excel](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx) and container images.
+You can submit metadata by uploading XMLs in the D-way submission page by using [the metadata excel](https://github.com/ddbj/submission-excel2xml/raw/master/metadata_dra.xlsx) and container images.
 Generate metadata XMLs according to the [GitHub](https://github.com/ddbj/submission-excel2xml) page.
 
 To add XML elements not covered by the web tool nor the excel such as technical reads, please refer to the [metadata XML examples](/dra/example-xml-e.html).

@@ -12,7 +12,7 @@ lang: ja
 ### 1. 登録アカウントを取得  {#account}
 
 - [D-way 登録アカウント](https://ddbj.nig.ac.jp/D-way/)を作成
-- [公開鍵と center nameをアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA登録を可能に
+- [公開鍵をアカウントに登録](/account.html#enable-dra-submission-in-account)しGEA登録を可能に
 
 ### 2. BioProject、BioSample と Sequence Read Archive (DRA) に登録  {#bioproject-biosample}
 
@@ -111,7 +111,7 @@ DDBJ センターから登録者に問い合わせた後三か月以上回答が
 | Confidential     | 公開用ファイルの作成処理が完了し、非公開に保たれている状態 |
 | Public           | 公開されている状態                     |
 
-### 解析済みファイルのアップロード  {#upload-data} 
+### 解析済みファイルのアップロード  {#upload-data}
 
 データファイルのアップロード方法は「[データのアップロード](/upload.html)」をご覧ください。
 
@@ -295,6 +295,6 @@ Validator は [validation rule](/gea/validation.html) に従ってメタデー�
 
 アーカイブされた Experiment を削除する場合は [GEA チームに連絡](/contact-ddbj.html)します。
 
-## MD5 チェックサム値 {#md5} 
+## MD5 チェックサム値 {#md5}
 
 MD5 チェックサム値の取得方法は「[MD5 チェックサム値の取得](/checksum.html)」をご覧ください。

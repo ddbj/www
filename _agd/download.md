@@ -73,7 +73,7 @@ NBDC への利用申請において公開鍵を「データセット暗号化用
 ### ダウンロード {#download}
 
 <div class="attention" markdown="1">
-AGD からファイルを sftp でダウンロードするためには [D-way アカウントに center name と公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。
+AGD からファイルを sftp でダウンロードするためには [D-way アカウントに公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。
 </div>
 
 AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/download/agd/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されるので、
@@ -163,7 +163,7 @@ $ unzip tools/A-DU999991.tool.zip
 復号処理スクリプトおよび暗号化済み共通鍵ファイルが展開されます。DU 全体を対象とする復号スクリプト A-DU999991.decrypt.sh が A-DU999991 ディレクトリ直下に、個々のデータファイルを対象とする case1.fastq.gz.decrypt.sh のような復号スクリプトが暗号化されたデータファイルが含まれる Data/Analysis ディレクトリに配置されます。
 
 ```
-$ ls 
+$ ls
 A-DU999991.decrypt.sh
 AGDS_999992 　　
 tools　　　　　　
@@ -183,17 +183,17 @@ case1.vcf.gz.encrypt.dat
 全ての復号処理スクリプトに対して実行権限を付与します。
 
 ```
-$ chmod 754 A-DU999991.decrypt.sh 
+$ chmod 754 A-DU999991.decrypt.sh
 $ chmod 754 AGDS_999992/AGDD_999993/AGDR_999999994/case1.fastq.gz.decrypt.sh
 $ chmod 754 AGDS_999992/AGDD_999993/AGDR_999999995/case2.fastq.gz.decrypt.sh
-$ chmod 754 AGDS_999992/AGDD_999993/AGDZ_999999996/case1.vcf.gz.decrypt.sh 
-$ chmod 754 AGDS_999992/AGDD_999993/AGDZ_999999997/case2.vcf.gz.decrypt.sh 
+$ chmod 754 AGDS_999992/AGDD_999993/AGDZ_999999996/case1.vcf.gz.decrypt.sh
+$ chmod 754 AGDS_999992/AGDD_999993/AGDZ_999999997/case2.vcf.gz.decrypt.sh
 ```
 
 データファイルが多数ある場合、以下のようにワイルドカード (*) を使ったコマンドを実行するとデータファイル毎の復号処理スクリプトに対して一括で実行権限を付与することができます。
 
 ```
-$ chmod 754 A-DU999991.decrypt.sh 
+$ chmod 754 A-DU999991.decrypt.sh
 $ chmod 754 AGDS_999992/**/**/*.decrypt.sh
 ```
 
@@ -233,7 +233,7 @@ metadata ディレクトリには以下のファイルが含まれています�
 #### メタデータオブジェクトの内容が記述された tsv ファイル {#metadata-tsv}
 
 - AGDD_999993.sample.txt
-- AGDD_999993.analysis.SEQUENCE_VARIATION.txt  
+- AGDD_999993.analysis.SEQUENCE_VARIATION.txt
 
 メタデータを見やすくするため、Sample 及び Analysis については、1行目に項目名、2行目以降に内容が記述された tsv ファイルが提供されます。Analysis の tsv ファイル名には Analysis type（種類）が含まれており、type 毎に作成されます。
 
