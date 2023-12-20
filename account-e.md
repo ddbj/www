@@ -276,6 +276,23 @@ Save the information by the Save button.
 
 {% include image.html url="books/profile4.jpg" caption="Save the information" class="w300" %}
 
+## Password reset {#password-reset}
+
+Follow [Forgot password?\] link under the [D-way](https://ddbj.nig.ac.jp/D-way) login page.  
+{% include image.html url="books/pass-reset-1.jpg" caption="Forgot password" class="w500" %}
+
+Enter an account ID to reset a password and click [Submit\].  
+If the account exists, a password reset mail will be sent to the registered address.
+{% include image.html url="books/pass-reset-2.jpg" caption="Enter an account ID" class="w400" %}
+
+Follow instructions in the mail and reset a new password.  
+{% include image.html url="books/pass-reset-3.jpg" caption="Reset a new password" class="w400" %}
+
+<div class="attention">
+A new password will be reflected in 10 minutes.  
+After 10 minutes, login [D-way](https://ddbj.nig.ac.jp/D-way) with a new password.
+</div>
+
 ## Password change {#password-change}
 
 Login [D-way](https://ddbj.nig.ac.jp/D-way) and move to the password change page from "Password" menu at top.

@@ -275,6 +275,23 @@ public key\] で鍵を登録します。
 
 {% include image.html url="books/profile4.jpg" caption="Save で保存" class="w300" %}
 
+## パスワードの再設定 {#password-reset}
+
+[D-way](https://ddbj.nig.ac.jp/D-way) ログインページ下部の [Forgot password?\] をクリックします。   
+{% include image.html url="books/pass-reset-1.jpg" caption="Forgot password" class="w500" %}
+
+再設定するアカウント ID を入力し、[Submit\] をクリックします。  
+アカウントが実在する場合、登録されているアドレスに再設定メールが送信されます。
+{% include image.html url="books/pass-reset-2.jpg" caption="アカウント ID を入力" class="w400" %}
+
+パスワード再設定メール中のリンクをクリックし、新しいパスワードを設定します。  
+{% include image.html url="books/pass-reset-3.jpg" caption="パスワードを再設定" class="w400" %}
+
+<div class="attention">
+パスワード変更が反映されるまで10分程度時間がかかります。  
+10分以上後で [D-way](https://ddbj.nig.ac.jp/D-way) にログインしてください。
+</div>
+
 ## パスワードの変更 {#password-change}
 
 [D-way](https://ddbj.nig.ac.jp/D-way/) からログインします。上部の Password メニューからパスワード変更ページへ移動します。
