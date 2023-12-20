@@ -56,11 +56,11 @@ AGD データの利用のためには暗号化用と認証用に合計2ペア4�
 
 作成したデータセット暗号化用公開鍵を NBDC の利用申請システムで登録します。
 
-### データセット暗号化用公開鍵の登録 {#key-registration}
+### データセット復号用公開鍵の登録 {#key-registration}
 
-NBDC への利用申請において公開鍵を「データセット暗号化用公開鍵」として登録します。
+NBDC への利用申請において公開鍵を「データセット復号用公開鍵」として登録します。
 
-{% include image.html url="books/public-key-for-dataset-encryption.png" caption="データセット暗号化用公開鍵の登録" class="w400" %}
+{% include image.html url="books/public-key-for-dataset-decryption.png" caption="データセット復号用公開鍵の登録" class="w400" %}
 
 ## 利用申請の承認とダウンロード {#data-use-approval-download}
 
