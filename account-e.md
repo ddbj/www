@@ -39,12 +39,11 @@ Enter necessary information and click the [Continue].
 
 {::options parse_block_html="true" /}
 <div class="attention">
-
 Login ID:
-: &emsp;ID must be 4 to 24 characters long.
-: &emsp;ID can contain small letters, numbers and "_".
-: &emsp;"-" and capital letters cannot be used.
-: &emsp;Numbers and "_" cannot be used for first letter.
+* ID must be 4 to 24 characters long.
+* ID can contain small letters, numbers and "_".
+* "-" and capital letters cannot be used.
+* Numbers and "_" cannot be used for first letter.
 </div>
 
 {::nomarkdown}
@@ -57,20 +56,27 @@ Enter basic account information and reserve an account ID upon agreeing on the [
 {% include image.html url="books/account_3.jpg" caption="Reserve an account" class="w400" %}
 {:/}
 
-A confirmation mail is sent to the entered e-mail address. Activate your
-reserved account according to the mail text.
-
-Set a password for the activated account.
+A confirmation mail is sent to the entered e-mail address.  
+Set a password by clicking a link in the mail.
 
 <div class="attention">
 Set a password longer than 8 characters contains both alphabets and numbers.
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/account_4.jpg" caption="Set a password" class="w250" %}
+{% include image.html url="books/account_4.jpg" caption="Set a password" class="w300" %}
 {:/}
 
-After setting a password, you can use BioProject, BioSample and the NBDC application system.
+Please wait more than 10 minutes after setting a password and login [D-way](https://ddbj.nig.ac.jp/D-way).  
+The account information fields including required ones are displayed.  
+Enter your account information and click [Update\].
+
+{::nomarkdown}
+{% include image.html url="books/account_5.jpg" caption="Enter account information fields" class="w400" %}
+{:/}
+
+To enable DRA/GEA/JGA submission, you need to register a [public key](#generate-key-pair).   
+Please wait more than 10 minutes after entering account information, login [D-way](https://ddbj.nig.ac.jp/D-way) again and register a [public key](#generate-key-pair).
 
 ## Enable DRA/GEA/JGA submission in account  {#enable-dra-submission-in-account}
 
@@ -223,13 +229,13 @@ Login to the [submission account](https://ddbj.nig.ac.jp/D-way/). In the Account
 it by [Register public key] button.
 
 {::nomarkdown}
-{% include image.html url="books/keyregister.jpg" caption="Register a public key for authentication" class="w400" %}
+{% include image.html url="books/keyregister.jpg" caption="Register a public key for authentication" class="w500" %}
 {:/}
 
 Once a public key for authentication are registered, you can submit to the DRA/GEA at menus at top left.
 
 {::nomarkdown}
-{% include image.html url="books/drasub.jpg" caption="Can submit to DRA/GEA in addition to BioProject and BioSample" class="w450" %}
+{% include image.html url="books/drasub.jpg" caption="Can submit to DRA/GEA in addition to BioProject and BioSample" class="w500" %}
 {:/}
 
 The JGA submissions are not browsable in the D-way web portal (under development). Please use JGA services according to ["JGA submission steps"](/jga/substep-e.html) and ["Download steps"](/jga/download-e.html).
@@ -264,7 +270,7 @@ Add additional information.
 * Phone
 * Job Title
 
-{% include image.html url="books/profile3-e.jpg" caption="Add account information" class="w400" %}
+{% include image.html url="books/profile3-e.jpg" caption="Add account information" class="w300" %}
 
 Save the information by the Save button.
 
@@ -284,6 +290,11 @@ Enter a current password (once) and a new password (twice). Change the password 
 {% include image.html url="books/pass2.jpg" caption="Enter a current password (once) and a new password (twice)" class="w450" %}
 {:/}
 
+{::options parse_block_html="true" /}
+<div class="attention">
+Updated account information will be reflected in about 10 minutes. Please login again after 10 minutes.
+</div>
+
 The following message is displayed if the password was changed successfully.
 
 {::nomarkdown}
@@ -301,7 +312,8 @@ An update request email will be sent to the old address. Update the address acco
 
 <div class="attention">
 Email regarding data submissions is sent to email addresses entered in the submissions.
-If you change email address of your D-way account, you need to update addresses of data submissions to receive emails regarding the submissions.
+If you change email address of your D-way account, you need to update addresses of data submissions to receive emails regarding the submissions.  
+Updated account information will be reflected in about 10 minutes. Please login again after 10 minutes.
 </div>
 
 ## Session Expired {#session}

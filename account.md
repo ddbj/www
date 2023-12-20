@@ -28,11 +28,11 @@ NBDC に提供・利用申請を提出するユーザは[申請に必要なア�
 
 ウェブサイトで新規作成したアカウントはデフォルトで BioProject/BioSample/NBDC 申請サービスを利用することができます。
 
-登録ポータル ["D-way" (https://ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way) にアクセスします。
+登録ポータル ["D-way" (https://ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way) にアクセスします。  
 [Register for a new account] ボタンをクリックします。
 
 {::nomarkdown}
-{% include image.html url="books/account_1_new.png" caption="新規アカウントを作成" class="w400" %}
+{% include image.html url="books/account_1_new.png" caption="新規アカウントを作成" class="w500" %}
 {:/}
 
 必要な情報を入力して [Continue\] をクリックします。
@@ -43,12 +43,11 @@ NBDC に提供・利用申請を提出するユーザは[申請に必要なア�
 
 {::options parse_block_html="true" /}
 <div class="attention">
-
 Login ID:
-: 4 から 24 文字
-: 小文字，数字と "_" を含めることができます
-: "-" と大文字は使えません
-: 数字と "_" を先頭に使うことはできません
+* 4 から 24 文字
+* 小文字，数字と "_" を含めることができます
+* "-" と大文字は使えません
+* 数字と "_" を先頭に使うことはできません
 </div>
 
 入力した内容を確認し、利用規約を読んで同意のうえで [Create\] をクリックします。
@@ -57,20 +56,26 @@ Login ID:
 {% include image.html url="books/account_3.jpg" caption="新規アカウントを予約" class="w400" %}
 {:/}
 
-入力されたアドレス宛に確認メールが送信されます。 メールに従い，予約したアカウントを有効にします。
-続いて有効化したアカウントのパスワードを設定します。
+入力されたアドレス宛に確認メールが送信されます。  
+メール中のリンクをクリックし、パスワードを設定します。
 
 <div class="attention">
-
-アルファベットと数字を含む8 文字以上のパスワードを設定します。
-
+アルファベットと数字を含む8文字以上のパスワードを設定します。
 </div>
 
 {::nomarkdown}
-{% include image.html url="books/account_4.jpg" caption="パスワードを設定" class="w250" %}
+{% include image.html url="books/account_4.jpg" caption="パスワード設定" class="w300" %}
 {:/}
 
-パスワード設定後、BioProject/BioSample/NBDC 申請システムを利用可能になります。
+パスワード設定後10分以上待ってから、[D-way](https://ddbj.nig.ac.jp/D-way)にログインします。  
+必須項目を含むアカウント情報の入力画面が表示されます。情報を入力し [Update\] を押下します。  
+
+{::nomarkdown}
+{% include image.html url="books/account_5.jpg" caption="アカウント情報の入力" class="w400" %}
+{:/}
+
+DRA/GEA/JGA にデータを登録するためには[認証用公開鍵](#generate-key-pair)の登録が必要です。  
+アカウント情報入力後10分以上待ってから、[D-way](https://ddbj.nig.ac.jp/D-way)に再度ログインし、[認証用公開鍵](#generate-key-pair)を登録します。
 
 ## DRA/GEA/JGA 登録権限を追加  {#enable-dra-submission-in-account}
 
@@ -221,13 +226,13 @@ $ ssh-keygen -t rsa -f J-DU999991
 public key\] で鍵を登録します。
 
 {::nomarkdown}
-{% include image.html url="books/keyregister.jpg" caption="認証用公開鍵を登録" class="w400" %}
+{% include image.html url="books/keyregister.jpg" caption="認証用公開鍵を登録" class="w500" %}
 {:/}
 
 登録後、左上の "DRA と GEA" メニューから DRA と GEA にそれぞれデータを登録することができます。
 
 {::nomarkdown}
-{% include image.html url="books/drasub.jpg" caption="DRA/GEA に登録することができるようになります" class="w450" %}
+{% include image.html url="books/drasub.jpg" caption="DRA/GEA に登録することができるようになります" class="w500" %}
 {:/}
 
 機能が未実装であるため D-way ウェブポータルでは JGA 登録をみることができません。認証用公開鍵をアカウントに登録後、[「JGA への登録手順」](/jga/submission-step.html)、及び、[「JGA データの利用手順」](/jga/download.html)に従ってサービスを利用してください。
@@ -264,7 +269,7 @@ public key\] で鍵を登録します。
 * Last name in Japanese
 * Job Title in Japanese
 
-{% include image.html url="books/profile3.jpg" caption="アカウント情報を入力" class="w400" %}
+{% include image.html url="books/profile3.jpg" caption="アカウント情報を入力" class="w300" %}
 
 「Save」で登録します。
 
@@ -284,6 +289,10 @@ public key\] で鍵を登録します。
 {% include image.html url="books/pass2.jpg" caption="現在のパスワードと新しいパスワードを入力" class="w400" %}
 {:/}
 
+<div class="attention">
+パスワード変更が反映されるまで10分程度かかります。
+</div>
+
 パスワードが変更されると以下の画面が表示されます。
 
 {::nomarkdown}
@@ -301,7 +310,8 @@ Account の E-mail に新しいアドレスを入力して Update をクリッ�
 
 <div class="attention">
 データ登録に関するメールは各登録に記載されたメールアドレスに対して送信されます。
-D-way アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、登録データ中のアドレスも変更する必要があります。
+D-way アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、登録データ中のアドレスも変更する必要があります。  
+メールアドレス変更が反映されるまで10分程度かかります。
 </div>
 
 ## セッションの期限切れ {#session}
