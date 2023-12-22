@@ -46,7 +46,7 @@ JGA と AGD のグループは別になります。
 セキュリティのため AGD データセットはユーザが登録したデータセット暗号化用公開鍵で暗号化された状態で提供されます。ユーザは利用承認されたデータセットを sftp でダウンロードし、秘密鍵で復号してから利用します。
 
 <div class="attention" markdown="1">
-データセット暗号化用公開鍵は D-way アカウントの[認証用の公開鍵](/account.html#enable-dra-submission-in-account)とは別になります。
+データセット暗号化用公開鍵は D-way アカウントの[認証用の公開鍵](/account.html#public-key)とは別になります。
 AGD データの利用のためには暗号化用と認証用に合計2ペア4ファイルの公開鍵・秘密鍵が必要になります。AGD サーバに ssh ログインすることはできません。
 </div>
 
@@ -73,7 +73,7 @@ NBDC への利用申請において公開鍵を「データセット復号用公
 ### ダウンロード {#download}
 
 <div class="attention" markdown="1">
-AGD からファイルを sftp でダウンロードするためには [D-way アカウントに公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。
+AGD からファイルを sftp でダウンロードするためには [D-way アカウントに公開鍵を登録](/account.html#public-key)する必要があります。
 </div>
 
 AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/download/agd/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されるので、

@@ -37,12 +37,12 @@ A D-way account is necessary for data use application and JGA data download. If 
 After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
-Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#enable-dra-submission-in-account) for data download. 
+Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data download. 
 
 ### Generate a public and private key pair for data decryption {#key-for-decryption}
 
 The JGA data are provided as encrypted files. A user downloads data by sftp and decrypts the files by using the private key paired with the public key for dataset decryption registered in the data use application.  
-The public key for dataset decryption is separate from [the public key for data transfer registered to the D-way account](/account-e.html#enable-dra-submission-in-account). See "[How to generate public/private key pair](/account-e.html#generate-key-pair)".
+The public key for dataset decryption is separate from [the public key for data transfer registered to the D-way account](/account-e.html#public-key). See "[How to generate public/private key pair](/account-e.html#generate-key-pair)".
 
 In total, 2 pairs 4 keys are necessary for data use application and JGA data use.
 
@@ -86,7 +86,7 @@ Register a public key for dataset decryption in the NBDC data use application.
 
 ### Data use application approval  {#approval}
 
-Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#enable-dra-submission-in-account) for data download from the JGA server (jga-gw.ddbj.nig.ac.jp).   
+Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data download from the JGA server (jga-gw.ddbj.nig.ac.jp).   
 After the application is approved by NBDC, metadata, encrypted data files and decryption tools are created in the download directory in the JGA server.
 
 {% include image.html url="books/data-use-approved-e.png" caption="Data use application approval" class="w400" %}

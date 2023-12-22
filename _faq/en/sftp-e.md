@@ -13,7 +13,7 @@ lang: en
 Confirm the following points.
 
 - Authentification is by using SSH key not by password.
-- A private key is pair of a public key registered in a D-way account. [Manual](/account-e.html#enable-dra-submission-in-account)
+- A private key is pair of a public key registered in a D-way account. [Manual](/account-e.html#public-key)
 - Make sure to specify a private key for authentification and not a private key for dataset encryption/decryption. [Manual](/jga/download-e.html#data-use-approval-download)
 - A private key file has read permission.
 - A private key file permission is set as others cannot access. For example, rw-------.

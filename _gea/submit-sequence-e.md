@@ -12,7 +12,7 @@ lang: en
 ### 1. Obtain a submission account {#account}
 
 - Create a [D-way submission account](https://ddbj.nig.ac.jp/D-way/).
-- To enable GEA submission, [register a public key to your account](/account-e.html#enable-dra-submission-in-account).
+- To enable GEA submission, [register a public key to your account](/account-e.html#public-key).
 
 ### 2. Register a BioProject, BioSamples and Sequence Read Archive (DRA) {#bioproject-biosample}
 

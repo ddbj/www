@@ -6,26 +6,24 @@ lang: en
 
 ## D-way account  {#ddbj-submission-account}
 
-Bioinformation and DDBJ Center provides the D-way account system. In the D-way account, you can use BioProject, BioSample, GEA, DRA and JGA databases of DDBJ Center and the NBDC application systems. This handbook explains how to create a D-way account.
+Bioinformation and DDBJ Center provides the D-way account system. In the D-way account, you can use BioProject, BioSample, GEA, DRA and JGA databases of DDBJ Center and the NBDC application systems. This handbook explains how to create and use a D-way account.
 
 {::options parse_block_html="true" /}
 <div class="attention">
 - Create a D-way account and manage data with permission of Principal Investigator (PI).
 - Issued account and password must be maintained securely by users.
-- Account name cannot be changed once it has been created.
-- In D-way account page, updated information will be reflected in about 10 minutes.
+- Account ID cannot be changed once it has been created.
+- In the D-way account page, updated information will be reflected in about 10 minutes.
 - It takes about 10 minutes for the created D-way account becoming active in the NBDC application system.
 </div>
 
-DDBJ Center employs scp authenticated by ssh key for transfer of large files. Therefore, you need to register a public key for authentication for using DRA, GEA and JGA services which accompany transfer of large files.
+DDBJ Center uses scp authenticated by a ssh key for transfer of large files. You need to register a public key to upload data files to DRA, GEA and JGA.
 
-Users who will submit data submission or data use applications to NBDC are advised to [enter additional account information](#nbdc). The added items are automatically filled to new applications and the users are able to avoid entering these items in each application.
+Users submitting data submission or data use applications to NBDC are recommended to [enter additional account information](#nbdc). The added items are automatically filled to new applications and the users are able to avoid entering these items in each application.
 
 ## Create a D-way account in the website {#account-for-bioproject-biosample-submissions}
 
 ### Create an account on website {#create-an-account-on-website}
-
-By default, you can use BioProject/BioSample/NBDC application systems in the D-way account created on the website.
 
 Open the submission portal page at
 [https://ddbj.nig.ac.jp/D-way](https://ddbj.nig.ac.jp/D-way/). 
@@ -50,7 +48,7 @@ Login ID:
 {% include image.html url="books/account_2.jpg" caption="Enter basic account information" class="w250" %}
 {:/}
 
-Enter basic account information and reserve an account ID upon agreeing on the [Terms of Use](/policies-e.html).
+Enter basic account information and reserve an account ID after agreeing on the [Terms of Use](/policies-e.html).
 
 {::nomarkdown}
 {% include image.html url="books/account_3.jpg" caption="Reserve an account" class="w400" %}
@@ -75,12 +73,12 @@ Enter your account information and click [Update\].
 {% include image.html url="books/account_5.jpg" caption="Enter account information fields" class="w400" %}
 {:/}
 
-To enable DRA/GEA/JGA submission, you need to register a [public key](#generate-key-pair).   
+You need to register a [public key](#generate-key-pair) to upload files to DRA/GEA/JGA.
 Please wait more than 10 minutes after entering account information, login [D-way](https://ddbj.nig.ac.jp/D-way) again and register a [public key](#generate-key-pair).
 
-## Enable DRA/GEA/JGA submission in account  {#enable-dra-submission-in-account}
+## Registering a public key {#public-key}
 
-For submission to the [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) and [Genomic Expression Archive (GEA)](/gea/index-e.html), a public key should be registered to your account. The public key is used to identify users to access the file submission server.
+To upload data files to [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) and [Genomic Expression Archive (GEA)](/gea/index-e.html), a public key should be registered to your account. The public key is used to identify users to access the file submission server.
 
 ### Generate public and private key pair  {#generate-key-pair}
 
@@ -232,13 +230,7 @@ it by [Register public key] button.
 {% include image.html url="books/keyregister.jpg" caption="Register a public key for authentication" class="w500" %}
 {:/}
 
-Once a public key for authentication are registered, you can submit to the DRA/GEA at menus at top left.
-
-{::nomarkdown}
-{% include image.html url="books/drasub.jpg" caption="Can submit to DRA/GEA in addition to BioProject and BioSample" class="w500" %}
-{:/}
-
-The JGA submissions are not browsable in the D-way web portal (under development). Please use JGA services according to ["JGA submission steps"](/jga/substep-e.html) and ["Download steps"](/jga/download-e.html).
+The JGA submissions are not browsable in the D-way web portal. Please use JGA services according to ["JGA submission steps"](/jga/substep-e.html) and ["Download steps"](/jga/download-e.html).
 
 ### Update account  {#update-account}
 

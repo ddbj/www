@@ -28,7 +28,7 @@ lang: ja
 D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
-JGA サーバへデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#enable-dra-submission-in-account)します。
+JGA サーバへデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#public-key)します。
 
 申請情報を自動入力させるため、アカウントに所属情報や日本語氏名を追加します。
 [NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
@@ -67,7 +67,7 @@ JGA サーバへデータをアップロードするためには、データ転�
 
 {% include image.html url="books/DS-JSUB.png" caption="提供申請と JGA submission ID" class="w250" %}
 
-JGA サーバ (jga-gw.ddbj.nig.ac.jp) へデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#enable-dra-submission-in-account)します。
+JGA サーバ (jga-gw.ddbj.nig.ac.jp) へデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#public-key)します。
 JGA サーバ上の /controlled-access/submission/jga/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータとデータファイルを [sftp](#sftp) もしくは [WinSCP](#winscp) でアップロードします。
 この例であればディレクトリは /controlled-access/submission/jga/JSUB000353/ になります。
 

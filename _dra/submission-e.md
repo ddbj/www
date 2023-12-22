@@ -10,7 +10,7 @@ lang: en
 ## Obtain a submission account {#account}
 
 Obtain a [D-way submission account](/account-e.html) and
-[register a public key to your account](/account-e.html#enable-dra-submission-in-account) to enable DRA submission.
+[register a public key to your account](/account-e.html#public-key) to enable DRA submission.
 
 ## Create a new submission  {#new-submission}
 

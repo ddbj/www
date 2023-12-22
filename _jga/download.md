@@ -36,12 +36,12 @@ NBDC ヒトデータベースの[利用可能な研究データ一覧](https://h
 D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
-sftp を利用して JGA サーバからデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#enable-dra-submission-in-account)します。   
+sftp を利用して JGA サーバからデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#public-key)します。   
 
 ### 利用申請毎に必要なデータセット復号用公開鍵・秘密鍵ペアの作成 {#key-for-decryption}
 
 JGA データは暗号化された状態で提供されます。ユーザは利用承認されたデータを sftp でダウンロードし、利用申請時に登録したデータセット復号用公開鍵とペアとなる秘密鍵を使ってデータを復号します。   
-データセット復号用公開鍵は D-way アカウントの[データ転送用公開鍵](/account.html#enable-dra-submission-in-account)とは別になります。作成手順は[公開鍵/秘密鍵ペアの生成](/account.html#generate-key-pair)をご覧ください。
+データセット復号用公開鍵は D-way アカウントの[データ転送用公開鍵](/account.html#public-key)とは別になります。作成手順は[公開鍵/秘密鍵ペアの生成](/account.html#generate-key-pair)をご覧ください。
 
 利用申請から JGA データ利用までに、データ転送用と復号用に合計２ペア４ファイルの公開鍵・秘密鍵が必要になります。
 
@@ -91,7 +91,7 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 
 ## ダウンロード {#download}
 
-sftp を利用して JGA サーバ (jga-gw.ddbj.nig.ac.jp) からデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#enable-dra-submission-in-account)します。   
+sftp を利用して JGA サーバ (jga-gw.ddbj.nig.ac.jp) からデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#public-key)します。   
 
 JGA ファイルサーバ上の /controlled-access/download/jga/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されます。   
 [WinSCP](#winscp)、もしくは、[sftp](#sftp) コマンドを使ってダウンロードします。  

@@ -16,7 +16,7 @@ Processed data (identified metabolites) are prepared as Metabolite assignment fi
 ### 1. Create submission account  {#account}
 
 - Create a [D-way submission account](https://ddbj.nig.ac.jp/D-way/) ([Manual](/account-e.html))
-- [Register a public key to your account](/account-e.html#enable-dra-submission-in-account) to enable data upload to MetaboBank.
+- [Register a public key to your account](/account-e.html#public-key) to enable data upload to MetaboBank.
 
 ### 2. Apply submission {#form}
 

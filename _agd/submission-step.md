@@ -81,7 +81,7 @@ AGD にアップロードするファイル名には空白を含めないでく�
 ### エクセルをアップロード  {#upload-excel}
 
 <div class="attention" markdown="1">
-AGD にファイルを sftp でアップロードするためには [D-way アカウントに公開鍵を登録](/account.html#enable-dra-submission-in-account)する必要があります。AGD サーバに ssh ログインすることはできません。
+AGD にファイルを sftp でアップロードするためには [D-way アカウントに公開鍵を登録](/account.html#public-key)する必要があります。AGD サーバに ssh ログインすることはできません。
 </div>
 
 AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/submission/agd/ の下に AGD Submission ID と同名のディレクトリが作成されるので、

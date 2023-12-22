@@ -9,7 +9,7 @@ lang: ja
 
 ## 登録アカウントを取得  {#account}
 
-[D-way 登録アカウント](/account.html)を取得し、[公開鍵をアカウントに登録](/account.html#enable-dra-submission-in-account)して DRA 登録ができるようにします。
+[D-way 登録アカウント](/account.html)を取得し、[公開鍵をアカウントに登録](/account.html#public-key)して DRA 登録ができるようにします。
 
 ## 新規登録の作成  {#new-submission}
 

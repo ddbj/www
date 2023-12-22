@@ -18,7 +18,7 @@ lang: ja
 </div>
 
 DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認証を介した scp を利用しています。
-そのため、ファイル転送を伴う DRA、GEA と JGA を利用するためにはアカウントに認証用の公開鍵（認証用公開鍵）を登録する必要があります。
+そのため、DRA/GEA/JGA にデータファイルをアップロードするためには認証用公開鍵をアカウントに登録する必要があります。
 
 NBDC に提供・利用申請を提出するユーザは[申請に必要なアカウント情報を追加](#nbdc)します。追加した情報は申請フォームに自動入力されるようになるため、申請作業が効率的になります。
 
@@ -26,16 +26,14 @@ NBDC に提供・利用申請を提出するユーザは[申請に必要なア�
 
 ### ウェブサイトでアカウントを作成  {#create-an-account-on-website}
 
-ウェブサイトで新規作成したアカウントはデフォルトで BioProject/BioSample/NBDC 申請サービスを利用することができます。
-
 登録ポータル ["D-way" (https://ddbj.nig.ac.jp/D-way)](https://ddbj.nig.ac.jp/D-way) にアクセスします。  
-[Register for a new account] ボタンをクリックします。
+[Register for a new account] を押下します。
 
 {::nomarkdown}
 {% include image.html url="books/account_1_new.png" caption="新規アカウントを作成" class="w500" %}
 {:/}
 
-必要な情報を入力して [Continue\] をクリックします。
+必要な情報を入力して [Continue] をクリックします。
 
 {::nomarkdown}
 {% include image.html url="books/account_2.jpg" caption="アカウント情報の入力" class="w250" %}
@@ -50,7 +48,7 @@ Login ID:
 * 数字と "_" を先頭に使うことはできません
 </div>
 
-入力した内容を確認し、利用規約を読んで同意のうえで [Create\] をクリックします。
+入力した内容を確認し、利用規約を読んで同意したうえで [Create] を押下します。
 
 {::nomarkdown}
 {% include image.html url="books/account_3.jpg" caption="新規アカウントを予約" class="w400" %}
@@ -67,21 +65,20 @@ Login ID:
 {% include image.html url="books/account_4.jpg" caption="パスワード設定" class="w300" %}
 {:/}
 
-パスワード設定後10分以上待ってから、[D-way](https://ddbj.nig.ac.jp/D-way)にログインします。  
+パスワード設定後10分以上待ってから [D-way](https://ddbj.nig.ac.jp/D-way)にログインします。  
 必須項目を含むアカウント情報の入力画面が表示されます。情報を入力し [Update\] を押下します。  
 
 {::nomarkdown}
 {% include image.html url="books/account_5.jpg" caption="アカウント情報の入力" class="w400" %}
 {:/}
 
-DRA/GEA/JGA にデータを登録するためには[認証用公開鍵](#generate-key-pair)の登録が必要です。  
+DRA/GEA/JGA にデータをアップロードするためには[認証用公開鍵](#generate-key-pair)の登録が必要です。  
 アカウント情報入力後10分以上待ってから、[D-way](https://ddbj.nig.ac.jp/D-way)に再度ログインし、[認証用公開鍵](#generate-key-pair)を登録します。
 
-## DRA/GEA/JGA 登録権限を追加  {#enable-dra-submission-in-account}
+## 認証用公開鍵の登録 {#public-key}
 
-サイズの大きいデータファイル転送を伴う DRA/GEA/JGA サービスを利用するため、アカウントに公開鍵（認証用公開鍵）を登録します。公開鍵はユーザの認証に用いられます。
-
-JGA サービスを利用するため NBDC に提供・利用申請をする方は[アカウント情報の追加](/account.html#nbdc)が必要です。
+DRA/GEA/JGA にデータファイルをアップロードするためにはアカウントに公開鍵（ssh 認証用公開鍵）を登録する必要があります。  
+NBDC に提供・利用申請をする方は[アカウント情報の追加](/account.html#nbdc)が必要です。
 
 ## 公開鍵/秘密鍵ペアの生成  {#generate-key-pair}
 
@@ -221,21 +218,14 @@ $ ssh-keygen -t rsa -f J-DU999991
 
 ### 認証用公開鍵の登録 {#register-public-key}
 
-[登録アカウント](https://ddbj.nig.ac.jp/D-way/)にログインします。 "アカウント" ページ下部の "Public Key"
-エリアから公開鍵をアップロードします。認証用公開鍵ファイルを選択し，[Register
-public key\] で鍵を登録します。
+[登録アカウント](https://ddbj.nig.ac.jp/D-way/)にログインします。"アカウント" ページ下部の "Public Key"
+エリアから公開鍵をアップロードします。認証用公開鍵ファイルを選択し，[Register public key\] で鍵を登録します。
 
 {::nomarkdown}
 {% include image.html url="books/keyregister.jpg" caption="認証用公開鍵を登録" class="w500" %}
 {:/}
 
-登録後、左上の "DRA と GEA" メニューから DRA と GEA にそれぞれデータを登録することができます。
-
-{::nomarkdown}
-{% include image.html url="books/drasub.jpg" caption="DRA/GEA に登録することができるようになります" class="w500" %}
-{:/}
-
-機能が未実装であるため D-way ウェブポータルでは JGA 登録をみることができません。認証用公開鍵をアカウントに登録後、[「JGA への登録手順」](/jga/submission-step.html)、及び、[「JGA データの利用手順」](/jga/download.html)に従ってサービスを利用してください。
+D-way ウェブサービスでは JGA を利用することができません。認証用公開鍵をアカウントに登録後、[「JGA への登録手順」](/jga/submission-step.html)、及び、[「JGA データの利用手順」](/jga/download.html)に従ってサービスを利用してください。
 
 ### アカウントの更新  {#update-account}
 

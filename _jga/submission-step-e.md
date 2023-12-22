@@ -28,7 +28,7 @@ A D-way account is necessary for data submission application and JGA data upload
 After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
-Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#enable-dra-submission-in-account) for data upload.
+Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data upload.
 
 ## Data submitter group {#data-submitter-group}
 
@@ -48,7 +48,7 @@ Also see the [NBDC data submission page](https://humandbs.biosciencedbc.jp/en/da
 
 ## Data submission application approval {#du-approval}
 
-Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#enable-dra-submission-in-account) for data upload to the JGA server (jga-gw.ddbj.nig.ac.jp).
+Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data upload to the JGA server (jga-gw.ddbj.nig.ac.jp).
 After the application is approved by NBDC, a JGA submission ID (for example, JSUB000353) is issued and a corresponding directory for data upload is created in the JGA server.
 
 {% include image.html url="books/DS-approved-e.png" caption="Approval of data submission application" class="w450" %}
