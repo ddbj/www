@@ -289,14 +289,21 @@ category: about
         </div>
         </li> 
         <li class="staff"> 
-        <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="Yuji Ashizawa"></p>
+        <p class="photo"><img src="/assets/images/staff/yasuda.jpg" title="Tomohiko Yasuda"></p>
         <div class="explanation">
-            <p class="name">Yuji Ashizawa</p>
+            <p class="name">Tomohiko Yasuda</p>
             <p class="position">System Engineer</p>
         </div>
         </li>        
     </ul>
     <ul class="list">
+        <li class="staff"> 
+        <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="Yuji Ashizawa"></p>
+        <div class="explanation">
+            <p class="name">Yuji Ashizawa</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="Yoshimasa Takahashi"></p>
         <div class="explanation">

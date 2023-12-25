@@ -323,15 +323,23 @@ category: about
         </div>
         </li>   
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/yasuda.jpg" title="安田 智彦"></p>
+        <div class="explanation">
+            <p class="name">安田 智彦</p>
+            <p class="name">Tomohiko Yasuda</p>
+            <p class="position">運用 SE</p>
+        </div>
+        </li>        
+    </ul>
+    <ul class="list">
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="芦澤 祐治"></p>
         <div class="explanation">
             <p class="name">芦澤 祐治</p>
             <p class="name">Yuji Ashizawa</p>
             <p class="position">運用 SE</p>
         </div>
-        </li>        
-    </ul>
-    <ul class="list">
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="高橋 良昌"></p>
         <div class="explanation">
