@@ -381,6 +381,7 @@ PM      DDBJ
 PN      DDBJ            
 PO      DDBJ            
 PP      GenBank         Direct submission
+PR      USPTO           Patent application
 Q       void            UniProt/Swiss-Prot
 R       GenBank         EST
 S       GenBank         Journal scanning
