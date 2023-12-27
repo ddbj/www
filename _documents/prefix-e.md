@@ -370,7 +370,7 @@ PB      JPO             Patent application
 PC      JPO             Patent application
 PD      JPO             Patent application
 PE      KIPO            Patent application
-PF      DDBJ            
+PF      KIPO            Patent application
 PG      DDBJ            
 PH      DDBJ            
 PI      DDBJ            
