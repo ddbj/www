@@ -2,6 +2,10 @@ top_news:
   ja:
     - title: DDBJ Search キーワード検索の一部不具合について
       path: 2023-12-06
+    - title: (1/10 10:00-12:00) GEA/DRA/BP/BS システムリリースによるサービス停止のお知らせ
+      path: 2024-01-05
   en:
     - title: Disabilities in the DDBJ Search keyword search functionalities
       path: 2023-12-06-e
+    - title: (January 10 10:00-12:00) Announcement of GEA/DRA/BP/BS system suspension
+      path: 2024-01-05-e
