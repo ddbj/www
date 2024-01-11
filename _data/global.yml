@@ -2,6 +2,10 @@ top_news:
   ja:
     - title: DDBJ Search キーワード検索の一部不具合について
       path: 2023-12-06
+    - title: DDBJ リリース 133.0，DAD リリース 103.0 完成
+      path: 2024-01-11
   en:
     - title: Disabilities in the DDBJ Search keyword search functionalities
       path: 2023-12-06-e
+    - title: DDBJ Rel. 133.0, DAD Rel. 103.0 Completed
+      path: 2024-01-11-e
