@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: Environmental sequence の登録
+title: Environmental sample 由来配列データ
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: data_categories
@@ -14,7 +14,7 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-## Environmental sequence の登録
+## Environmental sample 由来配列データ
 
 種、あるいは、個体を特定しない手法により得られた配列データの種別の対応を示します。
 

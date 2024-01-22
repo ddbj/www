@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: Submission of environmental sequences
+title: Sequence data derived from environmental samples
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: data_categories
@@ -14,7 +14,7 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-## Submission of environmental sequences
+## Sequence data derived from environmental samples
 
 Here shows procedures for sequence data obtained from studies that do not specify individuals or species.    
 
