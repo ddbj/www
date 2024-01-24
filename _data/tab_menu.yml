@@ -227,7 +227,7 @@ ddbj:
           url: /ddbj/single-amplified-genome.html
         - title: HTG
           url: /ddbj/htg.html
-        - title: Environmental sequence の登録
+        - title: Environmental sample
           url: /ddbj/environmental.html
         - title: ENV
           url: /ddbj/env.html
@@ -320,7 +320,7 @@ ddbj:
           url: /ddbj/single-amplified-genome-e.html
         - title: HTG
           url: /ddbj/htg-e.html
-        - title: Submission of environmental sequences
+        - title: Environmental sample
           url: /ddbj/environmental-e.html
         - title: ENV
           url: /ddbj/env-e.html
