@@ -4,8 +4,12 @@ top_news:
       path: 2023-12-06
     - title: DDBJ リリース 133.0，DAD リリース 103.0 完成
       path: 2024-01-11
+    - title: (1/24 14:30 ～ 1/25 12:00) D-way 一時停止のお知らせ
+      path: 2024-01-24
   en:
     - title: Disabilities in the DDBJ Search keyword search functionalities
       path: 2023-12-06-e
     - title: DDBJ Rel. 133.0, DAD Rel. 103.0 Completed
       path: 2024-01-11-e
+    - title: (Jan 24 14:30 - Jan 25 12:00) Announcement of D-way suspension
+      path: 2024-01-24-e
