@@ -88,7 +88,7 @@ BioProject の公開は参照している DDBJ/DRA/GEA/MetaboBank データの�
 
 ## プロジェクトの更新  {#update}
 
-登録が完了したデータを更新することができます。[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
+登録が完了したデータを更新することができます。DDBJ BioProject で更新しますので、[メッセージフォーム](/contact-ddbj.html)より修正内容をご連絡ください。
 
 ## 論文情報の追加 {#publication}
 

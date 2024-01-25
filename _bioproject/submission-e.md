@@ -98,7 +98,7 @@ Public projects are exchanged among [NCBI](https://www.ncbi.nlm.nih.gov/bioproje
 
 ## Update  {#update}
 
-Registered projects can be updated. Please [contact the BioProject staff](/contact-ddbj-e.html)to update the projects.
+Registered projects can be updated. Please inform us updated contents through the [contact form](/contact-ddbj-e.html) so that we will update the projects.
 
 ## Add publication information {#publication}
 

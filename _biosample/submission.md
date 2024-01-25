@@ -179,5 +179,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 ## サンプルの更新  {#update-biosample}
 
-登録が完了したデータを更新することができます。[メッセージフォーム](/contact-ddbj.html)からご連絡ください。  
-更新されると、サンプル登録画面 ATTRIBUTES の属性ファイル (例 SSUB000001.txt) に反映されるので、ダウンロードして更新内容を確認することができます。
+登録が完了したデータを更新することができます。DDBJ BioSample で修正しますので、修正すべき事項を[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。属性を更新する場合、更新後の属性 tsv ファイルをアクセッション番号通知メールへの返信メールに添付してお送りください。属性 tsv ファイルは [D-way からダウンロード](#accession-numbers)することができます。  
+更新されると、サンプル登録画面 ATTRIBUTES の属性ファイルに反映されるので、[ダウンロード](#accession-numbers)して更新内容を確認することができます。
+
+{% include image.html url="books/bs-tsv-dl.jpg" caption="BioSample 属性 tsv ファイルのダウンロード" class="w450" %}
