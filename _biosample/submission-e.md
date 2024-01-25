@@ -176,7 +176,6 @@ FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs
 
 ## Update BioSample  {#update-biosample}
 
-Registered samples can be updated. Please inform us points to be updated through the [contact form](/contact-ddbj-e.html) so that we will update the samples. If you want to update sample attributes, please attach the updated attribute tsv file to the email replying to the accession number notification email. You can [download the attribute tsv file at D-way](#accession-numbers).  
-You may check the updated samples by [downloading the updated attribute tsv file at ATTRIBUTES](#accession-numbers).
+Registered samples can be updated. Please inform us points to be updated through the [contact form](/contact-ddbj-e.html) so that we will update the samples. If you want to update sample attributes, please attach the updated attribute tsv file to the email replying to the accession number notification email. You can download the attribute tsv file at D-way.  
 
 {% include image.html url="books/bs-tsv-dl.jpg" caption="Download the BioSample attributes tsv file" class="w450" %}
