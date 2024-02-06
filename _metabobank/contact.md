@@ -9,7 +9,7 @@ lang: ja
 
 ## 連絡先  {#contact}
 
-[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
+[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。      
 
 電話 : 055-981-6853  
 FAX : 055-981-6849  
