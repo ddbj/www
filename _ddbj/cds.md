@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: タンパク質コード配列; CDS feature について
+title: タンパク質コード配列 CDS feature について
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: flat_file
@@ -107,7 +107,7 @@ b) pseudogene と見做される場合<a name="stop_b"></a>
   - /[note](/ddbj/qualifiers.html#note) qualifier に "pseudogene of [protein name]" などの記載もお願いします。
   - /[pseudogene](/ddbj/qualifiers.html#pseudogene) qualifier の規定値に関しましては、[Controlled vocabulary for /pseudogene qualifier](https://www.insdc.org/submitting-standards/pseudogene-qualifier-vocabulary/) で解説されています。
   - この CDS feature に相当するタンパク質産物は存在しないことになりますので、/[product](/ddbj/qualifiers.html#product) qualifier は、原則、記載しないでください。
-: [登録の見本 B06](/ddbj/example.html#B06) もご参照ください。
+: [配列データ記載例 B06](/ddbj/example.html#B06) もご参照ください。
 
 c) 生体内に末端を欠失したタンパク質産物が存在すると推定される場合<a name="stop_c"></a>  
 : 想定される truncated なタンパク質産物の location を CDS feature で指定します。<br>したがって、location は短いものとなります。
@@ -123,12 +123,12 @@ d) ribosomal slippage<a name="stop_d"></a>
         CDS             join(21..90,92..451)
   ```
 : /[ribosomal\_slippage](/ddbj/qualifiers.html#ribosomal_slippage) qualifier を付加します。<br>このとき、/[translation](/ddbj/qualifiers.html#translation) qualifier で示す翻訳アミノ酸配列は conceptual translation になります。
-: [登録の見本 B10](/ddbj/example.html#B10) もご参照ください。<br>塩基配列登録システム では、"Submission Information" boxに、詳細な説明をお願いします。
+: [配列データ記載例 B10](/ddbj/example.html#B10) もご参照ください。<br>塩基配列登録システム では、"Submission Information" boxに、詳細な説明をお願いします。
 
 e) RNA editing<a name="stop_e"></a>  
 : <span class="red">ゲノムに対して記載することが基本となります。</span>
 : 想定される CDS location を示し、/[exception](/ddbj/qualifiers.html#exception) qualifier を付加します。<br>このとき、/[translation](/ddbj/qualifiers.html#translation) qualifier で示す翻訳アミノ酸配列は conceptual translation ではなく、transcript の配列、近縁種などの事例から確認、または、推定された記載を採用します。<br>原則、[inference](/ddbj/qualifiers.html#inference) qualifier に推定した根拠の記載をお願いします。
-: [登録の見本 B09](/ddbj/example.html#B09) もご参照ください。
+: [配列データ記載例 B09](/ddbj/example.html#B09) もご参照ください。
 : 塩基配列登録システム では、"Submission Information" boxに、詳細な説明をお願いします。
 
 f) selenocystein、あるいは、pyrrolysine に翻訳される場合<a name="stop_f"></a>
