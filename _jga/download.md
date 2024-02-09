@@ -241,13 +241,23 @@ J-DU999991/JGAS999992/JGAD999993
 
 復号処理を同時にバックグラウンド実行することで並列化することができます。  
 状況にも依りますが、マルチコア CPU を使っており計算資源に余裕がある場合は高速化することができます。  
+「データファイルのあるディレクトリに移動し、ファイル毎の復号シェルをバックグラウンド実行する」シェルスクリプトを作成し、実行します。
 ファイルの配置はダウンロード時点から変更されていないことが前提になります。
 
 ```
-$ ./case1.fastq.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
-$ ./case2.fastq.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
-$ ./case1.vcf.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
-$ ./case2.vcf.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
+#! /bin/sh
+
+cd JGAS999992/JGAD999993/JGAR999999994/
+./case1.fastq.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
+
+cd ../../../JGAS999992/JGAD999993/JGAR999999995/
+./case2.fastq.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
+
+cd ../../../JGAS999992/JGAD999993/JGAR999999996
+./case1.vcf.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
+
+cd ../../../JGAS999992/JGAD999993/JGAR999999997
+./case2.vcf.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
 ```
 
 ## メタデータ {#metadata}
