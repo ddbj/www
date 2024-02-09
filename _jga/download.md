@@ -182,17 +182,17 @@ J-DU999991/
 │       │   ├── case1.fastq.gz.encrypt
 │       │   └── case1.fastq.gz.encrypt.dat    # 共通鍵ファイル
 │       ├── JGAR999999995
+│       │   ├── case2.fastq.gz.decrypt.sh     # ファイル毎の復号処理スクリプト
 │       │   ├── case2.fastq.gz.encrypt
-│       │   ├── case2.fastq.gz.encrypt.dat    # 共通鍵ファイル
-│       │   └── case2.fastq.gz.encrypt.sh     # ファイル毎の復号処理スクリプト
+│       │   └── case2.fastq.gz.encrypt.dat    # 共通鍵ファイル
 │       ├── JGAZ999999996
+│       │   ├── case1.vcf.gz.decrypt.sh       # ファイル毎の復号処理スクリプト
 │       │   ├── case1.vcf.gz.encrypt
-│       │   ├── case1.vcf.gz.encrypt.dat      # 共通鍵ファイル
-│       │   └── case1.vcf.gz.encrypt.sh       # ファイル毎の復号処理スクリプト
+│       │   └── case1.vcf.gz.encrypt.dat      # 共通鍵ファイル
 │       ├── JGAZ999999997
+│       │   ├── case2.vcf.gz.decrypt.sh       # ファイル毎の復号処理スクリプト
 │       │   ├── case2.vcf.gz.encrypt
-│       │   ├── case2.vcf.gz.encrypt.dat      # 共通鍵ファイル
-│       │   └── case2.vcf.gz.encrypt.sh       # ファイル毎の復号処理スクリプト
+│       │   └── case2.vcf.gz.encrypt.dat      # 共通鍵ファイル
 │       └── metadata
 └── tools
     └── J-DU999991.tool.zip
@@ -235,6 +235,19 @@ DU ディレクトリ直下に DU 単位の復号スクリプトと暗号化さ�
 $ J-DU999991/
 J-DU999991/J-DU999991.decrypt.sh
 J-DU999991/JGAS999992/JGAD999993
+```
+
+### 復号処理の並列化 {#parallel}
+
+復号処理を同時にバックグラウンド実行することで並列化することができます。  
+状況にも依りますが、マルチコア CPU を使っており計算資源に余裕がある場合は高速化することができます。  
+ファイルの配置はダウンロード時点から変更されていないことが前提になります。
+
+```
+$ ./case1.fastq.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
+$ ./case2.fastq.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
+$ ./case1.vcf.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
+$ ./case2.vcf.gz.decrypt.sh -k J-DU999991_private_key -p ****** &
 ```
 
 ## メタデータ {#metadata}
