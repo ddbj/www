@@ -7,7 +7,9 @@ current_tab: submission
 lang: ja
 ---
 
-JGA に大規模データを sftp でアップロード・ダウンロードすると時間がかかりすぎてしまう場合、JGA に高速転送ツールである [Archaea tools](https://hcp.clealink.jp/) (旧 HCPtools) のセットアップを依頼することができます。アカウント毎に個別にツールを設定いたします。
+JGA に大規模データを sftp でアップロード・ダウンロードすると時間がかかりすぎてしまう場合、JGA に高速転送ツールである [Archaea tools](https://hcp.clealink.jp/) (旧 HCPtools) のセットアップを依頼することができます。アカウント毎に個別にツールを設定いたします。　　
+
+遺伝研スパコンとは異なり VPN 接続は必要ありません。　　
 
 * [遺伝研スパコン Archaea tools の使い方](https://sc.ddbj.nig.ac.jp/software/Archaea_tools/)
 * [各製品ごとの公式マニュアル](https://support.bytix.tech/document/)
