@@ -427,6 +427,7 @@ AAAAAA-AZZZZZ  GenBank      general WGS
 BAAAAA-BZZZZZ  DDBJ         general WGS 
 CAAAAA-CZZZZZ  ENA          WGS 
 DAAAAA-DZZZZZ  GenBank      TPA assemble WGS 
+EAAAAA-EZZZZZ  DDBJ         TPA assemble WGS 
 JAAAAA-JZZZZZ  GenBank      general WGS 
 ```
 
@@ -457,6 +458,7 @@ TAA-TZZ     GenBank       WGS/TSA
 UAA-UZZ     GenBank       
 VAA-VZZ     ENA           
 WAA-WZZ     GenBank       
+XAA-XZZ     GenBank       
 ```
 
 ## For Sequence Read Archive  {#dra}

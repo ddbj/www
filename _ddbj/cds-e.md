@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: Protein Coding Sequence; CDS feature
+title: Protein Coding Sequence CDS feature
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: flat_file
@@ -169,7 +169,7 @@ exist in vivo.
   - Since there is no protein product for the CDS feature, do NOT
     describe /[product](/ddbj/qualifiers.html#product) qualifier, in
     principle.
-: See also [Example of Submission B06](/ddbj/example-e.html#B06).
+: See also [Description Examples of Sequence Data B06](/ddbj/example-e.html#B06).
 
 c) In case that you assume that the truncated protein exists in vivo<a name="stop_c"></a>  
 : Describe CDS location corresponding to the truncated protein.  
@@ -192,7 +192,7 @@ qualifier as a flag to indicate the adjustment is legal.
 After this adjustment of location, the amino acid sequence in
 /[translation](/ddbj/qualifiers-e.html#translation) qualifier is
 conceptually translated one.
-: See also [Example of Submission B10](/ddbj/example-e.html#B10).
+: See also [Description Examples of Sequence Data B10](/ddbj/example-e.html#B10).
 On submission via Nucleotide Sequence Submission System, please use "Submission Information" box to tell us the ribosomal slippage in detail.
 
 e) RNA editing<a name="stop_e"></a>  
@@ -206,7 +206,7 @@ the amino acid sequence confirmed via cDNA or some for the CDS
 feature on the genomic sequence.  
 Describe referred information in
 /[inference](/ddbj/qualifiers-e.html#inference) qualifier.
-: See also [Example of Submission B09](/ddbj/example.html#B09).
+: See also [Description Examples of Sequence Data B09](/ddbj/example.html#B09).
 : On submission via Nucleotide Sequence Submission System, please use
 "Submission Information" box to tell us translational exceptions in
 detail.
