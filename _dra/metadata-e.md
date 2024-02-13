@@ -157,7 +157,6 @@ being sequenced.
 
 [Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>
 : Sequencing technique intended for this library.
-For the "Sequel IIe", select the "Sequel II" and indicate "Sequel IIe" usage in the [Library Construction Protocol](#Library_Construction_Protocol).
 
 | Library Strategy | Description |
 |---|
