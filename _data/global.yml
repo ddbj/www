@@ -1,14 +1,10 @@
 top_news:
   ja:
-    - title: (2/14 10:00 ～ 12:00) D-way 一時停止のお知らせ
-      path: 2024-02-13
     - title: サンプルを採集した場所と日時の記載を必須化
       path: 2024-02-01
     - title: DDBJ Search キーワード検索の一部不具合について
       path: 2023-12-06
   en:
-    - title: (Feb 14 10:00 - 12:00) Announcement of D-way suspension
-      path: 2024-02-13-e
     - title: The requirement to state the location and date of sample collection
       path: 2024-02-01-e
     - title: Disabilities in the DDBJ Search keyword search functionalities
