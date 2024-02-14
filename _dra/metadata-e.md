@@ -109,7 +109,7 @@ automatically constructed. To enter user-defined titles, download Experiment met
 [Library Source](#Library_Source)<a name="Library_Source"></a><span class="red">*</span>
 : The Library Source specifies the type of source material that is being sequenced.
 
-| Library Source     | Description                                                                        |
+| Library Source | Description |
 |---|
 | GENOMIC            | Genomic DNA (includes PCR products from genomic DNA).                              |
 | TRANSCRIPTOMIC     | Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries). |
@@ -123,7 +123,7 @@ automatically constructed. To enter user-defined titles, download Experiment met
 : Whether any method was used to select and/or enrich the material
 being sequenced.
 
-| Library Selection     | Description                                                                        |
+| Library Selection | Description |
 |---|
 | RANDOM                                 | Random shearing only.                                                                                                                                                                              |
 | PCR                                    | Source material was selected by designed primers.                                                                                                                                                  |
@@ -157,9 +157,8 @@ being sequenced.
 
 [Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>
 : Sequencing technique intended for this library.
-For the "Sequel IIe", select the "Sequel II" and indicate "Sequel IIe" usage in the [Library Construction Protocol](#Library_Construction_Protocol).
 
-| Library Strategy                        | Description                                                                                                                                                                                                                                                               |
+| Library Strategy | Description |
 |---|
 | WGS                                     | Whole genome shotgun.                                                                                                                                                                                                                                                     |
 | WGA                                     | Whole genome amplification.                                                                                                                                                                                                                                               |
@@ -214,72 +213,90 @@ eCollection 2015. PMID:
 [Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>
 : Select a sequencing instrument model.
 
-| Instrument Model                    |
+| Instrument Model |
 |---|
-| 454 GS                              |
-| 454 GS 20                           |
-| 454 GS FLX                          |
-| 454 GS FLX+                         |
-| 454 GS FLX Titanium                 |
-| 454 GS Junior                       |
-| Illumina Genome Analyzer            |
-| Illumina Genome Analyzer II         |
-| Illumina Genome Analyzer IIx        |
-| Illumina HiSeq 1000                 |
-| Illumina HiSeq 1500                 |
-| Illumina HiSeq 2000                 |
-| Illumina HiSeq 2500                 |
-| Illumina HiSeq 3000                 |
-| Illumina HiSeq 4000                 |
-| Illumina NovaSeq 6000               |
-| Illumina MiSeq                      |
-| Illumina MiniSeq                    |
-| Illumina iSeq 100                   |
-| Illumina HiScanSQ                   |
-| HiSeq X Five                        |
-| HiSeq X Ten                         |
-| NextSeq 500                         |
-| NextSeq 550                         |
-| NextSeq 1000                        |
-| NextSeq 2000                        |
-| Helicos HeliScope                   |
-| AB SOLiD System                     |
-| AB SOLiD System 2.0                 |
-| AB SOLiD System 3.0                 |
-| AB SOLiD 3 Plus System              |
-| AB SOLiD 4 System                   |
-| AB SOLiD 4hq System                 |
-| AB SOLiD PI System                  |
-| AB 5500 Genetic Analyzer            |
-| AB 5500xl Genetic Analyzer          |
+| 454 GS |
+| 454 GS 20 |
+| 454 GS FLX |
+| 454 GS FLX+ |
+| 454 GS FLX Titanium |
+| 454 GS Junior |
+| Illumina Genome Analyzer |
+| Illumina Genome Analyzer II |
+| Illumina Genome Analyzer IIx |
+| Illumina HiSeq 1000 |
+| Illumina HiSeq 1500 |
+| Illumina HiSeq 2000 |
+| Illumina HiSeq 2500 |
+| Illumina HiSeq 3000 |
+| Illumina HiSeq 4000 |
+| HiSeq X Five |
+| HiSeq X Ten |
+| Illumina HiSeq X |
+| Illumina HiScanSQ |
+| Illumina NovaSeq 6000 |
+| Illumina NovaSeq X |
+| Illumina MiSeq |
+| Illumina MiniSeq |
+| Illumina iSeq 100 |
+| NextSeq 500 |
+| NextSeq 550 |
+| NextSeq 1000 |
+| NextSeq 2000 |
+| Helicos HeliScope |
+| AB SOLiD System |
+| AB SOLiD System 2.0 |
+| AB SOLiD System 3.0 |
+| AB SOLiD 3 Plus System |
+| AB SOLiD 4 System |
+| AB SOLiD 4hq System |
+| AB SOLiD PI System |
+| AB 5500 Genetic Analyzer |
+| AB 5500xl Genetic Analyzer |
 | AB 5500xl-W Genetic Analysis System |
-| Complete Genomics                   |
-| BGISEQ-500                          |
-| DNBSEQ-G400                         |
-| DNBSEQ-T7                           |
-| DNBSEQ-G50                          |
-| MGISEQ-2000RS                       |
-| MinION                              |
-| GridION                             |
-| PromethION                          |
-| PacBio RS                           |
-| PacBio RS II                        |
-| Sequel                              |
-| Sequel II                           |
-| Ion Torrent PGM                     |
-| Ion Torrent Proton                  |
-| Ion Torrent S5                      |
-| Ion Torrent S5 XL                   |
-| Ion GeneStudio S5                   |
-| Ion GeneStudio S5 plus              |
-| Ion GeneStudio S5 prime             |
-| AB 310 Genetic Analyzer             |
-| AB 3130 Genetic Analyzer            |
-| AB 3130xL Genetic Analyzer          |
-| AB 3500 Genetic Analyzer            |
-| AB 3500xL Genetic Analyzer          |
-| AB 3730 Genetic Analyzer            |
-| AB 3730xL Genetic Analyzer          |
+| Complete Genomics |
+| BGISEQ-50 |
+| BGISEQ-500 |
+| MGISEQ-2000RS |
+| DNBSEQ-G400 |
+| DNBSEQ-G400 FAST |
+| DNBSEQ-T7 |
+| DNBSEQ-G50 |
+| PacBio RS |
+| PacBio RS II |
+| Sequel |
+| Sequel II |
+| Sequel IIe |
+| Onso |
+| Revio |
+| Ion Torrent PGM |
+| Ion Torrent Proton |
+| Ion Torrent S5 |
+| Ion Torrent S5 XL |
+| Ion GeneStudio S5 |
+| Ion GeneStudio S5 plus |
+| Ion GeneStudio S5 prime |
+| Ion Torrent Genexus |
+| MinION |
+| GridION |
+| PromethION |
+| GENIUS |
+| Genapsys Sequencer |
+| GS111 |
+| Sentosa SQ301 |
+| Element AVITI |
+| GenoCare 1600 |
+| GenoLab M |
+| FASTASeq 300 |
+| UG 100 |
+| Tapestri |
+| AB 3730xL Genetic Analyzer |
+| AB 3730 Genetic Analyzer |
+| AB 3500xL Genetic Analyzer |
+| AB 3500 Genetic Analyzer |
+| AB 3130xL Genetic Analyzer |
+| AB 3130 Genetic Analyzer |
+| AB 310 Genetic Analyzer |
 
 [Library Layout](#Library_Layout)<a name="Library_Layout"></a><span class="red">*</span>
 : Select a layout of reads in sequencing data files.
@@ -331,7 +348,7 @@ in tsv file, this field needs to be specified manually.
 [File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>
 : The sequence data file format. For the fastq files, select 'fastq' irrespective of read length.
 
-| File Type        | Description                                                                                                            |
+| File Type | Description |
 |---|
 | fastq            | fastq file                                                                       |
 | hdf5             | PacBio hdf5 Format file                                                                                                |
@@ -382,19 +399,19 @@ in tsv file, this field needs to be specified manually.
 [File Type](#Analysis_File_Type)<a name="Analysis_File_Type"></a><span class="red">*</span>
 : The analysis data file format.
 
-|  File Type  |  Description  |
+| File Type | Description |
 |---|
-|  bam  |  Binary form of the Sequence alignment/map format for read placements, from the SAM tools project.<br/>See <a href="http://sourceforge.net/projects/samtools/">http://sourceforge.net/projects/samtools/</a>.  |
-|  tab  |  A tab delimited text file that can be viewed as a spreadsheet. The first line should contain column headers..  |
-|  ace  |  Multiple alignment file output from the phred assembler and similar programs.<br/>See <a href="http://www.phrap.org/consed/distributions/README.16.0.txt">http://www.phrap.org/consed/distributions/README.16.0.txt</a> for a description of the ACE file format..  |
-|  fasta  |  Sequence data format indicating sequence base calls.The format is simple: a header line initiated with the &gt; character, data lines following with base calls..  |
-|  wig  |  The wiggle (WIG) format allows display of continuous-valued data in track format.This display type is useful for GC percent, probability scores, and transcriptome data.<br/> See <a href="http://genome.ucsc.edu/goldenPath/help/wiggle.html">http://genome.ucsc.edu/goldenPath/help/wiggle.html</a> for a description of the Wiggle Track format..  |
-|  bed  |  BED format provides a flexible way to define the data lines that are displayed in an annotation track.<br/> See <a href="http://genome.ucsc.edu/FAQ/FAQformat#format1">http://genome.ucsc.edu/FAQ/FAQformat#format1</a> for a description of the BED format..  |
-|  vcf  |  Variant Call Format.<br/>See <a href="http://www.1000genomes.org/wiki/analysis/variant%20call%20format/vcf-variant-call-format-version-41">http://www.1000genomes.org/wiki/analysis/variant%20call%20format/vcf-variant-call-format-version-41</a> for a description of the VCF format.  |
-|  maf  |  Mutation Annotation Format  |
-|  gff  |  General Feature Format  |
-|  csv  |    |
-|  tsv  |    |
+| bam |  Binary form of the Sequence alignment/map format for read placements, from the SAM tools project.<br/>See <a href="http://sourceforge.net/projects/samtools/">http://sourceforge.net/projects/samtools/</a>.  |
+| tab |  A tab delimited text file that can be viewed as a spreadsheet. The first line should contain column headers..  |
+| ace |  Multiple alignment file output from the phred assembler and similar programs.<br/>See <a href="http://www.phrap.org/consed/distributions/README.16.0.txt">http://www.phrap.org/consed/distributions/README.16.0.txt</a> for a description of the ACE file format..  |
+| fasta |  Sequence data format indicating sequence base calls.The format is simple: a header line initiated with the &gt; character, data lines following with base calls..  |
+| wig |  The wiggle (WIG) format allows display of continuous-valued data in track format.This display type is useful for GC percent, probability scores, and transcriptome data.<br/> See <a href="http://genome.ucsc.edu/goldenPath/help/wiggle.html">http://genome.ucsc.edu/goldenPath/help/wiggle.html</a> for a description of the Wiggle Track format..  |
+| bed |  BED format provides a flexible way to define the data lines that are displayed in an annotation track.<br/> See <a href="http://genome.ucsc.edu/FAQ/FAQformat#format1">http://genome.ucsc.edu/FAQ/FAQformat#format1</a> for a description of the BED format..  |
+| vcf |  Variant Call Format.<br/>See <a href="http://www.1000genomes.org/wiki/analysis/variant%20call%20format/vcf-variant-call-format-version-41">http://www.1000genomes.org/wiki/analysis/variant%20call%20format/vcf-variant-call-format-version-41</a> for a description of the VCF format.  |
+| maf |  Mutation Annotation Format  |
+| gff |  General Feature Format  |
+| csv |    |
+| tsv |    |
 
 [MD5 Checksum](#Analysis_MD5_Checksum)<a name="Analysis_MD5_Checksum"></a><span class="red">*</span>
 : MD5 checksum of a run data file. [How to obtain the MD5 checksum values.](/checksum-e.html)
