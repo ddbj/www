@@ -230,7 +230,8 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 : 標本を採取した日付    
 日時の幅を示す場合は、２つの値を slash "/" で区切って記載してください。    
 採取した時刻を記載する場合、日付の後に "T" を付加し、続けて、時間と分を記載してください。    
-時刻は協定世界時 (UTC) ・グリニジ平均時 "Zulu Time" (Z) で記載してください。 
+時刻は協定世界時 (UTC) ・グリニジ平均時 "Zulu Time" (Z) で記載してください。    
+何らかの理由で記載が困難な場合、[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) で示します。    
 
 書式
 :    
@@ -264,18 +265,20 @@ YYYY-MM-DDThh:mmZ/YYYY-MM-DDThh:mmZ
 1952/1953
 1952-10-21/1953-02-15
 1952-10/1953-02
-1952-10-21T11:43Z/1952-10-21T17:43Z</pre>
+1952-10-21T11:43Z/1952-10-21T17:43Z
+missing: control sample</pre>
 
 備考
 : 日付まで特定した記載 (YYYY-MM-DD) を強く推奨します。    
 INSDC では 'Mmm' (月の略記) を含む "21-Oct-1952" のような旧書式のデータが維持されており、その登録受付も可能としていますが、DDBJ では、旧書式でのデータ登録を受け付けておりません。 
 
 
-### /country<a name="country"></a><span class="right-alignment">[Feature　Table Definition](/ddbj/feature-table.html#country)</span>
+### /country<a name="country"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#country)</span>
 
 
 定義
 : 疫学的、あるいは、個体群研究において配列サンプルを得た地域を 政治上の国、大洋、または、海の名称で示し、続けて地方・地域を示します。     
+何らかの理由で記載が困難な場合、[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) で示します。    
 １つの qualifier 内で複数の地点を記載することは禁止しています。    
 同一配列が観測された場合でも、原則、[地点別に複数の登録](/ddbj/representative-sequence.html )に分けてください。
 
@@ -283,12 +286,14 @@ INSDC では 'Mmm' (月の略記) を含む "21-Oct-1952" のような旧書式�
 : &lt;国名&gt;[:&lt;詳細な地名&gt;] (全角, ダブルクォーテーション ( " )  不可) 
 
 例
-: <pre>Japan:Kanagawa, Hakone, Lake Ashi</pre>
+: <pre>Japan:Kanagawa, Hakone, Lake Ashi
+missing: lab stock</pre>
 
 備考
-: 国名は[国名リスト](/ddbj/country.html)から選択します。 
+: 国名は[国名リスト](/ddbj/country.html)から選択します。     
+2024 年 6 月より /country qualifier は <a href="#geo_loc_name">/geo_loc_name</a> qualifier に名称変更されます。
 
-### /cultivar<a name="cultivar"></a><span class="right-alignment">[Feature Table　Definition](/ddbj/feature-table.html#cultivar)</span>
+### /cultivar<a name="cultivar"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#cultivar)</span>
 
 
 定義
@@ -558,6 +563,28 @@ unknown
 例
 : <pre>ilvE</pre>
 
+### /geo_loc_name<a name="geo_loc_name"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#geo_loc_name)</span>
+
+
+定義
+: 疫学的、あるいは、個体群研究において配列サンプルを得た地域を 政治上の国、大洋、または、海の名称で示し、続けて地方・地域を示します。    
+何らかの理由で記載が困難な場合、[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) で示します。    
+１つの qualifier 内で複数の地点を記載することは禁止しています。    
+同一配列が観測された場合でも、原則、[地点別に複数の登録](/ddbj/representative-sequence.html )に分けてください。
+
+書式
+: &lt;国名&gt;[:&lt;詳細な地名&gt;] (全角, ダブルクォーテーション ( " )  不可) 
+
+例
+: <pre>Japan:Kanagawa, Hakone, Lake Ashi
+missing: lab stock</pre>
+
+備考
+: 国名は[国名リスト](/ddbj/country.html)から選択します。     
+2024 年 6 月より <a href="#country">/country</a> qualifier は /geo_loc_name qualifier に名称変更されます。
+
+
+
 ### /germline<a name="germline"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#germline)</span><a name="germline"></a>
 
 
@@ -753,7 +780,7 @@ unspecified
 : [AGP Specification](https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/ )に従い、[assembly_gap](/ddbj/features.html#assembly_gap) feature でのみ、使用します 
 
 
-### /locus_tag<a name="locus_tag"></a><span class="right-alignment">[Feature Table　Definition](/ddbj/feature-table.html#locus_tag)</span>
+### /locus_tag<a name="locus_tag"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#locus_tag)</span>
 
 定義
 : (主としてゲノムプロジェクト用に)登録者が体系的に一定な識別子を 遺伝子とその関連 feature の検索を目的として割り当てたもの 

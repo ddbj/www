@@ -216,6 +216,7 @@ Definition
 Date/time ranges are supported by providing two collection dates from among the supported value formats, delimited by a forward-slash character.    
 Collection times are supported by adding "T", then the hour and minute, after the date.    
 Collection times must be in Coordinated Universal Time (UTC), otherwise known as "Zulu Time" (Z).    
+If it is difficult to describe the values for some reason, the submitter should indicate the reason as [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) .    
 
 Value format
 :    
@@ -249,7 +250,8 @@ Example
 1952/1953
 1952-10-21/1953-02-15
 1952-10/1953-02
-1952-10-21T11:43Z/1952-10-21T17:43Z</pre>
+1952-10-21T11:43Z/1952-10-21T17:43Z
+missing: control sample</pre>
 
 Comment
 : Collection dates that are specified to at least the day, month, and year (YYYY-MM-DD) are strongly encouraged.    
@@ -260,6 +262,7 @@ Though INSDC still keep and accept old value formats that make use of 'Mmm' (mon
 
 Definition 
 : locality of isolation of the sequenced sample indicated in terms of political names for nations, oceans or seas, followed by regions and localities     
+If it is difficult to describe the values for some reason, the submitter should indicate the reason as [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) .    
 We can NOT accept multiple localities in one qualifier.    
 In cases of identical sequences observed, in principle, please separately submit your data into [multiple records per locality](/ddbj/representative-sequence-e.html ).    
 
@@ -267,11 +270,12 @@ Value format
 : &lt;country&gt;[:&lt;free-text for geographical name&gt;]    
 
 Example     
-: <pre>Japan:Kanagawa, Hakone, Lake Ashi</pre>
+: <pre>Japan:Kanagawa, Hakone, Lake Ashi
+missing: lab stock</pre>
 
 Comment     
 : any &lt;country&gt; from [the country list](/ddbj/country-e.html).    
-
+The /country qualifier will be renamed to <a href="#geo_loc_name">/geo_loc_name</a> from June 2024.
 
 
 ### /cultivar<a name="cultivar"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#cultivar)</span>
@@ -545,6 +549,26 @@ Value format
 
 Example
 : <pre>ilvE</pre>
+
+
+### /geo_loc_name<a name="geo_loc_name"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#geo_loc_name)</span>
+
+Definition 
+: locality of isolation of the sequenced sample indicated in terms of political names for nations, oceans or seas, followed by regions and localities     
+If it is difficult to describe the values for some reason, the submitter should indicate the reason as [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) .    
+We can NOT accept multiple localities in one qualifier.    
+In cases of identical sequences observed, in principle, please separately submit your data into [multiple records per locality](/ddbj/representative-sequence-e.html ).    
+
+Value format
+: &lt;country&gt;[:&lt;free-text for geographical name&gt;]    
+
+Example     
+: <pre>Japan:Kanagawa, Hakone, Lake Ashi
+missing: lab stock</pre>
+
+Comment     
+: any &lt;country&gt; from [the country list](/ddbj/country-e.html).    
+The <a href="#country">/country</a> qualifier will be renamed to /geo_loc_name from June 2024.
 
 
 ### /germline<a name="germline"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#germline)</span><a name="germline"></a>
