@@ -1,10 +1,14 @@
 top_news:
   ja:
+    - title: (3/4 13:00 - 3/7 15:00) JGA, AGD システム一時停止のお知らせ
+      path: 2024-02-27
     - title: サンプルを採集した場所と日時の記載を必須化
       path: 2024-02-01
     - title: DDBJ Search キーワード検索の一部不具合について
       path: 2023-12-06
   en:
+    - title: (March 4 13:00 - March 7 15:00) Announcement of JGA/AGD system suspension
+      path: 2024-02-27-e
     - title: The requirement to state the location and date of sample collection
       path: 2024-02-01-e
     - title: Disabilities in the DDBJ Search keyword search functionalities
