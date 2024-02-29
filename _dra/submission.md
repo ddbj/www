@@ -82,13 +82,9 @@ D-way アカウントに登録されているメールアドレスを変更し�
 
 ### BioProject {#bioproject}
 
-<div class="attention">
-Study と Sample タブ画面が表示されない場合、Edge や Firefox で開くと表示されるようになる場合があります。
-</div>
-
 アカウントで登録した BioProject から該当するものを1つ選びます。
 未登録の場合、[register a project] から新たにプロジェクトを登録します。
-自身のアカウント以外で登録されたプロジェクトを参照したい場合は [DRA チームに連絡](/contact-ddbj.html)します。
+自身のアカウント以外で登録された BioProject を参照したい場合は [外部参照を申請](https://docs.google.com/forms/d/e/1FAIpQLSf1tMKEC_mhztGhtfKV0sLSGt1vY-I4Jb_RLQF64Li1d6_-Xg/viewform)します。
 
 {% include image.html url="books/hdra-bp01.jpg" caption="BioProject の選択、もしくは、新規登録" class="w500" %}
 
@@ -105,7 +101,7 @@ BioProject の登録後、登録したプロジェクトが選択されます。
 チェックボックスを選択し、続いて Shift キーを押しながら次のボックスをクリックすると、サンプルが範囲選択されます。
 また、カラム上部のボックスにテキストを入力しフィルターされた全てのサンプルを [Select filtered BioSamples] で選択することができます。
 未登録の場合、[register sample(s)] から新たにサンプルを登録します。
-自身のアカウント以外で登録されたサンプルを参照したい場合は [DRA チームに連絡](/contact-ddbj.html)します。
+自身のアカウント以外で登録された BioSample を参照したい場合は [外部参照を申請](https://docs.google.com/forms/d/e/1FAIpQLSf1tMKEC_mhztGhtfKV0sLSGt1vY-I4Jb_RLQF64Li1d6_-Xg/viewform)します。
 
 {% include image.html url="books/hdra-bs01.jpg" caption="BioSample の選択 or 新規登録" class="w500" %}
 

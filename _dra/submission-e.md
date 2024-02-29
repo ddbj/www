@@ -80,12 +80,8 @@ If you change email address registered in your D-way account, you need to update
 
 ### BioProject {#bioproject}
 
-<div class="attention">
-When the Study and Sample tab contents are not displayed, please open them by using Edge or Firefox.
-</div>
-
 Select a project registered in the account or newly submit a project from [New submission].
-To reference a project registered in the other account, please [contact the DRA team](/contact-ddbj-e.html).
+To reference a BioProject registered in another account, please [apply cross-reference](https://docs.google.com/forms/d/e/1FAIpQLSevpYmu-Xt5PiFGecuVQ9gdi2QrUmCUErtj4oLDOXnpWiNjhg/viewform).
 
 {% include image.html url="books/hdra-bp01.jpg" caption="Select a registered project or submit a new one" class="w500" %}
 
@@ -101,7 +97,7 @@ After submitting a project, submitted project is selected in the Study tab.
 Select samples (more than one sample is common in the DRA submission) registered in the account or newly submit samples from [New submission].
 To select a range of samples, first check a checkbox and click next box with pressing the "Shift".
 Filter samples by entering text in the upper box, and click [Select filtered BioSamples] to select all filtered samples.
-To reference samples registered in the other account, please [contact the DRA team](/contact-ddbj-e.html).
+To reference BioSamples registered in another account, please [apply cross-reference](https://docs.google.com/forms/d/e/1FAIpQLSevpYmu-Xt5PiFGecuVQ9gdi2QrUmCUErtj4oLDOXnpWiNjhg/viewform).
 
 {% include image.html url="books/hdra-bs01.jpg" caption="Select registered samples or submit new samples" class="w500" %}
 
