@@ -202,12 +202,23 @@ D-way アカウントに登録されているメールアドレスを変更し�
 
 {% include image.html url="books/array-sdrf-template.jpg" caption="SDRF テンプレートの図解、登録者が情報を追加する必要がある部分は黄色で示されている" class="w600" %}
 
-
 内容を追加した SDRF を選択して Continue をクリックします。
-
 
 {% include image.html url="books/array-sdrf2.jpg" caption="作成した SDRF ファイルを選択" class="w450" %}
 
+#### md5 チェックサム値 {#checksum}
+
+GEA では [md5 チェックサム値](#supplement-md5)をファイル破損検知に利用しています。  
+データファイルが多い場合やコマンドライン操作に慣れている場合、SDRF に値を記入するのではなく、[md5sum コマンド](#supplement-md5)の結果を \<GEA submission ID\>.md5 (例 ESUB000001.md5) ファイルとしてデータファイルと一緒にアップロードして提供する方法が便利です。SDRFと .md5 ファイルの両方がある場合は .md5 の値が優先されます。  
+
+例 ESUB000001.md5 (チェックサム値とファイル名の間は半角スペース二個)   
+```
+ed3d9b2adb5b29aa476b9d4164e208d5  raw1.txt
+3d77463ca6f43416a6c1925b7704d304  raw2.txt
+0e5be28700daa6d61ea3351921d6e578  processed1.txt
+351fb1324feebe954405ca610e46ae44  processed2.txt
+3d5749b63617da9002c7376deee8e0a3  array-design.txt
+```
 
 ### Overview と投稿  {#submit}
 

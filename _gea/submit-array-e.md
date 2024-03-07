@@ -201,12 +201,23 @@ Fields you need to add.
 
 {% include image.html url="books/array-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600" %}
 
-
 Select the entered SDRF file and continue.
-
 
 {% include image.html url="books/array-sdrf2.jpg" caption="Select entered SDRF file" class="w450" %}
 
+#### md5 checksum {#checksum}
+
+GEA uses [md5 checksum values](#supplement-md5) to detect corruption of files.  
+When there are many files or you are familiar with command line, provide output of [md5sum command](#supplement-md5) as a separate file with the filename \<GEA submission ID\>.md5 (for example, ESUB000001.md5) and upload it along with the data files. Values of the .md5 file are used over those of the SDRF.
+
+Example: ESUB000001.md5 (checksum values and filenames are delimited by two spaces)    
+```
+ed3d9b2adb5b29aa476b9d4164e208d5  raw1.txt
+3d77463ca6f43416a6c1925b7704d304  raw2.txt
+0e5be28700daa6d61ea3351921d6e578  processed1.txt
+351fb1324feebe954405ca610e46ae44  processed2.txt
+3d5749b63617da9002c7376deee8e0a3  array-design.txt
+```
 
 ### Overview and submit  {#submit}
 

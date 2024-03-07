@@ -94,7 +94,6 @@ The maximum number of assay per submission is 1,000. If you have more than 1,000
 
 {% include image.html url="books/array-sub1.jpg" caption="Create a new submission" class="w450" %}
 
-
 List of submission status is as follows. The GEA team reviews submission whose status is in "submission_validated" or "data_error".
 
 List of submission status
@@ -124,9 +123,7 @@ Set the hold date within four years. Submitters' name and affiliation will be pu
 You can delete an un-submitted GEA submission.
 </div>
 
-
 {% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}
-
 
 ### DRA  {#DRA-tab}
 
@@ -134,9 +131,7 @@ Select a DRA submission registered in your account. If DRA submission is not reg
 
 To use DRA submissions obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-
 {% include image.html url="books/seq-dra.jpg" caption="Select a DRA submission for the GEA experiment" class="w550" %}
-
 
 ### BioProject  {#BioProject-tab}
 
@@ -146,9 +141,7 @@ Select a BioProject used in the DRA submission when the GEA experiment and DRA s
 
 To use a project obtained in the other account, please [contact GEA team](/contact-ddbj-e.html).
 
-
 {% include image.html url="books/seq-bp.jpg" caption="Select a BioProject for the GEA experiment" class="w550" %}
-
 
 ### IDF  {#idf-tab}
 
@@ -160,15 +153,11 @@ Enter information for [IDF (Investigation Description Format)](/gea/metadata-e.h
 - Publication: Describe associated publications by PubMed ID or DOI. For unpublished manuscript, please [inform us](/contact-ddbj-e.html) the ID after assignment.
 - Data File Type: Processed data files are required for sequencing experiment submission. [Accepted Data Files Formats for sequencing experiment](/gea/datafile-e.html#seq_data). We strongly recommend to submitting processed data file per sample.
 
-
 {% include image.html url="books/seq-idf.jpg" caption="Enter information for IDF" class="w600" %}
-
 
 ### SDRF  {#sdrf-tab}
 
-
 {% include image.html url="books/seq-sdrf-down.jpg" caption="Download a SDRF template file" class="w400" %}
-
 
 Enter information for [SDRF (Sample and Data Relationship Format)](/gea/metadata-e.html#sdrf).
 
@@ -202,15 +191,25 @@ Fields you need to add.
     - KU-2003
     - KU-PI499262
 
-
 {% include image.html url="books/seq-sdrf-template.jpg" caption="SDRF template, yellow-highlighted fields need to be filled by submitter" class="w600" %}
-
 
 Select the entered SDRF file and continue.
 
-
 {% include image.html url="books/seq-sdrf-up.jpg" caption="Select entered SDRF file" class="w450" %}
 
+#### md5 checksum {#checksum}
+
+GEA uses [md5 checksum values](#supplement-md5) to detect corruption of files.  
+When there are many files or you are familiar with command line, provide output of [md5sum command](#supplement-md5) as a separate file with the filename \<GEA submission ID\>.md5 (for example, ESUB000001.md5) and upload it along with the data files. Values of the .md5 file are used over those of the SDRF.
+
+Example: ESUB000001.md5 (checksum values and filenames are delimited by two spaces)    
+```
+ed3d9b2adb5b29aa476b9d4164e208d5  raw1.txt
+3d77463ca6f43416a6c1925b7704d304  raw2.txt
+0e5be28700daa6d61ea3351921d6e578  processed1.txt
+351fb1324feebe954405ca610e46ae44  processed2.txt
+3d5749b63617da9002c7376deee8e0a3  array-design.txt
+```
 
 ### Overview and submit  {#submit}
 
@@ -218,9 +217,7 @@ You can download the IDF and SDRF files and check them. When correction is neces
 
 Submit the IDF and SDRF metadata by clicking the "Submit" button.
 
-
 {% include image.html url="books/seq-submit.jpg" caption="Check the IDF and SDRF and submit" class="w450" %}
-
 
 ### Validation  {#validation-step}
 
@@ -228,17 +225,13 @@ When data files described in the IDF and SDRF are not found in the submission di
 
 The validator checks submitted IDF and SDRF files according to the [validation rules.](/gea/validation-e.html) and gives warning and error messages. Errors need to be resolved for submission.
 
-
 {% include image.html url="books/seq-validation.jpg" caption="Warning and error messages" class="w500" %}
-
 
 ### Accession numbers  {#accession}
 
 [GEA accession numbers](/gea/overview-e.html#acc) are issued to the completed GEA experiment. You can allow reviewers access to private records by [communicating a reviewer accesss token](/gea/reviewer-access-e.html).
 
-
 {% include image.html url="books/seq-accession.jpg" caption="GEA accession numbers" class="w500" %}
-
 
 ## Update submission  {#update-submission}
 
