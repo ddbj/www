@@ -18,4 +18,4 @@ lang: ja
 ## 登録データの修正・更新 申し込みフォーム {#form}
 
 登録データの修正・更新は以下のフォームから申し込んでください。    
-[登録データの修正・更新申し込みフォーム](https://docs.google.com/forms/d/e/1FAIpQLSfNnNRavoWTcuwU8S4g75vlb8o6mAsiFikN9o7veCLJ6DBD-g/viewform)
+[登録データの修正・更新申し込みフォーム](https://forms.gle/AHkzThQEZ8Dm6pjt7)
