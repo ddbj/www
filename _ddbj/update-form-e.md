@@ -20,4 +20,4 @@ lang: en
 ## Application form for data update {#form}
 
 Apply your data update request through this form.    
-[Application form for data update](https://docs.google.com/forms/d/e/1FAIpQLSdcMBbaxAD2gFRRgBLYJaRKVrPmr7Ctt42u9J22FErNuNqzSQ/viewform)
+[Application form for data update](https://forms.gle/XcK48cTV1LtwPaCFA)
