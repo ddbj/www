@@ -234,7 +234,7 @@ Before filling in the metadata excel, you need to finish followings.
 * [Upload sequencing data files](#upload)
 
 Download the [DRA metadata excel](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx) and describe your metadata.
-[Example excel](https://github.com/ddbj/submission-excel2xml/raw/main/example-0001_dra_metadata.xlsx)
+[Example excel](https://github.com/ddbj/submission-excel2xml/raw/main/example/example-0001_dra_metadata.xlsx)
 
 Next, "upload XMLs generated from the excel" or "send the excel to the DRA team by email attachment".
 

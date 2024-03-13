@@ -220,7 +220,7 @@ Run の数が100を超えるような場合で、ウェブツールの応答が�
 * [データファイルのアップロード](#upload)
 
 [メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx)をダウンロードし、内容を記入します。
-[エクセルの記入例](https://github.com/ddbj/submission-excel2xml/raw/main/example-0001_dra_metadata.xlsx)
+[エクセルの記入例](https://github.com/ddbj/submission-excel2xml/raw/main/example/example-0001_dra_metadata.xlsx)
 
 続いて、メタデータ登録用エクセルから生成した「XML を登録」、もしくは、「エクセルを担当者に送付」します。
 コマンドライン操作に慣れている方は XML を直接登録してください。大量件数の登録を効率化することができます。
