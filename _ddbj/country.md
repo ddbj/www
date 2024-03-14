@@ -113,7 +113,7 @@ and [https://www.cia.gov/the-world-factbook/](https://www.cia.gov/the-world-fact
 - Cuba
 - Curacao
 - Cyprus
-- Czech Republic
+- Czechia
 
 ## D  {#D}
 - Democratic Republic of the Congo
@@ -379,6 +379,7 @@ and [https://www.cia.gov/the-world-factbook/](https://www.cia.gov/the-world-fact
 - British Guiana
 - Burma
 - Czechoslovakia
+- Czech Republic
 - East Timor
 - Former Yugoslav Republic of Macedonia
 - Korea

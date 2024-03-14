@@ -26,29 +26,27 @@ related_pages:
 
 ## Outline  {#outline}
 
-One of the most frequently used feature keys is "CDS" to describe coding
-sequence for protein. The location of CDS feature basically indicates
-the base range(s) from the start point of initiation codon to the end
-point termination codon location. CDS feature indicates the amino acid
-translation with codon table (indicated by
-/[transl_table](/ddbj/qualifiers-e.html#transl_table) qualifier) of the
+One of the most frequently used feature keys is "CDS" to describe coding 
+sequence for protein. The location of CDS feature basically indicates 
+the base range(s) from the start point of initiation codon to the end 
+point termination codon location. CDS feature indicates the amino acid 
+translation with codon table (indicated by 
+[/transl_table](/ddbj/qualifiers-e.html#transl_table) qualifier) of the
 source organism and the description of the frame
-/[codon_start](/ddbj/qualifiers-e.html#codon_start) and
-/[transl_except](/ddbj/qualifiers-e.html#transl_except), on the basis of
-the information provided from submitter (In the case of setting the
-qualifier, /[pseudo](/ddbj/qualifiers-e.html#pseudo) or
-/[pseudogene](/ddbj/qualifiers-e.html#pseudogene), translation is NOT
-indicated).
+[/codon_start](/ddbj/qualifiers-e.html#codon_start) and
+[/transl_except](/ddbj/qualifiers-e.html#transl_except), on the basis of
+the information provided from submitter (In the case of setting the qualifier, 
+[/pseudo](/ddbj/qualifiers-e.html#pseudo) or 
+[/pseudogene](/ddbj/qualifiers-e.html#pseudogene), translation is NOT indicated).
 
-Some qualifiers are also described to indicate the
-/[product](/ddbj/qualifiers-e.html#product) name and/or
-/[function](/ddbj/qualifiers-e.html#function) of the corresponding
-protein on the basis of the information provided from submitter. If the
-information is confirmed experimentally,
-/[experiment](/ddbj/qualifiers-e.html#experiment) qualifier can be
-described. In the case of the predicted information by the homology of
-the sequence etc., /[inference](/ddbj/qualifiers-e.html#inference)
-qualifier can be described.
+Some qualifiers are also described to indicate the 
+[/product](/ddbj/qualifiers-e.html#product) name and/or
+[/gene](/ddbj/qualifiers-e.html#gene) of the corresponding 
+protein on the basis of the information provided from submitter. 
+If the information is confirmed experimentally, 
+[/experiment](/ddbj/qualifiers-e.html#experiment) qualifier can be described. 
+In the case of the predicted information by the homology of the sequence etc., 
+[/inference](/ddbj/qualifiers-e.html#inference) qualifier can be described.
 
 Since the criteria of similarity and homology is not defined in the
 international nucleotide database, whether the gene is a homolog of some
@@ -64,8 +62,8 @@ nomenclature. If there is no particular incident, the descriptions
 related to gene nomenclature are described as provided by submitter.
 
 DDBJ recommends to describe 'symbolic ID of locus' in
-/[gene](/ddbj/qualifiers-e.html#gene) qualifier, and the name of protein
-product in /[product](/ddbj/qualifiers-e.html#product) qualifier.
+[/gene](/ddbj/qualifiers-e.html#gene) qualifier, and the name of protein
+product in [/product](/ddbj/qualifiers-e.html#product) qualifier.
 
 DDBJ also recommends to use the comprehensible description for product,
 because the value for product qualifier is frequently use for the
@@ -84,7 +82,7 @@ though they have no binding force to submitters;
 For user's convenience to refer contents of database, DDBJ recommends to
 describe the names of gene and product as follows;
 
-/[gene](/ddbj/qualifiers-e.html#gene): symbol of the gene corresponding to a sequence region  
+[/gene](/ddbj/qualifiers-e.html#gene): symbol of the gene corresponding to a sequence region  
 : Example: ilvE
 : Notices:
   - Please enter the abbreviation as gene symbol.
@@ -93,9 +91,9 @@ describe the names of gene and product as follows;
     Do not use needless symbolic letters as delimiter for multiple
     names. If you would like to describe more than two, please enter
     one of the most representative abbreviation in /gene, and
-    other(s) in /[gene_synonym](/ddbj/qualifiers-e.html#gene_synonym) qualifier.
+    other(s) in [/gene_synonym](/ddbj/qualifiers-e.html#gene_synonym) qualifier.
 
-/[product](/ddbj/qualifiers-e.html#product): name of the product associated with the feature, e.g. the polypeptide of a CDS  
+[/product](/ddbj/qualifiers-e.html#product): name of the product associated with the feature, e.g. the polypeptide of a CDS  
 : Example: trypsinogen
 : Notices:
   - In principle, please enter a general name, not abbreviation.
@@ -105,7 +103,7 @@ describe the names of gene and product as follows;
     Do not use needless symbolic letters as delimiter for multiple names.  
     If you would like to describe more than two names, please enter
     one of the most representative name in /product,and other(s) in
-    /[note](/ddbj/qualifiers-e.html#note) qualifier.
+    [/note](/ddbj/qualifiers-e.html#note) qualifier.
   - If the name and function are not known, we recommend to describe as "hypothetical protein".
   - It is recommended to comply with [the international protein nomenclature guidelines](https://www.ncbi.nlm.nih.gov/genome/doc/internatprot_nomenguide/).
 : Though we recognize that there are many exceptions in which the gene nomenclature of some model organisms do not fall into the above rule, we recommend the above rule, because we wish to make contents of DDBJ/ENA/GenBank as useful as possible.
@@ -117,8 +115,8 @@ When you find termination codon(s) in the range of CDS feature that you presume,
 
   - Location of CDS feature (See also [Description of Location](/ddbj/location-e.html))
   - [The Genetic Codes](/ddbj/geneticcode-e.html) in
-    /[transl_table](/ddbj/qualifiers-e.html#transl_table)
-  - /[codon_start](/ddbj/qualifiers-e.html#codon_start)(See also [Offset
+    [/transl_table](/ddbj/qualifiers-e.html#transl_table)
+  - [/codon_start](/ddbj/qualifiers-e.html#codon_start)(See also [Offset
     of the translation initiation by codon_start frame](#frame))
 
 If all of above items are correct and termination codon is still found
@@ -144,30 +142,30 @@ a) Putative nonsense mutation, frameshift caused by uncertain reason, or on the 
 : Describe with [misc_feature](/ddbj/features-e.html#misc_feature), not CDS.
 : Because it is not sure if the corresponding protein exist or not.  
 Describe referred information in
-/[inference](/ddbj/qualifiers-e.html#inference) qualifier.  
-Describe a short explanation in /[note](/ddbj/qualifiers-e.html#note)
+[/inference](/ddbj/qualifiers-e.html#inference) qualifier.  
+Describe a short explanation in [/note](/ddbj/qualifiers-e.html#note)
 qualifier; "putative frameshift mutation", "Ig rearrangement", "TCR
 beta rearrangement" or else.
 
 b) considered pseudogene<a name="stop_b"></a>  
 : <span class="red">If you have not yet confirmed any collateral evidence to identify a pseugdogene (i.e. relationship of orthologues and paralogues in other species, missing any corresponding transcript, or some), you shuold not call it pseudogene.</span>  
 : Describe original CDS location with
-/[pseudogene](/ddbj/qualifiers-e.html#pseudogene) qualifier.
+[/pseudogene](/ddbj/qualifiers-e.html#pseudogene) qualifier.
 : When you use pseudogene qualifier,
-/[translation](/ddbj/qualifiers.html#translation) is not described
+[/translation](/ddbj/qualifiers.html#translation) is not described
 for the CDS feature, because the corresponding protein would not
 exist in vivo.
 : 
   - Describe referred information in
-    /[inference](/ddbj/qualifiers-e.html#inference) qualifier.
+    [/inference](/ddbj/qualifiers-e.html#inference) qualifier.
   - Describe a short explanation in
-    /[note](/ddbj/qualifiers-e.html#note) qualifier like as
+    [/note](/ddbj/qualifiers-e.html#note) qualifier like as
     "pseudogene of [protein name]".
   - About controlled values of
-    /[pseudogene](/ddbj/qualifiers-e.html#pseudogene) qualifier, see
+    [/pseudogene](/ddbj/qualifiers-e.html#pseudogene) qualifier, see
     [Controlled vocabulary for /pseudogene qualifier](https://www.insdc.org/submitting-standards/pseudogene-qualifier-vocabulary/ ).
   - Since there is no protein product for the CDS feature, do NOT
-    describe /[product](/ddbj/qualifiers.html#product) qualifier, in
+    describe [/product](/ddbj/qualifiers.html#product) qualifier, in
     principle.
 : See also [Description Examples of Sequence Data B06](/ddbj/example-e.html#B06).
 
@@ -187,10 +185,10 @@ slippage.
       CDS             join(21..90,92..451)
 ```
 : Then, add
-/[ribosomal_slippage](/ddbj/qualifiers-e.html#ribosomal_slippage)
+[/ribosomal_slippage](/ddbj/qualifiers-e.html#ribosomal_slippage)
 qualifier as a flag to indicate the adjustment is legal.  
 After this adjustment of location, the amino acid sequence in
-/[translation](/ddbj/qualifiers-e.html#translation) qualifier is
+[/translation](/ddbj/qualifiers-e.html#translation) qualifier is
 conceptually translated one.
 : See also [Description Examples of Sequence Data B10](/ddbj/example-e.html#B10).
 On submission via Nucleotide Sequence Submission System, please use "Submission Information" box to tell us the ribosomal slippage in detail.
@@ -198,14 +196,14 @@ On submission via Nucleotide Sequence Submission System, please use "Submission 
 e) RNA editing<a name="stop_e"></a>  
 : <span class="red">Basically, it should be described for genome annotation.</span>
 : Describe original CDS location with
-/[exception](/ddbj/qualifiers-e.html#exception) qualifier
+[/exception](/ddbj/qualifiers-e.html#exception) qualifier
 qualifier.  
 When the exception qualifier is described, amino acid sequence for
 translation qualifier can be provided by submitter. So, you can use
 the amino acid sequence confirmed via cDNA or some for the CDS
 feature on the genomic sequence.  
 Describe referred information in
-/[inference](/ddbj/qualifiers-e.html#inference) qualifier.
+[/inference](/ddbj/qualifiers-e.html#inference) qualifier.
 : See also [Description Examples of Sequence Data B09](/ddbj/example.html#B09).
 : On submission via Nucleotide Sequence Submission System, please use
 "Submission Information" box to tell us translational exceptions in
@@ -213,7 +211,7 @@ detail.
 
 f) translated with selenocystein or pyrrolysine<a name="stop_f"></a>  
 : Describe original CDS location with
-/[transl_except](/ddbj/qualifiers-e.html#transl_except) qualifier.
+[/transl_except](/ddbj/qualifiers-e.html#transl_except) qualifier.
 
 : For example;
   
@@ -226,7 +224,7 @@ not CDS.
 
 h) low accuracy of draft sequences from genome or transcriptome project<a name="stop_h"></a>  
 : To avoid the point of frameshift, adjust CDS location with "join" operator, operatively, to make amino acid sequence with conceptual translation.  
-Add /[artificial_location](/ddbj/qualifiers-e.html#artificial_location)
+Add [/artificial_location](/ddbj/qualifiers-e.html#artificial_location)
 qualifier as a flag to indicate the operative adjustment.
 : <span class="red">For submissions via Nucleotide Sequence Submission System, it is forbidden to use artificial_location qualifier.</span>
 
@@ -249,17 +247,17 @@ However, there are three major exceptions as below;
 
   - On the circular genome sequence, to indicate the conjugation of the
     end of the sequence and the start of it
-  - For viruses or some, to indicate /[ribosomal slippage](/ddbj/qualifiers-e.html#ribosomal_slippage) is occured in
+  - For viruses or some, to indicate [/ribosomal slippage](/ddbj/qualifiers-e.html#ribosomal_slippage) is occured in
     the process of translation.
   - CDS locations operatively adjusted to avoid frameshift errors in
     draft sequences from genome or transcriptome projects, with a flag
-    /[artificial_location qualifier](/ddbj/qualifiers-e.html#artificial_location)qualifier.
+    [/artificial_location qualifier](/ddbj/qualifiers-e.html#artificial_location)qualifier.
 
 ## Translated amino acid sequence described at translation qualifier  {#translation}
 
 For example, in the page, [Explanation of DDBJ flat file
 format](/ddbj/flat-file-e.html), the amino acid sequence in the value of
-/[translation](/ddbj/qualifiers-e.html#translation) qualifier is
+[/translation](/ddbj/qualifiers-e.html#translation) qualifier is
 processed from the nucleotide sequence by using following items;
 
 i.e.
@@ -321,7 +319,7 @@ sequence is described in the value of translation as below.
 
 ## Offset of the frame at translation initiation by codon_start  {#frame}
 
-The /[codon_start](/ddbj/qualifiers-e.html#codon_start) qualifier
+The [/codon_start](/ddbj/qualifiers-e.html#codon_start) qualifier
 indicates the offset at which the first complete codon of a CDS feature
 can be found, relative to the first base of that feature.
 
