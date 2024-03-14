@@ -29,13 +29,15 @@ related_pages:
 
 feature key の中でも、タンパク質のコーディング領域を記述する CDS はデータベース中に多数、記載されています。    
 CDS feature の location はアミノ酸翻訳の対象となる塩基配列を開始コドンから終止コドンまでの位置を基本に示します。    
-CDS には、その位置情報、[/codon\_start](/ddbj/qualifiers.html#codon_start)、由来生物のコドン表 ([/transl\_table](/ddbj/qualifiers.html#transl_table) 
+CDS には、その位置情報、[/codon\_start](/ddbj/qualifiers.html#codon_start)、由来生物のコドン表 (
+[/transl\_table](/ddbj/qualifiers.html#transl_table) 
 に記載されます)、ならびに [/transl\_except](/ddbj/qualifiers.html#transl_except) の記述に基づいて、アミノ酸翻訳を行ない、
-[translation](/ddbj/qualifiers.html#translation) を付加します (ただし、[pseudo](/ddbj/qualifiers.html#pseudo)、
-または、[pseudogene]( /ddbj/qualifiers.html#pseudogene) の指定がある場合にはアミノ酸翻訳は行いません)。
+[/translation](/ddbj/qualifiers.html#translation) を付加します (ただし、
+[/pseudo](/ddbj/qualifiers.html#pseudo)、
+または、[/pseudogene]( /ddbj/qualifiers.html#pseudogene) の指定がある場合にはアミノ酸翻訳は行いません)。
 
 CDS feature には登録者からの報告に基づいて、対応する遺伝子の略号が [/gene](/ddbj/qualifiers.html#gene) に、
-対応するタンパク質の名称が [/product](/ddbj/qualifiers.html#product に記載されます。
+対応するタンパク質の名称が [/product](/ddbj/qualifiers.html#product) に記載されます。
 また、これらの情報が実験的に確認されたもの あるときには [/experiment](/ddbj/qualifiers.html#experiment)、
 配列の類似性検索等で類推さ たものであるときには 
 [/inference](/ddbj/qualifiers.html#inference) という qualifier を用いて注釈されることがあります。
@@ -51,7 +53,8 @@ CDS feature には登録者からの報告に基づいて、対応する遺伝�
 
 DDBJ は遺伝子命名に関する権限などは持っていません。また、特定の遺伝子命名管理団体との公 な協調も行っておりません。特に問題がない限り、登録者の意向に基づいて記述しています。
 
-CDS feature では、[/product](/ddbj/qualifiers.html#product) qualifier に産物に相当するタンパク質名と、[/gene](/ddbj/qualifiers.html#gene) qualifier に由来する locus を示す象徴的な略号を記載することを基本とします。  
+CDS feature では、[/product](/ddbj/qualifiers.html#product) qualifier に産物に相当するタンパク質名と、
+[/gene](/ddbj/qualifiers.html#gene) qualifier に由来する locus を示す象徴的な略号を記載することを基本とします。  
 特に相同性検索などによる結果の総括として product の内容が採用される可能性が高いため、 product には、理解が容易な記載を推奨しております。
 
 拘束力はありませんが、DDBJ では記載指針を、下記のように心がけております。
@@ -117,7 +120,7 @@ b) pseudogene と見做される場合<a name="stop_b"></a>
 : [配列データ記載例 B06](/ddbj/example.html#B06) もご参照ください。
 
 c) 生体内に末端を欠失したタンパク質産物が存在すると推定される場合<a name="stop_c"></a>  
-: 想定される truncated なタンパク質産物の location を CDS feature で指定します。<br>したがって、location は短いものとなります。
+: 想定される truncated なタンパク質産物の location を CDS feature で指定します。    したがって、location は短いものとなります。
 
 d) ribosomal slippage<a name="stop_d"></a>  
 : ribosomal slippage の起こる箇所で、"join" を用いて CDS location の補正を行います。
@@ -140,7 +143,7 @@ e) RNA editing<a name="stop_e"></a>
 
 f) selenocystein、あるいは、pyrrolysine に翻訳される場合<a name="stop_f"></a>
 : 想定される CDS location を示し、[/transl\_except](/ddbj/qualifiers.html#transl_except) を付加します。<br>その記載に基づき、終止コドンと扱わずにアミノ酸翻訳します。
-: 例;
+: 例
 
   |  /transl_except=(pos:213..215,aa:Sec)  |  #  "U" (selenocystein の１文字表記) にアミノ酸翻訳されます。  |
   |  /transl_except=(pos:213..215,aa:Pyl)  |  # "O" (pyrrolysine の１文字表記) にアミノ酸翻訳されます。  |
@@ -235,9 +238,9 @@ CDSで示されるタンパク質のコード領域が開始コドンから始�
 塩基番号10の位                11111111112222222 
 塩基番号 1の位       12345678901234567890123456 
 実際の塩基配列       ttcggctgcagaagataaataaataa 
-翻訳アミノ酸配列※1  F  G  C  R  R  *  
-翻訳アミノ酸配列※2   S  A  A  E  D  K  *   
-翻訳アミノ酸配列※3    R  L  Q  K  I  N  K  *   
+翻訳アミノ酸配列※1   F  G  C  R  R  *  
+翻訳アミノ酸配列※2    S  A  A  E  D  K  *   
+翻訳アミノ酸配列※3     R  L  Q  K  I  N  K  *   
 ```
 
 ※1
