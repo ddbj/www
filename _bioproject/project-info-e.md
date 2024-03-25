@@ -59,7 +59,7 @@ An informative paragraph that describes the project and provides informative con
 
 [Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>  
 : Use this field if you have questions for database support staff. The content is not made public. If you intend to [submit an umbrella project](/bioproject/submission-e.html#submit-umbrella-project), please inform us that "this is umbrella project" (e.g., Please register this project as an umbrella project).  
-To submit data corresponding to personal identification code, write the approved NBDC data submission application ID (for example, J-DS000001-001).
+To submit data corresponding to personal identification code, write the approved data submission application ID (for example, J-DS000001-001).
 
 ### Umbrella BioProject {#Area_linked-project}
 

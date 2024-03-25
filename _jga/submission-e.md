@@ -9,9 +9,9 @@ lang: en
 
 ## Submission Guide  {#submission}
 
-The JGA accepts only de-identified data approved by NBDC. The users apply for data submission directly to the [NBDC](https://humandbs.biosciencedbc.jp/en/) and the JGA will only accept submissions once the information of a successful application process has been passed from the NBDC to the JGA.
+The JGA accepts only de-identified data approved by DBCLS. The users apply for data submission to the [DBCLS](https://humandbs.biosciencedbc.jp/en/) and the JGA will only accept submissions once the information of a successful application process has been passed from the DBCLS to the JGA.
 
-It should be clear from the original consent agreements affiliated to your samples if your data should be subject to controlled access. All data submitted to the JGA has controlled access, which means that access to the data submitted is subject to approval by [NBDC](https://humandbs.biosciencedbc.jp/en/) as a part of a formal application procedure.
+It should be clear from the original consent agreements affiliated to your samples if your data should be subject to controlled access. All data submitted to the JGA has controlled access, which means that access to the data submitted is subject to approval by [DBCLS](https://humandbs.biosciencedbc.jp/en/) as a part of a formal application procedure.
 
 Controlled access does not correspond to holding a release prior to publication. All the DDBJ archival resources including the JGA enable you to hold a submission before publication.
 
@@ -34,7 +34,7 @@ It is important for making data reusable and reproducible that the processed dat
 
 
 <div class="attention" markdown="1">
-After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
+After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
 Currently, there is no requirement for authors to use a specific JGA accession in their publications. We would recommend that authors use the JGAS (study) accession, which would provide the reader/user with a complete overview of the study and a set of links to all the data from that study.
@@ -132,8 +132,7 @@ JGA XML schema: [JGA xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 ### Summary information for public display  {#public}
 
-When JGA submissions are released, following metadata objects will be public on the JGA and NBDC websites to display summary of submissions.
-
+When JGA submissions are released, following metadata objects will be public on the JGA and DBCLS websites to display summary of submissions.
 
 <div class="dl-list" markdown="1">
 
@@ -196,7 +195,7 @@ XML schema: [JGA.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 The Policy XML describes the Data Access Agreement (DAA). If only [NBDC policy](https://humandbs.biosciencedbc.jp/en/nbdc-policy) is associated with a submission, submitters do not need to create a new policy.
 
-If additional policies are needed, you need to register a policy to NBDC and reference issued JGAP number from submitting dataset.
+If additional policies are needed, you need to register a policy to DBCLS and reference issued JGAP number from submitting dataset.
 
 XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
@@ -204,13 +203,9 @@ XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 To submitting only aggregated data or data which are not suitable for Sample-Experiment-Data, these data can be submitted as Sample-Analysis instead of Sample-Experiment-Data.
 
-
 {% include image.html url="submission/sample-analysis.jpg" caption="One Analysis for each Sample" class="w500" %}
 
-
-
 {% include image.html url="submission/samples-analysis.jpg" caption="Analysis data aggregating Samples" class="w500" %}
-
 
 To submitting Analysis only data, please contact [JGA team](/contact-ddbj-e.html) .
 

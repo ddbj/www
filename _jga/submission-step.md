@@ -7,9 +7,9 @@ current_tab: submission
 lang: ja
 ---
 
-## NBDC 提供申請から JGA データアップロードまでの手順  {#ds}
+## 提供申請から JGA データアップロードまでの手順  {#ds}
 
-提供申請は [NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)に D-way アカウントでログインしてから申請します。
+提供申請は[申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)に D-way アカウントでログインしてから申請します。
 提供申請では提供申請グループの作成が必要です。
 提供申請の承認後、D-way アカウントで JGA サーバにアクセスし、メタデータとデータファイルを JGA サーバに [sftp](#sftp) もしくは [WinSCP](#winscp) でアップロードします。
 
@@ -25,13 +25,13 @@ lang: ja
 提供申請および JGA データアップロードのためには D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/)してください。
 
 <div class="attention" markdown="1">
-D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
+D-way アカウント作成後、[データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
 JGA サーバへデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#public-key)します。
 
 申請情報を自動入力させるため、アカウントに所属情報や日本語氏名を追加します。
-[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
+[申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
 
 {% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
 
@@ -47,7 +47,7 @@ JGA サーバへデータをアップロードするためには、データ転�
 ## 提供申請グループ {#data-submitter-group}
 
 申請前に提供申請グループを作成します。例の提供申請グループ (subgrp1) では申請及び登録を担当する研究員 (account_b) がオーナー、研究代表者 (account_c) がメンバーとなっています。
-実際には NBDC 申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。
+実際には申請システムで申請したアカウントが自動的に申請者になります。登録者が PI と申請者以外にも居る場合は必ず全員をメンバーに含めてください。
 
 {% include image.html url="books/DS-group.png" caption="データ提供申請グループ" class="w400" %}
 
@@ -57,11 +57,11 @@ JGA サーバへデータをアップロードするためには、データ転�
 
 {% include image.html url="books/DS-group-select.png" caption="データ提供申請グループの選択" class="w450" %}
 
-詳細な手順は [NBDC のデータ提供](https://humandbs.biosciencedbc.jp/data-submission)ページもご覧ください。
+詳細な手順は[データ提供](https://humandbs.biosciencedbc.jp/data-submission)ページもご覧ください。
 
 ## 提供申請の承認 {#approval}
 
-提供申請が NBDC で承認されると、JGA の Submission ID (例 JSUB000353) が発行され、JGA サーバに対応するアップロード用ディレクトリが作成されます。
+提供申請が DBCLS で承認されると、JGA の Submission ID (例 JSUB000353) が発行され、JGA サーバに対応するアップロード用ディレクトリが作成されます。
 
 {% include image.html url="books/DS-approved.png" caption="提供申請の承認" class="w450" %}
 
@@ -95,8 +95,7 @@ JGA にアップロードするファイル名には空白を含めないでく�
 
 ### エクセルを sftp でアップロード  {#sftp}
 
-JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に JGA Submission ID と同名のディレクトリが作成されるので、
-sftp の P オプションでポート番号 443 を指定してログインし、対象ディレクトリに移動しエクセルをアップロードします。
+JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に JGA Submission ID と同名のディレクトリが作成されるので、sftp の P オプションでポート番号 443 を指定してログインし、対象ディレクトリに移動しエクセルをアップロードします。
 sftp では公開鍵・秘密鍵認証を利用しており、D-way アカウントに登録したデータ転送用公開鍵とペアの秘密鍵を指定します。
 
 ```
