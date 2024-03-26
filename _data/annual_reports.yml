@@ -1,11 +1,24 @@
 items:
+  - date: 2023-1-1
+    title:
+      en: FY2023
+      ja: 2023年度
+    report_url:
+      en: https://drive.google.com/file/d/1bxG4XQumO54qaLIWummQLm81YbJtAvNT/view?usp=drive_link
+      ja: https://drive.google.com/file/d/1bxG4XQumO54qaLIWummQLm81YbJtAvNT/view?usp=drive_link
+    budget_pdf:
+      en: https://drive.google.com/file/d/1c3cXByTIz1lKHzdlD_LEVWCDLyK9vqzU/view?usp=drive_link
+      ja: https://drive.google.com/file/d/1c3cXByTIz1lKHzdlD_LEVWCDLyK9vqzU/view?usp=drive_link
+    budget_excel:
+      en: https://docs.google.com/spreadsheets/d/1i9P1Udau7pVNE70ZBDOs8u4CSf4cYFTj/edit?usp=drive_link&ouid=105751513362338066062&rtpof=true&sd=true
+      ja: https://docs.google.com/spreadsheets/d/1i9P1Udau7pVNE70ZBDOs8u4CSf4cYFTj/edit?usp=drive_link&ouid=105751513362338066062&rtpof=true&sd=true
   - date: 2022-1-1
     title:
       en: FY2022
       ja: 2022年度
     report_url:
-      en: https://drive.google.com/file/d/1wejjA2PdWQei5Ivwkr2Pt9zZWP0cmI4A/view?usp=share_link
-      ja: https://drive.google.com/file/d/1wejjA2PdWQei5Ivwkr2Pt9zZWP0cmI4A/view?usp=share_link
+      en: https://drive.google.com/file/d/1CjXP0_6g-rQHLrJiOfSqnNl6cyozhi57/view?usp=drive_link
+      ja: https://drive.google.com/file/d/1CjXP0_6g-rQHLrJiOfSqnNl6cyozhi57/view?usp=drive_link
     budget_pdf:
       en: https://drive.google.com/file/d/1evhz6-n93IXuPlQCYO3Fankayy2-p4MZ/view?usp=share_link
       ja: https://drive.google.com/file/d/1evhz6-n93IXuPlQCYO3Fankayy2-p4MZ/view?usp=share_link
