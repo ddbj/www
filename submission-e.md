@@ -92,7 +92,7 @@ Most journals request processed data deposition to [GEO/ArrayExpress/GEA](https:
 * We accept microarray data at [GEA](/gea/index-e.html).
 * DDBJ can not accept any amino acid sequences without underlying nucleotide submission. When you want to submit amino acid sequences only, please consider submitting them to [UniProt](https://www.uniprot.org/).    
 [FAQ: How to submit amino acid sequences?](/faq/ja/how-to-submit-amino-acid-seq-e.html)    
-* In cases of research data from human subjects, we might be able to accept your data at [JGA](/jga/submission-e.html). To submit your data to JGA, a data submission application to [NBDC](https://humandbs.biosciencedbc.jp/data-submission) needs to be approved.
+* In cases of research data from human subjects, we might be able to accept your data at [JGA](/jga/submission-e.html). To submit your data to JGA, a data submission application to [DBCLS](https://humandbs.dbcls.jp/data-submission) needs to be approved.
 
 ## Nucleotide Sequence Data Unacceptable for DDBJ {#non-acceptable}
 

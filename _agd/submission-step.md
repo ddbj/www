@@ -9,7 +9,7 @@ lang: ja
 
 ## データ提供申請  {#ds-application}
 
-[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)から[提供申請](https://gr-sharingdbs.biosciencedbc.jp/agd-data-submission)します。
+[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)から[提供申請](https://gr-sharingdbs.dbcls.jp/agd-data-submission)します。
 申請時に提供申請グループを作成します。提供申請が DBCLS で承認された後、AGD サーバにデータアップロード用ディレクトリが作成されます。
 
 申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。

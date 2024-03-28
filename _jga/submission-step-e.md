@@ -44,7 +44,7 @@ Start the data submission application process and select the data submitter grou
 
 {% include image.html url="books/DS-group-select-e.png" caption="Select the data submitter group" class="w450" %}
 
-Also see the [data submission page](https://humandbs.biosciencedbc.jp/en/data-submission).
+Also see the [data submission page](https://humandbs.dbcls.jp/en/data-submission).
 
 ## Data submission application approval {#du-approval}
 

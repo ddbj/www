@@ -1,78 +1,72 @@
 ---
 layout: tabbed_indexed_content
-title: /locus_tag qualifier の記載法
+title: locus tag
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
 lang: ja
 ---
 
-## 背景  {#背景}
+## locus tag {#locus_tag}
 
-/locus_tag qualifier は、2003年に導入されました。その導入当初は、ゲノムプロジェクトが
-その配列データを更新する際などに feature 継承をするための追跡用 ID として自由度の高い記載を可能としていました。
+locus tag はゲノム上の遺伝子に体系的に割り当てる識別子です。異なるゲノム上の全く異なる遺伝子に同じような名称が用いられることによる混乱を防ぐために INSD (DDBJ/ENA/GenBank) に導入されました。DDBJ に登録する染色体やプラスミドといったゲノムアセンブリを構成する全ての塩基配列では /locus_tag qualifier で共通の locus tag prefix を使用して遺伝子を体系的に識別できるようにしています。
 
-しかし、[The American Society for Microbiology](https://www.asm.org/) からの要請を受けて、[2005年の国際実務者会議](/activities/insdc_meeting/2005)において、/locus_tag qualifier の用法が再検討されました。その結果、/locus_tag qualifier を恒久的に一意な ID として維持していくことを目指して、配列データの登録時に当該ゲノム専用の prefix を割り当てることにより、/locus_tag を記載するように規則が変更されました。
+## locus tag prefix の登録 {#locus_tag_prefix}
 
-## ゲノム配列データの登録における  /locus_tag の適切な用法  {#locus_tag_usage}
+ゲノムアセンブリ配列には [BioProject](/bioproject/submission.html) と [BioSample](/biosample/submission.html) が必要です。locus tag prefix は BioSample とあわせて登録します。  BioSample の[ゲノムアセンブリ系パッケージ](/biosample/overview.html#genome-assembly-sample) に含まれる locus tag prefix 属性に希望する prefix を入力します。locus tag prefix は3文字以上12文字以内の英数字のみを使用し、最初の1文字目は英字で始めますが、2文字目以降は数字も使用することができます (例: A1C)。prefix には '-' '\_' '\*' といったシンボル記号は使用できません。  
+BioSample に登録した prefix は変更できません。そのため将来変わる可能性がある生物名や株名に揃えた prefix の登録は避けてください。   
 
-国際実務者会議 (International Collaborators Meeting) において、ゲノムプロジェクトを INSDC
-に登録するように求めていく、と合意しています。各ゲノムプロジェクトに ID を割り当てることにより、複数の配列データを各ゲノムプロジェクトに関連付けることが可能になります。この Project ID は、[DDBJ フラットファイル](/ddbj/flat-file.html)においては [ACCESSION](/ddbj/flat-file.html#Accession) 行と [VERSION](/ddbj/flat-file.html#Version) 行の下に表示されます。ゲノムプロジェクトの登録は DDBJ, EMBL-Bank/EBI, GenBank/NCBI で行うことができます。登録者は BioSample の登録に際し、同時に /locus_tag prefix の登録を行うことができます。
+## /locus_tag の記載方法 {#locus_tag_qualifier}
 
-DDBJ においては、ゲノム配列データ登録用に [Mass Submission System](/ddbj/mss.html) をご用意しております。また、[Genome Project のデータ登録](/ddbj/genome.html)もご参照ください。
-
-/locus_tag はゲノム上の全ての gene に体系的に割り当てる識別子(identifier, ID)であり、生物学関連団体による遺伝子名に代わる ID になります。２組の異なるゲノムの登録者が全く異なる２つのゲノムにおいて全く異なる２つの遺伝子に同じ体系 拠る名称を用いたならば、混乱を招くことになるでしょう。このようなことが起こることを防ぐために INSD (DDBJ/EMBL/GenBank) では /locus_tag prefix を登録する仕組みを作りました。真核生物でも原核生物でもゲノムの登録者は、そのゲノム登録に先立って prefix を登録してください。そして、複数の染色体、プラスミドといったプロジェクトの全ての構成要素に同じ /locus_tag prefix を使用してください。
-
-/locus_tag の prefix には英数字のみを使用し、3 文字以上 12 文字以内でなければなりません。最初の1文字目は英字で始めますが、2 文字目以降は数字でも構いません (例: A1C)。prefixには "-" "_" "\*" といったシンボル記号は使用しないでください。/locus_tag においては prefix と tag の値はアンダースコア "_" によって区切ります (例: A1C_00001)。
-
-/locus_tags は、全てのタンパク質コード遺伝子とタンパク質をコードしない RNA 遺伝子に割り当ててください。/locus_tag はゲノム配列の登録において [mRNA](/ddbj/features.html#mRNA), [CDS](/ddbj/features.html#cds), [5'UTR](/ddbj/features.html#5UTR), [3'UTR](/ddbj/features.html#3UTR), [intron](/ddbj/features.html#intron), [exon](/ddbj/features.html#exon), [tRNA](/ddbj/features.html#tRNA), [rRNA](/ddbj/features.html#rRNA), [ncRNA](/ddbj/features.html#ncRNA), [misc_RNA](/ddbj/features.html#misc_RNA), などの feature に記載します。[repeat_region](/ddbj/features.html#repeat_region) には /locus_tag qualifier を記載しないでください。同じ値を持つ /locus_tag は ある単一の gene の全ての構成要素に使用します。例えば、ある特定の gene を示す exon, CDS, mRNA といった全ての feature には同じ値を持つ /locus_tag を記載します。また、１つの /locus_tag には１つの [/gene](/ddbj/qualifiers.html#gene) qualifier が対応するようにしてください。すなわち、もし何れかの feature において ある /locus_tag が ある [/gene](/ddbj/qualifiers.html#gene) qualifier と対応している場合は、その [/gene](/ddbj/qualifiers.html#gene) qualifier で示される遺伝子シンボルのみが、その /locus_tag を含む他の全ての feature にも存在していなければな ません。
-
-/locus_tag はゲノム内の gene に体系的に記載してください。一般的には、ゲノム上での出現順序になることが期待されます。登録者がゲノム配列とその annotation を更新した場合、新規の gene は、[用例 1] その次に続く使用可能な locus_tag、または、[用例2] 登録者は最初の locus_tag 割り当ての際に予め gap を残しておくことも可能なので 新規annotationの際にこの gap を埋めるような値を記載すること、の何れかが可能です。
-
-**用例 1:** /locus_tag 削除と新規追加
+ゲノム配列は DDBJ の [Mass Submission System](/ddbj/mss.html) から登録します。  
+DDBJ に登録するゲノムアセンブリを構成する全ての塩基配列において対応する BioSample に登録した prefix を /locus_tag qualifier で使用します。/locus_tag は全てのタンパク質コード遺伝子とタンパク質をコードしない RNA 遺伝子に割り当てます。/locus_tag では prefix と tag の値はアンダースコアで区切ります (例: A1C_00001)。/locus_tag はゲノム内の遺伝子に出現順序に従って体系的に記載し、タンパク質コード遺伝子、RNA 産物や由来染色体といった遺伝子種別に依らずに付番することを推奨します。  
+染色体番号や RNA 種別などの情報を /locus_tag に含めることを希望する場合、prefix とアンダースコアの後にそれらの情報を加えます。
 
 ```
-       更新前の          更新後の
-       登録データ        登録データ
-        ABC_0022
-                          ABC_4568 (new gene)
-        ABC_0023          ABC_0023
+ABC_I00001 for gene 1, chromosome I
+ABC_II00001 for gene 1, chromosome II
+ABC_r1112 for ribosomal RNA genes
+ABC_t1113 for tRNA genes
 ```
 
-**用例 2:** /locus_tag に予め gap を残しておいた場合の挿入
+具体的には /locus_tag は以下の feature に記載します ([repeat_region](/ddbj/features.html#repeat_region) には記載しません)。
+
+* [mRNA](/ddbj/features.html#mRNA)
+* [CDS](/ddbj/features.html#cds)
+* [5'UTR](/ddbj/features.html#5UTR)
+* [3'UTR](/ddbj/features.html#3UTR)
+* [intron](/ddbj/features.html#intron)
+* [exon](/ddbj/features.html#exon)
+* [tRNA](/ddbj/features.html#tRNA)
+* [rRNA](/ddbj/features.html#rRNA)
+* [ncRNA](/ddbj/features.html#ncRNA)
+* [tmRNA](/ddbj/features.html#tmRNA)
+* [precursor_RNA](/ddbj/features.html#precursor_RNA)
+* [prim_transcript](/ddbj/feature-table.html#prim_transcript)
+* [misc_RNA](/ddbj/features.html#misc_RNA)
+
+単一遺伝子を構成する exon/CDS/mRNA といった全ての feature の /locus_tag には同じ値を記入します。また、１つの /locus_tag には１つの [/gene](/ddbj/qualifiers.html#gene) qualifier が対応するようにします。  
+
+## /locus_tag の追加 {#add}
+
+登録者がゲノム配列とアノテーションを更新した場合、新規 gene には以下の方法で新しい /locus_tag を追加することができます。
+
+更新方法1: 削除と新規追加
 
 ```
-       更新前の          更新後の
-       登録データ        登録データ
-        ABC_0020          ABC_0020
-                          ABC_0021 (new gene)
-        ABC_0030          ABC_0030
+更新前       更新後
+ABC_0022
+           ABC_4568 (new gene)
+ABC_0023   ABC_0023
 ```
 
-
-<span class="red" markdown="1">**禁則:** 小数(バージョン類似表記) は行わないでください</span>
-
-```
-       更新前の          更新後の
-       登録データ        登録データ
-        ABC_0020          ABC_0020
-                          ABC_0020.1 (new gene)
-        ABC_0030          ABC_0030
-```
-
-プロジェクト内では、全ての locus_tags の番号付けなどを、タンパク質コード遺伝子、RNA 産物、由来染色体の別などによらない記載方法とすることを推奨します。
-
-しかしながら、登録者が染色体番号、RNA 種別などの情報を locus_tag の値に含めることを希望する場合、prefix と underscore の後に それらの情報を加えても構いません:
+更新方法2: 予め設けておいたギャップの間に追加
 
 ```
-        ABC_I00001 for gene 1, chromosome I
-        ABC_II00001 for gene 1, chromosome II
-        ABC_r1112 for ribosomal RNA genes
-        ABC_t1113 for tRNA genes
+更新前       更新後
+ABC_0020   ABC_0020
+           ABC_0021 (new gene)
+ABC_0030   ABC_0030
 ```
 
-登録者は GenBank/NCBI, ENA/EBI, DDBJ の何れか１つにおいて locus_tag prefix と BioProject/BioSample の登録手続きを行うことができます。この手続きは、ゲノム配列データを登録するデータバンクにおいて行ってください。
-
-DDBJ においては、ゲノム配列データ登録用に [Mass Submission System](/ddbj/mss.html) をご用意しております。また、[Genome Project のデータ登録](/ddbj/genome.html)もご参照ください。[BioSample](/biosample/index.html) の登録の際に、適宜、指定していただければ、/locus_tag prefix 割り当てを検討いたします。
-
-[NCBI](https://www.ncbi.nlm.nih.gov/genomes/locustag/Proposal.pdf) にも同様のガイドラインがありますので、ご参照ください。
+ABC_0020.1 のようなバージョンに類似した小数表記はできません。

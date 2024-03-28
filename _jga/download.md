@@ -26,7 +26,7 @@ lang: ja
 ### JGA データセットの検索 {#search}
 
 利用を希望する Study (例 JGAS999992) と Dataset [アクセッション番号](/jga/submission.html) (例 JGAD999993) を確認します。   
-DBCLS の[利用可能な研究データ一覧](https://humandbs.biosciencedbc.jp/data-use/all-researches)もしくは[DDBJ Search](https://ddbj.nig.ac.jp/search) で検索することができます。
+DBCLS の[利用可能な研究データ一覧](https://humandbs.dbcls.jp/data-use/all-researches)もしくは[DDBJ Search](https://ddbj.nig.ac.jp/search) で検索することができます。
 
 ### D-way アカウントの作成とデータ転送用公開鍵の登録  {#account-key}
 
@@ -62,8 +62,8 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 
 ## 利用申請 {#du-application}
 
-[申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[利用申請](https://humandbs.biosciencedbc.jp/data-use)します。    
-詳細な手順は[データ利用](https://humandbs.biosciencedbc.jp/data-use)ページをご覧ください。
+[申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[利用申請](https://humandbs.dbcls.jp/data-use)します。    
+詳細な手順は[データ利用](https://humandbs.dbcls.jp/data-use)ページをご覧ください。
 
 ### 利用申請グループ {#data-user-group}
 
@@ -71,7 +71,7 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 
 {% include image.html url="books/DS-group.png" caption="データ利用申請グループ" class="w450" %}
 
-[利用申請を開始](https://humandbs.biosciencedbc.jp/data-use)し、作成した利用申請グループを選択します。
+[利用申請を開始](https://humandbs.dbcls.jp/data-use)し、作成した利用申請グループを選択します。
 
 {% include image.html url="books/DU-start.png" caption="利用申請の開始" class="w450" %}
 

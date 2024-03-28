@@ -27,7 +27,7 @@ After your application is approved, access to the JGA server with your D-way acc
 ### Search JGA dataset {#search}
 
 Search Study (e.g., JGAS999992) and Dataset (e.g., JGAD999993) [accessions](/jga/submission-e.html) of your interest.   
-You may search JGA data in [list of researches](https://humandbs.biosciencedbc.jp/en/data-use/all-researches) at DBCLS and [DDBJ Search](https://ddbj.nig.ac.jp/search).
+You may search JGA data in [list of researches](https://humandbs.dbcls.jp/en/data-use/all-researches) at DBCLS and [DDBJ Search](https://ddbj.nig.ac.jp/search).
 
 ### D-way account and a public key for data transfer  {#account-key}
 
@@ -63,8 +63,8 @@ Example:
 
 ## Data use application {#du-application}
 
-[Apply the data use application](https://humandbs.biosciencedbc.jp/en/data-use) in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application).
-Also see the [data use page](https://humandbs.biosciencedbc.jp/en/data-use).
+[Apply the data use application](https://humandbs.dbcls.jp/en/data-use) in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application).
+Also see the [data use page](https://humandbs.dbcls.jp/en/data-use).
 
 ### Data user group {#data-user-group}
 
@@ -72,7 +72,7 @@ Before starting the application, create a data user group. In the following exam
 
 {% include image.html url="books/DS-group-e.png" caption="Data user group" class="w450" %}
 
-[Start the application](https://humandbs.biosciencedbc.jp/en/data-use) and select the group.
+[Start the application](https://humandbs.dbcls.jp/en/data-use) and select the group.
 
 {% include image.html url="books/DU-start-e.png" caption="Start data use application" class="w450" %}
 

@@ -9,11 +9,11 @@ lang: ja
 
 ## 利用申請 {#du-application}
 
-[NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://gr-sharingdbs.biosciencedbc.jp/agd)で使いたいデータを探すことができます。
+[NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://gr-sharingdbs.dbcls.jp/agd)で使いたいデータを探すことができます。
 
 利用したいデータの Dataset アクセッション番号を控えます。例 AGDD_000001（旧番号体系だと AGDD_00000000001）
 
-[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application) から [利用申請](https://gr-sharingdbs.biosciencedbc.jp/agd-data-use) します。
+[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application) から [利用申請](https://gr-sharingdbs.dbcls.jp/agd-data-use) します。
 申請時に利用申請グループを作成、利用を希望する Study (例 AGDS_999992) と Dataset (例 AGDD_999993) アクセッション番号を入力し、データの暗号化に使用する「データセット暗号化用公開鍵」を登録します。
 利用申請が DBCLS で承認された後、データは AGD サーバ上で Dataset 単位で提供されます。
 
@@ -35,7 +35,7 @@ JGA と AGD のグループは別になります。
 
 {% include image.html url="books/DS-group.png" caption="データ利用申請グループ" class="w450" %}
 
-[利用申請を開始](https://humandbs.biosciencedbc.jp/data-use) し、作成した利用申請グループを選択します。
+[利用申請を開始](https://humandbs.dbcls.jp/data-use) し、作成した利用申請グループを選択します。
 
 {% include image.html url="books/DU-start.png" caption="利用申請の開始" class="w450" %}
 

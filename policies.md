@@ -6,7 +6,7 @@ lang: ja
 
 ## 利用規約 {#terms-of-use}
 
-最終更新日: 2023年9月26日
+最終更新日: 2024年4月1日
 
 ### 定義 {#definition-of-terms}
 本規約において使用する以下の用語は、各々以下に定める意味を有します。
@@ -49,8 +49,8 @@ lang: ja
 センターが提供するデータは個別規約で制限されていない限り、自由に利用・再配布・改変することができます。
 
   1. [INSDC](/insdc.html) データは [INSDC Policy](https://www.insdc.org/policy/ ) に従って自由に利用・再配布・改変することができます。
-  1. Japanese Genotype-phenotype Archive (JGA) データは [NBDC ヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)を遵守して利用する必要があります。
-  1. AMED Genome group sharing Database (AGD) データは [NBDC ヒトデータグループ共有ガイドライン](https://gr-sharingdbs.biosciencedbc.jp/group-data-sharing-guidelines) を遵守して利用する必要があります。
+  1. Japanese Genotype-phenotype Archive (JGA) データは [NBDC ヒトデータ共有ガイドライン](https://humandbs.dbcls.jp/guidelines/data-sharing-guidelines)を遵守して利用する必要があります。
+  1. AMED Genome group sharing Database (AGD) データは [NBDC ヒトデータグループ共有ガイドライン](https://gr-sharingdbs.dbcls.jp/group-data-sharing-guidelines) を遵守して利用する必要があります。
   1. センターが[提供しているセンター以外で作成されたデータ](#third-party-data)は提供元の規定に従って利用する必要があります。
 
 ### 免責事項 {#disclaimer}
@@ -129,7 +129,7 @@ lang: ja
 * 重要事項を通知するため
 
 #### 登録データ
-個人から取得された登録データは当該データ主体の同意に基づいて取得・提供され、当該同意に基づいた制限が適用されます。非アクセス制限データは利用者の研究開発活動のためセンターから利用制限を課すことなく提供されます。アクセス制限データについては国立研究開発法人科学技術振興機構 NBDC 事業推進部 （以下「NBDC」）と共同で利用され、[NBDC ヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)又は [NBDC ヒトデータグループ共有ガイドライン](https://gr-sharingdbs.biosciencedbc.jp/group-data-sharing-guidelines)に従って利用者に提供されます。登録データに関するプライバシーポリシーは「[NBDC ヒトデータベースについて](https://humandbs.biosciencedbc.jp/aim)」を参照してください。
+個人から取得された登録データは当該データ主体の同意に基づいて取得・提供され、当該同意に基づいた制限が適用されます。非アクセス制限データは利用者の研究開発活動のためセンターから利用制限を課すことなく提供されます。アクセス制限データについては情報・システム研究機構 ライフサイエンス統合データベースセンター（以下「DBCLS」）と共同で利用され、[NBDC ヒトデータ共有ガイドライン](https://humandbs.dbcls.jp/guidelines/data-sharing-guidelines)又は [NBDC ヒトデータグループ共有ガイドライン](https://gr-sharingdbs.dbcls.jp/group-data-sharing-guidelines)に従って利用者に提供されます。登録データに関するプライバシーポリシーは「[NBDC ヒトデータベースについて](https://humandbs.dbcls.jp/aim)」を参照してください。
 
 申込者情報
 * 講習会やイベントに関する連絡のため
@@ -167,7 +167,7 @@ Google 社によるアクセス情報の利用については、1. に示した 
 * 法令により、センターが個人情報の提供を認められている場合。
 * 統計的なデータなど利用者本人を識別することができない状態で開示・提供する場合。
 
-登録データ、アクセス制限データベースの登録者情報、ウェブサイトへのアクセス統計を NBDC と共同して利用することがあります。
+登録データ、アクセス制限データベースの登録者情報、ウェブサイトへのアクセス統計を DBCLS と共同して利用することがあります。
 
 ### 4. クッキー (Cookie)
 本サイトでは下記のとおりクッキー（Cookie）を使用しています。クッキーとは、本サイトのサーバから利用者のコンピュータ内に保存される小さなテキスト情報で、センターは本サイトの利便性を向上させるために使用しています。
@@ -273,7 +273,7 @@ Google アナリティクス オプトアウト アドオン
 
 * 提供予定データを産出した実験手法、研究対象（疾患や試料など）、および、データ公開・共有方法が明記された研究計画書が倫理審査委員会において承認された上で研究を実施する機関の長により許可されていること。
 * 研究計画書やインフォームド・コンセント説明同意文書内に、データをデータベースへ提供することが記載されていること。また、制限公開（アクセス制限）データとして提供する場合は、利用者要件を満たす民間企業を含む国内外の研究者間で共有されること、非制限公開（非アクセス制限）データとして提供する場合は、誰もが閲覧できるかたちでインターネット上で公開され利用されること、が記載されていること。
-* データを提供する前に、NBDC ヒトデータ審査委員会に提供予定データに関する提供申請をし、当該委員会で審査の上、申請が承認されていること。
+* データを提供する前に、ヒトデータ審査委員会に提供予定データに関する提供申請をし、当該委員会で審査の上、申請が承認されていること。
 
 \*1 HeLa 細胞の全ゲノムデータは [NCBI Database of Genotypes and Phenotypes (dbGaP)](https://www.ncbi.nlm.nih.gov/gap/) に登録してください。
 
@@ -284,10 +284,10 @@ Google アナリティクス オプトアウト アドオン
 アクセス制限データベース [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) へご登録ください。
 
 #### アクセス制限が必要ではない場合 {#unrestricted-access}
-非アクセス制限データベースである [DDBJ Sequence Read Archive (DRA)](/dra/index.html)、[Genomic Expression Archive (GEA)](/gea/index.html)、[MetaboBank](/metabobank/index.html)、または、[DDBJ](/ddbj/index.html) データベースへご登録ください。原則、個人識別符号（*2）に該当するデータを非アクセス制限データベースへ登録することはできません。登録を希望する場合は、NBDC にお問い合わせください。
+非アクセス制限データベースである [DDBJ Sequence Read Archive (DRA)](/dra/index.html)、[Genomic Expression Archive (GEA)](/gea/index.html)、[MetaboBank](/metabobank/index.html)、または、[DDBJ](/ddbj/index.html) データベースへご登録ください。原則、個人識別符号（*2）に該当するデータを非アクセス制限データベースへ登録することはできません。登録を希望する場合は、DBCLS にお問い合わせください。
 個人識別符号に該当するゲノムデータが、データベースを通じて制限なく一般公開されることについて同意を受けている必要があります。
 
-\*2 個人識別符号については NBDC の FAQ を参照してください。 個人識別符号の定義は個人情報保護委員会の「個人情報の保護に関する法律についてのガイドライン（通則編）」に示されています。
+\*2 個人識別符号については DBCLS の FAQ を参照してください。 個人識別符号の定義は個人情報保護委員会の「個人情報の保護に関する法律についてのガイドライン（通則編）」に示されています。
 
 **参考情報**
 * 個人情報保護委員会　個人情報保護法　法令・ガイドラインなど

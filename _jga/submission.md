@@ -9,9 +9,9 @@ lang: ja
 
 ## 登録概要 {#submission}
 
-JGA は DBCLS で承認された利用制限ポリシーを持つ，匿名化されたデータだけを受け付けています。登録者は [DBCLS](https://humandbs.biosciencedbc.jp/) に JGA へのデータ提供を申請し，JGA は DBCLS から正式に提供が承認された連絡を受け，登録者に登録手順を案内します。
+JGA は DBCLS で承認された利用制限ポリシーを持つ，匿名化されたデータだけを受け付けています。登録者は [DBCLS](https://humandbs.dbcls.jp/) に JGA へのデータ提供を申請し，JGA は DBCLS から正式に提供が承認された連絡を受け，登録者に登録手順を案内します。
 
-登録しようとしているデータの公開を制限すべきかどうかは，データを収集した個人との間で合意された協定から明らかなはずです。JGA に登録されたデータの公開は制限されます。JGA データを利用するためには，[DBCLS](https://humandbs.biosciencedbc.jp/) に利用を申請し，承認される必要があります。
+登録しようとしているデータの公開を制限すべきかどうかは，データを収集した個人との間で合意された協定から明らかなはずです。JGA に登録されたデータの公開は制限されます。JGA データを利用するためには，[DBCLS](https://humandbs.dbcls.jp/) に利用を申請し，承認される必要があります。
 
 制限公開は論文公表までの間，データを非公開にすることとは異なります。 JGA を含む全ての DDBJ データベースでは，論文公表までの一定期間，データを非公開にすることができます。
 
@@ -190,9 +190,9 @@ XML schema: [JGA.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 ### Policy {#Policy}
 
-データ利用制限ポリシーを記載します。[NBDC ポリシー](https://humandbs.biosciencedbc.jp/nbdc-policy)以外に適用すべきポリシーがなければ作成する必要はありません。
+データ利用制限ポリシーを記載します。[NBDC ポリシー](https://humandbs.dbcls.jp/nbdc-policy)以外に適用すべきポリシーがなければ作成する必要はありません。
 
-[NBDC ポリシー](https://humandbs.biosciencedbc.jp/nbdc-policy)以外に適用すべきポリシーがある場合は，DBCLS にポリシーを登録し，発行される JGAP 番号を Dataset から参照します。
+[NBDC ポリシー](https://humandbs.dbcls.jp/nbdc-policy)以外に適用すべきポリシーがある場合は，DBCLS にポリシーを登録し，発行される JGAP 番号を Dataset から参照します。
 
 XML schema: [JGA.policy.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 

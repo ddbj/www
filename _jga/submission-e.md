@@ -9,9 +9,9 @@ lang: en
 
 ## Submission Guide  {#submission}
 
-The JGA accepts only de-identified data approved by DBCLS. The users apply for data submission to the [DBCLS](https://humandbs.biosciencedbc.jp/en/) and the JGA will only accept submissions once the information of a successful application process has been passed from the DBCLS to the JGA.
+The JGA accepts only de-identified data approved by DBCLS. The users apply for data submission to the [DBCLS](https://humandbs.dbcls.jp/en/) and the JGA will only accept submissions once the information of a successful application process has been passed from the DBCLS to the JGA.
 
-It should be clear from the original consent agreements affiliated to your samples if your data should be subject to controlled access. All data submitted to the JGA has controlled access, which means that access to the data submitted is subject to approval by [DBCLS](https://humandbs.biosciencedbc.jp/en/) as a part of a formal application procedure.
+It should be clear from the original consent agreements affiliated to your samples if your data should be subject to controlled access. All data submitted to the JGA has controlled access, which means that access to the data submitted is subject to approval by [DBCLS](https://humandbs.dbcls.jp/en/) as a part of a formal application procedure.
 
 Controlled access does not correspond to holding a release prior to publication. All the DDBJ archival resources including the JGA enable you to hold a submission before publication.
 
@@ -122,13 +122,9 @@ The JGA data model is created by extending the [Sequence Read Archive's model](/
 
 JGA XML schema: [JGA xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
-
 {% include image.html url="submission/jga_metadata_1.jpg" caption="Example: single policy." class="w500" %}
 
-
-
 {% include image.html url="submission/jga_metadata_2.jpg" caption="Example: separate policies for control and case." class="w500" %}
-
 
 ### Summary information for public display  {#public}
 
@@ -193,7 +189,7 @@ XML schema: [JGA.dataset.xsd](https://github.com/ddbj/pub/tree/master/docs/jga)
 
 ### Policy  {#Policy}
 
-The Policy XML describes the Data Access Agreement (DAA). If only [NBDC policy](https://humandbs.biosciencedbc.jp/en/nbdc-policy) is associated with a submission, submitters do not need to create a new policy.
+The Policy XML describes the Data Access Agreement (DAA). If only [NBDC policy](https://humandbs.dbcls.jp/en/nbdc-policy) is associated with a submission, submitters do not need to create a new policy.
 
 If additional policies are needed, you need to register a policy to DBCLS and reference issued JGAP number from submitting dataset.
 
