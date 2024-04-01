@@ -6,7 +6,7 @@ lang: en
 
 ## Terms of Use {#terms-of-use}
 
-Last updated: 26th September, 2023
+Last updated: 1st April, 2024
 
 ### Definitions {#definition-of-terms}
 In this Terms of Use, each of the following terms have the following meanings:
@@ -48,8 +48,8 @@ We recommend to use our online service with the latest version of [Chrome](https
 ### Data Usage {#data-use}
 Unless otherwise restricted by an Individual Terms of Use, data provided by Center may be freely used, redistributed and modified.
   1. [INSDC](/insdc.html) data may be freely used, redistributed and modified in accordance with the [INSDC Policy](https://www.insdc.org/policy/ ).
-  1. Japanese Genotype-phenotype Archive (JGA) data shall be used in compliance with the [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines ).
-  1. AMED Genome group sharing Database (AGD) data shall be used in compliance with the [NBDC Human Data Group Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines).
+  1. Japanese Genotype-phenotype Archive (JGA) data shall be used in compliance with the [NBDC Human Data Sharing Guidelines](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines ).
+  1. AMED Genome group sharing Database (AGD) data shall be used in compliance with the [NBDC Human Data Group Sharing Guidelines](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines).
   1. [Third-party data provided by Center](#third-party-data) shall be used in accordance with terms of use of these data.
 
 ### Disclaimer {#disclaimer}
@@ -127,7 +127,7 @@ We will use collected personal information for the following purposes. If collec
   * To notify any important matters.
 
 #### Submitted data
-Submitted data acquired from human subjects are accepted and provided according to the data principal's consent, and restrictions will be imposed to the data according to the consent. Unrestricted-access data will be provided without any usage restriction, for the research and development purposes. In regard to controlled-access data, the data will be jointly used with the Department of NBDC Program of the Japan Science and Technology Agency  (hereinafter referred to as 'NBDC'), and will be provided to user in accordance with the [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines) or [NBDC Human Data Group Sharing Guidelines (Japanese language only)](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines). Please refer to '[NBDC Human Database](https://humandbs.biosciencedbc.jp/en/)' in regard to the Privacy Policy relating to submitted data.
+Submitted data acquired from human subjects are accepted and provided according to the data principal's consent, and restrictions will be imposed to the data according to the consent. Unrestricted-access data will be provided without any usage restriction, for the research and development purposes. In regard to controlled-access data, the data will be jointly used with the Database Center for Life Science of the Research Organization of Information and Systems (hereinafter referred to as 'DBCLS'), and will be provided to user in accordance with the [NBDC Human Data Sharing Guidelines](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines) or [NBDC Human Data Group Sharing Guidelines (Japanese language only)](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines). Please refer to '[NBDC Human Database](https://humandbs.dbcls.jp/en/)' in regard to the Privacy Policy relating to submitted data.
 
 Information of Applicants
   * To contact applicants about seminars and events;
@@ -164,7 +164,7 @@ We will not provide personal information to any third party, except for the foll
   * Center is permitted to provide personal information in accordance with laws or regulations; or
   * Personal information is disclosed or provided in a condition where it is impossible to identify a specific user (such as by statistical data).
 
-We may jointly use submitted data, submitter's information of controlled-access database, and access statistic of websites with NBDC.
+We may jointly use submitted data, submitter's information of controlled-access database, and access statistic of websites with DBCLS.
 
 ### 4. Cookies
 Cookies are used in our sites as set forth below. Cookies are small text information set by the server of our websites and are stored in the user's computer. We use cookies to increase the usability of our websites.
@@ -269,7 +269,7 @@ When you are submitting human data obtained from researches other than researche
 
 * The research plan describing experimental methods, research targets (for example, diseases and samples), and ways of data publication and sharing, has been approved by the institutional review board and by the head of institution who oversees the research.
 * The research plan and the informed consent documents describe that human data are deposited to databases, in addition, when the data are to be deposited as controlled-access data, "the data are to be shared among domestic and international researchers including those belong to private companies, who meet user requirements", and when the data are to be deposited as unrestricted-access data, "the data are to be published on the Internet in a form that anyone can view and access".
-* Before submitting data, you need to present an application (for data to be submitted) to the Data Access Committee of the Department of NBDC Program (NBDC) of Japan Science and Technology Agency and obtain the Committee’s approval upon review thereby.
+* Before submitting data, you need to present an application (for data to be submitted) to the Human Data Review Board of DBCLS and obtain the Board’s approval upon review thereby.
 
 \*1 HeLa whole genome sequence data should be submitted to the [NCBI Database of Genotypes and Phenotypes (dbGaP)](https://www.ncbi.nlm.nih.gov/gap/).
 
@@ -280,9 +280,9 @@ Before submitting human data, please consider whether controlled-access is requi
 Submit your data to the controlled-access database '[Japanese Genotype-phenotype Archive (JGA)](/jga/index-e.html)'.
 
 #### Unrestricted-Access Database {#unrestricted-access}
-Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html), [Genomic Expression Archive (GEA)](/gea/index-e.html), [MetaboBank](/metabobank/index-e.html) or [DDBJ](/ddbj/index-e.html). In principle, you can not submit data corresponding to personal identification code (\*2) to unrestricted-access databases. When you want to submit data corresponding to personal identification code to unrestricted-access databases, please contact the NBDC. In principle, it is necessary to obtain consents for unrestricted public disclosure of genome data corresponding to personal identification code through databases.
+Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html), [Genomic Expression Archive (GEA)](/gea/index-e.html), [MetaboBank](/metabobank/index-e.html) or [DDBJ](/ddbj/index-e.html). In principle, you can not submit data corresponding to personal identification code (\*2) to unrestricted-access databases. When you want to submit data corresponding to personal identification code to unrestricted-access databases, please contact the DBCLS. In principle, it is necessary to obtain consents for unrestricted public disclosure of genome data corresponding to personal identification code through databases.
 
-\*2 Please refer to the NBDC FAQs, in regard to personal identification code. Personal identification code is defined in the '[Guidelines on the Act on the Protection of Personal Information (Volume on General Rules) (Japanese language only)](https://www.ppc.go.jp/)' of [the Personal Information Protection Commission](https://www.ppc.go.jp/en/).
+\*2 Please refer to the DBCLS FAQs, in regard to personal identification code. Personal identification code is defined in the '[Guidelines on the Act on the Protection of Personal Information (Volume on General Rules) (Japanese language only)](https://www.ppc.go.jp/)' of [the Personal Information Protection Commission](https://www.ppc.go.jp/en/).
 
 Related Information
   * Personal Information Protection Commission, Act on the Protection of Personal Information, Laws and regulations, guidelines etc.

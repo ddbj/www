@@ -15,7 +15,7 @@ lang: ja
 アクセス制限データベース  
 : [JGA](/jga/index.html)
 : [AGD](/agd/index.html)
-: [NBDCヒトデータ共有ガイドライン](https://humandbs.biosciencedbc.jp/guidelines/data-sharing-guidelines)
+: [NBDCヒトデータ共有ガイドライン](https://humandbs.dbcls.jp/guidelines/data-sharing-guidelines)
 
 #### 2. 利用し、又は提供する情報の項目
 非アクセス制限データベース  

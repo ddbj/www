@@ -22,6 +22,6 @@ For DDBJ, see ['On the process of submission of a paper to a journal, we have to
 
 For DRA, you may send a metadata summary list attached to the accession number notification e-mail. For sequencing data, download [archived fastq files](/dra/overview-e.html#fastq-sra-files) and provide them to reviewers through access-controlled file sharing services or servers.
 
-For JGA, we can not offer the reviewer access service due to [the policy](https://humandbs.biosciencedbc.jp/faq#faq-20).
+For JGA, we can not offer the reviewer access service due to [the policy](https://humandbs.dbcls.jp/faq#faq-20).
 
 For open-access GEA/DRA/DDBJ/MetaboBank, if you make your data public, all users including reviewers can access the data.

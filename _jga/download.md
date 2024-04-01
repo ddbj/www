@@ -7,9 +7,9 @@ current_tab: submission
 lang: ja
 ---
 
-## NBDC 利用申請から JGA データ利用までの手順 {#du}
+## 利用申請から JGA データ利用までの手順 {#du}
 
-利用申請は [NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) に D-way アカウントでログインしてから申請します。   
+利用申請は[申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) に D-way アカウントでログインしてから申請します。   
 利用申請では、利用申請グループの作成、利用希望の JGA Study と Dataset アクセッション番号の指定、及び、「データセット復号用公開鍵」の登録が必要です。    
 利用申請の承認後、D-way アカウントで sftp で JGA サーバにアクセスし、機関内・外サーバへ JGA データをダウンロードすることができます。暗号化されたファイルと復号ツールが提供されるので、申請時に登録した「データセット復号用公開鍵」とペアになる秘密鍵を使って暗号化ファイルを復号してから利用します。
 
@@ -26,14 +26,14 @@ lang: ja
 ### JGA データセットの検索 {#search}
 
 利用を希望する Study (例 JGAS999992) と Dataset [アクセッション番号](/jga/submission.html) (例 JGAD999993) を確認します。   
-NBDC ヒトデータベースの[利用可能な研究データ一覧](https://humandbs.biosciencedbc.jp/data-use/all-researches)もしくは[DDBJ Search](https://ddbj.nig.ac.jp/search) で検索することができます。
+DBCLS の[利用可能な研究データ一覧](https://humandbs.dbcls.jp/data-use/all-researches)もしくは[DDBJ Search](https://ddbj.nig.ac.jp/search) で検索することができます。
 
 ### D-way アカウントの作成とデータ転送用公開鍵の登録  {#account-key}
 
 利用申請およびJGA データ取得のためには D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/)してください。  
 
 <div class="attention" markdown="1">
-D-way アカウント作成後、[NBDC データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
+D-way アカウント作成後、[データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
 sftp を利用して JGA サーバからデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#public-key)します。   
@@ -46,7 +46,7 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 利用申請から JGA データ利用までに、データ転送用と復号用に合計２ペア４ファイルの公開鍵・秘密鍵が必要になります。
 
 データセット復号用鍵ペア
-* データセット復号用公開鍵 (NBDC 利用申請毎に登録)
+* データセット復号用公開鍵 (利用申請毎に登録)
 * データセット復号用秘密鍵
 
 データ転送用鍵ペア
@@ -62,8 +62,8 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 
 ## 利用申請 {#du-application}
 
-[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[利用申請](https://humandbs.biosciencedbc.jp/data-use)します。    
-詳細な手順は [NBDC のデータ利用](https://humandbs.biosciencedbc.jp/data-use)ページをご覧ください。
+[申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)から[利用申請](https://humandbs.dbcls.jp/data-use)します。    
+詳細な手順は[データ利用](https://humandbs.dbcls.jp/data-use)ページをご覧ください。
 
 ### 利用申請グループ {#data-user-group}
 
@@ -71,7 +71,7 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 
 {% include image.html url="books/DS-group.png" caption="データ利用申請グループ" class="w450" %}
 
-[利用申請を開始](https://humandbs.biosciencedbc.jp/data-use)し、作成した利用申請グループを選択します。
+[利用申請を開始](https://humandbs.dbcls.jp/data-use)し、作成した利用申請グループを選択します。
 
 {% include image.html url="books/DU-start.png" caption="利用申請の開始" class="w450" %}
 
@@ -85,7 +85,7 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 
 ### 利用承認 {#approval}
 
-利用申請が NBDC で承認されると、JGA ファイルサーバにダウンロード用ディレクトリが作成され、メタデータ、暗号化されたデータファイルと復号ツールが配置されます。
+利用申請が DBCLS で承認されると、JGA ファイルサーバにダウンロード用ディレクトリが作成され、メタデータ、暗号化されたデータファイルと復号ツールが配置されます。
 
 {% include image.html url="books/data-use-approved.png" caption="利用申請の承認" class="w400" %}
 

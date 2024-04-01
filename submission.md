@@ -92,7 +92,7 @@ Transcriptome で [Transcriptom Shotgun Assembly (TSA)](/ddbj/tsa.html) に該�
 * マイクロアレイデータは [GEA](/gea/index.html) で受け付けています。
 * 塩基配列を伴わないアミノ酸配列データは DDBJ では受け付けておりません。[UniProt](https://www.uniprot.org/) への登録をご検討ください。    
 [FAQ: アミノ酸配列の登録方法を教えてください](/faq/ja/how-to-submit-amino-acid-seq.html)    
-* ヒトに関する研究データの場合、アクセス制限データベースである [JGA](/jga/submission.html) で受け付けることが可能な場合があります。JGA に登録するためには [NBDC](https://humandbs.biosciencedbc.jp/data-submission) へ提供を申請し、承認される必要があります。
+* ヒトに関する研究データの場合、アクセス制限データベースである [JGA](/jga/submission.html) で受け付けることが可能な場合があります。JGA に登録するためには [DBCLS](https://humandbs.dbcls.jp/data-submission) へ提供を申請し、承認される必要があります。
 
 ## 受け付けることができない塩基配列データ   {#non-acceptable}
 

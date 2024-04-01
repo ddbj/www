@@ -7,20 +7,20 @@ current_tab: submission
 lang: ja
 ---
 
-## NBDC への利用申請 {#du-application}
+## 利用申請 {#du-application}
 
-[NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://gr-sharingdbs.biosciencedbc.jp/agd)で使いたいデータを探すことができます。
+[NBDC ヒトデータベースの「利用可能な研究データ一覧」](https://gr-sharingdbs.dbcls.jp/agd)で使いたいデータを探すことができます。
 
 利用したいデータの Dataset アクセッション番号を控えます。例 AGDD_000001（旧番号体系だと AGDD_00000000001）
 
-[NBDC データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application) から [利用申請](https://gr-sharingdbs.biosciencedbc.jp/agd-data-use) します。
+[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application) から [利用申請](https://gr-sharingdbs.dbcls.jp/agd-data-use) します。
 申請時に利用申請グループを作成、利用を希望する Study (例 AGDS_999992) と Dataset (例 AGDD_999993) アクセッション番号を入力し、データの暗号化に使用する「データセット暗号化用公開鍵」を登録します。
-利用申請が NBDC で承認された後、データは AGD サーバ上で Dataset 単位で提供されます。
+利用申請が DBCLS で承認された後、データは AGD サーバ上で Dataset 単位で提供されます。
 
 申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/) してください。AGD サーバから sftp でデータをダウンロードするためには[認証用の公開鍵・秘密鍵ペアを作成し、公開鍵を D-way アカウントに登録](/account.html#generate-key-pair)する必要があります。
 
 <div class="attention" markdown="1">
-D-way アカウント作成後、[NBDC データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)で利用できるようになるまで10分程度の時間がかかります。
+D-way アカウント作成後、[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
 以下では AGD データの利用手順を説明します。
@@ -35,7 +35,7 @@ JGA と AGD のグループは別になります。
 
 {% include image.html url="books/DS-group.png" caption="データ利用申請グループ" class="w450" %}
 
-[利用申請を開始](https://humandbs.biosciencedbc.jp/data-use) し、作成した利用申請グループを選択します。
+[利用申請を開始](https://humandbs.dbcls.jp/data-use) し、作成した利用申請グループを選択します。
 
 {% include image.html url="books/DU-start.png" caption="利用申請の開始" class="w450" %}
 
@@ -54,11 +54,11 @@ AGD データの利用のためには暗号化用と認証用に合計2ペア4�
 
 利用申請毎に登録するデータセット暗号化用公開鍵・秘密鍵ペアを作成します。作成手順は[公開鍵/秘密鍵ペアの生成](/account.html#generate-key-pair)をご覧ください。
 
-作成したデータセット暗号化用公開鍵を NBDC の利用申請システムで登録します。
+作成したデータセット暗号化用公開鍵を利用申請システムで登録します。
 
 ### データセット復号用公開鍵の登録 {#key-registration}
 
-NBDC への利用申請において公開鍵を「データセット復号用公開鍵」として登録します。
+DBCLS への利用申請において公開鍵を「データセット復号用公開鍵」として登録します。
 
 {% include image.html url="books/public-key-for-dataset-decryption.png" caption="データセット復号用公開鍵の登録" class="w400" %}
 
@@ -66,7 +66,7 @@ NBDC への利用申請において公開鍵を「データセット復号用公
 
 ### 利用申請の承認 {#data-use-approval}
 
-利用申請が NBDC で承認されると、AGD ファイルサーバにダウンロード用ディレクトリが作成され、メタデータ、暗号化されたデータファイルと復号ツールが配置されます。
+利用申請が DBCLS で承認されると、AGD ファイルサーバにダウンロード用ディレクトリが作成され、メタデータ、暗号化されたデータファイルと復号ツールが配置されます。
 
 {% include image.html url="books/data-use-approved.png" caption="利用申請の承認" class="w400" %}
 
@@ -197,7 +197,7 @@ $ chmod 754 A-DU999991.decrypt.sh
 $ chmod 754 AGDS_999992/**/**/*.decrypt.sh
 ```
 
-NBDC への利用申請時に登録したデータセット暗号化用公開鍵とペアになっている「秘密鍵」を指定して「A-DU999991.decrypt.sh」を実行し、全データファイルを復号します。
+利用申請時に登録したデータセット暗号化用公開鍵とペアになっている「秘密鍵」を指定して「A-DU999991.decrypt.sh」を実行し、全データファイルを復号します。
 
 以下の番号とデータファイルを例としてデータの復号方法を説明します。
 

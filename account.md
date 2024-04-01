@@ -6,7 +6,7 @@ lang: ja
 
 ## D-way アカウント  {#ddbj-submission-account}
 
-[生命情報・DDBJ センター](/index.html) では [D-way アカウントシステム](https://ddbj.nig.ac.jp/D-way)を運用しています。D-way アカウントは DDBJ センターの BioProject/BioSample/DRA/GEA/JGA データベース、及び、[NBDC](https://humandbs.biosciencedbc.jp) の[提供・利用申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application)で使うことができます。
+[生命情報・DDBJ センター](/index.html) では [D-way アカウントシステム](https://ddbj.nig.ac.jp/D-way)を運用しています。D-way アカウントは DDBJ センターの BioProject/BioSample/DRA/GEA/JGA データベース、及び、[DBCLS](https://humandbs.dbcls.jp) の[提供・利用申請システム](https://humandbs.ddbj.nig.ac.jp/dbcls/application)で使うことができます。
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -14,13 +14,13 @@ lang: ja
 - アカウントとパスワードはユーザが安全に管理してください。
 - アカウント名は変更できません。
 - アカウント情報の更新が反映されるまで10分程度時間がかかります。
-- アカウント作成後、NBDC 申請システムで利用できるようになるまで10分程度時間がかかります。
+- アカウント作成後、DBCLS 申請システムで利用できるようになるまで10分程度時間がかかります。
 </div>
 
 DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認証を介した scp を利用しています。
 そのため、DRA/GEA/JGA にデータファイルをアップロードするためには認証用公開鍵をアカウントに登録する必要があります。
 
-NBDC に提供・利用申請を提出するユーザは[申請に必要なアカウント情報を追加](#nbdc)します。追加した情報は申請フォームに自動入力されるようになるため、申請作業が効率的になります。
+DBCLS に提供・利用申請を提出するユーザは[申請に必要なアカウント情報を追加](#dbcls)します。追加した情報は申請フォームに自動入力されるようになるため、申請作業が効率的になります。
 
 ## D-way アカウントをウェブサイトで作成 {#account-for-bioproject-biosample-submissions}
 
@@ -78,7 +78,7 @@ DRA/GEA/JGA にデータをアップロードするためには[認証用公開�
 ## 認証用公開鍵の登録 {#public-key}
 
 DRA/GEA/JGA にデータファイルをアップロードするためにはアカウントに公開鍵（ssh 認証用公開鍵）を登録する必要があります。  
-NBDC に提供・利用申請をする方は[アカウント情報の追加](/account.html#nbdc)が必要です。
+DBCLS に提供・利用申請をする方は[アカウント情報の追加](/account.html#dbcls)が必要です。
 
 ## 公開鍵/秘密鍵ペアの生成  {#generate-key-pair}
 
@@ -236,10 +236,10 @@ D-way ウェブサービスでは JGA を利用することができません。
 更新したアカウント情報が反映されるまで10分程度かかります。10分以上後で再度ログインしてください。
 </div>
 
-## NBDC 申請のための情報追加  {#nbdc}
+## DBCLS 申請のための情報追加  {#dbcls}
 
 アカウントに所属情報や日本語氏名、職位を登録します。
-[NBDC 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
+[DBCLS 申請システム](https://humandbs.ddbj.nig.ac.jp/dbcls/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
 
 {% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
 

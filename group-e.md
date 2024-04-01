@@ -7,7 +7,7 @@ lang: en
 ## Group  {#group}
 
 In [the new account system](account-integration-e.html), submissions and
-NBDC data submission and use applications are managed through 'group'.
+DBCLS data submission and use applications are managed through 'group'.
 By using group, a principal investigator and a researcher are able to
 edit submitted records collaboratively, and limit submitters by adding
 and removing group members without sharing account credentials. When an
@@ -21,7 +21,7 @@ The owner can remove a member without his/her permission.
 
 ### Submitter group  {#subgrp}
 
-The submission application to NBDC is managed by submitter group. NBDC
+The submission application to DBCLS is managed by submitter group. DBCLS
 creates JGA submissions linked to approved applications and applicants
 can submit their data.
 
@@ -30,7 +30,7 @@ initial submission application. The submitter can add data to a new
 submission linked to approved update application.
 
 The owner can remove a member without his/her permission. However, you
-need to request member addition to NBDC.
+need to request member addition to DBCLS.
 
 {::nomarkdown}
 {% include image.html url="books/subgrp_nbdc-e.png" caption="JGA submission and application management by group" class="w450" %}
@@ -38,7 +38,7 @@ need to request member addition to NBDC.
 
 ### User group  {#usergrp}
 
-Data use application to NBDC is linked to user group. After the data use
+Data use application to DBCLS is linked to user group. After the data use
 application is approved, you can download JGA Dataset approved in the
 application.
 
@@ -48,7 +48,7 @@ should be listed as a collaborator but should not be included as a group
 member.</span>
 
 The owner can remove a member without his/her permission. However, you
-need to request member addition to NBDC.
+need to request member addition to DBCLS.
 
 {::nomarkdown}
 {% include image.html url="books/usergrp_nbdc-e.png" caption="Data use application management by group" class="w450" %}

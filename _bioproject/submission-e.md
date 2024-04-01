@@ -64,9 +64,9 @@ When the data release is specified as "Release immediately following curation", 
 
 ## Human data {#human-data}
 
-To submit data corresponding to personal identification code to DRA/GEA/DDBJ, [your data submission application needs to be approved by NBDC before the submission](/policies-e.html#unrestricted-access). If your application was approved, write the NBDC application ID (for example, J-DS000001-001) in "Private comments to DDBJ staff" of BioProject.
+To submit data corresponding to personal identification code to DRA/GEA/DDBJ, [your data submission application needs to be approved by DBCLS before the submission](/policies-e.html#unrestricted-access). If your application was approved, write the application ID (for example, J-DS000001-001) in "Private comments to DDBJ staff" of BioProject.
 
-{% include image.html url="books/bp-nbdc-approval.jpg" caption="NBDC data submission application ID" class="w450" %}
+{% include image.html url="books/bp-nbdc-approval.jpg" caption="Data submission application ID" class="w450" %}
 
 ## Submit an umbrella project  {#submit-umbrella-project}
 

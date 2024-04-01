@@ -17,7 +17,7 @@ Unrestricted-access databases
 Controlled-access databases  
 : [JGA](/jga/index-e.html)
 : [AGD](/agd/index-e.html)
-: [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines)
+: [NBDC Human Data Sharing Guidelines](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines)
 
 #### 2. Information to be used and provided
 

@@ -7,9 +7,9 @@ current_tab: submission
 lang: en
 ---
 
-## From NBDC data submission application to JGA data upload {#ds}
+## From data submission application to JGA data upload {#ds}
 
-Apply a data submission application in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your D-way account.
+Apply a data submission application in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your D-way account.
 A data submitter group is necessary for the application.
 After your application is approved, access to the JGA server with your D-way account and upload data by [sftp](#sftp) or [WinSCP](#winscp).
 
@@ -25,7 +25,7 @@ After your application is approved, access to the JGA server with your D-way acc
 A D-way account is necessary for data submission application and JGA data upload. If you do not have an acccount, [create a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.
 
 <div class="attention" markdown="1">
-After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
+After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
 Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data upload.
@@ -34,7 +34,7 @@ Generate a public and private key pair for data transfer and [register the publi
 
 Create a data submitter group before application. In the example group "subgrp1", a researcher (account_b) who applies application and submits data is a group owner and a PI (account_c) is a member.
 
-In the NBDC application system, an account who actually submits an application will automatically become an applicant. If there are submitters other than PI and applicant, include all submitters as members. Emails regarding the submission are sent to members.
+In the application system, an account who actually submits an application will automatically become an applicant. If there are submitters other than PI and applicant, include all submitters as members. Emails regarding the submission are sent to members.
 
 {% include image.html url="books/DS-group-e.png" caption="Data submitter group" class="w400" %}
 
@@ -44,12 +44,12 @@ Start the data submission application process and select the data submitter grou
 
 {% include image.html url="books/DS-group-select-e.png" caption="Select the data submitter group" class="w450" %}
 
-Also see the [NBDC data submission page](https://humandbs.biosciencedbc.jp/en/data-submission).
+Also see the [data submission page](https://humandbs.dbcls.jp/en/data-submission).
 
 ## Data submission application approval {#du-approval}
 
 Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data upload to the JGA server (jga-gw.ddbj.nig.ac.jp).
-After the application is approved by NBDC, a JGA submission ID (for example, JSUB000353) is issued and a corresponding directory for data upload is created in the JGA server.
+After the application is approved by DBCLS, a JGA submission ID (for example, JSUB000353) is issued and a corresponding directory for data upload is created in the JGA server.
 
 {% include image.html url="books/DS-approved-e.png" caption="Approval of data submission application" class="w450" %}
 

@@ -6,7 +6,7 @@ lang: en
 
 ## D-way account  {#ddbj-submission-account}
 
-Bioinformation and DDBJ Center provides the D-way account system. In the D-way account, you can use BioProject, BioSample, GEA, DRA and JGA databases of DDBJ Center and the NBDC application systems. This handbook explains how to create and use a D-way account.
+Bioinformation and DDBJ Center provides the D-way account system. In the D-way account, you can use BioProject, BioSample, GEA, DRA and JGA databases of DDBJ Center and the DBCLS application systems. This handbook explains how to create and use a D-way account.
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -14,12 +14,12 @@ Bioinformation and DDBJ Center provides the D-way account system. In the D-way a
 - Issued account and password must be maintained securely by users.
 - Account ID cannot be changed once it has been created.
 - In the D-way account page, updated information will be reflected in about 10 minutes.
-- It takes about 10 minutes for the created D-way account becoming active in the NBDC application system.
+- It takes about 10 minutes for the created D-way account becoming active in the DBCLS application system.
 </div>
 
 DDBJ Center uses scp authenticated by a ssh key for transfer of large files. You need to register a public key to upload data files to DRA, GEA and JGA.
 
-Users submitting data submission or data use applications to NBDC are recommended to [enter additional account information](#nbdc). The added items are automatically filled to new applications and the users are able to avoid entering these items in each application.
+Users submitting data submission or data use applications to DBCLS are recommended to [enter additional account information](#dbcls). The added items are automatically filled to new applications and the users are able to avoid entering these items in each application.
 
 ## Create a D-way account in the website {#account-for-bioproject-biosample-submissions}
 
@@ -242,10 +242,10 @@ registered public key for authentication can be overwritten by uploading a new f
 Updated account information will be reflected in about 10 minutes. Please login again after 10 minutes.
 </div>
 
-## Items to be added for NBDC applications {#nbdc}
+## Items to be added for DBCLS applications {#dbcls}
 
 Add the organization and job title information to your account.
-Login the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) and select the "User information update" at the top right menu.
+Login the [DBCLS application system](https://humandbs.ddbj.nig.ac.jp/dbcls/application/) and select the "User information update" at the top right menu.
 
 {% include image.html url="books/profile1-e.jpg" caption="User information update" class="w400" %}
 

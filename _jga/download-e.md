@@ -7,9 +7,9 @@ current_tab: submission
 lang: en
 ---
 
-## From data use application to NBDC and JGA data use {#du}
+## From data use application and JGA data use {#du}
 
-Apply a data use application in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your D-way account.   
+Apply a data use application in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your D-way account.   
 In the application, create a data user group, specify JGA Study and Dataset accessions you want to use, and register a public key for dataset decryption.   
 After your application is approved, access to the JGA server with your D-way account and donwload data to on-/off-premise servers by [WinSCP](#winscp) or [sftp](#sftp). Encrypted data files and decryption tools are provided, decrypt the data files by using the private key paired with the public key for dataset decryption registered in the application.
 
@@ -27,14 +27,14 @@ After your application is approved, access to the JGA server with your D-way acc
 ### Search JGA dataset {#search}
 
 Search Study (e.g., JGAS999992) and Dataset (e.g., JGAD999993) [accessions](/jga/submission-e.html) of your interest.   
-You may search JGA data in the NBDC human database [list of researches](https://humandbs.biosciencedbc.jp/en/data-use/all-researches) or [DDBJ Search](https://ddbj.nig.ac.jp/search).
+You may search JGA data in [list of researches](https://humandbs.dbcls.jp/en/data-use/all-researches) at DBCLS and [DDBJ Search](https://ddbj.nig.ac.jp/search).
 
 ### D-way account and a public key for data transfer  {#account-key}
 
 A D-way account is necessary for data use application and JGA data download. If you do not have an acccount, [create a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.   
 
 <div class="attention" markdown="1">
-After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [NBDC application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
+After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
 Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data download. 
@@ -47,7 +47,7 @@ The public key for dataset decryption is separate from [the public key for data 
 In total, 2 pairs 4 keys are necessary for data use application and JGA data use.
 
 A key pair for dataset decryption.
-* A public key for dataset decryption (register per NBDC data use application)
+* A public key for dataset decryption (register per data use application)
 * A private key for dataset decryption
 
 A key pair for data transfer.
@@ -61,10 +61,10 @@ Example:
 * Public key for decryption: J-DU999991.pub
 * Private key for decryption: J-DU999991
 
-## Data use application to NBDC {#du-application}
+## Data use application {#du-application}
 
-[Apply the data use application](https://humandbs.biosciencedbc.jp/en/data-use) in the [NBDC Application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application).
-Also see the [NBDC data use page](https://humandbs.biosciencedbc.jp/en/data-use).
+[Apply the data use application](https://humandbs.dbcls.jp/en/data-use) in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application).
+Also see the [data use page](https://humandbs.dbcls.jp/en/data-use).
 
 ### Data user group {#data-user-group}
 
@@ -72,7 +72,7 @@ Before starting the application, create a data user group. In the following exam
 
 {% include image.html url="books/DS-group-e.png" caption="Data user group" class="w450" %}
 
-[Start the application](https://humandbs.biosciencedbc.jp/en/data-use) and select the group.
+[Start the application](https://humandbs.dbcls.jp/en/data-use) and select the group.
 
 {% include image.html url="books/DU-start-e.png" caption="Start data use application" class="w450" %}
 
@@ -80,14 +80,14 @@ Before starting the application, create a data user group. In the following exam
 
 ### Register a puclic key for dataset decryption {#public-key-for-dataset-decryption}
 
-Register a public key for dataset decryption in the NBDC data use application.
+Register a public key for dataset decryption in the data use application.
 
 {% include image.html url="books/public-key-for-dataset-decryption-e.png" caption="Registration of the public key for dataset decryption" class="w400" %}
 
 ### Data use application approval  {#approval}
 
 Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data download from the JGA server (jga-gw.ddbj.nig.ac.jp).   
-After the application is approved by NBDC, metadata, encrypted data files and decryption tools are created in the download directory in the JGA server.
+After the application is approved by DBCLS, metadata, encrypted data files and decryption tools are created in the download directory in the JGA server.
 
 {% include image.html url="books/data-use-approved-e.png" caption="Data use application approval" class="w400" %}
 
