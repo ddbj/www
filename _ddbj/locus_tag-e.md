@@ -1,128 +1,74 @@
 ---
 layout: tabbed_indexed_content
-title: Guideline to use /locus_tag qualifier
+title: locus tag
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
 lang: en
 ---
 
-## Proper Use of /locus_tag in Genome Submissions  {#locus_tag_usage}
+## locus tag {#locus_tag}
 
-At the International Nucleotide Sequence Database Collaborators meeting,
-it was agreed that we would require genome projects to be registered
-with the database. Each genome project would be assigned an ID in order
-to allow us to associate multiple sequences of a single genome project
-with each other. This Genome Project ID will appear in a new line type
-below [ACCESSION](/ddbj/flat-file-e.html#Accession) and
-[VERSION](/ddbj/flat-file-e.html#Version) in the [flat
-file](/ddbj/flat-file-e.html). Registration of Genome Projects can be
-done at DDBJ, EBI or NCBI. 
+The locus tags are identifiers systematically assigned to every
+gene in a genome. INSD (DDBJ/ENA/GenBank) introduced the locus tag to prevent confusion caused by similar names assigned to different genes of different genomes. All component sequences of a genome assembly such as chromosomes and plasmids should use the same locus tag prefix in the /locus_tag qualifiers to systematically distinguish genes.
 
-For genome sequence submissions, DDBJ provides [Mass Submission System
-(MSS)](/ddbj/mss-e.html). See also [Data Submission from Genome
-Project](/ddbj/genome-e.html). You can specify /locus_tag prefix for
-your genome data through [BioSample](/biosample/index-e.html)
-submission.
+## locus tag prefix registration {#locus_tag_prefix}
 
-Locus_tags are identifiers that are systematically applied to every
-gene in a genome. These tags have become surrogate gene names by the
-biological community. If two submitters of two different genomes use the
-same systematic names to describe two very different genes in two very
-different genomes, it can be very confusing. In order to prevent this
-from happening INSD has created a registry of locus_tag prefixes.
-Submitters of eukaryotic and prokaryotic genomes should register their
-prefix prior to submitting their genome. All components of a project
-(such as multiple chromosomes or plasmids, etc) should use the same
-locus_tag prefix.
+A genome assembly submission requires a [BioProject](/bioproject/submission-e.html) and a [BioSample](/biosample/submission-e.html). Register a locus tag prefix during the BioSample submission. Enter a prefix you want to use in the [locus_tag_prefix attribute](/biosample/attribute-e.html#locus_tag_prefix) provided by the BioSample [packages used for genome assembly samples](/biosample/overview-e.html#genome-assembly-sample). The locus_tag prefix should consist of 3-12 alpha-numeric characters and should start with
+a letter, but numerals can be used after the 2nd character (e.g. A1C). There should be no symbols such as '-', '\_' and '\*'.   
+A locus tag prefix cannot be changed after registration, so avoid to register a prefix following an organism name or a strain name which may be changed in the future.
 
-The locus_tag prefix can contain only alpha-numeric characters and it
-must be between 3 and 12 characters long inclusive. It should start with
-a letter, but numerals can be in the 2nd position or later in the
-string. (ex. A1C). There should be no symbols, such as -_* in the
-prefix. The locus_tag prefix is to be separated from the tag value by
-an underscore '_', eg A1C_00001.
+## /locus_tag qualifier {#locus_tag_qualifier}
 
-Locus_tags should be assigned to all protein coding and non-coding
-genes such as structural RNAs. /locus_tag should appear on gene,
-[mRNA](/ddbj/features-e.html#mRNA), [CDS](/ddbj/features-e.html#cds),
-[5'UTR](/ddbj/features-e.html#5UTR),
-[3'UTR](/ddbj/features-e.html#3UTR),
-[intron](/ddbj/features-e.html#intron),
-[exon](/ddbj/features-e.html#exon), [tRNA](/ddbj/features-e.html#tRNA),
-[rRNA](/ddbj/features-e.html#rRNA),
-[ncRNA](/ddbj/features-e.html#ncRNA),
-[misc_RNA](/ddbj/features-e.html#misc_RNA), etc within a genome project
-submission. [repeat_regions](/ddbj/features-e.html#repeat_region) do
-not have locus_tag qualifiers. The same locus_tag should be used for
-all components of a single gene. For example, all of the exons, CDS,
-mRNA and gene features for a particular gene would have the same
-locus_tag. There should only be one locus_tag associated with one
-[/gene](/ddbj/qualifiers-e.html#gene), i.e. if a /locus_tag is
-associated with a [/gene](/ddbj/qualifiers-e.html#gene) symbol in any
-feature, that gene symbols (and only that
-[/gene](/ddbj/qualifiers-e.html#gene) symbol) must also be present on
-every other feature that contains that locus_tag.
-
-Locus_tags are systematically added to genes within a genome. They are
-generally in sequential order on the genome. If a genome center were to
-update a genome and provide additional annotation, the new genes could
-either [1] be assigned the next sequential available locus_tag or
-[2] the submitter can leave gaps when initially assigning locus_tags
-and fill in new annotation with tag values that are between the gaps.
-
-Use: Incremental locus_tags
+Submit genome assembled sequences to DDBJ through [Mass Submission System](/ddbj/mss-e.html).   
+In /locus_tag qualifiers, enter the prefix which has been registered in the corresponding BioSample. Assign /locus_tag qualifiers to both protein-coding genes and non-coding RNA genes. Separate the prefix and the tag value by an underscore (e.g. A1C_00001). It is recommended to use the same numbering convention for all /locus_tag qualifiers in order of appearance regardless of types of annotating genes such as protein-coding, structural RNA and originating chromosome. However, if you want to include information regarding chromosome number and RNA type, you may add these information after the underscode following the prefix.
 
 ```
-       Original          Revised
-        submission        submission
-        ABC_0022
-                          ABC_4568 (new gene)
-        ABC_0023          ABC_0023
+ABC_I00001 for gene 1, chromosome I
+ABC_II00001 for gene 1, chromosome II
+ABC_r1112 for ribosomal RNA genes
+ABC_t1113 for tRNA genes
 ```
 
-OR: Gaps in original locus_tags
+Add the /locus_tag qualifiers to the following features (do not add to [repeat_region](/ddbj/features-e.html#repeat_region)).
+
+* [mRNA](/ddbj/features-e.html#mRNA)
+* [CDS](/ddbj/features-e.html#cds)
+* [5'UTR](/ddbj/features-e.html#5UTR)
+* [3'UTR](/ddbj/features-e.html#3UTR)
+* [intron](/ddbj/features-e.html#intron)
+* [exon](/ddbj/features-e.html#exon)
+* [tRNA](/ddbj/features-e.html#tRNA)
+* [rRNA](/ddbj/features-e.html#rRNA)
+* [ncRNA](/ddbj/features-e.html#ncRNA)
+* [tmRNA](/ddbj/features-e.html#tmRNA)
+* [precursor_RNA](/ddbj/features-e.html#precursor_RNA)
+* [prim_transcript](/ddbj/feature-table.html#prim_transcript)
+* [misc_RNA](/ddbj/features-e.html#misc_RNA)
+
+Use the same value in the /locus_tag qualifiers of exon/CDS/mRNA features which constitute single gene. One locus_tag should be associated with one [/gene](/ddbj/qualifiers-e.html#gene).
+
+## How to add /locus_tag {#add}
+
+A new /locus_tag can be added in either of the following ways when updating genome sequences and annotations.
+
+No. 1: Deletion and addition
 
 ```
-       Original          Revised
-        submission        submission
-        ABC_0020          ABC_0020
-                          ABC_0021 (new gene)
-        ABC_0030          ABC_0030
+Before     After
+ABC_0022
+           ABC_4568 (new gene)
+ABC_0023   ABC_0023
 ```
 
-<span class="red">BUT NOT:</span>Decimal integers
+No. 2: Add into the gap
 
 ```
-       Original          Revised
-        submission        submission
-        ABC_0020          ABC_0020
-                          ABC_0020.1 (new gene)
-        ABC_0030          ABC_0030
+Before     After
+ABC_0020   ABC_0020
+           ABC_0021 (new gene)
+ABC_0030   ABC_0030
 ```
 
-It is preferable to use the same numbering convention for all
-locus_tags within a project no matter whether the gene is a protein
-coding gene or structural RNA or from one chromosome or another.
+Decimal integers like versioning (e.g. ABC_0020.1) can not be used.
 
-However, submitters wishing to encode information about chromosome
-number, or RNA type in the locus_tag value, may add this information to
-the /locus_tag after the prefix and underscore:
-
-```
-        ABC_I00001 for gene 1, chromosome I
-        ABC_II00001 for gene 1, chromosome II
-        ABC_r1112 for ribosomal RNA genes
-        ABC_t1113 for tRNA genes
-```
-
-A submitter can register for a locus_tag prefix and BioProject/BioSample at NCBI , EBI or DDBJ. 
-
-For genome sequence submissions, DDBJ provides [Mass Submission System
-(MSS)](/ddbj/mss-e.html). See also [Data Submission from Genome
-Project](/ddbj/genome-e.html). You can specify /locus_tag prefix for
-your genome data through [BioSample](/biosample/index-e.html)
-submission.
-
-You can find the same guideline at
-[NCBI](//www.ncbi.nlm.nih.gov/genomes/locustag/Proposal.pdf).
