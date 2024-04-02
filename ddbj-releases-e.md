@@ -17,7 +17,6 @@ related_pages:
 
 |  DDBJ Release	  |  16S rRNA	  |  DAD Release	  |  Last published date  |
 | ---- | ---- | ---- | ---- |
-
 [134.0 (Mar. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.134.txt)  | [134.0 (Mar. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.134.txt)  | [104.0 (Mar. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.104.txt)   | Feb. 22, 2024
 [133.0 (Dec. 2023)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.133.txt)  | [133.0 (Jan. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.133.txt)  | [103.0 (Dec. 2023)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.103.txt)   | Nov. 22, 2023
 [132.0 (Sep. 2023)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.132.txt)  | [132.0 (Oct. 2023)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.132.txt)  | [102.0 (Sep. 2023)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.102.txt)   | Aug. 25, 2023
