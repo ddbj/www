@@ -357,7 +357,7 @@ category: about
         <p class="photo"><img src="/assets/images/staff/mcmillan.jpg" title="マクミラン 泰代"></p>
         <div class="explanation">
             <p class="name">マクミラン 泰代</p>
-            <p class="name">Yasuyo Mcmillan</p>
+            <p class="name">Yasuyo McMillan</p>
         </div>
         </li>
         <li class="staff">

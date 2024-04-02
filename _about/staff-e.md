@@ -317,9 +317,9 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/mcmillan.jpg" title="Yasuyo Mcmillan"></p>
+        <p class="photo"><img src="/assets/images/staff/mcmillan.jpg" title="Yasuyo McMillan"></p>
         <div class="explanation">
-            <p class="name">Yasuyo Mcmillan</p>
+            <p class="name">Yasuyo McMillan</p>
         </div>
         </li>
         <li class="staff">
