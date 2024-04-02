@@ -96,14 +96,21 @@ category: about
         </div>
         </li>
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/ara.jpg" title="Takeshi Ara"></p>
+        <div class="explanation">
+            <p class="name">Takeshi Ara, PhD</p>
+            <p class="position">Coordinator</p>
+        </div>
+        </li> 
+    </ul>  
+    <ul class="list">
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kosuge.jpg" title="Takehide Kosuge"></p>
         <div class="explanation">
             <p class="name">Takehide Kosuge, PhD</p>
             <p class="position">Advisor</p>
         </div>
-        </li>  
-    </ul>  
-    <ul class="list">
+        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/aono.jpg" title="Hideo Aono"></p>
         <div class="explanation">
@@ -111,13 +118,6 @@ category: about
             <p class="position">Curator</p>
         </div>
         </li>  
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ara.jpg" title="Takeshi Ara"></p>
-        <div class="explanation">
-            <p class="name">Takeshi Ara, PhD</p>
-            <p class="position">Curator</p>
-        </div>
-        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/fukuda.jpg" title="Asami Fukuda"></p>
         <div class="explanation">
@@ -211,14 +211,21 @@ category: about
         </div>
         </li>  
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/komiyama.jpg" title="Moe Komiyama"></p>
+        <div class="explanation">
+            <p class="name">Moe Komiyama</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li>
+    </ul>
+    <ul class="list">
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="Hideki Mochizuki"></p>
         <div class="explanation">
             <p class="name">Hideki Mochizuki</p>
             <p class="position">System Engineer</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="Takahiro Suzuki"></p>
         <div class="explanation">
@@ -233,6 +240,8 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="Koji Watanabe"></p>
         <div class="explanation">
@@ -240,8 +249,6 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="Masahiro Yoshida"></p>
         <div class="explanation">
@@ -281,22 +288,6 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="Takehiro Kato"></p>
-        <div class="explanation">
-            <p class="name">Takehiro Kato</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li> 
-        <li class="staff"> 
-        <p class="photo"><img src="/assets/images/staff/yasuda.jpg" title="Tomohiko Yasuda"></p>
-        <div class="explanation">
-            <p class="name">Tomohiko Yasuda</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li>        
-    </ul>
-    <ul class="list">
         <li class="staff"> 
         <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="Yuji Ashizawa"></p>
         <div class="explanation">
@@ -310,12 +301,27 @@ category: about
             <p class="name">Yoshimasa Takahashi</p>
             <p class="position">System Engineer</p>
         </div>
-        </li>
+        </li>       
+    </ul>
+    <ul class="list">
+        <li class="staff"> 
+        <p class="photo"><img src="/assets/images/staff/yasuda.jpg" title="Tomohiko Yasuda"></p>
+        <div class="explanation">
+            <p class="name">Tomohiko Yasuda</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li> 
     </ul>
     </div>
     <h2 id="secretary">Secretaries</h2>
     <div class="wrapper">
     <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/mcmillan.jpg" title="Yasuyo Mcmillan"></p>
+        <div class="explanation">
+            <p class="name">Yasuyo Mcmillan</p>
+        </div>
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/maki.jpg" title="Mika Maki"></p>
         <div class="explanation">
