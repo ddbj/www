@@ -90,6 +90,14 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/ara.jpg" title="荒 武"></p>
+        <div class="explanation">
+            <p class="name">荒 武</p>
+            <p class="name">Takeshi Ara, PhD</p>
+            <p class="position">コーディネータ</p>
+        </div>
+        </li>
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kodama.jpg" title="児玉 悠一"></p>
         <div class="explanation">
             <p class="name">児玉 悠一</p>
@@ -104,15 +112,7 @@ category: about
             <p class="name">Jun Mashima, PhD</p>
             <p class="position">コーディネータ</p>
         </div>
-        </li> 
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ara.jpg" title="荒 武"></p>
-        <div class="explanation">
-            <p class="name">荒 武</p>
-            <p class="name">Takeshi Ara, PhD</p>
-            <p class="position">コーディネータ</p>
-        </div>
-        </li>  
+        </li>   
     </ul>
     <ul class="list">
         <li class="staff">

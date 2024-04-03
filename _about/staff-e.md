@@ -82,6 +82,13 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/ara.jpg" title="Takeshi Ara"></p>
+        <div class="explanation">
+            <p class="name">Takeshi Ara, PhD</p>
+            <p class="position">Coordinator</p>
+        </div>
+        </li> 
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kodama.jpg" title="Yuichi Kodama"></p>
         <div class="explanation">
             <p class="name">Yuichi Kodama, PhD</p>
@@ -95,13 +102,6 @@ category: about
             <p class="position">Coordinator</p>
         </div>
         </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ara.jpg" title="Takeshi Ara"></p>
-        <div class="explanation">
-            <p class="name">Takeshi Ara, PhD</p>
-            <p class="position">Coordinator</p>
-        </div>
-        </li> 
     </ul>  
     <ul class="list">
         <li class="staff">
