@@ -1,5 +1,7 @@
 top_news:
   ja:
+    - title: (5/3 - 5/6) ゴールデンウィーク中の対応について
+      path: 2024-04-03
     - title: DDBJ リリース 134.0，DAD リリース 104.0 完成
       path: 2024-03-27
     - title: (3/25 9:00-4/3 17:00) D-way, DDBJ Search 一時停止のお知らせ
@@ -11,6 +13,8 @@ top_news:
     - title: DDBJ Search キーワード検索の一部不具合について
       path: 2023-12-06
   en:
+    - title: (May 3-May 6) Correspondence during the Golden Week holidays
+      path: 2024-04-03-e
     - title: DDBJ Rel. 134.0, DAD Rel. 104.0 Completed
       path: 2024-03-27-e
     - title: (Mar 25 9:00 - Apr 3 12:00) Announcement of D-way and DDBJ Search suspension
