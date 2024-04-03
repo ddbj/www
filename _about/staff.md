@@ -238,7 +238,7 @@ category: about
         <p class="photo"><img src="/assets/images/staff/komiyama.jpg" title="小宮山 萌"></p>
         <div class="explanation">
             <p class="name">小宮山 萌</p>
-            <p class="name">Moe Komiyama</p>
+            <p class="name">Meg Komiyama</p>
             <p class="position">運用 SE</p>
         </div>
         </li>

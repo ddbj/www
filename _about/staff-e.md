@@ -211,9 +211,9 @@ category: about
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/komiyama.jpg" title="Moe Komiyama"></p>
+        <p class="photo"><img src="/assets/images/staff/komiyama.jpg" title="Megu Komiyama"></p>
         <div class="explanation">
-            <p class="name">Moe Komiyama</p>
+            <p class="name">Megu Komiyama</p>
             <p class="position">System Engineer</p>
         </div>
         </li>
