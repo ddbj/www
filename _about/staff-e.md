@@ -305,6 +305,13 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff"> 
+        <p class="photo"><img src="/assets/images/staff/takai.jpg" title="Daisuke Takai"></p>
+        <div class="explanation">
+            <p class="name">Daisuke Takai</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li> 
+        <li class="staff"> 
         <p class="photo"><img src="/assets/images/staff/yasuda.jpg" title="Tomohiko Yasuda"></p>
         <div class="explanation">
             <p class="name">Tomohiko Yasuda</p>
