@@ -4,8 +4,6 @@ top_news:
       path: 2024-04-03
     - title: DDBJ リリース 134.0，DAD リリース 104.0 完成
       path: 2024-03-27
-    - title: (3/25 9:00-4/3 17:00) D-way, DDBJ Search 一時停止のお知らせ
-      path: 2024-03-22
     - title: DDBJ Search で新規公開データと既存 BioProject の一部にアクセスできません
       path: 2024-03-13
     - title: サンプルを採集した場所と日時の記載を必須化
@@ -17,8 +15,6 @@ top_news:
       path: 2024-04-03-e
     - title: DDBJ Rel. 134.0, DAD Rel. 104.0 Completed
       path: 2024-03-27-e
-    - title: (Mar 25 9:00 - Apr 3 12:00) Announcement of D-way and DDBJ Search suspension
-      path: 2024-03-22-e
     - title: Newly released BioProject/BioSample/SRA and a part of BioProject cannot be accessed in DDBJ Search
       path: 2024-03-13-e
     - title: The requirement to state the location and date of sample collection
