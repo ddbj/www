@@ -331,7 +331,7 @@ category: about
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/otsuka.jpg" title="高橋 良昌"></p>
+        <p class="photo"><img src="/assets/images/staff/otsuka.jpg" title="大塚 正明"></p>
         <div class="explanation">
             <p class="name">大塚 正明</p>
             <p class="name">Masaaki Otsuka</p>
