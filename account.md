@@ -6,7 +6,7 @@ lang: ja
 
 ## D-way アカウント  {#ddbj-submission-account}
 
-[生命情報・DDBJ センター](/index.html) では [D-way アカウントシステム](https://ddbj.nig.ac.jp/D-way)を運用しています。D-way アカウントは DDBJ センターの BioProject/BioSample/DRA/GEA/JGA データベース、及び、[DBCLS](https://humandbs.dbcls.jp) の[提供・利用申請システム](https://humandbs.ddbj.nig.ac.jp/dbcls/application)で使うことができます。
+[生命情報・DDBJ センター](/index.html) では [D-way アカウントシステム](https://ddbj.nig.ac.jp/D-way)を運用しています。D-way アカウントは DDBJ センターの BioProject/BioSample/DRA/GEA/JGA データベース、及び、[DBCLS](https://humandbs.dbcls.jp) の[提供・利用申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application)で使うことができます。
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -239,7 +239,7 @@ D-way ウェブサービスでは JGA を利用することができません。
 ## DBCLS 申請のための情報追加  {#dbcls}
 
 アカウントに所属情報や日本語氏名、職位を登録します。
-[DBCLS 申請システム](https://humandbs.ddbj.nig.ac.jp/dbcls/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
+[DBCLS 申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。もしくは直接[ユーザ情報管理サイト](https://profile.ddbj.nig.ac.jp/groupmanager/secure)にアクセスします。
 
 {% include image.html url="books/profile1.jpg" caption="ユーザ情報更新" class="w400" %}
 

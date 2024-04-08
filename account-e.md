@@ -245,7 +245,7 @@ Updated account information will be reflected in about 10 minutes. Please login 
 ## Items to be added for DBCLS applications {#dbcls}
 
 Add the organization and job title information to your account.
-Login the [DBCLS application system](https://humandbs.ddbj.nig.ac.jp/dbcls/application/) and select the "User information update" at the top right menu.
+Login the [DBCLS application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) and select the "User information update" at the top right menu. Or directly access [the user profile site](https://profile.ddbj.nig.ac.jp/groupmanager/secure).
 
 {% include image.html url="books/profile1-e.jpg" caption="User information update" class="w400" %}
 
