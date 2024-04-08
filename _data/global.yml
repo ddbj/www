@@ -2,8 +2,6 @@ top_news:
   ja:
     - title: (5/3 - 5/6) ゴールデンウィーク中の対応について
       path: 2024-04-03
-    - title: DDBJ リリース 134.0，DAD リリース 104.0 完成
-      path: 2024-03-27
     - title: サンプルを採集した場所と日時の記載を必須化
       path: 2024-02-01
     - title: DDBJ Search キーワード検索の一部不具合について
@@ -11,8 +9,6 @@ top_news:
   en:
     - title: (May 3-May 6) Correspondence during the Golden Week holidays
       path: 2024-04-03-e
-    - title: DDBJ Rel. 134.0, DAD Rel. 104.0 Completed
-      path: 2024-03-27-e
     - title: The requirement to state the location and date of sample collection
       path: 2024-02-01-e
     - title: Disabilities in the DDBJ Search keyword search functionalities
