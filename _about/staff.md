@@ -331,15 +331,23 @@ category: about
         </div>
         </li>
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/ootsuka.jpg" title="高橋 良昌"></p>
+        <div class="explanation">
+            <p class="name">大塚 正明</p>
+            <p class="name">Masaaki Otsuka</p>
+            <p class="position">運用 SE</p>
+        </div>     
+        </li>       
+    </ul>
+    <ul class="list">
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="高橋 良昌"></p>
         <div class="explanation">
             <p class="name">高橋 良昌</p>
             <p class="name">Yoshimasa Takahashi</p>
             <p class="position">運用 SE</p>
         </div>     
-        </li>       
-    </ul>
-    <ul class="list">
+        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/takai.jpg" title="高井 大輔"></p>
         <div class="explanation">

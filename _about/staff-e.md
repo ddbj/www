@@ -296,14 +296,21 @@ category: about
         </div>
         </li> 
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="Yoshimasa Takahashi"></p>
+        <p class="photo"><img src="/assets/images/staff/otsuka.jpg" title="Masaaki Otsuka"></p>
         <div class="explanation">
-            <p class="name">Yoshimasa Takahashi</p>
+            <p class="name">Masaaki Otsuka</p>
             <p class="position">System Engineer</p>
         </div>
         </li>       
     </ul>
     <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="Yoshimasa Takahashi"></p>
+        <div class="explanation">
+            <p class="name">Yoshimasa Takahashi</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li> 
         <li class="staff"> 
         <p class="photo"><img src="/assets/images/staff/takai.jpg" title="Daisuke Takai"></p>
         <div class="explanation">
