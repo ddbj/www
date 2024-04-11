@@ -309,7 +309,7 @@ In December 2022, the display name was changed from "Spot Type" to "Library Layo
 | paired | Paired reads |
 
 [Insert Size](#Insert_Size)<a name="Insert_Size"></a><span class="conditionally_required">*</span>
-: Size of the insert for Paired reads.
+: Average size of the insert for paired reads.
 In December 2022, the display name was changed from "Nominal Length" to "Insert Size".
 
 ## Run  {#Run}

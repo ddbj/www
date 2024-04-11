@@ -293,7 +293,7 @@ D-way アカウントに登録されているメールアドレスを変更し�
 | paired | Paired reads |
 
 [Insert Size](#Insert_Size)<a name="Insert_Size"></a><span class="conditionally_required">*</span>
-: ペアエンドライブラリを構築した際のインサートサイズ。2022年12月に Nominal Length から Insert Size に表示名が変更になりました。
+: ペアエンドライブラリを構築した際のインサートの平均サイズ。2022年12月に Nominal Length から Insert Size に表示名が変更になりました。
 
 ## Run  {#Run}
 
