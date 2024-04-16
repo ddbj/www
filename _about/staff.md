@@ -271,14 +271,6 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="渡邊 康司"></p>
-        <div class="explanation">
-            <p class="name">渡邊 康司</p>
-            <p class="name">Koji Watanabe</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li>
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="吉田 昌弘"></p>
         <div class="explanation">
             <p class="name">吉田 昌弘</p>

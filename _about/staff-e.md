@@ -243,13 +243,6 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="Koji Watanabe"></p>
-        <div class="explanation">
-            <p class="name">Koji Watanabe</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li>
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="Masahiro Yoshida"></p>
         <div class="explanation">
             <p class="name">Masahiro Yoshida</p>
