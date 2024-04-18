@@ -57,14 +57,16 @@ For using every identical sequence, [/haplotype](/ddbj/qualifiers-e.html#haploty
 
 ## Format of Identifiers  {#format}
 
-In cases of commercial samples, model strains and any other official names, you should use them 'as is'.    
-For [/bio_material](/ddbj/qualifiers-e.html#bio_material), [/culture_collection](/ddbj/qualifiers-e.html#culture_collection) and [/specimen_voucher](/ddbj/qualifiers-e.html#specimen_voucher) qualifiers, we have the formats to enhance their traceability, so, please follow the formats.  
-
-When you isolate the sample organisms, please name them by yourself.    
-Please note that "1", "2", "A", "B" , or something like them are too simple to keep uniqueness among the data submitted from many researchers, in advance. 
-
-For example, to make it easier keeping uniqueness by adding acronyms of geographical names of collection sites or the initials of the person who collected samples and the collected years to serial numbers,    
+- All sample identifiers must be distinct from each other.
+- Identical samples should be indicated with the same identifier.
+- In cases of commercial samples, model strains and any other official names, you should use them 'as is'.    
+    - For [/bio_material](/ddbj/qualifiers-e.html#bio_material), [/culture_collection](/ddbj/qualifiers-e.html#culture_collection) and [/specimen_voucher](/ddbj/qualifiers-e.html#specimen_voucher) qualifiers, we have the formats to enhance their traceability, so, please follow the formats.  
+- When you isolate the sample organisms, please name them by yourself.    
+    - Please note that "1", "2", "A", "B" , or something like them are too simple to keep uniqueness among the data submitted from many researchers, in advance. 
+    - For example, to make it easier keeping uniqueness by adding acronyms of geographical names of collection sites or the initials of the person who collected samples and the collected years to serial numbers,    
 i.e. [serial number]-[acronym of geographical name]-[collected year], "1-MS-2021" etc. 
+    - We strongly recommend that you do not include the name of an organism or the abbreviation of an organism name in the sample identifier.    
+
 
 Please note we do not systematically manage the identifiers of samples.  So, at least, it is required to assign unique names within your submissions for your study. 
 
