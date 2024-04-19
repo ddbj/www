@@ -164,6 +164,8 @@ lang: ja
 
 * [いくつかのパッケージの登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)
 * [パッケージ一覧](/biosample/sample-info.html#Sample-package)
+* [Validation rules](https://docs.google.com/spreadsheets/d/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/edit#gid=1261957088)
+* [Controlled terms](https://docs.google.com/spreadsheets/d/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/edit#gid=1287828562)
 
 <h3 id="data-type">データ種別毎のサンプル登録</h3>
 

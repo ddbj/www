@@ -165,6 +165,8 @@ After selecting the relevant Sample type, click the DEFINITION button to review 
 
 * [BioSample example submission files for several packages](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)    
 * [Package list](/biosample/sample-info-e.html#Sample-package)
+* [Validation rules](https://docs.google.com/spreadsheets/d/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/edit#gid=1261957088)
+* [Controlled terms](https://docs.google.com/spreadsheets/d/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/edit#gid=1287828562)
 
 <h3 id="data-type">Sample submission by data type</h3>
 
