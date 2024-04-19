@@ -25,7 +25,8 @@ name and version of kit (e.g., Smart-seq2, 10x, Drop-seq) used for
 single-cell library construction in [Library Construction
 Protocol](/dra/submission-e.html#Library_Construction_Protocol) of the
 DRA Experiment. For 10x technology, describe version of 10x chemistry
-(e.g., v1, v2).
+(e.g., v1, v2).  
+GEA processed data for single-cell studies should be cell-level data.
 
 #### Data file formats  {#data-file-format}
 
@@ -35,6 +36,8 @@ to DRA. Include barcode sequences.
 For 10x bam files without barcode sequences, submit fastq instead.
 Please see [Generating FASTQs with cellranger
 mkfastq](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq)
+
+GEA processed data for single-cell studies should be cell-level data.
 
 #### GEA Experiment Type  {#experiment-type}
 
@@ -57,13 +60,17 @@ information in sample attributes.
 
 ### DRA  {#multiplexed-dra} 
 
-Submit [fastq or bam](/dra/submission-e.html#run-data-files)
-de-multiplexed for each cell (sample).
+Submit [fastq or bam](/dra/submission-e.html#run-data-files) de-multiplexed for each cell (sample).
 
 ### GEA  {#de-multiplexed-gea}
 
-Submit [processed data files](/gea/datafile-e.html#seq_proc) de-multiplexed for each cell (sample).  
-Loupe Browser files for data visualization and analysis (cloupe.cloupe) may be included ([Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview)).
+Submit data de-multiplexed for each cell (sample) as processed data files.   
+When submitting multi-omics types of studies (ADT, HTO, TCR, BCR, GDO, CMO) and using 10X Genomics protocols and software you must submit the feature_reference.csv file so that the data can be correctly interpreted. List different omics libraries on separate rows in SDRF.
+
+| sample1_GEX |
+| sample1_TCR |
+| sample1_ADT |
+| sample1_HTO |
 
 ## Multiplexed submission  {#multiplexed}
 
@@ -87,8 +94,9 @@ mkfastq](https://support.10xgenomics.com/single-cell-gene-expression/software/pi
 
 ### GEA  {#multiplexed-gea}
 
+For processed data files, submit [Cell Ranger software output files](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview) (barcodes.tsv, features.tsv, matrix.mtx), H5 or HDF5 archives, or RDS objects. Processed data for single-cell TCR and BCR samples should include contig annotations and cell barcode information.  
+When submitting multi-omics types of studies (ADT, HTO, TCR, BCR, GDO, CMO) and using 10X Genomics protocols and software you must submit the feature_reference.csv file so that the data can be correctly interpreted.   
+
 Since there is no information about the individual cells at the sample
-annotation or file level, <span class="red">include the analysis results, cell-specific
-attributes, read count matrix and barcode sequences in</span> [processed data
-files](/gea/datafile-e.html#seq_proc).  
-Loupe Browser files for data visualization and analysis (cloupe.cloupe) may be included ([Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview)).
+annotation or file level, <span class="red">include the analysis results, cell-specific attributes, read count matrix and barcode sequences in</span> [processed data files](/gea/datafile-e.html#seq_proc).
+

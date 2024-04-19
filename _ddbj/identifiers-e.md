@@ -148,7 +148,7 @@ Even in these cases, the identifiers must be anonymized.  We prohibit using any 
 ### Viruses  {#virus}
 
 Usually, we recommend using [/isolate](/ddbj/qualifiers-e.html#isolate) qualifiers for viral data.    
-For frequently submitted pathogenic viruses like SARS-CoV-2 or others, we strongly recommend you using [/isolate](/ddbj/qualifiers-e.html#isolate) qualifiers with the identifiers in the following format recommended by [ICTV](https://ictv.global/ ).    
+For frequently submitted pathogenic viruses like SARS-CoV-2 and Influenza virus, we strongly recommend you using [/isolate](/ddbj/qualifiers-e.html#isolate) qualifiers with the identifiers in the following format recommended by [ICTV](https://ictv.global/ ).    
 -   Format: ```[virus_type]/[host_common_name]/[locality_name]/[sample_identifier]/[year]```    
 -   Example: ```SARS-CoV-2/human/Japan/A12/2021```
 

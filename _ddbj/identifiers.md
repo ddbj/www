@@ -143,7 +143,7 @@ related_pages:
 ### ウイルス  {#virus}
 
 通常は [/isolate](/ddbj/qualifiers.html#isolate) qualifier の記載を強く推奨します。    
-SARS-CoV-2 などのような高頻度に登録される病原ウイルスでは [/isolate](/ddbj/qualifiers.html#isolate) qualifier に 
+SARS-CoV-2 やインフルエンザウイルスなどのような高頻度に登録される病原ウイルスでは [/isolate](/ddbj/qualifiers.html#isolate) qualifier に 
 [ICTV](https://ictv.global/ ) が推奨する以下の書式で ID を記載することを強く勧めています。     
 - 書式: ```[virus_type]/[host_common_name]/[locality_name]/[sample_identifier]/[year]```    
 - 記載例: ```SARS-CoV-2/human/Japan/A12/2021```

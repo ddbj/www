@@ -9,7 +9,7 @@ lang: ja
 
 ## 一細胞解析データの登録方法  {#single-cell-data}
 
-遺伝子発現等の次世代シークエンサを使った一細胞解析データは、生データを DRA、解析済みデータを GEA に登録します。
+次世代シークエンサを利用した遺伝子発現等の一細胞解析データは、生データを DRA、解析済みデータを GEA に登録します。
 <span class="red">解析している細胞数（サンプル数）が数十の場合はサンプルとファイルを分割して登録してください。それよりも細胞数が多い場合や分割によって再現性が損なわれる場合は混合したサンプルとファイルを登録してください。</span>    
 
 10x Genomics のデータファイルについては [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360024716391-What-format-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-SRA) を参考にしてください。
@@ -24,6 +24,8 @@ Smart-seq2、10x、Drop-seq）、使用したキットの名前とバージョ�
 DRA の生データとしては基本的に [fastq もしくは bam](/dra/submission.html#run-data-files) を登録します。混合登録の場合はバーコードやリンカー配列を含めてください。
 
 10x で bam にタグやバーコード配列が含まれていない場合は fastq ファイルを登録します。参考: [Generating FASTQs with cellranger mkfastq](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq)
+
+GEA の解析済みデータには一細胞レベルのデータを登録します。
 
 #### GEA Experiment Type  {#experiment-type}
 
@@ -47,8 +49,13 @@ DRA の生データとしては基本的に [fastq もしくは bam](/dra/submis
 
 ### GEA  {#de-multiplexed-gea}
 
-サンプル（細胞）毎に分割された[解析済みデータファイル](/gea/datafile.html#seq_proc)を登録します。  
-Loupe Browser でのデータ可視化と解析のための cloupe.cloupe ファイルを含めることもできます ([Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview))。 
+サンプル（細胞）毎に分割された解析済みデータファイルを登録します。  
+マルチオミックスタイプの研究 (ADT, HTO, TCR, BCR, GDO, CMO) で 10X Genomics のプロトコールと解析ソフトウェアを組み合わせて使っている場合は feature_reference.csv ファイルを含めてデータが正しく解釈できるようにしてください。SDRF では異なるオミックスライブラリを以下のように別の行にしてください。  
+
+| sample1_GEX |
+| sample1_TCR |
+| sample1_ADT |
+| sample1_HTO |
 
 ## 混合登録の場合  {#multiplexed}
 
@@ -68,5 +75,8 @@ Loupe Browser でのデータ可視化と解析のための cloupe.cloupe ファ
 
 ### GEA  {#multiplexed-gea}
 
+Cell Ranger の[出力ファイル](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview) (barcodes.tsv, features.tsv, matrix.mtx)、H5 や HDF5 アーカイブもしくは RDS オブジェクトを登録します。TCR と BCR 一細胞サンプルについては、コンティグアノテーションと細胞のバーコード情報を含めてください。  
+マルチオミックスタイプの研究 (ADT, HTO, TCR, BCR, GDO, CMO) で 10X Genomics のプロトコールと解析ソフトウェアを組み合わせて使っている場合は feature_reference.csv ファイルを含めてデータが正しく解釈できるようにしてください。  
 細胞毎の情報はサンプル属性にもライブラリーにも記載されていない状態なので、[解析済みデータファイル](/gea/datafile.html#seq_proc)に<span class="red">細胞毎の属性情報、リードカウントやバーコード配列を含めます。</span>   
-Loupe Browser でのデータ可視化と解析のための cloupe.cloupe ファイルを含めることもできます ([Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview))。 
+
+
