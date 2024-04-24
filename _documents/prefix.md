@@ -371,11 +371,11 @@ PC      JPO             Patent application
 PD      JPO             Patent application
 PE      KIPO            Patent application
 PF      KIPO            Patent application
-PG      DDBJ            
-PH      DDBJ            
-PI      DDBJ            
-PJ      DDBJ            
-PK      DDBJ            
+PG      JPO             Patent application
+PH      JPO             Patent application
+PI      JPO             Patent application
+PJ      JPO             Patent application
+PK      JPO             Patent application
 PL      DDBJ            
 PM      DDBJ            
 PN      DDBJ            
