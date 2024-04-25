@@ -25,7 +25,7 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 ## DRA {#dra}
 
-D-way にログインし、[登録者自身で DRA データを公開](/dra/submission.html#change-hold-date)してください。
+D-way にログインし、[登録者自身で DRA データを公開](/dra/update.html#change-hold-date)してください。
 
 ## GEA {#gea}
 

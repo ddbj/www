@@ -25,7 +25,7 @@ Inform accession number(s) of nucleotide sequence(s) to be released through the 
 
 ## DRA {#dra}
 
-Login D-way and [release DRA data by yourself](/dra/submission-e.html#change-hold-date).
+Login D-way and [release DRA data by yourself](/dra/update-e.html#change-hold-date).
 
 ## GEA {#gea}
 
