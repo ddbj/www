@@ -172,7 +172,7 @@ lang: ja
 <ul>
   <li><a href="/biosample/overview.html#genome-assembly-sample">ゲノムアセンブリ (含 メタゲノムアセンブリ) 用サンプル</a></li>
   <li><a href="/ddbj/single-amplified-genome.html">Single amplified genome</a></li>
-  <li><a href="/ddbj/pseudohaplotype.html">Pseudohaplotype</a></li>
+  <li><a href="/ddbj/haplotype.html">Haplotype</a></li>
   <li><a href="/biosample/overview.html#human-sample">Human Sample</a></li>
 </ul>
 

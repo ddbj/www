@@ -173,7 +173,7 @@ After selecting the relevant Sample type, click the DEFINITION button to review 
 <ul>
   <li><a href="/biosample/overview-e.html#genome-assembly-sample">Genome Assembly (including metagenome assembly) Sample</a></li>
   <li><a href="/ddbj/single-amplified-genome-e.html">Single amplified genome</a></li>
-  <li><a href="/ddbj/pseudohaplotype-e.html">Pseudohaplotype</a></li>
+  <li><a href="/ddbj/haplotype-e.html">Haplotype</a></li>
   <li><a href="/biosample/overview-e.html#human-sample">Human Sample</a></li>
 </ul>
 

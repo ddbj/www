@@ -25,7 +25,7 @@ Also, please submit to
 See also the following sites.  
 
 * [Finished level genomic sequences](/ddbj/finished_level_genome-e.html )
-* [Pseudohaplotype](/ddbj/pseudohaplotype-e.html ) 
+* [Haplotype](/ddbj/haplotype-e.html ) 
 * [INSDC standards for genome assembly submission](/ddbj/assembly-e.html ) 
 * [Metagenome Assembly and MAG](/ddbj/metagenome-assembly-e.html ) 
 * [Single amplified genome SAG](/ddbj/single-amplified-genome-e.html ) 

@@ -23,7 +23,7 @@ related_pages:
 下記もご参照ください。    
 
 * [Finished level genomic sequences](/ddbj/finished_level_genome.html )
-* [Pseudohaplotype](/ddbj/pseudohaplotype.html ) 
+* [Haplotype](/ddbj/haplotype.html ) 
 * [INSDC standards for genome assembly submission](/ddbj/assembly.html ) 
 * [メタゲノムアセンブリ、MAG](/ddbj/metagenome-assembly.html ) 
 * [Single amplified genome SAG](/ddbj/single-amplified-genome.html ) 
