@@ -189,6 +189,8 @@ ddbj:
       title: Flat file
       url: /ddbj/flat-file.html
       children:
+        - title: Feature Table
+          url: /ddbj/feature-table.html
         - title: Feature key の定義
           url: /ddbj/features.html
         - title: Qualifier key の定義
@@ -282,6 +284,8 @@ ddbj:
       title: Flat file
       url: /ddbj/flat-file-e.html
       children:
+        - title: Feature Table
+          url: /ddbj/feature-table-e.html
         - title: Feature key
           url: /ddbj/features-e.html
         - title: Qualifier key
