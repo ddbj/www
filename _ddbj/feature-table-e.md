@@ -4,7 +4,7 @@ title: The DDBJ/ENA/GenBank Feature Table Definition
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
-lang: ja
+lang: en
 ---
 
 The original site; [The DDBJ/ENA/GenBank Feature Table Definition](https://insdc.org/submitting-standards/feature-table/ ) Version 11.2 February 2024
