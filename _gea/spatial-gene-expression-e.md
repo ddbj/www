@@ -48,7 +48,7 @@ Submit these files in single tar file as GEA processed data.
 
 ### Xenium {#xenium}
 
-For spatial gene expression data generated from [Xenium](https://www.10xgenomics.com/platforms/xenium), submit output files archived and compressed by tar.gz as GEA processed data files. Select the "Submission Type: Microarray" and register [dummy data files](/assets/files/dummy/dummy-raw-data.txt) (md5: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) as raw data files.
+For spatial gene expression data generated from [Xenium](https://www.10xgenomics.com/platforms/xenium), submit output files archived and compressed by tar.gz as GEA processed data files. Select the "Submission Type: Microarray" and register [dummy data files](/assets/files/dummy/dummy-raw-data.txt) (md5: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) as raw data files. Enter "A-GEAD-11" (accession for the dummy array design) for Array Design Accession.
 
 * [Understanding Xenium Outputs](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-understanding-outputs)
 * [Archiving Xenium Data](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data)

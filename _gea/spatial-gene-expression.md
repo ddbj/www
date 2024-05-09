@@ -51,7 +51,7 @@ GEA processed data
 ### Xenium {#xenium}
 
 10xGenomics [Xenium](https://www.10xgenomics.com/jp/platforms/xenium) 
-から出力される空間的な遺伝子発現データについては出力ファイル一式を tar.gz でアーカイブ・圧縮したものを GEA の解析済みデータファイルとして登録してください。Submission Type は Microarray を選択し、生データファイルには [dummy データファイル](/assets/files/dummy/dummy-raw-data.txt) (md5 値: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) を登録します。
+から出力される空間的な遺伝子発現データについては出力ファイル一式を tar.gz でアーカイブ・圧縮したものを GEA の解析済みデータファイルとして登録してください。Submission Type は Microarray を選択し、生データファイルには [dummy データファイル](/assets/files/dummy/dummy-raw-data.txt) (md5 値: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) を登録します。Array Design Accession は A-GEAD-11 を入力します (dummy の内容で登録されます)。
 
 * [Understanding Xenium Outputs](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-understanding-outputs)
 * [Archiving Xenium Data](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data)
