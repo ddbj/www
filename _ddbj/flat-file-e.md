@@ -27,25 +27,23 @@ related_pages:
 
 # DDBJ flat file format
 
-DDBJ/EMBL-Bank/GenBank, the International Nucleotide Sequence Database
-Collaboration ([INSDC](/about/insdc-e.html)) collects the nucleotide sequences
-experimentally determined, and constructs the database in accordance
-with the rule agreed with the three databanks.
+DDBJ/EMBL-Bank/GenBank, the International Nucleotide Sequence Database Collaboration 
+([INSDC](/about/insdc-e.html )) collects the nucleotide sequences experimentally determined, 
+and constructs the database in accordance with the rule agreed with the three databanks.
 
-The database also includes the data from [Japan Patent
-Office](//www.jpo.go.jp/index.htm) (JPO), [European Patent
-Office](//www.epo.org/) (EPO), [United States Patent and Trademark
-Office](https://www.uspto.gov/) (USPTO), and [Korean Intellectual
-Property Office](//www.kipo.go.kr/) (KIPO).
+The database also includes the data from 
+[Japan Patent Office](https://www.jpo.go.jp/e/index.html ) (JPO), 
+[European Patent Office](https://www.epo.org/ ) (EPO), 
+[United States Patent and Trademark Office](https://www.uspto.gov/) (USPTO), and 
+[Korean Intellectual Property Office](https://www.kipo.go.kr/ ) (KIPO).
 
-The database is a collection of "entry" which is the unit of the data.
-The entry submitted to DDBJ is processed and publicized according to the
-DDBJ format for distribution (flat file). The flat file includes the
-sequence and the information of submitters, references, source
-organisms, and "feature" information, etc. The "feature" is defined by
-[The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/feature-table-e.html)
-to describe the biological nature such as gene function and other
-property of the nucleotide sequence.
+The database is a collection of "entry" which is the unit of the data.  
+The entry submitted to DDBJ is processed and publicized according to the DDBJ format for distribution (flat file).  
+The flat file includes the sequence and the information of submitters, references, source organisms, 
+and "feature" information, etc.  
+The "feature" is defined by 
+[The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/feature-table-e.html )
+to describe the biological nature such as gene function and other property of the nucleotide sequence.
 
 ## The virtual sample of DDBJ flat file  {#The_virtual_sample_of_DDBJ_flat_file}
 
