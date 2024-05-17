@@ -79,7 +79,7 @@ JGA サーバ上の /controlled-access/submission/jga/ の下に Submission ID �
 
 [![JGA メタデータ記入用エクセル](/assets/images/parts/download.png "JGA メタデータ記入用エクセル"){:.w40}](https://github.com/ddbj/submission-excel2xml/raw/main/JGA_metadata.xlsx)
 
-last updated: 2022-04-27
+last updated: 2024-05-17
 
 <div class="attention" markdown="1">
 JGA にアップロードするファイル名には空白を含めないでください。
