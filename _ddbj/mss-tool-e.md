@@ -32,7 +32,7 @@ related_pages:
   - Each tool requires [Java Development Kit 8 (JDK8)](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed properly on a PC that it runs.
   - DDBJ recommends either of following operating systems, because DDBJ has tested the program only on these environments.  
     Windows: Windows 10  
-    unix/macOS: Ubuntu 16.04 LTS, macOS High Sierra
+    unix/macOS: Ubuntu 18.04 LTS, macOS Catalina
 
 <span class="red">\*</span>UME (Utilities for MSS file Error check) includes software developed by [the Apache Software Foundation](//www.apache.org/).
 
@@ -55,29 +55,29 @@ Please refer each manuals for how to install and use.
     </thead>
     <tbody>
       <tr>
-        <td>UME_win_V1.59.zip</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_win_V1.59.zip">FTP</a></td>
+        <td>UME_win_V1.60.zip</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_win_V1.60.zip">FTP</a></td>
         <td>Windows</td>
         <td rowspan="2">2024/02/06</td>
         <td rowspan="2"><a href="/ddbj/ume-e.html">User's manual</a></td>
         <td rowspan="2">UME contains Parser and transChecker.</td>
       </tr>
       <tr>
-        <td>UME_unix_V1.59.zip</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_unix_V1.59.zip">FTP</a></td>
+        <td>UME_unix_V1.60.zip</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_unix_V1.60.zip">FTP</a></td>
         <td>Unix/macOS</td>
       </tr>
       <tr>
-        <td>Parser_V6.73.tar.gz</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/Parser_V6.73.tar.gz">FTP</a></td>
+        <td>Parser_V6.74.tar.gz</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/Parser_V6.74.tar.gz">FTP</a></td>
         <td>Unix/macOS</td>
         <td>2024/02/06</td>
         <td><a href="/ddbj/parser-e.html">User's manual</a></td>
         <td></td>
       </tr>
       <tr>
-        <td>transChecker_V2.24.tar.gz</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/transChecker_V2.24.tar.gz">FTP</a></td>
+        <td>transChecker_V2.25.tar.gz</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/transChecker_V2.25.tar.gz">FTP</a></td>
         <td>Unix/macOS</td>
         <td>2023/09/27</td>
         <td><a href="/ddbj/transchecker-e.html">User's manual</a></td>

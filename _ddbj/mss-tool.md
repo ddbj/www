@@ -32,7 +32,7 @@ related_pages:
   - 実行には Java 8 以降が必要です。
   - DDBJ では、推奨 OS として以下の環境で動作確認を行っております。  
     Windows: Windows 10  
-    unix/macOS: Ubuntu 16.04 LTS, macOS High Sierra
+    unix/macOS: Ubuntu 18.04 LTS, macOS Catalina
 
 <span class="red">※</span>UME (Utilities for MSS file Error check) は[Apache Software Foundation](//www.apache.org/) により開発されたソフトウェアを含んでいます。
 
@@ -55,29 +55,29 @@ related_pages:
     </thead>
     <tbody>
       <tr>
-        <td>UME_win_V1.59.zip</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_win_V1.59.zip">FTP</a></td>
+        <td>UME_win_V1.60.zip</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_win_V1.60.zip">FTP</a></td>
         <td>Windows</td>
         <td rowspan="2">2024/02/06</td>
         <td rowspan="2"><a href="/ddbj/ume.html">ユーザーマニュアル</a></td>
         <td rowspan="2">Parser, transChecker 付属</td>
       </tr>
       <tr>
-        <td>UME_unix_V1.59.zip</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_unix_V1.59.zip">FTP</a></td>
+        <td>UME_unix_V1.60.zip</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_unix_V1.60.zip">FTP</a></td>
         <td>Unix/macOS</td>
       </tr>
       <tr>
-        <td>Parser_V6.73.tar.gz</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/Parser_V6.73.tar.gz">FTP</a></td>
+        <td>Parser_V6.74.tar.gz</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/Parser_V6.74.tar.gz">FTP</a></td>
         <td>Unix/macOS</td>
         <td>2024/02/06</td>
         <td><a href="/ddbj/parser.html">ユーザーマニュアル</a></td>
         <td>UME を使用する場合、不要</td>
       </tr>
       <tr>
-        <td>transChecker_V2.24.tar.gz</td>
-        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/transChecker_V2.24.tar.gz">FTP</a></td>
+        <td>transChecker_V2.25.tar.gz</td>
+        <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/transChecker_V2.25.tar.gz">FTP</a></td>
         <td>Unix/macOS</td>
         <td>2023/09/27</td>
         <td><a href="/ddbj/transchecker.html">ユーザーマニュアル</a></td>
