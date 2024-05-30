@@ -58,7 +58,7 @@ Please refer each manuals for how to install and use.
         <td>UME_win_V1.60.zip</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/UME_win_V1.60.zip">FTP</a></td>
         <td>Windows</td>
-        <td rowspan="2">2024/02/06</td>
+        <td rowspan="2">2024/05/30</td>
         <td rowspan="2"><a href="/ddbj/ume-e.html">User's manual</a></td>
         <td rowspan="2">UME contains Parser and transChecker.</td>
       </tr>
@@ -71,7 +71,7 @@ Please refer each manuals for how to install and use.
         <td>Parser_V6.74.tar.gz</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/Parser_V6.74.tar.gz">FTP</a></td>
         <td>Unix/macOS</td>
-        <td>2024/02/06</td>
+        <td>2024/05/30</td>
         <td><a href="/ddbj/parser-e.html">User's manual</a></td>
         <td></td>
       </tr>
@@ -79,7 +79,7 @@ Please refer each manuals for how to install and use.
         <td>transChecker_V2.25.tar.gz</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS/transChecker_V2.25.tar.gz">FTP</a></td>
         <td>Unix/macOS</td>
-        <td>2023/09/27</td>
+        <td>2024/05/30</td>
         <td><a href="/ddbj/transchecker-e.html">User's manual</a></td>
         <td></td>
       </tr>
