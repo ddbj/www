@@ -105,8 +105,10 @@ Aspects of EST
      <a id="FeaturesSourceA" href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..300</a>
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="2310009A01"
                      /<a href="/ddbj/qualifiers-e.html#clone_lib">clone_lib</a>="full-length enriched mouse cDNA library A01"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:10090"
                      /<a href="/ddbj/qualifiers-e.html#dev_stage">dev_stage</a>="adult"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Mus musculus"
                      /<a href="/ddbj/qualifiers-e.html#sex">sex</a>="male"

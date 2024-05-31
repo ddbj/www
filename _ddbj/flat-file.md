@@ -69,9 +69,9 @@ related_pages:
      <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..450</a>
                      /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="12"
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="GT200015"
-                     /<a href="/ddbj/qualifiers.html#clone_lib">clone_lib</a>="lambda gt11 human liver cDNA (GeneTech.
-                     No.20)"
+                     /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:9606"
+                     /<a href="/ddbj/qualifiers.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers.html#map">map</a>="12p13"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="Homo sapiens"
@@ -637,9 +637,9 @@ Feature key の中で、最も頻繁に使用されるのはタンパク質の�
      source          1..450
                      /chromosome="12"
                      /clone="GT200015"
-                     /clone_lib="lambda gt11 human liver cDNA (GeneTech.
-                     No.20)"
+                     /collection_date="2007"
                      /db_xref="taxon:9606"
+                     /geo_loc_name="Japan"
                      /map="12p13"
                      /mol_type="mRNA"
                      /organism="Homo sapiens"
@@ -665,7 +665,8 @@ Feature key の中で、最も頻繁に使用されるのはタンパク質の�
 |  ```source    1..450```  |  配列の1番目から450番目までが，以下の qualifier で記述された source に由来するものであることを示します。  |
 |  ```/chromosome="12"```  |  この配列が１２番染色体由来であることを示します。  |
 |  ```/clone="GT200015"```  |  配列の得られたcloneの名称  |
-|  ```/clone_lib="lambda gt11 human liver cDNA (GeneTech. No.20)"```  |  配列の得られた clone library の名称  |
+|  ```/collection_date="2007"```  |  サンプルの採取日  |
+|  ```/geo_loc_name="Japan"```  |  サンプルの採取地  |
 |  ```/map="12p13"```  |  この配列が 12p13 に位置することを示します。  |
 |  ```/db_xref="taxon:9606"```   |  この配列が taxonomy database において ID: 9606 に対応する生物 (ヒト) 由来であることを示します。  |
 |  ```/mol_type="mRNA"```  |  mRNA に由来する配列であることを示します。  |

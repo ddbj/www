@@ -81,9 +81,10 @@ Aspects of GSS
      <a id="FeaturesSourceA" href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..423</a>
                      /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="1"
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="CIC5D1"
-                     /<a href="/ddbj/qualifiers-e.html#clone_lib">clone_lib</a>="AT01 BAC"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2001"
                      /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:3702"
-                     /<a href="/ddbj/qualifiers-e.html#ecotype">ecotype</a>="columbia"
+                     /<a href="/ddbj/qualifiers-e.html#ecotype">ecotype</a>="Columbia"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="USA"
                      /<a href="/ddbj/qualifiers-e.html#map">map</a>="between mi303 and mi259"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Arabidopsis thaliana"

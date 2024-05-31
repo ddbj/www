@@ -150,7 +150,7 @@ SARS-CoV-2 やインフルエンザウイルスなどのような高頻度に登
 
 | ```virus_type``` | ウイルスの略称、もしくは、genotype 他、タイプ区分  |
 | ```host_common_name``` | [/host](/ddbj/qualifiers.html#host) qualifier に示す宿主の通用名  |
-| ```locality_name``` | [/country](/ddbj/qualifiers.html#country) qualifier に示す採取地名より国名あるいは地域名  |
+| ```locality_name``` | [/geo_loc_name](/ddbj/qualifiers.html#geo_loc_name) qualifier に示す採取地名より国名あるいは地域名  |
 | ```sample_identifier``` | 登録者・採取者が割り当てた任意の識別子・番号  |
 | ```year``` | [/collection_date](/ddbj/qualifiers.html#collection_date) qualifier に示す採取日の年号  |
 

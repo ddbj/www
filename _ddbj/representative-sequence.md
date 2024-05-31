@@ -24,7 +24,7 @@ DDBJ (INSDC) では, <span style="color:red">基本的には、配列が同一�
 : /[haplotype](/ddbj/qualifiers.html#haplotype), /[allele](/ddbj/qualifiers.html#allele) qualifier などの記載の単一性を維持可能な配列の variation を単位とする区別
 
 観測した集団  
-: /[country](/ddbj/qualifiers.html#country), /[lat_lon](/ddbj/qualifiers.html#lat_lon), /[collection_date](/ddbj/qualifiers.html#collection_date), /[host](/ddbj/qualifiers.html#host) qualifier などの記載の単一性を維持可能なサンプリングした集団を単位とする区別
+: /[geo_loc_name](/ddbj/qualifiers.html#geo_loc_name), /[lat_lon](/ddbj/qualifiers.html#lat_lon), /[collection_date](/ddbj/qualifiers.html#collection_date), /[host](/ddbj/qualifiers.html#host) qualifier などの記載の単一性を維持可能なサンプリングした集団を単位とする区別
 
 例えば、ネコのある locus に関して日米において配列を調査した結果、下表のように３種類の haplotype で示される配列多型を観測し、haplotype 毎には同一の配列であったとします。
 この結果をDDBJに登録する場合、観測した全個体の配列、231件をそのまま登録していただいても構いませんが、それは冗長に感じられます。
@@ -68,11 +68,12 @@ DDBJ (INSDC) では, <span style="color:red">基本的には、配列が同一�
 しかし、その方法では観測した集団の情報を捉えることが困難になります。
 そのため観測した集団に関する情報と配列の双方を配列データに保持可能な件数が良いと思われます。
 下記 要領でサンプルの由来情報を source feature に記載し、６通り中、観測されていない日本における haplotype C を除く５件の配列データを登録することが好ましいと考えられます。
-さらに、もし、時間経過について観測する場合、/collection_date qualifier についても同様に考えるべきかもしれません。
+さらに、もし、時間経過について観測した場合、/collection_date qualifier についても同様に考えるべきかもしれません。
 
 
 <pre>    <a href="/ddbj/features.html#source">source</a>        1..365
-                  /<a href="/ddbj/qualifiers.html#country">country</a>="<span style="color:red">Japan</span>"
+                  /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007"
+                  /<a href="/ddbj/qualifiers.html#geo_loc_name">geo_loc_name</a>="<span style="color:red">Japan</span>"
                   /<a href="/ddbj/qualifiers.html#haplotype">haplotype</a>="<span style="color:green">A</span> [<span style="color:blue">75</span> in <span style="color:blue">113</span>]"
                   /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
                   /<a href="/ddbj/qualifiers.html#organism">organism</a>="Felis catus"

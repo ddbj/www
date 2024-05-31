@@ -37,6 +37,8 @@ Use the sequence with the same direction of rRNA transcripts, NOT complementary 
 <pre><code>DEFINITION  Vibrio halioticoli IAM 14597 gene for 16S rRNA, partial sequence.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..1471</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Vibrio halioticoli"
                      /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="IAM 14597" 
@@ -51,6 +53,8 @@ Use the sequence with the same direction of rRNA transcripts, NOT complementary 
 <pre><code>DEFINITION  Sporobolomyces ruber JCM 6884 gene for 18S rRNA, partial sequence. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..2072</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Sporobolomyces ruber"
                      /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="JCM 6884" 
@@ -67,6 +71,8 @@ Use the sequence with the same direction of rRNA transcripts, NOT complementary 
             ITS1, 5.8S rRNA, ITS2, 28S rRNA, partial and complete sequence.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..597</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="MUMH29s"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Microsphaera trifolii var. trifolii"
@@ -90,6 +96,8 @@ If each feature (rRNA, ITS) location is not clear, following annotation can be d
 
 <pre><code>FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..597</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="MUMH29s"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Microsphaera trifolii var. trifo lii"
@@ -111,8 +119,9 @@ In the case of IGS, input the sequence with the order of adjacent gene names is 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..2646</a>
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="pSIR012"
-                     /<a href="/ddbj/qualifiers-e.html#country">country</a>="Japan"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#cultivar">cultivar</a>="Shimokatsugi"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Setaria italica" 
      <a href="/ddbj/features-e.html#rRNA">rRNA</a>            <a href="/ddbj/location-e.html">&lt;1..493</a>
@@ -126,7 +135,8 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Acer distylum AX-1 chloroplast DNA, psbA-trnH IGS. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..264</a>
-                     /<a href="/ddbj/qualifiers-e.html#country">country</a>="Japan"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="AX-1"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organelle">organelle</a>="plastid:chloroplast"
@@ -139,7 +149,8 @@ FEATURES             Location/Qualifiers
             psbA-trnH IGS, tRNA-His. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location.html">1..466</a>
-                     /<a href="/ddbj/qualifiers-e.html#country">country</a>="Japan"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="AY-b"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organelle">organelle</a>="plastid:chloroplast"
@@ -167,6 +178,8 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Homo sapiens AQP9 mRNA for aquaporin 9, complete cds. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..2878</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens"
                      /<a href="/ddbj/qualifiers-e.html#tissue_type">tissue_type</a>="liver" 
@@ -184,6 +197,8 @@ FEATURES             Location/Qualifiers
             complete cds.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..1025</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Aspergillus oryzae"
                      /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="RIB128" 
@@ -200,7 +215,9 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Cynops pyrrhogaster CpTbx3 premature mRNA, partial cds.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..5170</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#dev_stage">dev_stage</a>="gastrula"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="transcribed RNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Cynops pyrrhogaster"
                      /<a href="/ddbj/qualifiers-e.html#tissue_type">tissue_type</a>="embryo" 
@@ -219,7 +236,9 @@ FEATURES             Location/Qualifiers
             exon 1 and promoter region.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..1300</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#dev_stage">dev_stage</a>="4-8 weeks old"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Mus musculus"
                      /<a href="/ddbj/qualifiers-e.html#sex">sex</a>="female"
@@ -238,6 +257,8 @@ FEATURES             Location/Qualifiers
             flanking region.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..1614</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Mus musculus"
                      /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="129SV" 
@@ -251,6 +272,8 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Homo sapiens pseudogene, necdin. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..2285</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens" 
      <a href="/ddbj/features-e.html#cds">CDS</a>             <a href="/ddbj/location-e.html">&lt;1..1319</a>
@@ -266,6 +289,8 @@ DEFINITION  Homo sapiens BAP2 mRNA for BAI-associated protein 2 alpha,
 ACCESSION   XA000001 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..3168</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens" 
      <a href="/ddbj/features-e.html#cds">CDS</a>             <a href="/ddbj/location-e.html">94..1659</a>
@@ -282,6 +307,8 @@ DEFINITION  Homo sapiens BAP2 mRNA for BAI-associated protein 2 beta,
 ACCESSION   XA000002 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..2129</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens" 
      <a href="/ddbj/features-e.html#cds">CDS</a>             <a href="/ddbj/location-e.html">94..1659</a>
@@ -303,6 +330,8 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers-e.html#cell_type">cell_type</a>="B-lymphoblastoid"
                      /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="21"
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="D6B5"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#map">map</a>="21q22.3"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens" 
@@ -345,6 +374,8 @@ FEATURES             Location/Qualifiers
             dehydrogenase subunit 4L, complete cds.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..400</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organelle">organelle=</a>"mitochondrion"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Beta vulgaris"
@@ -375,7 +406,8 @@ FEATURES             Location/Qualifiers
             genome.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..9430</a>
-                     /<a href="/ddbj/qualifiers-e.html#country">country</a>="Japan"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="95TNIH047"
                      /<a href="/ddbj/qualifiers-e.html#isolation_source">isolation_source</a>="peripheral blood mononuclear 
                      cell of male patient"
@@ -404,6 +436,8 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Mus musculus SAMP8 mitochondrial DNA, complete genome. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..16299</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organelle">organelle</a>="mitochondrion"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Mus musculus"
@@ -442,6 +476,8 @@ FEATURES             Location/Qualifiers
             allele: HLA-A2(A*0201V3). 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..546</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#note">note</a>="HLA-A2(A*0201V3)/24,B35/60,DRB1*1501/1202"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens" 
@@ -456,10 +492,12 @@ FEATURES             Location/Qualifiers
 
 ### B13) trans\_splicing  {#B13}
 
-<pre><code>DEFINITION  Psilotum nudum Kingyoku chloroplast DNA, complete genome.
+<pre><code>DEFINITION  Psilotum nudum cv. Kingyoku chloroplast DNA, complete genome.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..138829</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#cultivar">cultivar</a>="Kingyoku"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organelle">organelle</a>="plastid:chloroplast"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Psilotum nudum"
@@ -493,6 +531,8 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Homo sapiens NMS mRNA for prepro-neuromedin S, complete cds.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..485</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens"
      <a href="/ddbj/features-e.html#cds">CDS</a>             <a href="/ddbj/location-e.html">8..469</a>
@@ -517,7 +557,7 @@ FEATURES             Location/Qualifiers
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..10723</a>
                      /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2001"
-                     /<a href="/ddbj/qualifiers-e.html#country">country</a>="Dominican Republic"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Dominican Republic"
                      /<a href="/ddbj/qualifiers-e.html#host">host</a>="Homo sapiens"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic RNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Dengue virus 2"
@@ -561,6 +601,8 @@ In the follwoing cases or some, you should use <a href="/ddbj/features-e.html#mi
             partial sequence.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..555</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Aspergillus oryzae"
                      /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="RIB256" 
@@ -587,7 +629,9 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="2310009B01"
                      /<a href="/ddbj/qualifiers-e.html#clone_lib">clone_lib</a>="RIKEN full-length enriched mouse tongue cDNA 
                      library A502"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#dev_stage">dev_stage</a>="adult"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Mus musculus"
                      /<a href="/ddbj/qualifiers-e.html#sex">sex</a>="male"
@@ -605,10 +649,12 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..532</a>
                      /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="1"
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="YAC clone CIC5D1"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#ecotype">ecotype</a>="Columbia" 
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#map">map</a>="between mi303 and mi259"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Arabidopsis thaliana"
-                     /<a href="/ddbj/qualifiers-e.html#ecotype">ecotype</a>="Columbia" 
 </code></pre>
 
 ### C03) marker (unknown function)  {#C03}
@@ -620,6 +666,8 @@ FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..200</a>
                      /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="1"
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="AA12345"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Sus scrofa"
      <a href="/ddbj/features-e.html#primer_bind">primer_bind</a>     <a href="/ddbj/location-e.html">1..20</a>
@@ -638,6 +686,8 @@ FEATURES             Location/Qualifiers
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..300</a>
                      /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="11"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#map">map</a>="11p"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Bos taurus" 
@@ -657,6 +707,8 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Paralichthys olivaceus DNA, microsatellite: Poli1TUF.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..222</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Paralichthys olivaceus" 
      <a href="/ddbj/features-e.html#repeat_region">repeat_region</a>   <a href="/ddbj/location-e.html">25..94</a>
@@ -670,6 +722,8 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Escherichia coli transposon Tn2000 DNA, complete sequence. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..5000</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Escherichia coli" 
      <a href="/ddbj/features-e.html#mobile_element">mobile_element</a>  <a href="/ddbj/location-e.html">1..5000</a>
@@ -696,6 +750,8 @@ FEATURES             Location/Qualifiers
             sequence.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..2000</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Streptomyces coelicolor"
                      /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="A456" 
@@ -731,7 +787,9 @@ See also [environmental samples](/ddbj/env-e.html).
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..1475</a>
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="4-11"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#environmental_sample">environmental_sample</a>
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#isolation_source">isolation_source</a>="solid waste compost"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="uncultured bacterium" 
@@ -745,6 +803,8 @@ FEATURES             Location/Qualifiers
             dehydrogenase, partial cds. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..245</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Eirene sp. EML1"
                      /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="EML1" 
@@ -762,6 +822,8 @@ FEATURES             Location/Qualifiers
             cds.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..2582</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Rhodococcus rhodochrous"
                      /<a href="/ddbj/qualifiers-e.html#plasmid">plasmid</a>="pRC4"
@@ -785,6 +847,8 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Cloning vector pAP3neo DNA, complete sequence. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source </a>         <a href="/ddbj/location-e.html">1..5350</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="missing:synthetic construct"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="missing:synthetic construct"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="other DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Cloning vector pAP3neo" 
      <a href="/ddbj/features-e.html#rep_origin">rep_origin</a>      <a href="/ddbj/location-e.html">572..1452</a>
@@ -822,7 +886,9 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Synthetic construct gene for Rai-chu 101, complete cds. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..2223</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="missing:synthetic construct"
                      /<a href="/ddbj/qualifiers-e.html#focus">focus</a>
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="missing:synthetic construct"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="other DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="synthetic construct" 
      <a href="/ddbj/features-e.html#cds">CDS</a>             <a href="/ddbj/location-e.html">1..2223</a>
@@ -834,10 +900,14 @@ FEATURES             Location/Qualifiers
                      /<a href="/ddbj/qualifiers-e.html#transl_table">transl_table</a>=11
                      /<a href="/ddbj/qualifiers-e.html#translation">translation</a>="--- omitted ---" 
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">724..1239</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="missing:synthetic construct"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="missing:synthetic construct"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>=other DNA""
                      /<a href="/ddbj/qualifiers-e.html#note">note</a>="derived from human H-Ras cDNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens" 
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1258..1500</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="missing:synthetic construct"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="missing:synthetic construct"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>=other DNA""
                      /<a href="/ddbj/qualifiers-e.html#note">note</a>="derived from human Raf cDNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens" 
@@ -848,6 +918,8 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Arabidopsis thaliana miR840 miRNA.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..21</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="transcribed RNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Arabidopsis thaliana"
      <a href="/ddbj/features-e.html#ncRNA">ncRNA</a>           <a href="/ddbj/location-e.html">1..21</a>
@@ -860,6 +932,8 @@ FEATURES             Location/Qualifiers
 <pre><code>DEFINITION  Arabidopsis thaliana miR840-843 polycistronic noncoding RNA.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..2223</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="transcribed RNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Arabidopsis thaliana"
      <a href="/ddbj/features-e.html#precursor_RNA">precursor_RNA</a>   <a href="/ddbj/location-e.html">1..1342</a>
@@ -882,6 +956,8 @@ See also [representative submissions of identical sequences for variation studie
             partial cds. 
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..1000</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens" 
      <a href="/ddbj/features-e.html#cds">CDS</a>             <a href="/ddbj/location-e.html">&lt;1..&gt;1000</a>
@@ -903,6 +979,8 @@ FEATURES             Location/Qualifiers
 <pre><code>
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..426</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens"
      <a href="/ddbj/features-e.html#variation">variation</a>       <a href="/ddbj/location-e.html">260</a>
@@ -934,6 +1012,8 @@ ORIGIN
             allele: HLA-A*2601V1.
 FEATURES             Location/Qualifiers
      <a href="/ddbj/features-e.html#source">source</a>          <a href="/ddbj/location-e.html">1..1022</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#note">note</a>="HLA-A*2601V1/2402,B*4001/4002,DRB1*0901/1401,
                      TBC191371"

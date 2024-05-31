@@ -31,10 +31,8 @@ EST 登録における注意事項
     ([mating\_type](/ddbj/qualifiers.html#mating_type) または
     [sex](/ddbj/qualifiers.html#sex))、などの qualifier の記載を推奨します。
   - 原則として、Sanger 法により決定された配列を対象しています。  
-    いわゆる次世代シークエンサにより読まれた配列は [DDBJ Sequence Read
-    Archive](/dra/index.html) に ご登録ください。
-  - EST assemble に相当する配列は [TSA: Transcriptome Shotgun
-    Assembly](/ddbj/tsa.html) として登録を受け付けます。
+    いわゆる次世代シークエンサにより読まれた配列は [DDBJ Sequence Read Archive](/dra/index.html) に ご登録ください。
+  - EST assemble に相当する配列は [TSA: Transcriptome Shotgun Assembly](/ddbj/tsa.html) として登録を受け付けます。
 
 ## DDBJ フォーマットの例  {#flat-file}
 
@@ -90,8 +88,10 @@ EST エントリの特徴
      <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..300</a>
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="2310009A01"
                      /<a href="/ddbj/qualifiers.html#clone_lib">clone_lib</a>="full-length enriched mouse cDNA library A01"
+                     /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:10090"
                      /<a href="/ddbj/qualifiers.html#dev_stage">dev_stage</a>="adult"
+                     /<a href="/ddbj/qualifiers.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="Mus musculus"
                      /<a href="/ddbj/qualifiers.html#sex">sex</a>="male"

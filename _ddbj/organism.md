@@ -110,7 +110,7 @@ Category は "Artificially constructed or synthesized sequence" となります�
 [/isolate](/ddbj/qualifiers.html#isolate) (または [/strain](/ddbj/qualifiers.html#strain)、
 [/serotype](/ddbj/qualifiers.html#serotype)、
 [/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、
-[/country](/ddbj/qualifiers.html#country) (採取した地名)、
+[/geo_loc_name](/ddbj/qualifiers.html#geo_loc_name) (採取した地名)、
 [/host](/ddbj/qualifiers.html#host) などを各 qualifier に記載してください。    
 下記、生物名記載の各論より、[ウイルス](#virus)について ご参照ください。    
 病原性ウイルスの場合には Category で "Pathogenic virus" を選択してください。    
@@ -132,7 +132,7 @@ Category は "Obtained by direct molecular isolation from environmental sample" 
 [/isolation_source](/ddbj/qualifiers.html#isolation_source)、
 [/isolate](/ddbj/qualifiers.html#isolate) (または [/clonen](/ddbj/qualifiers.html#clone)、
 [/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日)、
-[/country](/ddbj/qualifiers.html#country) (採取した地名)、
+[/geo_loc_name](/ddbj/qualifiers.html#geo_loc_name) (採取した地名)、
 [/host](/ddbj/qualifiers.html#host) などを各 qualifier に記載してください。    
 
 
@@ -204,13 +204,13 @@ strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 <pre><code>Influenza A virus</code></pre>
 
 下記の例のように [/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日), 
-[/country](/ddbj/qualifiers.html#country) (採取した地名), 
+[/geo_loc_name](/ddbj/qualifiers.html#geo_loc_name) (採取した地名), 
 [/host](/ddbj/qualifiers.html#host), 
 [/isolate](/ddbj/qualifiers.html#isolate) (or [/strain](/ddbj/qualifiers.html#strain)), 
 [/serotype](/ddbj/qualifiers.html#serotype) などの該当 qualifier をあわせて source feature に記載します。
 
-<pre><code>                   /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Tokyo"
-                   /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
+<pre><code>                   /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007-11-01"
+                   /<a href="/ddbj/qualifiers.html#geo_loc_name">geo_loc_name</a>="Japan:Tokyo"
                    /<a href="/ddbj/qualifiers.html#host">host</a>="Gallus gallus"
                    /<a href="/ddbj/qualifiers.html#isolate">isolate</a>="A/chicken/Tokyo/2007"
                    /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="viral cRNA"
@@ -433,18 +433,20 @@ uncultured Aspergillaceae</code></pre>
 [/environmental_sample](/ddbj/qualifiers.html#environmental_sample) qualifier、および、
 [/isolation_source](/ddbj/qualifiers.html#isolation_source) qualifier などでサンプリングの過程・状態などをあわせて source feature に記載します。     
 [/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日) と 
-[/country](/ddbj/qualifiers.html#country) (採取した地名)、
+[/geo_loc_name](/ddbj/qualifiers.html#geo_loc_name) (採取した地名)、
 [/host](/ddbj/qualifiers.html#host) (宿主) の記載も重要です。
 [識別子](/ddbj/identifiers.html) として、[/isolate](/ddbj/qualifiers.html#isolate) または [/clone](/ddbj/qualifiers.html#clone) qualifier を記載します。
 
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#clone">clone</a>="4-11"
+                     /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
+                     /<a href="/ddbj/qualifiers.html#geo_loc_name">geo_loc_name</a>="Japan: Shizuoka"
                      /<a href="/ddbj/qualifiers.html#isolation_source">isolation_source</a>="PCR-derived sequence from sediment"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="uncultured Acetobacter sp."</code></pre>
 
-taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja)) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
+taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja )) から検索不能な場合、登録時に以下の参考情報を可能な範囲でお知らせください。
 
 ---
 **taxonomy database 登録申請のための参考情報**

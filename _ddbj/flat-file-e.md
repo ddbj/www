@@ -74,9 +74,9 @@ to describe the biological nature such as gene function and other property of th
      <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..450</a>
                      /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="12"
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="GT200015"
-                     /<a href="/ddbj/qualifiers-e.html#clone_lib">clone_lib</a>="lambda gt11 human liver cDNA (GeneTech.
-                     No.20)"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:9606"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#map">map</a>="12p13"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens"
@@ -614,9 +614,9 @@ One of the most frequently used feature key is "CDS" to describe coding sequence
      source          1..450
                      /chromosome="12"
                      /clone="GT200015"
-                     /clone_lib="lambda gt11 human liver cDNA (GeneTech.
-                     No.20)"
+                     /collection_date="2007"
                      /db_xref="taxon:9606"
+                     /geo_loc_name="Japan"
                      /map="12p13"
                      /mol_type="mRNA"
                      /organism="Homo sapiens"
@@ -642,7 +642,8 @@ Identifies the biological source of the specified span of the sequence.
 |  ```source    1..450```  |  The region from 1st to 450th base of the sequence is derived from the source described with following qualifiers.  |
 |  ```/chromosome="12"```  |  The sequence is obtained from chromosome 12.  |
 |  ```/clone="GT200015"```  |  The clone name which the sequence is obtained.  |
-|  ```/clone_lib="lambda gt11 human liver cDNA (GeneTech. No.20)"```  |  The clone library name which the sequence is obtained. |
+|  ```/collection_date="2007"```  |  The collection date of the sample. |
+|  ```/geo_loc_name="Japan"```  |  The collection site of the sample. |
 |  ```/map="12p13"```  |  The sequence is located on 12p13.  |
 |  ```/db_xref="taxon:9606"```   |  The sequence is derived from a organism correspond to taxonomy database ID: 9606 (human). |
 |  ```/mol_type="mRNA"```  |  The sequence is derived from mRNA.  |

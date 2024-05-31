@@ -154,7 +154,7 @@ For frequently submitted pathogenic viruses like SARS-CoV-2 and Influenza virus,
 
 | ```virus_type``` | the abbreviated name, genotype or type of the virus |
 | ```host_common_name``` | the common name of the viral host organism indicated in [/host](/ddbj/qualifiers-e.html#host) qualifier |
-| ```locality_name``` | the name of country or region of the collection site indicated in [/country](/ddbj/qualifiers-e.html#country) qualifier |
+| ```locality_name``` | the name of country or region of the collection site indicated in [/geo_loc_name](/ddbj/qualifiers-e.html#geo_loc_name) qualifier |
 | ```sample_identifier``` | any identifiers/numbers assigned by the submitters or the collectors |
 | ```year``` | the year of the sampling date indicated in [/collection_date](/ddbj/qualifiers-e.html#collection_date) qualifier |
 

@@ -16,8 +16,8 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-Since 2016, INSDC has accepted sequence data including 16S rRNA or
-some other targeted loci mainly to be clustered into operational
+Since 2016, INSDC has accepted sequence data including 16S rRNA or 
+some other targeted loci mainly to be clustered into operational 
 taxonomic unit as Targeted Locus Study (TLS) data type.
 
 With regard to comprehensive analysis of marker sequences by using NGS, 
@@ -29,30 +29,24 @@ So, please consider if you have to submit TLS data to DDBJ or not.
 See [the list of publicized TLS
 data](https://ddbj.nig.ac.jp/public/ddbj_database/tls/TLS_ORGANISM_LIST.html).
 
-You can submit TSA data to DDBJ through [Mass Submission System
-(MSS)](/ddbj/mss-e.html).
+You can submit TSA data to DDBJ through [Mass Submission System (MSS)](/ddbj/mss-e.html).
 
 Notes on the TLS data submission
 : 
   - Prior to TLS data submission, it is required to submit to
-    [BioProject Database](/bioproject/index-e.html) and [BioSample
-    Database](/biosample/index-e.html).
-  - It is strongly recommended that the TLS data submission with the
-    original sequence data of primary sequences are classified into
+    [BioProject Database](/bioproject/index-e.html) and [BioSample Database](/biosample/index-e.html).
+  - It is strongly recommended that the TLS data submission with the original sequence data of primary sequences are classified into
     [DDBJ Read Archive](/dra/index-e.html).
-  - Remove low quality reads and chimeric sequences before
-    submission.
+  - Remove low quality reads and chimeric sequences before submission.
 
 ## Sample flat file  {#flat-file}
 
 Aspects of TLS
 
-  - Basically, each TLS sequence submitted to DDBJ is assigned an
-    [accession number](#AccessionA) that consists of 4 alphabet
-    characters and 8 digits.
+  - Basically, each TLS sequence submitted to DDBJ is assigned an 
+    [accession number](#AccessionA) that consists of 4 alphabet characters and 8 digits.
   - "TLS:" is shown at the beginning of [DEFINITION](#DefinitionA) line.
-  - "TLS" and "Targeted Locus Study" are indicated in
-    [KEYWORDS](#KeywordsA) line.
+  - "TLS" and "Targeted Locus Study" are indicated in [KEYWORDS](#KeywordsA) line.
 
 <!-- end list -->
 
@@ -86,9 +80,10 @@ Aspects of TLS
 <a id="FeaturesA" href="/ddbj/flat-file-e#FeaturesB">FEATURES</a>             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location-e.html">1..301</a>
                      /<a href="/ddbj/qualifiers-e.html#altitude">altitude</a>="-20 m"
-                     /<a href="/ddbj/qualifiers-e.html#db_xref">country</a>="Pacific Ocean"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:77133"
                      /<a href="/ddbj/qualifiers-e.html#environmental_sample">environmental_sample</a>
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Pacific Ocean"
                      /<a href="/ddbj/qualifiers-e.html#isolation_source">isolation_source</a>="marine water"
                      /<a href="/ddbj/qualifiers-e.html#lat_lon">lat_lon</a>="29.3116 N 148.6778 E"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"

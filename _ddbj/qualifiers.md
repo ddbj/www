@@ -275,6 +275,8 @@ INSDC では 'Mmm' (月の略記) を含む "21-Oct-1952" のような旧書式�
 
 ### /country<a name="country"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#country)</span>
 
+<span class="red">2024 年 6 月より /country qualifier は</span> <a href="#geo_loc_name">/geo_loc_name</a> <span class="red">qualifier に名称変更されます。</span>    
+
 
 定義
 : 疫学的、あるいは、個体群研究において配列サンプルを得た地域を 政治上の国、大洋、または、海の名称で示し、続けて地方・地域を示します。     
@@ -291,7 +293,6 @@ missing: lab stock</pre>
 
 備考
 : 国名は[国名リスト](/ddbj/country.html)から選択します。     
-2024 年 6 月より /country qualifier は <a href="#geo_loc_name">/geo_loc_name</a> qualifier に名称変更されます。
 
 ### /cultivar<a name="cultivar"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#cultivar)</span>
 

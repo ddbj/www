@@ -260,6 +260,9 @@ Though INSDC still keep and accept old value formats that make use of 'Mmm' (mon
 
 ### /country<a name="country"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#country)</span>
 
+<span class="red">The /country qualifier will be renamed to</span> <a href="#geo_loc_name">/geo_loc_name</a> <span class="red">from June 2024.</span>    
+
+
 Definition 
 : locality of isolation of the sequenced sample indicated in terms of political names for nations, oceans or seas, followed by regions and localities     
 If it is difficult to describe the values for some reason, the submitter should indicate the reason as [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) .    
@@ -275,7 +278,6 @@ missing: lab stock</pre>
 
 Comment     
 : any &lt;country&gt; from [the country list](/ddbj/country-e.html).    
-The /country qualifier will be renamed to <a href="#geo_loc_name">/geo_loc_name</a> from June 2024.
 
 
 ### /cultivar<a name="cultivar"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#cultivar)</span>

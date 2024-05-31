@@ -96,9 +96,10 @@ Aspects of environmental samples
 <a id="FeaturesA" href="/ddbj/flat-file-e#FeaturesB">FEATURES</a>             Location/Qualifiers
      <a id="FeaturesSourceA" href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..450</a>
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="M12-34"
-                     /<a href="/ddbj/qualifiers-e.html#country">country</a>="Japan:Osaka"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /db_xref="taxon:114714"
                      /<a href="/ddbj/qualifiers-e.html#environmental_sample">environmental_sample</a>
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan: Osaka"
                      /<a href="/ddbj/qualifiers-e.html#isolation_source">isolation_source</a>="PCR-derived sequence from sediment"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="uncultured Acetobacter sp."

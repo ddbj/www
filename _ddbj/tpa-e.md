@@ -141,8 +141,10 @@ Aspects of TPA on DDBJ flat file
             901-2000            ZZ000002.1         25001-26100         c
             1451-1550           ZZ000003.1         201-300
 <a id="FeaturesA" href="/ddbj/flat-file-e#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..2000</a> 
+     <a id="FeaturesSourceA" href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..2000</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:9606"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens"
      <a href="/ddbj/features-e.html#CDS">CDS</a>             <a href="/ddbj/location-e.html">join(153..200,501..600,1451..1500)</a> 

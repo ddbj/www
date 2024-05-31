@@ -80,8 +80,10 @@ WGS エントリの特徴
 <a id="CommentA" href="/ddbj/flat-file#CommentB">COMMENT</a>     Whole genome shotgun sequencing project.
 <a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
      <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..123456</a>
-                     /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:9606"
                      /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="7"
+                     /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007"
+                     /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:9606"
+                     /<a href="/ddbj/qualifiers.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="Homo sapiens"
                      /<a href="/ddbj/qualifiers.html#submitter_seqid">submitter_seqid</a>="A01234B01"

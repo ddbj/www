@@ -91,7 +91,9 @@ In case of citing [DDBJ Read Archive](/dra/index-e.html)
             ##Assembly-Data-END##            
 <a id="FeaturesA" href="/ddbj/flat-file-e#FeaturesB">FEATURES</a>             Location/Qualifiers
      <a id="FeaturesSourceA" href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..800</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:10090"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan: Shizuoka"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="transcribed RNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Mus musculus"
                      /<a href="/ddbj/qualifiers-e.html#submitter_seqid">submitter_seqid</a>="contig1_1"
@@ -142,7 +144,9 @@ In case of citing [EST](/ddbj/est-e.html)
             1451-1550           ZZ000003.1         201-300
 <a href="/ddbj/flat-file-e#FeaturesB">FEATURES</a>             Location/Qualifiers
      <a href="/ddbj/flat-file-e#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..800</a>
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#db_xref">db_xref</a>="taxon:9606"
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="transcribed RNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Homo sapiens"
      <a href="/ddbj/features.html#cds">CDS</a>             <a href="/ddbj/location-e.html">73..669</a>

@@ -97,9 +97,10 @@ phytoplasmas といった対象は環境サンプルとは扱いません。
 <a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
      <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..450</a>
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="M12-34"
-                     /<a href="/ddbj/qualifiers.html#country">country</a>="Japan:Osaka"
+                     /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007"
                      /db_xref="taxon:114714"
                      /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
+                     /<a href="/ddbj/qualifiers.html#geo_loc_name">geo_loc_name</a>="Japan: Osaka"
                      /<a href="/ddbj/qualifiers.html#isolation_source">isolation_source</a>="PCR-derived sequence from sediment"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="uncultured Acetobacter sp."

@@ -120,7 +120,7 @@ Please include the values of corresponding qualifiers,
 [/isolate](/ddbj/qualifiers-e.html#isolate) (or [/strain](/ddbj/qualifiers-e.html#strain)), 
 [/serotype](/ddbj/qualifiers-e.html#serotype), 
 [/collection_date](/ddbj/qualifiers-e.html#collection_date),
-[/country](/ddbj/qualifiers-e.html#country), 
+[/geo_loc_name](/ddbj/qualifiers-e.html#geo_loc_name), 
 [/host](/ddbj/qualifiers-e.html#host) etc., respectively.    
 See also the [virus](#virus) section.     
 In cases of pathogenic viruses, select "Pathogenic viruses" in the menu box of [Category].    
@@ -143,7 +143,7 @@ Please include the values of corresponding qualifiers,
 [/isolation_source](/ddbj/qualifiers-e.html#isolation_source), 
 [/isolate](/ddbj/qualifiers-e.html#isolate) (or [/clone](/ddbj/qualifiers-e.html#clone), 
 [/collection_date](/ddbj/qualifiers-e.html#collection_date), 
-[/country](/ddbj/qualifiers-e.html#country), 
+[/geo_loc_name](/ddbj/qualifiers-e.html#geo_loc_name), 
 [/host](/ddbj/qualifiers-e.html#host) etc., respectively.    
 
 
@@ -215,7 +215,7 @@ Describe a strain name in the [/strain](/ddbj/qualifiers-e.html#strain) qualifie
 
 
 ### virus  {#virus}
-For viruses, basically, we also accept scientific names, following [the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/).    
+For viruses, basically, we also accept scientific names, following [the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/ ).    
 See also the virus section on [Identifiers](/ddbj/identifiers-e.html#virus).     
 <span class="red">By 2017, we used informal names for frequently submitted pathogenic viruses including their strain names and serotypes in the description of organism name. 
 However, the rule has been discontinued for the future submissions.</span>    
@@ -226,15 +226,15 @@ Example
 
 The qualifiers corresponding to 
 [/collection_date](/ddbj/qualifiers-e.html#collection_date),
-[/country](/ddbj/qualifiers-e.html#country), 
+[/geo_loc_name](/ddbj/qualifiers-e.html#geo_loc_name), 
 [/host](/ddbj/qualifiers-e.html#host), 
 [/isolate](/ddbj/qualifiers-e.html#isolate) (or [/strain](/ddbj/qualifiers-e.html#strain)) and 
 [/serotype](/ddbj/qualifiers-e.html#serotype) are required for the source feature.
 
 Please describe them with appropriate qualifiers as below example.
 
-<pre><code>                   /<a href="/ddbj/qualifiers-e.html#country">country</a>="Japan:Tokyo"
-                   /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007-11-01"
+<pre><code>                   /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007-11-01"
+                   /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan:Tokyo"
                    /<a href="/ddbj/qualifiers-e.html#host">host</a>="Gallus gallus"
                    /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="A/chicken/Tokyo/2007"
                    /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="viral cRNA"
@@ -466,20 +466,22 @@ In cases of environmental samples, the qualifier,
 [/environmental_sample](/ddbj/qualifiers-e.html#environmental_sample), is required for source feature.     
 Also, [/isolation_source](/ddbj/qualifiers-e.html#isolation_source) and some other qualifiers should be used to describe the process and conditions of sample isolation.    
 The qualifiers, [/collection_date](/ddbj/qualifiers-e.html#collection_date), 
-[/country](/ddbj/qualifiers-e.html#country) and 
+[/geo_loc_name](/ddbj/qualifiers-e.html#geo_loc_name) and 
 [/host](/ddbj/qualifiers-e.html#host) 
 are also useful.    
 For the [identifier](/ddbj/identifiers-e.html), use [/isolate](/ddbj/qualifiers-e.html#isolate) qualifier.    
 When you cloned the sample sequence, use [/clone](/ddbj/qualifiers-e.html#clone) qualifier, instead of /isolate qualifier.    
 
 <pre><code>                     /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="4-11"
+                     /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers-e.html#environmental_sample">environmental_sample</a>
+                     /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="Japan: Shizuoka"
                      /<a href="/ddbj/qualifiers-e.html#isolation_source">isolation_source</a>="PCR-derived sequence from sediment"
                      /<a href="/ddbj/qualifiers-e.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="uncultured Acetobacter sp."</code></pre>
 
 If the name is not available on taxonomy database 
-([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
+([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en )), please tell us
 any of following items during your sequence submission. 
 
 ---
@@ -521,8 +523,8 @@ In case of MAG, the qualifiers,
 are required for source feature like as other environmental samples.  
 Additionally, the [/metagenome_source](/ddbj/qualifiers-e.html#metagenome_source) qualifier is also required for source feature of MAG.  
 For [/metagenome_source](/ddbj/qualifiers-e.html#metagenome_source) qualifier, please input some of operative 
-[metagenome taxonomy nodes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169) reflecting the resource of the environmental sample, e.g. "soil metagenome" .  
-See [NCBI site](https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes) about usages of metagenome names. 
+[metagenome taxonomy nodes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169 ) reflecting the resource of the environmental sample, e.g. "soil metagenome" .  
+See [NCBI site](https://www.ncbi.nlm.nih.gov/biosample/docs/organism/#metagenomes ) about usages of metagenome names. 
 
 ---
 **Useful items for application of organism names to taxonomy database**
@@ -548,7 +550,7 @@ Examples
 Expression vector pAMP</code></pre>
 
 If the name is not available on taxonomy database
-([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en)), please tell us
+([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=en )), please tell us
 any of following items during your sequence submission.
 
 ---

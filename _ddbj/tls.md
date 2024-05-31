@@ -32,16 +32,14 @@ TLS 登録における注意事項
 :     
   - 登録に先立ち、[BioProject Database](/bioproject/index.html) と
     [BioSample Database](/biosample/index.html) への登録が必要です。
-  - 解析元となる配列データが [DDBJ Read Archive](/dra/index.html)
-    に登録されていることが推奨されます。
+  - 解析元となる配列データが [DDBJ Read Archive](/dra/index.html) に登録されていることが推奨されます。
   - 登録前に low quality reads, chimeric sequences の除去を行っておいてください。
 
 ## DDBJ フォーマットの例  {#flat-file}
 
 TLS エントリの特徴
 
-  - [アクセッション番号](#AccessionA) は アルファベット 4 文字と数字 8
-    桁 を基本とします。
+  - [アクセッション番号](#AccessionA) は アルファベット 4 文字と数字 8 桁 を基本とします。
   - [DEFINITION](#DefinitionA) 行は "TLS:" で始まります。
   - [KEYWORDS](#KeywordsA) 行には "TLS" と "Targeted Locus Study" が表示されます。
 
@@ -77,9 +75,10 @@ TLS エントリの特徴
 <a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
      <a href="/ddbj/features.html#source">source</a>          <a href="/ddbj/location.html">1..301</a>
                      /<a href="/ddbj/qualifiers.html#altitude">altitude</a>="-20 m"
-                     /<a href="/ddbj/qualifiers.html#db_xref">country</a>="Pacific Ocean"
+                     /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:77133"
                      /<a href="/ddbj/qualifiers.html#environmental_sample">environmental_sample</a>
+                     /<a href="/ddbj/qualifiers.html#geo_loc_name">geo_loc_name</a>="Pacific Ocean"
                      /<a href="/ddbj/qualifiers.html#isolation_source">isolation_source</a>="marine water"
                      /<a href="/ddbj/qualifiers.html#lat_lon">lat_lon</a>="29.3116 N 148.6778 E"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"

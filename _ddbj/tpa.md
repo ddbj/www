@@ -124,8 +124,10 @@ TPA とプライマリーエントリの配列アラインメントに関する�
             901-2000            ZZ000002.1         25001-26100         c
             1451-1550           ZZ000003.1         201-300
 <a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..2000</a> 
+     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..2000</a>
+                     /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:9606"
+                     /<a href="/ddbj/qualifiers.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="genomic DNA"
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="Homo sapiens"
      <a href="/ddbj/features.html#CDS">CDS</a>             <a href="/ddbj/location.html">join(153..200,501..600,1451..1500)</a> 

@@ -36,7 +36,7 @@ qualifiers.
 
 sampled population  
 : a unit of obserbed samples that can keep unique descriptions of
-/[country](/ddbj/qualifiers-e.html#country ),
+/[geo_loc_name](/ddbj/qualifiers-e.html#geo_loc_name ),
 /[lat_lon](/ddbj/qualifiers-e.html#lat_lon ),
 /[collection_date](/ddbj/qualifiers-e.html#collection_date ),
 /[host](/ddbj/qualifiers-e.html#host) and/or some other qualifiers.
@@ -92,7 +92,8 @@ to DDBJ in following descriptions for source features, respectively.
 Furthermore, when observing at the passage of time, you may like to consider about the /collection_date qualifier as well.   
 
 <pre>    <a href="/ddbj/features-e.html#source">source</a>        1..365
-                  /<a href="/ddbj/qualifiers-e.html#country">country</a>="<span style="color:red">Japan</span>"
+                  /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
+                  /<a href="/ddbj/qualifiers-e.html#geo_loc_name">geo_loc_name</a>="<span style="color:red">Japan</span>"
                   /<a href="/ddbj/qualifiers-e.html#haplotype">haplotype</a>="<span style="color:green">A</span> [<span style="color:blue">75</span> in <span style="color:blue">113</span>]"
                   /mol_type="genomic DNA"
                   /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Felis catus"

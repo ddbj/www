@@ -79,8 +79,10 @@ HTC/full length insert cDNA の特徴
      <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..1450</a>
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="2310009A01"
                      /<a href="/ddbj/qualifiers.html#clone_lib">clone_lib</a>="full-length enriched mouse cDNA library A01"
+                     /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007"
                      /<a href="/ddbj/qualifiers.html#db_xref">db_xref</a>="taxon:10090"
                      /<a href="/ddbj/qualifiers.html#dev_stage">dev_stage</a>="adult"
+                     /<a href="/ddbj/qualifiers.html#geo_loc_name">geo_loc_name</a>="Japan"
                      /<a href="/ddbj/qualifiers.html#mol_type">mol_type</a>="mRNA"
                      /<a href="/ddbj/qualifiers.html#organism">organism</a>="Mus musculus"
                      /<a href="/ddbj/qualifiers.html#sex">sex</a>="male"
