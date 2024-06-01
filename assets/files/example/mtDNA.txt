@@ -15,14 +15,15 @@ COMMON	SUBMITTER		contact	Hanako Mishima
 			ab_name	Yamada,T.
 			title	Plant mitochondrial DNA
 			status	Unpublished
-			year	2017
-	DATE		hold_date	20191130
-	TOPOLOGY		circular	
-ENT01	source	1..E	organelle	mitochondrion
+			year	2024
+	DATE		hold_date	20261130
+ENT01	source	1..9910	organelle	mitochondrion
 			organism	Abies nordmanniana subsp. equi-trojani
 			mol_type	genomic DNA
 			isolate	SM08
 			sub_species	equi-trojani
+			geo_loc_name	Japan
+			collection_date	2023-07-08
 	CDS	8607..9390	gene	COX3
 			note	TAA stop codon is completed by the addition of 3' A residues to the mRNA
 			product	cytochrome oxidase subunit 3
@@ -36,12 +37,14 @@ ENT01	source	1..E	organelle	mitochondrion
 			transl_table	1
 	tRNA	complement(9808..9875)	anticodon	(pos:complement(9838..9840),aa:Arg)
 			product	tRNA-Arg
-ENT02	source	1..E	organelle	mitochondrion
+ENT02	source	1..1490	organelle	mitochondrion
 			organism	Abies nordmanniana
 			mol_type	genomic DNA
 			isolate	SM09
-	CDS	8607..9390	gene	COX3
+			geo_loc_name	Japan
+			collection_date	2023-07-08
+	CDS	607..1390	gene	COX3
 			note	TAA stop codon is completed by the addition of 3' A residues to the mRNA
 			product	cytochrome oxidase subunit 3
-			transl_except	(pos:9390,aa:TERM)
+			transl_except	(pos:1390,aa:TERM)
 			transl_table	1
