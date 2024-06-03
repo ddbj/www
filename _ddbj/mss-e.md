@@ -138,7 +138,7 @@ table tr:hover {
     see [Submission file format：AGP file](/ddbj/file-format-e.html#agp)
 
 ### Getting BioProject & BioSample ID  {#prep-2}
-- According to the type of the data, you must obtain BioProject ID and BioSample ID (also reserve locus_tag prefix) to prepare the submission files.
+- According to the type of the data, you must obtain [BioProject ID and BioSample ID (also reserve locus_tag prefix)](https://ddbj.nig.ac.jp/D-way/) to prepare the submission files.
 - In principle, it is not acceptable to change the taken locus_tag prefix, so please be careful when registering the prefix.
 - See the [table](#mssprjtable) to know what data type needs BioProject and BioSample.
 
