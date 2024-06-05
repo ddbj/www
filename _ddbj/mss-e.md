@@ -142,8 +142,9 @@ table tr:hover {
 - In principle, it is not acceptable to change the taken locus_tag prefix, so please be careful when registering the prefix.
 - See the [table](#mssprjtable) to know what data type needs BioProject and BioSample.
 
-### Annotation  {#prep-3}
-- **[Sample annotation](/ddbj/file-format-e.html#sample)**
+### Sample & Documentation  {#prep-3}
+- [Sample annotations](/ddbj/file-format-e.html#sample)
+- [User guide of annotation file](https://www.ddbj.nig.ac.jp/ddbj/file-format-e.html)
 - For prokaryote genome, we strongly recommend that you should use [**DFAST (DDBJ Fast Annotation and Submission Tool)**](https://dfast.ddbj.nig.ac.jp/).
   - See [DFAST: creating the submission files](/ddbj/mss-e.html#mssdfast) and obtain the submission files.
 - For [whole genome-scale sequence](/ddbj/genome-e.html), it is optional to describe biological features except source and assembly_gap. However, in case of a novel species that have not been reported so far, it is required to describe feature annotation against at least one genome as a representative.

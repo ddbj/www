@@ -135,8 +135,9 @@ table tr:hover {
 - 原則として取得した locus_tag prefix は変更できませんので、取得の際にはご注意ください。
 - [対応表](#mssprjtable)を参照してください。
 
-### アノテーション記載について  {#prep-3}
-- **[アノテーションファイルサンプル](/ddbj/file-format.html#sample)**
+### サンプル、アノテーションファイルの説明  {#prep-3}
+- [サンプルアノテーション](/ddbj/file-format.html#sample)
+- [アノテーションファイルに関する説明](https://www.ddbj.nig.ac.jp/ddbj/file-format.html)
 - 原核生物ゲノムのアノテーションファイル作成には、[**DFAST (DDBJ Fast Annotation and Submission Tool)**](https://dfast.ddbj.nig.ac.jp/) の利用を推奨しています。
   - [DFAST を利用した登録ファイルの作成](/ddbj/mss.html#mssdfast)をお読みいただき、登録ファイルを取得してください。
 - [全長規模のゲノム配列](/ddbj/genome.html)では　source と assembly_gap 以外の biological feature の記載は任意ですが、過去に登録例がない新規性の高い種が対象の場合、最低でも１つのゲノムに代表としてアノテーションの記載が必要です。
