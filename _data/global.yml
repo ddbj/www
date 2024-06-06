@@ -1,10 +1,14 @@
 top_news:
   ja:
+    - title: [復旧]DDBJ センターの登録・検索・解析サービスが一時停止していました
+      path: 2024-06-06
     - title: サンプルを採集した場所と日時の記載を必須化
       path: 2024-02-01
     - title: DDBJ Search キーワード検索の一部不具合について
       path: 2023-12-06
   en:
+    - title: [Resumed]Services of DDBJ Center was unavailable
+      path: 2024-06-06-e 
     - title: The requirement to state the location and date of sample collection
       path: 2024-02-01-e
     - title: Disabilities in the DDBJ Search keyword search functionalities
