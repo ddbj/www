@@ -1,15 +1,12 @@
 top_news:
   ja:
-    - title: (6/17-6/19) D-way/DRA/GEA/JGA/AGD, DDBJ Search 停止およびDDBJ Search表示項目の一時的な変更
+    - title: (6/14-6/20) D-way, DDBJ Group manager, DDBJ Search 停止
       path: 2024-06-10
-    - title: サンプルを採集した場所と日時の記載を必須化
-      path: 2024-02-01
-    - title: DDBJ Search キーワード検索の一部不具合について
-      path: 2023-12-06
+    - title: DDBJ Search の 一時停止および URL の変更
+      path: 2024-06-10_2
+
   en:
-    - title: (6/17-6/19) Suspension of D-way/DRA/GEA/JGA/AGD and DDBJ Search; Temporal change in the search result on DDBJ Search
+    - title: (June 14 - June 20) D-way system, DDBJ Group manager and DDBJ Search suspension
       path: 2024-06-10-e
-    - title: The requirement to state the location and date of sample collection
-      path: 2024-02-01-e
-    - title: Disabilities in the DDBJ Search keyword search functionalities
-      path: 2023-12-06-e
+    - title: DDBJ Search temporary suspension and changes in URL of the DDBJ Search result
+      path: 2024-06-10_2-e
