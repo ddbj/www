@@ -1,12 +1,12 @@
 top_news:
   ja:
-    - title: (6/14-6/20) D-way, DDBJ Group manager, DDBJ Search 停止
+    - title: (6/14-18) getentry と D-way 停止
       path: 2024-06-10
-    - title: DDBJ Search の 一時停止および URL の変更
+    - title: DDBJ Search 一時停止と URL 変更
       path: 2024-06-10_2
 
   en:
-    - title: (June 14 - June 20) D-way system, DDBJ Group manager and DDBJ Search suspension
+    - title: (June 14-18th) getentry and D-way downtime
       path: 2024-06-10-e
-    - title: DDBJ Search temporary suspension and changes in URL of the DDBJ Search result
+    - title: DDBJ Search downtime and URL changes
       path: 2024-06-10_2-e
