@@ -1,12 +1,12 @@
 top_news:
   ja:
-    - title: (6/14-18) getentry と D-way 停止
+    - title: (6/14-20) 登録・検索システムの停止
       path: 2024-06-10
     - title: DDBJ Search 一時停止と URL 変更
       path: 2024-06-10_2
 
   en:
-    - title: (June 14-18th) getentry and D-way downtime
+    - title: (June 14-20th) Submission and search systems downtime
       path: 2024-06-10-e
     - title: DDBJ Search downtime and URL changes
       path: 2024-06-10_2-e
