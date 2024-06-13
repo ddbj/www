@@ -381,6 +381,7 @@ PM      DDBJ
 PN      DDBJ            
 PO      DDBJ            
 PP      GenBank         Direct submission
+PQ      GenBank         Direct submission
 PR      USPTO           Patent application
 PS      GenBank         scaffold/CON
 PT      USPTO           Patent application
