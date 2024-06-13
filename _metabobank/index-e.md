@@ -8,7 +8,11 @@ lang: en
 
 MetaboBank is a public repository for metabolomics data obtained from mass spectrometry (MS), NMR, and imaging MS. 
 Metadata are described in the MAGE-TAB format, which is standard in functional genomics ([GEA](/gea/index-e.html) and EBI [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/)) and proteomics ([SDRF-Proteomics](https://www.nature.com/articles/s41467-021-26111-3).
-MAGE-TAB is also compatible with ISA-TAB used by the [MetaboLights](https://www.ebi.ac.uk/metabolights/) at EBI. MetaboBank and MetaboLights collaborates in data standardization.
+MAGE-TAB is also compatible with ISA-TAB used by the [MetaboLights](https://www.ebi.ac.uk/metabolights/) at EBI. 
+MetaboBank also provides registered raw data in Reifycs [mzB format](https://ja.reifycs.com/products/hive/). Use [DataChaker](https://www.reifycs.com/products/hive/baseapp-dl) to view mzB files.
+MetaboBank and MetaboLights collaborates in data standardization.
+
+Please use the Submission tab above to register, and the Search tab to browse and search.
 
 <div class="attention" markdown="1">
   <span class="red">Submission of research data from human subjects</span>  

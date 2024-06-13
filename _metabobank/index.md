@@ -11,6 +11,8 @@ MetaboBank は質量分析、NMR、あるいは質量分析イメージングに
 メタデータは MAGE-TAB 形式で、機能ゲノミクス（[GEA](/gea/index.html) や EBI の[ArrayExpress](https://www.ebi.ac.uk/arrayexpress/)）やプロテオミクス（[SDRF-Proteomics](https://www.nature.com/articles/s41467-021-26111-3)）で使われる形式と共通です。
 EBI のメタボロミクスデータベース [MetaboLights](https://www.ebi.ac.uk/metabolights/) の ISA-TAB とも互換性があります。
 
+MetaboBankは、登録された生データをReifycs社の[mzBフォーマット](https://ja.reifycs.com/products/hive/)でも提供しています。mzBファイルの閲覧には[DataChaker](https://www.reifycs.com/products/hive/baseapp-dl)をご利用ください。
+
 MetaboBank と MetaboLights はデータの標準化において協力しています。
 
 登録する場合は上の Submission タブ、閲覧・検索する場合は Search タブからお願いします。
