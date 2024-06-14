@@ -209,3 +209,7 @@ Sample-Analysis セットでデータ登録をする場合は [JGA チームに�
 ## 登録の更新 {#update}
 
 登録を更新するためには [JGA チームに連絡](/contact-ddbj.html)します。
+
+## データの公開  {#release}
+
+NBDC ヒトデータベースで JGA データに対応する [hum 番号の専用サイト](https://humandbs.dbcls.jp/data-use/all-researches)が公開されると、JGA データも公開されます。  

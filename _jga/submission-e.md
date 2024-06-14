@@ -208,3 +208,7 @@ To submitting Analysis only data, please contact [JGA team](/contact-ddbj-e.html
 ## Update submissions  {#update}
 
 To update your submissions, please [contact to the JGA team](/contact-ddbj-e.html) .
+
+## Data release {#release}
+
+JGA submission is released after a [hum research page](https://humandbs.dbcls.jp/data-use/all-researches) is published at the NBDC Human Database.

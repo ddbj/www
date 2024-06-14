@@ -45,3 +45,6 @@ original study authors are stored in databases. The JGA also accepts and
 distributes any phenotype data associated with the samples. For other
 human biological data, please contact the [Human Data Review Board Office](http://humandbs.dbcls.jp/).
 
+## Data release {#release}
+
+JGA submission is released after a [hum research page](https://humandbs.dbcls.jp/data-use/all-researches) is published at the NBDC Human Database.
