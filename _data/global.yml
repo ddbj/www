@@ -1,5 +1,7 @@
 top_news:
   ja:
-
+    - title: サンプルを採集した場所と日時の記載を必須化
+      path: 2024-02-01
   en:
-
+    - title: The requirement to state the location and date of sample collection
+      path: 2024-02-01-e
