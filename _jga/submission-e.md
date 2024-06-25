@@ -207,7 +207,8 @@ To submitting Analysis only data, please contact [JGA team](/contact-ddbj-e.html
 
 ## Update submissions  {#update}
 
-To update your submissions, please [contact to the JGA team](/contact-ddbj-e.html) .
+To update your submissions, please [contact to the JGA team](/contact-ddbj-e.html).     
+If you want to add data to released Study/Dataset, you can not keep the added data private. Add data when the data can be released, or separate study to keep them private.
 
 ## Data release {#release}
 
