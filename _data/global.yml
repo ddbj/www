@@ -1,11 +1,7 @@
 top_news:
   ja:
-    - title: (7/3 10:00-11:00) 登録システムの停止
-      path: 2024-06-28
     - title: サンプルを採集した場所と日時の記載を必須化
       path: 2024-02-01
   en:
-    - title: (July 3rd 10:00-11:00) Submission systems downtime
-      path: 2024-06-28-e
     - title: The requirement to state the location and date of sample collection
       path: 2024-02-01-e
