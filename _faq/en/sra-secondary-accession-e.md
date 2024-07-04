@@ -27,7 +27,6 @@ DRR049544 became primary and DRR046787 became secondary accession (below is the 
 ```
 
 DRR049544 is displayed when searching DRR046787 at NCBI SRA ([https://ncbi.nlm.nih.gov/sra/DRR046787](https://ncbi.nlm.nih.gov/sra/DRR046787))  .
-In the NCBI SRA Run Browser, the secondary DRR046787 is displayed in small characters with the primary DRR049544 ([DRR049544](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=DRR049544&display=metadata)).
-
-
-
+In the NCBI SRA Run Browser, the secondary DRR046787 is displayed in small characters with the primary DRR049544 ([DRR049544](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=DRR049544&display=metadata)).  
+  
+Secondary accessions of Experiment DRX and Submission DRA are treated similarly.

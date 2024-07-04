@@ -28,3 +28,4 @@ SRA では公開されている Run を別の Run に差し替えた場合、対
 NCBI では DRR046787 で検索すると DRR049544 が表示されます。[https://ncbi.nlm.nih.gov/sra/DRR046787](https://ncbi.nlm.nih.gov/sra/DRR046787)   
 また、NCBI SRA Run Browser では secondary である DRR046787 が小さく併記されます。[DRR049544](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=DRR049544&display=metadata)
 
+Experiment DRX と Submission DRA 番号のセカンダリも同様の扱いになります。
