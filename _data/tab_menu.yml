@@ -673,6 +673,22 @@ jga:
       title: FAQ
       url: /faq/en/index-e.html?tag=jga
 
+togovar:
+  ja:
+    - id: home
+      title: Home
+      url: /togovar/index.html
+    - id: search
+      title: Browse variants
+      url: https://grch38.togovar.org/
+  en:
+    - id: home
+      title: Home
+      url: /togovar/index-e.html
+    - id: search
+      title: Browse variants
+      url: https://grch38.togovar.org/
+
 sc:
   ja:
     - id: home

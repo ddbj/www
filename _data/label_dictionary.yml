@@ -61,13 +61,13 @@ dra:
   full:
     en: Sequence Read Archive (DRA)
     ja: Sequence Read Archive (DRA)
-jvar:
+togovar:
   short:
-    en: JVar
-    ja: JVar
+    en: TogoVar-repository
+    ja: TogoVar-repository
   full:
-    en: Japan Variation Database (JVar)
-    ja: Japan Variation Database (JVar)
+    en: TogoVar-repository
+    ja: TogoVar-repository
 ftp:
   short:
     en: FTP

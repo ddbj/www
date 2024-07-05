@@ -412,15 +412,15 @@ items:
     tags:
       - search
 
-  - name: NHA
-    formal_name: NBDC Human Data Archive
+  - name: NBDC Human Database
+    formal_name: NBDC Human Database
     service_link:
-      en: https://humandbs.biosciencedbc.jp/en/
-      ja: https://humandbs.biosciencedbc.jp
+      en: https://humandbs.dbcls.jp/en/
+      ja: https://humandbs.dbcls.jp/
     description:
       en: A platform for sharing various data generated from human specimens
       ja: ヒトに関する様々なデータを共有するためのプラットフォーム
-    provider: NBDC
+    provider: DBCLS
     target_data:
       en: Genotype and phenotype of human individual
       ja: ヒトの遺伝型と表現型
@@ -442,13 +442,13 @@ items:
     tags:
       - search
 
-  - name: JVar
-    formal_name: Japan Variation Database
+  - name: TogoVar-repository
+    formal_name: TogoVar-repository
     service_link:
-      en: /jvar/index-e.html
-      ja: /jvar/index.html
+      en: /togovar/index-e.html
+      ja: /togovar/index.html
     description:
-      en: JVar archives human genome variations.
+      en: TogoVar-repository archives human genome variations.
       ja: ヒトゲノムバリアントのためのアーカイブ
     provider: DDBJ
     target_data:
