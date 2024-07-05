@@ -6,6 +6,6 @@ category: togovar
 lang: ja
 ---
 
-[TogoVar-repository GitHub](https://github.com/ddbj/togovar)  
+[TogoVar-repository GitHub](https://github.com/ddbj/togovar-repository)  
 
 準備中です。
