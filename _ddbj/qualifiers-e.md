@@ -248,8 +248,7 @@ Though INSDC still keep and accept old value formats that make use of 'Mmm' (mon
 
 ### /country<a name="country"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#country)</span>
 
-<span class="red">The /country qualifier will be renamed to</span> <a href="#geo_loc_name">/geo_loc_name</a> <span class="red">from June 2024.</span>    
-
+<span class="red">The /country qualifier has been renamed to</span> <a href="#geo_loc_name">/geo_loc_name</a> <span class="red">from June 2024.</span>    
 
 
 ### /cultivar<a name="cultivar"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#cultivar)</span>
@@ -530,7 +529,8 @@ Example
 
 Definition 
 : locality of isolation of the sequenced sample indicated in terms of political names for nations, oceans or seas, followed by regions and localities     
-If it is difficult to describe the values for some reason, the submitter should indicate the reason as [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) .    
+If it is difficult to describe the values for some reason, the submitter should indicate the reason as 
+[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) .    
 We can NOT accept multiple localities in one qualifier.    
 In cases of identical sequences observed, in principle, please separately submit your data into [multiple records per locality](/ddbj/representative-sequence-e.html ).    
 
@@ -543,7 +543,7 @@ missing: lab stock</pre>
 
 Comment     
 : any &lt;country&gt; from [the country list](/ddbj/country-e.html).    
-The <a href="#country">/country</a> qualifier will be renamed to /geo_loc_name from June 2024.
+The /country qualifier has been renamed to /geo_loc_name from June 2024.
 
 
 ### /germline<a name="germline"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#germline)</span><a name="germline"></a>
