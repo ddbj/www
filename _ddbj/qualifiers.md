@@ -104,7 +104,6 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 保管施設としては, 動物園, 水族館, stock centre, seed bank, germplasm repository, DNA bank などが含まれます。    
 &lt;institution_code&gt; は下記を参照してください。    
 [institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections ) 
 
 
 ### /bound_moiety<a name="bound_moiety"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#bound_moiety)</span>
@@ -133,7 +132,7 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 : <pre>MCF7</pre> 
 
 
-### cell_type<a name="cell_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#cell_type)</span> 
+### /cell_type<a name="cell_type"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#cell_type)</span> 
 
 
 定義
@@ -184,19 +183,6 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 
 例
 : <pre>lambda-hIL7.3 </pre>
-
-
-### /clone_lib<a name="clone_lib"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#clone_lib)</span>
-
-
-定義
-: 配列の得られた clone library の名称 
-
-書式
-: &lt;text&gt; (全角, ダブルクォーテーション( " ) 不可)  
-
-例
-: <pre>lambda gt11 rice root cDNA (Gene Tech, No. 20)</pre>
 
 
 ### /codon_start<a name="codon_start"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#codon_start)</span> 
@@ -275,24 +261,9 @@ INSDC では 'Mmm' (月の略記) を含む "21-Oct-1952" のような旧書式�
 
 ### /country<a name="country"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#country)</span>
 
-<span class="red">2024 年 6 月より /country qualifier は</span> <a href="#geo_loc_name">/geo_loc_name</a> <span class="red">qualifier に名称変更されます。</span>    
+<span class="red">2024 年 6 月より /country qualifier は</span> <a href="#geo_loc_name">/geo_loc_name</a> <span class="red">qualifier に名称変更しました。</span>    
 
 
-定義
-: 疫学的、あるいは、個体群研究において配列サンプルを得た地域を 政治上の国、大洋、または、海の名称で示し、続けて地方・地域を示します。     
-何らかの理由で記載が困難な場合、[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) で示します。    
-１つの qualifier 内で複数の地点を記載することは禁止しています。    
-同一配列が観測された場合でも、原則、[地点別に複数の登録](/ddbj/representative-sequence.html )に分けてください。
-
-書式
-: &lt;国名&gt;[:&lt;詳細な地名&gt;] (全角, ダブルクォーテーション ( " )  不可) 
-
-例
-: <pre>Japan:Kanagawa, Hakone, Lake Ashi
-missing: lab stock</pre>
-
-備考
-: 国名は[国名リスト](/ddbj/country.html)から選択します。     
 
 ### /cultivar<a name="cultivar"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#cultivar)</span>
 
@@ -322,9 +293,10 @@ missing: lab stock</pre>
 備考
 : &lt;institution-code&gt; と &lt;culture_id&gt; が必須です。    
 生きている微生物やウイルスの培養系、および、細胞株を記載する際に用います。    
-&lt;institution_code&gt; は下記などを参照してください。    
+&lt;institution_code&gt; は下記を参照してください。    
 [institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections )
+
+
 
 ### /db_xref<a name="db_xref"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#db_xref)</span>
 
@@ -637,19 +609,6 @@ Dw3 B5 Cw1 A1</pre>
 例
 : <pre>Homo sapiens
 Homo sapiens 12 years old girl</pre>
-
-
-### /identified_by<a name="identified_by"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#identified_by)</span>
-
-定義
-: 標本個体の分類学的な同定を行った専門家の名前    
-フルネーム記載を強く推奨
-
-書式
-: &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) 
-
-例
-: <pre>John Burns</pre>
 
 
 ### /inference<a name="inference"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#inference)</span><a name="inference"></a>
@@ -1393,9 +1352,8 @@ personal:Dan Janzen:99-SRNP-2003</pre>
 備考
 :    
 - &lt;collection_code&gt; が存在しない場合は記載不要です。    
-- &lt;institution_code&gt; は下記などを参照してください。    
+- &lt;institution_code&gt; は下記を参照してください。    
 [institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections ) 
 
 
 ### /strain<a name="strain"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#strain)</span><a name="strain"></a>
@@ -1409,18 +1367,6 @@ personal:Dan Janzen:99-SRNP-2003</pre>
 
 例
 : <pre>BALB/c</pre>
-
-
-### /sub_clone<a name="sub_clone"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#sub_clone)</span>
-
-定義
-: 配列の得られた sub-clone の名称 
-
-書式
-: &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) 
-
-例
-: <pre>lambda-hIL7.20g</pre>
 
 
 ### /submitter_seqid<a name="submitter_seqid"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#submitter_seqid)</span>
@@ -1449,25 +1395,6 @@ scaffold25</pre>
 例
 : <pre>troglodytes</pre>
 
-
-### /sub_strain<a name="sub_strain"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#sub_strain)</span>
-
-定義
-: 配列の得られた遺伝学的あるいは他の方法で改変された sub-strain の名称。    
-その親に当たる strain は [strain](#strain) qualifier に記載されます。    
-[識別子について](/ddbj/identifiers.html) 参照    
-
-書式
-: &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) 
-
-例
-: <pre>abis</pre>
-
-備考
-: strain が不明な場合は /sub_strain は使わず /strain に記載します。    
-
-- 通常の例: /strain="K-12", /sub_strain="MG1655"
-- strain が不明な例: /strain="MG1655"
 
 
 ### /tag_peptide<a name="tag_peptide"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#tag_peptide)</span>

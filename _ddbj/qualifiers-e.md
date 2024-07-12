@@ -100,7 +100,7 @@ Comment
     
 You can find &lt;institution_code&gt; at    
 [institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections )    
+
 
 ### /bound_moiety<a name="bound_moiety"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#bound_moiety)</span>
 
@@ -174,18 +174,6 @@ Value format
 
 Example     
 : <pre>lambda-hIL7.3 </pre>
-
-
-### /clone_lib<a name="clone_lib"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#clone_lib)</span>
-
-Definition  
-: clone library from which the sequence was obtained    
-
-Value format
-: &lt;text&gt;, excluding double quotation mark (")    
-
-Example     
-: <pre>lambda gt11 rice root cDNA (Gene Tech, No. 20)</pre>
 
 
 ### /codon_start<a name="codon_start"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#codon_start)</span>
@@ -263,22 +251,6 @@ Though INSDC still keep and accept old value formats that make use of 'Mmm' (mon
 <span class="red">The /country qualifier will be renamed to</span> <a href="#geo_loc_name">/geo_loc_name</a> <span class="red">from June 2024.</span>    
 
 
-Definition 
-: locality of isolation of the sequenced sample indicated in terms of political names for nations, oceans or seas, followed by regions and localities     
-If it is difficult to describe the values for some reason, the submitter should indicate the reason as [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) .    
-We can NOT accept multiple localities in one qualifier.    
-In cases of identical sequences observed, in principle, please separately submit your data into [multiple records per locality](/ddbj/representative-sequence-e.html ).    
-
-Value format
-: &lt;country&gt;[:&lt;free-text for geographical name&gt;]    
-
-Example     
-: <pre>Japan:Kanagawa, Hakone, Lake Ashi
-missing: lab stock</pre>
-
-Comment     
-: any &lt;country&gt; from [the country list](/ddbj/country-e.html).    
-
 
 ### /cultivar<a name="cultivar"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#cultivar)</span>
     
@@ -312,7 +284,6 @@ culture_id and institution_code are mandatory, collection_code is optional.
     
 You can find &lt;institution_code&gt; at    
 [institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections )    
 
 
 ### /db_xref<a name="db_xref"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#db_xref)</span>
@@ -417,6 +388,8 @@ Value format for output
 Example for output
 : <pre>unknown
 342</pre>
+
+
 
 ### /exception<a name="exception"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#exception)</span><a name="exception"></a>
 
@@ -624,18 +597,6 @@ Example
 : <pre>Homo sapiens
 Homo sapiens 12 years old girl</pre>
 
-
-### /identified_by<a name="identified_by"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#identified_by)</span>
-
-Definition  
-: name of the expert who identified the specimen taxonomically    
-strongly recommended using full names
-
-Value format
-: &lt;text&gt;, excluding double quotation mark (")    
-
-Example    
-: <pre>John Burns</pre>
 
 
 ### /inference<a name="inference"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#inference)</span><a name="inference"></a>
@@ -1391,7 +1352,7 @@ Comment
 - &lt;collection_code&gt;is optional.    
 - You can find &lt;institution_code&gt; at    
 [institution_code list](https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/coll_dump.txt ) (NCBI FTP site)    
-[BioCollections](https://www.ncbi.nlm.nih.gov/biocollections )    
+
 
 
 ### /strain<a name="strain"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#strain)</span><a name="strain"></a>
@@ -1406,17 +1367,6 @@ Value format
 Example     
 : <pre>BALB/c</pre>
 
-
-### /sub_clone<a name="sub_clone"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#sub_clone)</span>
-
-Definition  
-: sub-clone from which the sequence was obtained    
-
-Value format
-: &lt;text>, excluding double quotation mark (")    
-
-Example     
-: <pre>lambda-hIL7.20g</pre>
 
 
 ### /submitter_seqid<a name="submitter_seqid"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#submitter_seqid)</span>
@@ -1445,24 +1395,6 @@ Value format
 Example     
 : <pre>troglodytes</pre>
 
-
-### /sub_strain<a name="sub_strain"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#sub_strain)</span>
-
-Definition
-: sub_strain from which sequence was obtained. name or identifier of a genetically or otherwise modified strain from which sequence was obtained, derived from a parental strain (which should be annotated in the /[strain](#strain) qualifier).    
-See also [Identifiers](/ddbj/identifiers-e.html).    
-
-Value format
-: &lt;text&gt;, excluding double quotation mark (")    
-
-Example
-: <pre>abis</pre>
-
-Comment
-: If the parental strain is not given, this should be annotated in the /strain qualifier instead of /sub_strain.    
-
-- In general: /strain="K-12", /sub_strain="MG1655"
-- not given parental: /strain="MG1655"
 
 
 ### /tag_peptide<a name="tag_peptide"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#tag_peptide)</span>
