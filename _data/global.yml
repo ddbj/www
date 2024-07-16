@@ -1,13 +1,13 @@
 top_news:
   ja:
-    - title: (7/17 10:00-11:00) GEA/DRA/BP/BS システムリリースによるサービス停止のお知らせ
+    - title: (7/17 10:00-13:00) GEA/DRA/BP/BS システムリリースによるサービス停止のお知らせ
       path: 2024-07-16
     - title: (8/15～16) DDBJ センター夏季休業のお知らせ
       path: 2024-07-09
     - title: サンプルを採集した場所と日時の記載を必須化
       path: 2024-02-01
   en:
-    - title: (JULY 17 10:00-11:00) Announcement of GEA/DRA/BP/BS system suspension
+    - title: (JULY 17 10:00-13:00) Announcement of GEA/DRA/BP/BS system suspension
       path: 2024-07-16-e
     - title: (August 15 to 16) DDBJ Center Closing for Summer Break
       path: 2024-07-09-e
