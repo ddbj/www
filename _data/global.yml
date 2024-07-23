@@ -1,10 +1,14 @@
 top_news:
   ja:
+    - title: DDBJ リリース 135.0，DAD リリース 105.0 完成
+      path: 2024-07-23  
     - title: (8/15～16) DDBJ センター夏季休業のお知らせ
       path: 2024-07-09
     - title: サンプルを採集した場所と日時の記載を必須化
       path: 2024-02-01
   en:
+    - title: DDBJ Rel. 135.0, DAD Rel. 105.0 Completed
+      path: 2024-07-23-e
     - title: (August 15 to 16) DDBJ Center Closing for Summer Break
       path: 2024-07-09-e
     - title: The requirement to state the location and date of sample collection
