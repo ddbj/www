@@ -37,7 +37,7 @@ items:
     month: 10
     day: 24
     id: 217-ja
-    title: "実験医学増刊 Vol.40 No.17 バイオDBとウェブツール ラボで使える最新70選〜知る・学ぶ・使う、バイオDX時代の羅針盤 "
+    title: "実験医学増刊 Vol.40 No.17 バイオDBとウェブツール ラボで使える最新70選?知る・学ぶ・使う、バイオDX時代の羅針盤 "
     url: https://www.yodosha.co.jp/yodobook/book/9784758104067/
     author: "分担執筆: 児玉 悠一"
     info: 羊土社
@@ -1237,7 +1237,7 @@ items:
     month: 7
     day: 4
     id: 188-ja
-    title: DDBJ – 日本DNAデータバンクとNGS – Next Generation Sequencing によるゲノム解析の最新状況
+    title: DDBJ ? 日本DNAデータバンクとNGS ? Next Generation Sequencing によるゲノム解析の最新状況
     author: 中村　保一
     info: 山梨大学 学術研究会
     keyword: presentation
@@ -1856,7 +1856,7 @@ items:
     id: 140-ja
     title: 生命科学とオープンデータ
     author: 高木 利久
-    info: <a href="http://www.rois.ac.jp/sympo/2015/index.html">オープンサイエンスにおける研究データのオープン化〜大学のデータ駆動型学術研究を加速するために〜</a>
+    info: <a href="http://www.rois.ac.jp/sympo/2015/index.html">オープンサイエンスにおける研究データのオープン化?大学のデータ駆動型学術研究を加速するために?</a>
     keyword: presentation
     lang: ja
 
@@ -2714,7 +2714,7 @@ items:
     id: 37-ja
     title: DDBJ Sequence Read Archive / DDBJ Omics Archive
     author: 児玉 悠一, 猿橋 智, 神沼 英里, 菅原 秀明, 高木 利久, 大久保 公策, 中村 保一
-    info: <a href="https://events.biosciencedbc.jp/sympo/godo">統合データベースプロジェクトシンポジウム「ライフサイエンスの未来へ〜10年先のデータベースを考える〜」</a>
+    info: <a href="https://events.biosciencedbc.jp/sympo/godo">統合データベースプロジェクトシンポジウム「ライフサイエンスの未来へ?10年先のデータベースを考える?」</a>
     keyword: presentation
     lang: ja
 
@@ -3414,4 +3414,4 @@ dictionary:
     ja: 出版物
   insdc_meeting:
     en: INSDC meeting report
-    ja: 国際実務者会議報告
+    ja: INSDC meeting report
