@@ -308,7 +308,8 @@ When the dataset contains thousands of files, re-processing will take several da
 Do not re-update the key until the re-processing finishes.
 </div>
 
-After the re-processing finishes, download the decryption tools (for example, J-DU999991.tool.zip) again according to [download](#sftp). You do not need to download encrypted data files again.  
+If timestamps of the decryption tools (for example, J-DU999991.tool.zip) are updated, the re-processing is finished.   
+After the re-processing finishes, download the decryption tools again according to [download](#sftp). You do not need to download encrypted data files again.  
 Decrypt data files by using a private key which is a pair of the newly updated public key according to [decrypt date files](#decrypt).
 
 {% include image.html url="books/update-key-for-decryption-e.png" caption="Update public key for decryption" class="w300" %}
