@@ -297,3 +297,19 @@ These XML files can be used for programmatic use.
 The list summarizes filenames, sizes, MD5 hash values, and Data/Analysis accessions. 
 By comparing MD5 values of downloaded files and those in the list, you can check corruption of the files.
 
+## Update public key for decryption {#key-update}
+
+Select "Update Public key" in the data use application page.  
+Select a new OpenSSH-format public key and click "Update" to replace the public key.  
+The approved dataset will be re-processed. Please do NOT re-update the key until the re-processing finishes.  
+
+<div class="attention" markdown="1">
+When the dataset contains thousands of files, re-processing will take several days.  
+Do not re-update the key until the re-processing finishes.
+</div>
+
+After the re-processing finishes, download the decryption tools (for example, J-DU999991.tool.zip) again according to [download](#sftp). You do not need to download encrypted data files again.  
+Decrypt data files by using a private key which is a pair of the newly updated public key according to [decrypt date files](#decrypt).
+
+{% include image.html url="books/update-key-for-decryption.png" caption="Update public key for decryption" class="w300" %}
+
