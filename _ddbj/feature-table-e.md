@@ -2839,7 +2839,7 @@ Definition      locality of isolation of the sequenced sample indicated in
                 by regions and localities
 Value format    "&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]" where 
                 country_value is any value from the controlled vocabulary at 
-                <a href="https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/</a> or 
+                <a href="https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/</a> or 
                 a specified exemption from the missing values controlled vocabulary at 
                 <a href="https://www.insdc.org/submitting-standards/missing-value-reporting">https://www.insdc.org/submitting-standards/missing-value-reporting</a>
 Example         /country="Canada:Vancouver"
@@ -3146,7 +3146,7 @@ Definition      locality of isolation of the sequenced sample indicated in
                 by regions and localities
 Value format    "&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]" where 
                 country_value is any value from the controlled vocabulary at 
-                <a href="https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/</a> or 
+                <a href="https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/</a> or 
                 a specified exemption from the missing values controlled vocabulary at 
                 <a href="https://www.insdc.org/submitting-standards/missing-value-reporting">https://www.insdc.org/submitting-standards/missing-value-reporting</a>
 Example         /country="Canada:Vancouver"

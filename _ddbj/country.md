@@ -1,32 +1,33 @@
 ---
 layout: tabbed_indexed_content
-title: Controlled vocabulary for /country qualifier
+title: Controlled vocabulary for /geo_loc_name qualifier
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: home
 lang: ja
 ---
 
-The original site; [Controlled vocabulary for /country qualifier](https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/ ) 2021.10.25 version
+The original site; [Controlled vocabulary for /geo_loc_name qualifier](https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/ ) 2024.07.25 version
 
-A new qualifier was introduced in version 2.1 (December 15, 1998) of the Feature table definitions: /country.    
-This new qualifier is used to indicate the country of origin of a DNA sample.    
+The /geo_loc_name qualifier
 
-The text below outlines the format and the present list of allowed countries.    
+: The /geo_loc_name qualifier is used to indicate the geographic location of the collected sample.  
 
-## Defiition of /country qualifier  <a name="Definition_of_country_qualifier"></a>
+: The text below outlines the format and the present list of allowed countries.  
 
-<pre><code>Qualifier:      /country=" "
-Qualifier       /country=
+## Defiition of /geo_loc_name qualifier  <a name="definition"></a>
+
+<pre><code>Qualifier:      /geo_loc_name=" "
+Qualifier       /geo_loc_name=
 Definition      locality of isolation of the sequenced sample indicated in
                 terms of political names for nations, oceans or seas, followed
                 by regions and localities
-Value format    "&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]" where 
-                country_value is any value from the controlled vocabulary at 
-                <a href="https://insdc.org/submitting-standards/country-qualifier-vocabulary">https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/</a>
-Example         /country="Canada:Vancouver"
-                /country="France:Cote d'Azur, Antibes"
-                /country="Atlantic Ocean:Charlie Gibbs Fracture Zone"
+Value format    "&lt;geo_loc_name&gt;[:&lt;region&gt;][, &lt;locality&gt;]" 
+                where country_value is any value from the controlled vocabulary at 
+                <a href="https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/</a>
+Example         /geo_loc_name="Canada:Vancouver"
+                /geo_loc_name="France:Cote d'Azur, Antibes"
+                /geo_loc_name="Atlantic Ocean:Charlie Gibbs Fracture Zone"
 Comment         Intended to provide a reference to the site where the source
                 organism was isolated or sampled. Regions and localities should
                 be indicated where possible. Note that the physical geography of
@@ -34,8 +35,9 @@ Comment         Intended to provide a reference to the site where the source
                 /<a href="/ddbj/qualifiers.html#isolation_source">isolation_source</a>.
 </code></pre>
 
-COUNTRY LIST based on information from: [https://unstats.un.org/unsd/methods/m49/m49.htm](https://unstats.un.org/unsd/methods/m49/m49.htm )    
-and [https://www.cia.gov/the-world-factbook/](https://www.cia.gov/the-world-factbook/ )
+Geographical Location List:
+:based on information from: [https://www.cia.gov/the-world-factbook/](https://www.cia.gov/the-world-factbook/ )    
+and [https://unstats.un.org/unsd/methods/m49/m49.htm](https://unstats.un.org/unsd/methods/m49/m49.htm )    
 
 ### Initial links
 
