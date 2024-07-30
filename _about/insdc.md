@@ -8,102 +8,116 @@ related_pages:
     url: /about/staff.html
 ---
 
-DDBJ センターは、欧州の [EBI; European Bioinformatics Institute](https://www.ebi.ac.uk/) で運営されている [ENA; European Nucleotide Archive](https://www.ebi.ac.uk/ena) および 米国の [NCBI; National Center for Biotechnology Information](https://www.ncbi.nlm.nih.gov/) と、インターネットを経由したデータと情報の相互交換と定期的に開催する２つの会議、[国際実務者会議](#icm)と[国際諮問委員会](#iac)、を通じて密接に連携し、INSD; International Nucleotide Sequence Database を構築しています。   
-DDBJ, ENA/EBI, NCBI の各事業、および、国際実務者会議は、[国際諮問委員会からの助言・勧告](#policy)を受けて運営されています。
 
-## 塩基配列データベース構築の国際協調  {#insd}
+
+## The International Nucleotide Sequence Database Collaboration (INSDC)
 
 {: .float-left }
-DDBJ は、1980年代の事業開始当初から、欧州の EMBL-Bank/[EBI](https://www.ebi.ac.uk/) と米国の
-[GenBank](https://www.ncbi.nlm.nih.gov/Genbank/index.html)/[NCBI](https://www.ncbi.nlm.nih.gov/)
-とともに国際塩基配列データベースの構築業務を担ってきました。<br>この国際塩基配列データベースは、2005 年に開催された国際実務者会議において、その総称を **[INSDC; International Nucleotide Sequence Database Collaboration](http://www.insdc.org/)**、統合された塩基配列データベースの名称を **INSD; International Nucleotide Sequence Database** とすることに合意し、国際諮問委員会も、これを承認しました。<br> 2009年から いわゆる次世代シークエンサからの出力データを収集する Sequence Read Archive と従来のシークエンサからの出力データを収集する Trace Archive も INSDC のメンバーに加わりました。<br> 2010年には EBI におけるデータベース事業は [ENA; European Nucleotide Archive](https://www.ebi.ac.uk/ena/) に統合されました。
+[INSDC](http://www.insdc.org/ ) は、独立した政府機関、または、非営利団体のグローバルな協調体制であり、
+塩基配列データベースを管理して塩基配列情報とアノテーションを収集し、科学的記録として保存し、
+そのようなデータを幅広く共有できる包括的なコレクションを作成します。  
+[INSDC メンバー](#member)は、raw sequence reads とアラインメント、分類情報、実験、および、プロジェクト設計などの調査対象サンプルを説明する構造化メタデータ、
+機能的アノテーションを含むアセンブルされた塩基配列データ、および、塩基配列を解析した結果を含むデータリソースを提供します。
+INSDC メンバーはデータを相互に交換し、交換したデータを、すべての修正と更新を含めて科学記録の一部として、ライセンス制限なしで自由にアクセスできるようにします。
 
-{: .float-right }
-<img src="/assets/images/center/insdc_shoukai.gif" alt="" title="" class="">
+{: .float-right  class="w100" }
+<img src="/assets/images/center/insdcLogo0501-22.png" alt="INSDC Logo">
 
 {: .float-release }
-## INSDC 構成員  {#member}
+
+## 運営
+
+INSDC は下記２つの committees により運営されています。    
+
+### EC; Executive Committee  {#ec}
+
+EC は、INSDC の戦略的方向性を定め、会議の開催や INSDC の Web サイト コンテンツの監視などの管理活動を指揮し、意見の相違 dispute を解決し、メンバー要件 membership expectation を設定します。
+
+### IC; Implementation Committee  {#ic} 
+
+IC は、INSDC 全体のポリシー、プロトコル、および、手順を担い、テクノロジーの変更に備え、対応します。
+INSDC 参加リポジトリとそのサービスの構築に使用されるインフラストラクチャ要件、feature/qualifier、および、スキーマ変更を承認し、
+新しい INSDC メンバーをトレーニング、評価、承認し、Web サイトのコンテンツと内部ドキュメントの維持を行います。
+
+[INSDC meeting report](/activities/index.html?tag=insdc_meeting ) をご参照ください。
+
+
+### INSDC メンバーとデータベース {#member}
+
+INSDC は以下のメンバーで構成されており、それぞれデータベースを運営しています。    
+
 
 <table>
-  <thead>
-    <tr>
-      <th>Data type</th>
-      <th>DDBJ Center</th>
-      <th>EMBL-EBI</th>
-      <th>NCBI</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Next generation reads</th>
-      <td><a href="/dra/index.html">Sequence Read Archive</a></td>
-      <td rowspan="5" class="borderbtm"><a href="https://www.ebi.ac.uk/ena">European Nucleotide Archive (ENA)</a></td>
-      <td><a href="//trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?">Sequence Read Archive</a></td>
-    </tr>
-    <tr>
-      <th>Sequence Read Archive</th>
-      <td><a href="/dta/index.html">Trace Archive</a></td>
-      <td><a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?">Trace Archive</a></td>
-    </tr>
-    <tr>
-      <th>Annotated sequence</th>
-      <td><a href="/ddbj/index.html">DDBJ</a></td>
-      <td><a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a></td>
-    </tr>
-    <tr>
-      <th>Samples</th>
-      <td><a href="/biosample/index.html">BioSample</a></td>
-      <td><a href="https://www.ncbi.nlm.nih.gov/biosample/">BioSample</a></td>
-    </tr>
-    <tr>
-      <th>Studies</th>
-      <td><a href="/bioproject/index.html">BioProject</a></td>
-      <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/">BioProject</a></td>
-    </tr>                    
-  </tbody>
+<thead>
+<tr>
+	<th>Data type/Member</th>
+	<td> <a href="https://www.rois.ac.jp/">The Research Organization of Information and Systems (ROIS)</a>, <br>
+		<a href="https://www.nig.ac.jp/">National Institute of Genetics (NIG)</a> </td>
+	<td> <a href="https://www.embl.org/">The European Molecular Biology Laboratory (EMBL)</a>, <br>
+		<a href="https://www.ebi.ac.uk/">[European Bioinformatics Institute (EBI)</a> </td>
+	<td> <a href="https://www.nlm.nih.gov/">The National Library of Medicine (NLM)</a>, <br>
+	<a href="https://www.ncbi.nlm.nih.gov/">National Center for Biotechnology Information (NCBI)</a> <br>
+		at <a href="https://www.nih.gov/">the National Institutes of Health</a> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<th>Next generation reads</th>
+	<td><a href="/dra/index.html">Sequence Read Archive</a></td>
+	<td rowspan="4" class="borderbtm"><a href="https://www.ebi.ac.uk/ena/about/formats">European Nucleotide Archive (ENA)</a></td>
+	<td><a href="https://www.ncbi.nlm.nih.gov/sra/">Sequence Read Archive</a></td>
+</tr>
+<tr>
+	<th>Annotated sequence</th>
+	<td><a href="/ddbj/index.html">DDBJ</a></td>
+	<td><a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a></td>
+</tr>
+<tr>
+	<th>Samples</th>
+	<td><a href="/biosample/index.html">BioSample</a></td>
+	<td><a href="https://www.ncbi.nlm.nih.gov/biosample/">BioSample</a></td>
+</tr>
+<tr>
+	<th>Studies</th>
+	<td><a href="/bioproject/index.html">BioProject</a></td>
+	<td><a href="https://www.ncbi.nlm.nih.gov/bioproject/">BioProject</a></td>
+</tr>
+</tbody>
 </table>
 
-## 国際諮問委員会 IAC; International Advisory Committee {#iac} 
 
-国際諮問委員会は, 欧州・米国・日本から選出されたそれぞれ３名の委員により構成され, INSDC
-の運営や将来計画に関して公正な立場で勧告・助言する組織で、年に１度、委員会が開催されます。
 
-## 国際実務者会議 ICM; International Collaborative Meeting {#icm} 
+## ミッションとビジョン
 
-[国際実務者会議](/activities/index.html)は、INSDC の実務者で構成されています。ICM
-は、国際協調を基本理念とし,INSDC 運営上の実務的な問題を解決していくための協議会で、年１度開催されます。
+INSDC のミッションは、世界中で生成される塩基配列データとメタデータを受け入れ、保存し、制限なく配布するサービスを提供すること、
+これにより、医学、生命科学、公衆衛生、研究、イノベーション、発見、教育、能力開発、バイオエコノミーの進歩を支援することです。
 
-## 登録データに取り扱いについて {#policy} 
+INSDC は、塩基配列配列データをオープンアクセスに共有するための重要な国際協調であり、
+すべての大陸と地域から塩基配列データへのアクセスを促進し、
+配列データを生成して共有する人々に幅広い認知を提供します。
 
-2002年5月23-24日に国立遺伝学研究所で開催された国際塩基配列データベースの諮問機関である国際諮問委員会で，「DDBJ/EMBL/GenBank
-の登録データの取り扱い」について以下のように明文化しました。
+INSDC のミッションとビジョンは、下記の以前に合意した方針に基づいています。
 
-データを登録される方ならびに利用される方はこの内容を理解されて，ご協力くださるようお願いいたします。
+### INSDC の方針 {#policy} 
 
-国際塩基配列データベース (International Nucleotide Sequence Databases, INSD) の方針  
-: INSD は，各データバンクが公開しているデータの全てを誰でも制限なしで利用できるという統一方針を共有する。世界中の科学者は，実験計画を立てるため，あるいは解析結果や論評を出版するために INSD の公開データを利用できる。また，論文で他の論文を引用するように，データ登録者に何らかのクレジットが与えられるべきである。
+[INSDC site](https://www.insdc.org/policy/ ) および [Science 298 (5597): 1333 15 Nov 2002](https://www.science.org/doi/10.1126/science.298.5597.1333b ) 参照:    
 
-: INSDは，公開データにその利用を制限するような記述ならびに，このデータを利用した出版物を禁止するような制限事項は付記しない。特に，公開されたいかなる配列データにも利用制限や利用許可取得義務を設けず，公開データの二次公開や公開データベースの利用についても利用制限や利用許可取得義務を課さない。
+: INSD は、各データバンクが公開しているデータの全てを誰でも制限なしで利用できるという統一方針を共有する。世界中の科学者は、実験計画を立てるため、あるいは解析結果や論評を出版するために INSD の公開データを利用できる。また、論文で他の論文を引用するように、データ登録者に何らかのクレジットが与えられるべきである。
 
-: INSD に登録されたデータは，科学資料として永久に保存され公開される。登録者によるデータの訂正や更新は歓迎するし，誤った部分は次のデータリリースで訂正されるべきであるが，全てのデータは永久に保存され，アクセッション番号で検索できるものとする。
+: INSD は、公開データにその利用を制限するような記述ならびに、このデータを利用した出版物を禁止するような制限事項は付記しない。特に、公開されたいかなる配列データにも利用制限や利用許可取得義務を設けず、公開データの二次公開や公開データベースの利用についても利用制限や利用許可取得義務を課さない。
 
-: データを登録しようとする者は，INSD の各データバンクが Web 上で公開している諸原則や注意事項を理解されるよう助言する。登録する権利は登録する側にあることを確認されたい。
+: INSD に登録されたデータは、科学資料として永久に保存され公開される。登録者によるデータの訂正や更新は歓迎するし、誤った部分は次のデータリリースで訂正されるべきであるが、全てのデータは永久に保存され、アクセッション番号で検索できるものとする。
 
-: データベース側の編集やデータベース化のための整合性にもとづく改変（例えば，INSD 形式の適用やコード領域の翻訳に関する改変など）以外の，データの内容や品質に関する責任はデータ登録者が負う。INSD はデータ登録者や利用者と協力してデータの品質向上に努める。
+: データを登録しようとする者は、INSD の各データバンクが Web 上で公開している諸原則や注意事項を理解されるよう助言する。登録する権利は登録する側にあることを確認されたい。
 
-この方針は，DDBJ, EMBL, GenBank で構成する国際塩基配列データベース (INSD) の諮問機関である国際諮問委員会が，INSD におけるデータの取り扱いについて作成したものである。諮問委員全員の合意にもとづいてこの方針を提言する。INSDにデータを登録する者やデータを利用する者は，以下の方針事項を理解し，協力されたい。
+: データベース側の編集やデータベース化のための整合性にもとづく改変（例えば、INSD 形式の適用やコード領域の翻訳に関する改変など）以外の、データの内容や品質に関する責任はデータ登録者が負う。INSD はデータ登録者や利用者と協力してデータの品質向上に努める。
 
-国際諮問委員  
-: Soren Brunak, Technical University of Denmark
 
-: Antoine Danchin, Institut Pasteur
+: Soren Brunak, Technical University of Denmark  
+: Antoine Danchin, Institut Pasteur  
+: 服部正平、北里大学  
+: Tara Matise, Rutgers University  
+: 中村春木、大阪大学  
+: Daphne Preuss, University of Chicago  
+: 篠崎一雄、理化学研究所  
 
-: 服部正平，北里大学
-
-: Tara Matise, Rutgers University
-
-: 中村春木，大阪大学
-
-: Daphne Preuss, University of Chicago
-
-: 篠崎一雄，理化学研究所
