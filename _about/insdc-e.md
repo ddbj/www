@@ -10,144 +10,144 @@ related_pages:
     url: /about/staff-e.html
 ---
 
-DDBJ Center has been closely collaborating with [EBI; European
-Bioinformatics Institute](https://www.ebi.ac.uk/)/ [ENA; European
-Nucleotide Archive](https://www.ebi.ac.uk/ena/) in Europe and [NCBI;
-National Center for Biotechnology
-Information](https://www.ncbi.nlm.nih.gov/) in USA to construct INSD;
-International Nucleotide Sequence Database through exchanging data and
-information on internet and by regularly holding two meetings,[IAC; the
-International Advisory Committee](#iac) and [ICM; the International
-Collaborative Meeting](#icm).  
-The operations of DDBJ, ENA/EBI, NCBI and ICM subscribe to [advice from
-IAC](#policy).
 
-## Collaboration framework to construct International Nucleotide Sequence Database  {#insd}
+
+## The International Nucleotide Sequence Database Collaboration (INSDC)
 
 {: .float-left }
-From the beginning, 1980s, DDBJ has been functioning as one of the international nucleotide sequence databases, including
-EMBL-Bank/[EBI](https://www.ebi.ac.uk/) in Europe and
-[GenBank](https://www.ncbi.nlm.nih.gov/Genbank/index.html)/[NCBI](https://www.ncbi.nlm.nih.gov/)
-in the USA as the two other members.<br>
-In 2005, DDBJ, EMBL-Bank and GenBank agreed to call their collaboration 
-**[INSDC; International Nucleotide Sequence Database Collaboration](http://www.insdc.org/)**; and to call the unified nucleotide sequence database 
-**INSD; International Nucleotide Sequence Database**.The agreement was approved by IAC in May 2005.<br>
-In 2009, INSDC added a coraborative meeting to deal with mass sequence data produced by the "next" generation sequencers (Sequence Read Archive) and traces produced by traditional gel/capillary sequencers (Trace Archive).
-In 2010, databases at EBI were integrated to [ENA; European Nucleotide Archive](https://www.ebi.ac.uk/ena/).
+[INSDC](http://www.insdc.org/ ) is a global collaboration of independent governmental or non-profit organisations 
+that manage nucleotide sequence databases capturing and preserving nucleotide sequence information 
+and annotations to create a comprehensive collection that preserves the scientific record 
+and enables broad sharing of such data.    
+[INSDC Members](#member) exchange data and make exchanged data freely accessible 
+without restrictive licensing as part of the scientific record, including all corrections and updates.    
 
-
-{: .float-right }
-<img src="/assets/images/center/insdc_shoukai.gif" alt="INSDC constitution" title="" class="">
+{: .float-right  class="w100" }
+<img src="/assets/images/center/insdcLogo0501-22.png" alt="INSDC Logo">
 
 {: .float-release }
-## Members of INSDC  {#member}
+
+
+
+## Governance
+
+The INSDC is governed by two committees as detailed below:    
+
+
+### EC; Executive Committee  {#ec} 
+
+The Executive Committee establishes the strategic directions of INSDC, 
+directs administrative activities such as organising meetings 
+and overseeing the INSDC website content, resolves disputes, and sets membership expectations.    
+
+
+### IC; Implementation Committee  {#ic} 
+
+The INSDC Implementation Committee accepts INSDC-wide policies, protocols, and procedures; 
+prepares for and responds to technology changes; 
+approves modifications for infrastructure requirements, features, and schemas used 
+to build INSDC-participating repositories and their services; 
+ trains, assesses, and approves new INSDC Members; 
+and maintains website content and internal documentation.    
+
+See [INSDC meeting report](/activities/index-e.html?tag=insdc_meeting )
+
+
+
+### Members and Participating Databases {#member}
+
+The INSDC is a collaboration between the following member organisations and their databases:
+See also [Global Participation](https://www.insdc.org/global-participation/ ) on INSDSC web site.    
 
 <table>
-    <thead>
-    <tr>
-      <th>Data type</th>
-      <th>DDBJ Center</th>
-      <th>EMBL-EBI</th>
-      <th>NCBI</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Next generation reads</th>
-      <td><a href="/dra/index.html">Sequence Read Archive</a></td>
-      <td rowspan="5" class="borderbtm"><a href="https://www.ebi.ac.uk/ena">European Nucleotide Archive (ENA)</a></td>
-      <td><a href="//trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?">Sequence Read Archive</a></td>
-    </tr>
-    <tr>
-      <th>Sequence Read Archive</th>
-      <td><a href="/dta/index.html">Trace Archive</a></td>
-      <td><a href="https://www.ncbi.nlm.nih.gov/Traces/trace.cgi?">Trace Archive</a></td>
-    </tr>
-    <tr>
-      <th>Annotated sequence</th>
-      <td><a href="/ddbj/index.html">DDBJ</a></td>
-      <td><a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a></td>
-    </tr>
-    <tr>
-      <th>Samples</th>
-      <td><a href="/biosample/index.html">BioSample</a></td>
-      <td><a href="https://www.ncbi.nlm.nih.gov/biosample/">BioSample</a></td>
-    </tr>
-    <tr>
-      <th>Studies</th>
-      <td><a href="/bioproject/index.html">BioProject</a></td>
-      <td><a href="https://www.ncbi.nlm.nih.gov/bioproject/">BioProject</a></td>
-    </tr>                    
-  </tbody>
+<thead>
+<tr>
+	<th> Data type/Member </th>
+	<td> <a href="https://www.rois.ac.jp/">The Research Organization of Information and Systems (ROIS)</a>, <br>
+		<a href="https://www.nig.ac.jp/">National Institute of Genetics (NIG)</a> </td>
+	<td> <a href="https://www.embl.org/">The European Molecular Biology Laboratory (EMBL)</a>, <br>
+		<a href="https://www.ebi.ac.uk/">[European Bioinformatics Institute (EBI)</a> </td>
+	<td> <a href="https://www.nlm.nih.gov/">The National Library of Medicine (NLM)</a>, <br>
+		<a href="https://www.ncbi.nlm.nih.gov/">National Center for Biotechnology Information (NCBI)</a> <br>
+		at <a href="https://www.nih.gov/">the National Institutes of Health</a> </td>
+</tr>
+</thead>
+<tbody>
+<tr>
+	<th>Next generation reads</th>
+	<td><a href="/dra/index-e.html">Sequence Read Archive</a></td>
+	<td rowspan="4" class="borderbtm"><a href="https://www.ebi.ac.uk/ena/about/formats">European Nucleotide Archive (ENA)</a></td>
+	<td><a href="https://www.ncbi.nlm.nih.gov/sra/">Sequence Read Archive</a></td>
+</tr>
+<tr>
+	<th>Annotated sequence</th>
+	<td><a href="/ddbj/index-e.html">DDBJ</a></td>
+	<td><a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a></td>
+</tr>
+<tr>
+	<th>Samples</th>
+	<td><a href="/biosample/index-e.html">BioSample</a></td>
+	<td><a href="https://www.ncbi.nlm.nih.gov/biosample/">BioSample</a></td>
+</tr>
+<tr>
+	<th>Studies</th>
+	<td><a href="/bioproject/index-e.html">BioProject</a></td>
+	<td><a href="https://www.ncbi.nlm.nih.gov/bioproject/">BioProject</a></td>
+</tr>
+</tbody>
 </table>
 
-## IAC; International Advisory Committee  {#iac} 
 
-International Advisory Committee consists of nine members, each of 3
-members selected from Europe, US, or Japan.The committee meeting to
-advice in fairness to maintenance and future plan of INSDC is held once
-a year.
 
-## ICM; International Collaborative Meeting  {#icm} 
 
-[International Collaborative Meeting](/activities/index-e.html)
-consists of working-level participants of INSDC and its fundamental
-principle is international collaboration. The meeting to discuss
-practical matters to maintain and update INSDC is held once a year.
+## Mission and Vision
 
-## Overview of International Nucleotide Sequence Databases Policies  {#policy} 
+The mission of INSDC is to support advancements in biomedical and life sciences, public health, 
+research, innovation, discovery, education, capacity building, and bioeconomies by providing services 
+to accept, preserve, and openly disseminate sequence data and metadata that are generated worldwide.    
 
-This brief policy statement, prepared by the International Advisory
-Committee to the International Nucleotide Sequence Databases (INSD;
-DDBJ/EMBL/GenBank), describes the procedures followed by the INSD.
+INSDC is the premiere open access nucleotide sequence data sharing collaboration in the world, 
+fostering access of nucleotide sequence data from all continents and regions, 
+and providing broad recognition to those who generate and share sequence data.    
 
-These policies are unanimously recommended by the INSD advisors.
+The INSDC mission and vision builds upon the previous INSDC policies as follows.    
 
-Individuals submitting data to the international sequence databases managed collaboratively by DDBJ, EMBL, and GenBank should be aware of the following:  
-: The INSD has a uniform policy of free and unrestricted access to all
-the data records their databases contain. Scientists worldwide can
-access these records to plan experiments or publish any analysis or
-critique.Appropriate credit is given by citing the original
-submission, following the practices of scientists utilizing
-published scientific literature.
 
-: The INSD will not attach statements to records that restrict access
-to the data, limit the use of the information in these records, or
-prohibit certain types of publications based on these records.
-Specifically, no use restrictions or licensing requirements will be
-included in any sequence data records, and no restrictions or
-licensing fees will be placed on the redistribution or use of the
-database by any party.
+### Nucleotide Sequence Database Policies  {#policy} 
 
-: All database records submitted to the INSD will remain an entry
-accessible as part of the scientific record. Corrections of errors
-and update of the records by authors are welcome and erroneous
-records may be removed from the next database release, but all will
-remain permanently accessible by accession number.
+See also [INSDC site](https://www.insdc.org/policy/ ) and [Science 298 (5597): 1333 15 Nov 2002](https://www.science.org/doi/10.1126/science.298.5597.1333b ):    
 
-: Submitters are advised that the information displayed on the web
-sites maintained by the INSD is fully disclosed to the public. It is
-the responsibility of the submitters to ascertain that they have the
-right to submit the data.
+: The INSD has a uniform policy of free and unrestricted access to all the data records their databases contain.  
+Scientists worldwide can access these records to plan experiments or publish any analysis or critique.  
+Appropriate credit is given by citing the original submission, following the practices of scientists utilizing published scientific literature.  
 
-: Beyond limited editorial control and some internal integrity checks
-(for example, proper use of INSD formats and translation of coding
-regions specified in CDS entries are verified), the quality and
-accuracy of the record are the responsibility of the submitting
-author, not of the database. The databases will work with submitters
-and users of the database to achieve the best quality resource
-possible.
+: The INSD will not attach statements to records that restrict access to the data, limit the use of the information in these records, 
+or prohibit certain types of publications based on these records.  
+Specifically, no use restrictions or licensing requirements will be included in any sequence data records, and no restrictions or
+licensing fees will be placed on the redistribution or use of the database by any party.  
 
-The INSD is an outstanding example of success in building an immensely
-valuable, widely used public resource through voluntary ooperation
-across the international scientific community. This success has been
-achieved following the guidelines and principles outlined above.
+: All database records submitted to the INSD will remain an entry accessible as part of the scientific record.  
+Corrections of errors and update of the records by authors are welcome and erroneous records may be removed from the next database release, 
+but all will remain permanently accessible by accession number.  
+
+: Submitters are advised that the information displayed on the web sites maintained by the INSD is fully disclosed to the public.  
+It is the responsibility of the submitters to ascertain that they have the right to submit the data.  
+
+: Beyond limited editorial control and some internal integrity checks (for example, proper use of INSD formats 
+and translation of coding regions specified in CDS entries are verified), 
+the quality and accuracy of the record are the responsibility of the submitting author, not of the database.  
+The databases will work with submitters and users of the database to achieve the best quality resource possible.
+
+The INSD is an outstanding example of success in building an immensely valuable, widely used public resource 
+through voluntary ooperation across the international scientific community.  
+This success has been achieved following the guidelines and principles outlined above.  
 
 Signed by:  
-: Soren Brunak, Technical University of Denmark
-: Antoine Danchin, Institut Pasteur
-: Masahira Hattori, Kitasato University
-: Tara Matise, Rutgers University
-: Haruki Nakamura, Osaka University
-: Daphne Preuss, University of Chicago
-: Kazuo Shinozaki, RIKEN
+: Soren Brunak, Technical University of Denmark  
+: Antoine Danchin, Institut Pasteur  
+: Masahira Hattori, Kitasato University  
+: Tara Matise, Rutgers University  
+: Haruki Nakamura, Osaka University  
+: Daphne Preuss, University of Chicago  
+: Kazuo Shinozaki, RIKEN  
+
