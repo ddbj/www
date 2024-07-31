@@ -1,14 +1,10 @@
 top_news:
   ja:
-    - title: (7/31 10:00-11:00) GEA/DRA/BioProject/BioSample システムリリースによるサービス停止のお知らせ
-      path: 2024-07-25
     - title: (8/15～16) DDBJ センター夏季休業のお知らせ
       path: 2024-07-09
     - title: サンプルを採集した場所と日時の記載を必須化
       path: 2024-02-01
   en:
-    - title: (JULY 31 10:00-11:00) Announcement of GEA/DRA/BioProject/BioSample system suspension
-      path: 2024-07-25-e
     - title: (August 15 to 16) DDBJ Center Closing for Summer Break
       path: 2024-07-09-e
     - title: The requirement to state the location and date of sample collection
