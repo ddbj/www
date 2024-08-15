@@ -385,6 +385,7 @@ PQ      GenBank         Direct submission
 PR      USPTO           Patent application
 PS      GenBank         scaffold/CON
 PT      USPTO           Patent application
+PU      USPTO           Patent application
 Q       void            UniProt/Swiss-Prot
 QK      EPO             Patent application
 QL      EPO             Patent application
