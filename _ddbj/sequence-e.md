@@ -16,7 +16,7 @@ related_pages:
 
 ## Introduction  {#intro}
 
-This site is to explain about nucleotide sequences on the flat files of DDBJ (Annotated/Assembled Sequences), in a narrow sense, as a counterpart of GenBank and ENA.    
+This site is to explain about nucleotide sequences on the flat files of DDBJ (Annotated/Assembled Sequences), in a narrow sense: as a counterpart of GenBank.    
 When you are to publicize raw output data of NGS and so on, please contact [DDBJ Sequence Read Archive](/dra/index-e.html).    
     
 For the request of [primary entry](/ddbj/submission-e.html#primary_entry) submission, in principle, DDBJ accepts any nucleotide sequences that are experimentally determined by submitters, but can not accept computational predicted and/or cited sequences.
@@ -24,7 +24,7 @@ For the request of [primary entry](/ddbj/submission-e.html#primary_entry) submis
 Even if your sequence is identical to previously reported sequence(s), on the condition that the sequence is independently determined, you can submit it as a "new" one.    
 See also [Representative submissions of identical sequences for variation studies](/ddbj/representative-sequence-e.html).    
     
-DDBJ also accepts an entry that is obtained by assembling primary entries publicized from DDBJ/ENA/GenBank of INSDC and/or is added annotation(s) by experimental or inferential method by submitter as [TPA (third party data)](ddbj/tpa-e.html).    
+DDBJ also accepts an entry that is obtained by assembling primary entries publicized from INSDC and/or is added annotation(s) by experimental or inferential method by submitter as [TPA (third party data)](ddbj/tpa-e.html).    
 
 
 ## Not acceptable sequences  {#not_acceptable}

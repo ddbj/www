@@ -17,7 +17,7 @@ related_pages:
 
 ## 序  {#intro}
 
-このサイトは狭義の DDBJ (Annotated/Assembled Sequences)、GenBank あるいは ENA のフラットファイルとして公開される塩基配列について説明しています。    
+このサイトは狭義の DDBJ (Annotated/Assembled Sequences) のフラットファイル (いわゆる GenBank) として公開される塩基配列について説明しています。    
 NGS raw output data などの登録に関しましては、DDBJ/ENA/GenBank とは別枠のデータベースである [DRA; DDBJ Sequence Read Archive](/dra/index.html) へのご登録をお願いいたします。    
     
 DDBJ では, [primary entry](/ddbj/submission.html#primary_entry) のデータとして登録依頼のあったデータにつきましては, ２次的な引用やコンピューターで予測したものでなく、登録者が実験的に決定した、もしくは、 企業等からその配列の使用権を得たものであれば、原則、受け付けています。    
@@ -25,7 +25,7 @@ DDBJ では, [primary entry](/ddbj/submission.html#primary_entry) のデータ�
 配列が全く同じでも、独立に配列が決定されたデータならば、「新規データ」として別々にDDBJ に登録可能です。    
 参考: [多型関連研究における同一配列の代表データ登録](/ddbj/represent.html)    
     
-DDBJ/ENA/GenBank では、既に報告されている primary data を２次的に引用し、 生物学的付加情報を付与し直す目的で [TPA (third party data)](ddbj/tpa.html) を受け付けています。    
+INSDC では、既に報告されている primary data を２次的に引用し、 生物学的付加情報を付与し直す目的で [TPA (third party data)](ddbj/tpa.html) を受け付けています。    
 
 
 ## 登録を受け付けることができない配列  {#not_acceptable}
