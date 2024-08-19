@@ -24,19 +24,19 @@ related_pages:
     url: /ddbj/geneticcode.html
 ---
 
-「DDBJ/EMBL-Bank/GenBank 国際塩基配列データベース」は、全世界の研究者が実験によって決定したDNA (または RNA)
-の塩基配列データ <span class="red">\*</span> を、DDBJ/EMBL-Bank/GenBank 国際 DNA
-データバンクが、三者間で定めたデータ構築規範に沿って収集・編集することにより構築されています。
-（<span class="red">\*</span>旧運用では, 論文に記載されていた塩基配列を取り込む journal scan 方式の塩基配列データ収集も実施していました。）
+DDBJ（DNA Data Bank of Japan）は [INSDC](/about/insdc.html)（International Nucleotide Sequence Database Collaboration）の一員として、
+アノテーションが付与された/アセンブルされた塩基配列データを共有しています。  
+このデータ共有のため、全世界の研究者が実験によって決定したDNA (または RNA) の塩基配列データ <span class="red">\*</span> を、INSDC で定めたデータ構築規範に沿って収集・編集することによりデータベースを構築しています。    
+（<span class="red">\*</span>旧運用では、論文に記載されていた塩基配列を取り込む journal scan 方式の塩基配列データ収集も実施していました。）
 
 また、データベースの中には、日本の[Japan Patent Office (JPO)](https://www.jpo.go.jp/index.html )、
 韓国の [Korean Intellectual Property Office (KIPO)](https://www.kipo.go.kr/ ) 、
 欧州の [European Patent Office (EPO)](https://www.epo.org/ )、米国の 
-[United States Patent and Trademark Office (USPTO)](https://www.uspto.gov/ ) が収集・処理した塩基配列データも含まれています。
+[United States Patent and Trademark Office (USPTO)](https://www.uspto.gov/ ) が収集・処理した塩基配列データも含まれています。  
 
-塩基配列データベースは、データの単位である「エントリ」の集合として構成されています。 DDBJ に登録されたそれぞれのエントリは、DDBJ
-の定めるフォーマットにしたがった「フラットファイル」 (flat file) の形式で公開されています。
-フラットファイルには、塩基配列のほか、配列の登録者、関連文献、由来生物種、Feature 情報などが表示されています。
+塩基配列データベースは、データの単位である「エントリ」の集合として構成されています。  
+DDBJ に登録されたそれぞれのエントリは、DDBJの定めるフォーマットにしたがった「フラットファイル」 (flat file) の形式で公開されています。  
+フラットファイルには、塩基配列のほか、配列の登録者、関連文献、由来生物種、Feature 情報などが表示されています。  
  Feature 情報とは、その塩基配列のもつ生物学的特徴や遺伝子の機能、特性等に関する情報を記述したもので、記述形式は、
  [The DDBJ/ENA/GenBank Feature Table Definition](/ddbj/feature-table.html ) (国際塩基配列データベースが定める記述形式) によって定められています。
 

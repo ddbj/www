@@ -16,9 +16,11 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-The whole genome shotgun approach (the whole genome is once blasted into millions of fragment, which are sequenced and reassembled to produce a series of sequence 'scaffolds'.) has been used to sequence the genome of various organisms.
+The whole genome shotgun approach (the whole genome is once blasted into millions of fragment, 
+which are sequenced and reassembled to produce a series of sequence 'scaffolds'.) 
+has been used to sequence the genome of various organisms.    
 
-The large set of contigs from the proceeding genome project can be submitted to DDBJ/ENA/GenBank as WGS data.    
+The large set of contigs from the proceeding genome project can be submitted to INSDC as WGS data.    
 See also [INSDC standards for genome assembly submission](/ddbj/assembly-e.html )    
 
 See [the list of publicized WGS data.](https://ddbj.nig.ac.jp/public/ddbj_database/wgs/WGS_ORGANISM_LIST.html)

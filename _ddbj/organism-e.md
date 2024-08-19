@@ -29,7 +29,7 @@ Every value of /organism qualifier must be
 on [taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy ).
 
 ## taxonomy database  {#taxonomy}
-All organisms that are represented in the sequence data of DDBJ/ENA/GenBank are registered to 
+All organisms that are represented in the sequence data of DDBJ are registered to 
 [the taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy ).    
 For construction of the nucleotide sequence database, it is important to manage the organism names 
 for the data and also necessary to unify the diverse names of the organisms.    

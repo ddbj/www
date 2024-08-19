@@ -14,9 +14,8 @@ related_pages:
     url: /ddbj/transcriptome.html
 ---
 
-TPA (Third Party Data) は、DDBJ/ENA/GenBank、Trace Archive、[SRA](https://www.ncbi.nlm.nih.gov/sra) で
-構成される国際塩基配列データベース (INSDC) に既に登録されているエントリ (これをプライマリーエントリと呼びます)
-を元に、第三者がアセンブル (assemble)、もしくは、(再)アノテーションを行ったデータのコレクションです。
+TPA (Third Party Data) は、INSDC に既に登録されているエントリ (これをプライマリーエントリと呼びます) を元に、
+第三者がアセンブル (assemble)、もしくは、(再)アノテーションを行ったデータのコレクションです。    
 配列のアセンブルには、既存のプライマリーエントリの組み合わせのみで構成された場合と、新規に TPA の登録者が実験的に決定した配列を混在させた場合とが存在します。
 INSDC では、既報のプライマリーエントリに記載されている配列に関する研究を公開するための手段として TPA 登録を受け入れています。
 

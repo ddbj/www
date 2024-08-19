@@ -16,7 +16,7 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-DDBJ/ENA/GenBank の EST division "Expressed Sequence Tags" は様々な生物に由来する
+DDBJ において EST division "Expressed Sequence Tags" は様々な生物に由来する
 "single-pass" cDNA 配列 (つまり mRNA, RNA 転写産物) と その付帯情報からなる配列データです。
 
 EST 登録には、[Mass Submission System (MSS)](/ddbj/mss.html) をご利用ください。

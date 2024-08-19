@@ -16,10 +16,12 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-Since 2008, INSDC has accepted the sequence data of "Transcriptome Shotgun Assembly (TSA)" categorised into TSA division for assembled cDNA sequences.
+Since 2008, INSDC has accepted the sequence data of "Transcriptome Shotgun Assembly (TSA)" categorised into TSA division for assembled cDNA sequences.    
 
-With new sequencing technologies, INSDC has faced many requests to accept assembled EST sequences. These sequence data have become more useful than used to be, although they may not be correctly assembled or exist in nature. Therefore, DDBJ/ENA/GenBank decided to collect assembled EST sequences and classified them into the TSA division.  
-See also [steps of transcriptome project, categories of sequence data and their correspondences.](/ddbj/transcriptome-e.html)
+With new sequencing technologies, INSDC has faced many requests to accept assembled EST sequences.  
+These sequence data have become more useful than used to be, although they may not be correctly assembled or exist in nature.  
+Therefore, INSDC decided to collect assembled EST sequences and classified them into the TSA division.  
+See also [steps of transcriptome project, categories of sequence data and their correspondences.](/ddbj/transcriptome-e.html)  
 
 [The list of publicized TSA data.](https://ddbj.nig.ac.jp/public/ddbj_database/tsa/TSA_ORGANISM_LIST.html)
 

@@ -16,12 +16,9 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-DDBJ/ENA/GenBank の HTG division は finished
-レベルに達していないゲノム配列を迅速に利用可能にするという科学界の需要に対応するために作られました。
-HTG division には処理能力の高いゲノム解析センターから提供された finished
-レベルに達していないゲノム配列データが含まれています。
-配列が finished level に更新された後には、HTG ではなく、taxonomic lineage に基づく division
-に移行します。
+DDBJ において HTG division は finished レベルに達していないゲノム配列を迅速に利用可能にするという科学界の需要に対応するために作られました。  
+HTG division には処理能力の高いゲノム解析センターから提供された finished レベルに達していないゲノム配列データが含まれています。 
+配列が finished level に更新された後には、HTG ではなく、taxonomic lineage に基づく division に移行します。
 
 HTG 登録には、[Mass Submission System (MSS)](/ddbj/mss.html) をご利用ください。
 

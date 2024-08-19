@@ -16,7 +16,7 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-The ENV division of DDBJ/ENA/GenBank contains sequence data and other
+The ENV division of DDBJ contains sequence data and other 
 information on environmental samples. Though frequently confused,
 <span class="red">**the term, 'environmental samples', does NOT mean
 "wild type"**</span>.  

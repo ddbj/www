@@ -15,12 +15,10 @@ related_pages:
 ---
 
 TPA (Third Party Data) is a nucleotide sequence data collection in which each primary is obtained by assembling 
-[primary entries](#definition_of_primary) publicized from DDBJ/EMBL-Bank/GenBank,
-International Nucleotide Sequence Database Collaboration (INSDC) Trace Archive and/or [SRA](https://www.ncbi.nlm.nih.gov/sra) with
-additional feature annotation(s) determined by experimental or inferential methods by TPA submitter. 
+[primary entries](#definition_of_primary) publicized from with 
+additional feature annotation(s) determined by experimental or inferential methods by TPA submitter.    
 Those assemblies include two cases; one or more [primary entries](#definition_of_primary) are used and newly determined sequence is contained. 
-TPA sequence data should be submitted to DDBJ/EMBL-Bank/GenBank as a part of the process to publish biological
-research for primary nucleotide sequences.
+TPA sequence data should be submitted to DDBJ/EMBL-Bank/GenBank as a part of the process to publish biological research for primary nucleotide sequences.
 
 Reference Literature: [Cochrane,G. et al. (2006) OMICS,10(2): 105-113](https://www.liebertpub.com/doi/abs/10.1089/omi.2006.10.105)
 

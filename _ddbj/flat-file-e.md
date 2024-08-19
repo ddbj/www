@@ -24,12 +24,10 @@ related_pages:
     url: /ddbj/geneticcode-e.html
 ---
 
-
-# DDBJ flat file format
-
-DDBJ/EMBL-Bank/GenBank, the International Nucleotide Sequence Database Collaboration 
-([INSDC](/about/insdc-e.html )) collects the nucleotide sequences experimentally determined, 
-and constructs the database in accordance with the rule agreed with the three databanks.
+DDBJ (DNA Data Bank of Japan) shares annotated/assembled nucleotide sequence data as a member of 
+[INSDC](/about/insdc-e.html) (International Nucleotide Sequence Database Collaboration).    
+For the sharing purpose, DDBJ collects the nucleotide sequences experimentally determined, 
+and constructs the database in accordance with the rule agreed with INSDC.  
 
 The database also includes the data from 
 [Japan Patent Office](https://www.jpo.go.jp/e/index.html ) (JPO), 

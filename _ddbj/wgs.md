@@ -16,15 +16,16 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-様々な生物においてホールゲノムショットガン配列決定法（whole genome shotgun:
-ゲノム全体を物理的に断片化し、シークエンサで各断片の塩基配列を決定した後、コンピューター・プログラムを用いて整理、アセンブルして完成させる手法）を用いて全ゲノム配列を決定するゲノムプロジェクトが進められています。
+様々な生物においてホールゲノムショットガン配列決定法（whole genome shotgun: ゲノム全体を物理的に断片化し、
+シークエンサで各断片の塩基配列を決定した後、コンピューター・プログラムを用いて整理、アセンブルして完成させる手法）
+を用いて全ゲノム配列を決定するゲノムプロジェクトが進められています。  
 
-DDBJ/ENA/GenBank では、そのようなゲノムプロジェクトに由来する、整理が不十分な段階の大量の DNA 断片の配列を、WGS データとして受け付けています。  
+INSDC では、そのようなゲノムプロジェクトに由来する、整理が不十分な段階の大量の DNA 断片の配列を、WGS データとして受け付けています。  
 [INSDC standards for genome assembly submission](/ddbj/assembly.html )もご参照ください。
 
-[公開されているWGSデータ](https://ddbj.nig.ac.jp/public/ddbj_database/wgs/WGS_ORGANISM_LIST.html)
+[公開されているWGSデータ](https://ddbj.nig.ac.jp/public/ddbj_database/wgs/WGS_ORGANISM_LIST.html)  
 
-WGSデータの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受け付けております。
+WGSデータの登録は [Mass Submission System (MSS)](/ddbj/mss.html) で受け付けております。   
 
 ## WGS データとして登録可能なデータ  {#acceptable}
 

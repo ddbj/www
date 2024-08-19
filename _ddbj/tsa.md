@@ -16,15 +16,15 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-2008年から INSDC では、アセンブルされた cDNA 配列データを、Transcriptome Shotgun Assembly
-(TSA) division に受け付けています。
+2008年から INSDC では、アセンブルされた cDNA 配列データを、Transcriptome Shotgun Assembly (TSA) division に受け付けています。    
 
-以前、INSDC は EST
-アセンブルによって得られた配列データの登録を受け付けていませんでした。しかし、新しい塩基配列決定技術の普及に伴い、INSDC
-に EST
-アセンブルに相当する配列データの登録依頼が急増しました。このような配列データは、正しくアセンブルされておらず自然界に存在していないケースをも含んでいる可能性がありますが、近年、その需要も高まってきました。そこで、DDBJ/ENA/GenBank
-は EST アセンブルに相当する配列データを専用に格納する TSA division を新設し、登録を受け付けることを決定しました。  
-[Transcriptome Project の各段階と登録データの種別](/ddbj/transcriptome.html)もご参照ください。
+以前、INSDC は EST アセンブルによって得られた配列データの登録を受け付けていませんでした。  
+しかし、新しい塩基配列決定技術の普及に伴い、INSDC に EST アセンブルに相当する配列データの登録依頼が急増しました。  
+このような配列データは、正しくアセンブルされておらず自然界に存在していないケースをも含んでいる可能性がありますが、
+近年、その需要も高まってきました。  
+そこで、INSDC は EST アセンブルに相当する配列データを専用に格納する TSA division を新設し、登録を受け付けることを決定しました。  
+[Transcriptome Project の各段階と登録データの種別](/ddbj/transcriptome.html)もご参照ください。  
+
 
 [公開されているTSAデータ](https://ddbj.nig.ac.jp/public/ddbj_database/tsa/TSA_ORGANISM_LIST.html)
 

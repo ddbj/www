@@ -94,8 +94,8 @@ DDBJ に登録されたデータは、公開時に NCBI と EBI に送られ、�
 |  2001年4月  |  生命情報研究センターを改組し、生命情報・DDBJ 研究センター(CIB-DDBJ; Center for Information<br>Biology and DNA Data Bank of Japan) 設置。<br>以降、DDBJ は国立遺伝学研究所の公式な組織。  |
 |  2004年4月  |  国立遺伝学研究所、国立大学法人法に基づき、[大学共同利用機関法人情報・システム研究機構](http://www.rois.ac.jp/)(ROIS;Research Organization of Information and Systems) <br>に属する大学共同利用機関として改組。  |
 |  2005年5月  |  DDBJ, EMBL-Bank, GenBank の連携のもとにある国際塩基配列データベースは、その総称を INSDC;International Nucleotide Sequence Database Collaboration とした。 |
-|  2007年4月  |  ライフサイエンス統合データベースセンター](http://dbcls.rois.ac.jp/) (DBCLS; Database Center for Life Science) が ROIS に加入。  |
+|  2007年4月  |  [ライフサイエンス統合データベースセンター](http://dbcls.rois.ac.jp/) (DBCLS; Database Center for Life Science) が ROIS に加入。  |
 |  2009年  |  DDBJ 運営スタッフの大幅な異動があり、DBCLS との連携を強化。<br>DDBJ において 次世代シークエンサの出力データを収集する Sequence Read Archive と Trace Archiveの活動が軌道に乗り、これらの Archive も INSDC に加入。  |
 |  2012年4月  |  DDBJ を、CIB-DDBJ から独立した国立遺伝学研究所の事業系センター（共同利用事業センター）の１つとして、DDBJセンターに改組。  |
-|  2013年10月  |  バイオサイエンスデータベースセンター](https://biosciencedbc.jp/) (NBDC; National Bioscience Database Center)と共同で、<br>個人に由来する遺伝学的なデータと匿名化された表現型情報を登録するデータベース、[JGA](/jga/index.html);Japanese Genotype-phenotype Archive の運用を<br>DDBJ センターにおいて開始。   |
+|  2013年10月  |  [バイオサイエンスデータベースセンター](https://biosciencedbc.jp/) (NBDC; National Bioscience Database Center)と共同で、<br>個人に由来する遺伝学的なデータと匿名化された表現型情報を登録するデータベース、[JGA](/jga/index.html);Japanese Genotype-phenotype Archive の運用を<br>DDBJ センターにおいて開始。   |
 |  2019年 1月  |  国立遺伝学研究所の組織改編に伴い、センター名を「DDBJ センター (英語: DDBJ Center)」から「生命情報・DDBJ センター (英語: Bioinformation and DDBJ Center)」に変更。   |

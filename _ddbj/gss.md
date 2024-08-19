@@ -16,12 +16,10 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-DDBJ/ENA/GenBank の GSS division は [EST](/ddbj/est.html) division
-に似ていますが、その配列の大半が cDNA (RNA transcript)
-ではなく、ゲノムに由来するという点で異なります。  
-ただし、exon trap と gene trap は cDNA
-を介することもあります。このようなタイプの配列を解析する際には、splicing
-が生じてゲノム配列と比較して分断されている可能性があるため、注意が必要です。  
+DDBJ において GSS division は [EST](/ddbj/est.html) division に似ていますが、
+その配列の大半が cDNA (RNA transcript) ではなく、ゲノムに由来するという点で異なります。  
+ただし、exon trap と gene trap は cDNA を介することもあります。  
+このようなタイプの配列を解析する際には、splicing が生じてゲノム配列と比較して分断されている可能性があるため、注意が必要です。  
 GSS division には以下を含みますが、下記で全てを網羅している訳ではありません。
 
   - ランダムな "single pass read" のゲノム配列 例) RAPD, RFLP, AFLP など

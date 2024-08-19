@@ -16,32 +16,23 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-The HTC division of DDBJ/ENA/GenBank contains draft sequence data
-derived from cDNA libraries created using full length insert cDNA (mRNA)
-cloning methods.  
-Like genome data ([HTG](/ddbj/htg-e.html)), when sequences are
-considered to be finished level, the data will be moved from HTC to
-corresponding taxonomic division.
+The HTC division of DDBJ contains draft sequence data derived from cDNA libraries created using full length insert cDNA (mRNA) cloning methods.  
+Like genome data ([HTG](/ddbj/htg-e.html)), when sequences are considered to be finished level, the data will be moved from HTC to corresponding taxonomic division.
 
-You can submit HTC data to DDBJ through [Mass Submission System
-(MSS)](/ddbj/mss-e.html).
+You can submit HTC data to DDBJ through [Mass Submission System (MSS)](/ddbj/mss-e.html).
 
  Notes on HTC/full length insert cDNA submission
 : 
-  - Prior to your submission, remove regions of cloning vectors from
-    your sequences.
-  - Clone ID is required for [clone](/ddbj/qualifiers-e.html#clone)
-    qualifier.
-  - It is strongly recommended to include qualifiers indicating
-    expression conditions; tissue
+  - Prior to your submission, remove regions of cloning vectors from your sequences.
+  - Clone ID is required for [clone](/ddbj/qualifiers-e.html#clone) qualifier.
+  - It is strongly recommended to include qualifiers indicating expression conditions; tissue
     ([tissue_type](/ddbj/qualifiers-e.html#tissue_type)),
     developmental stage
     ([dev_stage](/ddbj/qualifiers-e.html#dev_stage)), mating type
     ([mating_type](/ddbj/qualifiers-e.html#mating_type) or
     [sex](/ddbj/qualifiers-e.html#sex)) and so on.
   - As mentioned above, HTC is different from EST assemble sequence.
-    Do not confuse with [TSA: Transcriptome Shotgun
-    Assembly](/ddbj/tsa-e.html).
+    Do not confuse with [TSA: Transcriptome Shotgun Assembly](/ddbj/tsa-e.html).
 
 ### Sample flat file  {#flat-file}
 

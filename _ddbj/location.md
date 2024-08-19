@@ -9,7 +9,7 @@ lang: ja
 
 ## Location の記述法
 
-国際塩基配列データベースでは、配列上の Feature の位置情報 (以下、Location) を以下のルールで記述しています。
+INSDC では、配列上の Feature の位置情報 (以下、Location) を以下のルールで記述しています。
 
 | Location記述例                       | 意味                                                                                                   |
 |---|

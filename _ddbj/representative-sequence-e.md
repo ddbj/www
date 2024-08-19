@@ -10,7 +10,7 @@ lang: en
 
 # Representative submissions of identical sequences for variation studies
 
-Recently, variation studies related to re-sequencing projects are increased, so the sequence data from these projects are also increasd. 
+Recently, variation studies related to re-sequencing projects are increased, so the sequence data from these projects are also increasd.    
 <span style="color:red">DDBJ (INSDC) basically accepts all sequence data, regardless of source and sequence identity</span>, however, 
 if the policy is strictly applied, some of data would be very redundant.
 
@@ -19,11 +19,11 @@ a single submission to represent multiple identical sequences is also acceptable
 /[haplotype](/ddbj/qualifiers-e.html#haplotype ) 
 qualifier of [source](/ddbj/features-e.html#source ) 
 feature and/or /[frequency](/ddbj/qualifiers-e.html#frequency ) 
-qualifier of [variation](/ddbj/features-e.html#variation) feature.
+qualifier of [variation](/ddbj/features-e.html#variation) feature.  
 
 The way of representative submission for variation studies is 
 NOT to mean that all identical (or similar) sequences derived from same species
-would be represented by a single sequence data. 
+would be represented by a single sequence data.   
 To evaluate research data properly, DDBJ recommends to normalise research data 
 for variation studies by appropriate set of entries; basically, the number of entries 
 should be equal to multiplication of numbers of sequence polymorphisms and sampled populations.

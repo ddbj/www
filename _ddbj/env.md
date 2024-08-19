@@ -32,7 +32,7 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-DDBJ/ENA/GenBank の ENV division は 環境サンプル (environmental sample) 由来の配列と
+DDBJ において ENV division は 環境サンプル (environmental sample) 由来の配列と
 その付帯情報からなるデータです。  
 よく混同されますが、<span class="red">**環境サンプルとは「野生型」という意味ではありません**</span>。  
 環境サンプルとは、生物種が同定できない大量の環境DNAサンプルに由来した配列です。PCR、DGGE、あるいは、その他の方法で直接、分子を単離した場合などが該当します。  

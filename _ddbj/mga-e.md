@@ -16,15 +16,12 @@ related_pages:
     url: /ddbj/tpa-e.html
 ---
 
-<span class="red">**[Caution] DDBJ terminated
-accepting new submission of MGA data.**</span>
+<span class="red">**[Caution] DDBJ terminated accepting new submission of MGA data.**</span>
 
-In order to accept a large scale of sequence data that provide useful
-information for annotation of genome assemblies/sequences, the
-International Nucleotide Sequence Database Collaboration (INSDC;
-DDBJ/EMBL-Bank/GenBank) have created a new category. The name of this
-new category is Mass sequence for Genome Annotation (MGA). The
-definition of MGA data is the following.。
+In order to accept a large scale of sequence data that provide useful information for annotation 
+of genome assemblies/sequences, the INSDC have created a new category.  
+The name of this new category is Mass sequence for Genome Annotation (MGA).  
+The definition of MGA data is the following.  
 
 The definition of MGA data  
 : MGA is defined as those sequences which are produced in large

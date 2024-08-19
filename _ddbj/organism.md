@@ -30,7 +30,7 @@ related_pages:
 
 ## taxonomy database  {#taxonomy}
 
-DDBJ/EMBL-Bank/GenBank では、生物名 (/organism qualifier の値) を共同で構築している
+DDBJ では、生物名 (/organism qualifier の値) を共同で構築している
 [taxonomy database](https://www.ncbi.nlm.nih.gov/taxonomy ) で管理しています。    
 塩基配列データベース構築には由来生物名の管理は必須であり、生物名の表記を統一する必要があります。    
 そのため、生物名の参照先として この taxonomy database を使用しております。    
@@ -40,7 +40,7 @@ Taxonomy database は、生物名の表記を統一することに主眼をお�
 詳細に関しましては、
 [taxonomy database の説明](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=howcite )をご一読ください。    
 
-DDBJでは、taxonomy database を検索するためのシステム
+DDBJ では、taxonomy database を検索するためのシステム
 [TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja ) を公開しております。    
 塩基配列データベースにデータを登録する際、生物分類名を確認するためなどにご利用ください。    
 

@@ -16,10 +16,8 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-DDBJ/ENA/GenBank の HTC division は 主として 完全長の cDNA (mRNA) を cloning
-する手法を用いて作製された cDNA library から得られたドラフト配列データです。  
-ゲノム配列の場合 ([HTG](/ddbj/htg.html)) と同様、finished level であれば、HTC ではなく、
-taxonomic lineage に基づく division に移行します。
+DDBJ において HTC division は 主として 完全長の cDNA (mRNA) を cloning する手法を用いて作製された cDNA library から得られたドラフト配列データです。  
+ゲノム配列の場合 ([HTG](/ddbj/htg.html)) と同様、finished level であれば、HTC ではなく、taxonomic lineage に基づく division に移行します。
 
 HTC 登録には、[Mass Submission System (MSS)](/ddbj/mss.html) をご利用ください。
 
