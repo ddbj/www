@@ -12,27 +12,28 @@ related_pages:
     url: /activities/archives.html
 ---
 
-DDBJ (DNA Data Bank of Japan) センターは生命科学の研究活動をサポートするために、欧州の[EBI](https://www.ebi.ac.uk/ena)、米国の[NCBI](https://www.ncbi.nlm.nih.gov/)と国際塩基配列データベース連携 [INSDC (International Nucleotide Sequence Database Collaboration)](/about/insdc.html) を実施しています。あわせて、それを活用できるスーパーコンピュータシステムを提供しています。
+生命情報・DDBJ センター (BI-DDBJ) は、国際塩基配列データベース連携 [INSDC (International Nucleotide Sequence Database Collaboration)](/about/insdc.html) の一員です。
+あわせて、生命科学の研究活動をサポートするため、データ活用を可能にすべく、スーパーコンピュータシステムを提供しています。
 
 ## 活動理念  {#mission}
 
 生命科学のめざましい発展には、塩基配列から得られる知識を欠かすことができません。今日の生命科学では、コンピュータが実験器具と同等に必要です。
 たいへんなスピードで蓄積される塩基配列データなどの生命情報を処理・解析するにはコンピュータ科学・情報技術が必須です。
 これが生命情報学を誕生させ、発展させている原動力となっています。
-DDBJセンターは、生命情報学のための環境と人材を整備しつつ、国内外における生命科学分野で主要な役割を果たすことを目的としています。    
+BI-DDBJ は、生命情報学のための環境と人材を整備しつつ、国内外における生命科学分野で主要な役割を果たすことを目的としています。    
 
 INSDC が提供する情報は、目的や国籍にかかわらず[閲覧転用できる科学の共有財](/policies.html#copyright)です。
 世界中の研究者は DDBJ、ENA、GenBank の何れかを通じて INSDC にデータを登録できます。
-DDBJ センター事業の柱は、研究者の方々がデータを公開・共有する際に、なるべく同じ規則に従った表現で、できるだけ豊かな情報をストレスなく記入していただく仕組みづくりと、公共財の質の向上です。    
+BI-DDBJ 事業の柱は、研究者の方々がデータを公開・共有する際に、なるべく同じ規則に従った表現で、できるだけ豊かな情報をストレスなく記入していただく仕組みづくりと、公共財の質の向上です。    
 
 塩基配列データは久遠の時間をかけて生物が進化してきたことを直接示す記録です。
-塩基配列データが人類共通の財産であるという認識のもとに、INSDCはデータを公開しています。    
+塩基配列データが人類共通の財産であるという認識のもとに、INSDC はデータを公開しています。    
 
 ## 運営体制  {#governing}
 
-DDBJ センターは、[文部科学省](http://www.mext.go.jp/ )からの予算により、静岡県三島市にある[大学共同利用法人 情報・システム研究機構 国立遺伝学研究所 (NIG: National Institute of Genetics)](https://www.nig.ac.jp/) で運営されています。
+BI-DDBJ は、[文部科学省](http://www.mext.go.jp/ )からの予算により、静岡県三島市にある[大学共同利用法人 情報・システム研究機構 国立遺伝学研究所 (NIG: National Institute of Genetics)](https://www.nig.ac.jp/) で運営されています。
 
-DDBJ 事業は所外委員会である DNA データ研究利用委員会によって監督されています。    
+BI-DDBJ 事業は所外委員会である DNA データ研究利用委員会によって監督されています。    
 
 [現在の DDBJ 運営スタッフ](/about/staff.html)はこちらをご覧ください。
 
@@ -42,7 +43,7 @@ DDBJ 事業は所外委員会である DNA データ研究利用委員会によ�
 
 ### 国際塩基配列データベースの共同構築と運営  {#insd}
 
-DDBJセンターは、国際塩基配列データベース連携 [INSDC](/about/insdc.html) の一員です。
+BI-DDBJ は、国際塩基配列データベース連携 [INSDC](/about/insdc.html) の一員です。
 
 DDBJ に登録された全ての塩基配列データには、DDBJ の
 [アクセッション番号](/documents/accessions.html) (accession number)を発行しています。
@@ -52,8 +53,8 @@ DDBJ に登録されたデータは、公開時に NCBI と EBI に送られ、�
 
 #### 特許出願関連塩基配列データ、および、アミノ酸配列データの提供  {#pat}
 
-国際塩基配列データベース連携 ([INSDC](/about/insdc.html#insd)) には、日本、韓国、欧州、および、米国の特許庁が収集・処理した塩基配列データも含まれています。  
-このうち、DDBJ センターは日本および韓国の特許庁による配列データを公開しています。    
+国際塩基配列データベース連携 ([INSDC](/about/insdc.html)) には、日本、韓国、欧州、および、米国の特許庁が収集・処理した塩基配列データも含まれています。  
+このうち、BI-DDBJ は日本および韓国の特許庁による配列データを公開しています。    
 
 参照：
   - [特許出願に含まれる配列データの利用に関する注意](/ddbj/patent-data.html)
@@ -97,3 +98,4 @@ DDBJ に登録されたデータは、公開時に NCBI と EBI に送られ、�
 |  2009年  |  DDBJ 運営スタッフの大幅な異動があり、DBCLS との連携を強化。<br>DDBJ において 次世代シークエンサの出力データを収集する Sequence Read Archive と Trace Archiveの活動が軌道に乗り、これらの Archive も INSDC に加入。  |
 |  2012年4月  |  DDBJ を、CIB-DDBJ から独立した国立遺伝学研究所の事業系センター（共同利用事業センター）の１つとして、DDBJセンターに改組。  |
 |  2013年10月  |  バイオサイエンスデータベースセンター](https://biosciencedbc.jp/) (NBDC; National Bioscience Database Center)と共同で、<br>個人に由来する遺伝学的なデータと匿名化された表現型情報を登録するデータベース、[JGA](/jga/index.html);Japanese Genotype-phenotype Archive の運用を<br>DDBJ センターにおいて開始。   |
+|  2019年 1月  |  国立遺伝学研究所の組織改編に伴い、センター名を「DDBJ センター (英語: DDBJ Center)」から「生命情報・DDBJ センター (英語: Bioinformation and DDBJ Center)」に変更。   |
