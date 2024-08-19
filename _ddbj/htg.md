@@ -16,19 +16,18 @@ related_pages:
     url: /ddbj/tpa.html
 ---
 
-DDBJ において HTG division は finished レベルに達していないゲノム配列を迅速に利用可能にするという科学界の需要に対応するために作られました。  
-HTG division には処理能力の高いゲノム解析センターから提供された finished レベルに達していないゲノム配列データが含まれています。 
+HTG division は finished レベルに達していないゲノム配列を利用可能にするという需要に対応するために作られました。    
+
+DDBJ において HTG division には finished レベルに達していないゲノム配列データが含まれています。 
 配列が finished level に更新された後には、HTG ではなく、taxonomic lineage に基づく division に移行します。
 
 HTG 登録には、[Mass Submission System (MSS)](/ddbj/mss.html) をご利用ください。
 
 HTG の登録における注意事項
 :     
-  - 登録に先立ち、[BioProject Database](/bioproject/index.html) へ登録し
-    BioProject ID を取得してください。
+  - 登録に先立ち、[BioProject Database](/bioproject/index.html) へ登録し BioProject ID を取得してください。
   - [clone](/ddbj/qualifiers.html#clone) qualifier を記載してください。  
-    基本的に HTG division への主な対象はfinished レベルに達していない BAC, YAC, fosmid
-    cloneです。
+    基本的に HTG division への主な対象はfinished レベルに達していない BAC, YAC, fosmid cloneです。
 
 ## DDBJ フォーマットの例  {#flat-file}
 

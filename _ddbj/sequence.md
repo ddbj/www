@@ -17,7 +17,7 @@ related_pages:
 
 ## 序  {#intro}
 
-このサイトは狭義の DDBJ (Annotated/Assembled Sequences) のフラットファイル (いわゆる GenBank) として公開される塩基配列について説明しています。    
+このサイトは狭義の DDBJ (Annotated/Assembled Sequences) のフラットファイル (いわゆる GenBank に相当する対象) として公開される塩基配列について説明しています。    
 NGS raw output data などの登録に関しましては、DDBJ/ENA/GenBank とは別枠のデータベースである [DRA; DDBJ Sequence Read Archive](/dra/index.html) へのご登録をお願いいたします。    
     
 DDBJ では, [primary entry](/ddbj/submission.html#primary_entry) のデータとして登録依頼のあったデータにつきましては, ２次的な引用やコンピューターで予測したものでなく、登録者が実験的に決定した、もしくは、 企業等からその配列の使用権を得たものであれば、原則、受け付けています。    
