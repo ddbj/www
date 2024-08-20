@@ -92,7 +92,7 @@ The fixed MAF columns are as follows.
 |species|Species name of the NCBI taxonomy.|Homo sapiens|MS and NMR|
 |database|The database name used for metabolite identification.|CHEBI|MS and NMR|
 |database_version|The database version used for metabolite identification.||MS and NMR|
-|reliability|Reliability. Identification confidence of the metabolite. See https://www.ebi.ac.uk/metabolights/guides/Quick_start_Guide/Study%20Overview||MS and NMR|
+|reliability|Reliability. Identification confidence of the metabolite. See https://github.com/MSI-Metabolomics-Standards-Initiative/CIMR|MSI:1|MS and NMR|
 |search_engine|Search engine||MS and NMR|
 |search_engine_score|Search engine score||MS and NMR|
 |peak_identifier|||MS and NMR|
