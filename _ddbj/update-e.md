@@ -19,7 +19,7 @@ See [Categories for Sequence Data](/documents/data-categories-e.html).
   	  <tr>
   	  	<th>DRA</th>
   	  	<td>
-<a href="https://ddbj.nig.ac.jp/D-way/">Login to D-way</a> and update by yourself.<br>
+To change the hold date or to release data, please <a href="https://ddbj.nig.ac.jp/D-way/">login to D-way</a> and change the hold date by yourself. <br>Please click <a href="https://www.ddbj.nig.ac.jp/dra/update-e.html#change-hold-date"> here</a> to see how to make the change.<br>
           In case of data addition or deletion, contact us via <a href="/contact-ddbj-e.html">Contact</a>.</td>
   	  </tr>
   	  <tr>

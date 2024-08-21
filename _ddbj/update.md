@@ -19,7 +19,7 @@ related_pages:
     <tr>
       <th>DRA</th>
       <td>
-        <a href="https://ddbj.nig.ac.jp/D-way/">D-way にログイン</a>して登録者自身で更新<br>ただし、データ追加・削除は<a href="/contact-ddbj.html">お問い合わせフォーム</a> から連絡
+        公開予定日の変更、データ公開は<a href="https://ddbj.nig.ac.jp/D-way/">D-way にログイン</a>してご登録者自身で公開予定日を変更してください。<br>変更方法は<a href="https://www.ddbj.nig.ac.jp/dra/update.html#change-hold-date">こちら</a>をご覧ください。<br>ただし、データ追加・削除は<a href="/contact-ddbj.html">お問い合わせフォーム</a> から連絡
       </td>
     </tr>
     <tr>
