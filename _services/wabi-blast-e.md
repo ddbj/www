@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: WABI BLAST
+title: WABI BLAST (Tentative closing)
 category: services
 lang: en
 ---

@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: WABI ClustalW
+title: WABI ClustalW（休止中）
 category: services
 lang: ja
 related_pages:
