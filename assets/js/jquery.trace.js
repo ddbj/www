@@ -1340,6 +1340,68 @@ $(function() {
       }
 
     }); // $.getJSON
+
+	// MetaboBank rules
+	} else if ( pathname.match(/\/metabobank\/validation/) ) {
+
+	$.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1b34kjYemmQj-4m5zcp2n7QHCnQA98EjYcf6pOJ9xDTY/values/rule?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+
+	var rule_html = "";
+
+	for(var i = 1; i < data.values.length; i++) {
+	 
+		var entries = data.values[i];
+
+		var rule_class = entries[0];
+		var rule_id = entries[1];
+		var level = entries[2];
+		var object = entries[3];
+		var message = entries[4];
+		var description = entries[5];
+		var description_ja = entries[6];
+
+		rule_html += '<dl>';
+		rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '<span class="rule-object"> Object:' + object + '</span>' + '</dt>';        
+
+		if (la == "ja"){
+			rule_html += '<dd><div class="rule-message"><span class="ja rule-message-tag">message:</span> ' + message + '</div>';
+
+			if (description_ja) {
+				rule_html += '<div class="rule-description"><span class="ja rule-description-tag">説明:</span> ' + description_ja + '</div></dd>';
+			} else {
+				rule_html += '<div class="rule-description"></div></dd>';
+			}
+			
+		} else {
+			rule_html += '<dd><div class="rule-message"><span class="rule-message-tag">message:</span> ' + message + '</div>';
+
+			if (description) {
+				rule_html += '<div class="rule-description"><span class="rule-description-tag">description:</span> ' + description + '</div></dd>';
+			} else {
+				rule_html += '<div class="rule-description"></div></dd>';
+			}
+			
+		}
+
+		rule_html += "</dl>";
+
+		poc_html += '<li><a href="#' + rule_id + '" class="toc_chapter">' + rule_id + '</a></li>';
+
+		}     
+
+	$("#rule").prepend(rule_html);      
+	poc_html += '</ul>';
+
+	$('#in_this_page').append(poc_html);
+	$('#in_this_page > h2').text("Rules");        
+	
+	// anchor 指定時にページ内遷移
+	if (anchor && $(anchor).length){
+		$(document).scrollTop( $(anchor).offset().top );
+	}     
+
+}); // $.getJSON
+
 		
   } // if BioSample, GEA ...
 
