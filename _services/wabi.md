@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: WABI Web API for Biology
+title: WABI Web API for Biology（休止中）
 category: services
 lang: ja
 related_pages:

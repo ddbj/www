@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: WABI MAFFT
+title: WABI MAFFT（休止中）
 category: services
 lang: ja
 related_pages:

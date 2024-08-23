@@ -7,7 +7,6 @@ items:
     help:
       en: getentry-e
       ja: getentry
-    wabi: /services/getentry.html#ge_program
     description:
       en: DDBJ annotated/assembled data retrieval by accession numbers
       ja: アクセッション番号などによる DDBJ annotated/assembled 塩基配列エントリの検索
@@ -26,7 +25,6 @@ items:
     help:
       en: arsa-e
       ja: arsa
-    wabi: /services/arsa.html
     description:
       en: DDBJ annotated/assembled data retrieval by accession numbers and keywords
       ja: 高速なキーワードによる DDBJ annotated/assembled 塩基配列エントリの検索
@@ -107,38 +105,6 @@ items:
       ja: ベクター配列
     provider: DDBJ
     tags:
-      - analysis
-
-  - name: MAFFT
-    formal_name: Multiple Alignment using Fast Fourier Transform
-    service_link:
-      en: wabi-mafft-e
-      ja: wabi-mafft
-    help:
-      en: wabi-mafft-e
-      ja: wabi-mafft
-    wabi: /services/wabi-mafft.html
-    description:
-      en: Fast multiple alignment tool for nucleotide and amino acid sequences.
-      ja: 高速・高精度な核酸・アミノ酸配列のマルチプルアラインメントツール
-    provider: DDBJ
-    tags:
-      - analysis
-
-  - name: WABI
-    formal_name: Web API for Biology
-    service_link:
-      en: wabi-e
-      ja: wabi
-    help:
-      en: wabi-e
-      ja: wabi
-    description:
-      en: WABI is a web API for using the search services of the DDBJ without needing to navigate the web front-end
-      ja: 検索サービス を Web 画面を介せずに利用できる Web API
-    provider: DDBJ
-    tags:
-      - search
       - analysis
 
   - name: AOE

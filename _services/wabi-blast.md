@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: WABI BLAST
+title: WABI BLAST（休止中）
 category: services
 lang: ja
 related_pages:
