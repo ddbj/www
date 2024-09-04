@@ -158,22 +158,16 @@ lang: ja
   
 </form>
 
-パッケージを選択し，DEFINITION ボタンで attribute の定義と書式を見ることができます。[定義表](https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335)   
-*: 必須  
-**数字: 同一数字グループの中で少なくとも一つ必須（選択必須）  
+<h3 id="related">関連ページ</h3>
 
-* [いくつかのパッケージの登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)
-* [パッケージ一覧](/biosample/sample-info.html#Sample-package)
-* [Validation rules](https://docs.google.com/spreadsheets/d/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/edit#gid=1261957088)
-* [Controlled terms](https://docs.google.com/spreadsheets/d/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/edit#gid=1287828562)
+* [識別子について](/ddbj/identifiers.html)
+* [パッケージ](/biosample/sample-info.html#Sample-package)
+* ゲノムサンプルの登録方法
+	* [ゲノムアセンブリ](/biosample/overview.html#genome-assembly-sample)
+	* [メタゲノムアセンブリ](/ddbj/metagenome-assembly.html)
+	* [Haplotype](/ddbj/haplotype.html)
+	* [Single amplified genome](/ddbj/single-amplified-genome.html)
 
-<h3 id="data-type">データ種別毎のサンプル登録</h3>
-
-<ul>
-  <li><a href="/biosample/overview.html#genome-assembly-sample">ゲノムアセンブリ (含 メタゲノムアセンブリ) 用サンプル</a></li>
-  <li><a href="/ddbj/single-amplified-genome.html">Single amplified genome</a></li>
-  <li><a href="/ddbj/haplotype.html">Haplotype</a></li>
-  <li><a href="/biosample/overview.html#human-sample">Human Sample</a></li>
-</ul>
-
+*: 必須    
+**数字: 同一数字グループの中で少なくとも一つ必須（選択必須）    
 <div class="bs_desc"></div>

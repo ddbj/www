@@ -937,7 +937,7 @@ $(function(){
       var span_required = "";
 
       attr_table = "";
-      attr_table += '<p class="attr-title">' + package_shortname + '</p>';
+      attr_table += '<p class="attr-title">Package: ' + package_shortname + '</p>';
 
       // template
       if (package_tsv[package_shortname]) {

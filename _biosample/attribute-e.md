@@ -13,7 +13,7 @@ lang: en
 <form id="sample_attr_form" method="get" action="">
   <div id="main_index" class="biosample_attr">
     <div id="sample_type">
-      <a href="/biosample/submission-e.html#Sample-type" class="title">Sample type (Core Package)</a>
+      <a href="/biosample/submission-e-e.html#Sample-type" class="title">Sample type (Core Package)</a>
       <ul>
         <li>
         <div class="radio"><input type="radio" id="Core_Standard" name="Core" value="Standard"></div><label class="clearfix" for="Standard">Standard</label>
@@ -100,7 +100,7 @@ lang: en
     </div>
     
     <div id="env_package">
-      <a href="/biosample/submission-e.html#mixs" class="title">Environmental package (MIxS Sample)</a>
+      <a href="/biosample/submission-e-e.html#mixs" class="title">Environmental package (MIxS Sample)</a>
       <ul>
         <li>
           <div class="radio"><input type="radio" id="No_package" name="Package" value="No_package"></div> <label class="clearfix" for="No_package">No package</label>
@@ -158,24 +158,20 @@ lang: en
   
 </form>
 
-After selecting the relevant Sample type, click the DEFINITION button to review the definitions and formats of attribute. [See definition in the table](https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335) 
+After selecting a sample package, click DEFINITION to review definitions of attributes. [See definition in the table](https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335) 
 
 *: Required  
-**number: At least one attribute is required in attributes   
+**number: At least one attribute is required in attributes  
 
-* [BioSample example submission files for several packages](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)    
-* [Package list](/biosample/sample-info-e.html#Sample-package)
-* [Validation rules](https://docs.google.com/spreadsheets/d/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/edit#gid=1261957088)
-* [Controlled terms](https://docs.google.com/spreadsheets/d/1kh9vRllab7t7PBftd0nEBi-YbIWvFVRAiYS6F6RRBNU/edit#gid=1287828562)
+<h3 id="related">Related pages</h3>
 
-<h3 id="data-type">Sample submission by data type</h3>
-
-<ul>
-  <li><a href="/biosample/overview-e.html#genome-assembly-sample">Genome Assembly (including metagenome assembly) Sample</a></li>
-  <li><a href="/ddbj/single-amplified-genome-e.html">Single amplified genome</a></li>
-  <li><a href="/ddbj/haplotype-e.html">Haplotype</a></li>
-  <li><a href="/biosample/overview-e.html#human-sample">Human Sample</a></li>
-</ul>
+* [Identifiers](/ddbj/identifiers-e.html)
+* [Sample package](/biosample/sample-info-e.html#Sample-package)
+* How to submit genome assembly samples  
+	* [Genome assembly sample](/biosample/overview-e.html#genome-assembly-sample)
+	* [Metagenome Assembly](/ddbj/metagenome-assembly-e.html)
+	* [Haplotype](/ddbj/haplotype-e.html)
+	* [Single amplified genome](/ddbj/single-amplified-genome-e.html)
 
 <div class="bs_desc"></div>
 
