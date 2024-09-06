@@ -135,15 +135,13 @@ derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015　　
 
 #### DDBJ {#mag-ddbj}
 
-MAG は [ENV division](/ddbj/env.html)
-のゲノムエントリとして登録します。[MSS](/ddbj/mss.html)
-が登録受付窓口になります。
+MAG は [ENV division](/ddbj/env.html) のゲノムエントリとして登録します。
+[MSS](/ddbj/mss.html) が登録受付窓口になります。
 MAG 登録では [source feature](/ddbj/features.html#source) に以下の [Qualifier](/ddbj/qualifiers.html) が必須になります。
 
-MAG 特有のルールとして必須
-- /metagenome\_source = "xyz metagenome"（"xyz
-  metagenome" は [metagenome organism
-  names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/)
+MAG 特有のルールとして必須 
+- [/metagenome_source](/ddbj/qualifiers.html#metagenome_source) = "xyz metagenome"（"xyz  metagenome" は 
+  [metagenome organism names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/ )
   に含まれていること）を記載。
 
 ENV Division エントリとして必須
@@ -151,12 +149,15 @@ ENV Division エントリとして必須
 - [/isolation_source](/ddbj/qualifiers.html#isolation_source)
 - [/isolate](/ddbj/qualifiers.html#isolate)
 
+全てのエントリで必須
+- [/organism](/ddbj/organism.html#MAG )
+- [/mol_type](/ddbj/qualifiers.html#mol_type) = "genomic DNA"
+
 また、ゲノムエントリとして [ST\_COMMENT](/ddbj/file-format.html#describing_st_comment) に以下のアセンブリ情報が必須になります。
 - Assembly Method
 - Genome Coverage
 - Sequencing Technology
 - Assembly Name (真核生物の場合に必須)
 
-MAG エントリ（ENV division）では [/strain](/ddbj/qualifiers.html#strain)
-を記載することはできません。また、宿主の情報がある場合は source feature に
-[/host](/ddbj/qualifiers.html#host) で記載します。
+MAG エントリ（ENV division）では [/strain](/ddbj/qualifiers.html#strain) を記載することはできません。    
+また、宿主の情報がある場合は source feature に [/host](/ddbj/qualifiers.html#host) で記載します。

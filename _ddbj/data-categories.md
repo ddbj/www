@@ -93,7 +93,14 @@ TLS データは他のデータと[アクセッション番号の書式](/ddbj/f
 
 ### TPA: Third Party Data 第三者再構築またはアノテーション  {#tpa}
 
-[TPA (Third Party Data)](/ddbj/tpa.html) は, DDBJ/EMBL-Bank/GenBank、[Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi)、もしくは、Sequence Read Archiveに既に登録されているエントリ (これをプライマリーエントリと呼びます) を元に, 第三者がアセンブル (assemble), もしくは, (再)アノテーションを行ったデータのコレクションです。配列のアセンブルには, 既存のプライマリーエントリの組み合わせのみで構成された場合と, 新規に TPA の登録者が実験的に決定した配列を混在させた場合とが存在します。DDBJ/EMBL-Bank/GenBank では, 既報のプライマリーエントリに記載されている配列に関する研究を公開するための手段として TPA 登録を受け入れています。  
+[TPA (Third Party Data)](/ddbj/tpa.html) は, DDBJ/ENA/GenBank、もしくは、
+[Sequence Read Archive](/dra/index.html) に既に登録されているエントリ (これを
+プライマリーエントリと呼びます) を元に、第三者がアセンブル (assemble)、もしくは、
+(再)アノテーションを行ったデータのコレクションです。  
+配列のアセンブルには、既存のプライマリーエントリの組み合わせのみで構成された場合と、
+新規に TPA の登録者が実験的に決定した配列を混在させた場合とが存在します。  
+DDBJ/ENA/GenBank では, 既報のプライマリーエントリに記載されている配列に関する研究を
+公開するための手段として TPA 登録を受け入れています。  
 [TPA Submission Guidelines](/ddbj/tpa-table.html) もご参照ください。
 
 ## MSS submission時に選択可能なdata type  {#sub}

@@ -179,13 +179,17 @@ through the [Mass Submission System (MSS)](/ddbj/mss-e.html).
 Following [Qualifier](/ddbj/qualifiers-e.html) of [source feature](/ddbj/features-e.html#source) are required for the MAG submission.
 
 Required for the MAG entry.
-- /metagenome_source = 'xyz metagenome' ('xyz metagenome' should be from this list of [metagenome organism names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/) in the taxonomy database).
+- [/metagenome_source](/ddbj/qualifiers-e.html#metagenome_source) = 'xyz metagenome' ('xyz metagenome' should be from this list of [metagenome organism names](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&p=mapview&p=has_linkout&p=blast_url&p=genome_blast&keep=1&srchmode=3&unlock/) in the taxonomy database).
 
 Required for the ENV division entry.
 
 - [/environmental_sample](/ddbj/qualifiers-e.html#environmental_sample)
 - [/isolation_source](/ddbj/qualifiers-e.html#isolation_source)
 - [/isolate](/ddbj/qualifiers-e.html#isolate)
+
+Required for All entry.
+- [/organism](/ddbj/organism-e.html#MAG )
+- [/mol_type](/ddbj/qualifiers-e.html#mol_type) = "genomic DNA"
 
 The assebly information is necessary in [ST_COMMENT](/ddbj/file-format-e.html#describing_st_comment) as a genome entry.
 
@@ -195,8 +199,7 @@ The assebly information is necessary in [ST_COMMENT](/ddbj/file-format-e.html#de
 - Assembly Name (required in the case of eukaryotes)
 
 In the MAG (ENV division) entry,
-[/strain](/ddbj/qualifiers-e.html#strain) can not be used. Please
-describe natural host of the organism from which sequenced molecule was
-obtained in /host.
+[/strain](/ddbj/qualifiers-e.html#strain) can not be used.    
+Please describe natural host of the organism from which sequenced molecule was obtained in /host.
 
 

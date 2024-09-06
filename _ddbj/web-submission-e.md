@@ -49,7 +49,7 @@ Please note the points other than number or length of your data.
 - [EST](/ddbj/est-e.html), [TSA](/ddbj/tsa-e.html),
   [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
-  [TLS](/ddbj/tls-e.html)
+  [TLS](/ddbj/tls-e.html), [TPA](/ddbj/tpa-e.html)
     - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
 - Submission with long sequences, greater than 500 kb in its length
 - Complex submission containing many features for one sequence, more than 30 features
@@ -88,7 +88,9 @@ the following cases are included, but not limited to them.
 ## Before you start 
 
   - As a first step, please read the descriptions of "[Before Submission](/ddbj/submission-e.html)" and "[Required preparation before submission](/ddbj/sequence-e.html#process)".
-  - TPA:experimental and/or TPA:inferential as a small scale [TPA data](/ddbj/tpa-e.html) submission is also acceptable via this system.
+  - Previously, small scale [TPA data](/ddbj/tpa-e.html) submission was acceptable, however, currently, TPA data is not acceptable via this system.  
+    Please submit TPA data via [MSS](/ddbj/mss-e.html).  
+    See [From January 2025 TPA-Exp and TPA-Inf submission types will no longer be accepted as new submissions](/news/en/2024-09-05-e.html )
   - Trim the vector or adapter regions from the nucleotide sequences. You can check it by using [VecScreen](http://ddbj.nig.ac.jp/vecscreen/).
 
 ## How to resume the submission

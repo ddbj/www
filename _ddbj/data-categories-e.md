@@ -124,18 +124,14 @@ accession number](/ddbj/flat-file-e.html#Accession).
 
 ### TPA: Third Party Data and primary sequence data  {#tpa}
 
-[TPA (Third Party Data)](/ddbj/tpa-e.html) is a nucleotide sequence data
-collection in which each entry is obtained by assembling primary entries
-publicized from DDBJ/EMBL-Bank/GenBank, [Trace
-Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi), and/or
-[Sequence Read Archive](/dra/index-e.html) with additional feature
-annotation(s) determined by experimental or inferential methods by TPA
-submitter. Those assemblies include two cases; one or more primary
-entries are used and newly determined sequence is contained. TPA
-sequence data should be submitted to DDBJ/EMBL-Bank/GenBank as a part of
-the process to publish biological research for primary nucleotide
-sequences.  
-See also [TPA Submission Guidelines](/ddbj/tpa-table-e.html).
+[TPA (Third Party Data)](/ddbj/tpa-e.html) is a nucleotide sequence data collection in which 
+each entry is obtained by assembling primary entries publicized from DDBJ/ENA/GenBank, and/or 
+[Sequence Read Archive](/dra/index-e.html) with additional feature annotation(s) determined 
+by experimental or inferential methods by TPA submitter.  
+Those assemblies include two cases; one or more primary entries are used and newly determined sequence is contained.  
+TPA sequence data should be submitted to DDBJ/ENA/GenBank as a part of the process to publish 
+biological research for primary nucleotide sequences.  
+See also [TPA Submission Guidelines](/ddbj/tpa-table-e.html).  
 
 ## Data types in MSS submission  {#sub}
 
