@@ -134,21 +134,6 @@ items:
     tags:
       - search
 
-  - name: DBCLS SRA
-    formal_name: DBCLS SRA
-    service_link:
-      en: http://sra.dbcls.jp/
-      ja: http://sra.dbcls.jp/
-    description:
-      en: Statistics and trends of SRA data
-      ja: 公共次世代シーケンスデータの統計情報と検索機能を提供するサービス
-    provider: DBCLS
-    target_data:
-      en: Raw sequencing data and alignment information
-      ja: 生シークエンスデータとアライメント情報
-    tags:
-      - search
-
   - name: Gendoo
     formal_name: Gendoo
     service_link:
@@ -392,21 +377,6 @@ items:
       ja: ヒトの遺伝型と表現型
     tags:
       - database
-
-  - name: TogoAnnotator
-    formal_name: TogoAnnotator
-    service_link:
-      en: http://togoannotator.dbcls.jp
-      ja: http://togoannotator.dbcls.jp
-    description:
-      en: This tool normalizes gene product names and assists with the curation task.
-      ja: 遺伝子産物名を標準化しキュレーションタスクを支援するツール
-    provider: DBCLS
-    target_data:
-      en: Gene product name
-      ja: 遺伝子産物名
-    tags:
-      - search
 
   - name: TogoVar-repository
     formal_name: TogoVar-repository
