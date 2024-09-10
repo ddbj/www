@@ -501,8 +501,8 @@ gea:
       children:
         - title: RefEx
           url: http://refex.dbcls.jp/
-    - id: downloads
-      title: Downloads
+    - id: download
+      title: Download
       url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
     - id: about gea
       title: About GEA
@@ -548,8 +548,8 @@ gea:
       children:
         - title: RefEx
           url: http://refex.dbcls.jp/index.php?lang=en
-    - id: downloads
-      title: Downloads
+    - id: download
+      title: Download
       url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
     - id: about gea
       title: About GEA
@@ -580,10 +580,13 @@ metabobank:
       url: https://mb2.ddbj.nig.ac.jp/search/
     - id: download
       title: Download
-      url: https://ddbj.nig.ac.jp/public/metabobank/project/
+      url: https://ddbj.nig.ac.jp/public/metabobank/study/
+    - id: resource
+      title: Resource
+      url: /metabobank/resource.html
       children:
         - title: mzB format
-          url: /metabobank/mzB-e.html
+          url: /metabobank/mzB.html
     - id: contact
       title: Contact
       url: /metabobank/contact.html
@@ -611,7 +614,10 @@ metabobank:
       url: https://mb2.ddbj.nig.ac.jp/search/
     - id: download
       title: Download
-      url: https://ddbj.nig.ac.jp/public/metabobank/project/
+      url: https://ddbj.nig.ac.jp/public/metabobank/study/
+    - id: resource
+      title: Resource
+      url: /metabobank/resource-e.html
       children:
         - title: mzB format
           url: /metabobank/mzB-e.html
@@ -684,16 +690,48 @@ togovar:
     - id: home
       title: Home
       url: /togovar/index.html
+    - id: submission
+      title: Submission
+      url: /togovar/submission.html
+      children:
+        - title: Metadata
+          url: /togovar/metadata.html
+        - title: Data file
+          url: /togovar/datafile.html
+        - title: Validation
+          url: /togovar/validation.html
+    - id: download
+      title: Download
+      url: https://ddbj.nig.ac.jp/public/togovar/
     - id: search
       title: Browse variants
       url: https://grch38.togovar.org/
+    - id: about
+      title: About
+      url: /togovar/about-togovar.html
   en:
     - id: home
       title: Home
       url: /togovar/index-e.html
+    - id: submission
+      title: Submission
+      url: /togovar/submission-e.html
+      children:
+        - title: Metadata
+          url: /togovar/metadata-e.html
+        - title: Data file
+          url: /togovar/datafile-e.html
+        - title: Validation
+          url: /togovar/validation-e.html
+    - id: download
+      title: Download
+      url: https://ddbj.nig.ac.jp/public/togovar/
     - id: search
       title: Browse variants
       url: https://grch38.togovar.org/
+    - id: about
+      title: About
+      url: /togovar/about-togovar-e.html
 
 sc:
   ja:

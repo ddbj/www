@@ -1,10 +1,10 @@
 ---
 layout: tabbed_indexed_content
 service_name: MetaboBank
-title: mzB format
+title: Resource
 category: metabobank
 current_tab: resource
-lang: ja
+lang: en
 ---
 
-作成中
+Under construction.

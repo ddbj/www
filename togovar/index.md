@@ -1,8 +1,9 @@
 ---
 layout: top
+service_name: TogoVar
 title: TogoVar
-description: TogoVar-repository composed of two parts, Short Genetic Variation (TogoVar-repository-SNP) and Structural Variation (TogoVar-repository-SV).
 category: togovar
+current_tab: home
 lang: ja
 ---
 

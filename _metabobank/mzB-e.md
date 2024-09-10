@@ -1,9 +1,9 @@
 ---
 layout: tabbed_indexed_content
 service_name: MetaboBank
-title: mzB
+title: mzB format
 category: metabobank
-current_tab: download
+current_tab: resource
 lang: en
 ---
 

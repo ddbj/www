@@ -1,7 +1,7 @@
 ---
 layout: tabbed_indexed_content
 service_name: MetaboBank
-title: mzB format
+title: Resource
 category: metabobank
 current_tab: resource
 lang: ja
