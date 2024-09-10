@@ -187,14 +187,12 @@ TLS データは他のデータとアクセッション番号の書式が異な�
 
 #### TPA: 第三者再構築、または、アノテーション  {#tpa}
 
-TPA (Third Party Data) は, DDBJ/ENA/GenBank、Trace
-Archive、もしくは、Sequence Read Archiveに既に登録されているエントリ
-(これをプライマリーエントリと呼びます) を元に, 第三者がアセンブル
-(assemble), もしくは,
-(再)アノテーションを行ったデータのコレクションです。配列のアセンブルには,
-既存のプライマリーエントリの組み合わせのみで構成された場合と, 新規に TPA
-の登録者が実験的に決定した配列を混在させた場合とが存在します。DDBJ/ENA/GenBank
-では,
-既報のプライマリーエントリに記載されている配列に関する研究を公開するための手段として
-TPA 登録を受け入れています。
-TPA Submission Guidelines もご参照ください。
+[TPA (Third Party Data)](/ddbj/tpa.html) は, DDBJ/ENA/GenBank、もしくは、
+[Sequence Read Archive](/dra/index.html) に既に登録されているエントリ (これを
+プライマリーエントリと呼びます) を元に、第三者がアセンブル (assemble)、もしくは、
+(再)アノテーションを行ったデータのコレクションです。  
+配列のアセンブルには、既存のプライマリーエントリの組み合わせのみで構成された場合と、
+新規に TPA の登録者が実験的に決定した配列を混在させた場合とが存在します。  
+DDBJ/ENA/GenBank では, 既報のプライマリーエントリに記載されている配列に関する研究を
+公開するための手段として TPA 登録を受け入れています。  
+[TPA Submission Guidelines](/ddbj/tpa-table.html) もご参照ください。

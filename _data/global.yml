@@ -1,7 +1,19 @@
 top_news:
-  ja:
+ ja:
+    - title: (9/11 10:00 - 12:00) DDBJ Group Manager の停止
+      path: 2024-09-06
+    - title: "お詫び： JGA等の新規公開データ等がDDBJ searchで検索できなかった件について"
+      path: 2024-09-01
+    - title: "[復旧] DDBJ Search キーワード検索の一部不具合について"
+      path: 2023-12-06
     - title: サンプルを採集した場所と日時の記載を必須化
       path: 2024-02-01
-  en:
+ en:
+    - title: (September 11th 10:00-12:00) DDBJ Group Manager downtime
+      path: 2024-09-06-e
+    - title: Apologies for not being able to search newly published data of JGA with DDBJ search
+      path: 2024-09-01-e
+    - title: "[Resumed] Disabilities in the DDBJ Search keyword search"
+      path: 2023-12-06-e
     - title: The requirement to state the location and date of sample collection
       path: 2024-02-01-e

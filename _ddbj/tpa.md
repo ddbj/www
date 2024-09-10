@@ -14,6 +14,8 @@ related_pages:
     url: /ddbj/transcriptome.html
 ---
 
+<span class="red">[ご注意ください]</span> [2025年1月以降、TPA-Exp および TPA-Inf の data type の新規登録を休止](/news/ja/2024-09-05.html )
+
 TPA (Third Party Data) は、INSDC に既に登録されているエントリ (これをプライマリーエントリと呼びます) を元に、
 第三者がアセンブル (assemble)、もしくは、(再)アノテーションを行ったデータのコレクションです。    
 配列のアセンブルには、既存のプライマリーエントリの組み合わせのみで構成された場合と、新規に TPA の登録者が実験的に決定した配列を混在させた場合とが存在します。
@@ -34,7 +36,7 @@ TPA 配列データ受け入れ規則
   |  [TPA:specialist\_db](/ddbj/tpa-table-e.html#spe)  |  認められたpeer-review出版物に報告があり、既存、かつ信頼のある public database から登録された配列で、INSDC 配列データを使用して構築された配列であることを示します。  |
 :       
   \[注\]2005年まで INSDC では、生物学的な実験の根拠がない場合は TPA として受け入れておりませんでした。
-2006年から、生物学的な実験根拠のない配列・アノテーションでも [TPA Submission Guidelines](/ddbj/tpa-table.html) に従い TPA として登録を受け入れる方針となりました。
+2006年から、生物学的な実験根拠のない配列・アノテーションでも [TPA Submission Guidelines](/ddbj/tpa-table.html ) に従い TPA として登録を受け入れる方針となりました。
 
 以下に該当する場合は TPA 登録を受け付けることができません。
 :     

@@ -49,7 +49,7 @@ NSSS は、下記の配列データに対応できません。
 
 <div class="attention" markdown="1">
 - NSSS が対応していない登録 
-   - [EST](/ddbj/est.html)、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[TLS](/ddbj/tls.html)
+   - [EST](/ddbj/est.html)、[TSA](/ddbj/tsa.html)、[HTC](/ddbj/htc.html)、[GSS](/ddbj/gss.html)、[HTG](/ddbj/htg.html)、[WGS](/ddbj/wgs.html)、[TLS](/ddbj/tls.html)、[TPA](/ddbj/tpa.html)
    - データ種別の詳細は、[登録データ種別](/documents/data-categories.html#division)をご確認ください。
 - １配列が長い場合、目安は 500 kb 以上
 - １配列あたりに多数の Feature がある場合、目安は 30 以上
@@ -91,7 +91,8 @@ BioProject/BioSample との連携のために [DBLINK](/ddbj/flat-file.html#DBLI
 ## 登録を開始する前に
 
   - はじめに、「[塩基配列の登録の前に](/ddbj/submission.html)」および「[登録前に必要な処理](/ddbj/sequence.html#process)」をご覧ください。
-  - 本ツールで少件数の[TPA データ](/ddbj/tpa.html)のうち、TPA:experimental と TPA:inferential の登録が可能です。
+  - 本ツールは、以前は少件数の[TPA データ](/ddbj/tpa.html) の登録に対応していましたが、現在は登録できません。[MSS](/ddbj/mss.html) をご利用ください。    
+    参照: [2025年1月以降、TPA-Exp および TPA-Inf の data type の新規登録を休止](/news/ja/2024-09-05.html )
   - 登録する配列からはベクターやアダプター等由来の配列を除いてください。[VecScreen](http://ddbj.nig.ac.jp/vecscreen/)で確認できます。
 
 ## 登録を再開するには
@@ -111,7 +112,7 @@ BioProject/BioSample との連携のために [DBLINK](/ddbj/flat-file.html#DBLI
 
 <div class="start-button" markdown="1">
 
-**[新規登録の開始](https://ddbj.nig.ac.jp/submission)**  
+**[新規登録の開始](https://ddbj.nig.ac.jp/submission )**  
 次ページで **[Create new submission\]** をクリックしてください。
 
 </div>

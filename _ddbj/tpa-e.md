@@ -14,6 +14,8 @@ related_pages:
     url: /ddbj/transcriptome-e.html
 ---
 
+<span class="red">[Caution]</span> [From January 2025 TPA-Exp and TPA-Inf submission types will no longer be accepted as new submissions](/news/en/2024-09-05-e.html )    
+
 TPA (Third Party Data) is a nucleotide sequence data collection in which each primary is obtained by assembling 
 [primary entries](#definition_of_primary) publicized from with 
 additional feature annotation(s) determined by experimental or inferential methods by TPA submitter.    
