@@ -581,6 +581,9 @@ metabobank:
     - id: download
       title: Download
       url: https://ddbj.nig.ac.jp/public/metabobank/project/
+      children:
+        - title: mzB format
+          url: /metabobank/mzB-e.html
     - id: contact
       title: Contact
       url: /metabobank/contact.html
@@ -609,6 +612,9 @@ metabobank:
     - id: download
       title: Download
       url: https://ddbj.nig.ac.jp/public/metabobank/project/
+      children:
+        - title: mzB format
+          url: /metabobank/mzB-e.html
     - id: contact
       title: Contact
       url: /metabobank/contact-e.html
