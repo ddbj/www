@@ -99,7 +99,8 @@ $ put JSUB000353_metadata.xlsx
 
 The JGA submission system discriminates archive and compression formats by the extension of the filenames.
 
-- The extensions, zip, tar, tar.gz, tgz, tar.bz2, tbz2, gz and bz2 are treated as archived and compressed in standard formats. Files whose extensions and formats are different will cause errors in the file processing.
+- Do NOT upload ZIP archives (files with a .zip extension).
+- The extensions, tar, tar.gz, tgz, tar.bz2, tbz2, gz and bz2 are treated as archived and compressed in standard formats. Files whose extensions and formats are different will cause errors in the file processing.
 - Do NOT compress bam files.
 - Do NOT archive files compressed by gz and bzip. Instead, archive compressed files by tar.gz.
 
