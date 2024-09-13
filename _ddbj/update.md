@@ -29,7 +29,7 @@ related_pages:
 #### 更新を依頼をするデータ種別を選択
 データ種別については[こちら](/documents/data-categories.html)
 
-<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; width: 300px; text-align:center;"><a href="#ANN">Annotated/Assembled Sequences</a></div><div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; width: 300px; text-align:center;"><a href="#DRA">DRA/BioProject/BioSample</a></div><div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; width: 300px; text-align:center;"><a href="#DRA">GEA</a></div><div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; width: 300px; text-align:center;"><a href="#DRA">MetaboBank</a></div>
+<div style="padding: 15px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#ANN">お問い合わせフォーム</a></div><div style="padding: 15px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#DRA">登録データの更新申し込み</a></div><div style="padding: 15px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#DRA">BioProject/BioSample 外部参照の申請</a></div><div style="padding: 15px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#DRA">MetaboBank 登録申し込み</a></div>
 
 ### Annotated/Assembled Sequences {#ANN}
 

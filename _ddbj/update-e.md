@@ -29,7 +29,7 @@ We will contact you only if we have queries or require further information.
 #### Select Categories for Sequence Data
 Categories for Sequence Data [See here](/documents/data-categories-e.html)
 
-<div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; width: 300px; text-align:center;"><a href="#ANN">Annotated/Assembled Sequences</a></div><div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; width: 300px; text-align:center;"><a href="#DRA">DRA/BioProject/BioSample</a></div><div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; width: 300px; text-align:center;"><a href="#DRA">GEA</a></div><div style="padding: 10px; margin-bottom: 10px; border: 1px solid #333333; border-radius: 10px; width: 300px; text-align:center;"><a href="#DRA">MetaboBank</a></div>
+<div style="padding: 15px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#ANN">Annotated/Assembled Sequences</a></div><div style="padding: 15px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#DRA">DRA/BioProject/BioSample</a></div><div style="padding: 15px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#DRA">GEA</a></div><div style="padding: 15px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#DRA">MetaboBank</a></div>
 
 ### Annotated/Assembled Sequences {#ANN}
 
