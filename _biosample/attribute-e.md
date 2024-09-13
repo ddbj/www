@@ -13,7 +13,7 @@ lang: en
 <form id="sample_attr_form" method="get" action="">
   <div id="main_index" class="biosample_attr">
     <div id="sample_type">
-      <a href="/biosample/submission-e-e.html#Sample-type" class="title">Sample type (Core Package)</a>
+      Core package (<a href="/biosample/sample-info.html#Sample-package">Packages</a>, <a href="/biosample/overview.html#genome-assembly-sample">Genome assembly sample</a>)
       <ul>
         <li>
         <div class="radio"><input type="radio" id="Core_Standard" name="Core" value="Standard"></div><label class="clearfix" for="Standard">Standard</label>
@@ -160,18 +160,8 @@ lang: en
 
 After selecting a sample package, click DEFINITION to review definitions of attributes. [See definition in the table](https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335) 
 
-*: Required  
-**number: At least one attribute is required in attributes  
-
-<h3 id="related">Related pages</h3>
-
-* [Identifiers](/ddbj/identifiers-e.html)
-* [Sample package](/biosample/sample-info-e.html#Sample-package)
-* How to submit genome assembly samples  
-	* [Genome assembly sample](/biosample/overview-e.html#genome-assembly-sample)
-	* [Metagenome Assembly](/ddbj/metagenome-assembly-e.html)
-	* [Haplotype](/ddbj/haplotype-e.html)
-	* [Single amplified genome](/ddbj/single-amplified-genome-e.html)
+<p>*: Required<br>
+**number: At least one attribute is required in attributes</p>
 
 <div class="bs_desc"></div>
 

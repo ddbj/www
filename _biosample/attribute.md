@@ -13,7 +13,7 @@ lang: ja
 <form id="sample_attr_form" method="get" action="">
   <div id="main_index" class="biosample_attr">
     <div id="sample_type">
-      <a href="/biosample/submission.html#Sample-type" class="title">Sample type (Core Package)</a>
+      Core package (<a href="/biosample/sample-info.html#Sample-package">Packages</a>, <a href="/biosample/overview.html#genome-assembly-sample">Genome assembly sample</a>)
       <ul>
         <li>
         <div class="radio"><input type="radio" id="Core_Standard" name="Core" value="Standard"></div><label class="clearfix" for="Standard">Standard</label>
@@ -154,20 +154,12 @@ lang: ja
     </div>
 <!-- #env.package -->
   </div> <!-- #main_index -->
+
   <button id="definition" class="submit_button" type="button" name="definition" value="definition">DEFINITION</button>
   
 </form>
 
-<h3 id="related">関連ページ</h3>
+<p>*: 必須<br>
+**数字: 同一数字グループの中で少なくとも一つ必須（選択必須）</p>
 
-* [識別子について](/ddbj/identifiers.html)
-* [パッケージ](/biosample/sample-info.html#Sample-package)
-* ゲノムサンプルの登録方法
-	* [ゲノムアセンブリ](/biosample/overview.html#genome-assembly-sample)
-	* [メタゲノムアセンブリ](/ddbj/metagenome-assembly.html)
-	* [Haplotype](/ddbj/haplotype.html)
-	* [Single amplified genome](/ddbj/single-amplified-genome.html)
-
-*: 必須    
-**数字: 同一数字グループの中で少なくとも一つ必須（選択必須）    
 <div class="bs_desc"></div>

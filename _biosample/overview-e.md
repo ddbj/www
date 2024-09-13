@@ -133,6 +133,10 @@ Use the [MIMAG](/biosample/sample-info-e.html#Sample-type) package and use an or
 Indicate deriving source sample as "derived_from: SAMD00000001". [Examples](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)
 A MAG also needs to be linked to a BioSample, create a derived BioSample for MAG.
 
+### Haplotype {#haplotype}
+
+Because two genome sequences are produced from single sample in haplotype sequencing, INSDC establishes the guideline for haplotype sequence submission. See (Haplotype)[/ddbj/haplotype-e.html] for how to submit haplotype genomes.
+
 ## Human sample {#human-sample}
 
 ### Submission of research data from human subjects {#submission-of-human-data}
