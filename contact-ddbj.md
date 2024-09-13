@@ -1,21 +1,18 @@
 ---
-layout: simple
-title: お問い合わせ
-lang: ja
+layout: top
+title: (案)お問い合わせ
+
 ---
 
-お問い合わせに対する回答は、入力して頂いたメールアドレス宛に返信いたします。
-そのため、[DDBJ センターからのメールを迷惑メールとしないように設定](/precautions.html)してください。    
-一週間を過ぎても DDBJ センターから連絡がない場合は、お知らせください。  
+#### お問い合わせの前に必ずお読みください
+ - [質問送信の前に](/before-sending-inquiries.html)
+ - [DDBJ センターからのメールを迷惑メールとしないように設定してください](/precautions.html)
+ - [お問い合わせフォームが表示されない場合は？](/faq/ja/contact-form-not-displayed)
+ - [DDBJ へのよくある質問 (FAQ)](/faq/ja/index.html)
 
-お問い合わせの前に[質問送信の前に](/before-sending-inquiries.html)と [DDBJ へのよくある質問 (FAQ)](/faq/ja/index.html) をご覧ください。    
-お問い合わせフォームが表示されない場合は「[お問い合わせフォームが表示されない場合は？](/faq/ja/contact-form-not-displayed)」をご覧ください。
+ <div style="padding: 40px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#ANN">お問い合わせフォーム</a></div><div style="padding: 40px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#DRA">登録データの更新申し込み</a></div><div style="padding: 40px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#DRA">BioProject/BioSample 外部参照の申請</a></div><div style="padding: 40px; margin: 15px; border: 1px solid #cccccc; box-shadow: 2px 2px 4px #dddddd; border-radius: 5px; width: 400px; text-align:center; "><a href="#DRA">MetaboBank 登録申し込み</a></div>
 
-## お問い合わせフォーム
 
-[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeyWbdUll6ESiuraInJ2UzUuiCSoWYZ0v-zARc049_y5Z2-7A/viewform)
-<!-- お問い合わせフォームはメンテナンス中です。
-「[お問い合わせフォームが表示されない場合は？](/faq/ja/contact-form-not-displayed)」をご覧ください。-->
 
 
 
