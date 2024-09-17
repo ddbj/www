@@ -11,7 +11,7 @@ lang: en
 
 TogoVar-repository uses a data model common to SNP and SV.
 
-{% include image.html url="togovar/data-model.jpg" caption="TogoVar-repository data model" class="w700" %}
+{% include image.html url="togovar/data-model.jpg" caption="TogoVar-repository data model" class="w600" %}
 
 * BioProject and BioSample are required.
 * Variants are linked to Study/SampleSet through Dataset.
