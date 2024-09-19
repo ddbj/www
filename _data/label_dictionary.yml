@@ -63,8 +63,8 @@ dra:
     ja: Sequence Read Archive (DRA)
 togovar:
   short:
-    en: TogoVar-repository
-    ja: TogoVar-repository
+    en: TogoVar
+    ja: TogoVar
   full:
     en: TogoVar-repository
     ja: TogoVar-repository
