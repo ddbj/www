@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-service_name: TogoVar
+service_name: TogoVar-repository
 title: Validation
 category: togovar
 current_tab: submission

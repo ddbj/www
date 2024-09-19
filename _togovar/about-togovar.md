@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-service_name: TogoVar
+service_name: TogoVar-repository
 title: About TogoVar-repository
 category: togovar
 current_tab: about

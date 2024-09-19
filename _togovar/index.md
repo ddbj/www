@@ -1,6 +1,6 @@
 ---
 layout: top
-service_name: TogoVar
+service_name: TogoVar-repository
 title: TogoVar
 category: togovar
 current_tab: home
