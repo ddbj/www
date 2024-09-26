@@ -38,7 +38,7 @@ Example         /transl_table=4
 
 Compiled by Andrzej (Anjay) Elzanowski and Jim Ostell at National Center for Biotechnology Information (NCBI), Bethesda, Maryland, U.S.A.  
 
-The original site; [The Genetic Codes](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=cgencodes ) 2023.08.10 version
+The original site; [The Genetic Codes](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi?chapter=cgencodes ) 2024.09.23 version
 
 NCBI takes great care to ensure that the translation for each coding sequence (CDS) present in GenBank records is correct.    
 Central to this effort is careful checking on the taxonomy of each record and assignment of the correct genetic code (shown as a /transl_table qualifier on the CDS in the flat files) for each organism and record.    
@@ -86,6 +86,7 @@ The following genetic codes are described here:
   - [29. Mesodinium Nuclear Code](#29)
   - [30. Peritrich Nuclear Code](#30)
   - [31. Blastocrithidia Nuclear Code](#31)
+  - [32. Balanophoraceae Plastid Code](#32)
   - [33. Cephalodiscidae Mitochondrial UAA-Tyr Code](#33)
 
 ## 1\. The Standard Code (transl_table=1) <a name="1"></a>
@@ -1474,6 +1475,55 @@ _Blastocrithidia_ sp.
 Code 31 is used for the trypanosome _Blastocrithidia_ sp.    
 UGA encodes trytophan and UAG and UAA encode glutamate and also serve as termination codons 
 ([Zahonova _et al_. 2016](https://www.ncbi.nlm.nih.gov/pubmed/27593378 )).
+
+
+## 32\. Balanophoraceae Plastid Code (transl_table=32) <a name="32"></a>
+
+``` 
+    AAs  = FFLLSSSSYY*WCC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG
+  Starts = ---M------*---*----M------------MMMM---------------M------------
+  Base1  = TTTTTTTTTTTTTTTTCCCCCCCCCCCCCCCCAAAAAAAAAAAAAAAAGGGGGGGGGGGGGGGG
+  Base2  = TTTTCCCCAAAAGGGGTTTTCCCCAAAAGGGGTTTTCCCCAAAAGGGGTTTTCCCCAAAAGGGG
+  Base3  = TCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAGTCAG
+```
+
+``` 
+TTT F Phe      TCT S Ser      TAT Y Tyr      TGT C Cys  
+TTC F Phe      TCC S Ser      TAC Y Tyr      TGC C Cys  
+TTA L Leu      TCA S Ser      TAA * Ter      TGA * Ter  
+TTG L Leu i    TCG S Ser      TAG W Trp      TGG W Trp  
+
+CTT L Leu      CCT P Pro      CAT H His      CGT R Arg  
+CTC L Leu      CCC P Pro      CAC H His      CGC R Arg  
+CTA L Leu      CCA P Pro      CAA Q Gln      CGA R Arg  
+CTG L Leu i    CCG P Pro      CAG Q Gln      CGG R Arg  
+
+ATT I Ile i    ACT T Thr      AAT N Asn      AGT S Ser  
+ATC I Ile i    ACC T Thr      AAC N Asn      AGC S Ser  
+ATA I Ile i    ACA T Thr      AAA K Lys      AGA R Arg  
+ATG M Met i    ACG T Thr      AAG K Lys      AGG R Arg  
+
+GTT V Val      GCT A Ala      GAT D Asp      GGT G Gly  
+GTC V Val      GCC A Ala      GAC D Asp      GGC G Gly  
+GTA V Val      GCA A Ala      GAA E Glu      GGA G Gly  
+GTG V Val i    GCG A Ala      GAG E Glu      GGG G Gly  
+```
+
+### Differences from the Standard Code:
+
+``` 
+          Code 32          Standard
+UAG       Trp              STOP
+```
+
+### Systematic Range:
+
+_Balanophora_ 
+
+### Comments:
+
+Code 32 is used for the highly reduced plastid genome of the holoparasitic plant _Balanophora_ ([Su _et al_. 2018](https://www.ncbi.nlm.nih.gov/pubmed/30598433 )).
+
 
 ## 33\. Cephalodiscidae Mitochondrial UAA-Tyr Code (transl_table=33) <a name="33"></a>
 
