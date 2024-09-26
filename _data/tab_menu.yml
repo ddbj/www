@@ -379,7 +379,7 @@ dra:
       url: /faq/ja/index.html?tag=dra
     - id: search
       title: Search
-      url: https://ddbj.nig.ac.jp/DRASearch/
+      url: https://ddbj.nig.ac.jp/search/
     - id: downloads
       title: Downloads
       url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
@@ -416,7 +416,7 @@ dra:
       url: /faq/en/index-e.html?tag=dra
     - id: search
       title: Search
-      url: https://ddbj.nig.ac.jp/DRASearch/
+      url: https://ddbj.nig.ac.jp/search/
     - id: downloads
       title: Downloads
       url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
