@@ -9,15 +9,12 @@ lang: ja
 
 ## Reviewer access token  {#access}
 
-GEA 登録データにアクセッション番号が発行された後、'Generate new reviewer access key' で非公開データに read-only の匿名アクセスを提供する reviewer トークン を生成することができます。トークンをジャーナルの編集者に渡すことで非公開データへのアクセスが必要な査読者にトークンを回覧してもらうことができます。トークンは生成後三か月で失効します。必要であればトークンを再発行することができます。 Reviewer access URL はアクセッション番号発行通知メールに含まれています。 Reviewer access では [DRA](/dra/index.html) に登録した次世代シークエンス生データ以外の全てのメタデータとデータファイルへのアクセスが提供されます。[DRA](/dra/index.html) は非公開データへの reviewer access を提供していません。
-
+GEA 登録データにアクセッション番号が発行された後、'Generate new reviewer access key' で非公開データに read-only の匿名アクセスを提供する reviewer トークン を生成することができます。トークンをジャーナルの編集者に渡すことで非公開データへのアクセスが必要な査読者にトークンを回覧してもらうことができます。トークンは生成後三か月で失効します。必要であればトークンを再発行することができます。 Reviewer access URL はアクセッション番号発行通知メールに含まれています。 Reviewer access では [DRA](/dra/index.html) に登録した次世代シークエンス生データ以外の全てのメタデータとデータファイルへのアクセスが提供されます。[DRA](/dra/index.html) は非公開データへの reviewer access を提供していません。  
+トークンを知っている誰でも GEA データにアクセスできるようになるため、トークンは慎重に取り扱い、論文投稿サイトやエディターへのメール以外には含めないようにしてください。
 
 {% include image.html url="submission/reviewer1.jpg" caption="reviewer access key を生成" class="w500" %}
 
-
-
 {% include image.html url="submission/reviewer3.jpg" caption="reviewer トークン" class="w300" %}
-
 
 ## 登録者の匿名化  {#anonymity}
 
