@@ -1,5 +1,7 @@
 top_news:
  ja:
+    - title: D-way 障害
+      path: 2024-09-30
     - title: "お詫び： JGA等の新規公開データ等がDDBJ searchで検索できなかった件について"
       path: 2024-09-01
     - title: "[復旧] DDBJ Search キーワード検索の一部不具合について"
@@ -7,6 +9,8 @@ top_news:
     - title: サンプルを採集した場所と日時の記載を必須化
       path: 2024-02-01
  en:
+    - title: D-way troubles
+      path: 2024-09-30-e
     - title: Apologies for not being able to search newly published data of JGA with DDBJ search
       path: 2024-09-01-e
     - title: "[Resumed] Disabilities in the DDBJ Search keyword search"
