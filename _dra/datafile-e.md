@@ -108,9 +108,13 @@ neglecting to set the proper bits for paired reads in the SAM/BAM flags
 segment 128-bit) or splitting paired reads into separate bam files can
 result in an improper SRA archive or failure to generate the SRA archive.
 
+#### BAM file submission {#bam_submit}
+
 In the case of submitting alignment data, you need to submit "BAM",
 "INSDC, refseq accession number OR reference multi-fasta" and
 "SN-reference mapping table". Submit one bam file per Run.
+
+[An example file of the mapping table](/assets/files/submission/SN-reference.txt)
 
 When submitting bam file into Analysis instead of Run, the mapping table
 is unnecessary. However, please consider to submit bam including

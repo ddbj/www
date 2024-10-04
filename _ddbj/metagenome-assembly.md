@@ -61,7 +61,12 @@ DRA への生データの登録は原則として必須です。
 
 #### DRA  {#primary-metagenome-dra}
 
-DRA に登録する場合、プライマリーメタゲノム配列を fasta/bam ファイルで [DRA Analysis](/dra/metadata.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録します。(1) の生リードが登録された [DRA Run とセットで Analysis を登録](/dra/submission.html#analysis)します。
+DRA に登録する場合、プライマリーメタゲノム配列を fasta/bam ファイルで (1) の生リードが登録された [DRA Run とセットで Analysis に登録](/dra/submission.html#analysis)（Analysis type = "De Novo Assembly"）します。[DRA 登録用エクセル](/dra/submission.html#excel) を使い、解析ソフトウェアの情報を Analysis step に、アセンブリの品質に関する指標を Attributes に記載します。   
+DRA ウェブ登録システムを使って Analysis を登録する場合、Analysis description に以下の形式で参照している  BioSample アクセッション番号、解析ステップ、及び、アセンブリの品質に関する指標を記載します。
+- BioSample: SAMD00000001
+- Analysis step: canu 2.1, pilon 1.24, CheckM 1.1.3
+- Quality: completeness 85.3, contamination 0
+
 Analysis は ENA/NCBI と共有されません。また、[DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされず、ftp でメタデータ XML とデータファイルが公開されるのみとなります（例 [DRZ000001](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA000/DRA000072/)）。
 
 ### (3) Binned メタゲノム {#binned-metagenome}
@@ -94,9 +99,8 @@ derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015　　　
 
 #### DRA  {#binned-metagenome-dra}
 
-DRA に登録する場合、Binned アセンブリ配列を fasta/bam ファイルで [DRA Analysis](/dra/metadata.html#Analysis_Type)（Analysis type = "De Novo Assembly"）に登録し、description に使用した解析ソフトウェアや Binning に関する情報を記載します。
-(1) の生リードが登録された [DRA Run とセットで Analysis を登録](/dra/submission.html#analysis)します。
-Analysis description に以下の形式で参照している仮想的な BioSample アクセッション番号、解析ステップ、及び、アセンブリの品質に関する指標を記載します。
+DRA に登録する場合、Binned アセンブリ配列を fasta/bam ファイルで、(1) の生リードが登録された [DRA Run とセットで Analysis に登録](/dra/submission.html#analysis)します。[DRA 登録用エクセル](/dra/submission.html#excel) を使い、Analysis type = "De Novo Assembly" を選択し、解析ソフトウェアの情報を Analysis step、アセンブリの品質や binning に関する指標を Attributes に記載します。   
+DRA ウェブ登録システムを使って Analysis を登録する場合、Analysis description に参照している仮想的な BioSample アクセッション番号、解析ステップ、及び、アセンブリの品質に関する指標を以下のように記載します。
 - BioSample: SAMD00000001
 - Analysis step: canu 2.1, pilon 1.24, CheckM 1.1.3
 - Quality: completeness 85.3, contamination 0

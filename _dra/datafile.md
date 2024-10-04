@@ -81,7 +81,7 @@ CCCFFFFFHHGHGJJGIJHIJIJJJJJIJJJJJIJJGIJJJJJIIJIIJFJJJJJFIJJJJIIIIGIIJHHHHDEEFFFE
 AA?CC:    RG:Z:1    NH:i:1    NM:i:0
 ```
 
-#### BAM ファイル処理  {#bam_process}
+#### BAM ファイルの処理 {#bam_process}
 
 ヘッダーとアライメントセクションは整合的である必要があります。
 各アライメントリードの RNAME (リファレンス配列の名前、3フィールド目) はヘッダー中の SN タグ値 (例 CHROMOSOME_I) と一致している必要があります。
@@ -98,7 +98,11 @@ SAM フォーマットはリードのリファレンスへの全体マッチを�
 例えば、Illumina のリード名に付された /1 と /2 は標準的な表記方法です。
 ペアリードに対して SAM BAM flag に適切なビット値 (multi-segment template 1-bit、first segment 64-bit と last segment 128-bit) が設定されていない場合、もしくは、ペアリードが別々の bam ファイルに分かれている場合は適正な SRA ファイルが生成されません。
 
+#### BAM ファイルの登録 {#bam_submit}
+
 Run にアライメントデータを登録する場合は、「BAM」、「INSDC, refseq アクセッション番号 OR リファレンス配列マルチ fasta、それから bam SN リファレンス名、との対応表」が必要です。1 Run に 1 bam ファイルを登録します。
+
+[対応表の例](/assets/files/submission/SN-reference.txt)
 
 Run ではなく Analysis に登録する場合対応表は不要ですが、アライメントされなかったリードを含めた bam を Run に登録することを強く推奨します。
 
