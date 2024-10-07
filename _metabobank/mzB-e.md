@@ -17,4 +17,4 @@ With the use of this format, all of MetaboBank's raw data (135study, total data 
 ## Tools
 The free [Data Checker program](https://www.reifycs.com/products/hive/baseapp-dl) is available for viewing mzB format files. Currently only available for Microsoft Windows.  
 
-To develop software and APIs for mzB format files, you can use the Hive SDK, a free development environment. For more information, please see [here](https://ja.reifycs.com/products/hive/).  
+To develop software and APIs for mzB format files, you can use the Hive SDK, a free development environment. For more information, please see [here](https://www.reifycs.com/products/hive/).  
