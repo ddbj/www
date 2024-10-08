@@ -336,7 +336,7 @@ All "Assay Name" columns must be followed by a "Technology Type" column.
 
 
 [Factor Value[\<experiment factor name>]](#Factor_Value)<a name="Factor_Value"></a>  
-: Controlled vocabulary term もしくは計測値。このカラムでは SDRF の各行の experimental factor values (変数) を記載します。Factor value の変数名をヘッダー中に Experimental Factor Name として定義します。
+: Controlled vocabulary term もしくは計測値。このカラムでは SDRF の各行の experimental factor values (変数) を記載します。Factor value の変数名をヘッダー中に Experimental Factor Name として定義します。登録システムが提供する SDRF テンプレートでは "Factor Value[enter experiment factor name here]" となっているので "enter experiment factor name here" を上書きして変数名を記入します。
 
 Example SDRF:
 

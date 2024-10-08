@@ -353,7 +353,7 @@ Assays<a name="Assays_section"></a>
 
 
 [Factor Value\[\<experiment factor name\>\]](#Factor_Value)<a name="Factor_Value"></a>  
-: Controlled vocabulary term or measurement. This column contains terms describing the experimental factor values (i.e., variables) for each row of the SDRF. The Experimental Factor Name to which it pertains should be indicated in the column heading.
+: Controlled vocabulary term or measurement. This column contains terms describing the experimental factor values (i.e., variables) for each row of the SDRF. The Experimental Factor Name to which it pertains should be indicated in the column heading. In a SDRF template file provided in the submission system, enter a variable name by overwriting "enter experiment factor name here" of "Factor Value[enter experiment factor name here]".
     
   Example SDRF:
     
