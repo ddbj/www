@@ -495,12 +495,6 @@ gea:
     - id: faq
       title: FAQ
       url: /faq/ja/index.html?tag=gea
-    - id: search
-      title: Search (AOE)
-      url: http://aoe.dbcls.jp/
-      children:
-        - title: RefEx
-          url: http://refex.dbcls.jp/
     - id: download
       title: Download
       url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
@@ -542,12 +536,6 @@ gea:
     - id: faq
       title: FAQ
       url: /faq/en/index-e.html?tag=gea
-    - id: search
-      title: Search (AOE)
-      url: http://aoe.dbcls.jp/
-      children:
-        - title: RefEx
-          url: http://refex.dbcls.jp/index.php?lang=en
     - id: download
       title: Download
       url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/

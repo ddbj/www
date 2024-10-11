@@ -107,21 +107,6 @@ items:
     tags:
       - analysis
 
-  - name: AOE
-    formal_name: All Of gene Expression
-    service_link:
-      en: https://aoe.dbcls.jp/en
-      ja: https://aoe.dbcls.jp
-    description:
-      en: Statistics and trends of gene expression data
-      ja: 公共遺伝子発現データベースの目次
-    target_data:
-      en: Gene expression data
-      ja: 遺伝子発現データ
-    provider: DBCLS
-    tags:
-      - search
-
   - name: CRISPRdirect
     formal_name: CRISPRdirect
     service_link:
