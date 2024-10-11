@@ -1,4 +1,30 @@
 items:
+  - date: 2024-01-06
+    year: 2024
+    month: 1
+    day: 6
+    id: 221-ja
+    title: "DDBJ update in 2023: the MetaboBank for metabolomics data and associated metadata."
+    url: https://pubmed.ncbi.nlm.nih.gov/37971299
+    author: Ara T, Kodama Y, Tokimatsu T, Fukuda A, Kosuge T, Mashima J, Tanizawa Y, Tanjo T, Ogasawara O, Fujisawa T, Nakamura Y, Arita M.
+    info: Nucleic Acids Res 2024 Jan 5;52(D1):D67-D71
+    pubmed_id: 37971299
+    keyword: paper
+    lang: ja
+
+  - date: 2024-01-06
+    year: 2024
+    month: 1
+    day: 6
+    id: 213-en
+    title: "DDBJ update in 2023: the MetaboBank for metabolomics data and associated metadata."
+    url: https://pubmed.ncbi.nlm.nih.gov/37971299
+    author: Ara T, Kodama Y, Tokimatsu T, Fukuda A, Kosuge T, Mashima J, Tanizawa Y, Tanjo T, Ogasawara O, Fujisawa T, Nakamura Y, Arita M.
+    info: Nucleic Acids Res 2024 Jan 5;52(D1):D67-D71
+    pubmed_id: 37971299
+    keyword: paper
+    lang: en
+
   - date: 2022-10-05
     year: 2022
     month: 10
