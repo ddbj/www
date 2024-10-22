@@ -17,7 +17,7 @@ lang: ja
 ### ライブラリー情報  {#library}
 
 分割・混合登録に関係なく、DRA Experiment の [Library Construction Protocol](/dra/submission.html#Library_Construction_Protocol) にシングルセルライブラリー構築手法（例
-Smart-seq2、10x、Drop-seq）、使用したキットの名前とバージョンを記入します。 10x の場合は 10x chemistry のバージョン (例 v1、v2) も記入します。
+Smart-seq2、10x、Drop-seq）、使用したキットの名前とバージョンを記入します。 10x の場合は 10x chemistry のバージョン (例 v1、v2) も記入します。[Library Source](/dra/metadata.html#Library_Source) では "GENOMIC SINGLE CELL" もしくは "TRANSCRIPTOMIC SINGLE CELL" を選択します。
 
 #### データファイル形式  {#data-file-format}
 

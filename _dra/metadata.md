@@ -106,7 +106,9 @@ D-way アカウントに登録されているメールアドレスを変更し�
 | Library Source     | Description                                                                        |
 |---|
 | GENOMIC            | Genomic DNA (includes PCR products from genomic DNA).                              |
+| GENOMIC SINGLE CELL | Genomic DNA from single cell. |
 | TRANSCRIPTOMIC     | Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries). |
+| TRANSCRIPTOMIC SINGLE CELL | Transcription products or non genomic DNA from single cell. |
 | METAGENOMIC        | Mixed material from metagenome.                                                    |
 | METATRANSCRIPTOMIC | Transcription products from community targets.                                     |
 | SYNTHETIC          | Synthetic DNA.                                                                     |
