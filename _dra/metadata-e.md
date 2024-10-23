@@ -109,10 +109,12 @@ automatically constructed. To enter user-defined titles, download Experiment met
 [Library Source](#Library_Source)<a name="Library_Source"></a><span class="red">*</span>
 : The Library Source specifies the type of source material that is being sequenced.
 
-| Library Source | Description |
+| Library Source     | Description                                                                        |
 |---|
 | GENOMIC            | Genomic DNA (includes PCR products from genomic DNA).                              |
+| GENOMIC SINGLE CELL | Genomic DNA from single cell. |
 | TRANSCRIPTOMIC     | Transcription products or non genomic DNA (EST, cDNA, RT-PCR, screened libraries). |
+| TRANSCRIPTOMIC SINGLE CELL | Transcription products or non genomic DNA from single cell. |
 | METAGENOMIC        | Mixed material from metagenome.                                                    |
 | METATRANSCRIPTOMIC | Transcription products from community targets.                                     |
 | SYNTHETIC          | Synthetic DNA.                                                                     |

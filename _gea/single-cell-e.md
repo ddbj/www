@@ -25,8 +25,7 @@ name and version of kit (e.g., Smart-seq2, 10x, Drop-seq) used for
 single-cell library construction in [Library Construction
 Protocol](/dra/submission-e.html#Library_Construction_Protocol) of the
 DRA Experiment. For 10x technology, describe version of 10x chemistry
-(e.g., v1, v2).  
-GEA processed data for single-cell studies should be cell-level data.
+(e.g., v1, v2). Select "GENOMIC SINGLE CELL" or "TRANSCRIPTOMIC SINGLE CELL" in [Library Source](/dra/metadata-e.html#Library_Source). GEA processed data for single-cell studies should be cell-level data.
 
 #### Data file formats  {#data-file-format}
 
