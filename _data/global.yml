@@ -2,10 +2,6 @@ top_news:
  ja:
     - title: 国際塩基配列データベース「DDBJ」に対するサイバー脅迫に関するご報告
       path: 2024-10-22
-    - title: (10/23 10:00-11:00) D-way 一時停止のお知らせ
-      path: 2024-10-22_2
  en:
     - title: On Cyber Threats against DDBJ, a node of the International Nucleotide Sequence Database Collaboration
       path: 2024-10-22-e
-    - title: (Oct 23 10:00 - 11:00) Announcement of D-way suspension 
-      path: 2024-10-22_2-e
