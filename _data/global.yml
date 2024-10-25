@@ -1,3 +1,11 @@
 top_news:
-  ja:
-  en:
+ ja:
+    - title: (10/25 15:00-28 13:00) メンテナンスのため DDBJ/D-way/JGA/AGD/一部の検索サービスが停止します
+      path: 2024-10-25
+    - title: 国際塩基配列データベース「DDBJ」に対するサイバー脅迫に関するご報告
+      path: 2024-10-22
+ en:
+    - title: (25th October 15:00-28th 13:00) DDBJ/D-way/JGA/AGD suspension for maintenance
+      path: 2024-10-25-e
+    - title: On Cyber Threats against DDBJ, a node of the International Nucleotide Sequence Database Collaboration
+      path: 2024-10-22-e
