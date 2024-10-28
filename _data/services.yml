@@ -2,8 +2,8 @@ items:
   - name: getentry
     formal_name: getentry
     service_link:
-      en: http://getentry.ddbj.nig.ac.jp/top-e.html
-      ja: http://getentry.ddbj.nig.ac.jp/top-j.html
+      en: https://getentry.ddbj.nig.ac.jp/top-e.html
+      ja: https://getentry.ddbj.nig.ac.jp/top-j.html
     help:
       en: getentry-e
       ja: getentry
@@ -20,8 +20,8 @@ items:
   - name: ARSA
     formal_name: All-round Retrieval of Sequence and Annotation
     service_link:
-      en: http://ddbj.nig.ac.jp/arsa/
-      ja: http://ddbj.nig.ac.jp/arsa/
+      en: https://ddbj.nig.ac.jp/arsa/
+      ja: https://ddbj.nig.ac.jp/arsa/
     help:
       en: arsa-e
       ja: arsa
@@ -53,8 +53,8 @@ items:
   - name: TXSearch
     formal_name: Taxonomy Search
     service_link:
-      en: http://ddbj.nig.ac.jp/tx_search/?lang=en
-      ja: http://ddbj.nig.ac.jp/tx_search/?lang=ja
+      en: https://ddbj.nig.ac.jp/tx_search/?lang=en
+      ja: https://ddbj.nig.ac.jp/tx_search/?lang=ja
     help:
       en: txsearch-e
       ja: txsearch
@@ -91,8 +91,8 @@ items:
   - name: VecScreen
     formal_name: VecScreen
     service_link:
-      en: http://ddbj.nig.ac.jp/vecscreen/
-      ja: http://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
+      en: https://ddbj.nig.ac.jp/vecscreen/
+      ja: https://ddbj.nig.ac.jp/vecscreen/vecscreen?lang=ja
     help:
       en: vecscreen-e
       ja: vecscreen
@@ -122,8 +122,8 @@ items:
   - name: Gendoo
     formal_name: Gendoo
     service_link:
-      en: http://gendoo.dbcls.jp/
-      ja: http://gendoo.dbcls.jp/
+      en: https://gendoo.dbcls.jp/
+      ja: https://gendoo.dbcls.jp/
     description:
       en: Functional profiling of gene and disease features for omics analysis
       ja: 遺伝子、疾患について、関連する疾患、薬剤、臓器、生命現象などの特徴をキーワードでリスト表示するツール
@@ -164,8 +164,8 @@ items:
   - name: RefEx
     formal_name: RefEx
     service_link:
-      en: http://refex.dbcls.jp/index.php?lang=en
-      ja: http://refex.dbcls.jp/index.php?lang=ja
+      en: https://refex.dbcls.jp/index.php?lang=en
+      ja: https://refex.dbcls.jp/index.php?lang=ja
     description:
       en: A web tool for a comfortable search of reference data for gene expression analysis
       ja: 遺伝子発現解析の基準となる各遺伝子の遺伝子発現量を簡単に検索、閲覧できるウェブツール
