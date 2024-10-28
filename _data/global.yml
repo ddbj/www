@@ -1,10 +1,14 @@
 top_news:
  ja:
+    - title: セキュリティ強化の追加メンテナンスのため JGA/AGD サービスが停止します
+      path: 2024-10-28
     - title: 一部再開 (10/25 15:00-28 10:00) メンテナンスのため登録・一部の検索・データ提供サービスが停止します
       path: 2024-10-25
     - title: 国際塩基配列データベース「DDBJ」に対するサイバー脅迫に関するご報告
       path: 2024-10-22
  en:
+    - title: JGA/AGD suspension for additional maintenance to strengthen security
+      path: 2024-10-28-e
     - title: Part of services resumed (25th October 15:00-28th 10:00) suspension of submission, part of search and data 
       path: 2024-10-25-e
     - title: On Cyber Threats against DDBJ, a node of the International Nucleotide Sequence Database Collaboration
