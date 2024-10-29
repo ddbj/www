@@ -162,14 +162,14 @@ Category は "The name is valid but not registered in taxonomy database" とな�
 「生物名」の登録は属・種の名称を用いた二名法による種の学名 (以下、種名)を原則としております。  
 種名は、動物、植物、細菌、ウイルスの各国際命名規約に従って記載されるべきです。
 
-例
+**例**
 <pre><code>Homo sapiens</code></pre> 
 
 
 ### 三名法 {#trinominal}
 三名法、または、それに準じた strain などの分類単位で organism を記載する必要がある場合、亜種 subspecies 、変種 variety 、serotype 、strain などを生物名に含めます。
 
-例
+**例**
 <pre><code>Pan troglodytes troglodytes
 Zea mays subsp. mays
 Oryza sativa Japonica Group
@@ -200,7 +200,7 @@ strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 ウイルスは [the International Committee on Taxonomy of Viruses](https://ictv.global/ ) に従った種名を基本としています。    
 [識別子について](/ddbj/identifiers.html#virus) のウイルスに関するセクションをご参照ください。    
 <span class="red">2017年以前は、登録頻度の高い病原性ウイルスの場合、strain、serotype を生物名に含めて記載する運用を続けていましたが、この運用は新規登録分には適用されません。</span>    
-例
+**例**
 <pre><code>Influenza A virus</code></pre>
 
 下記の例のように [/collection_date](/ddbj/qualifiers.html#collection_date) (採取した年月日), 
@@ -222,7 +222,7 @@ strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載して�
 ### 雑種  {#hybrid}
 雑種の場合、適宜、以下のように記載します。    
 
-例
+**例**
 <pre><code>Rosa alba x Rosa corymbifera
 Malus x domestica
 Lilium hybrid division I</code></pre>
@@ -284,26 +284,22 @@ taxonomy database における scientific name, synonym あるいは、lineage �
 属より上位ランクの場合、判明している範囲の lineage に**細菌**ならば "bacterium"、
 **古細菌**ならば、 "archaeon" を付加した名前を記載します。    
 
-書式
-
+**書式**
 - \<genus name> sp. # 原核生物
 - \<family (or upper) name> bacterium
 - \<family (or upper) name> archaeon
 
-例
-
+**例**
 <pre><code>Acetobacter sp.
 Acetobacteraceae bacterium
 Methanomicrobiales archaeon</code></pre>
 
 **真核生物**の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
 
-書式
-
+**書式**
 - \<genus (or upper) name> sp. # 真核生物
 
-例
-
+**例**
 <pre><code>Aspergillaceae sp.
 </code></pre>
 
@@ -314,20 +310,13 @@ Methanomicrobiales archaeon</code></pre>
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-**真核生物 (カビ、酵母相当の単細胞真菌以外)** の場合、あるいは、単細胞の微生物でも**全ゲノム規模の配列に該当する場合**、
+ただし、**全ゲノム規模の配列に該当する場合**、
 判明している範囲の lineage (多くの場合 属名) を用いて、"\<genus name\> sp."などとした上で、
 [識別子](/ddbj/identifiers.html) (多くの場合、strain の名称) を「生物名」に含めて記載しています。    
 「生物名」に含めている場合でも、[識別子](/ddbj/identifiers.html)を [/strain](/ddbj/qualifiers.html#strain) など該当する qualifier に記載してください。
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Euglena sp. CR123"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="CR123"</code></pre>  
-
-通常、**多細胞生物**は "\<genus name\> sp." とのみの記載では登録できません。     
-[識別子](/ddbj/identifiers.html) (多くの場合、isolate の名称) を「生物名」に含めて記載しています。    
-「生物名」に含めている場合でも、[識別子](/ddbj/identifiers.html)を [/isolate](/ddbj/qualifiers.html#isolate) など該当する qualifier に記載してください。
-
-<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Oscinella sp. AB_575"
-                     /<a href="/ddbj/qualifiers.html#isolate">isolate</a>="AB_575"</code></pre>  
 
 
 <span class="red">**仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録してください。**</span>    
@@ -336,6 +325,11 @@ Methanomicrobiales archaeon</code></pre>
 ### 2-2. 新種提唱の場合  {#novel}
 ウイルスの場合、[The International Code of Virus Classification and Nomenclature (ICVCN)](https://ictv.global/about/code ) に従った命名であれば、
 そのまま記載して登録することが可能です。    
+ただし、近年の二名法に基づくウイルス名で、valid publication 前の場合、属名を用いた下記のような書式で記載します。    
+
+**書式**
+- \<genus name\> sp. '\<candidate of species epithet\>'    
+
 
 ウイルス以外は <span class="red">**valid publication 前の段階で「正式な学名と混同するような名称」を記載することはできません。**</span>    
 新学名提唱のための準備段階の場合、不明と類似の扱いで学名が確定するまではデータとの対応関係を一意に保つため、
@@ -347,29 +341,24 @@ Methanomicrobiales archaeon</code></pre>
      
 **原核生物**の場合、 strain 毎を基本に仮称を割り当てます。    
 
-書式
-
+**書式**
 - \<genus name> sp. \<strain name> # 原核生物
 - \<family (or upper) name> bacterium \<strain name>
 - \<family (or upper) name> archaeon \<strain name>
 
-例
-
+**例**
 <pre><code>Acetobacter sp. ITDI2.1
 Acetobacteraceae bacterium ITDI2.1</code></pre>
 
 
-**真核生物**の場合、種の候補単位 (OTU) 毎を基本に仮称を割り当てますが、状況に応じて、strain または isolate 毎としても構いません。    
+**真核生物**の場合、種の候補単位 (operational taxonomic unit, OTU) 毎を基本に仮称を割り当てますが、状況に応じて、strain または isolate 毎としても構いません。    
 
-書式
-
+**書式**
 - \<genus (or upper) name> sp. \<OTU ID> # 真核生物
 
-例
-
+**例**
 <pre><code>Oscinella sp. 1-AB-2020
 </code></pre>
-
 
 この運用により、例えば、異なる生物が同じものと混同されるなどの混乱を避けることができます。    
 そのため、<span class="red">**学名が確定するまでの間、その仮称を割り当てた生物に由来する別データを登録する際は、共通の仮称とともに登録**</span>してください。    
@@ -412,15 +401,13 @@ qualifier をあわせて source feature に記載します。
 環境プロファイルのような場合、一律に "uncultured bacterium" とするか、
 配列ベースで判明している範囲の lineage を操作的に下記の書式で記載します。    
 
-書式
-
+**書式**
 - uncultured bacterium  # 原核生物 
 - uncultured \<genus name> sp. # 原核生物 
 - uncultured \<family (or upper) name> bacterium # 原核生物 
 - uncultured \<genus (or upper) name> # 真核生物
 
-例
-
+**例**
 <pre><code>uncultured bacterium
 uncultured Acetobacter sp.
 uncultured alpha proteobacterium
@@ -466,15 +453,13 @@ taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja )) から
 古細菌ならば、 "archaeon" を付加した名前を記載します。    
 真核生物の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。    
 
-書式
-
+**書式**
 - \<genus name> sp. # 原核生物
 - \<family (or upper) name> bacterium # 細菌
 - \<family (or upper) name> archaeon # 古細菌
 - \<genus (or upper) name> sp. # 真核生物
 
-例
-
+**例**
 <pre><code>Agrobacterium sp.
 Rhizobiaceae bacterium
 Methanomicrobiales archaeon
@@ -507,8 +492,7 @@ vector などの名称を、そのまま記載することも可能です。
 vector 類の全長相当を登録する場合、何らかの命名をしてください。
 その際は天然由来の場合と明確に区別するため、 plasmid という単語は用いないでください。    
 
-例
-
+**例**
 <pre><code>Cloning vector pAP3neo
 Expression vector pAMP</code></pre>
 
@@ -516,7 +500,6 @@ taxonomy database ([TXSearch](http://ddbj.nig.ac.jp/tx_search/?lang=ja )) から
 
 ---
 **taxonomy database 登録申請のための参考情報**
-
 - [想定される用法など](#usage)
 
 
