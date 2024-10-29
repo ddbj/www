@@ -177,16 +177,14 @@ such as International Code of Zoological Nomenclature (ICZN),
 International Code of Botanical Nomenclature (ICBN), 
 International Code of Nomenclature of Bacteria.    
 
-Example
-
+**Example**
 <pre><code>Homo sapiens</code></pre>
 
 
 ### trinomial name  {#trinominal}
 In cases of using trinomial name or the like, the name of subspecies, variety, serotype or strain should be included in the organism name, if necessary.    
 
-Examples
-
+**Examples**
 <pre><code>Pan troglodytes troglodytes
 Zea mays subsp. mays
 Brassica oleracea var. alboglabra
@@ -220,8 +218,7 @@ See also the virus section on [Identifiers](/ddbj/identifiers-e.html#virus).
 <span class="red">By 2017, we used informal names for frequently submitted pathogenic viruses including their strain names and serotypes in the description of organism name. 
 However, the rule has been discontinued for the future submissions.</span>    
 
-Example
-
+**Example**
 - Influenza A virus
 
 The qualifiers corresponding to 
@@ -246,8 +243,7 @@ Please describe them with appropriate qualifiers as below example.
 ### hybrid  {#hybrid}
 In cases of hybrids, the scientific names would be like as follows;    
 
-Examples
-
+**Examples**
 <pre><code>Rosa alba x Rosa corymbifera
 Malus x domestica
 Lilium hybrid division I</code></pre>
@@ -315,25 +311,23 @@ If the scientific name is unclear and/or unidentified, we adopt a tentative name
 The tentative name is made up with the lineage (in many cases, genus names) that as far as submitters could specify.    
 
 **For prokaryotes**    
-Format
 
+**Format**
 - \<genus name> sp. # prokaryotes
 - \<family (or upper) name> bacterium
 - \<family (or upper) name> archaeon
 
-Example
-
+**Examples**
 <pre><code>Acetobacter sp.
 Acetobacteraceae bacterium
 Methanomicrobiales archaeon</code></pre>
 
 **For eukaryotes**    
-Format
 
+**Format**
 - \<genus (or upper) name> sp. # eukaryotes
 
-Example
-
+**Example**
 <pre><code>Aspergillaceae sp.
 </code></pre>
 
@@ -344,7 +338,7 @@ The qualifier corresponding to [identifier](/ddbj/identifiers-e.html), such as
 <pre><code>                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="ITDI2.1"</code></pre>  
 
-In cases of **eukaryote sequences (except unicellular fungi like yeasts or mold)**, or in cases of **whole genomic scale sequences** from unicellular microorganisms, 
+In cases of **whole genomic scale sequences** from unicellular microorganisms, 
 some [identifier](/ddbj/identifiers-e.html), strain name or some other lower taxon, is required to include in the organism name.  
 The tentative name is made up with the lineage (in many cases, genus names) that as far as submitters could specify 
 and the lower taxon (in many cases, strain names).  
@@ -354,19 +348,15 @@ Even included in the organism name, you should describe the [identifier](/ddbj/i
 <pre><code>                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Euglena sp. CR123"
                      /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="CR123"</code></pre>  
 
-Usually, **multicellular organisms** are not acceptable with "\<genus name\> sp." only.    
-Some [identifier](/ddbj/identifiers-e.html), isolate name or some other lower taxon, is required to include in the organism name.  
-Even included in the organism name, you should describe the [identifier](/ddbj/identifiers-e.html) in the 
-[/isolate](/ddbj/qualifiers-e.html#isolate) or some other corresponding qualifier.
-
-<pre><code>                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Oscinella sp. AB_575"
-                     /<a href="/ddbj/qualifiers-e.html#isolate">isolate</a>="AB_575"</code></pre>  
-
 <span class="red">**Please use the same tentative name, when you submit any other data derived from the same organism.**</span>    
 
 
 ### 2-2. In case of proposing a novel species  {#novel}
 In cases of viruses, you can use the novel species name, as is, without the valid publication of the species that is named after [The International Code of Virus Classification and Nomenclature (ICVCN)](https://ictv.global/about/code ).    
+However, in case of the virus named based on recent binominal ones and before valid publication, please use a tentative name in the following format.    
+
+**Format**
+- \<genus name\> sp. '\<candidate of species epithet\>'    
 
 For other than viruses, <span class="red">**no name confusable with the formal scientific name is acceptable before the valid publication.**</span>    
 In principle, during the stage proposing a novel scientific name, a tentative name like as unidentified cases is required 
@@ -378,32 +368,28 @@ that as far as submitters could specify and the [identifier](/ddbj/identifiers-e
       
 In cases of **prokaryotes**, a tentative name should be assigned to every strain.     
 
-Format
-
+**Format**
 - \<genus name> sp. \<strain name> # prokaryotes
 - \<family (or upper) name> bacterium \<strain name>
 - \<family (or upper) name> archaeon \<strain name>
 
-Example
-
+**Examples**
 <pre><code>Acetobacter sp. ITDI2.1
 Acetobacteraceae bacterium ITDI2.1</code></pre>
 
 
-In cases of **eukaryotes**, a tentative name should be assigned to every species candidate (OTU),
+In cases of **eukaryotes**, a tentative name should be assigned to every species candidate (operational taxonomic unit, OTU),
 or, as the case may be, every strain/isolate.     
 
-Format
-
+**Format**
 - \<genus (or upper) name> sp. \<OTU ID> # eukaryotes
 
-Example
-
+**Example**
 <pre><code>Oscinella sp. 1-AB-2020
 </code></pre>
 
 
-Because we have to avoid some confusions; for example, two different organisms are mixed up.    
+Because we have to avoid some confusions, for example, two different organisms are mixed up.    
 Therefore, if you have any other sequence data derived from the same species candidate, 
 <span class="red">**please use the same tentative name in the meantime before the valid publication of the species.**</span>    
 This is only a procedure to manage the submitted data to us, so, it is a different issue from any names that you use in the preparing paper and so on.    
@@ -446,15 +432,13 @@ Please refer to [environmental samples](/ddbj/env-e.html) in detail.
 For environmental sample, the organism name should be the lineage that as far as 
 you can specify with the header "uncultured".
 
-Format
-
+**Format**
 - uncultured bacterium  # prokaryotes 
 - uncultured \<genus name> sp. # prokaryotes 
 - uncultured \<family (or upper) name> bacterium # prokaryotes
 - uncultured \<genus (or upper) name> # eukaryotes
 
-Examples
-
+**Examples**
 <pre><code>uncultured bacterium
 uncultured Acetobacter sp.
 uncultured alpha proteobacterium
@@ -502,15 +486,13 @@ so use the names of species or lower ranks (ex. Agrobacterium tumefaciens) for t
 If the scientific name of MAG is unclear and/or unidentified, we adopt a tentative name for the organism.    
 The tentative name is made up with the lineage (in many cases, genus names) that as far as submitters could specify.    
 
-Format
-
+**Format**
 - \<genus name> sp. # prokaryotes
 - \<family (or upper) name> bacterium
 - \<family (or upper) name> archaeon
 - \<genus (or upper) name> sp. # eukaryotes
 
-Example
-
+**Examples**
 <pre><code>Agrobacterium sp.
 Rhizobiaceae bacterium
 Methanomicrobiales archaeon
@@ -544,8 +526,7 @@ If you like to submit complete sequences of vectors or the likes, please give so
 To distiguish with natural plasmids. do not use the word, "plasmid ".    
 
 
-Examples
-
+**Examples**
 <pre><code>Cloning vector pAP3neo
 Expression vector pAMP</code></pre>
 
