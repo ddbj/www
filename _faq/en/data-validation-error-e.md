@@ -38,7 +38,7 @@ Check whether the MD5 values of the files in your local computer match those ent
 **Undefined or File not found: @SQ SN:**
 
 Please upload the SN-reference mapping table files to the directory.  
-See the [Data Files](/dra/datafile-e.html#bam-file) for details.
+See the [Data Files](/dra/datafile-e.html#bam_submit) for details.
 
 ### Metadata XML registration {#xml}
 

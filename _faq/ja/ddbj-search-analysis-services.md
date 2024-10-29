@@ -16,5 +16,5 @@ lang: ja
     [検索・解析](/services/index.html) からご利用下さい。 　
   - 国立遺伝学研究所のスーパーコンピュータシステムにログインして検索・解析する。  
     (利用にあたりスパコンのユーザID が必要です。[NIG
-    スーパーコンピュータシステムの新規ユーザ登録](http://sc2.ddbj.nig.ac.jp/index.php/ja-new-application)
+    スーパーコンピュータシステムのアカウントの新規登録](https://sc.ddbj.nig.ac.jp/application/registration/)
     を行って下さい。)

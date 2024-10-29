@@ -15,4 +15,4 @@ Choose whichever resource is most appropriate for your purposes.
 
   - [Official Sites on Social Media](/policies-e.html#third-party-sites )
   - [RSS feed](/data-feed-e.html )
-  - [DDBJ Mail Magazine](/subscribe-ddbj-e.html )
+

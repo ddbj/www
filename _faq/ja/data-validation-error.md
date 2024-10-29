@@ -39,7 +39,7 @@ Run に記載されている [MD5 値](/checksum.html)とサーバにアップ�
 **Undefined or File not found: @SQ SN:**
 
 BAM ファイルの登録では BAM ファイルの他に「SN-リファレンス配列の対応表」が必要です。
-詳細は「[データファイル](/dra/datafile.html#bam-file)」をご参照ください。
+詳細は「[データファイル](/dra/datafile.html#bam_submit)」をご参照ください。
 
 ### Metadata XML upload {#xml}
 

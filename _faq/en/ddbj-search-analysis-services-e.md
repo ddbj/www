@@ -9,7 +9,9 @@ tags:
   - Analysis
 date: 2015-06-08T11:44:25
 lang: en
---- There are two ways of searching and
+--- 
+
+There are two ways of searching and
 analyzing data, as discussed below. Please select the option that is
 appropriate for your needs.
 
@@ -21,4 +23,4 @@ appropriate for your needs.
     system at the National Institute of Genetics (NIG).  
     (This requires a supercomputer user ID. You will need to [sign up
     for a new user account on the NIG supercomputer
-    system](http://sc2.ddbj.nig.ac.jp/index.php/en/en-new-application).)
+    system](https://sc.ddbj.nig.ac.jp/en/application/registration/).)

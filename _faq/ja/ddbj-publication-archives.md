@@ -15,4 +15,4 @@ DDBJ の情報配信サービスは以下の通りです。
 
   - [各ソーシャルメディアにおけるオフィシャルサイト](/policies.html#third-party-sites )
   - [最新ニュースの RSS 配信](/data-feed.html )
-  - [DDBJ Mail Magazine](/subscribe-ddbj.html )
+
