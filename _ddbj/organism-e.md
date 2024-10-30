@@ -195,8 +195,9 @@ Also, the qualifier corresponding to
 [/sub_species](/ddbj/qualifiers-e.html#sub_species),
 [/variety](/ddbj/qualifiers-e.html#variety),
 [/serotype](/ddbj/qualifiers-e.html#serotype) or
-[/strain](/ddbj/qualifiers-e.html#strain) is required for the source feature.
+[/strain](/ddbj/qualifiers-e.html#strain) is required for the source feature.     
 
+**Example**
 <pre><code>                    /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Pan troglodytes troglodytes"
                     /<a href="/ddbj/qualifiers-e.html#sub_species">sub_species</a>="troglodytes"
 </code></pre> 
@@ -205,10 +206,18 @@ Also, the qualifier corresponding to
 ### microbial genome  {#genome}
 Previously, a strain name or some other lower taxon was required for the organism name of whole genomic scale sequences from microorganisms.    
 However, currently, the value of organism qualifier should be just a scientific name, in principle, even though for microbial genomes.    
-Describe a strain name in the [/strain](/ddbj/qualifiers-e.html#strain) qualifier.
-
+Describe a strain name in the [/strain](/ddbj/qualifiers-e.html#strain) qualifier.    
+**Example**
 <pre><code>                    /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Candida albicans"
                     /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="WO-1"
+</code></pre>  
+
+
+### cyanobacteria  {#cyano}
+In the cases of cyanobacteria, strains or some identifiers are included in the organism names, because of the specific research background of them.    
+**Example**
+<pre><code>                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Geitlerinema earlei GSP174-1"
+                     /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="GSP174-1"
 </code></pre>  
 
 
@@ -216,8 +225,7 @@ Describe a strain name in the [/strain](/ddbj/qualifiers-e.html#strain) qualifie
 For viruses, basically, we also accept scientific names, following [the International Committee on Taxonomy of Viruses](https://talk.ictvonline.org/ ).    
 See also the virus section on [Identifiers](/ddbj/identifiers-e.html#virus).     
 <span class="red">By 2017, we used informal names for frequently submitted pathogenic viruses including their strain names and serotypes in the description of organism name. 
-However, the rule has been discontinued for the future submissions.</span>    
-
+However, the rule has been discontinued for the future submissions.</span>     
 **Example**
 - Influenza A virus
 

@@ -179,8 +179,8 @@ Escherichia coli K-12</code></pre>
 また、このとき [/sub_species](/ddbj/qualifiers.html#sub_species), 
 [/variety](/ddbj/qualifiers.html#variety), 
 [/serotype](/ddbj/qualifiers.html#serotype), 
-[/strain](/ddbj/qualifiers.html#strain) の該当 qualifier をあわせて source feature に記載します。
-
+[/strain](/ddbj/qualifiers.html#strain) の該当 qualifier をあわせて source feature に記載します。     
+**例**
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
                      /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
 </code></pre>
@@ -188,18 +188,25 @@ Escherichia coli K-12</code></pre>
 
 ### 微生物ゲノム  {#genome}
 以前は 微生物などで全ゲノム規模の配列を登録する場合、strain などを organism 
-に含めて記載していましたが、現在は学名のみの記載を原則としています。  
-strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。
-
+に含めて記載していましたが、現在は学名のみの記載を原則としています。    
+strain 名は [/strain](/ddbj/qualifiers.html#strain) qualifier に記載してください。    
+**例**
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Candida albicans"
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="WO-1"
 </code></pre>  
 
 
+### シアノバクテリア  {#cyano}
+シアノバクテリアの場合、その研究背景の特殊性から、strain などを organism に含めて記載しています。     
+**例**
+<pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Geitlerinema earlei GSP174-1"
+                     /<a href="/ddbj/qualifiers.html#strain">strain</a>="GSP174-1"
+</code></pre>  
+
 ### ウイルス  {#virus}
 ウイルスは [the International Committee on Taxonomy of Viruses](https://ictv.global/ ) に従った種名を基本としています。    
 [識別子について](/ddbj/identifiers.html#virus) のウイルスに関するセクションをご参照ください。    
-<span class="red">2017年以前は、登録頻度の高い病原性ウイルスの場合、strain、serotype を生物名に含めて記載する運用を続けていましたが、この運用は新規登録分には適用されません。</span>    
+<span class="red">2017年以前は、登録頻度の高い病原性ウイルスの場合、strain、serotype を生物名に含めて記載する運用を続けていましたが、この運用は新規登録分には適用されません。</span>     
 **例**
 <pre><code>Influenza A virus</code></pre>
 
