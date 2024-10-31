@@ -149,14 +149,6 @@ category: about
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hamaoka.jpg" title="濵岡一弘"></p>
-        <div class="explanation">
-            <p class="name">濵岡 一弘</p>
-            <p class="name">Kazuhiro Hamaoka, PhD</p>
-            <p class="position">キュレータ</p>
-        </div>
-        </li> 
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="李 慶範"></p>
         <div class="explanation">
             <p class="name">李 慶範</p>
@@ -164,8 +156,6 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okido.jpg" title="大城戸 利久"></p>
         <div class="explanation">
@@ -174,6 +164,8 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>  
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="杉田 里江"></p>
         <div class="explanation">
@@ -190,8 +182,6 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="時松 敏明"></p>
             <div class="explanation">
@@ -200,6 +190,8 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="渡邊とも子"></p>
             <div class="explanation">

@@ -135,21 +135,12 @@ category: about
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hamaoka.jpg" title="Kazuhiro Hamaoka"></p>
-        <div class="explanation">
-            <p class="name">Kazuhiro Hamaoka, PhD</p>
-            <p class="position">Curator</p>
-        </div>
-        </li>
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="Kyungbum Lee"></p>
         <div class="explanation">
             <p class="name">Kyungbum Lee, PhD</p>
             <p class="position">Curator</p>
         </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okido.jpg" title="Toshihisa Okido"></p>
         <div class="explanation">
@@ -157,6 +148,8 @@ category: about
             <p class="position">Curator</p>
         </div>
         </li>  
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="Rie Sugita"></p>
         <div class="explanation">
@@ -171,8 +164,6 @@ category: about
                 <p class="position">Curator</p>
             </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="Toshiaki Tokimatsu"></p>
             <div class="explanation">
@@ -180,6 +171,8 @@ category: about
                 <p class="position">Curator</p>
             </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="Emi Yokoyama"></p>
             <div class="explanation">
