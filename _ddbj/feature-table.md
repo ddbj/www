@@ -7,14 +7,14 @@ current_tab: home
 lang: ja
 ---
 
-The original site; [The DDBJ/ENA/GenBank Feature Table Definition](https://insdc.org/submitting-standards/feature-table/ ) Version 11.2 February 2024
+The original site; [The DDBJ/ENA/GenBank Feature Table Definition](https://insdc.org/submitting-standards/feature-table/ ) Version 11.3 October 2024
 
 ```
 The DDBJ/ENA/GenBank Feature Table Definition
 Feature Table
 Definition
 
-Version 11.2 February 2024
+Version 11.3 October 2024
 
 DNA Data Bank of Japan, Mishima, Japan.
 EMBL-EBI, European Nucleotide Archive, Cambridge, UK.
@@ -522,7 +522,6 @@ FT   <a href="#source">source</a>          1..1859
 FT                   /<a href="#db_xref">db_xref</a>="taxon:3899"
 FT                   /<a href="#organism">organism</a>="Trifolium repens"
 FT                   /<a href="#tissue_type">tissue_type</a>="leaves"
-FT                   /<a href="#clone_lib">clone_lib</a>="lambda gt10"
 FT                   /<a href="#clone">clone</a>="TRE361"
 FT                   /<a href="#mol_type">mol_type</a>="genomic DNA"
 FT   <a href="#fCDS">CDS</a>             14..1495
@@ -2178,10 +2177,8 @@ Optional qualifiers   /<a href="#altitude">altitude</a>="text"
                       /<a href="#cell_type">cell_type</a>="text"
                       /<a href="#chromosome">chromosome</a>="text"
                       /<a href="#clone">clone</a>="text"
-                      /<a href="#clone_lib">clone_lib</a>="text"
                       /<a href="#collected_by">collected_by</a>="text" 
                       /<a href="#collection_date">collection_date</a>="text"
-                      /<a href="#country">country</a>="&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]"
                       /<a href="#cultivar">cultivar</a>="text"
                       /<a href="#culture_collection">culture_collection</a>="&lt;institution-code&gt;:[&lt;collection-code&gt;:]&lt;culture_id&gt;"
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
@@ -2194,7 +2191,6 @@ Optional qualifiers   /<a href="#altitude">altitude</a>="text"
                       /<a href="#haplogroup">haplogroup</a>="text"
                       /<a href="#haplotype">haplotype</a>="text"
                       /<a href="#host">host</a>="text"
-                      /<a href="#identified_by">identified_by</a>="text"
                       /<a href="#isolate">isolate</a>="text"
                       /<a href="#isolation_source">isolation_source</a>="text"
                       /<a href="#lab_host">lab_host</a>="text"
@@ -2208,7 +2204,6 @@ Optional qualifiers   /<a href="#altitude">altitude</a>="text"
                       /<a href="#PCR_primers">PCR_primers</a>="[fwd_name: XXX, ]fwd_seq: xxxxx, 
                       [rev_name: YYY, ]rev_seq: yyyyy"
                       /<a href="#plasmid">plasmid</a>="text"
-                      /<a href="#pop_variant">pop_variant</a>="text"
                       /<a href="#proviral">proviral</a>
                       /<a href="#rearranged">rearranged</a>
                       /<a href="#segment">segment</a>="text"
@@ -2217,15 +2212,15 @@ Optional qualifiers   /<a href="#altitude">altitude</a>="text"
                       /<a href="#sex">sex</a>="text"
                       /<a href="#specimen_voucher">specimen_voucher</a>="[&lt;institution-code&gt;:[&lt;collection-code&gt;:]]&lt;specimen_id&gt;"
                       /<a href="#strain">strain</a>="text"
-                      /<a href="#sub_clone">sub_clone</a>="text"
                       /<a href="#submitter_seqid">submitter_seqid</a>="text"
                       /<a href="#sub_species">sub_species</a>="text"
-                      /<a href="#sub_strain">sub_strain</a>="text"
-                      /<a href="#tissue_lib">tissue_lib</a>="text"
                       /<a href="#tissue_type">tissue_type</a>="text"
                       /<a href="#transgenic">transgenic</a>
                       /<a href="#type_material">type_material</a>="&lt;type-of-type&gt; of &lt;organism name&gt;"
                       /<a href="#variety">variety</a>="text"
+
+Comment               Source qualifiers that have been deprecated do not appear in the
+                      Optional qualifiers list but are still listed in Appendix III Section 7.3.1
 
 Molecule scope        any
 
@@ -2735,6 +2730,8 @@ Comment         not more than one clone should be specified for a given <a href=
 Definition      clone library from which the sequence was obtained
 Value format    "text"
 Example         /clone_lib="lambda-hIL7"
+Comment         not to be used for new entries from Jan-2025; may
+                still be encountered on records prior to this date.  
 </pre>
 
 -----
@@ -2766,11 +2763,11 @@ Definition      The date on which the specimen was collected.
                 Collection times must be in Coordinated Universal Time (UTC), otherwise 
                 known as "Zulu Time" (Z) or be a specified exemption
                 from the missing values controlled vocabulary at
-                <a href="https://www.insdc.org/submitting-standards/missing-value-reporting">https://www.insdc.org/submitting-standards/missing-value-reporting</a>
+                <a href="https://www.insdc.org/technical-specifications/missing-value-reporting/">https://www.insdc.org/technical-specifications/missing-value-reporting/</a>
 Value format    "DD-Mmm-YYYY", "Mmm-YYYY", "YYYY"
                 "YYYY-MM-DDThh:mmZ", "YYYY-MM-DDThh:mm:ssZ", "YYYY-MM-DDThhZ", "YYYY-MM-DD", or "YYYY-MM" 
                 Or either of the missing values controlled vocabulary at 
-                <a href="https://www.insdc.org/submitting-standards/missing-value-reporting">https://www.insdc.org/submitting-standards/missing-value-reporting</a>
+                <a href="https://www.insdc.org/technical-specifications/missing-value-reporting/">https://www.insdc.org/technical-specifications/missing-value-reporting/</a>
 Example         /collection_date="21-Oct-1952" 
                 /collection_date="Oct-1952" 
                 /collection_date="1952" 
@@ -2839,9 +2836,9 @@ Definition      locality of isolation of the sequenced sample indicated in
                 by regions and localities
 Value format    "&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]" where 
                 country_value is any value from the controlled vocabulary at 
-                <a href="https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/</a> or 
+                <a href="https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/</a> or 
                 a specified exemption from the missing values controlled vocabulary at 
-                <a href="https://www.insdc.org/submitting-standards/missing-value-reporting">https://www.insdc.org/submitting-standards/missing-value-reporting</a>
+                <a href="https://www.insdc.org/technical-specifications/missing-value-reporting/">https://www.insdc.org/technical-specifications/missing-value-reporting/</a>
 Example         /country="Canada:Vancouver"
                 /country="France:Cote d'Azur, Antibes"
                 /country="Atlantic Ocean:Charlie Gibbs Fracture Zone"
@@ -3146,9 +3143,9 @@ Definition      locality of isolation of the sequenced sample indicated in
                 by regions and localities
 Value format    "&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]" where 
                 country_value is any value from the controlled vocabulary at 
-                <a href="https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/</a> or 
+                <a href="https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/</a> or 
                 a specified exemption from the missing values controlled vocabulary at 
-                <a href="https://www.insdc.org/submitting-standards/missing-value-reporting">https://www.insdc.org/submitting-standards/missing-value-reporting</a>
+                <a href="https://www.insdc.org/technical-specifications/missing-value-reporting/">https://www.insdc.org/technical-specifications/missing-value-reporting/</a>
 Example         /country="Canada:Vancouver"
                 /country="France:Cote d'Azur, Antibes"
                 /country="Atlantic Ocean:Charlie Gibbs Fracture Zone"
@@ -3224,6 +3221,8 @@ Example         /host="Homo sapiens"
 Definition      name of the expert who identified the specimen taxonomically 
 Value format    "text" 
 Example         /identified_by="John Burns" 
+Comment         not to be used for new entries from Jan-2025; may 
+                still be encountered on records prior to this date.  
 </pre>
 
 -----
@@ -3671,6 +3670,8 @@ Definition      name of subpopulation or phenotype of the sample from which the 
 Value format    "text"
 Example         /pop_variant="pop1" 
                 /pop_variant="Bear Paw"
+Comment         not to be used for new entries from Jan-2025; may 
+                still be encountered on records prior to this date.  
 </pre>
 
 -----
@@ -3871,12 +3872,11 @@ Example         /rpt_family="Alu"
 
 <pre id="rpt_type"><strong>Qualifier       /rpt_type=</strong>
 Definition      structure and distribution of repeated sequence
-Value format    tandem, direct, inverted, flanking, nested, dispersed, terminal, 
-                long_terminal_repeat, non_ltr_retrotransposon_polymeric_tract, 
-                centromeric_repeat, telomeric_repeat, x_element_combinatorial_repeat,
-                y_prime_element and other
+Value format    "TYPE"
 Example         /rpt_type=INVERTED
-Comment         the values are case-insensitive, i.e. both "INVERTED" and "inverted" 
+                /rpt_type=tandem
+Comment         TYPE is a term taken from the INSDC controlled vocabulary for rpt_type.  
+                The values are case-insensitive, i.e. both "INVERTED" and "inverted" 
                 are valid; For the most current list of allowed values and their definitions 
                 please visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/</a>
 </pre>
@@ -4045,7 +4045,8 @@ Comment         entries including /strain must not include
 Definition      sub-clone from which sequence was obtained
 Value format    "text"
 Example         /sub_clone="lambda-hIL7.20g"
-Comment         the comments on /<a href="#clone">clone</a> apply to /sub_clone
+Comment         not to be used for new entries from Jan-2025; may 
+                still be encountered on records prior to this date.  
 </pre>
 
 -----
@@ -4080,13 +4081,8 @@ Definition      name or identifier of a genetically or otherwise modified
                 qualifier).sub_strain from which sequence was obtained
 Value format    "text"
 Example         /sub_strain="abis"
-Comment         If the parental strain is not given, this should
-                be annotated in the <a href="#strain">strain</a> qualifier instead of sub_strain.
-                Either:
-                /<a href="#strain">strain</a>="K-12"
-                /sub_strain="MG1655"
-                or:
-                /<a href="#strain">strain</a>="MG1655"
+Comment         not to be used for new entries from Jan-2025; may 
+                still be encountered on records prior to this date.  
 </pre>
 
 -----
@@ -4107,6 +4103,8 @@ Comment         it is recommended that the amino acid sequence corresponding
 Definition      tissue library from which sequence was obtained
 Value format    "text"
 Example         /tissue_lib="tissue library 772"
+Comment         not to be used for new entries from Jan-2025; may
+                still be encountered on records prior to this date.  
 </pre>
 
 -----
@@ -4115,6 +4113,8 @@ Example         /tissue_lib="tissue library 772"
 Definition      tissue type from which the sequence was obtained
 Value format    "text"
 Example         /tissue_type="liver"
+Comment         not to be used for new entries from Jan-2025; may 
+                still be encountered on records prior to this date.  
 </pre>
 
 -----
@@ -4362,7 +4362,6 @@ Reference       IUPAC-IUB Joint Commission on Biochemical Nomenclature.
                 Peptides.
                 Eur. J. Biochem. 138:9-37(1984).
                 IUPAC-IUBMB JCBN Newsletter, 1999        
-                <a href="http://www.chem.qmul.ac.uk/iubmb/newsletter/1999/item3.html">http://www.chem.qmul.ac.uk/iubmb/newsletter/1999/item3.html</a>
 Scope           /<a href="#anticodon">anticodon</a>, /<a href="#transl_except">transl_except</a>
 Contact         EMBL-EBI
 
@@ -4446,13 +4445,12 @@ URL            <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Utils/wprintgc.cgi
 URL            <a href="https://www.insdc.org/submitting-standards/genetic-code-tables/">https://www.insdc.org/submitting-standards/genetic-code-tables/</a>
 </pre>
 
-#### 7.4.6 Country Names  <a name="7-4-6"></a>
+#### 7.4.6 Geo_loc_name List  <a name="7-4-6"></a>
 
 <pre>Authority       International Nucleotide Sequence Database Collaboration
 Contact         INSDC member databases
-Scope           /country qualifier
-URL             <a href="https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/country-qualifier-vocabulary/</a>
-
+Scope           /geo_loc_name qualifier
+URL             <a href="https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/</a>
 </pre>
 
 #### 7.4.7 Announces  <a name="7-4-7"></a>
