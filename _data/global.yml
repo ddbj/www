@@ -1,5 +1,7 @@
 top_news:
  ja:
+    - title: (11/6 10:00-11:00) D-way 定期システムリリースによるサービス停止
+      path: 2024-11-05
     - title: (10/31 10:00-11/5 10:00) メンテナンスのため登録システムと一部の検索サービスの停止
       path: 2024-10-30_2
     - title: セキュリティ強化の追加メンテナンスのため JGA/AGD サービスが停止
@@ -7,6 +9,8 @@ top_news:
     - title: 国際塩基配列データベース「DDBJ」に対するサイバー脅迫に関するご報告
       path: 2024-10-22
  en:
+    - title: (6th November 10:00-11:00) Announcement of D-way (BioProject/BioSample/DRA/GEA) system suspension 
+      path: 2024-11-05-e
     - title: (31st October 15:00-November 5th 10:00) Suspension of all submission and part of search services for maintenance
       path: 2024-10-30_2-e
     - title: JGA/AGD suspension for additional maintenance to strengthen security
