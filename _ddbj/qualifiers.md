@@ -658,7 +658,8 @@ alignment:Splign:1.26p:RefSeq:NM_000041.2,INSD:BC003557.1</pre>
 ### /isolate<a name="isolate"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#isolate)</span>
 
 定義
-: 配列の得られたindividual isolate    
+: 配列の得られた individual isolate    
+多くの場合、サンプル個体の識別子    
 [識別子について](/ddbj/identifiers.html) 参照    
 
 書式
@@ -1360,6 +1361,7 @@ personal:Dan Janzen:99-SRNP-2003</pre>
 
 定義
 : 配列の得られた strain の名称    
+多くの場合、培養細胞の株名    
 [識別子について](/ddbj/identifiers.html) 参照    
 
 書式

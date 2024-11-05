@@ -649,6 +649,7 @@ Comment
 
 Definition
 : individual isolate from which the sequence was obtained    
+In most cases, an identifier for the sample individual    
 See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Value format
@@ -1359,6 +1360,7 @@ Comment
 
 Definition  
 : strain from which the sequence was obtained     
+In most cases, a strain name of the cultured cells    
 See also [Identifiers](/ddbj/identifiers-e.html).    
 
 Value format

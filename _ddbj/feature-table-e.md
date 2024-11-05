@@ -11,9 +11,6 @@ The original site; [The DDBJ/ENA/GenBank Feature Table Definition](https://insdc
 
 ```
 The DDBJ/ENA/GenBank Feature Table Definition
-Feature Table
-Definition
-
 Version 11.3 October 2024
 
 DNA Data Bank of Japan, Mishima, Japan.
@@ -1140,6 +1137,7 @@ Definition            coding sequence; sequence of nucleotides that
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#artificial_location">artificial_location</a>="[artificial_location_value]"
+                      /<a href="#circular_RNA">circular_RNA</a>
                       /<a href="#codon_start">codon_start</a>=&lt;1 or 2 or 3&gt;
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#EC_number">EC_number</a>="text"
@@ -1191,8 +1189,7 @@ Comment               /<a href="#codon_start">codon_start</a> has valid value of
 Definition            region of biological interest identified as a centromere and
                       which has been experimentally characterized;
 
-Optional qualifiers   /<a href="#citation">citation</a>=[number]
-                      /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
+Optional qualifiers   /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#inference">inference</a>="[CATEGORY:]TYPE[(same species)][:EVIDENCE_BASIS]"
                       /<a href="#note">note</a>="text"
@@ -1665,6 +1662,7 @@ Definition            messenger RNA; includes 5'untranslated region (<a href="#5
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#artificial_location">artificial_location</a>="[artificial_location_value]"
+                      /<a href="#circular_RNA">circular_RNA</a>
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"
                       /<a href="#function">function</a>="text"
@@ -2219,19 +2217,15 @@ Optional qualifiers   /<a href="#altitude">altitude</a>="text"
                       /<a href="#type_material">type_material</a>="&lt;type-of-type&gt; of &lt;organism name&gt;"
                       /<a href="#variety">variety</a>="text"
 
-Comment               Source qualifiers that have been deprecated do not appear in the
-                      Optional qualifiers list but are still listed in Appendix III Section 7.3.1
-
 Molecule scope        any
 
-Comment               transgenic sequences must have at least two source feature
+Comment               Source qualifiers that have been deprecated do not appear in the
+                      Optional qualifiers list but are still listed in Appendix III Section 7.3.1
+                      transgenic sequences must have at least two source feature
                       keys; in a transgenic sequence the source feature key
                       describing the organism that is the recipient of the DNA
                       must span the entire sequence;
                       see Appendix III /<a href="#organelle">organelle</a> for a list of &lt;organelle_value&gt;
-                      From June 2024, the /country qualifier will be 
-                      transitioned to /geo_loc_name. /country may still be 
-                      encountered on records prior to this date.  
 </pre>
 
 -----
@@ -2291,8 +2285,7 @@ Comment               STS location to include primer(s) in <a href="#primer_bind
 Definition            region of biological interest identified as a telomere 
                       and which has been experimentally characterized;
 
-Optional qualifiers   /<a href="#citation">citation</a>=[number]
-                      /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
+Optional qualifiers   /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
                       /<a href="#experiment">experiment</a>="[CATEGORY:]text"/note="text"
                       /<a href="#inference">inference</a>="[CATEGORY:]TYPE[(same species)][:EVIDENCE_BASIS]"
                       /<a href="#note">note</a>="text"
@@ -2975,7 +2968,7 @@ Definition      identifies sequences derived by direct molecular
                 reliable identification of the source organism.
                 Environmental samples include clinical samples,
                 gut contents, and other sequences from anonymous
-                organisms&lt;that may be associated with a particu&gt;ar
+                organisms that may be associated with a particular
                 host. They do not include endosymbionts that can be
                 reliably recovered from a particular host, organisms
                 from a readily identifiable but uncultured field sample
@@ -3026,7 +3019,7 @@ Comment         only to be used to describe biological mechanisms such
                 /<a href="#note">note</a>="TAA stop codon is completed by addition of 3' A residues to 
                 mRNA".
                 - must not be used for ribosomal slippage, instead use join operator, 
-               &lt;  e.g.: CDS   join(486..1784,1787..48&gt;0)
+                  e.g.: CDS   join(486..1784,1787..4810)
                               /note="ribosomal slip on tttt sequence at 1784..1787"
 </pre>
 
@@ -3041,7 +3034,7 @@ Value format    "[CATEGORY:]text"
                 "DESCRIPTION" support for a broad concept of function such as that 
                 based on phenotype, genetic approach, biochemical function, pathway
                 information, etc.
-                "EXISTENCE" support for the k&lt;own or inferred existence of the prod&gt;ct
+                "EXISTENCE" support for the known or inferred existence of the product
                 where text is free text (see examples)
 Example         /experiment="5' RACE"
                 /experiment="Northern blot [DOI: 12.3456/FT.789.1.234-567.2010]"
@@ -3274,7 +3267,7 @@ Example         /inference="COORDINATES:profile:tRNAscan:2.1"
                 /inference="alignment:Splign:1.26p:RefSeq:NM_000041.2,INSD:BC003557.1"
 Comment         /inference="non-experimental evidence, no additional details 
                 recorded" was used to replace instances of 
-                /evidence=NOT_EXPERIMENTAL &lt;n December 2005; any database ID  can&gt;be
+                /evidence=NOT_EXPERIMENTAL in December 2005; any database ID  can be
                 used in /inference= qualifier; recommendations for choice of resource 
                 acronym for [EVIDENCE_BASIS] are provided in the /inference qualifier 
                 vocabulary recommendation document (<a href="https://www.insdc.org/submitting-standards/inference-qualifiers/">https://www.insdc.org/submitting-standards/inference-qualifiers/</a>);
@@ -3486,7 +3479,7 @@ Comment         all values refer to the in vivo or synthetic molecule for
 
 <pre id="ncRNA_class"><strong>Qualifier       /ncRNA_class=</strong>
 Definition      a structured description of the classification of the
-                non-cod&lt;ng RNA described by the ncRNA parent &gt;ey
+                non-coding RNA described by the ncRNA parent key
 Value format   "TYPE"
 Example         /ncRNA_class="miRNA"
                 /ncRNA_class="siRNA"
@@ -3612,7 +3605,7 @@ Comment         not to be used for new entries from 15-DEC-2001;
 Definition      description of reaction conditions and components for PCR 
 Value format    "text" 
 Example         /PCR_conditions="Initial denaturation:94degC,1.5min"
-Comment         used with <&lt; href="#primer_bind">primer_bind</a> &gt;ey
+Comment         used with <a href="#primer_bind">primer_bind</a> key
 </pre>
 
 -----
@@ -3630,7 +3623,7 @@ Value format    /PCR_primers="[fwd_name: XXX1, ]fwd_seq: xxxxx1,[fwd_name: XXX2,
 Example         /PCR_primers="fwd_name: CO1P1, fwd_seq: ttgattttttggtcayccwgaagt,
                 rev_name: CO1R4, rev_seq: ccwvytardcctarraartgttg"
                 /PCR_primers=" fwd_name: hoge1, fwd_seq: cgkgtgtatcttact, 
-                rev_name: hoge2, rev_seq: cggtgtatcttact" 
+                rev_name: hoge2, rev_seq: cg&gt;i&lt;gtgtatcttact" 
                 /PCR_primers="fwd_name: CO1P1, fwd_seq: ttgattttttggtcayccwgaagt,
                 fwd_name: CO1P2, fwd_seq: gatacacaggtcayccwgaagt, rev_name: CO1R4, 
                 rev_seq: ccwvytardcctarraartgttg" 
@@ -3755,7 +3748,7 @@ Comment         TYPE is a term taken from the INSDC controlled vocabulary for ps
                 it has lost any intron/exon structure, and it might have a pseudo-polyA-tail.
                 
                 unprocessed: the pseudogene has arisen from a copy of the parent gene by duplication
-                followed by accumulation of random mutation. The changes, compared to their
+                followed by accumulation of random mutations.  The changes, compared to their
                 functional homolog, include insertions, deletions, premature stop codons, frameshifts
                 and a higher proportion of non-synonymous versus synonymous substitutions.
                 
@@ -3872,13 +3865,13 @@ Example         /rpt_family="Alu"
 
 <pre id="rpt_type"><strong>Qualifier       /rpt_type=</strong>
 Definition      structure and distribution of repeated sequence
-Value format    "TYPE"
+Value format    &lt;TYPE&gt;
 Example         /rpt_type=INVERTED
                 /rpt_type=tandem
 Comment         TYPE is a term taken from the INSDC controlled vocabulary for rpt_type.  
                 The values are case-insensitive, i.e. both "INVERTED" and "inverted" 
-                are valid; For the most current list of allowed values and their definitions 
-                please visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/</a>
+                are valid; The most current list of allowed values and their definitions are at:
+                <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/</a>
 </pre>
 
 -----
@@ -4113,8 +4106,6 @@ Comment         not to be used for new entries from Jan-2025; may
 Definition      tissue type from which the sequence was obtained
 Value format    "text"
 Example         /tissue_type="liver"
-Comment         not to be used for new entries from Jan-2025; may 
-                still be encountered on records prior to this date.  
 </pre>
 
 -----
@@ -4211,6 +4202,10 @@ Definition      indicates that the organism from which this sequence was obtaine
                 a nomenclatural type of the species (or subspecies) corresponding with
                 the /organism identified in the sequence entry
 Value format    "&lt;type-of-type&gt; of &lt;organism name&gt;"
+                where type-of-type is one of the following:
+                type strain, neotype strain, holotype, paratype, neotype, allotype, hapanotype, 
+                syntype, lectotype, paralectotype, isotype, epitype, isosyntype, ex-type, 
+                reference strain, type material; 
 Example         /type_material="type strain of Escherichia coli"
                 /type_material="holotype of Cercopitheus lomamiensis"
                 /type_material="paratype of Cercopitheus lomamiensis"
