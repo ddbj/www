@@ -13,7 +13,7 @@ lang: en
 <form id="sample_attr_form" method="get" action="">
   <div id="main_index" class="biosample_attr">
     <div id="sample_type">
-      Core package (<a href="/biosample/sample-info-e.html#Sample-package">Packages</a>, <a href="/biosample/overview-e.html#genome-assembly-sample">Genome assembly sample</a>)
+      Core package (<a href="/biosample/sample-info.html#Sample-package">Packages</a>, <a href="/biosample/overview.html#genome-assembly-sample">Genome assembly sample</a>)
       <ul>
         <li>
         <div class="radio"><input type="radio" id="Core_Standard" name="Core" value="Standard"></div><label class="clearfix" for="Standard">Standard</label>
@@ -100,16 +100,31 @@ lang: en
     </div>
     
     <div id="env_package">
-      <a href="/biosample/submission-e-e.html#mixs" class="title">Environmental package (MIxS Sample)</a>
+      <a href="/biosample/submission.html#mixs" class="title">Environmental package (MIxS Sample)</a>
       <ul>
         <li>
           <div class="radio"><input type="radio" id="No_package" name="Package" value="No_package"></div> <label class="clearfix" for="No_package">No package</label>
+        </li>
+        <li>
+          <div class="radio"><input type="radio" id="agriculture" name="Package" value="agriculture"></div><label class="clearfix" for="agriculture">agriculture</label>
         </li>
         <li>
           <div class="radio"><input type="radio" id="air" name="Package" value="air"></div> <label class="clearfix" for="air">air</label>
         </li>
         <li>
           <div class="radio"><input type="radio" id="built" name="Package" value="built"></div> <label class="clearfix" for="built">built</label>
+        </li>
+        <li>
+          <div class="radio"><input type="radio" id="food-animal and animal feed" name="Package" value="food-animal and animal feed"></div> <label class="clearfix" for="food-animal and animal feed">food-animal and animal feed</label>
+        </li>
+        <li>
+          <div class="radio"><input type="radio" id="food-farm environment" name="Package" value="food-farm environment"></div> <label class="clearfix" for="food-farm environment">food-farm environment</label>
+        </li>
+        <li>
+          <div class="radio"><input type="radio" id="food-food production facility" name="Package" value="food-food production facility"></div> <label class="clearfix" for="food-food production facility">food-food production facility</label>
+        </li>
+        <li>
+          <div class="radio"><input type="radio" id="food-human foods" name="Package" value="food-human foods"></div> <label class="clearfix" for="food-human foods">food-human foods</label>
         </li>
         <li>
           <div class="radio"><input type="radio" id="host-associated" name="Package" value="host-associated"></div> <label class="clearfix" for="host-associated">host-associated</label>
@@ -129,6 +144,13 @@ lang: en
         <li>
 <div class="radio"><input type="radio" id="human-vaginal" name="Package" value="human-vaginal"></div> <label class="clearfix" for="human-vaginal">human-vaginal</label>
 </li>
+				<li>
+          <div class="radio"><input type="radio" id="hydrocarbon resources-cores" name="Package" value="hydrocarbon resources-cores"></div> <label class="clearfix" for="hydrocarbon resources-cores">hydrocarbon resources-cores</label>
+        </li>
+				<li>
+					<div class="radio"><input type="radio" id="hydrocarbon resources-fluids/swabs" name="Package" value="hydrocarbon resources-fluids/swabs"></div> <label class="clearfix" for="hydrocarbon resources-fluids/swabs">hydrocarbon resources-fluids/swabs</label>
+				</li>
+				
         <li>
 <div class="radio"><input type="radio" id="microbial" name="Package" value="microbial"></div> <label class="clearfix" for="microbial">microbial mat/biofilm</label>
 </li>
@@ -144,6 +166,10 @@ lang: en
         <li>
 <div class="radio"><input type="radio" id="soil" name="Package" value="soil"></div> <label class="clearfix" for="soil">soil</label>
 </li>
+<li>
+	<div class="radio"><input type="radio" id="symbiont-associated" name="Package" value="symbiont-associated"></div> <label class="clearfix" for="symbiont-associated">symbiont-associated/sludge</label>
+	</li>
+
         <li>
 <div class="radio"><input type="radio" id="wastewater" name="Package" value="wastewater"></div> <label class="clearfix" for="wastewater">wastewater/sludge</label>
 </li>
@@ -154,6 +180,7 @@ lang: en
     </div>
 <!-- #env.package -->
   </div> <!-- #main_index -->
+
   <button id="definition" class="submit_button" type="button" name="definition" value="definition">DEFINITION</button>
   
 </form>
