@@ -1,14 +1,10 @@
 top_news:
  ja:
-    - title: (11/6 10:00-11:00) D-way 定期システムリリースによるサービス停止
-      path: 2024-11-05
     - title: セキュリティ強化の追加メンテナンスのため JGA/AGD サービスが停止
       path: 2024-10-28
     - title: 国際塩基配列データベース「DDBJ」に対するサイバー脅迫に関するご報告
       path: 2024-10-22
  en:
-    - title: (6th November 10:00-11:00) Announcement of D-way (BioProject/BioSample/DRA/GEA) system suspension 
-      path: 2024-11-05-e
     - title: JGA/AGD suspension for additional maintenance to strengthen security
       path: 2024-10-28-e
     - title: On Cyber Threats against DDBJ, a node of the International Nucleotide Sequence Database Collaboration
