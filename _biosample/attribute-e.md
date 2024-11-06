@@ -145,10 +145,10 @@ lang: en
 <div class="radio"><input type="radio" id="human-vaginal" name="Package" value="human-vaginal"></div> <label class="clearfix" for="human-vaginal">human-vaginal</label>
 </li>
 				<li>
-          <div class="radio"><input type="radio" id="hydrocarbon resources-cores" name="Package" value="hydrocarbon resources-cores"></div> <label class="clearfix" for="hydrocarbon resources-cores">hydrocarbon resources-cores</label>
+          <div class="radio"><input type="radio" id="hydrocarbon-cores" name="Package" value="hydrocarbon-cores"></div> <label class="clearfix" for="hydrocarbon resources-cores">hydrocarbon resources-cores</label>
         </li>
 				<li>
-					<div class="radio"><input type="radio" id="hydrocarbon resources-fluids/swabs" name="Package" value="hydrocarbon resources-fluids/swabs"></div> <label class="clearfix" for="hydrocarbon resources-fluids/swabs">hydrocarbon resources-fluids/swabs</label>
+					<div class="radio"><input type="radio" id="hydrocarbon-fluids_swabs" name="Package" value="hydrocarbon-fluids_swabs"></div> <label class="clearfix" for="hydrocarbon resources-fluids/swabs">hydrocarbon resources-fluids/swabs</label>
 				</li>
 				
         <li>
