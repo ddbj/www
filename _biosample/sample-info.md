@@ -114,19 +114,27 @@ SARS-CoV-2 ケースの迅速な解析と追跡のための有用な必須属性
 MIxS メタゲノムや環境サンプルの場合、環境パッケージから適切なものを選びます。サンプル採取環境の記載に必要な属性 (例 air 環境パッケージに対する altitude) が追加されます。   
 MIMS.me と MIMARKS.survey のときは No package を選択できません。  
 
+* agriculture
 * air
 * built
+* food-animal
+* food-farm_env
+* food-human_foods
+* food-prod_facility
 * host-associated
 * human-associated
 * human-gut
 * human-oral
 * human-skin
 * human-vaginal
+* hydrocarbon-cores
+* hydrocarbon-fluids_swabs
 * microbial
 * miscellaneous
 * plant-associated
 * sediment
 * soil
+* symbiont-associated
 * wastewater
 * water
 

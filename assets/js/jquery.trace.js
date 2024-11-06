@@ -836,12 +836,12 @@ $(function(){
     $('#sample_type ul ul').hide();
 
     // all 選択時の処理
-      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
       //$.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1BwzRPc5g5bLH9tLj1MFSykXzMX5Zb52Zxoorf88bSLI/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
       attr_table = "";
       attr_table += '<p class="attr-title">All attributes</p>';
-      attr_table += '<p class="attr-title">Template files for attributes: <a href="https://drive.google.com/drive/u/2/folders/1ZG_v9q8F9A13XCqTrFQewuq2S1RLH75F">template files</a></p>';
+     //attr_table += '<p class="attr-title">Template files for attributes: <a href="https://drive.google.com/drive/u/2/folders/1ZG_v9q8F9A13XCqTrFQewuq2S1RLH75F">template files</a></p>';
       attr_table += '<p class="biosample-example">Example: <a href="https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=' + examples["All"][1] + '">' + examples["All"][0] + '</a></p>';       
       attr_table += '<div id="biosample_attr_area"><table id="biosample_attr_table"><thead><tr class="biosample_header"><th class="name">Name</th><th class="description">Description</th></tr></thead><tbody>';
 
@@ -932,17 +932,18 @@ $(function(){
     }
 
     // package 選択時の処理 attribute シートを起点に
-      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
       
       var span_required = "";
 
       attr_table = "";
       attr_table += '<p class="attr-title">Package: ' + package_shortname + '</p>';
 
-      // template
+      /* template
       if (package_tsv[package_shortname]) {
           attr_table += '<p class="attr-title">A template file for attributes: <a href="' + package_tsv[package_shortname] + '">a template file</a></p>';
       }
+			*/
 
       var example_number = 0;
       var real_example_number = 0;

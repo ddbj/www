@@ -113,19 +113,27 @@ Select appropriate environmental packages for MIxS environmental/metagenome samp
 Predefined attributes to describe sampling environments are added (for example, "altitude" for the air environmental package).  
 For the MIMS.me and MIMARKS.survey packages, "No package" cannot be selected.  
 
+* agriculture
 * air
 * built
+* food-animal
+* food-farm_env
+* food-human_foods
+* food-prod_facility
 * host-associated
 * human-associated
 * human-gut
 * human-oral
 * human-skin
 * human-vaginal
+* hydrocarbon-cores
+* hydrocarbon-fluids_swabs
 * microbial
 * miscellaneous
 * plant-associated
 * sediment
 * soil
+* symbiont-associated
 * wastewater
 * water
     
