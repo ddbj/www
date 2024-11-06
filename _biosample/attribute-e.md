@@ -115,16 +115,16 @@ lang: en
           <div class="radio"><input type="radio" id="built" name="Package" value="built"></div> <label class="clearfix" for="built">built</label>
         </li>
         <li>
-          <div class="radio"><input type="radio" id="food-animal and animal feed" name="Package" value="food-animal and animal feed"></div> <label class="clearfix" for="food-animal and animal feed">food-animal and animal feed</label>
+          <div class="radio"><input type="radio" id="food-animal" name="Package" value="food-animal"></div> <label class="clearfix" for="food-animal and animal feed">food-animal and animal feed</label>
         </li>
         <li>
-          <div class="radio"><input type="radio" id="food-farm environment" name="Package" value="food-farm environment"></div> <label class="clearfix" for="food-farm environment">food-farm environment</label>
+          <div class="radio"><input type="radio" id="food-farm_env" name="Package" value="food-farm_env"></div> <label class="clearfix" for="food-farm environment">food-farm environment</label>
         </li>
         <li>
-          <div class="radio"><input type="radio" id="food-food production facility" name="Package" value="food-food production facility"></div> <label class="clearfix" for="food-food production facility">food-food production facility</label>
+          <div class="radio"><input type="radio" id="food-prod_facility" name="Package" value="food-prod_facility"></div> <label class="clearfix" for="food-food production facility">food-food production facility</label>
         </li>
         <li>
-          <div class="radio"><input type="radio" id="food-human foods" name="Package" value="food-human foods"></div> <label class="clearfix" for="food-human foods">food-human foods</label>
+          <div class="radio"><input type="radio" id="food-human_foods" name="Package" value="food-human_foods"></div> <label class="clearfix" for="food-human foods">food-human foods</label>
         </li>
         <li>
           <div class="radio"><input type="radio" id="host-associated" name="Package" value="host-associated"></div> <label class="clearfix" for="host-associated">host-associated</label>
