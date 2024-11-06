@@ -634,10 +634,8 @@ jga:
           url: /jga/download.html
         - title: Groups
           url: /jga/group.html
-        - title: Updates in 2020
-          url: /jga/update-202009.html
         - title: Example submission
-          url: https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318
+          url: https://github.com/ddbj/submission-excel2xml/tree/main/example
         - title: XML Schema
           url: https://github.com/ddbj/pub/tree/master/docs/jga/xsd/
     - id: faq
@@ -664,9 +662,7 @@ jga:
         - title: Groups
           url: /jga/group-e.html
         - title: Example submission
-          url: https://docs.google.com/spreadsheets/d/1HHlxItj89fQv2oWUNBIHZ4VVGwbcC09WGD5tEiXAQZ4/edit#gid=744299318
-        - title: Updates in 2020
-          url: /jga/update-202009-e.html
+          url: https://github.com/ddbj/submission-excel2xml/tree/main/example
         - title: XML Schema
           url: https://github.com/ddbj/pub/tree/master/docs/jga/xsd/
     - id: faq
