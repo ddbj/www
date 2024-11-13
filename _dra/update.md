@@ -20,14 +20,13 @@ Hold Date の [Change] をクリックし、公開予定日変更ページに移
 ## 論文情報の追加 {#publication}
 
 DRA データに関する論文情報は BioProject に追加します。
-[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeyWbdUll6ESiuraInJ2UzUuiCSoWYZ0v-zARc049_y5Z2-7A/viewform)の問い合わせ先で「BioProject/BioSample/Sequence Read Archive (DRA)」を選択し、[論文情報](/bioproject/project-info.html#Publication) (pubmed ID、pubmed ID がない場合は doi) の BioProject への追加を依頼してください。
+[DRA/BioProject/BioSample 更新依頼フォーム](https://forms.gle/nJUyV5BGpoZhvJKw9) (pubmed ID、pubmed ID がない場合は doi) から依頼してください。
 
 ## メタデータの更新  {#update-metadata}
 
 [Enter/Update metadata] からメタデータを編集します。編集不可項目はブロックされています。
 必要な編集が完了後、メタデータ作成ツールの [Submit/Update DRA metadata] をクリックし、更新内容を反映させます。
 
-関連する文献が公表された場合は、pubmed ID を含む文献情報を添えて [BioProject チーム](/bioproject/index.html) に追加を依頼します。
 
 ## データファイルの追加  {#add-data-files}
 
@@ -58,4 +57,4 @@ DRA では別の Submission で新しく Experiment-Run のセットを追加し
 
 ## オブジェクトの削除  {#delete}
 
-Experiment、Run や Analysis などを削除する場合は [DRA チームに連絡](/contact-ddbj.html)してください。
+Experiment、Run や Analysis などを削除する場合は [DRA/BioProject/BioSample 更新依頼フォーム](https://forms.gle/nJUyV5BGpoZhvJKw9)から連絡してください。

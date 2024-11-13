@@ -9,7 +9,7 @@ lang: en
 
 ## Contact  {#contact}
 
-Please contact us from [Message form](/contact-ddbj-e.html).
+Please contact us from [Contact form](https://forms.gle/eYxquDRRx7WNkrPa6).
 
 <address markdown="1">
 
@@ -21,7 +21,7 @@ National Institute of Genetics" at "1111 Yata, Mishima, Shizuoka
 
 </address>
 
-[Ask questions about DDBJ services.](/contact-ddbj-e.html#to-ddbj)
+[Ask questions about DDBJ services.](/contact-ddbj-e.html)
 
 ## Reference  {#reference}
 

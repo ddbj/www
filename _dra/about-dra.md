@@ -9,7 +9,7 @@ lang: ja
 
 ## 連絡先  {#contact}
 
-[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
+[お問い合わせフォーム](https://forms.gle/BZcJedShdU1LK1Uy9)よりご連絡ください。
 
 
 <address markdown="1">
@@ -20,7 +20,7 @@ FAX : 055-981-6849
 
 </address>
 
-[DDBJ サービスへの問い合わせ](/contact-ddbj.html#to-ddbj)
+[DDBJ サービスへの問い合わせ](/contact-ddbj.html)
 
 ## 文献  {#reference}
 

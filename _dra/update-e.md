@@ -22,7 +22,7 @@ available at [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/) and m
 ## Add publication information {#publication}
 
 Add publication information related to DRA data to BioProject.
-Request addition of [publication information](/bioproject/project-info-e.html#Publication) (pubmed ID, doi when pubmed ID is not available) to BioProject through the [Contact form](https://docs.google.com/forms/d/e/1FAIpQLSeNrBMkr9lV6IaWCJCXeGBddDF3tJXcv6SQCQ5lYWETmiuRAg/viewform) by selecting "BioProject/BioSample/Sequence Read Archive (DRA)" in the Contacts menu.
+Request addition of [publication information](/bioproject/project-info-e.html#Publication) (pubmed ID, doi when pubmed ID is not available) to BioProject through the [DRA/BioProject/BioSample update request](https://forms.gle/T7faNoDCvmQoTiWq9) by selecting "BioProject/BioSample/Sequence Read Archive (DRA)" in the Contacts menu.
 
 ## Metadata update  {#update-metadata}
 
@@ -38,7 +38,7 @@ Data files cannot be added to archived Submissions. In addition, archived Runs c
 To add data files, create a new Submission and add Experiment-Run objects to existing BioProject and BioSample accessions.
 
 Similar to Run, data files cannot be added to archived Analysis objects.
-To replace archived Analysis, please [contact to the DRA team](/contact-ddbj-e.html).
+To replace archived Analysis, please [DRA/BioProject/BioSample update request](https://forms.gle/T7faNoDCvmQoTiWq9).
 
 Login [D-way](https://ddbj.nig.ac.jp/D-way/)and create a new submission by clicking the [New submission].
 Select the BioProject and BioSample accessions to which data to be added. Next, add the DRA Experiment and Run objects.
@@ -61,4 +61,4 @@ Please cite the BioProject accession or Run accessions.
 
 ## Object deletion  {#delete}
 
-To delete archived Experiment, Run and Analysis objects, please [contact us](/contact-ddbj-e.html).
+To delete archived Experiment, Run and Analysis objects, please [DRA/BioProject/BioSample update request](https://forms.gle/T7faNoDCvmQoTiWq9).
