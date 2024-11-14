@@ -88,11 +88,11 @@ BioProject の公開は参照している DDBJ/DRA/GEA/MetaboBank データの�
 
 ## プロジェクトの更新  {#update}
 
-登録が完了したデータを更新することができます。DDBJ BioProject で更新しますので、修正内容を[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
+登録が完了したデータを更新することができます。DDBJ BioProject で更新しますので、[BioProject/BioSample/DRA  更新依頼フォーム](https://forms.gle/cfJ1nf8o612qvzXQ8)よりご連絡ください。
 
 ## 論文情報の追加 {#publication}
 
-[お問い合わせフォーム](https://docs.google.com/forms/d/e/1FAIpQLSeyWbdUll6ESiuraInJ2UzUuiCSoWYZ0v-zARc049_y5Z2-7A/viewform)の問い合わせ先で「BioProject/BioSample/Sequence Read Archive (DRA)」を選択し、[論文情報](/bioproject/project-info.html#Publication) (pubmed ID、pubmed ID がない場合は doi) の BioProject への追加を依頼してください。
+[BioProject/BioSample/DRA  更新依頼フォーム](https://forms.gle/cfJ1nf8o612qvzXQ8)より依頼してください。
 
 ## プロジェクトとデータのリンク  {#link-experimental-data-project}
 

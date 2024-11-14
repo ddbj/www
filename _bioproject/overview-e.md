@@ -69,4 +69,4 @@ To group primary projects under an umbrella, please follow the steps below.
 First, submit and release an umbrella project. If necessary, please share the assigned PRJDB number with relevant researchers.  
 When submitting related primary projects, please provide the PRJDB number of parent umbrella in the [Umbrella BioProject](/bioproject/project-info-e.html#Area_linked-project). Released primary projects are automatically linked to the specified umbrella project.
 
-If you want to add already registered primary projects to the umbrella, please inform the PRJDB numbers of umbrella and related primary projects to the [DDBJ BioProject team](/contact-ddbj-e.html).
+If you want to add already registered primary projects to the umbrella, please inform the PRJDB numbers of umbrella and related primary projects to the [DDBJ BioProject team](https://forms.gle/T7faNoDCvmQoTiWq9).

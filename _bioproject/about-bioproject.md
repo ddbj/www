@@ -9,7 +9,7 @@ lang: ja
 
 ## 連絡先  {#contact}
 
-[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。
+[お問い合わせフォーム](/contact-ddbj.html)よりご連絡ください。
 
 
 <address markdown="1">

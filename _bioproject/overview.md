@@ -69,5 +69,5 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 関連するプライマリープロジェクトを登録する際には [Umbrella BioProject](/bioproject/project-info.html#Area_linked-project) に親となるアンブレラの PRJDB 番号を記入してください。登録したプライマリープロジェクトが公開されると、自動的に指定したアンブレラに関連付けられます。
 
-過去に登録したプライマリープロジェクトをアンブレラの傘下に追加したい場合は、アンブレラと追加したいプライマリープロジェクトの PRJDB 番号を [DDBJ BioProject にお知らせください](/contact-ddbj.html)。
+過去に登録したプライマリープロジェクトをアンブレラの傘下に追加したい場合は、アンブレラと追加したいプライマリープロジェクトの PRJDB 番号を [DDBJ BioProject にお知らせください](https://forms.gle/cfJ1nf8o612qvzXQ8)。
 

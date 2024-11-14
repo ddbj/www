@@ -98,11 +98,11 @@ Public projects are exchanged among [NCBI](https://www.ncbi.nlm.nih.gov/bioproje
 
 ## Update  {#update}
 
-Registered projects can be updated. Please inform us updated contents through the [contact form](/contact-ddbj-e.html) so that we will update the projects.
+Registered projects can be updated. Please inform us updated contents through the [BioProject/BioSample/DRA update request form](https://forms.gle/T7faNoDCvmQoTiWq9) so that we will update the projects.
 
 ## Add publication information {#publication}
 
-Request addition of [publication information](/bioproject/project-info-e.html#Publication) (pubmed ID, doi when pubmed ID is not available) to BioProject through the [Contact form](https://docs.google.com/forms/d/e/1FAIpQLSeNrBMkr9lV6IaWCJCXeGBddDF3tJXcv6SQCQ5lYWETmiuRAg/viewform) by selecting "BioProject/BioSample/Sequence Read Archive (DRA)" in the Contacts menu.
+Request addition of [publication information](/bioproject/project-info-e.html#Publication) (pubmed ID, doi when pubmed ID is not available) to BioProject through the [BioProject/BioSample/DRA update request form](https://forms.gle/T7faNoDCvmQoTiWq9).
 
 ## Link experimental data and project  {#link-experimental-data-project}
 

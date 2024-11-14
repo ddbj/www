@@ -9,7 +9,7 @@ lang: en
 
 ## Contact  {#contact}
 
-Please contact us from [Message form](/contact-ddbj-e.html).
+Please contact us from [Contact form](/contact-ddbj-e.html).
 
 
 <address markdown="1">
