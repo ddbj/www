@@ -61,7 +61,7 @@ The database supports and encourages use of dictionaries of attribute names by p
 
 BioSample promotes richer sample description and standardization of attribute name by providing sample packages designed for each type of sample and sequences.
 
-* See "[Sample Information](/biosample/sample-info-e.html#Sample-type)" regarding how to select a package.
+* See "[Sample Information](/biosample/sample-info-e.html#Sample-package)" regarding how to select a package.
 * See "[Sample attributes](/biosample/attribute-e.html)" regarding sample attributes.
 
 The package itself is a mechanism to promote adequate sample description and attributes are more important for sample interpretation. Therefore, if samples are described by appropriate attributes, you do not change the package even though submitted samples use not-recommended package.
@@ -184,7 +184,7 @@ For example, biomaterial_provider： ATCC.
 
 ## Antibiogram  {#antibiogram}
 
-An antibiogram table can be included in a BioSample record (Example: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)). To submit the table, please contact [BioSample team](/contact-ddbj-e.html).
+An antibiogram table can be included in a BioSample record (Example: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)). To submit the table, please contact [BioProject/BioSample/DRA update request form](https://forms.gle/T7faNoDCvmQoTiWq9).
 
 For the antibiogram submission guidelines, please see the NCBI BioSample pages.
 

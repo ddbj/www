@@ -56,7 +56,7 @@ BioSample は属性名にコントロールされた語句 ("辞書") を使う�
 
 BioSample ではサンプルや配列種別に応じた必須・任意属性から構成されるパッケージを提供し、サンプル記載の充実化と属性名の標準化を促しています。
 
-* パッケージの選び方は[サンプル情報](/biosample/sample-info.html#Sample-type)を参照してください。
+* パッケージの選び方は[サンプル情報](/biosample/sample-info.html#Sample-package)を参照してください。
 * パッケージで提供されるサンプル属性は[サンプル属性](/biosample/attribute.html)を参照してください。
 
 パッケージはサンプルの適切な記述を促すための仕組みであり、サンプル情報の解釈のためには実際に使用される属性の方が重要です。そのため過去に登録したサンプルとパッケージが合っていなくても、使用されている属性が適切であれば、パッケージを無理に変更する必要はありません。
@@ -180,7 +180,8 @@ biomaterial_provider に iPS 細胞の入手元を記載します。
 
 ## 薬剤感受性表  {#antibiogram}
 
-BioSample レコードに薬剤感受性表（アンチバイオグラム、Antibiogram）を含めることができます（登録例: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)）。登録を希望する場合は [BioSample チーム](/contact-ddbj.html)に連絡してください。
+BioSample レコードに薬剤感受性表（アンチバイオグラム、Antibiogram）を含めることができます（登録例: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)）。    
+登録を希望する場合は [BioProject/BioSample/DRA  更新依頼フォーム](https://forms.gle/cfJ1nf8o612qvzXQ8)に連絡してください。
 
 薬剤感受性表の登録ガイドラインは NCBI BioSample の各ページを参照してください。
 
