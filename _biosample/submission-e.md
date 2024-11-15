@@ -38,7 +38,7 @@ Select a sample type in the "SAMPLE TYPE".
 
 In the "SAMPLE TYPE", select an appropriate package according to the type of sample or sequence. Enter required and optional sample attributes provided by a selected package. 
 
-* See "[Sample Information](/biosample/sample-info-e.html#Sample-type)" regarding how to select a package.
+* See "[Sample Information](/biosample/sample-info-e.html#Sample-package)" regarding how to select a package.
 * See "[Sample attributes](/biosample/attribute-e.html)" regarding sample attributes.
 * More than one sample can be submitted in single submission.
 * Single submission can not have samples of different packages.
@@ -176,6 +176,6 @@ FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs
 
 ## Update BioSample  {#update-biosample}
 
-Registered samples can be updated. Please inform us points to be updated through the [contact form](/contact-ddbj-e.html) so that we will update the samples. If you want to update sample attributes, please attach the updated attribute tsv file to the email replying to the accession number notification email. You can download the attribute tsv file at D-way.  
+Registered samples can be updated. Please inform us points to be updated through the [BioProject/BioSample/DRA update request form](https://forms.gle/T7faNoDCvmQoTiWq9) so that we will update the samples. If you want to update sample attributes, please attach the updated attribute tsv file to the email replying to the accession number notification email. You can download the attribute tsv file at D-way.  
 
 {% include image.html url="books/bs-tsv-dl.jpg" caption="Download the BioSample attributes tsv file" class="w450" %}

@@ -36,7 +36,7 @@ BioSample を新規登録する場合は左のタブから順番に内容を英�
 
 "SAMPLE TYPE" でサンプルや配列種別に応じたパッケージを選択し、提示される必須・任意のサンプル属性の値を入力します。
 
-* パッケージの選び方は[サンプル情報](/biosample/sample-info.html#Sample-type)を参照してください。
+* パッケージの選び方は[サンプル情報](/biosample/sample-info.html#Sample-package)を参照してください。
 * パッケージで提供される属性は[サンプル属性](/biosample/attribute.html)を参照してください。
 * BioSample では１つの Submission で複数サンプルをまとめて登録することができますが、パッケージが異なるサンプルを混ぜることはできません。
 
@@ -179,6 +179,6 @@ FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは�
 
 ## サンプルの更新  {#update-biosample}
 
-登録が完了したデータを更新することができます。DDBJ BioSample で修正しますので、修正すべき事項を[メッセージフォーム](/contact-ddbj.html)よりご連絡ください。属性を更新する場合、更新後の属性 tsv ファイルをアクセッション番号通知メールへの返信メールに添付してお送りください。属性 tsv ファイルは D-way からダウンロードすることができます。  
+登録が完了したデータを更新することができます。DDBJ BioSample で修正しますので、修正すべき事項を[BioProject/BioSample/DRA  更新依頼フォーム](https://forms.gle/cfJ1nf8o612qvzXQ8)よりご連絡ください。属性を更新する場合、更新後の属性 tsv ファイルをアクセッション番号通知メールへの返信メールに添付してお送りください。属性 tsv ファイルは D-way からダウンロードすることができます。  
 
 {% include image.html url="books/bs-tsv-dl.jpg" caption="BioSample 属性 tsv ファイルのダウンロード" class="w450" %}
