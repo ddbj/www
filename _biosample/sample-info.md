@@ -107,7 +107,7 @@ SARS-CoV-2 ケースの迅速な解析と追跡のための有用な必須属性
 * Single Amplified Genome Sequences (MISAG) - 単細胞を単離し、増幅した全ゲノムシークエンスを解析した配列用。生物名には 'metagenome' を含んだ名前を使うことはできません。
 * Specimen Marker Sequences (MIMARKS.specimen) - 標本サンプルのマーカー遺伝子配列（例 16S, 18S, 23S, 28S rRNA や COI）用。生物名には 'metagenome' を含んだ名前を使うことはできません。
 * Survey-related Marker Sequences (MIMARKS.survey) - 生物の培養や同定を経ることなく環境サンプルから直接解析されたマーカー遺伝子配列（例 16S, 18S, 23S, 28S rRNA や COI）用。生物名は [unclassified sequences](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908) 配下の 'metagenome' で終わる名前を使います。
-* Uncultivated Viral Genome Sequences (MIUVIG) - メタゲノムもしくは metatranscriptome データセット中で同定された未培養ウイルスゲノム配列用。生物種のｊ系統は [Viruses](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239) である必要があります。
+* Uncultivated Viral Genome Sequences (MIUVIG) - メタゲノムもしくは metatranscriptome データセット中で同定された未培養ウイルスゲノム配列用。生物種の系統は [Viruses](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239) である必要があります。
 
 ### Environmental package  {#environmental-package}
 
