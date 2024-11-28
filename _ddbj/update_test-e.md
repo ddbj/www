@@ -57,7 +57,7 @@ Application Form for Data Update Requests</a></th>
   </tbody>
 </table>
 
-### DRA/BioProject/BioSample {#dra_etc}
+### BioProject/BioSample/DRA {#dra_etc}
 - Contact us via <a href="https://forms.gle/mqESxJcUEMMfGxVo8">BioProject/BioSample/DRA update request</a>
 - To change the scheduled release date of DRA and to release data, please login to <a href="/D-way/">D-way</a> and change the scheduled release date by yourself.    
 <a href="/dra/update-e.html#change-hold-date">How to change</a>
