@@ -1,6 +1,6 @@
 ---
 layout: tabbed_indexed_content
-title: 登録データの修正・更新
+title: 登録データの更新
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: submission
