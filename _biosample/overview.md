@@ -88,7 +88,7 @@ BioSample の [organism](/biosample/attribute.html?all=all#organism) に記載�
 
 ## ゲノムアセンブル用サンプル {#genome-assembly-sample}
 
-### パッケージ {#package}
+### パッケージ {#genome-assembly-sample-package}
 
 DDBJ/ENA/GenBank（INSDC）ではゲノムアセンブリを管理するため[ゲノム配列](/ddbj/mss.html)は一つの BioProject と一つの BioSample にリンクしなければならないという制約を設けています。
 ゲノムアセンブリに使用したサンプルでは以下のパッケージを使用します。

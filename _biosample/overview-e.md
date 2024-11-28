@@ -94,7 +94,7 @@ In cases where this information cannot be provided (e.g., pathogen samples for w
 
 ## Genome assembly sample {#genome-assembly-sample}
 
-### Package {#package}
+### Package {#genome-assembly-sample-package}
 
 A [DDBJ genome sequence](/ddbj/mss-e.html) should be linked to one BioProject and one BioSample. This constraint is set by INSDC to manage genome sequences.
 Submit sample(s) used for genome assembly in following packages. When it is not appropriate to use [MIxS](/biosample/sample-info-e.html#mixs), use standard packages according to organisms.
