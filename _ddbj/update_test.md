@@ -5,9 +5,6 @@ service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: submission
 lang: ja
-related_pages:
-  - title: 登録データの修正・更新申し込み
-    url: /ddbj/update-form.html
 ---
 
 依頼者について  

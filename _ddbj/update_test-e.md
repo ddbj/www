@@ -1,13 +1,10 @@
 ---
 layout: tabbed_indexed_content
-title: 登録データの修正・更新
+title: Data Updates after Receiving Accession Number
 service_name: DDBJ Annotated/Assembled Sequences
 category: ddbj
 current_tab: submission
-lang: ja
-related_pages:
-  - title: 登録データの修正・更新申し込み
-    url: /ddbj/update-form.html
+lang: en
 ---
 
 Making requests  
@@ -17,14 +14,14 @@ Therefore if you are not the submitter you will need authorization from the subm
 Accepting your requests  
 : We will send you a E-mail when your request is accepted.
 
-更新・修正に関するよくある質問  
-: [データ公開の依頼方法は？](/faq/ja/request-release.html)
-: [公開されたデータを非公開に戻したい](/faq/ja/restore-released-data-private.html)
-: [公開されているはずのデータが検索できません](/faq/ja/cannot-find-data-already-published.html)
-: その他の場合は、[FAQ（登録データの更新について）](/faq/ja/index.html?keyword=%E6%9B%B4%E6%96%B0) をご参照ください
+Frequently asked questions  
+: [How to request data release?](/faq/en/request-release-e.html)
+: [How to restore the released data to private?](/faq/en/restore-released-data-private-e.html)
+: [I can not find sequence data that should be published.](/faq/en/cannot-find-data-already-published-e.html)
+: In other case: Reffer to [FAQ (Data update)）](/faq/en/index-e.html?keyword=%E6%9B%B4%E6%96%B0)
 
 
-※ [登録データ種別](/documents/data-categories.html)をご確認ください。
+※ See [Categories for Sequence Data](/documents/data-categories-e.html)
 
 ### DDBJ Annotated/Assembled Sequences {#ddbj}
 
@@ -61,6 +58,6 @@ Application Form</a></th>
 </table>
 
 ### DRA/BioProject/BioSample {#dra_etc}
-- contact us via <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3Zhp12j2rFE5eYKVQNWejfsLL8Og3WrAFrOqg_gz1gcDUnw/viewform">BioProject/BioSample/DRA update request</a>
+- Contact us via <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3Zhp12j2rFE5eYKVQNWejfsLL8Og3WrAFrOqg_gz1gcDUnw/viewform">BioProject/BioSample/DRA update request</a>
 - To change the scheduled release date of DRA and to release data, please login to <a href="/D-way/">D-way</a> and change the scheduled release date by yourself.    
 <a href="/dra/update-e.html#change-hold-date">How to change</a>
