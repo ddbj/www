@@ -26,7 +26,7 @@ related_pages:
 
 ※ [登録データ種別](/documents/data-categories.html)をご確認ください。
 
-## DDBJ Annotated/Assembled Sequences {#ddbj}
+### DDBJ Annotated/Assembled Sequences {#ddbj}
 
 <table>
   <tbody>
@@ -59,7 +59,7 @@ related_pages:
   </tbody>
 </table>
 
-## DRA/BioProject/BioSample {#dra_etc}
+### DRA/BioProject/BioSample {#dra_etc}
 - <a href="https://forms.gle/q1ZpmbqmTLRzFuky8">BioProject/BioSample/DRA 更新依頼フォーム</a> からご連絡ください。
 - DRA の公開予定日の変更、データ公開は<a href="/D-way/">D-way</a> にログインしてご登録者自身で公開予定日を変更してください。    
 変更方法は<a href="/dra/update.html#change-hold-date">こちら</a>をご覧ください。
