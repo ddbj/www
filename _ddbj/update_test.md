@@ -28,7 +28,7 @@ lang: ja
 <table>
   <tbody>
     <tr>
-      <th class="first" rowspan="4"><a href="https://docs.google.com/forms/d/e/1FAIpQLScfGjcoEnGgFq0vZ30eDB_zGDy7locmPh_4OCsGErVk8vatvA/viewform">申し込みフォーム</a></th>
+      <th class="first" rowspan="4"><a href="https://docs.google.com/forms/d/e/1FAIpQLScfGjcoEnGgFq0vZ30eDB_zGDy7locmPh_4OCsGErVk8vatvA/viewform">登録データの更新申し込みフォーム</a></th>
       <td class="second">論文が公開されました</td>
     </tr>
     <tr>
@@ -57,6 +57,6 @@ lang: ja
 </table>
 
 ### DRA/BioProject/BioSample {#dra_etc}
-- <a href="https://forms.gle/q1ZpmbqmTLRzFuky8">BioProject/BioSample/DRA 更新依頼フォーム</a> からご連絡ください。
+- <a href="https://forms.gle/wgopyMioibGpMyBr6">BioProject/BioSample/DRA 更新依頼フォーム</a> からご連絡ください。
 - DRA の公開予定日の変更、データ公開は<a href="/D-way/">D-way</a> にログインしてご登録者自身で公開予定日を変更してください。    
 変更方法は<a href="/dra/update.html#change-hold-date">こちら</a>をご覧ください。

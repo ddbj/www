@@ -28,8 +28,8 @@ Frequently asked questions
 <table>
   <tbody>
     <tr>
-      <th class="first" rowspan="4"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeq2Pocm1fyKBxmxU549XBedh8AVeHWArx4iiXrhmtzFDfV4g/viewform">
-Application Form</a></th>
+      <th class="first" rowspan="4"><a href="https://forms.gle/utHXE67Qr7saHZj38">
+Application Form for Data Update Requests</a></th>
       <td class="second">When your paper was published</td>
     </tr>
     <tr>
@@ -42,7 +42,7 @@ Application Form</a></th>
       <td class="second">To change the contact person, belonging, etc..</td>
     </tr>
     <tr>
-      <th class="borderbtm" rowspan="4">E-mail</th>
+      <th class="borderbtm" rowspan="4">E-mail: ddbjupdt(at)ddbj.nig.ac.jp</th>
       <td class="second"><a href="/faq/en/update-sequence-e.html">To update your sequence</a></td>
     </tr>          
     <tr>
@@ -58,6 +58,6 @@ Application Form</a></th>
 </table>
 
 ### DRA/BioProject/BioSample {#dra_etc}
-- Contact us via <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3Zhp12j2rFE5eYKVQNWejfsLL8Og3WrAFrOqg_gz1gcDUnw/viewform">BioProject/BioSample/DRA update request</a>
+- Contact us via <a href="https://forms.gle/mqESxJcUEMMfGxVo8">BioProject/BioSample/DRA update request</a>
 - To change the scheduled release date of DRA and to release data, please login to <a href="/D-way/">D-way</a> and change the scheduled release date by yourself.    
 <a href="/dra/update-e.html#change-hold-date">How to change</a>
