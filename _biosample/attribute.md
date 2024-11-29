@@ -185,6 +185,8 @@ lang: ja
   
 </form>
 
+パッケージを選択し、「DEFINITION」でパッケージに含まれる属性一覧と説明を閲覧します。[定義表](https://docs.google.com/spreadsheets/d/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/edit?gid=631330335#gid=631330335)
+
 <p>*: 必須<br>
 **数字: 同一数字グループの中で少なくとも一つ必須（選択必須）</p>
 

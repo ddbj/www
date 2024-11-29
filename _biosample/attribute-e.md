@@ -185,7 +185,7 @@ lang: en
   
 </form>
 
-After selecting a sample package, click DEFINITION to review definitions of attributes. [See definition in the table](https://docs.google.com/spreadsheets/d/1Q37MHZCEgqH0_b4W2RAPYjLVYZbaLTb_oXSi91tRWFM/edit#gid=631330335) 
+After selecting a sample package, click DEFINITION to review definitions of attributes. [See definition in the table](https://docs.google.com/spreadsheets/d/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/edit?gid=631330335#gid=631330335) 
 
 <p>*: Required<br>
 **number: At least one attribute is required in attributes</p>
