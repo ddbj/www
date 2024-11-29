@@ -39,7 +39,7 @@ related_pages:
 
 ## Search from Web Browser  {#Search_from_Web_Browser}
 
-URL : <http://getentry.ddbj.nig.ac.jp/top-e.html>
+URL : <https://getentry.ddbj.nig.ac.jp/top-e.html>
 
 
 ### Default value  {#Default_value}
@@ -325,17 +325,17 @@ WebAPI of getentry consists of two following programs.
 
 There are the following 2 methods.
 
-| GET method  | http://getentry.ddbj.nig.ac.jp/getentry?database=***database name***&accession_number=***accession number***&***additional parameters (optional)***  |
-|  smart URL | http://getentry.ddbj.nig.ac.jp/getentry/***database name***/***accession number***<br>http://getentry.ddbj.nig.ac.jp/getentry/***database name***/***accession number***/?***additional parameters (optional)***<br>http://getentry.ddbj.nig.ac.jp/getentry/***database name***/***accession number***/***revision ID***/?***additional parameters (optional)*** |
+| GET method  | https://getentry.ddbj.nig.ac.jp/getentry?database=***database name***&accession_number=***accession number***&***additional parameters (optional)***  |
+|  smart URL | https://getentry.ddbj.nig.ac.jp/getentry/***database name***/***accession number***<br>https://getentry.ddbj.nig.ac.jp/getentry/***database name***/***accession number***/?***additional parameters (optional)***<br>https://getentry.ddbj.nig.ac.jp/getentry/***database name***/***accession number***/***revision ID***/?***additional parameters (optional)*** |
 
 example
 
   - AB601234 by Get method  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&accession_number=AB601234>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=ddbj&accession_number=AB601234>
 
   - BD500001(amino acid sequence data originated from Patent Office) by
     smart URL  
-    <http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001>
+    <https://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001>
 
 
 ### Specifiable Parameters in getentry  {#parameter}
@@ -392,25 +392,25 @@ to the performance of the browser, all of that might not be displayed.
 example (upper:Get method / lower: smart URL)
 
   - AB055395  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB055395>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/AB055395>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB055395>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/AB055395>
 
   - multiple accessions（multiple items, view 100 results）  
-    [http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377101 - AK377200,AK377210,AK377211-AK388100&limit=100](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377101%20-%20AK377200,AK377210,AK377211-%20AK388100&limit=100)   
-    [http://getentry.ddbj.nig.ac.jp/getentry/na/AK377101 - AK377200,AK377210,AK377211- AK388100?limit=100](http://getentry.ddbj.nig.ac.jp/getentry/na/AK377101%20-%20AK377200,AK377210,AK377211-%20AK388100?limit=100)
+    [https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377101 - AK377200,AK377210,AK377211-AK388100&limit=100](https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377101%20-%20AK377200,AK377210,AK377211-%20AK388100&limit=100)   
+    [https://getentry.ddbj.nig.ac.jp/getentry/na/AK377101 - AK377200,AK377210,AK377211- AK388100?limit=100](https://getentry.ddbj.nig.ac.jp/getentry/na/AK377101%20-%20AK377200,AK377210,AK377211-%20AK388100?limit=100)
 
   - multiple accessions（range search, view 1000 results）  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY782000-FY783000&limit=1000>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/FY782000-FYFY783000?limit=1000>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY782000-FY783000&limit=1000>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/FY782000-FYFY783000?limit=1000>
 
   - multiple accessions with version numbers：  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1,AB669632.2,AB669633.1,AB669633.2,AB669634.1>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1,AB669632.2,AB669633.1,AB66963.2,AB669634.1>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1,AB669632.2,AB669633.1,AB669633.2,AB669634.1>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1,AB669632.2,AB669633.1,AB66963.2,AB669634.1>
 
   - range search with version numbers：version search is ignored(latest
     version is searched)
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1-AB6696356.1>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB669632.1-AB6696356.1>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/AB669632.1-AB6696356.1>
 
 #### database<span class="red">(optional)</span>：Specify the database for searching.  {#ge_db}
 
@@ -481,35 +481,35 @@ example  (upper:Get method / lower: smart
 URL)
 
   - TSA( IAAA01000001) search  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=IAAA01000001>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/IAAA01000001>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=IAAA01000001>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/IAAA01000001>
 
   - WGS(BAET01000001) search  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=BAET01000001>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/BAET01000001>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=BAET01000001>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/BAET01000001>
 
   - AB628096, not selecting the database  
-    <http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096>
+    <https://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096>
 
   - MGA( AAAAA0000001)search  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=mga&accession_number=AAAAA0000001>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/mga/AAAAA0000001>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=mga&accession_number=AAAAA0000001>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/mga/AAAAA0000001>
 
   - Patent amino acid data search  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&accession_number=DI500001>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/DI500001>  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=BD500001>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/aa/BD500001>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&accession_number=DI500001>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/patent_aa/DI500001>  
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=BD500001>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/aa/BD500001>
 
   - DAD search  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1>
 
   - UniProt search  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=P06213>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/aa/P06213>  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=P06213>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/aa/P06213>  
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=uniprot&accession_number=P06213>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/uniprot/P06213>
 
 #### revision<span class="red">(optional)</span>： Search the revised entry at the specified time.  {#ge_revision}
 
@@ -535,12 +535,12 @@ example  (upper:Get method / lower: smart
 URL)
 
   - AB479935 as of 2011-05-31 23:07:30  
-    [http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB479935&revision=2011-05-31 23:07:30](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB479935&revision=2011-05-31%2023:07:30)  
-    [http://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31 23:07:30](http://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31%2023:07:30)
+    [https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB479935&revision=2011-05-31 23:07:30](https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB479935&revision=2011-05-31%2023:07:30)  
+    [https://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31 23:07:30](https://getentry.ddbj.nig.ac.jp/getentry/na/AB479935?revision=2011-05-31%2023:07:30)
 
   - Update history is avilable using [gethistory](#gh_accession).  
-    <http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935>  
-    <http://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935>
+    <https://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB479935>  
+    <https://getentry.ddbj.nig.ac.jp/gethistory/na/AB479935>
 
 #### format<span class="red">(optional)</span>  {#ge_format}
 
@@ -600,8 +600,8 @@ example  (upper:Get method / lower: smart
 URL)
 
   - AB628096 in the flatfile format  
-    <http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096>
+    <https://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB628096>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096>
 
 <!-- end list -->
 
@@ -669,8 +669,8 @@ ORIGIN
 ```
 
   - Amino acid patent data in Amino acid FASTA format  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&accession_number=BD500001&format=fasta>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001?format=fasta>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=patent_aa&accession_number=BD500001&format=fasta>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001?format=fasta>
 
 <!-- end list -->
 
@@ -686,8 +686,8 @@ YRVSSYLPLLPTEKITKVFGDEAS
 ```
 
   - AB601234 in nucleotide fasta format<a name="nfasta"></a>
-    <http://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB601234&format=fasta>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234?format=fasta>
+    <https://getentry.ddbj.nig.ac.jp/getentry?accession_number=AB601234&format=fasta>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/AB601234?format=fasta>
 
 <!-- end list -->
 
@@ -705,8 +705,8 @@ tatagaggaggcattagtgcacatatttttgccactgggcataagagactggaactcg
 ```
 
   - AB601234 in xml format <a name="xml"></a>
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB601234&format=xml>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?format=xml>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB601234&format=xml>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?format=xml>
 
 <!-- end list -->
 
@@ -742,9 +742,9 @@ tatagaggaggcattagtgcacatatttttgccactgggcataagagactggaactcg
 ```
 
   - HE963104 in CDS nucleotide fasta format<a name="cdsfasta"></a>
-    [http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=
-    HE963104&format=cds](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=%20HE963104&format=cds)  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/HE963104/?format=cds>
+    [https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=
+    HE963104&format=cds](https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=%20HE963104&format=cds)  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/HE963104/?format=cds>
 
 <!-- end list -->
 
@@ -770,8 +770,8 @@ ggtggtgttctaggtggtgcaggtggtactgttgcctat
 ```
 
   - JQ677812 in CDS Amino acid translated FASTA format<a name="trans"></a>
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=JQ677812&format=trans>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/JQ677812/?format=trans>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=JQ677812&format=trans>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/JQ677812/?format=trans>
 
 <!-- end list -->
 
@@ -783,8 +783,8 @@ GLLLLVMPHVLLGI
 ```
 
   - DAD (AB000714-1) in nucleotide sequence FASTA format <a name="dadfasta"></a>
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1&format=cds>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1/?format=cds>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=dad&accession_number=AB000714-1&format=cds>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/dad/AB000714-1/?format=cds>
 
 <!-- end list -->
 
@@ -806,8 +806,8 @@ taa
 ```
 
   - View the PDBs in the amino acid FASTA <a name="seqres"></a>
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=pdb&accession_number=0-Z&format=seqres&limit=5>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/pdb/0-Z/?format=seqres&limit=5>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=pdb&accession_number=0-Z&format=seqres&limit=5>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/pdb/0-Z/?format=seqres&limit=5>
 
 <!-- end list -->
 
@@ -867,16 +867,16 @@ example  (upper:Get method / lower: smart
 URL)
 
   - download gz of AK377185-AK378194(1000 entries)  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377185-AK378194&filetype=gz&limit=1000>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/AK377185-AK378194?filetype=gz&limit=1000>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AK377185-AK378194&filetype=gz&limit=1000>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/AK377185-AK378194?filetype=gz&limit=1000>
 
 Following is shown on the display
 
 <img src="/assets/images/help/getentry-gz-e.gif" alt="getentry-gz" title="" class="">
 
   - FW383979 in html  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FW383979&filetype=html>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?filetype=html>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FW383979&filetype=html>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/AB601234/?filetype=html>
 
 <!-- end list -->
 
@@ -925,8 +925,8 @@ example  (upper:Get method / lower: smart
 URL)
 
   - HE602933 (suppressed)  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=HE602933&show_suppressed=true>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/HE602933?show_suppressed=true>
 
 #### limit<span class="red">(optional)</span>： Sets an upper limit of the data acquisition  {#ge_limit}
 
@@ -951,11 +951,11 @@ example  (upper:Get method / lower: smart
 URL)
 
   - view all results of FY736910 - FY762881(25,972 entries)  
-    [http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910
+    [https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910
     -
-    FY762881&limit=0](http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910%20-%20FY762881&limit=0)  
-    [http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910 -
-    FY762881?limit=0](http://getentry.ddbj.nig.ac.jp/getentry/na/FY736910%20-%20FY762881?limit=0)
+    FY762881&limit=0](https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=FY736910%20-%20FY762881&limit=0)  
+    [https://getentry.ddbj.nig.ac.jp/getentry/na/FY736910 -
+    FY762881?limit=0](https://getentry.ddbj.nig.ac.jp/getentry/na/FY736910%20-%20FY762881?limit=0)
 
 #### trace<span class="red">(optional)</span>：When Secondary Accession numberis specified, the result transfers to that of Primary Accession number  {#ge_trace}
 
@@ -976,8 +976,8 @@ example  (upper:Get method / lower: smart
 URL)
 
   - show the primary of AB233943(primary)-AF530906(secondary)  
-    <http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true>  
-    <http://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true>
+    <https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AF530906&format=flatfile&trace=true>  
+    <https://getentry.ddbj.nig.ac.jp/getentry/na/AF530906/?format=flatfile&trace=true>
 
 
 
@@ -994,8 +994,8 @@ example  (upper:Get method / lower: smart
 URL)
 
   - history search of AB628096  
-    <http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB628096>  
-    <http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096>
+    <https://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB628096>  
+    <https://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096>
 
 <!-- end list -->
 
@@ -1035,8 +1035,8 @@ example  (upper:Get method / lower: smart
 URL)
 
   - history search of WGS( BAET01000001)  
-    <http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=BAET01000001>  
-    <http://getentry.ddbj.nig.ac.jp/gethistory/na/BAET01000001>
+    <https://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=BAET01000001>  
+    <https://getentry.ddbj.nig.ac.jp/gethistory/na/BAET01000001>
 
 <!-- end list -->
 
@@ -1077,56 +1077,56 @@ example  (upper:Get method / lower: smart
 URL)
 
   - display the result of AB628096 history search in html format  
-    <http://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB628096&filetype=html>  
-    <http://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096/?filetype=html>
+    <https://getentry.ddbj.nig.ac.jp/gethistory?database=na&accession_number=AB628096&filetype=html>  
+    <https://getentry.ddbj.nig.ac.jp/gethistory/na/AB628096/?filetype=html>
 
 accession    | version        | revision     | change         | state
  |---|
-AB628096      | 1               | [2015-05-29 18:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-05-29+18%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-05-29 18:00:00 release | live 
- |  | [2015-02-27 14:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-02-27+14%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-02-27 14:00:00 release | live                 |
- |  | [2014-11-25 13:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-11-25+13%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-11-25 13:00:00 release | live                 |
- |  | [2014-08-29 21:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-08-29+21%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-08-29 21:00:00 release | live                    |
- |  | [2014-05-30 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-05-30+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-05-30 12:00:00 release | live                  |
- |  | [2014-02-21 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-02-21+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-02-21 12:00:00 release | live                |
- |  | [2013-11-29 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-11-29+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-11-29 12:00:00 release | live                   |
- |  | [2013-08-30 07:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-08-30+07%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-08-30 07:00:00 release | live                |
- |  | [2013-05-24 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-05-24+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-05-24 12:00:00 release | live                 |
- |  | [2013-02-22 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-02-22+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-02-22 12:00:00 release | live                |
- |  | [2012-11-22 15:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-11-22+15%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-11-22 15:00:00 release | live              |
- |  | [2012-08-24 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-08-24+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-08-24 12:00:00 release | live                 |
- |  | [2012-05-25 12:00:00 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-05-25+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-05-25 12:00:00 release | live            |
- |  | [2012-02-24 07:17:46](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-02-24+07%3A17%3A46/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2012-02-24 07:17:46         | live           |
- |  | [2012-02-24 07:02:55](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-02-24+07%3A02%3A55/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2012-02-24 07:02:55         | live        |
- |  | [2011-11-25 11:27:22 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-11-25+11%3A27%3A22+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-11-25 11:27:22 release | live             |
- |  | [2011-10-22 23:01:47](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-10-22+23%3A01%3A47/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2011-10-22 23:01:47         | live        |
- |  | [2011-08-26 10:33:50 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-08-26+10%3A33%3A50+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-08-26 10:33:50 release | live        |
- |  | [2011-05-27 12:38:45 release](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-27+12%3A38%3A45+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-05-27 12:38:45 release | live       |
- |  | [2011-05-11 23:09:49](http://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-11+23%3A09%3A49/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2011-05-11 23:09:49         | live  |
+AB628096      | 1               | [2015-05-29 18:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-05-29+18%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-05-29 18:00:00 release | live 
+ |  | [2015-02-27 14:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2015-02-27+14%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2015-02-27 14:00:00 release | live                 |
+ |  | [2014-11-25 13:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-11-25+13%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-11-25 13:00:00 release | live                 |
+ |  | [2014-08-29 21:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-08-29+21%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-08-29 21:00:00 release | live                    |
+ |  | [2014-05-30 12:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-05-30+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-05-30 12:00:00 release | live                  |
+ |  | [2014-02-21 12:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2014-02-21+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2014-02-21 12:00:00 release | live                |
+ |  | [2013-11-29 12:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-11-29+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-11-29 12:00:00 release | live                   |
+ |  | [2013-08-30 07:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-08-30+07%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-08-30 07:00:00 release | live                |
+ |  | [2013-05-24 12:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-05-24+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-05-24 12:00:00 release | live                 |
+ |  | [2013-02-22 12:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2013-02-22+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2013-02-22 12:00:00 release | live                |
+ |  | [2012-11-22 15:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-11-22+15%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-11-22 15:00:00 release | live              |
+ |  | [2012-08-24 12:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-08-24+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-08-24 12:00:00 release | live                 |
+ |  | [2012-05-25 12:00:00 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-05-25+12%3A00%3A00+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2012-05-25 12:00:00 release | live            |
+ |  | [2012-02-24 07:17:46](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-02-24+07%3A17%3A46/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2012-02-24 07:17:46         | live           |
+ |  | [2012-02-24 07:02:55](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2012-02-24+07%3A02%3A55/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2012-02-24 07:02:55         | live        |
+ |  | [2011-11-25 11:27:22 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-11-25+11%3A27%3A22+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-11-25 11:27:22 release | live             |
+ |  | [2011-10-22 23:01:47](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-10-22+23%3A01%3A47/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2011-10-22 23:01:47         | live        |
+ |  | [2011-08-26 10:33:50 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-08-26+10%3A33%3A50+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-08-26 10:33:50 release | live        |
+ |  | [2011-05-27 12:38:45 release](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-27+12%3A38%3A45+release/?format=flatfile&filetype=text&trace=false&show_suppressed=true) | 2011-05-27 12:38:45 release | live       |
+ |  | [2011-05-11 23:09:49](https://getentry.ddbj.nig.ac.jp/getentry/na/AB628096/2011-05-11+23%3A09%3A49/?format=flatfile&filetype=text&trace=false&show_suppressed=true)                 | 2011-05-11 23:09:49         | live  |
 
 ## How to Create Links to DDBJ Entries  {#ge_createlinks}
 
 ### You can create links to individual DDBJ entries.  {#You_can_create_links_to_individual_DDBJ_entries.}
 
-http://getentry.ddbj.nig.ac.jp/getentry?database=database
+https://getentry.ddbj.nig.ac.jp/getentry?database=database
 name&accession_number=accession number&additional parameters
 (optional)  
-http://getentry.ddbj.nig.ac.jp/getentry/database name/accession number  
-http://getentry.ddbj.nig.ac.jp/getentry/database name/accession
+https://getentry.ddbj.nig.ac.jp/getentry/database name/accession number  
+https://getentry.ddbj.nig.ac.jp/getentry/database name/accession
 number/?additional parameters (optional)
 
 For example, a link to AB000001 is  
-http://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB000001  
-http://getentry.ddbj.nig.ac.jp/getentry/na/AB000001
+https://getentry.ddbj.nig.ac.jp/getentry?database=na&accession_number=AB000001  
+https://getentry.ddbj.nig.ac.jp/getentry/na/AB000001
 
 For example,a link to BD500001, an entry of the amino acid sequence
 originated in the Patent is not available.  
-http://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=BD500001  
-http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001
+https://getentry.ddbj.nig.ac.jp/getentry?database=aa&accession_number=BD500001  
+https://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001
 
 As a practical case, please crick the following number to see how the
 entry can be viewed.
-[AB000001](http://getentry.ddbj.nig.ac.jp/getentry/na/AB000001)  
-[BD500001](http://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001)
+[AB000001](https://getentry.ddbj.nig.ac.jp/getentry/na/AB000001)  
+[BD500001](https://getentry.ddbj.nig.ac.jp/getentry/patent_aa/BD500001)
 
 
 
