@@ -131,7 +131,7 @@ Value
 
 | 名称                                                  | 更新日        | 備考                                                   |
 |---|
-| [Feature Table Definition](/ddbj/feature-table.html)   | 2016/11/17 | version 10.6                                         |
+| [Feature Table Definition](/ddbj/feature-table.html)   | 2024/10/01 | version 11.3                                         |
 | [Feature/Qualifier 対応一覧表](/assets/files/pdf/ddbj/fq-j.pdf) | 2016/11/09 |                                                      |
 | [登録の見本](/ddbj/example.html)                         | 2014/11/27 | [DDBJ フラットファイル](/ddbj/flat-file.html)中の feature の記載例 |
 

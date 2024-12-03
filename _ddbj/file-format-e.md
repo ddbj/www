@@ -126,7 +126,7 @@ Other
 
 | Name                                                       | Refix Date | Remarks                                                        |
 |---|
-| [Feature Table Definition](/ddbj/feature-table-e.html)        | 2016/11/17 | version 10.6                                                   |
+| [Feature Table Definition](/ddbj/feature-table-e.html)        | 2024/10/01 | version 11.3                                                   |
 | [Feature/Qualifier usage matrix](/assets/files/pdf/ddbj/fq-e.pdf) | 2016/11/09 |                                                                |
 | [Example of Submission](/ddbj/example-e.html)              | 2014/11/27 | Examples of features in [DDBJ flat file](/ddbj/flat-file.html) |
 

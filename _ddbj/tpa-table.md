@@ -37,7 +37,7 @@ Below is a list of typical TPA entry types and the class to which they belong. P
 
 |  Record<br/>Type  |  TPA Tier  |  Description  |
 |---|
-|  1  |  Experimental  |  DS and related annotation applied to a sequence derived from existing genomic, EST and/or mRNA primary records with wet laboratory experimental evidence for existence of at least part of the transcript (eg.RT-PCR, Northern)  |
+|  1  |  Experimental  |  CDS and related annotation applied to a sequence derived from existing genomic, EST and/or mRNA primary records with wet laboratory experimental evidence for existence of at least part of the transcript (eg.RT-PCR, Northern)  |
 |  2  |  Experimental  |  CDS and related annotation applied to a sequence derived from existing genomic, EST and/or mRNA primary records, in addition to novel sequencing, with wet laboratory experimental evidence for existence of at least part of the transcript (eg. RT-PCR, Northern)  |
 |  3  |  Experimental  |  CDS and related annotation applied to a sequence derived from existing genomic, EST and/or mRNA primary records with experimental evidence for the presence of the product (eg. antibody staining, biochemical assay)  |
 |  4  |  Experimental  |  CDS and related annotation applied to a sequence derived from existing genomic, EST and/or mRNA primary records, in addition to novel sequencing, with experimental evidence for the presence of the product (eg. antibody staining, biochemical assay)  |
