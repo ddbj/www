@@ -76,7 +76,7 @@ DBCLS への利用申請において公開鍵を「データセット復号用�
 AGD からファイルを sftp でダウンロードするためには [D-way アカウントに公開鍵を登録](/account.html#public-key)する必要があります。
 </div>
 
-AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/download/agd/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されるので、
+AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/download/agd/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されるので、
 sftp の P オプションでポート番号 443 と認証用秘密鍵（データセット暗号化用公開鍵・秘密鍵とは別になります）を指定してログインし、ディレクトリごとダウンロードします。
 
 例
@@ -85,7 +85,7 @@ sftp の P オプションでポート番号 443 と認証用秘密鍵（デー�
 
 ```
 $ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
-$ cd controlled-access/download/agd/
+$ cd group-access/download/agd/
 $ get -r A-DU999991
 ```
 -i: D-way に登録した認証用公開鍵とペアの秘密鍵を指定
