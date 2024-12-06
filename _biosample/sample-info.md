@@ -66,77 +66,58 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 ## Sample package {#Sample-package}
 
-BioSample ではサンプルや配列の種類毎にデザインされた必須・任意属性から構成されるパッケージを提供し、サンプル記載の充実化と属性名の標準化をサポートしています。  
+生物種やデータ種別毎にカスタマイズされた属性から成るパッケージを一つ選択します。パッケージの詳しい説明と選択方法は[サンプルパッケージ](/biosample/overview.html#package)をご覧ください。[属性リスト](/biosample/attribute.html)
 
-### Standard {#standard}
+* Standard
+	* SARS-CoV-2: clinical or host-associated
+	* SARS-CoV-2: wastewater surveillance
+	* Microbe
+	* Model organism or animal
+	* Metagenome or environmental
+	* Invertebrate
+	* Human
+	* Plant
+	* Viral
+	* Beta-lactamase
+	* Omics
+* Pathogen
+	* Pathogen: clinical or host-associated
+	* Pathogen: environmental/food/other
+* MIxS
+	* Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)
+	* Eukaryotic Genomic Sequences (MIGS.eu)
+	* Viral Genomic Sequences (MIGS.vi)
+	* Environmental/Metagenome Genomic Sequences (MIMS.me)
+	* Metagenome-assembled Genome Sequences (MIMAG)
+	* Single Amplified Genome Sequences (MISAG)
+	* Specimen Marker Sequences (MIMARKS.specimen)
+	* Survey-related Marker Sequences (MIMARKS.survey)
+	* Uncultivated Viral Genome Sequences (MIUVIG)
 
-[MIxS](#mixs) パッケージの使用が適切ではないサンプルの場合、生物種・サンプル・塩基配列種別に応じた Standard パッケージを使用します。  
-GEA 機能ゲノミクスデータと MetaboBank メタボロミクスデータには Omics パッケージの使用を推奨します。
-
-* SARS-CoV-2: clinical or host-associated - 公衆衛生に関わる SARS-CoV-2 サンプル用。
-SARS-CoV-2 ケースの迅速な解析と追跡のための有用な必須属性を含みます。
-* SARS-CoV-2: wastewater surveillance - 公衆衛生に関わる SARS-CoV-2 廃水モニターサンプル用。
-SARS-CoV-2 ケースの迅速な解析と追跡のための有用な必須属性を含みます。
-* Microbe - MIxS、Pathogen もしくは Virus パッケージの使用が適切ではない、バクテリアや単細胞微生物サンプル用。
-* Model organism or animal - マウス、ショウジョウバエや線虫といったモデル生物と動物サンプル用。
-* Metagenome or environmental - MIxS パッケージの使用が適切ではないメタゲノムや環境サンプル用。
-* Invertebrate - 無脊椎動物サンプル用。
-* Human - 注意: プライバシー侵害の恐れのないヒトサンプルにのみ使用してください。登録者の責任において、適用される法律や指針に従い、由来個人を直接特定できるような情報を取り除いてください。データを保護する必要がある場合、アクセス制限の仕組みを備えた [Japanese Genotype-phenotype Archive (JGA)](/jga/index-e.html) にヒトデータを登録してください。ヒトから単離されたサンプルには Pathogen、Microbe もしくは適切な MIxS パッケージを使用してください。
-* Plant - 植物や植物由来の細胞株サンプル用。
-* Viral - 病気に直接関係しないウイルスサンプル。病原ウイルスには Pathogen: clinical or host-associated パッケージを使います。
-* Beta-lactamase - 抗生物質耐性データを持つ beta-lactamase 遺伝子の形質転換体サンプル用。
-* Omics - Genomic Expression Archive (GEA) 機能ゲノミクスデータと MetaboBank メタボロミクスデータ登録用。
-
-### Pathogen {#pathogen}
-
-公衆衛生に関わる病原菌サンプルに使用します。   
-
-* Pathogen: clinical or host-associated - 臨床検体もしくは宿主から採取された病原菌サンプル用
-* Pathogen: environmental/food/other - 環境/食品/その他の病原菌サンプル用
-
-### MIxS  {#mixs}
-
-ゲノム・メタゲノム配列が得られたサンプルに使用します。  
-[MIxS](#mixs) が適切ではないサンプルの場合は [Standard](#standard) パッケージを使用します。  
-
-* Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba) - 培養されたバクテリアもしくは古細菌のゲノム配列用。生物種の系統は [Bacteria](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2) もしくは [Archaea](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2157) である必要があります。
-* Eukaryotic Genomic Sequences (MIGS.eu) - 真核生物のゲノム配列用。生物種の系統は [Eukaryota](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2759) である必要があります。
-* Viral Genomic Sequences (MIGS.vi) - ウイルスのゲノム配列用。生物種の系統は [Viruses](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239) である必要があります。
-* Environmental/Metagenome Genomic Sequences (MIMS.me) - 環境サンプル由来の配列もしくはメタゲノム配列用。生物名は [unclassified sequences](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908) 配下の 'metagenome' で終わる名前を使います。
-* Metagenome-assembled Genome Sequences (MIMAG) - 解析ツールによりメタゲノムデータセットから再構成した個別の生物種のメタゲノムアセンブリ配列用。生物名には 'metagenome' を含んだ名前を使うことはできません。ウイルスゲノムには MIUVIG パッケージを使用してください。
-* Single Amplified Genome Sequences (MISAG) - 単細胞を単離し、増幅した全ゲノムシークエンスを解析した配列用。生物名には 'metagenome' を含んだ名前を使うことはできません。
-* Specimen Marker Sequences (MIMARKS.specimen) - 標本サンプルのマーカー遺伝子配列（例 16S, 18S, 23S, 28S rRNA や COI）用。生物名には 'metagenome' を含んだ名前を使うことはできません。
-* Survey-related Marker Sequences (MIMARKS.survey) - 生物の培養や同定を経ることなく環境サンプルから直接解析されたマーカー遺伝子配列（例 16S, 18S, 23S, 28S rRNA や COI）用。生物名は [unclassified sequences](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908) 配下の 'metagenome' で終わる名前を使います。
-* Uncultivated Viral Genome Sequences (MIUVIG) - メタゲノムもしくは metatranscriptome データセット中で同定された未培養ウイルスゲノム配列用。生物種の系統は [Viruses](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239) である必要があります。
-
-### Environmental package  {#environmental-package}
-
-MIxS メタゲノムや環境サンプルの場合、環境パッケージから適切なものを選びます。サンプル採取環境の記載に必要な属性 (例 air 環境パッケージに対する altitude) が追加されます。   
-MIMS.me と MIMARKS.survey のときは No package を選択できません。  
-
-* agriculture
-* air
-* built
-* food-animal
-* food-farm_env
-* food-human_foods
-* food-prod_facility
-* host-associated
-* human-associated
-* human-gut
-* human-oral
-* human-skin
-* human-vaginal
-* hydrocarbon-cores
-* hydrocarbon-fluids_swabs
-* microbial
-* miscellaneous
-* plant-associated
-* sediment
-* soil
-* symbiont-associated
-* wastewater
-* water
+* Environmental package
+	* agriculture
+	* air
+	* built
+	* food-animal
+	* food-farm_env
+	* food-human_foods
+	* food-prod_facility
+	* host-associated
+	* human-associated
+	* human-gut
+	* human-oral
+	* human-skin
+	* human-vaginal
+	* hydrocarbon-cores
+	* hydrocarbon-fluids_swabs
+	* microbial
+	* miscellaneous
+	* plant-associated
+	* sediment
+	* soil
+	* symbiont-associated
+	* wastewater
+	* water
 
 ## Attributes  {#Attributes}
 

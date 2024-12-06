@@ -7,144 +7,184 @@ current_tab: submission
 lang: ja
 ---
 
-## BioSample の目的  {#purpose}
-
-BioSample はデータベースに登録する実験データを得るために使われた生物学的な試料やサンプルに対するレコードです。
-
-以下の図は BioSample がどのように他の DDBJ のデータベースとリンクしているかを示しています。 この例は、データと二つの BioSample、三つの BioProject、一つの Umbrella BioProject から構成されています。ユーザは BioProject または BioSample データベースを検索し、目的のレコードを取得、そこからのリンクをたどることによって [DDBJ](/ddbj/index.html)/[DRA](/dra/index.html)/[GEA](/gea/index.html)/[MetaboBank](/metabobank/index.html) に登録されている関連する実験データを得ることができます。
-
-{% include image.html url="submission/biosample_integration.jpg" caption="BioSample と他の DDBJ データベースとの連携" class="w450" %}
-
-## サンプル  {#sample}
-
-データベースに登録されるサンプルが多様であること、また、サンプルの適切な記載方法が研究内容により異なることから BioSample の定義は柔軟なものになっています。
-BioSample の典型的な例としては細胞株、組織の生検、生物個体や環境サンプルなどが挙げられます。
-
-BioSample はサンプルに関する以下のような情報を含みます。
-
-- 生物種
-- 採取された生物試料、例: 器官、組織、セルタイプ
-- 表現型 - 疾患や個人の医学的な情報など
-
-ヒトに関する情報とそれへのアクセスは適用される全ての倫理的な要請を満たしている必要があります。
-DDBJ BioSample データベースはアクセスを制限する仕組みを持っていないため、プライバシーに抵触する可能性のあるヒト由来サンプルを登録することはできません。そのようなサンプルはアクセス制限の仕組みを備えた [JGA](/jga/index.html) に登録してください。
+BioSample は実験データを得るために使われた生物学的な試料やサンプルに対するレコードです。BioSample は BioProject と共に関連するデータをデータベースを跨ってまとめる役割を果たしています。
 
 ## サンプルの粒度 {#granularity}
 
-一般的に、生物学的な試料に対して BioSample を作成し、そこから抽出された核酸、代謝物などの抽出物は [DRA](/dra/metadata.html)、[GEA](/gea/metadata.html) や [MetaboBank](/metabobank/metadata.html) のメタデータで表します。
+一般的に、生物学的な試料に対して BioSample を作成し、そこから抽出された核酸、代謝物などの抽出物は [DRA](/dra/metadata.html)、[GEA](/gea/metadata.html) や [MetaboBank](/metabobank/metadata.html) のメタデータで表現します。
 
 - biological replicate はサンプルを分けて biological_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" 例 [DRA の構成](/dra/metadata.html#ex_replicates)
 - technical replicate はサンプルを分けず、DRA Experiment/GEA SDRF/MetaboBank SDRF で分けます。
 - 植物の葉から調整した RNA、代謝物サンプルは葉に対応する BioSample を一つ作成し、抽出物は [GEA](/gea/metadata.html) や [MetaboBank](/metabobank/metadata.html) メタデータで表現します。
-- 同じサンプルから調整した paired-end library をシークエンスした場合、forward と reverse で BioSample を分けずに一つの DRA Run に両ペアードファイルを含めます。[DRA の構成](/dra/submission.html#ex_samples)
-- 同じサンプルを異なる機種でシークエンスした場合、異なる [Instrument model](/dra/submission.html#Instrument) を持つ複数の DRA Experiment を一つの BioSample にリンクします。
-- ユニークなサンプル源に対し、別々の BioSample を登録します。例えば、羽から調整した RNA と肢から調整した RNA は、両者が別々にシークエンスされている場合、別個の BioSample になります。
-- [ゲノムアセンブリ用サンプル](#genome-assembly-sample)はゲノム配列にのみ必要な locus tag prefix などがあるため、RNA や代謝物サンプルとは別にします。
+- 同じサンプルから調整した paired-end library をシークエンスした場合、forward と reverse で BioSample を分けずに一つの DRA Run に両ファイルを含めます。[DRA の構成](/dra/submission.html#ex_samples)
+- 同じサンプルを異なる機種でシークエンスした場合、一つの BioSample に異なる [Instrument model](/dra/submission.html#Instrument) を持つ複数の DRA Experiment をリンクします。
+- [ゲノムアセンブリ用サンプル](#genome-assembly-sample-package)はゲノム配列にのみ必要な locus tag prefix などがあるため、RNA や代謝物サンプルとは別にします。
 
 登録例
-- 海水中のある採取地点から得られた 23,000 本のユニークな 16S 増幅配列 - 1 BioSample（１サンプルが採取され、16S の多様性が解析された）
+- 海水中のある採取地点から得られた23,000本のユニークな16S 増幅配列 - 1 BioSample（１サンプルが採取され、16S の多様性が解析された）
 - 同じ薬物で処理された三匹の「同一」なトランスジェニックマウス - 3 BioSamples（biological replicate は BioSample で区別）
-- 遺伝子発現レベルの経時的な変化を解析するため、ウイルスに感染させた CHO 細胞を 0、2、4、8 時間後にサンプリング - 4 BioSamples（4 タイムポイント）
+- 遺伝子発現レベルの経時的な変化を解析するため、ウイルスに感染させた CHO 細胞を 0,2,4,8 時間後にサンプリング - 4 BioSamples（4 タイムポイント）
 - 発現している遺伝子の差異を組織毎に調べるため、オスのアリクイ一個体から採取した脳、心臓、肺、精巣、肝臓 - 5 BioSamples（５つの異なる組織）
 
-## サンプルの属性 {#sample-attributes}
+## サンプル属性 {#sample-attributes}
 
-BioSample レコードを構成する主要部分は「サンプル属性」です。属性にはセルタイプ、採取地や表現型などの情報を記載することができ、対象となるサンプルを定義します。BioSample の属性は構造化された「属性名:値」 (name:value) の組として表現されます。例) tissue:liver
-BioSample は属性名にコントロールされた語句 ("辞書") を使うことをサポートしており、サンプル種別に応じた属性セットをパッケージとして提供しています。
-
-## サンプルパッケージ {#package}
-
-BioSample ではサンプルや配列種別に応じた必須・任意属性から構成されるパッケージを提供し、サンプル記載の充実化と属性名の標準化を促しています。
-
-* パッケージの選び方は[サンプル情報](/biosample/sample-info.html#Sample-package)を参照してください。
-* パッケージで提供されるサンプル属性は[サンプル属性](/biosample/attribute.html)を参照してください。
-
-パッケージはサンプルの適切な記述を促すための仕組みであり、サンプル情報の解釈のためには実際に使用される属性の方が重要です。そのため過去に登録したサンプルとパッケージが合っていなくても、使用されている属性が適切であれば、パッケージを無理に変更する必要はありません。
+BioSample を構成する主要部分は「サンプル属性」です。属性には採取地や表現型などの情報を記載することができ、対象となるサンプルを定義します。BioSample の属性は構造化された「属性名:値」 (name:value) の組として表現されます。[属性リスト](/biosample/attribute.html) 例) tissue:liver   
+BioSample は属性名に統制された語句を使うことをサポートしており、サンプル種別に応じた属性セットを[パッケージ](#package)として提供しています。
 
 ## 生物名  {#organism}
 
-BioSample の [organism](/biosample/attribute.html?all=all#organism) に記載する生物名については「[生物名について](/ddbj/organism.html)」をご覧ください。
-関連するお知らせ: [生物の株情報を管理する方法が変更になります](/news/ja/2013-12-13.html)
+BioSample の [organism](/biosample/attribute.html#organism) に記載する生物名については「[生物名について](/ddbj/organism.html)」をご覧ください。
 
 ## 採取場所と日時 {#spatio-temporal}
 
-[International Nucleotide Sequence Database Collaboration (INSDC)](https://www.insdc.org/)は塩基配列データの品質とサンプルのトレーサビリティを向上させるため、サンプルの「採取場所」と「採取日時」の記載を必須化しています。[INSDC spatio-temporal annotation standards](https://www.insdc.org/news/spatio-temporal-annotation-policy-18-11-2021/)
+[INSDC](https://www.insdc.org/) は塩基配列データの品質とトレーサビリティを向上させるため、サンプルの「採取場所」と「採取日時」の記載を必須化しています。[INSDC spatio-temporal annotation standards](https://www.insdc.org/news/spatio-temporal-annotation-policy-18-11-2021/)
 
-* 採取場所: 配列データを得たサンプルを採取した場所。データの解釈において意味のある場所を記載します。少なくとも国や海洋を記載します。BioSample の [geo_loc_name](/biosample/attribute.html#geo_loc_name) と DDBJ の [country](/ddbj/qualifiers.html#country) が対応する項目になります。
-* 採取日時: 配列データを得たサンプルを採取した日時。データの解釈において意味のある日時を記載します。少なくとも最も近い「年」を所定の書式で記載します。BioSample と DDBJ の [collection_date](/biosample/attribute.html#collection_date) が対応する項目になります。
+* 採取場所: サンプルの採取場所。データを解釈するうえで意味のある場所を記載します。少なくとも国や海洋を記載します。BioSample と DDBJ の [geo_loc_name](/biosample/attribute.html#geo_loc_name) が該当する属性になります。
+* 採取日時: サンプルの採取日時。データを解釈するうえで意味のある日時を記載します。少なくとも最も近い「年」を所定書式で記載します。BioSample と DDBJ の [collection_date](/biosample/attribute.html#collection_date) が該当する属性になります。
 
-これらの情報を提供できない場合（例 宿主個人の特定に繋がりかねない病原菌サンプルの採取情報）、および、提供することが適切ではない場合（例 研究室で飼育しているモデル動物や確立された細胞株）、[INSDC missing value reporting standards](https://www.insdc.org/submitting-standards/missing-value-reporting/) で定めている適用除外理由 (exemption term) を使って提供できない理由を記載するか、もしくは、従来通り [missing value](/biosample/submission.html#missing-value-reporting) を記載します。
+これらの情報を提供できない場合（例 宿主個人の特定につながるような病原菌サンプルの採取情報）、および、提供することが適切ではない場合（例 研究室で飼育しているモデル動物）は、[INSDC missing value reporting standards](https://www.insdc.org/submitting-standards/missing-value-reporting/) に従って適用除外理由 (exemption term) を記載します。[採取場所・日時に関する FAQ 集](/faq/ja/index.html?tag=採取場所・日時)
 
-### 採取場所・日時に関する質問と記載例 {#spatio-temporal-faq}
+## パッケージ {#package}
 
-* [系統保存機関から分譲された菌株を研究室で培養して得たサンプルの記載方法は？](/faq/ja/sample-from-collection.html)
-* [自然環境ではない場所 (例 動物園や植物園) で生物種を採集した場合の記載方法は？](/faq/ja/sample-from-none-natural-environment.html)
-* [サンプルを太平洋で2010年に採取した場合の記載方法は？](/faq/ja/sample-from-pacific-ocean-2010.html)
-* [日本の静岡県で2023年5月5日 14:12:55 にサンプルを採取した場合の記載方法は？](/faq/ja/location-and-date-of-sample.html)
-* [古代 DNA サンプルの採取地と日付の記載方法は？](/faq/ja/ancient-dna-sample.html)
-* [場所と日付を提供できないケースで、適切な適用除外理由 (exemption term) が見当たらない場合は？](/faq/ja/appropriate-exemption-not-found.html)
-* [配列データは INSDC に登録するが、全てのメタデータは2年後まで提供しない、と INSDC の新しいガイドライン策定前にコンソーシアムで合意しています。どうすればよいでしょうか？](/faq/ja/data-agreement-established-pre-2023.html)
-* [採取場所と日時のうち、片方しか記載できない場合は？](/faq/ja/either-one-of-location-and-date-cannot-be-described.html)
+生物やデータの種類に応じたパッケージを提供し、サンプル記載の充実化と標準化を促しています。   
+パッケージに含まれる属性リストは[サンプル属性](/biosample/attribute.html)をご覧ください。  
+パッケージは記述を促すための仕組みであり、サンプル情報の解釈のためには実際に使用されている属性の方が重要です。そのため過去に登録したサンプルの種類とパッケージが合致していなくても、属性が適切であれば、パッケージを変更する必要はありません。   
 
-## ゲノムアセンブル用サンプル {#genome-assembly-sample}
+パッケージ分類
+* [Standard](#standard)
+* [Pathogen](#pathogen)
+* [MIxS](#mixs)
+	* [MIxS Environmental package](#environmental-package)
 
-### パッケージ {#genome-assembly-sample-package}
+### Standard {#standard}
 
-DDBJ/ENA/GenBank（INSDC）ではゲノムアセンブリを管理するため[ゲノム配列](/ddbj/mss.html)は一つの BioProject と一つの BioSample にリンクしなければならないという制約を設けています。
-ゲノムアセンブリに使用したサンプルでは以下のパッケージを使用します。
-[MIxS](/biosample/sample-info.html#mixs) の使用が適切ではない場合、生物種に応じた Standard パッケージを使用します。
+生物やサンプルの種類に応じたパッケージ。
 
-- 単離培養された原核生物の場合: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)](/biosample/sample-info.html#Sample-type)、もしくは、[Microbe](/biosample/sample-info.html#Sample-type)
-- 真核生物の場合: [Eukaryotic Genomic Sequences (MIGS.eu)](/biosample/sample-info.html#Sample-type)、もしくは、生物種に応じた Standard パッケージ [Model organism or animal](/biosample/sample-info.html#Sample-type)/[Invertebrate](/biosample/sample-info.html#Sample-type)/[Plant](/biosample/sample-info.html#Sample-type)
+<div class="bspac">
+<ul>
+  <li id="SARS-CoV-2.cl"><a href="/biosample/attribute.html?core=Standard&type=SARS-CoV-2.cl">SARS-CoV-2: clinical or host-associated</a><p class="def">公衆衛生に関わる SARS-CoV-2 サンプル</p></li>
+  <li id="SARS-CoV-2.wwsurv"><a href="/biosample/attribute.html?core=Standard&type=SARS-CoV-2.wwsurv">SARS-CoV-2: wastewater surveillance</a><p class="def">公衆衛生に関わる SARS-CoV-2 廃水モニターサンプル</p></li>
+	<li id="Microbe"><a href="/biosample/attribute.html?core=Standard&type=Microbe">Microbe</a><p class="def">細菌や単細胞微生物</p></li>
+	<li id="Model.organism.animal"><a href="/biosample/attribute.html?core=Standard&type=Model.organism.animal">Model organism or animal</a><p class="def">動物及びマウスやショウジョウバエ等のモデル生物</p></li>
+	<li id="Metagenome.environmental"><a href="/biosample/attribute.html?core=Standard&type=Metagenome.environmental">Metagenome or environmental</a><p class="def">メタゲノムや環境サンプル</p></li>
+	<li id="Invertebrate"><a href="/biosample/attribute.html?core=Standard&type=Invertebrate">Invertebrate</a><p class="def">無脊椎動物</p></li>
+	<li id="Human"><a href="/biosample/attribute.html?core=Standard&type=Human">Human</a><p class="def">ヒト由来サンプル。注意: 由来個人を直接特定できるような情報を取り除いてください。データを保護する必要がある場合、アクセス制限の仕組みを備えた <a href="/jga/index-e.html">Japanese Genotype-phenotype Archive (JGA)</a> に登録してください</p></li>
+	<li id="Plant"><a href="/biosample/attribute.html?core=Standard&type=Plant">Plant</a><p class="def">植物や植物由来の細胞株</p></li>
+	<li id="Virus"><a href="/biosample/attribute.html?core=Standard&type=Virus">Viral</a><p class="def">病気に直接関係しないウイルス。病原ウイルスには <a href="Pathogen.cl">Pathogen: clinical or host-associated</a> を使います</p></li>
+	<li id="Beta-lactamase"><a href="/biosample/attribute.html?core=Standard&type=Beta-lactamase">Beta-lactamase</a><p class="def">抗生物質耐性を持つ beta-lactamase 遺伝子の形質転換体サンプル</p></li>
+	<li id="Omics"><a href="/biosample/attribute.html?core=Standard&type=Omics">Omics</a><p class="def">遺伝子発現、エピジェネティックスやメタボロミクスといったオミックスデータサンプル</p></li>
+</ul>
+</div>   
+   
+### Pathogen {#pathogen}
 
-アノテーションが付与されたゲノム配列を [DDBJ](/ddbj/mss.html) に登録する場合、[Locus tag prefix](/ddbj/locus_tag.html) を locus_tag_prefix 属性に記載して取得しておきます。
+公衆衛生に関わる病原菌サンプル用パッケージ。
 
-### 複数サンプルがアセンブリに使用された場合 {#samples}
+<div class="bspac">
+<ul>
+  <li id="Pathogen.cl"><a href="/biosample/attribute.html?core=Pathogen&type=Pathogen.cl">Pathogen: clinical or host-associated</a><p class="def">臨床検体もしくは宿主から採取された病原菌サンプル</p></li>
+  <li id="Pathogen.env"><a href="/biosample/attribute.html?core=Pathogen&type=Pathogen.env">Pathogen: environmental/food/other</a><p class="def">環境/食品/その他の病原菌サンプル</p></li>
+</ul>
+</div>    
+    
+### MIxS {#mixs}
 
-複数サンプルからゲノム DNA を抽出、得られたリードを混合してアセンブルし、一つのゲノム配列として [DDBJ](/ddbj/index.html) に登録する場合、「ゲノム配列にリンクできる BioSample は一つ」という制約があるため、サンプルが異なっていても、以下に該当する場合は分けずに登録することを推奨します。
+ゲノム・メタゲノム配列用パッケージ。
 
-* サンプル間でゲノム配列が同じものとして扱っている場合
-* ゲノム配列以外に遺伝子発現などの他のデータが結び付かない場合
+<div class="bspac">
+<ul>
+	<li id="MIGS.ba"><a href="/biosample/attribute.html?core=MIxS&type=MIGS.ba&env=No_package">Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)</a><p class="def">培養された細菌や古細菌のゲノム配列。生物種は <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2">Bacteria</a> もしくは <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2157">Archaea</a></p></li>
+	<li id="MIGS.eu"><a href="/biosample/attribute.html?core=MIxS&type=MIGS.eu&env=No_package">Eukaryotic Genomic Sequences (MIGS.eu)</a><p class="def">真核生物のゲノム配列。生物種の系統は <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2759">Eukaryota</a></p></li>
+	<li id="MIGS.vi"><a href="/biosample/attribute.html?core=MIxS&type=MIGS.vi&env=No_package">Viral Genomic Sequences (MIGS.vi)</a><p class="def">ウイルスのゲノム配列。生物種の系統は <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239">Viruses</a></p></li>
+	<li id="MIMS.me"><a href="/biosample/attribute.html?core=MIxS&type=MIMS.me&env=agriculture">Environmental/Metagenome Genomic Sequences (MIMS.me)</a><p class="def">環境サンプル由来の配列もしくはメタゲノム配列。生物名は <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908">unclassified sequences</a> 中の 'metagenome' で終わる名前にします</p></li>
+	<li id="MIMAG"><a href="/biosample/attribute.html?core=MIxS&type=MIMAG&env=No_package">Metagenome-assembled Genome Sequences (MIMAG)</a><p class="def">メタゲノムアセンブリ配列。生物名には 'metagenome' を含んだ名前を使うことはできない。ウイルスゲノムには <a href="#MIUVIG">MIUVIG</a> を使用します</p></li>
+	<li id="MISAG"><a href="/biosample/attribute.html?core=MIxS&type=MISAG&env=No_package">Single Amplified Genome Sequences (MISAG)</a><p class="def">一細胞ゲノム配列</p></li>
+	<li id="MIMARKS.specimen"><a href="/biosample/attribute.html?core=MIxS&type=MIMARKS.specimen&env=No_package">Specimen Marker Sequences (MIMARKS.specimen)</a><p class="def">標本サンプルのマーカー遺伝子配列（例 16S, 18S, 23S, 28S rRNA や COI）</p></li>
+	<li id="MIMARKS.survey"><a href="/biosample/attribute.html?core=MIxS&type=MIMARKS.survey&env=agriculture">Survey-related Marker Sequences (MIMARKS.survey)</a><p class="def">生物の培養や同定を経ることなく環境サンプルから直接解析されたマーカー遺伝子配列（例 16S, 18S, 23S, 28S rRNA や COI）。生物名は <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908">unclassified sequences</a> 中の 'metagenome' で終わる名前にします</p></li>
+	<li id="MIUVIG"><a href="/biosample/attribute.html?core=MIxS&type=MIUVIG&env=No_package">Uncultivated Viral Genome Sequences (MIUVIG)</a><p class="def">メタゲノムもしくは metatranscriptome データにおいて同定された未培養ウイルスゲノム配列。生物種の系統は <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239">Viruses</a></p></li>
+</ul>
+</div>   
+     
+### MIxS Environmental package {#environmental-package}
 
-例
+[MIxS](#mixs) パッケージを選択した場合は、サンプル採取環境に応じた環境パッケージも選択します。採取環境の記載に必要な属性 (例 air における altitude) が追加されます。[MIMS.me](#MIMS.me) と [MIMARKS.survey](#MIMARKS.survey) は No package を選択できません。  
 
-* 同じ試料から異なる日に抽出したゲノム DNA サンプルの登録。抽出日の情報は BioSample 属性として記載する必要はありません。記載する場合、DRA Experiment や BioSample の description に記載します。
-* 同じ試料から調製した Illumina と PacBio 用の各ゲノム DNA サンプルの登録。BioSample は分けずに、DRA Experiment で分けます。
+<div class="bspac env">
+<ul>
+	<li id="agriculture">agriculture</li>
+	<li id="air">air</li>
+	<li id="built">built</li>
+	<li id="food-animal">food-animal</li>
+	<li id="food-farm_env">food-farm_env</li>
+	<li id="food-human_foods">food-human_foods</li>
+	<li id="food-prod_facility">food-prod_facility</li>
+	<li id="host-associated">host-associated</li>
+	<li id="human-associated">human-associated</li>
+	<li id="human-gut">human-gut</li>
+	<li id="human-oral">human-oral</li>
+	<li id="human-skin">human-skin</li>
+	<li id="human-vaginal">human-vaginal</li>
+	<li id="hydrocarbon-cores">hydrocarbon-cores</li>
+	<li id="hydrocarbon-fluids_swabs">hydrocarbon-fluids_swabs</li>
+	<li id="microbial">microbial</li>
+	<li id="miscellaneous">miscellaneous</li>
+	<li id="plant-associated">plant-associated</li>
+	<li id="sediment">sediment</li>
+	<li id="soil">soil</li>
+	<li id="symbiont-associated">symbiont-associated</li>
+	<li id="wastewater">wastewater</li>
+	<li id="water">water</li>
+</ul>
+</div>
 
-異なるサンプルを別々に登録する場合、異なる BioSample をまとめる派生 BioSample (derived BioSample) をゲノム配列用に一つ登録します。
-例えば、オスとメスに由来するリードをそれぞれ DRA に登録し、両者のリードを使ってゲノムをアセンブルした場合、オスとメスそれぞれの BioSample アクセッション番号を引用した派生 BioSample を一つ登録し、ゲノム配列にリンクします。
-派生サンプルの元となるアクセッション番号は、派生サンプルの derived_from 属性に "This sample group is the combination of the [由来サンプル数] individual BioSamples: [BioSample アクセッション番号]" という書式で示します。
-例: This sample group is the combination of the 2 individual BioSamples: SAMN12623203 and SAMN12623206
+## パッケージの選び方 {#select-package}   
+   
+生物やデータの種類に応じたパッケージを選択します。当てはまるパッケージが [Standard](#Standard) と [MIxS](#MIxS) の両方にある場合は、[属性リスト](/biosample/attribute.html)をみて、サンプルを記載するのにより適した方を選びます。
 
-登録例
+### ゲノムアセンブリ配列用サンプル {#genome-assembly-sample-package}  
 
-* ゲノム配列 [JAGDQO010000000](https://www.ncbi.nlm.nih.gov/nuccore/2035211276) と派生サンプル [SAMN17974349](https://www.ncbi.nlm.nih.gov/biosample/17974349)
+DDBJ/ENA/GenBank ではゲノムアセンブリを管理するため、[ゲノム配列](/ddbj/finished_level_genome.html)は一つの BioProject と一つの BioSample を参照すること、という制約を設けています。
+ゲノムアセンブリサンプルでは生物種に応じたパッケージを選択します。
 
-### メタゲノムアセンブリ {#mag}
+<div class="bspac">
+<ul>
+	<li id="genome-prokaryote">単離培養された原核生物<p class="def"><a href="#Microbe">Microbe</a> もしくは <a href="#MIGS.ba">MIGS.ba</a></p></li>
+	<li id="genome-eukaryote">真核生物<p class="def"><a href="#Model.organism.animal">Model organism or animal</a>/<a href="#Invertebrate">Invertebrate</a>/<a href="#Plant">Plant</a> もしくは <a href="#MIGS.eu">MIGS.eu</a></p></li>
+</ul>
+</div>
 
-[メタゲノムアセンブリ](/ddbj/metagenome-assembly.html) (Metagenome-Assembled Genome、MAG) はアセンブリ度合いに応じた四種類の登録方法があります。
+アノテーションが付与されたゲノム配列を [DDBJ](/ddbj/mss.html) に登録する場合、希望する [Locus tag prefix](/ddbj/locus_tag.html) を [locus_tag_prefix](/biosample/attribute.html#locus_tag_prefix) 属性に記載して tag を取得します。
 
-特定の生物に由来すると推測される MAG は DDBJ の [ENV division](/ddbj/env.html) にゲノムエントリとして登録します。
+### メタゲノム用サンプル {#metagenome-sample-package}
 
-MAG 用にバーチャルなサンプルを登録します。パッケージは [MIMAG](/biosample/sample-info.html#Sample-type) を選択し、生物名には uncultured が冠されていない、MAG が由来する生物種名を記載します (例 Methanosarcina thermophila)。
-派生元 BioSample を derived_from: SAMD00000001 のように記載します。[登録例](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)　　
-MAG も一つの BioSample にリンクする必要があるため、複数サンプルに由来するリードをアセンブルした MAG の場合、複数の派生元サンプルを記載します。derived_from: SAMD00000001,SAMD00000002,SAMD00000004-SAMD00000008
+メタゲノムはアセンブリ段階に依って使用するパッケージが異なります。詳しくは[メタゲノムアセンブリ](/ddbj/metagenome-assembly.html)をご覧ください。
 
-### ハプロタイプ {#haplotype}
+<div class="bspac">
+<ul>
+	<li id="raw-primary">生リード・プライマリーメタゲノム<p class="def"><a href="#MIGS.me">MIGS.me</a> もしくは <a href="#Metagenome.environmental">Metagenome or environmental</a></p></li>
+	<li id="binned-mag">Binned メタゲノム・MAG<p class="def"><a href="#MIMAG">MIMAG</a>。ウイルスメタゲノムの場合は <a href="#MIUVIG">MIUVIG</a></p></li>
+</ul>
+</div>
 
-Haplotype シークエンスは同じサンプルから二つのゲノムデータが得られるという特徴があるため、INSDC ではデータの登録方法を定めています。登録方法は(Haplotype)[/ddbj/haplotype.html]を参照してください。
+## 派生サンプル {#derived-sample}
+
+混合サンプルなど、複数サンプルから構成される BioSample が必要な場合は、派生サンプル (derived sample) を登録し、元となるアクセッション番号を [derived_from](/biosample/attribute.html#derived_from) 属性にカンマやハイフン区切りで記載します。例: SAMD00000001,SAMD00000002,SAMD00000008-SAMD00000100。必要になるには以下のような場合です。   
+INSDC ではゲノムアセンブリを管理するため「[ゲノム配列](/ddbj/finished_level_genome.html)は一つの BioProject と一つの BioSample を参照すること」という制約を設けています。そのため、複数サンプルから得られた配列を混合してアセンブルしたゲノム配列を [DDBJ](/ddbj/index.html) に登録する場合、BioSample を一つにまとめる必要があります。    
+例えば、オスとメスに由来するリードを混合してアセンブルしたゲノム配列を登録する場合は、オスとメスそれぞれの BioSample アクセッション番号を引用した派生 BioSample を一つ登録します。   
+
+多数の環境サンプルから計算機上で再構成されたメタゲノムアセンブリ (MAG) を登録する場合、MAG 用に派生サンプルを登録し、[derived_from](/biosample/attribute.html#derived_from) に由来となる環境サンプルのアクセッション番号を記載します。
 
 ## ヒトサンプル {#human-sample}
 
 ### ヒトを対象とした研究データの登録について  {#submission-of-human-data}
 
-個人に由来するデータ（ヒトデータ）を DDBJ センターが運営するデータベースに登録する場合、[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)を遵守してください。
+個人に由来するデータ（ヒトデータ）を登録する場合、[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)を遵守してください。
 
-注意: プライバシー侵害の恐れのないヒトサンプルにのみ使用してください。登録者の責任において、適用される法律や指針に従い、由来個人を直接特定できるような情報を取り除いてください。データを保護する必要がある場合、アクセス制限の仕組みを備えた [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) にヒトデータを登録してください。
+注意: 登録者の責任において、適用される法律や指針に従い、由来個人を直接特定できるような情報を取り除いてください。データを保護する必要がある場合、アクセス制限の仕組みを備えた [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html) にヒトデータを登録してください。
 
-### サンプル属性  {#attribute}
+### サンプル属性 {#attribute}
 
-ヒト (*Homo sapiens*) サンプルでは [Human](/biosample/sample-info.html#Sample-type) パッケージで登録します。以下はヒトサンプルの種類に応じた登録ガイドラインになります。属性の説明は[こちらのページ](/biosample/attribute.html?all=all)を参照してください。
+ヒト (*Homo sapiens*) サンプルでは [Human](#Human) パッケージで登録します。以下はサンプルの種類に応じた登録ガイドラインになります。属性の説明は[こちらのページ](/biosample/attribute.html?core=Standard&type=Human)を参照してください。
 
 #### 個人由来試料 {#human-subject}
 
@@ -152,19 +192,18 @@ isolate には匿名化された subject id を記載します。
 
 #### 細胞株 {#cell-line}
 
-推奨
-- cell_type
+cell_type の記載を推奨
 
-### 初代培養細胞 {#primary}
+#### 初代培養細胞 {#primary}
 
 sample_type に初代培養細胞 (primary cell) であることを記載します。
 sample_type: primary cell
 
-### iPS 細胞 {#ips}
+#### iPS 細胞 {#ips}
 
 iPS 細胞は分化させてから使用されることが一般的であり、分化前後の情報が重要になります。
 そのため上記に加え、以下の属性情報を追加します。分化させてから使用している ES 細胞等でも同様です。
-複数回の分化を経ている複雑な場合、description にフリーテキストで説明を記載します。
+複数回の分化を経ている複雑な場合、description に説明を記載します。
 
 #### 個人由来試料 {#ips-human-subject}
 

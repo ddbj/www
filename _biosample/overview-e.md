@@ -7,32 +7,11 @@ current_tab: submission
 lang: en
 ---
 
-## Purpose of BioSample {#purpose}
-
-The BioSample database is descriptive information about the biological source materials, or samples, used to generate experimental data in any of primary data archives.
-
-Following figure depicts how BioSample records are organized and linked with other objects. This example is composed of one umbrella project that encompasses three subprojects, each of which generated data derived from two BioSample records. Users can query either the BioProject or the BioSample database to retrieve the relevant records, and then navigate through links to the corresponding experimental data which continue to be stored in DDBJ's primary data archives, [DDBJ](/ddbj/index-e.html), [DRA](/dra/index-e.html) and [GEA](/gea/index-e.html).
-
-{% include image.html url="submission/biosample_integration.jpg" caption="Overview of BioSample and BioProject integration with other DDBJ databases" class="w450" %}
-
-## Sample {#sample}
-
-Given the huge diversity of sample types handled by archival databases, and the fact that appropriate sample descriptions are often dependent on the context of the study, the definition of what a BioSample represents is deliberately flexible. Typical examples of a BioSample include a cell line, a primary tissue biopsy, an individual organism or an environmental isolate.
-
-Biological replicates are represented by separate BioSamples with distinct 'replicate' attribute, e.g., 'biological replicate 1' and 'biological replicate 2'. [FAQ: How many samples do I need for my DRA submission?](/faq/en/samples-for-sra-e.html)
-
-Information about the sample will include:
-
-- Species
-- The material sampled, e.g., organs, tissues, cell type
-- Phenotypic information including disease states and clinical information about the individual
-
-The information about human subjects and access to it will be compliant with all relevant ethical requirements. The DDBJ BioSample database does not support controlled access mechanisms and thus cannot host human clinical samples that may have associated privacy concerns.
-Submit such human samples to [JGA](/jga/index-e.html) which have access-control mechanism.
+The BioSample database is descriptive information about the biological source materials, or samples, used to generate experimental data in any of primary data archives. BioSample, together with BioProject, serve a function of organizing related data across databases.
 
 ## Sample granularity {#granularity}
 
-In general, create BioSample records for biological source materials and represent extracted molecules, nucleic acids and metabolites, by [DRA](/dra/metadata-e.html), [GEA](/gea/metadata-e.html) and [MetaboBank](/metabobank/metadata-e.html) metadata.
+In general, create a BioSample record for a biological source material. Extracted molecules, nucleic acids and metabolites are represented by [DRA](/dra/metadata-e.html), [GEA](/gea/metadata-e.html) and [MetaboBank](/metabobank/metadata-e.html) metadata.
 
 - Biological replicates are represented by separate BioSamples with distinct 'biological_replicate' attributes. [DRA objects organization](/dra/metadata-e.html#ex_replicates) For example, 'biological_replicate = 1' and 'biological_replicate = 2'.
 - Technical replicates are represented by DRA Experiments and GEA SDRF. Use a BioSample for technical replicates.
@@ -51,91 +30,150 @@ Examples:
 
 ## Sample attributes  {#sample-attributes}
 
-A major component of a BioSample record is the sample attributes section. Attributes define the material under investigation and can include sample characteristics such as cell type, collection site and phenotypic information like disease state.
-
-BioSample attributes are captured as structured name: value pairs, for example, tissue:liver
-
-The database supports and encourages use of dictionaries of attribute names by providing packages with pre-defined attributes.
-
-## Sample package {#package}
-
-BioSample promotes richer sample description and standardization of attribute name by providing sample packages designed for each type of sample and sequences.
-
-* See "[Sample Information](/biosample/sample-info-e.html#Sample-package)" regarding how to select a package.
-* See "[Sample attributes](/biosample/attribute-e.html)" regarding sample attributes.
-
-The package itself is a mechanism to promote adequate sample description and attributes are more important for sample interpretation. Therefore, if samples are described by appropriate attributes, you do not change the package even though submitted samples use not-recommended package.
+A major component of a BioSample record is the sample attributes section. Attributes define the material under investigation and can include sample characteristics such as collection site and phenotypic information.
+ BioSample attributes are captured as structured name: value pairs, for example, tissue:liver ([attributes list](/biosample/attribute-e.html))   
+The database supports and encourages use of dictionaries of attribute names by providing [packages](#package) with pre-defined attributes.
 
 ## Organism  {#organism}
 
-For an organism name of the BioSample [organism](/biosample/attribute-e.html?all=all#organism) attribute, see the ["Organism name"](/ddbj/organism-e.html) page. Previously, a strain name or some other lower taxon was required for the organism name of whole genomic sequence, mainly microorganisms. However, currently, the value of organism qualifier should be just a scientific name, in principle, even though for microbial genomes. Please describe a strain name in the [strain](/biosample/attribute-e.html?all=all#strain) attribute of BioSample.
-
-Related news: [Changes in organism strain information management](/news/en/2013-12-13-e.html)
+For an organism name of the BioSample [organism](/biosample/attribute-e.html#organism) attribute, see the ["Organism name"](/ddbj/organism-e.html) page. 
 
 ## Spatio-temporal annotation {#spatio-temporal}
 
-[International Nucleotide Sequence Database Collaboration (INSDC)](https://www.insdc.org/) improves utility of sequence data and sample traceability by making sample location and collection date description mandatory. Please also see [INSDC spatio-temporal annotation standards](https://www.insdc.org/news/spatio-temporal-annotation-policy-18-11-2021/).
+[INSDC](https://www.insdc.org/) improves utility of sequence data and sample traceability by making sample location and collection date description mandatory. Please also see [INSDC spatio-temporal annotation standards](https://www.insdc.org/news/spatio-temporal-annotation-policy-18-11-2021/).
 
-* Location of collection: Specification of where the sequenced sample was collected. Provide a meaningful location to interpret the data. At a minimum, describe the names for countries, oceans, or seas. Relevant attributes are, BioSample [geo_loc_name](/biosample/attribute-e.html#geo_loc_name) and DDBJ [country](/ddbj/qualifiers-e.html#country).
+* Location of collection: Specification of where the sequenced sample was collected. Provide a meaningful location to interpret the data. At a minimum, describe the names for countries, oceans, or seas. Relevant attributes are, BioSample and DDBJ [geo_loc_name](/biosample/attribute-e.html#geo_loc_name).
 * Date and time of collection: Date and time when the sequenced sample was collected. Provide a meaningful date and time to interpret the data. Describe at least to the nearest year. Relevant attributes are, BioSample and DDBJ [collection_date](/biosample/attribute-e.html#collection_date).
 
-In cases where this information cannot be provided (e.g., pathogen samples for which this information would lead to identifiability of a human) or is not relevant (e.g., study of a model organism lab stock or an established cell line), you can declare an appropriate exemption using the exemption terms defined in the [INSDC Missing Value Reporting Standards](https://www.insdc.org/submitting-standards/missing-value-reporting/) or use one of general [missing values](/biosample/submission-e.html#missing-value-reporting) as before.
+In cases where this information cannot be provided (e.g., pathogen samples for which this information would lead to identifiability of a human) or is not relevant (e.g., study of a model organism lab stock), you can declare an appropriate exemption using the exemption terms defined in the [INSDC Missing Value Reporting Standards](https://www.insdc.org/submitting-standards/missing-value-reporting/). [FAQs regarding sample collection location and time](/faq/en/index-e.html?tag=spatiotemporal)
 
-### FAQ and examples {#spatio-temporal-faq}
+## Sample package {#package}
 
-* [I cultured and sequenced a bacterial strain distributed from a culture collection. How should I describe the location and time?](/faq/en/sample-from-collection-e.html)
-* [I collected my sample for sequencing from a species outside of its natural environment (e.g. zoo, botanic garden) - how do I provide the spatiotemporal information for my sample?](/faq/en/sample-from-none-natural-environment-e.html)
-* [My sample was collected from the Pacific Ocean but the date was not recorded and I only know the year in which it was sampled was sometime in 2010 - how do I report this?](/faq/en/sample-from-pacific-ocean-2010-e.html)
-* [My sample was collected in Shizuoka, Japan at 14:12:55 on the 5th May 2023. How do I format this for submission?](/faq/en/location-and-date-of-sample-e.html)
-* [I have an ancient DNA sample - how do I provide the spatiotemporal information for my sample?](/faq/en/ancient-dna-sample-e.html)
-* [I am not able to report on my spatiotemporal metadata but my exemption reason is not on the list - what should I do?](/faq/en/appropriate-exemption-not-found-e.html)
-* [As part of my consortium, we set up an agreement that the data would be submitted to INSDC but that all metadata would not be shared until after 2 years. This agreement was organised prior to the standards change so we can’t comply. How do I report this?](/faq/en/data-agreement-established-pre-2023-e.html)
-* [What do I do if I can submit one of the mandatory fields but not the other?](/faq/en/either-one-of-location-and-date-cannot-be-described-e.html)
+BioSample promotes richer sample description and standardization of attribute name by providing sample packages designed for each type of sample and sequences. See "[Sample attributes](/biosample/attribute-e.html)" for attributes provided by packages.   
+The package itself is a mechanism to promote adequate sample description and attributes are more important for sample interpretation. Therefore, if samples are described by appropriate attributes, you do not change the package even though submitted samples use not-recommended package.
 
-## Genome assembly sample {#genome-assembly-sample}
+Package series.
+* [Standard](#standard)
+* [Pathogen](#pathogen)
+* [MIxS](#mixs)
+	* [MIxS Environmental package](#environmental-package)
 
-### Package {#genome-assembly-sample-package}
+### Standard {#standard}
 
-A [DDBJ genome sequence](/ddbj/mss-e.html) should be linked to one BioProject and one BioSample. This constraint is set by INSDC to manage genome sequences.
-Submit sample(s) used for genome assembly in following packages. When it is not appropriate to use [MIxS](/biosample/sample-info-e.html#mixs), use standard packages according to organisms.
+Standard packages according to sample types and organisms.  
 
-- In the case of isolated, cultured prokaryotes: [Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)](/biosample/attribute-e.html) or [Microbe](/biosample/sample-info-e.html#Sample-type)
-- In the case of eukaryotes: [Eukaryotic Genomic Sequences (MIGS.eu)](/biosample/attribute-e.html) or one of the standard packages for organism, [Model organism or animal](/biosample/sample-info-e.html#Sample-type), [Invertebrate](/biosample/sample-info-e.html#Sample-type) or [Plant](/biosample/sample-info-e.html#Sample-type)
+<div class="bspac">
+<ul>
+	<li id="SARS-CoV-2.cl"><a href="/biosample/attribute-e.html?core=Standard&type=SARS-CoV-2.cl">SARS-CoV-2: clinical or host-associated</a><p class="def">SARS-CoV-2 samples that are relevant to public health.</p></li>
+	<li id="SARS-CoV-2.wwsurv"><a href="/biosample/attribute-e.html?core=Standard&type=SARS-CoV-2.wwsurv">SARS-CoV-2: wastewater surveillance</a><p class="def">SARS-CoV-2 wastewater surveillance samples that are relevant to public health.</p></li>
+	<li id="Microbe"><a href="/biosample/attribute-e.html?core=Standard&type=Microbe">Microbe</a><p class="def">Bacteria or other unicellular microbes.</p></li>
+	<li id="Model.organism.animal"><a href="/biosample/attribute-e.html?core=Standard&type=Model.organism.animal">Model organism or animal</a><p class="def">Animals or common laboratory model organisms, e.g., mouse and Drosophila.</p></li>
+	<li id="Metagenome.environmental"><a href="/biosample/attribute-e.html?core=Standard&type=Metagenome.environmental">Metagenome or environmental</a><p class="def">Metagenomic and environmental samples.</p></li>
+	<li id="Invertebrate"><a href="/biosample/attribute-e.html?core=Standard&type=Invertebrate">Invertebrate</a><p class="def">Invertebrate sample.</p></li>
+	<li id="Human"><a href="/biosample/attribute-e.html?core=Standard&type=Human">Human</a><p class="def">Human samples. "WARNING": Only for human samples that have no privacy concerns. Make sure to remove any direct personal identifiers from your submission. If you need to protect samples, please submit samples and data to <a href="/jga/index-e.html">Japanese Genotype-phenotype Archive (JGA)</a> which has controlled access mechanisms.</p></li>
+	<li id="Plant"><a href="/biosample/attribute-e.html?core=Standard&type=Plant">Plant</a><p class="def">Plant sample or cell line.</p></li>
+	<li id="Virus"><a href="/biosample/attribute-e.html?core=Standard&type=Virus">Viral</a><p class="def">Virus samples not directly associated with disease. For viral pathogens, use the <a href="Pathogen.cl">Pathogen: clinical or host-associated</a>.</p></li>
+	<li id="Beta-lactamase"><a href="/biosample/attribute-e.html?core=Standard&type=Beta-lactamase">Beta-lactamase</a><p class="def">Beta-lactamase gene transformants that have antibiotic resistance data.</p></li>
+	<li id="Omics"><a href="/biosample/attribute-e.html?core=Standard&type=Omics">Omics</a><p class="def">Gene expression, epigenetics and and metabolomics data samples.</p></li>
+</ul>
+</div>   
+	 
+### Pathogen {#pathogen}
+
+Use for pathogen samples that are relevant to public health.
+
+<div class="bspac">
+<ul>
+	<li id="Pathogen.cl"><a href="/biosample/attribute-e.html?core=Pathogen&type=Pathogen.cl">Pathogen: clinical or host-associated</a><p class="def">Clinical or host-associated pathogen samples.</p></li>
+	<li id="Pathogen.env"><a href="/biosample/attribute-e.html?core=Pathogen&type=Pathogen.env">Pathogen: environmental/food/other</a><p class="def">Environmental/food/other pathogen samples.</p></li>
+</ul>
+</div>    
+		
+### MIxS {#mixs}
+
+Used for samples from which genome and metagenome sequences were obtained. 
+
+<div class="bspac">
+<ul>
+	<li id="MIGS.ba"><a href="/biosample/attribute-e.html?core=MIxS&type=MIGS.ba&env=No_package">Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)</a><p class="def"> cultured bacterial or archaeal genomic sequences. Organism must have lineage <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2">Bacteria</a> or <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2157">Archaea</a>.</p></li>
+	<li id="MIGS.eu"><a href="/biosample/attribute-e.html?core=MIxS&type=MIGS.eu&env=No_package">Eukaryotic Genomic Sequences (MIGS.eu)</a><p class="def">Eukaryotic genomic sequences. Organism must have lineage <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2759">Eukaryota</a>.</p></li>
+	<li id="MIGS.vi"><a href="/biosample/attribute-e.html?core=MIxS&type=MIGS.vi&env=No_package">Viral Genomic Sequences (MIGS.vi)</a><p class="def">Virus genomic sequences. Organism must have lineage <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239">Viruses</a>.</p></li>
+	<li id="MIMS.me"><a href="/biosample/attribute-e.html?core=MIxS&type=MIMS.me&env=agriculture">Environmental and metagenome sequences</a><p class="def">Organism must be a metagenome, where lineage starts with<a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908">unclassified sequences</a> and scientific name ends with 'metagenome'.</p></li>
+	<li id="MIMAG"><a href="/biosample/attribute-e.html?core=MIxS&type=MIMAG&env=No_package">Metagenome-assembled Genome Sequences (MIMAG)</a><p class="def">Metagenome-assembled genome sequences. Use the <a href="#MIUVIG">MIUVIG</a> package for virus genomes.</p></li>
+	<li id="MISAG"><a href="/biosample/attribute-e.html?core=MIxS&type=MISAG&env=No_package">Single Amplified Genome Sequences (MISAG)</a><p class="def">Single amplified genome sequences produced by isolating individual cells.</p></li>
+	<li id="MIMARKS.specimen"><a href="/biosample/attribute-e.html?core=MIxS&type=MIMARKS.specimen&env=No_package">Specimen Marker Sequences (MIMARKS.specimen)</a><p class="def">Marker gene sequences, eg, 16S, 18S, 23S, 28S rRNA or COI obtained from specimens.</p></li>
+	<li id="MIMARKS.survey"><a href="/biosample/attribute-e.html?core=MIxS&type=MIMARKS.survey&env=agriculture">Survey-related Marker Sequences (MIMARKS.survey)</a><p class="def">Marker gene sequences, eg, 16S, 18S, 23S, 28S rRNA or COI obtained directly from the environment, without culturing or identification of the organisms. Organism must be a metagenome.</p></li>
+	<li id="MIUVIG"><a href="/biosample/attribute-e.html?core=MIxS&type=MIUVIG&env=No_package">Uncultivated Viral Genome Sequences (MIUVIG)</a><p class="def">Uncultivated virus genome identified in metagenome and metatranscriptome datasets. Organism must have lineage <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239">Viruses</a>.</p></li>
+</ul>
+</div>   
+		 
+### MIxS Environmental package {#environmental-package}
+
+Select an appropriate environmental package for a MIxS environmental/metagenome sample. Predefined attributes to describe sampling environments are added (for example, "altitude" for the "air" environmental package).  
+For the [MIMS.me](#MIMS.me) and [MIMARKS.survey](#MIMARKS.survey) packages, "No package" cannot be selected.   
+
+<div class="bspac env">
+<ul>
+	<li id="agriculture">agriculture</li>
+	<li id="air">air</li>
+	<li id="built">built</li>
+	<li id="food-animal">food-animal</li>
+	<li id="food-farm_env">food-farm_env</li>
+	<li id="food-human_foods">food-human_foods</li>
+	<li id="food-prod_facility">food-prod_facility</li>
+	<li id="host-associated">host-associated</li>
+	<li id="human-associated">human-associated</li>
+	<li id="human-gut">human-gut</li>
+	<li id="human-oral">human-oral</li>
+	<li id="human-skin">human-skin</li>
+	<li id="human-vaginal">human-vaginal</li>
+	<li id="hydrocarbon-cores">hydrocarbon-cores</li>
+	<li id="hydrocarbon-fluids_swabs">hydrocarbon-fluids_swabs</li>
+	<li id="microbial">microbial</li>
+	<li id="miscellaneous">miscellaneous</li>
+	<li id="plant-associated">plant-associated</li>
+	<li id="sediment">sediment</li>
+	<li id="soil">soil</li>
+	<li id="symbiont-associated">symbiont-associated</li>
+	<li id="wastewater">wastewater</li>
+	<li id="water">water</li>
+</ul>
+</div>
+
+## How to select a package {#select-package}   
+	 
+Select a package according to organism and data. When appropriate packages are found in both [Standard](#Standard) and [MIxS](#MIxS) series, please see [attribute list](/biosample/attribute-e.html) and select a better one to describe your sample.
+
+### Genome assembly sample {#genome-assembly-sample-package}  
+
+A [DDBJ/ENA/GenBank genome sequence](/ddbj/finished_level_genome-e.html) should be linked to one BioProject and one BioSample.  
+Select a package according to species of your sample.
+
+<div class="bspac">
+<ul>
+	<li id="genome-prokaryote">Isolated, cultured prokaryotes<p class="def"><a href="#Microbe">Microbe</a> or <a href="#MIGS.ba">MIGS.ba</a></p></li>
+	<li id="genome-eukaryote">Eukaryotes<p class="def"><a href="#Model.organism.animal">Model organism or animal</a>/<a href="#Invertebrate">Invertebrate</a>/<a href="#Plant">Plant</a> or <a href="#MIGS.eu">MIGS.eu</a></p></li>
+</ul>
+</div>
 
 Register a [locus tag prefix](/ddbj/locus_tag-e.html) necessary for an annotated genome submission by entering a prefix in the BioSample locus_tag_prefix attribute.
 
-### Genome assembled from multiple samples {#samples}
+### Metagenome samples {#metagenome-sample-package}
 
-When submitting a genome sequence assembled from DNA reads extracted from different samples to [DDBJ](/ddbj/index-e.html), we recommend to register a BioSample even though samples are different (an assembled genome needs to be linked to single BioSample).
+Different packages need to be used for metagenome assembly samples at different assembly levels. Please see [Metagenome assembly](/ddbj/metagenome-assembly-e.html).
 
-* genome sequences of different samples were treated as the "same" molecule.
-* Apart from a genome sequence, quantitative data such as gene expression are not linked.
+<div class="bspac">
+<ul>
+	<li id="raw-primary">Raw reads and primary metagenome.<p class="def"><a href="#MIGS.me">MIGS.me</a> or <a href="#Metagenome.environmental">Metagenome or environmental</a></p></li>
+	<li id="binned-mag">Binned metagenome and MAG<p class="def"><a href="#MIMAG">MIMAG</a>. Use <a href="#MIUVIG">MIUVIG</a> for virus metagenomic assemblies.</p></li>
+</ul>
+</div>
 
-Example submissions.
+## Derived sample {#derived-sample}
 
-* Genome DNAs extracted from a same sample on a different day. You may not describe the extracted dates in BioSample attributes. Instead, you may describe the dates in DRA Experiment or BioSample description.
-* Genome DNAs prepared for Illumina and PacBio sequencing. Differentiate at the DRA Experiment level and not at the BioSample level.
-
-When you want to register more than one BioSample, register a derived BioSample because a genome sequence cannot be linked to multiple BioSamples. For example, sequencing reads of male and female samples are submitted to DRA, and submit a genome sequence assembled from both samples, register a derived BioSample citing both BioSample accessions.
-Enter the originating BioSample accessions in derived_from attribute of the derived BioSample in the format of "This sample group is the combination of the [number of samples] individual BioSamples: [BioSample accessions]". For example, "This sample group is the combination of the 2 individual BioSamples: SAMN12623203 and SAMN12623206"
-
-Real examples:
-* A Genome sequence [JAGDQO010000000](https://www.ncbi.nlm.nih.gov/nuccore/2035211276) and a derived sample [SAMN17974349](https://www.ncbi.nlm.nih.gov/biosample/17974349).
-
-### Metagenome assembly {#mag}
-
-There are four tiers of [metagenome assembly](/ddbj/metagenome-assembly-e.html) (Metagenome-Assembled Genome, MAG) submission depending on the degree of assembly.
-
-Submit a MAG from a particular organism to the [ENV division](/ddbj/env-e.html) of DDBJ.
-
-Create a virtual BioSample for MAG submission.
-Use the [MIMAG](/biosample/sample-info-e.html#Sample-type) package and use an organism name without uncultured (e.g., Methanosarcina thermophila).
-Indicate deriving source sample as "derived_from: SAMD00000001". [Examples](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=272411182)
-A MAG also needs to be linked to a BioSample, create a derived BioSample for MAG.
-
-### Haplotype {#haplotype}
-
-Because two genome sequences are produced from single sample in haplotype sequencing, INSDC establishes the guideline for haplotype sequence submission. See (Haplotype)[/ddbj/haplotype-e.html] for how to submit haplotype genomes.
+For a mixed sample which consist of samples, register a derived sample and list accession numbers (separated by comma or hyphen) of the component samples in [derived_from](/biosample/attribute-e.html#derived_from). Examples: SAMD00000001,SAMD00000002,SAMD00000008-SAMD00000100. A derived sample is necessary in the following cases.    
+INSDC restricts "[A genome assembly sequence](/ddbj/finished_level_genome-e.html) links to a BioProject and a BioSample". Therefore, when submitting a genome sequence assembled from reads of samples to [DDBJ](/ddbj/index-e.html), you need to represent samples by a derived sample. For example, to submit a genome sequence assembled from reads of male and female samples, register a derived sample citing both BioSample accessions.  
+Another example is to submit a MAG computationally constructed from environmental samples, register a derived sample for the MAG and list accession numbers of the environmental samples in the [derived_from](/biosample/attribute-e.html#derived_from) attribute.
 
 ## Human sample {#human-sample}
 
@@ -148,7 +186,7 @@ For all studies involving human subjects, it is the submitter's responsibility t
 
 ### Sample attributes {#attribute}
 
-Describe following attributes for Human (*Homo sapiens*) sample by using [Human](/biosample/sample-info.html#Sample-type) package. Please see [this page](/biosample/attribute-e.html?all=all) for attribute explanation.
+Describe following attributes for Human (*Homo sapiens*) sample by using [Human](/biosample/sample-info-e.html#Sample-type) package. Please see [this page](/biosample/attribute-e.html?all=all) for attribute explanation.
 
 #### Sample derived from human subjects {#human-subject}
 

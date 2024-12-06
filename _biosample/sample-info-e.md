@@ -65,77 +65,58 @@ FAQ: [How to request data release?](/faq/en/request-release-e.html)
 
 ## Sample package {#Sample-package}
 
-BioSample supports richer sample description and standardization of sample attributes by providing sample packages designed for each type of sample and sequences.
+Choose a package accoding to species or data type of your submission. Please see "[Sample package](/biosample/overview-e.html#package)" for how to select appropriate one. [Attribute list](/biosample/attribute-e.html)
 
-### Standard {#standard}
+* Standard
+	* SARS-CoV-2: clinical or host-associated
+	* SARS-CoV-2: wastewater surveillance
+	* Microbe
+	* Model organism or animal
+	* Metagenome or environmental
+	* Invertebrate
+	* Human
+	* Plant
+	* Viral
+	* Beta-lactamase
+	* Omics
+* Pathogen
+	* Pathogen: clinical or host-associated
+	* Pathogen: environmental/food/other
+* MIxS
+	* Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba)
+	* Eukaryotic Genomic Sequences (MIGS.eu)
+	* Viral Genomic Sequences (MIGS.vi)
+	* Environmental/Metagenome Genomic Sequences (MIMS.me)
+	* Metagenome-assembled Genome Sequences (MIMAG)
+	* Single Amplified Genome Sequences (MISAG)
+	* Specimen Marker Sequences (MIMARKS.specimen)
+	* Survey-related Marker Sequences (MIMARKS.survey)
+	* Uncultivated Viral Genome Sequences (MIUVIG)
 
-When it is not appropriate to use [MIxS](#mixs), use standard packages according to sample types and organisms.  
-For GEA functional genomics data and MetaboBank metabolomics data, "Omics" package is recommended.  
-
-* SARS-CoV-2: clinical or host-associated - Use for SARS-CoV-2 samples that are relevant to public health. Required attributes include those considered useful for the rapid analysis and trace back of SARS-CoV-2 cases.
-* SARS-CoV-2: wastewater surveillance - Use for SARS-CoV-2 wastewater surveillance samples that are relevant to public health. Required attributes include those considered useful for the rapid analysis and trace back of SARS-CoV-2 cases.
-* Microbe - Use for bacteria or other unicellular microbes when it is not appropriate or advantageous to use MIxS, Pathogen or Virus packages.
-* Model organism or animal - Use for multicellular samples or cell lines derived from common laboratory model organisms, e.g., mouse, rat, Drosophila, worm, fish, frog, or large mammals including zoo and farm animals.
-* Metagenome or environmental - Use for metagenomic and environmental samples when it is not appropriate or advantageous to use MIxS packages.
-* Invertebrate - Use for any invertebrate sample.
-* Human - "WARNING: Only use for human samples or cell lines that have no privacy concerns. For all studies involving human subjects, it is the submitter's responsibility to ensure that the information supplied protects participant privacy in accordance with all applicable laws, regulations and institutional policies. Make sure to remove any direct personal identifiers from your submission. If there are patient privacy concerns regarding making data fully public, please submit samples and data to Japanese Genotype-phenotype Archive (JGA) database. [JGA](/jga/index-e.html) has controlled access mechanisms and is an appropriate resource for hosting sensitive patient data. 
-* For samples isolated from humans use the Pathogen, Microbe or appropriate MIxS package."
-* Plant - Use for any plant sample or cell line.
-* Viral - Use for all virus samples not directly associated with disease. Viral pathogens should be submitted using the Pathogen: Clinical or host-associated pathogen package.
-* Beta-lactamase - Use for beta-lactamase gene transformants that have antibiotic resistance data.
-* Omics - Use for submission of functional genomics data to Genomic Expression Archive (GEA) and metabolomics data to MetaboBank.
-
-### Pathogen {#pathogen}
-
-Use for pathogen samples that are relevant to public health. Required attributes include those considered useful for the rapid analysis and trace back of pathogens.
-
-* Pathogen: clinical or host-associated - Use for clinical or host-associated pathogen samples
-* Pathogen: environmental/food/other - Use for environmental/food/other pathogen samples
-
-### MIxS  {#mixs}
-
-Used for samples from which genome and metagenome sequences were obtained.  
-When it is not appropriate to use [MIxS](#mixs), use [standard](#standard) packages.
-
-* Cultured Bacterial/Archaeal Genomic Sequences (MIGS.ba) - Use for cultured bacterial or archaeal genomic sequences. Organism must have lineage [Bacteria](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2) or [Archaea](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2157).
-* Eukaryotic Genomic Sequences (MIGS.eu) - Use for eukaryotic genomic sequences. Organism must have lineage [Eukaryota](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=2759).
-* Viral Genomic Sequences (MIGS.vi) - Use for virus genomic sequences. Organism must have lineage [Viruses](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239).
-* Environmental/Metagenome Genomic Sequences (MIMS.me) - Use for environmental and metagenome sequences. Organism must be a metagenome, where lineage starts with [unclassified sequences](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908) and scientific name ends with 'metagenome'.
-* Metagenome-assembled Genome Sequences (MIMAG) - Use for metagenome-assembled genome sequences produced using computational binning tools that group sequences into individual organism genome assemblies starting from metagenomic data sets. Organism cannot contain the term 'metagenome'. Use the MIUVIG package for virus genomes.
-* Single Amplified Genome Sequences (MISAG) - Use for single amplified genome sequences produced by isolating individual cells, amplifying the genome of each cell using whole genome amplification, and then sequencing the amplified DNA. Organism cannot contain the term 'metagenome'.
-* Specimen Marker Sequences (MIMARKS.specimen) - Use for any type of marker gene sequences, eg, 16S, 18S, 23S, 28S rRNA or COI obtained from cultured or voucher-identifiable specimens. Organism cannot contain the term 'metagenome'.
-* Survey-related Marker Sequences (MIMARKS.survey) - Use for any type of marker gene sequences, eg, 16S, 18S, 23S, 28S rRNA or COI obtained directly from the environment, without culturing or identification of the organisms. Organism must be a metagenome, where lineage starts with [unclassified sequences](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908) and scientific name ends with 'metagenome'.
-* Uncultivated Viral Genome Sequences (MIUVIG) - Use for uncultivated virus genome identified in metagenome and metatranscriptome datasets. Organism must have lineage [Viruses](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=10239).
-
-### Environmental package  {#environmental-package}
-
-Select appropriate environmental packages for MIxS environmental/metagenome samples. 
-Predefined attributes to describe sampling environments are added (for example, "altitude" for the air environmental package).  
-For the MIMS.me and MIMARKS.survey packages, "No package" cannot be selected.  
-
-* agriculture
-* air
-* built
-* food-animal
-* food-farm_env
-* food-human_foods
-* food-prod_facility
-* host-associated
-* human-associated
-* human-gut
-* human-oral
-* human-skin
-* human-vaginal
-* hydrocarbon-cores
-* hydrocarbon-fluids_swabs
-* microbial
-* miscellaneous
-* plant-associated
-* sediment
-* soil
-* symbiont-associated
-* wastewater
-* water
+* Environmental package
+	* agriculture
+	* air
+	* built
+	* food-animal
+	* food-farm_env
+	* food-human_foods
+	* food-prod_facility
+	* host-associated
+	* human-associated
+	* human-gut
+	* human-oral
+	* human-skin
+	* human-vaginal
+	* hydrocarbon-cores
+	* hydrocarbon-fluids_swabs
+	* microbial
+	* miscellaneous
+	* plant-associated
+	* sediment
+	* soil
+	* symbiont-associated
+	* wastewater
+	* water
     
 ## Attributes  {#Attributes}
 
