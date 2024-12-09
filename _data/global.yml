@@ -2,9 +2,14 @@ top_news:
  ja:
     - title: 国際塩基配列データベース「DDBJ」に対するサイバー脅迫に関するご報告
       path: 2024-10-22
+    - title: 生命情報・DDBJ センター年末年始休業のお知らせ
+      path: 2024-12-09
     - title: (12/12 8:00-12/20 12:00) DDBJ センターの登録、検索・解析サービス停止のお知らせ
       path: 2024-11-25
  en:
     - title: On Cyber Threats against DDBJ, a node of the International Nucleotide Sequence Database Collaboration
       path: 2024-10-22-e
+    - title: Suspension of DDBJ Center activity during the New Year Holidays
+      path: 2024-12-09-e
     - title: (12th December 8:00-20th December 12:00(JST)) Suspension of DDBJ services due to NIG supercomputer maintenance
+      path: 2024-11-25-e
