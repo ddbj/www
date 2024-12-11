@@ -82,6 +82,8 @@ DBCLS に提供・利用申請をする方は[アカウント情報の追加](/a
 
 ## 公開鍵/秘密鍵ペアの生成  {#generate-key-pair}
 
+<span class="red"><a href="/jga/download.html#key-for-decryption">JGA データセットの復号用鍵</a>は RSA 形式で作成する必要があります。ed25519 形式には対応していないのでご注意ください。</span>
+
 ### Windows {#windows}
 
 D-way アカウントに登録する公開鍵は openSSH/PuTTY 形式のどちらでも問題ありません。

@@ -42,7 +42,7 @@ Generate a public and private key pair for data transfer and [register the publi
 ### Generate a public and private key pair for data decryption {#key-for-decryption}
 
 The JGA data are provided as encrypted files. A user downloads data by sftp and decrypts the files by using the private key paired with the public key for dataset decryption registered in the data use application.  
-The public key for dataset decryption is separate from [the public key for data transfer registered to the D-way account](/account-e.html#public-key). See "[How to generate public/private key pair](/account-e.html#generate-key-pair)".
+The public key for dataset decryption is separate from [the public key for data transfer registered to the D-way account](/account-e.html#public-key). See "[How to generate public/private key pair](/account-e.html#generate-key-pair)". <span class="red">The key for dataset decryption should be in the RSA format. The ed25519 format is not supported.</span>
 
 In total, 2 pairs 4 keys are necessary for data use application and JGA data use.
 

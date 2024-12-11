@@ -82,6 +82,8 @@ To upload data files to [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) an
 
 ### Generate public and private key pair  {#generate-key-pair}
 
+<span class="red"><a href="/jga/download-e.html#key-for-decryption">A key for JGA dataset decryption</a> should be in the RSA format. The ed25519 format is not supported.</span>
+
 ### Windows {#windows}
 
 A public key for D-way authentification can be both openSSH and PuTTY formats.
