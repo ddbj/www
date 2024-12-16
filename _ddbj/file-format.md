@@ -129,11 +129,11 @@ Value
 
 ## Biological Feature 記載に関する参照先  {#describing}
 
-| 名称                                                  | 更新日        | 備考                                                   |
+| 名称                                                  | 備考                                                   |
 |---|
-| [Feature Table Definition](/ddbj/feature-table.html)   | 2024/10/01 | version 11.3                                         |
-| [Feature/Qualifier 対応一覧表](/assets/files/pdf/ddbj/fq-j.pdf) | 2016/11/09 |                                                      |
-| [登録の見本](/ddbj/example.html)                         | 2014/11/27 | [DDBJ フラットファイル](/ddbj/flat-file.html)中の feature の記載例 |
+| [Feature Table Definition](/ddbj/feature-table.html)   | version 11.3                                         |
+| [Feature/Qualifier 対応一覧表](https://docs.google.com/spreadsheets/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/edit?gid=0#gid=0) |                                                      |
+| [登録の見本](/ddbj/example.html)                         | [DDBJ フラットファイル](/ddbj/flat-file.html)中の feature の記載例 |
 
 ## 共通情報 COMMON {#common} 
 

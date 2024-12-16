@@ -124,11 +124,11 @@ Other
 
 ## References for Describing Biological Features  {#describing}
 
-| Name                                                       | Refix Date | Remarks                                                        |
+| Name                                                       | Remarks                                                        |
 |---|
-| [Feature Table Definition](/ddbj/feature-table-e.html)        | 2024/10/01 | version 11.3                                                   |
-| [Feature/Qualifier usage matrix](/assets/files/pdf/ddbj/fq-e.pdf) | 2016/11/09 |                                                                |
-| [Example of Submission](/ddbj/example-e.html)              | 2014/11/27 | Examples of features in [DDBJ flat file](/ddbj/flat-file.html) |
+| [Feature Table Definition](/ddbj/feature-table-e.html)        | version 11.3                                                   |
+| [Feature/Qualifier usage matrix](https://docs.google.com/spreadsheets/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/edit?gid=0#gid=0) |                                                                |
+| [Example of Submission](/ddbj/example-e.html)              | Examples of features in [DDBJ flat file](/ddbj/flat-file.html) |
 
 ## COMMON {#common} 
 
