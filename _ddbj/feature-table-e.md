@@ -665,8 +665,8 @@ all cases but should be used as a guide whenever possible.
                 /<a href="#q_gene">gene</a>="ubc42"
                 /<a href="#number">number</a>=2
 <a href="#regulatory">regulatory</a>      1310..1317
-                /<a href="#q_gene">gene</a>="ubc42"
                 /<a href="#regulatory_class">regulatory_class</a>="polyA_signal_sequence"
+                /<a href="#q_gene">gene</a>="ubc42"
 </pre>
 
 ### 5.2 Bacterial operon  <a name="5-2"></a>
@@ -2687,7 +2687,7 @@ Definition      indicates that exons are out-of-order or overlapping
                 upstream exon in the RNA product
 Value format    none
 Example         /circular_RNA
-Comment         Comment should be used on features such as <a href="#fCDS">CDS</a>, <a href="#mRNA">mRNA</a>, <a href="#tRNA">tRNA</a> and other 
+Comment         should be used on features such as <a href="#fCDS">CDS</a>, <a href="#mRNA">mRNA</a>, <a href="#tRNA">tRNA</a> and other 
                 features that are produced as a result of a backsplicing event. 
                 This qualifier should be used only when the splice event is 
                 indicated in the "join" operator, 
@@ -2885,7 +2885,7 @@ Comment         the /culture_collection qualifier should be used to annotate
                 culture_id and institution_code are mandatory, collection_code
                 is optional; institution code and collection code are taken
                 from a controlled vocabulary maintained by the INSDC.
-                <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-culturecollection-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-culturecollection-qualifier/</a>
+                <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-culturecollection-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-culturecollection-qualifier/</a>.
 </pre>
 
 -----
@@ -2900,7 +2900,7 @@ Value format    "&lt;database:identifier&gt;" where database is
                 database.
 Example         /db_xref="UniProtKB/Swiss-Prot:P28763"
 Comment         the complete list of allowed database types is kept at 
-                <a href="https://www.insdc.org/submitting-standards/dbxref-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/dbxref-qualifier-vocabulary/</a>
+                <a href="https://www.insdc.org/submitting-standards/dbxref-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/dbxref-qualifier-vocabulary/</a>.
 </pre>
 
 -----
@@ -3138,18 +3138,18 @@ Value format    "&lt;country_value&gt;[:&lt;region&gt;][, &lt;locality&gt;]" whe
                 country_value is any value from the controlled vocabulary at 
                 <a href="https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/">https://www.insdc.org/submitting-standards/geo_loc_name-qualifier-vocabulary/</a> or 
                 a specified exemption from the missing values controlled vocabulary at 
-                <a href="https://www.insdc.org/technical-specifications/missing-value-reporting/">https://www.insdc.org/technical-specifications/missing-value-reporting/</a>
+                <a href="https://www.insdc.org/technical-specifications/missing-value-reporting/">https://www.insdc.org/technical-specifications/missing-value-reporting/</a>. 
 Example         /country="Canada:Vancouver"
                 /country="France:Cote d'Azur, Antibes"
                 /country="Atlantic Ocean:Charlie Gibbs Fracture Zone"
                 /country="missing: lab stock"
 Comment         Intended to provide a reference to the site where the source
                 organism was isolated or sampled. Regions and localities should
-                be indicated where possible. Note that the physical geography of
-                the isolation or sampling site should be represented in
-                /<a href="#isolation_source">isolation_source</a>.  From June 2024, the /country
-                qualifier will be transitioned to /geo_loc_name. /country may
-                still be encountered on records prior to this date.  
+                be indicated where possible. Note that the physical geography 
+                of the isolation or sampling site should be represented in
+                /<a href="#isolation_source">isolation_source</a>.  
+                From June 2024, the /country qualifier will be transitioned to /geo_loc_name. 
+                /country may still be encountered on records prior to this date.  
 </pre>
 
 -----
@@ -3346,7 +3346,7 @@ Example         /linkage_evidence="paired-ends"
 Comment         This qualifier is used only for <a href="#assembly_gap">assembly_gap</a> features and its values are
                 controlled by the AGP Specification version 2.1:
                 <a href="https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/">https://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/</a>
-                Please also visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-linkageevidence-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-linkageevidence-qualifier/</a>
+                Please also visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-linkageevidence-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-linkageevidence-qualifier/</a>. 
 </code></pre>
 
 -----
@@ -3472,7 +3472,7 @@ Comment         all values refer to the in vivo or synthetic molecule for
                 "unassigned DNA", "unassigned RNA" should be applied where in
                 vivo molecule is unknown
                 Please also visit:
-                <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-moltype-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-moltype-qualifier/</a>
+                <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-moltype-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-moltype-qualifier/</a>. 
 </pre>
 
 -----
@@ -3566,24 +3566,24 @@ Examples        /organelle="chromatophore"
                 /organelle="plastid:leucoplast"
                 /organelle="plastid:proplastid"
 Comments        modifier text limited to values from controlled list
-                Please also visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-organelle-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-organelle-qualifier/</a>
+                Please also visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-organelle-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-organelle-qualifier/</a>. 
 </code></pre>
 
 -----
 
 <pre id="organism"><strong>Qualifier       /organism=</strong>
-Definition      Definition scientific name or higher-level classification of the 
+Definition      scientific name or higher-level classification of the 
                 organism or agent that provided the sequenced genetic
                 material.
 Value format    "text"
-Example         /organism="Homo sapiens"
+Examples        /organism="Homo sapiens"
                 /organism="Lactobacillaceae bacterium"
                 /organism="West Nile virus"
                 /organism="synthetic construct"
                 /organism="uncultured bacterium"
 Comment         includes names for Prokaryotes, Eukaryotes, Viruses, synthetic 
                 sequences, uncultured samples, and unclassified organisms. 
-                the organism name which appears on the OS or ORGANISM line 
+                The organism name which appears on the OS or ORGANISM line 
                 will match the value of the /organism qualifier of the 
                 source key in the simplest case of a one-source sequence. 
 </pre>
@@ -3686,9 +3686,8 @@ Example         /product="trypsinogen" (when qualifier appears in <a href="#fCDS
 Definition      protein identifier, issued by International collaborators. 
                 this qualifier consists of a stable ID portion (accessioned data
                 before the end of 2018 uses a 3+5 format; from the end of 2018 
-                new accessions may be extended to a 3+7 accession format with 
-                3 position letters and 7 numbers) plus a version number after 
-                the decimal point.
+                new accessions may be extended to a 3+7 accession format with 3 position 
+                letters and 7 numbers) plus a version number after the decimal point.
 Value format    &lt;identifier&gt;
 Example         /protein_id="AAA12345.1"
                 /protein_id="AAA1234567.1"
@@ -3815,14 +3814,14 @@ Comment         TYPE is a term taken from the INSDC controlled vocabulary for re
 
 <pre id="regulatory_class"><strong>Qualifier       /regulatory_class</strong>
 Definition      a structured description of the classification of transcriptional,
-                translational, replicational, recombination and chromatin 
-                structure related regulatory elements in a sequence 
+                translational, replicational, recombination and chromatin structure related 
+                regulatory elements in a sequence 
 Value format    "TYPE"
 Example         /regulatory_class="promoter"
                 /regulatory_class="enhancer"
                 /regulatory_class="ribosome_binding_site"
-Comment         TYPE is a term taken from the INSDC controlled vocabulary for regulatory
-                classes. For a complete list of supported values, please see:
+Comment         TYPE is a term taken from the INSDC controlled vocabulary for regulatory classes.
+                For a complete list of supported values, please see:
                 <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-regulatoryclass/">https://www.insdc.org/submitting-standards/controlled-vocabulary-regulatoryclass/</a>; 
 
                 regulatory classes not yet in the INSDC /regulatory_class controlled
@@ -3871,7 +3870,7 @@ Example         /rpt_type=INVERTED
 Comment         TYPE is a term taken from the INSDC controlled vocabulary for rpt_type.  
                 The values are case-insensitive, i.e. both "INVERTED" and "inverted" 
                 are valid; The most current list of allowed values and their definitions are at:
-                <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/</a>
+                <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-rpttype-qualifier/</a>. 
 </pre>
 
 -----
@@ -3915,7 +3914,7 @@ Example         /satellite="satellite: S1a"
 Comment         many satellites have base composition or other properties
                 that differ from those of the rest of the genome that allows
                 them to be identified.
-                Please also visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-satellite-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-satellite-qualifier/</a>
+                Please also visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-satellite-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-satellite-qualifier/</a>.
 </code></pre>
 
 -----
@@ -4009,7 +4008,7 @@ Comment         the /specimen_voucher qualifier is intended to annotate a
                 institution-codes (and optional collection-codes) taken from a
                 controlled vocabulary maintained by the INSDC that denotes the
                 museum or herbarium collection where the specimen resides;
-                Please also visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-specimenvoucher-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-specimenvoucher-qualifier/</a>
+                Please also visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-specimenvoucher-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-specimenvoucher-qualifier/</a>.
 </code></pre>
 
 -----
@@ -4053,7 +4052,7 @@ Example         /submitter_seqid="NODE_1"
 Comment         The length of the value should be limited to &lt;51 characters. Spaces, greater than (&gt;),
                 left/right square brackets ([ ]) and vertical bar (|) in addition to
                 double quotation marks (") can not be used for the value of /submitter_seqid qualifier.
-                Please also visit: <a href="https://www.insdc.org/submitting-standards/submitterseqid-qualifier-recommendation-document/">https://www.insdc.org/submitting-standards/submitterseqid-qualifier-recommendation-document/</a>
+                Please also visit: <a href="https://www.insdc.org/submitting-standards/submitterseqid-qualifier-recommendation-document/">https://www.insdc.org/submitting-standards/submitterseqid-qualifier-recommendation-document/</a>.
 </code></pre>
 
 -----
@@ -4329,7 +4328,7 @@ Scope           /<a href="#mod_base">mod_base</a>
         mcm5u           5-methoxycarbonylmethyluridine
         mo5u            5-methoxyuridine
         ms2i6a          2-methylthio-N6-isopentenyladenosine
-        ms2t6a          N-((9-beta-D-ribofuranosyl-2-methyltiopurin-6-yl)carbamoyl)threonine
+        ms2t6a          N-((9-beta-D-ribofuranosyl-2-methylthiopurin-6-yl)carbamoyl)threonine
         mt6a            N-((9-beta-D-ribofuranosylpurine-6-yl)N-methyl-carbamoyl)threonine
         mv              uridine-5-oxoacetic acid methylester
         o5u             uridine-5-oxyacetic acid (v)
@@ -4455,5 +4454,5 @@ outside of the cycle of the Feature Table document release. See also <a href="ht
 with controlled vocabularies in the Feature Table document.
 From December 2016 a complete list of the genetic codes will also be maintained outside 
 of the cycle of the Feature Table document release at:
-<a href="https://www.insdc.org/submitting-standards/genetic-code-tables/">https://www.insdc.org/submitting-standards/genetic-code-tables/</a>
+<a href="https://www.insdc.org/submitting-standards/genetic-code-tables/">https://www.insdc.org/submitting-standards/genetic-code-tables/</a>.
 </pre>
