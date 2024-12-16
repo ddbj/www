@@ -30,7 +30,7 @@ An accession number with prefix PRJDB will be assigned to your project.
 
 ### 4. Register BioSample {#bs}
 
-Register your samples to [BioSample](/biosample/submission-e.html) by using the [Omics package](/biosample/submission-e.html#Sample-type).
+Register your samples to [BioSample](/biosample/submission-e.html) by using the [Omics package](/biosample/submission-e.html#Sample-type). Please check [sample granurity](/biosample/overview-e.html) before the registration.
 For an organism name of non-living materials, choose an appropriate name from the NCBI Taxonomy [metagenomes](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock).
 - Blank as [blank sample](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=2582415&lvl=3&lin=f&keep=1&srchmode=1&unlock)
 - Food as [food metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=870726&lvl=3&lin=f&keep=1&srchmode=1&unlock)
