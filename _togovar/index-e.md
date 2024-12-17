@@ -1,7 +1,7 @@
 ---
 layout: top
 service_name: TogoVar-repository
-title: TogoVar
+title: TogoVar-repository
 category: togovar
 current_tab: home
 lang: en
