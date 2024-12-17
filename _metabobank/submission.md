@@ -83,7 +83,7 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 ## 更新  {#update}
 
-登録されたデータを更新・削除する場合は [MetaboBank チームに連絡](/contact-ddbj.html)してください。
+登録されたデータを更新・削除する場合は [MetaboBank チームに連絡](https://forms.gle/Ko5NsS2TgnLu38vC6)してください。
 
 ## MD5 チェックサム値 {#md5}
 
