@@ -92,4 +92,4 @@ Submitters are able to generate an access token for journal reviewers after a pr
 
 ## Update  {#update}
 
-After submitting data to GEA, please [contact us](/contact-ddbj-e.html) to update or withdraw your data.
+After submitting data to GEA, please [contact us](https://forms.gle/Bqcrh6PBniA5eRPU6) to update or withdraw your data.

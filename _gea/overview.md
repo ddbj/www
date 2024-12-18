@@ -93,4 +93,4 @@ GEA データベースに非公開 experiment と array design が登録され�
 
 ## 更新  {#update}
 
-GEA に登録されたデータを更新・削除する場合は [GEA チームに連絡](/contact-ddbj.html)してください。
+GEA に登録されたデータを更新・削除する場合は [GEA チームに連絡](https://forms.gle/PzTzxuYiMenc8CCR6)してください。

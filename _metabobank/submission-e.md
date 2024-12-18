@@ -89,7 +89,7 @@ please contact the [MetaboBank team](/contact-ddbj-e.html).
 
 ## Update  {#update}
 
-To update your data, please contact the [MetaboBank team](/contact-ddbj-e.html).
+To update your data, please contact the [MetaboBank team](https://forms.gle/awH9aMrfpsk4NeyK7).
 
 ## MD5 checksum value {#md5}
 
