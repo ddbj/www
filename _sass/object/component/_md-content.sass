@@ -5,6 +5,8 @@ $MARGIN_BOTTOM: 1rem
   line-height: 1.5
   .highlight
     overflow: auto
+  .figure
+    margin-bottom: 1.5rem
   a
     &[href^="http"],&[href^="//"]
       &:after
@@ -26,6 +28,10 @@ $MARGIN_BOTTOM: 1rem
     width: auto
   .w40
     width: 4rem
+  .w60
+    width: 6rem
+  .w80
+    width: 8rem
   .w200
     width: 20rem
   .w250
@@ -97,7 +103,7 @@ $MARGIN_BOTTOM: 1rem
 
   ul
     li
-      padding: .4rem 0
+      padding: .2rem 0
       line-height: 1.6
       margin-left: 2rem
       & .title
@@ -135,11 +141,11 @@ $MARGIN_BOTTOM: 1rem
 
   dl
     line-height: 1.4
-    dt, dd
-      padding: .6rem 0
     dt
+      padding: .6rem 0
       font-weight: bold
     dd
+      padding: 0 0 .6rem 0
       img
         margin-bottom: .2rem
     + dt
@@ -160,7 +166,7 @@ $MARGIN_BOTTOM: 1rem
     text-align: left
     line-height: initial
   caption,figcaption
-    margin-top: .5rem
+    //margin-top: .5rem
   .tablecaption
     margin-bottom: .5rem
     display: block

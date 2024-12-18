@@ -3,38 +3,72 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: DRA Submission
 category: dra
-current_tab: overview
+current_tab: submission
 lang: en
 ---
 
-## Obtain a submission account {#account}
+<div class="attention" markdown="1">
+Submission of research data from human subjects  
+: <span class="red">For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted. Before submitting human data, read the "[Submission of research data from human subjects](/policies-e.html#submission-of-human-data)".</span>
+</div>
 
-Obtain a [D-way submission account](/account-e.html) and
-[register a public key to your account](/account-e.html#public-key) to enable DRA submission.
+## Submission flow {#flow}
+
+* [Create a submission account](/account-e.html)
+* [Create a new submission](#new-submission)
+* [Upload data files](/upload-e.html)
+* [Submit a BioProject](#bioproject)
+* [Submit BioSample(s)](#biosample)
+* [Enter Submission metadata](#submission)
+* [Enter Experiment/Run metadata](#experiment)
+	* [By using the web tool](#metadata)
+	* [By using the excel](#excel)
+* [Data file validation](#validation)
+* [Accession number](#accession)
+
+## Submission status {#status}
+
+Progress of your submission is indicated by its submission status. 
+The DRA team reviews submission whose status is in "submission_validated" or "data_error".
+
+| Status                | Explanation                                                   |
+|---|
+| new                   | Metadata are not submitted.                              |
+| metadata_submitted   | Metadata have been submitted.                                  |
+| data_validating      | Validating data files.                                        |
+| data_error           | An error is detected in data file validation.                    |
+| submission_validated | Metadata and data file are validated.                        |
+| completed             | Accession numbers are issued.                           |
+| confidential          | Data files for distribution are created and the submission is kept private. |
+| public                | Released.                                           |
+| wait_for_release                | Within 30 days until released.                                           |
+| canceled                | Submission is canceled                                           |
+
+## Create a submission account {#account}
+
+Create a [D-way submission account](/account-e.html) and [register a public key to your account](/account-e.html#public-key).
 
 ## Create a new submission  {#new-submission}
 
-Login [D-way](https://ddbj.nig.ac.jp/D-way/) and move to the DRA submission site from the "DRA" menu at the top.
-Create a new submission by [New submission]. At the same time, in the DRA file server (ftp-private.ddbj.nig.ac.jp), the
-corresponding directory is created under the submitter’s home.
-[Upload sequence data files to this directory](/upload-e.html).
+Login [D-way](https://ddbj.nig.ac.jp/D-way/) and move to the DRA submission list page from the top menu.   
 
-<div class="attention">
-* If there is no reply from submitters after three months of initial contact, submissions will be cancelled.  
-* All data in a submission are released at the same time. If you want to release data at different time, please divide a submission.  
-* Maximum numbers of objects per submission are, BioSample:1,000, DRA:2,000 (Runs) and GEA:1,000 (Assays). If you have objects more than these limits, please create multiple submissions with the same BioProject reference.  
+Create a new submission by [New submission]. A submission directory (e.g. test07-0040/) is created under the submitter’s home in the file server (ftp-private.ddbj.nig.ac.jp). [Upload data files to the directory](/upload-e.html).
+
+<div class="attention" markdown="1">
+* If there is no reply for more than three months, your submission will be cancelled.   
+* All data in a submission are released at the same time. If you want to release data at different time, please divide a submission.    
+* Maximum numbers per submission are, BioSample:1,000, DRA:2,000 (Runs) and GEA:1,000 (Assays). If there are objects more than the limits, please create submissions which reference the same BioProject.    
 </div>
 
 {% include image.html url="books/hdra01.jpg" caption="Create a new submission" class="w500" %}
 
-## Upload sequence data  {#upload}
+## Upload data files {#upload}
 
-Upload data files to the corresponding DRA submission directory on the file server.
-Regarding how to upload your data files, please see "[Data upload](/upload.html)".
+Upload data files to the submission directory (e.g. test07-0040/) on the file server. Please see "[Data upload](/upload-e.html)" regarding how to upload your data files.
 
-## Metadata submission {#metadata}
+## Metadata registration {#metadata}
 
-The [DRA metadata](/dra/metadata-e.html) are composed of following objects ([Examples of object organization](/dra/example-e.html)). Reference BioProject and BioSample records registered in the other databases.
+The [DRA metadata](/dra/metadata-e.html) are composed of objects ([Examples of metadata organization](/dra/example-e.html)). External BioProject and BioSample records are referenced from DRA.
 
 * Submission (DRA)
 * BioProject
@@ -43,249 +77,209 @@ The [DRA metadata](/dra/metadata-e.html) are composed of following objects ([Exa
 * Run (DRA)
 * Analysis (DRA, optional)
 
-You may submit the metadata in two ways, one is "Submit metadata by the web tool" and second is "[Submit metadata by the excel](#excel)".
-When it is difficult to submit large-scale metadata (exceeds 100 Runs) by using the web tool, it is recommended to submit the metadata by uploading XMLs generated from the excel.
+Please submit metadata in either of two ways, "Register metadata by using the web tool" or "[Register metadata by using the excel](#excel)". The excel is recommended for a large-scale submission.
 
-How to submit metadata by using the web tool is explained here.
+Metadata submission by using the web tool is explained below.
 
-Move to the submission detail page by clicking the submission ID.
+Move to the submission page from the submission ID link (e.g. test07-0040).
 
 {% include image.html url="books/hdra02.jpg" caption="Move to the submission page" class="w500" %}
 
-Click the [Enter/Update metadata] to run the DRA metadata submission web tool.
+Run the metadata submission tool at [Enter/Update metadata].
 
-{% include image.html url="books/hdra03.jpg" caption="run the DRA metadata creation tool" class="w500" %}
+{% include image.html url="books/hdra03.jpg" caption="Run the metadata submission tool" class="w500" %}
 
-When no file is uploaded to the submission directory, following message is displayed.
-Then [upload data files](/upload-e.html).
+When no file is uploaded, following message is displayed. [Upload data files](/upload-e.html) before submitting metadata.
 
-Enter the content in English.
-Required items are marked with <span class="red">*</span>.
-The entered content is checked when submitters click the [Save] button or before moving to the other tab. When error messages are displayed, please revise the content.
+{% include image.html url="books/hdra-not-uploaded.jpg" caption="The message displayed when no data file is uploaded." class="w300" %}
 
-The web tool supports metadata preparation by tab-delimited text (tsv) files.
-For examples, please see the [Metadata tsv examples sheet](https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc).
+Enter metadata fileds in English. 
+Required items are marked with <span class="red">*</span>. 
+The content is checked every time you click the [Save] or when moving to the other tab. When error messages are displayed, revise the content.
+
+The web tool supports metadata input in the tab-delimited text (tsv) file. Please see the [metadata tsv sheet](https://docs.google.com/spreadsheets/d/1DTdUQ-WWOMjOA2eYQWmFYUB24hJysuwhvHLJoDFX4rc) for examples.
 
 ### Submission {#Submission}
 
-Enter submission information regarding data release and submitters.
+Enter submission information such as data release and submitters. 
 The organization of your account is copied to the Submitting organization (former center name).
 
 <div class="attention">
-Email regarding DRA submissions is sent to addresses entered in the DRA Submission.
-If you change email address registered in your D-way account, you need to update addresses of DRA Submissions to receive emails regarding the submissions.
+Email about the DRA submission is sent to the addresses entered in the DRA Submission. 
+If you change email address registered in your D-way account, you need to update addresses of DRA Submissions to receive emails about the submissions.
 </div>
 
-{% include image.html url="books/hdra-submission01.jpg" caption="Enter metadata in the tool" class="w500" %}
+{% include image.html url="books/hdra-submission01.jpg" caption="Enter submission information" class="w500" %}
 
 ### BioProject {#bioproject}
 
-Select a project registered in the account or newly submit a project from [New submission].
+Select a project registered in your account or submit a new project from [New submission]. 
 To reference a BioProject registered in another account, please [apply cross-reference](https://docs.google.com/forms/d/e/1FAIpQLSevpYmu-Xt5PiFGecuVQ9gdi2QrUmCUErtj4oLDOXnpWiNjhg/viewform).
 
 {% include image.html url="books/hdra-bp01.jpg" caption="Select a registered project or submit a new one" class="w500" %}
 
-Please see "[Project Submission](/bioproject/submission-e.html#metadata)" page for how to submit your project.
-Submitter information is copied to BioProject by that of the DRA submission.
+Please see "[Project Submission](/bioproject/submission-e.html#metadata)" for how to submit a project. 
+The submitters and hold/release of the DRA submission are copied to the project.
 
-After submitting a project, submitted project is selected in the Study tab.
+After submitting a project, the submitted project is selected.
 
-{% include image.html url="books//hdra-bp04.jpg" caption="Submitted project is selected" class="w500" %}
+{% include image.html url="books//hdra-bp04.jpg" caption="The submitted project is selected" class="w500" %}
 
 ### BioSample {#biosample}
 
-Select samples (more than one sample is common in the DRA submission) registered in the account or newly submit samples from [New submission].
-To select a range of samples, first check a checkbox and click next box with pressing the "Shift".
-Filter samples by entering text in the upper box, and click [Select filtered BioSamples] to select all filtered samples.
+Select samples (more than one sample is common in the DRA submission) registered in your account or submit new samples from [New submission]. 
+To select a range of samples, check a checkbox and click next box with pressing "Shift" key. 
+Filter samples by entering text in the upper box, and click [Select filtered BioSamples] to select all filtered samples. 
 To reference BioSamples registered in another account, please [apply cross-reference](https://docs.google.com/forms/d/e/1FAIpQLSevpYmu-Xt5PiFGecuVQ9gdi2QrUmCUErtj4oLDOXnpWiNjhg/viewform).
 
-{% include image.html url="books/hdra-bs01.jpg" caption="Select registered samples or submit new samples" class="w500" %}
+{% include image.html url="books/hdra-bs01.jpg" caption="Select registered samples or submit new ones" class="w500" %}
 
-Please see the "[Sample Submission](/biosample/submission-e.html)" page for how to submit your samples.
+Please see "[Sample Submission](/biosample/submission-e.html)" for how to submit samples.
 
-After submitting BioSamples, submitted BioSamples are selected in the Sample tab.
+After submitting BioSamples, the submitted BioSamples are selected.
 
 {% include image.html url="books/hdra-bs06.jpg" caption="Submitted BioSamples are selected" class="w500"%}
 
 ### Experiment {#experiment}
 
-Experiment and Run as same as selected BioSamples are automatically created.
-Each BioSample,Experiment and Run are referenced.
-The Experiment and Run are automatically generated when the Experiment tab is initially displayed. Newly selected samples are not reflected after the initial Experiment tab display.
+The same number of Experiment and Run as the BioSamples are created. Each BioSample-Experiment-Run are referenced. 
+The Experiment and Run are automatically generated when the Experiment tab is first displayed.
 
 Auto-generation of Experiments and Runs after selecting three BioSamples.
+
 | BioProject | - BioSample (1) | - Experiment (1) | - Run (1) |
 |            | - BioSample (2) | - Experiment (2) | - Run (2) |
 |            | - BioSample (3) | - Experiment (3) | - Run (3) |
 
-Add an Experiment by clicking [Add new Experiment(s)].
-Delete an Experiment by clicking [Delete].
-Experiment referenced by Run cannot be deleted.
+Add an Experiment by [Add new Experiment(s)]. 
+Delete an Experiment by [Delete]. 
+An Experiment referenced by a Run cannot be deleted.
 
-{% include image.html url="books/hdra-experiment01.jpg" caption="Experiment referencing selected BioSample, is automatically created" class="w500" %}
+{% include image.html url="books/hdra-experiment01.jpg" caption="Experiments reference the BioSamples, are automatically generated" class="w500" %}
 
-Experiments can be submitted in a tab-delimited text file.
-First save and fix Aliases (e.g., test07-0040_Experiment_0001-0003) by clicking [Save].
-Alias is used as a name until accession numbers are issued.
+Experiments can be entered by using a tab-delimited text (tsv) file. 
+First save and fix Aliases (names of objects before accession number assignment, e.g. test07-0040_Experiment_0001-0003) by [Save]. Then download content into a tsv file by [Download TSV file].
 
-Download content into a tab-delimited text file by clicking [Download TSV file].
+{% include image.html url="books/hdra-experiment02.jpg" caption="Save, fix aliases and download as a tsv file" class="w500" %}
 
-{% include image.html url="books/hdra-experiment02.jpg" caption="Save, fix aliases and download as a tab-delimited text file" class="w500" %}
+Enter metadata by using a spreadsheet software such as Excel.
 
-Metadata can be editted in spreadsheet software (e.g. Excel).
+If the "Title" is empty, it is automatically constructed as
+"[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]" (e.g., "Illumina HiSeq 2000 paired end sequencing of SAMD00025741"). It is recommended to provide a user-defined title in "Title".   
+Reference samples in "BioSample Used" by their SAMD accessions (example, SAMD00000001) or "SSUB BioSample Submission ID" : "Sample name" (example, SSUB003746 : Genome bacteria strain A). Spaces around ":" are ignored.
 
-If "Title" values are empty, titles are automatically constructed as
-"[Sequencing Instrument Model] [paired end] sequencing of
-[BioSample ID]" (e.g., "Illumina HiSeq 2000 paired end sequencing of
-SAMD00025741"). It is recommended to provide user-defined text in the "Title".
+{% include image.html url="books/hdra-experiment03.jpg" caption="Experiment tsv file" class="w500" %}
 
-Reference samples in "BioSample Used" by SAMD accessions (example, SAMD00000001) or "SSUB BioSample Submission ID"
-: "Sample name" (example, SSUB003746 : Genome bacteria strain A). Spaces
-around ":" are ignored.
+Save enterted content as a tsv file and select and upload it by [Upload TSV file].
 
-{% include image.html url="books/hdra-experiment03.jpg" caption="Experiment template file" class="w500" %}
-
-Save editted content in a tab-delimited text file and select and upload
-it by clicking the [Upload TSV file].
-
-{% include image.html url="books/hdra-experiment04.jpg" caption="Upload Experiment in a tab-delimited text file" class="w500" %}
-
-<div class="attention">
-Upload in tab-delimited text file and NOT in spreadsheet software specific format (.xlsx).
-</div>
+{% include image.html url="books/hdra-experiment04.jpg" caption="Upload Experiment as a tsv file" class="w500" %}
 
 ### Run {#run}
 
-Experiment and Run as same as selected BioSamples are automatically created. Each Run references unique Experiment.
-
-In this example, three Runs are created and each Run references unique Experiment.
-
-Add Run by clicking [Add another Run(s)].
-Delete Run by clicking [Delete]. Run linked to files cannot be deleted.
+The same number of Runs as Experiments are created, and each Run references each Experiment.  
+In the example, three Runs are created, and each Run references each Experiment.  
+Add a Run by [Add another Run(s)].
+Delete a Run by [Delete]. A Run linked to files cannot be deleted.
 
 {% include image.html url="books/hdra-run01.jpg" caption="Save and fix Aliases" class="w500" %}
 
-After fixing aliases by clicking the [Save], run content can be
-downloaded into a tab-delimited text file. To distinguish the data files
-for Run, enter "Run" in the leftmost "Run/Analysis" column.
+After fixing aliases by [Save], the run content is downloaded into a tsv file. To distinguish the data files, enter "Run" in the leftmost "Run/Analysis" field.
 
-Click [Select data files for Run] and link uploaded files to Run.
+Click [Select data files for Run] and link the uploaded files to Run.
 
-{% include image.html url="books/hdra-run02.jpg" caption="Move to next site to link files to Run" class="w500" %}
+{% include image.html url="books/hdra-run02.jpg" caption="Move to next page to associate files to Run" class="w500" %}
 
-All files uploaded to the submission directory are shown. Associate a
+All files uploaded to the submission directory are displayed. Associate a
 file to a Run by selecting a Run alias in "Run/Analysis contains files".
 
-Enter [File type](/dra/metadata-e.html#File_Type) and [MD5 Checksum](/checksum-e.html) for files.
-File attributes can be entered by uploading a tab-delimited text file.
+Enter [File type](/dra/metadata-e.html#File_Type) and [MD5 Checksum](/checksum-e.html) of the files. 
+File information can be entered by uploading a tsv file.
 
 <div class="attention">
-Paired-end data files must be listed in a single run in order for the two files to be correctly processed as paired-end.
+Paired-end data files must be included in a Run. Paired reads are recognized by their read names. The data files in a Run are merged and converted to a sra/fastq file.
 </div>
 
-{% include image.html url="books/hdra-runfinish.jpg" caption="Enter file attributes and link files to Run" class="w500" %}
+{% include image.html url="books/hdra-runfinish.jpg" caption="Enter file attributes and link files to Runs" class="w500" %}
 
-When an Analysis (optional) is unnecessary, submit metadata by clicking
-the [Submit/Update DRA metadata].
+When an Analysis (optional) is not necessary, submit metadata by [Submit/Update DRA metadata].
 
 {% include image.html url="books/hdra-submit01.jpg" caption="Submit DRA metadata" class="w500" %}
 
-After submitting DRA metadata, start validation of data files.
-Click the link "Validate uploaded data files to finish this submission".
+After submitting the metadata, validate the data files. Click the link "Validate uploaded data files to finish this submission".
 
-{% include image.html url="books/hdra-submit02.jpg" caption="Go to data validation after submitting metadata" class="w500" %}
+{% include image.html url="books/hdra-submit02.jpg" caption="Start data file validation after submitting the metadata" class="w500" %}
 
 ### Analysis (optional)  {#analysis}
 
-You may submit data files related to the Run sequenicng data which do not have dedicated databases to Analysis. Analysis data are not shared with NCBI and EBI.
-Please check databases to be submitted in the "[Submission Navigation](/submission-navigation.html)" and "[Databases and Data Submission Systems](/submission-e.html)".
+You may submit data files derived from raw reads to Analysis when there is no appropriate database to submit the derived data. Please note that Analysis is not shared with NCBI and EBI.  
+Please check appropriate databases in "[Submission Navigation](/submission-navigation.html)" and "[Databases and Data Submission Systems](/submission-e.html)".
 
-Create Analysis as many as required, enter content of each Analysis.
-Unnecessary Analysis can be deleted by clicking [Delete].
+Create Analyses and enter their content. Unnecessary Analysis can be deleted by [Delete].
 
 Click [Select data files for Analysis] and link files to Analysis.
 
 {% include image.html url="books/hdra-analysis01.jpg" caption="Enter Analysis content" class="w500" %}
 
-Enter file attributes and associate them with Analysis. When submitting
-the file attributes by uploading the tab-delimited text file, to
-distinguish the data files for Analysis, enter "Analysis" in the
-leftmost "Run/Analysis" column.
+Enter file attributes and associate them with Analysis. When entering
+file attributes by uploading a tsv file, enter "Analysis" in the leftmost "Run/Analysis" field to mark the files for Analysis.
 
-{% include image.html url="books/hdra-analysisfile01.jpg" caption="Enter file attributes and link files to Analysis" class="w500" %}
+{% include image.html url="books/hdra-analysisfile01.jpg" caption="Enter file attributes and associate the files to Analysis" class="w500" %}
 
-Submit DRA metadata by clicking [Submit/Update DRA metadata] and
-proceed to data validation process. Only MD5 of analysis files are checked during validation.
+Submit DRA metadata by [Submit/Update DRA metadata] and
+proceed to data validation process. Only MD5 of analysis files are checked during the data file validation.
 
 <div class="attention">
-For large number of analysis, please submit them by using [Analysis metadata excel](/dra/analysis-e.html).
+Please use the [Analysis metadata excel](/dra/analysis-e.html) for large-scale submissions.
 </div>
 
 ### Excel-based submission {#excel}
 
-Sometimes it is difficult to submit large-scale metadata (exceeds 100 Runs) by using the web tool whose response is too slow,
-please submit the metadata by the excel.
-
-Before filling in the metadata excel, you need to finish followings.
+Compared to the web tool, you can register metadata by once uploading XML files and can avoid web page transitions.  
+Before filling in the excel, you need to finish the followings.
 
 * [BioProject submission](#bioproject)
 * [BioSample submission](#biosample)
 * [Create a new DRA submission](#new-submission)
-* [Upload sequencing data files](#upload)
+* [Upload data files](#upload)
 
-Download the [DRA metadata excel](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx) and describe your metadata.
-[Example excel](https://github.com/ddbj/submission-excel2xml/raw/main/example/example-0001_dra_metadata.xlsx)
+Download the [DRA metadata excel](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx) and describe your metadata.  
+Next, generate XML files by command lines as follows.   
 
-Next, "upload XMLs generated from the excel" or "send the excel to the DRA team by email attachment".
+Send the excel with the DRA submission ID by an [email attachment](mailto:trace@ddbj.nig.ac.jp) if you are not familiar with command line operations. We generate XMLs and register them instead of you. Please check the metadata and proceed to the [data file validation step](#validation-data-files).   
 
-Please upload XMLs if you are familiar with command lines.
+Generate Submission, Experiment and Run XMLs by using the command line tool according to [GitHub](https://github.com/ddbj/submission-excel2xml).  
 
-You can submit metadata by uploading XMLs in the D-way submission page by using [the metadata excel](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx) and container images.
-Generate metadata XMLs according to the [GitHub](https://github.com/ddbj/submission-excel2xml) page.
+To add XML elements not covered by the web tool nor the excel such as technical reads, please refer to [metadata XML examples](/dra/example-xml-e.html).
 
-To add XML elements not covered by the web tool nor the excel such as technical reads, please refer to the [metadata XML examples](/dra/example-xml-e.html).
-
-Login [D-way](https://ddbj.nig.ac.jp/D-way) and move to the DRA submission page.
+Login [D-way](https://ddbj.nig.ac.jp/D-way) and move to the DRA submission page. 
 Following is an example of uploading the Submission/Experiment/Run XMLs to the DRA submission "test07-0040".
 
-<a href="/assets/images/books/hdra-xmlupload.jpg" title="Upload metadata XMLs" class="group1"><img src="/assets/images/books/hdra-xmlupload.jpg" alt="Upload metadata XMLs" title="Upload metadata XMLs" class="w500"></a>
+{% include image.html url="books/hdra-xmlupload.jpg" caption="Upload XML files" class="w500" %}
 
-Send us the excel by email attachment if you are not familir with command lines.
+## Data file validation {#validation}
 
-Send your metadata excel with DRA submission ID by the [email attachment](mailto:trace@ddbj.nig.ac.jp).
-DRA curator generates XMLs and upload them instead of you.
-After uploading the XMLs, the curator send backs the metadata in a table file.
-Please check the file and proceed to the [data file validation step](#validation-data-files) if the file is correct.
+Checksum, format and content of the data files are validated. 
+In "Data Files", filenames and md5 values of the metadata and the uploaded files are displayed.   
+[Validate data files] is clickable when all files described in the metadata have been uploaded. Uploaded files not described in the metadata are ignored.   
 
-## Validation of data files {#validation}
+Click [Validate data files] and validate the uploaded files.
 
-The MD5 value, file format and content of data files are validated during the validation process.
-In the "Data Files", filenames in the Run and Analysis, MD5 values in the Run and Analysis and those of uploaded files, are displayed.
+{% include image.html url="books/hdra-validate.jpg" caption="Start data file validation" class="w500" %}
 
-Click [Validate data files] and validate uploaded data files.
+### MD5 Check {#md5}
 
-{% include image.html url="books/hdra-validate.jpg" caption="UStart validationo of data files" class="w500" %}
+Matching between the MD5 values in the metadata and those of the uploaded files is checked. Unmatch cause an error. The MD5 value of the file in your local computer are the same with that of the metadata, the file may be corrupted during the file transfer. Please re-upload the file. 
+When the values in the metadata are wrong, revise the metadata at [Enter/Update metadata].
 
-### MD5 Check  {#md5}
+### Data Check {#check}
 
-Consistency between the MD5 values in the metadata and those of uploaded files are checked. Inconsistency in the MD5 values cause errors.
-Calculate the MD5 values of the files at your local computer and compare them to those in the metadata. If the values are same, the file may be corrupted during file transfer, so re-upload the files.
-When the values in the metadata are wrong, revise the values in the metadat by clicking [Enter/Update metadata].
+The file format and content are validated. If there is no errors, the submission status becomes "submission_validated", and the files are moved to a separate directory.   
+The DRA staff reviews the "submission_validated" submission. Please do not touch the submission until the DRA staff contact you.
 
-### Data Check  {#check}
+### Data Error {#data_error}
 
-The format and content of data files are validated.
-If no errors occur, submission status become "submission_validated", and validated files are moved to separate directory.
-
-The DRA staff review submissions with status "submission_validated".
-Please do not touch submissions until the DRA staff contact submitters.
-
-### Response to data_error {#data_error}
-
-Any errors in the validation process make the submission status to "data_error".
-Please see [FAQ: How to deal with validation errors?](/faq/en/data-validation-error) regarding how to response to errors.
-Clicking [Stop validation] button and the status backs to "metadata_submitted".
-Then revise metadata and/or re-upload data files and start validation again by clicking [Validate data files].
+An error in the data file validation make the submission status "data_error". 
+Please see [FAQ: How to deal with validation errors?](/faq/en/data-validation-error) regarding how to fix errors. [Stop validation] makes the submission back to "metadata_submitted". Then revise the metadata and/or re-upload the files and start the data file validation again by [Validate data files].
 
 {% include image.html url="books/hdra-error.jpg" caption="Stop validation" class="w500" %}
 
@@ -293,7 +287,34 @@ Then revise metadata and/or re-upload data files and start validation again by c
 
 ## Accession numbers  {#accession-numbers}
 
-When the metadata and sequence data are successfully registered,
-[accession numbers](/dra/overview-e.html#accession-numbers) with the prefix DR are assigned.
-Accession numbers are displayed in the "Component" and the status becomes "completed".
+When the metadata and the data files are complete, accession numbers are assigned to the metadata objects and informed to the submitter by email. The accession numbers are also displayed in the submission page.  
+
+* Experiment (prefix DRX)
+* Run (prefix DRR)
+* Analysis (prefix DRZ)
+
+Regarding how to cite the accession numbers, see "[FAQ: Which accession numbers should be cited in publication?](/faq/en/cite-accession-e.html)".
+
+## Data release {#data-release}
+
+The DRA submission is released according to our [data release policy](/policies-e.html#data-release). 
+Please see "FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release-e.html)" regarding how linked data are released.  
+After the release, the files are distributed at [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/), the metadata are indexed by [DDBJ Search](https://ddbj.nig.ac.jp/search) and the data are mirrored by [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra/) and [EBI SRA](https://ebi.ac.uk/ena) in a few days.
+
+<div class="attention">
+All data in a submission are released at the same time. If you want to release data at different time, please divide a submission.
+</div>
+
+## Access to registered files {#fastq-sra-files}
+
+To allow the submitter to access and check the archived fastq/sra files, these files are copied to the directories of the submitter's area of the file server (ftp-private.ddbj.nig.ac.jp). To save the disk space, the copied files will be deleted in one month.
+
+- /report/dra/(DRA submission accession)/fastq/
+- /report/dra/(DRA submission accession)/sra/
+
+Example: /report/dra/DRA000001/fastq/DRR000001.fastq.bz2
+
+## Update {#update}
+
+To change hold date, update metadata and add/delete data, please see [DRA Update](/dra/update-e.html).
 

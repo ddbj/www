@@ -3,7 +3,7 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: メタデータの例
 category: dra
-current_tab: overview
+current_tab: submission
 lang: ja
 ---
 

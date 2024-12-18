@@ -7,16 +7,15 @@ current_tab: home
 panels:
 - title: 検索
   url: https://ddbj.nig.ac.jp/search
-  icon: ../assets/images/icon/services.png	
-- title: ハンドブック
+  icon: /assets/images/icon/services.png	
+- title: 登録方法
   url: /dra/submission.html
-  icon: ../assets/images/icon/howto.png
-- title: ログイン / 登録
+  icon: /assets/images/icon/howto.png
+- title: ログイン/登録
   url: https://ddbj.nig.ac.jp/D-way/
-  icon: ../assets/images/icon/submit.png	
+  icon: /assets/images/icon/submit.png	
 lang: ja
 ---
 
-[DDBJ Sequence Read Archive (DRA)](index.html) は科学研究の再現性担保、及び、データ解析による新たな発見を支えるために生シークエンスデータとアライメント情報をアーカイブしています。
-DRA は [International Nucleotide Sequence Database Collaboration (INSDC)](/about/insdc.html) のメンバーであり， [NCBI Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) と [EBI Sequence
-Read Archive (ERA)](https://www.ebi.ac.uk/ena/) との国際協力のもと，運営されています。
+[DDBJ Sequence Read Archive (DRA)](index.html) は生シークエンスデータとアライメント情報を保存し、研究の再現性担保、及び、データ解析による新しい発見を支えています。  
+DRA は [International Nucleotide Sequence Database Collaboration (INSDC)](/about/insdc.html) を構成しており、[NCBI Sequence Read Archive](https://www.ncbi.nlm.nih.gov/sra/) と [EBI Sequence Read Archive](https://www.ebi.ac.uk/ena/) と共同で運営されています。

@@ -3,54 +3,51 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: メタデータ
 category: dra
-current_tab: overview
+current_tab: submission
 lang: ja
 ---
 
-## オブジェクト  {#objects}
+## オブジェクト {#objects}
 
 メタデータにはシークエンスデータがどのようにして得られたのかが記載されています。
-メタデータは複数のオブジェクトから構成され、各オブジェクトは [XML スキーマ](https://github.com/ddbj/pub/tree/master/docs/dra)で定義され、相互に関連付けられています。
+メタデータは複数のオブジェクトから構成され、各オブジェクトは [XML スキーマ](https://github.com/ddbj/pub/tree/master/docs/dra)で定義され、相互に関連付けられています。[メタデータの例](/dra/example.html)
 
-データモデル図
-{% include image.html url="books/sra_object.png" caption="データモデル図" class="w500" %}
+{% include image.html url="books/sra_object.png" caption="データモデル" class="w500" %}
 
 [Submission](#Submission){: #Submission-obj}
 : 公開予定や登録者といった管理情報を記載し、同時に登録する DRA オブジェクトをまとめる。
 
 [BioProject](#BioProject){: #BioProject-obj}
-: 研究プロジェクト。外部データベース。
+: 研究プロジェクト。外部の [BioProject](/bioproject/index.html) データベース。
 
 [BioSample](#BioSample){: #BioSample-obj}
-: シークエンスデータが得られた生物学的なサンプル。外部データベース。
+: シークエンスデータが得られた生物学的なサンプル。外部の [BioSample](/biosample/index.html) データベース。
 
 [Experiment](#Experiment){: #Experiment-obj}
-: サンプルから構築したライブラリーとシークエンス機種に関する情報を記載。Experiment は１つの BioProject と１つの BioSample を参照します。
-複数の Experiment は１つの BioSample を参照することができます。１つの Experiment が複数の BioSample を参照することはできません。
+: サンプルから構築されたライブラリーとシークエンス機種に関する情報を記載。Experiment は１つの BioProject と１つの BioSample を参照します。
+複数の Experiment は１つの BioSample を参照することができますが、１つの Experiment が複数の BioSample を参照することはできません。
 
 [Run](#Run){: #Run-obj}
 : シークエンス用ライブラリー (Experiment) に由来するデータファイルをまとめます。Experiment を介してデータファイルは特定のサンプルにリンクされます。
-Run に含まれる全てのファイルは１つの SRA/fastq ファイルにマージされ、Run のアクセッション番号がファイル名になります。
-ペアードデータファイルは同じ Run に含め、リードが正しくペアとして処理されるようにします。
+Run に含まれる全てのファイルは１つの sra/fastq ファイルに変換され、Run のアクセッション番号がファイル名になります。
+ペアードデータファイルは同じ Run に含め、リードがペアとして処理されるようにします。
 
 [Analysis](#Analysis){: #Analysis-obj}
-: Run データに関連するデータで、登録先がないデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。
-
-[メタデータの例](/dra/example.html)
+: Run データに関連するデータで登録先がないデータを登録します。Analysis は DDBJ/EBI/NCBI で交換していません。
 
 ## メタデータの項目 {#fields}
 
 必須<span class="red">*</span>
 条件によって必須<span class="conditionally_required">*</span>
 
-## Submission  {#Submission}
+## Submission {#Submission}
 
-### Submitting organization  {#Area_submitting_organization}
+### Submitting organization {#Area_submitting_organization}
 
-アカウントの Organization の値が自動的に引き写されます。
+アカウントの Organization が自動的に引き写されます。
 2023年12月20日に center name は廃止され、組織名の略号管理はなくなりました。
 
-### Hold Until  {#Area_hold-until}
+### Hold Until {#Area_hold-until}
 
 公開方法を指定します。
 
@@ -60,33 +57,33 @@ Run に含まれる全てのファイルは１つの SRA/fastq ファイルに�
 [Immediate Release](#Immediate_Release)<a name="Immediate_Release"></a><span class="conditionally_required">*</span>
 : 即日公開。登録処理が完了次第、データが公開されます。
 
-### Submitter  {#Area_submitter-submission}
+### Submitter {#Area_submitter-submission}
 
 登録者の名前とメールアドレス。責任者 (principal investigator) を含めてください。登録に関する連絡は記入された全てのアドレスに対して行われます。
 登録者情報は公開されません。
 
 <div class="attention">
 DRA 登録に関するメールは Submission に記載されたメールアドレスに対して送信されます。
-D-way アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、DRA Submission のアドレスも変更する必要があります。
+D-way アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるように Submission のアドレスも変更する必要があります。
 </div>
 
 [Name](#Contact_Name)<a name="Contact_Name"></a><span class="red">*</span>
 : 登録者の名前。
 
 [E-mail](#Contact_E-mail)<a name="Contact_E-mail"></a><span class="red">*</span>
-: 登録者の電子メールアドレス。
+: 登録者のメールアドレス。
 
-## BioProject  {#BioProject}
+## BioProject {#BioProject}
 
 [BioProject ID](#DRA_BioProjectID)<a name="DRA_BioProjectID"></a><span class="red">*</span>
-: [BioProject](/bioproject/index.html) に登録済みのプロジェクトから該当するものを１つ選択するか、新規に BioProject を登録します。BioProject の登録方法は [BioProject の登録](/bioproject/submission.html) を参照してください。
+: [BioProject](/bioproject/index.html) に登録済みのプロジェクトから該当するものを１つ選択、もしくは、新たに登録します。BioProject の登録方法は [BioProject の登録](/bioproject/submission.html)を参照してください。
 
-## BioSample  {#BioSample}
+## BioSample {#BioSample}
 
 [BioSample ID](#DRA_BioSampleID)<a name="DRA_BioSampleID"></a><span class="red">*</span>
-: [BioSample](/biosample/index.html) に登録済みのサンプルから該当するものを選択するか、新たにサンプルを登録し BioSample の登録方法は [BioSample の登録](/biosample/submission.html)を参照してください。
+: [BioSample](/biosample/index.html) に登録済みのサンプルから該当するものを選択、もしくは、新たに登録します。BioSample の登録方法は [BioSample の登録](/biosample/submission.html)を参照してください。
 
-## Experiment  {#Experiment}
+## Experiment {#Experiment}
 
 [Alias](#Experiment_Alias)<a name="Experiment_Alias"></a>
 : 自動的に Experiment に付けられる名前。アクセッション番号のないオブジェクトは Alias で参照されます。
@@ -95,7 +92,7 @@ D-way アカウントに登録されているメールアドレスを変更し�
 : Experiment が参照している BioSample を選択します。
 
 [Title](#Experiment_Title)<a name="Experiment_Title"></a><span class="red">*</span>
-: 検索結果で表示される Experiment の短いタイトル。 自動的に "[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]" というタイトル（例 "Illumina HiSeq 2000 paired end sequencing of SAMD00025741"）が構築されます。 独自のタイトルを入力する場合は、Experiment の内容をタブ区切りテキストファイルとしてダウンロードし、Title カラムにユニークなタイトルを入力しアップロードします。
+: 検索結果で表示される Experiment のタイトル。 自動的に "[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]" というタイトル（例 "Illumina HiSeq 2000 paired end sequencing of SAMD00025741"）が構築されます。 独自のタイトルを入力する場合は、Experiment の内容をタブ区切りテキストファイルとしてダウンロードし、Title カラムにタイトルを入力し、アップロードします。
 
 [Library Name](#Library_Name)<a name="Library_Name"></a>
 : ライブラリーの名前。
@@ -193,7 +190,7 @@ D-way アカウントに登録されているメールアドレスを変更し�
 | Other                                   | Library strategy not listed.                                                                                                                                                                                                                                              |
 
 [Library Construction Protocol](#Library_Construction_Protocol)<a name="Library_Construction_Protocol"></a>
-: DNA の断片化 (DNA fragmentation)、アダプター配列などのライゲーション (DNA ligation) や濃縮
+: DNA の断片化、アダプター配列などのライゲーション (DNA ligation) や濃縮
 (DNA enrichment) 方法をフリーテキストで記載します。キットを使用した場合はキットの名前とバージョン (あれば) を含めます (例 Illumina Nextera DNA Library Preparation Kit)。
 
 参考: Alnasir J, Shanahan HP. Investigation into the annotation of protocol sequencing steps in the sequence read archive. Gigascience. 2015 May 9;4:23. doi: 10.1186/s13742-015-0064-7. eCollection 2015. PMID: [25960871](https://www.ncbi.nlm.nih.gov/pubmed/25960871/) (Open Access)
@@ -297,18 +294,18 @@ D-way アカウントに登録されているメールアドレスを変更し�
 [Insert Size](#Insert_Size)<a name="Insert_Size"></a><span class="conditionally_required">*</span>
 : ペアエンドライブラリを構築した際のインサートの平均サイズ。2022年12月に Nominal Length から Insert Size に表示名が変更になりました。
 
-## Run  {#Run}
+## Run {#Run}
 
 [Alias](#Run_Alias)<a name="Run_Alias"></a>
 : 自動的に Run に付けられる名前。アクセッション番号のないオブジェクトは Alias で参照されます。
 
 [Title](#Run_Title)<a name="Run_Title"></a><span class="red">*</span>
-: Run の短いタイトル。ユニークなタイトルを付けます。 検索結果で表示される Run の短いタイトル。 自動的に "[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]" というタイトル（例 "Illumina HiSeq 2000 paired end sequencing of SAMD00025741"）が構築されます。 独自のタイトルを入力する場合は、[Run の内容をタブ区切りテキストファイルとしてダウンロード](/dra/submission.html#run)し、Title カラムにユニークなテキストを入力しアップロードします。
+: Run の短いタイトル。ユニークなタイトルを付けます。 検索結果で表示される Run の短いタイトル。 自動的に "[Sequencing Instrument Model] [paired end] sequencing of [BioSample ID]" というタイトル（例 "Illumina HiSeq 2000 paired end sequencing of SAMD00025741"）が構築されます。 独自のタイトルを入力する場合は、[Run の内容をタブ区切りテキストファイルとしてダウンロード](/dra/submission.html#run)し、Title カラムにユニークなテキストを入力し、アップロードします。
 
 [Experiment Referenced](#Experiment_Referenced)<a name="Experiment_Referenced"></a><span class="red">*</span>
 : Run が属する Experiment を選択します。
 
-### Data files for Run  {#Area_data-files-for-run}
+### Data files for Run {#Area_data-files-for-run}
 
 Run に含めるデータファイルを選択します。
 
@@ -335,7 +332,7 @@ Run に含めるデータファイルを選択します。
 [MD5 Checksum](#MD5_Checksum)<a name="MD5_Checksum"></a><span class="red">*</span>
 : データファイルの MD5 チェックサム値。[MD5 チェックサム値の取得方法](/checksum.html)
 
-## Analysis  {#Analysis}
+## Analysis {#Analysis}
 
 [Alias](#Analysis_Alias)<a name="Analysis_Alias"></a>
 : 自動的に Analysis に付けられる名前。アクセッション番号のないオブジェクトは Alias で参照されます。
@@ -355,7 +352,7 @@ Run に含めるデータファイルを選択します。
 |  Sequence Annotation  |  Per sequence annotation of named attributes and values.<br> Example: Processed sequencing data for submission to dbEST without assembly.<br> Reads have already been submitted to one of the sequence read archives in raw form.<br> The fasta data submitted under this analysis object result from the following treatments, which may serve to filter reads from the raw dataset:<br>     - sequencing adapter removal<br>     - low quality trimming<br>- poly-A tail removal<br>- strand orientation <br>- contaminant removal.  |
 |  Abundance Measurement  |  Identify the tools and processing steps used to produce the abundance measurements (coverage tracks).  |
 
-### Data files for Analysis  {#Area_data-files-for-analysis}
+### Data files for Analysis {#Area_data-files-for-analysis}
 
 Analysis に含めるデータファイルを選択します。
 

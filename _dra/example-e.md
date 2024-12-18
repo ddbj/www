@@ -3,11 +3,11 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: Metadata examples
 category: dra
-current_tab: overview
+current_tab: submission
 lang: en
 ---
 
-## Organization of metadata objects {#organization} 
+## Metadata organization {#organization} 
 
 Submitters can organize metadata objects flexibly.
 

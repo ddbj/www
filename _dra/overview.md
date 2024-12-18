@@ -3,7 +3,7 @@ layout: tabbed_indexed_content
 service_name: Sequence Read Archive
 title: 登録概要
 category: dra
-current_tab: overview
+current_tab: submission
 lang: ja
 ---
 
@@ -17,7 +17,7 @@ lang: ja
 
 * [登録アカウントの取得](/account.html)
 * [新規登録の作成](/dra/submission.html#new-submission)
-* [シークエンスデータファイルのアップロード](/upload.html)
+* [データファイルのアップロード](/upload.html)
 * [BioProject の登録](/dra/submission.html#bioproject)
 * [BioSample の登録](/dra/submission.html#biosample)
 * [Experiment/Run メタデータの登録](/dra/submission.html#experiment)
@@ -27,9 +27,9 @@ lang: ja
 
 ## 登録ステータス {#status}
 
-登録ステータスで進捗状況を把握することができます。"submission_validated" と "data_error" になった登録が DRA チームで査定されます。
+ステータスで進捗状況を把握することができます。"submission_validated" と "data_error" になった登録が DRA チームで査定されます。
 
-| ステータス                 | 状態                            |
+| ステータス                 | 説明                            |
 |---|
 | new                   | メタデータの登録前                     |
 | metadata_submitted   | メタデータが登録された                   |
@@ -37,8 +37,8 @@ lang: ja
 | data_error           | データファイルの検証処理エラー               |
 | submission_validated | メタデータとデータファイルの検証処理を通過         |
 | completed             | アクセッション番号が発行された               |
-| confidential          | 公開用ファイルの作成処理が完了し、非公開に保たれている |
-| public                | 公開された                     |
+| confidential          | 公開用ファイルの作成が完了し、非公開に保たれている |
+| public                | 公開                     |
 | wait_for_release         | 公開まで30日以内  |
 | canceled                | キャンセル           |
 
@@ -49,7 +49,6 @@ lang: ja
 * Experiment (プレフィックス DRX)
 * Run (プレフィックス DRR)
 * Analysis (プレフィックス DRZ)
-* Submission (プレフィックス DRA)
 
 アクセッション番号の引用については「[FAQ: 投稿論文ではどのアクセッション番号を引用するべきでしょうか？](/faq/ja/cite-accession.html)」をご覧ください。
 
@@ -57,7 +56,7 @@ lang: ja
 
 データは[公開原則](/policies.html#data-release)に従って公開されます。
 参照関係にあるデータとの連動公開については、「FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)」を参照してください。  
-公開処理が実施されるとデータが夜間に [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/) に公開され、数日以内に [DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされ、[NCBI SRA](https://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi) と [EBI SRA](https://ebi.ac.uk/ena) にミラーリングされます。
+公開されるとデータが [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/) に公開され、数日以内に [DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされ、[NCBI SRA](https://www.ncbi.nlm.nih.gov/sra/) と [EBI SRA](https://ebi.ac.uk/ena) にミラーリングされます。
 
 <div class="attention">
 オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けてください。
