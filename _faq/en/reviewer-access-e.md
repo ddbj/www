@@ -20,7 +20,7 @@ Reviewer access services are not available in [DRA](/dra/index-e.html), [DDBJ](/
 
 For DDBJ, see ['On the process of submission of a paper to a journal, we have to show the referee our nucleotide sequence submitted as "Hold-Until-Published" status'](/faq/ja/paper-show-referee-e.html).
 
-For DRA, you may send a metadata summary list attached to the accession number notification e-mail. For sequencing data, download [archived fastq files](/dra/overview-e.html#fastq-sra-files) and provide them to reviewers through access-controlled file sharing services or servers.
+For DRA, you may send a metadata summary list attached to the accession number notification e-mail. For sequencing data, download [archived fastq files](/dra/submission-e.html#fastq-sra-files) and provide them to reviewers through access-controlled file sharing services or servers.
 
 For JGA, we can not offer the reviewer access service due to [the policy](https://humandbs.dbcls.jp/faq#faq-20).
 
