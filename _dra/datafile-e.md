@@ -9,42 +9,36 @@ lang: en
 
 <div class="attention" markdown="1">
 - Make sure the file names are constructed only from alphanumeral [A-Z,a-z,0-9], underscores [_], hyphens [-] and dots [.], with no whitespaces, brackets, other punctuations or symbols.
-- Barcoded data files should be demultiplexed prior to submission and a unique BioSample should be created for each barcoded sample; in other words, each BioSample must be linked to one or more unique data files.
-- In case of fastq files, submit paired reads in separate files in a Run. For bam files, paired reads need to be described in single file.
+- Submit paired reads in separate fastq files (forward and reverse) in a Run. In the case of BAM, submit single BAM file which contains paired reads.
 - Upload data files directly under a submission directory. Submitted archive files should NOT contain any directory structure.
-- Binary data formats, including BAM and HDF5 should be submitted without applying any additional compression.
+- Do NOT compress BAM.
 </div>
 
 ## General formats {#general}
 
 ### fastq  {#fastq} 
 
-Run filetype needs to be specified depending on whether read length is constant or not.
-
-Format of fastq, for details, please see [NCBI website](https://www.ncbi.nlm.nih.gov/books/NBK242622/#File_Format_Guide_BK.FASTQ).
+Select "fastq" for the Run filetype.  
+For details of the fastq format, please see [NCBI website](https://www.ncbi.nlm.nih.gov/books/NBK242622/#File_Format_Guide_BK.FASTQ).
 
 - Quality values must be in Phred scale. By default, 33 (!) is used for Phred quality offset. In the case of 64 (@), [update the ascii_offset of Run XML](#create-metadata-in-xml-files) to 'ascii_offset="@"'.
-- In the DRA metadata submission web interface, technical reads (adapters, linkers, barcodes) cannot be described. When submitting fastq including technical reads, please describe technical reads in the Experiment XML according to [Formats of sequencing data files](#formats-sequencing-data-files) [(XML examples)](/ddbj/example-xml-e.html). The Experiment XML submission is not necessary for fastq without technical reads.
-- Paired reads must split and submitted using two Fastq files in a Run. The read names must have a suffix identifying the first and second read from the pair, for example '/1' and '/2'.
+- In the DRA metadata submission web interface, technical reads (adapters, linkers, barcodes) cannot be described. If you want to desscribe technical reads, edit and submit the Experiment XML according to [Formats of sequencing data files](#formats-sequencing-data-files) [(XML examples)](/ddbj/example-xml-e.html).
+- Paired reads must split and submitted using two Fastq files in a Run. Paired reads are recognized by standard read names.
 - The first line for each read must start with '@'.
 - The base calls and quality scores must be separated by a line starting with '+'.
-- The Fastq files must be compressed using gzip or bzip2.
+- The Fastq files must be compressed using gzip.
 
 ### BAM {#BAM} 
 
 BAM is a compressed version of the Sequence Alignment/Map (SAM) format (see
 [SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf)). BAM files
-can be decompressed to a human-readable text format (SAM) using
-SAM/BAM-specific utilities (e.g. [samtools](http://www.htslib.org/)) and can contain unaligned sequences as well. DRA recommends to submit BAM including unaligned reads as primary data into Run.
+can be decompressed to a human-readable text format (SAM) using [samtools](http://www.htslib.org/)). We recommend to submit BAM including unaligned reads as primary data.
 
 SAM is a tab-delimited format including both the raw read data and
 information about the alignment of that read to a known reference
 sequence(s). There are two main sections in a SAM file, the header and
-the alignment (sequence read) sections, each of which are described
-below. Note that this documentation will focus on a description of the
-SAM format with respect to submission of BAM files to the DRA (i.e. DRA
-doe not accept SAM files for submission). A more comprehensive
-discussion of the format specifications can be found at the [samtools website](http://www.htslib.org/).
+the alignment sections, each of which are described
+below. Here the SAM format is explained with respect to submission of BAM files to DRA. A more comprehensive discussion of the format specifications can be found at the [samtools website](http://www.htslib.org/).
 
 SAM Header Example:
 
