@@ -9,29 +9,27 @@ lang: ja
 
 <div class="attention" markdown="1">
 - ファイル名は英数字 [A-Z,a-z,0-9]、アンダースコア [_]、ハイフン [-] とドット [.] のみから構成され、空白文字、カッコ、句読点やシンボルを含まないこと。
-- バーコード配列で由来サンプルが区別されたデータファイルは登録前に分割し、由来サンプルごとに BioSample を作成します。各 BioSample には１つかそれ以上のユニークなデータファイルがリンクされている状態にします。
-- fastq ファイルの場合、ペアリードは別々のファイルとして一つの Run に登録します。bam ファイルの場合、分割する必要はありません。
+- ペアリードの fastq は forward と reverse を別々のファイルにして、一つの Run に登録します。BAM ファイルは分割する必要はありません。
 - データファイルは登録用ディレクトリの直下にアップロードしてください。
 - サブディレクトリは作成しないでください。
 - tar などでアーカイブしないでください。
-- BAM や HDF5 などのバイナリーファイルは圧縮しないでください。
+- BAM ファイルは圧縮しないでください。
 </div>
 
 ## 一般的な形式 {#general}
 
 ### fastq  {#fastq} 
 
-Run の filetype はリード長が一定かどうかに関わらず fastq を選択します。
-
+Run の filetype は fastq を選択します。  
 fastq の形式。詳しくは [NCBI のサイト](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/#fastq-files)をご覧ください。
 
 - Quality value は phred 形式にしてください。オフセットはデフォルトで 33 (!) になります。64 (@) の場合は [Run XML を編集](#create-metadata-in-xml-files)して ascii_offset="@" にしてください。
-- DRA のメタデータ作成インターフェースは Technical read (アダプター、リンカー、バーコード配列)
-記載に対応していないため、Technical read を含める場合は technical read が記載された [Experiment XML を登録](/dra/submission.html#upload-xml)してください ([XML の記載例](/ddbj/example-xml.html))。Technical reads が除去されている場合、XML 登録は必要ありません。
-- ペアードリードは別々の fastq ファイルとして一つの Run に登録してください。リード名にペアリードを同定するためのサフィックス (例 '/1' と '/2') が含まれている必要があります。
-- 各リードの最初の行は '@' で始まっている必要があります。
-- ベースコールと Quality value は '+' で始まる行で区切られている必要があります。
-- fastq ファイルは gzip もしくは bzip2 で圧縮してください。
+- DRA のメタデータ作成ウェブ画面は Technical read (アダプター、リンカー、バーコード配列)
+記載に対応していません。記載する場合は [Experiment XML を編集・登録](/dra/submission.html#upload-xml)してください ([XML の記載例](/ddbj/example-xml.html))。
+- ペアードリードは別々の fastq ファイルとして一つの Run に登録してください。ペアは標準形式のリード名から判定されます。
+- リードの先頭は '@' で始まっている必要があります。
+- 塩基配列と Quality value は '+' で始まる行で区切られている必要があります。
+- fastq ファイルは gzip で圧縮してください。
 
 ### BAM {#bam} 
 
@@ -39,12 +37,12 @@ BAM は [Sequence Alignment/Map (SAM)](http://www.htslib.org/) ファイル形�
 BAM ファイルは [samtools](http://www.htslib.org/) でテキスト形式である SAM に変換することができます。
 
 <div class="attention" markdown="1">
-DRA はプライマリーデータとして unaligned read (アライメントされなかったリード) を含む BAM を登録することを強く推奨しています。
+プライマリーデータとして unaligned read (アライメントされなかったリード) を含む BAM を登録することを推奨します。
 </div>
 
 SAM はリードの既知リファレンス配列へのアライメントに関する情報と生リードデータを含んだタブ区切りテキストファイルです。
-SAM ファイルは二つの主要なセクション、ヘッダーとアライメント（シークエンスリード）セクション、から構成されます。
-ここでは「BAM ファイルの DRA への登録」という観点で SAM フォーマットについて説明していることに留意してください（DRA は SAM ファイルでの登録を受付けていません）。
+SAM ファイルは二つの主要なセクション、ヘッダーとアライメントセクション、から構成されます。
+ここでは「BAM ファイルの DRA への登録」という観点で SAM 形式について説明しています。
 より詳細なファイルフォーマット仕様は [samtools](http://www.htslib.org/)を参照してください。
      
 SAM ヘッダーの例:
