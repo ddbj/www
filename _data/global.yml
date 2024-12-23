@@ -1,11 +1,11 @@
 top_news:
  ja:
-    - title: 国際塩基配列データベース「DDBJ」に対するサイバー脅迫に関するご報告
-      path: 2024-10-22
     - title: 生命情報・DDBJ センター年末年始休業のお知らせ
       path: 2024-12-09
+    - title: D-way で公開鍵が登録できない不具合が生じています
+      path: 2024-12-23
  en:
-    - title: On Cyber Threats against DDBJ, a node of the International Nucleotide Sequence Database Collaboration
-      path: 2024-10-22-e
     - title: Suspension of DDBJ Center activity during the New Year Holidays
       path: 2024-12-09-e
+    - title: Unable to register a public key to D-way
+      path: 2024-12-23-e
