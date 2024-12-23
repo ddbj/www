@@ -14,7 +14,7 @@ panels:
 lang: ja
 ---
 
-BioProject は研究プロジェクトとプロジェクトに由来するデータをまとめるためのデータベースです。[INSDC](http://www.insdc.org/) が運営するデータベースに登録されたデータが BioProject アクセッション番号を引用することで、データがプロジェクト単位でグループ化されます。
+BioProject は研究プロジェクトとプロジェクトに由来するデータをまとめるためのデータベースです。データが BioProject アクセッション番号を引用することで、データがプロジェクト単位でまとめられます。
 
 DDBJ BioProject は登録されたプロジェクトに対してプレフィックス 'PRJDB' のアクセッション番号を発行しています。公開されたプロジェクトデータは [EBI](https://www.ebi.ac.uk/) と [NCBI](https://www.ncbi.nlm.nih.gov/bioproject) と共有されます。
 

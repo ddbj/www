@@ -14,6 +14,5 @@ panels:
 lang: en
 ---
 
-The BioProject database represents a higher order organization of research projects and the corresponding data which is deposited into several archival databases maintained by members of [INSDC](http://www.insdc.org/). Data submitted to [INSDC](http://www.insdc.org/)-associated databases cross-reference the BioProject identifier to support navigation between the project and the project’s datasets. The BioProject record has information about a project’s scope, material, objectives, funding source and general relevance categories.
-
-The DDBJ BioProject issues accession numbers with the prefix 'PRJDB' to the submitted projects. Public project data are exchanged with the [EBI](https://www.ebi.ac.uk/) and [NCBI](https://www.ncbi.nlm.nih.gov/bioproject).
+BioProject is a database of research projects and organizes data derived from a project. By cross-referencing a BioProject accession number, data are grouped by a project.  
+The DDBJ BioProject issues accession numbers with the prefix 'PRJDB' to submitted projects. Public project data are exchanged with [EBI](https://www.ebi.ac.uk/) and [NCBI](https://www.ncbi.nlm.nih.gov/bioproject).
