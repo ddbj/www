@@ -51,8 +51,6 @@ bioproject:
       title: Submission
       url: /bioproject/submission.html
       children:
-        - title: Overview
-          url: /bioproject/overview.html
         - title: Project Information
           url: /bioproject/project-info.html
     - id: faq
@@ -75,8 +73,6 @@ bioproject:
       title: Submission
       url: /bioproject/submission-e.html
       children:
-        - title: Overview
-          url: /bioproject/overview-e.html
         - title: Project Information
           url: /bioproject/project-info-e.html
     - id: faq

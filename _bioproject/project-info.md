@@ -37,7 +37,7 @@ lang: ja
 
 ### Data Release {#Area_data-release}
 
-"Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[プロジェクトの公開](/bioproject/overview.html#release)をご覧ください。
+"Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[プロジェクトの公開](/bioproject/submission.html#release)をご覧ください。
 
 [Hold](#BioProject_Hold)<a name="BioProject_Hold"></a>  
 : この BioProject アクセッション番号を引用している DDBJ/DRA/GEA/MetaboBank データが公開されたときに同時に公開されます。
