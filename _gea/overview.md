@@ -13,84 +13,76 @@ lang: ja
     センターが運営するデータベースに登録する場合、研究対象者の尊厳及び人権は、適用されるべき法令、指針、ガイドライン、登録者が所属している機関の方針に従い、登録者の責任において保護されている必要があります。原則として、研究対象者を直接特定し得る情報はメタデータから取り除いてください。 ヒトを対象とした研究データを登録する場合は「[ヒトを対象とした研究データの登録について](/policies.html#submission-of-human-data)」を熟読してください。
 </div>
 
-## 概要  {#over}
+GEA はマイクロアレイや次世代シークエンサから出力される機能ゲノミクスデータを受け付けています。データの登録先については[登録ナビゲーション](/submission-navigation.html)を参照してください。
 
-GEA はマイクロアレイや次世代シークエンサから出力される機能ゲノミクスデータを受け付けています。主要な experiment type としては transcription profiling (mRNA と miRNA)、chromatin immunoprecipitation (ChIP) と SNP genotyping が挙げられます。GEA における experiment type の[全リスト](/gea/experiment-types.html)。
-
-マイクロアレイとシークエンシング実験の submission はそれぞれ [MIAME](http://fged.org/projects/miame/) と [MINSEQE](http://fged.org/projects/minseqe/) ガイドラインに準拠する必要があります。
-
-<table>
-<tr>
-<th>GEA が受付けているデータ</th>
-<th>GEA が受付けていないデータ</th>
-</tr>
-<tbody>
-<td>
-<p>定量的な遺伝子発現、遺伝子発現制御、エピジェネティクス解析や SNP genotyping 等の機能ゲノミクス研究から得られたデータ。</p>
-<p>例:</p>
-<ul>
-<li>mRNA プロファイリング、RNA-seq</li>
-<li>small RNA プロファイリング、miRNA-seq</li>
-<li>ChIP-Seq</li>
-<li>HiC-seq</li>
-<li>methyl-seq、bisulfite-seq</li>
-<li>SNP マイクロアレイ genotyping</li>
-</ul>
-<p>データが GEA に登録可能かどうか不明な場合は<a href="/contact-ddbj.html">お問い合わせください</a>。</p>
-</td>
-<td>
-<ul>
-<li>アクセス制限が必要なヒトデータ (<a href="/jga/index.html">JGA</a> に登録してください)</li>
-<li>アセンブルされた転写産物 (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/tsa.html">DDBJ Transcriptome Shotgun Assembly</a> に登録してください)</li>
-<li>全ゲノムシークエンス (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/wgs.html">DDBJ WGS</a> に登録してください)</li>
-<li>メタゲノムシークエンス (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/environmental.html">DDBJ Environmental sequence</a> に登録してください)</li>
-<li>リシークエンス、塩基配列変異やコピー数変異 (<a href="/dra/submission.html">DRA</a> と <a href="https://www.ncbi.nlm.nih.gov/snp/docs/submission/hts_launch_and_introductory_material/">NCBI (human-only)</a> もしくは <a href="https://www.ebi.ac.uk/eva/">EBI variation resource</a> に登録してください)</li>
-<li>survey シークエンスやエキソームシークエンス (<a href="/dra/submission.html">DRA</a> に登録してください)</li>
-<li>メタボロミクスやプロテオミクスデータ (プロテオミクスデータは <a href="https://jpostdb.org/">jPOST</a> に登録してください)</li>
-</ul>
-<p>これらのデータの登録先については <a href="/services/index.html">DDBJ ウェブサイト</a>を参照してください。</p>
-</td>
-</tbody>
+<table class="gea">
+   <tr>
+      <th>GEA が受付けているデータ</th>
+      <th>GEA が受付けていないデータ</th>
+   </tr>
+   <tbody>
+      <td>
+         <p>定量的な遺伝子発現、遺伝子発現制御、エピジェネティクス解析や SNP genotyping 等の機能ゲノミクス研究から得られたデータ。<br>例:<br></p>
+         <ul>
+            <li>mRNA プロファイリング、RNA-seq</li>
+            <li>small RNA プロファイリング、miRNA-seq</li>
+            <li>ChIP-Seq</li>
+            <li>HiC-seq</li>
+            <li>methyl-seq、bisulfite-seq</li>
+            <li>SNP マイクロアレイ genotyping</li>
+         </ul>
+         <p>データが GEA に登録可能かどうか不明な場合は<a href="/contact-ddbj.html">お問い合わせください</a>。</p>
+      </td>
+      <td>
+         <ul>
+            <li>アクセス制限が必要なヒトデータ (<a href="/jga/index.html">JGA</a> に登録してください)</li>
+            <li>アセンブルされた転写産物 (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/tsa.html">DDBJ TSA</a> に登録してください)</li>
+            <li>全ゲノムシークエンス (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/wgs.html">DDBJ WGS</a> に登録してください)</li>
+            <li>メタゲノムシークエンス (<a href="/dra/submission.html">DRA</a> と <a href="/ddbj/environmental.html">DDBJ ENV</a> に登録してください)</li>
+            <li>リシークエンス、塩基配列変異やコピー数変異 (<a href="/dra/submission.html">DRA</a> とヒトデータは <a href="/togovar/submission.html">TogoVar-repository</a>、ヒト以外のデータは <a href="https://www.ebi.ac.uk/eva/">EBI Variation Archive</a> に登録してください)</li>
+            <li>Survey シークエンスやエキソームシークエンス (<a href="/dra/submission.html">DRA</a> に登録してください)</li>
+            <li>メタボロミクスデータ (<a href="/metabobank/submission.html">MetaboBank</a> に登録してください)</li>
+            <li>プロテオミクスデータ (<a href="https://jpostdb.org/">jPOST</a> に登録してください)</li>
+         </ul>
+      </td>
+   </tbody>
 </table>
+## 登録ファイル {#submission-files}
 
-## 登録ファイル  {#sub-files}
-
-### マイクロアレイ実験  {#arrayxp}
+### マイクロアレイ実験 {#array}
 
 [マイクロアレイ実験の登録](/gea/submit-array.html)
 
-  - [IDF と SDRF メタデータ](/gea/metadata.html)
-  - [生データ](/gea/datafile.html#array_data)
-  - [解析済みデータ](/gea/datafile.html#array-proc)
-  - [（必要であれば）アレイデザインファイル](/gea/adf.html)
+- [IDF と SDRF メタデータ](/gea/metadata.html)
+- [生データ](/gea/datafile.html#array_data)
+- [解析済みデータ](/gea/datafile.html#array-proc)
+- [（必要に応じて）アレイデザインファイル](/gea/adf.html)
 
-### シークエンシング実験  {#seqxp}
+### シークエンシング実験 {#seq}
 
 [シークエンシング実験の登録](/gea/submit-sequence.html)
 
-  - [IDF と SDRF メタデータ](/gea/metadata.html)
-  - [生データ (先行して](/gea/datafile.html#seq_raw) [DRA](/dra/submission.html) に登録しておく必要があります)
-  - [解析済みデータ](/gea/datafile.html#seq_proc)
+- [IDF と SDRF メタデータ](/gea/metadata.html)
+- [生データ (先行して](/gea/datafile.html#seq_raw) [DRA](/dra/submission.html) に登録)
+- [解析済みデータ](/gea/datafile.html#seq_proc)
 
-## アクセッション番号  {#acc}
+## アクセッション番号 {#accession}
 
-GEA の Experiment と Array design に対して以下の形式のアクセッション番号が発行されます (n は整数)。中央の四文字コードについては ArrayExpress [accession codes](https://www.ebi.ac.uk/arrayexpress/help/accession_codes.html) をご覧ください。
+GEA の Experiment と Array design に対してアクセッション番号が発行されます (n は整数)。
 
-  - Experiment: E-GEAD-n
-  - Array design: A-GEAD-n
+- Experiment: E-GEAD-n
+- Array design: A-GEAD-n
 
-十分なメタデータとデータファイルが提供された登録に対してアクセッション番号が発行されます。
-
-## データ公開  {#rel}
+## データ公開 {#release}
 
 関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/documents/data-release-policy.html)に従って公開されます。
 
 FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
-## Reviewer access  {#reviewer-access}
+## Reviewer access {#reviewer-access}
 
-GEA データベースに非公開 experiment と array design が登録された後、登録者は査読者用のアクセストークンを発行することができます。トークンを発行してジャーナルの編集者と査読者に伝える手順については [reviewer accesss](/gea/reviewer-access.html) ページをご覧ください。
+データの登録後、査読者用のアクセストークンを発行することができます。詳しくは [Reviewer accesss](/gea/reviewer-access.html) をご覧ください。
 
-## 更新  {#update}
+## 更新 {#update}
 
-GEA に登録されたデータを更新・削除する場合は [GEA チームに連絡](https://forms.gle/PzTzxuYiMenc8CCR6)してください。
+データを更新・削除は[フォーム](https://forms.gle/PzTzxuYiMenc8CCR6)から GEA チームに依頼してください。
