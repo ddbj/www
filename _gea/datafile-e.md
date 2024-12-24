@@ -7,19 +7,15 @@ current_tab: submission overview
 lang: en
 ---
 
-## Important notes on file preparation:  {#notes}
+## Important notes on file preparation: {#notes}
 
-1.  Submit raw or raw matrix file(s) for every sample/hybridization of
-    your experiment.
-2.  Make sure the file names are constructed only from alphanumerals
-    [A-Z,a-z,0-9], underscores [_], hyphens [-] and dots [.],
-    with no whitespaces, brackets, other punctuations or symbols.
-3.  Any spreadsheet/matrix file should be saved in tab-delimited text
-    (\*.txt) format and not Excel format (\*.xls, \*.xlsx)
+* Submit raw or raw matrix file(s) for every sample/hybridization of your experiment.
+* Make sure the file names are constructed only from alphanumerals [A-Z,a-z,0-9], underscores [_], hyphens [-] and dots [.], with no whitespaces, brackets, other punctuations or symbols.
+* Any spreadsheet/matrix file should be saved in tab-delimited text (.txt) format and not Excel format (.xls, .xlsx)
 
-## Microarray file formats  {#array_data}
+## Microarray file formats {#array_data}
 
-### Raw data file formats  {#ar-raw}
+### Raw data file formats {#ar-raw}
 
 **Per assay raw file (recommended):**
 
@@ -43,30 +39,30 @@ GenomeStudio data files). See [matrix guidelines and
 examples](/gea/matrix-e.html).
 
 
-### Accepted formats by platform  {#ar_raw}
+### Accepted formats by platform {#ar_raw}
 
 The raw data file platform is recognized by using column headings in the
 file's header:
 
-  - Common platforms:
-      - [Affymetrix](#affymetrix)
-      - [Agilent](#agilent)
-      - [Illumina](#illumina)
-      - [GenePix](#genepix)
-      - [NimbleScan](#nimblescan)
-  - Others:
-      - [ScanAlyze](#scanalyze)
-      - [ScanArray](#scanarray-quantarry)
-      - [QuantArray](#scanarray-quantarry)
-      - [Arrayvision](#arrayvision)
-      - [Spotfinder](#spotfinder)
-      - [BlueFuse](#bluefuse)
-      - [UCSF Spot](#ucsfspot)
-      - [Applied Biosystems](#appliedbiosystems)
-      - [CodeLink](#codelink)
-      - [Imagene](#imagene)
-      - [CSIRO Spot](#csirospot)
-      - [Generic (for spotted arrays, non-platform specific)](#generic)
+- Common platforms:
+		- [Affymetrix](#affymetrix)
+		- [Agilent](#agilent)
+		- [Illumina](#illumina)
+		- [GenePix](#genepix)
+		- [NimbleScan](#nimblescan)
+- Others:
+		- [ScanAlyze](#scanalyze)
+		- [ScanArray](#scanarray-quantarry)
+		- [QuantArray](#scanarray-quantarry)
+		- [Arrayvision](#arrayvision)
+		- [Spotfinder](#spotfinder)
+		- [BlueFuse](#bluefuse)
+		- [UCSF Spot](#ucsfspot)
+		- [Applied Biosystems](#appliedbiosystems)
+		- [CodeLink](#codelink)
+		- [Imagene](#imagene)
+		- [CSIRO Spot](#csirospot)
+		- [Generic (for spotted arrays, non-platform specific)](#generic)
 
 
 
@@ -74,15 +70,11 @@ Affymetrix <a name="affymetrix"></a>
 : Our system recognizes .CEL and .EXP files using both the old GDAC
 formats and the newer GCOS/XDA formats.
 
-  
-
-
 Agilent <a name="agilent"></a>  
 : A file containing these headings is recognized as Agilent format
 file:
 
 | Row | Col | PositionX | PositionY |
-
 
 Illumina <a name="illumina"></a>  
 : Illumina raw data files are usually either in plain text or binary
@@ -118,13 +110,11 @@ recognised using the following column headings:
 
 | Block | Column | Row | X | Y |
 
-
 NimbleScan <a name="nimblescan"></a>  
 : NimbleScan files (Feature, Probe and Pair) all contain the following
 headings:
 
 | PROBE_ID | X | Y |
-
 
 ScanAlyze <a name="scanalyze"></a>  
 : The following column headings are recognized as being from a
@@ -212,7 +202,7 @@ with four columns followed by columns of data:
 | MetaColumn | MetaRow | Column | Row |
 
 
-### Processed data files  {#array-proc} 
+### Processed data files {#array-proc} 
 
 Processed files are generated from raw files by procedures such as
 background correction, normalization, and further statistical analyses
@@ -236,7 +226,7 @@ processed files from the following scenarios:
   summarized at the gene level.
 
 
-### Processed text file format  {#array-proc-format}
+### Processed text file format {#array-proc-format}
 
 In the two-dimensional table, you should have probes/genes in rows and
 samples/data in columns:
@@ -300,7 +290,7 @@ samples):
 | **probe_name_2**    | 98.3                   | 36.7                   | 100.52                    |
 
 
-### Additional files  {#seq-additional} 
+### Additional files {#seq-additional} 
 
 A spike-in list for single-cell analysis or supplementary files for data
 analysis can be attached to GEA experiment as "additional files"
@@ -310,20 +300,20 @@ Please [contact GEA team](/contact-ddbj-e.html) to submit additional files.
 
 
 
-## Sequencing data  {#seq_data}
+## Sequencing data {#seq_data}
 
   - [Raw data files](#seq_raw)
   - [Processed data files](#seq_proc)
 
 
-### Raw data files  {#seq_raw} 
+### Raw data files {#seq_raw} 
 
 Sequencing raw data files need to be pre-registered to DDBJ Sequence
 Read Archive (DRA). Please see the [accepted data
 files](/dra/submission.html#run-data-files) for DRA.
 
 
-### Processed data files  {#seq_proc}
+### Processed data files {#seq_proc}
 
 The final processed data are defined as the data on which the
 conclusions in the related manuscript are based. We do not expect
@@ -366,7 +356,7 @@ If you provide WIG, bedGraph, GFF, or GTF files, please refer to the
 [UCSC file format FAQ](http://www.genome.ucsc.edu/FAQ/FAQformat.html)
 for format requirements.
 
-### Processed matrix files (for advanced users)  {#matrix}
+### Processed matrix files (for advanced users) {#matrix}
 
 For submitters who are familiar with MAGE-TAB specification, we also
 accept matrix files in strict MAGE-TAB format, which allows each data
@@ -376,7 +366,7 @@ in the array design file in a human readable way and also
 programmatically. Check out [this guide](/gea/matrix-e.html) on the
 strict matrix format for more information.
 
-### Additional files  {#seq-additional}
+### Additional files {#seq-additional}
 
 A spike-in list for single-cell analysis or supplementary files for data
 analysis can be attached to GEA experiment as "additional files"
