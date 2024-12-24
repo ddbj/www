@@ -1214,7 +1214,7 @@ $(function() {
         var description_ja = entries[6];
    
         rule_html += '<dl>';
-        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '<span class="rule-name">' + name + '</span></dt>';       
+        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '"> ' + level + '</span>' + '<span class="rule-name"> ' + name + '</span></dt>';       
 
         if (la == "ja"){
           rule_html += '<dd><div class="rule-message"><span class="ja rule-message-tag">message:</span> ' + message + '</div>';
@@ -1276,7 +1276,7 @@ $(function() {
         var description_ja = entries[7];
 
         rule_html += '<dl>';
-        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '<span class="rule-exp-type"> Experiment Type:' + experiment_type + '</span>' + '<span class="rule-object"> Object:' + object + '</span>' + '</dt>';        
+        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '"> ' + level + '</span>' + '<span class="rule-exp-type"> Experiment Type:' + experiment_type + '</span>' + '<span class="rule-object"> Object:' + object + '</span>' + '</dt>';        
 
         if (la == "ja"){
           rule_html += '<dd><div class="rule-message"><span class="ja rule-message-tag">message:</span> ' + message + '</div>';
@@ -1337,7 +1337,7 @@ $(function() {
         var description_ja = entries[6];
    
         rule_html += '<dl>';
-        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '<span class="rule-name">' + name + '</span></dt>';       
+        rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '"> ' + level + '</span>' + '<span class="rule-name"> ' + name + '</span></dt>';       
 
         if (la == "ja"){
           rule_html += '<dd><div class="rule-message"><span class="ja rule-message-tag">message:</span> ' + message + '</div>';
@@ -1398,7 +1398,7 @@ $(function() {
 		var description_ja = entries[6];
 
 		rule_html += '<dl>';
-		rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '<span class="rule-object"> Object:' + object + '</span>' + '</dt>';        
+		rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '"> ' + level + '</span>' + '<span class="rule-object"> Object:' + object + '</span>' + '</dt>';        
 
 		if (la == "ja"){
 			rule_html += '<dd><div class="rule-message"><span class="ja rule-message-tag">message:</span> ' + message + '</div>';
@@ -1459,7 +1459,7 @@ $(function() {
 			//var description_ja = entries[6];
 	
 			rule_html += '<dl>';
-			rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '">' + level + '</span>' + '</dt>';
+			rule_html += '<dt id="' + rule_id + '"><a class="rule-id" href="#' + rule_id + '">' + rule_id + '</a><span class="rule-level ' + level + '"> ' + level + '</span>' + '</dt>';
 	
 			if (la == "ja"){
 				rule_html += '<dd><div class="rule-message"><span class="ja rule-message-tag">message:</span> ' + message + '</div>';
