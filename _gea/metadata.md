@@ -7,17 +7,17 @@ current_tab: submission overview
 lang: ja
 ---
 
-## MAGE-TAB  {#mage-tab}
+## MAGE-TAB {#mage-tab}
 
-MicroArray Gene Expression Tabular ([MAGE-TAB](http://fged.org/projects/mage-tab/)) は機能ゲノミクスデータを構造化・標準化された方法で表現するための研究者コミュニティで開発、採用された形式です。MAGE-TAB はデータの収集とアノテーションに加え、ArrayExpress や GEA といったデータベース間でデータを交換する用途にも使えるように設計されています。[MAGE-TAB の仕様書](/assets/files/magetab/MAGE-TABv1.1.pdf)
+MicroArray Gene Expression Tabular ([MAGE-TAB](https://pubmed.ncbi.nlm.nih.gov/17087822/)) は機能ゲノミクスデータを構造化・標準化された方法で記載するためのコミュニティで開発された形式です。[MAGE-TAB の仕様書](/assets/files/magetab/MAGE-TABv1.1.pdf)
 
-{% include image.html url="magetab/magetab_over.jpg" caption="IDF，SDRF，ADFと生データファイル，解析処理されたデータファイル間の関係" class="w450" %}
+{% include image.html url="magetab/magetab_over.jpg" caption="IDF，SDRF，ADFと生データファイル，解析済みデータとの関係" class="w450" %}
 
-## IDF  {#idf}
+## IDF {#idf}
 
 IDF (Investigation Description Format) ファイルは実験デザイン、プロトコール、文献情報や登録者情報といった実験全体を記述するファイルです。[IDF の例](/gea/example-e.html#idf)
 
-## IDF 項目  {#idf_fields}
+## IDF 項目 {#idf_fields}
 
 IDF は項目と対応する値が組み合わされたタブ区切りテキストファイルです。例えば "Experiment Description" には Experiment のフリーテキストでの説明を記載します。一つ以上の値が許容されているフィールド、例えばプロトコール、登録者や experimental factor は一つの IDF ファイルで複数定義することができます（値はタブで区切ります）。一つの値しか持てないフィールドは以下に示してあります。
 
@@ -28,7 +28,7 @@ IDF は項目と対応する値が組み合わされたタブ区切りテキス�
 : 実験のデザイン。[controlled term](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=1804523015) から該当するものを選びます。
 
 Experimental Factor Name<a name="Experimental_Factor_Name"></a>
-: 実験の Experimental factor は実験の変数 (growth condition, genotype, organism part 等) です。Factor の値は SDRF の "Factor Value[\<factor name>]" カラムに記入します。GEA は SDRF の Factor value の名前を IDF にコピーします。
+: 実験の Experimental factor は実験の変数 (growth condition, genotype, organism part 等) です。Factor の値は SDRF の "Factor Value[<factor name>]" カラムに記入します。GEA は SDRF の Factor value の名前を IDF にコピーします。
 
 Experimental Factor Type<a name="Experimental_Factor_Type"></a>
 : Experimental factor の type。GEA では Experimental Factor Name を Experimental Factor Type として使っています。
@@ -61,7 +61,7 @@ Experimental Factor Type<a name="Experimental_Factor_Type"></a>
 : 実験をフリーテキストで記述します。このフィールドは１つの値しか持てません。説明文は「実験で何をしたか」を明確に説明します。この説明文はキュレータがデータをチェックする上で役に立ちます。
 
 Protocol Name<a name="Protocol_Name"></a>
-: プロトコールの名前。プロトコールは SDRF の "Protocol REF" カラムでプロトコールの一時的な ID (例 ESUB000350_Protocol_1) もしくはアクセッション番号 (例 P-GEAD-100) で参照されます。GEA は Experiment を跨ったプロトコールの参照をサポートしていません。
+: プロトコールの名前。プロトコールは SDRF の "Protocol REF" カラムでプロトコールの一時的な ID (例 ESUB000350_Protocol_1) で参照されます。GEA は Experiment を跨ったプロトコールの参照をサポートしていません。
 
 Protocol Type<a name="Protocol_Type"></a>
 : プロトコールの種類。事前に定義されている type は以下になります。Microarray と Sequencing experiment で[必須 protocol セット](https://docs.google.com/spreadsheets/d/1HZs21QDMonbP-vA_5O1R5HiWJjkT8kL3NsVu2GG_kXE/edit#gid=961166619)が異なります。
@@ -86,7 +86,7 @@ Protocol Type<a name="Protocol_Type"></a>
 [SDRF File](#SDRF_File)<a name="SDRF_File"></a>
 : IDF に随伴する SDRF ファイル名。GEA は自動的にファイル名を埋め込みます。
 
-[Comment[\<user-defined tag>]](#Comment_idf)<a name="Comment_idf"></a>
+[Comment[\<user-defined tag\>]](#Comment_idf)<a name="Comment_idf"></a>
 : ユーザもしくはアーカイブが独自に定義するフィールド。GEA は以下の Comment タグを使っています。
 
 - Comment[GEAAccession]
@@ -98,18 +98,18 @@ Protocol Type<a name="Protocol_Type"></a>
 - Comment[Last Update Date]
 - Comment[AdditionalFile:TXT]
 
-## SDRF  {#sdrf}
+## SDRF {#sdrf}
 
-SDRF (Sample and Data Relationship Format) サンプル属性及びサンプル、アレイ、データファイル間の関係性を記述します。SDRF は機能ゲノミクス実験の自然な流れを再現できるように構成されています。SDRF は用いられた大元の Source サンプルから始まり、最後はサンプルから得られたデータファイルで終わります。Single-channel のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。[SDRF の例](/gea/example.html#sdrf_con)
+SDRF (Sample and Data Relationship Format) ではサンプル属性、および、サンプル、アレイ、データファイル間の関係性を記述します。SDRF は実験の自然な流れを再現できるように構成されています。SDRF は用いられた大元の Source サンプルから始まり、最後はサンプルから得られたデータファイルで終わります。Single-channel のマイクロアレイ実験ではSDRF１行が１ハイブリダイゼーションに対応します。Two-channel マイクロアレイでは１行は１チャンネルに対応します。シークエンシング実験では１行は基本的に１生データファイル（Run、ペアードシークエンスを含む）に対応します。[SDRF の例](/gea/example.html#sdrf_con)
 
 {% include image.html url="magetab/sdrf.jpg" caption="SDRF の全体構造" class="w450" %}
 
-## SDRF セクション  {#sdrf_sections}
+## SDRF セクション {#sdrf_sections}
 
 [Protocols](#Protocols_section)<a name="Protocols_section"></a>  
 : 多くの場合実験における「処理（Treatment）」は IDF で定義された [Protocol Name](#Protocol_Name) を参照する [Protocol REF](#Protocol_REF) カラムで表されます。
 
-アクセッション番号が発行される前の段階では IDF で定義されたプロトコールには一時的な ID (例 ESUB000001_Protocol_1) がアサインされ、SDRF からはこの ID で参照されます。アクセッション番号発行後、これらのプロトコールはアクセッション番号 (P-GEAD-n) で参照されます。
+アクセッション番号が発行される前の段階では IDF で定義されたプロトコールには一時的な ID (例 ESUB000001_Protocol_1) がアサインされ、SDRF からはこの ID で参照されます。
 
 |---|
 | [Protocol Name](#Protocol_Name) | ESUB000500_Protocol_1          | ESUB000500_Protocol_2 |
@@ -125,16 +125,12 @@ SDRF は以下のようになります。
 [Sources](#Sources_section)<a name="Sources_section"></a>
 : Source は実験の出発材料です。このセクションは [Source Name](#Source_Name) カラムで始まり、典型的にはいくつかの [Characteristics](#Characteristics) カラムが続きます。
 
-
-<div class="attention" markdown="1">
 GEA の登録システムでは対応する BioSample の sample_name が Source Name、Extract Name、Labeled Extract Name と Assay Name に共通で使用されます。
-</div>
 
 | [Source Name](#Source_Name)                | [Characteristics[organism]](#Characteristics) | [Characteristics[ecotype]](#Characteristics) |
 | Arabidopsis control for heat stress_rep 1 | Arabidopsis thaliana                            | Col-0                                          |
 
 追加で Source Name を注釈するカラム: [Provider](#Provider) と [Comment](#Comment_sdrf).
-
 
 [Extracts](#Extracts_section)<a name="Extracts_section"></a>
 : Extract は実験で抽出された核酸のことです。
@@ -198,7 +194,7 @@ GEA は IDF で変数を "Experimental Factor Name" と Type（通常 Name と�
 | [Experimental Factor Name](#Experimental_Factor_Name) | temperature |
 | [Experimental Factor Type](#Experimental_Factor_Type) | temperature |
 
-## SDRF カラム  {#SDRF_columns}
+## SDRF カラム {#SDRF_columns}
 
 [Source Name](#Source_Name)<a name="Source_Name"></a>
 : MAGE-TAB で identifier として使われます。このカラムには [Source](#Sources_section) material に対してユーザが定義する値 (デフォルトでは対応する BioSample の sample_name が使われます) を記入します。以下のカラムが "Source Name" を注釈するのに使えます。
@@ -297,7 +293,7 @@ All "Assay Name" columns must be followed by a "Technology Type" column.
   - [Comment[]](#Comment_sdrf)
 
 
-[Characteristics[\<category term>]](#Characteristics)<a name="Characteristics"></a>  
+[Characteristics[\<category term\>]](#Characteristics)<a name="Characteristics"></a>  
 : Controlled vocabulary term もしくは測定値を記載します。[Source Name](#Source_Name)、[Sample Name](#Sample_Name)、[Extract Name](#Extract_Name) もしくは [Labeled Extract Name](#Labeled_Extract_Name) の属性カラムとして使われます。ヘッダー中に示されるカテゴリーに従った属性値を記入して material を記述します。例えば "Characteristics[organism]" は　"Homo sapiens"　等の生物名を含みます。デフォルトでは登録者が値を定義しますが、外部オントロジーの値 (例えば organism name に対する [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy))や計測値 (Unit[] カラムで単位を掲示) を記入することもあります。以下のカラムが "Characteristics[<category term>]" カラムを注釈するのに使えます。
 
   - [Term Source REF](#Term_Source_REF)
@@ -335,7 +331,7 @@ All "Assay Name" columns must be followed by a "Technology Type" column.
   - [Term Source REF](#Term_Source_REF)
 
 
-[Factor Value[\<experiment factor name>]](#Factor_Value)<a name="Factor_Value"></a>  
+[Factor Value[\<experiment factor name\>]](#Factor_Value)<a name="Factor_Value"></a>  
 : Controlled vocabulary term もしくは計測値。このカラムでは SDRF の各行の experimental factor values (変数) を記載します。Factor value の変数名をヘッダー中に Experimental Factor Name として定義します。登録システムが提供する SDRF テンプレートでは "Factor Value[enter experiment factor name here]" となっているので "enter experiment factor name here" を上書きして変数名を記入します。
 
 Example SDRF:
@@ -374,7 +370,7 @@ Factor name は組になる IDF で定義します（GEA は SDRF 中の Factor 
 : [Protocol REF](#Protocol_REF) に続く注釈カラムとして使うことができます。プロトコールの実施日（とあれば時間）を "YYYY-MM-DD" 形式で記載します。
 
 
-[Parameter Value[\<protocol parameter>]](#Parameter_Value)<a name="Parameter_Value"></a>   
+[Parameter Value[\<protocol parameter\>]](#Parameter_Value)<a name="Parameter_Value"></a>   
 : [Protocol REF](#Protocol_REF) に続く注釈カラムとして使うことができます。このカラムはカラムヘッダー中に含まれるプロトコールのパラメータを記述するのに使うことができます。以下のカラムが "Parameter Value" カラムを注釈するのに使えます。
 
   - [Unit[]](#Unit)
@@ -388,9 +384,9 @@ Factor name は組になる IDF で定義します（GEA は SDRF 中の Factor 
 | Array Hybridization           | 55                                              | degree celsius                    |
 
 
-[Unit[\<unit category>]](#Unit)<a name="Unit"></a>  
+[Unit[\<unit category\>]](#Unit)<a name="Unit"></a>  
 : Controlled vocabulary term。[Characteristics[]](#Characteristics)、[Factor Value[]](#Factor_Value) もしくは [Parameter
-Value[]](#Parameter_Value) に続く注釈カラムとして使うことができます。このカラムは先行するカラムの単位を示すために使います。単位の種類はカラムヘッダー中に "Unit[volume unit]" のように示します。種類は [EFO](/efo/) の [Unit](http://purl.obolibrary.org/obo/UO_0000000) サブクラスから適切なものを記載します。以下のカラムが "Unit[\<unit category>]" カラムを注釈するのに使えます。
+Value[]](#Parameter_Value) に続く注釈カラムとして使うことができます。このカラムは先行するカラムの単位を示すために使います。単位の種類はカラムヘッダー中に "Unit[volume unit]" のように示します。種類は [EFO](/efo/) の [Unit](http://purl.obolibrary.org/obo/UO_0000000) サブクラスから適切なものを記載します。以下のカラムが "Unit[<unit category>]" カラムを注釈するのに使えます。
 
   - [Term Source REF](#Term_Source_REF)
 
@@ -402,7 +398,7 @@ Value[]](#Parameter_Value) に続く注釈カラムとして使うことがで�
 
 
 [Term Source REF](#Term_Source_REF)<a name="Term_Source_REF"></a>   
-: どのような controlled vocabulary カラム (例 [Characteristics[]](#Characteristics))、もしくは、外部エンティティを参照できるカラム (例 [Protocol REF](#Protocol_REF)) に対しても使うことができます。このカラムは先行するカラム中の値が由来する IDF で定義されたオントロジーやデータベースを参照することができます。以下のカラムが "Term Source REF" カラムを注釈するのに使えます。<span class="red">GEA では ArrayExpress のように登録時点で構造化してオントロジーを適用することはしていません。</span>
+: どのような controlled vocabulary カラム (例 [Characteristics[]](#Characteristics))、もしくは、外部エンティティを参照できるカラム (例 [Protocol REF](#Protocol_REF)) に対しても使うことができます。このカラムは先行するカラム中の値が由来する IDF で定義されたオントロジーやデータベースを参照することができます。以下のカラムが "Term Source REF" カラムを注釈するのに使えます。
 
   - [Term Accession Number](#Term_Accession_Number)
 
@@ -417,5 +413,5 @@ Value[]](#Parameter_Value) に続く注釈カラムとして使うことがで�
 <span class="red">GEA では ArrayExpressのように登録時点で構造化してオントロジーを適用することはしていません。</span>
 
 
-[Comment[\<comment name>]](#Comment_sdrf)<a name="Comment_sdrf"></a>
+[Comment[\<comment name\>]](#Comment_sdrf)<a name="Comment_sdrf"></a>
 : このカラムは node と edge カラムを注釈するために使うことができます。このカラムは拡張性を持たすためにあり、生物学的に意味のある事柄を記載するために用いられることを意図していません。カラムヘッダー中に値の種類に対する名前を記載する必要があります。
