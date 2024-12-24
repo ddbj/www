@@ -13,10 +13,6 @@ lang: ja
 
 GEA は２つのサンプルが１つの生データファイルにリンクしている two-color のみをサポートしています。[Two-color マイクロアレイの例](/gea/example.html#sdrf_example2)。IDF で dual-channel オプションが選択された場合、同時にハイブリダイズした２サンプルに由来する１つのデータファイルが提供されることを想定しています。いくつかの two-color マイクロアレイでは通常それぞれのチャンネルに対応した別々の生データファイルが生成されます。このようなケースでそれぞれのサンプルに１つのファイルをリンクすると検証処理でエラーになります。各チャンネルに対応した別々のファイルを登録する場合は [GEA チームに連絡](/contact-ddbj.html)してください。
 
-### Single-cell sequencing experiment {#single-cell}
-
-[Single-cell submission guide](/gea/single-cell.html) を参照してください。spike-in やデータ解析に必要な追加ファイルを登録する場合は [GEA チームに連絡](/contact-ddbj.html)してください。
-
 ### More than one technology per experiment {#technologies}
 
 GEA ではマイクロアレイとシークエンシングを一つの Submission でまとめて登録することはできないため、Submission を分ける必要があります。一つの Submission で複数のアレイデザインを含めることは可能です。このような場合は [GEA チームに連絡](/contact-ddbj.html)してください。
@@ -95,8 +91,7 @@ D-way アカウントに登録されているメールアドレスを変更し�
 
 [SDRF (Sample and Data Relationship Format)](/gea/metadata.html#sdrf) テンプレートファイルをダウンロードして必要な情報を追加します。[SDRFの例](https://docs.google.com/spreadsheets/d/1y6pwWBUgz2XJ2l_78k56B-1Hnia116JtYrZJunsT38U/edit#gid=657626667)
 
-自動生成される内容
-
+自動生成される内容   
 - 各 Name カラムと Source Name の Attribute カラム: 選択された BioSample の内容から自動生成されます。
 - SDRF 行: 1行1 BioSample で行が自動生成されます。
 - Protocol: IDF で作成されたプロトコールは SDRF の適切な個所にプロトコール ID (例 ESUB000350_Protocol_1) として挿入されます。
