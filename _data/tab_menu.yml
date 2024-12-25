@@ -612,7 +612,7 @@ jga:
       url: /jga/index.html
     - id: browse researches at nbdc
       title: Browse researches at NBDC
-      url: https://humandbs.biosciencedbc.jp/data-use/all-researches
+      url: https://humandbs.dbcls.jp/data-use/all-researches
       children:
         - title: DDBJ Search
           url: https://ddbj.nig.ac.jp/search
@@ -639,7 +639,7 @@ jga:
       url: /jga/index-e.html
     - id: browse researches at nbdc
       title: Browse researches at NBDC
-      url: https://humandbs.biosciencedbc.jp/en/data-use/all-researches
+      url: https://humandbs.dbcls.jp/en/data-use/all-researches
       children:
         - title: DDBJ Search
           url: https://ddbj.nig.ac.jp/search
