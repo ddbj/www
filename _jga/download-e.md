@@ -1,7 +1,7 @@
 ---
 layout: tabbed_indexed_content
 service_name: Japanese Genotype-phenotype Archive
-title: Download steps
+title: How to use data
 category: jga
 current_tab: submission
 lang: en
