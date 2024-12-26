@@ -267,6 +267,12 @@ D-way ウェブサービスでは JGA を利用することができません。
 
 {% include image.html url="books/profile4.jpg" caption="Save で保存" class="w300" %}
 
+認証用公開鍵を登録する場合は [Key] を押下します。D-way アカウントに[公開鍵を登録済み](#register-public-key)の場合、この操作は不要です。
+{% include image.html url="books/profile5.jpg" caption="認証用公開鍵の登録" class="w300" %}
+
+鍵ファイルを選択し [Send] を押下します。
+{% include image.html url="books/profile6.jpg" caption="認証用公開鍵の選択" class="w300" %}
+
 ## パスワードの再設定 {#password-reset}
 
 [D-way](https://ddbj.nig.ac.jp/D-way) ログインページ下部の [Forgot password?\] をクリックします。   

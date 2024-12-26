@@ -249,7 +249,7 @@ Updated account information will be reflected in about 10 minutes. Please login 
 Add the organization and job title information to your account.
 Login the [DBCLS application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) and select the "User information update" at the top right menu. Or directly access [the user profile site](https://profile.ddbj.nig.ac.jp/groupmanager/secure).
 
-{% include image.html url="books/profile1-e.jpg" caption="User information update" class="w400" %}
+{% include image.html url="books/profile1-e.jpg" caption="User information update" class="w200" %}
 
 Click the Edit button to add the information.
 
@@ -269,6 +269,12 @@ Add additional information.
 Save the information by the Save button.
 
 {% include image.html url="books/profile4.jpg" caption="Save the information" class="w300" %}
+
+To register a public key for authentication, press [Key]. If a key has been registered to the D-way account, this resigtration is not necessary.
+{% include image.html url="books/profile5.jpg" caption="Register a public key for authentication" class="w300" %}
+
+Select a public key and press [Send].
+{% include image.html url="books/profile6.jpg" caption="Select a public key" class="w300" %}
 
 ## Password reset {#password-reset}
 
