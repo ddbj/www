@@ -270,10 +270,10 @@ Save the information by the Save button.
 
 {% include image.html url="books/profile4.jpg" caption="Save the information" class="w300" %}
 
-To register a public key for authentication, press [Key]. If a key has been registered to the D-way account, this resigtration is not necessary. If a key has not been registered, "Public key is not registered" is shown under "My Account".
+To register a public key for authentication, press [Key] shown after pressing [Edit]. If a key has been registered to the D-way account, this resigtration is not necessary. If a key has not been registered, "Public key is not registered" is shown under "My Account".
 {% include image.html url="books/profile5.jpg" caption="Register a public key for authentication" class="w300" %}
 
-Select a public key and press [Send].
+Select a public key in the window shown after pressing [Key], and then press [Send].
 {% include image.html url="books/profile6.jpg" caption="Select a public key" class="w300" %}
 
 ## Password reset {#password-reset}

@@ -267,10 +267,10 @@ D-way ウェブサービスでは JGA を利用することができません。
 
 {% include image.html url="books/profile4.jpg" caption="Save で保存" class="w300" %}
 
-認証用公開鍵を登録する場合は [Key] を押下します。D-way アカウントに[公開鍵を登録済み](#register-public-key)の場合、この操作は不要です。未登録の場合は My Account の下に「Public key is not registered」と表示されます。
+認証用公開鍵を登録する場合は、[Edit] 押下後に表示される [Key] から登録します。D-way アカウントに[公開鍵を登録済み](#register-public-key)の場合、この操作は不要です。未登録の場合は My Account の下に「Public key is not registered」と表示されます。
 {% include image.html url="books/profile5.jpg" caption="認証用公開鍵の登録" class="w300" %}
 
-鍵ファイルを選択し [Send] を押下します。
+[Key] 押下後に表示される画面で鍵ファイルを選択して [Send] を押下します。
 {% include image.html url="books/profile6.jpg" caption="認証用公開鍵の選択" class="w300" %}
 
 ## パスワードの再設定 {#password-reset}
