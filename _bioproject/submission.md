@@ -24,7 +24,7 @@ lang: ja
 
 大規模プロジェクトを１つ以上の階層で表すことができます。最上位で共同研究プロジェクト全体を表し、二階層目で各機関が分担しているプロジェクトに対応するアンブレラプロジェクトを作成し、最後の三段目で実験データから参照されるプライマリープロジェクトを作成する、といった構成です。プライマリーとアンブレラプロジェクトは複数のアンブレラプロジェクトを参照することができます。
 
-{% include image.html url="submission/bp_org.jpg" caption="(A) 二階層 (B) 三階層" class="w700" %}
+{% include image.html url="submission/bp_org.jpg" caption="(A) 二階層 (B) 三階層" class="w600" %}
 
 ## プロジェクトが必要な場合  {#project-registration}
 
