@@ -22,7 +22,7 @@ Umbrella project:
 
 ## Hierarchy  {#bioproject-hierarchy}
 
-Some large initiatives are represented by more than one layer of umbrella projects (see Figure B below), for instance, a top-most level may identify the largest definition of the collaboration, a second level of umbrella projects represent sub-projects at participating institutions, and finally a third layer represents the projects that actually generate the data that is submitted. 
+Some large initiatives are represented by more than one layer of umbrella projects (see Figure B below), for instance, a top-most level may identify the largest definition of the collaboration, a second level of umbrella projects represent sub-projects at participating institutions, and finally a third layer represents the projects that actually generate the data that is submitted. Primary and umbrella projects can be associated with more than one umbrella project.
 
 {% include image.html url="submission/bp_org.jpg" caption="Schematic diagram of BioProject hierarchies. (A) Two layers. (B) Three layers." class="w450" %}
 
