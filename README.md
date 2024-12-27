@@ -12,4 +12,4 @@ Before pushing the edited files to ‘master’ branch, you can make the edited 
 
 ## Prohibited acts
 * Do NOT leave the edited files for a long term in ‘development’ branch. 
-* Do NOT directly write a file, who has been edited by other person, against ‘master’ branch.
+* Do NOT upload a file, which has been edited by another person, against ‘master’ branch.
