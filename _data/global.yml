@@ -1,11 +1,7 @@
 top_news:
  ja:
-    - title: 生命情報・DDBJ センター年末年始休業のお知らせ
-      path: 2024-12-09
-    - title: D-way で公開鍵が登録できない不具合が生じています
+    - title: 不具合対応 D-way で公開鍵が登録できない不具合が生じています
       path: 2024-12-23
  en:
-    - title: Suspension of DDBJ Center activity during the New Year Holidays
-      path: 2024-12-09-e
     - title: Unable to register a public key to D-way
       path: 2024-12-23-e
