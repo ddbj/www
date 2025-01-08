@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: Pipeline
+title: Pipeline（サービス終了）
 category: services
 lang: ja
 related_pages:
