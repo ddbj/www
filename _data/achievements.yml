@@ -1,4 +1,30 @@
 items:
+  - date: 2025-01-06
+    year: 2025
+    month: 1
+    day: 6
+    id: 222-ja
+    title: "DDBJ update in 2024: the DDBJ Group Cloud service for sharing pre-publication data"
+    url: https://pubmed.ncbi.nlm.nih.gov/39380489
+    author: Kodama Y, Ara T, Fukuda A, Tokimatsu T, Mashima J, Kosuge T, Tanizawa Y, Tanjo T, Ogasawara O, Fujisawa T, Nakamura Y, Arita M.
+    info: Nucleic Acids Res 2025 Jan 6;53(D1):D45-D48
+    pubmed_id: 39380489
+    keyword: paper
+    lang: ja
+
+  - date: 2025-01-06
+    year: 2025
+    month: 1
+    day: 6
+    id: 214-en
+    title: "DDBJ update in 2024: the DDBJ Group Cloud service for sharing pre-publication data"
+    url: https://pubmed.ncbi.nlm.nih.gov/39380489
+    author: Kodama Y, Ara T, Fukuda A, Tokimatsu T, Mashima J, Kosuge T, Tanizawa Y, Tanjo T, Ogasawara O, Fujisawa T, Nakamura Y, Arita M.
+    info: Nucleic Acids Res 2025 Jan 6;53(D1):D45-D48
+    pubmed_id: 39380489
+    keyword: paper
+    lang: en
+
   - date: 2024-01-06
     year: 2024
     month: 1
