@@ -34,35 +34,35 @@ related_pages:
 
 ## Web サービス  {#web-services}
 
-  - [GIB](#gib) (2012.2. サービス終了）
-  - [GIB-V](#gib-v) (2012.2. サービス終了）
-  - [GTPS](#gtps) (2012.2. サービス終了）
-  - FASTA (2010.3. サービス終了）
-  - [PSI-BLSAT](#psi-blast) (2010.3. サービス終了）
-  - [SSEARCH](#ssearch) (2010.3. サービス終了）
-  - [HMMPFAM](#hmmpfam) (2010.3. サービス終了）
-  - H-Invitational Database CIB-DDBJ Flat File Server(2009.12.31 サービス終了）
-  - SRS(2008.12. サービス終了）
-  - [LIBRA](#libra)(2008.11. サービス終了）
-  - [Lib score](#lib-score)(2008.11. サービス終了）
-  - SQmatch(2008.11. サービス終了）
-  - PDB Retriever(2008.11. サービス終了）
-  - SSThread(2007.2. サービス終了）
-  - CAMUS(2007.02. サービス終了）
-  - S\&W SEARCH(2006.04. サービス終了）
-  - malign(2005.9. サービス終了）
+- [GIB](#gib) (2012.2. サービス終了）
+- [GIB-V](#gib-v) (2012.2. サービス終了）
+- [GTPS](#gtps) (2012.2. サービス終了）
+- FASTA (2010.3. サービス終了）
+- [PSI-BLSAT](#psi-blast) (2010.3. サービス終了）
+- [SSEARCH](#ssearch) (2010.3. サービス終了）
+- [HMMPFAM](#hmmpfam) (2010.3. サービス終了）
+- H-Invitational Database CIB-DDBJ Flat File Server(2009.12.31 サービス終了）
+- SRS(2008.12. サービス終了）
+- [LIBRA](#libra)(2008.11. サービス終了）
+- [Lib score](#lib-score)(2008.11. サービス終了）
+- SQmatch(2008.11. サービス終了）
+- PDB Retriever(2008.11. サービス終了）
+- SSThread(2007.2. サービス終了）
+- CAMUS(2007.02. サービス終了）
+- S\&W SEARCH(2006.04. サービス終了）
+- malign(2005.9. サービス終了）
 
 ## E-mail サーバによる検索解析  {#E-mail}
 
-  - get-entry
-  - get-version
-  - FASTA
-  - BLAST
-  - SSEARCH
-  - S\&WSEARCH
-  - ClustalW
-  - HMMPFAM
-  - malign
+- get-entry
+- get-version
+- FASTA
+- BLAST
+- SSEARCH
+- S\&WSEARCH
+- ClustalW
+- HMMPFAM
+- malign
 
 ## Reference  {#reference}
 
