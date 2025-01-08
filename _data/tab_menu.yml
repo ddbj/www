@@ -62,9 +62,6 @@ bioproject:
       children:
         - title: Downloads
           url: https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/
-    - id: about bioProject
-      title: About BioProject
-      url: /bioproject/about-bioproject.html
   en:
     - id: home
       title: Home
@@ -84,10 +81,6 @@ bioproject:
       children:
         - title: Downloads
           url: https://ddbj.nig.ac.jp/public/ddbj_database/bioproject/
-    - id: about bioProject
-      title: About BioProject
-      url: /bioproject/about-bioproject-e.html
-
 
 biosample:
   ja:
@@ -119,9 +112,6 @@ biosample:
       children:
         - title: Downloads
           url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
-    - id: about biosample
-      title: About BioSample
-      url: /biosample/about-biosample.html
   en:
     - id: home
       title: Home
@@ -151,9 +141,6 @@ biosample:
       children:
         - title: Downloads
           url: https://ddbj.nig.ac.jp/public/ddbj_database/biosample/
-    - id: about biosample
-      title: About BioSample
-      url: /biosample/about-biosample-e.html
 
 
 ddbj:
@@ -382,9 +369,6 @@ dra:
           url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
         - title: SRA
           url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/sralite/ByExp/litesra/
-    - id: about dra
-      title: About DRA
-      url: /dra/about-dra.html
   en:
     - id: home
       title: Home
@@ -417,9 +401,6 @@ dra:
           url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/
         - title: SRA
           url: https://ddbj.nig.ac.jp/public/ddbj_database/dra/sralite/ByExp/litesra/
-    - id: about dra
-      title: About DRA
-      url: /dra/about-dra-e.html
 
 
 dta:
@@ -433,9 +414,6 @@ dta:
     - id: downloads
       title: Downloads
       url: https://ddbj.nig.ac.jp/public/ddbj_database/dta/
-    - id: about dta
-      title: About DTA
-      url: /dta/about-dta.html
   en:
     - id: home
       title: Home
@@ -446,9 +424,6 @@ dta:
     - id: downloads
       title: Downloads
       url: https://ddbj.nig.ac.jp/public/ddbj_database/dta/
-    - id: about dta
-      title: About DTA
-      url: /dta/about-dta-e.html
 
 
 gea:
@@ -490,9 +465,6 @@ gea:
     - id: download
       title: Download
       url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
-    - id: about gea
-      title: About GEA
-      url: /gea/about-gea.html
   en:
     - id: home
       title: Home
@@ -531,9 +503,6 @@ gea:
     - id: download
       title: Download
       url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
-    - id: about gea
-      title: About GEA
-      url: /gea/about-gea-e.html
 
 metabobank:
   ja:
@@ -567,9 +536,6 @@ metabobank:
       children:
         - title: mzB format
           url: /metabobank/mzB.html
-    - id: contact
-      title: Contact
-      url: /metabobank/contact.html
   en:
     - id: home
       title: Home
@@ -601,9 +567,6 @@ metabobank:
       children:
         - title: mzB format
           url: /metabobank/mzB-e.html
-    - id: contact
-      title: Contact
-      url: /metabobank/contact-e.html
 
 jga:
   ja:
@@ -682,9 +645,6 @@ togovar:
     - id: search
       title: Browse variants
       url: https://grch38.togovar.org/
-    - id: about
-      title: About
-      url: /togovar/about-togovar.html
   en:
     - id: home
       title: Home
@@ -705,9 +665,6 @@ togovar:
     - id: search
       title: Browse variants
       url: https://grch38.togovar.org/
-    - id: about
-      title: About
-      url: /togovar/about-togovar-e.html
 
 sc:
   ja:
