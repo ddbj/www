@@ -14,6 +14,7 @@ DDBJ センターからのお知らせと DDBJ サービスに関する更新や
 | [お知らせ一覧](/news/ja)
 
 ## データベース  {#database}
+
 ### Nucleotide Sequence Database
 
 Nucleotide Sequence Database に関する更新や変更のお知らせ。

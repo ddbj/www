@@ -7,21 +7,17 @@ lang: en
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>
 ---
 
-{: #total-data-volume}
-## Proportion of each archive in total data volume
+## Proportion of each archive in total data volume {#total-data-volume}
 
-{: #total-data-volume-sequence}
-### Sequences
+### Sequences {#total-data-volume-sequence}
 
 <div id="prop-seq-chart"></div>
 
 <div id="prop-seq-table"></div>
 
-[Source data
-table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1634110914)
+[Source data table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1634110914)
 
-{: #total-data-volume-base}
-### Bases
+### Bases {#total-data-volume-base}
 
 <div id="prop-base-chart"></div>
 
@@ -29,91 +25,64 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 Note:
 
-[Source data
-table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1634110914)
+[Source data table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1634110914)
 
+## Data category distribution at each archive {#data-category}
 
-
-{: #data-category}
-## Data category distribution at each archive
-
-{: #data-category-sequence}
-### Sequences
+### Sequences {#data-category-sequence}
 
 <div id="chart-div-all-seq"></div>
 
 <div id="table-div-all-seq"></div>
 
-{: #data-category-base}
-### Bases
+### Bases {#data-category-base}
 
 <div id="chart-div-all-base"></div>
 
 <div id="table-div-all-base"></div>
 
-[Source data
-table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1205720210)
+[Source data table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1205720210)
 
+## Proportion of each archive in each data category {#data-category-each-archive}
 
-
-{: #data-category-each-archive}
-## Proportion of each archive in each data category
-
-{: data-category-each-archive-sequence}
-### Sequences
+### Sequences {#data-category-each-archive-sequence}
 
 <div id="chart-prop-category-seq"></div>
 
 <div id="table-prop-category-seq"></div>
 
-{: data-category-each-archive-base}
-### Bases
+### Bases {#data-category-each-archive-base}
 
 <div id="chart-prop-category-base"></div>
 
 <div id="table-prop-category-base"></div>
 
-[Source data
-table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1410841210)
+[Source data table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=1410841210)
 
+## Organism distribution in Taxonomic & ENV divisions at each archive {#organism}
 
-
-{: #organism}
-## Organism distribution in Taxonomic & ENV divisions at each archive
-
-{: organism-sequence}
-### Sequences
+### Sequences {#organism-sequence}
 
 <div id="chart-tax-prop-seq"></div>
 
 <div id="table-tax-prop-seq"></div>
 
-{: organism-base}
-### Bases
+### Bases {#organism-base}
 
 <div id="chart-tax-prop-base"></div>
 
 <div id="table-tax-prop-base"></div>
 
-[Source data
-table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=487423773)
+[Source data table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=487423773)
 
-
-
-{: #organism-ranking}
-## Organism ranking by bases
+## Organism ranking by bases {#organism-ranking}
 
 <div id="table_organism_ranking"></div>
 
-[Source data
-table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=20026687)
+[Source data table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=20026687)
 
-
-
-{: #journal-ranking}
-## Journal ranking by counts in sequence records
+## Journal ranking by counts in sequence records {#journal-ranking}
 
 <div id="table_journal_ranking"></div>
 
-[Source data
-table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=811062981)
+[Source data table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=811062981)

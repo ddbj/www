@@ -6,57 +6,41 @@ category: statistics
 lang: en
 related_pages:
   - title: DDBJ Periodic Release Statistics
-    url: ./ddbj-release-e
+    url: /statistics/ddbj-release-e.html
   - title: Release Notes of DDBJ Releases
-    url: /ddbj-releases-e
+    url: /ddbj-releases-e.html
   - title: Latest Release Information
-    url: /latest-releases-e
+    url: /latest-releases-e.html
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>
 ---
 
-{: #ddbj-release}
-## DDBJ data release
+## DDBJ data release {#ddbj-release}
 
 <div id="ddbj-release-growth-chart"></div>
 
 <div id="ddbj-release-growth-table" class="top_space20"></div>
 <br>
 
-CON and TPA divisions are not included in the release statistics due to the following reasons. CON: CON division records are constructed from other sequence records and their inclusion would be a form of double-counting. TPA: TPA division records are not original data obtained by submitters.
+CON and TPA divisions are not included in the release statistics due to the following reasons. CON: CON division records are constructed from other sequence records and their inclusion would be a form of double-counting. TPA: TPA division records are not original data obtained by submitters.  
+  
+Statistical breakdown is provided at [DDBJ Periodic Release Statistics](/statistics/ddbj-release-e.html).
 
 [Source data
 table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=161698998)
 
-
-
-
-{: #dra-release}
-## DRA data release
+## DRA data release {#dra-release}
 
 <div id="dra-release_stat_area"></div>
+## GEA data release {#gea-release}
 
-
-
-{: #gea-release}
-## GEA data release
-
-<div id="gea-release_stat_area"></div>
-
-
-{: #metabobank-release}
-## MetaboBank data release
+<div id="gea-release_stat_area"></div>## MetaboBank data release {#metabobank-release}
 
 <div id="metabobank-release_stat_area"></div>
 
-{: #jga-release}
-## JGA data release
+## JGA data release {#jga-release}
 
 <div id="jga-release_stat_area"></div>
-
-
-
-{: #ddbj-submission}
-## DDBJ data submission
+## DDBJ data submission {#ddbj-submission}
 
 - Web Submission: [Submission to Nucleotide Sequence Submission System](/ddbj/web-submission-e.html)
 - MSS Submission: [Submission to Mass Submission System](/ddbj/mss-e.html)
@@ -64,34 +48,19 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 <div id="ddbj-submission_stat_area"></div>
 
-
-
-{: #dra-submission}
-## DRA data submission
+## DRA data submission {#dra-submission}
 
 <div id="dra-submission_stat_area"></div>
 
-{: #gea-submission}
-## GEA data submission
+## GEA data submission {#gea-submission}
 
-<div id="gea-submission_stat_area"></div>
+<div id="gea-submission_stat_area"></div>## MetaboBank data submission {#metabobank-submission}
 
-
-{: #metabobank-submission}
-## MetaboBank data submission
-
-<div id="metabobank-submission_stat_area"></div>
-
-
-{: #jga-submission}
-## JGA data submission
+<div id="metabobank-submission_stat_area"></div>## JGA data submission {#jga-submission}
 
 <div id="jga-submission_stat_area"></div>
 
-
-
-{: #web-access}
-## Web access
+## Web access {#web-access}
 
 <div id="web-access_stat_area"></div>
 
@@ -107,11 +76,7 @@ table), MiGAP, DDBJ Pipeline, D-way, BPSearch, BSSearch, SuperComputer
 January 2018) and awstats 7.2 (since February 2018), and all the other
 sites have been analyzed by 7.2. Since October 2018, unique IP addresses
 of the DDBJ website (www.ddbj.nig.ac.jp) and those of search, analysis
-and submission web services have been merged.
-
-
-{: #page-access}
-## Home page access
+and submission web services have been merged.## Home page access {#page-access}
 
 <div id="page-access_stat_area"></div>
 
