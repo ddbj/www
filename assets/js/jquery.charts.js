@@ -1038,7 +1038,7 @@ function makeMBSubmission() {
           0: {
             title: 'Studies',
             textStyle: {fontSize:11},
-            viewWindow: {min:0, max:15}
+            viewWindow: {min:0, max:30}
           },
           1: {   
             title: 'Samples',
@@ -1141,7 +1141,8 @@ function makeJGASubmission() {
         vAxes: {
           0: {
             title: 'Submissions',
-            textStyle: {fontSize:11}
+            textStyle: {fontSize:11},
+            viewWindow: {min:0, max:300}
           },
           1: {   
             title: 'Filesize (TB)',
