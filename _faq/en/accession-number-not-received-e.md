@@ -27,4 +27,4 @@ If you have received the mail,
 
 ### DRA {#dra}
 
-Login D-way and check the status of [your DRA submission](/dra/submission-e.html#new-submission).
+Login D-way and check the status of [your DRA submission](/dra/submission-e.html#status).
