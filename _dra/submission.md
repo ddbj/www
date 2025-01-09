@@ -17,7 +17,7 @@ lang: ja
 
 * [登録アカウントの取得](/account.html)
 * [新規登録の作成](#new-submission)
-* [データファイルのアップロード](/upload.html)
+* [データファイルのアップロード](#upload)
 * [BioProject の登録](#bioproject)
 * [BioSample の登録](#biosample)
 * [Submission の入力](#submission)
