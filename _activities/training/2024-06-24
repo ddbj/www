@@ -1,0 +1,35 @@
+---
+layout: indexed_content
+title: 第43回 DDBJing 講習会 with 藤田医科大学
+start_date: 2024-06-24
+end_date: 2024-07-31
+place: オンライン開催
+keyword: 講習会
+description: 本講習会は，藤田医科大学より依頼を受けて，教職員，学生の方を対象として開催いたしました。
+lang: ja
+category: training
+---
+
+## 第43回 DDBJing 講習会 with 藤田医科大学  <a name="43"></a>
+
+本講習会は，藤田医科大学より依頼を受けて，教職員，学生の方を対象として実習を交えて開催いたしました。
+
+- 日時：2024年6月24日, 7月31日
+- 場所：オンライン開催
+- 参加人数：
+- 内容：
+
+**DDBJ への登録**
+
+1. リポジトリの役割
+1. 登録アカウント作成
+1. NGSデータモデル
+1. BioProjectの登録
+1. BioSampleの登録
+1. DRAの登録
+
+**ヒトゲノム解析**
+1. ヒトゲノムのデータ形式
+1. ヒトゲノムのImputation
+1. HLA領域のimputation
+ 
