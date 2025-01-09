@@ -16,7 +16,7 @@ Submission of research data from human subjects
 
 * [Create a submission account](/account-e.html)
 * [Create a new submission](#new-submission)
-* [Upload data files](#uploadl)
+* [Upload data files](#upload)
 * [Submit a BioProject](#bioproject)
 * [Submit BioSample(s)](#biosample)
 * [Enter Submission metadata](#submission)
