@@ -71,8 +71,10 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 ## ウェブアクセス {#web-access}
 
 <div id="web-access_stat_area"></div>
-
-注釈: Unique users/month は awstats が出力する bot アクセスを除外した月間ユニーク IP 数になります。2018年2月22日から4月13日まで DDBJ ホームページ (www.ddbj.nig.ac.jp) のアクセスログが欠落したため Home pages 及び All の2018年年平均から2018年2～4月の数値は除いてあります。All は2021年10月までは ARSA、BLAST、ClustalW、getentry、TXSearch、DRASearch、www.ddbj.nig.ac.jp home pages（グラフと表に含まれる）、及び、MiGAP、DDBJ Pipeline、D-way、BPSearch、BSSearch、SuperComputer (sc.ddbj.nig.ac.jp) home page（グラフと表では割愛）のログを合算して集計した月間ユニーク IP 数です。2021年11月に BLAST、ClustalW と BP/BS/DRASearch が閉鎖され、DDBJ Search がリリースされたため、2021年11月以降は BLAST、ClustalW と BP/BS/DRASearch が All から除外され、DDBJ Search の数値が加算されています。ホームページは2004年1月から2018年1月までは awstats 7.0、2018年2月からは awstats 7.2、それ以外のサイトは全て 7.2 で解析されています。2018年2月から trace.ddbj.nig.ac.jp アドレスで提供されていた BioProject/BioSample/DRA/GEA/JGA ページが www.ddbj.nig.ac.jp に統合されています。
+<br><br>
+注釈:   
+Unique users/month は awstats が出力する bot アクセスを除外した月間ユニーク IP 数になります。2018年2月22日から4月13日まで DDBJ ホームページ (www.ddbj.nig.ac.jp) のアクセスログが欠落したため Home pages 及び All の2018年年平均から2018年2～4月の数値は除いてあります。All は2021年10月までは ARSA、BLAST、ClustalW、getentry、TXSearch、DRASearch、www.ddbj.nig.ac.jp home pages（グラフと表に含まれる）、及び、MiGAP、DDBJ Pipeline、D-way、BPSearch、BSSearch、SuperComputer (sc.ddbj.nig.ac.jp) home page（グラフと表では割愛）のログを合算して集計した月間ユニーク IP 数です。2021年11月に BLAST、ClustalW と BP/BS/DRASearch が閉鎖され、DDBJ Search がリリースされたため、2021年11月以降は BLAST、ClustalW と BP/BS/DRASearch が All から除外され、DDBJ Search の数値が加算されています。ホームページは2004年1月から2018年1月までは awstats 7.0、2018年2月からは awstats 7.2、それ以外のサイトは全て 7.2 で解析されています。2018年2月から trace.ddbj.nig.ac.jp アドレスで提供されていた BioProject/BioSample/DRA/GEA/JGA ページが www.ddbj.nig.ac.jp に統合されています。   
+2024年12月2日から12月23日まで DDBJ ホームページ (www.ddbj.nig.ac.jp) のアクセスログが欠落したため Home pages 及び All の2024年平均から2024年12月の数値は除いてあります。
 
 ## ホームページアクセス {#page-access}
 

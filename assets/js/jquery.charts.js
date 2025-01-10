@@ -1244,8 +1244,8 @@ function makeWebAccess() {
         // 年毎に配列に格納
         if ( year_month && parseInt(year_month.substring(0, 4), 10) == y ) {
           
-          //ログ欠落期間の 2018-02, 03, 04 を除外
-          if ( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" ) {
+          //ログ欠落期間の 2018-02, 03, 04, 2024-12 を除外
+          if ( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" || year_month == "2024-12" ) {
 
           } else {
             getentry_per_year_h[y].push(getentry_per_month);
@@ -1385,7 +1385,7 @@ function makePageAccess() {
         if ( year_month && parseInt(year_month.substring(0, 4), 10) == y ) {
           
           //ログ欠落期間の 2018-02, 03, 04 を除外
-          if ( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" ) {
+          if ( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" || year_month == "2024-12" ) {
 
           } else {
             unique_users_per_year[y].push(uniqueusersmonth);
