@@ -331,7 +331,7 @@ The necessary and recommended parameters are different for each Submission and P
 |[Column type 1](#Column_type_1)|GCGC-MS|Chromatography|
 |[Column model 2](#Column_model_2)|GCGC-MS|Chromatography|
 |[Column type 2](#Column_type_2)|GCGC-MS|Chromatography|
-|[Detector_Ch](#Detector_Ch)|LC-DAD-MS,GC-FID-MS|Chromatography|
+|[Detector](#Detector_Ch)|LC-DAD-MS,GC-FID-MS|Chromatography|
 |[Signal range](#Signal_range)|LC-DAD-MS|Chromatography|
 |[Resolution](#Resolution)|LC-DAD-MS|Chromatography|
 |[Temperature](#Temperature_Ch)|GC-FID-MS|Chromatography|
