@@ -7,7 +7,7 @@ lang: ja
 <ul class="nav">
   <li><a href="{{ site.baseurl }}/assets/files/pdf/30th/shinbun_all.pdf">「遺伝子バンク30年」第1回 - 第16回（静岡新聞連載記事）</a></li>
   <li><a href="/statistics/ddbj-release.html#total_data">DDBJ Database Release History</a>（DDBJリリースのエントリ数、塩基数の推移）</li>
-  <li><a href="/statistics/index.html">DDBJ ニュースレター アーカイブ</a>（過去のDDBJ発行物アーカイブ）</li>
+  <li><a href="activities/archives.html">DDBJ ニュースレター アーカイブ</a>（過去のDDBJ発行物アーカイブ）</li>
   <li><a href="{{ site.baseurl }}/assets/files/pdf/30th/NIG_and_DDBJ_Symposium.pdf">2017年国立遺伝学研究所 国際シンポジウム／DDBJ ３０周年記念シンポジウム</a></li>
 </ul>
 <ul class="timeline">
@@ -274,6 +274,8 @@ lang: ja
     <p class="year">2007</p>
     <div class="content">
       <p class="ddbj mar">スパコンシステムの新システムへの更新</p>
+      <h3 class="ddbj apr">DDBJ CIB-DDBJ センター長の交代</h3>
+      <p>新センター長に菅原秀明が就任</p>
       <h3 class="ddbj aug">DDBJ フラットファイルの書式変更</h3>
       <p>DDBJ フラットファイルのE-mailアドレス、電話番号、FAX番号の非表示化</p>
       <h3 class="ddbj">DDBJHPのデザイン、ロゴ変更</h3>
@@ -285,6 +287,8 @@ lang: ja
   <li>
     <p class="year">2008</p>
     <div class="content">
+      <h3 class="ddbj apr">DDBJ CIB-DDBJ センター長の交代</h3>
+      <p>新センター長に五條堀孝が就任</p>
       <p class="ddbj">SRAデータの受付、NCBI SRA への仲介登録を試験的に開始</p>
       <h3 class="ddbj">第21回国際実務者会議を三島で開催（5/20 - 22)</h3>
       <p><img src="{{ site.baseurl }}/assets/images/30th/icm2008.jpg" alt="第21回国際実務者会議の写真" p=""></p>
@@ -296,8 +300,6 @@ lang: ja
   <li>
     <p class="year">2009</p>
     <div class="content">
-      <h3 class="ddbj">DDBJ CIB-DDBJ センター長の交代</h3>
-      <p>新センター長に菅原秀明が就任</p>
       <h3 class="ddbj apr">DDBJ CIB-DDBJセンター長の交代</h3>
       <p>新センター長に大久保公策が就任</p>
       <h3 class="ddbj">DDBJ Sequence Read Archive(DRA)，DDBJ Trace Archive(DTA) ウェブサイト開設</h3>
