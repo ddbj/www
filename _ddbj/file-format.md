@@ -73,9 +73,6 @@ atttgaacacacctgctgtggctgtaactctgagatgtgctaaataaaccctctt
 |                   |                                    |                                                                  | ab\_name                           | Mishima,H.                      |
 |                   |                                    |                                                                  | <span class="red">contact</span>   | Hanako Mishima                  |
 |                   |                                    |                                                                  | <span class="red">email</span>     | mishima@ddbj.nig.ac.jp          |
-|                   |                                    |                                                                  | <span class="red">phone</span>     | 81-55-981-6853                  |
-|                   |                                    |                                                                  | fax                                | 81-55-981-6853                  |
-|                   |                                    |                                                                  | phext                              | 3207                            |
 |                   |                                    |                                                                  | <span class="red">institute</span> | National Institute of Genetics  |
 |                   |                                    |                                                                  | department                         | DNA Data Bank of Japan          |
 |                   |                                    |                                                                  | <span class="red">country</span>   | Japan                           |
@@ -191,9 +188,6 @@ clone, submitter\_seqid, note, ff\_definition に使用可能なメタ表記 '@@
 |        |                                    |          | <span class="red">contact</span>   | Hanako Mishima                 |
 |        |                                    |          | <span class="red">email</span>     | mishima@ddbj.nig.ac.jp         |
 |        |                                    |          | url                                | http://www.ddbj.nig.ac.jp      |
-|        |                                    |          | <span class="red">phone</span>     | 81-55-981-6853                 |
-|        |                                    |          | fax                                | 81-55-981-6853                 |
-|        |                                    |          | phext                              | 3207                           |
 |        |                                    |          | <span class="red">institute</span> | National Institute of Genetics |
 |        |                                    |          | department                         | DNA Data Bank of Japan         |
 |        |                                    |          | <span class="red">country</span>   | Japan                          |
@@ -211,7 +205,6 @@ SUBMITTER で使用する Qualifier のリスト
 |  consrtm (コンソーシアム名)  |  英, 数,  [space], -[hyphen], ' [single quote as apostrophe], .[period], _[underscore], .[comma], ( ) # & @ / ; : + *  |  255  |
 |  email   |  英, 数, @, .[period], -[hyphen], _[underscore]   |  64  |
 |  <url></url>  |  [space] 以外  |  255  |
-|  phone, fax, phext  |  数, -[hyphen] (国番号の頭に + はつけない)  |  16  |
 |  institute, department  |  [back-slash], ` [back-quote] 以外  |  255  |
 |  country, state   |  英, 数,  [space], -[hyphen], '[single quote as apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  32  |
 |  city  |  英, 数,  [space], -[hyphen], '[single quote as apostrophe], .[period], _[underscore], ,[comma], ( ) # & @ / ; : + *  |  64  |
