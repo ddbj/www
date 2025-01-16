@@ -1,5 +1,5 @@
 # www, editing policies
-## Rule: record the person who edited the file in the history log of each file.
+## Rule: the name of the person who edited the file must be recorded in the history log.
 
 ## 'master' branch
 * Basically, you should edit files only in ‘master’ branch. The edited files will be reflected from https://www.ddbj.nig.ac.jp every 10 minutes.
