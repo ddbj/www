@@ -427,16 +427,16 @@ The necessary and recommended parameters are different for each Submission and P
 : Type of second GCGC column.
 
 [Parameter Value\[Detector\]](#Detector_Ch)<a name="Detector_Ch"></a>
-: TBD.
+: Type, name and manufacturer of detector used.
 
 [Parameter Value\[Signal range\]](#Signal_range)<a name="Signal_range"></a>
-: TBD.
+: Range of wavelength of detector used. Example, 200 to 650 nm
 
 [Parameter Value\[Resolution\]](#Resolution)<a name="Resolution"></a>
-: TBD.
+: Resolution of column used.
 
 [Parameter Value\[Temperature\]](#Temperature_Ch)<a name="Temperature_Ch"></a>
-: TBD.
+: Temperature of column used.
 
 [Parameter Value\[Scan polarity\]](#Scan_polarity)<a name="Scan_polarity"></a>
 : An acquisition mode to which specifies weather polarity is negative, positive or alternating.
@@ -475,109 +475,109 @@ The necessary and recommended parameters are different for each Submission and P
 : The manufacturer of the mass spectrometry imaging instrument.
 
 [Parameter Value\[Solvent\]](#Solvent_MSI)<a name="Solvent_MSI"></a>
-: TBD.
+: Name of spray solvent used.
 
 [Parameter Value\[Target material\]](#Target_material)<a name="Target_material"></a>
-: TBD.
+: Target material used.
 
 [Parameter Value\[Spatial resolution\]](#Spatial_resolution)<a name="Spatial_resolution"></a>
-: TBD.
+: Spatial resolution. Example, 10 micrometer
 
 [Parameter Value\[Pixel size x\]](#Pixel_size_x)<a name="Pixel_size_x"></a>
-: TBD.
+: Pixel size of X-axis.
 
 [Parameter Value\[Pixel size y\]](#Pixel_size_y)<a name="Pixel_size_y"></a>
-: TBD.
+: Pixel size of Y-axis.
 
 [Parameter Value\[Max count of pixel x\]](#Max_count_of_pixel_x)<a name="Max_count_of_pixel_x"></a>
-: TBD.
+: Maximum count of pixel of X-axis.
 
 [Parameter Value\[Max count of pixel y\]](#Max_count_of_pixel_y)<a name="Max_count_of_pixel_y"></a>
-: TBD.
+: Maximum count of pixel of Y-axis.
 
 [Parameter Value\[Max dimension x\]](#Max_dimension_x)<a name="Max_dimension_x"></a>
-: TBD.
+: Maximum lenght of aquired image of X-axis.
 
 [Parameter Value\[Max dimension y\]](#Max_dimension_y)<a name="Max_dimension_y"></a>
-: TBD.
+: Maximum lenght of aquired image of Y-axis.
 
 [Parameter Value\[Inlet type\]](#Inlet_type)<a name="Inlet_type"></a>
-: TBD.
+: Type of MS inlet used.
 
 [Parameter Value\[Detector\]](#Detector_MSI)<a name="Detector_MSI"></a>
-: TBD.
+: Type, name and manufacturer of detector used.
 
 [Parameter Value\[Detector mode\]](#Detector_mode)<a name="Detector_mode"></a>
-: TBD.
+: Mode of detector used.
 
 [Parameter Value\[Resolving power\]](#Resolving_power)<a name="Resolving_power"></a>
-: TBD.
+: Resolving power of detector used.
 
 [Parameter Value\[Resolving power m/z\]](#Resolving_power_mz)<a name="Resolving_power_m/z"></a>
-: TBD.
+: Resolving power of m/z.
 
 [Parameter Value\[Native spectrum identifier format\]](#Native_spectrum_identifier_format)<a name="Native_spectrum_identifier_format"></a>
-: TBD.
+: Format of native spectrum identifier.
 
 [Parameter Value\[Data file content\]](#Data_file_content)<a name="Data_file_content"></a>
-: TBD.
+: Content of data file.
 
 [Parameter Value\[Spectrum representation\]](#Spectrum_representation)<a name="Spectrum_representation"></a>
-: TBD.
+: Representation type of spectrum.
 
 [Parameter Value\[Raw data file format\]](#Raw_data_file_format)<a name="Raw_data_file_format"></a>
-: TBD.
+: Format of raw data file.
 
 [Parameter Value\[Instrument software\]](#Instrument_software)<a name="Instrument_software"></a>
-: TBD.
+: Name of instrument software used.
 
 [Parameter Value\[Instrument software version\]](#Instrument_software_version)<a name="Instrument_software_version"></a>
-: TBD.
+: Version of instrument software used.
 
 [Parameter Value\[Line scan direction\]](#Line_scan_direction)<a name="Line_scan_direction"></a>
-: TBD.
+: Direction of first line scan.
 
 [Parameter Value\[Line scan sequence\]](#Line_scan_sequence)<a name="Line_scan_sequence"></a>
-: TBD.
+: Sequence of line scan.
 
 [Parameter Value\[Scan pattern\]](#Scan_pattern)<a name="Scan_pattern"></a>
-: TBD.
+: Pattern of scan.
 
 [Parameter Value\[Scan type\]](#Scan_type)<a name="Scan_type"></a>
-: TBD.
+: Type of scan.
 
 [Parameter Value\[Number of scans\]](#Number_of_scans)<a name="Number_of_scans"></a>
-: TBD.
+: Number of scan.
 
 [Parameter Value\[Sample mounting\]](#Sample_mounting)<a name="Sample_mounting"></a>
-: TBD.
+: Mounting method of sample used.
 
 [Parameter Value\[Sample preservation\]](#Sample_preservation)<a name="Sample_preservation"></a>
-: TBD.
+: Preservation method of sample used. Example, Freezing
 
 [Parameter Value\[Tissue modification\]](#Tissue_modification)<a name="Tissue_modification"></a>
-: TBD.
+: Modification method of tissue used.
 
 [Parameter Value\[Sectioning instrument\]](#Sectioning_instrument)<a name="Sectioning_instrument"></a>
-: TBD.
+: Name and manufacturer of sectioning instrument used.
 
 [Parameter Value\[Section thickness\]](#Section_thickness)<a name="Section_thickness"></a>
-: TBD.
+: Thickness of section used.
 
 [Parameter Value\[Matrix\]](#Matrix)<a name="Matrix"></a>
-: TBD.
+: Name and/or type of matrix compound used.
 
 [Parameter Value\[Matrix application\]](#Matrix_application)<a name="Matrix_application"></a>
-: TBD.
+: Application method of matrix compound used.
 
 [Parameter Value\[Stain\]](#Stain)<a name="Stain"></a>
-: TBD.
+: Method of staining.
 
 [Parameter Value\[Data processing software\]](#Data_processing_software)<a name="Data_processing_software"></a>
-: TBD.
+: Name of data processing software used.
 
 [Parameter Value\[Data processing software version\]](#Data_processing_software_version)<a name="Data_processing_software_version"></a>
-: TBD.
+: Version of data processing software used.
 
 [Parameter Value\[Extraction method\]](#Extraction_method)<a name="Extraction_method"></a>
 : How a sample was extracted from its source material, e.g. Methanol.

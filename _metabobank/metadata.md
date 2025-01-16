@@ -416,7 +416,7 @@ IDF で記載されたプロトコールを補完するプロトコールパラ�
 : オートサンプラーの製造元とモデル番号。
 
 [Parameter Value\[Column model\]](#Column_model_Ch)<a name="Column_model_Ch"></a>
-: 使用したカラムの製造元、モデル番号や dimension。例 HSS T3 C18 (1.8 μm, 1.0 x 100 mm; Waters)
+: 使用したカラムの製造元、モデル番号や寸法。例 HSS T3 C18 (1.8 μm, 1.0 x 100 mm; Waters)
 
 [Parameter Value\[Column type\]](#Column_type_Ch)<a name="Column_type_Ch"></a>
 : 使用したカラムの種類やフェーズ。例 reverse phase
@@ -437,16 +437,16 @@ IDF で記載されたプロトコールを補完するプロトコールパラ�
 : 二次元目の GCGC カラムの種類。
 
 [Parameter Value\[Detector\]](#Detector_Ch)<a name="Detector_Ch"></a>
-: TBD.
+: 検出器の種類、名前、製造元。
 
 [Parameter Value\[Signal range\]](#Signal_range)<a name="Signal_range"></a>
-: TBD.
+: 検出器の検出波長の範囲。例 200 to 650 nm
 
 [Parameter Value\[Resolution\]](#Resolution)<a name="Resolution"></a>
-: TBD.
+: カラムの分離能。
 
 [Parameter Value\[Temperature\]](#Temperature_Ch)<a name="Temperature_Ch"></a>
-: TBD.
+: カラムの温度。
 
 [Parameter Value\[Scan polarity\]](#Scan_polarity)<a name="Scan_polarity"></a>
 : acquisition mode を極性、negative、positive もしくは alternating で示す。
@@ -485,109 +485,109 @@ IDF で記載されたプロトコールを補完するプロトコールパラ�
 : マススペクトロメトリーイメージング機器の製造元。
 
 [Parameter Value\[Solvent\]](#Solvent_MSI)<a name="Solvent_MSI"></a>
-: TBD.
+: スプレー溶媒の名前。
 
 [Parameter Value\[Target material\]](#Target_material)<a name="Target_material"></a>
-: TBD.
+: 標的材料。
 
 [Parameter Value\[Spatial resolution\]](#Spatial_resolution)<a name="Spatial_resolution"></a>
-: TBD.
+: 空間分解能。例 10 micrometer
 
 [Parameter Value\[Pixel size x\]](#Pixel_size_x)<a name="Pixel_size_x"></a>
-: TBD.
+: X軸のピクセルサイズ。
 
 [Parameter Value\[Pixel size y\]](#Pixel_size_y)<a name="Pixel_size_y"></a>
-: TBD.
+: Y軸のピクセルサイズ。
 
 [Parameter Value\[Max count of pixel x\]](#Max_count_of_pixel_x)<a name="Max_count_of_pixel_x"></a>
-: TBD.
+: X軸ピクセルの最大カウント。
 
 [Parameter Value\[Max count of pixel y\]](#Max_count_of_pixel_y)<a name="Max_count_of_pixel_y"></a>
-: TBD.
+: Y軸ピクセルの最大カウント。
 
 [Parameter Value\[Max dimension x\]](#Max_dimension_x)<a name="Max_dimension_x"></a>
-: TBD.
+: 取得イメージのX軸の最大長。
 
 [Parameter Value\[Max dimension y\]](#Max_dimension_y)<a name="Max_dimension_y"></a>
-: TBD.
+: 取得イメージのY軸の最大長。
 
 [Parameter Value\[Inlet type\]](#Inlet_type)<a name="Inlet_type"></a>
-: TBD.
+: MSインレットの種類。
 
 [Parameter Value\[Detector\]](#Detector_MSI)<a name="Detector_MSI"></a>
-: TBD.
+: 検出器の種類、名前、製造元。
 
 [Parameter Value\[Detector mode\]](#Detector_mode)<a name="Detector_mode"></a>
-: TBD.
+: 検出器のモード。
 
 [Parameter Value\[Resolving power\]](#Resolving_power)<a name="Resolving_power"></a>
-: TBD.
+: 検出器の解像度。
 
 [Parameter Value\[Resolving power m/z\]](#Resolving_power_mz)<a name="Resolving_power_m/z"></a>
-: TBD.
+: m/zの解像度。
 
 [Parameter Value\[Native spectrum identifier format\]](#Native_spectrum_identifier_format)<a name="Native_spectrum_identifier_format"></a>
-: TBD.
+: ネイティブスペクトル識別子のフォーマット。
 
 [Parameter Value\[Data file content\]](#Data_file_content)<a name="Data_file_content"></a>
-: TBD.
+: データファイルの内容。
 
 [Parameter Value\[Spectrum representation\]](#Spectrum_representation)<a name="Spectrum_representation"></a>
-: TBD.
+: スペクトルの表現方法。
 
 [Parameter Value\[Raw data file format\]](#Raw_data_file_format)<a name="Raw_data_file_format"></a>
-: TBD.
+: 生データのファイル形式。
 
 [Parameter Value\[Instrument software\]](#Instrument_software)<a name="Instrument_software"></a>
-: TBD.
+: 分析機器のソフトウェア。
 
 [Parameter Value\[Instrument software version\]](#Instrument_software_version)<a name="Instrument_software_version"></a>
-: TBD.
+: 分析機器のソフトウェアのバージョン。
 
 [Parameter Value\[Line scan direction\]](#Line_scan_direction)<a name="Line_scan_direction"></a>
-: TBD.
+: 最初のラインスキャンの方向。
 
 [Parameter Value\[Line scan sequence\]](#Line_scan_sequence)<a name="Line_scan_sequence"></a>
-: TBD.
+: ラインスキャンのシーケンス。
 
 [Parameter Value\[Scan pattern\]](#Scan_pattern)<a name="Scan_pattern"></a>
-: TBD.
+: スキャンのパターン。
 
 [Parameter Value\[Scan type\]](#Scan_type)<a name="Scan_type"></a>
-: TBD.
+: スキャンの種類。
 
 [Parameter Value\[Number of scans\]](#Number_of_scans)<a name="Number_of_scans"></a>
-: TBD.
+: スキャン数。
 
 [Parameter Value\[Sample mounting\]](#Sample_mounting)<a name="Sample_mounting"></a>
-: TBD.
+: サンプルの取り付方法。
 
 [Parameter Value\[Sample preservation\]](#Sample_preservation)<a name="Sample_preservation"></a>
-: TBD.
+: サンプルの保護方法。例 Freezing
 
 [Parameter Value\[Tissue modification\]](#Tissue_modification)<a name="Tissue_modification"></a>
-: TBD.
+: 組織の修飾方法。
 
 [Parameter Value\[Sectioning instrument\]](#Sectioning_instrument)<a name="Sectioning_instrument"></a>
-: TBD.
+: 切片作成装置の名前、製造元。
 
 [Parameter Value\[Section thickness\]](#Section_thickness)<a name="Section_thickness"></a>
-: TBD.
+: 切片の厚さ。
 
 [Parameter Value\[Matrix\]](#Matrix)<a name="Matrix"></a>
-: TBD.
+: マトリクス化合物の種類、名前。
 
 [Parameter Value\[Matrix application\]](#Matrix_application)<a name="Matrix_application"></a>
-: TBD.
+: マトリクス化合物の塗布方法。
 
 [Parameter Value\[Stain\]](#Stain)<a name="Stain"></a>
-: TBD.
+: 染色方法。
 
 [Parameter Value\[Data processing software\]](#Data_processing_software)<a name="Data_processing_software"></a>
-: TBD.
+: データ解析ソフトウェアの名前。
 
 [Parameter Value\[Data processing software version\]](#Data_processing_software_version)<a name="Data_processing_software_version"></a>
-: TBD.
+: データ解析ソフトウェアのバージョン。
 
 [Parameter Value\[Extraction method\]](#Extraction_method)<a name="Extraction_method"></a>
 : 出発材料からサンプルを抽出した方法。例 Methanol
