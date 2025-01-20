@@ -415,7 +415,7 @@ annotated by transcript or proteomic data
 
 
 備考
-: /exception="annotated by transcript or proteomic data" を記載する場合、その証拠になる転写産物, あるいは, タンパク質の存在を示すために [/inference](#inference) qualifier を記述する必要があります。 
+: /exception="annotated by transcript or proteomic data" を記載する場合、その証拠になる転写産物、あるいは、タンパク質の存在を示すために [/inference](#inference) qualifier を記述する必要があります。 
 
 
 ### /experiment<a name="experiment"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#experiment)</span>
@@ -673,7 +673,8 @@ DGGE: C12</pre>
 ### /isolation_source<a name="isolation_source"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#isolation_source)</span><a name="isolation_source">
 
 定義
-: 配列が得られた生物学的サンプルに関する, 物理的, 環境的, かつまたは, 地理的な由来 
+: 配列が得られた生物学的サンプルに関する、物理的、かつまたは、環境的な由来。     [/dev_stage](#dev_stage), [/tissue_type](#tissue_type) など他の qualifier に記載すべき内容は、各 qualifier に記載してください。
+
 
 書式
 : &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) 

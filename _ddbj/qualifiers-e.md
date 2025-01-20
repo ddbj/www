@@ -663,7 +663,7 @@ DGGE: C12</pre>
 ### /isolation_source<a name="isolation_source"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#isolation_source)</span><a name="isolation_source"></a>
 
 Definition  
-: describes the physical, environmental and/or local geographical source of the biological sample from which the sequence was derived    
+: describes the physical and/or environmental source of the biological sample from which the sequence was derived.     Please describe the contents that should be described in other qualifiers such as [/dev_stage](#dev_stage), [/tissue_type](#tissue_type) in each qualifier.    
 
 Value format
 : &lt;text>, excluding double quotation mark (")    
