@@ -109,6 +109,7 @@ CDS と考えていた領域の途中に終止コドンが存在していた場�
 a) nonsense mutation、frameshift などと推定されるが理由不明、または、IgG などの獲得免疫関連で多様性が生じる過程の場合<a name="stop_a"></a>
 : <span class="red">塩基配列決定の精度が低いことによる場合も、原則、このカテゴリーになります。</span> 
 : CDS ではなく [misc\_feature](/ddbj/features.html#misc_feature) を用いて記載します。<br>このとき、タンパク質が存在は明確ではありませんので、[translation](/ddbj/qualifiers.html#translation) qualifier とアミノ酸配列は示されません。<br> 原則、[inference](/ddbj/qualifiers.html#inference) qualifier にタンパク質の存在を推定した根拠の記載をお願いします。<br>[note](/ddbj/qualifiers.html#note) qualifier に "putative frameshift mutation"、"Ig rearrangement"、または、"TCR beta rearrangement" など簡潔な理由の記載もお願いします。
+: [配列データ記載例 B16](/ddbj/example.html#B16) もご参照ください。
 
 b) pseudogene と見做される場合<a name="stop_b"></a>  
 : <span class="red">近縁他種の orthologue、paralogue などとの系統関係、転写されていないことなど、傍証確認が済んでいない段階では、pseudogene と記載することは推奨できません。</span>

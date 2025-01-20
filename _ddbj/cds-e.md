@@ -141,11 +141,9 @@ a) Putative nonsense mutation, frameshift caused by uncertain reason, or on the 
 : <span class="red">In case of low accuracy of sequencing, use this solution, in principle.</span>  
 : Describe with [misc_feature](/ddbj/features-e.html#misc_feature), not CDS.
 : Because it is not sure if the corresponding protein exist or not.  
-Describe referred information in
-[/inference](/ddbj/qualifiers-e.html#inference) qualifier.  
-Describe a short explanation in [/note](/ddbj/qualifiers-e.html#note)
-qualifier; "putative frameshift mutation", "Ig rearrangement", "TCR
-beta rearrangement" or else.
+Describe referred information in [/inference](/ddbj/qualifiers-e.html#inference) qualifier.  
+Describe a short explanation in [/note](/ddbj/qualifiers-e.html#note) qualifier; "putative frameshift mutation", "Ig rearrangement", "TCR beta rearrangement" or else.
+: See also [Description Examples of Sequence Data B16](/ddbj/example-e.html#B16).
 
 b) considered pseudogene<a name="stop_b"></a>  
 : <span class="red">If you have not yet confirmed any collateral evidence to identify a pseugdogene (i.e. relationship of orthologues and paralogues in other species, missing any corresponding transcript, or some), you shuold not call it pseudogene.</span>  
@@ -153,8 +151,7 @@ b) considered pseudogene<a name="stop_b"></a>
 [/pseudogene](/ddbj/qualifiers-e.html#pseudogene) qualifier.
 : When you use pseudogene qualifier,
 [/translation](/ddbj/qualifiers.html#translation) is not described
-for the CDS feature, because the corresponding protein would not
-exist in vivo.
+for the CDS feature, because the corresponding protein would not exist in vivo.
 : 
   - Describe referred information in
     [/inference](/ddbj/qualifiers-e.html#inference) qualifier.
