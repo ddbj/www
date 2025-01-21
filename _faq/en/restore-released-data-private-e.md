@@ -37,4 +37,4 @@ References
 ## DRA {#dra}
 
 The DRA data are also removed as DDBJ.    
-[Contact the DRA team](/contact-ddbj-e.html) to delete public DRA data.
+[Contact the DRA team](https://forms.gle/d9cZxyzQzxPMSqW59) to delete public DRA data.

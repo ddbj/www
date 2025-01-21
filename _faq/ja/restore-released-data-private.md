@@ -33,6 +33,6 @@ lang: ja
 ## DRA {#dra}
 
 DDBJ と同様の扱いになります。    
-データの削除を [DRA チームに依頼](/contact-ddbj.html) してください。
+データの削除を [DRA チームに依頼](https://forms.gle/mpGqxbSeYmy5oTud6) してください。
 
 
