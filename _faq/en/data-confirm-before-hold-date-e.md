@@ -11,6 +11,6 @@ lang: en
 ---
 
 We only accept the request from [the original submitter](/ddbj/submission-e.html#terms) of the entry.  
-Please contact us from [contact form](/contact-ddbj-e.html) by selecting the item, "Updating Submitted Data" with accession numbers.
+Please contact us from [Contact](https://forms.gle/7g2YCoBjqvbBBW9V8) by selecting the item, "Updating Submitted Data" with accession numbers.
 
 

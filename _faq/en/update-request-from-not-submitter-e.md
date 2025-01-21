@@ -16,5 +16,5 @@ See [Rights and Duties of Submitter](/ddbj/submission-e.html#right )
 
 DDBJ can forward your comments to the submitter.  
 
-Please contact us at [Inquiry to the sequence submitters](/contact-ddbj-e.html).    
+Please [Contact us](https://forms.gle/7g2YCoBjqvbBBW9V8) by selecting “Inquiry to the sequence submitters” .    
 Please note that we can not guarantee any response from the submitter.    
