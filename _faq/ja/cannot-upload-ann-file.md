@@ -21,4 +21,4 @@ lang: ja
   - [feature](/ddbj/features.html) と [qualifier](/ddbj/qualifiers.html)
     に誤りがある場合、修正してください \# 余計な space が含まれている場合も認識できません
 
-問題が解決しない場合、[DDBJへのお問い合わせ](/contact-ddbj.html) よりご連絡ください。
+問題が解決しない場合、[お問い合わせ](https://forms.gle/rRrVkcjyMoXQhFVn7) よりご連絡ください。

@@ -10,4 +10,4 @@ date: 2015-10-13T15:23:06
 lang: ja
 ---
 
-プロジェクトの更新や削除は [BioProject チームに連絡](/contact-ddbj.html)してください。
+プロジェクトの更新や削除は [BioProject チームに連絡](https://forms.gle/mpGqxbSeYmy5oTud6)してください。

@@ -10,4 +10,4 @@ date: 2015-10-13T15:18:28
 lang: en
 ---
 
-[Contact the BioProject team](/contact-ddbj-e.html) to request updates and withdrawals. 
+[Contact the BioProject team](https://forms.gle/d9cZxyzQzxPMSqW59) to request updates and withdrawals. 
