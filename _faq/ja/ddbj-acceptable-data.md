@@ -20,4 +20,4 @@ lang: ja
   - [Division の詳細](/ddbj/flat-file.html#DivisionB )
   - [Annotated/Assembled データの細かい区分](/documents/data-categories.html#detail )
 
-不明点は、[DDBJへのお問い合わせ](https://forms.gle/rRrVkcjyMoXQhFVn7) よりご連絡ください。
+不明点は、[お問い合わせ](https://forms.gle/rRrVkcjyMoXQhFVn7) よりご連絡ください。
