@@ -19,7 +19,7 @@ lang: ja
     EMBL に転送され、GenBank と EMBL からも閲覧・取得が可能になります。  
     ただし、DDBJ で公開されてから GenBank/EMBL にデータが反映されるまでには、時間差があります。  
     getentry で公開を確認した後、週末・祝日を除き、２週間以上経過しても、GenBank/EMBL
-    でデータ公開を確認できない場合、DDBJ にお問合せください。
+    でデータ公開を確認できない場合、[DDBJ にお問合せください](https://forms.gle/rRrVkcjyMoXQhFVn7)。
 1. DDBJ の休業期間中に公開予定日が到来した場合  
     休業明けに、順次、データを公開いたします。
 1. 当該アクセッション番号が論文等で公表された事を未確認のため、公開されていない場合  
@@ -27,7 +27,7 @@ lang: ja
 1. 1998年1月1日以前に登録されたデータの場合  
     公開予定日到来後も非公開である可能性があります。
 
-3 と 4 の場合は [DDBJへのお問い合わせ](/contact-ddbj.html) よりご連絡ください。
+3 と 4 の場合は [DDBJへのお問い合わせ](https://forms.gle/rRrVkcjyMoXQhFVn7) よりご連絡ください。
 
 **参考**  
 - [データ公開原則](/documents/data-release-policy.html)
