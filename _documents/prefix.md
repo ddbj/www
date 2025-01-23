@@ -377,7 +377,7 @@ PI      JPO             Patent application
 PJ      JPO             Patent application
 PK      JPO             Patent application
 PL      KIPO            Patent application
-PM      DDBJ            
+PM      JPO             Patent application
 PN      DDBJ            
 PO      DDBJ            
 PP      GenBank         Direct submission
@@ -386,6 +386,7 @@ PR      USPTO           Patent application
 PS      GenBank         scaffold/CON
 PT      USPTO           Patent application
 PU      USPTO           Patent application
+PV      GenBank         Direct submission
 Q       void            UniProt/Swiss-Prot
 QK      EPO             Patent application
 QL      EPO             Patent application
