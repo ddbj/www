@@ -2,10 +2,6 @@ top_news:
  ja:
     - title: 不具合対応 D-way で公開鍵が登録できない不具合が生じています
       path: 2024-12-23
-    - title: DDBJ リリース 137.0，DAD リリース 107.0 完成
-      path: 2025-01-16
  en:
     - title: Unable to register a public key to D-way
       path: 2024-12-23-e
-    - title: DDBJ Rel. 137.0, DAD Rel. 107.0 Completed
-      path: 2025-01-16-e
