@@ -28,7 +28,7 @@ message text available**
 
 ### CheckSum Error {#check_sum_error}
 
-Run に記載されている [MD5 値](/checksum.html)(Expected MD5)とサーバにアップロードされたファイルの MD5 値(Uploaded MD5)が異なっています。
+Run に記載されている [MD5 値](/checksum.html) (Expected MD5)とサーバにアップロードされたファイルの MD5 値 (Uploaded MD5)が異なっています。
 
 まずは手元のファイルの MD5 値とメタデータに入力した MD5 値が一致しているかどうかを確認します。
 - メタデータに入力した MD5 値が間違っている場合、メタデータを修正します。

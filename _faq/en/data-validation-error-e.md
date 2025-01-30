@@ -26,7 +26,7 @@ Files are not recognized. This error occurs in the following cases:
 
 ### CheckSum Error {#check_sum_error}
 
-The [MD5 values](/checksum-e.html) in the Run metadata(Expected MD5) are different from those of the uploaded files(Uploaded MD5). 
+The [MD5 values](/checksum-e.html) in the Run metadata (Expected MD5) are different from those of the uploaded files (Uploaded MD5). 
 Please check the followings.
 
 Check whether the MD5 values of the files in your local computer match those entered in the Run metadata or not.
