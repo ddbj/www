@@ -28,7 +28,7 @@ Frequently asked questions
 <table>
   <tbody>
     <tr>
-      <th class="first" rowspan="4"><a href="https://forms.gle/utHXE67Qr7saHZj38">
+      <th class="first" rowspan="4"><a href="https://forms.gle/TcvmVvw4faD2DV4fA">
 Application Form for Data Update Requests</a></th>
       <td class="second">When your paper was published</td>
     </tr>
