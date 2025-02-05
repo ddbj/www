@@ -17,17 +17,13 @@ lang: ja
 
 データ公開を希望する場合、DDBJ/DRA/GEA/MetaboBank データに対するアクセッション番号または Submission ID で公開対象を指定します。
 
-**登録データの連動公開の仕組み**   FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
-- BioProject アクセッション番号が指定された場合、当該 BioProject のみが公開され、関連データは公開されません。    
-- BioSample アクセッション番号が指定された場合、当該 BioSample のみが公開され、関連データは公開されません。    
-- DDBJ/DRA/GEA/MetaboBank データが公開されると、参照されている BioProject と BioSample は連動して公開されます。  
 
 <table class="table_faq">
   <thead>
     <tr>
       <th>データベース</th>
       <th>アクセッション番号の例</th>
-      <th>更新方法</th>
+      <th>依頼方法</th>
     </tr>
   </thead>
   <tbody>
@@ -63,3 +59,9 @@ lang: ja
     </tr>
   </tbody>
 </table>
+    
+#### 登録データの連動公開の仕組み   
+FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
+- BioProject アクセッション番号が指定された場合、当該 BioProject のみが公開され、関連データは公開されません。    
+- BioSample アクセッション番号が指定された場合、当該 BioSample のみが公開され、関連データは公開されません。    
+- DDBJ/DRA/GEA/MetaboBank データが公開されると、参照されている BioProject と BioSample は連動して公開されます。 

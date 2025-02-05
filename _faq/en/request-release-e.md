@@ -17,17 +17,12 @@ lang: en
 
 If you want to release your data, specify DDBJ/DRA/GEA/MetaboBank accession numbers to be released.
 
-**How are linked BioProject/BioSample/experimental data released?**   FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release-e.html)
-- When only BioProject accession is informed, only the BioProject record is released and related data are not released.
-- When only BioSample accession is informed, only the BioSample record is released and related data are not released.
-- DDBJ/DRA/GEA/MetaboBank data release triggers relase of referencing BioProject and BioSample.
-
 <table class="table_faq">
   <thead>
     <tr>
       <th>Database</th>
       <th>Example of Accession number</th>
-      <th>How to update</th>
+      <th>How to request</th>
     </tr>
   </thead>
   <tbody>
@@ -63,3 +58,9 @@ If you want to release your data, specify DDBJ/DRA/GEA/MetaboBank accession numb
     </tr>
   </tbody>
 </table>
+    
+#### How are linked BioProject/BioSample/experimental data released?   
+FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release-e.html)
+- When only BioProject accession is informed, only the BioProject record is released and related data are not released.
+- When only BioSample accession is informed, only the BioSample record is released and related data are not released.
+- DDBJ/DRA/GEA/MetaboBank data release triggers relase of referencing BioProject and BioSample.
