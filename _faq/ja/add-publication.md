@@ -5,27 +5,66 @@ category: faq
 db:
   - bioproject
   - biosample
+  - ddbj
   - dra
+  - gea
+  - metabobank
 tags: 
   - 更新
 date: 2013-10-08T10:33:02
 lang: ja
 ---
 
-[DDBJ 塩基配列データ](/ddbj/submission.html)   
-: [登録データの修正・更新の当該項目](/ddbj/update.html)を参照の上，[登録データの修正・更新申し込み](/ddbj/update-form.html)の「論文が公開されました」から担当者に連絡します。配列エントリの[フラットファイル](/ddbj/flat-file.html#Reference2)に論文情報が記載されます。
+担当者が登録データに論文情報を記載します。    
+所定のフォームから論文の Pubmed ID (推奨) もしくは DOI をお知らせください。
 
-[DRA](/dra/index.html)   
-: DRA 番号を引用している論文情報は[参照している BioProject](/dra/submission.html#metadata)に追加します。[BioProject チームに論文情報の追加を依頼](/contact-ddbj.html)します。
-
-[BioProject](/bioproject/index.html)   
-: [BioProject に論文情報の追加を依頼](/contact-ddbj.html)します。基本的に[BioProject 番号の論文中での引用は推奨していません](/faq/ja/project-accession.html)。
-
-[BioSample](/biosample/index.html)   
-: BioSample に登録したサンプルから得られた実験データが DDBJ 塩基配列データベースや DRA に登録されている場合，各データベース毎に記載した手順に従って論文情報を更新・追加します。
-    
-サンプルの単離や生育条件の詳細を記載している論文は [isol\_growth\_condt](/biosample/attribute.html?all=all#isol_growth_condt) に，ゲノム配列を報告した論文は [ref\_biomaterial](/biosample/attribute.html?all=all#ref_biomaterial) に pubmed ID などを記載します。
-    
-上記以外の論文情報を BioSample に追加したい場合は [BioSample チームに連絡してください](/contact-ddbj.html)。
+<table class="table_faq">
+  <thead>
+    <tr>
+      <th>データベース</th>
+      <th>アクセッション番号の例</th>
+      <th>文献情報の記載場所</th>
+      <th>依頼フォーム</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DDBJ</td> 
+      <td>AB12345678<br>ABCDEF010123456　</td>
+      <td>配列エントリの<a href="/ddbj/flat-file.html#Reference2">フラットファイル</a></td>
+      <td><a href="https://forms.gle/Xx6wPKFgQDHdvXJG9">登録データの更新申し込みフォーム</a></td>      
+    </tr>
+    <tr>
+      <td>DRA</td> 
+      <td>DRR000001</td>
+      <td>DRA が参照している BioProject</td> 
+      <td><a href="https://forms.gle/FuLvUNFeciTEdzQcA">BioProject/BioSample/DRA  更新依頼フォーム</a></td> 
+    </tr> 
+    <tr>
+      <td>BioProject</td> 
+      <td>PRJDB1</td>
+      <td>BioProject</td> 
+      <td><a href="https://forms.gle/FuLvUNFeciTEdzQcA">BioProject/BioSample/DRA  更新依頼フォーム</a></td> 
+    </tr> 
+    <tr>
+      <td>BioSample</td> 
+      <td>SAMD00000001</td>
+      <td>サンプルから得られた実験データが<br>登録されているデータベースによる</td> 
+      <td><a href="https://forms.gle/FuLvUNFeciTEdzQcA">BioProject/BioSample/DRA  更新依頼フォーム</a></td> 
+    </tr>    
+    <tr>
+      <td>GEA</td> 
+      <td>E-GEAD-1</td>
+      <td>GEA メタデータ <a href="/gea/metadata.html#PubMed_ID">IDF<br>GEA が参照する BioProject</a></td> 
+      <td><a href="https://forms.gle/BQR6d9gZ3Prox1G89">GEA 更新依頼フォーム</a></td> 
+    </tr>
+    <tr>
+      <td>MetaboBank</td> 
+      <td>MTBKS1</td>
+      <td>MetaboBank メタデータ <a href="/metabobank/metadata.html#idf">IDF</a></td> 
+      <td><a href="https://forms.gle/3Xx3W4ch3eyJpYc48">MetaboBank 更新依頼フォーム</a></td> 
+    </tr>
+  </tbody>
+</table>
 
 
