@@ -1,10 +1,14 @@
 top_news:
  ja:
+    - title: (2月14日 - 3月中旬) スパコンシステムリプレースに伴うサービス停止のお知らせ
+      path: 2025-02-06
     - title: (予告) 2025年2月21日-3月1日スパコンシステムリプレースに伴うサービス停止予定
       path: 2025-01-23
     - title: 不具合対応 D-way で公開鍵が登録できない不具合が生じています
       path: 2024-12-23
  en:
+    - title: (14th February - mid-March) Suspension of the services due to the NIG Supercomputer replacement
+      path: 2025-02-06-e
     - title: Planned service disruption due to the NIG supercomputer replacement 21st February - 1st March
       path: 2025-01-23-e
     - title: Unable to register a public key to D-way
