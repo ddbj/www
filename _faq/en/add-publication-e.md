@@ -17,6 +17,7 @@ Please provide the PubMed ID (recommended) or DOI as the paper information in th
   <thead>
     <tr>
       <th>Database</th>
+      <th>Example of Accession</th>
       <th>Reference information section</th>
       <th>How to update</th>
     </tr>
@@ -24,32 +25,39 @@ Please provide the PubMed ID (recommended) or DOI as the paper information in th
   <tbody>
     <tr>
       <td>DDBJ</td> 
+      <td>AB12345678<br>ABCDEF010123456　</td>
       <td><a href="/ddbj/flat-file-e.ml#Reference2">Flat file</a></td>
       <td><a href="https://forms.gle/7g2YCoBjqvbBBW9V8">Application Form for Data Update Requests form</a></td>
     </tr>
     <tr>
       <td>DRA</td> 
-      <td>BioProject</td> 
+      <td>DRR000001</td>
+      <td>BioProject referenced by DRA</td> 
       <td><a href="https://forms.gle/d9cZxyzQzxPMSqW59">BioProject/BioSample/DRA update request</a></td> 
     </tr>    
     <tr>
       <td>GEA</td> 
-      <td>GEA Metadata <a href="/gea/metadata.html#PubMed_ID">IDF</a></td> 
+      <td>E-GEAD-1</td>
+      <td>GEA Metadata <a href="/gea/metadata.html#PubMed_ID">IDF</a><br>BioProject referenced by GEA</td> 
       <td><a href="https://forms.gle/TtzttjjxShnJ1LxdA">GEA update request </a></td> 
     </tr>
     <tr>
       <td>MetaboBank</td> 
+      <td>MTBKS1</td>
       <td>MetaboBank Metadata <a href="/metabobank/metadata.html#idf">IDF</a></td> 
       <td><a href="https://forms.gle/5TAMFHAWmhjZTrny7">MeatboBank Update request</a></td> 
     </tr>
     <tr>
       <td>BioProject</td> 
+      <td>PRJDB1</td>
       <td>BioProject</td> 
       <td><a href="https://forms.gle/d9cZxyzQzxPMSqW59">BioProject/BioSample/DRA update request</a></td> 
     </tr>
     <tr>
       <td>BioSample</td> 
-      <td colspan="2">If experimental data obtained from samples registered to BioSample, add publication information as above.</td>  
+      <td>SAMD00000001</td>
+      <td>Depend on the database where experimental <br>data obtained from samples is registered.</td> 
+      <td><a href="https://forms.gle/d9cZxyzQzxPMSqW59">BioProject/BioSample/DRA update request</a></td>
     </tr>
   </tbody>
 </table>
