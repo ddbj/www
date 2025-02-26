@@ -8,13 +8,16 @@ lang: ja
 ---
 
 DDBJ への新規登録で使用を推奨する qualifier key を以下に挙げています。
-より詳しい INSDC qualifier key に関する情報は, Feature Table Definition の [7.3.1 Qualifier List](/ddbj/feature-table.html#7.3.1) をご参照ください。 
+より詳しい INSDC qualifier key に関する情報は、[Feature Table Definition](/ddbj/feature-table.html) の 
+[7.3.1 Qualifier List](/ddbj/feature-table.html#7-3-1) をご参照ください。 
 
 ## Feature/Qualifier 対応  {#usage}
 
-[Feature/Qualifier 対応一覧表](https://docs.google.com/spreadsheets/u/3/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/edit)には、DDBJ へ登録を推奨する feature と qualifier の組み合わせを示しています。
+[Feature/Qualifier 対応一覧表](https://docs.google.com/spreadsheets/u/3/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/edit)には、
+DDBJ へ登録を推奨する feature と qualifier の組み合わせを示しています。
 
-INSDC において記載可能な feature と qualifier の組み合わせに関しましては、[Feature Table Definition](/ddbj/feature-table.html) の [7.2 Appendix II: Feature keys reference](/ddbj/feature-table.html#7.2) をご参照ください。 
+INSDC において記載可能な feature と qualifier の組み合わせに関しましては、Feature Table Definition の 
+[7.2 Appendix II: Feature keys reference](/ddbj/feature-table.html#7-2) をご参照ください。 
 
 ## Qualifier key の定義
 

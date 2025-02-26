@@ -41,5 +41,5 @@ Sequence Submission System, or use [Mass Submission System](mss-e.html).
 With the combination of list above, it is able to describe various ways
 of indicating the sequence location.
 
-For further information of the location, see [Feature Table　Definition](/ddbj/feature-table-e.html) : [3.4　Location](/ddbj/feature-table-e.html#3.4)
+For further information of the location, see [Feature Table　Definition](/ddbj/feature-table-e.html) : [3-4 Location](/ddbj/feature-table-e.html#3.4)
 

@@ -7,15 +7,20 @@ current_tab: flat_file
 lang: en
 ---
 
-The qualifier keys that are used and recommended for DDBJ new submissions are as follows.
-For further information of INSDC qualifier keys, read [Feature Table Definition](/ddbj/feature-table-e.html): [7.3.1 Qualifier List](/ddbj/feature-table-e.html#7.3.1).
+The qualifier keys that are used and recommended for DDBJ new submissions are as follows.    
+
+For further information of INSDC qualifier keys, read 
+[7.3.1 Qualifier List](/ddbj/feature-table-e.html#7-3-1) of 
+[Feature Table Definition](/ddbj/feature-table-e.html).    
 
 ## Feature/Qualifier Usage Matrix  {#usage}
 
-The chart, [Feature/Qualifier usage matrix](https://docs.google.com/spreadsheets/u/3/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/), explains recommended combinations of feature and
-qualifier keys for DDBJ submissions.
+The chart, [Feature/Qualifier usage matrix](https://docs.google.com/spreadsheets/u/3/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/), 
+explains recommended combinations of feature and qualifier keys for DDBJ submissions.    
 
-For more detail of available combinations of feature and qualifier keys in INSDC entries, read: [Feature Table Definition](/ddbj/feature-table-e.html): [7.2 Appendix II: Feature keys reference.](/ddbj/feature-table-e.html#7.2).
+For more detail of available combinations of feature and qualifier keys in INSDC entries, read: 
+[7.2 Appendix II: Feature keys reference.](/ddbj/feature-table-e.html#7-2) of 
+[Feature Table Definition](/ddbj/feature-table-e.html).    
 
 ## Definition of Qualifier key
 
