@@ -87,11 +87,6 @@ collections:
     title:
       ja: DDBJ Annotated/Assembled Sequences
       en: DDBJ Annotated/Assembled Sequences
-  documents:
-    output: true
-    title:
-      ja: ドキュメント
-      en: Documents
   dra:
     output: true
     title:
@@ -112,6 +107,11 @@ collections:
     title:
       ja: Genomic Expression Archive
       en: Genomic Expression Archive
+  insdc:
+    output: true
+    title:
+      ja: INSDC
+      en: INSDC
   jga:
     output: true
     title:
