@@ -56,7 +56,7 @@ related_pages:
 [参考文献]
 
   - Cornish-Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)
-  - [Feature Table Definition](/ddbj/feature-table.html): [7.4.1 Nucleotide base codes (IUPAC)](/ddbj/feature-table.html#7.4.1)
+  - [Feature Table Definition](/ddbj/feature-table.html): [7.4.1 Nucleotide base codes (IUPAC)](/ddbj/feature-table.html#7-4-1)
 
 ### Modified Base Abbreviations  {#nucleotide-2}
 
@@ -72,7 +72,7 @@ related_pages:
 </pre>
 <br>
 
-| 省略形      | 修飾塩基                                                                 |
+| 省略形      | 修飾塩基                                                          |
 |---|
 | ac4c     | 4-acetylcytidine                                                     |
 | chm5u    | 5-(carboxyhydroxylmethyl)uridine                                     |
@@ -121,16 +121,18 @@ related_pages:
 | um       | 2'-O-methyluridine                                                   |
 | yw       | wybutosine                                                           |
 | x        | 3-(3-amino-3-carboxypropyl)uridine, (acp3)u                          |
-| OTHER    | Other ([/note](/ddbj/qualifiers.html#note) qualifier に修飾塩基を記載します)    |
+| OTHER    | Other (\*)                                                           |
+
+ (\*) このリストにない修飾塩基は [/note](/ddbj/qualifiers.html#note) qualifier に記載します。    
+
 
 [参考文献]
 
-  - Sprinzl, M. and Gauss, D.H. Nucl Acid Res 10, r1 (1982).(note that
-    in Cornish\_Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)the
-    IUPAC-IUB declined to recommend a set of abbreviations for modified
-    nucleotides)
+  - Sprinzl, M. and Gauss, D.H. Nucl Acid Res 10, r1 (1982). 
+    (note that in Cornish\_Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)
+    the IUPAC-IUB declined to recommend a set of abbreviations for modified nucleotides)
   - [Feature Table Definition](/ddbj/feature-table.html): [7.4.2 Modified
-    base abbreviations](/ddbj/feature-table.html#7.4.2)
+    base abbreviations](/ddbj/feature-table.html#7-4-2)
 
 ## アミノ酸  {#amino}
 
@@ -169,51 +171,54 @@ related_pages:
 | Glx          | Z                     | Glutamic acid or Glutamine  |
 | Xaa          | X                     | Any amino acid              |
 | Xle          | J                     | Leucine or Isoleucine       |
-| TERM         |                   | termination codon           |
+| TERM         |                       | termination codon           |
 
 [参考文献]
 
   - IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138: 9-37 (1984).
-  - [Feature Table Definition](/ddbj/feature-table.html): [7.4.3 Amino acid abbreviations](/ddbj/feature-table.html#7.4.3)
+  - [Feature Table Definition](/ddbj/feature-table.html): [7.4.3 Amino acid abbreviations](/ddbj/feature-table.html#7-4-3)
 
 ### Modified and Unusual Amino Acids {#amino-2} 
 
 [Amino Acid Codes](#amino-1) にないアミノ酸を記載する場合には以下の省略形を使用します。  
 [CDS feature](/ddbj/cds.html) の [/translation](/ddbj/qualifiers.html#translation) にはいずれも "X" で表されます。
 
-| 省略形   | アミノ酸                                                              |
+| 省略形   | アミノ酸                             |
 |---|
-| Aad   | 2-Aminoadipic acid                                                |
-| bAad  | 3-Aminoadipic acid                                                |
-| bAla  | beta-Alanine, beta-Aminoproprionic acid                           |
-| Abu   | 2-Aminobutyric acid                                               |
-| 4Abu  | 4-Aminobutyric acid, piperidinic acid                             |
-| Acp   | 6-Aminocaproic acid                                               |
-| Ahe   | 2-Aminoheptanoic acid                                             |
-| Aib   | 2-Aminoisobutyric acid                                            |
-| bAib  | 3-Aminoisobutyric acid                                            |
-| Apm   | 2-Aminopimelic acid                                               |
-| Dbu   | 2,4-Diaminobutyric acid                                           |
-| Des   | Desmosine                                                         |
-| Dpm   | 2,2'-Diaminopimelic acid                                          |
-| Dpr   | 2,3-Diaminoproprionic acid                                        |
-| EtGly | N-Ethylglycine                                                    |
-| EtAsn | N-Ethylasparagine                                                 |
-| Hyl   | Hydroxylysine                                                     |
-| aHyl  | allo-Hydroxylysine                                                |
-| 3Hyp  | 3-Hydroxyproline                                                  |
-| 4Hyp  | 4-Hydroxyproline                                                  |
-| Ide   | Isodesmosine                                                      |
-| aIle  | allo-Isoleucine                                                   |
-| MeGly | N-Methylglycine, sarcosine                                        |
-| MeIle | N-Methylisoleucine                                                |
-| MeLys | 6-N-Methyllysine                                                  |
-| MeVal | N-Methylvaline                                                    |
-| Nva   | Norvaline                                                         |
-| Nle   | Norleucine                                                        |
-| Orn   | Ornithine                                                         |
-| OTHER | Other ([/note](/ddbj/qualifiers.html#note) qualifier にアミノ酸を記載します) |
+| Aad   | 2-Aminoadipic acid                      |
+| bAad  | 3-Aminoadipic acid                      |
+| bAla  | beta-Alanine, beta-Aminoproprionic acid |
+| Abu   | 2-Aminobutyric acid                     |
+| 4Abu  | 4-Aminobutyric acid, piperidinic acid   |
+| Acp   | 6-Aminocaproic acid                     |
+| Ahe   | 2-Aminoheptanoic acid                   |
+| Aib   | 2-Aminoisobutyric acid                  |
+| bAib  | 3-Aminoisobutyric acid                  |
+| Apm   | 2-Aminopimelic acid                     |
+| Dbu   | 2,4-Diaminobutyric acid                 |
+| Des   | Desmosine                               |
+| Dpm   | 2,2'-Diaminopimelic acid                |
+| Dpr   | 2,3-Diaminoproprionic acid              |
+| EtGly | N-Ethylglycine                          |
+| EtAsn | N-Ethylasparagine                       |
+| Hyl   | Hydroxylysine                           |
+| aHyl  | allo-Hydroxylysine                      |
+| 3Hyp  | 3-Hydroxyproline                        |
+| 4Hyp  | 4-Hydroxyproline                        |
+| Ide   | Isodesmosine                            |
+| aIle  | allo-Isoleucine                         |
+| MeGly | N-Methylglycine, sarcosine              |
+| MeIle | N-Methylisoleucine                      |
+| MeLys | 6-N-Methyllysine                        |
+| MeVal | N-Methylvaline                          |
+| Nva   | Norvaline                               |
+| Nle   | Norleucine                              |
+| Orn   | Ornithine                               |
+| OTHER | Other (\*)                              |
+
+ (\*) このリストにないアミノ酸は [/note](/ddbj/qualifiers.html#note) qualifier に記載します。    
+
 
 [参考文献]
 
-  - [Feature Table Definition](/ddbj/feature-table.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/feature-table.html#7.4.4)
+  - [Feature Table Definition](/ddbj/feature-table.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/feature-table.html#7-4-4)

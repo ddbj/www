@@ -28,10 +28,9 @@ related_pages:
 
 ### Nucleotide Base Codes  {#nucleotide-1}
 
-The nucleotide base codes that are used with the International
-Nucleotide Sequence Database is as follows.  
-Sequence data is expressed with small letters only. Capital letter will
-be automatically converted to small letter.
+The nucleotide base codes that are used with the International Nucleotide Sequence Database is as follows.    
+Sequence data is expressed with small letters only.    
+Capital letter will be automatically converted to small letter.    
 
 | Symbol | Meaning          | Explanation                   |
 |---|
@@ -56,11 +55,11 @@ be automatically converted to small letter.
 
   - Cornish-Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)
   - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.1
-    Nucleotide base codes (IUPAC)](/ddbj/feature-table-e.html#7.4.1)
+    Nucleotide base codes (IUPAC)](/ddbj/feature-table-e.html#7-4-1)
 
 ### Modified Base Abbreviations  {#nucleotide-2}
 
-An example for description of the modified base in FEATURES line.
+An example for description of the modified base in FEATURES line.    
 
 Example
 
@@ -120,18 +119,16 @@ Example
 | um           | 2'-O-methyluridine                                                   |
 | yw           | wybutosine                                                           |
 | x            | 3-(3-amino-3-carboxypropyl)uridine, (acp3)u                          |
-| OTHER        | Other ([/note](/ddbj/qualifiers-e.html#note) qualifier に修飾塩基を記載します)  |
+| OTHER        | Other (\*)                                                          |
 
-
+ (\*) Modified base not found in this list should be described in [/note](/ddbj/qualifiers-e.html#note) qualifier.    
 
 [References]
 
-  - Sprinzl, M. and Gauss, D.H. Nucl Acid Res 10, r1 (1982).(note that
-    in Cornish_Bowden, A. Nucl Acid Res 13, 3021-3030 (1985)the
-    IUPAC-IUB declined to recommend a set of abbreviations for modified
-    nucleotides)
-  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.2 Modified
-    base abbreviations](/ddbj/feature-table-e.html#7.4.2)
+  - Sprinzl, M. and Gauss, D.H. Nucl Acid Res 10, r1 (1982). 
+    (note that in Cornish_Bowden, A. Nucl Acid Res 13, 3021-3030 (1985) 
+    the IUPAC-IUB declined to recommend a set of abbreviations for modified nucleotides)
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.2 Modified base abbreviations](/ddbj/feature-table-e.html#7-4-2)
 
 
 
@@ -141,13 +138,13 @@ Example
 ### Amino Acid Codes  {#amino-1}
 
 The amino acid code that is used with the International Nucleotide
-Sequence Database is as follows.  
+Sequence Database is as follows.    
 These amino acids are described with one letter abbreviation in
-[/translation](/ddbj/qualifiers-e.html#translation) qualifier of [CDS
-feature](/ddbj/cds-e.html).  
+[/translation](/ddbj/qualifiers-e.html#translation) qualifier of 
+[CDS feature](/ddbj/cds-e.html).    
 The listed amino acid abbreviations are legal values for qualifiers
 [/transl_except](/ddbj/qualifiers-e.html#transl_except) and
-[/anticodon](/ddbj/qualifiers-e.html#anticodon).  
+[/anticodon](/ddbj/qualifiers-e.html#anticodon).    
 Those that are not included in "Amino acid codes", please refer to
 [Modified and unusual Amino Acids](#amino-2).
 
@@ -186,55 +183,54 @@ Those that are not included in "Amino acid codes", please refer to
 [References]
 
   - IUPAC-IUB Joint Commission on Biochemical Nomenclature.Nomenclature
-    and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138:
-    9-37 (1984).
-  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.3 Amino
-    acid abbreviations](/ddbj/feature-table-e.html#7.4.3)
+    and Symbolism for Amino Acids and Peptides. Eur. J. Biochem. 138: 9-37 (1984).
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.3 Amino acid abbreviations](/ddbj/feature-table-e.html#7-4-3)
 
 
 ### Modified and Unusual Amino Acids  {#amino-2}
 
 For other amino acids, those that are not included in [Amino Acid
-Codes](#amino-1), abbreviation listed below is used. All of these amino
-acids are described with one letter abbreviation "X" in
-[/translation](/ddbj/qualifiers-e.html#translation) qualifier of [CDS
-feature](/ddbj/cds-e.html).
+Codes](#amino-1), abbreviation listed below is used.     
+All of these amino acids are described with one letter abbreviation "X" in
+[/translation](/ddbj/qualifiers-e.html#translation) qualifier of 
+[CDS feature](/ddbj/cds-e.html).
 
 
-| Abbreviation | Amino acid name                                                                                                    |
+| Abbreviation | Amino acid name                         |
 |---|
-| Aad          | 2-Aminoadipic acid                                                                                                 |
-| bAad         | 3-Aminoadipic acid                                                                                                 |
-| bAla         | beta-Alanine, beta-Aminoproprionic acid                                                                            |
-| Abu          | 2-Aminobutyric acid                                                                                                |
-| 4Abu         | 4-Aminobutyric acid, piperidinic acid                                                                              |
-| Acp          | 6-Aminocaproic acid                                                                                                |
-| Ahe          | 2-Aminoheptanoic acid                                                                                              |
-| Aib          | 2-Aminoisobutyric acid                                                                                             |
-| bAib         | 3-Aminoisobutyric acid                                                                                             |
-| Apm          | 2-Aminopimelic acid                                                                                                |
-| Dbu          | 2,4-Diaminobutyric acid                                                                                            |
-| Des          | Desmosine                                                                                                          |
-| Dpm          | 2,2'-Diaminopimelic acid                                                                                           |
-| Dpr          | 2,3-Diaminoproprionic acid                                                                                         |
-| EtGly        | N-Ethylglycine                                                                                                     |
-| EtAsn        | N-Ethylasparagine                                                                                                  |
-| Hyl          | Hydroxylysine                                                                                                      |
-| aHyl         | allo-Hydroxylysine                                                                                                 |
-| 3Hyp         | 3-Hydroxyproline                                                                                                   |
-| 4Hyp         | 4-Hydroxyproline                                                                                                   |
-| Ide          | Isodesmosine                                                                                                       |
-| aIle         | allo-Isoleucine                                                                                                    |
-| MeGly        | N-Methylglycine, sarcosine                                                                                         |
-| MeIle        | N-Methylisoleucine                                                                                                 |
-| MeLys        | 6-N-Methyllysine                                                                                                   |
-| MeVal        | N-Methylvaline                                                                                                     |
-| Nva          | Norvaline                                                                                                          |
-| Nle          | Norleucine                                                                                                         |
-| Orn          | Ornithine                                                                                                          |
-| OTHER        | Other ( (Amino acid not found in this list should be described in [/note](/ddbj/qualifiers-e.html#note) qualifier) |
+| Aad          | 2-Aminoadipic acid                      |
+| bAad         | 3-Aminoadipic acid                      |
+| bAla         | beta-Alanine, beta-Aminoproprionic acid |
+| Abu          | 2-Aminobutyric acid                     |
+| 4Abu         | 4-Aminobutyric acid, piperidinic acid   |
+| Acp          | 6-Aminocaproic acid                     |
+| Ahe          | 2-Aminoheptanoic acid                   |
+| Aib          | 2-Aminoisobutyric acid                  |
+| bAib         | 3-Aminoisobutyric acid                  |
+| Apm          | 2-Aminopimelic acid                     |
+| Dbu          | 2,4-Diaminobutyric acid                 |
+| Des          | Desmosine                               |
+| Dpm          | 2,2'-Diaminopimelic acid                |
+| Dpr          | 2,3-Diaminoproprionic acid              |
+| EtGly        | N-Ethylglycine                          |
+| EtAsn        | N-Ethylasparagine                       |
+| Hyl          | Hydroxylysine                           |
+| aHyl         | allo-Hydroxylysine                      |
+| 3Hyp         | 3-Hydroxyproline                        |
+| 4Hyp         | 4-Hydroxyproline                        |
+| Ide          | Isodesmosine                            |
+| aIle         | allo-Isoleucine                         |
+| MeGly        | N-Methylglycine, sarcosine              |
+| MeIle        | N-Methylisoleucine                      |
+| MeLys        | 6-N-Methyllysine                        |
+| MeVal        | N-Methylvaline                          |
+| Nva          | Norvaline                               |
+| Nle          | Norleucine                              |
+| Orn          | Ornithine                               |
+| OTHER        | Other (\*)                             |
 
+ (\*) Amino acid not found in this list should be described in [/note](/ddbj/qualifiers-e.html#note) qualifier.    
 
 [References]
 
-  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/feature-table-e.html#7.4.4)
+  - [Feature Table Definition](/ddbj/feature-table-e.html): [7.4.4 Modified and unusual Amino Acids](/ddbj/feature-table-e.html#7-4-4)
