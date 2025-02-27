@@ -14,10 +14,10 @@ lang: en
 DDBJ releases sequence data submitted with a [hold
 date](/ddbj/submission-e.html#holddate) according to [Principle of
 “Hold-Until-Published” data
-release](/documents/data-release-policy-e.html).
+release](/insdc/data-release-policy-e.html).
 
 Please confirm if the ID on the paper is [Accession Number Assigned by
-INSD](/documents/accessions-e.html) or not.
+INSD](/insdc/accessions-e.html) or not.
 
 If accession numbers on the paper, please contact us from [contact
 form](/contact-ddbj-e.html) by selecting the item, "Updating

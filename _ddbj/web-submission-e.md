@@ -50,7 +50,7 @@ Please note the points other than number or length of your data.
   [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
   [TLS](/ddbj/tls-e.html), [TPA](/ddbj/tpa-e.html)
-    - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
+    - See [Categories for Sequence Data](/insdc/data-categories-e.html#division) in detail.
 - Submission with long sequences, greater than 500 kb in its length
 - Complex submission containing many features for one sequence, more than 30 features
 - Submission consists of large number of sequences, greater than 100 in total

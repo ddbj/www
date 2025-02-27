@@ -75,7 +75,7 @@ GEA の Experiment と Array design に対してアクセッション番号が�
 
 ## データ公開 {#release}
 
-関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/documents/data-release-policy.html)に従って公開されます。
+関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。登録されたデータは[データ公開原則](/insdc/data-release-policy.html)に従って公開されます。
 
 FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 

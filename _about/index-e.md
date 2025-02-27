@@ -7,7 +7,7 @@ related_pages:
   - title: Faculty Staff of DDBJ
     url: /about/staff-e.html
   - title: INSDC
-    url: /about/insdc-e.html
+    url: /insdc/index-e.html
   - title: INSDC Status Document
     url: /insdc-status-e
 ---
@@ -66,10 +66,10 @@ DNA Database Advisory Committee (an outside committee of NIG).
 ### Construction and Operation of INSDC  {#insd}
 
 In Japan, BI-DDBJ internationally contributes as a member of 
-[INSDC](/about/insdc-e.html ) to collect and to provide nucleotide sequence data.  
+[INSDC](/insdc/index-e.html ) to collect and to provide nucleotide sequence data.  
 
 BI-DDBJ is officially certified to collect nucleotide sequences from researchers and to issue 
-[the internationally recognized accession number](/documents/accessions-e.html) to data submitters.  
+[the internationally recognized accession number](/insdc/accessions-e.html) to data submitters.  
 The accession number issued for each sequence data is unique on the database and internationally 
 recognized to guarantee the submitter the property of the submitted and 
 published data. Since BI-DDBJ exchanges the released data with 
@@ -82,7 +82,7 @@ any other countries. 99% of INSD data from Japanese researchers are submitted th
 
 #### Providing nucleotide and amino acid sequence data related to patent applications  {#pat}
 
-[INSD](/about/insdc.html) contains nucleotide sequence data related to 
+[INSD](/insdc/index.html) contains nucleotide sequence data related to 
 patent applications collected by Patent Offices in Japan, Korea, Europe and USA.  
 BI-DDBJ also provides amino acid sequence data related to patent 
 applications collected by patent offices in Japan and Korea. 

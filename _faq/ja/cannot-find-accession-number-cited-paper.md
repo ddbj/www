@@ -10,10 +10,10 @@ date: 2014-06-03T18:31:09
 lang: ja
 ---
 
-DDBJ では、[データ公開原則](/documents/data-release-policy.html)
+DDBJ では、[データ公開原則](/insdc/data-release-policy.html)
 に従い、[公開予定日](/ddbj/submission.html#holddate)とともに登録された配列データの公開作業を行なっています。
 
-論文に掲載されている ID が [国際塩基配列データベースのアクセッション番号](/documents/accessions.html)
+論文に掲載されている ID が [国際塩基配列データベースのアクセッション番号](/insdc/accessions.html)
 かどうか、 今一度ご確認ください。
 
 アクセッション番号が論文に公表されている場合、必要な確認作業を行ないますので、[DDBJへのお問い合わせ](/contact-ddbj.html)

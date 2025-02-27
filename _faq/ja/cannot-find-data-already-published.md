@@ -30,5 +30,5 @@ lang: ja
 3 と 4 の場合は [DDBJへのお問い合わせ](https://forms.gle/rRrVkcjyMoXQhFVn7) よりご連絡ください。
 
 **参考**  
-- [データ公開原則](/documents/data-release-policy.html)
+- [データ公開原則](/insdc/data-release-policy.html)
 - [論文に掲載されているアクセッション番号が検索できません](/faq/ja/cannot-find-accession-number-cited-paper.html)

@@ -10,7 +10,7 @@ date: 2014-06-03T17:51:57
 lang: ja
 ---
 
-[公開予定日が必要な理由](/documents/data-release-policy.html#requirement)をご参照ください。    
+[公開予定日が必要な理由](/insdc/data-release-policy.html#requirement)をご参照ください。    
 登録後データを一定期間非公開にする場合は，必ず具体的な公開予定日を設定してください。
 
 公開予定日に特に制限は設けておりませんが、１年から2年程度までを目安に余裕をもった日付をご指定ください。    
@@ -21,4 +21,4 @@ lang: ja
 
 参考
 : - [公開予定日を延期したい](/faq/ja/postpone-hold-date.html)
- - [データ公開原則](/documents/data-release-policy.html)
+ - [データ公開原則](/insdc/data-release-policy.html)

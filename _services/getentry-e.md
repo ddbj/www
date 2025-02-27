@@ -151,7 +151,7 @@ DDBJ/EMBL/GenBank includes the following databases.
 "4 letters + 8 digits" accession numbers(WGS and TSA) and TPA are not
 contained in the DDBJ releases.
 
-Please refrer the [Latest Release Information](/latest-releases-e.html),
+Please refrer the [Latest Release Information](/ddbj-releases-e.html),
 for the current status of searchable databases and related information.
 
 
@@ -215,7 +215,7 @@ Database
   </tbody>
 </table>
 
-Please refrer [Latest Release Information](/latest-releases-e.html), for
+Please refrer [Latest Release Information](/ddbj-releases-e.html), for
 the current status of searchable databases and related information.
 
 #### Output Format  {#Output_Format}
@@ -473,7 +473,7 @@ DDBJ/EMBL/GenBank includes the following databases.
 4 letters + 8 digits" accession numbers(WGS and TSA) and TPA are not
 contained in the DDBJ releases.
 
-Please refrer [Latest Release Information](/latest-releases-e.html) , for
+Please refrer [Latest Release Information](/ddbj-releases-e.html) , for
 the current status of searchable databases and related information.
 </div>
 

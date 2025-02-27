@@ -50,7 +50,7 @@ Please note the points other than number or length of your data.
   [HTC](/ddbj/htc-e.html), [GSS](/ddbj/gss-e.html),
   [HTG](/ddbj/htg-e.html), [WGS](/ddbj/wgs-e.html),
   [TLS](/ddbj/tls-e.html), [TPA](/ddbj/tpa-e.html)
-    - See [Categories for Sequence Data](/documents/data-categories-e.html#division) in detail.
+    - See [Categories for Sequence Data](/insdc/data-categories-e.html#division) in detail.
 - Submission with long sequences, greater than 500 kb in its length
 - Complex submission containing many features for one sequence, more than 30 features
 - Submission consists of large number of sequences, greater than 100 in total
@@ -264,7 +264,7 @@ DDBJ reviews submission files and then informs the submitter of some correction 
 *Optional: Before preparing the entire sequence and annotation files, you can send a part of your data as a test submission, and then ask DDBJ whether the submission files are correctly created or not.*
 
 ## Publication of the data  {#publication}
-If you specified immediate release in the submission process, the submitted data are open to public as soon as possible. Whereas, if you specified [the hold date](/ddbj/submission-e.html#hold-date), the data will be released based on the principle of [“Hold-Until-Published” data release](https://www.ddbj.nig.ac.jp/documents/data-release-policy-e.html). The registered data are distributed in a flat file format converted according to a DDBJ defined rule, depending on the contents of sequence and annotation. Please refer to [the relationships between annotation files and flat files](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=961825804).
+If you specified immediate release in the submission process, the submitted data are open to public as soon as possible. Whereas, if you specified [the hold date](/ddbj/submission-e.html#hold-date), the data will be released based on the principle of [“Hold-Until-Published” data release](https://www.ddbj.nig.ac.jp/insdc/data-release-policy-e.html). The registered data are distributed in a flat file format converted according to a DDBJ defined rule, depending on the contents of sequence and annotation. Please refer to [the relationships between annotation files and flat files](https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=961825804).
 
 ## Requirement of BioProject, BioSample ID {#mssprjtable}
 - Genome

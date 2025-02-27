@@ -1,15 +1,15 @@
 ---
 layout: indexed_content
 title: 登録データ種別
-category: documents
+category: insdc
 lang: ja
 related_pages:
   - title: 国際塩基配列データベースのアクセッション番号
-    url: /documents/accessions.html
+    url: /insdc/accessions.html
   - title: データ公開原則
-    url: /documents/data-release-policy.html
+    url: /insdc/data-release-policy.html
   - title: Prefix Letter List
-    url: /documents/prefix.html
+    url: /insdc/prefix.html
 ---
 
 ## DDBJ に登録可能なデータ  {#accept}
@@ -30,7 +30,7 @@ DDBJ では, [Primary entry](/ddbj/submission.html#primary_entry) のデータ�
 SNPs, [WGS](/ddbj/wgs.html#acceptance), [transcriptome](/ddbj/tsa.html) 解析などにおいて raw output data を公表することが必要な場合は、
 DDBJ/ENA/GenBank とは別枠のデータベースである [DTA; DDBJ Trace Archive](/dta/index.html)、または、[DRA; DDBJ Sequence Read Archive](/dra/index.html) へのご登録をお願いいたします。
 
-参照：[登録データの 取り扱いについて](/about/insdc.html#policy)
+参照：[登録データの 取り扱いについて](/insdc/index.html#policy)
 
 ### 配列が同一, あるいは, 部分的に重複するデータの登録
 

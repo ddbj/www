@@ -18,5 +18,5 @@ curl "https://www.ncbi.nlm.nih.gov/Traces/sra-reads-be/fasta?ti=2282248605&retmo
 登録例 [DRX395641-DRX395673](https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=884920)
 </div>
 
-[DDBJ Trace Archive (DTA)](index.html) は，配列決定プロジェクトからのシングルパスリードの DNA sequence chromatograms (traces), base calls, quality estimates のためのデータベースです。 DTA は [International Nucleotide Sequence Database Collaboration (INSDC)](/about/insdc.html#insd)
+[DDBJ Trace Archive (DTA)](index.html) は，配列決定プロジェクトからのシングルパスリードの DNA sequence chromatograms (traces), base calls, quality estimates のためのデータベースです。 DTA は [International Nucleotide Sequence Database Collaboration (INSDC)](/insdc/index.html#insd)
 のメンバーであり，[NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) と [EBI Trace Archive](https://www.ebi.ac.uk/ena/) との国際協力の下，データベースを運営しています。 DTA から公開されたデータは [NCBI Trace Archive](https://www.ncbi.nlm.nih.gov/Traces/trace.cgi) で検索，取得することができます。

@@ -25,7 +25,7 @@ related_pages:
 ---
 
 DDBJ (DNA Data Bank of Japan) shares annotated/assembled nucleotide sequence data as a member of 
-[INSDC](/about/insdc-e.html) (International Nucleotide Sequence Database Collaboration).    
+[INSDC](/insdc/index-e.html) (International Nucleotide Sequence Database Collaboration).    
 For the sharing purpose, DDBJ collects the nucleotide sequences experimentally determined, 
 and constructs the database in accordance with the rule agreed with INSDC.  
 
@@ -277,7 +277,7 @@ This line shows accession number of the entry data.
 
 Conventional sequence data  
 : A unique accession number is issued to the data submitter by each of the three data banks. The accession number is composed of 1 alphabet character and 5 digits (ex. A12345) or 2 alphabet characters and 6 digits (ex. AB123456). The former style was used in 1980s, but later the latter style was introduced because of data explosion.
-<br>The alphabet part is called "prefix". Please refer [the prefix list](/documents/prefix-e.html).
+<br>The alphabet part is called "prefix". Please refer [the prefix list](/insdc/prefix-e.html).
 
 : If multiple entries are united to an entry, or if an entry is extensively modified after the submission, the responsible data banks may assign a new accession number to it. In these cases, the new accession number is called the primary accession number, and the old accession number(s) is/are called the secondary accession number(s). In the flat file, the primary accession number is indicated first, then the secondary accession number(s) follows. You can find the same updated entry with both the primary and the secondary accession numbers.
 
@@ -290,7 +290,7 @@ Conventional sequence data
   |  ```AB888888 AB777777```  |  secondary accession number  |
 
 Bulk sequence data; WGS, TSA, TLS  
-: The accession number assigned to each entry of [WGS](/ddbj/wgs-e.html), [TSA](/ddbj/tsa-e.html) and TLS data consists of 4 alphabet characters and 8 (sometimes 9 or 10, if necessary) digits.<br>The alphabet part is called [prefix](/documents/prefix-e.html).<br>See also [For Large Scale Data (four prefix)](/documents/prefix-e.html#large).<br>Example:ZZZZ01000001
+: The accession number assigned to each entry of [WGS](/ddbj/wgs-e.html), [TSA](/ddbj/tsa-e.html) and TLS data consists of 4 alphabet characters and 8 (sometimes 9 or 10, if necessary) digits.<br>The alphabet part is called [prefix](/insdc/prefix-e.html).<br>See also [For Large Scale Data (four prefix)](/documents/prefix-e.html#large).<br>Example:ZZZZ01000001
 
   | ZZZZ (4 letters) | Prefix to distinguish each project, project_id                 |
   | 01 (2 digits)        | Version number of the data set, set_version                |
@@ -377,7 +377,7 @@ DDBJ has replaced the PROJECT line by DBLINK line format since 2009 to expand fo
 The KEYWORDS lines were used for indexing ([gene](/ddbj/qualifiers-e.html#gene)) and 
 ([product](/ddbj/qualifiers-e.html#product)) names in the past.
 
-For now, KEYWORDS lines are used to indicate [the detail category of the data](/documents/data-categories-e.html#detail) ([EST](/ddbj/est-e.html),
+For now, KEYWORDS lines are used to indicate [the detail category of the data](/insdc/data-categories-e.html#detail) ([EST](/ddbj/est-e.html),
 [TSA](/ddbj/tsa-e.html), [HTC](/ddbj/htc-e.html), [HTG](/ddbj/htg-e.html),
 [GSS](/ddbj/gss-e.html), [WGS](/ddbj/wgs-e.html), [TPA](/ddbj/tpa-e.html) etc) information about experimental method, "finishing level" of genome sequencing and else, if necessary. See also [INSDC agreed methodological keywords](https://insdc.org/submitting-standards/methodological-keywords/).
 

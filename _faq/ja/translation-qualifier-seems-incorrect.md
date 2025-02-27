@@ -12,7 +12,7 @@ date: 2014-06-03T17:08:55
 lang: ja
 ---
 
-アミノ酸翻訳の仕様は[国際塩基配列データベース](/about/insdc.html)の規約で決まっています。    
+アミノ酸翻訳の仕様は[国際塩基配列データベース](/insdc/index.html)の規約で決まっています。    
 当該 CDS feature がアミノ酸翻訳される際の遺伝暗号表は /[transl_table](/ddbj/qualifiers.html#transl_table) qualifier に [The Genetic Codes](/ddbj/geneticcode-e.html) の番号で示されます。    
 よく誤解される点を３つ挙げておきます。
 

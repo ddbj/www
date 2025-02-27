@@ -5,15 +5,15 @@ lang: en
 related_pages:
   - title: Submission and release data volumes
     url: /statistics/index-e.html
-  - title: DDBJ Periodic Release Statistics
-    url: /statistics/ddbj-release-e
-  - title: Release Notes of DDBJ Releases
-    url: ./ddbj-releases-e
+  - title: DDBJ Periodical Release Statistics
+    url: /statistics/ddbj-release-e.html
+  - title: DDBJ Releases
+    url: /ddbj-releases-e.html
 ---
 
 ## Latest Release Information
 
-[Release notes (DDBJ, 16S rRNA, DAD)]({{site.baseurl}}/ddbj-releases-e.html)
+[Release notes (DDBJ, 16S rRNA, DAD)](/ddbj-releases-e.html)
 
 |  Database  |  Release  |  Date  |  DDBJ date  |  Entries  |  Bases  |  Rate of increase  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |

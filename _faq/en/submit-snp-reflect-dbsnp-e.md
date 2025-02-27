@@ -11,7 +11,7 @@ lang: en
 ---
 
 Though you can submit sequence data including SNP (Single Nucleotide Polymorphisms) to DDBJ, the data will not automatically reflect to dbSNP.    
-[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/) is an independent database from [INSDC](/about/insdc-e.html), operated by NCBI.    
+[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/) is an independent database from [INSDC](/insdc/index-e.html), operated by NCBI.    
 For SNP data, we recommend you to submit to dbSNP. 
 
 In case of submission to DDBJ, see format of feature annotation at [F: Variation](/ddbj/example-e.html#F) on [Example of Submission](/ddbj/example-e.html). 

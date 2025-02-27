@@ -12,7 +12,7 @@ lang: ja
 
 原則として、下記を満たす場合に限り対応可能です。  
 1. 配列データが、かつて一度も公開されたことがない  
-1. そのアクセッション番号が[公表](/documents/data-release-policy.html)されていない  
+1. そのアクセッション番号が[公表](/insdc/data-release-policy.html)されていない  
   
 [DDBJへのお問い合わせ](/contact-ddbj.html) より、以下の項目についてお知らせください。
 

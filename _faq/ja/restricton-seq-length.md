@@ -21,6 +21,6 @@ lang: ja
 
 参考
 : [送付した配列データが登録されないということはあるのですか](/faq/ja/reject-submission.html )
-: [DDBJ に登録可能なデータ](/documents/data-categories.html#accept )
+: [DDBJ に登録可能なデータ](/insdc/data-categories.html#accept )
 : [登録を受け付けることができない配列](/ddbj/sequence.html#not_acceptable ) 
 

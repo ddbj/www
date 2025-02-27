@@ -151,7 +151,7 @@ DDBJ リリース には、 TPA、 アルファベット４文字＋８桁の数
 
 MGA データの新規登録は受け付けておりません。
 
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/latest-releases.html) でご確認ください。
+getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/ddbj-releases.html) でご確認ください。
 
 
 出力形式
@@ -214,7 +214,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
   </tbody>
 </table>
 
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/latest-releases.html) でご確認ください。
+getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/ddbj-releases.html) でご確認ください。
 
 #### 出力形式  {#出力形式}
 
@@ -450,7 +450,7 @@ DDBJ リリース には、 TPA、 アルファベット４文字＋８桁の数
 
 MGA データの新規登録は受け付けておりません。
 
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/latest-releases.html) でご確認ください。
+getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/ddbj-releases.html) でご確認ください。
 </div>
 
 **入力例** <span class="normal">（上段はGET method , 下段は　smart URL ）</span>

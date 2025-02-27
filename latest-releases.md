@@ -7,14 +7,14 @@ related_pages:
   - title: 登録・公開データ量
     url: /statistics/index.html
   - title: DDBJ 定期リリース統計
-    url: /statistics/ddbj-release
-  - title: リリースノート (DDBJ, 16S rRNA, DAD)
-    url: ./ddbj-releases
+    url: /statistics/ddbj-release.html
+  - title: DDBJ 定期リリース
+    url: /ddbj-releases.html
 ---
 
 ## 最新リリースの情報
 
-[リリースノート (DDBJ, 16S rRNA, DAD)]({{site.baseurl}}/ddbj-releases.html)
+[リリースノート (DDBJ, 16S rRNA, DAD)](/ddbj-releases.html)
 
 |  Database  |  Release  |  Date  |  DDBJ date  |  Entries  |  Bases  |  Rate of increase  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |

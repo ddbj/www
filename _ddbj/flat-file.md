@@ -24,7 +24,7 @@ related_pages:
     url: /ddbj/geneticcode.html
 ---
 
-DDBJ（DNA Data Bank of Japan）は [INSDC](/about/insdc.html)（International Nucleotide Sequence Database Collaboration）の一員として、
+DDBJ（DNA Data Bank of Japan）は [INSDC](/insdc/index.html)（International Nucleotide Sequence Database Collaboration）の一員として、
 アノテーションが付与された/アセンブルされた塩基配列データを共有しています。  
 このデータ共有のため、全世界の研究者が実験によって決定したDNA (または RNA) の塩基配列データ <span class="red">\*</span> を、INSDC で定めたデータ構築規範に沿って収集・編集することによりデータベースを構築しています。    
 （<span class="red">\*</span>旧運用では、論文に記載されていた塩基配列を取り込む journal scan 方式の塩基配列データ収集も実施していました。）
@@ -276,7 +276,7 @@ Bacillus 属 16S rRNA の部分配列
 INSD が発行する登録番号をアクセッション番号と呼んでいます。
 
 Conventional sequence data  
-: アルファベット１文字＋５桁の数字（例 A12345）または、アルファベット２文字＋６桁の数字（例 AB123456）で構成されています。<br>アルファベットの部分をプレフィックスと呼びます。<br>[プレフィックスのリスト](/documents/prefix.html)も ご参照ください。
+: アルファベット１文字＋５桁の数字（例 A12345）または、アルファベット２文字＋６桁の数字（例 AB123456）で構成されています。<br>アルファベットの部分をプレフィックスと呼びます。<br>[プレフィックスのリスト](/insdc/prefix.html)も ご参照ください。
 
 : 複数のエントリを統合した場合や、データ登録後に内容が大幅に変更された場合などには、新規にアクセッション番号を発行することがあります。この際、新規のアクセッション番号（プライマリアクセッション番号）に対して、既存のアクセッション番号はセカンダリアクセッション番号となります。フラットファイルには先頭にプライマリアクセッション番号、２つ目以降にセカンダリアクセッション番号を記載します。プライマリアクセッション番号、あるいはセカンダリアクセッション番号、どちらの番号で検索しても，同じ変更後のデータが検索されます。
 
@@ -289,7 +289,7 @@ Conventional sequence data
   |  ```AB888888 AB777777```  |  セカンダリアクセッション番号  |
 
 Bulk sequence data; WGS, TSA, TLS  
-: [WGS](/ddbj/wgs.html), [TSA](/ddbj/tsa.html), TLS に発行されるアクセッション番号はアルファベット 4 文字 ＋ 8 桁（9 または 10 桁になることがあります）の数字で構成されます。<br>アルファベットの部分を[プレフィックス](/documents/prefix.html)と呼びます。<br>[For Large Scale Data (four prefix)](/documents/prefix-e.html#large)も ご参照ください。<br>例：ZZZZ01000001
+: [WGS](/ddbj/wgs.html), [TSA](/ddbj/tsa.html), TLS に発行されるアクセッション番号はアルファベット 4 文字 ＋ 8 桁（9 または 10 桁になることがあります）の数字で構成されます。<br>アルファベットの部分を[プレフィックス](/insdc/prefix.html)と呼びます。<br>[For Large Scale Data (four prefix)](/documents/prefix-e.html#large)も ご参照ください。<br>例：ZZZZ01000001
 
   | ZZZZ（アルファベット 4文字） | プロジェクトを区別する prefix                           |
   | 01（2桁の数字）           | データセットのバージョン番号                               |
@@ -377,7 +377,7 @@ DBLINK 行は 2009 年に記載情報を拡張したため PROJECT 行から変�
 KEYWORDS は、過去の登録においては、遺伝子名 ([gene](/ddbj/qualifiers.html#gene))、産物名
 ([product](/ddbj/qualifiers.html#product)) の索引に用いられていました。
 
-現在は、[データの詳細種別](/documents/data-categories.html#detail) ([EST](/ddbj/est.html),
+現在は、[データの詳細種別](/insdc/data-categories.html#detail) ([EST](/ddbj/est.html),
 [TSA](/ddbj/tsa.html), [HTC](/ddbj/htc.html), [HTG](/ddbj/htg.html),
 [GSS](/ddbj/gss.html), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html)
 など)、配列の特性、実験手法、ゲノム配列の完成度などに関する情報などが、必要に応じて、記載されます。[INSDC agreed

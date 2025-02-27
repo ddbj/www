@@ -21,7 +21,7 @@ Frequently asked questions
 : In other case: Reffer to [FAQ (Data update)）](/faq/en/index-e.html?keyword=%E6%9B%B4%E6%96%B0)
 
 
-※ See [Categories for Sequence Data](/documents/data-categories-e.html)
+※ See [Categories for Sequence Data](/insdc/data-categories-e.html)
 
 ### DDBJ Annotated/Assembled Sequences {#ddbj}
 

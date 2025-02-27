@@ -1,17 +1,16 @@
 ---
 layout: indexed_content
 title: Categories for Sequence Data
-category: documents
+category: insdc
 lang: en
 related_pages:
   - title: Prefix Letter List
-    url: /documents/prefix-e.html
+    url: /insdc/prefix-e.html
   - title: Accession Number Assigned by INSD
-    url: /documents/accessions.html
-  - title: Principle of “Hold-Until-Published” data release
-    url: /documents/data-release-policy-e.html
+    url: /insdc/accessions-e.html
+  - title: Principle of Hold-Until-Published data release
+    url: /insdc/data-release-policy-e.html
 ---
-
 
 # Categories for Sequence Data
 
@@ -31,7 +30,7 @@ However, some types of sequence data are [not acceptable for DDBJ](/ddbj/sequenc
 When you are to publicize raw output data for your studies related to SNPs, [WGS](/ddbj/wgs-e.html#acceptance), [transcriptome](/ddbj/tsa-e.html) and so on, 
 we recommend you to contact with [DDBJ Trace Archive](/dta/index-e.html), or [DDBJ Sequence Read Archive](/dra/index-e.html), instead of DDBJ / ENA / GenBank.
 
-See [Overview of International Nucleotide Sequence Databases Policies](/about/insdc-e.html#policy)
+See [Overview of International Nucleotide Sequence Databases Policies](/insdc/index-e.html#policy)
 
 ### Submisson of the data including identical sequences or partially duplicated sequences
 

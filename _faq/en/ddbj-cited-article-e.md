@@ -18,7 +18,7 @@ as a reference.
 However, please note followings.
 
 In case of citation for each sequence record  
-: In general, it is enough to describe [accession number](/documents/accessions.html) for it in your publication.    
+: In general, it is enough to describe [accession number](/insdc/accessions.html) for it in your publication.    
     If you discuss about the data in detail, please use [primary
     citation](/ddbj/submission.html#pcite) for the data as a reference.
 In case of citation for each service provided at DDBJ  

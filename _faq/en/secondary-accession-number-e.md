@@ -13,8 +13,8 @@ lang: en
 
 
 
-[INSD; International Nucleotide Sequence Database](/about/insdc-e.html#insd) are composed of DDBJ, ENA and NCBI, and collect experimentally determined nucleotide sequence data.    
-A unique **accession number** issued by INSD for each submitted sequence data is defined as [the INSD accession number](/documents/accessions.html).     
+[INSD; International Nucleotide Sequence Database](/insdc/index-e.html#insd) are composed of DDBJ, ENA and NCBI, and collect experimentally determined nucleotide sequence data.    
+A unique **accession number** issued by INSD for each submitted sequence data is defined as [the INSD accession number](/insdc/accessions.html).     
 On [DDBJ flat file](/ddbj/flat-file-e.html), the accession number is described in [ACCESSION](/ddbj/flat-file-e.html#AccessionB) line. 
 
 If multiple entries are united to an entry, or if an entry is extensively modified after the submission, the responsible data banks may assign a new accession number to it. In these cases, the new accession number is called the primary accession number, and the old accession number(s) is/are called the secondary accession number(s). 

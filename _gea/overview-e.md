@@ -80,7 +80,7 @@ Experiments and Array designs in GEA are assigned unique accession numbers (n is
 
 ## Data release {#release}
 
-The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/documents/data-release-policy-e.html).
+The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/insdc/data-release-policy-e.html).
 
 FAQ: [How to request data release?](/faq/en/request-release-e.html)
 

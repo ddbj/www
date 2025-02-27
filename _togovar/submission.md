@@ -74,7 +74,7 @@ dbVar の [Overview of Structural Variation](https://www.ncbi.nlm.nih.gov/dbvar/
 
 論文で出るまでデータを非公開にすることができます。  
 登録者は登録日から三年以内の公開予定日を設定することができます。
-非公開のデータは [data release policy](/documents/data-release-policy.html) に従って公開されます。
+非公開のデータは [data release policy](/insdc/data-release-policy.html) に従って公開されます。
 
 ## 更新 {#update}
 

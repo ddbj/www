@@ -21,7 +21,7 @@ lang: ja
 : その他の場合は、[FAQ（登録データの更新について）](/faq/ja/index.html?keyword=%E6%9B%B4%E6%96%B0) をご参照ください
 
 
-※ [登録データ種別](/documents/data-categories.html)をご確認ください。
+※ [登録データ種別](/insdc/data-categories.html)をご確認ください。
 
 ### DDBJ Annotated/Assembled Sequences {#ddbj}
 

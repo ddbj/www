@@ -14,7 +14,7 @@ lang: ja
 ## DDBJ {#ddbj}
 
 原則として、公開されたデータを非公開に戻すことはできません。    
-[INSDC](/about/insdc.html) において一度公開されたエントリを DDBJ retrieval system: [getentry](http://getentry.ddbj.nig.ac.jp/top-j.html) を利用してアクセッション番号で検索した場合、永久に閲覧が可能な状態になります（INSDC 側の作業ミスにより誤って公開された場合は、その限りではありません）。
+[INSDC](/insdc/index.html) において一度公開されたエントリを DDBJ retrieval system: [getentry](http://getentry.ddbj.nig.ac.jp/top-j.html) を利用してアクセッション番号で検索した場合、永久に閲覧が可能な状態になります（INSDC 側の作業ミスにより誤って公開された場合は、その限りではありません）。
 
 ただし、配列データに大きな誤りがあるなど、問題が生じた場合には、配列データの利用に一定の制限 (対象配列データの相同性検索サービスからの削除など) をかけることができます。
 

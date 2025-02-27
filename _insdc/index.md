@@ -2,13 +2,15 @@
 layout: indexed_content
 title: INSDC
 lang: ja
-category: about
+category: insdc
 related_pages:
-  - title: DDBJ 運営スタッフ
-    url: /about/staff.html
+  - title: 国際塩基配列データベースのアクセッション番号
+    url: /insdc/accessions.html
+  - title: データ公開原則
+    url: /insdc/data-release-policy.html
+  - title: Prefix Letter List
+    url: /insdc/prefix.html
 ---
-
-
 
 ## The International Nucleotide Sequence Database Collaboration (INSDC)
 

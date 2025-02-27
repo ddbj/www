@@ -16,7 +16,7 @@ lang: ja
 ただし、以下の点についてご注意ください。
 
 個別の配列データを引用する場合  
-: 通常は[アクセッション番号](/documents/accessions.html)を引用することで十分です。    
+: 通常は[アクセッション番号](/insdc/accessions.html)を引用することで十分です。    
 個別のデータに関して詳細な内容について言及する場合は各配列データの [primary
     citation](/ddbj/submission.html#pcite) を引用することが適切です。
 

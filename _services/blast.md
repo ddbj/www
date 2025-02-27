@@ -216,7 +216,7 @@ DDBJ ALL または DDBJ New を選択した場合，以下の選択肢から，�
 
 <span class="red">*</span>特許データの利用に際しては，[特許データ利用に関する注意](/ddbj/patent-data.html)をご参照ください。
 
-<span class="red">*</span>現在のバージョンは [こちら](/latest-releases.html) からご確認ください。
+<span class="red">*</span>現在のバージョンは [こちら](/ddbj-releases.html) からご確認ください。
 
 #### DIVISION(DAD)  {#DIVISIONDAD}
 

@@ -10,7 +10,7 @@ date: 2014-06-03T18:11:34
 lang: ja
 ---
 
-登録の際に[公開予定日 (Hold Date)](/ddbj/submission.html#holddate)を設定した場合、[データ公開原則](/documents/data-release-policy.html) に従い公開されます。  
+登録の際に[公開予定日 (Hold Date)](/ddbj/submission.html#holddate)を設定した場合、[データ公開原則](/insdc/data-release-policy.html) に従い公開されます。  
 公開作業が完了しますと、公開をお知らせするメールが[コンタクトパーソン](/ddbj/submission.html#contact)のメールアドレス宛に Subject: \[DDBJ\] Publicized your data で送信されます。  
 [DDBJ からのメールを迷惑メールとしないように設定](/precautions.html)をお願いいたします。
 

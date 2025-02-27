@@ -1,22 +1,22 @@
 ---
 layout: indexed_content
 title: データ公開原則
-category: documents
+category: insdc
 lang: ja
 related_pages:
   - title: 登録データ種別
-    url: /documents/data-categories.html
+    url: /insdc/data-categories.html
   - title: 国際塩基配列データベースのアクセッション番号
-    url: /documents/accessions.html
+    url: /insdc/accessions.html
   - title: Prefix Letter List
-    url: /documents/prefix.html
+    url: /insdc/prefix.html
 ---
 
 ### 「データ公開」を行う時期
 
 1. [登録者](/ddbj/submission.html#submitter)から公開依頼の連絡を受けた場合
 
-2. 当該[アクセッション番号](/documents/accessions.html)の公表を確認した場合
+2. 当該[アクセッション番号](/insdc/accessions.html)の公表を確認した場合
 - 登録者以外の第三者が過失により他人のアクセッション番号を公表した場合などは該当しません。
 - 公表とは、アクセッション番号を不特定多数の対象に知らせる行為
     (学術論文 (in press での on-line preview
@@ -67,6 +67,6 @@ related_pages:
 
 登録データの取り扱いについて
 :   登録データの取り扱いについては、[INSDC
-    のポリシー](/about/insdc.html#policy)をご覧ください。
+    のポリシー](/insdc/index.html#policy)をご覧ください。
 :   \[FAQ\]
     [公開を取り消したデータが現在も参照できるのはなぜですか](/faq/ja/why-retracted-data-available.html)

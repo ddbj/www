@@ -10,9 +10,17 @@ related_pages:
   - title: リリースノート (DDBJ, 16S rRNA, DAD)
     url: /ddbj-releases.html
   - title: 最新リリースの情報
-    url: /latest-releases.html
+    url: /ddbj-releases.html
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>
 ---
+
+## DDBJ 登録 {#ddbj-submission}
+
+- Web Submission: [Nucleotide Sequence Submission System](/ddbj/web-submission.html) からの登録
+- MSS Submission: [Mass Submission System](/ddbj/mss.html) からの登録
+- Submission: 登録数
+
+<div id="ddbj-submission_stat_area"></div>
 
 ## DDBJ データ公開 {#ddbj-release}
 
@@ -23,50 +31,44 @@ addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/load
 
 CON と TPA は次の理由によりリリース統計には含めていません。CON:登録済み塩基配列から構築されており重複カウントになるため。TPA:登録者が取得したオリジナルデータではないため。
   
-統計の内訳は [DDBJ 定期リリース統計](/statistics/ddbj-release.html) で公開しています。
-
 [Source data
 table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=161698998)
 
-## DRA データ公開 {#dra-release}
+## DDBJ 定期リリース統計 {#ddbj-release}
 
-<div id="dra-release_stat_area"></div>
-
-## GEA データ公開 {#gea-release}
-
-<div id="gea-release_stat_area"></div>
-
-## MetaboBank データ公開 {#metabobank-release}
-
-<div id="metabobank-release_stat_area"></div>
-
-## JGA データ公開 {#jga-release}
-
-<div id="jga-release_stat_area"></div>
-
-## DDBJ 登録 {#ddbj-submission}
-
-- Web Submission: [Nucleotide Sequence Submission System](/ddbj/web-submission.html) からの登録
-- MSS Submission: [Mass Submission System](/ddbj/mss.html) からの登録
-- Submission: 登録数
-
-<div id="ddbj-submission_stat_area"></div>
+[DDBJ 定期リリース統計](/statistics/ddbj-release.html)
 
 ## DRA 登録 {#dra-submission}
 
 <div id="dra-submission_stat_area"></div>
 
+## DRA データ公開 {#dra-release}
+
+<div id="dra-release_stat_area"></div>
+
 ## GEA 登録 {#gea-submission}
 
 <div id="gea-submission_stat_area"></div>
+
+## GEA データ公開 {#gea-release}
+
+<div id="gea-release_stat_area"></div>
 
 ## MetaboBank 登録 {#metabobank-submission}
 
 <div id="metabobank-submission_stat_area"></div>
 
+## MetaboBank データ公開 {#metabobank-release}
+
+<div id="metabobank-release_stat_area"></div>
+
 ## JGA 登録 {#jga-submission}
 
 <div id="jga-submission_stat_area"></div>
+
+## JGA データ公開 {#jga-release}
+
+<div id="jga-release_stat_area"></div>
 
 ## ウェブアクセス {#web-access}
 

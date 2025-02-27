@@ -10,7 +10,7 @@ date: 2014-06-03T16:48:55
 lang: ja
 ---
 
-DDBJ を含む[国際塩基配列データベース](/about/insdc.html)が、登録された塩基配列データに対して発行する番号を[アクセッション番号 (accession number)](/documents/accessions.html)と呼んでいます。    
+DDBJ を含む[国際塩基配列データベース](/insdc/index.html)が、登録された塩基配列データに対して発行する番号を[アクセッション番号 (accession number)](/insdc/accessions.html)と呼んでいます。    
 [DDBJ 公開形式 (flat file)](/ddbj/flat-file.html)においては [ACCESSION](/ddbj/flat-file.html#AccessionB)行に記載されています。
 
 複数エントリの統合、大幅な内容変更など、既に登録された塩基配列の更新に相当する場合でも、新規に登録し直して アクセッション番号を発行することがあります。 この際に、新規のアクセッション番号 (プライマリアクセッション番号) に対して、既存のアクセッション番号をセカンダリアクセッション番号とすることがあります。

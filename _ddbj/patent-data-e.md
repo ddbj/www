@@ -18,7 +18,7 @@ The nucleotide sequence data included in patent applications that are
 collected and processed by [the Japan Patent Office](//www.jpo.go.jp/)
 (JPO) and [the Korean Intellectual Property Office](//www.kipo.go.kr/)
 (KIPO)<sup>*</sup> are imported into [the International Nucleotide
-Sequence Database Collaboration](/about/insdc-e.html#insd) (INSD) via DDBJ and
+Sequence Database Collaboration](/insdc/index-e.html#insd) (INSD) via DDBJ and
 are made available to the public.  
 Similarly, the nucleotide sequence data collected by [the European
 Patent Office](//www.epo.org/index.html) (EPO) and [the United States
@@ -27,8 +27,8 @@ imported into INSD via EMBL-Bank/ENA and GenBank, respectively.
 \* The procedure to import KIPO sequence data into INSD through DDBJ was
 started from February 2008.  
 You can distinguish the nucleotide sequence data included in patent
-applications by [prefix](/documents/prefix-e.html) of [accession
-numbers](/documents/accessions-e.html).
+applications by [prefix](/insdc/prefix-e.html) of [accession
+numbers](/insdc/accessions-e.html).
 
 The nucleotide sequence data included in patent applications can be
 searched or browsed from the following DDBJ services. Please note that

@@ -14,7 +14,7 @@ For once published entries, we can restrict to use the data, if the conditions a
 In case of the restriction, DDBJ will not include the data in its periodical release and remove from all services under DDBJ.    
 However, the data is permanently available on [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html) queried with its accession number.    
 ※ The rule is not applied, when the data is published by any mistake of INSD.    
- This policy is written in the document prepared by [International Advisory Committee](/about/insdc-e.html#iac) of INSD on [Overview of International Nucleotide Sequence Databases Policies](/about/insdc-e.html#policy) as follows; 
+ This policy is written in the document prepared by [International Advisory Committee](/insdc/index-e.html#iac) of INSD on [Overview of International Nucleotide Sequence Databases Policies](/about/insdc-e.html#policy) as follows; 
 
 ---
 

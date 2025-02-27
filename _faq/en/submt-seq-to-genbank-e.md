@@ -13,4 +13,4 @@ lang: en
 When sequence data are published, the data will be shared among DDBJ, EMBL-Bank and GenBank. So, it is necessary and sufficient to submit sequence data to either of three data banks only once.    
 If you submit sequence data to GenBank after submission of the same data to DDBJ, the data will be duplicated. So, do not submit the same data to two or more data banks. 
 
-Though some journals instruct to authors to submit sequence data to GenBank, [Accession Number](/documents/accessions.html) is commonly used by all of DDBJ, EMBL-Bank and GenBank to construct [INSD](/about/insdc-e.html). 
+Though some journals instruct to authors to submit sequence data to GenBank, [Accession Number](/insdc/accessions.html) is commonly used by all of DDBJ, EMBL-Bank and GenBank to construct [INSD](/insdc/index-e.html). 

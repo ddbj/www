@@ -33,5 +33,5 @@ Please contact us from [Contact](https://forms.gle/7g2YCoBjqvbBBW9V8) by
 selecting the item, "Updating Submitted Data" with accession numbers.
 
 **References**
-- [Principle of "Hold-Until-Published" data release](/documents/data-release-policy-e.html)
+- [Principle of "Hold-Until-Published" data release](/insdc/data-release-policy-e.html)
 - [Can not find the sequence data, though the accession number cited on a paper.](/faq/en/cannot-find-accession-number-cited-paper-e.html)

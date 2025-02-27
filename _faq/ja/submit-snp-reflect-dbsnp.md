@@ -11,7 +11,7 @@ lang: ja
 ---
 
 SNP (Single Nucleotide Polymorphisms) を含む配列を DDBJ に登録することはできますが、dbSNP には反映されません。    
-[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/)は [国際塩基配列データベース](/about/insdc.html)とは独立しており、NCBI が独自に運用しているデータペースです。    
+[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/)は [国際塩基配列データベース](/insdc/index.html)とは独立しており、NCBI が独自に運用しているデータペースです。    
 SNP データにつきましては dbSNP に登録されることをお薦めします。
 
 DDBJ に登録する場合の書式に関しましては、[登録の見本](/ddbj/example.html) の [F: Variation](/ddbj/example.html#F) をご参照ください。 

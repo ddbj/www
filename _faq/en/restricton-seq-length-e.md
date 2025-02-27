@@ -21,5 +21,5 @@ Lower limit
 
 References
 : [Is there any case to reject submission to DDBJ?](/faq/en/reject-submission-e.html)
-: [Acceptable data for DDBJ](/documents/data-categories-e.html#accept)
+: [Acceptable data for DDBJ](/insdc/data-categories-e.html#accept)
 : [Not acceptable sequences](/ddbj/sequence-e.html#not_acceptable )

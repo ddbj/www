@@ -5,43 +5,14 @@ title: Submission and release data volumes
 category: statistics
 lang: en
 related_pages:
-  - title: DDBJ Periodic Release Statistics
+  - title: DDBJ Periodical Release Statistics
     url: /statistics/ddbj-release-e.html
   - title: Release Notes of DDBJ Releases
     url: /ddbj-releases-e.html
   - title: Latest Release Information
-    url: /latest-releases-e.html
+    url: /ddbj-releases-e.html
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>
 ---
-
-## DDBJ data release {#ddbj-release}
-
-<div id="ddbj-release-growth-chart"></div>
-
-<div id="ddbj-release-growth-table" class="top_space20"></div>
-<br>
-
-CON and TPA divisions are not included in the release statistics due to the following reasons. CON: CON division records are constructed from other sequence records and their inclusion would be a form of double-counting. TPA: TPA division records are not original data obtained by submitters.  
-  
-Statistical breakdown is provided at [DDBJ Periodic Release Statistics](/statistics/ddbj-release-e.html).
-
-[Source data
-table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=161698998)
-
-## DRA data release {#dra-release}
-
-<div id="dra-release_stat_area"></div>
-## GEA data release {#gea-release}
-
-<div id="gea-release_stat_area"></div>
-
-## MetaboBank data release {#metabobank-release}
-
-<div id="metabobank-release_stat_area"></div>
-
-## JGA data release {#jga-release}
-
-<div id="jga-release_stat_area"></div>
 
 ## DDBJ data submission {#ddbj-submission}
 
@@ -51,21 +22,56 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 <div id="ddbj-submission_stat_area"></div>
 
+## DDBJ data release {#ddbj-release}
+
+<div id="ddbj-release-growth-chart"></div>
+
+<div id="ddbj-release-growth-table" class="top_space20"></div>
+<br>
+
+CON and TPA divisions are not included in the release statistics due to the following reasons. CON: CON division records are constructed from other sequence records and their inclusion would be a form of double-counting. TPA: TPA division records are not original data obtained by submitters.  
+
+[Source data
+table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=161698998)
+
+## DDBJ Periodical Release Statistics {#ddbj-release}
+
+[DDBJ Periodical Release Statistics](/statistics/ddbj-release-e.html)
+
 ## DRA data submission {#dra-submission}
 
 <div id="dra-submission_stat_area"></div>
+
+## DRA data release {#dra-release}
+
+<div id="dra-release_stat_area"></div>
+## GEA data release {#gea-release}
+
+<div id="gea-release_stat_area"></div>
 
 ## GEA data submission {#gea-submission}
 
 <div id="gea-submission_stat_area"></div>
 
+## GEA data release {#gea-release}
+
+<div id="gea-release_stat_area"></div>
+
 ## MetaboBank data submission {#metabobank-submission}
 
 <div id="metabobank-submission_stat_area"></div>
 
+## MetaboBank data release {#metabobank-release}
+
+<div id="metabobank-release_stat_area"></div>
+
 ## JGA data submission {#jga-submission}
 
 <div id="jga-submission_stat_area"></div>
+
+## JGA data release {#jga-release}
+
+<div id="jga-release_stat_area"></div>
 
 ## Web access {#web-access}
 

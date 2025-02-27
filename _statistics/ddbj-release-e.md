@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 lang: en
-title: DDBJ Periodic Release Statistics
+title: DDBJ Periodical Release Statistics
 category: statistics
 lang: en
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>

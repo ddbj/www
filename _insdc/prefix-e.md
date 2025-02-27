@@ -1,15 +1,13 @@
 ---
 layout: indexed_content
 title: Prefix Letter List
-category: documents
-lang: ja
+category: insdc
+lang: en
 related_pages:
-  - title: 登録データ種別
-    url: /documents/data-categories.html
-  - title: 国際塩基配列データベースのアクセッション番号
-    url: /documents/accessions.html
-  - title: 利用規約
-    url: /policies.html
+  - title: Categories for Sequence Data
+    url: /insdc/data-categories-e.html
+  - title: Accession Number Assigned by INSD
+    url: /insdc/accessions-e.html
 ---
 
 ## For conventional sequence data (two or one letter)  {#gen}

@@ -1,26 +1,25 @@
 ---
 layout: indexed_content
-title: “Hold-Until-Published” data release
-category: documents
+title: Hold-Until-Published data release
+category: insdc
 lang: en
 related_pages:
   - title: Prefix Letter List
-    url: /prefix-e.html
+    url: /insdc/prefix-e.html
   - title: Categories for Sequence Data
-    url: /documents/data-categories-e.html
+    url: /insdc/data-categories-e.html
   - title: Accession Number Assigned by INSD
-    url: /documents/accessions.html
+    url: /insdc/accessions-e.html
 ---
 
-
-### “Hold-Until-Published” data release
+### Hold-Until-Published data release
 
 In principle we release "Hold-Until-Published" data when one of the
 following three conditions is met:
 
 1. The [submitter](/ddbj/submission-e.html#submitter) requests to
 release the data.
-2. The [accession number](/documents/accessions-e.html) has published and it has
+2. The [accession number](/insdc/accessions-e.html) has published and it has
 been confirmed.
   - We do not release the data when its accession number was published
     wrongly by other than the submitter.
@@ -83,7 +82,7 @@ your data](/ddbj/update-e.html), please contact us via [web form](/ddbj/update-f
 See [Data Updates/Corrections](/ddbj/update-e.html) in detail.
 
 Overview of International Nucleotide Sequence Databases Policies  
-: Refer to [INSDC policy](/about/insdc-e.html#policy).
+: Refer to [INSDC policy](/insdc/index-e.html#policy).
 : [FAQ] [Why is the retracted data still
 available?](/faq/en/why-retracted-data-available.html)
 

@@ -12,7 +12,7 @@ date: 2014-07-03T16:28:42
 lang: en
 ---
 
-The rule to translate nucleotide sequence into amino acid sequence is specified in accordance with agreements of [International Nucleotide Sequence Database Collaboration](/about/insdc-e.html).     
+The rule to translate nucleotide sequence into amino acid sequence is specified in accordance with agreements of [International Nucleotide Sequence Database Collaboration](/insdc/index-e.html).     
 The codon table using a CDS feature is specified in the value of /[transl_table](/ddbj/qualifiers-e.html#transl_table) qualifier as a number of [The Genetic Codes](/ddbj/geneticcode-e.html). 
 
 There are three points frequently misunderstood. 

@@ -213,7 +213,7 @@ specified each other.
 |  RefSeq AA  |  Refseq(Protein)  |
 
 {: .tablecaption}
-<span class="red">*</span> Please check the current version is from [here.](/latest-releases-e.html)
+<span class="red">*</span> Please check the current version is from [here.](/ddbj-releases-e.html)
 
 
 #### DIVISION(DAD)  {#DIVISIONDAD}

@@ -24,17 +24,17 @@ related_pages:
 ### Purpose and Significance of Nucleotide Sequence Submission  {#purpose}
 
 In many scientific journals, it is required to assign and to describe 
-[INSDC accession number](/documents/accessions-e.html) 
+[INSDC accession number](/insdc/accessions-e.html) 
 for a nucleotide sequence on the research paper. DDBJ is a member of 
 [International Nucleotide Sequence Database Collaboration (INSDC)](http://www.insdc.org/ ).
 
 When you wish to publicize your sequence through DDBJ, and your sequence is 
-[acceptable](/documents/data-categories-e.html) 
+[acceptable](/insdc/data-categories-e.html) 
 for DDBJ, you can submit your sequence to DDBJ, 
 even if you have no plan to publication of any research paper related to the sequence.
 
 Once released, the nucleotide sequences submitted to INSDC including DDBJ are 
-[available for everyone](/about/insdc-e.html#policy ).
+[available for everyone](/insdc/index-e.html#policy ).
 
 If you submit nucleotide sequences to DDBJ, you can get 
 [NO priority for patent](/policies-e.html#priority ).
@@ -98,7 +98,7 @@ Then, the entry with a hold date is stored privately at DDBJ.
 DDBJ must maintain registration information as confidential until publication of the entry.  
 
 The hold data will be open to the public according to 
-[principle of data release](/documents/data-release-policy-e.html ).
+[principle of data release](/insdc/data-release-policy-e.html ).
 
 In principle, [even submitters cannot remove their own
 entry](/ddbj/update-e.html#q9) if the entry has already been released
@@ -109,7 +109,7 @@ the submitter's request.
 
 Reference;
 
-  - [Overview of International Nucleotide Sequence Databases Policies](/about/insdc-e.html#policy )
+  - [Overview of International Nucleotide Sequence Databases Policies](/insdc/index-e.html#policy )
 
 
 ## Required items for nucleotide sequence submission  {#item}
@@ -139,7 +139,7 @@ Submitters can select the status of their data, either "immediately release" or 
 "hold date" is the date to start the distribution of the entry.  
 Submitter can specify the date, if necessary  
 If you selected "hold until published", it is required to specify the "hold date" of your data.  
-Reference: [Principle of "Hold-Until-Published" data release](/documents/data-release-policy-e.html )
+Reference: [Principle of "Hold-Until-Published" data release](/insdc/data-release-policy-e.html )
 
 
 ### Number of sequences  {#number}
@@ -216,7 +216,7 @@ Please note the points other than number or length of your sequences.
   [HTC](/ddbj/htc-e.html ), [GSS](/ddbj/gss-e.html ),
   [HTG](/ddbj/htg-e.html ), [WGS](/ddbj/wgs-e.html ),
   [TLS](/ddbj/tls-e.html ), [TPA](/ddbj/tpa-e.html )
-    - See [Categories for Sequence Data](/documents/data-categories-e.html#division ) in detail.
+    - See [Categories for Sequence Data](/insdc/data-categories-e.html#division ) in detail.
 - Submission with long sequences, greater than 500 kb in its length 
 - Complex submission containing many features for one sequence, more than 30 features 
 - Submission consists of large number of sequences, greater than 100 in total 
@@ -307,11 +307,11 @@ Following figure shows the dataflow from new submission to release and update at
     </li>
   <li>
     Release of Sequence Data<br>
-    DDBJ releases the submitted data that specified to be open to the public immediately, as soon as possible after processing. The submitted entry that is specified to hold until publication will be released according to <a href="/documents/data-release-policy-e.html">principle of data release</a>. When the accession number of the hold entry is published, the entry will be released with no exception and no permission from the submitter. Everyone can request DDBJ to release the unpublished data whose accession numbers are on the published papers.
+    DDBJ releases the submitted data that specified to be open to the public immediately, as soon as possible after processing. The submitted entry that is specified to hold until publication will be released according to <a href="/insdc/data-release-policy-e.html">principle of data release</a>. When the accession number of the hold entry is published, the entry will be released with no exception and no permission from the submitter. Everyone can request DDBJ to release the unpublished data whose accession numbers are on the published papers.
     </li>
   <li>
     Availability of Released Data<br>
-    At first, the data released from DDBJ are available via <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> and <a href="https://ddbj.nig.ac.jp/public/">anonymous FTP</a>. The data are forwarded to GenBank and ENA, and the data are available also via GenBank and ENA. The data are also expanded into services provided from DDBJ, Search and Analysis, <a href="http://ddbj.nig.ac.jp/arsa/quick_search?lang=en">ARSA</a> and so on. Basically, the data released from DDBJ are <a href="/about/insdc-e.html#policy"></a>available for everyone.
+    At first, the data released from DDBJ are available via <a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a> and <a href="https://ddbj.nig.ac.jp/public/">anonymous FTP</a>. The data are forwarded to GenBank and ENA, and the data are available also via GenBank and ENA. The data are also expanded into services provided from DDBJ, Search and Analysis, <a href="http://ddbj.nig.ac.jp/arsa/quick_search?lang=en">ARSA</a> and so on. Basically, the data released from DDBJ are <a href="/insdc/index-e.html#policy"></a>available for everyone.
     </li>
   <li>
     Citation of Released Data<br>
@@ -361,7 +361,7 @@ Hold date  <a name="holddate"></a>
 : "Hold date" is the date to start the distribution of the entry.
 Submitter can specify the date, if necessary  
 Reference: [Principle of "Hold-Until-Published" data
-release](/documents/data-release-policy-e.html)
+release](/insdc/data-release-policy-e.html)
 
 Working day <a name="working-day"></a>
 : DDBJ Center takes days off not only every Saturday and Sunday but

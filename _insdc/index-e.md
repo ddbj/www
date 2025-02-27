@@ -2,15 +2,15 @@
 layout: indexed_content
 title: INSDC
 lang: en
-category: about
+category: insdc
 related_pages:
-  - title: INSDC Status Document
-    url: /about/insdc-status-e
-  - title: Faculty Staff of DDBJ
-    url: /about/staff-e.html
+  - title: Prefix Letter List
+    url: /insdc/prefix-e.html
+  - title: Categories for Sequence Data
+    url: /insdc/data-categories-e.html
+  - title: Principle of Hold-Until-Published data release
+    url: /insdc/data-release-policy-e.html
 ---
-
-
 
 ## The International Nucleotide Sequence Database Collaboration (INSDC)
 

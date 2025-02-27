@@ -11,7 +11,7 @@ lang: en
 ---
 
 DDBJ is functioning as one of [the international nucleotide sequence
-databases](/about/insdc-e.html), including EMBL-Bank/EBI in Europe and
+databases](/insdc/index-e.html), including EMBL-Bank/EBI in Europe and
 GenBank/NCBI in the USA as the two other members.  
 When DDBJ releases the submitted data, EMBL-Bank and GenBank will load
 the data into their own services, respectively.  

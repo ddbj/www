@@ -75,7 +75,7 @@ Please also see [Overview of Structural Variation at dbVar](https://www.ncbi.nlm
 
 The data can remain private until your paper publication.
 Submitters can designate the hold date within three years and extend the date.
-The private data are released according to the [data release policy](/documents/data-release-policy-e.html).
+The private data are released according to the [data release policy](/insdc/data-release-policy-e.html).
 
 ## Update  {#update}
 
