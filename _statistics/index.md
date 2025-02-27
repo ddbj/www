@@ -7,9 +7,7 @@ lang: ja
 related_pages:
   - title: DDBJ 定期リリース統計
     url: /statistics/ddbj-release.html
-  - title: リリースノート (DDBJ, 16S rRNA, DAD)
-    url: /ddbj-releases.html
-  - title: 最新リリースの情報
+  - title: DDBJ 定期リリース
     url: /ddbj-releases.html
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>
 ---
