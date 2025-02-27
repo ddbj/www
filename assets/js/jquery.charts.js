@@ -1,4 +1,4 @@
-/* global $, google */
+/*global google*/
 /*
  * 統計表示用 jQuery
  */
@@ -49,7 +49,7 @@ function makeDDBJRelease() {
   if ( !document.getElementById('ddbj-release') ) return;
 
   // DDBJ リリース総データ量推移
-  var release_new = 113; // release 107 から bulk sequence が含まれている
+  var release_new = 126; // release 107 から bulk sequence が含まれている
     
   google.charts.load('current', {'packages':['corechart', 'table']});
 
@@ -111,7 +111,7 @@ function makeDDBJRelease() {
             title: 'Sequences (million)',
             color:'#ff0000',
             textStyle: {fontSize:12},
-            viewWindow: {min:500, max:5000}
+            viewWindow: {min:500, max:6000}
           },
           1: {
             title: 'Bases (billion)',
