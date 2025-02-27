@@ -49,7 +49,7 @@ function makeDDBJRelease() {
   if ( !document.getElementById('ddbj-release') ) return;
 
   // DDBJ リリース総データ量推移
-  var release_new = 126; // release 107 から bulk sequence が含まれている
+  var release_new = 117; // release 107 から bulk sequence が含まれている
     
   google.charts.load('current', {'packages':['corechart', 'table']});
 
@@ -167,7 +167,7 @@ function makeDRARelease() {
   var this_year = now.getFullYear();
   var year_min = 0;
   var year_max = 0;
-  var span = 10; // 年毎は直近10年を表示
+  var span = 5; // 年毎は直近10年を表示
   var x = 0;
   var chart_size_year_a = [];    
   var chart_bases_seqs_year_a = [];    
