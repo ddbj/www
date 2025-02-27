@@ -167,7 +167,7 @@ function makeDRARelease() {
   var this_year = now.getFullYear();
   var year_min = 0;
   var year_max = 0;
-  var span = 5; // 年毎は直近10年を表示
+  var span = 7; // 年毎は直近10年を表示
   var x = 0;
   var chart_size_year_a = [];    
   var chart_bases_seqs_year_a = [];    
