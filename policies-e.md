@@ -239,6 +239,8 @@ Center discloses data to the public in accordance with the following principles.
   1.  When the accession number corresponding to data is published and is confirmed. 'Publish' means to disclose the accession number to an unspecified number of people by announcement through various media such as academic papers (including 'in press' articles made public by on-line preview and preprint server), academic meetings, Internet or press reports. It also includes accession numbers cited in published data, such as accession numbers cited by DDBJ/DRA/GEA/BioSample records. It will not include cases when a third party (excluding submitter) publishes another person's accession number through negligence.
   1.  When the specified hold-date set by submitter arrives.
 
+Related Information [Hold-Until-Published data release](/insdc/data-release-policy-e.html)
+
 ### Fair Use of Submission System {#fair-use-policy}
 #### Use of File Upload Area {#data-upload-area}
 Submitter's private area for uploading files for submission to the database is a temporary place for files until such data submission is completed. Because the database itself provides an almost permanent data storage function, we reserve the right to delete any file stored in the private area longer than a half year, while we attempt to inform submitter before deleting the files. We accept no responsibility for the loss of data in the private area regardless of whether such loss occurs through our intention or negligence.
