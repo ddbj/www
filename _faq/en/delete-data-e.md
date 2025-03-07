@@ -14,24 +14,19 @@ In principle, following two conditions are required to delete your
 sequence data;
 
 1. The sequence data has not yet been publicized  
-1. The accession number of the data has not yet been
-[published](/insdc/data-release-policy-e.html).  
+1. The accession number of the data has not yet been [published](/insdc/data-release-policy-e.html).  
 
-Please send your request from [contact
-form](/contact-ddbj-e.html) with the following contents in clear
+Please send your request from [contact form](/contact-ddbj-e.html) with the following contents in clear
 English.
 
-  - Accession numbers:
-  - Reason in brief:
+- Accession numbers:
+- Reason in brief:
 
 Just for information, we can restrict access to your sequence data that
-have been open to the public, [if the conditions are
-right](/faq/en/restore-released-data-private-e.html).  
+have been open to the public, [if the conditions are met](/faq/en/restore-released-data-private-e.html).  
 See also the following item.
 
 References  
-: [How to restore the released data to
-    private?](/faq/en/restore-released-data-private-e.html)
-: [Why is the retracted data still
-    available?](/faq/en/why-retracted-data-available-e.html)
-: [INSDC Status Document](/about/insdc-status-e)
+: [How to restore the released data to private?](/faq/en/restore-released-data-private-e.html)
+: [Why is the retracted data still available?](/faq/en/why-retracted-data-available-e.html)
+: [INSDC Status Document](https://www.insdc.org/submitting-standards/insdc-status-document/)

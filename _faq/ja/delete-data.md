@@ -16,8 +16,8 @@ lang: ja
   
 [DDBJへのお問い合わせ](/contact-ddbj.html) より、以下の項目についてお知らせください。
 
-  - アクセッション番号:
-  - 抹消理由: (簡単で結構です)
+- アクセッション番号:
+- 抹消理由: (簡単で結構です)
 
 なお、すでに公開されているデータの利用を制限することは、[条件次第](/faq/ja/restore-released-data-private.html)で可能な場合があります。  
 以下もご参照ください。
@@ -25,4 +25,4 @@ lang: ja
 参考  
 : [公開されたデータを非公開に戻したい](/faq/ja/restore-released-data-private.html)
 : [公開を取り消したデータが現在も参照できるのはなぜですか](/faq/ja/why-retracted-data-available.html)
-: [INSDC Status Document](/about/insdc-status-e)
+: [INSDC Status Document](https://www.insdc.org/submitting-standards/insdc-status-document/)

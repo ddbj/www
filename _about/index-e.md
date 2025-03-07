@@ -8,14 +8,11 @@ related_pages:
     url: /about/staff-e.html
   - title: INSDC
     url: /insdc/index-e.html
-  - title: INSDC Status Document
-    url: /insdc-status-e
 ---
 
 Bioinformation and DDBJ Center (BI-DDBJ) collects nucleotide sequence data as a member of 
 [INSDC(International Nucleotide Sequence Database Collaboration)](http://www.insdc.org/ ) 
 and provides freely available nucleotide sequence data and supercomputer system, to support research　activities in life science.    
-
 
 ## Mission  {#mission}
 
@@ -44,29 +41,22 @@ in life sciences but also human welfare in general. The database is, so
 to speak, a common treasure of human beings. With this in mind, we make 
 the database online accessible to anyone in the world.    
 
-
-
 ## Governing Structure  {#governing}
 
 Currently, BI-DDBJ is in operation at 
-[Research Organization of Information and System National Institute of Genetics(NIG)](https://www.nig.ac.jp/nig/ ) 
-in Mishima, Japan with endorsement of 
-[MEXT; Japanese Ministry of Education, Culture, Sports, Science and Technology](http://www.mext.go.jp/en/ ).    
+[Research Organization of Information and System National Institute of Genetics (NIG)](https://www.nig.ac.jp/nig/) in Mishima, Japan with endorsement of [MEXT; Japanese Ministry of Education, Culture, Sports, Science and Technology](http://www.mext.go.jp/en/).    
 
 BI-DDBJ is reviewed and advised by its own advisory board, 
 DNA Database Advisory Committee (an outside committee of NIG).    
 
 [A list of current staff of DDBJ.](/about/staff-e.html)
 
-
-
 ## Major Activities  {#activity}
 
-
-### Construction and Operation of INSDC  {#insd}
+### Construction and Operation of INSDC {#insd}
 
 In Japan, BI-DDBJ internationally contributes as a member of 
-[INSDC](/insdc/index-e.html ) to collect and to provide nucleotide sequence data.  
+[INSDC](/insdc/index-e.html) to collect and to provide nucleotide sequence data.  
 
 BI-DDBJ is officially certified to collect nucleotide sequences from researchers and to issue 
 [the internationally recognized accession number](/insdc/accessions-e.html) to data submitters.  
@@ -90,13 +80,11 @@ See following links in detail.
 
 Refer to:
 
-  - [Sequence data included in patent applications](/ddbj/patent-data-e.html)
-  - [Patent, Intellectual Property and Priority](/policies-e.html#ownership)
-  - [Patent column from DDBJ](/activities/patent-e.html)
+- [Sequence data included in patent applications](/ddbj/patent-data-e.html)
+- [Patent, Intellectual Property and Priority](/policies-e.html#ownership)
+- [Patent column from DDBJ](/activities/patent-e.html)
 
-
-
-### Management and operation of the National Institute of Genetics Supercomputer System  {#supercom}
+### Management and operation of the National Institute of Genetics Supercomputer System {#supercom}
 
 [The National Institute of Genetics Supercomputer
 System](https://sc.ddbj.nig.ac.jp/en) (NIG Supercomputer) is a
@@ -104,7 +92,6 @@ large-scale computer utilization site with genome analysis as its
 primary focus. The system provides Supercomputing System Services
 comprising leading-edge, large-scale cluster-type computers, large-scale
 memory-sharing computers, and high-capacity, high-speed disk devices.
-
 
 ### Providing services to search and to analyze biological data  {#Providing_services_to_search_and_to_analyze_biological_data}
 
@@ -119,8 +106,6 @@ You can collectively download databases from [our FTP site](/services/).
 We provide software tools for data analyses developed by BI-DDBJ and others 
 through [web services](/services-e.html) or on NIG Supercomputer.  
 
-
-
 ### Training course and publication  {#Training_course_and_publication}
 
 BI-DDBJ holds a training course for bioinformatics, 
@@ -129,8 +114,6 @@ nucleotide sequence data and how to use our services for analyzing life science 
 
 We announce [the latest information for DDBJ activities](/news/en/index-e.html).  
 See also [our publications](/activities/index.html).
-
-
 
 | 1980 | EMBL data library was organized, and asked international cooperation for nucleotide sequence data bank to Japan. |
 | 1982 | EMBL and GenBank started international cooperation, and invited Japan to participate their data bank. |

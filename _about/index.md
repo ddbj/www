@@ -8,8 +8,6 @@ related_pages:
     url: /about/staff.html
   - title: INSDC
     url: /insdc/index.html
-  - title: アーカイブ
-    url: /activities/archives.html
 ---
 
 生命情報・DDBJ センター (BI-DDBJ) は、国際塩基配列データベース連携 [INSDC (International Nucleotide Sequence Database Collaboration)](/insdc/index.html) の一員です。
@@ -40,13 +38,12 @@ BI-DDBJ 事業は所外委員会である DNA データ研究利用委員会に�
 
 ## 主要な活動  {#activity}
 
-
 ### 国際塩基配列データベースの共同構築と運営  {#insd}
 
 BI-DDBJ は、国際塩基配列データベース連携 [INSDC](/insdc/index.html) の一員です。
 
 DDBJ に登録された全ての塩基配列データには、DDBJ の
-[アクセッション番号](/insdc/accessions.html) (accession number)を発行しています。
+[アクセッション番号](/insdc/accessions.html) (accession number) を発行しています。
 アクセッション番号は、塩基配列データベースに登録される塩基配列データに対して個別に与えられ、その配列データに固有のものです。
 DDBJ に登録されたデータは、公開時に NCBI と EBI に送られ、世界共通です。  
 日本からの登録の99%以上が、DDBJ を通じて行われています。    
@@ -57,9 +54,9 @@ DDBJ に登録されたデータは、公開時に NCBI と EBI に送られ、�
 このうち、BI-DDBJ は日本および韓国の特許庁による配列データを公開しています。    
 
 参照：
-  - [特許出願に含まれる配列データの利用に関する注意](/ddbj/patent-data.html)
-  - [特許・知的所有権と優先権](/policies.html#ownership)
-  - [DDBJ での特許関連配列データの公開業務の紹介](/activities/patent.html)
+- [特許出願に含まれる配列データの利用に関する注意](/ddbj/patent-data.html)
+- [特許・知的所有権と優先権](/policies.html#ownership)
+- [DDBJ での特許関連配列データの公開業務の紹介](/activities/patent.html)
 
 ### 国立遺伝学研究所スーパーコンピュータシステム利用の管理・運用  {#supercom}
 

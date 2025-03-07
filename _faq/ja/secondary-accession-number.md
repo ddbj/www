@@ -29,7 +29,7 @@ flat file には、先頭にプライマリアクセッション番号、２つ�
 ただし、セカンダリアクセッション番号のエントリが既に公開済みの場合、データベース上から抹消される訳ではありませんので、[getentry](http://getentry.ddbj.nig.ac.jp/top-j.html) では、直接番号を指定することで検索と閲覧が可能です。
 
 参考
-: - [getentry ヘルプ](/services/getentry.html)
- - [INSDC Status Document](/about/insdc-status-e): Replaced
- - [公開を取り消したデータが現在も参照できるのはなぜですか?](/faq/ja/why-retracted-data-available.html)
+- [getentry ヘルプ](/services/getentry.html)
+- [INSDC Status Document](https://www.insdc.org/submitting-standards/insdc-status-document/)
+- [公開を取り消したデータが現在も参照できるのはなぜですか?](/faq/ja/why-retracted-data-available.html)
 

@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: How to restore the released data to private?
+title: How to restore released data to private?
 category: faq
 db:
   - ddbj
@@ -27,14 +27,12 @@ Please send your request from [contact form](/contact-ddbj-e.html#to-ddbj) with 
 
 If we restrict access to your sequence data and remove it from the public view, then it will no longer be included in homology search services at DDBJ or distributed as a part of the next DDBJ periodical release. However, it may remain in other third party databases, and will still be retrievable in [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html) by accession number based queries. 
 
-
 Moreover, our unified database may be copied and redistributed without permission at any other organizations. In case you need to withdraw your entry from such database, we ask you to make request directly to the organization which manages the database.
 
 References
 : [Why is the retracted data still available?](/faq/en/why-retracted-data-available-e.html)
-: [INSDC Status Document](/about/insdc-status-e)
+: [INSDC Status Document](https://www.insdc.org/submitting-standards/insdc-status-document/)
 
 ## DRA {#dra}
 
-The DRA data are also removed as DDBJ.    
-[Contact the DRA team](https://forms.gle/d9cZxyzQzxPMSqW59) to delete public DRA data.
+[Contact the DRA team](/dra/update-e.html#delete) to delete public DRA data.

@@ -28,11 +28,10 @@ lang: ja
 
 参考
 : [公開を取り消したデータが、現在も参照できるのはなぜですか](/faq/ja/why-retracted-data-available.html)
-: [INSDC Status Document](/about/insdc-status-e)
+: [INSDC Status Document](https://www.insdc.org/submitting-standards/insdc-status-document/)
 
 ## DRA {#dra}
 
-DDBJ と同様の扱いになります。    
-データの削除を [DRA チームに依頼](https://forms.gle/mpGqxbSeYmy5oTud6) してください。
+データの削除を [DRA チームに依頼](/dra/update.html#delete) してください。
 
 
