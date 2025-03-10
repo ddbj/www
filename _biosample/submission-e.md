@@ -14,7 +14,7 @@ Submission of research data from human subjects
 
 ## Create a new sample submission  {#create-new-sample-submission}
 
-Obtain a [submission account](/account-e.html).
+Obtain a [submission account](/ddbj-account-e.html).
 
 Move to the Biosample submission page from the "Biosample" menu at the top. Create a new sample submission by clicking the \[New submission\] button.
 

@@ -9,26 +9,26 @@ lang: en
 
 ## From data submission application to JGA data upload {#ds}
 
-Apply a data submission application in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your D-way account.
+Apply a data submission application in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your DDBJ account.
 A data submitter group is necessary for the application.
-After your application is approved, access to the JGA server with your D-way account and upload data by [sftp](#sftp) or [WinSCP](#winscp).
+After your application is approved, access to the JGA server with your DDBJ account and upload data by [sftp](#sftp) or [WinSCP](#winscp).
 
-* [D-way account and a public key for data transfer](#account-key)
+* [DDBJ account and a public key for data transfer](#account-key)
 * [Data submission application approval](#approval)
 * [Create metadata excel](#create-metadata-using-excel)
 * [Data upload](#upload-data-files)
 	* [sftp](#sftp)
 	* [WinSCP](#winscp)
 
-## D-way account and a public key for data transfer {#account-key}
+## DDBJ account and a public key for data transfer {#account-key}
 
-A D-way account is necessary for data submission application and JGA data upload. If you do not have an acccount, [create a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.
+A DDBJ account is necessary for data submission application and JGA data upload. If you do not have an acccount, [create a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.
 
 <div class="attention" markdown="1">
-After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
+After creating a DDBJ account, it takes about 10 minutes for the D-way account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
-Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data upload.
+Generate a public and private key pair for data transfer and [register the public key to your DDBJ account](/ddbj-account-e.html#public-key) for data upload.
 
 ## Data submitter group {#data-submitter-group}
 
@@ -48,7 +48,7 @@ Also see the [data submission page](https://humandbs.dbcls.jp/en/data-submission
 
 ## Data submission application approval {#du-approval}
 
-Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data upload to the JGA server (jga-gw.ddbj.nig.ac.jp).
+Generate a public and private key pair for data transfer and [register the public key to your DDBJ account](/ddbj-account-e.html#public-key) for data upload to the JGA server (jga-gw.ddbj.nig.ac.jp).
 After the application is approved by DBCLS, a JGA submission ID (for example, JSUB000353) is issued and a corresponding directory for data upload is created in the JGA server.
 
 {% include image.html url="books/DS-approved-e.png" caption="Approval of data submission application" class="w450" %}
@@ -81,7 +81,7 @@ All datasets in a JGA submission are distributed at the same time. Do NOT includ
 
 ### Upload excel by sftp {#sftp}
 
-In the JGA submission directory in "/controlled-access/submission/jga/" in JGA file server (jga-gw.ddbj.nig.ac.jp), upload the excel to this directory by sftp specifying the port number 443 with P option. The sftp uses public/private key authentication, specify the private key paired with [the public key registered to your D-way account](/account-e.html#generate-key-pair) for data transfer.
+In the JGA submission directory in "/controlled-access/submission/jga/" in JGA file server (jga-gw.ddbj.nig.ac.jp), upload the excel to this directory by sftp specifying the port number 443 with P option. The sftp uses public/private key authentication, specify the private key paired with [the public key registered to your DDBJ account](/ddbj-account-e.html#generate-key-pair) for data transfer.
 
 ```
 # Account ID: account_b
@@ -140,7 +140,7 @@ Configure as follows.
 - File protocol: SFTP
 - Host name: jga-gw.ddbj.nig.ac.jp
 - Port number: 443
-- User name: D-way account ID
+- User name: DDBJ account ID
 - Password: leave empty
 
 {% include image.html url="books/jga-winscp1-e.jpg" caption="WinSCP session" class="w400" %}

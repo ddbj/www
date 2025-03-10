@@ -43,23 +43,23 @@ lang: ja
     <td class="borderrgt" align="right"><a href="/dra/submission.html#metadata"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
-    <td><a href="https://youtu.be/z7xd3UOZSXo">D-way アカウントの取得</a><br>DRA は D-way から登録するので、アカウントの取得が必要です(1'10")</td>
-    <td class="borderrgt" align="right"><a href="/account.html"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td><a href="https://youtu.be/z7xd3UOZSXo">DDBJ アカウントの取得</a><br>DRA は D-way から登録するので、アカウントの取得が必要です(1'10")</td>
+    <td class="borderrgt" align="right"><a href="/ddbj-account.html"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="https://youtu.be/mggRnbxr0gQ">鍵ペアの作成 - Windows（動画マニュアル）</a><br>Windows で公開鍵・秘密鍵ペアを作成する方法(1'34")</td>
-    <td class="borderrgt" align="right"><a href="/account.html#generate-key-pair"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj-account.html#generate-key-pair"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
     <td><a href="https://youtu.be/h9LbhwROtOM">鍵ペアの作成 - Mac（動画マニュアル）</a><br>Mac で公開鍵・秘密鍵ペアを作成する方法(1'20")</td>
-    <td class="borderrgt" align="right"><a href="/account.html#generate-key-pair"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj-account.html#generate-key-pair"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
-    <td><a href="https://youtu.be/N76NUH748Fw">DDBJ 登録アカウントの作成（動画マニュアル）</a><br>D-way アカウントの取得方法, Center neme, 公開鍵の登録方法
+    <td><a href="https://youtu.be/N76NUH748Fw">DDBJ 登録アカウントの作成（動画マニュアル）</a><br>DDBJ アカウントの取得方法, Center neme, 公開鍵の登録方法
     ※動画冒頭の DDBJ HP は以前のものです。 D-way
     はこちらからアクセスしてください。
     https://ddbj.nig.ac.jp/D-way/(2'54")</td>
-    <td class="borderrgt" align="right"><a href="/account.html"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
+    <td class="borderrgt" align="right"><a href="/ddbj-account.html"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
 </table>
 
@@ -174,7 +174,7 @@ lang: ja
     <td class="borderrgt" align="right"><a href="/bioproject/submission.html"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
   <tr>
-    <td><a href="https://youtu.be/ir5uC2U9-6U">D-way アカウントの取得</a><br>BioProject の登録には D-way アカウントの取得が必要です。(0'35")</td>
+    <td><a href="https://youtu.be/ir5uC2U9-6U">DDBJ アカウントの取得</a><br>BioProject の登録には D-way アカウントの取得が必要です。(0'35")</td>
     <td class="borderrgt" align="right"><a href="/bioproject/submission.html"><img src="/assets/images/parts/webpage_icon.svg" class="webpageicon"></a></td>
   </tr>
 </table>

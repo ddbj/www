@@ -103,7 +103,7 @@ table tr:hover {
 
 <!-- **Recomend:** A. Apply for the submission after you have prepared the submission files -->
 <div class="mssflow">Create the submission files</div>
-<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">Login to https://mss.ddbj.nig.ac.jp/ with D-way account</a></div>
+<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">Login to https://mss.ddbj.nig.ac.jp/ with DDBJ account</a></div>
 <div class="mssflow">Fill MSS form & upload the submission files</div>
 <div class="mssflow">DDBJ creats a new Mass-ID, sends autoreply</div>
 <div class="mssflow">Review, inquiring and answering by email</div>
@@ -111,7 +111,7 @@ table tr:hover {
 <div class="mssflowend">Release the data, or hold until specified date</div>
 <p></p>
 <!-- B. Apply for the submission, and then you prepare the submission files
-<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">Login to https://mss.ddbj.nig.ac.jp/ with D-way account</a></div>
+<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">Login to https://mss.ddbj.nig.ac.jp/ with DDBJ account</a></div>
 <div class="mssflow">Fill MSS form</div>
 <div class="mssflow">DDBJ creats a new Mass-ID, sends autoreply</div>
 <div class="mssflow">Create the submission files</div>
@@ -178,8 +178,8 @@ Download: [Validation tools for MSS data files](/ddbj/mss-tool-e.html)
 - Before installing the validation tools, see [End-user license agreement](/ddbj/mss-tool-e.html#license).
 
 ## Creating account  {#account}
-- If you have not obtained D-way account, create your account by clicking "Register for a new account" on [D-way](https://ddbj.nig.ac.jp/D-way/) (see [HELP](/account-e.html)).
-- If you would like to use SCP/SFTP for transferring the files to DDBJ, you also need to [register a public key](/account-e.html#register-public-key) on the account setting page on D-way. See "[Data upload](/upload-e.html)" for detailed descriptions how to transfer the files.
+- If you have not obtained DDBJ account, create your account by clicking "Register for a new account" on [D-way](https://ddbj.nig.ac.jp/D-way/) (see [HELP](/ddbj-account-e.html)).
+- If you would like to use SCP/SFTP for transferring the files to DDBJ, you also need to [register a public key](/ddbj-account-e.html#register-public-key) on the account setting page on D-way. See "[Data upload](/upload-e.html)" for detailed descriptions how to transfer the files.
 
 ## Applying for the registration  {#submission}
 Please apply for your submission through ["Application form for MSS"](https://mss.ddbj.nig.ac.jp/).
@@ -226,7 +226,7 @@ Submitters can transfer the submission files from MSS form by either one of the 
 - Uploading from browser
 - Specifying the DFAST job ID
 - Loading the files which have been transferred to SFTP server
-    - Select this method when the total submission files exceed more than 10 Gbytes in uncompressed size. You need [public/private key pair](/account-e.html#generate-key-pair) to use SFTP. First, [register a public key](/account-e.html#register-public-key) to your account, and then upload the files according to ["Data upload"](/upload-e.html).
+    - Select this method when the total submission files exceed more than 10 Gbytes in uncompressed size. You need [public/private key pair](/ddbj-account-e.html#generate-key-pair) to use SFTP. First, [register a public key](/account-e.html#register-public-key) to your account, and then upload the files according to ["Data upload"](/upload-e.html).
     - Read the description below
 
 <div class="attention" markdown="1">
@@ -313,8 +313,8 @@ M, Mandatory; NR, Not required; OPT, Optional
 [DFAST](https://dfast.ddbj.nig.ac.jp/) is a rapid annotation pipeline service for prokaryote genomes, which also generates the annotation files that can be directly submitted to DDBJ. We strongly recommend that the submitters use [DFAST](https://dfast.ddbj.nig.ac.jp/) for the registration of the prokaryote genomes to Annotated/Assembled Sequences database.
 
 ### Registration procedure for the prokaryote genome  {#mssdfast-2}
-1. You need [D-way account](/account-e.html) which has been obtained through [DFAST](https://dfast.ddbj.nig.ac.jp/) in order to register the prokaryote genome and the annotation into DDBJ. Registration of [BioProject](https://www.ddbj.nig.ac.jp/bioproject/index-e.html),  [BioSample](https://www.ddbj.nig.ac.jp/biosample/index-e.html) and [locus_tag prefix](https://www.ddbj.nig.ac.jp/ddbj/locus_tag-e.html) when biological feature are descriebed are required in advance.
-1. If you login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with [D-way account](/account-e.html), you can manage the [jobs analyzed](https://dfast.ddbj.nig.ac.jp/help_login) in [DFAST](https://dfast.ddbj.nig.ac.jp/). If you have not obtained the login account, see [“Create a D-way account in the website”](/account-e.html#account-for-bioproject-biosample-submissions) to get a new account.
+1. You need [DDBJ account](/ddbj-account-e.html) which has been obtained through [DFAST](https://dfast.ddbj.nig.ac.jp/) in order to register the prokaryote genome and the annotation into DDBJ. Registration of [BioProject](https://www.ddbj.nig.ac.jp/bioproject/index-e.html),  [BioSample](https://www.ddbj.nig.ac.jp/biosample/index-e.html) and [locus_tag prefix](https://www.ddbj.nig.ac.jp/ddbj/locus_tag-e.html) when biological feature are descriebed are required in advance.
+1. If you login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with [DDBJ account](/ddbj-account-e.html), you can manage the [jobs analyzed](https://dfast.ddbj.nig.ac.jp/help_login) in [DFAST](https://dfast.ddbj.nig.ac.jp/). If you have not obtained the login account, see [“Create a D-way account in the website”](/account-e.html#account-for-bioproject-biosample-submissions) to get a new account.
 
 ### How to submit the data obtained in DFAST  {#mssdfast-3}
 1. Login to [DFAST](https://dfast.ddbj.nig.ac.jp/) with your account. First, upload the fasta file in “job submission page”, and start the job to analyze the genome. At this stage, you can obtain a job ID. When the job is finished, click “DDBJ submission” tab on the page. The annotation and sequence files, which are needed for MSS submission, are created after you fill necessary data (e.g. BioProject ID, BioSample ID, locus_tag prefix, and other metadata) into the form in metadata section.(*1)

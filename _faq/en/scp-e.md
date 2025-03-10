@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: I can not scp transfer my files.
+title: I can not SSH upload my files.
 category: faq
 db:
   - dra
@@ -17,7 +17,7 @@ First, confirm the following basic points.
  - A private key file permission is set as others cannot access. For example, rw-------.
  - A passphrase for private key is correctly entered.
 
-When transferring data files by using a private key generated in the other operating system, please check format of a private key. [Convert private key](/account-e.html#convert-private-key)
+When transferring data files by using a private key generated in the other operating system, please check format of a private key. [Convert private key](/key-e.html#convert-private-key)
 
 Environments and private key formats:
 * Unix/Mac OS X: Use an OpenSSH-format key. Convert a key in the Windows PuTTY file format into the OpenSSH.
@@ -29,7 +29,7 @@ When these are correct, because we do not support technical details regarding us
 
 #### invalid format error {#invalid-format-error}
 
-A PuTTY-format private key causes "invalid format" error, [convert the key into OpenSSH-format](/account-e.html#putty-openssh).   
+A PuTTY-format private key causes "invalid format" error, [convert the key into OpenSSH-format](/key-e.html#putty-openssh).   
 
 #### UNPROTECTED PRIVATE KEY FILE WARNING {#unprotected}
 
@@ -64,7 +64,7 @@ Delete all permissions.
 Add access permission.  
 <a href="/assets/images/books/win-ps-scp-6.jpg" title="Add access permission" class="group1"><img src="/assets/images/books/win-ps-scp-6.jpg" alt="Add access permission" title="Add access permission" class="w300"></a>   
 
-Add a Windows user (example, test07).
+Add a Windows user (example, test07).    
 <a href="/assets/images/books/win-ps-scp-7.jpg" title="Add a Windows user" class="group1"><img src="/assets/images/books/win-ps-scp-7.jpg" alt="Add a Windows user" title="Add a Windows user" class="w300"></a>  
 
 Allow full control to the Windows user.   

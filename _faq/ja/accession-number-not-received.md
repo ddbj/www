@@ -26,4 +26,4 @@ lang: ja
 
 ### DRA {#dra}
 
-D-way アカウントにログインし、[Submission のステータス](/dra/submission.html#status)を確認してください。
+DDBJ アカウントにログインし、[Submission のステータス](/dra/submission.html#status)を確認してください。

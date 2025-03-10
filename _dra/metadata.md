@@ -64,7 +64,7 @@ Run に含まれる全てのファイルは１つの sra/fastq ファイルに�
 
 <div class="attention">
 DRA 登録に関するメールは Submission に記載されたメールアドレスに対して送信されます。
-D-way アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるように Submission のアドレスも変更する必要があります。
+DDBJ アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるように Submission のアドレスも変更する必要があります。
 </div>
 
 [Name](#Contact_Name)<a name="Contact_Name"></a><span class="red">*</span>

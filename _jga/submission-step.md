@@ -9,26 +9,26 @@ lang: ja
 
 ## 提供申請から JGA データアップロードまでの手順  {#ds}
 
-提供申請は[申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)に D-way アカウントでログインしてから申請します。
+提供申請は[申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)に DDBJ アカウントでログインしてから申請します。
 提供申請では提供申請グループの作成が必要です。
-提供申請の承認後、D-way アカウントで JGA サーバにアクセスし、メタデータとデータファイルを JGA サーバに [sftp](#sftp) もしくは [WinSCP](#winscp) でアップロードします。
+提供申請の承認後、DDBJ アカウントで JGA サーバにアクセスし、メタデータとデータファイルを JGA サーバに [sftp](#sftp) もしくは [WinSCP](#winscp) でアップロードします。
 
-* [D-way アカウント作成・情報追加とデータ転送用公開鍵の登録](#account-key)
+* [DDBJ アカウント作成・情報追加とデータ転送用公開鍵の登録](#account-key)
 * [提供申請の承認](#approval)
 * [メタデータ作成 ](#create-metadata-using-excel)
 * [データファイルのアップロード ](#upload-data-files)
 	* [sftp でのアップロード](#sftp)
 	* [WinSCP でのアップロード](#winscp)
 
-## D-way アカウント作成・情報追加とデータ転送用公開鍵の登録 {#account-key}
+## DDBJ アカウント作成・情報追加とデータ転送用公開鍵の登録 {#account-key}
 
-提供申請および JGA データアップロードのためには D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/)してください。
+提供申請および JGA データアップロードのためには DDBJ アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/)してください。
 
 <div class="attention" markdown="1">
-D-way アカウント作成後、[データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
+DDBJ アカウント作成後、[データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
-JGA サーバへデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#public-key)します。
+JGA サーバへデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を DDBJ アカウントに登録](/ddbj-account.html#public-key)します。
 
 申請情報を自動入力させるため、アカウントに所属情報や日本語氏名を追加します。
 [申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
@@ -67,7 +67,7 @@ JGA サーバへデータをアップロードするためには、データ転�
 
 {% include image.html url="books/DS-JSUB.png" caption="提供申請と JGA submission ID" class="w250" %}
 
-JGA サーバ (jga-gw.ddbj.nig.ac.jp) へデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#public-key)します。
+JGA サーバ (jga-gw.ddbj.nig.ac.jp) へデータをアップロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を DDBJ アカウントに登録](/ddbj-account.html#public-key)します。
 JGA サーバ上の /controlled-access/submission/jga/ の下に Submission ID と同名のディレクトリが作成されるので、ここにメタデータとデータファイルを [sftp](#sftp) もしくは [WinSCP](#winscp) でアップロードします。
 この例であればディレクトリは /controlled-access/submission/jga/JSUB000353/ になります。
 
@@ -96,7 +96,7 @@ JGA にアップロードするファイル名には空白を含めないでく�
 ### エクセルを sftp でアップロード  {#sftp}
 
 JGA ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /controlled-access/submission/jga/ の下に JGA Submission ID と同名のディレクトリが作成されるので、sftp の P オプションでポート番号 443 を指定してログインし、対象ディレクトリに移動しエクセルをアップロードします。
-sftp では公開鍵・秘密鍵認証を利用しており、D-way アカウントに登録したデータ転送用公開鍵とペアの秘密鍵を指定します。
+sftp では公開鍵・秘密鍵認証を利用しており、DDBJ アカウントに登録したデータ転送用公開鍵とペアの秘密鍵を指定します。
 
 ```
 # アカウント名: account_b
@@ -155,7 +155,7 @@ $ mput *.fastq
 - 転送プロトコル: SFTP
 - ホスト名: jga-gw.ddbj.nig.ac.jp
 - ポート番号: 443
-- ユーザ名: D-way アカウント ID
+- ユーザ名: DDBJ アカウント ID
 - パスワード: 空欄のまま
 
 {% include image.html url="books/jga-winscp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}

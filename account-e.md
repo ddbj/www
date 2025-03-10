@@ -4,24 +4,24 @@ title: Submission Account
 lang: en
 ---
 
-## D-way account  {#ddbj-submission-account}
+## DDBJ account  {#ddbj-submission-account}
 
-Bioinformation and DDBJ Center provides the D-way account system. In the D-way account, you can use BioProject, BioSample, GEA, DRA and JGA databases of DDBJ Center and the DBCLS application systems. This handbook explains how to create and use a D-way account.
+Bioinformation and DDBJ Center provides the DDBJ account system. In the D-way account, you can use BioProject, BioSample, GEA, DRA and JGA databases of DDBJ Center and the DBCLS application systems. This handbook explains how to create and use a D-way account.
 
 {::options parse_block_html="true" /}
 <div class="attention">
-- Create a D-way account and manage data with permission of Principal Investigator (PI).
+- Create a DDBJ account and manage data with permission of Principal Investigator (PI).
 - Issued account and password must be maintained securely by users.
 - Account ID cannot be changed once it has been created.
-- In the D-way account page, updated information will be reflected in about 10 minutes.
-- It takes about 10 minutes for the created D-way account becoming active in the DBCLS application system.
+- In the DDBJ account page, updated information will be reflected in about 10 minutes.
+- It takes about 10 minutes for the created DDBJ account becoming active in the DBCLS application system.
 </div>
 
 DDBJ Center uses scp authenticated by a ssh key for transfer of large files. You need to register a public key to upload data files to DRA, GEA and JGA.
 
 Users submitting data submission or data use applications to DBCLS are recommended to [enter additional account information](#dbcls). The added items are automatically filled to new applications and the users are able to avoid entering these items in each application.
 
-## Create a D-way account in the website {#account-for-bioproject-biosample-submissions}
+## Create a DDBJ account in the website {#account-for-bioproject-biosample-submissions}
 
 ### Create an account on website {#create-an-account-on-website}
 
@@ -270,7 +270,7 @@ Save the information by the Save button.
 
 {% include image.html url="books/profile4.jpg" caption="Save the information" class="w300" %}
 
-To register a public key for authentication, press [Key] shown after pressing [Edit]. If a key has been registered to the D-way account, this resigtration is not necessary. If a key has not been registered, "Public key is not registered" is shown under "My Account".
+To register a public key for authentication, press [Key] shown after pressing [Edit]. If a key has been registered to the DDBJ account, this resigtration is not necessary. If a key has not been registered, "Public key is not registered" is shown under "My Account".
 {% include image.html url="books/profile5.jpg" caption="Register a public key for authentication" class="w300" %}
 
 Select a public key in the window shown after pressing [Key], and then press [Send].
@@ -329,7 +329,7 @@ An update request email will be sent to the old address. Update the address acco
 
 <div class="attention">
 Email regarding data submissions is sent to email addresses entered in the submissions.
-If you change email address of your D-way account, you need to update addresses of data submissions to receive emails regarding the submissions.  
+If you change email address of your DDBJ account, you need to update addresses of data submissions to receive emails regarding the submissions.  
 Updated account information will be reflected in about 10 minutes. Please login again after 10 minutes.
 </div>
 

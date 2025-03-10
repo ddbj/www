@@ -4,9 +4,9 @@ title: 登録アカウント
 lang: ja
 ---
 
-## D-way アカウント  {#ddbj-submission-account}
+## DDBJ アカウント  {#ddbj-submission-account}
 
-[生命情報・DDBJ センター](/index.html) では [D-way アカウントシステム](https://ddbj.nig.ac.jp/D-way)を運用しています。D-way アカウントは DDBJ センターの BioProject/BioSample/DRA/GEA/JGA データベース、及び、[DBCLS](https://humandbs.dbcls.jp) の[提供・利用申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application)で使うことができます。
+[生命情報・DDBJ センター](/index.html) では [DDBJ アカウントシステム](https://ddbj.nig.ac.jp/D-way)を運用しています。D-way アカウントは DDBJ センターの BioProject/BioSample/DRA/GEA/JGA データベース、及び、[DBCLS](https://humandbs.dbcls.jp) の[提供・利用申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application)で使うことができます。
 
 {::options parse_block_html="true" /}
 <div class="attention">
@@ -22,7 +22,7 @@ DDBJ センターではサイズの大きいファイルの転送に ssh 鍵認�
 
 DBCLS に提供・利用申請を提出するユーザは[申請に必要なアカウント情報を追加](#dbcls)します。追加した情報は申請フォームに自動入力されるようになるため、申請作業が効率的になります。
 
-## D-way アカウントをウェブサイトで作成 {#account-for-bioproject-biosample-submissions}
+## DDBJ アカウントをウェブサイトで作成 {#account-for-bioproject-biosample-submissions}
 
 ### ウェブサイトでアカウントを作成  {#create-an-account-on-website}
 
@@ -78,7 +78,7 @@ DRA/GEA/JGA にデータをアップロードするためには[認証用公開�
 ## 認証用公開鍵の登録 {#public-key}
 
 DRA/GEA/JGA にデータファイルをアップロードするためにはアカウントに公開鍵（ssh 認証用公開鍵）を登録する必要があります。  
-DBCLS に提供・利用申請をする方は[アカウント情報の追加](/account.html#dbcls)が必要です。
+DBCLS に提供・利用申請をする方は[アカウント情報の追加](/ddbj-account.html#dbcls)が必要です。
 
 ## 公開鍵/秘密鍵ペアの生成  {#generate-key-pair}
 
@@ -86,7 +86,7 @@ DBCLS に提供・利用申請をする方は[アカウント情報の追加](/a
 
 ### Windows {#windows}
 
-D-way アカウントに登録する公開鍵は openSSH/PuTTY 形式のどちらでも問題ありません。
+DDBJ アカウントに登録する公開鍵は openSSH/PuTTY 形式のどちらでも問題ありません。
 JGA データ復号は openSSH 形式の秘密鍵、WinSCP で指定する秘密鍵は PuTTY 形式のものを使用する必要があります。
 
 #### OpenSSH 形式 {#openssh}
@@ -267,7 +267,7 @@ D-way ウェブサービスでは JGA を利用することができません。
 
 {% include image.html url="books/profile4.jpg" caption="Save で保存" class="w300" %}
 
-認証用公開鍵を登録する場合は、[Edit] 押下後に表示される [Key] から登録します。D-way アカウントに[公開鍵を登録済み](#register-public-key)の場合、この操作は不要です。未登録の場合は My Account の下に「Public key is not registered」と表示されます。
+認証用公開鍵を登録する場合は、[Edit] 押下後に表示される [Key] から登録します。DDBJ アカウントに[公開鍵を登録済み](#register-public-key)の場合、この操作は不要です。未登録の場合は My Account の下に「Public key is not registered」と表示されます。
 {% include image.html url="books/profile5.jpg" caption="認証用公開鍵の登録" class="w300" %}
 
 [Key] 押下後に表示される画面で鍵ファイルを選択して [Send] を押下します。
@@ -325,7 +325,7 @@ Account の E-mail に新しいアドレスを入力して Update をクリッ�
 
 <div class="attention">
 データ登録に関するメールは各登録に記載されたメールアドレスに対して送信されます。
-D-way アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、登録データ中のアドレスも変更する必要があります。  
+DDBJ アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、登録データ中のアドレスも変更する必要があります。  
 メールアドレス変更が反映されるまで10分程度かかります。
 </div>
 

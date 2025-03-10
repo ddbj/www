@@ -172,8 +172,8 @@ OS: Linux
 ## アカウント作成  {#account}
 
 - D-way 登録アカウントをお持ちでない場合、[D-way](https://ddbj.nig.ac.jp/D-way/) の "Register for a new account
-" より作成して下さい([ヘルプ](/account.html))。
-- SCP/SFTP 転送を利用いただくには、[アカウントへの公開鍵の登録](/account.html#register-public-key)が必要です。ファイル転送手順につきましては、「[データのアップロード](/upload.html)」をご参照ください。
+" より作成して下さい([ヘルプ](/ddbj-account.html))。
+- SCP/SFTP 転送を利用いただくには、[アカウントへの公開鍵の登録](/ddbj-account.html#register-public-key)が必要です。ファイル転送手順につきましては、「[データのアップロード](/upload.html)」をご参照ください。
 
 ## 登録申し込み  {#submission}
 [MSS 申し込みフォーム](https://mss.ddbj.nig.ac.jp/)から行って下さい。単一の申し込みは、以下の条件を全て満たすエントリセットの場合のみとなっております。一つでも条件が異なるエントリを登録する場合には、複数回の申し込みが必要となります。
@@ -215,7 +215,7 @@ c. 単一真核生物個体の chromosome ドラフトゲノムとアセンブ�
 - [DFAST](https://dfast.ddbj.nig.ac.jp/) の job ID を指定する
   - DFAST にて、登録ファイルを作成済みの場合
 - SFTP サーバーに転送済みの登録ファイルを送付
-  - 目安としてファイルサイズが合計で 10 Gbyte を超える場合は、[公開鍵と秘密鍵](/account.html#generate-key-pair)を用いた SCP/SFTP によるファイル転送を選択してください。アカウントに[認証用公開鍵を登録](/account.html#register-public-key)後、「[データのアップロード](/upload.html)」に従い転送してください。
+  - 目安としてファイルサイズが合計で 10 Gbyte を超える場合は、[公開鍵と秘密鍵](/ddbj-account.html#generate-key-pair)を用いた SCP/SFTP によるファイル転送を選択してください。アカウントに[認証用公開鍵を登録](/account.html#register-public-key)後、「[データのアップロード](/upload.html)」に従い転送してください。
   - 以下の説明をお読みください。
 
 <div class="attention" markdown="1">
@@ -305,10 +305,10 @@ M, Mandatory; NR, Not required; OPT, Optional
 
 ### 原核生物ゲノムの登録の手順  {#mssdfast-2}
 1. [DFAST](https://dfast.ddbj.nig.ac.jp/) で解析した原核生物ゲノムを Annotated/Assembled Sequences database に登録するには、事前に[BioProject](https://www.ddbj.nig.ac.jp/bioproject/index.html)、[BioSample](https://www.ddbj.nig.ac.jp/biosample/index.html)、[locus_tag preifx](https://www.ddbj.nig.ac.jp/ddbj/locus_tag.html)（Biogical featureを記載する場合）の登録が必要です。
-1. [D-way アカウント](/account.html)で [DFAST](https://dfast.ddbj.nig.ac.jp/) にログインすると 、[解析（job）の履歴管理](https://dfast.ddbj.nig.ac.jp/help_login)ができます。アカウントを持っていない場合には[アカウントの作成方法](/account.html#account-for-bioproject-biosample-submissions)をご一読下さい。
+1. [DDBJ アカウント](/ddbj-account.html)で [DFAST](https://dfast.ddbj.nig.ac.jp/) にログインすると 、[解析（job）の履歴管理](https://dfast.ddbj.nig.ac.jp/help_login)ができます。アカウントを持っていない場合には[アカウントの作成方法](/account.html#account-for-bioproject-biosample-submissions)をご一読下さい。
 
 ### DFAST のデータを Submit するには  {#mssdfast-3}
-1. [DFAST](https://dfast.ddbj.nig.ac.jp/) にアクセスし、[D-way アカウント](/account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。job 終了後、”DDBJ submission”  タブをクリックします。DDBJ への登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS 登録ファイルが作成されます。（注１）
+1. [DFAST](https://dfast.ddbj.nig.ac.jp/) にアクセスし、[DDBJ アカウント](/ddbj-account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。job 終了後、”DDBJ submission”  タブをクリックします。DDBJ への登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS 登録ファイルが作成されます。（注１）
 最後に、Format Check をクリックして、書式チェックを行ってください。
 1. DFAST の job ID で submit する場合
     1. job ID (<span style="font-family:Arial;">########-####-####-####-############</span> 書式のID)をコピーします。

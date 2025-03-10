@@ -10,7 +10,7 @@ lang: en
 ## Group {#group}
 
 The applications to DBCLS, JGA submissions and downloads are managed
-through groups consisting from D-way account holders as members. Through
+through groups consisting from DDBJ account holders as members. Through
 groups, a principal investigator (PI) and applicant are able to
 co-manage data without sharing their accounts. The PI is able to keep
 access rights properly by removing members when they leave the PI's

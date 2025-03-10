@@ -69,7 +69,7 @@ The contact information is not made public.
 
 <div class="attention">
 Email regarding the DRA submission is sent to addresses entered in the DRA Submission.
-If you change email address registered in your D-way account, you need to update addresses of DRA Submissions to receive emails regarding the submissions.
+If you change email address registered in your DDBJ account, you need to update addresses of DRA Submissions to receive emails regarding the submissions.
 </div>
 
 [Name](#Contact_Name)<a name="Contact_Name"></a><span class="red">*</span>

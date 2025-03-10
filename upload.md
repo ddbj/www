@@ -25,19 +25,19 @@ DRA と GEA ではアップロード先ディレクトリの下にサブディ�
 
 [JGA](/jga/submission-step.html) データは専用サーバにアップロードします。  
 
-## ターミナル {#terminal}
+### ターミナル {#terminal}
 
-### Linux/Mac OS X {#terminal-linux}
+#### Linux/Mac OS X {#terminal-linux}
 
 ファイルを SCP 転送します。
 
 コマンドの形式:  
-scp -i \<Your private key> \<Your Files> \<D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory>
+scp -i \<Your private key> \<Your Files> \<DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory>
 
-- \<Your private key for authentication\>: D-way アカウントに登録した認証用公開鍵とペアになる秘密鍵。例 ~/.ssh/id_rsa
+- \<Your private key for authentication\>: DDBJ アカウントに登録した認証用公開鍵とペアになる秘密鍵。例 ~/.ssh/id_rsa
 - \<Your Files\>: 転送するファイル。  
 例: strainA_1.fastq、raw1.txt raw2.txt (raw1.txt と raw2.txt)、*.bam (拡張子 bam の全ファイルをワイルドカードで指定)
-- \<D-way Login ID\>: D-way の Login ID。例 test07
+- \<DDBJ Login ID\>: DDBJ Login ID。例 test07
 - \<Destination directory\>: アップロード先ディレクトリ。  
 例 DRA: \<DRA submission ID\>、GEA: \<GEA submission ID\>、DDBJ: /mass、MetaboBank: /metabobank
 
@@ -55,7 +55,7 @@ Enter passphrase for key '/home/you/.ssh/id_rsa':
 サーバにログインし、直接ファイルを操作することができます。サーバに SSH でログインします。
 
 ```
-$ ssh -i <Your private key> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp
+$ ssh -i <Your private key> <DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp
 ```
 
 コマンドの例
@@ -82,7 +82,7 @@ Enter passphrase for key '/home/you/.ssh/id_rsa':
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 ```
 
-### PowerShell (Windows) {#ps}
+#### PowerShell (Windows) {#ps}
 
 Windows PowerShell を使ってコマンドラインでデータを転送する方法を説明します。  
 
@@ -91,12 +91,12 @@ Windows PowerShell を使ってコマンドラインでデータを転送する�
 
 ファイルを SCP 転送します。
 コマンドの形式:  
-scp -i \<Your private key\> \<Your Files\> \<D-way Login ID\>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory\>
+scp -i \<Your private key\> \<Your Files\> \<DDBJ Login ID\>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory\>
 
-- \<Your private key\>: D-way アカウントに登録した認証用公開鍵とペアになる秘密鍵。例 ~/.ssh/id_rsa
+- \<Your private key\>: DDBJ アカウントに登録した認証用公開鍵とペアになる秘密鍵。例 ~/.ssh/id_rsa
 - \<Your Files\>: 転送するファイル。   
 例: strainA_1.fastq、raw1.txt raw2.txt (raw1.txt と raw2.txt)、*.bam (拡張子 bam の全ファイルをワイルドカードで指定)
-- \<D-way Login ID\>: D-way の Login ID。例 test07
+- \<DDBJ Login ID\>: DDBJ Login ID。例 test07
 - \<Destination directory\>: アップロード先ディレクトリ。  
 例 DRA: \<DRA submission ID\>、GEA: \<GEA submission ID\>、DDBJ: /mass、MetaboBank: /metabobank
 
@@ -113,7 +113,7 @@ Enter passphrase for key '/home/you/.ssh/id_rsa':
 サーバにログインし、直接ファイルを操作することができます。サーバに SSH でログインします。
 
 ```
-> ssh -i <Your private key> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp
+> ssh -i <Your private key> <DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp
 ```
 
 コマンドの例
@@ -140,7 +140,7 @@ Enter passphrase for key '/home/you/.ssh/id_rsa':
 ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 ```
 
-## WinSCP (Windows) {#winscp}
+#### WinSCP (Windows) {#winscp}
 
 画面操作でデータを転送できる WinSCP を使った方法を説明します。  
 
@@ -152,7 +152,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 - File protocol: SFTP
 - Host name: ftp-private.ddbj.nig.ac.jp
 - Port number: 22
-- User name: (D-way の Login ID を入力)
+- User name: (DDBJ Login ID を入力)
 - Password: (空欄のまま)
 
 <a href="/assets/images/books/winscp1_400.jpg" title="秘密鍵の選択１" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="秘密鍵の選択１" title="秘密鍵の選択１" class="w400"></a>
@@ -175,7 +175,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 
 転送したファイルは、ファイルを選択し [削除] ボタンをクリックすることで削除できます。
   
-## Cyberduck (Mac OS X) {#cyberduck}
+#### Cyberduck (Mac OS X) {#cyberduck}
 
 画面操作でデータを転送できる Cyberduck を使った方法を説明します。  
 
@@ -188,9 +188,9 @@ Cyberduck の設定画面で、以下のように設定します。
 * 転送方式: SFTP (SSH File Transfer Protocol)
 * Server: ftp-private.ddbj.nig.ac.jp
 * Port: 22
-* Username: (D-wayの Login ID を入力)
+* Username: (DDBJ Login ID を入力)
 * Password: (空欄のまま)
-* SSH Private Key: D-way に登録した公開鍵のペアになる認証用秘密鍵を選択
+* SSH Private Key: DDBJ アカウントに登録した公開鍵のペアになる認証用秘密鍵を選択
 * Add to Keychain: (チェックを入れる)
 
 秘密鍵 (private key) はデフォルトで "ユーザのホームフォルダ .ssh フォルダ (Finder からは見えない隠しフォルダ) > id_rsa" に保存されています。
@@ -201,11 +201,9 @@ Cyberduck の設定画面で、以下のように設定します。
 
 ログインに成功すると、データ受付サーバの登録者専用ディレクトリが表示されます。登録者の PC にあるファイルを選択しウィンドウにドラッグ＆ドロップすることで、ファイルをサーバに転送します。
 
-## 転送がうまくいかない場合  {#trouble}
+### 転送がうまくいかない場合  {#trouble}
 
 以下の FAQ を参照してください。
 
 * [scp でファイルの転送ができません](/faq/ja/scp.html)
 * [ホスト鍵不一致の警告が表示され ftp-private にアクセスできません](/faq/ja/known-hosts.html)
-
-

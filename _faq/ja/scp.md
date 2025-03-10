@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: scp でファイルの転送ができません
+title: SSH でファイルの転送ができません
 category: faq
 db:
   - dra
@@ -12,13 +12,13 @@ lang: ja
 
 以下の基本的な点をご確認ください。
  - scp 接続時にパスワードではなく鍵認証になっているかどうか
- - D-way アカウントに登録した公開鍵と指定している秘密鍵がペアになっているかどうか
+ - DDBJ アカウントに登録した公開鍵と指定している秘密鍵がペアになっているかどうか
  - 秘密鍵ファイルが読み込みを許可する権限設定になっているかどうか
  - 秘密鍵ファイルの権限が他人がアクセスできないように設定されているかどうか？（例 rw-------）
  - 鍵作成時に指定したパスフレーズを正しく入力しているかどうか
 
 鍵を生成した時のコンピュータの OS と異なる環境でデータを転送しようとしている場合，秘密鍵の形式が合っているかどうかご確認ください。    
-[秘密鍵ファイルの変換](/account.html#convert-private-key)
+[秘密鍵ファイルの変換](/key.html#convert-private-key)
 
 転送環境と秘密鍵の形式  
 * Unix/Mac OS X/Windows PowerShell: OpenSSH 形式の秘密鍵を使用します。Windows で作成した PuTTY 形式の秘密鍵は OpenSSH 形式に変換します。  
@@ -30,7 +30,7 @@ lang: ja
 
 #### invalid format error {#invalid-format-error}
 
-OpenSSH 形式の秘密鍵を使用します。PuTTY 形式だと invalid format エラーになるので [OpenSSH 形式に変換](/account.html#putty-openssh)します。    
+OpenSSH 形式の秘密鍵を使用します。PuTTY 形式だと invalid format エラーになるので [OpenSSH 形式に変換](/key.html#putty-openssh)します。    
 
 #### UNPROTECTED PRIVATE KEY FILE WARNING {#unprotected}
 

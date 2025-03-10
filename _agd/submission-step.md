@@ -12,10 +12,10 @@ lang: ja
 [データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)から[提供申請](https://gr-sharingdbs.dbcls.jp/agd-data-submission)します。
 申請時に提供申請グループを作成します。提供申請が DBCLS で承認された後、AGD サーバにデータアップロード用ディレクトリが作成されます。
 
-申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
+申請には DDBJ アカウントが必要です。アカウントが無い場合は申請前に [D-way](https://ddbj.nig.ac.jp/D-way/) アカウントを取得してください。
 
 <div class="attention" markdown="1">
-D-way アカウント作成後、[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)で利用できるようになるまで10分程度の時間がかかります。
+DDBJ アカウント作成後、[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
 申請システムで自動入力させるため、アカウントに所属情報や日本語氏名を登録します。[申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)にログインし、右上のメニューから「ユーザ情報更新」を選択します。
@@ -80,12 +80,12 @@ AGD にアップロードするファイル名には空白を含めないでく�
 ### エクセルをアップロード  {#upload-excel}
 
 <div class="attention" markdown="1">
-AGD にファイルを sftp でアップロードするためには [D-way アカウントに公開鍵を登録](/account.html#public-key)する必要があります。AGD サーバに ssh ログインすることはできません。
+AGD にファイルを sftp でアップロードするためには [DDBJ アカウントに公開鍵を登録](/ddbj-account.html#public-key)する必要があります。AGD サーバに ssh ログインすることはできません。
 </div>
 
 AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/submission/agd/ の下に AGD Submission ID と同名のディレクトリが作成されるので、
 sftp の P オプションでポート番号 443 を指定してログインし、対象ディレクトリに移動しエクセルをアップロードします。
-sftp では公開鍵・秘密鍵認証を利用しており、[D-way アカウントに登録した秘密鍵](/account.html#generate-key-pair)を指定します。
+sftp では公開鍵・秘密鍵認証を利用しており、[DDBJ アカウントに登録した秘密鍵](/ddbj-account.html#generate-key-pair)を指定します。
 
 例
 - アカウント名: account_b
@@ -108,7 +108,7 @@ $ put ASUB000353_metadata.xlsx
 転送プロトコル: SFTP
 - ホスト名: jga-gw.ddbj.nig.ac.jp
 - ポート番号: 443
-- ユーザ名: D-way アカウント ID
+- ユーザ名: DDBJ アカウント ID
 - パスワード: 空欄のまま
 
 {% include image.html url="books/jga-winscp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}

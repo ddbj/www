@@ -14,7 +14,7 @@ Submission of research data from human subjects
 
 ## Submission flow {#flow}
 
-* [Create a submission account](/account-e.html)
+* [Create a submission account](/ddbj-account-e.html)
 * [Create a new submission](#new-submission)
 * [Upload data files](#upload)
 * [Submit a BioProject](#bioproject)
@@ -46,7 +46,7 @@ The DRA team reviews submission whose status is in "submission_validated" or "da
 
 ## Create a submission account {#account}
 
-Create a [D-way submission account](/account-e.html) and [register a public key to your account](/account-e.html#public-key).
+Create a [D-way submission account](/ddbj-account-e.html) and [register a public key to your account](/account-e.html#public-key).
 
 ## Create a new submission  {#new-submission}
 
@@ -106,7 +106,7 @@ The organization of your account is copied to the Submitting organization (forme
 
 <div class="attention">
 Email about the DRA submission is sent to the addresses entered in the DRA Submission. 
-If you change email address registered in your D-way account, you need to update addresses of DRA Submissions to receive emails about the submissions.
+If you change email address registered in your DDBJ account, you need to update addresses of DRA Submissions to receive emails about the submissions.
 </div>
 
 {% include image.html url="books/hdra-submission01.jpg" caption="Enter submission information" class="w500" %}

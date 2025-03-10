@@ -32,7 +32,7 @@ Please check whether a project registration is necessary for your data submissio
 
 ## Submit a new BioProject submission  {#new-bioproject-submission}
 
-Obtain a submission [account](/account-e.html).  
+Obtain a submission [account](/ddbj-account-e.html).  
 Submit a new project by clicking the [New submission].
 
 {% include image.html url="books/hbp-01.jpg" caption="Submit a new BioProject" class="w450" %}

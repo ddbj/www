@@ -1266,7 +1266,7 @@ F-3NB691000033  3NB691000033    3NB691  3NB691000033    ./traces/F-3NB691000033.
 
 ### アカウントの取得  {#create-account}
 
-[DDBJ 登録用アカウント](/account.html)を取得します。
+[DDBJ 登録用アカウント](/ddbj-account.html)を取得します。
 
 ### 登録用ファイルのアップロード  {#upload-submission-files}
 

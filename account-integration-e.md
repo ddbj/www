@@ -19,27 +19,27 @@ or lab.
 {% include image.html url="books/account_integration-e.png" caption="Integration to new account system" class="w450" %}
 {:/}
 
-## Integration to the D-way account {#migration}
+## Integration to the DDBJ account {#migration}
 
-As the first step, the JGA account system will be integrated to the D-way in 29th September, 2020. At the same time, the D-way account will be introduced to the application system of <a href="https://humandbs.biosciencedbc.jp/en">NBDC</a>. After this integration, users will be able to "apply data submission application to NBDC - submit data to JGA" and "apply data use application to NBDC - download JGA dataset" in the same D-way account.
+As the first step, the JGA account system will be integrated to the D-way in 29th September, 2020. At the same time, the DDBJ account will be introduced to the application system of <a href="https://humandbs.biosciencedbc.jp/en">NBDC</a>. After this integration, users will be able to "apply data submission application to NBDC - submit data to JGA" and "apply data use application to NBDC - download JGA dataset" in the same D-way account.
 
 The JGA account migration process is explained below.
 
 ### When you own JGA account only  {#jga-only}
 
-If you have JGA account (Account: 'A') only, 'A' is migrated to the D-way. After the integration, in the D-way account, you can use BioProject/BioSample/DRA/GEA as well as JGA/NBDC application systems. If 'A' already exists in the D-way, an new D-way account ID different from that of JGA is created.
+If you have JGA account (Account: 'A') only, 'A' is migrated to the D-way. After the integration, in the DDBJ account, you can use BioProject/BioSample/DRA/GEA as well as JGA/NBDC application systems. If 'A' already exists in the D-way, an new D-way account ID different from that of JGA is created.
 
 <span class="red">After a new account is notified, do NOT
-create new D-way account to avoid duplication.</span>
+create new DDBJ account to avoid duplication.</span>
 
-### When you own D-way account only  {#dway-only}
+### When you own DDBJ account only  {#dway-only}
 
-When you own D-way account (Account: 'B') only, after the JGA system is integrated to D-way, you can use 'B' in BioProject/BioSample/DRA/GEA as well as JGA/NBDC application systems.
+When you own DDBJ account (Account: 'B') only, after the JGA system is integrated to D-way, you can use 'B' in BioProject/BioSample/DRA/GEA as well as JGA/NBDC application systems.
 
-### When you own both JGA and D-way accounts  {#jga-and-dway}
+### When you own both JGA and DDBJ accounts  {#jga-and-dway}
 
-When you own a JGA (Account: 'C') and a D-way account (Account: 'D'). 
-<span class="attention_text">The JGA accounts are merged to the D-way accounts.</span>
+When you own a JGA (Account: 'C') and a DDBJ account (Account: 'D'). 
+<span class="attention_text">The JGA accounts are merged to the DDBJ accounts.</span>
 After the integration, you can use 'D' for BioProject/BioSample/DRA/GEA as well as JGA/NBDC application systems. The JGA data linked to 'C' are transferred to 'D'. The account 'C' will be discontinued.
 
 ## AGD account  {#agd-account}

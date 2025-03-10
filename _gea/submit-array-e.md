@@ -61,7 +61,7 @@ Set the hold date within four years or choose immediate release when processed. 
 
 <div class="attention">
 Email regarding GEA submission is sent to addresses entered in the GEA Submission.
-If you change email address registered in your D-way account, you need to update addresses of GEA Submissions to receive emails regarding the submissions.
+If you change email address registered in your DDBJ account, you need to update addresses of GEA Submissions to receive emails regarding the submissions.
 </div>
 
 {% include image.html url="books/array-sub2.jpg" caption="Enter submission information" class="w550" %}

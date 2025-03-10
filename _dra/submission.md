@@ -15,7 +15,7 @@ lang: ja
 
 ## 登録の流れ {#flow}
 
-* [登録アカウントの取得](/account.html)
+* [登録アカウントの取得](/ddbj-account.html)
 * [新規登録の作成](#new-submission)
 * [データファイルのアップロード](#upload)
 * [BioProject の登録](#bioproject)
@@ -46,7 +46,7 @@ lang: ja
 
 ## 登録アカウントの取得  {#account}
 
-[D-way 登録アカウント](/account.html)を取得し、[公開鍵をアカウントに登録](/account.html#public-key)します。
+[D-way 登録アカウント](/ddbj-account.html)を取得し、[公開鍵をアカウントに登録](/account.html#public-key)します。
 
 ## 新規登録の作成  {#new-submission}
 
@@ -112,7 +112,7 @@ Submitting organization (旧 center name) はアカウントの Organiztion の�
 
 <div class="attention">
 DRA 登録に関するメールは Submission に記入されたメールアドレスに対して送信されます。
-D-way アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、DRA Submission のアドレスも変更してください。
+DDBJ アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、DRA Submission のアドレスも変更してください。
 </div>
 
 {% include image.html url="books/hdra-submission01.jpg" caption="Submission に登録情報を入力" class="w500" %}

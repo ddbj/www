@@ -64,7 +64,7 @@ DisableDataIntegrityChecking yes             # ダイジェスト方式なしを
 ## 接続テスト {#test}
 
 設定完了後、以下のコマンドで接続テストを実施します。  
-test07 アカウントを例に説明します。事前に D-way アカウントに[認証用公開鍵を登録](https://www.ddbj.nig.ac.jp/account.html#public-key)しておく必要があります。
+test07 アカウントを例に説明します。事前に DDBJ アカウントに[認証用公開鍵を登録](https://www.ddbj.nig.ac.jp/ddbj-account.html#public-key)しておく必要があります。
 
 以下のテストコマンドを実行します。  
 ```

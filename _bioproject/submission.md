@@ -32,7 +32,7 @@ lang: ja
 
 ## 新規登録 {#new-bioproject-submission}
 
-[D-way アカウント](/account.html)を取得します。  
+[DDBJ アカウント](/ddbj-account.html)を取得します。  
 [D-way](https://ddbj.nig.ac.jp/D-way/) にログインします。上部メニューから BioProject 登録ページに移動します。BioProject ページ内の [New submission] で新規登録を作成します。
 
 {% include image.html url="books/hbp-01.jpg" caption="新規登録作成" class="w450" %}

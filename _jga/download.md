@@ -9,12 +9,12 @@ lang: ja
 
 ## 利用申請から JGA データ利用までの手順 {#du}
 
-利用申請は[申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) に D-way アカウントでログインしてから申請します。   
+利用申請は[申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) に DDBJ アカウントでログインしてから申請します。   
 利用申請では、利用申請グループの作成、利用希望の JGA Study と Dataset アクセッション番号の指定、及び、「データセット復号用公開鍵」の登録が必要です。    
-利用申請の承認後、D-way アカウントで sftp で JGA サーバにアクセスし、機関内・外サーバへ JGA データをダウンロードすることができます。暗号化されたファイルと復号ツールが提供されるので、申請時に登録した「データセット復号用公開鍵」とペアになる秘密鍵を使って暗号化ファイルを復号してから利用します。
+利用申請の承認後、DDBJ アカウントで sftp で JGA サーバにアクセスし、機関内・外サーバへ JGA データをダウンロードすることができます。暗号化されたファイルと復号ツールが提供されるので、申請時に登録した「データセット復号用公開鍵」とペアになる秘密鍵を使って暗号化ファイルを復号してから利用します。
 
 * [JGA データセットの検索](#search)
-* [D-way アカウントの作成とデータ転送用公開鍵の登録](#account-key)
+* [DDBJ アカウントの作成とデータ転送用公開鍵の登録](#account-key)
 * [利用申請毎に必要なデータセット復号用公開鍵・秘密鍵ペアの作成](#key-for-decryption)
 * [利用申請](#du-application)
 * [データセット復号用公開鍵の登録](#key-registration)
@@ -28,20 +28,20 @@ lang: ja
 利用を希望する Study (例 JGAS999992) と Dataset [アクセッション番号](/jga/submission.html) (例 JGAD999993) を確認します。   
 DBCLS の[利用可能な研究データ一覧](https://humandbs.dbcls.jp/data-use/all-researches)もしくは[DDBJ Search](https://ddbj.nig.ac.jp/search) で検索することができます。
 
-### D-way アカウントの作成とデータ転送用公開鍵の登録  {#account-key}
+### DDBJ アカウントの作成とデータ転送用公開鍵の登録  {#account-key}
 
-利用申請およびJGA データ取得のためには D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/)してください。  
+利用申請およびJGA データ取得のためには DDBJ アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/)してください。  
 
 <div class="attention" markdown="1">
-D-way アカウント作成後、[データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
+DDBJ アカウント作成後、[データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
-sftp を利用して JGA サーバからデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#public-key)します。   
+sftp を利用して JGA サーバからデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を DDBJ アカウントに登録](/ddbj-account.html#public-key)します。   
 
 ### 利用申請毎に必要なデータセット復号用公開鍵・秘密鍵ペアの作成 {#key-for-decryption}
 
 JGA データは暗号化された状態で提供されます。ユーザは利用承認されたデータを sftp でダウンロードし、利用申請時に登録したデータセット復号用公開鍵とペアとなる秘密鍵を使ってデータを復号します。   
-データセット復号用公開鍵は D-way アカウントの[データ転送用公開鍵](/account.html#public-key)とは別になります。作成手順は[公開鍵/秘密鍵ペアの生成](/account.html#generate-key-pair)をご覧ください。<span class="red">復号用鍵は RSA 形式で作成する必要があります。ed25519 形式には対応していないのでご注意ください。</span>
+データセット復号用公開鍵は DDBJ アカウントの[データ転送用公開鍵](/ddbj-account.html#public-key)とは別になります。作成手順は[公開鍵/秘密鍵ペアの生成](/account.html#generate-key-pair)をご覧ください。<span class="red">復号用鍵は RSA 形式で作成する必要があります。ed25519 形式には対応していないのでご注意ください。</span>
 
 利用申請から JGA データ利用までに、データ転送用と復号用に合計２ペア４ファイルの公開鍵・秘密鍵が必要になります。
 
@@ -50,7 +50,7 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 * データセット復号用秘密鍵
 
 データ転送用鍵ペア
-* データ転送用公開鍵 (D-way アカウントに登録)
+* データ転送用公開鍵 (DDBJ アカウントに登録)
 * データ転送用秘密鍵
 
 {% include image.html url="books/two-key-pairs-ja.jpg" caption="データ転送用と JGA データセット復号用鍵ペア" class="w450" %}
@@ -91,7 +91,7 @@ JGA データは暗号化された状態で提供されます。ユーザは利�
 
 ## ダウンロード {#download}
 
-sftp を利用して JGA サーバ (jga-gw.ddbj.nig.ac.jp) からデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を D-way アカウントに登録](/account.html#public-key)します。   
+sftp を利用して JGA サーバ (jga-gw.ddbj.nig.ac.jp) からデータをダウンロードするためには、データ転送用の公開鍵・秘密鍵ペアを作成し、[公開鍵を DDBJ アカウントに登録](/ddbj-account.html#public-key)します。   
 
 JGA ファイルサーバ上の /controlled-access/download/jga/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されます。   
 [WinSCP](#winscp)、もしくは、[sftp](#sftp) コマンドを使ってダウンロードします。  
@@ -105,7 +105,7 @@ JGA ファイルサーバ上の /controlled-access/download/jga/ の下にデー
 - 転送プロトコル: SFTP
 - ホスト名: jga-gw.ddbj.nig.ac.jp
 - ポート番号: 443
-- ユーザ名: D-way アカウント ID
+- ユーザ名: DDBJ アカウント ID
 - パスワード: 空欄のまま
 
 {% include image.html url="books/winscp-setting-sftp.jpg" caption="WinSCP 接続情報の入力" class="w400" %}

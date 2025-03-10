@@ -18,21 +18,21 @@ summarized in this page.
 
 ## Account integration to D-way {#account-integration}
 
-We have been operated the D-way account for BioProject/BioSample/DRA/GEA
+We have been operated the DDBJ account for BioProject/BioSample/DRA/GEA
 submission and the JGA account for the JGA data submission and download.
 After 29th, September, 2020, the JGA account will be merged to the D-way
 and users will be able to use the BioProject/BioSample/DRA/JGA/NBDC
-Application systems in the D-way account.
+Application systems in the DDBJ account.
 
 If you want to submit data to JGA or use JGA data, please create your
 [D-way](https://ddbj.nig.ac.jp/D-way/) account if you do not have it.
 You can use the JGA system after your application is approved by NBDC.
-If you already have a D-way account, you can apply applications to NBDC
-in your D-way account. For details, please see [this
+If you already have a DDBJ account, you can apply applications to NBDC
+in your DDBJ account. For details, please see [this
 page](/account-integration-e.html).
 
 <div class="attention" markdown="1">
-After creating a new D-way account, the D-way account will be active in
+After creating a new DDBJ account, the D-way account will be active in
 the NBDC application system after about 10 minutes.
 </div>
 

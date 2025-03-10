@@ -31,12 +31,12 @@ Upload [JGA](/jga/submission-step-e.html) data files to the different server.
 Upload files by using scp.
 
 Command format:  
-scp -i \<Your private key> \<Your Files> \<D-way Login ID>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory>
+scp -i \<Your private key> \<Your Files> \<DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory>
 
-- \<Your private key\>: the private key for authentication which is pair of a public key registered to your D-way account. For example, ~/.ssh/id_rsa
+- \<Your private key\>: the private key for authentication which is pair of a public key registered to your DDBJ account. For example, ~/.ssh/id_rsa
 - \<Your Files\>: Files to be uploaded.  
 For example, strainA_1.fastq, raw1.txt raw2.txt (raw1.txt and raw2.txt) and *.bam (files with bam extension specified by a wild card).
-- \<D-way Login ID\>: D-way Login ID. For example, test07.
+- \<DDBJ Login ID\>: DDBJ Login ID. For example, test07.
 - \<Destination directory\>: the destination directory.   
 For example, DRA: \<DRA submission ID\>, GEA: \<GEA submission ID\>, DDBJ: /mass and MetaboBank: /metabobank.
 
@@ -53,7 +53,7 @@ Enter passphrase for key '/home/you/.ssh/id_rsa':
 You can directly handle the uploaded files by logging in the server.   
 SSH login the server by executing,  
 ```
-$ ssh -i <Your private key> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp
+$ ssh -i <Your private key> <DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp
 ```
 
 Example commands.  
@@ -87,12 +87,12 @@ Searh and run "PowerShell" in the Windows start menu.
 Upload files by scp.  
 
 Command format:  
-scp -i \<Your openSSH-format private key\> \<Your Files\> \<D-way Login ID\>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory\>
+scp -i \<Your openSSH-format private key\> \<Your Files\> \<DDBJ Login ID\>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory\>
 
-- \<Your openSSH-format private key\>: the private key for authentication which is pair of a public key registered to your D-way account. For example, ~/.ssh/id_rsa
+- \<Your openSSH-format private key\>: the private key for authentication which is pair of a public key registered to your DDBJ account. For example, ~/.ssh/id_rsa
 - \<Your Files\>: Files to be uploaded.  
 For example, strainA_1.fastq, raw1.txt raw2.txt (raw1.txt and raw2.txt) and *.bam (files with bam extension specified by a wild card).
-- \<D-way Login ID\>: D-way Login ID. For example, test07.
+- \<DDBJ Login ID\>: DDBJ Login ID. For example, test07.
 - \<Destination directory\>: the destination directory.   
 For example, DRA: \<DRA submission ID\>, GEA: \<GEA submission ID\>, DDBJ: /mass and MetaboBank: /metabobank.
 
@@ -109,7 +109,7 @@ Enter passphrase for key '/home/you/.ssh/id_rsa':
 You can directly handle the uploaded files by logging in the server.   
 SSH login the server by executing,  
 ```
-$ ssh -i <Your private key> <D-way Login ID>@ftp-private.ddbj.nig.ac.jp
+$ ssh -i <Your private key> <DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp
 ```
 
 Example commands.  
@@ -145,7 +145,7 @@ Be sure to select the "binary mode" for file transfer. Do NOT select the "text m
 - File protocol: SFTP
 - Host name: ftp-private.ddbj.nig.ac.jp
 - Port number: 22
-- User name: (D-way Login ID)
+- User name: (DDBJ Login ID)
 - Password: (Leave empty)
 
 <a href="/assets/images/books/winscp1_400.jpg" title="Select a private key 1" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="Select a private key 1" title="Select a private key 1" class="w500"></a>
@@ -177,9 +177,9 @@ Set as follows.
 * SFTP (SSH File Transfer Protocol)
 * Server: ftp-private.ddbj.nig.ac.jp
 * Port: 22
-* Username: (D-way Login ID)
+* Username: (DDBJ Login ID)
 * Password: (Leave empty)
-* SSH Private Key: Select a private key paired with a public key registered to your D-way account for authentification.
+* SSH Private Key: Select a private key paired with a public key registered to your DDBJ account for authentification.
 * Add to Keychain: (Check)
 
 <a href="/assets/images/books/Cyberduck_3.jpg" title="Configuration" class="group1"><img src="/assets/images/books/Cyberduck_3.jpg" alt="Configuration" title="Configuration" class="w400"></a>

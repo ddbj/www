@@ -16,7 +16,7 @@ E-mail address<span class="red">\*</span>
 Affiliation<span class="red">\*</span>  
 Title<span class="red">\*</span>  
 Accession number/Submission ID  
-D-way account  
+DDBJ account  
 Request ID  
 User ID  
 Contacts<span class="red">\*</span>  

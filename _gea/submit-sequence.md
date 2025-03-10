@@ -57,7 +57,7 @@ GEA ではマイクロアレイとシークエンシングを一つの Submissio
 
 <div class="attention">
 GEA 登録に関するメールは Submission に記載されたメールアドレスに対して送信されます。
-D-way アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、GEA Submission のアドレスも変更する必要があります。
+DDBJ アカウントに登録されているメールアドレスを変更した場合、登録に関するメールが送信されるよう、GEA Submission のアドレスも変更する必要があります。
 </div>
 
 {% include image.html url="books/seq-sub2.jpg" caption="登録管理情報を入力します" class="w550" %}

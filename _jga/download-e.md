@@ -9,12 +9,12 @@ lang: en
 
 ## From data use application and JGA data use {#du}
 
-Apply a data use application in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your D-way account.   
+Apply a data use application in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/) after login with your DDBJ account.   
 In the application, create a data user group, specify JGA Study and Dataset accessions you want to use, and register a public key for dataset decryption.   
-After your application is approved, access to the JGA server with your D-way account and donwload data to on-/off-premise servers by [WinSCP](#winscp) or [sftp](#sftp). Encrypted data files and decryption tools are provided, decrypt the data files by using the private key paired with the public key for dataset decryption registered in the application.
+After your application is approved, access to the JGA server with your DDBJ account and donwload data to on-/off-premise servers by [WinSCP](#winscp) or [sftp](#sftp). Encrypted data files and decryption tools are provided, decrypt the data files by using the private key paired with the public key for dataset decryption registered in the application.
 
 * [Search JGA dataset](#search)
-* [D-way account and a public key for data transfer](#account-key)
+* [DDBJ account and a public key for data transfer](#account-key)
 * [Generate a public and private key pair for dataset decryption](#key-for-decryption)
 * [Data use application](#du-application)
 * [Data user group](#data-user-group)
@@ -29,20 +29,20 @@ After your application is approved, access to the JGA server with your D-way acc
 Search Study (e.g., JGAS999992) and Dataset (e.g., JGAD999993) [accessions](/jga/submission-e.html) of your interest.   
 You may search JGA data in [list of researches](https://humandbs.dbcls.jp/en/data-use/all-researches) at DBCLS and [DDBJ Search](https://ddbj.nig.ac.jp/search).
 
-### D-way account and a public key for data transfer  {#account-key}
+### DDBJ account and a public key for data transfer  {#account-key}
 
-A D-way account is necessary for data use application and JGA data download. If you do not have an acccount, [create a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.   
+A DDBJ account is necessary for data use application and JGA data download. If you do not have an acccount, [create a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.   
 
 <div class="attention" markdown="1">
-After creating a D-way account, it takes about 10 minutes for the D-way account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
+After creating a DDBJ account, it takes about 10 minutes for the D-way account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
-Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data download. 
+Generate a public and private key pair for data transfer and [register the public key to your DDBJ account](/ddbj-account-e.html#public-key) for data download. 
 
 ### Generate a public and private key pair for data decryption {#key-for-decryption}
 
 The JGA data are provided as encrypted files. A user downloads data by sftp and decrypts the files by using the private key paired with the public key for dataset decryption registered in the data use application.  
-The public key for dataset decryption is separate from [the public key for data transfer registered to the D-way account](/account-e.html#public-key). See "[How to generate public/private key pair](/account-e.html#generate-key-pair)". <span class="red">The key for dataset decryption should be in the RSA format. The ed25519 format is not supported.</span>
+The public key for dataset decryption is separate from [the public key for data transfer registered to the DDBJ account](/ddbj-account-e.html#public-key). See "[How to generate public/private key pair](/account-e.html#generate-key-pair)". <span class="red">The key for dataset decryption should be in the RSA format. The ed25519 format is not supported.</span>
 
 In total, 2 pairs 4 keys are necessary for data use application and JGA data use.
 
@@ -51,7 +51,7 @@ A key pair for dataset decryption.
 * A private key for dataset decryption
 
 A key pair for data transfer.
-* A public key for data transfer (register to a D-way account)
+* A public key for data transfer (register to a DDBJ account)
 * A private key for data transfer
 
 {% include image.html url="books/two-key-pairs.jpg" caption="Key pairs for data transfer and dataset decryption" class="w450" %}
@@ -86,7 +86,7 @@ Register a public key for dataset decryption in the data use application.
 
 ### Data use application approval  {#approval}
 
-Generate a public and private key pair for data transfer and [register the public key to your D-way account](/account-e.html#public-key) for data download from the JGA server (jga-gw.ddbj.nig.ac.jp).   
+Generate a public and private key pair for data transfer and [register the public key to your DDBJ account](/ddbj-account-e.html#public-key) for data download from the JGA server (jga-gw.ddbj.nig.ac.jp).   
 After the application is approved by DBCLS, metadata, encrypted data files and decryption tools are created in the download directory in the JGA server.
 
 {% include image.html url="books/data-use-approved-e.png" caption="Data use application approval" class="w400" %}
@@ -104,7 +104,7 @@ Configure as follows.
 - File protocol: SFTP
 - Host name: jga-gw.ddbj.nig.ac.jp
 - Port number: 443
-- User name: D-way account ID
+- User name: DDBJ account ID
 - Password: leave empty
 
 {% include image.html url="books/jga-winscp1-e.jpg" caption="WinSCP session" class="w400" %}
@@ -119,7 +119,7 @@ After login, drag and drop JGA data files in the right window to the local serve
 
 ### sftp download {#sftp}
 
-Specify the [private key registered to your D-way account](/account-e.html#generate-key-pair) and the port number 443 for sftp data transfer (this key is different from the private key for dataset decryption).
+Specify the [private key registered to your DDBJ account](/ddbj-account-e.html#generate-key-pair) and the port number 443 for sftp data transfer (this key is different from the private key for dataset decryption).
 
 ```
 # Account ID: account_b

@@ -17,10 +17,10 @@ lang: ja
 申請時に利用申請グループを作成、利用を希望する Study (例 AGDS_999992) と Dataset (例 AGDD_999993) アクセッション番号を入力し、データの暗号化に使用する「データセット暗号化用公開鍵」を登録します。
 利用申請が DBCLS で承認された後、データは AGD サーバ上で Dataset 単位で提供されます。
 
-申請には D-way アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/) してください。AGD サーバから sftp でデータをダウンロードするためには[認証用の公開鍵・秘密鍵ペアを作成し、公開鍵を D-way アカウントに登録](/account.html#generate-key-pair)する必要があります。
+申請には DDBJ アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/) してください。AGD サーバから sftp でデータをダウンロードするためには[認証用の公開鍵・秘密鍵ペアを作成し、公開鍵を D-way アカウントに登録](/ddbj-account.html#generate-key-pair)する必要があります。
 
 <div class="attention" markdown="1">
-D-way アカウント作成後、[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)で利用できるようになるまで10分程度の時間がかかります。
+DDBJ アカウント作成後、[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)で利用できるようになるまで10分程度の時間がかかります。
 </div>
 
 以下では AGD データの利用手順を説明します。
@@ -46,13 +46,13 @@ JGA と AGD のグループは別になります。
 セキュリティのため AGD データセットはユーザが登録したデータセット暗号化用公開鍵で暗号化された状態で提供されます。ユーザは利用承認されたデータセットを sftp でダウンロードし、秘密鍵で復号してから利用します。
 
 <div class="attention" markdown="1">
-データセット暗号化用公開鍵は D-way アカウントの[認証用の公開鍵](/account.html#public-key)とは別になります。
+データセット暗号化用公開鍵は DDBJ アカウントの[認証用の公開鍵](/ddbj-account.html#public-key)とは別になります。
 AGD データの利用のためには暗号化用と認証用に合計2ペア4ファイルの公開鍵・秘密鍵が必要になります。AGD サーバに ssh ログインすることはできません。
 </div>
 
 ### データセット暗号化用公開鍵・秘密鍵ペアの作成 {#generate-key-pair}
 
-利用申請毎に登録するデータセット暗号化用公開鍵・秘密鍵ペアを作成します。作成手順は[公開鍵/秘密鍵ペアの生成](/account.html#generate-key-pair)をご覧ください。
+利用申請毎に登録するデータセット暗号化用公開鍵・秘密鍵ペアを作成します。作成手順は[公開鍵/秘密鍵ペアの生成](/ddbj-account.html#generate-key-pair)をご覧ください。
 
 作成したデータセット暗号化用公開鍵を利用申請システムで登録します。
 
@@ -73,7 +73,7 @@ DBCLS への利用申請において公開鍵を「データセット復号用�
 ### ダウンロード {#download}
 
 <div class="attention" markdown="1">
-AGD からファイルを sftp でダウンロードするためには [D-way アカウントに公開鍵を登録](/account.html#public-key)する必要があります。
+AGD からファイルを sftp でダウンロードするためには [DDBJ アカウントに公開鍵を登録](/ddbj-account.html#public-key)する必要があります。
 </div>
 
 AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/download/agd/ の下にデータ利用申請 DU 番号と同名のディレクトリが作成されるので、
@@ -284,7 +284,7 @@ Dataset に含まれる Data、Analysis とリンクしている Policy の対�
 - 転送プロトコル: SFTP
 - ホスト名: jga-gw.ddbj.nig.ac.jp
 - ポート番号: 443
-- ユーザ名: D-way アカウント ID
+- ユーザ名: DDBJ アカウント ID
 - パスワード: 空欄のまま
 
 {% include image.html url="books/jga-winscp-sftp1.jpg" caption="WinSCP 接続情報の入力" class="w400" %}

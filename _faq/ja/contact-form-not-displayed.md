@@ -19,7 +19,7 @@ lang: ja
 所属<span class="red">\*</span>  
 件名<span class="red">\*</span>  
 Accession number/Submission ID  
-D-way account  
+DDBJ account  
 Request ID  
 User ID
 問い合わせ内容<span class="red">\*</span>

@@ -14,7 +14,7 @@ lang: ja
 
 ## 新規サンプルの登録  {#create-new-sample-submission}
 
-[登録用アカウント](/account.html)を取得します。
+[登録用アカウント](/ddbj-account.html)を取得します。
 
 D-way ウェブサイトの上部にある "BioSample" メニューから BioSample 登録ページに移動します。 BioSample ページ内の \[New submission\] をクリックし、新規サンプル登録を作成します。
 
@@ -158,7 +158,7 @@ Validation ルールとメッセージについては [Validation rules ペー�
 新規 Submission を作成すると SSUB で始まる仮 ID が自動的に割り当てられます。
 D-way から validation を通過したサンプルが投稿されると自動的にプレフィックス "SAMD" のアクセッション番号が発行されます。  
 未登録の生物名が organism に記載されていた場合や locus_tag_prefix に値が記入されていた場合はキュレータが必要な査定を実施した後にアクセッション番号が発行されます。  
-[D-way アカウント](https://ddbj.nig.ac.jp/D-way/)にログイン後、ウェブ上で登録したサンプルの進行状況、最新のサンプル属性 tsv ファイルやアクセッション番号を確認することができます。
+[DDBJ アカウント](https://ddbj.nig.ac.jp/D-way/)にログイン後、ウェブ上で登録したサンプルの進行状況、最新のサンプル属性 tsv ファイルやアクセッション番号を確認することができます。
 
 <div class="attention" markdown="1">
 - SSUB で始まる仮 ID を論文中に引用しないでください。
