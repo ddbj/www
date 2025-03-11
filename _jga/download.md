@@ -30,7 +30,7 @@ DBCLS の[利用可能な研究データ一覧](https://humandbs.dbcls.jp/data-u
 
 ### DDBJ アカウントの作成とデータ転送用公開鍵の登録  {#account-key}
 
-利用申請およびJGA データ取得のためには DDBJ アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/)してください。  
+利用申請およびJGA データ取得のためには DDBJ アカウントが必要です。アカウントが無い場合は申請前に [DDBJ アカウントを取得](/ddbj-account.html)してください。  
 
 <div class="attention" markdown="1">
 DDBJ アカウント作成後、[データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
