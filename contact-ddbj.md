@@ -15,6 +15,8 @@ lang: ja
 - [DDBJ へのよくある質問 (FAQ)](/faq/ja/index.html)  
 
 {:.contact}
+| 問い合せ先 | フォーム/窓口 |
+|---|
 | DDBJ センター | [DDBJ お問い合わせフォーム](https://forms.gle/rRrVkcjyMoXQhFVn7) |
 | 遺伝研スーパーコンピュータ | [遺伝研スパコンに関する質問窓口](https://sc.ddbj.nig.ac.jp/application/reference/) |
 
@@ -22,6 +24,8 @@ lang: ja
 ## 登録内容の更新依頼
 
 {:.contact}
+| データベース | 更新依頼フォーム |
+|---|
 | DDBJ | [DDBJ 登録データ更新依頼フォーム](https://forms.gle/p7ZJhiawJjd3Qnd3A) |
 | BioProject/BioSample/DRA | [BioProject/BioSample/DRA 更新依頼フォーム](https://forms.gle/mpGqxbSeYmy5oTud6) |
 | GEA | [GEA 更新依頼フォーム](https://forms.gle/Qh781rQMovUDo7yo7) |
@@ -32,4 +36,6 @@ lang: ja
 配列データ登録時に、他アカウントや NCBI/ENA で登録された BioProject/BioSample/SRA を参照する場合
 
 {:.contact}
+| データベース | 依頼フォーム |
+|---|
 | BioProject/BioSample | [BioProject/BioSample 外部参照申請フォーム](https://forms.gle/BibshG6Z7XQ4rH9K9) |

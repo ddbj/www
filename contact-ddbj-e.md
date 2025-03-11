@@ -14,12 +14,16 @@ lang: en
 - [FAQ](https://www.ddbj.nig.ac.jp/faq/en/index-e.html)
 
 {:.contact}
+| Inquiry | Form/Contact |
+|---|
 | DDBJ Center | [DDBJ Contact Form](https://forms.gle/j1sjeDGKRXuKJWaU6) |
-| The BIG Supercomputer | [Contact us](https://sc.ddbj.nig.ac.jp/en/application/reference/) |
+| The NIG Supercomputer | [Contact us](https://sc.ddbj.nig.ac.jp/en/application/reference/) |
 
 ## Data Update Requests
 
 {:.contact}
+| Database | Form |
+|---|
 | DDBJ | [Application Form for Data Update Request](https://forms.gle/j1sjeDGKRXuKJWaU6) |
 | BioProject/BioSample/DRA | [Application Form for BioProject/BioSample/DRA Update Request](https://forms.gle/d9cZxyzQzxPMSqW59) |
 | GEA | [Application Form for GEA Update Request](https://forms.gle/TtzttjjxShnJ1LxdA) |
@@ -30,4 +34,6 @@ lang: en
 In case you need to refer to BioProject/BioSample/SRA registered by another account when registering sequence data
 
 {:.contact}
+| Database | Form |
+|---|
 | BioProject/BioSample/SRA | [Application Form for Cross-reference Application](https://forms.gle/U7DUk8cGZqao6nwC8) |
