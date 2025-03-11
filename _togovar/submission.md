@@ -18,7 +18,7 @@ BioProject と BioSample 登録は必須です。関連するデータが BioPro
 
 ### 1. 登録アカウントの作成 {#account}
 
-- [D-way 登録用アカウント](https://ddbj.nig.ac.jp/D-way/)を取得します。[マニュアル](/ddbj-account.html)
+- [DDBJ アカウント](/ddbj-account.html) を取得します。
 - [公開鍵をアカウントに登録](/ddbj-account.html#public-key) し、データを sftp/scp でアップロードできるようにします。
 
 ### 2. 登録の申し込み {#form}
