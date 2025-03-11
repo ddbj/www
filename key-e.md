@@ -1,6 +1,6 @@
 ---
 layout: indexed_content
-title: 
+title: Generating public and private keys
 lang: en
 ---
 
