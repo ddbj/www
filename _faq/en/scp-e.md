@@ -12,7 +12,7 @@ lang: en
 
 First, confirm the following basic points.
  - Authentification is by using SSH key not by password.
- - A private key is pair of a public key registered in a D-way submission account.
+ - A private key is pair of a public key registered in a DDBJ account.
  - A private key file has read permission.
  - A private key file permission is set as others cannot access. For example, rw-------.
  - A passphrase for private key is correctly entered.
