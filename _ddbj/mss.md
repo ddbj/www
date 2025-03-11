@@ -96,7 +96,7 @@ table tr:hover {
 
 <!-- **推奨:** A. 登録ファイル作成済みで申し込みいただく場合 -->
 <div class="mssflow">登録ファイル作成</div>
-<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">D-wayアカウントで https://mss.ddbj.nig.ac.jp/ にログイン</a></div>
+<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">DDBJ アカウントで https://mss.ddbj.nig.ac.jp/ にログイン</a></div>
 <div class="mssflow">MSS Form に記入、ファイルアップロード</div>
 <div class="mssflow">Mass-ID 発行・自動応答メール送付</div>
 <div class="mssflow">査定、質問・回答をメールでやりとり</div>
@@ -104,7 +104,7 @@ table tr:hover {
 <div class="mssflowend">データ公開または公開日までhold</div>
 <p></p>
 <!-- B. 申し込んでから登録ファイルを作成する場合
-<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">D-wayアカウントで https://mss.ddbj.nig.ac.jp/ にログイン</a></div>
+<div class="mssflow"><a href="https://mss.ddbj.nig.ac.jp/">DDBJ アカウントで https://mss.ddbj.nig.ac.jp/ にログイン</a></div>
 <div class="mssflow">MSS Form に記入</div>
 <div class="mssflow">Mass-ID 発行・自動応答メール送付</div>
 <div class="mssflow">登録ファイル作成</div>
@@ -171,9 +171,8 @@ OS: Linux
 
 ## アカウント作成  {#account}
 
-- D-way 登録アカウントをお持ちでない場合、[D-way](https://ddbj.nig.ac.jp/D-way/) の "Register for a new account
-" より作成して下さい([ヘルプ](/ddbj-account.html))。
-- SCP/SFTP 転送を利用いただくには、[アカウントへの公開鍵の登録](/ddbj-account.html#register-public-key)が必要です。ファイル転送手順につきましては、「[データのアップロード](/upload.html)」をご参照ください。
+- DDBJ アカウントをお持ちでない場合、アカウントを作成してください ([ヘルプ](/ddbj-account.html))。
+- SCP/SFTP 転送を利用いただくには、[アカウントへの公開鍵の登録](/key.html#register-public-key)が必要です。ファイル転送手順につきましては、「[データのアップロード](/upload.html)」をご参照ください。
 
 ## 登録申し込み  {#submission}
 [MSS 申し込みフォーム](https://mss.ddbj.nig.ac.jp/)から行って下さい。単一の申し込みは、以下の条件を全て満たすエントリセットの場合のみとなっております。一つでも条件が異なるエントリを登録する場合には、複数回の申し込みが必要となります。
