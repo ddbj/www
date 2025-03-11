@@ -34,7 +34,7 @@ It is important for making data reusable and reproducible that the processed dat
 
 
 <div class="attention" markdown="1">
-After creating a DDBJ account, it takes about 10 minutes for the D-way account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
+After creating a DDBJ account, it takes about 10 minutes for the DDBJ account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
 Currently, there is no requirement for authors to use a specific JGA accession in their publications. We would recommend that authors use the JGAS (study) accession, which would provide the reader/user with a complete overview of the study and a set of links to all the data from that study.
