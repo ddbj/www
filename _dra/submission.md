@@ -15,7 +15,7 @@ lang: ja
 
 ## 登録の流れ {#flow}
 
-* [登録アカウントの取得](/ddbj-account.html)
+* [DDBJ アカウントの取得](/ddbj-account.html)
 * [新規登録の作成](#new-submission)
 * [データファイルのアップロード](#upload)
 * [BioProject の登録](#bioproject)
@@ -46,7 +46,7 @@ lang: ja
 
 ## 登録アカウントの取得  {#account}
 
-[D-way 登録アカウント](/ddbj-account.html)を取得し、[公開鍵をアカウントに登録](/account.html#public-key)します。
+[DDBJ アカウント](/ddbj-account.html)を取得し、公開鍵をアカウントに登録します。
 
 ## 新規登録の作成  {#new-submission}
 
