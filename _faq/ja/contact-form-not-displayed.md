@@ -29,7 +29,7 @@ User ID
 * [塩基配列登録データの修正・更新](mailto:ddbjupdt@ddbj.nig.ac.jp)
 * [Mass Submission System (MSS)](mailto:mass@ddbj.nig.ac.jp)
 * [BioProject/BioSample/Sequence Read Archive (DRA)](mailto:trace@ddbj.nig.ac.jp)
-* [登録アカウント D-way](mailto:dway@ddbj.nig.ac.jp)
+* [DDBJ アカウント](mailto:account@ddbj.nig.ac.jp)
 * [Japanese Genotype-phenotype Archive (JGA)](mailto:jga@ddbj.nig.ac.jp)
 * [検索・解析サービス](mailto:ddbj@ddbj.nig.ac.jp)
 * [DDBJ Read Anotation Pipeline](mailto:pipeline_dev@ddbj.nig.ac.jp)
