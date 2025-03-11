@@ -3,8 +3,8 @@ layout: indexed_content
 title: お問い合わせ
 lang: ja
 ---
-<div class="attention" markdown="1">
 
+<div class="attention" markdown="1">
 - [迷惑メール対策機能をご確認ください](/precautions.html) 
 - お問い合わせフォームが表示されない場合は「[お問い合わせフォームが表示されない場合は？](/faq/ja/contact-form-not-displayed)」をご覧ください。
 </div>
@@ -29,7 +29,7 @@ lang: ja
 
 <h2>外部参照の申請</h2>
 
-他アカウントや NCBI/ENA で登録された BioProject/BioSample/SRA の参照を申請するフォーム
+配列データ登録時に、他アカウントや NCBI/ENA で登録された BioProject/BioSample/SRA を参照する場合
 
 {:.contact}
 | BioProject/BioSample | [BioProject/BioSample 外部参照申請フォーム](https://forms.gle/BibshG6Z7XQ4rH9K9) |
