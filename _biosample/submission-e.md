@@ -156,7 +156,7 @@ Check content in the last "OVERVIEW" and submit samples. In the "ATTRIBUTES" are
 
 ## Accession numbers  {#accession-numbers}
 
-When creating a new submission, a temporary ID starts with SSUB is assigned. The DDBJ BioSample issues accession numbers with prefix SAMD to the submitted samples passed validation. When an unregistered organism is described in the organism or the locus_tag_prefix has values, accession numbers are issued after curator review. You can view status and accession numbers of submitted samples in your [submission account](https://ddbj.nig.ac.jp/D-way/).
+When creating a new submission, a temporary ID starts with SSUB is assigned. The DDBJ BioSample issues accession numbers with prefix SAMD to the submitted samples passed validation. When an unregistered organism is described in the organism or the locus_tag_prefix has values, accession numbers are issued after curator review. You can view status and accession numbers of submitted samples in [D-way](https://ddbj.nig.ac.jp/D-way/).
 
 <div class="attention">
 - Do NOT cite a temporary ID starts with SSUB in references.
