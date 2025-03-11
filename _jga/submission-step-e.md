@@ -22,10 +22,10 @@ After your application is approved, access to the JGA server with your DDBJ acco
 
 ## DDBJ account and a public key for data transfer {#account-key}
 
-A DDBJ account is necessary for data submission application and JGA data upload. If you do not have an acccount, [create a D-way account](https://ddbj.nig.ac.jp/D-way/) before application.
+A DDBJ account is necessary for data submission application and JGA data upload. If you do not have an acccount, [create a DDBJ account](/ddbj-account-e.html) before application.
 
 <div class="attention" markdown="1">
-After creating a DDBJ account, it takes about 10 minutes for the D-way account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
+After creating a DDBJ account, it takes about 10 minutes for the DDBJ account becomes active in the [application system](https://humandbs.ddbj.nig.ac.jp/nbdc/application/).
 </div>
 
 Generate a public and private key pair for data transfer and [register the public key to your DDBJ account](/ddbj-account-e.html#public-key) for data upload.
