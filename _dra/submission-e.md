@@ -14,7 +14,7 @@ Submission of research data from human subjects
 
 ## Submission flow {#flow}
 
-* [Create a submission account](/ddbj-account-e.html)
+* [Create a DDBJ account](/ddbj-account-e.html)
 * [Create a new submission](#new-submission)
 * [Upload data files](#upload)
 * [Submit a BioProject](#bioproject)
@@ -46,7 +46,7 @@ The DRA team reviews submission whose status is in "submission_validated" or "da
 
 ## Create a submission account {#account}
 
-Create a [D-way submission account](/ddbj-account-e.html) and [register a public key to your account](/account-e.html#public-key).
+Create a [DDBJ account](/ddbj-account-e.html) and register a public key to your account.
 
 ## Create a new submission  {#new-submission}
 
