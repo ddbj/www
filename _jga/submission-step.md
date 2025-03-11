@@ -22,7 +22,7 @@ lang: ja
 
 ## DDBJ アカウント作成・情報追加とデータ転送用公開鍵の登録 {#account-key}
 
-提供申請および JGA データアップロードのためには DDBJ アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/)してください。
+提供申請および JGA データアップロードのためには DDBJ アカウントが必要です。アカウントが無い場合は申請前に [DDBJ アカウントを取得](/ddbj-account.html)してください。
 
 <div class="attention" markdown="1">
 DDBJ アカウント作成後、[データ申請システム](https://humandbs.ddbj.nig.ac.jp/nbdc/application/)で利用できるようになるまで10分程度の時間がかかります。
