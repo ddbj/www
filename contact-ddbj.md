@@ -3,9 +3,11 @@ layout: indexed_content
 title: お問い合わせ
 lang: ja
 ---
+<div class="attention" markdown="1">
 
 - [迷惑メール対策機能をご確認ください](/precautions.html) 
 - お問い合わせフォームが表示されない場合は「[お問い合わせフォームが表示されない場合は？](/faq/ja/contact-form-not-displayed)」をご覧ください。
+</div>
 
 <h2>お問い合わせ</h2>
 問い合わせの前に以下をご一読ください
