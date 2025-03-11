@@ -204,7 +204,45 @@ $MARGIN_BOTTOM: 1rem
           border-bottom: .1rem solid $COLOR_GRAY
     + table
       margin-top: -$MARGIN_BOTTOM - 0.1rem
-
+    &.borderbtm-non //add 2025.03.11
+      font-family: arial, sans-serif !important
+      font-size: 1.5rem
+      width: 100%
+      thead
+        tr
+          &:hover
+            background-color: inherit
+            cursor: default
+          th
+            border: solid 1px $COLOR_GRAY 
+            background-color: $COLOR_BEIGE
+      tr
+        td, th
+          border-bottom: none
+        &:hover 
+          background-color: $COLOR_HOVER
+          cursor: default
+    &.contact //add 2025.03.11
+      line-height: 1.5
+      font-size: 110%
+      width: 100%
+      margin_bottom: 10px
+      border: solid 2px $COLOR_GRAY
+      td, th
+        border: solid 1px $COLOR_GRAY
+        border-bottom: none
+      td:nth-child(1)
+        width: 240px
+    &.faq //add 2025.03.11
+      line-height: 2
+      font-size: 110%
+      border-collapse:collapse
+      border: solid 1px $COLOR_GRAY
+      th
+        border: solid 1px $COLOR_GRAY
+        background-color: $COLOR_KEY_VERY_PALE
+      td
+        border: solid 1px $COLOR_GRAY
   .table_faq
     line-height: 2
     font-size: 110%
