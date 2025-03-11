@@ -17,7 +17,7 @@ lang: ja
 申請時に利用申請グループを作成、利用を希望する Study (例 AGDS_999992) と Dataset (例 AGDD_999993) アクセッション番号を入力し、データの暗号化に使用する「データセット暗号化用公開鍵」を登録します。
 利用申請が DBCLS で承認された後、データは AGD サーバ上で Dataset 単位で提供されます。
 
-申請には DDBJ アカウントが必要です。アカウントが無い場合は申請前に [D-way アカウントを取得](https://ddbj.nig.ac.jp/D-way/) してください。AGD サーバから sftp でデータをダウンロードするためには[認証用の公開鍵・秘密鍵ペアを作成し、公開鍵を D-way アカウントに登録](/ddbj-account.html#generate-key-pair)する必要があります。
+申請には DDBJ アカウントが必要です。アカウントが無い場合は申請前に [DDBJ アカウントを取得](/ddbj-account.html)してください。AGD サーバから sftp でデータをダウンロードするためには[認証用の公開鍵・秘密鍵ペアを作成し、公開鍵を DDBJ アカウントに登録](/key.html)する必要があります。
 
 <div class="attention" markdown="1">
 DDBJ アカウント作成後、[データ申請システム](https://gr-sharingdbs.ddbj.nig.ac.jp/nbdc/application)で利用できるようになるまで10分程度の時間がかかります。
@@ -88,7 +88,7 @@ $ sftp -i private-key-for-auth -P 443 account_b@jga-gw.ddbj.nig.ac.jp
 $ cd group-access/download/agd/
 $ get -r A-DU999991
 ```
--i: D-way に登録した認証用公開鍵とペアの秘密鍵を指定
+-i: DDBJ アカウントに登録した認証用公開鍵とペアの秘密鍵を指定
 -P: 接続先ポート番号 443 を指定
 
 DU 番号ディレクトリ直下には Study ディレクトリ、及び、データファイルの復号ツールが配置された tools ディレクトリがあります。Study ディレクトリの下に Dataset ディレクトリがあり、Dataset ディレクトリの下にタブ区切りテキスト（tsv）ファイルと XML 形式のメタデータを含む metadata ディレクトリ、及び、暗号化されたデータファイルを含む Data と Analysis ディレクトリがあります。
