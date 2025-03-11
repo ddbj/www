@@ -67,7 +67,7 @@ Ensure that your SSH public key is correctly registered. Also, refer to the foll
 - [I can not SSH upload my files](/faq/en/scp-e.html)
 - [Access to the ftp-private is blocked by the remote host key identification warning](/faq/en/known-hosts-e.html)
 
-For instructions on generating public/private key pairs, see [Generating Public and Private Keys](/key-e.html). For data upload instructions, refer to [Data Upload](/upload-e.html).
+For instructions on generating public/private key pairs, see [Generating public and private keys](/key-e.html). For data upload instructions, refer to [Data Upload](/upload-e.html).
 
 By adding the following configuration to your `~/.ssh/config` file, you can connect with `ssh ddbj`. You can also check detailed debug information with `ssh -vvv ddbj`.
 
