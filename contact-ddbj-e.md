@@ -6,7 +6,7 @@ lang: en
 
 <div class="attention" markdown="1">
 - [Do not block our e-mails](/precautions-e.html)
-- If the contact form is not displayed, please see "[How can I contact you when the form is not available?](/faq/en/contact-form-not-displayed)".
+- If the contact form is not displayed, please see "[Contact form is not displayed](/faq/en/contact-form-not-displayed)".
 </div>
 
 ## Contact us
@@ -36,4 +36,4 @@ In case you need to refer to BioProject/BioSample/SRA registered by another acco
 {:.contact}
 | Database | Form |
 |---|
-| BioProject/BioSample/SRA | [AApplication Form for BioProject/BioSample Cross-reference](https://forms.gle/U7DUk8cGZqao6nwC8) |
+| BioProject/BioSample/SRA | [Application Form for BioProject/BioSample Cross-reference](https://forms.gle/U7DUk8cGZqao6nwC8) |

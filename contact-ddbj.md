@@ -6,7 +6,7 @@ lang: ja
 
 <div class="attention" markdown="1">
 - [迷惑メール対策機能をご確認ください](/precautions.html) 
-- お問い合わせフォームが表示されない場合は「[お問い合わせフォームが表示されない場合は？](/faq/ja/contact-form-not-displayed)」をご覧ください。
+- 問い合わせフォームが表示されない場合は「[問い合わせフォームが表示されません](/faq/ja/contact-form-not-displayed)」をご覧ください。
 </div>
 
 ## お問い合わせ
