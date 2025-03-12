@@ -5,7 +5,7 @@ lang: en
 ---
 
 <div class="attention" markdown="1">
-- [do not block our e-mails](/precautions-e.html)
+- [Do not block our e-mails](/precautions-e.html)
 - If the contact form is not displayed, please see "[How can I contact you when the form is not available?](/faq/en/contact-form-not-displayed)".
 </div>
 
@@ -14,9 +14,9 @@ lang: en
 - [FAQ](https://www.ddbj.nig.ac.jp/faq/en/index-e.html)
 
 {:.contact}
-| Inquiry | Form/Contact |
+| Contact to | Form/Contact |
 |---|
-| DDBJ Center | [DDBJ Contact Form](https://forms.gle/j1sjeDGKRXuKJWaU6) |
+| DDBJ Center | [DDBJ Center Contact Form](https://forms.gle/j1sjeDGKRXuKJWaU6) |
 | The NIG Supercomputer | [Contact us](https://sc.ddbj.nig.ac.jp/en/application/reference/) |
 
 ## Data Update Requests
@@ -24,10 +24,10 @@ lang: en
 {:.contact}
 | Database | Form |
 |---|
-| DDBJ | [Application Form for Data Update Request](https://forms.gle/j1sjeDGKRXuKJWaU6) |
-| BioProject/BioSample/DRA | [Application Form for BioProject/BioSample/DRA Update Request](https://forms.gle/d9cZxyzQzxPMSqW59) |
-| GEA | [Application Form for GEA Update Request](https://forms.gle/TtzttjjxShnJ1LxdA) |
-| MeatboBank | [Application Form for MeatboBank Update Request](https://forms.gle/5TAMFHAWmhjZTrny7) |
+| DDBJ | [Application Form for DDBJ Update](https://forms.gle/j1sjeDGKRXuKJWaU6) |
+| BioProject/BioSample/DRA | [Application Form for BioProject/BioSample/DRA Update](https://forms.gle/d9cZxyzQzxPMSqW59) |
+| GEA | [Application Form for GEA Update](https://forms.gle/TtzttjjxShnJ1LxdA) |
+| MeatboBank | [Application Form for MeatboBank Update](https://forms.gle/5TAMFHAWmhjZTrny7) |
 
 ## Cross-reference
 
@@ -36,4 +36,4 @@ In case you need to refer to BioProject/BioSample/SRA registered by another acco
 {:.contact}
 | Database | Form |
 |---|
-| BioProject/BioSample/SRA | [Application Form for Cross-reference Application](https://forms.gle/U7DUk8cGZqao6nwC8) |
+| BioProject/BioSample/SRA | [AApplication Form for BioProject/BioSample Cross-reference](https://forms.gle/U7DUk8cGZqao6nwC8) |

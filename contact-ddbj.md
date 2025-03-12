@@ -17,7 +17,7 @@ lang: ja
 {:.contact}
 | 問い合せ先 | フォーム/窓口 |
 |---|
-| DDBJ センター | [DDBJ お問い合わせフォーム](https://forms.gle/rRrVkcjyMoXQhFVn7) |
+| DDBJ センター | [DDBJ センター問い合わせフォーム](https://forms.gle/rRrVkcjyMoXQhFVn7) |
 | 遺伝研スーパーコンピュータ | [遺伝研スパコンに関する質問窓口](https://sc.ddbj.nig.ac.jp/application/reference/) |
 
 
@@ -26,7 +26,7 @@ lang: ja
 {:.contact}
 | データベース | 更新依頼フォーム |
 |---|
-| DDBJ | [DDBJ 登録データ更新依頼フォーム](https://forms.gle/p7ZJhiawJjd3Qnd3A) |
+| DDBJ | [DDBJ 更新依頼フォーム](https://forms.gle/p7ZJhiawJjd3Qnd3A) |
 | BioProject/BioSample/DRA | [BioProject/BioSample/DRA 更新依頼フォーム](https://forms.gle/mpGqxbSeYmy5oTud6) |
 | GEA | [GEA 更新依頼フォーム](https://forms.gle/Qh781rQMovUDo7yo7) |
 | MeatboBank | [MeatboBank 更新依頼フォーム](https://forms.gle/kzpUKFcTpcqsCL1M6) |
