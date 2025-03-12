@@ -1,12 +1,20 @@
 ---
 layout: default
 ---
+{% if page.collection == 'faq' or page.collection == 'news' %}
+  {% assign title_class = "page-title -small" %}
+{% else %}
+  {% assign title_class = "page-title" %}
+{% endif %}
+
 <header id="PageHeader">
   <div class="inner">
-    <div class="page-title -small">
+    <div class="{{ title_class }}">
       <h1 class="title">{{ page.title }}</h1>
 
-      {% if page.collection == 'faq' or page.collection == 'news' %}
+      {% if page.collection == 'faq' %}
+        {% include tags.html lang=page.lang tags=page.tags dbs=page.db %}
+      {% elsif page.collection == 'news' %}
         {% include tags.html lang=page.lang date=page.date tags=page.tags dbs=page.db %}
       {% endif %}
 
