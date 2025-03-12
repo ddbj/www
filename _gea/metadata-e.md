@@ -355,7 +355,7 @@ Example SDRF:
 | intestine                               |
 | pancreas                                |
 	
-In the example above, the column terms would be treated as describing tissues. For more precise control over the treatment of these terms, the optional form "Factor Value[]()" is available, e.g. "Factor Value[growthconditionEF](Nutrients)".
+In the example above, the column terms would be treated as describing tissues. For more precise control over the treatment of these terms, the optional form "Factor Value[]()" is available, e.g. "Factor Value[growthconditionEF]\(Nutrients)".
 	
 When a combination of more than one variables are studied, factor values are described by more than one columns. Example SDRF:
 
