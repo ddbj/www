@@ -21,12 +21,13 @@ lang: ja
               <h2 class="title">
                 <a href="{{ faq.url }}">{{ faq.title }}</a>
               </h2>
-              {% include tags.html lang=page.lang date=faq.date tags=faq.tags dbs=faq.db %}
+<!--           {% include tags.html lang=page.lang date=faq.date tags=faq.tags dbs=faq.db %} -->
+              {% include tags.html lang=page.lang tags=faq.tags dbs=faq.db %}
             </div>
-            <div class="bottom -collapsed md-content">
+<!--          <div class="bottom -collapsed md-content">
               <div class="collapsedbutton"></div>
               {{ faq.excerpt }}
-            </div>
+            </div>-->  
           </li>
         {% endfor %}
       
