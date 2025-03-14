@@ -15,7 +15,7 @@ To use the data submission and analysis services of Bioinformation and DDBJ Cent
 
 ## Cautions on account creation {#caution}
 
-- The account ID must be 3–24 characters long and can include lowercase letters, numbers, "\_" (underscore), and "-" (hyphen). The first character cannot be a number or symbol ("\_", "-"). Once created, the account ID cannot be changed.
+- The account ID must be 3–24 characters long and can include lowercase letters, numbers, "\_" (underscore), and "-" (hyphen). The first character cannot be a symbol ("\_", "-"). Once created, the account ID cannot be changed.
 - If applying for data submission or usage in the NBDC Human Database Application System, additional information besides the required fields is necessary.
 - The password must be at least 8 characters long and include both letters and numbers.
 - Agreeing to the [Terms of Use](/policies-e.html) is required when creating an account.
