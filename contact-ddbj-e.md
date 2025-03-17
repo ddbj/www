@@ -9,7 +9,7 @@ lang: en
 - If the contact form is not displayed, please see "[Contact form is not displayed](/faq/en/contact-form-not-displayed)".
 </div>
 
-## Contact us
+## Contact us {#contact}
 - [Before sending inquiry to us](before-sending-inquiries-e.html)
 - [FAQ](https://www.ddbj.nig.ac.jp/faq/en/index-e.html)
 
@@ -19,7 +19,7 @@ lang: en
 | DDBJ Center | [DDBJ Center Contact Form](https://forms.gle/Xuzs9v24oXqPgUFG6) |
 | The NIG Supercomputer | [Contact us](https://sc.ddbj.nig.ac.jp/en/application/reference/) |
 
-## Data Update Requests
+## Data Update Requests {#update}
 
 {:.contact}
 | Database | Form |
@@ -29,7 +29,7 @@ lang: en
 | GEA | [Application Form for GEA Update](https://forms.gle/TtzttjjxShnJ1LxdA) |
 | MeatboBank | [Application Form for MeatboBank Update](https://forms.gle/5TAMFHAWmhjZTrny7) |
 
-## Cross-reference
+## Cross-reference {#cross-reference}
 
 In case you need to refer to BioProject/BioSample/SRA registered by another account when registering sequence data
 

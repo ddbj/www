@@ -9,7 +9,7 @@ lang: ja
 - 問い合わせフォームが表示されない場合は「[問い合わせフォームが表示されません](/faq/ja/contact-form-not-displayed)」をご覧ください。
 </div>
 
-## お問い合わせ
+## お問い合わせ {#contact}
 問い合わせの前に以下をご一読ください
 - [質問送信の前に](/before-sending-inquiries.html) 
 - [DDBJ へのよくある質問 (FAQ)](/faq/ja/index.html)  
@@ -21,7 +21,7 @@ lang: ja
 | 遺伝研スーパーコンピュータ | [遺伝研スパコンに関する質問窓口](https://sc.ddbj.nig.ac.jp/application/reference/) |
 
 
-## 登録内容の更新依頼
+## 登録内容の更新依頼 {#update}
 
 {:.contact}
 | データベース | 更新依頼フォーム |
@@ -31,7 +31,7 @@ lang: ja
 | GEA | [GEA 更新依頼フォーム](https://forms.gle/Qh781rQMovUDo7yo7) |
 | MeatboBank | [MeatboBank 更新依頼フォーム](https://forms.gle/kzpUKFcTpcqsCL1M6) |
 
-## 外部参照の申請
+## 外部参照の申請 {#cross-reference}
 
 配列データ登録時に、他アカウントや NCBI/ENA で登録された BioProject/BioSample/SRA を参照する場合
 
