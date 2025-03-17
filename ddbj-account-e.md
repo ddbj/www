@@ -31,6 +31,8 @@ With a DDBJ account, you can use the following services.
 - Uploading and downloading of JGA/AGD data via sftp.
 - Job execution on the DFAST web service.
 
+It takes approximately 5 minutes for account creation or updates to be reflected in the D-way submission system, NBDC Human Database Application System, JGA, and AGD.
+
 ## Cautions on using the NBDC Human Database Application System {#humandbs}
 
 When submitting an application in Japanese through the NBDC Human Database Application System, additional information including Japanese names and detailed affiliations is required:
