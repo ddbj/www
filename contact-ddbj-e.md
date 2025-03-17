@@ -16,7 +16,7 @@ lang: en
 {:.contact}
 | Contact to | Form/Contact |
 |---|
-| DDBJ Center | [DDBJ Center Contact Form](https://forms.gle/j1sjeDGKRXuKJWaU6) |
+| DDBJ Center | [DDBJ Center Contact Form](https://forms.gle/Xuzs9v24oXqPgUFG6) |
 | The NIG Supercomputer | [Contact us](https://sc.ddbj.nig.ac.jp/en/application/reference/) |
 
 ## Data Update Requests
