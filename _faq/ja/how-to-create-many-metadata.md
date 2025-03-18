@@ -11,6 +11,6 @@ lang: ja
 ---
 
 Experiment や Run オブジェクトが多件数の場合、メタデータ用エクセルと XML 生成プログラムを使ってエクセルから XML
-を生成し、Submission/Experiment/Run XML を D-way
+を生成し、Submission/Experiment/Run XML を D-way 
 からアップロードすることで多件数を登録することができます。詳細については
 [メタデータエクセルを使った登録方法](/dra/submission.html#excel)をご覧ください。
