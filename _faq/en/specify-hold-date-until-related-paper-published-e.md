@@ -10,7 +10,7 @@ date: 2014-07-03T11:15:08
 lang: en
 ---
 
-See "[Why is the hold-date required?](/insdc/data-release-policy-e.html#requirement)". Please specify the date.    
+See "[Why is the hold-date required?](/insdc/data-release-policy-e.html)". Please specify the date.    
 Though DDBJ does not restrict the date, we strongly recommend to specify the date within two years.    
 If not specified, the data will be published, immediately. 
 

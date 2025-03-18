@@ -27,7 +27,7 @@ lang: ja
     complete type.”
     というエラーが表示されました](/faq/ja/how-to-fix-error-msg-codon-start.html)
 
-1. [genetic code](/ddbj/geneticcode-e.html) が
+1. [genetic code](/ddbj/geneticcode.html) が
 /[transl\_table](/ddbj/qualifiers.html#transl_table) に正しく記載されているでしょうか。  
 下記をご参照の上、genetic code を適切に設定してください。
 
@@ -39,7 +39,7 @@ lang: ja
 
 1. フレームシフトやナンセンス変異などで、stop codon が実際に生じているでしょうか。  
     1. pseudogene の場合  
-    CDS 横の "Select Qualifier" から [/pseudogene](/ddbj/qualifiers.html#pseudogene) を追加してください。/pseudogene には[規定値](/ddbj/pseudogene-e.html) でタイプを指定する必要があります。  
+    CDS 横の "Select Qualifier" から [/pseudogene](/ddbj/qualifiers.html#pseudogene) を追加してください。/pseudogene には[規定値](/ddbj/qualifiers.html#pseudogene) でタイプを指定する必要があります。  
     詳細は [b) pseudogene と見做される場合](/ddbj/cds.html#stop_b) をご参照ください。
 
     1. pseudogene とは断言できない場合、IgG などの獲得免疫関連で多様性が生じる過程、その他理由が不明で stop codon が生じている場合 

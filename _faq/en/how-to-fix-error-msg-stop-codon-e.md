@@ -49,12 +49,12 @@ because of frame shift, nonsense mutation, or some other reason?
 Click \[Select Qualifier\] button beside CDS and add [/pseudogene
 qualifier](/ddbj/qualifiers-e.html#pseudogene). Then, you can specify
 /pseudogene qualifier with [its controlled
-vocabularies](/ddbj/pseudogene-e.html).  
+vocabularies](/ddbj/qualifiers-e.html#pseudogene).  
 See also [b) considered pseudogene](/ddbj/cds-e.html#stop_b) in detail.
 
     1. In cases of unsure whether it is pseudogene or not, the reason
 of stop codon is uncertain, or on the process of diversity increasing
-related to acquired immunity, describe misc\_feature, not CDS feature.  
+related to acquired immunity, describe misc_feature, not CDS feature.  
 See [a) Putative nonsense mutation, frameshift caused by uncertain
 reason, or on the process of diversity increasing related to acquired
 immunity for IgG etc.](/ddbj/cds-e.html#stop_a) in detail.

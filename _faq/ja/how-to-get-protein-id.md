@@ -10,4 +10,4 @@ date: 2014-06-02T15:36:53
 lang: ja
 ---
 
-[CDS feature](/ddbj/cds.html) によるアノテーションを記載した塩基配列データを登録することで、[protein_id](/ddbj/qualifiers.html#protein_id") はデータ公開時に、DDBJ 側で自動的に割り当てられます。
+[CDS feature](/ddbj/cds.html) によるアノテーションを記載した塩基配列データを登録することで、[protein_id](/ddbj/qualifiers.html#protein_id) はデータ公開時に、DDBJ 側で自動的に割り当てられます。

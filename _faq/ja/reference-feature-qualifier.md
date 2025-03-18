@@ -11,7 +11,7 @@ lang: ja
 ---
 
 以下をご参照ください。
- - [The DDBJ/EMBL/GenBank Feature Table Definition](/ddbj/feature-table-e.html)
+ - [The DDBJ/EMBL/GenBank Feature Table Definition](/ddbj/feature-table.html)
  - [Feature key の定義](/ddbj/features.html)
  - [Qualifier key の定義](/ddbj/qualifiers.html)
  - [登録の見本](/ddbj/example.html)

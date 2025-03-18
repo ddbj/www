@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: How are the data released from DDBJ published at EMBL-Bank, GenBank?
+title: How are the data released from DDBJ published at ENA and GenBank?
 category: faq
 db:
   - ddbj
@@ -10,10 +10,8 @@ date: 2014-07-03T11:44:32
 lang: en
 ---
 
-DDBJ is functioning as one of [the international nucleotide sequence
-databases](/insdc/index-e.html), including EMBL-Bank/EBI in Europe and
+DDBJ is functioning as one of [International Nucleotide Sequence
+Databases](/insdc/index-e.html), including ENA/EBI in Europe and
 GenBank/NCBI in the USA as the two other members.  
-When DDBJ releases the submitted data, EMBL-Bank and GenBank will load
+When DDBJ releases the submitted data, ENA and GenBank will load
 the data into their own services, respectively.  
-See [Sequence Data Transition](/ddbj/submission-e.html#data_flow).  
-Note that the data are converted into EMBL-Bank or GenBank format.

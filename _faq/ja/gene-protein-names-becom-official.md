@@ -16,7 +16,6 @@ DDBJ への登録データで何らかの名称を記載しても、それぞれ
 
 参考
 : [DDBJ の遺伝子命名に関する考え方](/ddbj/cds.html#product)
-: [データの優先権](/policies.html#priority)
 
 例えば、ヒトならば [HUGO Gene Nomenclature Committee
 (HGNC)](http://www.genenames.org/), マウスならば [MGI - Mouse

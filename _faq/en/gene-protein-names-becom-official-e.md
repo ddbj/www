@@ -20,7 +20,6 @@ communities.
 
 References
 : [Gene nomenclature at DDBJ](/ddbj/cds-e.html#product)
-: [Patent Priority and Other Priority](/policies-e.html#priority)
 
 You should confirm each gene nomenclature committee, i.e. [HUGO Gene
 Nomenclature Committee (HGNC)](http://www.genenames.org/) for human,

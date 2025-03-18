@@ -4,18 +4,17 @@ title: After submission of SNP data to DDBJ, will it automatically reflect to db
 category: faq
 db:
   - ddbj
+  - togovar
 tags: 
   - Submission
 date: 2014-06-30T16:02:54
 lang: en
 ---
 
-Though you can submit sequence data including SNP (Single Nucleotide Polymorphisms) to DDBJ, the data will not automatically reflect to dbSNP.    
-[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/) is an independent database from [INSDC](/insdc/index-e.html), operated by NCBI.    
-For SNP data, we recommend you to submit to dbSNP. 
+[TogoVar-repository](/togovar/index-e.html) accepts human SNP data.  
+TogoVar-repository is a public repository for submissions of human genetic variants, allele and genotype frequencies. TogoVar-repository accepts submissions of human genetic variations in two categories and issues accession numbers with distinct prefixes: short variants (&le;50 bp) and large structural variants (>50 bp).
 
-In case of submission to DDBJ, see format of feature annotation at [F: Variation](/ddbj/example-e.html#F) on [Example of Submission](/ddbj/example-e.html). 
+* Short variants: variants &le;50 bp including single nucleotide variations, microsatellites, and small-scale insertions and deletions. Variations are exchanged with the NCBI [dbSNP](https://ncbi.nlm.nih.gov/snp/).
+* Large structural variants: variants >50 bp including insertions, deletions, duplications, inversions, mobile elements, translocations, and complex variants. Variations are exchanged with the NCBI [dbVar](https://ncbi.nlm.nih.gov/dbvar/).
 
-References
-: - [Where to submit variation data, such as single nucleotide variations, structural variations, copy number variations (CNVs) and so on?](/faq/en/where-to-submit-variation-data-e.html)
- - [How to submit sequence data related to DNA polymorphism?](/faq/en/how-to-submit-dna-polymorphism-e.html)
+TogoVar-repository and dbSNP/dbVar only accept variations of human. [European Variation Archive](https://www.ebi.ac.uk/eva/) accepts variations of both human and non-human organisms.    

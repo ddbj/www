@@ -11,6 +11,4 @@ lang: en
 ---
 
 If you submit nucleotide sequence data to DDBJ, you can get <font color="#ff0000">NO priority</font> for the data.    
-DDBJ takes no responsibility for any property or priority issues for patenting. For patent application, you should confirm [JPO](http://www.jpo.go.jp/indexj.htm) or some other Patent Offices. 
-
-References: [Patent, Intellectual Property and Priority](/policies-e.html#ownership)
+DDBJ takes no responsibility for any property or priority issues for patenting. For patent application, you should confirm [JPO](https://www.jpo.go.jp/e/index.html) or some other Patent Offices. 

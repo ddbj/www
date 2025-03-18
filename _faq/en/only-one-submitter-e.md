@@ -13,4 +13,4 @@ lang: en
 DDBJ accepts updating requests only from the original submitter of the entry.    
 Basically, we strongly recommend to describe joint submitters more than two persons, e.g. at least a true worker and an adviser, to avoid lost communication in future. 
 
-See [Required items for nucleotide sequence submission](/ddbj/submission.html#item).
+See [Required items for nucleotide sequence submission](/ddbj/submission-e.html#item).

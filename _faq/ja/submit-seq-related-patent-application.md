@@ -16,8 +16,7 @@ JPO への特許出願の際に提出された塩基配列は、出願してい�
 
 塩基配列データがDDBJ から公開された場合、「公知」の扱いになりますので注意が必要です。
 
-参考
-: - [特許出願に含まれる配列データの提供](/ddbj/patent-data.html)
- - [特許・知的所有権と優先権](/policies.html#ownership)
- - [DDBJ での特許関連配列データの公開業務の紹介](/activities/patent.html)
-
+参考  
+- [特許出願に含まれる配列データの提供](/ddbj/patent-data.html)
+- [DDBJ での特許関連配列データの公開業務の紹介](/activities/patent.html)
+- [DDBJ に登録すればデータに関する優先権は確保されますか](/faq/ja/priorities-for-data.html)

@@ -1,21 +1,21 @@
 ---
 layout: simple
-title: SNP のデータを DDBJ に登録すると dbSNP にも反映されますか
+title: SNP のデータを DDBJ に登録すると dbSNP にも反映されますか？
 category: faq
 db:
   - ddbj
+  - togovar
 tags: 
   - 登録
 date: 2014-06-03T15:12:04
 lang: ja
 ---
 
-SNP (Single Nucleotide Polymorphisms) を含む配列を DDBJ に登録することはできますが、dbSNP には反映されません。    
-[dbSNP](http://www.ncbi.nlm.nih.gov/SNP/)は [国際塩基配列データベース](/insdc/index.html)とは独立しており、NCBI が独自に運用しているデータペースです。    
-SNP データにつきましては dbSNP に登録されることをお薦めします。
+ヒトの SNP データは [TogoVar-repository](/togovar/index.html) で受付けています。    
+TogoVar-repository はヒトのバリアントと頻度情報のための公的データベースで、バリアントを「50 bp 以下の短いバリアント」と「50 bp よりも大きい構造バリアント」の二つに分けて受付けています。
 
-DDBJ に登録する場合の書式に関しましては、[登録の見本](/ddbj/example.html) の [F: Variation](/ddbj/example.html#F) をご参照ください。 
+* 短いバリアント: 50 bp 以下のバリアント。一塩基バリアントや短い挿入・欠失。データは NCBI [dbSNP](https://ncbi.nlm.nih.gov/snp/) と交換されます。
+* 構造バリアント: 50 bp よりも大きい構造バリアント。挿入、欠失、重複、逆位、転座や複雑なバリアント。データは NCBI [dbVar](https://ncbi.nlm.nih.gov/dbvar/) と交換されます。
 
-参考
-: - [単一塩基変異 (SNV)、構造多型 (structural variation)、コピー数変異 (CNV) データなどは どこに登録すれば良いのでしょうか](/faq/ja/where-to-submit-variation-data.html)
- - [DNA 多型のデータはどのように記載して登録すれば良いでしょうか](/faq/ja/how-to-submit-dna-polymorphism.html)
+TogoVar-repository と dbSNP/dbVar はヒトのバリアントのみ受付けています。EBI の [European Variation Archive](https://www.ebi.ac.uk/eva/) はヒトとヒト以外の生物からのバリアントを受付けています。
+
