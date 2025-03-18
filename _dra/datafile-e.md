@@ -19,10 +19,10 @@ lang: en
 ### fastq  {#fastq} 
 
 Select "fastq" for the Run filetype.  
-For details of the fastq format, please see [NCBI website](https://www.ncbi.nlm.nih.gov/books/NBK242622/#File_Format_Guide_BK.FASTQ).
+For details of the fastq format, please see [NCBI website](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/#fastq-files).
 
-- Quality values must be in Phred scale. By default, 33 (!) is used for Phred quality offset. In the case of 64 (@), [update the ascii_offset of Run XML](#create-metadata-in-xml-files) to 'ascii_offset="@"'.
-- In the DRA metadata submission web interface, technical reads (adapters, linkers, barcodes) cannot be described. If you want to desscribe technical reads, edit and submit the Experiment XML according to [Formats of sequencing data files](#formats-sequencing-data-files) [(XML examples)](/ddbj/example-xml-e.html).
+- Quality values must be in Phred scale. By default, 33 (!) is used for Phred quality offset. In the case of 64 (@), [update the ascii_offset of Run XML](/dra/submission-e.html#excel) to 'ascii_offset="@"'.
+- In the DRA metadata submission web interface, technical reads (adapters, linkers, barcodes) cannot be described. If you want to desscribe technical reads, [edit and submit the Experiment XML](/dra/submission-e.html#excel) according to [Formats of sequencing data files](/dra/datafile-e.html) [(XML examples)](/dra/example-xml-e.html).
 - Paired reads must split and submitted using two Fastq files in a Run. Paired reads are recognized by standard read names.
 - The first line for each read must start with '@'.
 - The base calls and quality scores must be separated by a line starting with '+'.
@@ -30,9 +30,8 @@ For details of the fastq format, please see [NCBI website](https://www.ncbi.nlm.
 
 ### BAM {#BAM} 
 
-BAM is a compressed version of the Sequence Alignment/Map (SAM) format (see
-[SAMv1.pdf](https://samtools.github.io/hts-specs/SAMv1.pdf)). BAM files
-can be decompressed to a human-readable text format (SAM) using [samtools](http://www.htslib.org/)). We recommend to submit BAM including unaligned reads as primary data.
+BAM is a compressed version of the [Sequence Alignment/Map (SAM) format](http://www.htslib.org/). BAM files
+can be decompressed to a human-readable text format (SAM) using [samtools](http://www.htslib.org/). We recommend to submit BAM including unaligned reads as primary data.
 
 SAM is a tab-delimited format including both the raw read data and
 information about the alignment of that read to a known reference
@@ -134,11 +133,11 @@ The alignment data can be submitted in the BAM format. The bam files should be r
 
 ##### 2. Specify reference by INSDC/RefSeq accession number {#ref_acc}
 
-If references are found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), references can be specified by their accession.version number (for example, NC_000001.11). [Version number](/ddbj/flat-file-e.html#Version)is necessary. Accession numbers for references can be searched in [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/).
+If references are found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), references can be specified by their accession.version number (for example, NC_000001.11). [Version number](/ddbj/flat-file-e.html#VersionB)is necessary. Accession numbers for references can be searched in [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/).
 
 ##### 3. Specify reference by supplying multi-fasta  {#ref_fasta}
 
-If references are not found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/submission-e.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
+If references are not found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/), submit a reference file in multi-fasta format. Select "reference_fasta" in the [Run file type](/dra/metadata-e.html#File_Type). The reference name in the bam header and reference sequence are linked by the name in bam header and fasta defline via the mapping table. If sequence length is different between @SQ-LN and multi-fasta, a warning is raised.
 
 ##### 4. Specify reference by both INSDC/RefSeq accession number and multi-fasta  {#ref_acc_fasta}
 
@@ -146,7 +145,7 @@ If a part of references are found in [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](
 
 ##### 5. SN-reference mapping table  {#sn_ref}
 
-A tab delimited text file describing mapping between "SN in SQ line in BAM header" and "accession OR sequence name in fasta file". Select "tab" in the [Run file type](/dra/submission-e.html#File_Type)
+A tab delimited text file describing mapping between "SN in SQ line in BAM header" and "accession OR sequence name in fasta file". Select "tab" in the [Run file type](/dra/metadata-e.html#File_Type)
 
 BAM header
 
@@ -288,7 +287,7 @@ It would be beneficial to the scientific community if you were able to
 perform this analysis and submit at least the motif_summary.csv file
 for prokaryotes via as a DRA Analysis object. Please submit these files
 as data files of the Analysis with [Sequence Annotation
-type](#Analysis_Type)in addition to sequencing reads in Run. For
+type](/dra/metadata-e.html#Analysis_Type)in addition to sequencing reads in Run. For
 assistance, [contact us](/contact-ddbj-e.html).
 
 [NCBI guidelines of PacBio Base Modification Files](https://www.ncbi.nlm.nih.gov/genbank/basemodificationfiles)
@@ -310,4 +309,4 @@ BioNano mapping technology produces whole genome maps. These maps can be used in
 
 For the latest file specifications, please see the [Bionano Genomics - Software and Data Analysis Support Materials](https://bionano.com/software-and-data-analysis-support-materials/).
 
-If you are using BioNano data as part of your assembly generation pipeline, it would be extremely useful to the scientific community if you could submit a package comprised minimally of the molecule .bnx file and the resulting de novo assembly file EXP_REFINEFINAL1.cmap and COORD files as a DRA Analysis. We will add an analysis type and filetypes for the BioNano Genome Map files. In the meantime, please submit the BioNano files as the analysis type "[De Novo Assembly](#Analysis_Type)" and the filetype "[tsv](#Analysis_File_Type)" (Example, [DRZ078181, DRZ078182](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA005/DRA005897/DRA005897.analysis.xml)). 
+If you are using BioNano data as part of your assembly generation pipeline, it would be extremely useful to the scientific community if you could submit a package comprised minimally of the molecule .bnx file and the resulting de novo assembly file EXP_REFINEFINAL1.cmap and COORD files as a DRA Analysis. We will add an analysis type and filetypes for the BioNano Genome Map files. In the meantime, please submit the BioNano files as the analysis type "[De Novo Assembly](/dra/metadata-e.html#Analysis_Type)" and the filetype "[tsv](#Analysis_File_Type)" (Example, [DRZ078181, DRZ078182](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA005/DRA005897/DRA005897.analysis.xml)). 

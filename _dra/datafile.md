@@ -23,9 +23,9 @@ lang: ja
 Run の filetype は fastq を選択します。  
 fastq の形式。詳しくは [NCBI のサイト](https://www.ncbi.nlm.nih.gov/sra/docs/submitformats/#fastq-files)をご覧ください。
 
-- Quality value は phred 形式にしてください。オフセットはデフォルトで 33 (!) になります。64 (@) の場合は [Run XML を編集](#create-metadata-in-xml-files)して ascii_offset="@" にしてください。
+- Quality value は phred 形式にしてください。オフセットはデフォルトで 33 (!) になります。64 (@) の場合は [Run XML を編集](/dra/submission.html#excel)して ascii_offset="@" にしてください。
 - DRA のメタデータ作成ウェブ画面は Technical read (アダプター、リンカー、バーコード配列)
-記載に対応していません。記載する場合は [Experiment XML を編集・登録](/dra/submission.html#upload-xml)してください ([XML の記載例](/ddbj/example-xml.html))。
+記載に対応していません。記載する場合は [Experiment XML を編集・登録](/dra/submission.html#excel)してください ([XML の記載例](/dra/example-xml.html)。
 - ペアードリードは別々の fastq ファイルとして一つの Run に登録してください。ペアは標準形式のリード名から判定されます。
 - リードの先頭は '@' で始まっている必要があります。
 - 塩基配列と Quality value は '+' で始まる行で区切られている必要があります。
@@ -113,16 +113,16 @@ PacBio や IonTorrent などでリファレンス配列がない bam ファイ�
 ##### 1. BAM {#bam_format}
 
 アライメントデータを BAM フォーマットで登録することができます。BAM ファイルは [SAMtools](http://samtools.sourceforge.net/) と [picard](https://broadinstitute.github.io/picard/) で読み込める形式になっている必要があります。圧縮していない BAM ファイルをアップロードしてください。   
-Run の [File Type](#File_Type) には "bam" を選択します。
+Run の [File Type](/dra/metadata.html#File_Type) には "bam" を選択します。
 
 ##### 2. リファレンスを INSDC/RefSeq アクセッション番号で指定  {#ref_acc}
 
-リファレンス配列が [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/) にある場合、アクセッション番号.バージョン番号 (例 NC_000001.11) でリファレンスを参照することができます。 [配列のバージョン番号](/ddbj/flat-file.html#Version)は必須です。リファレンスゲノム配列のアクセッション番号は [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/) で検索することができます。
+リファレンス配列が [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/) にある場合、アクセッション番号.バージョン番号 (例 NC_000001.11) でリファレンスを参照することができます。 [配列のバージョン番号](/ddbj/flat-file.html#VersionB)は必須です。リファレンスゲノム配列のアクセッション番号は [NCBI Assembly](https://www.ncbi.nlm.nih.gov/assembly/) で検索することができます。
 
 ##### 3. リファレンスをマルチ fasta で提供 {#ref_fasta}
 
 リファレンス配列が [https://ftp.ncbi.nlm.nih.gov/sra/refseq/](https://ftp.ncbi.nlm.nih.gov/sra/refseq/) にない場合、リファレンス配列をマルチ fasta ファイルで提供します。真核生物のオルガネラ配列等短い配列は番号指定に対応していないケースがあります。
-Run の [File Type](#File_Type) には "reference_fasta" を選択します。bam ヘッダーで定義されたリファレンスとマルチ fasta 中の配列は対応表を介して defline 中の配列名でリンクされます。 bam SQ 行 LN タグのリファレンス配列長とマルチ fasta 中の配列長が異なっている場合ワーニングになります。
+Run の [File Type](/dra/metadata.html#File_Type) には "reference_fasta" を選択します。bam ヘッダーで定義されたリファレンスとマルチ fasta 中の配列は対応表を介して defline 中の配列名でリンクされます。 bam SQ 行 LN タグのリファレンス配列長とマルチ fasta 中の配列長が異なっている場合ワーニングになります。
 
 ##### 4. INSDC/RefSeq アクセッション番号とマルチ fasta が混在するケース  {#ref_acc_fasta}
 
@@ -130,7 +130,7 @@ Run の [File Type](#File_Type) には "reference_fasta" を選択します。ba
 
 ##### 5. SN-リファレンス配列の対応表  {#sn_ref}
 
-ご自分で独自に作成するファイルです。「BAM ファイルヘッダーの SQ 行中の SN 値」と「アクセッション番号 OR リファレンスマルチ fasta ファイル中の配列名」との対応関係をタブ区切りで記載します。 Run の [File Type](#File_Type) には "tab" を選択します。
+ご自分で独自に作成するファイルです。「BAM ファイルヘッダーの SQ 行中の SN 値」と「アクセッション番号 OR リファレンスマルチ fasta ファイル中の配列名」との対応関係をタブ区切りで記載します。 Run の [File Type](/dra/metadata.html#File_Type) には "tab" を選択します。
 
 BAM ファイルヘッダー
 

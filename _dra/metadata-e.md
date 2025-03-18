@@ -10,7 +10,7 @@ lang: en
 ## Objects {#objects}
 
 The metadata describes how the associated data have been obtained.
-The metadata are composed of 6 objects and each of these objects is defined by its [XML schema](https://github.com/ddbj/pub/tree/master/docs/dra/xsd/1-5) and is related each other.
+The metadata are composed of 6 objects and each of these objects is defined by its [XML schema](https://github.com/ddbj/pub/tree/master/docs/dra) and is related each other. [Metadata examples](/dra/example-e.html)
 
 {% include image.html url="books/sra_object.png" caption="Data model" class="w500" %}
 
@@ -36,8 +36,6 @@ Paired-end data files must be listed in a single run in order for the two files 
 [Analysis](#Analysis){: #Analysis-obj}
 : Packages data associated with sequence read objects which do not have dedicated databases.
 Analysis date are not shared among NCBI and EBI.
-
-[Metadata examples](/dra/example-e.html)
 
 ## Metadata fields {#metadata}
 
@@ -416,4 +414,4 @@ in tsv file, this field needs to be specified manually.
 | tsv |    |
 
 [MD5 Checksum](#Analysis_MD5_Checksum)<a name="Analysis_MD5_Checksum"></a><span class="red">*</span>
-: MD5 checksum of a run data file. [How to obtain the MD5 checksum values.](/checksum-e.html)
+: MD5 checksum of a run data file. [MD5 checksum value](/checksum-e.html)

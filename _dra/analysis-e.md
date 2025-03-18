@@ -16,7 +16,7 @@ lang: en
 
 ## Analysis metadata excel {#analysis-excel}
 
-Fill in the metadata in Analysis sheet of [DRA metadata excel](https://github.com/ddbj/submission-excel2xml/blob/main/metadata_dra.xlsx).
+Fill in the metadata in Analysis sheet of [DRA metadata excel](https://github.com/ddbj/submission-excel2xml/raw/refs/heads/main/metadata_dra.xlsx).
 Generate an Analysis XML according to [GitHub](https://github.com/ddbj/submission-excel2xml) and submit the [XML](/dra/submission-e.html#excel) in D-way. Or send the excel to the DRA team by email attachment. The DRA curator generates Analysis XMLs and upload them.
 [Upload](/upload-e.html) analysis data files to DRA submission directory on the file server as DRA run data files.
 

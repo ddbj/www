@@ -20,7 +20,7 @@ lang: ja
 * [データファイルのアップロード](#upload)
 * [BioProject の登録](#bioproject)
 * [BioSample の登録](#biosample)
-* [Submission の入力](#submission)
+* [Submission](#submission)
 * [Experiment/Run の入力](#experiment)
 	* [ウェブツールで登録](#metadata)
 	* [エクセルで登録](#excel)
@@ -250,7 +250,7 @@ Analysis に登録されたデータファイルは MD5 チェックサム値の
 [メタデータ登録用エクセル](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx)をダウンロードし、内容を記入します。   
 続いて、以下の手順でエクセルからコマンドラインで XML を生成し、XML を登録します。  
 
-手順が分からない方は対象の DRA Submission ID を添え、メール添付でエクセルファイルを [DRA 担当者に送付](mailto:trace@ddbj.nig.ac.jp)してください。担当者が XML を生成し、登録します。内容を確認後、問題がなければ[データファイルの検証処理](#validation-data-files)に進んでください。
+手順が分からない方は対象の DRA Submission ID を添え、メール添付でエクセルファイルを [DRA 担当者に送付](mailto:trace@ddbj.nig.ac.jp)してください。担当者が XML を生成し、登録します。内容を確認後、問題がなければ[データファイルの検証処理](#validation)に進んでください。
 
 [GitHub](https://github.com/ddbj/submission-excel2xml) に記載されている手順に従い、エクセルからコマンドラインツールで Submission、Experiment、Run XML を生成します。
 

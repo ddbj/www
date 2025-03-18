@@ -16,9 +16,9 @@ lang: ja
 
 ## Analysis メタデータエクセル {#analysis-excel}
 
-[DRA metadata excel](https://github.com/ddbj/submission-excel2xml/blob/main/metadata_dra.xlsx) の Analysis シートにメタデータを入力します。    
+[DRA metadata excel](https://github.com/ddbj/submission-excel2xml/raw/refs/heads/main/metadata_dra.xlsx) の Analysis シートにメタデータを入力します。    
 メタデータ入力後、[GitHub](https://github.com/ddbj/submission-excel2xml) の手順に従って Analysis XML を生成し、[XML を登録](/dra/submission.html#excel)するか、エクセルをメール添付で DRA 担当者に送付します。DRA 担当者が Analysis XML を生成し、指定された DRA Submission に追加します。
-Analysis データファイルは fastq 等の生データと同様、ファイル受付サーバの DRA Submission ディレクトリに[アップロード](/dra/upload.html)します。
+Analysis データファイルは fastq 等の生データと同様、ファイル受付サーバの DRA Submission ディレクトリに[アップロード](/upload.html)します。
 
 
 

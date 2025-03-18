@@ -19,7 +19,7 @@ Submission of research data from human subjects
 * [Upload data files](#upload)
 * [Submit a BioProject](#bioproject)
 * [Submit BioSample(s)](#biosample)
-* [Enter Submission metadata](#submission)
+* [Submission](#submission)
 * [Enter Experiment/Run metadata](#experiment)
 	* [By using the web tool](#metadata)
 	* [By using the excel](#excel)
@@ -212,7 +212,7 @@ After submitting the metadata, validate the data files. Click the link "Validate
 ### Analysis (optional)  {#analysis}
 
 You may submit data files derived from raw reads to Analysis when there is no appropriate database to submit the derived data. Please note that Analysis is not shared with NCBI and EBI.  
-Please check appropriate databases in "[Submission Navigation](/submission-navigation.html)" and "[Databases and Data Submission Systems](/submission-e.html)".
+Please check appropriate databases in "[Submission Navigation](/submission-navigation-e.html)" and "[Databases and Data Submission Systems](/submission-e.html)".
 
 Create Analyses and enter their content. Unnecessary Analysis can be deleted by [Delete].
 
@@ -245,7 +245,7 @@ Before filling in the excel, you need to finish the followings.
 Download the [DRA metadata excel](https://github.com/ddbj/submission-excel2xml/raw/main/metadata_dra.xlsx) and describe your metadata.  
 Next, generate XML files by command lines as follows.   
 
-Send the excel with the DRA submission ID by an [email attachment](mailto:trace@ddbj.nig.ac.jp) if you are not familiar with command line operations. We generate XMLs and register them instead of you. Please check the metadata and proceed to the [data file validation step](#validation-data-files).   
+Send the excel with the DRA submission ID by an [email attachment](mailto:trace@ddbj.nig.ac.jp) if you are not familiar with command line operations. We generate XMLs and register them instead of you. Please check the metadata and proceed to the [data file validation step](#validation).   
 
 Generate Submission, Experiment and Run XMLs by using the command line tool according to [GitHub](https://github.com/ddbj/submission-excel2xml).  
 
@@ -279,13 +279,13 @@ The DRA staff reviews the "submission_validated" submission. Please do not touch
 ### Data Error {#data_error}
 
 An error in the data file validation make the submission status "data_error". 
-Please see [FAQ: How to deal with validation errors?](/faq/en/data-validation-error) regarding how to fix errors. [Stop validation] makes the submission back to "metadata_submitted". Then revise the metadata and/or re-upload the files and start the data file validation again by [Validate data files].
+Please see [FAQ: How to deal with validation errors in the DRA submission?](/faq/en/data-validation-error-e.html) regarding how to fix errors. [Stop validation] makes the submission back to "metadata_submitted". Then revise the metadata and/or re-upload the files and start the data file validation again by [Validate data files].
 
 {% include image.html url="books/hdra-error.jpg" caption="Stop validation" class="w500" %}
 
 {% include image.html url="books/hdra-edit.jpg" caption="Revise submission" class="w500" %}
 
-## Accession numbers  {#accession-numbers}
+## Accession numbers {#accession}
 
 When the metadata and the data files are complete, accession numbers are assigned to the metadata objects and informed to the submitter by email. The accession numbers are also displayed in the submission page.  
 
