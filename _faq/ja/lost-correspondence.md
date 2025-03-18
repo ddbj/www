@@ -10,7 +10,7 @@ date: 2014-05-30T17:50:06
 lang: ja
 ---
 
-[DDBJ へのお問い合わせ](/contact-ddbj.html#to-ddbj)より、以下の情報をご連絡下さい。
+[DDBJ へのお問い合わせ](/contact-ddbj.html)より、以下の情報をご連絡下さい。
 - コンタクトパーソンのメールアドレス
 - アクセッション番号または EntryID
 

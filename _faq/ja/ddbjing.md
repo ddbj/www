@@ -15,5 +15,4 @@ DDBJ では、DDBJ が提供するサービスを有効に活用して頂くた�
 - [DDBJ HP DDBJing 講習会のページ](/activities/index.html?tag=training)
 - [Twitter](https://twitter.com/DDBJ_topics)
 
-講習会についてのご質問やご自身の所属での講習会開催を希望される方は，[お問い合わせ](https://forms.gle/rRrVkcjyMoXQhFVn7)
-よりご連絡下さい。
+講習会についてのご質問やご自身の所属での講習会開催を希望される方は，[お問い合わせ](https://forms.gle/zV4cYCnRCefd4FSz9) よりご連絡下さい。
