@@ -11,4 +11,4 @@ lang: en
 ---
 
 It is necessary for submitters [to contact the BioSample team](https://forms.gle/d9cZxyzQzxPMSqW59) to request updates and withdrawals as necessary. 
-You can confirm updated samples by downloding the [attribute tsv](/submission.html#update-biosample) (example, SSUB000001.txt) in the ATTRIBUTES of the D-way BiSample submission page.  
+You can confirm updated samples by downloding the [attribute tsv](/biosample/submission-e.html#update-biosample) (example, SSUB000001.txt) in the ATTRIBUTES of the D-way BiSample submission page.  

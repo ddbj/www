@@ -84,10 +84,6 @@ send an e-mail)
 : Institution ( Update )
 : Address ( Current )
 : Address ( Update )
-: Phone ( Current )
-: Phone ( Update )
-: FAX ( Current )
-: FAX ( Update )
 
 <!-- end list -->
 

@@ -3,28 +3,18 @@ layout: simple
 title: 単一塩基変異 (SNV)、構造多型 (structural variation)、コピー数変異 (CNV) データなどは どこに登録すれば良いのでしょうか
 category: faq
 db:
-  - ddbj
+  - togovar
 tags: 
   - 登録
 date: 2016-02-26T13:36:10
 lang: ja
 ---
 
+ヒトのバリアントデータは [TogoVar-repository](/togovar/index.html) で受付けています。    
+TogoVar-repository はヒトのバリアントと頻度情報のための公的データベースで、バリアントを「50 bp 以下の短いバリアント」と「50 bp よりも大きい構造バリアント」の二つに分けて受付けています。
 
+* 短いバリアント: 50 bp 以下のバリアント。一塩基バリアントや短い挿入・欠失。データは NCBI [dbSNP](https://ncbi.nlm.nih.gov/snp/) と交換されます。
+* 構造バリアント: 50 bp よりも大きい構造バリアント。挿入、欠失、重複、逆位、転座や複雑なバリアント。データは NCBI [dbVar](https://ncbi.nlm.nih.gov/dbvar/) と交換されます。
 
-
-DDBJ では、SNV, CGH analysis, microarray, variation といったデータを扱う公的データベースが存在しませんが、NCBI または EBI にて登録が可能です。    
-適宜、下記へご登録ください。詳細は各データベースにお尋ねください。
-
-- [NCBI](http://www.ncbi.nlm.nih.gov/): [Gene Expression Omnibus (GEO)](http://www.ncbi.nlm.nih.gov/geo/), [dbSNP](http://www.ncbi.nlm.nih.gov/SNP/), [dbVar](http://www.ncbi.nlm.nih.gov/dbvar), [ClinVar](http://www.ncbi.nlm.nih.gov/clinvar/)    
-- [EBI](http://www.ebi.ac.uk/): [ArrayExpress](http://www.ebi.ac.uk/arrayexpress/), [European Variation Archive (EVA)](http://www.ebi.ac.uk/eva/), [Database of Genomic Variants archive (DGVa)](http://www.ebi.ac.uk/dgva)
-
-なお、ヒトに由来するデータの場合、下記の何れかの[アクセス制限データベース](/policies.html#human)への登録が必要になることがあります。
-- [The database of Genotypes and Phenotypes (dbGaP)](http://www.ncbi.nlm.nih.gov/gap)
-- [European Genome-phenome Archive (EGA)](http://www.ebi.ac.uk/ega/)
-- [Japanese Genotype-phenotype Archive (JGA)](/jga/index.html)
-
-参考
-: - [SNP のデータを DDBJ に登録すると dbSNP にも反映されますか](/faq/ja/submit-snp-reflect-dbsnp.html)
-- [DNA 多型のデータはどのように記載して登録すれば良いでしょうか](/faq/ja/how-to-submit-dna-polymorphism.html)
+TogoVar-repository と dbSNP/dbVar はヒトのバリアントのみ受付けています。EBI の [European Variation Archive](https://www.ebi.ac.uk/eva/) はヒトとヒト以外の生物からのバリアントを受付けています。
 

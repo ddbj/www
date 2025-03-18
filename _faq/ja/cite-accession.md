@@ -34,7 +34,7 @@ DRA ではデータを既存 Submission に追加することができず、別�
 ## GEA {#gea}
 
 Experiment アクセッション番号 E-GEAD-n を引用してください。  
-[GEA アクセッション番号](/gea/overview.html#acc)
+[GEA アクセッション番号](/gea/overview.html#accession)
 
 ## MetaboBank {#metabobank}
 

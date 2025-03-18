@@ -12,8 +12,9 @@ lang: en
 
 ### Samples are metabolically labeled by isotopes
 
-When samples are labeled by metabolically uptaking stable isotopes (metabolic isotope labeling), describe isotope-labeled compounds in the “isotope_labeled_compound” attributes of BioSample records. Stable isotopes are described in the “isotope” attributes.
+When samples are labeled by metabolically uptaking stable isotopes (metabolic isotope labeling), describe isotope-labeled compounds in the “isotope_labeled_compound” attributes of BioSample records. Stable isotopes are described in the “isotope” attributes. These attributes are not included in [Omics package](/biosample/attribute-e.html?core=Standard&type=Omics), so please add these as user-defined ones.
    
+Example:  
 * isotope_labeled_compound=[U-13C]-glucose 
 * isotope=13C
 

@@ -11,7 +11,7 @@ date: 2023-09-10T12:39:51
 lang: en
 ---
 
-This is considered a valid [exemption]((/biosample/submission-e.html#missing-value-reporting)) as we recognise that some consortia will have agreements that pre-date the new standard and you can report this as a reason that the metadata are missing.
+This is considered a valid [exemption](/biosample/submission-e.html#missing-value-reporting) as we recognise that some consortia will have agreements that pre-date the new standard and you can report this as a reason that the metadata are missing.
 
 In this case, during initial sample registration you would report:
 * geo_loc_name (or /country) = missing: data agreement-established pre-2023

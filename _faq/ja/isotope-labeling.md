@@ -15,7 +15,7 @@ lang: ja
 同位体を代謝によって生物に取り込ませた場合 (metabolic isotope labeling)、
 BioSample のサンプル属性 isotope_labeled_compound で同位体標識化合物を記載します。
 また、使用した安定同位体は isotope で記載します。
-両属性は [Omics パッケージ](/biosample/attribute.html)には含まれていないためユーザ定義属性として追加します。
+両属性は [Omics パッケージ](/biosample/attribute.html?core=Standard&type=Omics)には含まれていないためユーザ定義属性として追加します。
 
 例
 * isotope_labeled_compound=[U-13C]-glucose

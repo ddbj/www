@@ -10,4 +10,4 @@ date: 2017-06-26T17:03:42
 lang: en
 ---
 
-Please see [About Acknowledgements](https://sc.ddbj.nig.ac.jp/en/#about-acknowledgements).
+Please see [About Acknowledgements](https://sc.ddbj.nig.ac.jp/en/#acknowledgement).

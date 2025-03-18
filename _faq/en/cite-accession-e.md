@@ -33,7 +33,7 @@ Because data cannot be added to existing DRA submission, more than one DRA submi
 ## GEA {#gea}
 
 Cite Experiment accession "E-GEAD-n".  
-[GEA Accession](/gea/overview-e.html#acc)
+[GEA Accession](/gea/overview-e.html#accession)
 
 ## MetaboBank {#metabobank}
 

@@ -14,7 +14,7 @@ date: 2014-12-15T11:41:03
 lang: en
 ---
 
-Linked [BioProject](/bioproject/index-e.html), [BioSample](/biosample/index-e.html), [DDBJ](/ddbj/submission.html), [DRA](/dra/index-e.html), [GEA](/gea/index-e.html) and [MetaboBank](/metabobank/index-e.html) data are released as follows.
+Linked [BioProject](/bioproject/index-e.html), [BioSample](/biosample/index-e.html), [DDBJ](/ddbj/submission-e.html), [DRA](/dra/index-e.html), [GEA](/gea/index-e.html) and [MetaboBank](/metabobank/index-e.html) data are released as follows.
 
 - Release of the BioProject and BioSample records DO NOT trigger release of the other linked data.
 - Release of the BioSample records trigger release of the referencing BioSample in derived_from attributes.

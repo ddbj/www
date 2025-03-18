@@ -10,4 +10,4 @@ date: 2020-11-25T11:19:00
 lang: en
 ---
 
-Please visit the [MSS - Mass Submission System](/ddbj/mss-e.html) for detail.
+Please visit the [Registration process in MSS](/ddbj/mss-e.html#flow) for detail.
