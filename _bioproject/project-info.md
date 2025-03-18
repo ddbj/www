@@ -37,7 +37,7 @@ lang: ja
 
 ### Data Release {#Area_data-release}
 
-"Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[プロジェクトの公開](/bioproject/submission.html#release)をご覧ください。
+"Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[プロジェクトの公開](/bioproject/submission.html#project-release)をご覧ください。
 
 [Hold](#BioProject_Hold)<a name="BioProject_Hold"></a>  
 : この BioProject アクセッション番号を引用している DDBJ/DRA/GEA/MetaboBank データが公開されたときに同時に公開されます。
@@ -213,8 +213,8 @@ NCBI ではプロジェクトを参照している実際の登録データから
 
 : [Taxonomy データベース](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html)に登録されている生物名。メタゲノムや環境サンプルなどの生物名を特定できないサンプルについては[こちらのリスト](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock)を参考にしてください。
 
-プロジェクトが複数生物種を対象にしている場合、共通する系統分類、例えば "Homo sapiens" と "Mus musculus" が対象であれば "Mammalia" (taxonomy id: [40674](https://ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=40674&lvl=3&lin=f&keep=1&srchmode=1&unlock)) のように入力します。    
-生物名が NCBI Taxonomy に登録されていない場合、sp. を付けた生物種名、例えば生物名が "Escherichia sp. ABCDEF" であれば "Escherichia sp." (tax id: [1884818](https://ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1884818)) を入力します。    
+プロジェクトが複数生物種を対象にしている場合、共通する系統分類、例えば "Homo sapiens" と "Mus musculus" が対象であれば "Mammalia" (taxonomy id: [40674](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=40674&lvl=3&lin=f&keep=1&srchmode=1&unlock)) のように入力します。    
+生物名が NCBI Taxonomy に登録されていない場合、sp. を付けた生物種名、例えば生物名が "Escherichia sp. ABCDEF" であれば "Escherichia sp." (tax id: [1884818](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1884818)) を入力します。    
 新規生物名は BioSample で申請します。
 
 [Taxonomy ID](#BioProject_Taxonomy_ID)<a name="BioProject_Taxonomy_ID"></a>  

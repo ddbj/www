@@ -65,7 +65,7 @@ To submit human data, [your data submission application needs to be approved by 
 
 ## Submit an umbrella project {#submit-umbrella-project}
 
-Umbrella project can be submitted as primary project in [D-way](https://ddbj.nig.ac.jp/D-way/). <span class="red">Be sure to tell the DDBJ BioProject staff that submitting project is umbrella by writing so in the [Private comments to DDBJ staff](#Private_comments). Umbrell project cannot be kept private.</span>
+Umbrella project can be submitted as primary project in [D-way](https://ddbj.nig.ac.jp/D-way/). <span class="red">Be sure to tell the DDBJ BioProject staff that submitting project is umbrella by writing so in the [Private comments to DDBJ staff](/bioproject/project-info-e.html#Private_comments). Umbrell project cannot be kept private.</span>
 
 When submitting an umbrella project to organize [haplotype](/ddbj/pseudohaplotype-e.html#bioproject) datasets, enter accession numbers of primary BioProjects to be linked and their names for haplotypes (e.g. PRJDB1 Principal, PRJDB2 Alternate and PRJDB3 DRA).
 
@@ -92,7 +92,7 @@ The projects can be kept private and are released as follows.
 * Publication of the primary project do not cause automatic release of the linked DDBJ/DRA/GEA/MetaboBank data.
 * Under a primary project, publication of data does not cause the indirect release of the other data belong to the same project.
 
-FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release.html)
+FAQ: [How are linked BioProject/BioSample/experimental data released?](/faq/en/bp-bs-seq-release-e.html)
 
 {% include image.html url="submission/release_re.jpg" caption="Triggering of data release between primary projects and data records." class="w450" %}
 

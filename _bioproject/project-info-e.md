@@ -37,7 +37,7 @@ Organization to which a contact person belongs.
 
 ### Data Release  {#Area_data-release}
 
-Select "Hold" or "Release". You cannot specify hold date. Please see [Release of projects](#Release_of_projects) for detailed release mechanism.
+Select "Hold" or "Release". You cannot specify hold date. Please see [Release of projects](/bioproject/submission-e.html#project-release) for detailed release mechanism.
 
 [Hold](#BioProject_Hold)<a name="BioProject_Hold"></a>  
 : Released concurrently when the DDBJ/DRA/GEA/MetaboBank data citing this ID are released.
@@ -210,8 +210,8 @@ Taxonomy and description of target organism.
 [Organism name](#BioProject_Organism_name)<span class="red">\*</span><a name="BioProject_Organism_name"></a><a name="BioProject_Organism_name"></a>
 : Organism name in the [Taxonomy database](https://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html). Unclassified sequences including metagenome and environmental samples may be found at [here](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=12908&lvl=3&lin=f&keep=1&srchmode=1&unlock).
     
-If the project targets multiple organisms, enter a common lineage e.g. "Mammalia" (taxonomy id: [40674](https://ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=40674&lvl=3&lin=f&keep=1&srchmode=1&unlock)) for the project targeting "Homo sapiens" and "Mus musculus".   
-If an organism name is not found in the NCBI Taxonomy, enter a lineage or a species name with sp. e.g. "Escherichia sp." (tax id: [1884818](https://ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1884818)) for a novel species "Escherichia sp. ABCDEF".
+If the project targets multiple organisms, enter a common lineage e.g. "Mammalia" (taxonomy id: [40674](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=40674&lvl=3&lin=f&keep=1&srchmode=1&unlock)) for the project targeting "Homo sapiens" and "Mus musculus".   
+If an organism name is not found in the NCBI Taxonomy, enter a lineage or a species name with sp. e.g. "Escherichia sp." (tax id: [1884818](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1884818)) for a novel species "Escherichia sp. ABCDEF".
 Apply a novel organism name in BioSample.
 
 [Taxonomy ID](#BioProject_Taxonomy_ID)<a name="BioProject_Taxonomy_ID"></a>  
