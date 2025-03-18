@@ -15,7 +15,7 @@ lang: ja
 をクリックしてください。
 
 a) の場合、[7.Annotation (アノテーション画面 - Template で "other"
-を選択したとき)](/ddbj/web-submission-help.html#flow-7-2)
+を選択したとき)](/ddbj/web-submission-help.html#flow-7-2) 
 をご参照ください。  
 
 b) の場合、[7.Annotation:
