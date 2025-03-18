@@ -17,5 +17,5 @@ panels:
 lang: ja
 ---
 
-[DDBJ Sequence Read Archive (DRA)](/dra/index.html) は生シークエンスデータとアライメント情報を保存し、研究の再現性担保、及び、データ解析による新しい発見を支えています。            
+DDBJ Sequence Read Archive (DRA) は生シークエンスデータとアライメント情報を保存し、研究の再現性担保、及び、データ解析による新しい発見を支えています。            
 DRA は [International Nucleotide Sequence Database Collaboration (INSDC)](/insdc/index.html) を構成しており、[NCBI Sequence Read Archive](https://www.ncbi.nlm.nih.gov/sra/) と [EBI European Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/about/content) と共同で運営されています。

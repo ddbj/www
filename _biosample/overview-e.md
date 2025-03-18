@@ -13,11 +13,11 @@ The BioSample database is descriptive information about the biological source ma
 
 In general, create a BioSample record for a biological source material. Extracted molecules, nucleic acids and metabolites are represented by [DRA](/dra/metadata-e.html), [GEA](/gea/metadata-e.html) and [MetaboBank](/metabobank/metadata-e.html) metadata.
 
-- Biological replicates are represented by separate BioSamples with distinct 'biological_replicate' attributes. [DRA objects organization](/dra/metadata-e.html#ex_replicates) For example, 'biological_replicate = 1' and 'biological_replicate = 2'.
+- Biological replicates are represented by separate BioSamples with distinct 'biological_replicate' attributes. [DRA objects organization](/dra/example-e.html#ex_replicates) For example, 'biological_replicate = 1' and 'biological_replicate = 2'.
 - Technical replicates are represented by DRA Experiments and GEA SDRF. Use a BioSample for technical replicates.
 - RNA and metabolites samples extracted from a plant leaf, create one BioSample and represent extracts by [GEA](/gea/metadata-e.html) and [MetaboBank](/metabobank/metadata-e.html) metadata.
-- If a paired-end library from single sample is sequenced, do not create separate sample for forward and reverse reads but register both reads in a DRA Run. [DRA objects organization](/dra/submission-e.html#ex_samples)
-- If a sample is sequenced by different sequencing instruments, link DRA Experiments with distinct [Instrument model](/dra/submission-e.html#Instrument) to a BioSample.
+- If a paired-end library from single sample is sequenced, do not create separate sample for forward and reverse reads but register both reads in a DRA Run. [DRA objects organization](/dra/example-e.html#ex_samples)
+- If a sample is sequenced by different sequencing instruments, link DRA Experiments with distinct [Instrument model](/dra/metadata-e.html#Instrument) to a BioSample.
 - Register a separate BioSample for each unique source, e.g., RNA from the wings is a separate BioSample than RNA from legs if those two sources were sequenced independently.
 - [Genome Assembly Sample](/biosample/genome-assembly-sample-e.html) requires genome-specific attributes such as locus tag prefix, so it needs to be separated from other RNA and metabolites samples.
 
@@ -142,11 +142,11 @@ For the [MIMS.me](#MIMS.me) and [MIMARKS.survey](#MIMARKS.survey) packages, "No 
 
 ## How to select a package {#select-package}   
 	 
-Select a package according to organism and data. When appropriate packages are found in both [Standard](#Standard) and [MIxS](#MIxS) series, please see [attribute list](/biosample/attribute-e.html) and select a better one to describe your sample.
+Select a package according to organism and data. When appropriate packages are found in both [Standard](#standard) and [MIxS](#mixs) series, please see [attribute list](/biosample/attribute-e.html) and select a better one to describe your sample.
 
 ### Genome assembly sample {#genome-assembly-sample-package}  
 
-A [DDBJ/ENA/GenBank genome sequence](/ddbj/finished_level_genome-e.html) should be linked to one BioProject and one BioSample.  
+A [DDBJ/ENA/GenBank genome sequence](/ddbj/genome-e.html) should be linked to one BioProject and one BioSample.  
 Select a package according to species of your sample.
 
 <div class="bspac">
@@ -172,7 +172,7 @@ Different packages need to be used for metagenome assembly samples at different 
 ## Derived sample {#derived-sample}
 
 For a mixed sample which consist of samples, register a derived sample and list accession numbers (separated by comma or hyphen) of the component samples in [derived_from](/biosample/attribute-e.html#derived_from). Examples: SAMD00000001,SAMD00000002,SAMD00000008-SAMD00000100. A derived sample is necessary in the following cases.    
-INSDC restricts "[A genome assembly sequence](/ddbj/finished_level_genome-e.html) links to a BioProject and a BioSample". Therefore, when submitting a genome sequence assembled from reads of samples to [DDBJ](/ddbj/index-e.html), you need to represent samples by a derived sample. For example, to submit a genome sequence assembled from reads of male and female samples, register a derived sample citing both BioSample accessions.  
+INSDC restricts "[A genome assembly sequence](/ddbj/genome-e.html) links to a BioProject and a BioSample". Therefore, when submitting a genome sequence assembled from reads of samples to [DDBJ](/ddbj/mss-e.html), you need to represent samples by a derived sample. For example, to submit a genome sequence assembled from reads of male and female samples, register a derived sample citing both BioSample accessions.  
 Another example is to submit a MAG computationally constructed from environmental samples, register a derived sample for the MAG and list accession numbers of the environmental samples in the [derived_from](/biosample/attribute-e.html#derived_from) attribute.
 
 ## Human sample {#human-sample}

@@ -12,8 +12,8 @@ lang: ja
 </form>
 <form id="sample_attr_form" method="get" action="">
   <div id="main_index" class="biosample_attr">
-    <div id="sample_type">
-      Core package (<a href="/biosample/sample-info.html#Sample-package">Packages</a>, <a href="/biosample/overview.html#genome-assembly-sample">Genome assembly sample</a>)
+    <div id="sample_package">
+      Core package (<a href="/biosample/sample-info.html#Sample-package">Packages</a>, <a href="/biosample/overview.html#genome-assembly-sample-package">Genome assembly sample</a>)
       <ul>
         <li>
         <div class="radio"><input type="radio" id="Core_Standard" name="Core" value="Standard"></div><label class="clearfix" for="Standard">Standard</label>

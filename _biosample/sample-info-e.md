@@ -40,7 +40,7 @@ Contact information of submitter(s). Questions and notifications about a submiss
 
 ### Data Release  {#Area_biosample-data-release}
 
-Select "Hold" or "Release". You cannot specify hold date. Please see [Data Release](#sample-release) for detailed release mechanism.
+Select "Hold" or "Release". You cannot specify hold date. Please see [Data Release](/biosample/submission-e.html#sample-release) for detailed release mechanism.
 
 [Release](#BioSample_Release)<a name="BioSample_Release"></a>  
 : Submitted BioSample record will be released immediately after the curation process finishes.
@@ -131,7 +131,7 @@ If you have information of a type that does not appear in the standard list, you
 
 An organism name in the [organism](/biosample/attribute-e.html#organism) attribute must be a "scientific name" ranked as species or lower taxa in [NCBI Taxonomy](https://ncbi.nlm.nih.gov/taxonomy).  
 When an organism name is not registered in the [NCBI Taxonomy](https://ncbi.nlm.nih.gov/taxonomy), 
-enter a proposed name as described in [Organism qualifier](/biosample/attribute.html) and submit a BioSample with the other information. 
+enter a proposed name as described in [Organism qualifier](/ddbj/organism-e.html) and submit a BioSample with the other information. 
 DDBJ staff will apply a novel name to the NCBI Taxonomy. After the name is registered, BioSample accession number(s) will be assigned.
 
 ### locus tag prefix {#locus_tag_prefix}

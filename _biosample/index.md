@@ -14,7 +14,7 @@ panels:
 lang: ja
 ---
 
-[BioSample](index.html) は DDBJ の一次データベースに登録されている実験データを得るのに使われた生物学的な試料
+BioSample は DDBJ の一次データベースに登録されている実験データを得るのに使われた生物学的な試料
 (サンプル) についての情報を集中して管理するデータベースです。 BioSample の例としては，セルライン，組織の生検，生物個体や環境サンプルなどが挙げられます。
 
 サンプルデータは DDBJ、[EBI](https://www.ebi.ac.uk/biosamples/) と [NCBI](https://www.ncbi.nlm.nih.gov/biosample) BioSample データベース間で共有されます。

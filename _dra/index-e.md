@@ -17,7 +17,7 @@ panels:
 lang: en
 ---
 
-[DDBJ Sequence Read Archive (DRA)](/dra/index-e.html) stores raw sequencing data and
+DDBJ Sequence Read Archive (DRA) stores raw sequencing data and
 alignment information to enhance reproducibility and facilitate new
 discoveries through data analysis. DRA is part of the [International
 Nucleotide Sequence Database Collaboration (INSDC)](/insdc/index-e.html) and

@@ -13,11 +13,11 @@ BioSample は実験データを得るために使われた生物学的な試料�
 
 一般的に、生物学的な試料に対して BioSample を作成し、そこから抽出された核酸、代謝物などの抽出物は [DRA](/dra/metadata.html)、[GEA](/gea/metadata.html) や [MetaboBank](/metabobank/metadata.html) のメタデータで表現します。
 
-- biological replicate はサンプルを分けて biological_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" 例 [DRA の構成](/dra/metadata.html#ex_replicates)
+- biological replicate はサンプルを分けて biological_replicate 属性で区別します。例 "biological_replicate = 1" と "biological_replicate = 2" 例 [DRA の構成](/dra/example.html#ex_replicates)
 - technical replicate はサンプルを分けず、DRA Experiment/GEA SDRF/MetaboBank SDRF で分けます。
 - 植物の葉から調整した RNA、代謝物サンプルは葉に対応する BioSample を一つ作成し、抽出物は [GEA](/gea/metadata.html) や [MetaboBank](/metabobank/metadata.html) メタデータで表現します。
-- 同じサンプルから調整した paired-end library をシークエンスした場合、forward と reverse で BioSample を分けずに一つの DRA Run に両ファイルを含めます。[DRA の構成](/dra/submission.html#ex_samples)
-- 同じサンプルを異なる機種でシークエンスした場合、一つの BioSample に異なる [Instrument model](/dra/submission.html#Instrument) を持つ複数の DRA Experiment をリンクします。
+- 同じサンプルから調整した paired-end library をシークエンスした場合、forward と reverse で BioSample を分けずに一つの DRA Run に両ファイルを含めます。[DRA の構成](/dra/example.html#ex_samples)
+- 同じサンプルを異なる機種でシークエンスした場合、一つの BioSample に異なる [Instrument model](/dra/metadata.html#Instrument) を持つ複数の DRA Experiment をリンクします。
 - [ゲノムアセンブリ用サンプル](#genome-assembly-sample-package)はゲノム配列にのみ必要な locus tag prefix などがあるため、RNA や代謝物サンプルとは別にします。
 
 登録例
@@ -139,11 +139,11 @@ BioSample の [organism](/biosample/attribute.html#organism) に記載する生�
 
 ## パッケージの選び方 {#select-package}   
    
-生物やデータの種類に応じたパッケージを選択します。当てはまるパッケージが [Standard](#Standard) と [MIxS](#MIxS) の両方にある場合は、[属性リスト](/biosample/attribute.html)をみて、サンプルを記載するのにより適した方を選びます。
+生物やデータの種類に応じたパッケージを選択します。当てはまるパッケージが [Standard](#standard) と [MIxS](#mixs) の両方にある場合は、[属性リスト](/biosample/attribute.html)をみて、サンプルを記載するのにより適した方を選びます。
 
 ### ゲノムアセンブリ配列用サンプル {#genome-assembly-sample-package}  
 
-DDBJ/ENA/GenBank ではゲノムアセンブリを管理するため、[ゲノム配列](/ddbj/finished_level_genome.html)は一つの BioProject と一つの BioSample を参照すること、という制約を設けています。
+DDBJ/ENA/GenBank ではゲノムアセンブリを管理するため、[ゲノム配列](/ddbj/genome.html)は一つの BioProject と一つの BioSample を参照すること、という制約を設けています。
 ゲノムアセンブリサンプルでは生物種に応じたパッケージを選択します。
 
 <div class="bspac">
@@ -169,7 +169,7 @@ DDBJ/ENA/GenBank ではゲノムアセンブリを管理するため、[ゲノ�
 ## 派生サンプル {#derived-sample}
 
 混合サンプルなど、複数サンプルから構成される BioSample が必要な場合は、派生サンプル (derived sample) を登録し、元となるアクセッション番号を [derived_from](/biosample/attribute.html#derived_from) 属性にカンマやハイフン区切りで記載します。例: SAMD00000001,SAMD00000002,SAMD00000008-SAMD00000100。必要になるには以下のような場合です。   
-INSDC ではゲノムアセンブリを管理するため「[ゲノム配列](/ddbj/finished_level_genome.html)は一つの BioProject と一つの BioSample を参照すること」という制約を設けています。そのため、複数サンプルから得られた配列を混合してアセンブルしたゲノム配列を [DDBJ](/ddbj/index.html) に登録する場合、BioSample を一つにまとめる必要があります。    
+INSDC ではゲノムアセンブリを管理するため「[ゲノム配列](/ddbj/genome.html)は一つの BioProject と一つの BioSample を参照すること」という制約を設けています。そのため、複数サンプルから得られた配列を混合してアセンブルしたゲノム配列を [DDBJ](/ddbj/mss.html) に登録する場合、BioSample を一つにまとめる必要があります。    
 例えば、オスとメスに由来するリードを混合してアセンブルしたゲノム配列を登録する場合は、オスとメスそれぞれの BioSample アクセッション番号を引用した派生 BioSample を一つ登録します。   
 
 多数の環境サンプルから計算機上で再構成されたメタゲノムアセンブリ (MAG) を登録する場合、MAG 用に派生サンプルを登録し、[derived_from](/biosample/attribute.html#derived_from) に由来となる環境サンプルのアクセッション番号を記載します。

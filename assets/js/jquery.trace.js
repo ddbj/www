@@ -682,7 +682,7 @@ $(function(){
 		$(".biosample_attr .required").removeClass("required");
 		
 		$('#env_package').hide();
-    $('#sample_type ul ul').hide();
+    $('#sample_package ul ul').hide();
 
     	// all 選択時の処理
       $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {

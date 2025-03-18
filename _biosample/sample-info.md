@@ -40,7 +40,7 @@ lang: ja
 
 ### Data Release  {#Area_biosample-data-release}
 
-"Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[データ公開](/biosample/overview.html#sample-release)をご覧ください。
+"Hold" か "Release" のどちらかを選びます。公開予定日を指定することはできません。データ公開の仕組みについては[データ公開](/biosample/submission.html#sample-release)をご覧ください。
 
 [Release](#BioSample_Release)<a name="BioSample_Release"></a>  
 : 登録したサンプルは査定された後、公開されます。
@@ -137,7 +137,7 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 「生物名」として [organism](/biosample/attribute.html#organism) には、[NCBI Taxonomy](https://ncbi.nlm.nih.gov/taxonomy) において、種、もしくは、それ以下のランクで "scientific name" とされている名称を記載します。
 
-[NCBI Taxonomy](https://ncbi.nlm.nih.gov/taxonomy)に生物名が登録されていない場合、[Organism qualifier に記載する生物名](/biosample/attribute.html)を参考に、提唱する生物名を organism に記入し、他の情報と共に BioSample を submit します。   
+[NCBI Taxonomy](https://ncbi.nlm.nih.gov/taxonomy)に生物名が登録されていない場合、[Organism qualifier に記載する生物名](/ddbj/organism.html)を参考に、提唱する生物名を organism に記入し、他の情報と共に BioSample を submit します。   
 DDBJ スタッフが submit された情報を基に NCBI Taxonomy に生物名を申請します。Taxonomy に登録され次第、BioSample アクセッション番号が発行されます。
 
 ### locus tag prefix {#locus_tag_prefix}
