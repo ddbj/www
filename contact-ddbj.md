@@ -29,7 +29,7 @@ lang: ja
 | DDBJ | [DDBJ 更新依頼フォーム](https://forms.gle/p7ZJhiawJjd3Qnd3A) |
 | BioProject/BioSample/DRA | [BioProject/BioSample/DRA 更新依頼フォーム](https://forms.gle/mpGqxbSeYmy5oTud6) |
 | GEA | [GEA 更新依頼フォーム](https://forms.gle/Qh781rQMovUDo7yo7) |
-| MeatboBank | [MeatboBank 更新依頼フォーム](https://forms.gle/kzpUKFcTpcqsCL1M6) |
+| MetaboBank | [MetaboBank 更新依頼フォーム](https://forms.gle/kzpUKFcTpcqsCL1M6) |
 
 ## 外部参照の申請 {#cross-reference}
 
