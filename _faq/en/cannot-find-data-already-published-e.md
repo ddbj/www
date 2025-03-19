@@ -15,7 +15,7 @@ There are some possibilities as followings.
 1. In case of the meantime of data distribution:   
     The data may be on the process of data distribution. If you are
     unable to retrieve the data longer than a week, please send us an
-    inquiry including the accession number from [Contact](https://forms.gle/7g2YCoBjqvbBBW9V8).
+    inquiry including the accession number from [Contact](https://forms.gle/ZXteuEPM4SSm5HUt8).
 1. The specified [hold date](/ddbj/submission-e.html#holddate) of the
     data is in [holidays of DDBJ](/ddbj/submission-e.html#working-day):   
     We will release the data after [holidays of
@@ -29,7 +29,7 @@ There are some possibilities as followings.
     date](/ddbj/submission-e.html#holddate).
 
 In case of 3 or 4, we will check and support it.  
-Please contact us from [Contact](https://forms.gle/7g2YCoBjqvbBBW9V8) by
+Please contact us from [Contact](https://forms.gle/ZXteuEPM4SSm5HUt8) by
 selecting the item, "Updating Submitted Data" with accession numbers.
 
 **References**

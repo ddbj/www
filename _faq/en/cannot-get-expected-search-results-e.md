@@ -13,19 +13,9 @@ date: 2015-06-08T14:14:54
 lang: en
 ---
 
-The DDBJ/EMBL/GenBank data banks share
-the sequences stored within each data bank, and in principle all three
-data banks should contain the same data. However, due to time delays in
-the inter-data-bank sharing of data released by individual data banks,
-as well as delays between the time at which data are entered into a data
-bank and the time at which the data are reflected in the corresponding
-search service, searches conducted using different services at the
-similar time on the same day may yield slightly different results. If
-you do not obtain the search results that you were expecting, time
-delays of this sort are the most likely culprit; however, for cases
-requiring a more detailed investigation, please contact the DDBJ via the
-“Other general questions” section of the contact portal. In this case,
-make sure to specify the following information:  
+The DDBJ/EMBL/GenBank data banks share the sequences stored within each data bank, and in principle all three data banks should contain the same data. However, due to time delays in the inter-data-bank sharing of data released by individual data banks, as well as delays between the time at which data are entered into a data bank and the time at which the data are reflected in the corresponding search service, searches conducted using different services at the similar time on the same day may yield slightly different results. 
+If you do not obtain the search results that you were expecting, time delays of this sort are the most likely culprit; however, for cases requiring a more detailed investigation, please contact the DDBJ via the “Other” section of the [contact portal](https://forms.gle/ZXteuEPM4SSm5HUt8). 
+In this case, make sure to specify the following information:  
 
   - The name of the search program and/or the URL that you used to
     conduct the search.

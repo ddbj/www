@@ -20,4 +20,4 @@ See the following sites for detail and relationships of data types.
   - [Division](/ddbj/flat-file-e.html#DivisionB )
   - [Categories of Annotated/Assembled Data](/insdc/data-categories-e.html#detail )
 
-If you still have any question, please contact us from [Contact](https://forms.gle/7g2YCoBjqvbBBW9V8).
+If you still have any question, please contact us from [Contact](https://forms.gle/ZXteuEPM4SSm5HUt8).

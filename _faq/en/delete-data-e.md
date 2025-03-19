@@ -16,7 +16,7 @@ sequence data;
 1. The sequence data has not yet been publicized  
 1. The accession number of the data has not yet been [published](/insdc/data-release-policy-e.html).  
 
-Please send your request from [contact form](/contact-ddbj-e.html) with the following contents in clear
+Please send your request from [DDBJ Update](/contact-ddbj-e.html#update) with the following contents in clear
 English.
 
 - Accession numbers:

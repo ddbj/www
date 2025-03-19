@@ -10,7 +10,7 @@ date: 2014-06-09T16:23:52
 lang: en
 ---
 
-Please contact us from [contact form](/contact-ddbj-e.html) by selecting the item "Updating Submitted Data" with following items.
+Please contact us from [contact form](https://forms.gle/ZXteuEPM4SSm5HUt8) by selecting the item "NSSS" or "MSS" with following items.
 - E-mail address of contact person
 - Accession numbers or EntryIDs
 

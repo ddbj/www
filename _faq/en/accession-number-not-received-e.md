@@ -11,7 +11,7 @@ lang: en
 ---
 
 We cannot answer necessary days to issue accession number(s) because it depends on the contents of your submission.  
-If you do not receive any email from DDBJ after 5 working days, please contact us from [Contact](https://forms.gle/7g2YCoBjqvbBBW9V8). 
+If you do not receive any email from DDBJ after 5 working days, please contact us from [Contact](https://forms.gle/ZXteuEPM4SSm5HUt8). 
 
 Please make sure [not to block E-mails from DDBJ](/precautions-e.html).
 
@@ -23,7 +23,7 @@ If you have NOT received the mail,
 : your submission is not yet finished, so, please complete your submission.
 
 If you have received the mail,   
-: please contact us from [Contact](https://forms.gle/7g2YCoBjqvbBBW9V8) with contact person E-mail address and Submission ID of your data.
+: please contact us from [Contact](https://forms.gle/ZXteuEPM4SSm5HUt8) with contact person E-mail address and Submission ID of your data.
 
 ### DRA {#dra}
 
