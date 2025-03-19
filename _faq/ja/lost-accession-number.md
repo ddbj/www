@@ -10,7 +10,7 @@ date: 2014-06-03T16:35:47
 lang: ja
 ---
 
-EntryID などデータを特定できる ID がわかる場合、[コンタクトパーソン (contact person)](/ddbj/submission.html#contact)のメールアドレスと共に [DDBJへのお問い合わせ](/contact-ddbj.html#to-ddbj) よりご連絡ください。    
+EntryID などデータを特定できる ID がわかる場合、[コンタクトパーソン (contact person)](/ddbj/submission.html#contact)のメールアドレスと共に [お問い合わせフォーム](https://forms.gle/zV4cYCnRCefd4FSz9) よりご連絡ください。    
 不明な場合、以下の情報をわかる範囲で お知らせいただければ調査します。
 - 氏名
 - 登録時の所属

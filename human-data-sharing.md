@@ -29,4 +29,4 @@ lang: ja
 
 #### 4. 情報の管理について責任を有する者の氏名又は名称
 [DDBJ センター長](about/staff.html)
-ご不明な点がある場合は[こちら](/contact-ddbj.html)からお問い合わせください。
+ご不明な点がある場合は[こちら](https://forms.gle/zV4cYCnRCefd4FSz9)からお問い合わせください。
