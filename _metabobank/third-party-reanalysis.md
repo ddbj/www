@@ -11,7 +11,7 @@ lang: ja
 
 第三者が登録した MetaboBank のデータを再解析したデータは third-party reanalysis data として MetaboBank に登録することができます（元データを自身で再登録する必要はありません）。このような third-party reanalysis data は参照している元データ
 （mzML 等の生データを含む）が MetaboBank 等のデータベースで公開されている必要があります。また、登録の目的は査読論文で再解析の内容、および、アクセッション番号を公表することである必要があります。
-Third-party reanalysis data を MetaboBank に登録する場合は [MetaboBank チーム](/contact-ddbj.html)にお問い合わせください。
+Third-party reanalysis data を MetaboBank に登録する場合は [お問い合わせフォーム](https://forms.gle/zV4cYCnRCefd4FSz9)で「問い合わせ先：MetaboBank」を選択してお問い合わせください。
 
 ### Third-party reanalysis data 登録についての注意点  {#notes-third-party}
 
