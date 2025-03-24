@@ -27,8 +27,8 @@ mRNA. In that case, conceptual amino acid translation of genome sequence
 is different from protein product of real mRNA molecules.
 
 References  
-: [Example of Submission](/ddbj/example-e.html): [B09) RNA
-    editing](/ddbj/example-e.html#B09)
+: [Description Examples of Sequence Data](/ddbj/example-e.html): 
+   [B09) RNA editing](/ddbj/example-e.html#B09)
 : [How can I input amino acid sequence (/translation qualifier) for
     CDS feature?](/faq/en/how-to-input-amino-acid-seq-e.html)
 : [How to confirm translated amino acid sequences (i.e. /translation

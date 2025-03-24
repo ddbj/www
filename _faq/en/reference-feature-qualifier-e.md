@@ -14,5 +14,5 @@ See followings.
  - [The DDBJ/EMBL/GenBank Feature Table Definition](/ddbj/feature-table-e.html)
  - [Definition of Feature Key](/ddbj/features-e.html)
  - [Definition of Qualifier Key](/ddbj/qualifiers-e.html)
- - [Example of Submission](/ddbj/example-e.html)
+ - [Description Examples of Sequence Data](/ddbj/example-e.html)
  - [Feature/Qualifier Usage Matrix](/ddbj/features-e.html#usage)

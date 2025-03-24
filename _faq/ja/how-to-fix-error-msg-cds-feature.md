@@ -24,8 +24,7 @@ lang: ja
 が異なる場合に記載します。
 
 参考  
-: [登録の見本](/ddbj/example.html): [B09) RNA
-    editing](/ddbj/example.html#B09)
+: [配列データ記載例](/ddbj/example.html): [B09) RNA editing](/ddbj/example.html#B09)
 : [アミノ酸配列 (/translation qualifier) は
     どのようにして入力するのでしょうか](/faq/ja/how-to-input-amino-acid-seq.html)
 : [\[塩基配列登録システム\] CDS feature の翻訳アミノ酸配列 (/translation qualifier)
