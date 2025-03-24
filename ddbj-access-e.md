@@ -17,7 +17,7 @@ FAX : 81-55-981-6849
 TEL : 81-55-981-6853
 
 </address><br>
-For inquiries and questions, please contact us from the [contact form](/contact-ddbj-e.html).
+For inquiries and questions, please contact us from the [contact form](https://forms.gle/ZXteuEPM4SSm5HUt8).
 
 ## Location with in NIG  {#cibmap}
 
