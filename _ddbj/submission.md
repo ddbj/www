@@ -36,11 +36,10 @@ DDBJ を含む国際塩基配列データベースに登録された塩基配列
 
 ### 新規登録か、更新か？  {#update}
 
-もし、新規登録とすべきか、既に登録した配列の更新とすべきか、迷う状況が発生しましたら、[お問い合わせフォーム](/contact-ddbj.html)の「塩基配列登録データの修正・更新」にご連絡ください。
+もし、新規登録とすべきか、既に登録した配列の更新とすべきか、迷う状況が発生しましたら、[お問い合わせフォーム](https://forms.gle/zV4cYCnRCefd4FSz9)の「DDBJ : 塩基配列登録システム (NSSS)」にご連絡ください。
 
 [塩基配列登録システム](/ddbj/web-submission.html) は、新規登録専用となっております。塩基配列登録システムから更新内容を送付しないでください。
-更新の場合は、[更新に関する説明](/ddbj/update.html)をご参照の上、[登録データの修正・更新申し込み](/ddbj/update-form.html)
-から ご連絡をお願いいたします。
+更新の場合は、[更新に関する説明](/ddbj/update.html)をご参照の上、[DDBJ 更新依頼フォーム](https://forms.gle/mcQaJshvAKRdggz16)から ご連絡をお願いいたします。
 
 ### 登録に附随する権利と義務 {#right} 
 
@@ -183,15 +182,15 @@ DDBJ のキュレータが、公開に必要な事項を、国際塩基配列デ
   <tbody>
     <tr>
       <th>問い合わせ一般</th>
-      <td><a href="/contact-ddbj.html#to-ddbj">お問い合わせフォーム</a></td>
+      <td><a href="https://forms.gle/zV4cYCnRCefd4FSz9">お問い合わせフォーム</a></td>
     </tr>
     <tr>
       <th>登録全般に関する問い合わせ</th>
-      <td><a href="/contact-ddbj.html#to-ddbj">お問い合わせフォーム</a></td>
+      <td><a href="https://forms.gle/zV4cYCnRCefd4FSz9">お問い合わせフォーム</a></td>
     </tr>
     <tr>
       <th>登録済みデータ更新・公開依頼</th>
-      <td><a href="/ddbj/update-form.html">登録データの修正・更新申し込み</a></td>
+      <td><a href="https://forms.gle/mcQaJshvAKRdggz16">DDBJ 更新依頼フォーム</a></td>
     </tr>            
   </tbody>
 </table>
@@ -234,7 +233,7 @@ DDBJ のキュレータが、公開に必要な事項を、国際塩基配列デ
   </li>
   <li>
     公開データへのフィードバック<br>
-    公開されたデータに対する質問・確認などは登録者へお願いいたします。連絡先が不明な場合は転送いたしますので、<a href="/contact-ddbj.html" >お問い合わせフォーム</a>からご連絡ください。
+    公開されたデータに対する質問・確認などは登録者へお願いいたします。連絡先が不明な場合は転送いたしますので、<a href="https://forms.gle/zV4cYCnRCefd4FSz9" >お問い合わせフォーム</a>からご連絡ください。
   </li>
   <li>
     データ更新の権限<br>

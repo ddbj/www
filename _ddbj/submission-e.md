@@ -44,13 +44,13 @@ If you submit nucleotide sequences to DDBJ, you can get
 
 When you wonder your sequence data should be newly submitted or your
 previous entry should be modified, do not hesitate to contact us at
-[Contact form](/ddbj/update-form-e.html ) "Data updates / Corrections".
+[Contact form](https://forms.gle/ZXteuEPM4SSm5HUt8) "DDBJ : Nucleotide Sequence Submission System (NSSS)".
 
 [Nucleotide Sequence Submission System](/ddbj/web-submission-e.html) is a tool only for new submission, 
 so, do not use Nucleotide Sequence Submission System to send your update request. 
 If you need to modify your previousentry, see 
 [the link for update request](/ddbj/update-e.html ), and contact us at 
-[Application Form for Data Update Requests](/ddbj/update-form-e.html ).
+[DDBJ Update form](https://forms.gle/txmEtADnPpY2rnjKA).
 
 
 ### Rights and Duties of Submitter {#right} 
@@ -271,15 +271,15 @@ with the necessary information. Please refer to
   <tbody>
     <tr>
       <th>For general inquiry on DDBJ</th>
-      <td><a href="/contact-ddbj-e.html#to-ddbj">Contact form</a></td>
+      <td><a href="https://forms.gle/ZXteuEPM4SSm5HUt8">Contact form</a></td>
     </tr>
     <tr>
       <th>For data submission</th>
-      <td><a href="/contact-ddbj-e.html#to-ddbj">Contact form</a></td>
+      <td><a href="https://forms.gle/ZXteuEPM4SSm5HUt8">Contact form</a></td>
     </tr>
     <tr>
       <th>For updating submitted data</th>
-      <td><a href="/ddbj/update-form-e.html">Application Form for Data Update Requests</a></td>
+      <td><a href="https://forms.gle/txmEtADnPpY2rnjKA">DDBJ Update form</a></td>
     </tr>            
   </tbody>
 </table>
@@ -319,7 +319,7 @@ Following figure shows the dataflow from new submission to release and update at
   </li>
   <li>
     Feed back for Released Data<br>
-    If you have comments or questions for released data, please contact the submitters of each entry. If you can not directly contact the submitters, please contact us through <a href="/contact-ddbj-e.html">the inquiry form</a> with reasons
+    If you have comments or questions for released data, please contact the submitters of each entry. If you can not directly contact the submitters, please contact us through <a href="https://forms.gle/ZXteuEPM4SSm5HUt8">the contact form</a> with reasons
   </li>
   <li>
     <a href="#right">Only submitters of the entry can update and modify the entry</a>. After data madification, the submitter of the entry can also specify either of immediate release or hold until publication. However, in principle, if the entry have already been open to the public, the entry can not restore hold.

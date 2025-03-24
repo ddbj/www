@@ -467,8 +467,8 @@ Even if the entry is updated, "Accept Date" is NOT changed. Then, the informatio
 
 E-mail address, phone & fax nos.
 
-  - To follow the Japanese law of protecting personal information, DDBJ will delete both phone and fax numbers, and E-mail address from the flat files of the entries submitted to DDBJ.However, if you wish to disclose any of the three items, please contact us with [contact form](/contact-ddbj-e.html#to-ddbj),?specifying the item(s) to be disclosed.
-  - When you wish to contact to the submitter(s) of an entry of your interest,please contact us with [the inquiry form](/contact-ddbj-e.html#to-submitters) with reasons briefly;i.e. asking to transfer cloned sequences, etc, then we will forward your messeage to the submitter(s).
+  - To follow the Japanese law of protecting personal information, DDBJ will delete both phone and fax numbers, and E-mail address from the flat files of the entries submitted to DDBJ.However, if you wish to disclose any of the three items, please contact us with [contact form](https://forms.gle/ZXteuEPM4SSm5HUt8),?specifying the item(s) to be disclosed.
+  - If you wish to contact the submitter(s) of an entry of your interest, please contact us via the [contact form](https://forms.gle/ZXteuEPM4SSm5HUt8) by selecting 'Inquiry to the sequence submitters' and briefly stating your reason (e.g., requesting the transfer of cloned sequences, etc.). We will then forward your message to the submitter(s).
 
 Phone and fax numbers and E-mail address are deleted.
 

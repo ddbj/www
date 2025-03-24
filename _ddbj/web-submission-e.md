@@ -102,8 +102,8 @@ the following cases are included, but not limited to them.
 ## Updates, Questions   {#UpdatesQuestions}
 
   - This system accepts only new submissions. DO NOT send update request via this system.  
-  - Regarding the update request after you have got accession number(s), see the [Data Update](/ddbj/update-e.html#ddbj) site.
-  - If you encounter any problem during submission, please contact us with "Submission ID" through [contact form](/contact-ddbj-e.html).
+  - Regarding the update request after you have got accession number(s), contact us via the [Data Update form](https://forms.gle/txmEtADnPpY2rnjKA).
+  - If you encounter any problem during submission, please contact us with "Submission ID" through [contact form](https://forms.gle/ZXteuEPM4SSm5HUt8).
 
 <div class="start-button" markdown="1">
 
