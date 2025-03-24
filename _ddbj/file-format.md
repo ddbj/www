@@ -128,9 +128,9 @@ Value
 
 | 名称                                                  | 備考                                                   |
 |---|
-| [Feature Table Definition](/ddbj/feature-table.html)   | version 11.3                                         |
+| [Feature Table Definition](/ddbj/feature-table.html)  | version 11.3                                           |
 | [Feature/Qualifier 対応一覧表](https://docs.google.com/spreadsheets/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/edit?gid=0#gid=0) |                                                      |
-| [登録の見本](/ddbj/example.html)                         | [DDBJ フラットファイル](/ddbj/flat-file.html)中の feature の記載例 |
+| [配列データ記載例](/ddbj/example.html)                | [DDBJ フラットファイル](/ddbj/flat-file.html)中の feature の記載例 |
 
 ## 共通情報 COMMON {#common} 
 
@@ -139,9 +139,8 @@ Value
   - アノテーションファイルでは全てのエントリに共通な情報を入力するために COMMON というエントリ名を使用することができます。
   - COMMON エントリに記載された情報はデータベースに読み込まれる際に全てのエントリに反映されます。
   - 通常 COMMON は SUBMITTER/REFERENCE/COMMENT 等で使用しますが, Feature
-    以下(Feature, Location, Qualifier,
-    Value)の情報が全てのエントリに共通であれば、[Biological
-    feature](#biological_feature) でも記載できます。
+    以下 (Feature, Location, Qualifier, Value) の情報が全てのエントリに共通であれば、
+    [Biological feature](#biological_feature) でも記載できます。
 
 ### COMMON の活用  {#use_common}
 
@@ -413,7 +412,7 @@ Table Definition](/ddbj/feature-table.html)をご参照ください。
     Qualifier が指定されています。 対象の Feature で、Mandatory qualifier
     と指定されているものは必ず入力してください。 大文字と小文字の区別, \_
     \[underscore\] の使用も対応表の表記に従ってください。
-  - あわせて、[アノテーションファイルのサンプル](#sample) と [登録の見本](/ddbj/example.html)も
+  - あわせて、[アノテーションファイルのサンプル](#sample) と [配列データ記載例](/ddbj/example.html)も
     ご参照ください。
   - CDS の記載に際しましては、[タンパク質コード配列; CDS feature について](/ddbj/cds.html)を
     ご参照ください。

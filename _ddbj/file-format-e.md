@@ -125,7 +125,7 @@ Other
 |---|
 | [Feature Table Definition](/ddbj/feature-table-e.html)        | version 11.3                                                   |
 | [Feature/Qualifier usage matrix](https://docs.google.com/spreadsheets/d/1qosakEKo-y9JjwUO_OFcmGCUfssxhbFAm5NXUAnT3eM/edit?gid=0#gid=0) |                                                                |
-| [Example of Submission](/ddbj/example-e.html)              | Examples of features in [DDBJ flat file](/ddbj/flat-file.html) |
+| [Description Examples of Sequence Data](/ddbj/example-e.html) | Examples of features in [DDBJ flat file](/ddbj/flat-file.html) |
 
 ## COMMON {#common} 
 
@@ -417,7 +417,7 @@ Example: source and CDS features in annotation file (<span class="red">Requierd<
   - You can find the rule to describe Location on [Description of Location](/ddbj/location-e.html).
   - You can see Qualifiers are legal for each Feature in [Feature/Qualifier Usage Matrix](/assets/files/pdf/ddbj/fq-e.pdf). Some of
     Features have mandatory Qualifier(s). Please be sure to specify Features and Qualifiers according to their name in the table. They are strictly defined such as case-sensitive (to distinguish upper case or lower), to use "\_" \[underscore\], and so on.
-  - See also [Sample annotation file](#sample) and [Example of Submission](/ddbj/example-e.html)
+  - See also [Sample annotation file](#sample) and [Description Examples of Sequence Data](/ddbj/example-e.html)
   - When you describe CDS features, [Protein Coding Sequence; CDS feature](/ddbj/cds-e.html) would be helpful.
   - Files containing CDS feature(s) should be checked with [UME](/ddbj/ume-e.html) or [transChecker](/ddbj/transchecker-e.html).
 

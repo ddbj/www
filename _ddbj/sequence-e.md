@@ -98,6 +98,6 @@ If the length of the gap region cannot be estimated, we recommend to indicate th
 To indicate the region of the sequencing gap, use [gap](/ddbj/features-e.html#gap) or [assembly_gap](/ddbj/features-e.html#assembly_gap) feature.    
     
 In cases of exome or the like, indicate intron regions by gap features.    
-See [Example of Submission G: Sequencing gap](/ddbj/example-e.html#G)    
+See [Description Examples of Sequence Data G: Sequencing gap](/ddbj/example-e.html#G)    
     
 On the other hand, the convenience of mutual alignment has nothing to do with array data registration, so it is prohibited to insert 'n' as a non-existent region.    
