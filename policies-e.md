@@ -216,7 +216,7 @@ Research Organization of Information and Systems
 National Institute of Genetics
 Bioinformation and DDBJ Center
 
-Contact Method: By [Contact Form](/contact-e.html)
+Contact Method: By [Contact Form](https://forms.gle/ZXteuEPM4SSm5HUt8)
 
 ## Data Submission Guideline {#data-submission-guideline}
 This is a guideline for submitting data to the databases operated by the Bioinformation and DDBJ Center (hereinafter referred to as 'Center'), and sets forth the rights of submitters and items to be observed.

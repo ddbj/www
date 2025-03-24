@@ -36,4 +36,4 @@ Not restricted.
 
 [Head of DDBJ center](about/staff-e.html)
 
-I you have questions, please contact us from [here](contact-ddbj-e.html).
+I you have questions, please contact us from [here](https://forms.gle/ZXteuEPM4SSm5HUt8).

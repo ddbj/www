@@ -21,5 +21,5 @@ Confirm following points.
   - You have to use correct names for [feature](/ddbj/features-e.html)
     and [qualifier](/ddbj/qualifiers-e.html) keys.
 
-If you still have any problem, contact us from [Contact](https://forms.gle/7g2YCoBjqvbBBW9V8).
+If you still have any problem, contact us from [Contact](https://forms.gle/ZXteuEPM4SSm5HUt8).
 

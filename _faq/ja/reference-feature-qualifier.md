@@ -14,5 +14,5 @@ lang: ja
  - [The DDBJ/EMBL/GenBank Feature Table Definition](/ddbj/feature-table.html)
  - [Feature key の定義](/ddbj/features.html)
  - [Qualifier key の定義](/ddbj/qualifiers.html)
- - [登録の見本](/ddbj/example.html)
+ - [配列データ記載例](/ddbj/example.html)
  - [Feature/Qualifier 対応一覧表](/ddbj/features.html#usage)

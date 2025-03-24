@@ -20,7 +20,7 @@ a) Publish your sequences through DDBJ.
 b) Send DDBJ flat files of your submission to the reviewer
 : When the submitter requests to us, we send the text file including DDBJ flat files to the submitter. So, please send us your request with all of accession numbers to get DDBJ flat file(s) of your submission. Then, you can forward the text file to the reviewer.
 
-Contact us from [Contact](https://forms.gle/7g2YCoBjqvbBBW9V8) if necessary.   
+Contact us from [Contact](https://forms.gle/ZXteuEPM4SSm5HUt8) if necessary.   
 
 
 For DRA/GEA/JGA submissions, please see [How to provide my private data to journal reviewers?](/faq/en/reviewer-access-e.html).

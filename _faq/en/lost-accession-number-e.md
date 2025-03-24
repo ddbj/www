@@ -10,7 +10,7 @@ date: 2014-07-01T16:50:54
 lang: en
 ---
 
-If you have specific ID for your data other than accession number, such as EntryID or any, contact us from [contact form](/contact-ddbj-e.html#to-ddbj) with ID and E-mail address of [contact person](/ddbj/submission-e.html#contact).    
+If you have specific ID for your data other than accession number, such as EntryID or any, contact us from [contact form](https://forms.gle/ZXteuEPM4SSm5HUt8) with ID and E-mail address of [contact person](/ddbj/submission-e.html#contact).    
 In case of uncertain, tell us following items as far as you know, then we will search your data. 
 - Your name
 - Your affiliation at the time of submission

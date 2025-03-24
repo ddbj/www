@@ -11,4 +11,4 @@ lang: ja
 ---
 
 当該データの[登録者](/ddbj/submission.html#terms)としてご登録いただいている方からの依頼ならば可能です。  
-アクセッション番号を明記の上 [お問い合わせ](https://forms.gle/rRrVkcjyMoXQhFVn7) よりご依頼ください。
+アクセッション番号を明記の上 [お問い合わせ](https://forms.gle/zV4cYCnRCefd4FSz9) よりご依頼ください。

@@ -52,7 +52,7 @@ It is incorrect to submit the sequencer output 'as is' without scrutinizing it.
   - [Remove unreliable regions, etc.](#noise)
   - [Make the direction of nucleotide sequences the same strandedness](#complement)
   - [Indicate sequecing gaps](#gap)
-  - It is no problem to assemble and/or to contig as long as they are within the scope of scientific reproduction of primary structure. 
+  - It is no problem to construct assemblies and/or contigs as long as they are within the scope of scientific reproduction of primary structure. 
   - If you need to avoid virus contamination for expression analysis or so, remove viral sequences by computational preprocessing.  
 
 ### Remove regions derived from vector  {#vector}

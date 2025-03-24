@@ -20,7 +20,7 @@ In principle, you cannot remove your sequence data from DDBJ retrieval system: [
 
 However, if there is some specific reason for removing your sequence data (i.e. some error is found, etc.), we can restrict access to your sequence data. 
 
-Please send your request from [contact form](/contact-ddbj-e.html#to-ddbj) with the following contents.
+Please send your request from [DDBJ Update form](https://forms.gle/txmEtADnPpY2rnjKA) with the following contents.
  - Accession numbers:
  - Reason in brief:
  - New hold-date: (e.g. 2019/06/25)
@@ -35,4 +35,4 @@ References
 
 ## DRA {#dra}
 
-[Contact the DRA team](/dra/update-e.html#delete) to delete public DRA data.
+[Contact the DRA team](https://forms.gle/d9cZxyzQzxPMSqW59) to delete public DRA data.

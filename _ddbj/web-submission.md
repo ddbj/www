@@ -106,8 +106,8 @@ BioProject/BioSample との連携のために [DBLINK](/ddbj/flat-file.html#DBLI
 ## 登録データの更新・お問い合わせ
 
   - Web版塩基配列登録システム では新規に登録するデータのみを受け付けております。修正用のデータを送らないでください。 
-  - アクセッション番号を取得済のデータの修正については「[登録データの修正・更新](/ddbj/update.html#ddbj)」をご覧ください。
-  - 入力途中でのトラブルは、"Submission ID" とともに、[「お問い合わせフォーム」](/contact-ddbj.html)よりご連絡ください。
+  - アクセッション番号を取得済のデータの修正については [DDBJ 更新依頼フォーム](https://forms.gle/mcQaJshvAKRdggz16)よりご連絡ください。
+  - 入力途中でのトラブルは、"Submission ID" とともに、[お問い合わせフォーム](https://forms.gle/zV4cYCnRCefd4FSz9)よりご連絡ください。
 
 
 <div class="start-button" markdown="1">

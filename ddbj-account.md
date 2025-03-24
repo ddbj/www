@@ -86,4 +86,4 @@ IdentityFile ~/.ssh/id_ed25519
 
 ### その他 {#other}
 
-[お問い合わせフォーム](/contact-ddbj.html)で「問い合わせ先： DDBJ アカウント」を選択してお問い合わせください。
+[お問い合わせフォーム](https://forms.gle/zV4cYCnRCefd4FSz9)で「問い合わせ先： DDBJ アカウント」を選択してお問い合わせください。

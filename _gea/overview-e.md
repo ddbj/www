@@ -34,7 +34,7 @@ GEA accepts all functional genomics data generated from microarray or next-gener
                <li>methyl-seq, bisulfite-seq</li>
                <li>SNP microarray genotyping</li>
             </ul>
-            <p>If you have questions about whether GEA can accept your data type, please <a href="/contact-ddbj-e.html">contact us</a>.</p>
+            <p>If you have questions about whether GEA can accept your data type, please <a href="https://forms.gle/ZXteuEPM4SSm5HUt8">contact us</a>.</p>
          </td>
          <td>
             <ul>

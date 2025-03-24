@@ -31,7 +31,7 @@ GEA はマイクロアレイや次世代シークエンサから出力される�
             <li>methyl-seq、bisulfite-seq</li>
             <li>SNP マイクロアレイ genotyping</li>
          </ul>
-         <p>データが GEA に登録可能かどうか不明な場合は<a href="/contact-ddbj.html">お問い合わせください</a>。</p>
+         <p>データが GEA に登録可能かどうか不明な場合は<a href="https://forms.gle/zV4cYCnRCefd4FSz9">お問い合わせください</a>。</p>
       </td>
       <td>
          <ul>
@@ -85,4 +85,4 @@ FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
 
 ## 更新 {#update}
 
-データを更新・削除は[フォーム](https://forms.gle/PzTzxuYiMenc8CCR6)から GEA チームに依頼してください。
+データを更新・削除は[GEA 更新依頼](https://forms.gle/PzTzxuYiMenc8CCR6)から GEA チームに依頼してください。
