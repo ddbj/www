@@ -11,9 +11,14 @@ To use the data submission and analysis services of Bioinformation and DDBJ Cent
 ## Creating a new account {#create-account}
 
 1. Access [DDBJ Account](https://accounts.ddbj.nig.ac.jp) and click \[Create an account\]. After entering the account information, agree to the [DDBJ Center Terms of Use](/policies-e.html) and click \[Create Account\].
-2. A confirmation email will be sent to the provided email address. Click the link in the email to activate your account.
+2. Sign in with the entered login ID and password.
+3. A confirmation email will be sent to the provided email address. Click the link in the email to activate your account.
 
-## Cautions on account creation {#caution}
+## Confirmation mail for first-time login {#first}
+
+初回ログイン時、登録されているメールアドレスに確認メールが送信されます。メールの内容に従い、アカウントを有効化してください。
+
+### Cautions on account creation {#caution}
 
 - The account ID must be 3–24 characters long and can include lowercase letters, numbers, "\_" (underscore), and "-" (hyphen). The first character cannot be a symbol ("\_", "-"). Once created, the account ID cannot be changed.
 - If applying for data submission or usage in the NBDC Human Database Application System, additional information besides the required fields is necessary.
@@ -33,7 +38,11 @@ With a DDBJ account, you can use the following services.
 
 It takes approximately 5 minutes for account creation or updates to be reflected in the D-way submission system, NBDC Human Database Application System, JGA, and AGD.
 
-## Cautions on using the NBDC Human Database Application System {#humandbs}
+### Confirmation email for the first-time login {#first}
+
+When logging in for the first time, a confirmation email will be sent to your registered email address. Follow the instructions in the email to activate your account.
+
+### Cautions on using the NBDC Human Database Application System {#humandbs}
 
 When submitting an application in Japanese through the NBDC Human Database Application System, additional information including Japanese names and detailed affiliations is required:
 
