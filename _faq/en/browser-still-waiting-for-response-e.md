@@ -21,8 +21,8 @@ If not resolved, confirm if you use either of browsers
 If not, change to Firefox or Chrome and reopen the URL.
 
 If you still have any problem, please contact us with followings from
-[contact form](/contact-ddbj-e.html#to-ddbj) by selecting the item,
-"DDBJ Nucleotide Sequence Submission System".
+[contact form](https://forms.gle/ZXteuEPM4SSm5HUt8) by selecting the item,
+"DDBJ : Nucleotide Sequence Submission System (NSSS)".
 
   - URL
   - Number of your sequences
