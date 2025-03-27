@@ -17,7 +17,7 @@ lang: ja
 {:.contact}
 | 問い合せ先 | フォーム/窓口 |
 |---|
-| DDBJ センター | [DDBJ センター問い合わせフォーム](https://forms.gle/rRrVkcjyMoXQhFVn7) |
+| DDBJ センター | [DDBJ センター問い合わせフォーム](https://forms.gle/zV4cYCnRCefd4FSz9) |
 | 遺伝研スーパーコンピュータ | [遺伝研スパコンに関する質問窓口](https://sc.ddbj.nig.ac.jp/application/reference/) |
 
 

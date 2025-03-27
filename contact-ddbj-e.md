@@ -24,7 +24,7 @@ lang: en
 {:.contact}
 | Database | Form |
 |---|
-| DDBJ | [Application Form for DDBJ Update](https://forms.gle/j1sjeDGKRXuKJWaU6) |
+| DDBJ | [Application Form for DDBJ Update](https://forms.gle/ZXteuEPM4SSm5HUt8) |
 | BioProject/BioSample/DRA | [Application Form for BioProject/BioSample/DRA Update](https://forms.gle/d9cZxyzQzxPMSqW59) |
 | GEA | [Application Form for GEA Update](https://forms.gle/TtzttjjxShnJ1LxdA) |
 | MetaboBank | [Application Form for MetaboBank Update](https://forms.gle/5TAMFHAWmhjZTrny7) |
