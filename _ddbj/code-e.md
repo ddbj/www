@@ -6,20 +6,14 @@ category: ddbj
 current_tab: flat_file
 lang: en
 related_pages:
-  - title: DDBJ flat file format
-    url: /ddbj/flat-file-e.html
-  - title: Feature Key
-    url: /ddbj/features-e.html
-  - title: Qualifier key
-    url: /ddbj/qualifiers-e.html
-  - title: Organism qualifier
-    url: /ddbj/organism-e.html
-  - title: Description of Location
-    url: /ddbj/location-e.html
-  - title: Protein Coding Sequence; CDS feature
-    url: /ddbj/cds-e.html
   - title: The Genetic Codes
     url: /ddbj/geneticcode-e.html
+  - title: DDBJ flat file format
+    url: /ddbj/flat-file-e.html
+  - title: Qualifier key
+    url: /ddbj/qualifiers-e.html
+  - title: Protein Coding Sequence; CDS feature
+    url: /ddbj/cds-e.html
   - title: Description Examples of Sequence Data
     url: /ddbj/example-e.html
 ---
