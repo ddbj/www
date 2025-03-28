@@ -333,14 +333,6 @@ category: about
         </div>     
         </li> 
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/takai.jpg" title="高井 大輔"></p>
-        <div class="explanation">
-            <p class="name">高井 大輔</p>
-            <p class="name">Daisuke Takai</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li>
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yasuda.jpg" title="安田 智彦"></p>
         <div class="explanation">
             <p class="name">安田 智彦</p>
