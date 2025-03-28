@@ -2,14 +2,12 @@ top_news:
  ja:
     - title: (2月14日 - 3月中旬) スパコンシステムリプレースに伴うサービス停止のお知らせ
       path: 2025-02-06
-    - title: 登録者アカウントの名称の変更
-      path: 2025-03-14
     - title: お詫び： スパコンシステムリプレースに伴うサービス停止期間の延長について
       path: 2025-03-25
+    - title: お詫び： システム停止に伴うデータ公開遅延について
+      path: 2025-03-28
  en:
     - title: (14th February - mid-March) Suspension of the services due to the NIG Supercomputer replacement
       path: 2025-02-06-e
-    - title: Changing the Name of the Submitter Account
-      path: 2025-03-14-e
     - title: Apologies for extension of service suspension period due to the NIG Supercomputer replacement
       path: 2025-03-25-e
