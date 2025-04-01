@@ -297,13 +297,6 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>  
-        <li class="staff"> 
-        <p class="photo"><img src="/assets/images/staff/yasuda.jpg" title="Tomohiko Yasuda"></p>
-        <div class="explanation">
-            <p class="name">Tomohiko Yasuda</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li> 
     </ul>
     </div>
     <h2 id="secretary">Secretaries</h2>

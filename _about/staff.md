@@ -331,15 +331,7 @@ category: about
             <p class="name">Yoshimasa Takahashi</p>
             <p class="position">運用 SE</p>
         </div>     
-        </li> 
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/yasuda.jpg" title="安田 智彦"></p>
-        <div class="explanation">
-            <p class="name">安田 智彦</p>
-            <p class="name">Tomohiko Yasuda</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li> 
+        </li>  
     </ul>
     </div>
     <h2 id="secretary">秘書</h2>
