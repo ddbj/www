@@ -6,8 +6,14 @@ top_news:
       path: 2025-03-25.html
     - title: お詫び： システム停止に伴うデータ公開遅延について
       path: 2025-03-28.html
+    - title: 登録データの公開再開時期のお知らせ
+      path: 2025-04-01.html
  en:
     - title: (14th February - mid-March) Suspension of the services due to the NIG Supercomputer replacement
       path: 2025-02-06-e.html
     - title: Apologies for extension of service suspension period due to the NIG Supercomputer replacement
       path: 2025-03-25-e.html
+    - title: Apologies for delay in data release due to system downtime
+      path: 2025-03-28-e.html
+    - title: Resuming publication of registered data
+      path: 2025-04-01-e.html
