@@ -6,7 +6,7 @@ lang: en
 
 ## Data upload {#upload} 
 
-This page explains how to upload data files for DRA/GEA/DDBJ/MetaboBank to the DDBJ file server.
+This page explains how to upload data files by using sftp for DRA/GEA/DDBJ/MetaboBank to the DDBJ file server.
 
 ### Host name and port number  {#hostandport}
 
@@ -28,54 +28,28 @@ Upload [JGA](/jga/submission-step-e.html) data files to the different server.
 
 ### Linux/Mac OS X {#terminal-linux}
 
-Upload files by using scp.
-
-Command format:  
-scp -i \<Your private key> \<Your Files> \<DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory>
+Login to sftp. If prompted for a passphrase, enter the passphrase.  
+```
+sftp -i <Your private key> <DDBJ account username>@ftp-private.ddbj.nig.ac.jp
+```
 
 - \<Your private key\>: the private key for authentication which is pair of a public key registered to your DDBJ account. For example, ~/.ssh/id_rsa
-- \<Your Files\>: Files to be uploaded.  
-For example, strainA_1.fastq, raw1.txt raw2.txt (raw1.txt and raw2.txt) and *.bam (files with bam extension specified by a wild card).
-- \<DDBJ Login ID\>: DDBJ Login ID. For example, test07.
-- \<Destination directory\>: the destination directory.   
-For example, DRA: \<DRA submission ID\>, GEA: \<GEA submission ID\>, DDBJ: /mass and MetaboBank: /metabobank.
+- \<DDBJ account username\>: DDBJ Account Username. For example, test07.
+
+After logging in, you will enter interactive mode.
+```
+sftp>
+```
+
+Move to the upload directory and upload the file.  
 
 Example commands (DRA).  
 ```
-$ scp -i ~/.ssh/id_rsa strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018
+sftp> cd test07-0018
+sftp> put strainA_1.fastq
 ```
 
-Enter the passphrase (if setted for the key).
-```
-Enter passphrase for key '/home/you/.ssh/id_rsa': 
-```
-
-You can directly handle the uploaded files by logging in the server.   
-SSH login the server by executing,  
-```
-$ ssh -i <Your private key> <DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp
-```
-
-Example commands.  
-```
-$ ssh -i ~/.ssh/id_rsa test07@ftp-private.ddbj.nig.ac.jp
-```
-
-Enter the passphrase (if setted for the key).
-```
-Enter passphrase for key '/home/you/.ssh/id_rsa':
-```
-
-After logging in successfully, the following prompt is displayed.
-```
-[test07@at056 ~]$ 
-```
-
-The login environment is private for the submitter. Users other than the submitter cannot access the data.  
-Executable commands are restricted to the following ones. Users can delete unnecessary files.  
-```
-ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
-```
+For commands available in sftp interactive mode, please refer to the [manual page](https://manpages.ubuntu.com/manpages/xenial/man1/sftp.1.html).
 
 ### PowerShell (Windows) {#ps}
 
@@ -84,54 +58,28 @@ This section explains how to upload files by commands using Windows PowerShell.
 Searh and run "PowerShell" in the Windows start menu.   
 <a href="/assets/images/books/ps-run.jpg" title="Search and run PowerShell" class="group1"><img src="/assets/images/books/ps-run.jpg" alt="Run PowerShell" title="Search and run PowerShell" class="w500"></a>   
 
-Upload files by scp.  
+Login to sftp. If prompted for a passphrase, enter the passphrase.  
+```
+sftp -i <Your private key> <DDBJ account username>@ftp-private.ddbj.nig.ac.jp
+```
 
-Command format:  
-scp -i \<Your openSSH-format private key\> \<Your Files\> \<DDBJ Login ID\>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory\>
+- \<Your private key\>: the private key for authentication which is pair of a public key registered to your DDBJ account. For example, ~/.ssh/id_rsa
+- \<DDBJ account username\>: DDBJ Account Username. For example, test07.
 
-- \<Your openSSH-format private key\>: the private key for authentication which is pair of a public key registered to your DDBJ account. For example, ~/.ssh/id_rsa
-- \<Your Files\>: Files to be uploaded.  
-For example, strainA_1.fastq, raw1.txt raw2.txt (raw1.txt and raw2.txt) and *.bam (files with bam extension specified by a wild card).
-- \<DDBJ Login ID\>: DDBJ Login ID. For example, test07.
-- \<Destination directory\>: the destination directory.   
-For example, DRA: \<DRA submission ID\>, GEA: \<GEA submission ID\>, DDBJ: /mass and MetaboBank: /metabobank.
+After logging in, you will enter interactive mode.
+```
+sftp>
+```
+
+Move to the upload directory and upload the file.  
 
 Example commands (DRA).  
 ```
-> scp -i ~/.ssh/id_rsa strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018
+sftp> cd test07-0018
+sftp> put strainA_1.fastq
 ```
 
-Enter the passphrase (if setted for the key).
-```
-Enter passphrase for key '/home/you/.ssh/id_rsa':
-```
-
-You can directly handle the uploaded files by logging in the server.   
-SSH login the server by executing,  
-```
-$ ssh -i <Your private key> <DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp
-```
-
-Example commands.  
-```
-$ ssh -i ~/.ssh/id_rsa test07@ftp-private.ddbj.nig.ac.jp
-```
-
-Enter the passphrase (if setted for the key).
-```
-Enter passphrase for key '/home/you/.ssh/id_rsa':
-```
-
-After logging in successfully, the following prompt is displayed.
-```
-[test07@at056 ~]$ 
-```
-
-The login environment is private for the submitter. Users other than the submitter cannot access the data.  
-Executable commands are restricted to the following ones. Users can delete unnecessary files.  
-```
-ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
-```
+For commands available in sftp interactive mode, please refer to the [manual page](https://manpages.ubuntu.com/manpages/xenial/man1/sftp.1.html).
 
 ## WinSCP (Windows) {#winscp}
 
@@ -145,7 +93,7 @@ Be sure to select the "binary mode" for file transfer. Do NOT select the "text m
 - File protocol: SFTP
 - Host name: ftp-private.ddbj.nig.ac.jp
 - Port number: 22
-- User name: (DDBJ Login ID)
+- User name: (DDBJ Account Username)
 - Password: (Leave empty)
 
 <a href="/assets/images/books/winscp1_400.jpg" title="Select a private key 1" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="Select a private key 1" title="Select a private key 1" class="w500"></a>
@@ -177,7 +125,7 @@ Set as follows.
 * SFTP (SSH File Transfer Protocol)
 * Server: ftp-private.ddbj.nig.ac.jp
 * Port: 22
-* Username: (DDBJ Login ID)
+* Username: (DDBJ Account Username)
 * Password: (Leave empty)
 * SSH Private Key: Select a private key paired with a public key registered to your DDBJ account for authentification.
 * Add to Keychain: (Check)
@@ -193,7 +141,7 @@ After login successfully, your private directory in the server is displayed in t
 ## Trouble-shooting {#trouble}
 
 Please see the following FAQs.  
-* [I can not scp transfer my files](/faq/en/scp-e.html).  
+* [I can not scp transfer my files](/faq/en/sftp-e.html).  
 * [Access to the ftp-private is blocked by the remote host key identification warning](/faq/en/known-hosts-e.html).  
 
 

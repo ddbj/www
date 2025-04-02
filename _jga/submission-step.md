@@ -143,7 +143,7 @@ $ put wgs1.fastq
 
 拡張子 fastq の全てのファイルをアップロード。
 ```
-$ mput *.fastq
+$ put *.fastq
 ```
 
 ### WinSCP でのアップロード {#winscp}

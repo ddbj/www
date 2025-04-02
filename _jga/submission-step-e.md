@@ -128,7 +128,7 @@ $ put wgs1.fastq
 
 Upload all files with "fastq" in the extensions.
 ```
-$ mput *.fastq
+$ put *.fastq
 ```
 
 ### Upload files by WinSCP {#winscp}

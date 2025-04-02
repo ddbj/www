@@ -29,58 +29,28 @@ DRA と GEA ではアップロード先ディレクトリの下にサブディ�
 
 #### Linux/Mac OS X {#terminal-linux}
 
-ファイルを SCP 転送します。
+sftp ログイン。パスフレーズの入力を求められた場合は、パスフレーズを入力します。   
+```
+sftp -i <Your private key> <DDBJ account username>@ftp-private.ddbj.nig.ac.jp
+```
 
-コマンドの形式:  
-scp -i \<Your private key> \<Your Files> \<DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory>
+- \<Your private key\>: DDBJ アカウントに登録した認証用公開鍵とペアになる秘密鍵。例 ~/.ssh/id_rsa
+- \<DDBJ account username\>: DDBJ アカウントのユーザ名 例 test07
 
-- \<Your private key for authentication\>: DDBJ アカウントに登録した認証用公開鍵とペアになる秘密鍵。例 ~/.ssh/id_rsa
-- \<Your Files\>: 転送するファイル。  
-例: strainA_1.fastq、raw1.txt raw2.txt (raw1.txt と raw2.txt)、*.bam (拡張子 bam の全ファイルをワイルドカードで指定)
-- \<DDBJ Login ID\>: DDBJ Login ID。例 test07
-- \<Destination directory\>: アップロード先ディレクトリ。  
-例 DRA: \<DRA submission ID\>、GEA: \<GEA submission ID\>、DDBJ: /mass、MetaboBank: /metabobank
+ログインすると対話モードになります。  
+```
+sftp>
+```
+
+アップロード先ディレクトリに移動して、ファイルをアップロードします。
 
 コマンドの例 (DRA)   
 ```
-$ scp -i ~/.ssh/id_rsa strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018
+sftp> cd test07-0018
+sftp> put strainA_1.fastq
 ```
 
-パスフレーズを入力します（鍵にパスフレーズを設定した場合）。
-
-```
-Enter passphrase for key '/home/you/.ssh/id_rsa': 
-```
-
-サーバにログインし、直接ファイルを操作することができます。サーバに SSH でログインします。
-
-```
-$ ssh -i <Your private key> <DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp
-```
-
-コマンドの例
-```
-$ ssh -i ~/.ssh/id_rsa test07@ftp-private.ddbj.nig.ac.jp
-```
-
-パスフレーズを入力します（鍵にパスフレーズを設定した場合）。
-
-```
-Enter passphrase for key '/home/you/.ssh/id_rsa':
-```
-
-ログインに成功すると、次のようなコマンドプロンプトが表示されます。
-
-```
-[test07@at056 ~]$ 
-```
-
-ログイン環境は、登録者専用のプライベート環境になっており、登録者以外はアクセスすることができません。  
-実行できるコマンドは下記のものに制限されています。不要なファイルの削除は登録者が実施することができます。  
-
-```
-ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
-```
+sftp の対話モードで利用できるコマンドは[マニュアルページ](https://manpages.ubuntu.com/manpages/xenial/man1/sftp.1.html)をご覧ください。
 
 #### PowerShell (Windows) {#ps}
 
@@ -89,56 +59,28 @@ Windows PowerShell を使ってコマンドラインでデータを転送する�
 スタートメニューで "powershell" と入力し、検索されたアプリ "PowerShell" を起動します。   
 <a href="/assets/images/books/ps-run.jpg" title="PowerShell を検索して起動" class="group1"><img src="/assets/images/books/ps-run.jpg" alt="PowerShell を検索して起動" title="PowerShell を検索して起動" class="w500"></a>   
 
-ファイルを SCP 転送します。
-コマンドの形式:  
-scp -i \<Your private key\> \<Your Files\> \<DDBJ Login ID\>@ftp-private.ddbj.nig.ac.jp:~/\<Destination directory\>
+sftp ログイン。パスフレーズの入力を求められた場合は、パスフレーズを入力します。   
+```
+sftp -i <Your private key> <DDBJ account username>@ftp-private.ddbj.nig.ac.jp
+```
 
 - \<Your private key\>: DDBJ アカウントに登録した認証用公開鍵とペアになる秘密鍵。例 ~/.ssh/id_rsa
-- \<Your Files\>: 転送するファイル。   
-例: strainA_1.fastq、raw1.txt raw2.txt (raw1.txt と raw2.txt)、*.bam (拡張子 bam の全ファイルをワイルドカードで指定)
-- \<DDBJ Login ID\>: DDBJ Login ID。例 test07
-- \<Destination directory\>: アップロード先ディレクトリ。  
-例 DRA: \<DRA submission ID\>、GEA: \<GEA submission ID\>、DDBJ: /mass、MetaboBank: /metabobank
+- \<DDBJ account username\>: DDBJ アカウントのユーザ名 例 test07
 
-コマンドの例 (DRA)  
+ログインすると対話モードになります。  
 ```
-> scp -i ~/.ssh/id_rsa strainA_1.fastq test07@ftp-private.ddbj.nig.ac.jp:~/test07-0018
+sftp>
 ```
 
-パスフレーズを入力します（鍵にパスフレーズを設定した場合）。  
+アップロード先ディレクトリに移動して、ファイルをアップロードします。
+
+コマンドの例 (DRA)   
 ```
-Enter passphrase for key '/home/you/.ssh/id_rsa':
+sftp> cd test07-0018
+sftp> put strainA_1.fastq
 ```
 
-サーバにログインし、直接ファイルを操作することができます。サーバに SSH でログインします。
-
-```
-> ssh -i <Your private key> <DDBJ Login ID>@ftp-private.ddbj.nig.ac.jp
-```
-
-コマンドの例
-```
-> ssh -i ~/.ssh/id_rsa test07@ftp-private.ddbj.nig.ac.jp
-```
-
-パスフレーズを入力します（鍵にパスフレーズを設定した場合）。
-
-```
-Enter passphrase for key '/home/you/.ssh/id_rsa':
-```
-
-ログインに成功すると、次のようなコマンドプロンプトが表示されます。
-
-```
-[test07@at056 ~]$ 
-```
-
-ログイン環境は、登録者専用のプライベート環境になっており、登録者以外はアクセスすることができません。  
-実行できるコマンドは下記のものに制限されています。不要なファイルの削除は登録者が実施することができます。  
-
-```
-ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
-```
+sftp の対話モードで利用できるコマンドは[マニュアルページ](https://manpages.ubuntu.com/manpages/xenial/man1/sftp.1.html)をご覧ください。
 
 #### WinSCP (Windows) {#winscp}
 
@@ -152,7 +94,7 @@ ls cd cp mv rm more mkdir tar gzip gunzip bzip2 bunzip2 zip unzip
 - File protocol: SFTP
 - Host name: ftp-private.ddbj.nig.ac.jp
 - Port number: 22
-- User name: (DDBJ Login ID を入力)
+- User name: (DDBJ Account ユーザ名を入力)
 - Password: (空欄のまま)
 
 <a href="/assets/images/books/winscp1_400.jpg" title="秘密鍵の選択１" class="group1"><img src="/assets/images/books/winscp1_400.jpg" alt="秘密鍵の選択１" title="秘密鍵の選択１" class="w400"></a>
@@ -188,9 +130,9 @@ Cyberduck の設定画面で、以下のように設定します。
 * 転送方式: SFTP (SSH File Transfer Protocol)
 * Server: ftp-private.ddbj.nig.ac.jp
 * Port: 22
-* Username: (DDBJ Login ID を入力)
+* Username: (DDBJ Account ユーザ名を入力)
 * Password: (空欄のまま)
-* SSH Private Key: DDBJ アカウントに登録した公開鍵のペアになる認証用秘密鍵を選択
+* SSH Private Key: DDBJ アカウントに登録した公開鍵のペアになる秘密鍵を選択
 * Add to Keychain: (チェックを入れる)
 
 秘密鍵 (private key) はデフォルトで "ユーザのホームフォルダ .ssh フォルダ (Finder からは見えない隠しフォルダ) > id_rsa" に保存されています。
@@ -205,5 +147,5 @@ Cyberduck の設定画面で、以下のように設定します。
 
 以下の FAQ を参照してください。
 
-* [scp でファイルの転送ができません](/faq/ja/scp.html)
+* [scp でファイルの転送ができません](/faq/ja/sftp.html)
 * [ホスト鍵不一致の警告が表示され ftp-private にアクセスできません](/faq/ja/known-hosts.html)

@@ -157,7 +157,7 @@ $ put wgs1.fastq
 
 拡張子 fastq の全てのファイルをアップロード。
 ```
-$ mput *.fastq
+$ put *.fastq
 ```
 
 ## メタデータとデータの登録 {#metadata-data-submission}
