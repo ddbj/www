@@ -75,16 +75,6 @@ category: about
             </div>
         </li>
     </ul>
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="大久保公策"></p>
-        <div class="explanation">
-            <p class="name">大久保 公策</p>
-            <p class="name">Kosaku Okubo, MD, PhD</p>
-            <p class="position">教授</p>
-        </div>
-        </li>
-    </ul>
     </div>
     <h2 id="database">データベース部門</h2>
     <div class="wrapper">

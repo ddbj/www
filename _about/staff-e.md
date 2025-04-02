@@ -68,15 +68,6 @@ category: about
             </div>
         </li>
     </ul>
-    <ul class="list">        
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="Kosaku Okubo"></p>
-        <div class="explanation">
-            <p class="name">Kosaku Okubo, MD, PhD</p>
-            <p class="position">Professor</p>
-        </div>
-        </li>
-    </ul>
     </div>    
     <h2 id="database">Database Division</h2>
     <div class="wrapper">
