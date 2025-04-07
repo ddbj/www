@@ -12,7 +12,7 @@ related_pages:
     url: /insdc/accessions-e.html
 ---
 
-### Hold-Until-Published data release
+### Hold-Until-Published data release   {#rule}
 
 In principle we release "Hold-Until-Published" data when one of the
 following three conditions is met:
@@ -45,24 +45,23 @@ been confirmed.
     principles 1) and 2) are applied.
 </div>
 
-### Notes on “Hold-Until-Published” data release
+### Notes on "Hold-Until-Published" data release    {#note}
 
 Why is the hold-date required?  
 : One of important policies for DDBJ is that the data submitted to
 DDBJ should be eventually released and shared.  
-So, DDBJ will release your data as soon as possible, if you like to
-do so.  
-However, in many cases, submitter needs to hold the data in the
-meantime, mainly until publication of related academic paper.  
+So, DDBJ will release your data as soon as possible, if you like to do so.    
+However, in many cases, submitter needs to hold the data in the meantime, 
+mainly until publication of related academic paper.  
 In that case, specification of hold-dated is required.  
 The reason why DDBJ asks submitter to specify a hold-date is to
-avoid that the submitted data is left without publication.  
-If you wish your data to be held for a while at DDBJ, be sure to
-specify the exact date (hopefully within one year) on which the
-sequences should be released to the public.  
+avoid that the submitted data is left without publication.    
+If you wish your data to be held for a while at DDBJ, be sure to 
+specify the exact date (hopefully within one year) on which the 
+sequences should be released to the public.    
 In the required time, please contact us to release your data or to
 postpone its hold-date, after seeing Management of data release
-schedule.
+schedule.    
 
 Management of data release schedule
 : 
