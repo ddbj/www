@@ -205,10 +205,12 @@ $MARGIN_BOTTOM: 1rem
           border-bottom: .1rem solid $COLOR_GRAY
     + table
       margin-top: -$MARGIN_BOTTOM - 0.1rem
+
+    $width: 100%
     &.borderbtm-non //add 2025.03.11
       font-family: arial, sans-serif !important
       font-size: 1.5rem
-      width: 100%
+      width: $width
       thead
         tr
           &:hover
@@ -223,6 +225,10 @@ $MARGIN_BOTTOM: 1rem
         &:hover 
           background-color: $COLOR_HOVER
           cursor: default
+    &.borderbtm-non-nw
+      width: 35% // 35%の場合のスタイル
+      @extend .borderbtm-non
+
     &.contact //add 2025.03.11
       line-height: 1.3
       font-size: 100%

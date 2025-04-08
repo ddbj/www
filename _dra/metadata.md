@@ -100,6 +100,7 @@ DDBJ アカウントに登録されているメールアドレスを変更した
 [Library Source](#Library_Source)<a name="Library_Source"></a><span class="red">*</span>
 : ライブラリー構築に用いた試料。
 
+{:.borderbtm-non}
 | Library Source     | Description                                                                        |
 |---|
 | GENOMIC            | Genomic DNA (includes PCR products from genomic DNA).                              |
@@ -115,6 +116,7 @@ DDBJ アカウントに登録されているメールアドレスを変更した
 [Library Selection](#Library_Selection)<a name="Library_Selection"></a><span class="red">*</span>
 : シークエンスに用いたライブラリを構築するためのサンプルの選別や濃縮方法。
 
+{:.borderbtm-non}
 | Library Selection                      | Description                                                                                                                                                                                        |
 |---|
 | RANDOM                                 | Random shearing only.                                                                                                                                                                              |
@@ -150,6 +152,7 @@ DDBJ アカウントに登録されているメールアドレスを変更した
 [Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>
 : ライブラリーの構築手法。
 
+{:.borderbtm-non}
 | Library Strategy                        | Description                                                                                                                                                                                                                                                               |
 |---|
 | WGS                                     | Whole genome shotgun.                                                                                                                                                                                                                                                     |
@@ -198,6 +201,7 @@ DDBJ アカウントに登録されているメールアドレスを変更した
 [Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>
 : シークエンサの機種を選択します。  
 
+{:.borderbtm-non-nw}
 | Instrument Model |
 |---|
 | 454 GS |
@@ -286,6 +290,7 @@ DDBJ アカウントに登録されているメールアドレスを変更した
 [Library Layout](#Library_Layout)<a name="Library_Layout"></a><span class="red">*</span>
 : データファイル中のリード構成を選択します。リードの向き (Forward と Reverse) は Instrument から自動判定されます。2022年12月に Spot Type から Library Layout に表示名が変更になりました。
 
+{:.borderbtm-non-nw}
 | Spot Type | Description |
 |---|
 | single | Single read |
@@ -321,6 +326,7 @@ Run に含めるデータファイルを選択します。
 [File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>
 : シークエンスデータのファイル形式。fastq ファイルの場合、リード長が一定かそうでないかに関わらず全て "fastq" を選択します。
 
+{:.borderbtm-non}
 | File Type        | Description                                                                                                            |
 |---|
 | fastq            | fastq files                                                                                                            |
@@ -346,6 +352,7 @@ Run に含めるデータファイルを選択します。
 [Analysis Type](#Analysis_Type)<a name="Analysis_Type"></a><span class="red">*</span>
 : Analysis の種類を選択します。アライメントデータは Run に登録します。
 
+{:.borderbtm-non}
 |  Analysis Type  |  Description  |
 |---|
 |  De Novo Assembly  |  A placement of sequences including trace, SRA, GI records into a multiple alignment from which a consensus is computed..  |
@@ -368,6 +375,7 @@ Analysis に含めるデータファイルを選択します。
 [File Type](#Analysis_File_Type)<a name="Analysis_File_Type"></a><span class="red">*</span>
 : 解析データのファイル形式。
 
+{:.borderbtm-non}
 |  File Type  |  Description  |
 |---|
 |  bam  |  Binary form of the Sequence alignment/map format for read placements, from the SAM tools project.<br/>See <a href="http://sourceforge.net/projects/samtools/">http://sourceforge.net/projects/samtools/</a>.  |

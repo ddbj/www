@@ -107,6 +107,7 @@ automatically constructed. To enter user-defined titles, download Experiment met
 [Library Source](#Library_Source)<a name="Library_Source"></a><span class="red">*</span>
 : The Library Source specifies the type of source material that is being sequenced.
 
+{:.borderbtm-non}
 | Library Source     | Description                                                                        |
 |---|
 | GENOMIC            | Genomic DNA (includes PCR products from genomic DNA).                              |
@@ -123,6 +124,7 @@ automatically constructed. To enter user-defined titles, download Experiment met
 : Whether any method was used to select and/or enrich the material
 being sequenced.
 
+{:.borderbtm-non}
 | Library Selection | Description |
 |---|
 | RANDOM                                 | Random shearing only.                                                                                                                                                                              |
@@ -158,6 +160,7 @@ being sequenced.
 [Library Strategy](#Library_Strategy)<a name="Library_Strategy"></a><span class="red">*</span>
 : Sequencing technique intended for this library.
 
+{:.borderbtm-non}
 | Library Strategy | Description |
 |---|
 | WGS                                     | Whole genome shotgun.                                                                                                                                                                                                                                                     |
@@ -213,6 +216,7 @@ eCollection 2015. PMID:
 [Instrument](#Instrument)<a name="Instrument"></a><span class="red">*</span>
 : Select a sequencing instrument model.
 
+{:.borderbtm-non-nw}
 | Instrument Model |
 |---|
 | 454 GS |
@@ -303,6 +307,7 @@ eCollection 2015. PMID:
 Directions of reads (Forward or Reverse) are automatically determined from the Instrument values.
 In December 2022, the display name was changed from "Spot Type" to "Library Layout".
 
+{:.borderbtm-non-nw}
 | Spot Type | Description |
 |---|
 | single | Single read |
@@ -348,6 +353,7 @@ in tsv file, this field needs to be specified manually.
 [File Type](#File_Type)<a name="File_Type"></a><span class="red">*</span>
 : The sequence data file format. For the fastq files, select 'fastq' irrespective of read length.
 
+{:.borderbtm-non}
 | File Type | Description |
 |---|
 | fastq            | fastq file                                                                       |
@@ -374,6 +380,7 @@ checksum values.](#supplement-md5)
 [Analysis Type](#Analysis_Type)<a name="Analysis_Type"></a><span class="red">*</span>
 : Select an Analysis type. Submit alignment data to Run in bam format.
 
+{:.borderbtm-non}
 |  Analysis Type  |  Description  |
 |---|
 |  De Novo Assembly  |  A placement of sequences including trace, SRA, GI records into a multiple alignment from which a consensus is computed..  |
@@ -399,6 +406,7 @@ in tsv file, this field needs to be specified manually.
 [File Type](#Analysis_File_Type)<a name="Analysis_File_Type"></a><span class="red">*</span>
 : The analysis data file format.
 
+{:.borderbtm-non}
 | File Type | Description |
 |---|
 | bam |  Binary form of the Sequence alignment/map format for read placements, from the SAM tools project.<br/>See <a href="http://sourceforge.net/projects/samtools/">http://sourceforge.net/projects/samtools/</a>.  |
