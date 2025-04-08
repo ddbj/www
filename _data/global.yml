@@ -6,6 +6,8 @@ top_news:
       path: 2025-03-25.html
     - title: 登録データの公開再開のお知らせ
       path: 2025-04-04.html
+    - title: データ登録再開のお知らせ
+      path: 2025-04-08.html
  en:
     - title: (14th February - mid-March) Suspension of the services due to the NIG Supercomputer replacement
       path: 2025-02-06-e.html
@@ -13,3 +15,5 @@ top_news:
       path: 2025-03-25-e.html
     - title: Resuming publication of registered data
       path: 2025-04-04-e.html
+    - title: Resuming data submission
+      path: 2025-04-08-e.html
