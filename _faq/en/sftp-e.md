@@ -35,7 +35,9 @@ When these are correct, because we do not support technical details regarding us
 
 As requested, the DDBJ Center will investigate access logs to ftp-private.ddbj.nig.ac.jp.
 If there is no record in the access logs, it is possible that communication is not allowed in the user's environment.    
-On April 10, 2025, the IP address of ftp-private.ddbj.nig.ac.jp was changed from 133.39.224.111 to 133.39.233.40. Due to this change, communication that was previously allowed in the user environment may now be blocked. Please ask your network administrator to confirm whether communication to 133.39.233.40 on port 22 is allowed.
+On April 10, 2025, the IP address of ftp-private.ddbj.nig.ac.jp was changed from 133.39.224.111 to 133.39.233.40. Due to this change, communication that was previously allowed in the user environment may now be blocked. Please ask your network administrator to confirm whether communication to 133.39.233.40 on port 22 is allowed.  
+  
+JGA/AGD data transfer server is jga-gw.ddbj.nig.ac.jp 133.39.233.39
 
 ### Check if the user home directory has been created {#home}
 
