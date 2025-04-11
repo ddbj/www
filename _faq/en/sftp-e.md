@@ -31,6 +31,18 @@ When transferring data files by using a private key generated in the other opera
 
 When these are correct, because we do not support technical details regarding use of third-party softwares, please refer to websites of softwares or confirm your system administrators whether ssh, port 22 (DRA/GEA/DDBJ/MetaboBank) and 443 (JGA), is allowed or not.
 
+### Check if communication is allowed in the user environment {#allow}
+
+As requested, the DDBJ Center will investigate access logs to ftp-private.ddbj.nig.ac.jp.
+If there is no record in the access logs, it is possible that communication is not allowed in the user's environment.    
+On April 10, 2025, the IP address of ftp-private.ddbj.nig.ac.jp was changed from 133.39.224.111 to 133.39.233.40. Due to this change, communication that was previously allowed in the user environment may now be blocked. Please ask your network administrator to confirm whether communication to 133.39.233.40 on port 22 is allowed.
+
+### Check if the user home directory has been created {#home}
+
+If you see the following error message, it is possible that the user home directory has not been created on `ftp-private.ddbj.nig.ac.jp` for DDBJ accounts newly created after April 10, 2025.  
+The DDBJ Center will create the user home directory on your behalf, so please [contact us](/contact-ddbj-e.html) with your account name.
+
+
 #### UNPROTECTED PRIVATE KEY FILE WARNING {#unprotected}
 
 If the private key access permission is too open, following error may be shown.  

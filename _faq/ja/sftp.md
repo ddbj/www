@@ -31,6 +31,23 @@ lang: ja
 
 上記でも問題が解決しない場合、DDBJ センターではサードパーティ製ソフトウェアの細かい使い方に関するサポートは提供しておりませんので、ソフトウェアのウェブサイト等をご参照頂くか、所属組織のシステム管理者に ssh (DRA/GEA/DDBJ/MetaboBank はポート 22、JGA ではポート 443) の通信を許可しているかどうか、ご確認ください。
 
+### ユーザ環境で通信が許可されているか {#allow}
+
+ご依頼により DDBJ センターで ftp-private.ddbj.nig.ac.jp へのアクセスログを調査いたします。アクセスログに履歴がない場合は、ユーザ環境において通信が許可されていない可能性があります。   
+2025年4月10日に ftp-private.ddbj.nig.ac.jp の IP アドレスが 133.39.224.111 から 133.39.233.40 に変更になりました。この変更により以前はユーザ環境で許可されていた通信が許可されなくなっている可能性があります。ネットワーク管理者に 133.39.233.40 ポート番号22への通信が許可されているかどうか、ご確認ください。
+
+### ユーザホームが作成されているかどうか {#home}
+
+以下のエラーメッセージが表示される場合は、2025年4月10日以降に新規作成した DDBJ アカウントで、ftp-private.ddbj.nig.ac.jp でユーザホームが作成されていない可能性があります。   
+DDBJ センターでユーザホーム作成処理を実施いたしますので、アカウント名を添えて[ご連絡ください](/contact-ddbj.html)。
+
+```
+sftp -i id_rsa test07@ftp-private.ddbj.nig.ac.jp
+Enter passphrase for key id_rsa':
+client_loop: send disconnect:
+Connection resetConnection closed
+```
+
 #### UNPROTECTED PRIVATE KEY FILE WARNING {#unprotected}
 
 Windows PowerShell の sftp で秘密鍵のアクセス権限が広すぎると以下のエラーになる場合があります。

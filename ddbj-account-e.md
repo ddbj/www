@@ -33,6 +33,10 @@ With a DDBJ account, you can use the following services.
 
 It takes approximately 5 minutes for account creation or updates to be reflected in the D-way submission system, NBDC Human Database Application System, JGA, and AGD.
 
+### Registering an SSH Public Key {#key}
+
+Log in to your [DDBJ Account](https://accounts.ddbj.nig.ac.jp) and select SSH keys. Click New SSH key to upload your SSH public key file or paste the key content directly. Supported formats are RSA, ECDSA, and ED25519.
+
 ### Cautions on using the NBDC Human Database Application System {#humandbs}
 
 When submitting an application in Japanese through the NBDC Human Database Application System, additional information including Japanese names and detailed affiliations is required:
