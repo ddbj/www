@@ -50,6 +50,20 @@ client_loop: send disconnect:
 Connection resetConnection closed
 ```
 
+### 鍵ペアが一致しているかどうか {#pair}
+
+WinSCP では秘密鍵のペアとなる公開鍵を表示することができます。また、DDBJ アカウントでは登録された公開鍵を確認することができます。両者を比較することで秘密鍵と公開鍵がペアになっているかどうか、確認することができます。  
+
+WinSCP の Advanced Site Settings > SSH > Authentication で Display Public Key を押下し、Private key file で指定されている秘密鍵とペアになる公開鍵を表示します。
+
+<a href="/assets/images/books/pkey_check1.jpg" title="WinSCP で秘密鍵とペアになる公開鍵を表示"><img src="/assets/images/books/pkey_check1.jpg" alt="WinSCP で秘密鍵とペアになる公開鍵を表示" title="WinSCP で秘密鍵とペアになる公開鍵を表示" class="w400"></a>   
+
+[DDBJ アカウント](https://accounts.ddbj.nig.ac.jp)にログインし、SSH keys で登録されている公開鍵を表示します。
+
+<a href="/assets/images/books/pkey_check2.jpg" title="DDBJ アカウントに登録されている公開鍵を表示"><img src="/assets/images/books/pkey_check2.jpg" alt="DDBJ アカウントに登録されている公開鍵を表示" title="DDBJ アカウントに登録されている公開鍵を表示" class="w400"></a>   
+
+両者の内容を比較し、一致していることから鍵がペアになっていることを確認できます。一致していない場合は、ペアになっていないので、[新しく鍵ペアを生成](/key.html)、秘密鍵を WinSCP や sftp で指定し、対応する公開鍵を DDBJ アカウントに追加してください。DDBJ アカウントには公開鍵を複数登録することができます。
+
 ### REMOTE HOST IDENTIFICATION HAS CHANGED {#identification}
 
 2025年4月10日に BioProject/BioSample/DRA/GEA システムは新しいスパコンへ移行しました。    

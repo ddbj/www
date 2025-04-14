@@ -52,6 +52,20 @@ client_loop: send disconnect:
 Connection resetConnection closed
 ```
 
+### Checking key pair match {#pair}
+
+WinSCP displays the public key that corresponds to a private key. You can also check the registered public key in your DDBJ account. By comparing the two keys, you can check whether the private and public keys are a pair.
+
+In WinSCP, go to Advanced Site Settings > SSH > Authentication, and click Display Public Key. This will display the public key that pairs with the private key specified in the Private key file field.
+
+<a href="/assets/images/books/pkey_check1.jpg" title="Display the public key that pairs with the private key in WinSCP"><img src="/assets/images/books/pkey_check1.jpg" alt="Display the public key that pairs with the private key in WinSCP" title="Display the public key that pairs with the private key in WinSCP" class="w400"></a>
+
+Log in to your [DDBJ account](https://accounts.ddbj.nig.ac.jp), and display the public key(s) registered under SSH keys.
+
+<a href="/assets/images/books/pkey_check2.jpg" title="Display the public key registered in your DDBJ account"><img src="/assets/images/books/pkey_check2.jpg" alt="Display the public key registered in your DDBJ account" title="Display the public key registered in your DDBJ account" class="w400"></a>
+
+Compare both keys. If they match, the keys form a valid pair. If they do not match, they are not a valid pair. In that case, generate a new key pair, specify the new private key in WinSCP or SFTP, and add the corresponding public key to your DDBJ account. You can register multiple public keys to your DDBJ account.
+
 ### REMOTE HOST IDENTIFICATION HAS CHANGED {#identification}
 
 The BioProject/BioSample/DRA/GEA systems have been migrated to new supercomputer at 10th April 2025.    
