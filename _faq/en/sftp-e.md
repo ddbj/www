@@ -82,6 +82,22 @@ Log in to your [DDBJ account](https://accounts.ddbj.nig.ac.jp), and display the 
 
 Compare both keys. If they match, the keys form a valid pair. If they do not match, they are not a valid pair. In that case, generate a new key pair, specify the new private key in WinSCP, and add the corresponding OpenSSH-format public key to your DDBJ account. You can register multiple public keys to your DDBJ account.
 
+### client_loop: send disconnect: Broken pipe {#broken}
+
+```
+client_loop: send disconnect: Broken pipe
+```
+
+If the above error appears, please add the following configuration to the `.ssh/config` file located in your home directory:
+
+```
+Host *
+ServerAliveInterval 60
+TCPKeepAlive yes
+```
+
+After adding the configuration, close the terminal once and reopen it before running the sftp command again.
+
 ### REMOTE HOST IDENTIFICATION HAS CHANGED {#identification}
 
 The BioProject/BioSample/DRA/GEA systems have been migrated to new supercomputer at 10th April 2025.    

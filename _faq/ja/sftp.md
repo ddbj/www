@@ -80,6 +80,22 @@ WinSCP の Advanced Site Settings > SSH > Authentication で Display Public Key 
 
 両者の内容を比較し、一致していることから鍵がペアになっていることを確認できます。一致していない場合は、ペアになっていないので、[新しく鍵ペアを生成](/key.html)、秘密鍵を WinSCP で指定し、対応する OpenSSH 形式の公開鍵を DDBJ アカウントに追加してください。DDBJ アカウントには公開鍵を複数登録することができます。
 
+### client_loop: send disconnect: Broken pipe {#broken}
+
+```
+client_loop: send disconnect: Broken pipe
+```
+
+sftp で上記のエラーが表示された場合は、ユーザホーム直下の `.ssh/config` ファイルに以下の設定を追加してください。
+
+```
+Host *
+ServerAliveInterval 60
+TCPKeepAlive yes
+```
+
+追加後、ターミナルを一旦閉じ、再度開いてから sftp コマンドをやり直してください。
+
 ### REMOTE HOST IDENTIFICATION HAS CHANGED {#identification}
 
 2025年4月10日に BioProject/BioSample/DRA/GEA システムは新しいスパコンへ移行しました。    
