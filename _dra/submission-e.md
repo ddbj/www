@@ -113,6 +113,10 @@ If you change email address registered in your DDBJ account, you need to update 
 
 ### BioProject {#bioproject}
 
+<div class="attention" markdown="1">
+BioProject may not display properly in your browser. If this happens, please try using your browser's private mode or switch to a different browser (Microsoft Edge has been reported to work well in some cases).
+</div>
+
 Select a project registered in your account or submit a new project from [New submission]. 
 To reference a BioProject registered in another account, please [apply cross-reference](https://docs.google.com/forms/d/e/1FAIpQLSevpYmu-Xt5PiFGecuVQ9gdi2QrUmCUErtj4oLDOXnpWiNjhg/viewform).
 
@@ -126,6 +130,10 @@ After submitting a project, the submitted project is selected.
 {% include image.html url="books//hdra-bp04.jpg" caption="The submitted project is selected" class="w500" %}
 
 ### BioSample {#biosample}
+
+<div class="attention" markdown="1">
+BioSample may not display properly in your browser. If this happens, please try using your browser's private mode or switch to a different browser (Microsoft Edge has been reported to work well in some cases).
+</div>
 
 Select samples (more than one sample is common in the DRA submission) registered in your account or submit new samples from [New submission]. 
 To select a range of samples, check a checkbox and click next box with pressing "Shift" key. 

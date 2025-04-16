@@ -119,6 +119,10 @@ DDBJ アカウントに登録されているメールアドレスを変更した
 
 ### BioProject {#bioproject}
 
+<div class="attention" markdown="1">
+ブラウザーで BioProject が表示されない不具合が生じることがあります。その場合、ブラウザーのプライベートモードや他のブラウザー（Microsoft Edge でうまくいったケースが報告されています）を試してみてください。
+</div>
+
 アカウントで登録した BioProject から該当するものを1つ選びます。
 未登録の場合、[register a project] から新たにプロジェクトを登録します。
 自身のアカウント以外で登録された BioProject を参照したい場合は[外部参照を申請](https://docs.google.com/forms/d/e/1FAIpQLSf1tMKEC_mhztGhtfKV0sLSGt1vY-I4Jb_RLQF64Li1d6_-Xg/viewform)します。
@@ -131,6 +135,10 @@ BioProject の登録方法は「[プロジェクトの登録](/bioproject/submis
 {% include image.html url="books//hdra-bp04.jpg" caption="登録された BioProject が選択された状態" class="w500" %}
 
 ### BioSample {#biosample}
+
+<div class="attention" markdown="1">
+ブラウザーで BioSample が表示されない不具合が生じることがあります。その場合、ブラウザーのプライベートモードや他のブラウザー（Microsoft Edge でうまくいったケースが報告されています）を試してみてください。
+</div>
 
 アカウントで登録した BioSample から該当するものを選びます (一般的に DRA ではサンプルは複数になります)。
 チェックボックスを選択し、続いて Shift キーを押しながら次のボックスをクリックすると、サンプルが範囲選択されます。
