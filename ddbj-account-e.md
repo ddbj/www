@@ -60,7 +60,8 @@ Log in to your [DDBJ Account](https://accounts.ddbj.nig.ac.jp) and select SSH ke
 
 ### Forgot Password {#forgot-password}
 
-Please reset your password.
+Move to log in page by clicking "Sign in" button at [DDBJ Account](https://accounts.ddbj.nig.ac.jp/).  
+Then move to the password reset page by clicking "Forgot Password?"
 
 ### Forgot Username {#forgot-username}
 

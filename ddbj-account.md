@@ -60,7 +60,8 @@ NBDC ヒトデータベース申請システムでは、日本語による申請
 
 ### パスワードを忘れた {#forgot-password}
 
-パスワードリセットを実施してください。
+[DDBJ アカウント](https://accounts.ddbj.nig.ac.jp/) で Sign in を押下し、ログイン画面に移動します。  
+続いて、パスワード入力欄の下にある Forgot Password? からパスワードをリセットします。
 
 ### ユーザ名を忘れた {#forgot-username}
 
