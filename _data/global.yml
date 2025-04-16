@@ -10,6 +10,8 @@ top_news:
       path: 2025-04-16_2.html
     - title: GEA 検証処理は利用できない状態です
       path: 2025-04-16_3.html
+    - title: (5/3-5/6) ゴールデンウィーク中の対応について
+      path: 2025-04-16_4.html
  en:
     - title: (14th February - mid-March) Suspension of the services due to the NIG Supercomputer replacement
       path: 2025-02-06-e.html
@@ -21,3 +23,5 @@ top_news:
       path: 2025-04-16_2-e.html
     - title: The GEA verification process is currently unavailable
       path: 2025-04-16_3-e.html
+    - title: 
+      path: 2025-04-16_4-e.html
