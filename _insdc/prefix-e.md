@@ -376,8 +376,8 @@ PJ      JPO             Patent application
 PK      JPO             Patent application
 PL      KIPO            Patent application
 PM      JPO             Patent application
-PN      DDBJ            
-PO      DDBJ            
+PN      JPO             Patent application
+PO      JPO             Patent application
 PP      GenBank         Direct submission
 PQ      GenBank         Direct submission
 PR      USPTO           Patent application
