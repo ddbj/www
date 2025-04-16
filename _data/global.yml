@@ -6,6 +6,8 @@ top_news:
       path: 2025-04-08.html
     - title: DDBJ Search で新規公開・再公開された DRA が検索できません
       path: 2025-04-16.html
+    - title: DRA 検証処理における不具合
+      path: 2025-04-16-2.html
  en:
     - title: (14th February - mid-March) Suspension of the services due to the NIG Supercomputer replacement
       path: 2025-02-06-e.html
@@ -13,3 +15,5 @@ top_news:
       path: 2025-04-08-e.html
     - title: Newly released or re-released DRAs cannot be searched on DDBJ Search
       path: 2025-04-16-e.html
+    - title: Error in DRA validation process
+      path: 2025-04-16-2-e.html
