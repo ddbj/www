@@ -8,6 +8,8 @@ top_news:
       path: 2025-04-16.html
     - title: DRA 検証処理における不具合
       path: 2025-04-16-2.html
+    - title: GEA 検証処理は利用できない状態です
+      path: 2025-04-16-3.html
  en:
     - title: (14th February - mid-March) Suspension of the services due to the NIG Supercomputer replacement
       path: 2025-02-06-e.html
@@ -17,3 +19,5 @@ top_news:
       path: 2025-04-16-e.html
     - title: Error in DRA validation process
       path: 2025-04-16-2-e.html
+    - title: The GEA verification process is currently unavailable
+      path: 2025-04-16-3-e.html
