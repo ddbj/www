@@ -91,7 +91,19 @@ sftp で上記のエラーが表示された場合は、ユーザホーム直下
 ```
 Host *
 ServerAliveInterval 60
-TCPKeepAlive yes
+TCPKeepAlive no
+```
+
+追加後、ターミナルを一旦閉じ、再度開いてから sftp コマンドをやり直してください。
+
+### ssh 接続が途中で切れる {#disconnect}
+
+ユーザホーム直下の `.ssh/config` ファイルに以下の設定を追加してください。
+
+```
+Host *
+ServerAliveInterval 60
+TCPKeepAlive no
 ```
 
 追加後、ターミナルを一旦閉じ、再度開いてから sftp コマンドをやり直してください。

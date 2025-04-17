@@ -93,7 +93,19 @@ If the above error appears, please add the following configuration to the `.ssh/
 ```
 Host *
 ServerAliveInterval 60
-TCPKeepAlive yes
+TCPKeepAlive no
+```
+
+After adding the configuration, close the terminal once and reopen it before running the sftp command again.
+
+### ssh connection is disconnected {#disconnect}
+
+Please add the following configuration to the `.ssh/config` file located in your home directory:
+
+```
+Host *
+ServerAliveInterval 60
+TCPKeepAlive no
 ```
 
 After adding the configuration, close the terminal once and reopen it before running the sftp command again.
