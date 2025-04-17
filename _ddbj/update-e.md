@@ -28,27 +28,33 @@ Frequently asked questions
 <table>
   <tbody>
     <tr>
-      <th class="first" rowspan="4"><a href="https://forms.gle/TcvmVvw4faD2DV4fA">
+      <th class="first" rowspan="8"><a href="https://forms.gle/txmEtADnPpY2rnjKA">
 Application Form for Data Update Requests</a></th>
-      <td class="second">When your paper was published</td>
+      <td class="second">Release sequence data</td>
     </tr>
     <tr>
-      <td class="second">When your paper was accepted</td>
+      <td class="second">Update paper/citation information</td>
     </tr>
     <tr>
-      <td class="second">To postpone the hold-date</td>
+      <td class="second">Change hold-date</td>
     </tr>
     <tr>
-      <td class="second">To change the contact person, belonging, etc..</td>
+      <td class="second">Cancel not-yet-published data</td>
+    </tr>
+        <tr>
+      <td class="second">Restrict use of public data</td>
+    </tr>
+        <tr>
+      <td class="second"><a href="/faq/en/data-confirm-before-hold-date.html">Confirm data contents before hold date</a></td>
+    </tr>
+        <tr>
+      <td class="second">Change contact person information</td>
+    </tr>
+        <tr>
+      <td class="second"><a href="/faq/en/update-sequence-e.html">Update data content</a></td>
     </tr>
     <tr>
       <th class="borderbtm" rowspan="4">E-mail: ddbjupdt(at)ddbj.nig.ac.jp</th>
-      <td class="second"><a href="/faq/en/update-sequence-e.html">To update your sequence</a></td>
-    </tr>          
-    <tr>
-      <td class="second"><a href="/faq/en/data-confirm-before-hold-date.html">To confirm contents of the data, befoer the hold date.</a></td>
-    </tr>      
-    <tr>
       <td class="second"><a href="/faq/en/how-to-update-many-entries-e.html">To update many entries with a number of corrections</a></td>
     </tr>  
     <tr>

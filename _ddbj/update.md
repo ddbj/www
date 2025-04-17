@@ -28,26 +28,32 @@ lang: ja
 <table>
   <tbody>
     <tr>
-      <th class="first" rowspan="4"><a href="https://docs.google.com/forms/d/e/1FAIpQLScfGjcoEnGgFq0vZ30eDB_zGDy7locmPh_4OCsGErVk8vatvA/viewform">登録データの更新申し込みフォーム</a></th>
-      <td class="second">論文が公開されました</td>
+      <th class="first" rowspan="8"><a href="https://forms.gle/mcQaJshvAKRdggz16">登録データの更新申し込みフォーム</a></th>
+      <td class="second">データの公開</td>
     </tr>
     <tr>
-      <td class="second">論文が受理されました</td>
+      <td class="second">論文情報の追加</td>
     </tr>
     <tr>
-      <td class="second">公開予定日を延期したい</td>
+      <td class="second">公開予定日の変更</td>
     </tr>
     <tr>
-      <td class="second">コンタクトパーソン情報、住所、所属情報を変更したい</td>
+      <td class="second">非公開データのキャンセル</td>
+    </tr>
+        <tr>
+      <td class="second">公開データの非公開化</td>
+    </tr>
+        <tr>
+      <td class="second"><a href="/faq/ja/data-confirm-before-hold-date.html">非公開データの登録内容確認</a></td>
+    </tr>
+        <tr>
+      <td class="second">コンタクトパーソン情報の更新</td>
+    </tr>
+        <tr>
+      <td class="second"><a href="/faq/ja/update-sequence.html">登録内容の更新</a></td>
     </tr>
     <tr>
-      <th class="borderbtm" rowspan="4">メール: ddbjupdt(at)ddbj.nig.ac.jp</th>
-      <td class="second"><a href="/faq/ja/update-sequence.html">塩基配列を更新したい</a></td>
-    </tr>          
-    <tr>
-      <td class="second"><a href="/faq/ja/data-confirm-before-hold-date.html">登録したデータの内容を公開予定日よりも前に確認したい</a></td>
-    </tr>      
-    <tr>
+      <th class="borderbtm" rowspan="2">メール: ddbjupdt(at)ddbj.nig.ac.jp</th>
       <td class="second"><a href="/faq/ja/how-to-update-many-entries.html">更新対象の件数、変更箇所が非常に多い場合</a></td>
     </tr>  
     <tr>
