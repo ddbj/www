@@ -1,27 +1,15 @@
 top_news:
  ja:
-    - title: (2月14日 - 3月中旬) スパコンシステムリプレースに伴うサービス停止のお知らせ
-      path: 2025-02-06.html
-    - title: 4/10 再開 データ登録再開時期のお知らせ
-      path: 2025-04-08.html
     - title: DDBJ Search で新規公開・再公開された DRA が検索できません
       path: 2025-04-16.html
     - title: DRA 検証処理における不具合
       path: 2025-04-16_2.html
-    - title: GEA 検証処理は利用できない状態です
-      path: 2025-04-16_3.html
     - title: (5/3-5/6) ゴールデンウィーク中の対応について
       path: 2025-04-16_4.html
  en:
-    - title: (14th February - mid-March) Suspension of the services due to the NIG Supercomputer replacement
-      path: 2025-02-06-e.html
-    - title: 10th Apr. restart Resuming data submission
-      path: 2025-04-08-e.html
     - title: Newly released or re-released DRAs cannot be searched on DDBJ Search
       path: 2025-04-16-e.html
     - title: Error in DRA validation process
       path: 2025-04-16_2-e.html
-    - title: The GEA verification process is currently unavailable
-      path: 2025-04-16_3-e.html
     - title: (May 3-May 6) Correspondence during the Golden Week holidays
       path: 2025-04-16_4-e.html
