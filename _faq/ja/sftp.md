@@ -96,12 +96,15 @@ sftp コマンドで以下のオプションを指定してください。
 sftp -o ServerAliveInterval=60 -o TCPKeepAlive=no -i id_rsa test07@ftp-private.ddbj.nig.ac.jp 
 ```
 
-ユーザホーム直下の `.ssh/config` ファイルで接続を設定している場合は、以下の設定を追加することでコマンド毎に指定する必要がなくなります。
+ユーザホーム直下の `.ssh/config` ファイルで設定を追加することで、コマンド毎に指定する必要がなくなります。
 
 ```
-Host *
-ServerAliveInterval 60
-TCPKeepAlive no
+Host ddbj-ftp
+  ServerAliveInterval 60
+  TCPKeepAlive no
+  HostName ftp-private.ddbj.nig.ac.jp
+  User test07
+  IdentityFile ~/id_rsa
 ```
 
 追加後、ターミナルを一旦閉じ、再度開いてから sftp コマンドをやり直してください。
