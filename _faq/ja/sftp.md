@@ -86,19 +86,17 @@ WinSCP の Advanced Site Settings > SSH > Authentication で Display Public Key 
 client_loop: send disconnect: Broken pipe
 ```
 
-sftp で上記のエラーが表示された場合は、ユーザホーム直下の `.ssh/config` ファイルに以下の設定を追加してください。
-
-```
-Host *
-ServerAliveInterval 60
-TCPKeepAlive no
-```
-
-追加後、ターミナルを一旦閉じ、再度開いてから sftp コマンドをやり直してください。
+sftp で上記のエラーが表示された場合は、[ssh 接続が途中で切れる](#disconnect)と同じ対策を実施してください。
 
 ### ssh 接続が途中で切れる {#disconnect}
 
-ユーザホーム直下の `.ssh/config` ファイルに以下の設定を追加してください。
+sftp コマンドで以下のオプションを指定してください。   
+
+```
+sftp -o ServerAliveInterval=60 -o TCPKeepAlive=no -i id_rsa test07@ftp-private.ddbj.nig.ac.jp 
+```
+
+ユーザホーム直下の `.ssh/config` ファイルで接続を設定している場合は、以下の設定を追加することでコマンド毎に指定する必要がなくなります。
 
 ```
 Host *

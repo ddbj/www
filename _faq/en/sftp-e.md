@@ -88,19 +88,17 @@ Compare both keys. If they match, the keys form a valid pair. If they do not mat
 client_loop: send disconnect: Broken pipe
 ```
 
-If the above error appears, please add the following configuration to the `.ssh/config` file located in your home directory:
-
-```
-Host *
-ServerAliveInterval 60
-TCPKeepAlive no
-```
-
-After adding the configuration, close the terminal once and reopen it before running the sftp command again.
+If the above error appears when using sftp, please take the same measures as for "[ssh connection is disconnected](#disconnect)".
 
 ### ssh connection is disconnected {#disconnect}
 
-Please add the following configuration to the `.ssh/config` file located in your home directory:
+Please specify the following options with the sftp command.
+
+```
+sftp -o ServerAliveInterval=60 -o TCPKeepAlive=no -i id_rsa test07@ftp-private.ddbj.nig.ac.jp 
+```
+
+If you're configuring the connection in the `.ssh/config` file located in your home directory, adding the following settings will eliminate the need to specify them with each command.  
 
 ```
 Host *
