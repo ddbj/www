@@ -109,7 +109,12 @@ Host ddbj-ftp
   IdentityFile ~/id_rsa
 ```
 
-After adding the configuration, close the terminal once and reopen it before running the sftp command again.
+After adding the configuration, close the terminal once and reopen it before running the sftp command again.  
+With the above config settings, you can access sftp using a shortened command as shown below.
+
+```
+sftp ddbj-ftp
+```
 
 ### REMOTE HOST IDENTIFICATION HAS CHANGED {#identification}
 

@@ -107,7 +107,12 @@ Host ddbj-ftp
   IdentityFile ~/id_rsa
 ```
 
-追加後、ターミナルを一旦閉じ、再度開いてから sftp コマンドをやり直してください。
+追加後、ターミナルを一旦閉じ、再度開いてから sftp コマンドをやり直してください。  
+上記の config 設定の場合、以下のような短縮したコマンドで sftp にアクセスすることができます。
+
+```
+sftp ddbj-ftp
+```
 
 ### REMOTE HOST IDENTIFICATION HAS CHANGED {#identification}
 
