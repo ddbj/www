@@ -45,30 +45,30 @@ to describe the biological nature such as gene function and other property of th
 
 ## The virtual sample of DDBJ flat file  {#The_virtual_sample_of_DDBJ_flat_file}
 
-<pre><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">HUM</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">01-JUN-2009</a>
-<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
+<pre><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-JUN-2009</a>
+<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
             dehydrogenase, partial cds.
-<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   AB000000
-<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     AB000000.1
-<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    .
-<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      Homo sapiens (human)
-  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  Homo sapiens
+<a id="AccessionA" href="#AccessionB">ACCESSION</a>   AB000000
+<a id="VersionA" href="#VersionB">VERSION</a>     AB000000.1
+<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    .
+<a id="SourceA" href="#SourceB">SOURCE</a>      Homo sapiens (human)
+  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Homo sapiens
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
             Catarrhini; Hominidae; Homo.
-<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
-  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
-  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
+  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
   JOURNAL   Unpublished (2009)
-<a id="CommentA" href="/ddbj/flat-file#CommentB">COMMENT</a>     Human cDNA sequencing project.
-<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
+<a id="CommentA" href="#CommentB">COMMENT</a>     Human cDNA sequencing project.
+<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
      <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..450</a>
                      /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="12"
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="GT200015"
@@ -98,7 +98,7 @@ to describe the biological nature such as gene function and other property of th
       301 tgagaaggag gtcaccgtgt tcggctgcag gaaccctaag gagatcccat ggggtgagac
       361 tagcgctgag tttgttgtgg agtacactgg tgttttcact gacaaggaca aggccgttgc
       421 tcaacttaag ggtggtgcta agaaggtctg
-<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>
 
 Flat file displays the information provided by submitters with DDBJ
 format.  
@@ -183,14 +183,15 @@ b: other divisions
 <h4><a href="#ModificationDateA">The date of last release</a></h4>
 </div>
 
-The current publicized date is described. If the entry is updated and reopened to public site, this date will be changed.
+The current publicized date is described. If the entry is updated and reopened to public site, this date will be changed.    
 
 
 <div id="DefinitionB" markdown="1">
 <h3><a href="#DefinitionA">DEFINITION</a></h3>
 </div>
 
-The definition briefly describes the information of gene(s). "DEFINITION" is constructed by each of the three data banks in accordance with standard rules in principle.However, in the case of EST or GSS submission using Mass Submission System, DDBJ will sometimes ask submitters to construct "DEFINITION".
+The definition briefly describes the information of gene(s). "DEFINITION" is constructed by each of the three data banks in accordance with standard rules in principle.    
+However, in the case of EST or GSS submission using Mass Submission System, DDBJ will sometimes ask submitters to construct "DEFINITION".    
 
 [Sample]
 
@@ -276,8 +277,8 @@ Format: [TPA header]: [organism name] [gene name] mRNA for [product name], compl
 This line shows accession number of the entry data.
 
 Conventional sequence data  
-: A unique accession number is issued to the data submitter by each of the three data banks. The accession number is composed of 1 alphabet character and 5 digits (ex. A12345) or 2 alphabet characters and 6 digits (ex. AB123456). The former style was used in 1980s, but later the latter style was introduced because of data explosion.
-<br>The alphabet part is called "prefix". Please refer [the prefix list](/insdc/prefix-e.html).
+: A unique accession number is issued to the data submitter by each of the three data banks.  The accession number is composed of 1 alphabet character and 5 digits (ex. A12345) or 2 alphabet characters and 6 digits (ex. AB123456). The former style was used in 1980s, but later the latter style was introduced because of data explosion.
+<br>The alphabet part is called "prefix". Please refer [the prefix list](/insdc/prefix-e.html). 
 
 : If multiple entries are united to an entry, or if an entry is extensively modified after the submission, the responsible data banks may assign a new accession number to it. In these cases, the new accession number is called the primary accession number, and the old accession number(s) is/are called the secondary accession number(s). In the flat file, the primary accession number is indicated first, then the secondary accession number(s) follows. You can find the same updated entry with both the primary and the secondary accession numbers.
 
