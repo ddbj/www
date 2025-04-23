@@ -217,17 +217,6 @@ cell_type に分化に関する情報を記載します。
 biomaterial_provider に iPS 細胞の入手元を記載します。
 例 biomaterial_provider： ATCC
 
-## 薬剤感受性表  {#antibiogram}
-
-BioSample レコードに薬剤感受性表（アンチバイオグラム、Antibiogram）を含めることができます（登録例: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)）。    
-登録を希望する場合は [BioProject/BioSample/DRA  更新依頼フォーム](https://forms.gle/cfJ1nf8o612qvzXQ8)に連絡してください。
-
-薬剤感受性表の登録ガイドラインは NCBI BioSample の各ページを参照してください。
-
-- [Antibiograms - beta-lactamase MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/beta-lactamase/)
-- [Antibiograms - pathogen MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram/)
-- [Antibiograms - mycobacterial non-MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram-myco/)
-
 ## XML スキーマ  {#xml-schema}
 
 [BioSample XML schema](https://github.com/ddbj/pub/tree/master/docs/biosample)

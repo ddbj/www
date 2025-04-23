@@ -220,16 +220,6 @@ For example, cell_type： iPS cell (cell_line:253G1) derived megarocyte cell.
 In addition, describe provider information in biomaterial_provider.
 For example, biomaterial_provider： ATCC.
 
-## Antibiogram  {#antibiogram}
-
-An antibiogram table can be included in a BioSample record (Example: [SAMN07958491](https://www.ncbi.nlm.nih.gov/biosample/SAMN07958491)). To submit the table, please contact [BioProject/BioSample/DRA update request form](https://forms.gle/T7faNoDCvmQoTiWq9).
-
-For the antibiogram submission guidelines, please see the NCBI BioSample pages.
-
-- [Antibiograms - beta-lactamase MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/beta-lactamase/)
-- [Antibiograms - pathogen MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram/)
-- [Antibiograms - mycobacterial non-MIC](https://www.ncbi.nlm.nih.gov/biosample/docs/antibiogram-myco/)
-
 ## XML schema  {#xml-schema}
 
 [BioSample XML schema](https://github.com/ddbj/pub/tree/master/docs/biosample)
