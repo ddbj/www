@@ -31,6 +31,8 @@ When transferring data files by using a private key generated in the other opera
 
 When these are correct, because we do not support technical details regarding use of third-party softwares, please refer to websites of softwares or confirm your system administrators whether ssh, port 22 (DRA/GEA/DDBJ/MetaboBank) and 443 (JGA), is allowed or not.
 
+Accounts newly created on the [DDBJ Account](https://accounts.ddbj.nig.ac.jp) system are immediately available for use via sftp. However, it may take about 15 minutes before they can be used in D-way/JGA. Please note this in advance.
+
 ### Check if communication is allowed in the user environment {#allow}
 
 As requested, the DDBJ Center will investigate access logs to ftp-private.ddbj.nig.ac.jp.
