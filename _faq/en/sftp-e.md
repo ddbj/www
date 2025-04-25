@@ -197,3 +197,22 @@ Change the file permission.
 <a href="/assets/images/books/win-ps-scp-9.jpg" title="Change the file permission" class="group1"><img src="/assets/images/books/win-ps-scp-9.jpg" alt="Change the file permission" title="Change the file permission" class="w300"></a>  
 
 Run sftp.      
+
+### Using a submission ID as the username {#subid}
+
+sftp authentication is based on the account, not on individual submissions.    
+For example, when uploading data to the DRA submission "test07-0001", the following command is incorrect and will fail to log in:
+```
+sftp -i id_rsa test07-0001@ftp-private.ddbj.nig.ac.jp
+```
+
+You will see an error message like this:
+```
+Using username "test07-0001".
+Server refused our key.
+```
+
+The correct command is:
+```
+sftp -i id_rsa test07@ftp-private.ddbj.nig.ac.jp
+```

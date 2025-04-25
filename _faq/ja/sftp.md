@@ -197,3 +197,22 @@ Windows ユーザ (例 test07) にフルコントロールを許可します。
 
 再度 sftp コマンドを実行します。   
 
+### ユーザ名に submission ID を指定している {#subid}
+
+sftp 認証は登録 Submission 単位ではなくアカウント単位になります。  
+例えば DRA submission "test07-0001" にデータをアップロードする場合、以下のコマンドは間違いになり、ログインできません。
+
+```
+sftp -i id_rsa test07-0001@ftp-private.ddbj.nig.ac.jp
+```
+
+以下のようなエラーメッセージが表示されます。
+```
+Using username "test07-0001".
+Server refused our key.
+```
+
+正しいコマンドは以下になります。  
+```
+sftp -i id_rsa test07@ftp-private.ddbj.nig.ac.jp
+```
