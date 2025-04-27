@@ -69,7 +69,7 @@ to describe the biological nature such as gene function and other property of th
   JOURNAL   Unpublished (2009)
 <a id="CommentA" href="#CommentB">COMMENT</a>     Human cDNA sequencing project.
 <a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..450</a>
+     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location-e.html">1..450</a>
                      /<a href="/ddbj/qualifiers-e.html#chromosome">chromosome</a>="12"
                      /<a href="/ddbj/qualifiers-e.html#clone">clone</a>="GT200015"
                      /<a href="/ddbj/qualifiers-e.html#collection_date">collection_date</a>="2007"
@@ -88,8 +88,8 @@ to describe the biological nature such as gene function and other property of th
                      /<a href="/ddbj/qualifiers-e.html#translation">translation</a>="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
                      YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
                      VFTDKDKAVAQLKGGAKKV"
-<a id="BaseCountA" href="#BaseCountB">BASE COUNT</a>          102 a          119 c          131 g           98 t
-<a id="OriginA" href="#OriginB">ORIGIN</a>
+BASE COUNT          102 a          119 c          131 g           98 t
+ORIGIN
         1 cccacgcgtc cggtcgcatc gcacttgtag ctctcgaccc ccgcatctca tccctcctct
        61 cgcttagttc agatcgaaat cgcaaatggc gaagattaag atcgggatca atgggttcgg
       121 gaggatcggg aggctcgtgg ccagggtggc cctgcagagc gacgacgtcg agctcgtcgc

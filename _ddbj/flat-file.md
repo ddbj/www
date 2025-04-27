@@ -42,31 +42,31 @@ DDBJ に登録されたそれぞれのエントリは、DDBJの定めるフォ�
 
 ## DDBJ フォーマットの例 {#DDBJ_フォーマットの例}
 
-<pre class="code flat-file"><code><a id="LocusA" href="/ddbj/flat-file#LocusB">LOCUS</a>       <a id="LocusNameA" href="/ddbj/flat-file#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="/ddbj/flat-file#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="/ddbj/flat-file#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="/ddbj/flat-file#MoleculeFormB">linear</a>   <a id="DivisionA" href="/ddbj/flat-file#DivisionB">HUM</a> <a id="ModificationDateA" href="/ddbj/flat-file#ModificationDateB">01-JUN-2009</a>
-<a id="DefinitionA" href="/ddbj/flat-file#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
+<pre class="code flat-file"><code><a id="LocusA" href="#LocusB">LOCUS</a>       <a id="LocusNameA" href="#LocusNameB">AB000000</a>              <a id="SequenceLengthA" href="#SequenceLengthB">450 bp</a>    <a id="MoleculeTypeA" href="#MoleculeTypeB">mRNA</a>    <a id="MoleculeFormA" href="#MoleculeFormB">linear</a>   <a id="DivisionA" href="#DivisionB">HUM</a> <a id="ModificationDateA" href="#ModificationDateB">01-JUN-2009</a>
+<a id="DefinitionA" href="#DefinitionB">DEFINITION</a>  Homo sapiens GAPD mRNA for glyceraldehyde-3-phosphate
             dehydrogenase, partial cds.
-<a id="AccessionA" href="/ddbj/flat-file#AccessionB">ACCESSION</a>   AB000000
-<a id="VersionA" href="/ddbj/flat-file#VersionB">VERSION</a>     AB000000.1
-<a id="KeywordsA" href="/ddbj/flat-file#KeywordsB">KEYWORDS</a>    .
-<a id="SourceA" href="/ddbj/flat-file#SourceB">SOURCE</a>      Homo sapiens (human)
-  <a id="OrganismA" href="/ddbj/flat-file#OrganismB">ORGANISM</a>  Homo sapiens
+<a id="AccessionA" href="#AccessionB">ACCESSION</a>   AB000000
+<a id="VersionA" href="#VersionB">VERSION</a>     AB000000.1
+<a id="KeywordsA" href="#KeywordsB">KEYWORDS</a>    .
+<a id="SourceA" href="#SourceB">SOURCE</a>      Homo sapiens (human)
+  <a id="OrganismA" href="#OrganismB">ORGANISM</a>  Homo sapiens
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
             Catarrhini; Hominidae; Homo.
-<a id="Reference1A" href="/ddbj/flat-file#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
-  <a id="AuthorsA" href="/ddbj/flat-file#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
-  <a id="TitleA" href="/ddbj/flat-file#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="/ddbj/flat-file#JournalB">JOURNAL</a>   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+<a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
+  <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
+  <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
+  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
-<a id="Reference2A" href="/ddbj/flat-file#Reference2B">REFERENCE   2</a>
+<a id="Reference2A" href="#Reference2B">REFERENCE   2</a>
   AUTHORS   Mishima,H., Shizuoka,T. and Fuji,I.
   TITLE     Glyceraldehyde-3-phosphate dehydrogenase expressed in human liver
   JOURNAL   Unpublished (2009)
-<a id="CommentA" href="/ddbj/flat-file#CommentB">COMMENT</a>     Human cDNA sequencing project.
-<a id="FeaturesA" href="/ddbj/flat-file#FeaturesB">FEATURES</a>             Location/Qualifiers
-     <a id="FeaturesSourceA" href="/ddbj/flat-file#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..450</a>
+<a id="CommentA" href="#CommentB">COMMENT</a>     Human cDNA sequencing project.
+<a id="FeaturesA" href="#FeaturesB">FEATURES</a>             Location/Qualifiers
+     <a id="FeaturesSourceA" href="#FeaturesSourceB">source</a>          <a href="/ddbj/location.html">1..450</a>
                      /<a href="/ddbj/qualifiers.html#chromosome">chromosome</a>="12"
                      /<a href="/ddbj/qualifiers.html#clone">clone</a>="GT200015"
                      /<a href="/ddbj/qualifiers.html#collection_date">collection_date</a>="2007"
@@ -85,8 +85,8 @@ DDBJ に登録されたそれぞれのエントリは、DDBJの定めるフォ�
                      /<a href="/ddbj/qualifiers.html#translation">translation</a>="MAKIKIGINGFGRIGRLVARVALQSDDVELVAVNDPFITTDYMT
                      YMFKYDTVHGQWKHHEVKVKDSKTLLFGEKEVTVFGCRNPKEIPWGETSAEFVVEYTG
                      VFTDKDKAVAQLKGGAKKV"
-<a id="BaseCountA" href="#BaseCountB">BASE COUNT</a>          102 a          119 c          131 g           98 t
-<a id="OriginA" href="#OriginB">ORIGIN</a>
+BASE COUNT          102 a          119 c          131 g           98 t
+ORIGIN
         1 cccacgcgtc cggtcgcatc gcacttgtag ctctcgaccc ccgcatctca tccctcctct
        61 cgcttagttc agatcgaaat cgcaaatggc gaagattaag atcgggatca atgggttcgg
       121 gaggatcggg aggctcgtgg ccagggtggc cctgcagagc gacgacgtcg agctcgtcgc
@@ -95,7 +95,7 @@ DDBJ に登録されたそれぞれのエントリは、DDBJの定めるフォ�
       301 tgagaaggag gtcaccgtgt tcggctgcag gaaccctaag gagatcccat ggggtgagac
       361 tagcgctgag tttgttgtgg agtacactgg tgttttcact gacaaggaca aggccgttgc
       421 tcaacttaag ggtggtgcta agaaggtctg
-<a id="EndA" href="/ddbj/flat-file#EndB">//</a></code></pre>
+<a id="EndA" href="#EndB">//</a></code></pre>
 
 フラットファイルは登録者から提供される情報に基づいて、一定の形式に則って作成されています。
 登録者の研究上の着眼点の違いなどにより、配列が類似している登録の場合でもフラットファイルに記載される内容は異なることがあります。
@@ -380,8 +380,8 @@ KEYWORDS は、過去の登録においては、遺伝子名 ([gene](/ddbj/quali
 現在は、[データの詳細種別](/insdc/data-categories.html#detail) ([EST](/ddbj/est.html),
 [TSA](/ddbj/tsa.html), [HTC](/ddbj/htc.html), [HTG](/ddbj/htg.html),
 [GSS](/ddbj/gss.html), [WGS](/ddbj/wgs.html), [TPA](/ddbj/tpa.html)
-など)、配列の特性、実験手法、ゲノム配列の完成度などに関する情報などが、必要に応じて、記載されます。[INSDC agreed
-methodological keywords](https://insdc.org/submitting-standards/methodological-keywords/) もご参照ください。
+など)、配列の特性、実験手法、ゲノム配列の完成度などに関する情報などが、必要に応じて、記載されます。    
+[INSDC agreed methodological keywords](https://insdc.org/submitting-standards/methodological-keywords/) もご参照ください。
 
 
 <div id="SourceB" markdown="1">
