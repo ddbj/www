@@ -385,13 +385,33 @@ PS      GenBank         scaffold/CON
 PT      USPTO           Patent application
 PU      USPTO           Patent application
 PV      GenBank         Direct submission
+PW      DDBJ            
 Q       void            UniProt/Swiss-Prot
 QK      EPO             Patent application
 QL      EPO             Patent application
 QM      EPO             Patent application
 QN      EPO             Patent application
 QO      EPO             Patent application
+QP      DDBJ            
+QQ      DDBJ            
+QR      DDBJ            
+QS      DDBJ            
+QT      DDBJ            
+QU      DDBJ            
+QV      DDBJ            
+QW      DDBJ            
+QX      DDBJ            
+QY      DDBJ            
 R       GenBank         EST
+RB      DDBJ            
+RC      DDBJ            
+RD      DDBJ            
+RE      DDBJ            
+RF      DDBJ            
+RG      DDBJ            
+RH      DDBJ            
+RI      DDBJ            
+RJ      DDBJ            
 S       GenBank         Journal scanning
 T       GenBank         EST
 U       GenBank         
