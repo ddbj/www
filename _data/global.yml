@@ -6,6 +6,8 @@ top_news:
       path: 2025-04-16_2.html
     - title: (5/3-5/6) ゴールデンウィーク中の対応について
       path: 2025-04-16_4.html
+    - title: getentryでENAとGenBankから特定期間に公開されたエントリーを反映できていない
+      path: 2025-05-12.html
  en:
     - title: Newly released or re-released DRAs cannot be searched on DDBJ Search
       path: 2025-04-16-e.html
@@ -13,3 +15,5 @@ top_news:
       path: 2025-04-16_2-e.html
     - title: (May 3-May 6) Correspondence during the Golden Week holidays
       path: 2025-04-16_4-e.html
+    - title: Entries from ENA and GenBank during a specific period are not being reflected in getentry
+      path: 2025-05-12-e.html
