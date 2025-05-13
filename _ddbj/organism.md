@@ -286,10 +286,10 @@ taxonomy database における scientific name, synonym あるいは、lineage �
 ## 2. 種が同定されていない場合 {#unidentified} 
 
 ### 2-1. 種を同定しない場合   {#not-to-be-identified} 
-種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、
-"\<genus name\> sp." などとして記載します。    
+種同定を伴わない研究の場合、判明している範囲の lineage、多くの場合、属名を用いて、"\<genus name\> sp." などとして記載します。    
 属より上位ランクの場合、判明している範囲の lineage に**細菌**ならば "bacterium"、
 **古細菌**ならば、 "archaeon" を付加した名前を記載します。    
+古い運用では、strain, isolate など毎の仮称としていましたが、現在は冗長な割り当ては避けています。    
 
 **書式**
 - \<genus name> sp. # 原核生物
@@ -301,7 +301,8 @@ taxonomy database における scientific name, synonym あるいは、lineage �
 Acetobacteraceae bacterium
 Methanomicrobiales archaeon</code></pre>
 
-**真核生物**の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。
+**真核生物**の場合、判明している範囲の lineage が属レベルでも、属より上位でも "sp." を付加した名前 を記載します。    
+
 
 **書式**
 - \<genus (or upper) name> sp. # 真核生物
@@ -312,7 +313,8 @@ Methanomicrobiales archaeon</code></pre>
 
 登録の際には「生物名」とともに [識別子](/ddbj/identifiers.html)、多くの場合、
 [/strain](/ddbj/qualifiers.html#strain), 
-[/isolate](/ddbj/qualifiers.html#isolate) など該当する qualifier とあわせて source feature に記載します。
+[/isolate](/ddbj/qualifiers.html#isolate) など該当する qualifier とあわせて source feature に記載します。    
+古い運用では、strain, isolate など毎の仮称としていましたが、現在は冗長な割り当ては避けています。    
 
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers.html#strain">strain</a>="ITDI2.1"</code></pre>  
@@ -358,7 +360,8 @@ Methanomicrobiales archaeon</code></pre>
 Acetobacteraceae bacterium ITDI2.1</code></pre>
 
 
-**真核生物**の場合、種の候補単位 (operational taxonomic unit, OTU) 毎を基本に仮称を割り当てますが、状況に応じて、strain または isolate 毎としても構いません。    
+**真核生物**の場合、種の候補単位 (operational taxonomic unit, OTU) 毎を基本に仮称を割り当てます。    
+古い運用では、strain, isolate など毎の仮称としていましたが、現在は冗長な割り当ては避けています。    
 
 **書式**
 - \<genus (or upper) name> sp. \<OTU ID> # 真核生物

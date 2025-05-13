@@ -317,6 +317,7 @@ Please tell us any of following items during your sequence submission.
 ### 2-1. In case of species not to be identified  {#not-to-be-identified} 
 If the scientific name is unclear and/or unidentified, we adopt a tentative name for the organism.    
 The tentative name is made up with the lineage (in many cases, genus names) that as far as submitters could specify.    
+Though, tentative names have been assigned to strains, redundant assignments are now avoided.    
 
 **For prokaryotes**    
 
@@ -341,7 +342,9 @@ Methanomicrobiales archaeon</code></pre>
 
 The qualifier corresponding to [identifier](/ddbj/identifiers-e.html), such as 
 [/strain](/ddbj/qualifiers-e.html#strain), 
-[/isolate](/ddbj/qualifiers-e.html#isolate) etc., is required for the source feature.
+[/isolate](/ddbj/qualifiers-e.html#isolate) etc., is required for the source feature.    
+Though, tentative names have been assigned to strains, isolates, or other sample IDs, redundant assignments are now avoided.    
+
 
 <pre><code>                     /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Acetobacter sp."
                      /<a href="/ddbj/qualifiers-e.html#strain">strain</a>="ITDI2.1"</code></pre>  
@@ -386,8 +389,9 @@ In cases of **prokaryotes**, a tentative name should be assigned to every strain
 Acetobacteraceae bacterium ITDI2.1</code></pre>
 
 
-In cases of **eukaryotes**, a tentative name should be assigned to every species candidate (operational taxonomic unit, OTU),
-or, as the case may be, every strain/isolate.     
+In cases of **eukaryotes**, a tentative name should be assigned to every species candidate (operational taxonomic unit, OTU).    
+Though, tentative names have been assigned to strains, isolates, or other sample IDs, redundant assignments are now avoided.  
+
 
 **Format**
 - \<genus (or upper) name> sp. \<OTU ID> # eukaryotes
