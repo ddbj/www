@@ -20,12 +20,49 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="大久保公策"></p>
+        <p class="photo"><img src="/assets/images/staff/ogasawara.jpg" title="小笠原理"></p>
         <div class="explanation">
-            <p class="name">大久保 公策</p>
-            <p class="name">Kosaku Okubo, MD, PhD</p>
+            <p class="name">小笠原 理</p>
+            <p class="name">Osamu Ogasawara, PhD</p>
+            <p class="position">特任准教授</p>
+            <p class="position">システム管理部門長</p>
+        </div>
+        </li>
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="藤澤貴智"></p>
+            <div class="explanation">
+                <p class="name">藤澤 貴智</p>
+                <p class="name">Takatomo Fujisawa, PhD</p>
+                <p class="position">データベース部門長</p>
+            </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="中村保一"></p>
+        <div class="explanation">
+            <p class="name">中村 保一</p>
+            <p class="name">Yasukazu Nakamura, PhD</p>
             <p class="position">教授</p>
-            <p class="position">前センター長</p>
+            <p class="position">国際連携部門長</p>
+        </div>
+        </li>
+    </ul>
+    <ul class="list">
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="越水静"></p>
+            <div class="explanation">
+                <p class="name">越水 静</p>
+                <p class="name">Shizuka Koshimizu, PhD</p>
+                <p class="position">助教</p>
+                <p class="position">国際連携部門</p>
+            </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="丹生智也"></p>
+        <div class="explanation">
+            <p class="name">丹生 智也</p>
+            <p class="name">Tomoya Tanjo, PhD</p>
+            <p class="position">助教</p>
+            <p class="position">国内連携部門長</p>
         </div>
         </li>
         <li class="staff">
@@ -34,31 +71,22 @@ category: about
                 <p class="name">谷澤 靖洋</p>
                 <p class="name">Yasuhiro Tanizawa, PhD</p>
                 <p class="position">助教</p>
+                <p class="position">国内連携部門</p>
             </div>
         </li>
     </ul>
     </div>
-</article>
-
-* [データベース部門](#database)
-* [システム管理部門](#hpc)
-* [国際連携部門](#international)
-* [国内連携部門](#domestic)
-
-<article class="staff-view">
     <h2 id="database">データベース部門</h2>
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="藤澤貴智"></p>
-            <div class="explanation">
-                <p class="name">藤澤 貴智</p>
-                <p class="name">Takatomo Fujisawa, PhD</p>
-                <p class="position">部門長</p>
-            </div>
+        <p class="photo"><img src="/assets/images/staff/ara.jpg" title="荒 武"></p>
+        <div class="explanation">
+            <p class="name">荒 武</p>
+            <p class="name">Takeshi Ara, PhD</p>
+            <p class="position">コーディネータ</p>
+        </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kodama.jpg" title="児玉 悠一"></p>
         <div class="explanation">
@@ -74,7 +102,9 @@ category: about
             <p class="name">Jun Mashima, PhD</p>
             <p class="position">コーディネータ</p>
         </div>
-        </li>  
+        </li>   
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kosuge.jpg" title="小菅 武英"></p>
         <div class="explanation">
@@ -82,9 +112,7 @@ category: about
             <p class="name">Takehide Kosuge, PhD</p>
             <p class="position">アドバイザー</p>
         </div>
-        </li>  
-    </ul>
-    <ul class="list">
+        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/aono.jpg" title="青野 英雄"></p>
         <div class="explanation">
@@ -101,6 +129,8 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>  
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ghelfi.jpg" title="Andrea Ghelfi"></p>
         <div class="explanation">
@@ -108,24 +138,6 @@ category: about
             <p class="position">System Developer</p>
         </div>
         </li>  
-    </ul>  
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hamaoka.jpg" title="濵岡一弘"></p>
-        <div class="explanation">
-            <p class="name">濵岡 一弘</p>
-            <p class="name">Kazuhiro Hamaoka, PhD</p>
-            <p class="position">キュレータ</p>
-        </div>
-        </li> 
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kawazoe.jpg" title="川添 将仁"></p>
-        <div class="explanation">
-            <p class="name">川添 将仁</p>
-            <p class="name">Masahito Kawazoe</p>
-            <p class="position">キュレータ</p>
-        </div>
-        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="李 慶範"></p>
         <div class="explanation">
@@ -134,8 +146,6 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okido.jpg" title="大城戸 利久"></p>
         <div class="explanation">
@@ -144,6 +154,8 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>  
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="杉田 里江"></p>
         <div class="explanation">
@@ -160,8 +172,6 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="時松 敏明"></p>
             <div class="explanation">
@@ -170,6 +180,8 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="渡邊とも子"></p>
             <div class="explanation">
@@ -186,8 +198,8 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>
-    </ul>       
-    <ul class="list">   
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/fujimoto.jpg" title="藤本　昌宏"></p>
         <div class="explanation">
@@ -195,7 +207,15 @@ category: about
             <p class="name">Masahiro Fujimoto</p>
             <p class="position">運用 SE</p>
         </div>
-        </li>        
+        </li>  
+        <li class="staff">
+        <p class="photo"><img src="" title="服部 学"></p>
+        <div class="explanation">
+            <p class="name">服部 学</p>
+            <p class="name">Manabu Hattori</p>
+            <p class="position">運用 SE</p>
+        </div>
+        </li>       
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kawasaki.jpg" title="川崎　愛美"></p>
         <div class="explanation">
@@ -203,7 +223,17 @@ category: about
             <p class="name">Aimi Kawasaki</p>
             <p class="position">運用 SE</p>
         </div>
-        </li>  
+        </li> 
+    </ul>    
+    <ul class="list"> 
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/komiyama.jpg" title="小宮山 萌"></p>
+        <div class="explanation">
+            <p class="name">小宮山 萌</p>
+            <p class="name">Megu Komiyama</p>
+            <p class="position">運用 SE</p>
+        </div>
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="望月 秀起"></p>
         <div class="explanation">
@@ -212,8 +242,6 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
-    </ul>    
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="鈴木　貴大"></p>
         <div class="explanation">
@@ -222,24 +250,16 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="梅田 友貴"></p>
         <div class="explanation">
             <p class="name">梅田 友貴</p>
-            <p class="name">Tomoki UMEDA</p>
+            <p class="name">Tomoki Umeda</p>
             <p class="position">運用 SE</p>
         </div>
         </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="渡邊 康司"></p>
-        <div class="explanation">
-            <p class="name">渡邊 康司</p>
-            <p class="name">Koji Watanabe</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="吉田 昌弘"></p>
         <div class="explanation">
@@ -254,16 +274,12 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ogasawara.jpg" title="小笠原理"></p>
+        <p class="photo"><img src="/assets/images/staff/katsumata.jpg" title="勝又 明子"> </p>
         <div class="explanation">
-            <p class="name">小笠原 理</p>
-            <p class="name">Osamu Ogasawara, PhD</p>
-            <p class="position">特任准教授</p>
-            <p class="position">部門長</p>
+            <p class="name">勝又 明子</p>
+            <p class="name">Akiko Katsumata</p>
         </div>
-        </li>
-    </ul>
-    <ul class="list">
+        </li>  
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="奥田喜弘"> </p>
         <div class="explanation">
@@ -278,31 +294,8 @@ category: about
             <p class="name">Yaeko Takiguchi</p>
         </div>
         </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/katsumata.jpg" title="勝又 明子"> </p>
-        <div class="explanation">
-            <p class="name">勝又 明子</p>
-            <p class="name">Akiko Katsumata</p>
-        </div>
-        </li>  
     </ul>
     <ul class="list">
-        <li class="staff"> 
-        <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="渡辺忠剛"></p>
-        <div class="explanation">
-            <p class="name">渡辺 忠剛</p>
-            <p class="name">Tadayoshi Watanabe</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li>      
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="加藤 健弘"></p>
-        <div class="explanation">
-            <p class="name">加藤 健弘</p>
-            <p class="name">Takehiro Kato</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li>   
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="芦澤 祐治"></p>
         <div class="explanation">
@@ -310,7 +303,23 @@ category: about
             <p class="name">Yuji Ashizawa</p>
             <p class="position">運用 SE</p>
         </div>
-        </li>        
+        </li>
+        <li class="staff"> 
+        <p class="photo"><img src="" title="太田 雄也"></p>
+        <div class="explanation">
+            <p class="name">太田 雄也</p>
+            <p class="name">Yuya Ohta</p>
+            <p class="position">運用 SE</p>
+        </div>
+        </li> 
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/otsuka.jpg" title="大塚 正明"></p>
+        <div class="explanation">
+            <p class="name">大塚 正明</p>
+            <p class="name">Masaaki Otsuka</p>
+            <p class="position">運用 SE</p>
+        </div>     
+        </li>       
     </ul>
     <ul class="list">
         <li class="staff">
@@ -319,49 +328,20 @@ category: about
             <p class="name">高橋 良昌</p>
             <p class="name">Yoshimasa Takahashi</p>
             <p class="position">運用 SE</p>
-        </div>
-        </li>
-    </ul>
-    </div>
-    <h2 id="international">国際連携部門</h2>
-    <div class="wrapper">
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="中村保一"></p>
-        <div class="explanation">
-            <p class="name">中村 保一</p>
-            <p class="name">Yasukazu Nakamura, PhD</p>
-            <p class="position">教授</p>
-            <p class="position">部門長</p>
-        </div>
-        </li>
-        <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="越水静"></p>
-            <div class="explanation">
-                <p class="name">越水 静</p>
-                <p class="name">Shizuka Koshimizu, PhD</p>
-                <p class="position">助教</p>
-            </div>
-        </li>
-    </ul>
-    </div>
-    <h2 id="domestic">国内連携部門</h2>
-    <div class="wrapper">
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="丹生智也"></p>
-        <div class="explanation">
-            <p class="name">丹生 智也</p>
-            <p class="name">Tomoya Tanjo, PhD</p>
-            <p class="position">助教</p>
-            <p class="position">部門長</p>
-        </div>
-        </li>
+        </div>     
+        </li>  
     </ul>
     </div>
     <h2 id="secretary">秘書</h2>
     <div class="wrapper">
     <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/mcmillan.jpg" title="マクミラン 泰代"></p>
+        <div class="explanation">
+            <p class="name">マクミラン 泰代</p>
+            <p class="name">Yasuyo McMillan</p>
+        </div>
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/maki.jpg" title="槇美香"></p>
         <div class="explanation">

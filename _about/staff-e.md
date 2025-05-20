@@ -19,11 +19,44 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okubo.jpg" title="Kosaku Okubo"></p>
+        <p class="photo"><img src="/assets/images/staff/ogasawara.jpg" title="Osamu Ogasawara"></p>
         <div class="explanation">
-            <p class="name">Kosaku Okubo, MD, PhD</p>
+            <p class="name">Osamu Ogasawara, PhD</p>
+            <p class="position">Project Associate Professor</p>
+            <p class="position">High Performance Computing Division, Head</p>
+        </div>
+        </li>
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="Takatomo Fujisawa"></p>
+            <div class="explanation">
+                <p class="name">Takatomo Fujisawa, PhD</p>
+                <p class="position">Database Division, Head</p>
+            </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="Yasukazu Nakamura"></p>
+        <div class="explanation">
+            <p class="name">Yasukazu Nakamura, PhD</p>
             <p class="position">Professor</p>
-            <p class="position">Former Head</p>
+            <p class="position">International Affairs Division, Head</p>
+        </div>
+        </li>
+    </ul>
+    <ul class="list">
+        <li class="staff">
+            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="Shizuka Koshimizu"></p>
+            <div class="explanation">
+                <p class="name">Shizuka Koshimizu, PhD</p>
+                <p class="position">Assistant Professor</p>
+                <p class="position">International Affairs Division</p>
+            </div>
+        </li>
+       <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="Tomoya Tanjo"></p>
+        <div class="explanation">
+            <p class="name">Tomoya Tanjo, PhD</p>
+            <p class="position">Assistant Professor</p>
+            <p class="position">Domestic Affairs Division, Head</p>
         </div>
         </li>
         <li class="staff">
@@ -31,31 +64,21 @@ category: about
             <div class="explanation">
                 <p class="name">Yasuhiro Tanizawa, PhD</p>
                 <p class="position">Assistant Professor</p>
-                <p class="position"></p>
+                <p class="position">Domestic Affairs Division</p>
             </div>
         </li>
     </ul>
     </div>    
-</article>
-
-* [Database Division](#database)
-* [High Performance Computing Division](#hpc)
-* [International Affairs Division](#international)
-* [Domestic Affairs Division](#domestic)
-
-<article class="staff-view">
     <h2 id="database">Database Division</h2>
     <div class="wrapper">
     <ul class="list">
-            <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/fujisawa.jpg" title="Takatomo Fujisawa"></p>
-            <div class="explanation">
-                <p class="name">Takatomo Fujisawa, PhD</p>
-                <p class="position">Division Head</p>
-            </div>
-        </li>
-    </ul>
-    <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/ara.jpg" title="Takeshi Ara"></p>
+        <div class="explanation">
+            <p class="name">Takeshi Ara, PhD</p>
+            <p class="position">Coordinator</p>
+        </div>
+        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kodama.jpg" title="Yuichi Kodama"></p>
         <div class="explanation">
@@ -70,15 +93,15 @@ category: about
             <p class="position">Coordinator</p>
         </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kosuge.jpg" title="Takehide Kosuge"></p>
         <div class="explanation">
             <p class="name">Takehide Kosuge, PhD</p>
             <p class="position">Advisor</p>
         </div>
-        </li>  
-    </ul>  
-    <ul class="list">
+        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/aono.jpg" title="Hideo Aono"></p>
         <div class="explanation">
@@ -93,6 +116,8 @@ category: about
             <p class="position">Curator</p>
         </div>
         </li>  
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ghelfi.jpg" title="Andrea Ghelfi"></p>
         <div class="explanation">
@@ -100,22 +125,6 @@ category: about
             <p class="position">System Developer</p>
         </div>
         </li>  
-    </ul>  
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/hamaoka.jpg" title="Kazuhiro Hamaoka"></p>
-        <div class="explanation">
-            <p class="name">Kazuhiro Hamaoka, PhD</p>
-            <p class="position">Curator</p>
-        </div>
-        </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/kawazoe.jpg" title="Masahito Kawazoe"></p>
-        <div class="explanation">
-            <p class="name">Masahito Kawazoe</p>
-            <p class="position">Curator</p>
-        </div>
-        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="Kyungbum Lee"></p>
         <div class="explanation">
@@ -123,8 +132,6 @@ category: about
             <p class="position">Curator</p>
         </div>
         </li>
-    </ul>  
-    <ul class="list">  
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okido.jpg" title="Toshihisa Okido"></p>
         <div class="explanation">
@@ -132,6 +139,8 @@ category: about
             <p class="position">Curator</p>
         </div>
         </li>  
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="Rie Sugita"></p>
         <div class="explanation">
@@ -146,8 +155,6 @@ category: about
                 <p class="position">Curator</p>
             </div>
         </li>
-    </ul>  
-    <ul class="list">  
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/tokimatsu.jpg" title="Toshiaki Tokimatsu"></p>
             <div class="explanation">
@@ -155,6 +162,8 @@ category: about
                 <p class="position">Curator</p>
             </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="Emi Yokoyama"></p>
             <div class="explanation">
@@ -177,6 +186,13 @@ category: about
             <p class="name">Masahiro Fujimoto</p>
             <p class="position">System Engineer</p>
         </div>
+        </li> 
+        <li class="staff">
+        <p class="photo"><img src="" title="Manabu Hattori"></p>
+        <div class="explanation">
+            <p class="name">Manabu Hattori</p>
+            <p class="position">System Engineer</p>
+        </div>
         </li>        
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kawasaki.jpg" title="Aimi Kawasaki"></p>
@@ -185,6 +201,15 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>  
+    </ul>
+    <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/komiyama.jpg" title="Megu Komiyama"></p>
+        <div class="explanation">
+            <p class="name">Megu Komiyama</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="Hideki Mochizuki"></p>
         <div class="explanation">
@@ -192,8 +217,6 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/tsuzuki.jpg" title="Takahiro Suzuki"></p>
         <div class="explanation">
@@ -201,6 +224,8 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="Tomoki Umeda"></p>
         <div class="explanation">
@@ -208,15 +233,6 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe.jpg" title="Koji Watanabe"></p>
-        <div class="explanation">
-            <p class="name">Koji Watanabe</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="Masahiro Yoshida"></p>
         <div class="explanation">
@@ -228,16 +244,6 @@ category: about
     </div>
     <h2 id="hpc">High Performance Computing Division</h2>
     <div class="wrapper">
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ogasawara.jpg" title="Osamu Ogasawara"></p>
-        <div class="explanation">
-            <p class="name">Osamu Ogasawara, PhD</p>
-            <p class="position">Project Associate Professor</p>
-            <p class="position">Division Head</p>
-        </div>
-        </li>
-    </ul>
     <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="Yoshihiro Okuda"></p>
@@ -259,27 +265,27 @@ category: about
         </li>
     </ul>      
     <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="Tadayoshi Watanabe"></p>
-        <div class="explanation">
-            <p class="name">Tadayoshi Watanabe</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tkato.jpg" title="Takehiro Kato"></p>
-        <div class="explanation">
-            <p class="name">Takehiro Kato</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li> 
         <li class="staff"> 
         <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="Yuji Ashizawa"></p>
         <div class="explanation">
             <p class="name">Yuji Ashizawa</p>
             <p class="position">System Engineer</p>
         </div>
-        </li>        
+        </li> 
+        <li class="staff">
+        <p class="photo"><img src="" title="Yuya Ohta"></p>
+        <div class="explanation">
+            <p class="name">Yuya Ohta</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/otsuka.jpg" title="Masaaki Otsuka"></p>
+        <div class="explanation">
+            <p class="name">Masaaki Otsuka</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li>       
     </ul>
     <ul class="list">
         <li class="staff">
@@ -288,45 +294,18 @@ category: about
             <p class="name">Yoshimasa Takahashi</p>
             <p class="position">System Engineer</p>
         </div>
-        </li>
-    </ul>
-    </div>
-    <h2 id="international">International Affairs Division</h2>
-    <div class="wrapper">
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/nakamura.jpg" title="Yasukazu Nakamura"></p>
-        <div class="explanation">
-            <p class="name">Yasukazu Nakamura, PhD</p>
-            <p class="position">Professor</p>
-            <p class="position">Division Head</p>
-        </div>
-        </li>
-        <li class="staff">
-            <p class="photo"><img src="/assets/images/staff/skoshimizu.jpg" title="Shizuka Koshimizu"></p>
-            <div class="explanation">
-                <p class="name">Shizuka Koshimizu, PhD</p>
-                <p class="position">Assistant Professor</p>
-            </div>
-        </li>
-    </ul>
-    </div>
-    <h2 id="domestic">Domestic Affairs Division</h2>
-    <div class="wrapper">
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/tanjo.jpg" title="Tomoya Tanjo"></p>
-        <div class="explanation">
-            <p class="name">Tomoya Tanjo, PhD</p>
-            <p class="position">Assistant Professor</p>
-            <p class="position">Division Head</p>
-        </div>
-        </li>
+        </li>  
     </ul>
     </div>
     <h2 id="secretary">Secretaries</h2>
     <div class="wrapper">
     <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/mcmillan.jpg" title="Yasuyo McMillan"></p>
+        <div class="explanation">
+            <p class="name">Yasuyo McMillan</p>
+        </div>
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/maki.jpg" title="Mika Maki"></p>
         <div class="explanation">
