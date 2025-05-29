@@ -207,7 +207,15 @@ category: about
             <p class="name">Masahiro Fujimoto</p>
             <p class="position">運用 SE</p>
         </div>
-        </li>        
+        </li>  
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/hattori.jpg" title="服部 学"></p>
+        <div class="explanation">
+            <p class="name">服部 学</p>
+            <p class="name">Manabu Hattori</p>
+            <p class="position">運用 SE</p>
+        </div>
+        </li>       
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kawasaki.jpg" title="川崎　愛美"></p>
         <div class="explanation">
@@ -215,7 +223,9 @@ category: about
             <p class="name">Aimi Kawasaki</p>
             <p class="position">運用 SE</p>
         </div>
-        </li>  
+        </li> 
+    </ul>    
+    <ul class="list"> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/komiyama.jpg" title="小宮山 萌"></p>
         <div class="explanation">
@@ -224,8 +234,6 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
-    </ul>    
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="望月 秀起"></p>
         <div class="explanation">
@@ -242,6 +250,8 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="梅田 友貴"></p>
         <div class="explanation">
@@ -250,8 +260,6 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="吉田 昌弘"></p>
         <div class="explanation">
@@ -266,6 +274,13 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/katsumata.jpg" title="勝又 明子"> </p>
+        <div class="explanation">
+            <p class="name">勝又 明子</p>
+            <p class="name">Akiko Katsumata</p>
+        </div>
+        </li>  
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="奥田喜弘"> </p>
         <div class="explanation">
             <p class="name">奥田 喜弘</p>
@@ -279,23 +294,8 @@ category: about
             <p class="name">Yaeko Takiguchi</p>
         </div>
         </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/katsumata.jpg" title="勝又 明子"> </p>
-        <div class="explanation">
-            <p class="name">勝又 明子</p>
-            <p class="name">Akiko Katsumata</p>
-        </div>
-        </li>  
     </ul>
     <ul class="list">
-        <li class="staff"> 
-        <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="渡辺忠剛"></p>
-        <div class="explanation">
-            <p class="name">渡辺 忠剛</p>
-            <p class="name">Tadayoshi Watanabe</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="芦澤 祐治"></p>
         <div class="explanation">
@@ -304,6 +304,14 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
+        <li class="staff"> 
+        <p class="photo"><img src="" title="太田 雄也"></p>
+        <div class="explanation">
+            <p class="name">太田 雄也</p>
+            <p class="name">Yuya Ohta</p>
+            <p class="position">運用 SE</p>
+        </div>
+        </li> 
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/otsuka.jpg" title="大塚 正明"></p>
         <div class="explanation">

@@ -186,6 +186,13 @@ category: about
             <p class="name">Masahiro Fujimoto</p>
             <p class="position">System Engineer</p>
         </div>
+        </li> 
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/hattori.jpg" title="Manabu Hattori"></p>
+        <div class="explanation">
+            <p class="name">Manabu Hattori</p>
+            <p class="position">System Engineer</p>
+        </div>
         </li>        
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kawasaki.jpg" title="Aimi Kawasaki"></p>
@@ -194,6 +201,8 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>  
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/komiyama.jpg" title="Megu Komiyama"></p>
         <div class="explanation">
@@ -201,8 +210,6 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="Hideki Mochizuki"></p>
         <div class="explanation">
@@ -217,6 +224,8 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="Tomoki Umeda"></p>
         <div class="explanation">
@@ -224,8 +233,6 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="Masahiro Yoshida"></p>
         <div class="explanation">
@@ -258,13 +265,6 @@ category: about
         </li>
     </ul>      
     <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/watanabe_t.jpg" title="Tadayoshi Watanabe"></p>
-        <div class="explanation">
-            <p class="name">Tadayoshi Watanabe</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li>
         <li class="staff"> 
         <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="Yuji Ashizawa"></p>
         <div class="explanation">
@@ -272,6 +272,13 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li> 
+        <li class="staff">
+        <p class="photo"><img src="" title="Yuya Ohta"></p>
+        <div class="explanation">
+            <p class="name">Yuya Ohta</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/otsuka.jpg" title="Masaaki Otsuka"></p>
         <div class="explanation">
