@@ -132,13 +132,6 @@ category: about
     </ul>  
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ghelfi.jpg" title="Andrea Ghelfi"></p>
-        <div class="explanation">
-            <p class="name">Andrea Ghelfi, PhD</p>
-            <p class="position">System Developer</p>
-        </div>
-        </li>  
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="李 慶範"></p>
         <div class="explanation">
             <p class="name">李 慶範</p>
@@ -154,8 +147,6 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>  
-    </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="杉田 里江"></p>
         <div class="explanation">
@@ -164,6 +155,8 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="鈴木 紀美子"></p>
             <div class="explanation">
@@ -180,8 +173,6 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="渡邊とも子"></p>
             <div class="explanation">
@@ -190,6 +181,8 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="横山会美"></p>
         <div class="explanation">

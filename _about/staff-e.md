@@ -119,13 +119,6 @@ category: about
     </ul>  
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ghelfi.jpg" title="Andrea Ghelfi"></p>
-        <div class="explanation">
-            <p class="name">Andrea Ghelfi, PhD</p>
-            <p class="position">System Developer</p>
-        </div>
-        </li>  
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="Kyungbum Lee"></p>
         <div class="explanation">
             <p class="name">Kyungbum Lee, PhD</p>
@@ -139,8 +132,6 @@ category: about
             <p class="position">Curator</p>
         </div>
         </li>  
-    </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="Rie Sugita"></p>
         <div class="explanation">
@@ -148,6 +139,8 @@ category: about
             <p class="position">Curator</p>
         </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="Kimiko Suzuki"></p>
             <div class="explanation">
@@ -162,8 +155,6 @@ category: about
                 <p class="position">Curator</p>
             </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="Emi Yokoyama"></p>
             <div class="explanation">
@@ -171,6 +162,8 @@ category: about
                 <p class="position">Curator</p>
             </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="Emi Yokoyama"></p>
         <div class="explanation">
