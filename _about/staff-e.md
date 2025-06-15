@@ -225,13 +225,6 @@ category: about
             <p class="name">Tomoki Umeda</p>
             <p class="position">System Engineer</p>
         </div>
-        </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="Masahiro Yoshida"></p>
-        <div class="explanation">
-            <p class="name">Masahiro Yoshida</p>
-            <p class="position">System Engineer</p>
-        </div>
         </li>      
     </ul>  
     </div>
