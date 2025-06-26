@@ -1,7 +1,7 @@
 top_news:
  ja:
-    - title: getentryでENAとGenBankから特定期間に公開されたエントリーを反映できていない
+    - title: "[復旧]getentryでENAとGenBankから特定期間に公開されたエントリーを反映できていない"
       path: 2025-05-12.html
  en:
-    - title: Entries from ENA and GenBank during a specific period are not being reflected in getentry
+    - title: "[Fully recovered]Entries from ENA and GenBank during a specific period are not being reflected in getentry"
       path: 2025-05-12-e.html
