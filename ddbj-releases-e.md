@@ -13,8 +13,8 @@ related_pages:
 
 |  Database  |  Release  |  Date  |  DDBJ date  |  Entries  |  Bases  |  Rate of increase  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-DDBJ               | 137     | 2024-12       | 2025-01   | 5337252368 | 37822491525053 | 8.3%
-DAD                | 107     | 2024-12       | 2025-01   | 334928281  | 147594583919   | 3.9%
+DDBJ               | 138     | 2025-06       | 2025-06   | 5609819983 | 41755371224919 | 10.4%
+DAD                | 108     | 2025-06       | 2025-06   | 361040335  | 156794009600   | 6.2%
 UniProt            | 2024_03 | 2024-05       | 2024-06   | 245482527  | 86791897849    |-0.9%
 UniProt/Swiss-Prot | 2024_03 | 2024-05       | 2024-06   | 571609     | 206878625      | 0.1%
 UniProt/TrEMBL     | 2024_03 | 2024-05       | 2024-06   | 244910918  | 86585019224    |-0.9%
@@ -30,6 +30,7 @@ release.
 
 |  DDBJ Release	  |  16S rRNA	  |  DAD Release	  |  Last published date  |
 | ---- | ---- | ---- | ---- |
+[138.0 (Jun. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.138.txt)  | [138.0 (Jun. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.138.txt)  | [108.0 (Jun. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.108.txt)   | May 30, 2025
 [137.0 (Dec. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.137.txt)  | [137.0 (Dec. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.137.txt)  | [107.0 (Dec. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.107.txt)   | Nov. 29, 2024
 [136.0 (Sep. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.136.txt)  | [136.0 (Oct. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.136.txt)  | [106.0 (Sep. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.106.txt)   | Aug. 30, 2024
 [135.0 (Jun. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.135.txt)  | [135.0 (Jul. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.135.txt)  | [105.0 (Jun. 2024)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.105.txt)   | May 31, 2024
