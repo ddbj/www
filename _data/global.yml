@@ -1,10 +1,14 @@
 top_news:
  ja:
+    - title: (7/9 10:00-11:00) GEA/DRA/BP/BS システムリリースによるサービス停止のお知らせ
+      path: 2025-06-30.html
     - title: "DDBJ リリース 138.0，DAD リリース 108.0 完成"
       path: 2025-06-26.html
     - title: "[復旧]getentryでENAとGenBankから特定期間に公開されたエントリーを反映できていない"
       path: 2025-05-12.html
  en:
+    - title: (July 9 10:00-11:00) Announcement of GEA/DRA/BP/BS system suspension
+      path: 2025-06-30-e.html
     - title: "DDBJ Rel. 138.0, DAD Rel. 108.0 Completed"
       path: 2025-06-26-e.html
     - title: "[Fully recovered]Entries from ENA and GenBank during a specific period are not being reflected in getentry"
