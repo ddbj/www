@@ -3,7 +3,11 @@ layout: simple
 title: Cannot create a DDBJ Account due to duplication
 category: faq
 db:
-  - account
+  - ddbj
+  - dra
+  - gea
+  - metabobank
+  - jga
 tags: 
   - DDBJ Account
 date: 2025-06-30T01:39:51

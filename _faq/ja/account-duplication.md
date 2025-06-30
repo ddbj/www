@@ -3,7 +3,11 @@ layout: simple
 title: 重複により DDBJ Account を作成することができません
 category: faq
 db:
-  - account
+  - ddbj
+  - dra
+  - gea
+  - metabobank
+  - jga
 tags: 
   - DDBJ Account
 date: 2025-06-30T01:39:51
