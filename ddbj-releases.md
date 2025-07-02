@@ -1,7 +1,7 @@
 ---
 layout: indexed_content
 lang: ja
-title: DDBJ リリース (DDBJ/16S rRNA/DAD)
+title: リリースノートアーカイブ (DDBJ/16S rRNA/DAD)
 lang: ja
 related_pages:
   - title: 登録・公開データ量
@@ -10,21 +10,7 @@ related_pages:
     url: /statistics/ddbj-release.html
 ---
 
-## 最新リリースの情報
-
-|  Database  |  Release  |  Date  |  DDBJ date  |  Entries  |  Bases  |  Rate of increase  |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-DDBJ               | 138     | 2025-06       | 2025-06   | 5609819983 | 41755371224919 | 10.4%
-DAD                | 108     | 2025-06       | 2025-06   | 361040335  | 156794009600   | 6.2%
-UniProt            | 2024_03 | 2024-05       | 2024-06   | 245482527  | 86791897849    |-0.9%
-UniProt/Swiss-Prot | 2024_03 | 2024-05       | 2024-06   | 571609     | 206878625      | 0.1%
-UniProt/TrEMBL     | 2024_03 | 2024-05       | 2024-06   | 244910918  | 86585019224    |-0.9%
-PDB                |         | 2024-06       | 2024-06   | 215285     |                | 0.5%
-
-{: .tablecaption}
-Date: リリースノートに記載されている正式公開日付<br>DDBJ date: DDBJで公開した日付<br>Rate of increase: 前回リリースの総塩基数に対する増加率
-
-## リリースノート (DDBJ, 16S rRNA, DAD)
+## リリースノートアーカイブ (DDBJ, 16S rRNA, DAD)
 
 |  DDBJ Release	  |  16S rRNA	  |  DAD Release	  |  Last published date  |
 | ---- | ---- | ---- | ---- |

@@ -7,6 +7,22 @@ lang: en
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>
 ---
 
+## Latest Release Information
+
+|  Database  |  Release  |  Date  |  DDBJ date  |  Entries  |  Bases  |  Rate of increase  |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+DDBJ               | 138     | 2025-06       | 2025-06   | 5609819983 | 41755371224919 | 10.4%
+DAD                | 108     | 2025-06       | 2025-06   | 361040335  | 156794009600   | 6.2%
+
+{: .tablecaption}
+Date: Official release date recorded in the release note.  
+DDBJ date: Date distributed by DDBJ.  
+Rate of increase: Increase rate of bases compared to the previous release.
+
+
+[Release Notes Archive](/ddbj-releases-e.html)
+
+
 ## Proportion of each archive in total data volume {#total-data-volume}
 
 ### Sequences {#total-data-volume-sequence}
