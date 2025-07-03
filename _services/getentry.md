@@ -199,7 +199,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
       <td>UniProt/Swiss-Prot とUniProt/TrEMBL を合わせたアミノ酸配列データベース</td>
     </tr>
     <tr>
-      <th><a href="https://www.rcsb.org/pdb/">PDB</a></th>
+      <th><a href="https://www.rcsb.org">PDB</a></th>
       <td>タンパク質の立体構造データベース</td>
     </tr>
     <tr>
@@ -209,7 +209,7 @@ getentry で検索可能な各データベースのリリース番号や公開�
     <tr>
       <th>Patent</th>
       <td>
-<a href="https://www.jpo.go.jp/index.html">JPO</a>，<a href="https//www.kipo.go.kr">KIPO</a> に由来するアミノ酸配列</td>
+<a href="https://www.jpo.go.jp/index.html">JPO</a>，<a href="https://www.kipo.go.kr">KIPO</a> に由来するアミノ酸配列</td>
     </tr>
   </tbody>
 </table>

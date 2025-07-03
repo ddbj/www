@@ -210,12 +210,12 @@ Database
     </tr>
     <tr>
       <th>Patent</th>
-      <td>Amino acid data from <a href="https://www.jpo.go.jp/e/index.html">JPO</a> and <a href="https//www.kipo.go.kr">KIPO</a>.</td>
+      <td>Amino acid data from <a href="https://www.jpo.go.jp/e/index.html">JPO</a> and <a href="https://www.kipo.go.kr">KIPO</a>.</td>
     </tr>
   </tbody>
 </table>
 
-Please refrer the links in the above table for the current status of databases and related information.    
+Please refer the links in the above table for the current status of databases and related information.    
 
 #### Output Format  {#Output_Format}
 
