@@ -7,7 +7,7 @@ lang: en
 related_pages:
   - title: DDBJ Periodical Release Statistics
     url: /statistics/ddbj-release-e.html
-  - title: DDBJ Periodical Releases
+  - title: Release Notes Archive
     url: /ddbj-releases-e.html
 addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script><script type='text/javascript' src='/assets/js/jquery.charts.js'></script>
 ---
