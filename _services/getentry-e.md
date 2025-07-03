@@ -205,18 +205,17 @@ Database
       <td>3D structure database of protein</td>
     </tr>
     <tr>
-      <th><a href="/ddbj-releases.html">DAD</a></th>
+      <th><a href="https://ddbj.nig.ac.jp/public/ddbj_database/dad/dadrel.txt">DAD</a></th>
       <td>translated sequences database extracting from DDBJ</td>
     </tr>
     <tr>
       <th>Patent</th>
-      <td>Amino acid data from <a href="https://www.jpo.go.jp/e/index.html">JPO</a> and <a href="//www.kipo.go.kr">KIPO</a>.</td>
+      <td>Amino acid data from <a href="https://www.jpo.go.jp/e/index.html">JPO</a> and <a href="https//www.kipo.go.kr">KIPO</a>.</td>
     </tr>
   </tbody>
 </table>
 
-Please refrer [Latest Release Information](/ddbj-releases-e.html), for
-the current status of searchable databases and related information.
+Please refrer the links in the above table for the current status of databases and related information.    
 
 #### Output Format  {#Output_Format}
 
@@ -291,7 +290,7 @@ follows.
 
 | default            | 10 entries                  |
 | specify the number | specified number of entries |
-| 0≥                 | no limit                    |
+| 0?                 | no limit                    |
 
 
 

@@ -203,18 +203,18 @@ getentry で検索可能な各データベースのリリース番号や公開�
       <td>タンパク質の立体構造データベース</td>
     </tr>
     <tr>
-      <th><a href="{{site.baseurl}}/ddbj-releases.html">DAD</a></th>
+      <th><a href="https://ddbj.nig.ac.jp/public/ddbj_database/dad/dadrel.txt">DAD</a></th>
       <td>DDBJ からアミノ酸翻訳配列データを抽出して作成したデータベース</td>
     </tr>
     <tr>
       <th>Patent</th>
       <td>
-<a href="https://www.jpo.go.jp/index.html">JPO</a>，<a href="//www.kipo.go.kr">KIPO</a> に由来するアミノ酸配列</td>
+<a href="https://www.jpo.go.jp/index.html">JPO</a>，<a href="https//www.kipo.go.kr">KIPO</a> に由来するアミノ酸配列</td>
     </tr>
   </tbody>
 </table>
 
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/ddbj-releases.html) でご確認ください。
+各データベースの最新の状況については、表中のリンク先をご確認ください。
 
 #### 出力形式  {#出力形式}
 
