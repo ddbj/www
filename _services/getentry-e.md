@@ -26,15 +26,11 @@ related_pages:
 
 ## About getentry  {#About_getentry}
 
-  - getentry is the DDBJ flat file search system, by accession numbers.
-  - getentry is, as well as a simple web form, available by WebAPI
-    program which calls up the data directly.
-  - WebAPI also provides a [gethistory](#ge_program) (revision history
-    search) function.
-  - Keyword search of DDBJ flat file is now avialable in
-    [ARSA](http://ddbj.nig.ac.jp/arsa)
-  - DRA data retrieval is unavilable in getentry, please refer [DDBJ
-    Search](https://ddbj.nig.ac.jp/search)
+  - getentry is the DDBJ flat file search system by [accession numbers](/insdc/accessions-e.html).
+  - getentry is, as well as a simple web form, available by WebAPI program which calls up the data directly.
+  - WebAPI also provides a [gethistory](#ge_program) (revision history search) function.
+  - Keyword search of DDBJ flat file is now avialable in [ARSA](http://ddbj.nig.ac.jp/arsa)
+  - DRA data retrieval is unavilable in getentry, please refer [DDBJ Search](https://ddbj.nig.ac.jp/search)
 
 
 ## Search from Web Browser  {#Search_from_Web_Browser}
@@ -72,8 +68,7 @@ URL : <https://getentry.ddbj.nig.ac.jp/top-e.html>
 
 ### ID  {#ID_}
 
-Input the Accession Number(s). Multiple number search, range search, and
-version seach are available.
+Input the Accession Number(s). Multiple number search, range search, and version seach are available.
 
 <table>
   <tbody>
@@ -118,8 +113,7 @@ version seach are available.
 
 ### Database and Output format  {#Database_and_Output_format}
 
-Select the database. The output format should be selected from either
-"database specific format" or FASTA.
+Select the database. The output format should be selected from either "database specific format" or FASTA.
 
 #### DNA database  {#DNA_database}
 
@@ -129,7 +123,7 @@ Database
   <tbody>
     <tr>
       <th>DDBJ/EMBL/GenBank </th>
-      <td><a href="http://www.insdc.org/">International Nucleotide Sequence Databases（INSD）</a></td>
+      <td><a href="https://www.insdc.org/">International Nucleotide Sequence Databases（INSD）</a></td>
     </tr>
     <tr>
       <th>MGA</th>
@@ -143,16 +137,13 @@ DDBJ/EMBL/GenBank includes the following databases.
 
   - DDBJ periodical release
   - daily updates
-  - accession numbers consisting of "4 letters + 8 digits"  
-    （[WGS(Whole Genome Shotgun)](/ddbj/wgs-e.html), some
-    [TSA(Transcriptome Shotgun Assembly)](/ddbj/tsa-e.html)）
   - [TPA(Third Party Data)](/ddbj/tpa-e.html)
 
-"4 letters + 8 digits" accession numbers(WGS and TSA) and TPA are not
-contained in the DDBJ releases.
+TPA data are not contained in the DDBJ releases.    
+DDBJ terminated accepting new submission of MGA data.    
 
-Please refrer the [Latest Release Information](/ddbj-releases-e.html),
-for the current status of searchable databases and related information.
+Please refrer the [Latest Release Information](/statistics/ddbj-release-e.html), 
+for the current status of searchable databases and related information.    
 
 
 Output format
@@ -186,8 +177,7 @@ Output format
 These 5 format types are selectable only after specification of
 "DDBJ/EMBL/GenBank".
 
-When the MGA is selected as the target database, only "flatfile" can be
-specified.
+When the MGA is selected as the target database, only "flatfile" can be specified.
 
 #### Protein database  {#Protein_database}
 

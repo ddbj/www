@@ -34,11 +34,11 @@ related_pages:
 ---
 
 ## getentryの機能について  {#getentry_の機能について}
-- getentry は，アクセッション番号からの DDBJ フラットファイルの検索にご利用いただけます。
-- getentry は webAPI として実装しており，入力フォームからだけでなく，プログラムなどから直接呼び出すことも可能です。
+- getentry は、[アクセッション番号](/insdc/accessions.html)による DDBJ フラットファイルの検索にご利用いただけます。
+- getentry は webAPI として実装しており、入力フォームからだけでなく、プログラムなどから直接呼び出すことも可能です。
 - データの変更履歴の検索は，webAPI プログラムの [gethistory](#ge_program) を用いて行うことができます。
 - "DDBJ フラットファイルのキーワード検索" は [ARSA](http://ddbj.nig.ac.jp/arsa/) をご利用ください。
-- DRA データの検索は getentry ではおこなうことができません。[DDBJ Search](https://ddbj.nig.ac.jp/search) をご利用ください。
+- DRA データの検索には getentry ではなく [DDBJ Search](https://ddbj.nig.ac.jp/search) をご利用ください。
 
 ## 入力フォームによる検索  {#入力フォームによる検索}
 [https://getentry.ddbj.nig.ac.jp/top-j.html](https://getentry.ddbj.nig.ac.jp/top-j.html)からご利用下さい。
@@ -120,7 +120,8 @@ Accession 番号 を入力します。入力には、複数 Accession 番号の�
 
 ### データベースと出力形式  {#データベースと出力形式}
 
-検索対象となるデータベースをひとつ指定します。 検索結果の出力形式は，エントリに対して，各データベースで定められている形式か FASTA 形式 のいずれかを以下の選択肢からひとつ指定します。
+検索対象となるデータベースをひとつ指定します。    
+検索結果の出力形式は，エントリに対して，各データベースで定められている形式か FASTA 形式 のいずれかを以下の選択肢からひとつ指定します。
 
 #### DNAデータベース  {#DNAデータベース}
 
@@ -130,7 +131,7 @@ Accession 番号 を入力します。入力には、複数 Accession 番号の�
   <tbody>
     <tr>
       <th>DDBJ/EMBL/GenBank </th>
-      <td><a href="http://www.insdc.org/">国際塩基配列データベース（INSD）</a></td>
+      <td><a href="https://www.insdc.org/">国際塩基配列データベース（INSD）</a></td>
     </tr>
     <tr>
       <th>MGA</th>
@@ -143,15 +144,12 @@ DDBJ/EMBL/GenBank を選択すると、以下が検索対象となります。
 
 * DDBJ 定期リリース
 * DDBJ 定期リリース後の新着データ
-* アルファベット４文字＋８桁の数字で構成されるアクセッション番号のデータ  
-（[WGS(Whole Genome Shotgun)](/ddbj/wgs.html), [TSA(Transcriptome Shotgun Assembly)](/ddbj/tsa.html) の一部） 
 * [TPA(Third Party Data)](/ddbj/tpa.html)
 
-DDBJ リリース には、 TPA、 アルファベット４文字＋８桁の数字で構成されるアクセッション番号を持つデータ（WGS，TSA の一部） は含まれておりません。
+TPA データは DDBJ リリース に含まれておりません。    
+MGA データの新規登録は受け付けておりません。    
 
-MGA データの新規登録は受け付けておりません。
-
-getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[現在公開されているリリースの情報]({{site.baseurl}}/ddbj-releases.html) でご確認ください。
+getentry で検索可能な各データベースのリリース番号や公開日等の最新の状況については、[最新リリースの情報](/statistics/ddbj-release.html) でご確認ください。
 
 
 出力形式
