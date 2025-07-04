@@ -308,7 +308,7 @@ M, Mandatory; NR, Not required; OPT, Optional
 
 ### DFAST のデータを Submit するには  {#mssdfast-3}
 1. [DFAST](https://dfast.ddbj.nig.ac.jp/) にアクセスし、[DDBJ アカウント](/ddbj-account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。job 終了後、”DDBJ submission”  タブをクリックします。DDBJ への登録に必要な項目（BioProject ID、BioSample ID、locus_tag prefix、その他のメタ情報）を入力すると、MSS 登録ファイルが作成されます。（注１）
-最後に、Format Check をクリックして、書式チェックを行ってください。
+最後に Format Check をクリックして、書式チェックを行ってください。
 1. DFAST の job ID で submit する場合
     1. job ID (<span style="font-family:Arial;">########-####-####-####-############</span> 書式のID)をコピーします。
 1. DFAST からダウンロードしたファイルを submit する場合
