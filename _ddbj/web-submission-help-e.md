@@ -274,7 +274,7 @@ Related page
 
 <div class="highlight">
 
-<img src="/assets/images/help/NSSShelp7-5-1_e.png" alt="" title="" class="">
+<img src="/assets/images/help/NSSShelp7-5-1.png" alt="" height="480" title="" class="">
 
 </div>
 
