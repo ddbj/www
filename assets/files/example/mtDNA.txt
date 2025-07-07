@@ -18,10 +18,9 @@ COMMON	SUBMITTER		contact	Hanako Mishima
 			year	2024
 	DATE		hold_date	20261130
 ENT01	source	1..9910	organelle	mitochondrion
-			organism	Abies nordmanniana subsp. equi-trojani
+			organism	Abies nordmanniana
 			mol_type	genomic DNA
 			isolate	SM08
-			sub_species	equi-trojani
 			geo_loc_name	Japan
 			collection_date	2023-07-08
 	CDS	8607..9390	gene	COX3
