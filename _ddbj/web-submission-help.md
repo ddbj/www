@@ -310,7 +310,7 @@ Assembly information のサンプルは**[ここから](/assets/files/example/NS
 
 <div class="highlight">
 
-<img src="/assets/images/help/NSSShelp7-5-3.png" alt="" title="" class="">
+<img src="/assets/images/help/NSSShelp7-5-3.png" alt="" height="480" title="" class="">
 
 </div>
 
