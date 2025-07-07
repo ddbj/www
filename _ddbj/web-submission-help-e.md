@@ -282,7 +282,7 @@ Related page
 
 <div class="highlight">
 
-<img src="/assets/images/help/NSSShelp7-5-2.png" alt="" title="" class="">
+<img src="/assets/images/help/NSSShelp7-5-2.png" alt="" height="480" title="" class="">
 
 </div>
 
@@ -290,7 +290,7 @@ Related page
 
 <div class="highlight">
 
-<img src="/assets/images/help/NSSShelp7-5-3_e.png" alt="" title="" class="">
+<img src="/assets/images/help/NSSShelp7-5-3.png" alt="" title="" class="">
 
 </div>
 
