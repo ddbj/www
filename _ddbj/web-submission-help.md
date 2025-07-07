@@ -306,7 +306,7 @@ Assembly information のサンプルは**[ここから](/assets/files/example/NS
 
 </div>
 
-#### Mitochondrial genome  {#flow-7-5-3}
+#### Mitochondrial cytb - tRNA-Pro  {#flow-7-5-3}
 
 <div class="highlight">
 
