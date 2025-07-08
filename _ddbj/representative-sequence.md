@@ -55,7 +55,7 @@ DDBJ (INSDC) では, <span style="color:red">基本的には、配列が同一�
       <td>118</td>
     </tr>
     <tr>
-      <th>totla</th>
+      <th>total</th>
       <td>101</td>
       <td>60</td>
       <td>70</td>
