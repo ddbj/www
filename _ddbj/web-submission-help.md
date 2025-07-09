@@ -324,7 +324,7 @@ Assembly information のサンプルは**[ここから](/assets/files/example/NS
 
 #### アップロード可能なアノテーションファイル  {#flow-7-6-1}
 
-  - サンプルファイルを[ここから](/assets/files/example/mtDNA.txt)ダウンロードできます。
+  - サンプルファイルを[ここからダウンロードできます](/assets/files/example/mtDNA.txt)。
 
   - アノテーションファイル作成方法に関する手引きは、[登録ファイル形式、アノテーションファイル](/ddbj/file-format.html#annotation)をご覧ください。
 

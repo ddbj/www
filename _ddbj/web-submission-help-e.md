@@ -304,7 +304,7 @@ Related page
 
 #### Uploadable file format  {#flow-7-6-1}
 
-  - You can download [sample annotation file from here](/assets/files/example/mtDNA.txt).
+  - You can [download sample annotation file from here](/assets/files/example/mtDNA.txt).
 
   - Please refer to ["Making MSS Files for preparation of annotation file"](/ddbj/file-format-e.html#annotation) for detail.
 
