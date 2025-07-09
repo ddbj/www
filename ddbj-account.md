@@ -49,7 +49,8 @@ NBDC ヒトデータベース申請システムでは、日本語による申請
 ## SSH 公開鍵の登録 {#key}
 
 [DDBJ アカウント](https://accounts.ddbj.nig.ac.jp) にログインし、SSH keys を選択します。  
-[New SSH key] から、SSH 公開鍵をファイルアップロード、もしくは、内容をコピーして登録します。サポートされている形式は OpenSSH で、暗号化方式は RSA, ECDSA, ED25519 になります。
+[New SSH key] から、SSH 公開鍵をファイルアップロード、もしくは、内容をコピーして登録します。サポートされている形式は OpenSSH で、暗号化方式は RSA, ECDSA, ED25519 になります。    
+公開鍵/秘密鍵ペアの生成方法は[公開鍵・秘密鍵の生成](/key.html)をご覧ください。
 
 ## アカウント情報の更新 {#update-account}
 

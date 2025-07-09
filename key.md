@@ -144,12 +144,8 @@ $ ssh-keygen -t rsa -f J-DU999991
 
 ### 認証用公開鍵の登録 {#register-public-key}
 
-[登録アカウント](https://ddbj.nig.ac.jp/D-way/)にログインします。"アカウント" ページ下部の "Public Key"
-エリアから公開鍵をアップロードします。認証用公開鍵ファイルを選択し，[Register public key\] で鍵を登録します。
-
-{::nomarkdown}
-{% include image.html url="books/keyregister.jpg" caption="認証用公開鍵を登録" class="w500" %}
-{:/}
+[DDBJ アカウント](https://accounts.ddbj.nig.ac.jp) にログインし、SSH keys を選択します。  
+[New SSH key] から、SSH 公開鍵をファイルアップロード、もしくは、内容をコピーして登録します。サポートされている形式は OpenSSH で、暗号化方式は RSA, ECDSA, ED25519 になります。  
 
 D-way ウェブサービスでは JGA を利用することができません。認証用公開鍵をアカウントに登録後、[「JGA への登録手順」](/jga/submission-step.html)、及び、[「JGA データの利用手順」](/jga/download.html)に従ってサービスを利用してください。
 

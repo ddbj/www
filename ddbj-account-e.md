@@ -49,7 +49,8 @@ When submitting an application in Japanese through the NBDC Human Database Appli
 
 ## Registering an SSH Public Key {#key}
 
-Log in to your [DDBJ Account](https://accounts.ddbj.nig.ac.jp) and select SSH keys. Click New SSH key to upload your SSH public key file or paste the key content directly. A supported file format is OpenSSH and encryption methods are RSA, ECDSA, and ED25519.
+Log in to your [DDBJ Account](https://accounts.ddbj.nig.ac.jp) and select SSH keys. Click New SSH key to upload your SSH public key file or paste the key content directly. A supported file format is OpenSSH and encryption methods are RSA, ECDSA, and ED25519.    
+For instructions on generating public/private key pairs, see [Generating public and private keys](/key-e.html). 
 
 ## Updating account information {#update-account}
 
