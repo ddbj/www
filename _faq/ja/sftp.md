@@ -95,7 +95,7 @@ sftp で上記のエラーが表示された場合は、[ssh 接続が途中で�
 sftp コマンドで以下のオプションを指定してください。   
 
 ```
-sftp -o ServerAliveInterval=60 -o TCPKeepAlive=no -i id_rsa test07@ftp-private.ddbj.nig.ac.jp 
+sftp -o ServerAliveInterval=60 -o TCPKeepAlive=yes -i id_rsa test07@ftp-private.ddbj.nig.ac.jp 
 ```
 
 ユーザホーム直下の `.ssh/config` ファイルで設定を追加することで、コマンド毎に指定する必要がなくなります。
@@ -103,7 +103,7 @@ sftp -o ServerAliveInterval=60 -o TCPKeepAlive=no -i id_rsa test07@ftp-private.d
 ```
 Host ddbj-ftp
   ServerAliveInterval 60
-  TCPKeepAlive no
+  TCPKeepAlive yes
   HostName ftp-private.ddbj.nig.ac.jp
   User test07
   IdentityFile ~/id_rsa
