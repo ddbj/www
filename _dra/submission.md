@@ -15,9 +15,10 @@ lang: ja
 
 ## 登録の流れ {#flow}
 
-* [DDBJ アカウントの取得](/ddbj-account.html)
+* [DDBJ アカウントの取得](#account)
 * [新規登録の作成](#new-submission)
 * [データファイルのアップロード](#upload)
+* [登録ステータス](#status)
 * [BioProject の登録](#bioproject)
 * [BioSample の登録](#biosample)
 * [Submission](#submission)
@@ -27,26 +28,14 @@ lang: ja
 * [データファイルの検証処理](#validation)
 * [アクセッション番号](#accession)
 
-## 登録ステータス {#status}
-
-ステータスで進捗状況を把握することができます。"submission_validated" と "data_error" になった登録が DRA チームで査定されます。
-
-| ステータス                 | 説明                            |
-|---|
-| new                   | メタデータの登録前                     |
-| metadata_submitted   | メタデータが登録された                   |
-| data_validating      | データファイルの検証処理中                 |
-| data_error           | データファイルの検証処理エラー               |
-| submission_validated | メタデータとデータファイルの検証処理を通過         |
-| completed             | アクセッション番号が発行された               |
-| confidential          | 公開用ファイルの作成が完了し、非公開に保たれている |
-| public                | 公開                     |
-| wait_for_release         | 公開まで30日以内  |
-| canceled                | キャンセル           |
-
-## 登録アカウントの取得  {#account}
+## DDBJ アカウントの取得 {#account}
 
 [DDBJ アカウント](/ddbj-account.html)を取得し、公開鍵をアカウントに登録します。
+
+公開鍵がアカウントに未登録の状態で DRA 登録サイトにアクセスすると、以下のような警告が表示されます。
+[認証用公開鍵の登録](/key.html#register-public-key)に従って鍵を登録してください。
+
+{% include image.html url="books/no-key.jpg" caption="公開鍵が未登録の場合" class="w500" %}
 
 ## 新規登録の作成  {#new-submission}
 
@@ -67,6 +56,23 @@ lang: ja
 
 データファイルはファイル受付サーバの対応する Submission ディレクトリ（例 test07-0040/）にアップロードします。
 アップロード方法は「[データのアップロード](/upload.html)」をご覧ください。データをアップロードしないとメタデータを作成することはできません。
+
+## 登録ステータス {#status}
+
+ステータスで進捗状況を把握することができます。"submission_validated" と "data_error" になった登録が DRA チームで査定されます。
+
+| ステータス                 | 説明                            |
+|---|
+| new                   | メタデータの登録前                     |
+| metadata_submitted   | メタデータが登録された                   |
+| data_validating      | データファイルの検証処理中                 |
+| data_error           | データファイルの検証処理エラー               |
+| submission_validated | メタデータとデータファイルの検証処理を通過         |
+| completed             | アクセッション番号が発行された               |
+| confidential          | 公開用ファイルの作成が完了し、非公開に保たれている |
+| public                | 公開                     |
+| wait_for_release         | 公開まで30日以内  |
+| canceled                | キャンセル           |
 
 ## メタデータの登録 {#metadata}
 

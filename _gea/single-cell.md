@@ -14,6 +14,8 @@ lang: ja
 
 10x Genomics のデータファイルについては [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360024716391-What-format-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-SRA) を参考にしてください。
 
+サンプル毎に分割した bam/fastq を登録する場合、該当する BioSample の description に各サンプルの細胞数を明記してください。参考:[Which CellPlex data files should be uploaded/downloaded to/from public repositories such as GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360056727852-Which-CellPlex-data-files-should-be-uploaded-downloaded-to-from-public-repositories-such-as-GEO-SRA)
+
 ### ライブラリー情報  {#library}
 
 分割・混合登録に関係なく、DRA Experiment の [Library Construction Protocol](/dra/submission.html#Library_Construction_Protocol) にシングルセルライブラリー構築手法（例

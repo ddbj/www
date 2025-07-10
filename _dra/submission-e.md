@@ -17,6 +17,7 @@ Submission of research data from human subjects
 * [Create a DDBJ account](/ddbj-account-e.html)
 * [Create a new submission](#new-submission)
 * [Upload data files](#upload)
+* [Submission status](#status)
 * [Submit a BioProject](#bioproject)
 * [Submit BioSample(s)](#biosample)
 * [Submission](#submission)
@@ -26,27 +27,14 @@ Submission of research data from human subjects
 * [Data file validation](#validation)
 * [Accession number](#accession)
 
-## Submission status {#status}
-
-Progress of your submission is indicated by its submission status. 
-The DRA team reviews submission whose status is in "submission_validated" or "data_error".
-
-| Status                | Explanation                                                   |
-|---|
-| new                   | Metadata are not submitted.                              |
-| metadata_submitted   | Metadata have been submitted.                                  |
-| data_validating      | Validating data files.                                        |
-| data_error           | An error is detected in data file validation.                    |
-| submission_validated | Metadata and data file are validated.                        |
-| completed             | Accession numbers are issued.                           |
-| confidential          | Data files for distribution are created and the submission is kept private. |
-| public                | Released.                                           |
-| wait_for_release                | Within 30 days until released.                                           |
-| canceled                | Submission is canceled                                           |
-
 ## Create a submission account {#account}
 
-Create a [DDBJ account](/ddbj-account-e.html) and register a public key to your account.
+Create a [DDBJ account](/ddbj-account-e.html) and register a public key to your account. 
+
+When accessing the DRA submission site without a registered public key associated with your account, the following warning will be displayed. 
+Please register your key by following the instructions at [Registering a Public Key for Authentication](/key-e.html#register-public-key).
+
+{% include image.html url="books/no-key.jpg" caption="No public key is registered with your account." class="w500" %}
 
 ## Create a new submission  {#new-submission}
 
@@ -65,6 +53,24 @@ Create a new submission by [New submission]. A submission directory (e.g. test07
 ## Upload data files {#upload}
 
 Upload data files to the submission directory (e.g. test07-0040/) on the file server. Please see "[Data upload](/upload-e.html)" regarding how to upload your data files.
+
+## Submission status {#status}
+
+Progress of your submission is indicated by its submission status. 
+The DRA team reviews submission whose status is in "submission_validated" or "data_error".
+
+| Status                | Explanation                                                   |
+|---|
+| new                   | Metadata are not submitted.                              |
+| metadata_submitted   | Metadata have been submitted.                                  |
+| data_validating      | Validating data files.                                        |
+| data_error           | An error is detected in data file validation.                    |
+| submission_validated | Metadata and data file are validated.                        |
+| completed             | Accession numbers are issued.                           |
+| confidential          | Data files for distribution are created and the submission is kept private. |
+| public                | Released.                                           |
+| wait_for_release                | Within 30 days until released.                                           |
+| canceled                | Submission is canceled                                           |
 
 ## Metadata registration {#metadata}
 

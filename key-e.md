@@ -146,6 +146,10 @@ $ ssh-keygen -t rsa -f J-DU999991
 At "/Users/you/.ssh", the private key is saved as "J-DU999991" and the public key is saved as "J-DU999991.pub".
 ```
 
+### Registering a public key for authentication {#register-public-key}
+
+Log in to your [DDBJ account](https://accounts.ddbj.nig.ac.jp) and select SSH keys. Click [New SSH key] to either upload your SSH public key file or paste its content. Supported formats are OpenSSH with encryption types: RSA, ECDSA, and ED25519. Note that the JGA service cannot be accessed through the D-way web interface. After registering your authentication public key to your account, please follow the steps in [JGA submission steps](/jga/submission-step-e.html) and [How to use data](/jga/download-e.html).
+
 ## Convert a private key  {#convert-private-key}
 
 ### Windows PuTTY to OpenSSH {#putty-openssh}
