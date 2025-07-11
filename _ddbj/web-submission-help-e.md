@@ -105,7 +105,7 @@ Regarding ISO abbreviation of the journal name, you can consult it on [NLM Catal
 
 ## 5\. Sequence  {#flow-5}
 
-Enter nucleotide sequence here. When you submit [TPA](/ddbj/tpa-e.html) entry, assembly information is also needed.
+Enter nucleotide sequence here. 
 
 <img src="/assets/images/help/NSSShelp5_e.png" alt="" title="" class="w600">
 
@@ -164,47 +164,6 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
 //
         
 ```
-
-### TPA nucleotide sequence  {#flow-5-2}
-
-<img src="/assets/images/help/NSSShelp5-2_e.png" alt="" title="" class="w600">
-
-### Format of assembly information for TPA  {#flow-5-3}
-
-#### Example  {#flow-5-3-1}
-
-<img src="/assets/images/help/NSSShelp5-3-1_e.png" alt="" title="" class="w600">
-
-You can download the assembly sample [from here (tab-delimited text format)](/assets/files/example/NSSShelp-tpa-sample.txt).
-
-#### The example indicates following information.  {#The_example_indicates_following_information.}
-
-**Entry name FA01**<br>TPA sequence:1-552 corresponds to ZZ000001.1:54872-55422<br>TPA sequence:553-705 corresponds to ZZ000002.5:1-153
-
-**Entry name BM123**<br>TPA sequence:1-438 corresponds to ZZ000010.1:1-438<br>TPA sequence:377-695 corresponds to ZZ000011.1:complement (1-320)<br>TPA sequence:411-790 corresponds to ZZ000021.12:1-398<br>TPA sequence:790-1191 corresponds to ZZ000022.0:1-401
-
-Their correspondence is subject to the rule, ["The sequence alignment rule between TPA and primary entries"](/ddbj/tpa-e.html#alignment-rule).
-
-### Detailed rule for description of assembly information  {#flow-5-4}
-
-  - The 1st line must be
-      - <span style="font-size: 11px;">\[tab or space\]TPA\_SPAN\[tab or space\]PRIMARY\_IDENTIFIER\[tab or space\]PRIMARY\_SPAN\[tab or space\]COMPLEMENT</span>
-  - Do not include null line(s).
-  - Entry name must be entered at the 1st column. Assembly information is separated with each entry at the line of entry name.
-  - TPA\_SPAN
-      - X..Y or X-Y
-      - X and Y are numeric. Location on TPA sequence is described.
-      - e.g. 100..2000   100-2000
-  - PRIMARY\_IDENTIFIER
-      - accession number.version
-      - Accession number with version of primary entry is described. Please use 0 for the version number if primary entry is not released.
-      - e.g. AB123456.1   AB987654.0
-  - PRIMARY\_SPAN
-      - X..Y or X-Y
-      - X and Y are numeric. The region from primary entry, which was used for construct TPA sequence, is described. The region must match to the TPA\_SPAN. Please see ["The sequence alignment rule between TPA and primary entries"](/ddbj/tpa-e.html#alignment-rule).
-  - COMPLEMENT
-      - null or c
-      - Enter "c" when complementary region from primary entry is used.
 
 ## 6\. Template  {#flow-6}
 
@@ -316,8 +275,6 @@ Related page
   - Information that you entered on the pages, "1. Contact person", "2. Hold date", "3. Submitter", and "4. Reference", are automatically added in front of uploaded annotation file as COMMON section.
 
   - When "COMMON" is included in the uploaded annotation file, if will be replaced with information obtained from "1. Contact person", "2. Hold date", "3. Submitter", and "4. Reference."
-
-  - For TPA, you should not include PRIMARY\_CONTIG section in annotation file. PRIMARY\_CONTIG section is automatically inserted to the uploaded annotation file by converting information of the "5. Sequence" page.
 
 <!-- end list -->
 

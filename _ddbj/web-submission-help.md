@@ -106,7 +106,6 @@ Journal の ISO abbreviation は [NLM Catalog](//www.ncbi.nlm.nih.gov/nlmcatalog
 ## 5\. Sequence  {#flow-5}
 
 塩基配列を入力します。  
-[TPA](/ddbj/tpa.html) の submission を行う場合には、assembly information も同時に入力します。
 
 <img src="/assets/images/help/NSSShelp5_j.png" alt="" title="" class="w600">
 
@@ -167,61 +166,6 @@ gctgtaactctgagatgtgctaaataaaccctctttctcaaaaaaaaaaaaaaaa
 //
         
 ```
-
-### TPA 塩基配列の入力  {#flow-5-2}
-
-<img src="/assets/images/help/NSSShelp5-2_j.png" alt="" title="" class="w600">
-
-### TPA における Assembly Information の書式  {#flow-5-3}
-
-#### 入力例  {#flow-5-3-1}
-
-<img src="/assets/images/help/NSSShelp5-3-1_j.png" alt="" title="" class="w600">
-
-Assembly information のサンプルは**[ここから](/assets/files/example/NSSShelp-tpa-sample.txt)**ダウンロードできます。(タブ区切りテキスト形式)
-
-#### 上記入力例の意味  {#上記入力例の意味}
-
-**Entry name FA01**<br>TPA 塩基配列 1-552 の領域は ZZ000001.1 の 54872-55422 に対応<br>TPA 塩基配列 553-705 の領域は ZZ000002.5 の 1-153 に対応
-
-**Entry name BM123**<br>TPA 塩基配列 1-438 の領域は ZZ000010.1 の 1-438 に対応<br>TPA 塩基配列 377-695 の領域は ZZ000011.1 の complement(1-320) に対応<br>TPA 塩基配列 411-790 の領域は ZZ000021.12 の 1-398 に対応<br>TPA 塩基配列 790-1191 の領域は ZZ000022.0 の 1-401 に対応
-
-いずれも [TPA とプライマリーエントリの配列アラインメントに関する規則](/ddbj/tpa.html#alignment-rule)
-に従います。
-
-### Assembly Information 入力規則  {#flow-5-4}
-
-  - 第1行目は
-    
-      - <span style="font-size: 11px;">[tab or space\]TPA\_SPAN[tab or space\]PRIMARY\_IDENTIFIER[tab or space\]PRIMARY\_SPAN[tab or space\]COMPLEMENT</span>  
-である必要があります。
-
-  - 空行を含めないでください。
-
-  - Entry name は第１列に記載します、Entry name のある行でエントリーごとの Assembly 情報が区切られることになります。
-
-  - TPA\_SPAN
-    
-      - X..Y or X-Y
-      - X と Y は数字です。TPA 配列上の領域を記載します。
-      - 例: 100..2000   100-2000
-
-  - PRIMARY\_IDENTIFIER
-    
-      - accession number.version
-      - 引用するプライマリエントリのアクセッション番号をバージョン番号とともに入力します。  
-        未公開のアクセッション番号の場合はバージョン番号を 0 にしてください。
-      - 例: AB123456.1   AB987654.0
-
-  - PRIMARY\_SPAN
-    
-      - X..Y or X-Y
-      - X と Y は数字です。プライマリエントリからの引用領域を入力します。抜き出した領域がTPA\_SPANの領域と対応している必要があります。[TPA とプライマリーエントリの配列アラインメントに関する規則](/ddbj/tpa.html#alignment-rule)もご覧ください。
-
-  - COMPLEMENT
-    
-      - 空欄 または c
-      - プライマリエントリから相補鎖領域を引用する場合にのみ c を指定します。
 
 ## 6\. Template  {#flow-6}
 
@@ -337,7 +281,6 @@ Assembly information のサンプルは**[ここから](/assets/files/example/NS
 
   - "COMMON" を含むアノテーションファイルをアップロードした場合、COMMON は "1. Contact person"、"2. Hold date"、"3. Submitter"、"4. Reference" に入力された内容に置換されます。
 
-  - TPA 登録においては、PRIMARY\_CONTIG をアノテーションファイルに含めないでください。"5. Sequence" 内 Assembly Information に入力された内容が自動的に変換され、アノテーションファイルの各エントリーに挿入されます。
 
 <!-- end list -->
 
