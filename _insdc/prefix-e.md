@@ -386,6 +386,7 @@ PT      USPTO           Patent application
 PU      USPTO           Patent application
 PV      GenBank         Direct submission
 PW      DDBJ            
+PX      GenBank         Direct submission
 Q       void            UniProt/Swiss-Prot
 QK      EPO             Patent application
 QL      EPO             Patent application
