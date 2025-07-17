@@ -11,7 +11,7 @@ JGA に大規模データを sftp でアップロード・ダウンロードす�
 
 遺伝研スパコンとは異なり VPN 接続は必要ありません。　　
 
-* [遺伝研スパコン Archaea tools の使い方](https://sc.ddbj.nig.ac.jp/software/Archaea_tools/)
+* [遺伝研スパコン Archaea tools の使い方](https://sc.ddbj.nig.ac.jp/guides/software/CopyTool/Archaea_tools/)
 * [各製品ごとの公式マニュアル](https://support.bytix.tech/document/)
 * [最新バージョン](https://support.bytix.tech/latest/)
 
