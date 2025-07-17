@@ -55,23 +55,23 @@ Please refer each manuals for how to install and use.
     </thead>
     <tbody>
       <tr>
-        <td>UME_win_V1.62.zip</td>
+        <td>UME_win_V1.63.zip</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS">FTP</a></td>
         <td>Windows</td>
-        <td rowspan="2">2025/07/01</td>
+        <td rowspan="2">2025/07/16</td>
         <td rowspan="2"><a href="/ddbj/ume-e.html">User's manual</a></td>
         <td rowspan="2">UME contains Parser and transChecker.</td>
       </tr>
       <tr>
-        <td>UME_unix_V1.62.zip</td>
+        <td>UME_unix_V1.63.zip</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS">FTP</a></td>
         <td>Unix/macOS</td>
       </tr>
       <tr>
-        <td>Parser_V6.76.tar.gz</td>
+        <td>Parser_V6.77.tar.gz</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS">FTP</a></td>
         <td>Unix/macOS</td>
-        <td>2025/07/01</td>
+        <td>2025/07/16</td>
         <td><a href="/ddbj/parser-e.html">User's manual</a></td>
         <td></td>
       </tr>
