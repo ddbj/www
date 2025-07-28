@@ -82,7 +82,6 @@ the following cases are included, but not limited to them.
 
 ## Illustrated guides  {#How_to_submit}
 
-- [Manual (PDF)](/assets/files/pdf/ddbj/websubHelp_full-e.pdf)
 - [NSSS help page](/ddbj/web-submission-help-e.html)
 
 ## Before you start 
@@ -97,7 +96,7 @@ the following cases are included, but not limited to them.
   - Save the bookmark after the clicking at each page. Then you can resume the submission from the bookmark.
 
 ## Recommended internet browser
-  - [Chrome](https://www.google.com/chrome/browser/desktop/index.html) or [Firefox](https://www.mozilla.org/ja/firefox/all/)
+  - Google Chrome, Microsoft Edge, or Mozilla Firefox
 
 ## Updates, Questions   {#UpdatesQuestions}
 

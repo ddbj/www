@@ -83,9 +83,6 @@ BioProject/BioSample との連携のために [DBLINK](/ddbj/flat-file.html#DBLI
 
 ## 入力ガイド
 
-  - [マニュアル (PDF)](/assets/files/pdf/ddbj/websubHelp_full.pdf)
-  - [NSSS の紹介 (YouTube)](https://youtu.be/JTCV7bG_KJc)
-  - [NSSS の紹介 (PDF)](https://drive.google.com/file/d/1KnEVC--SFglqdENRGLMehFP9NuQXyVrt)
   - [NSSS ヘルプページ](/ddbj/web-submission-help.html)
 
 ## 登録を開始する前に
@@ -101,7 +98,7 @@ BioProject/BioSample との連携のために [DBLINK](/ddbj/flat-file.html#DBLI
 
 ## 推奨ブラウザ
 
-  - [Chrome](https://www.google.com/chrome/browser/desktop/index.html) または [Firefox](https://www.mozilla.org/ja/firefox/all/) の使用を推奨します。
+  - Google Chrome、Microsoft Edge、またはMozilla Firefoxでの利用を推奨します。
 
 ## 登録データの更新・お問い合わせ
 
