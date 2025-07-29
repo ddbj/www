@@ -59,7 +59,7 @@ to describe the biological nature such as gene function and other property of th
 <a id="Reference1A" href="#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
   <a id="AuthorsA" href="#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
   <a id="TitleA" href="#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+  <a id="JournalA" href="#JournalB">JOURNAL</a>   Submitted (30-NOV-2008)
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
@@ -457,13 +457,13 @@ Submitter(s) of the entry is/are indicated in principle. Submitter is responsibl
 At first, "Accept Date" of the entry is indicated. "Accept Date" is defined as the date when DDBJ have received the acceptable data to assign accession number in principle.
 Even if the entry is updated, "Accept Date" is NOT changed. Then, the information about the address and the affiliation of "Contact Person" is indicated.
 
-<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.
+<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2008)
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
 </code></pre>
 
-| ```Submitted (30-NOV-2008) to the DDBJ/EMBL/GenBank databases.``` | Accept date of this entry is 30-NOV-2008 |
+| ```Submitted (30-NOV-2008)``` | Accept date of this entry is 30-NOV-2008 |
 | ```Contact:Hanako Mishima```<br>```National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,```<br> ```Mishima, Shizuoka 411-8540, Japan``` | The information about the address and the affiliation of Hanako Mishima. |
 
 E-mail address, phone & fax nos.
@@ -473,7 +473,7 @@ E-mail address, phone & fax nos.
 
 Phone and fax numbers and E-mail address are deleted.
 
-<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
+<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2000)
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
@@ -481,7 +481,7 @@ Phone and fax numbers and E-mail address are deleted.
 
 When the submitters wish to keep their contact information disclosed, it will be described as,
 
-<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2000) to the DDBJ/EMBL/GenBank databases.
+<pre class="code flat-file"><code>  JOURNAL   Submitted (30-NOV-2000)
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan

@@ -79,7 +79,7 @@ In case of citing [DDBJ Read Archive](/dra/index-e.html)
 <a id="Reference1A" href="/ddbj/flat-file-e#Reference1B">REFERENCE   1</a>  (bases 1 to 800)
   <a id="AuthorsA" href="/ddbj/flat-file-e#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
   <a id="TitleA" href="/ddbj/flat-file-e#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="/ddbj/flat-file-e#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
+  <a id="JournalA" href="/ddbj/flat-file-e#JournalB">JOURNAL</a>   Submitted (30-SEP-2008)
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
@@ -125,7 +125,7 @@ In case of citing [EST](/ddbj/est-e.html)
 <a href="/ddbj/flat-file-e#Reference1B">REFERENCE   1</a>  (bases 1 to 800)
   <a href="/ddbj/flat-file-e#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
   <a href="/ddbj/flat-file-e#TitleB">TITLE</a>     Direct Submission
-  <a href="/ddbj/flat-file-e#JournalB">JOURNAL</a>   Submitted (30-SEP-2008) to the DDBJ/EMBL/GenBank databases.
+  <a href="/ddbj/flat-file-e#JournalB">JOURNAL</a>   Submitted (30-SEP-2008)
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan

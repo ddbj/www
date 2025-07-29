@@ -42,22 +42,18 @@ cannot be grown in axenic culture).
 
 Notes on environmental sample submission
 : 
-  - In many cases of environmental samples, we assign the lineage
-    that as far as submitters could specify is used for the
-    description of organism name with the header "uncultured". See
-    also [Organism Qualifier 3. Environmental
-    sample](/ddbj/organism-e.html#env) for further detail.
+  - In many cases of environmental samples, we assign the lineage that as far as submitters 
+    could specify is used for the description of organism name with the header "uncultured". See
+    also [Organism Qualifier 3. Environmental sample](/ddbj/organism-e.html#env) for further detail.
   - The
     [environmental\_sample](/ddbj/qualifiers-e.html#environmental_sample)
-    qualifier is required in [source](/ddbj/features-e.html#source)
-    feature.
+    qualifier is required in [source](/ddbj/features-e.html#source) feature.
   - The
     [isolation\_source](/ddbj/qualifiers-e.html#isolation_source)
     qualifier is required in [source](/ddbj/features-e.html#source)
     feature to describe origin of the sample.
   - Either [clone](/ddbj/qualifiers-e.html#clone) or
-    [isolate](/ddbj/qualifiers-e.html#isolate) qualifier is required
-    as an identifier.
+    [isolate](/ddbj/qualifiers-e.html#isolate) qualifier is required as an identifier.
   - Do not use [strain](/ddbj/qualifiers-e.html#strain) qualifier.
 
 ## Sample flat file  {#flat-file}
@@ -84,7 +80,7 @@ Aspects of environmental samples
 <a id="Reference1A" href="/ddbj/flat-file-e#Reference1B">REFERENCE   1</a>  (bases 1 to 450)
   <a id="AuthorsA" href="/ddbj/flat-file-e#AuthorsB">AUTHORS</a>   Mishima,H. and Shizuoka,T.
   <a id="TitleA" href="/ddbj/flat-file-e#TitleB">TITLE</a>     Direct Submission
-  <a id="JournalA" href="/ddbj/flat-file-e#JournalB">JOURNAL</a>   Submitted (15-DEC-2012) to the DDBJ/EMBL/GenBank databases.
+  <a id="JournalA" href="/ddbj/flat-file-e#JournalB">JOURNAL</a>   Submitted (15-DEC-2012)
             Contact:Hanako Mishima
             National Institute of Genetics, DNA Data Bank of Japan; Yata 1111,
             Mishima, Shizuoka 411-8540, Japan
