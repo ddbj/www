@@ -91,9 +91,9 @@ Finished level genomic sequences として登録可能な配列データ
 
 
 * 原核生物ゲノムエントリのフラットファイルの例
-    * Accession:[ AP025277-AP025279](http://getentry.ddbj.nig.ac.jp/getentry/na/AP025277-AP025279/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)
+    * Accession:[ AP025277-AP025279](https://getentry.ddbj.nig.ac.jp/getentry/na/AP025277-AP025279/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)
     * Example: Aeromonas hydrophila strain; NUITM-VA1, chromosome and plasmid
 * 真核生物ゲノムエントリのフラットファイルの例
-    * Accession:[ AP023152-AP023171](http://getentry.ddbj.nig.ac.jp/getentry/na/AP023152-AP023171/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)
+    * Accession:[ AP023152-AP023171](https://getentry.ddbj.nig.ac.jp/getentry/na/AP023152-AP023171/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)
     * Example: Felis catus, chromosome genome assemblies
-    * [AP023152](http://getentry.ddbj.nig.ac.jp/getentry/na/AP023152/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)  chromosome A1 エントリ
+    * [AP023152](https://getentry.ddbj.nig.ac.jp/getentry/na/AP023152/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)  chromosome A1 エントリ
