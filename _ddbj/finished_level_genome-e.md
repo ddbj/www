@@ -90,9 +90,9 @@ Tag name
 
 
 * Example flat file for prokaryotes genome sequences entries 
-    * Accession:[ AP025277-AP025279](http://getentry.ddbj.nig.ac.jp/getentry/na/AP025277-AP025279/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)
+    * Accession:[ AP025277-AP025279](https://getentry.ddbj.nig.ac.jp/getentry/na/AP025277-AP025279/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)
     * Aeromonas hydrophila strain; NUITM-VA1, chromosome and plasmid
 * Example flat file for eukaryotes genome sequences entries 
-    * Accession:[ AP023152-AP023171](http://getentry.ddbj.nig.ac.jp/getentry/na/AP023152-AP023171/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)
+    * Accession:[ AP023152-AP023171](https://getentry.ddbj.nig.ac.jp/getentry/na/AP023152-AP023171/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)
     * Felis catus, chromosome genome assemblies
-    * [AP023152](http://getentry.ddbj.nig.ac.jp/getentry/na/AP023152/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)  chromosome A1 entry
+    * [AP023152](https://getentry.ddbj.nig.ac.jp/getentry/na/AP023152/?format=flatfile&filetype=html&trace=true&show_suppressed=false&limit=10)  chromosome A1 entry
