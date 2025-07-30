@@ -17,4 +17,4 @@ mzBフォーマットはReifycs社の提唱するHive形式に準拠した質量
 ## ツール
 mzBフォーマットファイルを閲覧するためには、無料の[Data Checkerプログラム](https://www.reifycs.com/products/hive/baseapp-dl)が利用できます。現在のところ、Microsoft Windows版のみ提供されています。  
 
-mzBフォーマットファイルに関するソフトウェアやAPIを開発するためには、無料の開発環境であるHive SDKはが利用できます。詳細は、[こちら](https://ja.reifycs.com/products/hive/)を参照しください。
+mzBフォーマットファイルに関するソフトウェアやAPIを開発するためには、無料の開発環境であるHive SDKはが利用できます。詳細は、[こちら](https://ja.reifycs.com/products/hive/)を参照してください。
