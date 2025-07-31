@@ -13,5 +13,5 @@ lang: en
 See [Representative submissions of identical sequences for variation studies](/ddbj/representative-sequence-e.html). 
 
 References
-: [Where to submit variation data, such as single nucleotide variations, structural variations, copy number variations (CNVs) and so on?](/faq/en/where-to-submit-variation-data-e.html)
-: [After submission of SNP data to DDBJ, will it automatically reflect to dbSNP?](/faq/en/submit-snp-reflect-dbsnp-e.html)
+: [Where to submit variant data, such as Single Nucleotide Variants (SNVs), Copy Number Variants (CNVs) and structural variants?](/faq/en/where-to-submit-variation-data-e.html)
+: [Will SNP data submitted to DDBJ be automatically reflected in dbSNP?](/faq/en/submit-snp-reflect-dbsnp-e.html)

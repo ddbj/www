@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: After submission of SNP data to DDBJ, will it automatically reflect to dbSNP?
+title: Will SNP data submitted to DDBJ be automatically reflected in dbSNP?
 category: faq
 db:
   - ddbj
@@ -11,10 +11,8 @@ date: 2014-06-30T16:02:54
 lang: en
 ---
 
-[TogoVar-repository](/togovar/index-e.html) accepts human SNP data.  
-TogoVar-repository is a public repository for submissions of human genetic variants, allele and genotype frequencies. TogoVar-repository accepts submissions of human genetic variations in two categories and issues accession numbers with distinct prefixes: short variants (&le;50 bp) and large structural variants (>50 bp).
+SNP data submitted to [DDBJ](/ddbj/index-e.html) is not reflected in [dbSNP](https://ncbi.nlm.nih.gov/snp/).   
+For information on the submission format to DDBJ, please refer to the [Description Examples of Sequence Data](/ddbj/example-e.html), [section F: Variation](/ddbj/example-e.html#F), as well as [Representative submissions of identical sequences for variation studies](/ddbj/representative-sequence-e.html).   
 
-* Short variants: variants &le;50 bp including single nucleotide variations, microsatellites, and small-scale insertions and deletions. Variations are exchanged with the NCBI [dbSNP](https://ncbi.nlm.nih.gov/snp/).
-* Large structural variants: variants >50 bp including insertions, deletions, duplications, inversions, mobile elements, translocations, and complex variants. Variations are exchanged with the NCBI [dbVar](https://ncbi.nlm.nih.gov/dbvar/).
-
-TogoVar-repository and dbSNP/dbVar only accept variations of human. [European Variation Archive](https://www.ebi.ac.uk/eva/) accepts variations of both human and non-human organisms.    
+[TogoVar-repository](/togovar/index-e.html) accepts human SNP data. Although data exchange with the NCBI [dbSNP](https://ncbi.nlm.nih.gov/snp/) is planned, it has not yet been implemented. Therefore, SNP data registered to TogoVar-repository are not reflected in dbSNP.   
+Please also refer to FAQ "[Where to submit variant data, such as Single Nucleotide Variants (SNVs), Copy Number Variants (CNVs) and structural variants?](/faq/en/where-to-submit-variation-data-e.html)"
