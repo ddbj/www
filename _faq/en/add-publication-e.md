@@ -27,7 +27,7 @@ Please provide the PubMed ID (recommended) or DOI as the paper information in th
       <td>DDBJ</td> 
       <td>AB12345678<br>ABCDEF010123456　</td>
       <td><a href="/ddbj/flat-file-e.html#Reference2B">Flat file</a></td>
-      <td><a href="https://forms.gle/7g2YCoBjqvbBBW9V8">Application Form for DDBJ Update</a></td>
+      <td><a href="https://forms.gle/txmEtADnPpY2rnjKA">Application Form for DDBJ Update</a></td>
     </tr>
     <tr>
       <td>DRA</td> 

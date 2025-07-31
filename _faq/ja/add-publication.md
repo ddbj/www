@@ -32,7 +32,7 @@ lang: ja
       <td>DDBJ</td> 
       <td>AB12345678<br>ABCDEF010123456　</td>
       <td>配列エントリの<a href="/ddbj/flat-file.html#Reference2B">フラットファイル</a></td>
-      <td><a href="https://forms.gle/Xx6wPKFgQDHdvXJG9">DDBJ 更新依頼フォーム</a></td>      
+      <td><a href="https://forms.gle/mcQaJshvAKRdggz16">DDBJ 更新依頼フォーム</a></td>      
     </tr>
     <tr>
       <td>DRA</td> 
