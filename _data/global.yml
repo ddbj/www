@@ -2,10 +2,6 @@ top_news:
  ja:
     - title: (8/14～15) DDBJ センター夏季休業のお知らせ
       path: 2025-07-10
-    - title: システム障害:DDBJの登録・検索サービスが停止しています
-      path: 2025-07-31
  en:
     - title: (August 14 to 15) DDBJ Center Closing for Summer Break
       path: 2025-07-10-e
-    - title: System failure:submission and search services are unavailable
-      path: 2025-07-31-e
