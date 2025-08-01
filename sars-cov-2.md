@@ -78,8 +78,8 @@ DDBJ (DNA Data Bank of Japan)は、国際塩基配列データベース連携（
 ■ **DDBJ News (2021/09/09) [新型コロナウイルス (Severe acute respiratory syndrome coronavirus 2) の配列データ公開](https://www.ddbj.nig.ac.jp/news/ja/2021-09-09_1.html)**
 
 - 本コンソーシアム賛同機関によるSARS-CoV-2ゲノム配列
-	- 慶応義塾大学 [BS000685-BS000694](http://getentry.ddbj.nig.ac.jp/getentry/na/BS000685-BS000694/)
-	- 慶応義塾大学 [BS000695-BS001136](http://getentry.ddbj.nig.ac.jp/getentry/na/BS000695-BS001136/)
+	- 慶応義塾大学 [BS000685-BS000694](https://getentry.ddbj.nig.ac.jp/getentry/na/BS000685-BS000694/)
+	- 慶応義塾大学 [BS000695-BS001136](https://getentry.ddbj.nig.ac.jp/getentry/na/BS000695-BS001136/)
 
 
 ## 大学共同利用機関法人 情報・システム研究機構としての取り組み

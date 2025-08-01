@@ -26,7 +26,7 @@ In the flat file, the primary accession number is indicated first, then the seco
 <span style="color: #0000ff">AB888888 AB777777 -- secondary accession number</span>
 
 You can find the same updated entry with both the primary and the secondary accession numbers, in general.    
-However, if the old entry with secondary accession number has previously been open to the public, the old one is not removed. So, you can find the old record by [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html). 
+However, if the old entry with secondary accession number has previously been open to the public, the old one is not removed. So, you can find the old record by [getentry](https://getentry.ddbj.nig.ac.jp/top-e.html). 
 
 References
 - [getentry HELP](/services/getentry-e.html)

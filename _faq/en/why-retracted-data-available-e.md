@@ -12,7 +12,7 @@ lang: en
 
 For once published data, we can restrict use of the data if [conditions are met](/faq/en/restore-released-data-private-e.html).    
 In case of the use restriction, DDBJ will not include the restricted data in periodical releases and remove from all services of DDBJ.    
-However, the data is permanently available on [getentry](http://getentry.ddbj.nig.ac.jp/top-e.html) if queried by its accession number. This rule is not applied when the data is published by any mistake of INSD. This policy is documented in "[Nucleotide Sequence Database Policies](https://www.science.org/doi/10.1126/science.298.5597.1333b)" as follows; 
+However, the data is permanently available on [getentry](https://getentry.ddbj.nig.ac.jp/top-e.html) if queried by its accession number. This rule is not applied when the data is published by any mistake of INSD. This policy is documented in "[Nucleotide Sequence Database Policies](https://www.science.org/doi/10.1126/science.298.5597.1333b)" as follows; 
 
 ---
 
