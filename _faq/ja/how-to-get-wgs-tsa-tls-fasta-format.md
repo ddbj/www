@@ -10,7 +10,7 @@ date: 2016-05-19T11:10:18
 lang: ja
 ---
 
-WGS、TSA、TLSデータのFASTA形式のファイルを取得するには、[getentry](http://getentry.ddbj.nig.ac.jp/top-j.html) で以下を指定し、検索を行ってください。
+WGS、TSA、TLSデータのFASTA形式のファイルを取得するには、[getentry](https://getentry.ddbj.nig.ac.jp/top-j.html) で以下を指定し、検索を行ってください。
 - ID：検索対象の Accession 番号を指定します。
 - 出力形式：**"全塩基配列 FASTA"** を選択します。
 - 取得方法：以下から選択します。

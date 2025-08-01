@@ -97,7 +97,7 @@ number, publication date, application number, application date, priority
 date, comment and sequence's feature information.
 
 Example:
-[DL000001](http://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html:)
+[DL000001](https://getentry.ddbj.nig.ac.jp/getentry/na/DL000001/?filetype=html:)
 
 #### 3-4) Patent applied sequence submission to DDBJ
 
@@ -176,7 +176,7 @@ sequence (Table.1).
 *2 Cumulated file (kipo_ddbj_aa.seq.gz) has all KIPO amino acid data.</caption>
       <tr>
         <th></th>
-        <th><a href="http://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a></th>
+        <th><a href="https://getentry.ddbj.nig.ac.jp/top-e.html">getentry</a></th>
         <th><a href="http://ddbj.nig.ac.jp/arsa/quick_search?lang=en">ARSA</a></th>
         <th><a href="http://blast.ddbj.nig.ac.jp/blastn?lang=en">BLAST</a></th>
         <th>File ftp service</th>

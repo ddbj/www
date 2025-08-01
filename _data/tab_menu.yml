@@ -165,7 +165,7 @@ ddbj:
       url: http://ddbj.nig.ac.jp/arsa/?lang=ja
       children:
         - title: getentry
-          url: http://getentry.ddbj.nig.ac.jp/top-j.html
+          url: https://getentry.ddbj.nig.ac.jp/top-j.html
         - title: ARSA
           url: http://ddbj.nig.ac.jp/arsa/?lang=ja
     - id: flat_file
@@ -260,7 +260,7 @@ ddbj:
       url: http://ddbj.nig.ac.jp/arsa/?lang=en
       children:
         - title: getentry
-          url: http://getentry.ddbj.nig.ac.jp/top-e.html
+          url: https://getentry.ddbj.nig.ac.jp/top-e.html
         - title: ARSA
           url: http://ddbj.nig.ac.jp/arsa/?lang=en
     - id: flat_file

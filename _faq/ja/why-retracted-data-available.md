@@ -12,7 +12,7 @@ lang: ja
 
 一度公開されたエントリに対して一定の利用制限をかけることは、[条件つきで可能](/faq/ja/restore-released-data-private.html)です。    
 その場合は、次回以降に作成する定期リリースに当該データを含めないこととし、DDBJ 配下の通常検索サービスから削除することになります。    
-しかしながら、[getentry](http://getentry.ddbj.nig.ac.jp/top-j.html) を利用してアクセッション番号で検索した場合には、永久に閲覧が可能な状態になります。ただし，国際塩基配列データベース側の作業ミスにより誤って公開された場合は，その限りではありません。    
+しかしながら、[getentry](https://getentry.ddbj.nig.ac.jp/top-j.html) を利用してアクセッション番号で検索した場合には、永久に閲覧が可能な状態になります。ただし，国際塩基配列データベース側の作業ミスにより誤って公開された場合は，その限りではありません。    
 これは "[Nucleotide Sequence Database Policies](https://www.science.org/doi/10.1126/science.298.5597.1333b)" で、次のように明文化されています。
 
 ---
