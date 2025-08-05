@@ -44,7 +44,7 @@ unix/macOS: ファイルの解凍方法
 : 解凍ソフトを使用するか、以下のコマンドを用いて解凍してください。
 
 ``` 
-$ gunzip UME_unix.zip
+$ unzip UME_unix_<Version No.>.zip
 ```
 
 macOS: ファイル名とフォルダ名について  

@@ -43,7 +43,7 @@ unix/macOS: Uncompress UME\_unix.zip
 : Extract the zipped file using a decompression program or the following command.
 
 ```
-$ gunzip UME_unix.zip
+$ unzip UME_unix_<Version No.>.zip
 ```
 
  macOS: Regarding the available file names  
