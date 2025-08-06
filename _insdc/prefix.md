@@ -385,7 +385,7 @@ PS      GenBank         scaffold/CON
 PT      USPTO           Patent application
 PU      USPTO           Patent application
 PV      GenBank         Direct submission
-PW      DDBJ            
+PW      KIPO            Patent application
 PX      GenBank         Direct submission
 Q       void            UniProt/Swiss-Prot
 QK      EPO             Patent application
