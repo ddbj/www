@@ -488,6 +488,7 @@ UAA-UZZ     GenBank
 VAA-VZZ     ENA           
 WAA-WZZ     GenBank       
 XAA-XZZ     GenBank       
+YAA-YZZ     GenBank       primary/TPA
 ```
 
 ## For Sequence Read Archive  {#dra}
