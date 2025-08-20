@@ -393,8 +393,8 @@ QL      EPO             Patent application
 QM      EPO             Patent application
 QN      EPO             Patent application
 QO      EPO             Patent application
-QP      DDBJ            
-QQ      DDBJ            
+QP      JPO             Patent application
+QQ      JPO             Patent application
 QR      DDBJ            
 QS      DDBJ            
 QT      DDBJ            
@@ -489,6 +489,7 @@ VAA-VZZ     ENA
 WAA-WZZ     GenBank       
 XAA-XZZ     GenBank       
 YAA-YZZ     GenBank       primary/TPA
+ZAA-ZZZ     JPO/KIPO      Patent application
 ```
 
 ## For Sequence Read Archive  {#dra}
