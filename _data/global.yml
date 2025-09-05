@@ -2,6 +2,11 @@ top_news:
  ja:
     - title: 新規作成した DDBJ アカウントで sftp ができない不具合
       path: 2025-08-13
+    - title: 9/5 13:40 停電によりシステムが停止
+      path: 2025-09-05
  en:
     - title: A problem has been identified in which sftp fails when using newly created DDBJ accounts
       path: 2025-08-13-e
+    - title: System shut down at 13:40 on September 5 due to a power outage
+      path: 2025-09-05-e
+
