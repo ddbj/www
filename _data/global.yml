@@ -1,13 +1,13 @@
 top_news:
  ja:
     - title: 新規作成した DDBJ アカウントで sftp ができない不具合
-      path: 2025-08-13
-    - title: 一部復旧：9月5日 13:40 停電によりシステム停止, 復旧は 9/9 以降の見込み
-      path: 2025-09-05
+      path: 2025-08-13.html
+    - title: 9月5日 13:40 停電によりシステム停止、NBDC ヒトデータベース・JGA・AGD 以外復旧
+      path: 2025-09-05.html
  en:
     - title: A problem has been identified in which sftp fails when using newly created DDBJ accounts
-      path: 2025-08-13-e
-    - title: Some services resumed：System shut down at 13:40 on September 5 due to a power outage, the service is expected to resume on or after September 9.
-      path: 2025-09-05-e
+      path: 2025-08-13-e.html
+    - title: System shut down at 13:40 on September 5 due to a power outage, all services except the NBDC Human Database, JGA and AGD have been restored.
+      path: 2025-09-05-e.html
 
 
