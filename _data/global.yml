@@ -4,14 +4,10 @@ top_news:
       path: 2025-08-13.html
     - title: 9月5日 13:40 停電によりシステム停止、NBDC ヒトデータベース・JGA・AGD 以外復旧
       path: 2025-09-05.html
-    - title: 9月12日 12:20 ネットワークの不具合により D-way にログインできません
-      path: 2025-09-12.html
  en:
     - title: A problem has been identified in which sftp fails when using newly created DDBJ accounts
       path: 2025-08-13-e.html
     - title: System shut down at 13:40 on September 5 due to a power outage, all services except the NBDC Human Database, JGA and AGD have been restored
       path: 2025-09-05-e.html
-    - title: D-way login down, network issue since 12:20 PM, September 12
-      path: 2025-09-12-e.html
 
 
