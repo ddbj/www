@@ -16,8 +16,8 @@ Submission of research data from human subjects
 
 TogoVar-repository has two submission types SNP and SV.
 
-* Short variants (SNP): variants &le;50 bp, exchanged with the NCBI [dbSNP](https://ncbi.nlm.nih.gov/snp/).
-* Large structural variants (SV): variants >50 bp, exchanged with the NCBI [dbVar](https://ncbi.nlm.nih.gov/dbvar/).
+* Short variants (SNP): variants &le;50 bp, exchange with the NCBI [dbSNP](https://ncbi.nlm.nih.gov/snp/) is planned but has not yet been implemented.
+* Large structural variants (SV): variants >50 bp, exchange with the NCBI [dbVar](https://ncbi.nlm.nih.gov/dbvar/) is planned but has not yet been implemented.
 
 BioProject and BioSample are necessary so that related data are grouped by BioProject and BioSample across databases. Metadata are prepared in the Excel format for each submission type. Variants are submitted in VCF. SV variant calls can also be submitted in the Excel sheet.
 

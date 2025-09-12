@@ -18,7 +18,7 @@ TogoVar-repository SNP/SV で共通のデータモデルを使用しています
 * SampleSet/Experiment/Dataset は連番で内部的に参照。
 
 アクセッション番号
-* SNP: study (dstd), variant (dss). 公開された dss バリアントは次回の dbSNP build で rs にマージされます。
+* SNP: study (dstd), variant (dss). 公開された dss バリアントは次回の dbSNP build で rs にマージされます。dbSNP による rs へのマージは予定されていますが、実現していません。
 * SV: study (dstd), variant call (dssv), variant region (dsv)
 
 ## 登録用エクセル {#excel}

@@ -18,7 +18,7 @@ TogoVar-repository uses a data model common to SNP and SV.
 * SampleSet, Experiment and Dataset are internally referenced by serial numbers.
 
 Accession numbers
-* SNP: study (dstd), variant (dss). Public dss variants are merged to rs in the next dbSNP build.
+* SNP: study (dstd), variant (dss). Public dss variants are merged to rs in the next dbSNP build. This merge is planned but has not yet been implemented.
 * SV: study (dstd), variant call (dssv), variant region (dsv)
 
 ## Submission excel {#excel}

@@ -17,8 +17,8 @@ lang: ja
 
 TogoVar-repository には二種類の登録種別、SNP と SV、があります。
 
-* Short variants (SNP): &le;50 bp 以下のバリアント。NCBI [dbSNP](https://ncbi.nlm.nih.gov/snp/) と交換されます。
-* Large structural variants (SV): 50 bp よりも大きいバリアント。NCBI [dbVar](https://ncbi.nlm.nih.gov/dbvar/) と交換されます。
+* Short variants (SNP): &le;50 bp 以下のバリアント。NCBI [dbSNP](https://ncbi.nlm.nih.gov/snp/) との交換を計画していますが、実現していません。
+* Large structural variants (SV): 50 bp よりも大きいバリアント。NCBI [dbVar](https://ncbi.nlm.nih.gov/dbvar/) との交換を計画していますが、実現していません。
 
 BioProject と BioSample 登録は必須です。関連するデータが BioProject と BioSample によりデータベースを跨ってまとめられます。メタデータは登録用エクセルに記入して作成します。バリアントは VCF で登録します。SV variant call は登録用エクセル中のシートで登録することもできます。
 
