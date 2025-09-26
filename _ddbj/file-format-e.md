@@ -304,7 +304,8 @@ List of Qualifiers for REFERENCE
   - If the Value of status is "In Press", Qualifier: journal is also a mandatory item.
   - If the Value of status is "Published", Qualifier: journal, volume, start\_page and end\_page are also mandatory items.
   - Please input "Unpublished" in the status, if you do not prepare any publication.
-  - Please input ISO abbreviation in the journal if you have.
+  - If the Value of status is “Unpublished”, Qualifier: year is not required.
+  - Please input PubMed type or ISO abbreviation in the journal if you have.
   - If you need to enter more than two REFERENCE features, please input the first REFERENCE directly related to your sequences and then put the other(s) that would be helpful for understanding the data after the first one.
   - When you use REFERENCE features for both [COMMON](#common) entry and other entries, the REFERENCE feature(s) specified for each entry will be loaded into DDBJ after one(s) given by COMMON entry.
   - When you cite two or more REFERENCE features for an entry, they will be shown on the DDBJ flat file in the same order on the annotation file.

@@ -281,7 +281,8 @@ REFERENCE で使用する Qualifier のリスト
 - status が "Published" の場合は、Qualifier: journal, volume, start\_page,
   end\_page も必須となります。
 - 今後論文に投稿する予定のない場合にも、status を "Unpublished" として REFERENCE を入力してください。
-- journal には雑誌の PubMed type abbreviation を入力して下さい。
+- statusがUnpublishedの場合は、yearの記載は不要です。
+- journal には雑誌名をPubMedまたはISO準拠形式で入力して下さい。
 - REFERENCE を複数入力する場合には、登録する塩基配列を掲載する予定の論文、あるいは、既に掲載されている論文情報を
   REFERENCE の筆頭に入力し、参考文献はそれ以降に入力してください。
 - 登録する塩基配列に関する REFERENCE 情報が全件に共通する場合は、[COMMON](#common)
