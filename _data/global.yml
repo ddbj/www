@@ -1,10 +1,10 @@
 top_news:
  ja:
     - title: 新規作成した DDBJ アカウントで sftp ができない不具合
-      path: 2025-08-13.html
+      path: 2025-08-13
  en:
     - title: A problem has been identified in which sftp fails when using newly created DDBJ accounts
-      path: 2025-08-13-e.html
+      path: 2025-08-13-e
 
 
 
