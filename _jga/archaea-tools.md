@@ -68,7 +68,7 @@ test07 アカウントを例に説明します。事前に DDBJ アカウント�
 
 以下のテストコマンドを実行します。  
 ```
-$hcp-ls --user=test07 133.39.228.32
+$hcp-ls --user=test07 133.39.233.39
 
 hcp-ls starts :
 agd
@@ -83,12 +83,12 @@ ExitCode : 0 と表示されれば接続成功です。
 
 利用申請されているデータは申請 ID ディレクトリ内に設置されています。
 ```
-133.39.228.32:jga/download/J-DU000024
+133.39.233.39:jga/download/J-DU000024
 ```
 
 復号化ツールは以下のディレクトリにあります。
 ```
-133.39.228.32:jga/download/J-DU000024/tools
+133.39.233.39:jga/download/J-DU000024/tools
 ```
 
 ダウンロードコマンドを実行します。  
@@ -98,7 +98,7 @@ $hcp --user=test07 <ダウンロードしたいディレクトリパス> <ロー
 ```
 
 ```
-$hcp --user=test07 133.39.228.32:jga/download/J-DU000024 .
+$hcp --user=test07 133.39.233.39:jga/download/J-DU000024 .
 ```
 
 ## アップロード {#upload}
@@ -110,7 +110,7 @@ $hcp --user=test07 <ローカルディレクトリパス> <アップロードし
 
 例
 ```
-$hcp --user=test07 files-to-be-uploaded 133.39.228.32:jga/upload/J-DS000014
+$hcp --user=test07 files-to-be-uploaded 133.39.233.39:jga/upload/J-DS000014
 ```
 
 
