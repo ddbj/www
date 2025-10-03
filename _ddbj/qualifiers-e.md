@@ -875,7 +875,7 @@ Comment
 - For cDNA sequence, template of premature RNA, select "transcribed RNA".
 - "other RNA" and "other DNA" should be applied to synthetic molecules.
 - In general, select "genomic RNA" for RNA viruses.
-- For ssRNA negative-strand virus, select "viral cRNA", in principal.    
+- For Negarnaviricota (ssRNA negative-strand virus), select "viral cRNA", in principal.    
 "viral cRNA" is a plus-strand copy of a minus strand RNA genome which serves as a template to make viral progeny genomes.    
 For genomic sequence data derived from ssRNA negative-strand viruses, in principle, DDBJ uniformly uses following values for mol_type qualifier;    
     - Protein-coding sequences exist in positive orientation: viral cRNA 
