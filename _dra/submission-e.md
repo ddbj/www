@@ -59,18 +59,17 @@ Upload data files to the submission directory (e.g. test07-0040/) on the file se
 Progress of your submission is indicated by its submission status. 
 The DRA team reviews submission whose status is in "submission_validated" or "data_error".
 
-| Status                | Explanation                                                   |
+| Status                | Explanation |
 |---|
-| new                   | Metadata are not submitted.                              |
-| metadata_submitted   | Metadata have been submitted.                                  |
-| data_validating      | Validating data files.                                        |
-| data_error           | An error is detected in data file validation.                    |
-| submission_validated | Metadata and data file are validated.                        |
-| completed             | Accession numbers are issued.                           |
-| confidential          | Data files for distribution are created and the submission is kept private. |
-| public                | Released.                                           |
-| wait_for_release                | Within 30 days until released.                                           |
-| canceled                | Submission is canceled                                           |
+| New                   | Metadata are not submitted. |
+| Metadata Submitted | Metadata have been submitted. |
+| Data Validating    | Validating data files. |
+| Data Error         | An error is detected in data file validation. |
+| Submission Validated | Metadata and data file are validated. |
+| Completed           | Accession numbers are issued. |
+| Private          | Data files for distribution are created and the submission is kept private. |
+| Public             | Released. |
+| Canceled           | Submission is canceled. |
 
 ## Metadata registration {#metadata}
 
@@ -310,6 +309,8 @@ When the metadata and the data files are complete, accession numbers are assigne
 Regarding how to cite the accession numbers, see "[FAQ: Which accession numbers should be cited in publication?](/faq/en/cite-accession-e.html)".
 
 ## Data release {#data-release}
+
+Please see [DDBJ and SRA Data Processing](/data-processing-e.html) for data processing and status.   
 
 The DRA submission is released according to our [data release policy](/policies-e.html#data-release). 
 Please see "FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release-e.html)" regarding how linked data are released.  

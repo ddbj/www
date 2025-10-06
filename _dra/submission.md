@@ -63,16 +63,15 @@ lang: ja
 
 | ステータス                 | 説明                            |
 |---|
-| new                   | メタデータの登録前                     |
-| metadata_submitted   | メタデータが登録された                   |
-| data_validating      | データファイルの検証処理中                 |
-| data_error           | データファイルの検証処理エラー               |
-| submission_validated | メタデータとデータファイルの検証処理を通過         |
-| completed             | アクセッション番号が発行された               |
-| confidential          | 公開用ファイルの作成が完了し、非公開に保たれている |
-| public                | 公開                     |
-| wait_for_release         | 公開まで30日以内  |
-| canceled                | キャンセル           |
+| New                   | メタデータの登録前                     |
+| Metadata Submitted   | メタデータが登録された                   |
+| Data Validating      | データファイルの検証処理中                 |
+| Data Rrror           | データファイルの検証処理エラー               |
+| Submission Validated | メタデータとデータファイルの検証処理を通過         |
+| Completed             | アクセッション番号が発行された               |
+| Private          | 公開用ファイルの作成が完了し、非公開に保たれている |
+| Public                | 公開                     |
+| Canceled                | キャンセル           |
 
 ## メタデータの登録 {#metadata}
 
@@ -317,6 +316,8 @@ Analysis に登録されたデータファイルは MD5 チェックサム値の
 アクセッション番号の引用については「[FAQ: 投稿論文ではどのアクセッション番号を引用するべきでしょうか？](/faq/ja/cite-accession.html)」をご覧ください。
 
 ## データ公開 {#data-release}
+
+データの処理とステータスについては [DDBJ と SRA におけるデータ処理](/data-processing.html)をご覧ください。   
 
 データは[公開原則](/policies.html#data-release)に従って公開されます。
 参照関係にあるデータとの連動公開については、「FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)」を参照してください。  

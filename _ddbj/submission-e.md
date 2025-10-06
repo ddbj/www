@@ -104,8 +104,7 @@ In principle, [even submitters cannot remove their own
 entry](/ddbj/update-e.html#q9) if the entry has already been released
 and/or the accession number is publicized in Journal etc.
 
-However, DDBJ can suppress the entry in many of its services following
-the submitter's request.
+However, DDBJ can change the entry status to [Suppressed](/data-processing-e.html) to restrict access to the data following the submitter's request.
 
 Reference;
 
