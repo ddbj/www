@@ -57,7 +57,7 @@ Upload data files to the submission directory (e.g. test07-0040/) on the file se
 ## Submission status {#status}
 
 Progress of your submission is indicated by its submission status. 
-The DRA team reviews submission whose status is in "submission_validated" or "data_error".
+The DRA team reviews submission whose status is in "Submission Validated" or "Data Error".
 
 | Status                | Explanation |
 |---|
@@ -286,13 +286,13 @@ When the values in the metadata are wrong, revise the metadata at [Enter/Update 
 
 ### Data Check {#check}
 
-The file format and content are validated. If there is no errors, the submission status becomes "submission_validated", and the files are moved to a separate directory.   
-The DRA staff reviews the "submission_validated" submission. Please do not touch the submission until the DRA staff contact you.
+The file format and content are validated. If there is no errors, the submission status becomes "Submission Validated", and the files are moved to a separate directory.   
+The DRA staff reviews the "Submission Validated" submission. Please do not touch the submission until the DRA staff contact you.
 
 ### Data Error {#data_error}
 
-An error in the data file validation make the submission status "data_error". 
-Please see [FAQ: How to deal with validation errors in the DRA submission?](/faq/en/data-validation-error-e.html) regarding how to fix errors. [Stop validation] makes the submission back to "metadata_submitted". Then revise the metadata and/or re-upload the files and start the data file validation again by [Validate data files].
+An error in the data file validation make the submission status "Data Error". 
+Please see [FAQ: How to deal with validation errors in the DRA submission?](/faq/en/data-validation-error-e.html) regarding how to fix errors. [Stop validation] makes the submission back to "Metadata Submitted". Then revise the metadata and/or re-upload the files and start the data file validation again by [Validate data files].
 
 {% include image.html url="books/hdra-error.jpg" caption="Stop validation" class="w500" %}
 
