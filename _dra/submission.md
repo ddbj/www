@@ -59,7 +59,7 @@ lang: ja
 
 ## 登録ステータス {#status}
 
-ステータスで進捗状況を把握することができます。"submission_validated" と "data_error" になった登録が DRA チームで査定されます。
+ステータスで進捗状況を把握することができます。"Submission Validated" と "Data Error" になった登録が DRA チームで査定されます。
 
 | ステータス                 | 説明                            |
 |---|
@@ -292,14 +292,14 @@ Analysis に登録されたデータファイルは MD5 チェックサム値の
 ### Data Check  {#check}
 
 ファイルの中身がチェックされます。
-問題が無ければ登録のステータスが "submission_validated" になり、検証されたファイルが別ディレクトリに移されます。
-登録のステータスが "submission_validated" になると DRA スタッフが査定を始めます。DRA スタッフから指示があるまで D-way を操作せずにお待ちください。
+問題が無ければ登録のステータスが "Submission Validated" になり、検証されたファイルが別ディレクトリに移されます。
+登録のステータスが "Submission Validated" になると DRA スタッフが査定を始めます。DRA スタッフから指示があるまで D-way を操作せずにお待ちください。
 
 ### Data Error {#data_error}
 
-検証処理のいずれかのステップでエラーになると、ステータスが "data_error" になります。
+検証処理のいずれかのステップでエラーになると、ステータスが "Data Error" になります。
 エラーへの対処方法は「[FAQ: データファイルの validation エラーへの対処方法は？](/faq/ja/data-validation-error)」を参照してください。
-[Stop validation] で検証処理を停止するとステータスが "metadata_submitted" に戻るので、メタデータの修正やファイルの再アップロードを行い、再度 [Validate data files] をクリックして検証処理を実施します。
+[Stop validation] で検証処理を停止するとステータスが "Metadata Submitted" に戻るので、メタデータの修正やファイルの再アップロードを行い、再度 [Validate data files] をクリックして検証処理を実施します。
 
 {% include image.html url="books/hdra-error.jpg" caption="検証処理を停止" class="w500" %}
 
