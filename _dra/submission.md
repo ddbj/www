@@ -66,7 +66,7 @@ lang: ja
 | New                   | メタデータの登録前                     |
 | Metadata Submitted   | メタデータが登録された                   |
 | Data Validating      | データファイルの検証処理中                 |
-| Data Rrror           | データファイルの検証処理エラー               |
+| Data Error           | データファイルの検証処理エラー               |
 | Submission Validated | メタデータとデータファイルの検証処理を通過         |
 | Completed             | アクセッション番号が発行された               |
 | Private          | 公開用ファイルの作成が完了し、非公開に保たれている |
