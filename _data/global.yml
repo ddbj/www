@@ -2,13 +2,9 @@ top_news:
  ja:
     - title: (10/8 10:00-11:00) GEA/DRA/BP/BS システムリリースによるサービス停止のお知らせ
       path: 2025-10-03 
-    - title: 新規作成した DDBJ アカウントで sftp ができない不具合
-      path: 2025-08-13
  en:
     - title: (Oct 8 10:00-11:00) Announcement of GEA/DRA/BP/BS system suspension
       path: 2025-10-03-e
-    - title: A problem has been identified in which sftp fails when using newly created DDBJ accounts
-      path: 2025-08-13-e
 
 
 
