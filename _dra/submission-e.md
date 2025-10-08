@@ -57,20 +57,19 @@ Upload data files to the submission directory (e.g. test07-0040/) on the file se
 ## Submission status {#status}
 
 Progress of your submission is indicated by its submission status. 
-The DRA team reviews submission whose status is in "submission_validated" or "data_error".
+The DRA team reviews submission whose status is in "Submission Validated" or "Data Error".
 
-| Status                | Explanation                                                   |
+| Status                | Explanation |
 |---|
-| new                   | Metadata are not submitted.                              |
-| metadata_submitted   | Metadata have been submitted.                                  |
-| data_validating      | Validating data files.                                        |
-| data_error           | An error is detected in data file validation.                    |
-| submission_validated | Metadata and data file are validated.                        |
-| completed             | Accession numbers are issued.                           |
-| confidential          | Data files for distribution are created and the submission is kept private. |
-| public                | Released.                                           |
-| wait_for_release                | Within 30 days until released.                                           |
-| canceled                | Submission is canceled                                           |
+| New                   | Metadata are not submitted. |
+| Metadata Submitted | Metadata have been submitted. |
+| Data Validating    | Validating data files. |
+| Data Error         | An error is detected in data file validation. |
+| Submission Validated | Metadata and data file are validated. |
+| Completed           | Accession numbers are issued. |
+| Private          | Data files for distribution are created and the submission is kept private. |
+| Public             | Released. |
+| Canceled           | Submission is canceled. |
 
 ## Metadata registration {#metadata}
 
@@ -287,13 +286,13 @@ When the values in the metadata are wrong, revise the metadata at [Enter/Update 
 
 ### Data Check {#check}
 
-The file format and content are validated. If there is no errors, the submission status becomes "submission_validated", and the files are moved to a separate directory.   
-The DRA staff reviews the "submission_validated" submission. Please do not touch the submission until the DRA staff contact you.
+The file format and content are validated. If there is no errors, the submission status becomes "Submission Validated", and the files are moved to a separate directory.   
+The DRA staff reviews the "Submission Validated" submission. Please do not touch the submission until the DRA staff contact you.
 
 ### Data Error {#data_error}
 
-An error in the data file validation make the submission status "data_error". 
-Please see [FAQ: How to deal with validation errors in the DRA submission?](/faq/en/data-validation-error-e.html) regarding how to fix errors. [Stop validation] makes the submission back to "metadata_submitted". Then revise the metadata and/or re-upload the files and start the data file validation again by [Validate data files].
+An error in the data file validation make the submission status "Data Error". 
+Please see [FAQ: How to deal with validation errors in the DRA submission?](/faq/en/data-validation-error-e.html) regarding how to fix errors. [Stop validation] makes the submission back to "Metadata Submitted". Then revise the metadata and/or re-upload the files and start the data file validation again by [Validate data files].
 
 {% include image.html url="books/hdra-error.jpg" caption="Stop validation" class="w500" %}
 
@@ -310,6 +309,8 @@ When the metadata and the data files are complete, accession numbers are assigne
 Regarding how to cite the accession numbers, see "[FAQ: Which accession numbers should be cited in publication?](/faq/en/cite-accession-e.html)".
 
 ## Data release {#data-release}
+
+Please see [DDBJ and SRA Data Processing](/data-processing-e.html) for data processing and status.   
 
 The DRA submission is released according to our [data release policy](/policies-e.html#data-release). 
 Please see "FAQ: [How are linked BioProject/BioSample/sequence data released?](/faq/en/bp-bs-seq-release-e.html)" regarding how linked data are released.  

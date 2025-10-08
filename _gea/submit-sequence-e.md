@@ -44,7 +44,7 @@ List of submission status
 | Data Validated   | Metadata and data are validated.                         |
 | Curating         | Curator is reviewing the submission.                     |
 | Accession Issued | Accession number is issued to the submission.            |
-| Confidential     | Archive files are created and submission is kept private |
+| Private     | Archive files are created and submission is kept private |
 | Public           | Released to public.                                      |
 
 ### Upload processed data files {#upload-data}

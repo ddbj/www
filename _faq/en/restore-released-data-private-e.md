@@ -11,14 +11,16 @@ date: 2014-06-13T17:20:30
 lang: en
 ---
 
+For sequence data processing and status at DDBJ and DRA, please see [DDBJ and SRA Data Processing](/data-processing-e.html).
+
 ## DDBJ {#ddbj}
 
 In principle, DDBJ can not restore any published data.    
-See also following item about access restriction. 
+See also following item about Suppressed. 
 
-In principle, you cannot remove your sequence data from DDBJ retrieval system: [getentry](https://getentry.ddbj.nig.ac.jp/top-e.html), if it has already been open to the public (If DDBJ wrongly published your data because of any mistakes, the data should be removed as soon as possible.). 
+In principle, you cannot remove your sequence data from [getentry](https://getentry.ddbj.nig.ac.jp/top-e.html), if it has already been open to the public (If DDBJ wrongly published your data because of any mistakes, the data should be removed as soon as possible). 
 
-However, if there is some specific reason for removing your sequence data (i.e. some error is found, etc.), we can restrict access to your sequence data. 
+However, if there is some specific reason for removing your sequence data (i.e. some error is found, etc.), we can change your sequence data to [Suppressed](/data-processing-e.html) so that the data to be removed from keyword and sequence similarity searches.  
 
 Please send your request from [DDBJ Update form](https://forms.gle/txmEtADnPpY2rnjKA) with the following contents.
  - Accession numbers:
@@ -30,9 +32,10 @@ If we restrict access to your sequence data and remove it from the public view, 
 Moreover, our unified database may be copied and redistributed without permission at any other organizations. In case you need to withdraw your entry from such database, we ask you to make request directly to the organization which manages the database.
 
 References
+: [DDBJ and SRA Data Processing](/data-processing-e.html)
 : [Why is the retracted data still available?](/faq/en/why-retracted-data-available-e.html)
 : [INSDC Status Document](https://www.insdc.org/submitting-standards/insdc-status-document/)
 
 ## DRA {#dra}
 
-[Contact the DRA team](https://forms.gle/d9cZxyzQzxPMSqW59) to delete public DRA data.
+[Contact the DRA team](https://forms.gle/d9cZxyzQzxPMSqW59) to change public DRA data to [Suppressed](/data-processing-e.html).

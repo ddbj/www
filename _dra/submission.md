@@ -59,20 +59,19 @@ lang: ja
 
 ## 登録ステータス {#status}
 
-ステータスで進捗状況を把握することができます。"submission_validated" と "data_error" になった登録が DRA チームで査定されます。
+ステータスで進捗状況を把握することができます。"Submission Validated" と "Data Error" になった登録が DRA チームで査定されます。
 
 | ステータス                 | 説明                            |
 |---|
-| new                   | メタデータの登録前                     |
-| metadata_submitted   | メタデータが登録された                   |
-| data_validating      | データファイルの検証処理中                 |
-| data_error           | データファイルの検証処理エラー               |
-| submission_validated | メタデータとデータファイルの検証処理を通過         |
-| completed             | アクセッション番号が発行された               |
-| confidential          | 公開用ファイルの作成が完了し、非公開に保たれている |
-| public                | 公開                     |
-| wait_for_release         | 公開まで30日以内  |
-| canceled                | キャンセル           |
+| New                   | メタデータの登録前                     |
+| Metadata Submitted   | メタデータが登録された                   |
+| Data Validating      | データファイルの検証処理中                 |
+| Data Error           | データファイルの検証処理エラー               |
+| Submission Validated | メタデータとデータファイルの検証処理を通過         |
+| Completed             | アクセッション番号が発行された               |
+| Private          | 公開用ファイルの作成が完了し、非公開に保たれている |
+| Public                | 公開                     |
+| Canceled                | キャンセル           |
 
 ## メタデータの登録 {#metadata}
 
@@ -293,14 +292,14 @@ Analysis に登録されたデータファイルは MD5 チェックサム値の
 ### Data Check  {#check}
 
 ファイルの中身がチェックされます。
-問題が無ければ登録のステータスが "submission_validated" になり、検証されたファイルが別ディレクトリに移されます。
-登録のステータスが "submission_validated" になると DRA スタッフが査定を始めます。DRA スタッフから指示があるまで D-way を操作せずにお待ちください。
+問題が無ければ登録のステータスが "Submission Validated" になり、検証されたファイルが別ディレクトリに移されます。
+登録のステータスが "Submission Validated" になると DRA スタッフが査定を始めます。DRA スタッフから指示があるまで D-way を操作せずにお待ちください。
 
 ### Data Error {#data_error}
 
-検証処理のいずれかのステップでエラーになると、ステータスが "data_error" になります。
+検証処理のいずれかのステップでエラーになると、ステータスが "Data Error" になります。
 エラーへの対処方法は「[FAQ: データファイルの validation エラーへの対処方法は？](/faq/ja/data-validation-error)」を参照してください。
-[Stop validation] で検証処理を停止するとステータスが "metadata_submitted" に戻るので、メタデータの修正やファイルの再アップロードを行い、再度 [Validate data files] をクリックして検証処理を実施します。
+[Stop validation] で検証処理を停止するとステータスが "Metadata Submitted" に戻るので、メタデータの修正やファイルの再アップロードを行い、再度 [Validate data files] をクリックして検証処理を実施します。
 
 {% include image.html url="books/hdra-error.jpg" caption="検証処理を停止" class="w500" %}
 
@@ -317,6 +316,8 @@ Analysis に登録されたデータファイルは MD5 チェックサム値の
 アクセッション番号の引用については「[FAQ: 投稿論文ではどのアクセッション番号を引用するべきでしょうか？](/faq/ja/cite-accession.html)」をご覧ください。
 
 ## データ公開 {#data-release}
+
+データの処理とステータスについては [DDBJ と SRA におけるデータ処理](/data-processing.html)をご覧ください。   
 
 データは[公開原則](/policies.html#data-release)に従って公開されます。
 参照関係にあるデータとの連動公開については、「FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)」を参照してください。  
