@@ -1,11 +1,11 @@
 top_news:
  ja:
     - title: BioProject/BioSample/DRA/GEA のステータスの追加と変更
-      path: 2025-10-08.html
+      path: 2025-10-08
+    - title: (10/8 10:00-11:00) GEA/DRA/BP/BS システムリリースによるサービス停止のお知らせ
+      path: 2025-10-03
  en:
     - title: BioProject/BioSample/DRA/GEA status addition and changes
-      path: 2025-10-08-e.html
-
-
-
-
+      path: 2025-10-08-e
+    - title: (Oct 8 10:00-11:00) Announcement of GEA/DRA/BP/BS system suspension
+      path: 2025-10-03-e
