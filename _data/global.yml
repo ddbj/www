@@ -1,7 +1,9 @@
 top_news:
  ja:
-    - title: BioProject/BioSample/DRA/GEA のステータスの追加と変更
-      path: 2025-10-08
+    - title: アメリカ連邦政府予算失効によるTaxonomy database更新停止
+      path: 2025-10-15
  en:
-    - title: BioProject/BioSample/DRA/GEA status addition and changes
-      path: 2025-10-08-e
+    - title: Suspension of taxonomy database update due to US federal funding expiration
+      path: 2025-10-15-e
+      
+      
