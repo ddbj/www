@@ -2,8 +2,12 @@ top_news:
  ja:
     - title: アメリカ連邦政府予算失効によるTaxonomy database更新停止
       path: 2025-10-15
+    - title: DDBJ リリース 139.0，DAD リリース 109.0 完成
+      path: 2025-10-16
  en:
     - title: Suspension of taxonomy database update due to US federal funding expiration
       path: 2025-10-15-e
+    - title: DDBJ Rel. 139.0, DAD Rel. 109.0 Completed
+      path: 2025-10-16-e
       
       
