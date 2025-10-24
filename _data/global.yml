@@ -1,13 +1,13 @@
 top_news:
  ja:
-    - title: (11/6 13:00-11/10 13:00) 電源設備修復工事に伴う、登録システムと検索サービスの停止
+    - title: (11/5 13:00-11/10 13:00) 電源設備修復工事に伴う、登録システムと検索サービスの停止5
       path: 2025-10-24_3
     - title: アメリカ連邦政府予算失効によるTaxonomy database更新停止
       path: 2025-10-15
     - title: DDBJ リリース 139.0，DAD リリース 109.0 完成
       path: 2025-10-16
  en:
-    - title: (6st November 13:00-November 10th 13:00) Suspension of all submission and search services for maintenance
+    - title: (5st November 13:00-November 10th 13:00) Suspension of all submission and search services for maintenance
       path: 2025-10-24_3-e
     - title: Suspension of taxonomy database update due to US federal funding expiration
       path: 2025-10-15-e
