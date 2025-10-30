@@ -217,16 +217,7 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="Tomoki Umeda"></p>
-        <div class="explanation">
-            <p class="name">Tomoki Umeda</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li>      
-    </ul>  
+    </ul> 
     </div>
     <h2 id="hpc">High Performance Computing Division</h2>
     <div class="wrapper">

@@ -244,16 +244,6 @@ category: about
         </div>
         </li>
     </ul>
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="梅田 友貴"></p>
-        <div class="explanation">
-            <p class="name">梅田 友貴</p>
-            <p class="name">Tomoki Umeda</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li> 
-    </ul>
     </div>
     <h2 id="hpc">システム管理部門</h2>
     <div class="wrapper">
