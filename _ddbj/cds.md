@@ -38,8 +38,8 @@ CDS には、その位置情報、[/codon\_start](/ddbj/qualifiers.html#codon_st
 
 CDS feature には登録者からの報告に基づいて、対応する遺伝子の略号が [/gene](/ddbj/qualifiers.html#gene) に、
 対応するタンパク質の名称が [/product](/ddbj/qualifiers.html#product) に記載されます。
-また、これらの情報が実験的に確認されたもの あるときには [/experiment](/ddbj/qualifiers.html#experiment)、
-配列の類似性検索等で類推さ たものであるときには 
+また、これらの情報が実験的に確認されたものであるときには [/experiment](/ddbj/qualifiers.html#experiment)、
+配列の類似性検索等で類推されたものであるときには 
 [/inference](/ddbj/qualifiers.html#inference) という qualifier を用いて注釈されることがあります。
 
 なお、INSDCは、類似性や相同性の判定基準を定めておりませんので、類似タンパク質であるとの判断は、すべて登録者の判断に基づきます。  
@@ -51,7 +51,7 @@ CDS feature には登録者からの報告に基づいて、対応する遺伝�
 
 ## DDBJの遺伝子命名に関する考え方  {#product}
 
-DDBJ は遺伝子命名に関する権限などは持っていません。また、特定の遺伝子命名管理団体との公 な協調も行っておりません。特に問題がない限り、登録者の意向に基づいて記述しています。
+DDBJ は遺伝子命名に関する権限などは持っていません。また、特定の遺伝子命名管理団体との公な協調も行っておりません。特に問題がない限り、登録者の意向に基づいて記述しています。
 
 CDS feature では、[/product](/ddbj/qualifiers.html#product) qualifier に産物に相当するタンパク質名と、
 [/gene](/ddbj/qualifiers.html#gene) qualifier に由来する locus を示す象徴的な略号を記載することを基本とします。  
@@ -69,21 +69,21 @@ CDS feature では、[/product](/ddbj/qualifiers.html#product) qualifier に産�
 [/gene](/ddbj/qualifiers.html#gene): 遺伝子を指す象徴的な略号  
 : 例: ilvE
 : 入力時のご注意：
-  - 遺伝子シンボルとしての略号を記載してくださいい。
-  - 一般に通用する複数の略号がある場合でも複数の略号を記載しないでください。    また、そのために不必要に区切り記号を使用しないでくださいい。
-  - 略号の複数記載を希望される場合は、代表的な略号を gene に記載し、その他の略号を [/gene\_synonym](/ddbj/qualifiers.html#gene_synonym) に記載してくださいい。
+  - 遺伝子シンボルとしての略号を記載してください。
+  - 一般に通用する複数の略号がある場合でも複数の略号を記載しないでください。    また、そのために不必要に区切り記号を使用しないでください。
+  - 略号の複数記載を希望される場合は、代表的な略号を gene に記載し、その他の略号を [/gene\_synonym](/ddbj/qualifiers.html#gene_synonym) に記載してください。
 
 [/product](/ddbj/qualifiers.html#product): タンパク質産物を指す一般名  
 : 例: trypsinogen
 : 入力時のご注意：
-  - 生物名を含めないでくださいい。
-  - 原則、略号の類ではない一般名を記載してくださいい。
-  - 一般名が複数ある場合でも、複数の名称を記載しないでください。    また、そのために不必要な区切り記号を使用しないでくださいい。  
-  - 一般名の複数記載を希望される場合は、代表的な名称を product に、その他の名称を [/note](/ddbj/qualifiers.html#note) に記載してくださいい。
+  - 生物名を含めないでください。
+  - 原則、略号の類ではない一般名を記載してください。
+  - 一般名が複数ある場合でも、複数の名称を記載しないでください。    また、そのために不必要な区切り記号を使用しないでください。  
+  - 一般名の複数記載を希望される場合は、代表的な名称を product に、その他の名称を [/note](/ddbj/qualifiers.html#note) に記載してください。
   - 機能、名称等が不明なタンパク質の場合は、hypothetical protein と記載することを推奨します。
   - [the international protein nomenclature guidelines](https://www.ncbi.nlm.nih.gov/genome/doc/internatprot_nomenguide/) に準拠することを推奨します。
 : 強制力はありませんし、これに合致しない命名法を採択する生物種も多く、酵素名などの記載原則とは一部、矛盾します。しかし、それは承知の上で、どのように命名すれば良いかわからない、という登録者の方々への指針、閲覧利用者がその特徴を理解する際の一助として提示しております。
-: なお、登録完了後でも、記載の修正は随時受付けておりますので、[登録データの修正・更新](/ddbj/update.html)をご参照の上、お知らせくださいい。
+: なお、登録完了後でも、記載の修正は随時受付けておりますので、[登録データの修正・更新](/ddbj/update.html)をご参照の上、お知らせください。
 
 ## 途中に出現する終止コドンへの対応  {#stop}
 
@@ -108,7 +108,7 @@ CDS と考えていた領域の途中に終止コドンが存在していた場�
 
 a) nonsense mutation、frameshift などと推定されるが理由不明、または、IgG などの獲得免疫関連で多様性が生じる過程の場合<a name="stop_a"></a>
 : <span class="red">塩基配列決定の精度が低いことによる場合も、原則、このカテゴリーになります。</span> 
-: CDS ではなく [misc\_feature](/ddbj/features.html#misc_feature) を用いて記載します。<br>このとき、タンパク質が存在は明確ではありませんので、[translation](/ddbj/qualifiers.html#translation) qualifier とアミノ酸配列は示されません。<br> 原則、[inference](/ddbj/qualifiers.html#inference) qualifier にタンパク質の存在を推定した根拠の記載をお願いします。<br>[note](/ddbj/qualifiers.html#note) qualifier に "putative frameshift mutation"、"Ig rearrangement"、または、"TCR beta rearrangement" など簡潔な理由の記載もお願いします。
+: CDS ではなく [misc\_feature](/ddbj/features.html#misc_feature) を用いて記載します。<br>このとき、タンパク質の存在は明確ではありませんので、[translation](/ddbj/qualifiers.html#translation) qualifier とアミノ酸配列は示されません。<br> 原則、[inference](/ddbj/qualifiers.html#inference) qualifier にタンパク質の存在を推定した根拠の記載をお願いします。<br>[note](/ddbj/qualifiers.html#note) qualifier に "putative frameshift mutation"、"Ig rearrangement"、または、"TCR beta rearrangement" など簡潔な理由の記載もお願いします。
 : [配列データ記載例 B16](/ddbj/example.html#B16) もご参照ください。
 
 b) pseudogene と見做される場合<a name="stop_b"></a>  
@@ -183,7 +183,7 @@ CDS feature の location に join を用いて記載する場合、mRNA が成�
                      /transl_table=1
 ```
 
-|   <code>CDS   86.. &gt;450</code>   |  配列の86番目から450番目までが、以下の qualifier で記述されたタンパク質をコードする領域であることを示します。<br/>"&gt;" は、この CDS feature の 3' 末端側が終端ではないことを示します。<br/>詳しい Location の記述ルールについては、[Location の記述法](/ddbj/location.html)を参照してくださいい。  |
+|   <code>CDS   86.. &gt;450</code>   |  配列の86番目から450番目までが、以下の qualifier で記述されたタンパク質をコードする領域であることを示します。<br/>"&gt;" は、この CDS feature の 3' 末端側が終端ではないことを示します。<br/>詳しい Location の記述ルールについては、[Location の記述法](/ddbj/location.html)を参照してください。  |
 |  <code>/codon_start=1</code>  |  コドンの読み枠の開始位置が上記の location で指定される１番目の塩基（塩基配列の86番目）であることを示します。  |
 |  <code>/transl_table=1</code>  |  塩基配列は [The Genetic Codes](/ddbj/geneticcode.html) の 1 の表に従ってアミノ酸翻訳されることを示します。  |
 
