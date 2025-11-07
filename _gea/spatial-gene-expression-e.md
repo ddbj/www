@@ -15,9 +15,9 @@ In the spatial gene expression data submission, it is important for data interpr
 
 Submission of output files from the 10xGenomics [Visium](https://www.10xgenomics.com/jp/products/spatial-gene-expression) is explained in this section. Submit barcode sequences, position of spots containing the barcodes, tissue images, and scaling factors that converts pixel positions in the original, full-resolution images to pixel positions in the tissue image files.    
 
-* [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360024716391-What-format-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-SRA) 
-* [Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial)
-* [Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview)
+* [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/s/article/360024716391-What-formats-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-or-SRA) 
+* [Space Ranger Spatial Outputs](https://www.10xgenomics.com/support/jp/software/space-ranger/latest/analysis/outputs/spatial-outputs)
+* [Understanding Space Ranger Outputs](https://www.10xgenomics.com/support/jp/software/space-ranger/latest/analysis/outputs/output-overview)
 
 Among the files indicated in the above page, submit the following files along with raw and processed data files. The other related files may also be included.
 
@@ -48,7 +48,7 @@ Submit these files in single tar file as GEA processed data.
 
 ### Xenium {#xenium}
 
-For spatial gene expression data generated from [Xenium](https://www.10xgenomics.com/platforms/xenium), submit output files recommended for submission at [Xenium Output Files at a Glance](https://www.10xgenomics.com/support/jp/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data) as GEA processed data files. Select the "Submission Type: Microarray" and register [dummy data files](/assets/files/dummy/dummy-raw-data.txt) (md5: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) as raw data files. Enter "A-GEAD-11" (accession for the dummy array design) for Array Design Accession.
+For spatial gene expression data generated from [Xenium](https://www.10xgenomics.com/jp/platforms/xenium), submit output files recommended for submission at [Archiving Xenium Data](https://www.10xgenomics.com/support/jp/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data) as GEA processed data files. Select the "Submission Type: Microarray" and register [dummy data files](/assets/files/dummy/dummy-raw-data.txt) (md5: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) as raw data files. Enter "A-GEAD-11" (accession for the dummy array design) for Array Design Accession.
 
 * [Understanding Xenium Outputs](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-understanding-outputs)
 * [Archiving Xenium Data](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data)

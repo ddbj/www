@@ -13,14 +13,14 @@ lang: ja
 
 ### Visium {#visium}
 
-10xGenomics [Visium](https://www.10xgenomics.com/jp/products/spatial-gene-expression) 
+10x Genomics [Visium](https://www.10xgenomics.com/jp/products/spatial-gene-expression) 
 から出力される組織切片上の空間的な遺伝子発現プロファイルデータの登録方法を説明します。
 
 空間的な遺伝子発現量測定に使用したバーコード配列、バーコード配列を含むスポットの位置、組織切片画像、スポットと画像の対応倍率、を登録します。    
 
-* [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/hc/en-us/articles/360024716391-What-format-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-SRA) 
-* [Spatial Gene Expression - Image Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/spatial)
-* [Understanding Outputs](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview)
+* [What format of 10x Genomics data should I submit to NCBI GEO/SRA?](https://kb.10xgenomics.com/s/article/360024716391-What-formats-of-10x-Genomics-data-should-I-submit-to-NCBI-GEO-or-SRA) 
+* [Space Ranger Spatial Outputs](https://www.10xgenomics.com/support/jp/software/space-ranger/latest/analysis/outputs/spatial-outputs)
+* [Understanding Space Ranger Outputs](https://www.10xgenomics.com/support/jp/software/space-ranger/latest/analysis/outputs/output-overview)
 
 上記の Visium ページで示されている出力ファイルの内、以下のファイルを生・解析データと一緒に登録します。他の関連するファイルを含めることもできます。
 
@@ -50,8 +50,8 @@ GEA processed data
 
 ### Xenium {#xenium}
 
-10xGenomics [Xenium](https://www.10xgenomics.com/jp/platforms/xenium) 
-から出力される空間的な遺伝子発現データについては、[Xenium Output Files at a Glance](https://www.10xgenomics.com/support/jp/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data) で登録を推奨されているファイルを GEA の解析済みデータファイルとして登録してください。Submission Type は Microarray を選択し、生データファイルには [dummy データファイル](/assets/files/dummy/dummy-raw-data.txt) (md5 値: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) を登録します。Array Design Accession は A-GEAD-11 を入力します (dummy の内容で登録されます)。
+10x Genomics [Xenium](https://www.10xgenomics.com/jp/platforms/xenium) 
+から出力される空間的な遺伝子発現データについては、[Archiving Xenium Data](https://www.10xgenomics.com/support/jp/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data) で登録を推奨されているファイルを GEA の解析済みデータファイルとして登録してください。Submission Type は Microarray を選択し、生データファイルには [dummy データファイル](/assets/files/dummy/dummy-raw-data.txt) (md5 値: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) を登録します。Array Design Accession は A-GEAD-11 を入力します (dummy の内容で登録されます)。
 
 * [Understanding Xenium Outputs](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-understanding-outputs)
 * [Archiving Xenium Data](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data)

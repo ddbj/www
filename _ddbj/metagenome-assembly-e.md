@@ -24,7 +24,7 @@ Data from metagenome projects are grouped into four groups depending on their as
 (3) Binned assemblies asserted to known taxonomies (Binned metagenome).
 (4) A highest quality (in terms of completeness and contamination) representative binned assembly (Metagenome-Assembled Genome, MAG) for each predicted species.
 
-DDBJ Center accepts (1)-(3) in DRA and (4) in DDBJ. Regarding quality of MAG assembly, please refer to [this publication](https://www.nature.com/articles/nbt.3893).
+DDBJ Center accepts (1)-(3) in DRA and (4) in DDBJ. Regarding quality and groups of MAG assembly, please refer to [this publication](https://www.nature.com/articles/nbt.3893).
 
 This guide explains how to submit these metagenomic sequencing data to
 the BioProject/BioSample/DRA/DDBJ. Raw sequencing data deposition to DRA is basically required.
@@ -81,8 +81,8 @@ Submit assembled contigs derived from the raw sequence data
 in fasta/bam files to the [DRA
 Analysis](/dra/metadata-e.html#Analysis_Type) (Analysis type = 'De
 Novo Assembly') along with the Run
-registered in (1). By using [the excel for DRA submission](/dra/submission-e.html#excel), describe analysis software used in Analysis step and quality metrics in Attributes.   
-If using the DRA submission web interface, include information of a referencing BioSample accession, analysis software used and　assembly quality metrics in the description.
+registered in (1). By using [the excel for DRA submission](/dra/submission-e.html#excel), describe analysis software used in Analysis step. Quality metrics may also be included in Attributes.   
+If using the DRA submission web interface, include information of a referencing BioSample accession (required), analysis software used (required) and　assembly quality metrics (optional) in the description.
 - BioSample: SAMD00000001
 - Analysis step: canu 2.1, pilon 1.24, CheckM 1.1.3
 - Quality: completeness 85.3, contamination 0
@@ -126,8 +126,8 @@ Submit binned assemblies derived from the raw sequence data
 in fasta/bam files to the [DRA
 Analysis](/dra/metadata-e.html#Analysis_Type) (Analysis type = 'De
 Novo Assembly') along with the Run
-registered in (1). By using [the excel for DRA submission](/dra/submission-e.html#excel), describe analysis software used in Analysis step, and quality metrics and binning information in Attributes.   
-If using the DRA submission web interface, include information of a referencing BioSample accession, analysis software used, and　assembly quality metrics and binning information in the description.
+registered in (1). By using [the excel for DRA submission](/dra/submission-e.html#excel), describe analysis software used in Analysis step. Quality metrics and binning information may also be included in Attributes.   
+If using the DRA submission web interface, include information of a referencing BioSample accession (required), analysis software used (required), and　assembly quality metrics and binning information (optional) in the description.
 - BioSample: SAMD00000001
 - Analysis step: canu 2.1, pilon 1.24, CheckM 1.1.3
 - Quality: completeness 85.3, contamination 0

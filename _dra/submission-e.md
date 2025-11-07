@@ -12,6 +12,12 @@ Submission of research data from human subjects
 : <span class="red">For submitting data from human subjects (human data) to the databases of DDBJ center, it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws, ordinances, guidelines and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your data to be submitted. Before submitting human data, read the "[Submission of research data from human subjects](/policies-e.html#submission-of-human-data)".</span>
 </div>
 
+The following data types require specific submission procedures. Please refer to the dedicated pages.  
+* [Metagenome assembly](/ddbj/metagenome-assembly-e.html)  
+* [Haplotype](/ddbj/haplotype-e.html)  
+* [Single-cell submission guide](/gea/single-cell-e.html)  
+* [Spatial gene expression](/gea/spatial-gene-expression-e.html)  
+
 ## Submission flow {#flow}
 
 * [Create a DDBJ account](/ddbj-account-e.html)

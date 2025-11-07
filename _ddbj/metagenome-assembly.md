@@ -15,7 +15,7 @@ lang: ja
 (3) Binning され既知の分類群に帰属されたアセンブリ配列（Binned メタゲノム）
 (4) 単一の分類群に帰属された Binned アセンブリ配列の中で、分類群を代表する、配列の完成度・コンタミネーション割合といった指標が最も高品質なアセンブリ配列（Metagenome-Assembled Genome、MAG）
 
-DDBJ センターにおいて (1)-(3) は DRA で、(4) は DDBJ で受付けています。MAG 配列の品質に関しては[こちらの文献](https://www.nature.com/articles/nbt.3893)を参照してください。
+DDBJ センターにおいて (1)-(3) は DRA で、(4) は DDBJ で受付けています。MAG 配列の品質と区分に関しては[こちらの文献](https://www.nature.com/articles/nbt.3893)を参照してください。
 配列が由来するサンプル情報に関して、(1)-(2) はメタゲノムサンプルを、(3) と (4) はメタゲノムサンプルから派生した Binned と MAG サンプルをそれぞれ BioSample に登録します。
 研究概要は BioProject に登録し、全てのデータから同じ BioProject を参照することで、一連のデータをメタゲノムプロジェクトとしてまとめます。
 
@@ -61,8 +61,8 @@ DRA への生データの登録は原則として必須です。
 
 #### DRA  {#primary-metagenome-dra}
 
-DRA に登録する場合、プライマリーメタゲノム配列を fasta/bam ファイルで (1) の生リードが登録された [DRA Run とセットで Analysis に登録](/dra/submission.html#analysis)（Analysis type = "De Novo Assembly"）します。[DRA 登録用エクセル](/dra/submission.html#excel) を使い、解析ソフトウェアの情報を Analysis step に、アセンブリの品質に関する指標を Attributes に記載します。   
-DRA ウェブ登録システムを使って Analysis を登録する場合、Analysis description に以下の形式で参照している  BioSample アクセッション番号、解析ステップ、及び、アセンブリの品質に関する指標を記載します。
+DRA に登録する場合、プライマリーメタゲノム配列を fasta/bam ファイルで (1) の生リードが登録された [DRA Run とセットで Analysis に登録](/dra/submission.html#analysis)（Analysis type = "De Novo Assembly"）します。[DRA 登録用エクセル](/dra/submission.html#excel) を使い、解析ソフトウェアの情報を Analysis step に記載します。アセンブリの品質に関する completeness や contamination といった指標も Attributes に含めることができます。   
+DRA ウェブ登録システムを使って Analysis を登録する場合、Analysis description に以下の形式で参照している  BioSample アクセッション番号 (必須)、解析ステップ (必須)、及び、アセンブリの品質に関する指標 (任意) を記載します。
 - BioSample: SAMD00000001
 - Analysis step: canu 2.1, pilon 1.24, CheckM 1.1.3
 - Quality: completeness 85.3, contamination 0
@@ -100,7 +100,7 @@ derived_from: SAMD00000002,SAMD00000003,SAMD00000010-SAMD00000015　　　
 #### DRA  {#binned-metagenome-dra}
 
 DRA に登録する場合、Binned アセンブリ配列を fasta/bam ファイルで、(1) の生リードが登録された [DRA Run とセットで Analysis に登録](/dra/submission.html#analysis)します。[DRA 登録用エクセル](/dra/submission.html#excel) を使い、Analysis type = "De Novo Assembly" を選択し、解析ソフトウェアの情報を Analysis step、アセンブリの品質や binning に関する指標を Attributes に記載します。   
-DRA ウェブ登録システムを使って Analysis を登録する場合、Analysis description に参照している仮想的な BioSample アクセッション番号、解析ステップ、及び、アセンブリの品質に関する指標を以下のように記載します。
+DRA ウェブ登録システムを使って Analysis を登録する場合、Analysis description に参照している仮想的な BioSample アクセッション番号 (必須)、解析ステップ (必須)、及び、アセンブリの品質に関する指標 (任意) を以下のように記載します。
 - BioSample: SAMD00000001
 - Analysis step: canu 2.1, pilon 1.24, CheckM 1.1.3
 - Quality: completeness 85.3, contamination 0
@@ -109,7 +109,7 @@ Analysis は ENA/NCBI と共有されません。また、[DDBJ Search](https://
 
 ### (4) MAG {#mag}
 
-単一の分類群に帰属された Binned アセンブリ配列の中で、分類群を代表する、配列の完成度・コンタミネーション割合といった指標が最も高品質なアセンブリ配列（Metagenome-Assembled Genome、MAG）は DDBJ の [ENV division](/ddbj/env.html) にゲノムエントリとして登録します。MAG 配列の品質に関しては[こちらの文献](https://www.nature.com/articles/nbt.3893)を参照してください。
+単一の分類群に帰属された Binned アセンブリ配列の中で、分類群を代表する、配列の完成度・コンタミネーション割合といった指標が最も高品質なアセンブリ配列（Metagenome-Assembled Genome、MAG）は DDBJ の [ENV division](/ddbj/env.html) にゲノムエントリとして登録します。MAG 配列の品質と区分に関しては[こちらの文献](https://www.nature.com/articles/nbt.3893)を参照してください。
 
 #### BioProject {#mag-bioproject}
 

@@ -13,6 +13,12 @@ lang: ja
 ヒトを対象とした研究データを登録する場合は[「ヒトを対象とした研究データの登録について」](/policies.html#submission-of-human-data)を熟読してください。 </span>
 </div>
 
+以下のデータについては、種類に応じたデータ登録が必要になりますので、専用ページをご覧ください。
+* [メタゲノムアセンブリ](/ddbj/metagenome-assembly.html)
+* [Haplotype](/ddbj/haplotype.html)
+* [Single-cell submission guide](/gea/single-cell.html)
+* [Spatial gene expression](/gea/spatial-gene-expression.html)
+
 ## 登録の流れ {#flow}
 
 * [DDBJ アカウントの取得](#account)
