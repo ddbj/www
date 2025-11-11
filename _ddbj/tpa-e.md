@@ -15,8 +15,11 @@ related_pages:
 ---
 
 <div class="attention" markdown="1">
-[From January 2025 TPA-Exp and TPA-Inf submission types will no longer be accepted as new submissions](/news/en/2024-09-05-e.html )    
-: TPA (Third Party Data) is a collection of nucleotide sequence data that has been assembled or (re) annotated by a third party (TPA submitters) 
+Starting in January 2025, new submissions of the types TPA:experimental and TPA:inferential were no longer accepted ([announcement](/news/en/2024-09-05-e.html)).
+</div>
+
+<div class="attention" markdown="1">
+TPA (Third Party Data) is a collection of nucleotide sequence data that has been assembled or (re) annotated by a third party (TPA submitters) 
 based on entries already registered in INSDC (called primary entries). 
 Those assemblies include two cases; one or more primary entries are used and newly determined sequence is contained. 
 TPA sequence data should be submitted to INSDC databases (DDBJ/ENA/GenBank) as a part of the process to publish biological research for primary nucleotide sequences.

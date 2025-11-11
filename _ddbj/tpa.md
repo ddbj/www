@@ -15,9 +15,11 @@ related_pages:
 ---
 
 <div class="attention" markdown="1">
-[2025年1月以降、TPA-Exp および TPA-Inf の data type の新規登録を休止](/news/ja/2024-09-05.html )  
-: TPA (Third Party Data) は、INSDC に既に登録されているエントリ (これをプライマリーエントリと呼びます) を元に、
-第三者がアセンブル (assemble)、もしくは、(再)アノテーションを行ったデータのコレクションです。    
+2025年1月以降、TPA:experimental および TPA:inferential に該当するデータの登録受付を停止しております ([お知らせ](/news/ja/2024-09-05.html))。
+</div>
+
+<div class="attention" markdown="1">
+TPA (Third Party Data) は、INSDC に既に登録されているエントリ (これをプライマリーエントリと呼びます) を元に、第三者がアセンブル (assemble)、もしくは、(再)アノテーションを行ったデータのコレクションです。    
 配列のアセンブルには、既存のプライマリーエントリの組み合わせのみで構成された場合と、新規に TPA の登録者が実験的に決定した配列を混在させた場合とが存在します。
 INSDC では、既報のプライマリーエントリに記載されている配列に関する研究を公開するための手段として TPA 登録を受け入れています。
 
