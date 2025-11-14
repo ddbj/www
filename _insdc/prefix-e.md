@@ -396,7 +396,7 @@ QN      EPO             Patent application
 QO      EPO             Patent application
 QP      JPO             Patent application
 QQ      JPO             Patent application
-QR      DDBJ            
+QR      JPO             Patent application
 QS      DDBJ            
 QT      DDBJ            
 QU      DDBJ            
@@ -414,6 +414,7 @@ RG      DDBJ
 RH      DDBJ            
 RI      DDBJ            
 RJ      DDBJ            
+RK      EPO             Patent application
 S       GenBank         Journal scanning
 T       GenBank         EST
 U       GenBank         
