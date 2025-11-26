@@ -1,13 +1,13 @@
 top_news:
  ja:
-    - title: <span class="red">一部復旧</span>(11/25 13:00-11/26 17:00) 緊急ハードウェアメンテナンスのため、登録システムと一部の検索サービスの停止
+    - title: <span class="red">復旧</span>(11/25 13:00-11/26 17:00) 緊急ハードウェアメンテナンスのため、登録システムと一部の検索サービスの停止
       path: 2025-11-20
     - title: アメリカ連邦政府予算失効によるTaxonomy database更新停止
       path: 2025-10-15
     - title: MSSおよびNSSS登録者の方にお願い - submission混雑のため通常よりも遅延しております
       path: 2025-11-13
  en:
-    - title: <span class="red">[Some services Resumed]</span>(25th 13:00(JST) -26th November 17:00(JST)) Suspension of all submission and part of search services for emergency hardware maintenance
+    - title: <span class="red">[Resumed]</span>(25th 13:00(JST) -26th November 17:00(JST)) Suspension of all submission and part of search services for emergency hardware maintenance
       path: 2025-11-20-e
     - title: Suspension of taxonomy database update due to US federal funding expiration
       path: 2025-10-15-e
