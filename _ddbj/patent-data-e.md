@@ -46,7 +46,7 @@ reference datasets.
 in [Molecular Type] as needed, then you can search data targeted
 to [PAT division](/ddbj/flat-file.html#Locus) in DDBJ/GenBank/EMBL.
 
-[BLAST](http://blast.ddbj.nig.ac.jp/blastn?lang=en)  
+BLAST (Service suspended) 
 : elect [DDBJ ALL (DDBJ periodical release + daily updates)], then
 select [Patent] in [Other divisions].
 

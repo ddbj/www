@@ -31,7 +31,7 @@ DDBJ おいて、特許出願に含まれる塩基配列データ (注: JPO, KIP
 [ARSA](http://ddbj.nig.ac.jp/arsa/advanced_search?lang=ja)  
 : [Division] で PAT、[Molecular Type] で DNA/RNA/mRNA/rRNA を必要に応じて指定することで、DDBJ [PAT division](/？/flat-file.html#division)に検索対象を限定。
 
-[BLAST](http://blast.ddbj.nig.ac.jp/blastn?lang=ja)  
+BLAST （サービス停止中） 
 : [DDBJ ALL (DDBJ periodical release + daily updates)] を選択し、[Other divisions] の [Patent] を選択。
 
 ## アミノ酸配列  {#aa}
