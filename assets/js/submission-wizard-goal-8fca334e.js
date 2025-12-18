@@ -1,4 +1,4 @@
-import{w as u,b as g,r as D,L as y,$ as r,m as d,s as B,e as w,t as p,y as A,a as R,l as M,n as P}from"./submission-wizard-241bf32b.js";/**
+import{w as u,b as g,r as D,L as y,$ as r,m as d,s as B,e as w,t as p,y as A,a as R,l as M,n as P}from"./submission-wizard-3bc55d02.js";/**
  * @license
  * Copyright 2017 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
@@ -496,9 +496,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
   <li>\u751F\u30C7\u30FC\u30BF\u30D5\u30A1\u30A4\u30EB\u3092 <a href="/dra/submission.html#upload-sequence-data">DRA submission \u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B scp/sftp \u3067\u30A2\u30C3\u30D7\u30ED\u30FC\u30C9</a>\u3002</li>
   <li>D-way \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067 DRA \u767B\u9332\u306E\u305F\u3081\u306B\u4F5C\u6210\u3057\u305F BioProject \u3068 BioSample \u3092\u9078\u629E\u3002D-way \u306E<a href="/dra/submission.html#submit-metadata">\u30A6\u30A7\u30D6\u753B\u9762</a>\u3067\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u767B\u9332\u3001\u3082\u3057\u304F\u306F\u3001Run \u6570\u304C100\u3092\u8D85\u3048\u308B\u3088\u3046\u306A\u5834\u5408\u306F<a href="/dra/submission.html#metadata-excel">\u30A8\u30AF\u30BB\u30EB/XML \u30D5\u30A1\u30A4\u30EB</a>\u3067\u767B\u9332\u3002</li>
 </ol></p>
-`}}]},"q4-genome-plasmid-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
-`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u767B\u9332\u624B\u9806\u306F<a href="/ddbj/web-submission-help.html">\u30A6\u30A7\u30D6\u30DA\u30FC\u30B8</a>\u3084<a href="/assets/files/pdf/ddbj/websubHelp_full.pdf">PDF</a> \u3092\u53C2\u7167\u3002</p>
-`}},{title:{en:"NSSS",ja:"NSSS"},body:{en:`<p>Submit small-scale (less than 100 sequences and/or shorter than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`}}]},"q4-genome-plasmid-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) non-complete plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
+`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u5B8C\u5168\u9577\u3067\u306F\u306A\u3044\u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u767B\u9332\u624B\u9806\u306F<a href="/ddbj/web-submission-help.html">\u30A6\u30A7\u30D6\u30DA\u30FC\u30B8</a>\u3084<a href="/assets/files/pdf/ddbj/websubHelp_full.pdf">PDF</a> \u3092\u53C2\u7167\u3002</p>
+`}},{title:{en:"NSSS",ja:"NSSS"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) non-complete plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>Select an annotation template and describe annotation.</li>
@@ -507,7 +507,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the plasmid sequences.</p>
-`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
+`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u5B8C\u5168\u9577\u3067\u306F\u306A\u3044\u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <p>NSSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u3092\u9078\u629E\u3057\u3001\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u3092\u8A18\u5165\u3002</li>
@@ -516,9 +516,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C\u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
-`}}]},"q4-genome-plasmid-mss->g-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
-`,ja:`<p>\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
-`}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+`}}]},"q4-genome-plasmid-mss->g-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit complete or large-scale (more than 100 sequences and/or longer than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+`,ja:`<p>\u5B8C\u5168\u9577\u3001\u3082\u3057\u304F\u306F\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
+`}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit complete or large-scale (more than 100 sequences and/or longer than 500kb) plasmid sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
@@ -527,7 +527,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the plasmid sequences.</p>
-`,ja:`<p>\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
+`,ja:`<p>\u5B8C\u5168\u9577\u3001\u3082\u3057\u304F\u306F\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
   <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066 <a href="/ddbj/mss.html#prep">fasta \u30D5\u30A1\u30A4\u30EB\u3068\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u8A18\u8F09\u3057\u305F\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a>\u3092\u6E96\u5099\u3057\u307E\u3059\u3002</li>
@@ -536,9 +536,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C finished level \u30B2\u30CE\u30E0\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
-`}}]},"q4-genome-organelle-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 100 sequences and/or shorter than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
-`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u30AA\u30EB\u30AC\u30CD\u30E9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u767B\u9332\u624B\u9806\u306F<a href="/ddbj/web-submission-help.html">\u30A6\u30A7\u30D6\u30DA\u30FC\u30B8</a>\u3084<a href="/assets/files/pdf/ddbj/websubHelp_full.pdf">PDF</a> \u3092\u53C2\u7167\u3002</p>
-`}},{title:{en:"NSSS",ja:"NSSS"},body:{en:`<p>Submit small-scale (less than 100 sequences and/or shorter than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`}}]},"q4-genome-organelle-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) non-complete organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
+`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u5B8C\u5168\u9577\u3067\u306F\u306A\u3044\u30AA\u30EB\u30AC\u30CD\u30E9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u767B\u9332\u624B\u9806\u306F<a href="/ddbj/web-submission-help.html">\u30A6\u30A7\u30D6\u30DA\u30FC\u30B8</a>\u3084<a href="/assets/files/pdf/ddbj/websubHelp_full.pdf">PDF</a> \u3092\u53C2\u7167\u3002</p>
+`}},{title:{en:"NSSS",ja:"NSSS"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) non-complete organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>Select an annotation template and describe annotation.</li>
@@ -547,7 +547,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the organelle sequences.</p>
-`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u30AA\u30EB\u30AC\u30CD\u30E9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
+`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u5B8C\u5168\u9577\u3067\u306F\u306A\u3044\u30AA\u30EB\u30AC\u30CD\u30E9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <p>NSSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u3092\u9078\u629E\u3057\u3001\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u3092\u8A18\u5165\u3002</li>
@@ -556,9 +556,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C\u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
-`}}]},"q4-genome-organelle-mss->g-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
-`,ja:`<p>\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30AA\u30EB\u30AC\u30CD\u30E9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
-`}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+`}}]},"q4-genome-organelle-mss->g-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit complete or large-scale (more than 100 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+`,ja:`<p>\u5B8C\u5168\u9577\u3001\u3082\u3057\u304F\u306F\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30AA\u30EB\u30AC\u30CD\u30E9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
+`}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit complete or large-scale (more than 100 sequences and/or longer than 500kb) organelle sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files. <a href="https://docs.google.com/spreadsheets/d/15gLGL5FMV8gRt46ezc2Gmb-R1NbYsIGMssB0MyHkcwE/edit#gid=545461927">A sample annotation file</a>.</li>
@@ -567,7 +567,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the organelle sequences.</p>
-`,ja:`<p>\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30AA\u30EB\u30AC\u30CD\u30E9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
+`,ja:`<p>\u5B8C\u5168\u9577\u3001\u3082\u3057\u304F\u306F\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30AA\u30EB\u30AC\u30CD\u30E9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
   <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066 <a href="/ddbj/mss.html#prep">fasta \u30D5\u30A1\u30A4\u30EB\u3068\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u8A18\u8F09\u3057\u305F\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a>\u3092\u6E96\u5099\u3057\u307E\u3059\u3002</li>
@@ -576,9 +576,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C finished level \u30B2\u30CE\u30E0\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
-`}}]},"q4-genome-virus-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 100 sequences and/or shorter than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
-`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u30A6\u30A4\u30EB\u30B9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u767B\u9332\u624B\u9806\u306F<a href="/ddbj/web-submission-help.html">\u30A6\u30A7\u30D6\u30DA\u30FC\u30B8</a>\u3084<a href="/assets/files/pdf/ddbj/websubHelp_full.pdf">PDF</a> \u3092\u53C2\u7167\u3002</p>
-`}},{title:{en:"NSSS",ja:"NSSS"},body:{en:`<p>Submit small-scale (less than 100 sequences and/or shorter than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`}}]},"q4-genome-virus-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) non-complete virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
+`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u5B8C\u5168\u9577\u3067\u306F\u306A\u3044\u30A6\u30A4\u30EB\u30B9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u767B\u9332\u624B\u9806\u306F<a href="/ddbj/web-submission-help.html">\u30A6\u30A7\u30D6\u30DA\u30FC\u30B8</a>\u3084<a href="/assets/files/pdf/ddbj/websubHelp_full.pdf">PDF</a> \u3092\u53C2\u7167\u3002</p>
+`}},{title:{en:"NSSS",ja:"NSSS"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) non-complete virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>Select an annotation template and describe annotation.</li>
@@ -587,7 +587,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the virus sequences.</p>
-`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u30A6\u30A4\u30EB\u30B9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
+`,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u5B8C\u5168\u9577\u3067\u306F\u306A\u3044\u30A6\u30A4\u30EB\u30B9\u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <p>NSSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
   <li>\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30C6\u30F3\u30D7\u30EC\u30FC\u30C8\u3092\u9078\u629E\u3057\u3001\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u3092\u8A18\u5165\u3002</li>
@@ -596,9 +596,9 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C\u30D7\u30E9\u30B9\u30DF\u30C9\u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
-`}}]},"q4-genome-virus-mss->g-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
-`,ja:`<p>\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30A6\u30A4\u30EB\u30B9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
-`}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit large-scale (more than 100 sequences and/or longer than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+`}}]},"q4-genome-virus-mss->g-mss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit complete or large-scale (more than 100 sequences and/or longer than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
+`,ja:`<p>\u5B8C\u5168\u9577\u3001\u3082\u3057\u304F\u306F\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30A6\u30A4\u30EB\u30B9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
+`}},{title:{en:"MSS",ja:"MSS"},body:{en:`<p>Submit complete or large-scale (more than 100 sequences and/or longer than 500kb) virus sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/mss-e.html">Mass Submission System (MSS)</a>.</p>
 <p>In the MSS submission, you will need to:
 <ul>
   <li>Prepare sequences in <a href="/ddbj/mss-e.html#prep">fasta files and metadata in annotation files</a> as submission files.</li>
@@ -607,7 +607,7 @@ BioProject \u306F\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file-e.html#ACCESSION">Accession numbers with a 2-letter prefix and 6 digits</a> will be assigned to the virus sequences.</p>
-`,ja:`<p>\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30A6\u30A4\u30EB\u30B9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
+`,ja:`<p>\u5B8C\u5168\u9577\u3001\u3082\u3057\u304F\u306F\u5927\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0A\u3001\u3082\u3057\u304F\u306F\u3001\u914D\u5217\u9577\u304C500kb\u4EE5\u4E0A) \u30A6\u30A4\u30EB\u30B9\u914D\u5217\u306F <a href="/ddbj/mss.html">Mass Submission System (MSS)</a> \u3092\u7D4C\u7531\u3057\u3066 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002</p>
 <p>MSS \u767B\u9332\u30B7\u30B9\u30C6\u30E0\u3067:
 <ul>
   <li>\u767B\u9332\u7528\u30D5\u30A1\u30A4\u30EB\u3068\u3057\u3066 <a href="/ddbj/mss.html#prep">fasta \u30D5\u30A1\u30A4\u30EB\u3068\u30E1\u30BF\u30C7\u30FC\u30BF\u3092\u8A18\u8F09\u3057\u305F\u30A2\u30CE\u30C6\u30FC\u30B7\u30E7\u30F3\u30D5\u30A1\u30A4\u30EB</a>\u3092\u6E96\u5099\u3057\u307E\u3059\u3002</li>
@@ -1150,9 +1150,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C RNA \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
-`}}]},"q4-transcriptome-other-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 100 sequences and/or shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
+`}}]},"q4-transcriptome-other-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
 `,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) RNA \u914D\u5217 (\u4F8B \u907A\u4F1D\u5B50\u306E cDNA \u914D\u5217) \u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u30DE\u30CB\u30E5\u30A2\u30EB: <a href="/ddbj/web-submission-help.html">\u30A6\u30A7\u30D6\u30DA\u30FC\u30B8</a> \u3068 <a href="/assets/files/pdf/ddbj/websubHelp_full.pdf">PDF</a>\u3002</p>
-`}},{title:{en:"NSSS",ja:"NSSS"},body:{en:`<p>Submit small-scale (less than 100 sequences and/or shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`}},{title:{en:"NSSS",ja:"NSSS"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) RNA sequences (e.g. cDNA sequences of genes) to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>Select an annotation template and describe annotation.</li>
@@ -1299,9 +1299,9 @@ BioProject \u3067\u7814\u7A76\u306E\u30B4\u30FC\u30EB\u3092\u8AAC\u660E\u3057\u3
 </ul>
 </p>
 <p><a href="/ddbj/flat-file.html#ACCESSION">\u30D7\u30EC\u30D5\u30A3\u30C3\u30AF\u30B92\u6587\u5B57\u3068\u6570\u5B576\u6841\u304B\u3089\u6210\u308B\u30A2\u30AF\u30BB\u30C3\u30B7\u30E7\u30F3\u756A\u53F7</a>\u304C DNA/RNA \u914D\u5217\u306B\u767A\u884C\u3055\u308C\u307E\u3059\u3002</p>
-`}}]},"q3-other-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 100 sequences and/or shorter than 500kb) assembled/targeted other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
+`}}]},"q3-other-nsss->g-nsss":{sections:[{title:{en:"Overview",ja:"\u6982\u8981"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) assembled/targeted other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>. Instructions in <a href="/ddbj/web-submission-help-e.html">web page</a> and <a href="/assets/files/pdf/ddbj/websubHelp_full-e.pdf">PDF</a>.</p>
 `,ja:`<p>\u5C0F\u898F\u6A21\u306A (\u914D\u5217\u6570\u304C100\u4EE5\u4E0B\u3067\u3042\u308A\u3001\u914D\u5217\u9577\u306F500kb\u4EE5\u4E0B) \u305D\u306E\u4ED6\u306E\u30BF\u30FC\u30B2\u30C3\u30C8 DNA/RNA \u914D\u5217\u306F <a href="/ddbj/web-submission.html">Nucleotide Sequence Submission System (NSSS)</a> \u7D4C\u7531\u3067 <a href="/ddbj/index.html">DDBJ</a> \u306B\u767B\u9332\u3057\u307E\u3059\u3002\u767B\u9332\u624B\u9806\u306F<a href="/ddbj/web-submission-help.html">\u30A6\u30A7\u30D6\u30DA\u30FC\u30B8</a>\u3084<a href="/assets/files/pdf/ddbj/websubHelp_full.pdf">PDF</a> \u3092\u53C2\u7167\u3002</p>
-`}},{title:{en:"NSSS",ja:"NSSS"},body:{en:`<p>Submit small-scale (less than 100 sequences and/or shorter than 500kb) assembled/targeted other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
+`}},{title:{en:"NSSS",ja:"NSSS"},body:{en:`<p>Submit small-scale (less than 100 sequences and shorter than 500kb) assembled/targeted other DNA/RNA sequences to <a href="/ddbj/index-e.html">DDBJ</a> through the <a href="/ddbj/web-submission-e.html">Nucleotide Sequence Submission System (NSSS)</a>.</p>
 <p>In the NSSS submission, you will need to:
 <ul>
   <li>Select an annotation template and describe annotation.</li>
