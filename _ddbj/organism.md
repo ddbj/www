@@ -167,22 +167,19 @@ Category は "The name is valid but not registered in taxonomy database" とな�
 
 
 ### 三名法 {#trinominal}
-三名法、または、それに準じた strain などの分類単位で organism を記載する必要がある場合、亜種 subspecies 、変種 variety 、serotype 、strain などを生物名に含めます。
+三名法、または、それに準じた strain などの分類単位で organism を記載する必要がある場合、亜種 subspecies 、変種 variety 、serotype などを生物名に含めます。
 
 **例**
 <pre><code>Pan troglodytes troglodytes
 Zea mays subsp. mays
 Oryza sativa Japonica Group
-Brassica oleracea var. alboglabra
-Escherichia coli K-12</code></pre> 
+Brassica oleracea var. alboglabra</code></pre> 
 
-また、このとき [/sub_species](/ddbj/qualifiers.html#sub_species), 
-[/variety](/ddbj/qualifiers.html#variety), 
+また、このとき 
 [/serotype](/ddbj/qualifiers.html#serotype), 
 [/strain](/ddbj/qualifiers.html#strain) の該当 qualifier をあわせて source feature に記載します。     
 **例**
 <pre><code>                     /<a href="/ddbj/qualifiers.html#organism">organism</a>="Pan troglodytes troglodytes"
-                     /<a href="/ddbj/qualifiers.html#sub_species">sub_species</a>="troglodytes"
 </code></pre>
 
 

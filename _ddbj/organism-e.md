@@ -182,24 +182,20 @@ International Code of Nomenclature of Bacteria.
 
 
 ### trinomial name  {#trinominal}
-In cases of using trinomial name or the like, the name of subspecies, variety, serotype or strain should be included in the organism name, if necessary.    
+In cases of using trinomial name or the like, the name of subspecies, variety or serotype should be included in the organism name, if necessary.    
 
 **Examples**
 <pre><code>Pan troglodytes troglodytes
 Zea mays subsp. mays
 Brassica oleracea var. alboglabra
-Oryza sativa Japonica Group
-Escherichia coli K-12</code></pre>
+Oryza sativa Japonica Group</code></pre>
 
 Also, the qualifier corresponding to 
-[/sub_species](/ddbj/qualifiers-e.html#sub_species),
-[/variety](/ddbj/qualifiers-e.html#variety),
 [/serotype](/ddbj/qualifiers-e.html#serotype) or
 [/strain](/ddbj/qualifiers-e.html#strain) is required for the source feature.     
 
 **Example**
 <pre><code>                    /<a href="/ddbj/qualifiers-e.html#organism">organism</a>="Pan troglodytes troglodytes"
-                    /<a href="/ddbj/qualifiers-e.html#sub_species">sub_species</a>="troglodytes"
 </code></pre> 
 
 

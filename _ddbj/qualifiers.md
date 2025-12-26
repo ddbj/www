@@ -1401,6 +1401,8 @@ scaffold25</pre>
 例
 : <pre>troglodytes</pre>
 
+備考
+: <span class="red">2026 年廃止予定。</span>DDBJ では新規登録への記載を禁止しています。
 
 
 ### /tag_peptide<a name="tag_peptide"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#tag_peptide)</span>
@@ -1524,3 +1526,8 @@ Taxonomy database に登録されていない生物名の場合は、/transl_tab
 
 例
 : <pre>insularis</pre>
+
+備考
+: <span class="red">2026 年廃止予定。</span>DDBJ では新規登録への記載を禁止しています。
+
+

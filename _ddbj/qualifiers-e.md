@@ -1402,6 +1402,9 @@ Value format
 Example     
 : <pre>troglodytes</pre>
 
+Comment     
+: <span class="red">Scheduled to be discontinued in 2026.  </span>It is unavailable for DDBJ new submissions.    
+
 
 
 ### /tag_peptide<a name="tag_peptide"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#tag_peptide)</span>
@@ -1526,3 +1529,8 @@ Value format
 
 Example     
 : <pre>insularis</pre>
+
+Comment     
+: <span class="red">Scheduled to be discontinued in 2026.  </span>It is unavailable for DDBJ new submissions.    
+
+
