@@ -388,6 +388,7 @@ PV      GenBank         Direct submission
 PW      KIPO            Patent application
 PX      GenBank         Direct submission
 PY      USPTO           Patent application
+PZ      GenBank         Direct submission
 Q       void            UniProt/Swiss-Prot
 QA      GenBank         
 QB      GenBank         
@@ -407,9 +408,9 @@ QO      EPO             Patent application
 QP      JPO             Patent application
 QQ      JPO             Patent application
 QR      JPO             Patent application
-QS      DDBJ            
-QT      DDBJ            
-QU      DDBJ            
+QS      JPO             Patent application
+QT      JPO             Patent application
+QU      JPO             Patent application
 QV      DDBJ            
 QW      DDBJ            
 QX      DDBJ            
