@@ -128,7 +128,7 @@ lang: ja
 
 メタデータ
 {: .no-bottom}
-* Experiment の [Library Construction Protocol](/dra/submission.html#Library_Construction_Protocol): 製品名、バージョン (例: Chromium Next GEM Single Cell 3\ʹ Kit v3.1) を記載
+* Experiment の [Library Construction Protocol](/dra/submission.html#Library_Construction_Protocol): 製品名、バージョン (例: Chromium Next GEM Single Cell 3' Kit v3.1) を記載
 
 **GEA**  
 {: .no-bottom}
@@ -148,7 +148,7 @@ lang: ja
 
 #### Multiplex Flex and On Chip Multiplexing (OCM) {#ocm}
 
-**DRA:**  
+**DRA**  
 {: .no-bottom}
 データファイル
 {: .no-bottom}
@@ -171,7 +171,7 @@ lang: ja
 メタデータ
 {: .no-bottom}
 * Experiment
-    * [Library Construction Protocol](/dra/submission.html#Library_Construction_Protocol): 製品名、バージョン (例: Chromium Single Cell V(D)J Enrichment Kit for mouse T cell v1.1) およびリファレンスアセンブリ名 (例: GRCm39) を記載
+    * [Library Construction Protocol](/dra/submission.html#Library_Construction_Protocol): 製品名、バージョン (例: Chromium Single Cell V(D)J Enrichment Kit for mouse T cell v1.1)、および、リファレンスアセンブリ名 (例: GRCm39) を記載
     * [Library Source](/dra/metadata.html#Library_Source): "GENOMIC SINGLE CELL" を選択
 
 **GEA**  
@@ -217,7 +217,7 @@ lang: ja
 データファイル (Processed data)
 {: .no-bottom}
 * assignment_confidence_table.csv
-* 混合された各サンプルの属性を示す表
+* 混合された各サンプルの属性を示す表形式ファイル
 
 ## 10x Genomics 以外 {#other}
 
@@ -261,7 +261,7 @@ lang: ja
 {: .no-bottom}
 データファイル
 {: .no-bottom}
-* サンプルの demultiplex に必要なバーコード情報を含む fastq または bam を登録
+* サンプルの demultiplex の再現に必要なバーコード情報を含む fastq または bam を登録
 
 メタデータ
 {: .no-bottom}
