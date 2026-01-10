@@ -55,23 +55,23 @@ related_pages:
     </thead>
     <tbody>
       <tr>
-        <td>UME_win_V1.65.zip</td>
+        <td>UME_win_V1.66.zip</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS">FTP</a></td>
         <td>Windows</td>
-        <td rowspan="2">2025/10/22</td>
+        <td rowspan="2">2026/01/07</td>
         <td rowspan="2"><a href="/ddbj/ume.html">ユーザーマニュアル</a></td>
         <td rowspan="2">Parser, transChecker 付属</td>
       </tr>
       <tr>
-        <td>UME_unix_V1.65.zip</td>
+        <td>UME_unix_V1.66.zip</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS">FTP</a></td>
         <td>Unix/macOS</td>
       </tr>
       <tr>
-        <td>Parser_V6.79.tar.gz</td>
+        <td>Parser_V6.80.tar.gz</td>
         <td><a href="https://ddbj.nig.ac.jp/public/ddbj-cib/MSS">FTP</a></td>
         <td>Unix/macOS</td>
-        <td>2025/10/22</td>
+        <td>2026/01/07</td>
         <td><a href="/ddbj/parser.html">ユーザーマニュアル</a></td>
         <td>UME を使用する場合、不要</td>
       </tr>
