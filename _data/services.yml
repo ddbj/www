@@ -394,6 +394,21 @@ items:
     tags:
       - database
 
+  - name: Pathogens Portal
+    formal_name: Pathogens Portal Japan for pandemic preparedness
+    service_link:
+      en: https://pathogens.jp/en/
+      ja: https://pathogens.jp/
+    description:
+      en: Search for genomic information on pathogens involved in infectious diseases and provide related information
+      ja: 感染症に関わる病原体のゲノム情報の検索および関連情報の提供
+    target_data:
+      en: Pathogens genome sequences
+      ja: 感染症ゲノム配列
+    provider: DDBJ
+    tags:
+      - search
+
 dictionary:
   analysis:
     en: Analysis
