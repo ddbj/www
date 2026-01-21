@@ -2,6 +2,10 @@ top_news:
  ja:
     - title: NCBI/EBI SRA データのミラーリング停止に関するお知らせ
       path: 2026-01-13
+    - title: DDBJ リリース 140.0，DAD リリース 110.0 完成
+      path: 2026-01-21
  en:
     - title: Suspension of NCBI/EBI SRA data mirroring
       path: 2026-01-13-e
+    - title: DDBJ Rel. 140.0, DAD Rel. 110.0 Completed
+      path: 2026-01-21-e
