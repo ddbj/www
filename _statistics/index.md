@@ -40,6 +40,10 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 <div id="dra-submission_stat_area"></div>
 
+<br>
+注釈:   
+2025年: 中国 NGDC 代理登録分 529TB (2,813 submissions)、韓国 KOBIC 代理登録分 92TB (829 submissions)
+
 ## DRA データ公開 {#dra-release}
 
 <div id="dra-release_stat_area"></div>
@@ -47,6 +51,9 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 ## GEA 登録 {#gea-submission}
 
 <div id="gea-submission_stat_area"></div>
+
+<br>
+注釈: CIBEX の全 254 Experiments を GEA へ移行、14 (2019年), 19 (2022年), 85 (2024年), 136 (2025年)。
 
 ## GEA データ公開 {#gea-release}
 

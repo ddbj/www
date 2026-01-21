@@ -40,6 +40,10 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 
 <div id="dra-submission_stat_area"></div>
 
+<br>
+Comment:   
+2025 submissions include 529TB (2,813 submissions) from NGDC (China) and 92TB (829 submissions) from KOBIC (South Korea).  
+
 ## DRA data release {#dra-release}
 
 <div id="dra-release_stat_area"></div>
@@ -50,6 +54,9 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 ## GEA data submission {#gea-submission}
 
 <div id="gea-submission_stat_area"></div>
+
+<br>
+Comment: All 254 experiments were migrated from CIBEX to GEA (14 in 2019, 19 in 2022, 85 in 2024, and 136 in 2025). 
 
 ## GEA data release {#gea-release}
 
