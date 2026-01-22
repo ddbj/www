@@ -1186,7 +1186,6 @@ function makeWebAccess() {
   var this_year = now.getFullYear();
   var span = 4; // 直近10年を表示
 
-  // 統計公開シート https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/edit#gid=0
   $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9nZIDTtg-zGA/values/Web service access?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
 
     var getentry_per_year_h = {};
@@ -1237,15 +1236,15 @@ function makeWebAccess() {
         var blast_per_month = parseInt(web_access[6], 10);
         var dfast_per_month = parseInt(web_access[7], 10);        
         var clustalw_per_month = parseInt(web_access[8], 10);
-        var homepage_per_month = parseInt(web_access[13], 10);
-        var all_per_month = parseInt(web_access[14], 10);
+        var homepage_per_month = parseInt(web_access[12], 10);
+        var all_per_month = parseInt(web_access[13], 10);
         //var ave_ftp_download_day = parseFloat(web_access[i].gsx$averageftpdownloadtbday.$t, 10);
 
         // 年毎に配列に格納
         if ( year_month && parseInt(year_month.substring(0, 4), 10) == y ) {
           
-          //ログ欠落期間の 2018-02, 03, 04, 2024-12 を除外
-          if ( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" || year_month == "2024-12" ) {
+          //ログ欠落期間の 2018-02, 03, 04, 2024-12, スパコン停止期間の 2025-02 を除外
+          if ( year_month == "2018-02" || year_month == "2018-03" || year_month == "2018-04" || year_month == "2024-12" || year_month == "2025-02" ) {
 
           } else {
             getentry_per_year_h[y].push(getentry_per_month);
