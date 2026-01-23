@@ -433,7 +433,7 @@ The necessary and recommended parameters are different for each Submission and P
 : Range of wavelength of detector used. Example, 200 to 650 nm
 
 [Parameter Value\[Resolution\]](#Resolution)<a name="Resolution"></a>
-: Resolution of column used.
+: Resolution of ditecter used. Example, 2 nm
 
 [Parameter Value\[Temperature\]](#Temperature_Ch)<a name="Temperature_Ch"></a>
 : Temperature of column used.

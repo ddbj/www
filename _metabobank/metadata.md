@@ -443,7 +443,7 @@ IDF で記載されたプロトコールを補完するプロトコールパラ�
 : 検出器の検出波長の範囲。例 200 to 650 nm
 
 [Parameter Value\[Resolution\]](#Resolution)<a name="Resolution"></a>
-: カラムの分離能。
+: 検出器の分解能。例 2 nm
 
 [Parameter Value\[Temperature\]](#Temperature_Ch)<a name="Temperature_Ch"></a>
 : カラムの温度。
