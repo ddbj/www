@@ -343,7 +343,7 @@ IDF で記載されたプロトコールを補完するプロトコールパラ�
 |[Column type 2](#Column_type_2)|GCGC-MS|Chromatography|
 |[Detector](#Detector_Ch)|LC-DAD-MS,GC-FID-MS|Chromatography|
 |[Signal range](#Signal_range)|LC-DAD-MS|Chromatography|
-|[Resolution](#Resolution)|LC-MS,LC-DAD-MS,GC-MS,GC-FID-MS|Chromatography|
+|[Resolution](#Resolution)|LC-DAD-MS,GC-FID-MS|Chromatography|
 |[Temperature](#Temperature_Ch)|LC-MS,LC-DAD-MS,GC-MS,GC-FID-MS|Chromatography|
 |[Scan polarity](#Scan_polarity)|All MS types|Mass spectrometry|
 |[Scan m/z range](#Scan_mz_range)|All MS types|Mass spectrometry|
