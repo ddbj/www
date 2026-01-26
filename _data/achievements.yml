@@ -1,4 +1,30 @@
 items:
+  - date: 2026-01-06
+    year: 2026
+    month: 1
+    day: 6
+    id: 223-ja
+    title: "DDBJ update in 2025: system integration for global data-sharing including pathogen surveillance"
+    url: https://pubmed.ncbi.nlm.nih.gov/41277538
+    author: Ara T, Kodama Y, Fujisawa T, Kosuge T, Lee K, Mashima J, Ogasawara O, Tanizawa Y, Tanjo T, Nakamura Y, Arita M.
+    info: Nucleic Acids Res. 2026 Jan 6;54(D1):D106-D110
+    pubmed_id: 41277538
+    keyword: paper
+    lang: ja
+
+  - date: 2026-01-06
+    year: 2026
+    month: 1
+    day: 6
+    id: 215-en
+    title: "DDBJ update in 2025: system integration for global data-sharing including pathogen surveillance"
+    url: https://pubmed.ncbi.nlm.nih.gov/41277538
+    author: Ara T, Kodama Y, Fujisawa T, Kosuge T, Lee K, Mashima J, Ogasawara O, Tanizawa Y, Tanjo T, Nakamura Y, Arita M.
+    info: Nucleic Acids Res. 2026 Jan 6;54(D1):D106-D110
+    pubmed_id: 41277538
+    keyword: paper
+    lang: en
+
   - date: 2025-01-06
     year: 2025
     month: 1
