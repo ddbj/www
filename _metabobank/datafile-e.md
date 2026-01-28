@@ -75,25 +75,25 @@ The fixed MAF columns are as follows.
 
 |Column|Description|Example|Technology type|
 |---|
-|database_identifier|Database identifier for metabolite. ChEBI ID is recommended. This is optional field.|CHEBI:16919|MS and NMR|
-|chemical_formula|Chemical formula of metabolite. This is optional field.|C4H9N3O2|MS and NMR|
-|smiles|SMILES of metabolite. This is optional field.|CN(CC(O)=O)C(N)=N|MS and NMR|
-|inchi|INCHI key of metabolite.  This is optional field.|InChI=1S/C4H9N3O2/c1-7(4(5)6)2-3(8)9/h2H2,1H3,(H3,5,6)(H,8,9)|MS and NMR|
-|metabolite_identification|Identified metabolite name.|creatine|MS and NMR|
-|metabolite_class|Class of metabolite|flavonoids|MS and NMR|
+|database_identifier|Database identifier for metabolite. ChEBI ID is recommended.|CHEBI:16919|MS and NMR|
+|chemical_formula|Chemical formula of metabolite.|C4H9N3O2|MS and NMR|
+|smiles|SMILES of metabolite.|CN(CC(O)=O)C(N)=N|MS and NMR|
+|inchi|INCHI key of metabolite.|InChI=1S/C4H9N3O2/c1-7(4(5)6)2-3(8)9/h2H2,1H3,(H3,5,6)(H,8,9)|MS and NMR|
+|metabolite_identification|Identified or estimated metabolite name.|creatine|MS and NMR|
+|metabolite_class|Class of metabolite.|flavonoids|MS and NMR|
 |mass_to_charge|The mass to charge (m/z) ratio.|132.0765|MS and NMR|
-|fragmentation|Fragmentation|132,0870 l 90,0617 l 87,0618|MS|
-|modifications|Chemical modifications.|[M+H]+|MS|
+|fragmentation|Fragment ion.|132,0870 l 90,0617 l 87,0618|MS|
+|modifications|Molecular ion or adduct ion.|[M+H]+|MS|
 |charge|Charge|1|MS|
-|retention_time|Retention time|0.85|MS|
+|retention_time|Retention time.|0.85|MS|
 |chemical_shift|Chemical shift of peak.||NMR|
-|multiplicity|Multiplicity of peak||NMR|
+|multiplicity|Multiplicity of peak.||NMR|
 |taxid|The NCBI taxonomy id for the organism from which the metabolite was obtained. https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi|9606|MS and NMR|
-|species|Species name of the NCBI taxonomy.|Homo sapiens|MS and NMR|
+|species|Organism name of the NCBI taxonomy (Scientific name).|Homo sapiens|MS and NMR|
 |database|The database name used for metabolite identification.|CHEBI|MS and NMR|
 |database_version|The database version used for metabolite identification.||MS and NMR|
-|reliability|Reliability. Identification confidence of the metabolite. See https://github.com/MSI-Metabolomics-Standards-Initiative/CIMR|MSI:1|MS and NMR|
-|search_engine|Search engine||MS and NMR|
-|search_engine_score|Search engine score||MS and NMR|
-|peak_identifier|||MS and NMR|
+|reliability|Reliability. Identification confidence of the metabolite using MSI level. See https://github.com/MSI-Metabolomics-Standards-Initiative/CIMR|MSI:1|MS and NMR|
+|search_engine|Search program name used to identify or estimate metabolite.||MS and NMR|
+|search_engine_score|Score of program used to identify or estimate metabolite.||MS and NMR|
+|peak_identifier|Peak indetifier||MS and NMR|
 
