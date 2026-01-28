@@ -71,25 +71,25 @@ MAF の各項目の説明はエクセルをご覧ください。
 
 |Column|Description|Example|Technology type|
 |---|
-|database_identifier|代謝物データベースでのID。ChEBIのIDを推奨。|CHEBI:16919|MS and NMR|
-|chemical_formula|代謝物の組成式|C4H9N3O2|MS and NMR|
-|smiles|代謝物のSMILES|CN(CC(O)=O)C(N)=N|MS and NMR|
-|inchi|代謝物のINCHI key|InChI=1S/C4H9N3O2/c1-7(4(5)6)2-3(8)9/h2H2,1H3,(H3,5,6)(H,8,9)|MS and NMR|
-|metabolite_identification|同定または推定された代謝物名|creatine|MS and NMR|
-|metabolite_class|代謝物分類名|flavonoids|MS and NMR|
-|mass_to_charge|質量電荷比 (m/z)|132.0765|MS and NMR|
+|database_identifier|代謝物データベースでのID。ChEBIのIDを推奨。|CHEBI:16919|MS、NMR|
+|chemical_formula|代謝物の組成式|C4H9N3O2|MS、NMR|
+|smiles|代謝物のSMILES|CN(CC(O)=O)C(N)=N|MS、NMR|
+|inchi|代謝物のINCHI key|InChI=1S/C4H9N3O2/c1-7(4(5)6)2-3(8)9/h2H2,1H3,(H3,5,6)(H,8,9)|MS、NMR|
+|metabolite_identification|同定または推定された代謝物名|creatine|MS、NMR|
+|metabolite_class|代謝物分類名|flavonoids|MS、NMR|
+|mass_to_charge|質量電荷比 (m/z)|132.0765|MS、NMR|
 |fragmentation|フラグメントイオン|132,0870 l 90,0617 l 87,0618|MS|
 |modifications|分子イオンまたは付加イオン|[M+H]+|MS|
 |charge|電荷|1|MS|
 |retention_time|溶出時間|0.85|MS|
 |chemical_shift|ピークの化学シフト||NMR|
 |multiplicity|ピークの多重度||NMR|
-|taxid|代謝物が検出された生物のNCBI taxonomy ID. https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi|9606|MS and NMR|
-|species|NCBI taxonomyでの生物名（学名）|Homo sapiens|MS and NMR|
-|database|代謝物の同定に用いたデータベース名|CHEBI|MS and NMR|
-|database_version|代謝物の同定に用いたデータベースのversion||MS and NMR|
-|reliability|代謝物予測結果の信頼性を、MSIレベルを用いて記載する。https://github.com/MSI-Metabolomics-Standards-Initiative/CIMRを参照。|MSI:1|MS and NMR|
-|search_engine|代謝物同定または推定に用いたプログラム名||MS and NMR|
-|search_engine_score|代謝物同定または推定に用いたプログラムでのスコア||MS and NMR|
-|peak_identifier|ピークのID||MS and NMR|
+|taxid|代謝物が検出された生物のNCBI taxonomy ID. https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi|9606|MS、NMR|
+|species|NCBI taxonomyでの生物名（学名）|Homo sapiens|MS、NMR|
+|database|代謝物の同定に用いたデータベース名|CHEBI|MS、NMR|
+|database_version|代謝物の同定に用いたデータベースのversion||MS、NMR|
+|reliability|代謝物予測結果の信頼性を、MSIレベルを用いて記載する。https://github.com/MSI-Metabolomics-Standards-Initiative/CIMRを参照。|MSI:1|MS、NMR|
+|search_engine|代謝物同定または推定に用いたプログラム名||MS、NMR|
+|search_engine_score|代謝物同定または推定に用いたプログラムでのスコア||MS、NMR|
+|peak_identifier|ピークのID||MS、NMR|
 
