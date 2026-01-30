@@ -70,7 +70,7 @@ NMR MAF excel ([download](https://github.com/ddbj/pub/raw/master/docs/metabobank
 
 ## Metabolite assignment file {#maf}
 
-The metabolite assignment file (MAF) is recommended to include all metabolites/unknowns/features identified or annotated within the study. Please fill the table with as much information as possible to improve data reusability. Add a sample name column to the right of the table to list the measured values of each metabolite for each sample.
+The metabolite assignment file (MAF) is recommended to include all metabolites/unknowns/features identified or annotated within the study. Please fill the table with as much information as possible to improve data reusability. Add a sample name column to the right of the table to list the measured values of each metabolite for each sample.  
 Descriptions of the items in the MAF are as follows.
 
 |Column|Description|Example|Technology type|
