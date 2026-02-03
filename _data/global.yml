@@ -1,10 +1,14 @@
 top_news:
  ja:
+    - title: アメリカ連邦政府予算失効によるTaxonomy database更新停止
+      path: 2026-02-03  
     - title: (2/4 10:00-11:00) D-way 一時停止のお知らせ
       path: 2026-01-29
     - title: NCBI/EBI SRA データのミラーリング停止に関するお知らせ
       path: 2026-01-13
  en:
+    - title: Suspension of taxonomy database update due to US federal funding expiration
+      path: 2026-02-03-e  
     - title: (4th February 10:00-11:00)(JST) Announcement of D-way suspension
       path: 2026-01-29-e
     - title: Suspension of NCBI/EBI SRA data mirroring
