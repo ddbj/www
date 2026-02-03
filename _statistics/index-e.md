@@ -41,8 +41,13 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 <div id="dra-submission_stat_area"></div>
 
 <br>
-Comment:   
-2025 submissions include 529TB (2,813 submissions) from NGDC (China) and 92TB (829 submissions) from KOBIC (South Korea).  
+Brokered submissions from KOBIC.   
+* 2023: 5 submissions, 0.095 TB
+* 2024: 119 submissions, 8.73 TB
+* 2025: 705 submissions, 32.28 TB
+
+Brokered submissions from NGDC.   
+* 2025: 2,813 submissions, 529.31 TB
 
 ## DRA data release {#dra-release}
 
