@@ -41,8 +41,13 @@ table](https://docs.google.com/spreadsheets/d/16ZF79i1X17Zfn3x6vnJ2elmWXb3ToHt9n
 <div id="dra-submission_stat_area"></div>
 
 <br>
-注釈:   
-2025年: 中国 NGDC 代理登録分 529TB (2,813 submissions)、韓国 KOBIC 代理登録分 92TB (829 submissions)
+韓国 KOBIC 代理登録データ　　　
+* 2023年: 5 submissions, 0.095 TB
+* 2024年: 119 submissions, 8.73 TB
+* 2025年: 705 submissions, 32.28 TB
+
+中国 NGDC 代理登録データ　　　
+* 2025年: 2,813 submissions, 529.31 TB
 
 ## DRA データ公開 {#dra-release}
 
