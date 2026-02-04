@@ -60,7 +60,7 @@ lang: ja
 
 [Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>
 : データベーススタッフへの質問やプロジェクトに関する追加情報を記入します。内容は公開されません。[アンブレラプロジェクト](/bioproject/submission.html#submit-umbrella-project)を登録する場合、ここにその旨を記載します。例 Please register this project as an umbrella project.  
-個人識別符号に該当するヒトデータを登録する場合、[DBCLS で承認されている提供申請 ID を記入](/bioproject/submission.html#human-data)します。
+DBCLS で承認された提供申請に基づく[ヒトデータ登録](/bioproject/submission.html#human-data)の場合、hum ID と提供申請 ID (例 hum0001, J-DS000001-001) を記入します。
 
 ### Umbrella BioProject {#Area_linked-project}
 
