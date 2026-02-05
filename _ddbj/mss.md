@@ -227,7 +227,7 @@ c. 単一真核生物個体の chromosome ドラフトゲノムとアセンブ�
 - MSS Application Form を使用した場合の読み取り先になりますので、Submissionファイルのみを設置してください。
 - MSS Application Form は、massディレクトリ配下のサブディレクトリからもファイルを読み込みます。
 - Submissionファイル名には次の制約があります。圧縮した場合は、圧縮アーカイブに含まれる各ファイル名が制約を受けます。
-    - アノテーションファイルの拡張子が <span style="background-color: #e8e8e8;">.ann</span>、<span style="background-color: #e8e8e8;">.annt</span>、<span style="background-color: #e8e8e8;">.tsv</span>、<span style="background-color: #e8e8e8;">.ann.txt</span> のいずれかであること。
+    - アノテーションファイルの拡張子が <span style="background-color: #e8e8e8;">.ann</span>、<span style="background-color: #e8e8e8;">.annt.tsv</span>、<span style="background-color: #e8e8e8;">.ann.txt</span> のいずれかであること。
     - 塩基配列ファイルの拡張子が <span style="background-color: #e8e8e8;">.fasta</span>、<span style="background-color: #e8e8e8;">.seq.fa</span>、<span style="background-color: #e8e8e8;">.fa</span>、<span style="background-color: #e8e8e8;">.fna</span>、<span style="background-color: #e8e8e8;">.seq</span> のいずれかであること。
     - 各submissionでアノテーションファイルと塩基配列ファイルがペアになっていること。拡張子を除いたファイル名称が同一なファイルがペアになります。
         - Submissionファイルの再提出をDDBJ curatorにより要請された場合を除きます。
