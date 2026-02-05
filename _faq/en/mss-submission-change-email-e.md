@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: ContactおよびOtherPersonのメールアドレスを変更したい
+title: If you want to change email addresses of Contact and Other Person
 category: faq
 db:
   - ddbj
