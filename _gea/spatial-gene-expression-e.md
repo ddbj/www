@@ -11,7 +11,7 @@ lang: en
 
 In the spatial gene expression data submission, it is important for data interpretation that measured gene expression levels and spatial positions are related.
 
-### Visium {#visium}
+### 10x Genomics Visium {#visium}
 
 Submission of output files from the 10xGenomics [Visium](https://www.10xgenomics.com/jp/products/spatial-gene-expression) is explained in this section. Submit barcode sequences, position of spots containing the barcodes, tissue images, and scaling factors that converts pixel positions in the original, full-resolution images to pixel positions in the tissue image files.    
 
@@ -46,9 +46,50 @@ In [CytAssist enabled Gene Expression (GEX)](https://support.10xgenomics.com/spa
 
 Submit these files in single tar file as GEA processed data.
 
-### Xenium {#xenium}
+### 10x Genomics Xenium {#xenium}
 
-For spatial gene expression data generated from [Xenium](https://www.10xgenomics.com/jp/platforms/xenium), submit output files recommended for submission at [Archiving Xenium Data](https://www.10xgenomics.com/support/jp/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data) as GEA processed data files. Select the "Submission Type: Microarray" and register [dummy data files](/assets/files/dummy/dummy-raw-data.txt) (md5: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) as raw data files. Enter "A-GEAD-11" (accession for the dummy array design) for Array Design Accession.
+* Submission Type: Microarray
+* Array Design: [A-GEAD-246](https://ddbj.nig.ac.jp/public/ddbj_database/gea/array/A-GEAD-000/A-GEAD-246/) (Xenium)
 
+Metadata    
+{: .no-bottom}
+* IDF sample collection protocol: Describe the protocol used to prepare the tissue.
+
+For both Raw and Processed data, please submit a single tar archive containing the following files.  
+
+Raw data files    
+{: .no-bottom}
+* morphology.ome.tif: High-resolution morphology images
+* transcripts.parquet: Decoded transcripts (parquet or csv format)
+
+Processed data files   
+{: .no-bottom}
+* barcodes.tsv, features.tsv, matrix.mtx OR cell_feature_matrix.h5: Transcript count (MEX or HDF5 format)
+* cells.parquet: Cell summary (parquet or csv format)
+* cell_boundaries.parquet: Cell segmentation (parquet or csv format)
+* nucleus_boundaries.parquet: Nucleus segmentation (parquet or csv format)
+* rds: Seurat object (optional)
+
+Related pages:  
 * [Understanding Xenium Outputs](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-understanding-outputs)
 * [Archiving Xenium Data](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data)
+
+### MERFISH {#merfish}
+
+For MERFISH or MERSCOPE submissions, processed data are necessary.
+
+* Submission Type: Microarray
+* Array Design: [A-GEAD-247](https://ddbj.nig.ac.jp/public/ddbj_database/gea/array/A-GEAD-000/A-GEAD-247/) (MERFISH)
+
+The raw image data for MERFISH studies are too large for GEA to archive. You are welcome to submit the raw image files and .vzg files to a generalist archive.
+
+Raw data files
+{: .no-bottom}
+* Register the [dummy data file](/assets/files/dummy/dummy-raw-data.txt) (md5: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) 
+
+Processed data files
+{: .no-bottom}
+* Identified transcripts (text or parquet format)
+* .vzg files are not accepted by GEA
+
+

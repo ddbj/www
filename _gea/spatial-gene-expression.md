@@ -11,7 +11,7 @@ lang: ja
 
 空間的遺伝子発現データの登録では、測定された遺伝子発現量と空間上の位置が対応付けられるようになっていることが必要です。
 
-### Visium {#visium}
+### 10x Genomics Visium {#visium}
 
 10x Genomics [Visium](https://www.10xgenomics.com/jp/products/spatial-gene-expression) 
 から出力される組織切片上の空間的な遺伝子発現プロファイルデータの登録方法を説明します。
@@ -34,6 +34,7 @@ Smart-seq2、10x、Drop-seq）、使用したキットの名前とバージョ�
 #### GEA {#gea}
 
 GEA processed data  
+{: .no-bottom}
 * GEX Matrix: 遺伝子発現データ
 * tissue_hires_image.png, tissue_lowres_image.png: 組織切片の画像
 * scalefactors_json.json: 画像とスポットとの倍率を含む対応関係
@@ -48,10 +49,49 @@ GEA processed data
 
 上記のファイルを tar でまとめて GEA processed data として登録します。
 
-### Xenium {#xenium}
+### 10x Genomics Xenium {#xenium}
 
-10x Genomics [Xenium](https://www.10xgenomics.com/jp/platforms/xenium) 
-から出力される空間的な遺伝子発現データについては、[Archiving Xenium Data](https://www.10xgenomics.com/support/jp/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data) で登録を推奨されているファイルを GEA の解析済みデータファイルとして登録してください。Submission Type は Microarray を選択し、生データファイルには [dummy データファイル](/assets/files/dummy/dummy-raw-data.txt) (md5 値: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) を登録します。Array Design Accession は A-GEAD-11 を入力します (dummy の内容で登録されます)。
+* Submission Type: Microarray
+* Array Design: [A-GEAD-246](https://ddbj.nig.ac.jp/public/ddbj_database/gea/array/A-GEAD-000/A-GEAD-246/) (Xenium)
 
+Metadata    
+{: .no-bottom}
+* IDF sample collection protocol に組織切片を調整した方法を記載します。  
+
+Raw と Processed data は以下のファイルを tar でまとめたものを登録します。　　　
+
+Raw data files
+{: .no-bottom}
+* morphology.ome.tif: 高解像度の組織形態画像
+* transcripts.parquet: デコード済み転写産物データ (parquet もしくは csv フォーマット)
+
+Processed data files
+{: .no-bottom}
+* barcodes.tsv, features.tsv, matrix.mtx もしくは cell_feature_matrix.h5: 転写産物カウント (MEX もしくは HDF5 フォーマット)
+* cells.parquet: Cell サマリー (parquet もしくは csv フォーマット)
+* cell_boundaries.parquet: Cell セグメンテーション (parquet もしくは csv フォーマット)
+* nucleus_boundaries.parquet: Nucleus セグメンテーション (parquet もしくは csv フォーマット)
+* rds: Seurat object (任意)
+
+関連ページ:   
 * [Understanding Xenium Outputs](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-understanding-outputs)
 * [Archiving Xenium Data](https://www.10xgenomics.com/jp/support/software/xenium-onboard-analysis/latest/analysis/xoa-output-archive-data)
+
+### MERFISH {#merfish}
+
+MERFISH や MERSCOPE のデータを登録する場合、解析済みデータが必要です。   
+
+* Submission Type: Microarray
+* Array Design: [A-GEAD-247](https://ddbj.nig.ac.jp/public/ddbj_database/gea/array/A-GEAD-000/A-GEAD-247/) (MERFISH)
+
+MERFISH の画像データは非常に巨大であるため、GEA でアーカイブすることができません。画像ファイルおよび「.vzgファイル」については、汎用データリポジトリ（Generalist archive）に登録することを推奨します。  
+
+Raw data files
+{: .no-bottom}
+* [dummy data file](/assets/files/dummy/dummy-raw-data.txt) (md5: 5a3c1b7fe06fb47ffcf4b31ae87a8ee4) を raw data file として登録します。
+
+Processed data files
+{: .no-bottom}
+* 同定された転写産物 (text もしくは parquet フォーマット)
+* .vzg ファイルは GEA では受付けていません。
+
