@@ -363,6 +363,8 @@ Example: COMMENT and ST\_COMMENT in annotation file
 
   - Though ST\_COMMENT can be defined by user community, ST\_COMMENT in predetermined format is required to submit sequence data derived from [genome Project](/ddbj/genome-e.html) (including [WGS](/ddbj/wgs-e.html)) or [transcriptome Project](/ddbj/transcriptome-e.html) (including [TSA](/ddbj/tsa-e.html)).
 
+  - Submission of a viral genome also requires ST\_COMMENT.
+
   - ST\_COMMENT is composed of dataset name (tagset\_id), names of items (user-defined Qualifier) and values of items (Value).
 
   - In the initial line of Structured COMMENT feature, describe tagset\_id as Qualifier and dataset name as its Value.

@@ -351,6 +351,8 @@ COMMENT" があります。詳細は以下をご覧ください。
     Project](/ddbj/transcriptome.html) ([TSA](/ddbj/tsa.html) も含む)
     などの登録には既定書式があり、記載する必要があります。
 
+  - ウイルスゲノムの登録でも ST\_COMMENT の記載が必要となります。
+
   - ST\_COMMENT はデータセット名 (tagset\_id) と項目名 (ユーザー定義 Qualifier) 、各項目の値
     (Value)で構成されます。
 
