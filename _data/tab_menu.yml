@@ -552,17 +552,17 @@ metabobank:
           url: /metabobank/validation-e.html
         - title: Example
           url: https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k
-    - id: faq
-      title: FAQ
-      url: /faq/en/index-e.html?tag=metabobank
     - id: search
       title: Search
       url: https://mb2.ddbj.nig.ac.jp/search/
+    - id: faq
+      title: FAQ
+      url: /faq/en/index-e.html?tag=metabobank
     - id: download
       title: Download
       url: https://ddbj.nig.ac.jp/public/metabobank/study/
-    - id: resource
-      title: Resource
+    - id: other
+      title: Other
       url: /metabobank/resource-e.html
       children:
         - title: mzB format
