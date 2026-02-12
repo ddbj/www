@@ -1,7 +1,4 @@
 top_news:
  ja:
-    - title: NCBI/EBI SRA データのミラーリング停止に関するお知らせ
-      path: 2026-01-13
+
  en:
-    - title: Suspension of NCBI/EBI SRA data mirroring
-      path: 2026-01-13-e
