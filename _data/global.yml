@@ -1,4 +1,7 @@
 top_news:
  ja:
-
+    - title: (3/11 17:00-3/23 13:00) DDBJ センターの登録、検索・解析サービス停止のお知らせ
+      path: 2026-02-13
  en:
+    - title: (11th March 17:00 - 23th March 13:00(JST)) Suspension of DDBJ services due to NIG supercomputer maintenance
+      path: 2026-02-13-e
