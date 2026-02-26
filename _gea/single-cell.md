@@ -25,7 +25,7 @@ Smart-seq2、10x、Drop-seq）、使用したキットの名前とバージョ�
 
 DRA の生データとしては基本的に [fastq もしくは bam](/dra/submission.html#run-data-files) を登録します。混合登録の場合はバーコードやリンカー配列を含めてください。
 
-10x で bam にタグやバーコード配列が含まれていない場合は fastq ファイルを登録します。参考: [Generating FASTQs with cellranger mkfastq](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq)
+10x で bam にタグやバーコード配列が含まれていない場合は fastq ファイルを登録します。参考: [Generating FASTQs with cellranger mkfastq](https://www.10xgenomics.com/support/jp/software/cell-ranger/latest/analysis/inputs/cr-mkfastq)
 
 GEA の解析済みデータには一細胞レベルのデータを登録します。
 

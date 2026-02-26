@@ -35,8 +35,7 @@ Submit raw data in [fastq or bam](/dra/submission-e.html#run-data-files)
 to DRA. Include barcode sequences.
 
 For 10x bam files without barcode sequences, submit fastq instead.
-Please see [Generating FASTQs with cellranger
-mkfastq](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/mkfastq)
+Please see [Generating FASTQs with cellranger mkfastq](https://www.10xgenomics.com/support/jp/software/cell-ranger/latest/analysis/inputs/cr-mkfastq)
 
 GEA processed data for single-cell studies should be cell-level data.
 
