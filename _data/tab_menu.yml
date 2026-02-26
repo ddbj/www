@@ -536,6 +536,8 @@ metabobank:
       children:
         - title: mzB format
           url: /metabobank/mzB.html
+        - title: History
+          url: /metabobank/history.html
   en:
     - id: home
       title: Home
@@ -567,6 +569,8 @@ metabobank:
       children:
         - title: mzB format
           url: /metabobank/mzB-e.html
+        - title: History
+          url: /metabobank/history-e.html
 
 jga:
   ja:
