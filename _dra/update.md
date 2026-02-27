@@ -54,4 +54,6 @@ DRA では別の Submission で新しく Experiment-Run のセットを追加し
 
 ## オブジェクトの削除  {#delete}
 
-Experiment、Run や Analysis などを削除は [DRA/BioProject/BioSample 更新依頼フォーム](https://forms.gle/nJUyV5BGpoZhvJKw9)から依頼してください。
+Experiment、Run や Analysis などを削除は [DRA/BioProject/BioSample 更新依頼フォーム](https://forms.gle/nJUyV5BGpoZhvJKw9)から依頼してください。  
+ステータスについては [DDBJ と SRA におけるデータ処理](/data-processing.html)をご覧ください。公開後、DRA Submission の一部の Experiment/Run を Suppress した場合、それらを再公開することはできませんので、ご注意ください。
+

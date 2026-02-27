@@ -52,4 +52,5 @@ The BioProject accession remains same, however, different DRA submission accessi
 
 ## Deletion  {#delete}
 
-To delete archived Experiment, Run and Analysis objects, please apply deletion from [DRA/BioProject/BioSample update request](https://forms.gle/T7faNoDCvmQoTiWq9).
+To delete archived Experiment, Run and Analysis objects, please apply deletion from [DRA/BioProject/BioSample update request](https://forms.gle/T7faNoDCvmQoTiWq9).  
+Please refer to [DDBJ and SRA Data Processing](/data-processing-e.html) for information on statuses. Please note that if you suppress some of the Experiments/Runs within a DRA submission after publication, they cannot be made public again.
