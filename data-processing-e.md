@@ -64,7 +64,7 @@ When data are suppressed or withdrawn, the DDBJ Center updates the status of the
 
 Because public sequence data made available by the DDBJ Center may be retrieved and redistributed by other users and presented in other websites, databases, tools, publications, curricula, conference proceedings, or other venues that are not managed by the DDBJ Center, data that are suppressed or withdrawn may remain available through other sources that are not managed by the DDBJ Center.
 
-Data submitters may request that suppressed data be re-released upon publication of the data or once they confirm or update questionable data.
+Data submitters may request that suppressed data be re-released upon publication of the data or once they confirm or update questionable data. However, if a part of a DRA submission is suppressed, it cannot be re-released.
 
 Examples of valid reasons for a submitter to request removing sequence data include:
 
