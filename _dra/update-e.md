@@ -24,7 +24,8 @@ Request addition of [publication information](/bioproject/project-info-e.html#Pu
 
 ## Metadata update  {#update-metadata}
 
-Update metadata by clicking [Enter/Update metadata]. Uneditable fields are blocked. After editing your metadata, please be sure to click [Submit/Update DRA metadata] and reflect the updates.
+Update metadata by clicking [Enter/Update metadata]. After editing your metadata, please be sure to click [Submit/Update DRA metadata] and reflect the updates.     
+Fields that cannot be edited are blocked. In such cases, please request corrections through the [DRA/BioProject/BioSample update request](https://forms.gle/T7faNoDCvmQoTiWq9).
 
 ## Data file addition {#add-data-files}
 

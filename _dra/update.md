@@ -24,8 +24,9 @@ DRA データに関する論文情報は BioProject に追加します。
 
 ## メタデータの更新  {#update-metadata}
 
-[Enter/Update metadata] からメタデータを編集します。編集不可項目はブロックされています。
-編集完了後、メタデータ作成ツールの [Submit/Update DRA metadata] で内容を反映させます。
+[Enter/Update metadata] からメタデータを編集します。
+編集が完了したら、メタデータ作成ツールの [Submit/Update DRA metadata] で内容を反映させます。    
+なお、編集できない項目はブロックされています。その場合は [DRA/BioProject/BioSample 更新依頼フォーム](https://forms.gle/nJUyV5BGpoZhvJKw9) から修正を依頼します。
 
 ## データファイルの追加  {#add-data-files}
 
