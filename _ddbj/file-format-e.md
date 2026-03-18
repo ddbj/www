@@ -527,8 +527,8 @@ Specified values for KEYWORD/keyword(<span class="red">Requierd</span>)
       <td></td>
     </tr>
     <tr>
-      <td><span class="red">TPA:inferential</span> or <span class="red">TPA:experimental</span></td>
-      <td>Either of two is mandatory.</td>
+      <td><span class="red">TPA:assembly</span></td>
+      <td></td>
     </tr>
     <tr>
       <td><a href="/ddbj/tsa-e.html">TSA</a></td>

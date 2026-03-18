@@ -546,9 +546,9 @@ methodological keywords](https://insdc.org/submitting-standards/methodological-k
     </tr>
     <tr>
       <td>
-      <span class="red">TPA:inferential</span> or <span class="red">TPA:experimental</span>
+      <span class="red">TPA:assembly</span>
       </td>
-      <td>どちらか一方が必須</td>
+      <td></td>
     </tr>
     <tr>
       <td><a href="/ddbj/tsa.html">TSA</a></td>
