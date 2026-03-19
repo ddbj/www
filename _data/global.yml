@@ -2,6 +2,10 @@ top_news:
  ja:
     - title: (3/11 9:00-3/23 13:00) DDBJ センターの登録、検索・解析サービス停止のお知らせ
       path: 2026-02-13
+    - title: 塩基配列データ登録における INSDC minimal specifications を策定
+      path: 2026-03-19
  en:
     - title: (11th March 9:00 - 23th March 13:00(JST)) Suspension of DDBJ services due to NIG supercomputer maintenance
       path: 2026-02-13-e
+    - title: INSDC Minimal Specifications
+      path: 2026-03-19-e
