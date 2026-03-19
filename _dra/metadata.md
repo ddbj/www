@@ -225,7 +225,10 @@ DDBJ アカウントに登録されているメールアドレスを変更した
 | Illumina HiScanSQ |
 | Illumina NovaSeq 6000 |
 | Illumina NovaSeq X |
+| Illumina NovaSeq X Plus |
 | Illumina MiSeq |
+| Illumina MiSeq i100 |
+| Illumina MiSeq i100 Plus |
 | Illumina MiniSeq |
 | Illumina iSeq 100 |
 | NextSeq 500 |
@@ -247,9 +250,11 @@ DDBJ アカウントに登録されているメールアドレスを変更した
 | BGISEQ-50 |
 | BGISEQ-500 |
 | MGISEQ-2000RS |
+| CycloneSEQ |
 | DNBSEQ-G400 |
 | DNBSEQ-G400 FAST |
 | DNBSEQ-T7 |
+| DNBSEQ-T1+ |
 | DNBSEQ-G50 |
 | PacBio RS |
 | PacBio RS II |
@@ -279,6 +284,13 @@ DDBJ アカウントに登録されているメールアドレスを変更した
 | FASTASeq 300 |
 | UG 100 |
 | Tapestri |
+| SURFSeq 5000 |
+| SURFSeq Q |
+| Saluseq Nimbo |
+| Salus Pro |
+| Salus EVO |
+| G-seq500 |
+| G4 |
 | AB 3730xL Genetic Analyzer |
 | AB 3730 Genetic Analyzer |
 | AB 3500xL Genetic Analyzer |
