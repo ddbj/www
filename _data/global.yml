@@ -1,7 +1,11 @@
 top_news:
  ja:
+    - title: (3/25 10:00-11:00) D-way 一時停止のお知らせ
+      path: 2026-03-24
     - title: 塩基配列データ登録における INSDC minimal specifications を策定
       path: 2026-03-19
  en:
+    - title: (25th March 10:00-11:00)(JST) Announcement of D-way suspension
+      path: 2026-03-24-e  
     - title: INSDC Minimal Specifications
       path: 2026-03-19-e
