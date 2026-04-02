@@ -30,7 +30,7 @@ lang: ja
     <tr>
       <td>DDBJ</td> 
       <td>AB12345678, ABCDEF010123456　</td>
-      <td><a href="https://forms.gle/Xx6wPKFgQDHdvXJG9">登録データの更新申し込みフォーム</a></td>      
+      <td><a href="https://forms.gle/mcQaJshvAKRdggz16">登録データの更新申し込みフォーム</a></td>      
     </tr>
     <tr>
       <td>DRA</td> 

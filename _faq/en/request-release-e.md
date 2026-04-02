@@ -29,7 +29,7 @@ If you want to release your data, specify DDBJ/DRA/GEA/MetaboBank accession numb
     <tr>
       <td>DDBJ</td> 
       <td>AB12345678, ABCDEF010123456　</td>
-      <td><a href="https://forms.gle/TcvmVvw4faD2DV4fA">Application Form for Data Update Requests form</a></td>      
+      <td><a href="https://forms.gle/txmEtADnPpY2rnjKA">Application Form for Data Update Requests form</a></td>      
     </tr>
     <tr>
       <td>DRA</td> 
