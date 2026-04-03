@@ -99,7 +99,7 @@ The SFF files are nearly optimal in terms of compression and should be submitted
 
 ## Array based (Genotypes, SNP, Expression)  {#array}
 
-The JGA accepts processed data from all types of array based technologies, such as genotypes, gene expression, methylations, etc.
+The JGA accepts processed data from all types of array based technologies, such as genotypes, gene expression, methylations, etc. We recommend a submission format compliant with [GEA](/gea/overview-e.html).
 
 We are very flexible regarding these submissions and would accept all types of files affiliated to the array experiment into the JGA Analysis.
 
@@ -108,6 +108,14 @@ We recommend that both raw data (CELs) and analysis files be submitted, which wi
 ## Variation data file  {#variations}
 
 The JGA supports submissions of sequence variations in [VCF format](http://en.wikipedia.org/wiki/Variant_Call_Format) . The vcf files are accepted as secondary analysis object.
+
+## Metabolomics data {#metabolomics}
+
+The JGA accepts metabolomics data in Analysis. We recommend a submission format compliant with [MetaboBank](/metabobank/submission-e.html).
+
+## Proteomics data {#proteomics}
+
+The JGA accepts proteomics data in Analysis. We recommend a submission format compliant with [SDRF-Proteomics](https://github.com/bigbio/proteomics-sample-metadata/blob/master/sdrf-proteomics/README.adoc).
 
 ## Other data files  {#other}
 

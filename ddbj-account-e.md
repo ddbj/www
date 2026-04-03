@@ -15,6 +15,7 @@ To use the data submission and analysis services of Bioinformation and DDBJ Cent
 
 ### Cautions on account creation {#caution}
 
+- Usernames identical to [NIG SuperComputer](https://sc.ddbj.nig.ac.jp/en/) accounts can not be used.
 - The username must be 3–24 characters long and can include lowercase letters, numbers, "\_" (underscore), and "-" (hyphen). The first character cannot be a symbol ("\_", "-"). Once created, the username cannot be changed.
 - If applying for data submission or usage in the NBDC Human Database Application System, additional information besides the required fields is necessary.
 - The password must be at least 8 characters long and include both letters and numbers.
