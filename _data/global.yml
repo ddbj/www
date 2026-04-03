@@ -1,7 +1,11 @@
 top_news:
  ja:
+    - title: (5/2 - 5/6) ゴールデンウィーク中の対応について
+      path: 2026-04-03
     - title: 塩基配列データ登録における INSDC minimal specifications を策定
       path: 2026-03-19
  en:
+    - title: (May 2-May 6) Correspondence during the Golden Week holidays
+      path: 2026-04-03-e  
     - title: INSDC Minimal Specifications
       path: 2026-03-19-e
