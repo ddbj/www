@@ -28,7 +28,7 @@
         en: 'SuperComputer'
       },
       uri: {
-        ja: 'https://sc.ddbj.nig.ac.jp/ja',
+        ja: 'https://sc.ddbj.nig.ac.jp/',
         en: 'https://sc.ddbj.nig.ac.jp/en'
       }
     },
@@ -338,7 +338,7 @@
             },
             uri: {
               en: 'https://sc.ddbj.nig.ac.jp/en',
-              ja: 'https://sc.ddbj.nig.ac.jp/ja'
+              ja: 'https://sc.ddbj.nig.ac.jp/'
             }
           }
         ]
