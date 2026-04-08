@@ -1,5 +1,7 @@
 top_news:
  ja:
+    - title: DDBJ リリース 141.0，DAD リリース 111.0 完成
+      path: 2026-04-08
     - title: (4/9 11:00-12:00) JGA/AGD/NBDC 申請システム一時停止のお知らせ
       path: 2026-04-07
     - title: (5/2 - 5/6) ゴールデンウィーク中の対応について
@@ -7,6 +9,8 @@ top_news:
     - title: 塩基配列データ登録における INSDC minimal specifications を策定
       path: 2026-03-19
  en:
+    - title: DDBJ Rel. 141.0, DAD Rel. 111.0 Completed
+      path: 2026-04-08-e 
     - title: (Apr 9 11:00 - 12:00) Announcement of JGA/AGD system suspension
       path: 2026-04-07-e 
     - title: (May 2-May 6) Correspondence during the Golden Week holidays

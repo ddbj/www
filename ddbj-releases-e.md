@@ -13,6 +13,7 @@ related_pages:
 
 |  DDBJ Release	  |  16S rRNA	  |  DAD Release	  |  Last published date  |
 | ---- | ---- | ---- | ---- |
+[141.0 (Mar. 2026)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.141.txt)  | [141.0 (Mar. 2026)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.141.txt)  | [111.0 (Mar. 2026)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.111.txt)   | Feb. 27, 2026
 [140.0 (Dec. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.140.txt)  | [140.0 (Dec. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.140.txt)  | [110.0 (Dec. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.110.txt)   | Nov. 28, 2025
 [139.0 (Sep. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.139.txt)  | [139.0 (Sep. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.139.txt)  | [109.0 (Sep. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.109.txt)   | Aug. 29, 2025
 [138.0 (Jun. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/ddbj/ddbjrel.138.txt)  | [138.0 (Jun. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/16S/readme.138.txt)  | [108.0 (Jun. 2025)](https://ddbj.nig.ac.jp/public/ddbj_database/release_note_archive/dad/dadrel.108.txt)   | May 30, 2025
