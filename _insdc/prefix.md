@@ -101,7 +101,7 @@ DE      DDBJ            GSS
 DF      DDBJ            scaffold/CON
 DG      DDBJ            CON
 DH      DDBJ            GSS
-DI      KIPO            Patent application
+DI      MOIP            Patent application
 DJ      JPO             Patent application
 DK      DDBJ            EST
 DL      JPO             Patent application
@@ -288,7 +288,7 @@ LC      DDBJ            Direct submission
 LD      DDBJ            scaffold/CON
 LE      DDBJ            TSA (Transcriptome Shotgun Assembly)
 LF      JPO             Patent application
-LG      KIPO            Patent application
+LG      MOIP            Patent application
 LH      DDBJ            TSA (Transcriptome Shotgun Assembly)
 LI      DDBJ            TSA (Transcriptome Shotgun Assembly)
 LJ      DDBJ            TSA (Transcriptome Shotgun Assembly)
@@ -305,7 +305,7 @@ LT      ENA
 LU      DDBJ            EST 
 LV      JPO             Patent application
 LX      JPO             Patent application
-LY      KIPO            Patent application
+LY      MOIP            Patent application
 LZ      JPO             Patent application
 M       GenBank         
 MA      JPO             Patent application
@@ -341,7 +341,7 @@ OB      ENA
 OC      ENA             
 OD      ENA             
 OE      ENA             
-OF      KIPO            Patent application
+OF      MOIP            Patent application
 OG      JPO             Patent application
 OH      DDBJ            EST
 OI      JPO             Patent application
@@ -367,14 +367,14 @@ PA      JPO             Patent application
 PB      JPO             Patent application
 PC      JPO             Patent application
 PD      JPO             Patent application
-PE      KIPO            Patent application
-PF      KIPO            Patent application
+PE      MOIP            Patent application
+PF      MOIP            Patent application
 PG      JPO             Patent application
 PH      JPO             Patent application
 PI      JPO             Patent application
 PJ      JPO             Patent application
 PK      JPO             Patent application
-PL      KIPO            Patent application
+PL      MOIP            Patent application
 PM      JPO             Patent application
 PN      JPO             Patent application
 PO      JPO             Patent application
@@ -385,12 +385,12 @@ PS      GenBank         scaffold/CON
 PT      USPTO           Patent application
 PU      USPTO           Patent application
 PV      GenBank         Direct submission
-PW      KIPO            Patent application
+PW      MOIP            Patent application
 PX      GenBank         Direct submission
 PY      USPTO           Patent application
 PZ      GenBank         Direct submission
 Q       void            UniProt/Swiss-Prot
-QA      GenBank         
+QA      USPTO           Patent application
 QB      GenBank         
 QC      GenBank         
 QD      GenBank         
@@ -502,7 +502,7 @@ VAA-VZZ     ENA
 WAA-WZZ     GenBank       
 XAA-XZZ     GenBank       
 YAA-YZZ     GenBank       primary/TPA
-ZAA-ZZZ     JPO/KIPO      Patent application
+ZAA-ZZZ     JPO/MOIP      Patent application
 ```
 
 ## For Sequence Read Archive  {#dra}
