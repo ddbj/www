@@ -1,14 +1,10 @@
 top_news:
  ja:
-    - title: DDBJ リリース 141.0，DAD リリース 111.0 完成
-      path: 2026-04-08
     - title: (5/2 - 5/6) ゴールデンウィーク中の対応について
       path: 2026-04-03 
     - title: 塩基配列データ登録における INSDC minimal specifications を策定
       path: 2026-03-19
  en:
-    - title: DDBJ Rel. 141.0, DAD Rel. 111.0 Completed
-      path: 2026-04-08-e 
     - title: (May 2-May 6) Correspondence during the Golden Week holidays
       path: 2026-04-03-e  
     - title: INSDC Minimal Specifications
