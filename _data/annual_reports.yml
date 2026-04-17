@@ -1,4 +1,17 @@
 items:
+  - date: 2025-1-1
+    title:
+      en: FY2025
+      ja: 2025年度
+    report_url:
+      en: https://drive.google.com/file/d/1WYlWv6DL9HoCAXq_mi11M6rCyiCGd0Pj/view?usp=drive_link
+      ja: https://drive.google.com/file/d/1WYlWv6DL9HoCAXq_mi11M6rCyiCGd0Pj/view?usp=drive_link
+    budget_pdf:
+      en: https://drive.google.com/file/d/19oK9CG3UAnQPgUU_ZkkzXNC0jQTnkFrk/view?usp=drive_link
+      ja: https://drive.google.com/file/d/19oK9CG3UAnQPgUU_ZkkzXNC0jQTnkFrk/view?usp=drive_link
+    budget_excel:
+      en: https://docs.google.com/spreadsheets/d/109cM6AGwy4pWErC_FuA7Gg3x5LYmS8BI/edit?usp=drive_link&ouid=105751513362338066062&rtpof=true&sd=true
+      ja: https://docs.google.com/spreadsheets/d/109cM6AGwy4pWErC_FuA7Gg3x5LYmS8BI/edit?usp=drive_link&ouid=105751513362338066062&rtpof=true&sd=true
   - date: 2024-1-1
     title:
       en: FY2024
