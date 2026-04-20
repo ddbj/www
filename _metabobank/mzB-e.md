@@ -18,3 +18,5 @@ With the use of this format, all of MetaboBank's raw data (135 study, total data
 The free [Data Checker program](https://www.reifycs.com/products/hive/baseapp-dl) is available for viewing mzB format files. Currently only available for Microsoft Windows.  
 
 To develop software and APIs for mzB format files, you can use the Hive SDK, a free development environment. For more information, please see [here](https://www.reifycs.com/products/hive/).  
+
+The Jupyter Notebook programs to draw chromatograms and mass spectra of mzB files, and to compare metabolite peaks, are developed by using the Hive SDK. These are available from [here] (https://github.com/ddbj/hivetoolkit).
