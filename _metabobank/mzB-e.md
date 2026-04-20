@@ -19,4 +19,4 @@ The free [Data Checker program](https://www.reifycs.com/products/hive/baseapp-dl
 
 To develop software and APIs for mzB format files, you can use the Hive SDK, a free development environment. For more information, please see [here](https://www.reifycs.com/products/hive/).  
 
-The Jupyter Notebook program hivetoolkit to draw chromatograms and mass spectra of mzB files, and to compare metabolite peaks, is developed by using the Hive SDK. The hivetoolkit is available from [here] (https://github.com/ddbj/hivetoolkit).
+The Jupyter Notebook program hivetoolkit to draw chromatograms and mass spectra of mzB files, and to compare metabolite peaks, is developed by using the Hive SDK. The hivetoolkit is available from [here](https://github.com/ddbj/hivetoolkit).
