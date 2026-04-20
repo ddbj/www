@@ -19,4 +19,4 @@ mzBフォーマットファイルを閲覧するためには、無料の[Data Ch
 
 mzBフォーマットファイルに関するソフトウェアやAPIを開発するためには、無料の開発環境であるHive SDKが利用できます。詳細は、[こちら](https://ja.reifycs.com/products/hive/)を参照してください。
 
-Hive SDKを利用した、mzBファイルのクロマトグラムやマススペクトルを描画して、ピークの比較を行うことができるJupyter Notebookのプログラムが、[こちら](https://github.com/ddbj/hivetoolkit)から利用できます。
+Hive SDK を利用した、mzB ファイルのクロマトグラムやマススペクトルを描画して、ピークの比較を行うことができる Jupyter Notebook のプログラム hivetoolkit が、[こちら](https://github.com/ddbj/hivetoolkit)から利用できます。
