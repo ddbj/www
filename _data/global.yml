@@ -1,14 +1,10 @@
 top_news:
  ja:
-    - title: D-way で BioSample の登録ができない不具合
-      path: 2026-04-24 
     - title: (5/2 - 5/6) ゴールデンウィーク中の対応について
       path: 2026-04-03 
     - title: 塩基配列データ登録における INSDC minimal specifications を策定
       path: 2026-03-19
- en:
-    - title: Issue Preventing BioSample Registration via D-way
-      path: 2026-04-24-e  
+ en:  
     - title: (May 2-May 6) Correspondence during the Golden Week holidays
       path: 2026-04-03-e  
     - title: INSDC Minimal Specifications
