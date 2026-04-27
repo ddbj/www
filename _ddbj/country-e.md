@@ -344,7 +344,7 @@ and [https://unstats.un.org/unsd/methods/m49/m49.htm](https://unstats.un.org/uns
 - Trinidad and Tobago
 - Tromelin Island
 - Tunisia
-- Turkey
+- Turkiye
 - Turkmenistan
 - Turks and Caicos Islands
 - Tuvalu
@@ -393,6 +393,7 @@ and [https://unstats.un.org/unsd/methods/m49/m49.htm](https://unstats.un.org/uns
 - Siam
 - Swaziland 
 - The former Yugoslav Republic of Macedonia 
+- Turkey
 - USSR
 - Yugoslavia
 - Zaire
