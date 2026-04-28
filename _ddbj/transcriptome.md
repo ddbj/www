@@ -24,10 +24,12 @@ Transcriptome の各段階と登録データの種別の対応を示します。
 
 [DRA] Raw outputs 次世代シークエンサの出力  
 : 次世代シークエンサからの出力データは [DDBJ Sequence Read Archive (DRA)](/dra/index.html)へご登録ください。
+
 <!-- 
 [DTA] Chromatograms, Sequences, Qualities: Sanger 法の出力  
 : single-path read の DNA sequence chromatograms (traces), base calls, quality estimates は、DDBJ [Trace Archive (DTA)](/dta/index.html) へご登録ください。
  -->
+
 [TSA] Contigs: assemblies (overlapping reads) と Scaffolds  
 : アセンブルされた cDNA 配列データは、[TSA](/ddbj/tsa.html) として [Mass Submission System](/ddbj/mss.html) から ご登録ください。
 
