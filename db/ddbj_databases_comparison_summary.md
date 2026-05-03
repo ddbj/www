@@ -1,31 +1,35 @@
 # DDBJ データベース 登録ガイド — ページ構成 共通要素・差異サマリー
 
-> 対象: BioProject / BioSample / DRA / GEA / JGA / MetaboBank / TogoVar-repository  
-> 作成日: 2026年5月
+> 対象: BioProject / BioSample / DRA / GEA / JGA / MetaboBank / TogoVar-repository / **Trad (DDBJ Annotated/Assembled Sequences)**
+> 作成日: 2026年5月（Trad 追加更新）
 
 ---
 
 ## 1. 全体構成マップ
 
-| セクション | BioProject | BioSample | DRA | GEA | JGA | MetaboBank | TogoVar |
-|-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Home（概要） | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Submission（登録方法） | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Metadata（メタデータ詳細） | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Data File（データファイル） | — | — | ✅ | ✅ | ✅ | ✅ | ✅ |
-| Validation（検証ルール） | — | ✅ | ✅ | ✅ | — | ✅ | ✅ |
-| Example（記入例） | — | — | ✅ | — | — | ✅ | — |
-| Update（更新手順） | — | — | ✅ | — | — | — | — |
-| Overview（概念説明） | — | ✅ | — | — | — | — | — |
-| Reviewer Access | — | — | — | ✅ | — | ✅（簡易） | — |
-| Array Design（ADF） | — | — | — | ✅ | — | — | — |
-| Data Matrix | — | — | — | ✅ | — | — | — |
-| mzB format | — | — | — | — | — | ✅ | — |
-| How to access data（利用手順） | — | — | — | — | ✅ | — | — |
-| Groups（グループ管理） | — | — | — | — | ✅ | — | — |
-| FAQ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| 検索・ダウンロード | ✅ | ✅ | ✅ | — | — | — | ✅ |
-| リンク集 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| セクション | BioProject | BioSample | DRA | GEA | JGA | MetaboBank | TogoVar | **Trad** |
+|-----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Home（概要） | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Submission（登録方法） | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Metadata（メタデータ詳細） | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| Data File（データファイル） | — | — | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| Validation（検証ルール） | — | ✅ | ✅ | ✅ | — | ✅ | ✅ | — |
+| Example（記入例） | — | — | ✅ | — | — | ✅ | — | ✅ |
+| Update（更新手順） | — | — | ✅ | — | — | — | — | ✅ |
+| Overview（概念説明） | — | ✅ | — | — | — | — | — | — |
+| Reviewer Access | — | — | — | ✅ | — | ✅（簡易） | — | — |
+| Array Design（ADF） | — | — | — | ✅ | — | — | — | — |
+| Data Matrix | — | — | — | ✅ | — | — | — | — |
+| mzB format | — | — | — | — | — | ✅ | — | — |
+| How to access data（利用手順） | — | — | — | — | ✅ | — | — | — |
+| Groups（グループ管理） | — | — | — | — | ✅ | — | — | — |
+| **NSSS（Web 版登録システム）** | — | — | — | — | — | — | — | ✅ |
+| **MSS（大規模登録システム）** | — | — | — | — | — | — | — | ✅ |
+| **Flat file（公開フォーマット）** | — | — | — | — | — | — | — | ✅ |
+| **Data categories（データ種別）** | — | — | — | — | — | — | — | ✅ |
+| FAQ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| 検索・ダウンロード | ✅ | ✅ | ✅ | — | — | — | ✅ | ✅ |
+| リンク集 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 ---
 
@@ -37,7 +41,7 @@
 
 - **Home（概要）**: データベースの目的・特徴・主要リンクの説明
 - **Submission（登録方法）**: 登録の流れ・アカウント取得・アクセッション番号・公開・更新
-- **Metadata（メタデータ詳細）**: メタデータの定義・項目説明
+- **Metadata（メタデータ詳細）**: メタデータの定義・項目説明（Trad は Flat file / Data categories で代替）
 - **FAQ**: よくある質問と回答
 - **リンク集**: 関連 URL の一覧
 
@@ -57,8 +61,8 @@
 |------|------|
 | DDBJ アカウント取得 | 全 DB で前提条件 |
 | 公開鍵の登録 | ファイルアップロードが必要な全 DB で必須 |
-| BioProject の参照 | DRA / GEA / MetaboBank / TogoVar-repository で必須 |
-| BioSample の参照 | DRA / GEA / MetaboBank / TogoVar-repository で必須 |
+| BioProject の参照 | DRA / GEA / MetaboBank / TogoVar-repository / Trad（MSS 大規模登録）で必須/推奨 |
+| BioSample の参照 | DRA / GEA / MetaboBank / TogoVar-repository / Trad（MSS 大規模登録）で必須/推奨 |
 | 公開予定日の設定 | 全 DB で設定可能（期間は DB ごとに異なる） |
 
 ### 2-4. 共通するアクセッション番号の命名規則
@@ -71,7 +75,8 @@
 | GEA | E-GEAD-n（Experiment）/ A-GEAD-n（Array design） |
 | JGA | JGA / JGAS / JGAN / JGAX / JGAR / JGAZ / JGAD / JGAP |
 | MetaboBank | MTBKSn |
-| TogoVar | dstd（study）/ dss（SNP variant）/ dssv（SV variant call）/ dsv（SV variant region） |
+| TogoVar | dstd / dss / dssv / dsv |
+| **Trad** | 1文字+5桁（A12345）/ 2文字+6桁（AB123456）/ WGS は4文字+8桁（ZZZZ01000001） |
 
 ---
 
@@ -85,33 +90,36 @@
 | BioSample | **オープンアクセス** | NCBI / EBI と共有 |
 | DRA | **オープンアクセス** | NCBI SRA / EBI ENA にミラー |
 | GEA | **オープンアクセス** | 現時点では EBI ArrayExpress との交換なし |
-| JGA | **制限公開（controlled access）** | DBCLS 審査が必須。個人を特定し得るヒトデータ専用 |
+| JGA | **制限公開（controlled access）** | DBCLS 審査が必須 |
 | MetaboBank | **オープンアクセス** | EBI MetaboLights とは現時点で交換なし |
-| TogoVar-repository | **オープンアクセス** | dbSNP/dbVar との交換は計画中（未実現） |
+| TogoVar-repository | **オープンアクセス** | dbSNP/dbVar との交換は計画中 |
+| **Trad** | **オープンアクセス** | DDBJ/ENA/GenBank（INSDC）で完全共有 |
 
 ### 3-2. 登録申請方法
 
 | DB | 申請方法 | 特記事項 |
 |----|---------|---------|
-| BioProject | D-way から直接（セルフサービス） | — |
-| BioSample | D-way から直接（セルフサービス） | — |
-| DRA | D-way から直接（セルフサービス） | — |
-| GEA | D-way から直接（セルフサービス） | マイクロアレイ or シークエンシングを選択 |
-| JGA | **DBCLS への提供申請が必須** → 承認後に登録 | キュレータが XML を生成。sftp ポート 443 |
-| MetaboBank | **申し込みフォームで申請** → 担当者が案内 | D-way 不使用 |
-| TogoVar-repository | **申し込みフォームで申請** → 担当者が案内 | D-way 不使用 |
+| BioProject | D-way セルフサービス | — |
+| BioSample | D-way セルフサービス | — |
+| DRA | D-way セルフサービス | — |
+| GEA | D-way セルフサービス | マイクロアレイ or シークエンシングを選択 |
+| JGA | **DBCLS への提供申請が必須** | キュレータが XML を生成。sftp ポート 443 |
+| MetaboBank | **申し込みフォームで申請** | D-way 不使用 |
+| TogoVar-repository | **申し込みフォームで申請** | D-way 不使用 |
+| **Trad** | **NSSS**（Web 直接）または **MSS**（ファイル送付） | 大規模データは MSS 必須 |
 
 ### 3-3. メタデータ形式
 
 | DB | メタデータ形式 | 入力ツール |
 |----|------------|---------|
-| BioProject | 独自 XML（D-way ウェブフォーム） | D-way ウェブツール |
+| BioProject | 独自 XML | D-way ウェブツール |
 | BioSample | 独自 XML + 属性 TSV | D-way ウェブツール + TSV |
-| DRA | INSDC XML（Submission / Experiment / Run） | D-way ウェブツール または エクセル |
-| GEA | **MAGE-TAB**（IDF + SDRF） | D-way ウェブツール（IDF/SDRF） |
+| DRA | INSDC XML | D-way ウェブツール または エクセル |
+| GEA | **MAGE-TAB**（IDF + SDRF） | D-way ウェブツール |
 | JGA | SRA 拡張 XML | **エクセル** → キュレータが XML 生成 |
-| MetaboBank | **MAGE-TAB**（IDF + SDRF）＋ MAF | **エクセル**（実験種別 11 種） |
+| MetaboBank | **MAGE-TAB**（IDF + SDRF）+ MAF | **エクセル**（11 種） |
 | TogoVar-repository | dbVar/dbSNP 拡張モデル | **エクセル**（7 シート）+ VCF |
+| **Trad** | **INSDC flat file**（アノテーションファイル + 配列ファイル） | NSSS（Web 入力）または テキストエディタ + UME/Parser/transChecker |
 
 ### 3-4. データファイル形式
 
@@ -119,28 +127,30 @@
 |----|-----------|------------|--------|
 | BioProject | なし（メタデータのみ） | — | — |
 | BioSample | なし（メタデータのみ） | — | — |
-| DRA | fastq / BAM / HDF5（PacBio） | DRA Analysis | — |
-| GEA | マイクロアレイ native files（CEL / IDAT 等）/ DRA 経由 | 解析済みテキスト / Data Matrix | — |
-| JGA | BAM / fastq / SFF | VCF / アレイデータ / 各種 | — |
-| MetaboBank | mzML / RAW / nmrML / imzML 等 11 形式 | 解析済みデータ + MAF | **mzB**（独自変換形式） |
-| TogoVar-repository | **VCF**（必須）| — | — |
+| DRA | fastq / BAM / HDF5 | DRA Analysis | — |
+| GEA | マイクロアレイ native files / DRA 経由 | 解析済みテキスト | — |
+| JGA | BAM / fastq / SFF | VCF / アレイデータ | — |
+| MetaboBank | mzML / RAW / nmrML 等 11 形式 | 解析済みデータ + MAF | **mzB** |
+| TogoVar-repository | **VCF**（必須） | — | — |
+| **Trad** | **FASTA + アノテーションファイル（タブ区切り）** | フラットファイルとして公開 | — |
 
 ### 3-5. データ公開期間（非公開の最長設定）
 
-| DB | 最長非公開期間 | 公開予定日の設定 |
-|----|------------|--------------|
-| BioProject | 制限なし（論文公開まで） | 設定**不可**（連動公開のみ） |
-| BioSample | 制限なし（論文公開まで） | 設定**不可**（連動公開のみ） |
+| DB | 最長非公開期間 | 設定方法 |
+|----|------------|--------|
+| BioProject | 制限なし | 連動公開のみ（予定日設定不可） |
+| BioSample | 制限なし | 連動公開のみ（予定日設定不可） |
 | DRA | **4年後まで** | 設定可 / 延長可 |
 | GEA | **4年後まで** | 設定可 / 延長可 |
-| JGA | 制限なし（論文公開まで） | 設定**不可**（hum 番号の公開に連動） |
+| JGA | 制限なし | hum 番号の公開に連動 |
 | MetaboBank | **3年後まで** | 設定可 / 延長可 |
 | TogoVar-repository | **3年後まで** | 設定可 / 延長可 |
+| **Trad** | 制限なし | Hold Date を設定可。アクセッション番号公表で**例外なく公開** |
 
 ### 3-6. 連動公開の方向性
 
 ```
-DDBJ / DRA / GEA / MetaboBank が公開
+DDBJ(Trad) / DRA / GEA / MetaboBank が公開
     → BioProject と BioSample を連動公開 ✅
 
 BioProject が公開
@@ -149,14 +159,14 @@ BioProject が公開
 BioSample が公開
     → derived_from で引用されている BioSample を連動公開 ✅
 
-DDBJ が公開
+DDBJ(Trad) が公開
     → DBLINK で参照している DRA Run を連動公開 ✅
 
 GEA が公開
     → 参照している DRA Run を連動公開 ✅
 
 DRA が公開
-    → DDBJ の連動公開を引き起こさない ❌
+    → DDBJ(Trad) の連動公開を引き起こさない ❌
 ```
 
 ### 3-7. 登録可能データの対象生物
@@ -166,43 +176,45 @@ DRA が公開
 | BioProject | 制限なし |
 | BioSample | 制限なし |
 | DRA | 制限なし |
-| GEA | 制限なし（ヒトデータは注意が必要） |
+| GEA | 制限なし（ヒトデータは注意） |
 | JGA | **ヒトのみ**（制限公開が必要なデータ） |
-| MetaboBank | 制限なし（ヒトデータは注意が必要） |
+| MetaboBank | 制限なし（ヒトデータは注意） |
 | TogoVar-repository | **ヒトのみ** |
+| **Trad** | **制限なし**（ヒト・動物・植物・細菌・ウイルス等すべて。特許データも含む） |
 
 ### 3-8. ヒトデータの扱い
 
 | DB | ヒトデータの扱い |
 |----|---------------|
-| BioProject | BioProject のみの場合は登録可（DBCLS の hum ID を Private comments に記載） |
+| BioProject | 登録可（DBCLS の hum ID を Private comments に記載） |
 | BioSample | Human パッケージで登録可。保護が必要な場合は JGA へ |
 | DRA | アクセス制限不要なら登録可 |
 | GEA | アクセス制限不要なら登録可。保護が必要な場合は JGA へ |
 | JGA | **制限公開が必要なヒトデータ専用**。DBCLS の審査必須 |
 | MetaboBank | アクセス制限不要なら登録可。保護が必要な場合は JGA へ |
 | TogoVar-repository | ヒトのバリアント専用（オープンアクセス） |
+| **Trad** | アクセス制限不要なら登録可。研究対象者を特定し得る情報は除去が必要 |
 
 ### 3-9. Reviewer Access の提供方法
 
 | DB | 査読者へのデータ提供方法 |
 |----|----------------------|
-| DRA | 登録者がアーカイブ済み fastq をダウンロードし、別途共有 |
-| GEA | **Reviewer access token** を発行（3ヶ月有効）。Double-blind オプションあり |
-| JGA | 制限公開のため、通常の reviewer access は提供していない |
+| DRA | 登録者がアーカイブ済み fastq をダウンロードし別途共有 |
+| GEA | **Reviewer access token**（3ヶ月有効）。Double-blind オプションあり |
+| JGA | 通常の reviewer access は提供していない |
 | MetaboBank | パスワード保護サイト経由（チームに連絡して手配） |
-| BioProject / BioSample / TogoVar | 非公開データへの reviewer access の仕組みなし |
+| **Trad** | **アクセッション番号を査読者に通知**。論文掲載後に自動公開 |
+| BioProject / BioSample / TogoVar | 仕組みなし |
 
 ### 3-10. 登録数・規模の制限
 
 | DB | 制限 | 補足 |
 |----|------|------|
-| BioSample | 1 Submission あたり **1,000 サンプル**まで | 同一パッケージのみ混在可 |
-| DRA | 1 Submission あたり **Run 2,000**（BioSample 1,000 / GEA 1,000） | — |
-| GEA | 1 Submission あたり **Assay 1,000**まで | — |
-| JGA | 制限の記載なし | — |
-| MetaboBank | 制限の記載なし | — |
-| BioProject / TogoVar | 制限の記載なし | — |
+| BioSample | 1 Submission あたり **1,000 サンプル** | 同一パッケージのみ混在可 |
+| DRA | 1 Submission あたり **Run 2,000** | BioSample 1,000 / GEA 1,000 |
+| GEA | 1 Submission あたり **Assay 1,000** | — |
+| JGA / MetaboBank / BioProject / TogoVar | 制限の記載なし | — |
+| **Trad（NSSS）** | 総計 **100 件**・1配列 **500 kb 未満**・Feature **30 未満** | 超える場合は MSS を使用 |
 
 ---
 
@@ -210,14 +222,14 @@ DRA が公開
 
 ### BioProject 固有
 
-- **アンブレラプロジェクト**：複数プロジェクトを階層的にまとめる上位プロジェクト（非公開不可）
-- **Project Type の多様な分類**: data type / sample scope / material / capture / methodology / objective の 6 軸分類
-- 公開後 NCBI / EBI BioProject と**毎日交換**
+- **アンブレラプロジェクト**: 複数プロジェクトを階層的にまとめる上位プロジェクト（非公開不可）
+- **Project Type の 6 軸分類**: data type / sample scope / material / capture / methodology / objective
+- NCBI / EBI BioProject と**毎日交換**
 
 ### BioSample 固有
 
-- **パッケージシステム**: Standard（11種）/ Pathogen（2種）/ MIxS（8種）/ Environmental package（23種）の計 44 パッケージ
-- **INSDC Missing Value Reporting**: 必須属性に値がない場合の標準用語（not applicable / missing / restricted access の 3 階層）
+- **44 パッケージ**: Standard（11種）/ Pathogen（2種）/ MIxS（8種）/ Environmental package（23種）
+- **INSDC Missing Value Reporting**: not applicable / missing / restricted access の 3 階層
 - **locus_tag_prefix**: ゲノムアノテーション登録のために BioSample で取得
 - **derived_from 属性**: 派生サンプル（MAG・混合アセンブリ等）のリンク
 
@@ -225,53 +237,58 @@ DRA が公開
 
 - **6 種のメタデータオブジェクト**: Submission / BioProject / BioSample / Experiment / Run / Analysis
 - **Library Strategy / Selection / Source の詳細分類**: 各 10〜20 種以上
-- **Instrument Model の詳細リスト**: Illumina / PacBio / ONT / Ion Torrent / BGI 等 40 機種以上
-- **BAM リファレンス指定の 4 方式**: INSDC アクセッション / マルチ FASTA / 混在 / unmapped
-- **PacBio Base Modification Files / BioNano Genome Map Files** の Analysis 登録推奨
+- **Instrument Model**: Illumina / PacBio / ONT / Ion Torrent / BGI 等 40 機種以上
+- **BAM リファレンス指定の 4 方式**
 - **公開後 NCBI SRA / EBI ENA にミラーリング**
 
 ### GEA 固有
 
-- **2 系統の登録フロー**: マイクロアレイ実験 / シークエンシング実験（DRA 生データ先行登録）
-- **MAGE-TAB 形式**: IDF + SDRF（GEA / MetaboBank / EBI ArrayExpress 共通）
-- **Reviewer access token**（3ヶ月有効）と **Double-blind オプション**（登録者情報の自動削除）
-- **Array Design（ADF）**: ArrayExpress/GEA への ADF 登録
-- **Data Matrix**: 複数アッセイをまとめた Matrix ファイル形式
-- **14 プラットフォームの生データ判定**: Affymetrix / Agilent / Illumina (IDAT 推奨) / GenePix 等
+- **2 系統の登録フロー**: マイクロアレイ / シークエンシング（DRA 生データ先行登録）
+- **Reviewer access token**（3ヶ月）と **Double-blind オプション**
+- **Array Design（ADF）** と **Data Matrix** のサポート
+- **14 プラットフォームの生データ判定**
 
 ### JGA 固有
 
-- **DBCLS との 2 機関体制**: データ登録・利用は DBCLS が審査、JGA が保管・配布
-- **グループ管理システム**: 提供申請グループ / 利用申請グループ（PI・担当者の役割分担）
-- **暗号化配布**: 利用者がデータセット復号用公開鍵を登録し、暗号化された状態でダウンロード後に復号
-- **2 ペア 4 ファイルの鍵管理**: データ転送用（DDBJ アカウント登録）+ データセット復号用（利用申請時登録）
-- **メタデータの tsv / XML / mapping 表**が復号済みディレクトリに同梱
+- **DBCLS との 2 機関体制**
+- **グループ管理システム**（提供申請グループ / 利用申請グループ）
+- **暗号化配布**（復号用公開鍵 + 秘密鍵による 2 ペア 4 ファイル鍵管理）
 - **sftp ポート 443**（他の DB はポート 22）
-- **Policy / Dataset**: ポリシーが異なるデータ（Control/Case 等）は Dataset を分離
+- **Policy / Dataset**でポリシーが異なるデータを分離
 
 ### MetaboBank 固有
 
-- **11 種の実験種別エクセル**: LC-MS / LC-DAD-MS / GC-MS / GCGC-MS / GC-FID-MS / CE-MS / DI-MS / FIA-MS / MALDI-MS / MSI / NMR
-- **Metabolite Assignment File（MAF）**: 代謝物同定情報の標準フォーマット（20 カラム）
-- **mzB 変換提供**: 登録された生データをベンダー形式から mzB に自動変換（最大 95.7% 削減）
-- **50 以上の Protocol Parameter**: 機器・実験種別ごとに詳細なパラメータ定義
-- **Third-party reanalysis data** の登録受付（査読論文の公開が前提）
-- **EBI MetaboLights と非交換**（協力関係はあり）
+- **11 種の実験種別エクセル**（LC-MS / GC-MS / NMR / MSI 等）
+- **MAF（Metabolite Assignment File）**: 代謝物同定情報（20 カラム）
+- **mzB 変換提供**（最大 95.7% データサイズ削減）
+- **50 以上の Protocol Parameter**
+- **Third-party reanalysis data** の登録受付
 
 ### TogoVar-repository 固有
 
-- **SNP/SV の二種別**: 50 bp 以下（SNP）と 50 bp 超（SV）で分離した登録・データモデル
-- **VCF が主要登録形式**: `##reference=GRCh38`（または GRCh37）の指定が必須
-- **dbSNP/dbVar 連携予定**: 公開後 dbSNP rs へのマージを計画（現時点では未実現）
-- **Singularity による Validation**: ローカル環境でのバリデーションツールを GitHub で提供
-- **dbVar/dbSNP のデータモデル拡張**: dbVar モデルに dbSNP Assay を Dataset として取り込んだ SNP/SV 共通モデル
-- **REF 塩基一致チェック**: GRCh37/38 リファレンスゲノムとの塩基比較を validation で実施
+- **SNP/SV の二種別**（50 bp 以下 / 超で分離）
+- **VCF + `##reference=GRCh38` 必須**
+- **dbSNP/dbVar 連携予定**（未実現）
+- **Singularity による Validation ツール**（GitHub 提供）
+- **REF 塩基一致チェック**（GRCh37/38 リファレンスゲノムと比較）
+
+### Trad 固有
+
+- **2 系統の登録ツール**: NSSS（Web 入力・少件数向け）と MSS（ファイル送付・大規模向け）
+- **INSDC Feature Table に基づく詳細アノテーション**: CDS / rRNA / tRNA / ncRNA 等の生物学的注釈
+- **21 種の Division**: 由来生物種分類（HUM/PRI/BCT 等）+ 特殊分類（EST/TSA/WGS/HTG/ENV/SYN 等）
+- **大規模 Bulk sequence data**: WGS / TSA / TLS は特殊アクセッション番号形式（4文字プレフィックス + バージョン + エントリ番号）
+- **DFAST 連携**: 原核生物ゲノム自動アノテーションから MSS 登録ファイルを直接生成
+- **UME / Parser / transChecker**: ファイルフォーマットチェック・CDS 翻訳チェックの専用ツール群
+- **特許データ（PAT division）**: JPO / EPO / USPTO / KIPO 収集データも収録
+- **INSDC 完全共有**: DDBJ・ENA・GenBank の 3 データバンクで完全に同期
+- **アクセッション番号公表による強制公開**: 論文等での公表後は例外なく公開
+- **登録者の義務**: 利用者からの問い合わせへの対応義務。研究指導者を含む複数名での登録を強く推奨
+- **TPA（Third Party Data）**: 2025年1月以降 TPA-Exp / TPA-Inf の新規登録は休止中
 
 ---
 
 ## 5. 共通する注意事項
-
-すべてのデータベースで共通して記載されている注意事項：
 
 | 注意事項 | 説明 |
 |---------|------|
@@ -292,7 +309,11 @@ DRA が公開
 │
 ├── サンプル情報のみ → BioSample
 │
-├── 次世代シークエンス生データ
+├── アノテーション付き/アセンブル済み塩基配列
+│   ├── 少件数（<100件・<500kb・Feature<30） → Trad (NSSS)
+│   └── 大規模・特殊種別（WGS/TSA/TLS/EST/HTG 等） → Trad (MSS)
+│
+├── 次世代シークエンス生データ（reads）
 │   ├── アクセス制限不要 → DRA
 │   └── アクセス制限必要（ヒト） → JGA
 │
