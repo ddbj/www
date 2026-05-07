@@ -462,6 +462,9 @@ gea:
     - id: faq
       title: FAQ
       url: /faq/ja/index.html?tag=gea
+    - id: search
+      title: Search
+      url: https://ddbj.nig.ac.jp/search/
     - id: download
       title: Download
       url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
@@ -500,6 +503,9 @@ gea:
     - id: faq
       title: FAQ
       url: /faq/en/index-e.html?tag=gea
+    - id: search
+      title: Search
+      url: https://ddbj.nig.ac.jp/search/
     - id: download
       title: Download
       url: https://ddbj.nig.ac.jp/public/ddbj_database/gea/
@@ -521,9 +527,13 @@ metabobank:
           url: /metabobank/validation.html
         - title: Example
           url: https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k
-    - id: search
-      title: Search
+    - id: mb-search
+      title: MetaboBank Search
       url: https://mb2.ddbj.nig.ac.jp/search/
+      children:
+        - id: search
+          title: Search
+          url: https://ddbj.nig.ac.jp/search
     - id: faq
       title: FAQ
       url: /faq/ja/index.html?tag=metabobank
@@ -554,9 +564,13 @@ metabobank:
           url: /metabobank/validation-e.html
         - title: Example
           url: https://docs.google.com/spreadsheets/d/1PziXaK3Cic1xQXdcCgBZ1g-4LIKvZRZt71nYCH5e22k
-    - id: search
-      title: Search
+    - id: mb-search
+      title: MetaboBank Search
       url: https://mb2.ddbj.nig.ac.jp/search/
+      children:
+        - id: search
+          title: Search
+          url: https://ddbj.nig.ac.jp/search
     - id: faq
       title: FAQ
       url: /faq/en/index-e.html?tag=metabobank
