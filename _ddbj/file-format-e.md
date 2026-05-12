@@ -446,7 +446,7 @@ Example: DIVISION in annotation file
 
 ## DATATYPE {#datatype} 
 
-DATATYPE feature indicates that entries are corresponding to either of [WGS](/ddbj/wgs-e.html), [TLS](/ddbj/tls-e.html), [TPA](/ddbj/tpa-e.html), or TPA-WGS.
+DATATYPE feature indicates that entries are corresponding to either of [WGS](/ddbj/wgs-e.html), [TLS](/ddbj/tls-e.html), [TPA](/ddbj/tpa-e.html), TPA-WGS, TPA-TSA or TPA-TLS.
 
 Example: DATATYPE in annotation file
 
@@ -456,7 +456,7 @@ Example: DATATYPE in annotation file
 
 ### Requirements for Describing DATATYPE  {#Requirements_for_Describing_DATATYPE}
 
-  - Please enter the name of type, WGS, TLS, TPA, or TPA-WGS in the Value for Qualifier: type.
+  - Please enter the name of type, WGS, TLS, TPA, TPA-WGS, TPA-TSA or TPA-TLS in the Value for Qualifier: type.
   - Please describe the DATATYPE feature in the [COMMON](#common) entry.
 
 ## KEYWORD  {#keyword}

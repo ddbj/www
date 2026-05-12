@@ -456,7 +456,7 @@ DIVISION は、登録データが [CON](/insdc/data-categories.html#con) /
 ## DATATYPE {#datatype}
 
 DATATYPE は、登録データが [WGS](/ddbj/wgs.html), [TLS](/ddbj/tls.html),
-[TPA](/ddbj/tpa.html), TPA-WGS の何れかに該当することを示します。
+[TPA](/ddbj/tpa.html), TPA-WGS, TPA-TSA, TPA-TLS の何れかに該当することを示します。
 
 例: アノテーションファイル内の DATATYPE
 
@@ -466,7 +466,7 @@ DATATYPE は、登録データが [WGS](/ddbj/wgs.html), [TLS](/ddbj/tls.html),
 
 ### DATATYPE の書式  {#DATATYPE_の書式}
 
-  - Qualifier: type の Value に WGS, TLS, TPA, TPA-WGS の何れかを入力してください。
+  - Qualifier: type の Value に WGS, TLS, TPA, TPA-WGS, TPA-TSA, TPA-TLS の何れかを入力してください。
   - DATATYPE は [COMMON](#common) エントリに入力してください。
 
 ## KEYWORD  {#keyword}
