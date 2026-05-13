@@ -132,13 +132,6 @@ category: about
     </ul>  
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ghelfi.jpg" title="Andrea Ghelfi"></p>
-        <div class="explanation">
-            <p class="name">Andrea Ghelfi, PhD</p>
-            <p class="position">System Developer</p>
-        </div>
-        </li>  
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="李 慶範"></p>
         <div class="explanation">
             <p class="name">李 慶範</p>
@@ -154,8 +147,6 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>  
-    </ul>  
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="杉田 里江"></p>
         <div class="explanation">
@@ -164,6 +155,8 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="鈴木 紀美子"></p>
             <div class="explanation">
@@ -180,8 +173,6 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
-    </ul>  
-    <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/twatanabe.jpg" title="渡邊とも子"></p>
             <div class="explanation">
@@ -190,12 +181,21 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
+    </ul>  
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="横山会美"></p>
         <div class="explanation">
             <p class="name">横山 会美</p>
             <p class="name">Emi Yokoyama</p>
             <p class="position">キュレータ</p>
+        </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/margaretha.jpg" title="Febrina Margaretha"></p>
+        <div class="explanation">
+            <p class="name">Febrina Margaretha</p>
+            <p class="position">システム開発・国際連携</p>
         </div>
         </li>
     </ul>  
@@ -209,7 +209,7 @@ category: about
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="" title="服部 学"></p>
+        <p class="photo"><img src="/assets/images/staff/hattori.jpg" title="服部 学"></p>
         <div class="explanation">
             <p class="name">服部 学</p>
             <p class="name">Manabu Hattori</p>
@@ -250,24 +250,6 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/umeda.jpg" title="梅田 友貴"></p>
-        <div class="explanation">
-            <p class="name">梅田 友貴</p>
-            <p class="name">Tomoki Umeda</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/yosida.jpg" title="吉田 昌弘"></p>
-        <div class="explanation">
-            <p class="name">吉田 昌弘</p>
-            <p class="name">Masahiro Yoshida</p>
-            <p class="position">運用 SE</p>
-        </div>
-        </li>   
     </ul>
     </div>
     <h2 id="hpc">システム管理部門</h2>
