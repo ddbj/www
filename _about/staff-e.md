@@ -171,6 +171,20 @@ category: about
             <p class="position">Curator</p>
         </div>
         </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/he.jpg" title="Ziye He"></p>
+        <div class="explanation">
+            <p class="name">Ziye He</p>
+            <p class="position">Development & International Affairs</p>
+        </div>
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/margaretha.jpg" title="Febrina Margaretha"></p>
+        <div class="explanation">
+            <p class="name">Febrina Margaretha</p>
+            <p class="position">Development & International Affairs</p>
+        </div>
+        </li>
     </ul>   
     <ul class="list">   
         <li class="staff">
