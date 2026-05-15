@@ -15,6 +15,7 @@ related_pages:
 ---
 
 <div class="attention" markdown="1">
+TPA データに関しまして DDBJ では TPA:assembly のみを受け付けております。    
 2025年1月以降、TPA:experimental および TPA:inferential に該当するデータの登録受付を停止しております ([お知らせ](/news/ja/2024-09-05.html))。
 </div>
 

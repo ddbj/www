@@ -15,6 +15,7 @@ related_pages:
 ---
 
 <div class="attention" markdown="1">
+Regarding TPA data, DDBJ currently accepts only TPA:assembly.    
 Starting in January 2025, new submissions of the types TPA:experimental and TPA:inferential were no longer accepted ([announcement](/news/en/2024-09-05-e.html)).
 </div>
 
