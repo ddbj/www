@@ -674,7 +674,11 @@ Value format
 : &lt;text>, excluding double quotation mark (")    
 
 Example    
-: <pre>rumen isolates from standard pelleted ration-fed steer #6</pre>
+: <pre>marine water
+paddy soil
+sediment
+spotted leaf
+rumen isolates from standard pelleted ration-fed steer #6</pre>
 
 
 ### /lab_host<a name="lab_host"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#lab_host)</span>

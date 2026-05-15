@@ -683,7 +683,11 @@ DGGE: C12</pre>
 : &lt;text&gt; (全角, ダブルクォーテーション ( " ) 不可) 
 
 例
-: <pre>rumen isolates from standard pelleted ration-fed steer #6</pre>
+: <pre>marine water
+paddy soil
+sediment
+spotted leaf
+rumen isolates from standard pelleted ration-fed steer #6</pre>
 
 
 ### /lab_host<a name="lab_host"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#lab_host)</span>
