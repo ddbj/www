@@ -7,7 +7,7 @@ current_tab: home
 lang: en
 ---
 
-The original site; [The DDBJ/ENA/GenBank Feature Table Definition](https://insdc.org/submitting-standards/feature-table/ ) Version 11.3 October 2024
+The original site; [The DDBJ/ENA/GenBank Feature Table Definition](https://insdc.org/submitting-standards/feature-table/ ) Version 11.4 April 2026
 
 ```
 The DDBJ/ENA/GenBank Feature Table Definition
@@ -1121,6 +1121,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
 
 Organism scope        eukaryotes
 
@@ -1133,7 +1134,9 @@ Organism scope        eukaryotes
 Definition            coding sequence; sequence of nucleotides that
                       corresponds with the sequence of amino acids in a
                       protein (location includes stop codon); 
-                      feature includes amino acid conceptual translation.
+                      feature must include amino acid conceptual translation unless
+                      pseudo, pseudogene, exception or transl_except are present;
+                      feature must include protein_id and product unless pseuodgene
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#artificial_location">artificial_location</a>="[artificial_location_value]"
@@ -1159,6 +1162,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#ribosomal_slippage">ribosomal_slippage</a>
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
                       /<a href="#translation">translation</a>="text"
                       /<a href="#transl_except">transl_except</a>=(pos:&lt;location&gt;,aa:&lt;amino_acid&gt;)
                       /<a href="#transl_table">transl_table</a>=&lt;integer&gt;
@@ -1246,6 +1250,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
 
 Organism scope        eukaryotes
 </pre>
@@ -1364,7 +1369,8 @@ Comment               e.g., in the somatic processing of immunoglobulin genes.
 
 Definition            a segment of DNA that is transcribed, but removed from
                       within the transcript by splicing together the sequences
-                      (<a href="#exon">exon</a>s) on either side of it;
+                      (<a href="#exon">exon</a>s) on either side of it; intron must be a minimum of
+                      10 nucelotides in length
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;identifier&gt;"
@@ -1406,6 +1412,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
 
 Organism scope        eukaryotes
 </pre>
@@ -1436,6 +1443,9 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+
+Comment               Peptide features must be within the location of a CDS feature 
+                      that contains a translation and must be in frame to that translation
 </pre>
 
 -----
@@ -1576,6 +1586,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
                       /<a href="#trans_splicing">trans_splicing</a>
 </pre>
 
@@ -1678,6 +1689,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
                       /<a href="#trans_splicing">trans_splicing</a>
 </pre>
 
@@ -1707,6 +1719,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
                       /<a href="#trans_splicing">trans_splicing</a>
 
 Example               /ncRNA_class="miRNA"
@@ -1739,6 +1752,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
 
 Organism scope        eukaryotes
 </pre>
@@ -1876,6 +1890,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#q_operon">operon</a>="text"
                       /<a href="#product">product</a>="text"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
                       /<a href="#trans_splicing">trans_splicing</a>
 
 Comment               used for RNA which may be the result of 
@@ -1906,6 +1921,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#old_locus_tag">old_locus_tag</a>="text" (single token)
                       /<a href="#q_operon">operon</a>="text"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
 </pre>
 
 -----
@@ -1933,10 +1949,6 @@ Comment               used to annotate the site on a given sequence to which a p
                       molecule binds - not intended to represent the sequence of the
                       primer molecule itself; PCR components and reaction times may 
                       be stored under the "/<a href="#PCR_conditions">PCR_conditions</a>" qualifier; 
-                      since PCR reactions most often involve pairs of primers,
-                      a single primer_bind key may use the order() operator
-                      with two locations, or a pair of primer_bind keys may be
-                      used.
 </pre>
 
 -----
@@ -1961,6 +1973,9 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+
+Comment               Peptide features must be within the location of a CDS feature 
+                      that contains a translation and must be in frame to that translation
 </pre>
 
 -----
@@ -2095,6 +2110,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
 
 Comment               rRNA sizes should be annotated with the /<a href="#product">product</a>
                       qualifier. 
@@ -2123,6 +2139,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
 
 Organism scope        eukaryotes
 </pre>
@@ -2151,6 +2168,9 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+
+Comment               Peptide features must be within the location of a CDS feature 
+                      that contains a translation and must be in frame to that translation
 </pre>
 
 -----
@@ -2294,6 +2314,10 @@ Optional qualifiers   /<a href="#db_xref">db_xref</a>="&lt;database&gt;:&lt;iden
                       /<a href="#rpt_unit_seq">rpt_unit_seq</a>="text"
                       /<a href="#standard_name">standard_name</a>="text"
 
+Molecule scope        DNA
+
+Organism scope        eukaryotes
+
 Comment               the telomere feature describes the interval of DNA 
                       that corresponds to a specific structure at the end of 
                       the linear eukaryotic chromosome which is required for 
@@ -2329,6 +2353,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
                       /<a href="#tag_peptide">tag_peptide</a>=&lt;base_range&gt;
+                      /<a href="#transcript_id">transcript_id</a>="text"
 </pre>
 
 -----
@@ -2355,14 +2380,17 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+
+Comment               Peptide features must be within the location of a CDS feature 
+                      that contains a translation and must be in frame to that translation
 </pre>
 
 -----
 
 <pre id="tRNA"><strong>Feature Key           tRNA</strong>
 
-Definition            mature transfer RNA, a small RNA molecule (75-85 bases
-                      long) that mediates the translation of a nucleic acid
+Definition            mature transfer RNA, a small RNA molecule (limited to 50-150
+                      bases long) that mediates the translation of a nucleic acid
                       sequence into an amino acid sequence;
 
 Optional qualifiers   /<a href="#allele">allele</a>="text"
@@ -2384,6 +2412,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
                       /<a href="#trans_splicing">trans_splicing</a>
+                      /<a href="#transcript_id">transcript_id</a>="text"
 </pre>
 
 -----
@@ -2439,6 +2468,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
 
 Organism scope        eukaryotes
 </pre>
@@ -2466,6 +2496,7 @@ Optional qualifiers   /<a href="#allele">allele</a>="text"
                       /<a href="#pseudo">pseudo</a>
                       /<a href="#pseudogene">pseudogene</a>="TYPE"
                       /<a href="#standard_name">standard_name</a>="text"
+                      /<a href="#transcript_id">transcript_id</a>="text"
 
 Organism scope        eukaryotes
 </pre>
@@ -2732,7 +2763,9 @@ Comment         not to be used for new entries from Jan-2025; may
 <pre id="codon_start"><strong>Qualifier       /codon_start=</strong>
 Definition      indicates the offset at which the first complete codon of a
                 coding feature can be found, relative to the first base of that
-                feature.
+                feature. 
+                Coding regions with complete amino-termini must be set to 1.
+
 Value format    1 or 2 or 3
 Example         /codon_start=2
 </pre>
@@ -3231,7 +3264,7 @@ Value format    "[CATEGORY:]TYPE[ (same species)][:EVIDENCE_BASIS]"
                 based on phenotype, genetic approach, biochemical function, pathway
                 information, etc.
                 "EXISTENCE" support for the known or inferred existence of the product
-
+##########################################################################################
                 where TYPE is one of the following:
                 "non-experimental evidence, no additional details recorded"
                    "similar to sequence"
@@ -3247,6 +3280,10 @@ Value format    "[CATEGORY:]TYPE[ (same species)][:EVIDENCE_BASIS]"
                       "ab initio prediction"
                    "alignment"
 
+PROPOSAL IN NCBI-11 [2025] to move the TYPE vocab to INSDC web page, therefore it is 
+proposed that this text is removed in FT 11.4 with addition of two new inference types 
+"domain architecture" & "ortholog evidence"
+##########################################################################################
                 where the optional text "(same species)" is included when the
                 inference comes from the same species as the entry.
 
@@ -3549,10 +3586,9 @@ Example         /operon="lac"
 <pre id="organelle"><code><strong>Qualifier       /organelle= </strong>
 Definition      type of membrane-bound intracellular structure from which the 
                 sequence was obtained
-Value format    chromatophore, hydrogenosome, mitochondrion, nucleomorph,
-                plastid, mitochondrion:kinetoplast, plastid:chloroplast,
-                plastid:apicoplast, plastid:chromoplast, plastid:cyanelle, 
-                plastid:leucoplast, plastid:proplastid
+Value format    chromatophore, hydrogenosome, mitochondrion, nucleomorph, nitroplast, plastid,
+                mitochondrion:kinetoplast, plastid:chloroplast, plastid:apicoplast,
+                plastid:chromoplast, plastid:cyanelle, plastid:leucoplast, plastid:proplastid
 Examples        /organelle="chromatophore"
                 /organelle="hydrogenosome"
                 /organelle="mitochondrion"
@@ -3565,6 +3601,7 @@ Examples        /organelle="chromatophore"
                 /organelle="plastid:cyanelle"
                 /organelle="plastid:leucoplast"
                 /organelle="plastid:proplastid"
+                /organelle="nitroplast"
 Comments        modifier text limited to values from controlled list
                 Please also visit: <a href="https://www.insdc.org/submitting-standards/controlled-vocabulary-organelle-qualifier/">https://www.insdc.org/submitting-standards/controlled-vocabulary-organelle-qualifier/</a>. 
 </code></pre>
@@ -4062,6 +4099,8 @@ Definition      name of sub-species of organism from which sequence was
                 obtained
 Value format    "text"
 Example         /sub_species="lactis"
+Comment         not to be used for new entries from Jul-2026; may
+                still be encountered on records prior to this date.
 </pre>
 
 -----
@@ -4109,6 +4148,18 @@ Example         /tissue_type="liver"
 
 -----
 
+<pre id="transcript_id"><strong>Qualifier       /transcript_id=</strong>
+Definition      identifies the RNA or CDS features from which the transcript was derived.
+Value format    text
+Example         /transcript_id
+Comment         transcript_id values must be unique across a whole genome  and would appear 
+                on both mRNA and CDS features, similar to how /<a href="#locus_tag">locus_tag</a> shows on all features of the same 
+                gene. Transcript_ids may be based on the locus_tag, but there are no explicit constraints on 
+                the transcript_id value.
+</pre>
+
+-----
+
 <pre id="transgenic"><strong>Qualifier       /transgenic</strong>
 Definition      identifies the source feature of the organism which was 
                 the recipient of transgenic DNA.
@@ -4131,14 +4182,16 @@ Comment         transgenic sequences must have at least two source feature keys;
 Definition      automatically generated one-letter abbreviated amino acid
                 sequence derived from either the universal genetic code or the
                 table as specified in /<a href="#transl_table">transl_table</a> and as determined by an
-                exception in the /<a href="#transl_except">transl_except</a> qualifier
+                exception in the /<a href="#transl_except">transl_except</a> qualifier or an appropriate
+                /<a href="#exception">exception</a> value
 Value format    IUPAC one-letter amino acid abbreviation, "X" is to be used
                 for AA exceptions.
 Example         /translation="MASTFPPWYRGCASTPSLKGLIMCTW"
 Comment         to be used with <a href="#fCDS">CDS</a> feature only; this is a mandatory qualifier 
                 in the <a href="#fCDS">CDS</a> feature key except where /<a href="#pseudogene">pseudogene</a>="TYPE" or /<a href="#pseudo">pseudo</a>
                 is shown; see /<a href="#transl_table">transl_table</a> for definition and location of genetic 
-                code tables. 
+                code tables. Translation must be at least 30 amino acids long unless 
+                evidence or inference are provided
 </pre>
 
 -----
@@ -4146,7 +4199,8 @@ Comment         to be used with <a href="#fCDS">CDS</a> feature only; this is a 
 <pre id="transl_except"><strong>Qualifier       /transl_except=</strong>
 Definition      translational exception: single codon the translation of which
                 does not conform to genetic code defined by /<a href="#organism">organism</a> or 
-                /<a href="#transl_table">transl_table</a>.
+                /<a href="#transl_table">transl_table</a>; can be used over a stop codon only for biological
+                reasons, such as readthrough protein
 Value format    (pos:&lt;location&gt;,aa:&lt;amino_acid&gt;) where amino_acid is the
                 amino acid coded by the codon at the base_range position
 Example         /transl_except=(pos:213..215,aa:Trp)
@@ -4191,7 +4245,14 @@ Example         /trans_splicing
 Comment         should be used on features such as <a href="#fCDS">CDS</a>, <a href="#mRNA">mRNA</a> and other features
                 that are produced as a result of a trans-splicing event. This
                 qualifier should be used only when the splice event is indicated in
-                the "join" operator, eg join(complement(69611..69724),139856..140087) 
+                the "join" operator, and may exist across different records if
+                biologically indicated, such as when splicing occurs between different
+                mitochondrial mincircles: 
+
+                eg join(complement(69611..69724),139856..140087)
+
+                join(complement(1751..2137),complement(PP239752.1:10115..10198),complement(PP239752.1:850
+                ..8751),PP239768.1:17152..17214,complement(PP239788.1:10566..10823))
 </pre>
 
 -----
@@ -4227,6 +4288,8 @@ Comment         use the cultivar qualifier for cultivated plant
                 varieties, i.e., products of artificial selection;
                 varieties other than plant and fungal variatas should be 
                 annotated via /<a href="#note">note</a>, e.g. /<a href="#note">note</a>="breed:Cukorova"
+Comment         not to be used for new entries from Jul-2026; may
+                still be encountered on records prior to this date.
 </pre>
 
 ### 7.4 Appendix IV: Controlled vocabularies  <a name="7-4"></a>
