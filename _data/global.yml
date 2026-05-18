@@ -1,7 +1,7 @@
 top_news:
  ja:
-    - title: 塩基配列データ登録における INSDC minimal specifications を策定
-      path: 2026-03-19
+    - title: 特許出願に伴う配列表の新規フォーマットST.26データの公開のお知らせ
+      path: 2026-05-01
  en:  
-    - title: INSDC Minimal Specifications
-      path: 2026-03-19-e
+    - title: Data release for new sequence listings of patent application in ST.26
+      path: 2026-05-01-e
