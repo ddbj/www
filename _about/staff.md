@@ -195,7 +195,7 @@ category: about
         <p class="photo"><img src="/assets/images/staff/he.jpg" title="Ziye He"></p>
         <div class="explanation">
             <p class="name">何子易</p>
-            <p class="name">Ziye He</p>
+            <p class="name">Ziyi He</p>
             <p class="position">システム開発・国際連携</p>
         </div>
         </li>
