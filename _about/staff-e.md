@@ -174,7 +174,7 @@ category: about
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/he.jpg" title="Ziyi He"></p>
         <div class="explanation">
-            <p class="name">Ziye He</p>
+            <p class="name">Ziyi He</p>
             <p class="position">Development & International Affairs</p>
         </div>
         </li>

@@ -192,7 +192,7 @@ category: about
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/he.jpg" title="Ziye He"></p>
+        <p class="photo"><img src="/assets/images/staff/he.jpg" title="Ziyi He"></p>
         <div class="explanation">
             <p class="name">何子易</p>
             <p class="name">Ziyi He</p>
