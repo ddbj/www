@@ -44,8 +44,8 @@ items:
       en: ddbj-search-e
       ja: ddbj-search
     description:
-      en: Search INSDC BioProject/BioSample/SRA and JGA data by accession numbers and keywords
-      ja: INSDC BioProject/BioSample/SRA, JGA データをアクセッション番号やキーワードで検索
+      en: Search INSDC BioProject/BioSample/SRA and JGA/GEA/MetaboBank data by accession numbers and keywords
+      ja: INSDC BioProject/BioSample/SRA, JGA/GEA/MetaboBank データをアクセッション番号やキーワードで検索
     target_data:
       en: Raw sequencing data and metadata information
       ja: 生シークエンスデータとメタデータ情報
