@@ -50,7 +50,7 @@ SAMD00020000
 
 #### 2) Keywords
 - Input the term or letters of the metadata of BioProject, BioSample, SRA, JGA , GEA and MetaboBank records.  
-- Contents of Title and Description are searchable.  
+- Contents of Title, Description and Organism are searchable.  
 - Performs a forward-matching, case-insensitive search.  
 - AND/OR search is not available.  
 

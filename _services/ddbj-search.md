@@ -57,7 +57,7 @@ related_pages:
 
 #### 2) キーワード
 - BioProject、BioSample、SRA、JGA、GEA、MetaboBankのメタデータの内容をキーワードとして入力します。  
-- 検索対象は、TitleとDescriptionの記載内容になります。  
+- 検索対象は、Title、Description とOrganism の記載内容になります。  
 - 入力した文字列に対して、前方一致、大文字小文字の区別なしで検索を行います。  
 - AND/OR 検索はできません。入力された文字列は、スペースも含めて一つながりの文字列として検索します。  
 例：Homo sapiens  
