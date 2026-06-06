@@ -175,6 +175,7 @@ Submission Type		|登録の種別 (例：LC-MS、GC-MS)
 [SRA] fastq        　　　　　     |FASTQ
 [SRA] sra          　　　　　     |SRA
 [SRA]のanalysisデータ             |DATA
+[GEA]のメタデータ                 |DATA
 
 ## WebAPI プログラムによる検索
 

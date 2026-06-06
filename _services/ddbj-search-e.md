@@ -168,6 +168,7 @@ Submission Type		|The type of this submission (Examples: LC-MS, GC-MS)
 [SRA] fastq                     |FASTQ
 [SRA] sra                       |SRA
 [SRA] analysis data             |DATA
+[GEA] metadata                  |DATA
 
 ## Search by WebAPI
 
