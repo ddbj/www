@@ -113,9 +113,7 @@ Configure as follows.
     
 When first time access, a waring message will be shown and select "Yes" (it will not be shown in next time). Enter a passphrase if it has been set.  
 
-{% include image.html url="books/jga-winscp3-e.jpg" caption="WinSCP data file transfer" class="w400" %}
-    
-After login, drag and drop JGA data files in the right window to the local server in the left window.
+After login, drag and drop JGA data files in the DU number directory in the right window to the local server in the left window.
 
 ### sftp download {#sftp}
 
@@ -130,6 +128,8 @@ $ sftp -i ~/.ssh/id_rsa -P 443 account_b@jga-gw.ddbj.nig.ac.jp
 $ cd controlled-access/download/jga/
 $ get -r J-DU999991
 ```
+
+### Structure of the downloaded directory {#dir}
 
 In the DU directory, there are study directory and tools directory which contains the decryption tools. 
 The Dataset directory under the Study directory contains metadata in tab-delimited text (tsv) and XML formats, and the Data and Analysis directories contain encrypted data files.
