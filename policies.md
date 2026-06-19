@@ -292,12 +292,12 @@ Google アナリティクス オプトアウト アドオン
 \*2 個人識別符号については DBCLS の FAQ を参照してください。 個人識別符号の定義は個人情報保護委員会の「個人情報の保護に関する法律についてのガイドライン（通則編）」に示されています。
 
 **参考情報**
-* 個人情報保護委員会　個人情報保護法　法令・ガイドラインなど
-* 人を対象とする生命科学・医学系研究に関する倫理指針
-* NBDC ヒトデータ共有ガイドライン
-* NBDCヒトデータ取扱いセキュリティガイドライン
-* NBDC ヒトデータベース よくあるご質問（FAQ）
-* ヒトデータに関するデータベース事業について研究対象者などに公開すべき事項
+* [個人情報保護委員会](https://www.ppc.go.jp/)　[個人情報保護法](https://www.ppc.go.jp/personalinfo/)　法令・ガイドラインなど
+* [人を対象とする生命科学・医学系研究に関する倫理指針](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hokabunya/kenkyujigyou/i-kenkyu/index.html)
+* [NBDC ヒトデータ共有ガイドライン](https://humandbs.dbcls.jp/guidelines/data-sharing-guidelines)
+* [NBDCヒトデータ取扱いセキュリティガイドライン](https://humandbs.dbcls.jp/guidelines/security-guidelines-for-users)
+* [NBDC ヒトデータベース よくあるご質問（FAQ）](https://humandbs.dbcls.jp/faq)
+* [ヒトデータに関するデータベース事業について研究対象者などに公開すべき事項](https://www.ddbj.nig.ac.jp/human-data-sharing.html)
 
 ## サービス・データ利用に対するクレジット {#credit}
 利用者は、生命情報・DDBJセンター（以下、「センター」）が提供するウェブサイトのコンテンツ、サービスやデータを利用した場合において、適切なクレジットをセンター及び提供者に対して付与しなくてはなりません。

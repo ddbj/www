@@ -287,11 +287,11 @@ Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (D
 \*2 Please refer to the DBCLS FAQs, in regard to personal identification code. Personal identification code is defined in the '[Guidelines on the Act on the Protection of Personal Information (Volume on General Rules) (Japanese language only)](https://www.ppc.go.jp/)' of [the Personal Information Protection Commission](https://www.ppc.go.jp/en/).
 
 Related Information
-  * Personal Information Protection Commission, Act on the Protection of Personal Information, Laws and regulations, guidelines etc.
-  * Ethical Guidelines for Medical and Health Research Involving Human Subjects
-  * NBDC Human Data Sharing Guidelines
-  * NBDC Security Guidelines for Human Data
-  * NBDC Human Database (FAQ)
+  * [Personal Information Protection Commission](https://www.ppc.go.jp/en/index.html), Act on the Protection of Personal Information, Laws and regulations, guidelines etc.
+  * [Ethical Guidelines for Medical and Health Research Involving Human Subjects](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hokabunya/kenkyujigyou/i-kenkyu/index.html)
+  * [NBDC Human Data Sharing Guidelines](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines)
+  * [NBDC Security Guidelines for Human Data](https://humandbs.dbcls.jp/en/guidelines/security-guidelines-for-users)
+  * [NBDC Human Database (FAQ)](https://humandbs.dbcls.jp/faq)
   * [Notification for research participants regarding our database activities for human data](/reaserch-participant-notification-e.html)
 
 ## Credits for Services and Data Use {#credit}
