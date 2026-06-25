@@ -169,6 +169,7 @@ Submission Type		|The type of this submission (Examples: LC-MS, GC-MS)
 [SRA] sra                       |SRA
 [SRA] analysis data             |DATA
 [GEA] metadata                  |DATA
+[MetaboBank] raw and metadata   |DATA
 
 ## Search by WebAPI
 

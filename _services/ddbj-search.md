@@ -176,6 +176,7 @@ Submission Type		|登録の種別 (例：LC-MS、GC-MS)
 [SRA] sra          　　　　　     |SRA
 [SRA]のanalysisデータ             |DATA
 [GEA]のメタデータ                 |DATA
+[MetaboBank]のRAWとメタデータ     |DATA
 
 ## WebAPI プログラムによる検索
 
