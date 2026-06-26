@@ -411,9 +411,9 @@ QR      JPO             Patent application
 QS      JPO             Patent application
 QT      JPO             Patent application
 QU      JPO             Patent application
-QV      DDBJ            
-QW      DDBJ            
-QX      DDBJ            
+QV      MOIP            Patent application
+QW      JPO             Patent application
+QX      JPO             Patent application
 QY      DDBJ            
 R       GenBank         EST
 RB      DDBJ            
