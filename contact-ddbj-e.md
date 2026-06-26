@@ -6,7 +6,7 @@ lang: en
 
 <div class="attention" markdown="1">
 - [Do not block our e-mails](/precautions-e.html)
-- If the contact form is not displayed, please see "[Contact form is not displayed](/faq/en/contact-form-not-displayed)".
+- If the contact form is not displayed, please see "[Contact form is not displayed](/faq/en/contact-form-not-displayed-e.html)".
 </div>
 
 ## Contact us {#contact}
