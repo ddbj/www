@@ -1,6 +1,6 @@
 ---
 layout: simple
-title: アクセスと利益配分（ABS）に関する国内法・国際的なルールについて
+title: アクセスと利益配分に関する国内法・国際的なルールについて
 category: faq
 db:
   - bioproject
@@ -13,7 +13,7 @@ db:
   - togovar
 tags: 
   - Policy
-date: 2026-06-30T11:41:47
+date: 2026-06-30T01:41:47
 lang: ja
 ---
 
