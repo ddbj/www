@@ -6,12 +6,12 @@ lang: en
 
 ## Terms of Use {#terms-of-use}
 
-Last updated: 1st April, 2024
+Last updated: 30th June, 2026
 
 ### Definitions {#definition-of-terms}
 In this Terms of Use, each of the following terms have the following meanings:
   - 'Organization' means the Research Organization of Information and Systems.
-  - 'Center' means the Bioinformation and DDBJ Center of the National Institute of Genetics, the Research Organization of Information and Systems.
+  - 'Center' means the BioData Science Initiative of the National Institute of Genetics, the Research Organization of Information and Systems.
   - 'unrestricted-access database' means a database by which center provides data to user without imposing any restriction on its use or distribution.
   - 'controlled-access database' means a database by which center provides data to user imposing restriction on its use.
   - 'submitted data' means data that submitter provides to Center.
@@ -20,14 +20,15 @@ In this Terms of Use, each of the following terms have the following meanings:
   - 'controlled-access data' means data that Center provides to user from the controlled-access database imposing restriction on its use.
 
 ### General {#general-regulations}
-  1. Bioinformation and DDBJ Center of the National Institute of Genetics, the Research Organization of Information and Systems (hereinafter referred to as 'Center') supports life-science research by providing websites, search and analysis services, database service (hereinafter referred to as 'online services') and supercomputer system (these services will be hereinafter collectively referred to as 'our services'). When a person starts to using our services (the person who uses our services will be hereinafter referred to as 'user'), user shall be deemed to have agreed to the Terms of Use stipulated below. Furthermore, in regard to services for which terms of use are independently stipulated (hereinafter referred to as 'Individual Terms of Use'), such Individual Terms of Use will apply to the use of such service in addition to the Terms of Use, and will prevail over the Terms of Use.
+  1. BioData Science Initiative of the National Institute of Genetics, the Research Organization of Information and Systems (hereinafter referred to as 'Center') supports life-science research by providing websites, search and analysis services, database service (hereinafter referred to as 'online services') and supercomputer system (these services will be hereinafter collectively referred to as 'our services'). When a person starts to using our services (the person who uses our services will be hereinafter referred to as 'user'), user shall be deemed to have agreed to the Terms of Use stipulated below. Furthermore, in regard to services for which terms of use are independently stipulated (hereinafter referred to as 'Individual Terms of Use'), such Individual Terms of Use will apply to the use of such service in addition to the Terms of Use, and will prevail over the Terms of Use.
   1. Except when caused by intent or gross negligence of Center, Center shall not be liable for any damage arising from the use of our services, and user shall indemnify and hold harmless Center from any damage. Furthermore, in the event any dispute arises between a user and any other user or between a user and a third party in relation to our services, Center shall assume no responsibility, and user shall indemnify and hold center harmless from such dispute.
   1. When using our services, it is requested that user displays appropriate credit.
   1. We may change this Terms of Use and any Individual Terms of Use, when necessary. When making any changes, we shall give notice of the changes (for example, by placing notice on our website) in advance. From the implementation date of the change, the changed Term of Use and Individual Terms of Use shall apply to all users regardless of the day that the user starts using our services, and user is deemed to have agreed to the above.
   1. If any provision or a part of a provision of this Terms of Use or Individual Terms of Use is held invalid or unenforceable by any applicable laws or regulations, such invalidity or unenforceability shall not affect the validity or enforceability of any other provisions (if a part of a provision is held invalid or unenforceable, the remaining part).
   1. The governing law of this Term of Use and service will be the laws of Japan. All disputes arising from or relating to the use of our services or this Term of Use and Individual Terms of Use will be exclusively brought in the Tokyo District Court, as the court of first instance.
   1. The English language version of the Term of Use, Individual Terms of Use, guidelines and policies of Center is only for reference purpose. If there is any contradiction between the Japanese version and the English version, the Japanese version shall prevail.
-
+  1. The user shall comply with all applicable laws, regulations, guidelines, and other applicable norms. This includes, without limitation, those relating to the protection of personal information and privacy, intellectual property rights, access and benefit-sharing of genetic resources, export controls, and economic sanctions.
+  
 ### Online Services {#online-services}
 In regard to software that may be used via our website (either directly or through third party repositories), please use it in accordance with the terms of use of each software.
 
@@ -43,13 +44,13 @@ Contents of websites provided by Center (hereinafter referred to as 'our website
   1. If the operation of our services is transferred to a third party due to change in the status of the online service operations or other situations, we shall announce the transfer of service on our website. If you do not agree to such transfer, you may stop to using our services. If you use our services after the notification, you are deemed to have agreed to the transfer of our services and any succession of involved rights and obligations.
 
 #### Use of Web Browsers {#web-browsers}
-We recommend to use our online service with the latest version of [Chrome](https://www.google.com/chrome/ ), [Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release) and [Edge](https://www.microsoft.com/en-us/edge).
+We recommend to use our online service with the latest version of [Chrome](https://www.google.com/chrome/), [Firefox](https://www.mozilla.org/en-US/firefox/all/#product-desktop-release) and [Edge](https://www.microsoft.com/en-us/edge).
 
 ### Data Usage {#data-use}
 Unless otherwise restricted by an Individual Terms of Use, data provided by Center may be freely used, redistributed and modified.
-  1. [INSDC](/insdc-e.html) data may be freely used, redistributed and modified in accordance with the [INSDC Policy](https://www.insdc.org/policy/ ).
-  1. Japanese Genotype-phenotype Archive (JGA) data shall be used in compliance with the [NBDC Human Data Sharing Guidelines](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines ).
-  1. AMED Genome group sharing Database (AGD) data shall be used in compliance with the [NBDC Human Data Group Sharing Guidelines](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines).
+  1. [INSDC](/insdc.html) data may include data whose use is subject to conditions arising from third-party patents, copyrights, or other intellectual property rights, or from rights relating to access and benefit-sharing of genetic resources, among others. The User shall, at their own responsibility, verify and comply with any applicable conditions.
+  1. Japanese Genotype-phenotype Archive (JGA) data shall be used in compliance with the [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines).
+  1. AMED Genome group sharing Database (AGD) data shall be used in compliance with the [NBDC Human Data Group Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines).
   1. [Third-party data provided by Center](#third-party-data) shall be used in accordance with terms of use of these data.
 
 ### Disclaimer {#disclaimer}
@@ -61,7 +62,7 @@ Unless otherwise restricted by an Individual Terms of Use, data provided by Cent
 Please refer to [Data Submission Guideline](#data-submission-guideline).
 
 ### Usage of NIG Supercomputer System {#sc}
-Please refer to [terms of use of the NIG supercomputer system](https://sc.ddbj.nig.ac.jp/en/application/use_policy/ ).
+Please refer to [terms of use of the NIG supercomputer system (Japanese language only)](https://sc.ddbj.nig.ac.jp/ja/application/regulations).
 
 ### Privacy Policy {#privacy-policy}
 Please refer to the [Privacy Policy](#privacy).
@@ -77,7 +78,7 @@ The following acts are prohibited when using our services or any information:
 If we determine that a user has conducted any of the above acts, we may, without giving any advance notice to such user, suspend the user's use of our websites or services and suspend user's account, delete any data that such user is storing in our services, and notify to relevant authorities or disclose the personal information of the user, and we shall not be responsible for any damage that arises to user due to these measures taken by us.
 
 ## Privacy Policy {#privacy}
-Bioinformation and DDBJ Center of the National Institute of Genetics, the Research Organization of Information and Systems (hereinafter referred to as 'Center') collects and uses personal information to function as a platform to share and analyze biological information that supports life science research. Center will abide to all applicable laws and regulations (including laws and regulations relating to the protection of personal information) relating to the collecting, storing and using of such information, and endeavors to protect the privacy of user and any other data subject in accordance with the following Privacy Policy and [the Personal Information Protection Regulations of the Research Organization of Information and System (Japanese language only)](https://www.rois.ac.jp/pdf/kojinkitei.pdf). Center is the Controller of the processing of personal information in this Privacy Policy.
+BioData Science Initiative of the National Institute of Genetics, the Research Organization of Information and Systems (hereinafter referred to as 'Center') collects and uses personal information to function as a platform to share and analyze biological information that supports life science research. Center will abide to all applicable laws and regulations (including laws and regulations relating to the protection of personal information) relating to the collecting, storing and using of such information, and endeavors to protect the privacy of user and any other data subject in accordance with the following Privacy Policy and [the Personal Information Protection Regulations of the Research Organization of Information and System (Japanese language only)](https://www.rois.ac.jp/pdf/kojinkitei.pdf). Center is the Controller of the processing of personal information in this Privacy Policy.
 
 ### 1. Collection of Information
 We may collect the following personal information:
@@ -127,7 +128,7 @@ We will use collected personal information for the following purposes. If collec
   * To notify any important matters.
 
 #### Submitted data
-Submitted data acquired from human subjects are accepted and provided according to the data principal's consent, and restrictions will be imposed to the data according to the consent. Unrestricted-access data will be provided without any usage restriction, for the research and development purposes. In regard to controlled-access data, the data will be jointly used with the Database Center for Life Science of the Research Organization of Information and Systems (hereinafter referred to as 'DBCLS'), and will be provided to user in accordance with the [NBDC Human Data Sharing Guidelines](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines) or [NBDC Human Data Group Sharing Guidelines (Japanese language only)](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines). Please refer to '[NBDC Human Database](https://humandbs.dbcls.jp/en/)' in regard to the Privacy Policy relating to submitted data.
+Submitted data acquired from human subjects are accepted and provided according to the data principal's consent, and restrictions will be imposed to the data according to the consent. Unrestricted-access data will be provided without any usage restriction, for the research and development purposes. In regard to controlled-access data, the data will be jointly used with the Department of NBDC Program of the Japan Science and Technology Agency  (hereinafter referred to as 'NBDC'), and will be provided to user in accordance with the [NBDC Human Data Sharing Guidelines](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines) or [NBDC Human Data Group Sharing Guidelines (Japanese language only)](https://humandbs.biosciencedbc.jp/en/guidelines/data-sharing-guidelines). Please refer to '[NBDC Human Database](https://humandbs.biosciencedbc.jp/en/)' in regard to the Privacy Policy relating to submitted data.
 
 Information of Applicants
   * To contact applicants about seminars and events;
@@ -164,7 +165,7 @@ We will not provide personal information to any third party, except for the foll
   * Center is permitted to provide personal information in accordance with laws or regulations; or
   * Personal information is disclosed or provided in a condition where it is impossible to identify a specific user (such as by statistical data).
 
-We may jointly use submitted data, submitter's information of controlled-access database, and access statistic of websites with DBCLS.
+We may jointly use submitted data, submitter's information of controlled-access database, and access statistic of websites with NBDC.
 
 ### 4. Cookies
 Cookies are used in our sites as set forth below. Cookies are small text information set by the server of our websites and are stored in the user's computer. We use cookies to increase the usability of our websites.
@@ -183,7 +184,7 @@ Google Analytics Opt-Out Add-On
 ### 5. Visiting an Official Center Page on Third-Party Websites
 We use services (such as social media) operated by third parties as tools to better interact with the public. The privacy and security policies of the third-party sites will apply to your activity on those sites.
 
-Please see '[Bioinformation and DDBJ Center's Official Sites in Social Media](#third-party-sites)' in regard to third-party sites used by Center.
+Please see '[BioData Science Initiative's Official Sites in Social Media](#third-party-sites)' in regard to third-party sites used by Center.
 
 When you have an account on the third-party service and perform acts (such as 'follow' or make comments) on our official site, your personal information will be collected in accordance with the privacy policy of the service and privacy settings of your account. For handling personal information collected by such service, please check the privacy policy of each service. We will not share personal information collected through these services, except with our employees.
 
@@ -214,12 +215,12 @@ Address:
 1111 Yata, Mishima, Shizuoka 411-8540, Japan
 Research Organization of Information and Systems
 National Institute of Genetics
-Bioinformation and DDBJ Center
+BioData Science Initiative
 
-Contact Method: By [Contact Form](https://forms.gle/ZXteuEPM4SSm5HUt8)
+Contact Method: By [Contact Form](/contact-e.html)
 
 ## Data Submission Guideline {#data-submission-guideline}
-This is a guideline for submitting data to the databases operated by the Bioinformation and DDBJ Center (hereinafter referred to as 'Center'), and sets forth the rights of submitters and items to be observed.
+This is a guideline for submitting data to the databases operated by the BioData Science Initiative (hereinafter referred to as 'Center'), and sets forth the rights of submitters and items to be observed.
 
 ### Data Processing {#data-processing}
 Center may correct obvious errors and inconsistencies, convert format or add relevant information to data provided by submitters, for maintaining quality and improving usability of the data. Center must obtain submitter's permission in cases where it will process data beyond such purpose.
@@ -238,8 +239,6 @@ Center discloses data to the public in accordance with the following principles.
   1.  When the submitter requests us to release the data.
   1.  When the accession number corresponding to data is published and is confirmed. 'Publish' means to disclose the accession number to an unspecified number of people by announcement through various media such as academic papers (including 'in press' articles made public by on-line preview and preprint server), academic meetings, Internet or press reports. It also includes accession numbers cited in published data, such as accession numbers cited by DDBJ/DRA/GEA/BioSample records. It will not include cases when a third party (excluding submitter) publishes another person's accession number through negligence.
   1.  When the specified hold-date set by submitter arrives.
-
-Related Information [Hold-Until-Published data release](/insdc/data-release-policy-e.html)
 
 ### Fair Use of Submission System {#fair-use-policy}
 #### Use of File Upload Area {#data-upload-area}
@@ -265,13 +264,13 @@ User shall agree that, in the following cases, we will provide necessary user's 
 
 ### Submission of Research Data from Human Subjects {#submission-of-human-data}
 #### Before Submitting Data {#before-submission}
-For submitting data obtained from researches using samples derived from human subjects (hereinafter referred to as 'human data') to the databases of Bioinformation and DDBJ Center (hereinafter referred to as 'Center'), it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws and regulations, guiding principles, guidelines, and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your metadata.
+For submitting data obtained from researches using samples derived from human subjects (hereinafter referred to as 'human data') to the databases of BioData Science Initiative (hereinafter referred to as 'Center'), it is submitter's responsibility to ensure that the dignity and right of human subject are protected in accordance with all applicable laws and regulations, guiding principles, guidelines, and policies of submitter's institution. In principle, make sure to remove any direct personal identifiers of human subjects from your metadata.
 
 When you are submitting human data obtained from researches other than researches falling outside the scope of laws, regulations and guidelines (for example, researches using widely utilized and generally available samples of academically established value (\*1)), make sure the followings.
 
 * The research plan describing experimental methods, research targets (for example, diseases and samples), and ways of data publication and sharing, has been approved by the institutional review board and by the head of institution who oversees the research.
 * The research plan and the informed consent documents describe that human data are deposited to databases, in addition, when the data are to be deposited as controlled-access data, "the data are to be shared among domestic and international researchers including those belong to private companies, who meet user requirements", and when the data are to be deposited as unrestricted-access data, "the data are to be published on the Internet in a form that anyone can view and access".
-* Before submitting data, you need to present an application (for data to be submitted) to the Human Data Review Board of DBCLS and obtain the Board’s approval upon review thereby.
+* Before submitting data, you need to present an application (for data to be submitted) to the Data Access Committee of the Department of NBDC Program (NBDC) of Japan Science and Technology Agency and obtain the Committee’s approval upon review thereby.
 
 \*1 HeLa whole genome sequence data should be submitted to the [NCBI Database of Genotypes and Phenotypes (dbGaP)](https://www.ncbi.nlm.nih.gov/gap/).
 
@@ -282,35 +281,35 @@ Before submitting human data, please consider whether controlled-access is requi
 Submit your data to the controlled-access database '[Japanese Genotype-phenotype Archive (JGA)](/jga/index-e.html)'.
 
 #### Unrestricted-Access Database {#unrestricted-access}
-Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html), [Genomic Expression Archive (GEA)](/gea/index-e.html), [MetaboBank](/metabobank/index-e.html) or [DDBJ](/ddbj/index-e.html). In principle, you can not submit data corresponding to personal identification code (\*2) to unrestricted-access databases. When you want to submit data corresponding to personal identification code to unrestricted-access databases, please contact the DBCLS. In principle, it is necessary to obtain consents for unrestricted public disclosure of genome data corresponding to personal identification code through databases.
+Submit your data to unrestricted-access databases [DDBJ Sequence Read Archive (DRA)](/dra/index-e.html), [Genomic Expression Archive (GEA)](/gea/index-e.html), [MetaboBank](/metabobank/index-e.html) or [DDBJ](/ddbj/index-e.html). In principle, you can not submit data corresponding to personal identification code (\*2) to unrestricted-access databases. When you want to submit data corresponding to personal identification code to unrestricted-access databases, please contact the NBDC. In principle, it is necessary to obtain consents for unrestricted public disclosure of genome data corresponding to personal identification code through databases.
 
-\*2 Please refer to the DBCLS FAQs, in regard to personal identification code. Personal identification code is defined in the '[Guidelines on the Act on the Protection of Personal Information (Volume on General Rules) (Japanese language only)](https://www.ppc.go.jp/)' of [the Personal Information Protection Commission](https://www.ppc.go.jp/en/).
+\*2 Please refer to the NBDC FAQs, in regard to personal identification code. Personal identification code is defined in the '[Guidelines on the Act on the Protection of Personal Information (Volume on General Rules) (Japanese language only)](https://www.ppc.go.jp/)' of [the Personal Information Protection Commission](https://www.ppc.go.jp/en/).
 
 Related Information
-  * [Personal Information Protection Commission](https://www.ppc.go.jp/en/index.html), Act on the Protection of Personal Information, Laws and regulations, guidelines etc.
-  * [Ethical Guidelines for Medical and Health Research Involving Human Subjects](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hokabunya/kenkyujigyou/i-kenkyu/index.html)
-  * [NBDC Human Data Sharing Guidelines](https://humandbs.dbcls.jp/en/guidelines/data-sharing-guidelines)
-  * [NBDC Security Guidelines for Human Data](https://humandbs.dbcls.jp/en/guidelines/security-guidelines-for-users)
-  * [NBDC Human Database (FAQ)](https://humandbs.dbcls.jp/faq)
+  * Personal Information Protection Commission, Act on the Protection of Personal Information, Laws and regulations, guidelines etc.
+  * Ethical Guidelines for Medical and Health Research Involving Human Subjects
+  * NBDC Human Data Sharing Guidelines
+  * NBDC Security Guidelines for Human Data
+  * NBDC Human Database (FAQ)
   * [Notification for research participants regarding our database activities for human data](/reaserch-participant-notification-e.html)
 
 ## Credits for Services and Data Use {#credit}
-When you are using contents, services and data provided in the website of Bioinformation and DDBJ Center (hereinafter referred to as 'Center'), you must give appropriate credit to Center and the provider of the contents, services and data.
+When you are using contents, services and data provided in the website of BioData Science Initiative (hereinafter referred to as 'Center'), you must give appropriate credit to Center and the provider of the contents, services and data.
 
 ### Website {#credit-for-website}
 When using any content on our website, you must describe the credit (type of license and copyright owner) for each content as recommended in [Creative Commons Attribution 4.0 International License (CC-BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.en).
 
-### Citation of Bioinformation and DDBJ Center {#credit-for-center}
-When citing the Bioinformation and DDBJ Center itself, please cite [the latest article for Center's activities in general](/references-e.html#ddbj).
+### Citation of BioData Science Initiative {#credit-for-center}
+When citing the BioData Science Initiative itself, please cite [the latest article for Center's activities in general](/references-e.html#ddbj).
 
 ### Service {#credit-for-service}
 When you use a specific service provided by us, please cite the [original article for each service](/references-e.html). If the original article is not available, please cite the URL of each service. If such use is not equivalent to citing an article, please state one of the following example sentences with necessary changes as an acknowledgement.
 
 Japanese:
-本研究は、生命情報・DDBJセンターの [データベース、検索・解析サービス名] を利用しました。
+本研究は、バイオデータ研究拠点の [データベース、検索・解析サービス名] を利用しました。
 
 English:
-This research was performed using [database, search or analytical service name] of Bioinformation and DDBJ Center.
+This research was performed using [database, search or analytical service name] of BioData Science Initiative.
 
 If you announce your results obtained from using our supercomputer system, please state one of the following example sentences with necessary changes as an acknowledgement.
 
@@ -323,8 +322,8 @@ Computations were partially performed on the NIG Supercomputer at ROIS National 
 ### Data {#credit-for-data}
 When citing individual data, please cite the accession number of the data and (if necessary) its version. When discussing the individual data in details, it is appropriate to cite the article reporting the data.
 
-## Usage of Third Party Data Provided by Bioinformation and DDBJ Center {#third-party-data}
-Regarding usage of data that Bioinformation and DDBJ Center provides secondarily through download by FTP or other services, such usage will comply with the terms of use set forth in the following links.
+## Usage of Third Party Data Provided by BioData Science Initiative {#third-party-data}
+Regarding usage of data that BioData Science Initiative provides secondarily through download by FTP or other services, such usage will comply with the terms of use set forth in the following links.
 
 * NCBI Refseq [ddbj.nig.ac.jp/public/mirror_database/refseq/release/README](https://ddbj.nig.ac.jp/public/mirror_database/refseq/release/README)
 * PDB [ftp.wwpdb.org/pub/pdb/advisory.txt](https://ftp.wwpdb.org/pub/pdb/advisory.txt)
@@ -333,10 +332,11 @@ Regarding usage of data that Bioinformation and DDBJ Center provides secondarily
 * HINV [ddbj.nig.ac.jp/public/mirror_database/hinv/README.txt](https://ddbj.nig.ac.jp/public/mirror_database/hinv/README.txt)
 * International Genome Sample Resource (IGSR) [www.internationalgenome.org/IGSR_disclaimer](https://www.internationalgenome.org/IGSR_disclaimer)
 
-## Bioinformation and DDBJ Center Official Sites on Social Media {#third-party-sites}
-Bioinformation and DDBJ Center's official sites (accounts) on social media are as follows:
+## BioData Science Initiative Official Sites on Social Media {#third-party-sites}
+BioData Science Initiative's official sites (accounts) on social media are as follows:
 
 * Twitter: [@ddbj_topics](https://twitter.com/ddbj_topics)
 * Facebook: [ddbjcenter](https://www.facebook.com/ddbjcenter)
 * Youtube channnel: [ddbjvideo](https://www.youtube.com/user/DDBJvideo/)
 * GitHub: [ddbj](https://github.com/ddbj/)
+
