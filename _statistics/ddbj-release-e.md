@@ -11,8 +11,8 @@ addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/load
 
 |  Database  |  Release  |  Date  |  DDBJ date  |  Entries  |  Bases  |  Rate of increase  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-DDBJ               | 141     | 2026-03       | 2026-03   | 6315434539 | 53984236335844 | 9.9%
-DAD                | 111     | 2026-03       | 2026-03   | 393693874  | 167677435772   | 1.2%
+DDBJ               | 142     | 2026-06       | 2026-03   | 6691183636 | 59934906034626 | 11.0%
+DAD                | 112     | 2026-06       | 2026-03   | 399443195  | 169683025004   | 1.2%
 
 {: .tablecaption}
 Date: Official release date recorded in the release note.  
