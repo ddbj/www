@@ -1,11 +1,11 @@
 top_news:
  ja:
-    - title: 特許出願に伴う配列表の新規フォーマットST.26データの公開のお知らせ
-      path: 2026-05-01
     - title: DDBJ リリース 142.0，DAD リリース 112.0 完成
       path: 2026-06-30
+    - title: 利用規約の改訂について（アクセスと利益配分）
+      path: 2026-06-30_2
  en:  
-    - title: Data release for new sequence listings of patent application in ST.26
-      path: 2026-05-01-e
     - title: DDBJ Rel. 142.0, DAD Rel. 112.0 Completed
       path: 2026-06-30-e
+    - title: Revision of the Terms of Use (Access and Benefit-Sharing)
+      path: 2026-06-30_2-e
