@@ -35,7 +35,7 @@ The following sequence data is not acceptable for DDBJ:
   - Sequences without a physical counterpart (consensus sequences)
   - Sequences with length less than 100 nucleotides (since June 2021)
   - Sequence consisting only of primer (since June 2021)
-  - Sequences with length less than 1000 nucleotides in a eukaryote or prokaryotic genome (since June 2026)
+  - Sequences with length less than 1000 nucleotides in a eukaryote or prokaryotic whole genome (since June 2026)
   - Sequence contains more than 50% Ns (since June 2026)
 
 ## Codes for nucleotide sequence  {#code}
