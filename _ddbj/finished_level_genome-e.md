@@ -35,6 +35,7 @@ Nucleotide sequence must meet the following items as finished level genomic sequ
 * If biological features such as CDS, tRNA, rRNA and so on are annotated to the sequences, registration of a[ locus_tag prefix](https://www.ddbj.nig.ac.jp/ddbj/locus_tag-e.html) is mandatory on the submission of [BioSample](https://www.ddbj.nig.ac.jp/biosample/index-e.html) every  genomes.
 * Although annotation of biological features is optional, it is required for genome sequences from species that have not been available.
 * The chromosome number, organelle name, plasmid name, and segment number must be described in the source feature using the specified qualifiers. For [unlocalized](#unlocalized) and [unplaced](#unplaced) sequences, please describe the scaffold or contig number in note qualifier.
+* The [unlocalized](#unlocalized) and [unplaced](#unplaced) sequences cannot be mechanically joined together to create a biologically meaningless sequence that does not exist in nature and to register with a chromosome number such as 0 (or 99). Please register each sequences as a separate scaffold or contig sequences.
 
 Please also visit the following web site in more detail.
 

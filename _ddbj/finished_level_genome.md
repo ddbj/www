@@ -35,6 +35,7 @@ Finished level genomic sequences として登録可能な配列データ
 * source以外のCDS、tRNA、rRNA等の biological feature を記載する場合には、[BioSample](https://www.ddbj.nig.ac.jp/biosample/index.html) の登録時に[locus_tag prefix](https://www.ddbj.nig.ac.jp/ddbj/locus_tag.html) を必ず取得して下さい。
 * biological feature の記載は任意ですが、過去に登録例がない生物種のゲノムデータには、記載が必要です。
 * chromosome 番号、オルガネラ名、プラスミド名、segment 番号は、 規定されたqualifier を用いてsource フィーチャに記載して下さい。[unlocalized 配列](#unlocalized)および[unplaced 配列](#unplaced)については、note にscafold 番号またはcontig 番号を記載してください。
+* [unlocalized 配列](#unlocalized)および[unplaced 配列]((#unplaced)を機械的につなげた、自然界に存在していない、生物学的に意味のない配列を、chromosome番号0（または99）などとして登録することはできません。それぞれのscafold 配列またはcontig 配列として登録してください。
 
 以下のサイトも併せてご覧下さい。
 
