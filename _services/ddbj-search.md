@@ -35,6 +35,8 @@ related_pages:
     url: /services/pipeline.html
 ---
 
+<span class="red">2026/7/1 にリリースされた追加機能及び変更点の説明はまだ記載されていません。</span>    
+
 ## DDBJ Searchの機能について  {#ddbjsearch_の機能について}
 - DDBJ Search は、[アクセッション番号](/insdc/accessions.html)やキーワードによる INSDC BioProject/BioSample/SRA および JGA/GEA/MetaboBank の検索にご利用いただけます。
 - データの変更履歴の検索は、行うことができません。

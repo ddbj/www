@@ -26,6 +26,8 @@ related_pages:
     url: /services/wabi-blast-e.html
 ---
 
+<span class="red">The additions and changes for the release at July 1, 2026 have not yet been included in this document.</span>    
+
 ## About DDBJ Search  {#About_ddbjsearch}
 - DDBJ Search is a search system for INSDC BioProject/BioSample/SRA and JGA/GEA/MetaboBank by [accession number](/insdc/accessions-e.html) and keyword.
 - Revision history search is not provided.
