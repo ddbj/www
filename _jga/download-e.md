@@ -167,7 +167,7 @@ Use the decryption tools in Linux. Windows is not supported.
 </div>
 
 Decrypt downloaded encrypted data files by using the decryption tools.    
-Move to the J-DU999991 directory and unzip the "J-DU999991.tool.zip" in the tools directory.
+Move to the J-DU999991 directory, and extract tools/J-DU999991.tool.zip right there, NOT inside the tools subdirectory.
 
 ```
 $ cd J-DU999991

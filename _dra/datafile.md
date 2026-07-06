@@ -281,3 +281,14 @@ BioNano のマッピング・ハイブリッドアセンブリでは以下のフ
 
 最新のファイル仕様については [Bionano Genomics - Software and Data Analysis Support Materials](https://bionano.com/software-and-data-analysis-support-materials/) をご覧ください。  
 BioNano データをアセンブルに使用した場合、bnx ファイル、それから、de novo アセンブリに使用した EXP_REFINEFINAL1.cmap と coord ファイルを DRA Analysis として共有することは有益です。DRA では BioNano Genome Map データ用の analysis type と filetype を追加する予定ですが、それまでの間、analysis type "[De Novo Assembly](/dra/metadata.html#Analysis_Type)" と filetype "[tsv](/dra/metadata.html#Analysis_File_Type)" として BioNano データを登録してください (例 [DRZ078181, DRZ078182](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA005/DRA005897/DRA005897.analysis.xml))。
+
+### Antibiogram {#antibiogram}
+
+薬剤感受性表（Antibiogram）は Analysis で受付けています。   
+[メタデータエクセル](/dra/analysis.html#analysis-excel)で [Analysis type](/dra/metadata.html#Analysis_Type) は "Sequence Annotation" を選択し、Analysis シートの内容を埋めてください。薬剤感受性表はタブ区切りテキストファイルで登録します。BioProject/BioSample は登録済みのものを記入してください。  
+表の形式については NCBI BioSample の Antibiograms 関連のページをご参照ください。   
+[NCBI BioSample Documentation](https://www.ncbi.nlm.nih.gov/biosample/docs/)
+
+登録例
+* [DRZ140159](https://ddbj.nig.ac.jp/search/entry/sra-analysis/DRZ140159/)
+

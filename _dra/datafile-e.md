@@ -310,3 +310,13 @@ BioNano mapping technology produces whole genome maps. These maps can be used in
 For the latest file specifications, please see the [Bionano Genomics - Software and Data Analysis Support Materials](https://bionano.com/software-and-data-analysis-support-materials/).
 
 If you are using BioNano data as part of your assembly generation pipeline, it would be extremely useful to the scientific community if you could submit a package comprised minimally of the molecule .bnx file and the resulting de novo assembly file EXP_REFINEFINAL1.cmap and COORD files as a DRA Analysis. We will add an analysis type and filetypes for the BioNano Genome Map files. In the meantime, please submit the BioNano files as the analysis type "[De Novo Assembly](/dra/metadata-e.html#Analysis_Type)" and the filetype "[tsv](#Analysis_File_Type)" (Example, [DRZ078181, DRZ078182](https://ddbj.nig.ac.jp/public/ddbj_database/dra/fastq/DRA005/DRA005897/DRA005897.analysis.xml)). 
+
+### Antibiogram {#antibiogram}
+
+Antibiograms are accepted in the Analysis.  
+In the [metadata Excel file](/dra/analysis-e.html#analysis-excel), select "Sequence Annotation" for [Analysis type](/dra/metadata-e.html#Analysis_Type) and complete the Analysis sheet. Antibiograms should be submitted as tab-delimited text files. For BioProject/BioSample, provide the accession numbers of already-registered projects/samples.  
+For the table format, please refer to the NCBI BioSample Antibiograms documentations.  
+[NCBI BioSample Documentation](https://www.ncbi.nlm.nih.gov/biosample/docs/)
+
+Examples:   
+* [DRZ140159](https://ddbj.nig.ac.jp/search/entry/sra-analysis/DRZ140159/)

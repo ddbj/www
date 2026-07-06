@@ -11,6 +11,7 @@ lang: en
 
 * Submit raw or raw matrix file(s) for every sample/hybridization of your experiment.
 * Make sure the file names are constructed only from alphanumerals [A-Z,a-z,0-9], underscores [_], hyphens [-] and dots [.], with no whitespaces, brackets, other punctuations or symbols.
+* Do not archive files with zip. Please archive with tar instead.
 * Any spreadsheet/matrix file should be saved in tab-delimited text (.txt) format and not Excel format (.xls, .xlsx)
 
 ## Microarray file formats {#array_data}
