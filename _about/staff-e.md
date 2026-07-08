@@ -237,25 +237,32 @@ category: about
     <div class="wrapper">
     <ul class="list">
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="Yoshihiro Okuda"></p>
+        <p class="photo"><img src="/assets/images/staff/katsumata.jpg" title="Akiko Katsumata"></p>
         <div class="explanation">
-            <p class="name">Yoshihiro Okuda, PhD</p>
+            <p class="name">Akiko Katsumata</p>
         </div>
-        </li>  
+        </li>
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/no_photo.png" title="Takehiro Kato"></p>
+        <div class="explanation">
+            <p class="name">Takehiro Kato</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/takiguchi.jpg" title="Yaeko Takiguchi"></p>
         <div class="explanation">
             <p class="name">Yaeko Takiguchi</p>
         </div>
         </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/katsumata.jpg" title="Akiko Katsumata"></p>
-        <div class="explanation">
-            <p class="name">Akiko Katsumata</p>
-        </div>
-        </li>
     </ul>      
     <ul class="list">
+        <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="Yoshihiro Okuda"></p>
+        <div class="explanation">
+            <p class="name">Yoshihiro Okuda, PhD</p>
+        </div>
+        </li>  
         <li class="staff"> 
         <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="Yuji Ashizawa"></p>
         <div class="explanation">
@@ -264,28 +271,12 @@ category: about
         </div>
         </li> 
         <li class="staff">
-        <p class="photo"><img src="" title="Yuya Ohta"></p>
+        <p class="photo"><img src="/assets/images/staff/no_photo.png" title="Yuya Ohta"></p>
         <div class="explanation">
             <p class="name">Yuya Ohta</p>
             <p class="position">System Engineer</p>
         </div>
         </li>
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/otsuka.jpg" title="Masaaki Otsuka"></p>
-        <div class="explanation">
-            <p class="name">Masaaki Otsuka</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li>       
-    </ul>
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="Yoshimasa Takahashi"></p>
-        <div class="explanation">
-            <p class="name">Yoshimasa Takahashi</p>
-            <p class="position">System Engineer</p>
-        </div>
-        </li>  
     </ul>
     </div>
     <h2 id="secretary">Secretaries</h2>

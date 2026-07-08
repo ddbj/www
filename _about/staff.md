@@ -271,12 +271,13 @@ category: about
         </div>
         </li>  
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="奥田喜弘"> </p>
+        <p class="photo"><img src="/assets/images/staff/no_photo.png" title="加藤 健弘"></p>
         <div class="explanation">
-            <p class="name">奥田 喜弘</p>
-            <p class="name">Yoshihiro Okuda, PhD</p>
+            <p class="name">加藤 健弘</p>
+            <p class="name">Takehiro Kato</p>
+            <p class="position">運用 SE</p>
         </div>
-        </li>  
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/takiguchi.jpg" title="滝口 八重子"> </p>
         <div class="explanation">
@@ -287,6 +288,13 @@ category: about
     </ul>
     <ul class="list">
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="奥田喜弘"> </p>
+        <div class="explanation">
+            <p class="name">奥田 喜弘</p>
+            <p class="name">Yoshihiro Okuda, PhD</p>
+        </div>
+        </li>  
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/ashizawa.jpg" title="芦澤 祐治"></p>
         <div class="explanation">
             <p class="name">芦澤 祐治</p>
@@ -295,31 +303,13 @@ category: about
         </div>
         </li>
         <li class="staff"> 
-        <p class="photo"><img src="" title="太田 雄也"></p>
+        <p class="photo"><img src="/assets/images/staff/no_photo.png" title="太田 雄也"></p>
         <div class="explanation">
             <p class="name">太田 雄也</p>
             <p class="name">Yuya Ohta</p>
             <p class="position">運用 SE</p>
         </div>
         </li> 
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/otsuka.jpg" title="大塚 正明"></p>
-        <div class="explanation">
-            <p class="name">大塚 正明</p>
-            <p class="name">Masaaki Otsuka</p>
-            <p class="position">運用 SE</p>
-        </div>     
-        </li>       
-    </ul>
-    <ul class="list">
-        <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/ytakahashi.jpg" title="高橋 良昌"></p>
-        <div class="explanation">
-            <p class="name">高橋 良昌</p>
-            <p class="name">Yoshimasa Takahashi</p>
-            <p class="position">運用 SE</p>
-        </div>     
-        </li>  
     </ul>
     </div>
     <h2 id="secretary">秘書</h2>
