@@ -206,10 +206,10 @@ Example
    
 Definition 
 : The date on which the specimen was collected.    
+It is required since 2025.  If it is difficult to describe the values for some reason, the submitter should indicate the reason as [missing value](#missing_c ) .    
 Date/time ranges are supported by providing two collection dates from among the supported value formats, delimited by a forward-slash character.    
 Collection times are supported by adding "T", then the hour and minute, after the date.    
 Collection times must be in Coordinated Universal Time (UTC), otherwise known as "Zulu Time" (Z).    
-If it is difficult to describe the values for some reason, the submitter should indicate the reason as [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) .    
 
 Value format
 :    
@@ -249,6 +249,19 @@ missing: control sample</pre>
 Comment
 : Collection dates that are specified to at least the day, month, and year (YYYY-MM-DD) are strongly encouraged.    
 Though INSDC still keep and accept old value formats that make use of 'Mmm' (month abbreviations), such as "21-Oct-1952", DDBJ no longer accepts new data submissions with old value formats of collection_date.    
+
+[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) <a name="missing_c"></a>     
+<table  border="1" style="border-collapse: collapse">
+<tr><th> missing value </th><th> | note </th></tr>
+<tr><td> missing: lab stock </td><td> | Artificially managed over a long period.  Many cases fall into this value type.</td></tr>
+<tr><td> missing: synthetic construct </td><td> | Artificially constructed sequence, so-called synthetic one.</td></tr>
+<tr><td> missing: human-identifiable </td><td> | Protection of personal information.  Note that it is recommended to use the real value for at least the year. </td></tr>
+<tr><td> missing: endangered species </td><td> | Conservation of biological resources, such as addressing the risk of overfishing.  Note that it is recommended to use the real value for at least the year.</td></tr>
+<tr><td> missing: sample group </td><td> | Impossible to specify a unique value for multiple or mixed samples.</td></tr>
+<tr><td> missing: control sample </td><td> | The so-called control, or control group. </td></tr>
+<tr><td> missing: third party data </td><td> | In case of <a href="/ddbj/tpa-e.html">TPA data</a>, unable to cite any value.  </td></tr>
+<tr><td> missing: data agreement established pre-2023 </td><td> | For old data.   Not to use for the new submissions.  </td></tr>
+</table>
 
 
 ### /country<a name="country"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#country)</span>
@@ -534,8 +547,7 @@ Example
 
 Definition 
 : locality of isolation of the sequenced sample indicated in terms of political names for nations, oceans or seas, followed by regions and localities     
-If it is difficult to describe the values for some reason, the submitter should indicate the reason as 
-[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) .    
+It is required since 2025.  If it is difficult to describe the values for some reason, the submitter should indicate the reason as [missing value](#missing_g ) .    
 We can NOT accept multiple localities in one qualifier.    
 In cases of identical sequences observed, in principle, please separately submit your data into [multiple records per locality](/ddbj/representative-sequence-e.html ).    
 
@@ -544,12 +556,24 @@ Value format
 
 Example     
 : <pre>Japan:Kanagawa, Hakone, Lake Ashi
+Pacific Ocean
 missing: lab stock</pre>
 
 Comment     
 : any &lt;country&gt; from [the country list](/ddbj/country-e.html).    
-The /country qualifier has been renamed to /geo_loc_name from June 2024.
-
+The /country qualifier has been renamed to /geo_loc_name from June 2024.    
+[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) <a name="missing_g"></a>     
+<table  border="1" style="border-collapse: collapse">
+<tr><th> missing value </th><th> | note </th></tr>
+<tr><td> missing: lab stock </td><td> | Artificially managed over a long period.  Many cases fall into this value type.</td></tr>
+<tr><td> missing: synthetic construct </td><td> | Artificially constructed sequence, so-called synthetic one.</td></tr>
+<tr><td> missing: human-identifiable </td><td> | Protection of personal information.  Note that it is recommended to use the real value for at least the country name. </td></tr>
+<tr><td> missing: endangered species </td><td> | Conservation of biological resources, such as addressing the risk of overfishing.  Note that it is recommended to use the real value for at least the country name.</td></tr>
+<tr><td> missing: sample group </td><td> | Impossible to specify a unique value for multiple or mixed samples.</td></tr>
+<tr><td> missing: control sample </td><td> | The so-called control, or control group. </td></tr>
+<tr><td> missing: third party data </td><td> | In case of <a href="/ddbj/tpa-e.html">TPA data</a>, unable to cite any value.  </td></tr>
+<tr><td> missing: data agreement established pre-2023 </td><td> | For old data.   Not to use for the new submissions.  </td></tr>
+</table>
 
 ### /germline<a name="germline"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#germline)</span><a name="germline"></a>
 

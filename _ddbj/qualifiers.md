@@ -217,10 +217,10 @@ INSDC において記載可能な feature と qualifier の組み合わせに関
 
 定義
 : 標本を採取した日付    
+2025 年以降の登録では記載必須です。何らかの理由で記載が困難な場合、[missing value](#missing_c ) で示します。    
 日時の幅を示す場合は、２つの値を slash "/" で区切って記載してください。    
 採取した時刻を記載する場合、日付の後に "T" を付加し、続けて、時間と分を記載してください。    
 時刻は協定世界時 (UTC) ・グリニジ平均時 "Zulu Time" (Z) で記載してください。    
-何らかの理由で記載が困難な場合、[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) で示します。    
 
 書式
 :    
@@ -259,7 +259,19 @@ missing: control sample</pre>
 
 備考
 : 日付まで特定した記載 (YYYY-MM-DD) を強く推奨します。    
-INSDC では 'Mmm' (月の略記) を含む "21-Oct-1952" のような旧書式のデータが維持されており、その登録受付も可能としていますが、DDBJ では、旧書式でのデータ登録を受け付けておりません。 
+INSDC では 'Mmm' (月の略記) を含む "21-Oct-1952" のような旧書式のデータが維持されており、その登録受付も可能としていますが、DDBJ では、旧書式でのデータ登録を受け付けておりません。     
+[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) 概要<a name="missing_c"></a>     
+<table  border="1" style="border-collapse: collapse">
+<tr><th> missing value </th><th> | 備考 </th></tr>
+<tr><td> missing: lab stock </td><td> | 長期に渡り人為的に管理された系。多くのケースはこれに該当します。</td></tr>
+<tr><td> missing: synthetic construct </td><td> | 人為的に構築したいわゆる合成配列。</td></tr>
+<tr><td> missing: human-identifiable </td><td> | ヒトの個人情報保護。ただし、西暦年のみでも実際の値を記載することを推奨します。</td></tr>
+<tr><td> missing: endangered species </td><td> | 乱獲の恐れがあるなど生物資源保護。ただし、西暦年のみでも実際の値を記載することを推奨します。</td></tr>
+<tr><td> missing: sample group </td><td> | 複数、混合サンプルなどで一意の値を指定できない。</td></tr>
+<tr><td> missing: control sample </td><td> | いわゆるコントロール、対照系。</td></tr>
+<tr><td> missing: third party data </td><td> | <a href="/ddbj/tpa.html">TPA データ</a>で引用元から値を参照できない。</td></tr>
+<tr><td> missing: data agreement established pre-2023 </td><td> | 古い登録データ全般。新規な登録では記載しないでください。</td></tr>
+</table>
 
 
 ### /country<a name="country"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#country)</span>
@@ -544,7 +556,7 @@ unknown
 
 定義
 : 疫学的、あるいは、個体群研究において配列サンプルを得た地域を 政治上の国、大洋、または、海の名称で示し、続けて地方・地域を示します。    
-何らかの理由で記載が困難な場合、[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) で示します。    
+2025 年以降の登録では記載必須です。何らかの理由で記載が困難な場合、[missing value](#missing_g ) で示します。    
 １つの qualifier 内で複数の地点を記載することは禁止しています。    
 同一配列が観測された場合でも、原則、[地点別に複数の登録](/ddbj/representative-sequence.html )に分けてください。
 
@@ -553,12 +565,24 @@ unknown
 
 例
 : <pre>Japan:Kanagawa, Hakone, Lake Ashi
+Pacific Ocean
 missing: lab stock</pre>
 
 備考
 : 国名は[国名リスト](/ddbj/country.html)から選択します。     
-2024 年 6 月より /country qualifier を /geo_loc_name qualifier に名称変更しました。
-
+2024 年 6 月より /country qualifier を /geo_loc_name qualifier に名称変更しました。     
+[missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) 概要<a name="missing_g"></a>     
+<table  border="1" style="border-collapse: collapse">
+<tr><th> missing value </th><th> | 備考 </th></tr>
+<tr><td> missing: lab stock </td><td> | 長期に渡り人為的に管理された系。多くのケースはこれに該当します。</td></tr>
+<tr><td> missing: synthetic construct </td><td> | 人為的に構築したいわゆる合成配列。</td></tr>
+<tr><td> missing: human-identifiable </td><td> | ヒトの個人情報保護。ただし、国名のみでも実際の値を記載することを推奨します。</td></tr>
+<tr><td> missing: endangered species </td><td> | 乱獲の恐れがあるなど生物資源保護。ただし、国名のみでも実際の値を記載することを推奨します。</td></tr>
+<tr><td> missing: sample group </td><td> | 複数、混合サンプルなどで一意の値を指定できない。</td></tr>
+<tr><td> missing: control sample </td><td> | いわゆるコントロール、対照系。</td></tr>
+<tr><td> missing: third party data </td><td> | <a href="/ddbj/tpa.html">TPA データ</a>で引用元から値を参照できない。</td></tr>
+<tr><td> missing: data agreement established pre-2023 </td><td> | 古い登録データ全般。新規な登録では記載しないでください。</td></tr>
+</table>
 
 
 ### /germline<a name="germline"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table.html#germline)</span><a name="germline"></a>
