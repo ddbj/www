@@ -271,6 +271,14 @@ category: about
         </div>
         </li>  
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/no_photo.png" title="小川 翔平"></p>
+        <div class="explanation">
+            <p class="name">小川 翔平</p>
+            <p class="name">Shouhei Ogawa</p>
+            <p class="position">運用 SE</p>
+        </div>
+        </li>
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/no_photo.png" title="加藤 健弘"></p>
         <div class="explanation">
             <p class="name">加藤 健弘</p>
@@ -278,6 +286,8 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/takiguchi.jpg" title="滝口 八重子"> </p>
         <div class="explanation">
@@ -285,8 +295,6 @@ category: about
             <p class="name">Yaeko Takiguchi</p>
         </div>
         </li>
-    </ul>
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="奥田喜弘"> </p>
         <div class="explanation">
@@ -302,6 +310,8 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff"> 
         <p class="photo"><img src="/assets/images/staff/no_photo.png" title="太田 雄也"></p>
         <div class="explanation">

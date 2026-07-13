@@ -243,20 +243,27 @@ category: about
         </div>
         </li>
         <li class="staff">
+        <p class="photo"><img src="/assets/images/staff/no_photo.png" title="Shouhei Ogawa"></p>
+        <div class="explanation">
+            <p class="name">Shouhei Ogawa</p>
+            <p class="position">System Engineer</p>
+        </div>
+        </li>
+        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/no_photo.png" title="Takehiro Kato"></p>
         <div class="explanation">
             <p class="name">Takehiro Kato</p>
             <p class="position">System Engineer</p>
         </div>
         </li>
+    </ul>      
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/takiguchi.jpg" title="Yaeko Takiguchi"></p>
         <div class="explanation">
             <p class="name">Yaeko Takiguchi</p>
         </div>
         </li>
-    </ul>      
-    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/okuda.jpg" title="Yoshihiro Okuda"></p>
         <div class="explanation">
@@ -270,6 +277,8 @@ category: about
             <p class="position">System Engineer</p>
         </div>
         </li> 
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/no_photo.png" title="Yuya Ohta"></p>
         <div class="explanation">
