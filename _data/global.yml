@@ -1,7 +1,11 @@
 top_news:
  ja:
+    - title: (7/15 10:00-11:00) D-way 一時停止のお知らせ
+      path: 2026-07-14
     - title: 利用規約の改訂について（アクセスと利益配分）
       path: 2026-06-30_2
  en:  
+    - title: (15th July 10:00-11:00)(JST) Announcement of D-way suspension
+      path: 2026-07-14-e  
     - title: Revision of the Terms of Use (Access and Benefit-Sharing)
       path: 2026-06-30_2-e
