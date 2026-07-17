@@ -696,12 +696,16 @@ $(function(){
 
         var entries = data.values[i];
 
-        var name = entries[0];
-        var harmonizedname = entries[1];
-        var synonym = entries[2];
-        var format = entries[3];
-        var description = entries[4];
-        var descriptionja = entries[5];
+        // ヘッダー行から列位置を取得（シートの列追加・並び替えに対応）
+        var header = data.values[0];
+        var col = {};
+        for (var h = 0; h < header.length; h++) { col[header[h]] = h; }
+
+        var name = entries[col["Name"]];
+        var harmonizedname = entries[col["Harmonized name"]];
+        var synonym = entries[col["Synonym"]];
+        var description = entries[col["Description"]];
+        var descriptionja = entries[col["DescriptionJa"]];
 
         var description_place = ""
         if( la == "ja" ){
@@ -792,8 +796,14 @@ $(function(){
 		}
 		
     	// package 選択時の処理 attribute シートを起点に
-      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
-      
+      $.when(
+        $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo"),
+        $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/package-attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo")
+      ).done(function(attrArgs, paArgs) {
+
+      var data = attrArgs[0];
+      var padata = paArgs[0];
+
       var span_required = "";
 
       attr_table = "";
@@ -845,29 +855,34 @@ $(function(){
 
       attr_table += '<div id="biosample_attr_area"><table id="biosample_attr_table"><thead><tr class="biosample_header"><th class="name">Name</th><th class="description">Description</th></tr></thead><tbody>';
 
-      // name 毎に選択された package shorname の M O - で判定していく
-      var pac_names = data.values[0];   
-      var e = 0;   
-      var pre_group = "";      
+      // 属性ごとに、選択パッケージの M / O / E / - を判定して表示
+      var e = 0;
+      var pre_group = "";
 
-      // attribute シートの package short name の位置取得
-      var package_position = 0;
-      for(var j = 0; j < pac_names.length; j++) {
-          if(pac_names[j] == package_shortname){
-            package_position = j;
-          }
+      // package-attribute シート(転置: 行=パッケージ, 列=属性)から
+      // 選択パッケージの行と「属性名 -> 列位置」マップを取得
+      var pa_header = padata.values[0];
+      var pa_col = {};
+      for(var pc = 2; pc < pa_header.length; pc++) { pa_col[pa_header[pc]] = pc; }
+      var pkg_row = null;
+      for(var pr = 1; pr < padata.values.length; pr++) {
+          if(padata.values[pr][0] == package_shortname){ pkg_row = padata.values[pr]; break; }
       }
 
       for(var i = 1; i < data.values.length; i++) { 
 
         var entries = data.values[i];
 
-        var name = entries[0];
-        var harmonizedname = entries[1];
-        var synonym = entries[2];
-        var format = entries[3];
-        var description = entries[4];
-        var descriptionja = entries[5];
+        // ヘッダー行から列位置を取得（シートの列追加・並び替えに対応）
+        var header = data.values[0];
+        var col = {};
+        for (var h = 0; h < header.length; h++) { col[header[h]] = h; }
+
+        var name = entries[col["Name"]];
+        var harmonizedname = entries[col["Harmonized name"]];
+        var synonym = entries[col["Synonym"]];
+        var description = entries[col["Description"]];
+        var descriptionja = entries[col["DescriptionJa"]];
 
         var description_place = ""
         if( la == "ja" ){
@@ -876,9 +891,8 @@ $(function(){
           description_place = description;
         }
         
-        // attribute シートの package short name の位置取得
-        var option = "";
-        option = entries[package_position];
+        // package-attribute から該当属性の M/O/E を取得（属性名で結合）
+        var option = ( pkg_row && pa_col[name] != null && pkg_row[pa_col[name]] != null ) ? pkg_row[pa_col[name]] : "";
           
         // 属性の M O - 判定
         var optional_pattern = /^O/;
@@ -974,8 +988,14 @@ $(function(){
     }
 
     	// package 選択時の処理 attribute シートを起点に
-      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
-      
+      $.when(
+        $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo"),
+        $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/package-attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo")
+      ).done(function(attrArgs, paArgs) {
+
+      var data = attrArgs[0];
+      var padata = paArgs[0];
+
       var span_required = "";
 
       attr_table = "";
@@ -1027,29 +1047,34 @@ $(function(){
 
       attr_table += '<div id="biosample_attr_area"><table id="biosample_attr_table"><thead><tr class="biosample_header"><th class="name">Name</th><th class="description">Description</th></tr></thead><tbody>';
 
-      // name 毎に選択された package shorname の M O - で判定していく
-      var pac_names = data.values[0];   
-      var e = 0;   
-      var pre_group = "";      
+      // 属性ごとに、選択パッケージの M / O / E / - を判定して表示
+      var e = 0;
+      var pre_group = "";
 
-      // attribute シートの package short name の位置取得
-      var package_position = 0;
-      for(var j = 0; j < pac_names.length; j++) {
-          if(pac_names[j] == package_shortname){
-            package_position = j;
-          }
+      // package-attribute シート(転置: 行=パッケージ, 列=属性)から
+      // 選択パッケージの行と「属性名 -> 列位置」マップを取得
+      var pa_header = padata.values[0];
+      var pa_col = {};
+      for(var pc = 2; pc < pa_header.length; pc++) { pa_col[pa_header[pc]] = pc; }
+      var pkg_row = null;
+      for(var pr = 1; pr < padata.values.length; pr++) {
+          if(padata.values[pr][0] == package_shortname){ pkg_row = padata.values[pr]; break; }
       }
 
       for(var i = 1; i < data.values.length; i++) { 
 
         var entries = data.values[i];
 
-        var name = entries[0];
-        var harmonizedname = entries[1];
-        var synonym = entries[2];
-        var format = entries[3];
-        var description = entries[4];
-        var descriptionja = entries[5];
+        // ヘッダー行から列位置を取得（シートの列追加・並び替えに対応）
+        var header = data.values[0];
+        var col = {};
+        for (var h = 0; h < header.length; h++) { col[header[h]] = h; }
+
+        var name = entries[col["Name"]];
+        var harmonizedname = entries[col["Harmonized name"]];
+        var synonym = entries[col["Synonym"]];
+        var description = entries[col["Description"]];
+        var descriptionja = entries[col["DescriptionJa"]];
 
         var description_place = ""
         if( la == "ja" ){
@@ -1058,9 +1083,8 @@ $(function(){
           description_place = description;
         }
         
-        // attribute シートの package short name の位置取得
-        var option = "";
-        option = entries[package_position];
+        // package-attribute から該当属性の M/O/E を取得（属性名で結合）
+        var option = ( pkg_row && pa_col[name] != null && pkg_row[pa_col[name]] != null ) ? pkg_row[pa_col[name]] : "";
           
         // 属性の M O - 判定
         var optional_pattern = /^O/;
