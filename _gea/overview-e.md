@@ -80,13 +80,24 @@ Experiments and Array designs in GEA are assigned unique accession numbers (n is
 
 ## Data release {#release}
 
-The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Registered records are released according to the [Data Release Policy](/insdc/data-release-policy-e.html).
+The data can be kept private until your paper is published. You can set the hold date for a maximum of 4 years and can change it. Log in to D-way to [change the hold date yourself](/gea/update-e.html#change-hold-date). Registered records are released according to the [Data Release Policy](/insdc/data-release-policy-e.html).
 
 FAQ: [How to request data release?](/faq/en/request-release-e.html)
 
 ## Reviewer access {#reviewer-access}
 
 Submitters are able to generate an access token for journal reviewers after a pre-published experiment or array design is loaded into the GEA database. For instructions, see [reviewer accesss page](/gea/reviewer-access-e.html) for how to obtain an access token and communicate it to journal editors and reviewers.
+
+
+## Hold date change {#change-hold-date}
+
+In the GEA list screen, submissions with a status of Private, Wait For Release, or Temporarily Suppressed show a [Change] button in the Hold Date column.
+
+Click [Change] to open a calendar and select a new hold date (today through 4 years from today). The hold date is updated as soon as you select it.
+
+<a href="/assets/images/books/GEA_hold_date_change.png" title="GEA公開予定日の変更" class="group1"><img src="/assets/images/books/GEA_hold_date_change.png" alt="GEA公開予定日の変更" title="GEA公開予定日の変更" class="w600"></a>
+
+To release the submission immediately, select today's date in the calendar.
 
 ## Update  {#update}
 

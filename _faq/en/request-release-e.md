@@ -39,7 +39,7 @@ If you want to release your data, specify DDBJ/DRA/GEA/MetaboBank accession numb
     <tr>
       <td>GEA</td> 
       <td>E-GEAD-1</td> 
-      <td><a href="https://forms.gle/TtzttjjxShnJ1LxdA">GEA update request form</a></td> 
+      <td>Login to <a href="https://ddbj.nig.ac.jp/D-way">D-way</a> and <a href="/gea/update-e.html#change-hold-date">change the hold date</a></td> 
     </tr>
     <tr>
       <td>MetaboBank</td> 

@@ -40,7 +40,7 @@ lang: ja
     <tr>
       <td>GEA</td> 
       <td>E-GEAD-1</td> 
-      <td><a href="https://forms.gle/BQR6d9gZ3Prox1G89">GEA 更新依頼フォーム</a></td> 
+      <td><a href="https://ddbj.nig.ac.jp/D-way">D-way</a> にログインし、<a href="/gea/update.html#change-hold-date">登録者自身で GEA データを公開</a></td> 
     </tr>
     <tr>
       <td>MetaboBank</td> 
