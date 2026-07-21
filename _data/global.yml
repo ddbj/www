@@ -1,7 +1,11 @@
 top_news:
  ja:
+    - title: (8/14～17) DDBJ センター夏季休業のお知らせ
+      path: 2026-07-21  
     - title: 利用規約の改訂について（アクセスと利益配分）
       path: 2026-06-30_2
  en:  
+    - title: (August 14 to 17) DDBJ Center Closing for Summer Break
+      path: 2026-07-21-e
     - title: Revision of the Terms of Use (Access and Benefit-Sharing)
       path: 2026-06-30_2-e
