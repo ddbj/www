@@ -54,7 +54,7 @@ Regarding how to upload your data files, please see "[Data upload](/upload.html)
 ### Submission {#Submission-tab}
 
 Set the hold date within four years or choose immediate release when processed. Submitters' name and affiliation will be public but e-mail address will not be disclosed.
-After submission, you can [change the hold date yourself in D-way](/gea/update-e.html#change-hold-date).
+After submission, you can [change the hold date yourself in D-way](/gea/overview-e.html#change-hold-date).
 
 <div class="attention">
 Email regarding GEA submission is sent to addresses entered in the GEA Submission.

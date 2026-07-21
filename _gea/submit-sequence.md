@@ -54,7 +54,7 @@ GEA ではマイクロアレイとシークエンシングを一つの Submissio
 ### Submission {#Submission-tab}
 
 四年以内の公開予定日を指定、もしくは、即日公開を選択します。登録者の名前と所属組織は公開されますが、メールアドレスは公開されません。
-登録後に公開予定日を変更したい場合は、[D-way で登録者自身が変更](/gea/update.html#change-hold-date)できます。
+登録後に公開予定日を変更したい場合は、[D-way で登録者自身が変更](/gea/overview.html#change-hold-date)できます。
 
 <div class="attention">
 GEA 登録に関するメールは Submission に記載されたメールアドレスに対して送信されます。
