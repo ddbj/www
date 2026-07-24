@@ -260,6 +260,8 @@ missing: control sample</pre>
 備考
 : 日付まで特定した記載 (YYYY-MM-DD) を強く推奨します。    
 INSDC では 'Mmm' (月の略記) を含む "21-Oct-1952" のような旧書式のデータが維持されており、その登録受付も可能としていますが、DDBJ では、旧書式でのデータ登録を受け付けておりません。     
+    
+    
 [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) 概要<a name="missing_c"></a>     
 <table  border="1" style="border-collapse: collapse">
 <tr><th> missing value </th><th> | 備考 </th></tr>
@@ -567,10 +569,12 @@ unknown
 : <pre>Japan:Kanagawa, Hakone, Lake Ashi
 Pacific Ocean
 missing: lab stock</pre>
-
+    
 備考
 : 国名は[国名リスト](/ddbj/country.html)から選択します。     
 2024 年 6 月より /country qualifier を /geo_loc_name qualifier に名称変更しました。     
+    
+    
 [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) 概要<a name="missing_g"></a>     
 <table  border="1" style="border-collapse: collapse">
 <tr><th> missing value </th><th> | 備考 </th></tr>

@@ -249,7 +249,8 @@ missing: control sample</pre>
 Comment
 : Collection dates that are specified to at least the day, month, and year (YYYY-MM-DD) are strongly encouraged.    
 Though INSDC still keep and accept old value formats that make use of 'Mmm' (month abbreviations), such as "21-Oct-1952", DDBJ no longer accepts new data submissions with old value formats of collection_date.    
-
+    
+    
 [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) <a name="missing_c"></a>     
 <table  border="1" style="border-collapse: collapse">
 <tr><th> missing value </th><th> | note </th></tr>
@@ -562,6 +563,8 @@ missing: lab stock</pre>
 Comment     
 : any &lt;country&gt; from [the country list](/ddbj/country-e.html).    
 The /country qualifier has been renamed to /geo_loc_name from June 2024.    
+    
+    
 [missing value](https://www.insdc.org/submitting-standards/missing-value-reporting/ ) <a name="missing_g"></a>     
 <table  border="1" style="border-collapse: collapse">
 <tr><th> missing value </th><th> | note </th></tr>
