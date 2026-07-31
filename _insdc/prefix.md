@@ -414,7 +414,7 @@ QU      JPO             Patent application
 QV      MOIP            Patent application
 QW      JPO             Patent application
 QX      JPO             Patent application
-QY      DDBJ            
+QY      DDBJ            Direct submission
 R       GenBank         EST
 RB      DDBJ            
 RC      DDBJ            
