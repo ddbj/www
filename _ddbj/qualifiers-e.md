@@ -996,6 +996,7 @@ plastid:proplastid
 plastid    
 chromatophore    
 nucleomorph    
+nitroplast    
 
 
 ### /organism<a name="organism"></a><span class="right-alignment">[Feature Table Definition](/ddbj/feature-table-e.html#organism)</span>
