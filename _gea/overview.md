@@ -75,24 +75,27 @@ GEA の Experiment と Array design に対してアクセッション番号が�
 
 ## データ公開 {#release}
 
-関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。公開予定日は D-way にログインして[登録者自身で変更](/gea/update.html#change-hold-date)することができます。登録されたデータは[データ公開原則](/insdc/data-release-policy.html)に従って公開されます。
+関連する論文が公表されるまでデータを非公開にすることができます。四年後までの公開予定日を設定し、随時延長することができます。公開予定日は D-way にログインして[登録者自身で変更](#change-hold-date)することができます。登録されたデータは[データ公開原則](/insdc/data-release-policy.html)に従って公開されます。
 
 FAQ: [データ公開の依頼方法は？](/faq/ja/request-release.html)
+
+## 公開予定日の変更  {#change-hold-date}
+
+GEA の一覧画面で、ステータスが Private、Wait For Release、Temporarily Suppressed のデータについては、Hold Date 欄に [Change] ボタンが表示されます。
+
+[Change] を押すとカレンダーが表示されるので、新しい公開予定日（当日から4年以内）を選択してください。選択すると、その場で公開予定日が更新されます。    
+即日公開する場合は、カレンダーで当日の日付を選択してください。
+
+<a href="/assets/images/books/GEA_hold_date_change.png" title="GEA公開予定日の変更" class="group1"><img src="/assets/images/books/GEA_hold_date_change.png" alt="GEA公開予定日の変更" title="GEA公開予定日の変更" class="w600"></a>
+
 
 ## Reviewer access {#reviewer-access}
 
 データの登録後、査読者用のアクセストークンを発行することができます。詳しくは [Reviewer accesss](/gea/reviewer-access.html) をご覧ください。
 
 
-## 公開予定日の変更  {#change-hold-date}
 
-GEA の一覧画面で、ステータスが Private、Wait For Release、Temporarily Suppressed のデータについては、Hold Date 欄に [Change] ボタンが表示されます。
 
-[Change] を押すとカレンダーが表示されるので、新しい公開予定日（当日から4年以内）を選択してください。選択すると、その場で公開予定日が更新されます。
-
-<a href="/assets/images/books/GEA_hold_date_change.png" title="GEA公開予定日の変更" class="group1"><img src="/assets/images/books/GEA_hold_date_change.png" alt="GEA公開予定日の変更" title="GEA公開予定日の変更" class="w600"></a>
-
-即日公開する場合は、カレンダーで当日の日付を選択してください。
 
 ## 更新 {#update}
 
