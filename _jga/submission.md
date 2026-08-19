@@ -112,7 +112,8 @@ JGA は variation データの [VCF 形式](http://en.wikipedia.org/wiki/Variant
 
 ## メタボロミクスデータ {#metabolomics}
 
-JGA はメタボロミクスデータを Analysis で受付けています。[MetaboBank](/metabobank/submission.html) に準拠した登録形式を推奨しています。
+JGA はメタボロミクスデータを Analysis で受付けています。
+[MetaboBank](/metabobank/submission.html) に準拠した登録形式（メタデータは MAGE-TAB 形式）で登録します。
 
 ## プロテオミクスデータ {#proteomics}
 

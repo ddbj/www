@@ -111,7 +111,7 @@ The JGA supports submissions of sequence variations in [VCF format](http://en.wi
 
 ## Metabolomics data {#metabolomics}
 
-The JGA accepts metabolomics data in Analysis. We recommend a submission format compliant with [MetaboBank](/metabobank/submission-e.html).
+The JGA accepts metabolomics data in Analysis. We accept a submission format compliant with [MetaboBank](/metabobank/submission-e.html) (metadata in MAGE-TAB format).
 
 ## Proteomics data {#proteomics}
 
