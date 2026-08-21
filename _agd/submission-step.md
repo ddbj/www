@@ -67,6 +67,8 @@ AGD ファイルサーバ (jga-gw.ddbj.nig.ac.jp) 上の /group-access/submissio
 
 [![AGD メタデータ記入用エクセル](/assets/images/parts/download.png "AGD メタデータ記入用エクセル"){:.w40}](https://github.com/ddbj/submission-excel2xml/raw/main/JGA_metadata.xlsx)
 
+last updated: 2025-10-23
+
 JGA と AGD はデータモデルが同一であるため、メタデータ記入用エクセルは共通です。ファイル名は JGA_metadata.xlsx となっておりますが、AGD のメタデータを記入し、AGD 用 submission ディレクトリにアップロードしてください。
 
 <div class="attention" markdown="1">
