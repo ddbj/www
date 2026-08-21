@@ -20,10 +20,9 @@ source feature
   [metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock)
   and names with “uncultured" can not be used.
 - As a keyword, add /note="single amplified genome".
-- Describe isolation source in /isolation_source. For example, "one
-  of ten single-cell amplified genomes of the same hot spring water;
-  single-cell genome amplified by MDA (multiple displacement
-  amplification)".
+- Describe isolation source in /isolation_source. For example, "hot spring water".
+- Describe amprification method and cell numbers used in /note. For example, "one
+  of ten single-cell amplified genomes by MDA (multiple displacement amplification)".
 
 ### BioSample  {#multi-biosample}
 
@@ -51,7 +50,9 @@ source feature
 - Indicate that SAG derives from multiple samples and genomes in
   /note. For example, "co-assembly of 10 single-cell amplified
   genomes".
-- Describe isolation source in /isolation_source.
+- Describe isolation source in /isolation_source. For example, "hot spring water".
+- Describe amprification method and cell numbers used in /note. For example, "co-assembly
+  of ten single-cell amplified genomes by MDA (multiple displacement amplification)".
 
 ### BioSample  {#single-biosample} 
 
