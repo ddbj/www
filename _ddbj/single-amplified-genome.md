@@ -36,8 +36,6 @@ source feature
 
 - [metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock)
   や uncultured を冠した生物名は記載できません。
-- /note に複数サンプル・ゲノムに由来する SAG であることを記載します。例 "co-assembly of 10
-  single-cell amplified genomes"
 - /isolation_source にサンプルの単離源を記載します。例 "hot spring water"
 - /note に増幅方法、細胞数を記載します。例 "co-assembly of 10 single-cell amplified genomes by MDA (multiple displacement amplification)"
 

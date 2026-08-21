@@ -45,9 +45,6 @@ source feature
 - For an organism name,
   [metagenome](https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Undef&id=408169&lvl=3&keep=1&srchmode=1&unlock)
   and names with "uncultured" can not be used.
-- Indicate that SAG derives from multiple samples and genomes in
-  /note. For example, "co-assembly of 10 single-cell amplified
-  genomes".
 - Describe isolation source in /isolation_source. For example, "hot spring water".
 - Describe amprification method and cell numbers used in /note. For example, "co-assembly
   of ten single-cell amplified genomes by MDA (multiple displacement amplification)".
