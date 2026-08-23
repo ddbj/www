@@ -412,6 +412,21 @@ items:
     tags:
       - search
 
+  - name: GGS
+    formal_name: Genome/gene Submission Tool
+    service_link:
+      en: https://ggs.ddbj.nig.ac.jp/
+      ja: https://ggs.ddbj.nig.ac.jp/
+    description:
+      en: GGS is a support service for genome sequence submission without gene annotation. GGS generates <a href="https://www.ddbj.nig.ac.jp/ddbj/file-format.html#annotation">an annotation file submittable</a> to DDBJ.
+      ja: 遺伝子アノテーションを行わないゲノム配列の登録支援ツール。<a href="https://www.ddbj.nig.ac.jp/ddbj/file-format.html#annotation">DDBJ に登録可能なアノテーションファイル</a>を出力します。
+    target_data:
+      en: Genome
+      ja: ゲノム
+    provider: DDBJ
+    tags:
+      - submission
+
 dictionary:
   analysis:
     en: Analysis
