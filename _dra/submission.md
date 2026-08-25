@@ -25,12 +25,14 @@ lang: ja
 * [新規登録の作成](#new-submission)
 * [データファイルのアップロード](#upload)
 * [登録ステータス](#status)
-* [BioProject の登録](#bioproject)
-* [BioSample の登録](#biosample)
-* [Submission](#submission)
-* [Experiment/Run の入力](#experiment)
-	* [ウェブツールで登録](#metadata)
-	* [エクセルで登録](#excel)
+* [メタデータの登録](#metadata)
+	* [Submission](#submission)
+	* [BioProject](#bioproject)
+	* [BioSample](#biosample)
+	* [Experiment](#experiment)
+	* [Run](#run)
+	* [Analysis (任意)](#analysis)
+	* [エクセルを使った登録方法](#excel)
 * [データファイルの検証処理](#validation)
 * [アクセッション番号](#accession)
 
@@ -51,9 +53,12 @@ lang: ja
 新規登録に対応するディレクトリ（例 test07-0040/）が受付サーバ (ftp-private.ddbj.nig.ac.jp) に作成されるので、このディレクトリにデータファイルを[アップロード](/upload.html)します。
 
 <div class="attention" markdown="1">
-* 問い合わせ後、三か月以上回答がない登録はキャンセルします。  
-* データは Submission 単位で公開されます。データを異なる時期に公開したい場合は Submission を分けてください。  
-* Submission 辺りの上限は BioSample:1,000、DRA:2,000 (Run 数)、GEA:1,000 (Assay 数) になります。これらを超える件数を登録する場合、同じ BioProject を参照する複数の Submission に分割してください。  
+* **公開の単位**：データは Submission 単位で公開されます。データを異なる時期に公開したい場合は Submission を分けてください。  
+* **登録件数の上限**：Submission あたりの上限は以下の通りです。上限を超える件数を登録する場合は、同じ BioProject を参照する複数の Submission に分割してください。
+	* BioSample：1,000 件
+	* DRA：2,000 件（Run 数）
+	* GEA：1,000 件（Assay 数）
+* **未回答によるキャンセル**：登録内容について問い合わせる場合があります。その問い合わせに対して三か月以上回答がない場合は、登録をキャンセルします。
 </div>
 
 {% include image.html url="books/hdra01.jpg" caption="新規 DRA 登録の作成" class="w500" %}
@@ -91,10 +96,12 @@ BioProject と BioSample は別のデータベースに登録されたレコー�
 * Run (DRA)
 * Analysis (DRA、登録は任意)
 
-メタデータは「ウェブツールで登録する方法」と「[メタデータ登録用エクセル](#excel)」を使った二通りの方法があります。
-オブジェクト数が多い場合はエクセルを使った方法を推奨します。
+メタデータの登録には次の二つの方法があります。どちらか一方を選んで登録してください。
 
-以下ではウェブツールでの作成方法を説明します。
+* **ウェブツールで登録する方法**（以下で説明）：画面上でメタデータを入力します。オブジェクト数が少ない場合に向いています。
+* **[エクセルを使って登録する方法](#excel)**：エクセルにメタデータをまとめて記入し、コマンドラインで XML に変換してアップロードします。オブジェクト数が多い場合はこちらを推奨します。
+
+以下ではまずウェブツールでの登録方法を説明します。エクセルで登録する場合は「[エクセルを使った登録方法](#excel)」に進んでください。
 
 Submission ID リンク（例 test07-0040）から登録詳細ページへ移動します。
 
@@ -323,11 +330,16 @@ Analysis に登録されたデータファイルは MD5 チェックサム値の
 
 ## データ公開 {#data-release}
 
-データの処理とステータスについては [DDBJ と SRA におけるデータ処理](/data-processing.html)をご覧ください。   
+データは[公開原則](/policies.html#data-release)に従って公開されます。センターは以下の場合にデータを公開します。
 
-データは[公開原則](/policies.html#data-release)に従って公開されます。
+* 登録者から公開依頼の連絡を受けた場合（DRA は D-way から登録者自身で公開できます。[公開方法](/dra/update.html#change-hold-date)）
+* データに対応するアクセッション番号の公表を確認した場合
+* 登録者が設定した公開予定日が到来した場合
+
 参照関係にあるデータとの連動公開については、「FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)」を参照してください。  
 公開されるとデータが [ftp](https://ddbj.nig.ac.jp/public/ddbj_database/dra/) に公開され、数日以内に [DDBJ Search](https://ddbj.nig.ac.jp/search) でインデックスされ、[NCBI SRA](https://www.ncbi.nlm.nih.gov/sra/) と [EBI SRA](https://ebi.ac.uk/ena) にミラーリングされます。
+
+データの処理とステータスについては [DDBJ と SRA におけるデータ処理](/data-processing.html)をご覧ください。
 
 <div class="attention">
 オブジェクトは Submission 単位で公開されます。オブジェクトを異なる時期に公開したい場合は Submission を分けてください。
