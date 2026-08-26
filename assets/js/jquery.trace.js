@@ -798,11 +798,13 @@ $(function(){
     	// package 選択時の処理 attribute シートを起点に
       $.when(
         $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo"),
-        $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/package-attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo")
-      ).done(function(attrArgs, paArgs) {
+        $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/package-attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo"),
+        $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/package-tsv?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo")
+      ).done(function(attrArgs, paArgs, ptArgs) {
 
       var data = attrArgs[0];
       var padata = paArgs[0];
+      var ptdata = ptArgs[0];
 
       var span_required = "";
 
@@ -869,20 +871,54 @@ $(function(){
           if(padata.values[pr][0] == package_shortname){ pkg_row = padata.values[pr]; break; }
       }
 
-      for(var i = 1; i < data.values.length; i++) { 
+      // attribute シートから「属性名 -> 説明」を引くマップを作成
+      var header = data.values[0];
+      var col = {};
+      for (var h = 0; h < header.length; h++) { col[header[h]] = h; }
+      var desc_en = {};
+      var desc_ja = {};
+      for (var di = 1; di < data.values.length; di++) {
+        var drow = data.values[di];
+        var dname = drow[col["Name"]];
+        desc_en[dname] = drow[col["Description"]];
+        desc_ja[dname] = drow[col["DescriptionJa"]];
+      }
 
-        var entries = data.values[i];
+      // 表示順は package-tsv シート(パッケージごとの属性並び順)に従う。
+      // package-attribute と package-tsv は行の並び順が一致しないため、
+      // pkg_row の M/O/E 属性集合と一致する package-tsv 行を突き合わせて特定する。
+      var ordered_names = [];
+      if ( pkg_row ) {
+        var pkg_set = {};
+        var pkg_set_size = 0;
+        for (var an in pa_col) {
+          var av = pkg_row[pa_col[an]];
+          if ( av != null && /^[MOE]/.test(av) ) { pkg_set[an] = true; pkg_set_size++; }
+        }
+        var pt = ptdata.values;
+        for (var ti = 0; ti < pt.length; ti++) {
+          var trow = pt[ti];
+          var names = [];
+          for (var ci = 1; ci < trow.length; ci++) {
+            if ( trow[ci] !== "" ) names.push(trow[ci].replace(/^\*/, ""));
+          }
+          if ( names.length !== pkg_set_size ) continue;
+          var allin = true;
+          for (var ni = 0; ni < names.length; ni++) { if ( !pkg_set[names[ni]] ) { allin = false; break; } }
+          if ( allin ) { ordered_names = names; break; }
+        }
+      }
+      // package-tsv に該当行が見つからない場合は attribute シート順にフォールバック
+      if ( ordered_names.length === 0 ) {
+        for (var fi = 1; fi < data.values.length; fi++) { ordered_names.push(data.values[fi][col["Name"]]); }
+      }
 
-        // ヘッダー行から列位置を取得（シートの列追加・並び替えに対応）
-        var header = data.values[0];
-        var col = {};
-        for (var h = 0; h < header.length; h++) { col[header[h]] = h; }
+      for(var i = 0; i < ordered_names.length; i++) {
 
-        var name = entries[col["Name"]];
-        var harmonizedname = entries[col["Harmonized name"]];
-        var synonym = entries[col["Synonym"]];
-        var description = entries[col["Description"]];
-        var descriptionja = entries[col["DescriptionJa"]];
+        var name = ordered_names[i];
+
+        var description = desc_en[name];
+        var descriptionja = desc_ja[name];
 
         var description_place = ""
         if( la == "ja" ){
@@ -890,10 +926,10 @@ $(function(){
         } else {
           description_place = description;
         }
-        
+
         // package-attribute から該当属性の M/O/E を取得（属性名で結合）
         var option = ( pkg_row && pa_col[name] != null && pkg_row[pa_col[name]] != null ) ? pkg_row[pa_col[name]] : "";
-          
+
         // 属性の M O - 判定
         var optional_pattern = /^O/;
         var required_pattern = /^M/;
@@ -902,20 +938,20 @@ $(function(){
           span_required = '<span class="required">*</span>';
           attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a>' + span_required + '</td><td class="description">' + description_place + '</td></tr>';
         } else if ( option.match(either_one_pattern) ) {
-          group = option.match(either_one_pattern)[1].toLowerCase();                
-          
+          group = option.match(either_one_pattern)[1].toLowerCase();
+
           if(group!=pre_group){
             e = e + 1;
           };
-          
+
           span_required = '<span class="required">**' + e + '</span>';
-          attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a>' + span_required + '</td><td class="description">' + description_place + '</td></tr>';                    
+          attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a>' + span_required + '</td><td class="description">' + description_place + '</td></tr>';
           pre_group = group;
         } else if ( option.match(optional_pattern) ) {
           attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a></td><td class="description">' + description_place + '</td></tr>';
         }
-          
-      } // for(var i = 0; i < entries.length; i++)
+
+      } // for(var i = 0; i < ordered_names.length; i++)
       
       attr_table += '</tbody></table></div>';
 
@@ -990,11 +1026,13 @@ $(function(){
     	// package 選択時の処理 attribute シートを起点に
       $.when(
         $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo"),
-        $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/package-attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo")
-      ).done(function(attrArgs, paArgs) {
+        $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/package-attribute?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo"),
+        $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1myigsvkiftZ2ReqBAll4n3zajwHfyJfccDZNwlcqNak/values/package-tsv?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo")
+      ).done(function(attrArgs, paArgs, ptArgs) {
 
       var data = attrArgs[0];
       var padata = paArgs[0];
+      var ptdata = ptArgs[0];
 
       var span_required = "";
 
@@ -1061,20 +1099,54 @@ $(function(){
           if(padata.values[pr][0] == package_shortname){ pkg_row = padata.values[pr]; break; }
       }
 
-      for(var i = 1; i < data.values.length; i++) { 
+      // attribute シートから「属性名 -> 説明」を引くマップを作成
+      var header = data.values[0];
+      var col = {};
+      for (var h = 0; h < header.length; h++) { col[header[h]] = h; }
+      var desc_en = {};
+      var desc_ja = {};
+      for (var di = 1; di < data.values.length; di++) {
+        var drow = data.values[di];
+        var dname = drow[col["Name"]];
+        desc_en[dname] = drow[col["Description"]];
+        desc_ja[dname] = drow[col["DescriptionJa"]];
+      }
 
-        var entries = data.values[i];
+      // 表示順は package-tsv シート(パッケージごとの属性並び順)に従う。
+      // package-attribute と package-tsv は行の並び順が一致しないため、
+      // pkg_row の M/O/E 属性集合と一致する package-tsv 行を突き合わせて特定する。
+      var ordered_names = [];
+      if ( pkg_row ) {
+        var pkg_set = {};
+        var pkg_set_size = 0;
+        for (var an in pa_col) {
+          var av = pkg_row[pa_col[an]];
+          if ( av != null && /^[MOE]/.test(av) ) { pkg_set[an] = true; pkg_set_size++; }
+        }
+        var pt = ptdata.values;
+        for (var ti = 0; ti < pt.length; ti++) {
+          var trow = pt[ti];
+          var names = [];
+          for (var ci = 1; ci < trow.length; ci++) {
+            if ( trow[ci] !== "" ) names.push(trow[ci].replace(/^\*/, ""));
+          }
+          if ( names.length !== pkg_set_size ) continue;
+          var allin = true;
+          for (var ni = 0; ni < names.length; ni++) { if ( !pkg_set[names[ni]] ) { allin = false; break; } }
+          if ( allin ) { ordered_names = names; break; }
+        }
+      }
+      // package-tsv に該当行が見つからない場合は attribute シート順にフォールバック
+      if ( ordered_names.length === 0 ) {
+        for (var fi = 1; fi < data.values.length; fi++) { ordered_names.push(data.values[fi][col["Name"]]); }
+      }
 
-        // ヘッダー行から列位置を取得（シートの列追加・並び替えに対応）
-        var header = data.values[0];
-        var col = {};
-        for (var h = 0; h < header.length; h++) { col[header[h]] = h; }
+      for(var i = 0; i < ordered_names.length; i++) {
 
-        var name = entries[col["Name"]];
-        var harmonizedname = entries[col["Harmonized name"]];
-        var synonym = entries[col["Synonym"]];
-        var description = entries[col["Description"]];
-        var descriptionja = entries[col["DescriptionJa"]];
+        var name = ordered_names[i];
+
+        var description = desc_en[name];
+        var descriptionja = desc_ja[name];
 
         var description_place = ""
         if( la == "ja" ){
@@ -1082,10 +1154,10 @@ $(function(){
         } else {
           description_place = description;
         }
-        
+
         // package-attribute から該当属性の M/O/E を取得（属性名で結合）
         var option = ( pkg_row && pa_col[name] != null && pkg_row[pa_col[name]] != null ) ? pkg_row[pa_col[name]] : "";
-          
+
         // 属性の M O - 判定
         var optional_pattern = /^O/;
         var required_pattern = /^M/;
@@ -1094,20 +1166,20 @@ $(function(){
           span_required = '<span class="required">*</span>';
           attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a>' + span_required + '</td><td class="description">' + description_place + '</td></tr>';
         } else if ( option.match(either_one_pattern) ) {
-          group = option.match(either_one_pattern)[1].toLowerCase();                
-          
+          group = option.match(either_one_pattern)[1].toLowerCase();
+
           if(group!=pre_group){
             e = e + 1;
           };
-          
+
           span_required = '<span class="required">**' + e + '</span>';
-          attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a>' + span_required + '</td><td class="description">' + description_place + '</td></tr>';                    
+          attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a>' + span_required + '</td><td class="description">' + description_place + '</td></tr>';
           pre_group = group;
         } else if ( option.match(optional_pattern) ) {
           attr_table += '<tr id="' + name + '"><td class="name"><a href="#' + name + '">' + name + '</a></td><td class="description">' + description_place + '</td></tr>';
         }
-          
-      } // for(var i = 0; i < entries.length; i++)
+
+      } // for(var i = 0; i < ordered_names.length; i++)
       
       attr_table += '</tbody></table></div>';
 
