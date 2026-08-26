@@ -200,8 +200,8 @@ ddbj:
       children:
         - title: Genome project のデータ登録
           url: /ddbj/genome.html
-        - title: Pseudohaplotype
-          url: /ddbj/pseudohaplotype.html
+        - title: Haplotype
+          url: /ddbj/haplotype.html
         - title: WGS
           url: /ddbj/wgs.html
         - title: Finished level genomic sequences
@@ -295,8 +295,8 @@ ddbj:
       children:
         - title: Data Submission from Genome Project
           url: /ddbj/genome-e.html
-        - title: Pseudohaplotype
-          url: /ddbj/pseudohaplotype-e.html
+        - title: Haplotype
+          url: /ddbj/haplotype-e.html
         - title: WGS
           url: /ddbj/wgs-e.html
         - title: Finished level genomic sequences

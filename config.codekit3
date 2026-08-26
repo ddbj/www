@@ -4421,7 +4421,7 @@
       "rFN" : 0,
       "uCM" : 0
     },
-    "\/_ddbj\/pseudohaplotype-e.md" : {
+    "\/_ddbj\/haplotype-e.md" : {
       "cB" : 0,
       "cS" : 0,
       "eF" : 1,
@@ -4431,7 +4431,7 @@
       "ft" : 4096,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/_ddbj\/pseudohaplotype-e.html",
+      "oAP" : "\/_ddbj\/haplotype-e.html",
       "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
@@ -4440,7 +4440,7 @@
       "rFN" : 0,
       "uCM" : 0
     },
-    "\/_ddbj\/pseudohaplotype.md" : {
+    "\/_ddbj\/haplotype.md" : {
       "cB" : 0,
       "cS" : 0,
       "eF" : 1,
@@ -4450,7 +4450,7 @@
       "ft" : 4096,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/_ddbj\/pseudohaplotype.html",
+      "oAP" : "\/_ddbj\/haplotype.html",
       "oF" : 0,
       "oFM" : 0,
       "oS" : 0,
@@ -113319,12 +113319,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/assets\/images\/submission\/pseudohaplotype.jpg" : {
+    "\/assets\/images\/submission\/haplotype.jpg" : {
       "ft" : 16384,
       "iS" : 87717,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/assets\/images\/submission\/pseudohaplotype.jpg",
+      "oAP" : "\/assets\/images\/submission\/haplotype.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

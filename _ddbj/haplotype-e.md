@@ -26,6 +26,7 @@ There are a few naming options to distinguish haplotype assemblies. One of the o
 * Principal haplotype/Alternate haplotype: if one is much better (Principal) than the other (Alternate).
 * Haplotype 1/Haplotype 2:  if they are of similar quality. When more than 2 haplotypes are present, increase the number like Haplotype 3/Haplotype 4.
 * Maternal haplotype/Paternal haplotype: when that information is known.
+* Unresolvd haplotype: if the haplotype can not classify into the terms described above.
 
 ### BioProject  {#bioproject}
 
@@ -48,7 +49,7 @@ Because the sample is shared by haplotypes, create single BioSample.
 
 ### DDBJ  {#ddbj}
 
-Submit the principal and the alternate haplotype sequences.
+Cace 1) Submit the principal and the alternate haplotype sequences.
 
 - Principal haplotype
 	- Reference the BioProject 1 (Principal) in [DBLINK](/ddbj/file-format-e.html#dblink).
@@ -59,8 +60,24 @@ Submit the principal and the alternate haplotype sequences.
 	- Add the pre-defined comment in [ST_COMMENT](/ddbj/file-format-e.html#comment).
 		Genome-Assembly-Data ST_COMMENT: Diploid :: Alternate Haplotype
 
+Cace 2) Submit the principal, the alternate and unresolved haplotype sequences.
+
+- Principal haplotype
+	- Reference the BioProject 1 (Principal) in [DBLINK](/ddbj/file-format-e.html#dblink).
+	- Add the pre-defined comment in [ST_COMMENT](/ddbj/file-format-e.html#comment).
+		Genome-Assembly-Data ST_COMMENT: Diploid :: Principal haplotype
+- Alternate haplotype
+	- Reference the BioProject 2 (Alternate) in [DBLINK](/ddbj/file-format-e.html#dblink).
+	- Add the pre-defined comment in [ST_COMMENT](/ddbj/file-format-e.html#comment).
+		Genome-Assembly-Data ST_COMMENT: Diploid :: Alternate haplotype
+- Unresolved haplotype
+	- Reference the BioProject 3 (Unresolved) in [DBLINK](/ddbj/file-format-e.html#dblink).
+	- Add the pre-defined comment in [ST_COMMENT](/ddbj/file-format-e.html#comment).
+		Genome-Assembly-Data ST_COMMENT: Diploid :: Unresolved haplotype
+
 ### Real-world examples  {#real-examples}
 
+#### Case 1 Principal haplotype and alternate haplotype
 #### Common  {#common}
 
 - BioProject: [PRJDB10054](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB10054) (Umbrella)
@@ -80,3 +97,30 @@ Submit the principal and the alternate haplotype sequences.
 
 - BioProject: [PRJDB9979](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB9979)
 - DRA: [DRR231909-DRR231923](https://www.ncbi.nlm.nih.gov/sra?term=DRP006217)
+
+
+#### Case 2) Principal haplotype, alternate haplotype and unresolved haplotype
+#### Common {#common}
+
+- BioProject: [PRJDB20585](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB20585) (Umbrella)
+- BioSample: [SAMD00766708](https://www.ncbi.nlm.nih.gov/biosample/SAMD00766708)
+
+#### Principal haplotype {#principal}
+
+- BioProject: [PRJDB17947](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB17947)
+- DDBJ: [AP031502](https://www.ncbi.nlm.nih.gov/nuccore/AP031502) - [AP031512](https://www.ncbi.nlm.nih.gov/nuccore/AP031512)
+
+#### Alternate haplotype {#alternate}
+
+- BioProject: [PRJDB17948](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB17948)
+- DDBJ: [AP031513](https://www.ncbi.nlm.nih.gov/nuccore/AP031513) - [AP031521](https://www.ncbi.nlm.nih.gov/nuccore/AP031521)
+
+#### Unresolved haplotype {#unresolved}
+
+- BioProject: [PRJDB17946](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB17946)
+- DDBJ: [AP031552](https://www.ncbi.nlm.nih.gov/nuccore/AP031552) - [AP031562](https://www.ncbi.nlm.nih.gov/nuccore/AP031562)
+
+#### DRA {#dra}
+
+- BioProject: [PRJDB17942](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB17942)
+- DRA: [DRR544812](https://www.ncbi.nlm.nih.gov/sra?term=DRR544812), [DRR545384](https://www.ncbi.nlm.nih.gov/sra?term=DRR545384), [DRR5446169](https://www.ncbi.nlm.nih.gov/sra?term=DRR546169)

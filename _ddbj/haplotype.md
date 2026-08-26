@@ -26,6 +26,7 @@ Haplotype アセンブリを区別するための名称については、以下�
 * Principal haplotype/Alternate haplotype: どちらかの品質がもう一方よりも優れている場合、優れている方を Principal、もう片方を Alternate とします。
 * Haplotype 1/Haplotype 2: 品質が同等の場合。二つ以上の haplotype が存在する場合、Haplotype 3/Haplotype 4 のように数字を増やします。
 * Maternal haplotype/Paternal haplotype: 由来親が分かっている場合。
+* Unresolved haplotype: 上記に分類できない場合。
 
 ### BioProject {#bioproject}
 
@@ -48,7 +49,7 @@ Principal と Alternate haplotype に対応するプロジェクトをそれぞ�
 
 ### DDBJ {#ddbj}
 
-Principal と Alternate haplotype をそれぞれ登録します。
+Case 1) Principal と Alternate haplotype をそれぞれ登録します。
 
 - Principal haplotype
 	- [DBLINK](/ddbj/file-format.html#dblink) で BioProject 1 (Principal) を参照します。
@@ -57,8 +58,21 @@ Principal と Alternate haplotype をそれぞれ登録します。
 	- [DBLINK](/ddbj/file-format.html#dblink) で BioProject 2 (Alternate) を参照します。
 	- [ST_COMMENT](/ddbj/file-format.html#comment) に所定のコメントを記載します。Genome-Assembly-Data ST\_COMMENT: Diploid :: Alternate haplotype
 
-### 登録例 {#real-examples}
+Case 2) Principal haplotype 、 Alternate haplotype 、Unresolved haplotype をそれぞれ登録します。
 
+- Principal haplotype
+	- [DBLINK](/ddbj/file-format.html#dblink) で BioProject 1 (Principal) を参照します。
+	- [ST_COMMENT](/ddbj/file-format.html#comment) に所定のコメントを記載します。Genome-Assembly-Data ST_COMMENT: Diploid :: Principal haplotype
+- Alternate haplotype
+	- [DBLINK](/ddbj/file-format.html#dblink) で BioProject 2 (Alternate) を参照します。
+	- [ST_COMMENT](/ddbj/file-format.html#comment) に所定のコメントを記載します。Genome-Assembly-Data ST\_COMMENT: Diploid :: Alternate haplotype
+
+- Unresolved haplotype
+	- [DBLINK](/ddbj/file-format.html#dblink) で BioProject 3 (Unresolved) を参照します。
+	- [ST_COMMENT](/ddbj/file-format.html#comment) に所定のコメントを記載します。Genome-Assembly-Data ST\_COMMENT: Diploid :: Unresolved haplotype
+
+### 登録例 {#real-examples}
+#### Case 1) Principal haplotypeとAlternate haplotype
 #### 共通 {#common}
 
 - BioProject: [PRJDB10054](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB10054) (Umbrella)
@@ -78,3 +92,29 @@ Principal と Alternate haplotype をそれぞれ登録します。
 
 - BioProject: [PRJDB9979](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB9979)
 - DRA: [DRR231909-DRR231923](https://www.ncbi.nlm.nih.gov/sra?term=DRP006217)
+
+#### Case 2) Principal haplotype 、Alternate haplotype 、Unresolved haplotype
+#### 共通 {#common}
+
+- BioProject: [PRJDB20585](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB20585) (Umbrella)
+- BioSample: [SAMD00766708](https://www.ncbi.nlm.nih.gov/biosample/SAMD00766708)
+
+#### Principal haplotype {#principal}
+
+- BioProject: [PRJDB17947](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB17947)
+- DDBJ: [AP031502](https://www.ncbi.nlm.nih.gov/nuccore/AP031502) - [AP031512](https://www.ncbi.nlm.nih.gov/nuccore/AP031512)
+
+#### Alternate haplotype {#alternate}
+
+- BioProject: [PRJDB17948](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB17948)
+- DDBJ: [AP031513](https://www.ncbi.nlm.nih.gov/nuccore/AP031513) - [AP031521](https://www.ncbi.nlm.nih.gov/nuccore/AP031521)
+
+#### Unresolved haplotype {#unresolved}
+
+- BioProject: [PRJDB17946](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB17946)
+- DDBJ: [AP031552](https://www.ncbi.nlm.nih.gov/nuccore/AP031552) - [AP031562](https://www.ncbi.nlm.nih.gov/nuccore/AP031562)
+
+#### DRA {#dra}
+
+- BioProject: [PRJDB17942](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB17942)
+- DRA: [DRR544812](https://www.ncbi.nlm.nih.gov/sra?term=DRR544812), [DRR545384](https://www.ncbi.nlm.nih.gov/sra?term=DRR545384), [DRR5446169](https://www.ncbi.nlm.nih.gov/sra?term=DRR546169)
