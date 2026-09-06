@@ -141,7 +141,7 @@ table tr:hover {
 - [アノテーションファイルに関する説明](https://www.ddbj.nig.ac.jp/ddbj/file-format.html)
 - 原核生物ゲノムのアノテーションファイル作成には、[**DFAST (DDBJ Fast Annotation and Submission Tool)**](https://dfast.ddbj.nig.ac.jp/) の利用を推奨しています。
   - [DFAST を利用した登録ファイルの作成](/ddbj/mss.html#mssdfast)をお読みいただき、登録ファイルを取得してください。
-- [全長規模のゲノム配列](/ddbj/genome.html)でsource と assembly_gap 以外の biological feature の記載を行わない場合のアノテーションファイルの作成には、[GGS (Genome/gene Submission Tool)](https://ggs.ddbj.nig.ac.jp/)の利用を推奨しています。
+- [全長規模のゲノム配列](/ddbj/genome.html)で source と assembly_gap 以外の biological feature の記載を行わない場合のアノテーションファイルの作成には、[GGS (Genome/gene Submission Tool)](https://ggs.ddbj.nig.ac.jp/)の利用を推奨しています。
   - [GGS を利用した登録ファイルの作成](/ddbj/mss.html#mssggs)をお読みいただき、登録ファイルを取得してください。
 - [全長規模のゲノム配列](/ddbj/genome.html)では　source と assembly_gap 以外の biological feature の記載は任意ですが、過去に登録例がない新規性の高い種が対象の場合、最低でも１つのゲノムに代表としてアノテーションの記載が必要です。
 - [全長規模のゲノム配列](/ddbj/genome.html)でアノテーションを記載する場合は、[BioSample](/biosample/index.html) の登録時に [locus_tag prefix](/ddbj/qualifiers.html#locus_tag) の取得が必要です。
@@ -214,7 +214,7 @@ c. 単一真核生物個体の chromosome ドラフトゲノムとアセンブ�
 
 登録ファイルは MSS form から以下のいずれかの方法で送信することができます。
 - ブラウザ上でアップロード
-- [DFAST](https://dfast.ddbj.nig.ac.jp/) またはGGS の job ID を指定する
+- [DFAST](https://dfast.ddbj.nig.ac.jp/) または [GGS](https://ggs.ddbj.nig.ac.jp/) の job ID を指定する
   - DFAST または GGS にて、登録ファイルを作成済みの場合
 - SFTP サーバーに転送済みの登録ファイルを送付
   - 目安としてファイルサイズが合計で 10 Gbyte を超える場合は、[公開鍵と秘密鍵](/ddbj-account.html#generate-key-pair)を用いた SCP/SFTP によるファイル転送を選択してください。アカウントに[認証用公開鍵を登録](/account.html#register-public-key)後、「[データのアップロード](/upload.html)」に従い転送してください。
@@ -335,9 +335,9 @@ M, Mandatory; NR, Not required; OPT, Optional
 1. [GGS](https://ggs.ddbj.nig.ac.jp/) にアクセスし、[DDBJ アカウント](/ddbj-account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。DDBJ への登録に必要な項目を入力後、”SUBMIT” タブを押します。登録ファイルへの変換の、変換実行ボタンをクリックすると、MSS 登録ファイルが作成されます。最後にバリデーション実行ボタンを押して、書式チェックを行ってください（注１）。
 1. GGS の job ID で submit する場合
     1. job ID (<span style="font-family:Arial;">########-####-####-####-############</span> 書式のID)をコピーします。
-    2. 提出のSubmitボタンを押して、MSSの登録ページに移動します。そこでjob ID等を入力して、登録処理を行ってください。
+    2. 提出の Submit ボタンを押して、MSS の登録ページに移動します。そこで job ID 等を入力して、登録処理を行ってください。
 1. GGS からダウンロードしたファイルを submit する場合
-    1. 実行したjobの履歴管理画面にて登録を希望する job ID の行をクリックすると、ファイルのダウンロード画面に移動します。
+    1. 実行した job の履歴管理画面にて登録を希望する job ID の行をクリックすると、ファイルのダウンロード画面に移動します。
     1. fixed/\*.ann ファイル、 fixed/\*fa ファイルをダウンロードしてください。ファイルダウンロード後にテキストエディタ等で開いて修正をすることも可能です。
 1. [MSS 申し込み](https://mss.ddbj.nig.ac.jp/)を行ってください。[MSS による登録の流れ](/ddbj/mss.html#flow)の手順にしたがい、登録ファイルを DDBJ に送付してください。
 
