@@ -123,7 +123,8 @@ table tr:hover {
 - アノテーションファイル
   - 全登録データの登録者、REFERENCE、Feature/Qualifier の情報等を記述したタブ区切りテキストファイル。
     参照 [登録ファイル形式：アノテーションファイル](/ddbj/file-format.html#annotation)
-  - 原核生物ゲノムの登録では、[DFAST(DDBJ Fast Annotation and Submission Tool) を利用し、アノテーションファイルを作成](/ddbj/mss.html#mssdfast)することができます。
+  - 原核生物ゲノムの登録では、[DFAST(DDBJ Fast Annotation and Submission Tool) を利用し、遺伝子アノテーションを付与したアノテーションファイルを作成](/ddbj/mss.html#mssdfast)することができます。
+  - 遺伝子アノテーションのないゲノムの登録では、[GGS (Genome/gene Submission Tool) を利用し、アノテーションファイルを作成](/ddbj/mss.html#mssgss)することができます。
 - AGP ファイル ([CON](/ddbj/con.html) エントリ登録時のみ必要)
   - <span class="red">**\[重要\] CON データの新規登録は受け付けを終了しました。**</span>
   - CON エントリを構築する際のピースエントリの順序、種類、方向等が記載された、9列からなるタブ区切りテキストファイル。
@@ -140,6 +141,8 @@ table tr:hover {
 - [アノテーションファイルに関する説明](https://www.ddbj.nig.ac.jp/ddbj/file-format.html)
 - 原核生物ゲノムのアノテーションファイル作成には、[**DFAST (DDBJ Fast Annotation and Submission Tool)**](https://dfast.ddbj.nig.ac.jp/) の利用を推奨しています。
   - [DFAST を利用した登録ファイルの作成](/ddbj/mss.html#mssdfast)をお読みいただき、登録ファイルを取得してください。
+- [全長規模のゲノム配列](/ddbj/genome.html)でsource と assembly_gap 以外の biological feature の記載を行わない場合のアノテーションファイルの作成には、[GGS (Genome/gene Submission Tool)](https://ggs.ddbj.nig.ac.jp/)の利用を推奨しています。
+  - [GGS を利用した登録ファイルの作成](/ddbj/mss.html#mssggs)をお読みいただき、登録ファイルを取得してください。
 - [全長規模のゲノム配列](/ddbj/genome.html)では　source と assembly_gap 以外の biological feature の記載は任意ですが、過去に登録例がない新規性の高い種が対象の場合、最低でも１つのゲノムに代表としてアノテーションの記載が必要です。
 - [全長規模のゲノム配列](/ddbj/genome.html)でアノテーションを記載する場合は、[BioSample](/biosample/index.html) の登録時に [locus_tag prefix](/ddbj/qualifiers.html#locus_tag) の取得が必要です。
 - [TSA](/ddbj/tsa.html) では source と assembly_gap 以外の biological feature の記載は任意であり、基本的には不要です。
@@ -211,8 +214,8 @@ c. 単一真核生物個体の chromosome ドラフトゲノムとアセンブ�
 
 登録ファイルは MSS form から以下のいずれかの方法で送信することができます。
 - ブラウザ上でアップロード
-- [DFAST](https://dfast.ddbj.nig.ac.jp/) の job ID を指定する
-  - DFAST にて、登録ファイルを作成済みの場合
+- [DFAST](https://dfast.ddbj.nig.ac.jp/) またはGGS の job ID を指定する
+  - DFAST または GGS にて、登録ファイルを作成済みの場合
 - SFTP サーバーに転送済みの登録ファイルを送付
   - 目安としてファイルサイズが合計で 10 Gbyte を超える場合は、[公開鍵と秘密鍵](/ddbj-account.html#generate-key-pair)を用いた SCP/SFTP によるファイル転送を選択してください。アカウントに[認証用公開鍵を登録](/account.html#register-public-key)後、「[データのアップロード](/upload.html)」に従い転送してください。
   - 以下の説明をお読みください。
@@ -319,3 +322,23 @@ M, Mandatory; NR, Not required; OPT, Optional
 注１）ログインしていない状態でも DFAST を使ってゲノムアノテーションをすることは可能です。その場合には、履歴管理画面で job ID を指定して実行済みのjobを履歴に取り込むことができます。
 
 注２）メタ情報のチェックは簡易的なものですのでキュレーターによる査定時に修正が必要になることもあります。
+
+## GGS: 遺伝子アノテーションのないゲノムの登録  {#mssggs}
+### GGS（Genome/gene Submission Tool）  {#mssggs-1}
+[GGS](https://ggs.ddbj.nig.ac.jp/)は、遺伝子アノテーションを行わないゲノム配列の登録用サポートツールで、DDBJ に直接登録可能なアノテーションファイルを取得できます。Annotated/Assembled Sequences database へ遺伝子アノテーションのないゲノムを登録する際には、[GGS](https://ggs.ddbj.nig.ac.jp/)の利用を強く推奨しています。
+
+### 遺伝子アノテーションのないゲノムの登録の手順  {#mssggs-2}
+1. [GGS](https://ggs.ddbj.nig.ac.jp/) で解析したゲノムを Annotated/Assembled Sequences database に登録するには、事前に[BioProject](https://www.ddbj.nig.ac.jp/bioproject/index.html)、[BioSample](https://www.ddbj.nig.ac.jp/biosample/index.html)の登録が必要です。
+1. [DDBJ アカウント](/ddbj-account.html)で [GGS](https://ggs.ddbj.nig.ac.jp/) にログインすると 、解析（job）の履歴管理ができます。アカウントを持っていない場合には[アカウントの作成方法](/account.html#account-for-bioproject-biosample-submissions)をご一読下さい。
+
+### GGS のデータを Submit するには  {#mssggs-3}
+1. [GGS](https://ggs.ddbj.nig.ac.jp/) にアクセスし、[DDBJ アカウント](/ddbj-account.html)でログインします。ジョブ投入画面において塩基配列ファイルをアップロードすると、解析が始まり job ID が発行されます。DDBJ への登録に必要な項目を入力後、”SUBMIT” タブを押します。登録ファイルへの変換の、変換実行ボタンをクリックすると、MSS 登録ファイルが作成されます。最後にバリデーション実行ボタンを押して、書式チェックを行ってください（注１）。
+1. GGS の job ID で submit する場合
+    1. job ID (<span style="font-family:Arial;">########-####-####-####-############</span> 書式のID)をコピーします。
+    2. 提出のSubmitボタンを押して、MSSの登録ページに移動します。そこでjob ID等を入力して、登録処理を行ってください。
+1. GGS からダウンロードしたファイルを submit する場合
+    1. 実行したjobの履歴管理画面にて登録を希望する job ID の行をクリックすると、ファイルのダウンロード画面に移動します。
+    1. fixed/\*.ann ファイル、 fixed/\*fa ファイルをダウンロードしてください。ファイルダウンロード後にテキストエディタ等で開いて修正をすることも可能です。
+1. [MSS 申し込み](https://mss.ddbj.nig.ac.jp/)を行ってください。[MSS による登録の流れ](/ddbj/mss.html#flow)の手順にしたがい、登録ファイルを DDBJ に送付してください。
+
+注１）メタ情報のチェックは簡易的なものですのでキュレーターによる査定時に修正が必要になることもあります。

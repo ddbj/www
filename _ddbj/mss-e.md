@@ -130,7 +130,8 @@ table tr:hover {
 - Annotation file
   - The tab delimited text file that contains metadata (submitters, reference) and annotation (Feature/Qualifier)
     see [Submission file format：Annotation file](/ddbj/file-format-e.html#annotation)
-  - For the prokaryote genome, you [can create the files by using DFAST(DDBJ Fast Annotation and Submission Tool)](/ddbj/mss-e.html#mssdfast).
+  - For the prokaryote genome, you [can create the files with gene annotation by using DFAST(DDBJ Fast Annotation and Submission Tool)](/ddbj/mss-e.html#mssdfast).
+  - For the genome sequences, you [can create the files without gene annotation by using GGS(Genome/gene Submission Tool)](/ddbj/mss-e.html#mssggs).
 - AGP file（only in case of [CON](/ddbj/con-e.html) entries)
   - <span class="red">**[Caution] DDBJ currently terminated accepting new submissions.** </span>
   - The tab delimited text file to construct CON sequence that contains the order, orientation, and type of each piece entry.
@@ -147,6 +148,8 @@ table tr:hover {
 - [User guide of annotation file](https://www.ddbj.nig.ac.jp/ddbj/file-format-e.html)
 - For prokaryote genome, we strongly recommend that you should use [**DFAST (DDBJ Fast Annotation and Submission Tool)**](https://dfast.ddbj.nig.ac.jp/).
   - See [DFAST: creating the submission files](/ddbj/mss-e.html#mssdfast) and obtain the submission files.
+- For [whole genome-scale sequence](/ddbj/genome-e.html), we strongly recommend that you should use GGS (Genome/gene Submission Tool) to create annotation files that do not describe biological features other than source and assembly_gap.
+  - See [GGS: creating the submission files](/ddbj/mss-e.html#mssggs) and obtain the submission files.
 - For [whole genome-scale sequence](/ddbj/genome-e.html), it is optional to describe biological features except source and assembly_gap. However, in case of a novel species that have not been reported so far, it is required to describe feature annotation against at least one genome as a representative.
 - When you submit a genome with annotation, it is required to reserve [locus_tag prefix](/ddbj/qualifiers-e.html#locus_tag) at the registration of [BioSample](/biosample/index-e.html).
 - For [TSA](/ddbj/tsa-e.html) data, it is optional (basically unnecessary) to describe biological features except source and assembly_gap.
@@ -224,7 +227,7 @@ c. Draft genome sequences of chromosomes from a eukaryotic isolate, and assemble
 Submitters can transfer the submission files from MSS form by either one of the methods indicated below.
 
 - Uploading from browser
-- Specifying the DFAST job ID
+- Specifying the DFAST or GGS job ID
 - Loading the files which have been transferred to SFTP server
     - Select this method when the total submission files exceed more than 10 Gbytes in uncompressed size. You need [public/private key pair](/ddbj-account-e.html#generate-key-pair) to use SFTP. First, [register a public key](/account-e.html#register-public-key) to your account, and then upload the files according to ["Data upload"](/upload-e.html).
     - Read the description below
@@ -238,6 +241,9 @@ Submitters can transfer the submission files from MSS form by either one of the 
 - The destination directory is /mass
 - The mass directory is a target to import the files when MSS Application Form is used. Therefore only the the submission files should be placed here.
 - MSS form reads the files recursively from the subdirectories under mass/.
+- There are some rules for the submission file name. As to the compressed files, the files in the compressed archive should be subject to the rule.
+    - File extension of the annotation file should be either one of <span style="background-color: #e8e8e8;">.ann</span>, <span style="background-color: #e8e8e8;">.annt.tsv</span>, or <span style="background-color: #e8e8e8;">.ann.txt</span>
+    - File extension of the nucleotide sequence file should be either one of <span style="background-color: #e8e8e8;">.fasta</span>, <span style="background-color: #e8e8e8;">.seq.fa</span>, <span style="background-color: #e8e8e8;">.fa</span>, <span style="background-color: #e8e8e8;">.fna</span>, or <span style="background-color: #e8e8e8;">.seq</span>
 - There are some rules for the submission file name. As to the compressed files, the files in the compressed archive should be subject to the rule.
     - File extension of the annotation file should be either one of <span style="background-color: #e8e8e8;">.ann</span>, <span style="background-color: #e8e8e8;">.annt.tsv</span>, or <span style="background-color: #e8e8e8;">.ann.txt</span>
     - File extension of the nucleotide sequence file should be either one of <span style="background-color: #e8e8e8;">.fasta</span>, <span style="background-color: #e8e8e8;">.seq.fa</span>, <span style="background-color: #e8e8e8;">.fa</span>, <span style="background-color: #e8e8e8;">.fna</span>, or <span style="background-color: #e8e8e8;">.seq</span>
@@ -292,9 +298,6 @@ M, Mandatory; NR, Not required; OPT, Optional
 
 - Transcriptome
 
-| Your submission | BioProject | BioSample | Annotation with<br> biological feature | locus_tag | Need DRA | You should select |
-|---|
-| Transcriptome Shotgun Assembly | M | M | OPT | NR | M | TSA |
 | High Throughput cDNA Sequences | M | M | OPT | NR | OPT | HTC |
 | Expressed Sequence Tags | M | M | NR | NR | OPT | EST |
 
@@ -329,3 +332,23 @@ Finally, click "Format Check" to do the syntax check of the files.
 *1 You can use [DFAST](https://dfast.ddbj.nig.ac.jp/) and obtain the result of genome annotation without logging in. After you login to DFAST, you can import the job into your account by the function of "Job History" on the menu bar if you remember the job ID.
 
 *2 The function for checking the metadata in [DFAST](https://dfast.ddbj.nig.ac.jp/) is simple. You may be asked to correct the files by DDBJ curators after you submit the data.
+
+## GGS for the submission of genome sequences without gene annotation {#mssggs}
+### GGS（Genome/gene Submission Tool）  {#mssggs-1}
+[GGS](https://ggs.ddbj.nig.ac.jp/) is a support tool for genome sequences submission without gene annotation, which also generates the annotation files that can be directly submitted to DDBJ. We strongly recommend that the submitters use [GGS](https://ggs.ddbj.nig.ac.jp/) for the registration of the genome sequences without gene annotation to the Annotated/Assembled Sequences database.
+
+### Registration procedure for the genome sequences without gene annotation {#mssggs-2}
+1. You need [DDBJ account](/ddbj-account-e.html) which has been obtained through [GGS](https://ggs.ddbj.nig.ac.jp/) in order to register the genome sequences into the Annotated/Assembled Sequences database. Registration of [BioProject](https://www.ddbj.nig.ac.jp/bioproject/index-e.html) and [BioSample](https://www.ddbj.nig.ac.jp/biosample/index-e.html) are required in advance.
+1. If you login to [GGS](https://ggs.ddbj.nig.ac.jp/) with [DDBJ account](/ddbj-account-e.html), you can manage the jobs analyzed in [GGS](https://ggs.ddbj.nig.ac.jp/). If you have not obtained the login account, see [“DDBJ Account”](/ddbj-account-e.html) to create a new account.
+
+### How to submit the data obtained in GGS  {#mssggs-3}
+1. Login to [GGS](https://ggs.ddbj.nig.ac.jp/) with your account. First, upload the fasta file in “job submission page”, and start the job to analyze the genome. At this stage, you can obtain a job ID. After you fill necessary information for DDBJ submission in metadata section, click “SUBMIT” tab on the page. The annotation and sequence files, which are needed for MSS submission, are created after you click the Convert button. Finally, click Validate button to do the syntax check of the files.
+1. Submitting by GGS job ID
+    1. Copy the target job ID (format: <span style="font-family:Arial;">########-####-####-####-############</span>)
+    1. Click the Submit button to move to the MSS submission page. Then, enter the job ID and perform the submission process.
+1. Submitting the files downloaded from GGS
+    1. In the job management page, crick the line of the job that you would like to submit to DDBJ. Then, the download page of the files is displayed.
+    1. Download the submission files (fixed/\*.ann and fixed/\*.fasta). If you would like to edit the annotation and metadata on a text file, download the files and open them by text editor
+1. Apply for the submission through ["Application form for MSS"](https://mss.ddbj.nig.ac.jp/). According to the process shown in ["The Flow of MSS"](/ddbj/mss-e.html#flow), send the submission files to DDBJ.
+
+*1 The function for checking the metadata in [GGS](https://ggs.ddbj.nig.ac.jp/) is simple. You may be asked to correct the files by DDBJ curators after you submit the data.
