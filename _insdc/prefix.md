@@ -391,7 +391,7 @@ PY      USPTO           Patent application
 PZ      GenBank         Direct submission
 Q       void            UniProt/Swiss-Prot
 QA      USPTO           Patent application
-QB      GenBank         
+QB      GenBank         Direct submission
 QC      GenBank         
 QD      GenBank         
 QE      GenBank         
