@@ -6,7 +6,7 @@ lang: en
 
 ## Terms of Use {#terms-of-use}
 
-Last updated: 30th June, 2026
+Last updated: 16th September, 2026
 
 ### Definitions {#definition-of-terms}
 In this Terms of Use, each of the following terms have the following meanings:
@@ -27,7 +27,7 @@ In this Terms of Use, each of the following terms have the following meanings:
   1. If any provision or a part of a provision of this Terms of Use or Individual Terms of Use is held invalid or unenforceable by any applicable laws or regulations, such invalidity or unenforceability shall not affect the validity or enforceability of any other provisions (if a part of a provision is held invalid or unenforceable, the remaining part).
   1. The governing law of this Term of Use and service will be the laws of Japan. All disputes arising from or relating to the use of our services or this Term of Use and Individual Terms of Use will be exclusively brought in the Tokyo District Court, as the court of first instance.
   1. The English language version of the Term of Use, Individual Terms of Use, guidelines and policies of Center is only for reference purpose. If there is any contradiction between the Japanese version and the English version, the Japanese version shall prevail.
-  1. The user shall comply with all applicable laws, regulations, guidelines, and other applicable norms. This includes, without limitation, those relating to the protection of personal information and privacy, intellectual property rights, access and benefit-sharing of genetic resources, export controls, and economic sanctions.
+  1. The user shall comply with all applicable laws, regulations, guidelines, and other applicable norms. This includes, without limitation, those relating to the protection of personal information and privacy, intellectual property rights, [access and benefit-sharing of genetic resources](#abs), export controls, and economic sanctions.
   
 ### Online Services {#online-services}
 In regard to software that may be used via our website (either directly or through third party repositories), please use it in accordance with the terms of use of each software.
@@ -229,6 +229,27 @@ Center may correct obvious errors and inconsistencies, convert format or add rel
 Excluding the portion modified by Center, the contents and quality of the data are responsibility of the submitters. Submitter can update his/her data. Submitter should answer inquiries from users and person in charge of the database regarding submitted data, and therefore should correctly maintain its registered contact information. If there are any matters that need to be determined by submitters, we will attempt to contact the submitter wherever possible, however, if we decide that it is necessary, we will consult the superior of the organization where submitter belongs to and follow the judgement of the superior.
 Data must not be submitted without obtaining the permission of the Principal Investigator.
 When submitting data derived from a human subject, you must comply with the '[Submission of Research Data from Human Subjects](#submission-of-human-data)'.
+
+### Access and Benefit-Sharing (ABS) of Genetic Resources {#abs}
+The BioData Science Initiative (BSI) supports the open sharing of scientific data while respecting the international framework on access and benefit-sharing (ABS) of genetic resources under the Convention on Biological Diversity (CBD). This section informs submitters and users about ABS, in line with the request made to sequence databases by the Parties to the CBD at COP16 (Decision 16/2) concerning Digital Sequence Information (DSI) on genetic resources.
+
+#### Confirmation at Data Submission {#abs-confirmation}
+When submitting data, the submitter is asked to confirm the following (consent checkbox):
+
+> I confirm that, to the best of my knowledge, the data submitted here are not subject to any restrictions that would prevent their open sharing through the databases operated by the BioData Science Initiative (BSI). I have also reviewed and agreed to the BSI Terms of Use, including the provisions on the rights and duties of submitters, the handling of human-derived research data, and the access and benefit-sharing (ABS) of genetic resources.
+
+You are confirming, to the best of your knowledge, that no restriction prevents the open sharing of your data — for example, terms in a material transfer agreement (MTA), a national ABS permit, or a confidentiality obligation. If such a restriction applies, please do not submit the data as open data.
+
+#### Digital Sequence Information and the Multilateral Mechanism {#abs-multilateral-mechanism}
+At COP16, the Parties to the CBD established a multilateral mechanism, including a global fund (the 'Cali Fund'), for sharing the benefits arising from the use of Digital Sequence Information (DSI) on genetic resources. Benefit-sharing through this multilateral mechanism is aimed mainly at commercial users that profit from the use of sequence data. Submitting data to, or using open data from, BSI databases does not, by itself, create any payment obligation; this information is provided so that all users are aware of the mechanism. For background on ABS and DSI, see the [ABS Clearing-House](https://absch.cbd.int/en/).
+
+#### National ABS Laws and Rules {#abs-national-laws}
+Many countries have their own national laws, regulations, and procedures on access to genetic resources and on the sharing of benefits arising from their utilization, which may also cover DSI. Access to genetic resources and their associated DSI may therefore be subject to the ABS measures of the provider country. Submitters and users are responsible for complying with all applicable national and international ABS laws and rules. Where required, obtain the appropriate prior informed consent (PIC) and mutually agreed terms (MAT), and observe the conditions of any applicable permit.
+
+#### ABS Read More {#abs-read-more}
+
+* FAQ: Applicable national and international laws and rules on access and benefit-sharing: [https://www.ddbj.nig.ac.jp/faq/en/abs-data-sharing-e.html](/faq/en/abs-data-sharing-e.html)
+* ABS Clearing-House (CBD): [https://absch.cbd.int/en/](https://absch.cbd.int/en/)
 
 ### Data Release {#data-release}
 Scientific data provided by submitter to Center's database will be disclosed to the public in accordance with the Data Release Policy as set forth below, according to the categories of unrestricted-access data or controlled-access data. Center will not assume any responsibility for any damage arising from such disclosure, relating to copyrights, rights to obtain patents or all rights to other intellectual property of third parties (including submitter), and in the case Center incurs any damage, submitter shall compensate such damage of Center.
