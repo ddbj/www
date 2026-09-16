@@ -254,7 +254,7 @@ COP16 において、CBD 締約国は、遺伝資源に関するデジタル配�
 #### ABS 関連情報 {#abs-read-more}
 
 * FAQ: アクセスと利益配分に関する国内法・国際的なルールについて: [https://www.ddbj.nig.ac.jp/faq/ja/abs-data-sharing.html](/faq/ja/abs-data-sharing.html)
-* ABS Clearing-House（CBD）: [https://absch.cbd.int/en/](https://absch.cbd.int/en/)
+* ABS Clearing-House: [https://absch.cbd.int/en/](https://absch.cbd.int/en/)
 
 ### データの公開 {#data-release}
 登録者からセンターのデータベースに提供された科学的なデータは、非アクセス制限データ又はアクセス制限データの種別に従い、以下のデータ公開原則に従って公開されます。センターは当該公開によって登録者を含む第三者の著作権、特許を受ける権利、その他知的財産等の一切の権利に関するいかなる損害についても一切の責任を負わず、当該責任は登録者が負うものとし、センターに損害が発生した場合には、登録者が当該損害を補償するものとします。
