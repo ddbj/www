@@ -236,7 +236,7 @@ The BioData Science Initiative (BSI) supports the open sharing of scientific dat
 #### Confirmation at Data Submission {#abs-confirmation}
 When submitting data, the submitter is asked to confirm the following (consent checkbox):
 
-> I confirm that, to the best of my knowledge, the data submitted here are not subject to any restrictions that would prevent their open sharing through the databases operated by the BioData Science Initiative (BSI). I have also reviewed and agreed to the BSI Terms of Use, including the provisions on the rights and duties of submitters, the handling of human-derived research data, and the access and benefit-sharing (ABS) of genetic resources.
+"I confirm that, to the best of my knowledge, the data submitted here are not subject to any restrictions that would prevent their open sharing through the databases operated by the BioData Science Initiative (BSI). I have also reviewed and agreed to the BSI Terms of Use, including the provisions on the rights and duties of submitters, the handling of human-derived research data, and the access and benefit-sharing (ABS) of genetic resources."
 
 You are confirming, to the best of your knowledge, that no restriction prevents the open sharing of your data — for example, terms in a material transfer agreement (MTA), a national ABS permit, or a confidentiality obligation. If such a restriction applies, please do not submit the data as open data.
 
