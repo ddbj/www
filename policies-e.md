@@ -246,7 +246,7 @@ At COP16, the Parties to the CBD established a multilateral mechanism, including
 #### National ABS Laws and Rules {#abs-national-laws}
 Many countries have their own national laws, regulations, and procedures on access to genetic resources and on the sharing of benefits arising from their utilization, which may also cover DSI. Access to genetic resources and their associated DSI may therefore be subject to the ABS measures of the provider country. Submitters and users are responsible for complying with all applicable national and international ABS laws and rules. Where required, obtain the appropriate prior informed consent (PIC) and mutually agreed terms (MAT), and observe the conditions of any applicable permit.
 
-#### ABS Read More {#abs-read-more}
+#### Learn More about ABS {#abs-learn-more}
 
 * FAQ: Applicable national and international laws and rules on access and benefit-sharing: [https://www.ddbj.nig.ac.jp/faq/en/abs-data-sharing-e.html](/faq/en/abs-data-sharing-e.html)
 * ABS Clearing-House (CBD): [https://absch.cbd.int/en/](https://absch.cbd.int/en/)
