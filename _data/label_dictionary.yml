@@ -110,6 +110,13 @@ pipeline:
   full:
     en: Pipeline
     ja: Pipeline
+dbcls:
+  short:
+    en: DBCLS
+    ja: DBCLS
+  full:
+    en: Database Center for Life Science (DBCLS)
+    ja: ライフサイエンス統合データベースセンター (DBCLS)
 top:
   short:
     en: DDBJ Center
