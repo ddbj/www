@@ -11,8 +11,8 @@ addhead: <script type='text/javascript' src='https://www.gstatic.com/charts/load
 
 |  Database  |  Release  |  Date  |  DDBJ date  |  Entries  |  Bases  |  Rate of increase  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-DDBJ               | 142     | 2026-06       | 2026-06   | 6691183636 | 59934906034626 | 11.0%
-DAD                | 112     | 2026-06       | 2026-06   | 399443195  | 169683025004   | 1.2%
+DDBJ               | 143     | 2026-09       | 2026-09   | 6946918244 | 64425857250113 | 7.5%
+DAD                | 113     | 2026-09       | 2026-09   | 405513693  | 171762350792   | 1.2%
 
 {: .tablecaption}
 Date: リリースノートに記載されている正式公開日付<br>DDBJ date: DDBJで公開した日付<br>Rate of increase: 前回リリースの総塩基数に対する増加率
