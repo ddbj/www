@@ -94,7 +94,7 @@ category: about
             <p class="name">Yuichi Kodama, PhD</p>
             <p class="position">コーディネータ</p>
         </div>
-        </li>  
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/mashima.jpg" title="真島 淳"></p>
         <div class="explanation">
@@ -102,7 +102,7 @@ category: about
             <p class="name">Jun Mashima, PhD</p>
             <p class="position">コーディネータ</p>
         </div>
-        </li>   
+        </li>
     </ul>
     <ul class="list">
         <li class="staff">
@@ -112,7 +112,7 @@ category: about
             <p class="name">Takehide Kosuge, PhD</p>
             <p class="position">アドバイザー</p>
         </div>
-        </li> 
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/aono.jpg" title="青野 英雄"></p>
         <div class="explanation">
@@ -120,7 +120,7 @@ category: about
             <p class="name">Hideo Aono</p>
             <p class="position">キュレータ</p>
         </div>
-        </li>  
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/fukuda.jpg" title="福田 亜沙美"></p>
         <div class="explanation">
@@ -128,8 +128,8 @@ category: about
             <p class="name">Asami Fukuda</p>
             <p class="position">キュレータ</p>
         </div>
-        </li>  
-    </ul>  
+        </li>
+    </ul>
     <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/lee.jpg" title="李 慶範"></p>
@@ -146,7 +146,7 @@ category: about
             <p class="name">Toshihisa Okido, PhD</p>
             <p class="position">キュレータ</p>
         </div>
-        </li>  
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/sugita.jpg" title="杉田 里江"></p>
         <div class="explanation">
@@ -155,7 +155,7 @@ category: about
             <p class="position">キュレータ</p>
         </div>
         </li>
-    </ul>  
+    </ul>
     <ul class="list">
         <li class="staff">
             <p class="photo"><img src="/assets/images/staff/suzuki.jpg" title="鈴木 紀美子"></p>
@@ -181,7 +181,7 @@ category: about
                 <p class="position">キュレータ</p>
             </div>
         </li>
-    </ul>  
+    </ul>
     <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/yokoyama.jpg" title="横山会美"></p>
@@ -200,22 +200,15 @@ category: about
         </div>
         </li>
         <li class="staff">
-        <p class="photo"><img src="/assets/images/staff/margaretha.jpg" title="Febrina Margaretha"></p>
-        <div class="explanation">
-            <p class="name">Febrina Margaretha</p>
-            <p class="position">システム開発・国際連携</p>
-        </div>
-        </li>
-    </ul>  
-    <ul class="list">
-        <li class="staff">
         <p class="photo"><img src="/assets/images/staff/fujimoto.jpg" title="藤本　昌宏"></p>
         <div class="explanation">
             <p class="name">藤本 昌宏</p>
             <p class="name">Masahiro Fujimoto</p>
             <p class="position">運用 SE</p>
         </div>
-        </li>  
+        </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hattori.jpg" title="服部 学"></p>
         <div class="explanation">
@@ -223,7 +216,7 @@ category: about
             <p class="name">Manabu Hattori</p>
             <p class="position">運用 SE</p>
         </div>
-        </li>       
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/kawasaki.jpg" title="川崎　愛美"></p>
         <div class="explanation">
@@ -231,9 +224,7 @@ category: about
             <p class="name">Aimi Kawasaki</p>
             <p class="position">運用 SE</p>
         </div>
-        </li> 
-    </ul>    
-    <ul class="list"> 
+        </li>
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/komiyama.jpg" title="小宮山 萌"></p>
         <div class="explanation">
@@ -242,6 +233,8 @@ category: about
             <p class="position">運用 SE</p>
         </div>
         </li>
+    </ul>
+    <ul class="list">
         <li class="staff">
         <p class="photo"><img src="/assets/images/staff/hmochizu.png" title="望月 秀起"></p>
         <div class="explanation">
