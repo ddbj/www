@@ -93,6 +93,11 @@ $ cd controlled-access/submission/jga/JSUB000353
 $ put JSUB000353_metadata.xlsx
 ```
 
+The SFTP server's host key types and fingerprints are as follows:   
+* ED25519 - SHA256:tBgxfN0oXv06NStQPFZp1FAWX/ZOQDmiRfbAovD/W2A
+* ECDSA - SHA256:LAPCiua7RAlPIZwE4MKWX7YHMY//rtyjfnUYBj/cnfk
+* RSA - SHA256:MVkrCF261X0L3Ki+gLkbEnaMJBOcqJtZboW46ZDCO/s
+
 ## Data upload {#upload-data-files}
 
 ### Data file format {#data-file-format}

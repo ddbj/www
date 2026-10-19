@@ -13,6 +13,11 @@ This page explains how to upload data files by using sftp for DRA/GEA/DDBJ/Metab
 - Hostname: ftp-private.ddbj.nig.ac.jp
 - Port number: 22
 
+The SFTP server's host key types and fingerprints are as follows:   
+* ED25519 - SHA256:tBgxfN0oXv06NStQPFZp1FAWX/ZOQDmiRfbAovD/W2A
+* ECDSA - SHA256:LAPCiua7RAlPIZwE4MKWX7YHMY//rtyjfnUYBj/cnfk
+* RSA - SHA256:MVkrCF261X0L3Ki+gLkbEnaMJBOcqJtZboW46ZDCO/s
+
 ### Destination directories to upload  {#uploaddestination}
 
 The destination directories are different with the databases. Do NOT create sub-directories under the destination directories of DRA and GEA.  

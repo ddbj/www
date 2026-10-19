@@ -108,6 +108,11 @@ $ cd controlled-access/submission/jga/JSUB000353
 $ put JSUB000353_metadata.xlsx
 ```
 
+sftp サーバの鍵の種類とフィンガープリントは以下になります。   
+* ED25519 - SHA256:tBgxfN0oXv06NStQPFZp1FAWX/ZOQDmiRfbAovD/W2A
+* ECDSA - SHA256:LAPCiua7RAlPIZwE4MKWX7YHMY//rtyjfnUYBj/cnfk
+* RSA - SHA256:MVkrCF261X0L3Ki+gLkbEnaMJBOcqJtZboW46ZDCO/s
+
 ## データファイルのアップロード  {#upload-data-files}
 
 ### データファイル形式 {#data-file-format}
