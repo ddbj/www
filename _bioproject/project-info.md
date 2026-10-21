@@ -49,14 +49,14 @@ lang: ja
 
 ### Project Description  {#Area_project-description}
 
-プロジェクトの内容を記述します。
+プロジェクトの内容を記述します。ASCII 文字のみ使用可能です。
 
 [Project title](#Project_title)<span class="red">\*</span><a name="Project_title"></a>  
-: プロジェクトの内容を表す短いタイトル。このタイトルは公開されたプロジェクトのタイトルとして使われます。  
+: プロジェクトの内容を表すタイトルを20〜250文字（空白含む）で記載します。このタイトルは公開されたプロジェクトのタイトルとして使われます。  
 例: Chromosome Y sequencing, Global studies of microbial diversity on human skin.
 
 [Description](#Public_description)<span class="red">\*</span><a name="Public_description"></a>  
-: 研究対象やゴールに関する記載。第三者がデータを解釈することができるように十分な量 (100 文字以上) の情報を記入します。
+: 研究対象やゴールに関する記載を20〜4,000文字（空白含む）で記入します。
 
 [Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>
 : データベーススタッフへの質問やプロジェクトに関する追加情報を記入します。内容は公開されません。[アンブレラプロジェクト](/bioproject/submission.html#submit-umbrella-project)を登録する場合、ここにその旨を記載します。例 Please register this project as an umbrella project.  
@@ -110,24 +110,31 @@ NCBI ではプロジェクトを参照している実際の登録データから
 
 | Project Data type                | Description                                                                                    |
 |---|
+| Genome Sequencing and Assembly   | 全ゲノムや部分ゲノム塩基配列決定プロジェクト (ゲノムアセンブリ有り)                                                      |
+| Raw Sequence Reads   |   次世代シークエンスリード   |
 | Genome Sequencing                | 全ゲノムや部分ゲノム塩基配列決定プロジェクト (ゲノムアセンブリの有無は問わない)                                                      |
+| Assembly             | ゲノムアセンブリ   |
 | Clone Ends                       | クローンエンド塩基配列決定プロジェクト                                                                            |
 | Epigenomics                      | メチル化、ヒストン修飾、クロマチン構造に関するデータセット                                                                |
 | Exome                            | エクソームリシークエンシングプロジェクト                                                                           |
 | Map                              | 塩基配列ではないマップデータをもたらすプロジェクト (genetic map、radiation hybrid map、cytogenetic map、optical map など) |
-| Metagenome                       | 環境サンプルの配列解析                                                                                    |
-| Phenotype and Genotype           | 表現型と遺伝子型の相関を解析するプロジェクト                                                                         |
-| Proteome                         | マススペクトロメトリー解析を含む大規模プロテオミクス実験                                                                   |
+| Metagenome                       | メタゲノム解析 |
+| Metagenomic Assembly | メタゲノムアセンブリ |
 | Random Survey                    | ランダムに収集した (対象の包括的なサンプリングを目的としていない) サンプルから得られた配列                                                |
+| Targeted Loci Cultured            | 特定の遺伝子座 (16S rRNA など) の塩基配列決定プロジェクト（培養サンプル）                                                            |
+| Targeted Loci Environmental        | 特定の遺伝子座 (16S rRNA など) の塩基配列決定プロジェクト（環境サンプル）                                                            |
 | Targeted Locus (Loci)            | 特定の遺伝子座 (16S rRNA など) の塩基配列決定プロジェクト                                                            |
 | Transcriptome or Gene Expression | cDNA、EST、RNA-seq、マイクロアレイ実験を含む大規模 RNA 塩基配列決定や発現解析                                            |
-| Variation                        | 集団間に存在する大小の変異を同定することを目的としたプロジェクト                                                               |
+| Variation                        | 集団間に存在する大小のバリアントを同定することを目的としたプロジェクト                                                               |
+| Phenotype and Genotype           | 表現型と遺伝子型の相関を解析するプロジェクト                                                                         |
+| Metabolome | メタボロミクス研究  |
+| Proteome                         | マススペクトロメトリー解析を含む大規模プロテオミクス実験                                                                   |
 | Other                            | "Project data type description" に Project Data Type を記入します。                                    |
 
 [Project data type description](#Project_data_type_description)<span class="conditionally_required">\*</span><a name="Project_data_type_description"></a>  
-: Other を選択したときは Project data type をここに記入します。例 Metabolome
+: Other を選択したときは Project data type をここに記入します。
 
-### Sample scope/Material/Capture/Methodology {#Area_sample-scopematerialcapturemethodology}
+### Sample scope {#Area_sample-scope}
 
 [Sample scope](#BioProject_Sample_scope)<span class="red">\*</span><a name="BioProject_Sample_scope"></a>  
 : 研究で使われた生物学的サンプルの対象を選択肢から選びます。
@@ -139,69 +146,6 @@ NCBI ではプロジェクトを参照している実際の登録データから
 | Multi-species | サンプルが複数の種を含んでいる                             |
 | Environment   | サンプルに含まれる種が不明                               |
 | Synthetic     | 人工的に合成されたサンプル                               |
-| Other         | "Target description" に Sample scope を記入します。 |
-
-[Material](#Material)<span class="red">\*</span><a name="Material"></a>
-: サンプルから単離された実験材料の種類。
-
-| Material       | Description                                  |
-|---|
-| Genome         | 全ゲノム。核ゲノムが対象のときに使います。DNA やメタゲノムサンプルに対して用います。 |
-| Partial Genome | 精製された１つ以上の染色体やレプリコン                          |
-| Transcriptome  | 転写産物解析データ                                    |
-| Reagent        | 化学反応や沈降反応によって得られた実験材料                        |
-| Proteome       | タンパク質やペプチドのデータ                               |
-| Phenotype      | 表現型解析                                        |
-| Other          | "Target description" に Material を記入します。      |
-
-[Capture](#Capture)<span class="red">\*</span><a name="Capture"></a>  
-: サンプル材料から得ようとしている情報のスケールや種類。　
-
-| Capture             | Description                            |
-|---|
-| Whole               | サンプル全体を使っている (通常のケース)                  |
-| Clone Ends          | クローンエンドデータを使用                          |
-| Exome               | エクソンのデータを使用                            |
-| Targeted Locus/Loci | 特定の遺伝子座 (遺伝子、ゲノム領域、バーコード領域) のデータ       |
-| Random Survey       | サンプルをラフにサーベイしたデータ                      |
-| Other               | "Target description" に Capture を記入します。 |
-
-[Target description](#Target_description)<span class="conditionally_required">\*</span><a name="Target_description"></a>  
-: Other を選択したときに Sample scope/Material/Capture を記入します。
-
-[Methodology](#Methodology)<span class="red">\*</span><a name="Methodology"></a>  
-: データを得るために使われた主要な手法。
-
-| Methodology       | Description                                   |
-|---|
-| Sequencing        | Sanger や Illumina などを使ったシークエンシング          |
-| Array             | ハイブリダイゼーションアレイ                                |
-| Mass Spectroscopy | マススペクトロメトリー                                   |
-| Other             | "Methodogy description" に Methodology を記入します。 |
-
-[Methodology description](#Methodology_description)<span class="conditionally_required">\*</span><a name="Methodology_description"></a>  
-: Other を選択したときに Methodology type を記入します。
-
-### Objective  {#Area_objective}
-
-登録するデータの種類。
-
-[Objective](#Objective)<span class="red">\*</span><a name="Objective"></a>  
-: 登録するデータの種類。
-
-| Objective          | Description                                                  |
-|---|
-| Raw Sequence Reads | シークエンサから出力された生シークエンシングデータ                                    |
-| Sequence           | 生データではない加工処理されたシークエンス (クリップされている、メイトペアが対になっている、向きが揃えられているなど) |
-| Analysis           | 生物学的な意味を解釈するために解析されたデータ                                      |
-| Assembly           | アセンブリ (ゲノムやトランスクリプトーム) データ                                   |
-| Annotation         | アノテーションを得るためのデータ                                             |
-| Variation          | 変異情報データ                                                      |
-| Epigenetic Markers | エピジェネティックなマーカーの探索                                            |
-| Expression         | 遺伝子発現データ                                                     |
-| Maps               | 細胞学的、物理的なマッピングや Rh マッピング                                     |
-| Phenotype          | 表現型                                                          |
-| Other              | "Objective description" に Objective を記載します。                  |
 
 ## Target  {#Target}
 

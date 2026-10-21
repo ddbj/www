@@ -49,13 +49,13 @@ Select "Hold" or "Release". You cannot specify hold date. Please see [Release of
 
 ### Project Description  {#Area_project-description}
 
-An informative paragraph that describes the project and provides informative context for the displayed project record.
+An informative paragraph that describes the project and provides informative context for the displayed project record. Only ASCII characters can be used.
 
 [Project title](#Project_title)<span class="red">\*</span><a name="Project_title"></a>  
-: Very short descriptive name of the project for caption, labels, etc for public display. For example: Chromosome Y sequencing, Global studies of microbial diversity on human skin.
+: Short descriptive name of the project for caption, labels, etc for public display in 20-250 characters including spaces. For example: Chromosome Y sequencing, Global studies of microbial diversity on human skin.
 
 [Description](#Public_description)<span class="red">\*</span><a name="Public_description"></a>  
-: Description (a paragraph) of the project goals and purposes. Provide enough information (more than 100 characters) in the description for other users to interpret the data.
+: Description (a paragraph) of the project goals and purposes in 20-4,000 characters including spaces.
 
 [Private comments to DDBJ staff](#Private_comments)<a name="Private_comments"></a>  
 : Use this field if you have questions for database support staff. The content is not made public. If you intend to [submit an umbrella project](/bioproject/submission-e.html#submit-umbrella-project), please inform us that "this is umbrella project" (e.g., Please register this project as an umbrella project).  
@@ -109,24 +109,30 @@ NCBI individually assigns the [Project data type](https://www.ncbi.nlm.nih.gov/b
     
 | Project Data type                | Description                                                                                                                     |
 |---|
+| Genome Sequencing and Assembly   | whole, or partial, genome sequencing project (with a genome assembly)                                                |
+| Raw Sequence Reads   |   Next-generation sequencing reads   |
 | Genome Sequencing                | whole, or partial, genome sequencing project (with or without a genome assembly)                                                |
 | Clone Ends                       | clone-end sequencing project                                                                                                    |
 | Epigenomics                      | DNA methylation, histone modification, chromatin accessibility datasets                                                         |
 | Exome                            | exome resequencing project                                                                                                      |
 | Map                              | project that results in non-sequence map data such as genetic map, radiation hybrid map, cytogenetic map, optical map, and etc. |
 | Metagenome                       | sequence analysis of environmental samples                                                                                      |
-| Phenotype and Genotype           | project correlating phenotype and genotype                                                                                      |
-| Proteome                         | large scale proteomics experiment including mass spec. analysis                                                                 |
+| Metagenomic Assembly | metagenome assembly |
 | Random Survey                    | sequence generated from a random sampling of the collected sample; not intended to be comprehensive sampling of the material.   |
+| Targeted Loci Cultured            | project to sequence specific loci, such as a 16S rRNA sequencing (cultured sample)                                                                |
+| Targeted Loci Environmental        | project to sequence specific loci, such as a 16S rRNA sequencing (environmental sample)                                                               |
 | Targeted Locus (Loci)            | project to sequence specific loci, such as a 16S rRNA sequencing                                                                |
 | Transcriptome or Gene Expression | large scale RNA sequencing or expression analysis. Includes cDNA, EST, RNA\_seq, and microarray.                                |
 | Variation                        | project with a primary goal of identifying large or small sequence variation across populations.                                |
+| Phenotype and Genotype           | project correlating phenotype and genotype                                                                                      |
+| Metabolome                        | metabolomics |
+| Proteome                         | large scale proteomics experiment including mass spec. analysis                                                                 |
 | Other                            | a free text description is provided to indicate Other data type                                                                 |
    
 [Project data type description](#Project_data_type_description)<span class="conditionally_required">\*</span><a name="Project_data_type_description"></a>  
 : Describe the project data type when the Other is selected.
 
-### Sample scope/Material/Capture/Methodology  {#Area_sample-scopematerialcapturemethodology}
+### Sample scope {#Area_sample-scope}
 
 [Sample scope](#BioProject_Sample_scope)<span class="red">\*</span><a name="BioProject_Sample_scope"></a>  
 : The scope and purity of the biological sample used for the study.
@@ -138,69 +144,6 @@ NCBI individually assigns the [Project data type](https://www.ncbi.nlm.nih.gov/b
 | Multi-species | Sample represents multiple species.                                                                                                                                               |
 | Environment   | Species content of the sample is not known.                                                                                                                                       |
 | Synthetic     | Sample is synthetically created by a machine.                                                                                                                                     |
-| Other         | Specify the sample scope that was used in the "Target description".                                                                                                               |
-
-[Material](#Material)<span class="red">\*</span><a name="Material"></a>
-: The type of material that is isolated from the sample for use in the experimental study.
-
-| Material       | Description                                                                                    |
-|---|
-| Genome         | A whole genome initiative. May be only the nuclear genome. Use for DNA of a metagenome sample. |
-| Partial Genome | One or more chromosomes or replicons were experimentally purified.                             |
-| Transcriptome  | Transcript data.                                                                               |
-| Reagent        | Material studied was obtained by chemical reaction, precipitation.                             |
-| Proteome       | Protein or peptide data.                                                                       |
-| Phenotype      | Phenotypic descriptive data.                                                                   |
-| Other          | Specify the material that was used in the "Target description".                                |
-
-[Capture](#Capture)<span class="red">\*</span><a name="Capture"></a>  
-: The scale, or type, of information that the study is designed to generate from the sample material.
-
-| Capture             | Description                                                                     |
-|---|
-| Whole               | The project makes use of the whole sample material (most common case).          |
-| Clone Ends          | Capturing clone end data.                                                       |
-| Exome               | Capturing exon-specific data.                                                   |
-| Targeted Locus/Loci | Capturing specific loci (gene, genomic region, barcode standard).               |
-| Random Survey       | Not using whole sample, an incomplete survey of the sample.                     |
-| Other               | Specify the scale or type of the captured material in the "Target description". |
-
-[Target description](#Target_description)<span class="conditionally_required">\*</span><a name="Target_description"></a> 
-: Describe the Sample scope/Material/Capture when the Other(s) is selected.
-
-[Methodology](#Methodology)<span class="red">\*</span><a name="Methodology"></a>  
-: The core experimental approach used to obtain the data that is submitted to archival databases.
-
-| Methodology       | Description                                                     |
-|---|
-| Sequencing        | Sequencing using Sanger, 454, Illumina, etc wit                 |
-| Array             | Data/Sequence are generated by hybridization arrays.            |
-| Mass Spectroscopy | Data are generated by mass spectroscopy.                        |
-| Other             | Please provide data description in the "Methodogy description". |
-
-[Methodology description](#Methodology_description)<span class="conditionally_required">\*</span><a name="Methodology_description"></a>  
-: Describe the methodology type when the Other is selected.
-
-### Objective  {#Area_objective}
-
-Project goals with respect to the type of data that will be generated and submitted to an INSDC-associated database. Select all relevant menu options.
-
-[Objective](#Objective)<span class="red">\*</span><a name="Objective"></a>  
-: Project goals with respect to the type of data that will be generated and submitted to an INSDC-associated database. Select all relevant menu options.
-
-| Objective          | Description                                                                    |
-|---|
-| Raw Sequence Reads | Submission of raw sequencing information as it comes out of machine.           |
-| Sequence           | Sequence which is not raw - meaning processed (clipped, matepaired, oriented). |
-| Analysis           | Higher level interpretation of the data.                                       |
-| Assembly           | Experiment will result in assemblies (genome or transcriptome).                |
-| Annotation         | Experiment wil result in Annotation.                                           |
-| Variation          | Submission of variations.                                                      |
-| Epigenetic Markers | Experiment will result in Epigenetic markers.                                  |
-| Expression         | Submission of gene expression.                                                 |
-| Maps               | Experiment will result in cytogenetic, physical, Rh, etc...maps.               |
-| Phenotype          | Experiment will deliver phenotypes.                                            |
-| Other              |                                                                                |
 
 ## Target  {#Target}
 

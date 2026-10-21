@@ -15,7 +15,7 @@ Primary project:
 : Submitted projects which are intended to represent and be linked to current or future data submissions. <span class="red">Primary projects can be kept private.</span>
 
 Umbrella project:
-: Administrative project that is created to group multiple projects that are related by a single effort from a single submitter or group of submitters. <span class="red">Umbrella projects cannot be kept private.</span>
+: Administrative project that is created to group multiple projects that are related by a single effort from a single submitter or group of submitters.
     
 * Submitted data can directly refer to primary projects but can not refer to umbrella projects. The data are indirectly linked to the umbrella project through the primary project.
 * Submitted primary projects are not directly linked to other primary projects: they are linked indirectly by way of links to the umbrella project.
@@ -65,7 +65,7 @@ To submit human data, [your data submission application needs to be approved by 
 
 ## Submit an umbrella project {#submit-umbrella-project}
 
-Umbrella project can be submitted as primary project in [D-way](https://ddbj.nig.ac.jp/D-way/). <span class="red">Be sure to tell the DDBJ BioProject staff that submitting project is umbrella by writing so in the [Private comments to DDBJ staff](/bioproject/project-info-e.html#Private_comments). Umbrell project cannot be kept private.</span>
+Umbrella project can be submitted as primary project in [D-way](https://ddbj.nig.ac.jp/D-way/). <span class="red">Be sure to tell the DDBJ BioProject staff that submitting project is umbrella by writing so in the [Private comments to DDBJ staff](/bioproject/project-info-e.html#Private_comments).</span>
 
 When submitting an umbrella project to organize [haplotype](/ddbj/pseudohaplotype-e.html#bioproject) datasets, enter accession numbers of primary BioProjects to be linked and their names for haplotypes (e.g. PRJDB1 Principal, PRJDB2 Alternate and PRJDB3 DRA).
 
@@ -95,10 +95,6 @@ The projects can be kept private and are released as follows.
 FAQ: [How are linked BioProject/BioSample/experimental data released?](/faq/en/bp-bs-seq-release-e.html)
 
 {% include image.html url="submission/release_re.jpg" caption="Triggering of data release between primary projects and data records." class="w450" %}
-
-<span class="red">An umbrella project cannot be kept private.</span>
-
-An umbrella project can have public and private primary projects. Hierarchical relationship between the public umbrella project and the un-released primary project is invisible.
 
 {% include image.html url="submission/um_pri_visibility.jpg" caption="Visibility of relationships between a public umbrella and primary projects." class="w400" %}
 

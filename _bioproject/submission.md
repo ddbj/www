@@ -16,7 +16,7 @@ lang: ja
 
 アンブレラプロジェクト
 
-: 関連性のあるプロジェクトを上位でまとめるプロジェクト。<span class="red">アンブレラプロジェクトは非公開にすることはできません。</span>
+: 関連性のあるプロジェクトを上位でまとめるプロジェクト。
 
 * 登録データはプライマリープロジェクトを直接参照することができますが、アンブレラプロジェクトを直接参照することはできません。
 
@@ -59,8 +59,7 @@ lang: ja
 
 ## アンブレラプロジェクトの登録 {#submit-umbrella-project}
 
-アンブレラプロジェクトは通常のプライマリープロジェクトと同様 [D-way](https://ddbj.nig.ac.jp/D-way/) から登録します。 <span class="red">登録の際には必ず [Private comments to DDBJ staff](/bioproject/project-info.html#Private_comments) にこの登録がアンブレラであることを記入してください。
-アンブレラプロジェクトを非公開にすることはできません。</span>
+アンブレラプロジェクトは通常のプライマリープロジェクトと同様 [D-way](https://ddbj.nig.ac.jp/D-way/) から登録します。 <span class="red">登録の際には必ず [Private comments to DDBJ staff](/bioproject/project-info.html#Private_comments) にこの登録がアンブレラであることを記入してください。</span>
 
 [Haplotype](/ddbj/haplotype.html#bioproject) をまとまるアンブレラプロジェクトを登録する場合、配下にリンクするプライマリープロジェクトのアクセッション番号とその区別 (例 PRJDB1 Principal, PRJDB2 Alternate, PRJDB3 DRA) を記入します。
 
@@ -98,10 +97,6 @@ lang: ja
 FAQ: [BioProject/BioSample/塩基配列データの連動公開の仕組みは？](/faq/ja/bp-bs-seq-release.html)
 
 {% include image.html url="submission/release_re.jpg" caption="プライマリープロジェクトと登録データの公開の仕組み" class="w500" %}
-
-<span class="red">アンブレラプロジェクトは非公開にすることができません。</span>  
-
-アンブレラプロジェクトは公開されているプライマリープロジェクトと非公開のプロジェクトの両方を持つことができます。第三者は公開されているアンブレラプロジェクトと非公開のプライマリープロジェクト間の関係を見ることはできません。
 
 {% include image.html url="submission/um_pri_visibility.jpg" caption="アンブレラプロジェクトとプライマリープロジェクト間の関係の可視性" class="w350" %}
 
