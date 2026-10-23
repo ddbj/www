@@ -1,11 +1,11 @@
 top_news:
  ja:
-    - title: (10/21 10:00-11:00) D-way 一時停止のお知らせ
-      path: 2026-10-16
-    - title: INSDC specifications に関する論文が公開されました
-      path: 2026-09-08
+    - title: 登録を支援するナビゲーション、GGS と validator のご案内
+      path: 2026-10-23
+    - title: セキュリティ強化のメンテナンスのための MetaboBank 検索サービス停止のお知らせ
+      path: 2026-10-22
  en:
-    - title: (21st Oct 10:00-11:00)(JST) Announcement of D-way suspension
-      path: 2026-10-16-e
-    - title: A paper on the INSDC specifications has been published
-      path: 2026-09-08-e
+    - title: Submission support services, Navigation, GGS and Validator
+      path: 2026-10-23-e
+    - title: MetaboBank Search suspension for maintenance to strengthen security
+      path: 2026-10-22-e

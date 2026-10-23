@@ -18,6 +18,8 @@ lang: ja
 
 D-way ウェブサイトの上部にある "BioSample" メニューから BioSample 登録ページに移動します。 BioSample ページ内の \[New submission\] をクリックし、新規サンプル登録を作成します。
 
+サンプルの登録例については、[こちら](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482)をご覧ください。
+
 <div class="attention">
 1 submission で登録できるサンプル数の上限は 1,000 です。これを超える場合は submission を分けてください。
 </div>

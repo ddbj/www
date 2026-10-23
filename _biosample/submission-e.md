@@ -18,6 +18,8 @@ Obtain a [submission account](/ddbj-account-e.html).
 
 Move to the Biosample submission page from the "Biosample" menu at the top. Create a new sample submission by clicking the \[New submission\] button.
 
+For examples of sample submission, please see [this page](https://docs.google.com/spreadsheets/d/1VCCuSwvIRfp5-DT8cnvvAwWH4C7wbDFSjHQ_q3f3BII/edit#gid=1811256482).
+
 <div class="attention">
 The maximum number of samples per submission is 1,000. If you have more than 1,000 samples, please create multiple submissions.
 </div>

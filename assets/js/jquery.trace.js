@@ -1351,6 +1351,88 @@ $(function() {
 
     }); // $.getJSON
 
+  // DDBJ validation rules
+  } else if ( pathname.match(/\/ddbj\/validation/) ) {
+
+      $.getJSON("https://sheets.googleapis.com/v4/spreadsheets/1Bb4yG0UeC5Y-oem7cMZFHhL1PtvuXG73tqQs5_tr-sw/values/ddbj?key=AIzaSyAn1Z6u4xEQ43BVGXeWMWI37R0rotfdJEo", function(data) {
+
+      // HTML 特殊文字をエスケープ（メッセージに < > & を含むため）
+      function esc(s){ return (s == null ? "" : String(s)).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+      var rule_html = "";
+
+      // ヘッダー行から列位置を取得（列の増減・並び替えに対応）
+      var header = data.values[0];
+      var col = {};
+      for (var h = 0; h < header.length; h++) { col[header[h]] = h; }
+
+      for(var i = 1; i < data.values.length; i++) {
+
+        var entries = data.values[i];
+
+        var rule_id = entries[col["Rule ID"]];
+        if (!rule_id) continue;
+        var level = entries[col["Level"]];
+        var name = "";
+        var message = entries[col["Message"]];
+        var description = entries[col["Description"]];
+        var description_ja = entries[col["Description_ja"]];
+
+        // Level から重大度クラスを導出（error / warning は BioSample の色を再利用、fatal は独自色）
+        var levelUp = (level == null ? "" : String(level)).toUpperCase();
+        var levelClass = "";
+        if (levelUp.indexOf("FATAL") >= 0) {
+          levelClass = "fatal";
+        } else if (levelUp.indexOf("ERROR") >= 0) {
+          levelClass = "error";
+        } else if (levelUp.indexOf("WARNING") >= 0) {
+          levelClass = "warning";
+        } else if (levelUp.indexOf("INFO") >= 0) {
+          levelClass = "info";
+        }
+
+        rule_html += '<dl>';
+        rule_html += '<dt id="' + esc(rule_id) + '"><a class="rule-id" href="#' + esc(rule_id) + '">' + esc(rule_id) + '</a><span class="rule-level ' + levelClass + '"> ' + esc(level) + '</span>' + '<span class="rule-name"> ' + name + '</span></dt>';
+
+        if (la == "ja"){
+          rule_html += '<dd><div class="rule-message"><span class="ja rule-message-tag">message:</span> ' + esc(message) + '</div>';
+
+          if (description_ja) {
+            rule_html += '<div class="rule-description"><span class="ja rule-description-tag">説明:</span> ' + description_ja + '</div></dd>';
+          } else {
+            rule_html += '<div class="rule-description"></div></dd>';
+          }
+
+        } else {
+          rule_html += '<dd><div class="rule-message"><span class="rule-message-tag">message:</span> ' + esc(message) + '</div>';
+
+          if (description) {
+            rule_html += '<div class="rule-description"><span class="rule-description-tag">description:</span> ' + description + '</div></dd>';
+          } else {
+            rule_html += '<div class="rule-description"></div></dd>';
+          }
+
+        }
+
+        rule_html += "</dl>";
+
+        poc_html += '<li><a href="#' + esc(rule_id) + '" class="toc_chapter">' + esc(rule_id) + '</a></li>';
+
+      }
+
+      $("#rule").prepend(rule_html);
+      poc_html += '</ul>';
+
+      $('#in_this_page').append(poc_html);
+      $('#in_this_page > h2').text("Rules");
+
+      // anchor 指定時にページ内遷移
+      if (anchor && $(anchor).length){
+        $(document).scrollTop( $(anchor).offset().top );
+      }
+
+    }); // $.getJSON
+
   // GEA rules
   } else if ( pathname.match(/\/gea\/validation/) ) {
 
