@@ -2,10 +2,10 @@ top_news:
  ja:
     - title: 登録を支援するナビゲーション、GGS と validator のご案内
       path: 2026-10-23
-    - title: セキュリティ強化のメンテナンスのための MetaboBank 検索サービス停止のお知らせ
-      path: 2026-10-22
+    - title: ミラーリングしているNCBI・EBI由来SRAデータの提供形式をSRA Normalized（Full）からSRA Liteへ変更します
+      path: 2026-11-16
  en:
     - title: Submission support services, Navigation, GGS and Validator
       path: 2026-10-23-e
-    - title: MetaboBank Search suspension for maintenance to strengthen security
-      path: 2026-10-22-e
+    - title: Change in the distribution format of mirrored NCBI- and EBI-derived SRA data from SRA Normalized (Full) to SRA Lite
+      path: 2026-11-16-e
