@@ -4,8 +4,12 @@ top_news:
       path: 2026-10-23
     - title: ミラーリングしているNCBI・EBI由来SRAデータの提供形式をSRA Normalized（Full）からSRA Liteへ変更します
       path: 2026-11-16
+    - title: ヒトデータの登録に必要なDBCLSへのデータ提供申請の手続きに2か月以上かかっています
+      path: 2026-11-27
  en:
     - title: Submission support services, Navigation, GGS and Validator
       path: 2026-10-23-e
     - title: Change in the distribution format of mirrored NCBI- and EBI-derived SRA data from SRA Normalized (Full) to SRA Lite
       path: 2026-11-16-e
+    - title: DBCLS data submission applications required for human data submission are taking more than two months
+      path: 2026-11-27-e
